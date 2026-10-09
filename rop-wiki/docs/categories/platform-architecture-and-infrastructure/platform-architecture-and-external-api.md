@@ -8,10 +8,10 @@ tags: [클라우드 로보틱스, 현장 클라우드, 외부 API, OpenAPI, Asyn
 status: published
 confidence: low
 created: 2026-09-28
-updated: 2026-09-30
+updated: 2026-10-09
 sources: [ref-004, ref-031, ref-762, ref-304, ref-1023, ref-937, ref-1024, ref-1025, ref-1026, ref-870, ref-308, ref-1027, ref-1028, ref-1029, ref-774, ref-1030, ref-1031]
-last_run: 2026-09-30
-version: 2
+last_run: 2026-10-09
+version: 3
 ---
 
 [홈](../../index.md) › [K. 플랫폼 아키텍처·인프라](index.md) › 41. 플랫폼 아키텍처·외부 API
@@ -26,7 +26,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: low · 페이지 버전: 2 · 마지막 갱신: 2026-09-30 · 마지막 실행: 2026-09-30
+> 페이지 상태: published · 신뢰도: low · 페이지 버전: 3 · 마지막 갱신: 2026-10-09 · 마지막 실행: 2026-10-09
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -133,13 +133,13 @@ Brorsson 외는 이 기준 아키텍처를 대형 상용차 제조 현장 실배
 
 이 영역의 대표 접근법은 판단을 로봇·현장 서버·클라우드에 나눠 두는 혼합 배치, 계산 오프로딩과 다중 클라우드 장애 대응, 제조사 중립 어댑터 계층, 그리고 REST·이벤트·웹훅·SDK 로 외부 API 를 여는 방식이다. [추정][^ref-1027][^ref-308][^ref-304][^ref-1031][^ref-004][^ref-1025][^ref-1024]
 
-자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md)에 있다.
+자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
 이 영역의 표준·오픈소스는 제조사 중립 플랫폼 구조를 보여 주는 Open-RMF·RoMi-H, 로봇–관제 인터페이스인 VDA 5050, 외부 API 를 기계가 읽게 기술하는 OpenAPI·AsyncAPI, 판단 배치 연구 플랫폼인 FogROS2 계열로 나뉜다(구축자 의견). [의견][^ref-004][^ref-937][^ref-031][^ref-1025][^ref-1024][^ref-304]
 
-자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md)에 있다.
+자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area41-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
@@ -162,6 +162,14 @@ Brorsson 외는 이 기준 아키텍처를 대형 상용차 제조 현장 실배
 
 네이버가 밝힌 ARC 처럼 위치 추정·이동 계획까지 클라우드에 두는 설계는 위 경계를 제품 전략으로 옮긴 사례이며, 이종 제조사를 연결하는 ROP 의 직접 범위로 보지 않는다. [추정] 벤더 주장[^ref-1023] 경계 전체는 [범위 경계](../../about/scope-boundary.md) 페이지에 있다.
 
+### 전달 보장과 외부 API 의 인증·권한 범위 (2026-10-09 갱신)
+
+로봇–관제 표준인 VDA 5050 3.0.0 은 외부 IT 시스템과의 인터페이스와 사이버보안 조치를 범위 밖에 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] 사이버보안은 [52. 통신 보호·위협 관리·감사](../security-and-privacy/communication-protection-threat-management-and-audit.md), 안전 요구는 [M. 안전](../safety/index.md) 쪽에서 다루며 이 영역에서는 표준 범위 밖이라는 사실만 적는다.
+
+- **외부 이벤트 전달 보장**: VDA 5050 은 주문 갱신 번호(orderUpdateId)로 재전송·순서 문제를 다루지만 대부분 주제에 QoS 0 최선 노력 전달을 쓰고 외부 IT 시스템 인터페이스를 범위 밖에 둔다. 그래서 업무 시스템에 내보내는 웹훅·이벤트의 전달 보장(재시도·순서·중복 제거)은 ROP 의 외부 API 가 따로 정해야 할 것으로 보인다(구축자 판단, oq-208 부분 근거). [추정][^ref-031]
+- **외부 API 의 인증·권한 범위**: rmf-web API 서버는 README 기준으로 권한 그룹 결정이 미구현이고 사용자 해지가 신원 제공자에 달려 있다. 그래서 Open-RMF 웹 API 를 ROP 외부 API 의 기반으로 쓰면 고객·현장별 자원 구분과 외부 계정 해지를 ROP 가 신원 제공자 연동과 권한 그룹 규칙으로 직접 채워야 할 것으로 보인다(구축자 판단). [추정][^ref-762] 고객·현장 격리 자체는 [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md)에서 다룬다.
+- **연결이 끊긴 동안의 실행**: 연계 대상: 로봇 자체 지능·제어 — 연결이 끊긴 로봇이 base(관제가 해제한 노드·엣지 구간)의 끝까지 수행하는 동작과 위치 추정·경로 실행은 로봇 쪽 기능이다. [사실][^ref-031] ROP 몫은 base·horizon 을 얼마나 해제할지 정하는 정책과 그 인터페이스로 한정되는 것으로 보인다(구축자 판단). [추정][^ref-031]
+
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
 이 영역은 같은 K. 플랫폼 아키텍처·인프라의 네트워크·데이터 영역, F. 연동의 네 영역, 보안·관제·복구 영역, 그리고 적용 현장 영역과 이어진다. [추정][^ref-1031][^ref-004]
@@ -172,23 +180,23 @@ Brorsson 외는 이 기준 아키텍처를 대형 상용차 제조 현장 실배
 
 판단 배치의 단절 대응, 외부 API 의 수명주기와 전달 보장, 국내 표준 여부가 아직 확인되지 않았다.
 
-자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-09-30-area41-s11.md)에 있다.
+자세한 내용은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-10-09-area41-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-30 · 갱신 · [41. 플랫폼 아키텍처·외부 API](platform-architecture-and-external-api.md) — 섹션 3~11 신규 작성(seed → draft): 판단 배치 혼합 구조, 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건. 1차 조건부 승인 수정 17건과 2차 수정 5건(3절 일반화 2건 좁힘, 4절 도입 단락, [의견] 주체 표시, 약어 풀이) 이행 (실행 2026-09-30-05)
-- 2026-09-30 · 생성 · [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(3,254자)을 옮겼다 (실행 2026-09-30-05)
-- 2026-09-30 · 생성 · [41. 플랫폼 아키텍처·외부 API — 핵심 개념과 용어](../../topics/2026/2026-09-30-area41-s4.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "4. 핵심 개념과 용어" 절(1,132자)을 옮겼다 (실행 2026-09-30-05)
-- 2026-09-30 · 생성 · [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(962자)을 옮겼다 (실행 2026-09-30-05)
-- 2026-09-30 · 생성 · [41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결](../../topics/2026/2026-09-30-area41-s10.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(879자)을 옮겼다 (실행 2026-09-30-05)
+- 2026-10-09 · 갱신 · [41. 플랫폼 아키텍처·외부 API](platform-architecture-and-external-api.md) — 6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09 (실행 2026-10-09-17)
+- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(2,053자)을 옮겼다 (실행 2026-10-09-17)
+- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area41-s7.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,615자)을 옮겼다 (실행 2026-10-09-17)
+- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-10-09-area41-s11.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "11. 열린 질문" 절(1,248자)을 옮겼다 (실행 2026-10-09-17)
+- 2026-10-09 · 요약 · [41. 플랫폼 아키텍처·외부 API](platform-architecture-and-external-api.md) — 41. 플랫폼 아키텍처·외부 API: 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) (실행 2026-10-09-17)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
-[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-30
-[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-30
-[^ref-762]: Open Robotics (open-rmf), rmf-web/packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-09-30
+[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-10-09
+[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09
+[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09
 [^ref-304]: Ichnowski, J., Chen, K., Dharmarajan, K. 외 (arXiv), FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2, 2022-05, https://arxiv.org/abs/2205.09778, 접근일 2026-09-30
 [^ref-1023]: NAVER Corp., 로보틱스 l NAVER Corp., 미확인, https://www.navercorp.com/tech/robotics, 접근일 2026-09-30
 [^ref-937]: Changi General Hospital — CHART (Centre for Healthcare Assistive & Robotics Technology), ROMI-H, 미확인, https://www.cgh.com.sg/chart/projects/romi-h, 접근일 2026-09-30

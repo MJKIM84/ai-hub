@@ -20,6 +20,13 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-17 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09 |
+| 2026-10-09-17 | 생성 | [docs/topics/2026/2026-10-09-area41-s6.md](topics/2026/2026-10-09-area41-s6.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(2,053자)을 옮겼다 |
+| 2026-10-09-17 | 생성 | [docs/topics/2026/2026-10-09-area41-s7.md](topics/2026/2026-10-09-area41-s7.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,615자)을 옮겼다 |
+| 2026-10-09-17 | 생성 | [docs/topics/2026/2026-10-09-area41-s11.md](topics/2026/2026-10-09-area41-s11.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "11. 열린 질문" 절(1,248자)을 옮겼다 |
+| 2026-10-09-17 | 요약 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 41. 플랫폼 아키텍처·외부 API: 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) |
+| 2026-10-09-17 | 생성 | [docs/glossary/mqtt-quality-of-service-level.md](glossary/mqtt-quality-of-service-level.md) | 용어집 항목 MQTT 서비스 품질 수준 |
+| 2026-10-09-17 | 생성 | [docs/glossary/oauth2-client-credentials-grant.md](glossary/oauth2-client-credentials-grant.md) | 용어집 항목 클라이언트 자격 증명 흐름 |
 | 2026-10-09-16 | 갱신 | [docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 3절 둘째 문단을 현재 원문 질문에 맞추고 심각도·시각 형식·통신 신호·사람 개입 근거 보강, 5절 현장 유형별 사례(병원·상업 시설·실외·기타) 추가와 물류창고 사례 재확인, 7절 표준 필드 표 추가와 2026-09-25 목록 링크 유지, 9절 내부 진단·승강기·실외 인증 경계와 직접 범위 후보 추가, 11절 2026-09-25 목록 링크 유지·부분 근거·새 질문 2건, 13절 각주 접근일·기관 표기 갱신(2차 수정 3건 반영) |
 | 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s7.md](topics/2026/2026-10-09-area38-s7.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,049자)을 옮겼다 |
 | 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s3.md](topics/2026/2026-10-09-area38-s3.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "3. 왜 중요한가" 절(1,297자)을 옮겼다 |

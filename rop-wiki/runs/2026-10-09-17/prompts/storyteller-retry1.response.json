@@ -1,0 +1,405 @@
+{
+  "duration_api_ms": 146466,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.0118284,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 198028,
+    "cache_read_input_tokens": 71882,
+    "output_tokens": 20661,
+    "output_tokens_details": {
+      "thinking_tokens": 4256
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 198028,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 20661,
+        "cache_read_input_tokens": 71882,
+        "cache_creation_input_tokens": 198028,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 198028
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 20661,
+      "cacheReadInputTokens": 71882,
+      "cacheCreationInputTokens": 198028,
+      "webSearchRequests": 0,
+      "costUSD": 2.0118284,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4256,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-17\",\"outline\":[{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":250,\"summary\":\"변경 없음. 외부 API 는 업무 시스템과 개발자가 로봇 운영을 만나는 접점이고 판단 배치가 운영 연속성을 좌우한다. [추정][^ref-031][^ref-774][^ref-1030][^ref-1031]\",\"planned_findings\":[]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":150,\"summary\":\"변경 없음. 클라우드 로보틱스·계산 오프로딩·현장 클라우드·플릿 어댑터·OpenAPI·AsyncAPI·웹훅 개념은 주제 페이지에 있다.\",\"planned_findings\":[]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":2600,\"summary\":\"변경 없음(1차 검증 지시: 현장 유형이 없는 f7·f12 는 사례 칸에 넣지 않는다). 병원·제조 공장·물류창고·기타 사례 4건.\",\"planned_findings\":[]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":2100,\"summary\":\"기존 요약 유지, 이전 주제 페이지 링크를 갱신 소절 첫머리에 두고, VDA 5050 3.0.0 의 끊김 전제와 base 끝까지 수행, 관제·로봇 기능 분담, Open-RMF 중앙 교통 일정, QoS 0·1 구분과 주문 갱신 번호를 덧붙인다. 연결이 끊긴 로봇은 base 의 마지막 노드까지 주문을 수행한다. [사실][^ref-031]\",\"planned_findings\":[\"f2\",\"f3\",\"f4\",\"f5\",\"f7\",\"f10\",\"f18\"]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":1650,\"summary\":\"기존 요약 유지, 이전 주제 페이지 링크, VDA 5050 3.0.0 의 버전 규칙(주·부·수 버전 모두 '대체로' 한정)·범위 제외, Open-RMF 플릿 제어 수준과 책의 폐기 예고 서술(추정), rmf-web API 서버의 M2M 설정·빈 권한 그룹·사용자 비동기화·프록시 설정. VDA 5050 3.0.0 은 외부 IT 시스템 인터페이스와 사이버보안 조치를 범위 밖에 둔다. [사실][^ref-031]\",\"planned_findings\":[\"f1\",\"f6\",\"f9\",\"f11\",\"f12\",\"f13\",\"f14\"]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":150,\"summary\":\"변경 없음. 클라우드 오프로딩 두 연구와 플릿 관리 구조 두 연구(초록 기준). [사실][^ref-304][^ref-1031][^ref-1027][^ref-308]\",\"planned_findings\":[]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"budget_chars\":1700,\"summary\":\"기존 표·원문 문장 유지에 더해, 외부 이벤트 전달 보장과 외부 API 의 인증·권한 범위를 ROP 몫으로 보는 추정과 base·horizon 해제 정책의 경계를 덧붙인다. 업무 시스템에 내보내는 웹훅·이벤트의 전달 보장은 ROP 외부 API 가 따로 정해야 할 것으로 보인다. [추정][^ref-031]\",\"planned_findings\":[\"f3\",\"f6\",\"f7\",\"f8\",\"f15\"]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":150,\"summary\":\"변경 없음. 연결 영역 목록은 주제 페이지에 있다.\",\"planned_findings\":[]},{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1250,\"summary\":\"기존 요약 유지, 이전 주제 페이지 링크, oq-206·oq-207·oq-208·oq-300 의 부분 근거(상태 열림 유지), 미조사 질문, 새 질문 1건. 확인한 두 출처는 폐기 예고 기간을 정하지 않는다. [추정][^ref-031][^ref-004]\",\"planned_findings\":[\"f8\",\"f16\",\"f17\",\"f18\"]}],\"pages\":[{\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09\",\"patches\":[{\"section\":\"6. 대표 접근법과 기술\",\"action\":\"append\",\"frontmatter\":{\"last_run\":\"2026-10-09\"},\"content\":\"\\n### 연결이 끊길 때 판단을 어디에 두는가 (2026-10-09 갱신)\\n\\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md)에 있다.\\n\\n로봇–관제 인터페이스인 [VDA 5050](../../glossary/vda-5050.md) 3.0.0 은 무선망에서 연결 끊김과 메시지 손실이 생길 수 있다는 것을 통신 전반의 전제로 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] 연계 대상: 로봇 자체 지능·제어 — 이 명세에서 브로커와 연결이 끊긴 로봇은 주문 정보를 유지하고 base(관제가 해제(released)한 노드·엣지 구간. 용어집의 [해제 구역](../../glossary/release-zone.md)과는 다른 개념)의 마지막 노드까지 주문을 수행한다. [사실][^ref-031] 같은 명세는 [메시지 큐잉 원격 측정 전송](../../glossary/mqtt.md)(Message Queuing Telemetry Transport, MQTT)이 비동기이고 무선 전송을 믿을 수 없으므로 관제가 이미 해제한 base 를 바꿀 수 없고 실행된 것으로 간주해야 하며, 주문 취소([cancelOrder](../../glossary/vda-5050-cancel-order.md))도 같은 이유로 신뢰할 수 없다고 본다. [사실][^ref-031]\\n\\nVDA 5050 3.0.0 은 판단을 관제와 로봇으로 나눈다. 관제의 최소 기능으로는 주문 배정, 선 유도(line-guided) 로봇의 경로 계산·안내, 교착 탐지·해소, 에너지 관리, 교통 통제, 문·게이트·승강기 같은 주변 시스템과의 통신, 통신 오류 탐지·해소를 든다. [사실][^ref-031] 명세는 관제에 교통 통제 기능을 요구하되 그 로직은 정하지 않고 범위 밖에 둔다. [사실][^ref-031] 연계 대상: 로봇 자체 지능·제어 — 위치 추정·경로 실행·동작 실행·상태 연속 전송은 같은 명세가 로봇의 기능으로 드는 것이다. [사실][^ref-031]\\n\\nOpen-RMF 의 교통 일정은 플랫폼 중립의 중앙 데이터베이스로, 배치된 모든 플릿 관리자가 예상 경로를 보고하고, 충돌이 예상되면 플릿 관리자들이 협상하며 시스템 통합사가 둔 제3자 판정자가 제안을 고른다(발행일 미확인, 2026-10-09 확인). [사실][^ref-004] 긴급 작업은 의도적으로 충돌을 올려 협상을 강제할 수 있다. [사실][^ref-004] 교통 조율 자체의 본론은 [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)에서 다루고, 이 영역에서는 중앙 조율을 어디에 둘지 정하는 근거로만 쓴다.\\n\\n두 자료를 함께 보면, ROP 의 판단 배치 정책은 중앙 조율 서비스를 클라우드와 현장 서버 가운데 어디에 둘지와 함께, 연결이 끊긴 동안 로봇이 계속 갈 수 있는 base 의 길이를 정해야 할 것으로 보인다(구축자 판단, oq-206 부분 근거). [추정][^ref-031][^ref-004] base 의 길이는 관제의 교통 통제 기능에 걸치므로 27. 다중 로봇 경로·교통 관리 — MAPF와 [42. 분산 시스템·통신·컴퓨팅 구조](distributed-systems-communication-and-computing.md)에서 함께 다룬다.\\n\\n### 메시지 전달 보장 수준 (2026-10-09 갱신)\\n\\nVDA 5050 3.0.0 은 통신 부하를 줄이려고 order·instantActions·state·factsheet·zoneSet·responses·visualization 주제에는 MQTT 서비스 품질(Quality of Service, QoS) 0(최선 노력)을, connection 주제에는 QoS 1(최소 한 번)을 쓰게 한다. [사실][^ref-031] 로봇이 예기치 않게 끊기면 브로커가 [유언 메시지](../../glossary/mqtt-last-will.md)(last will)로 다른 구독자에게 알린다. [사실][^ref-031]\\n\\n주문 갱신은 같은 orderId 에 orderUpdateId 를 늘려 보낸다. [사실][^ref-031] 로봇은 같은 orderUpdateId 로 같은 내용이 다시 오면 무시하고, 내용이 다르면 SAME_ORDER_UPDATE_ID, 더 낮은 orderUpdateId 면 OUTDATED_ORDER_UPDATE 경고를 보고해 재전송과 순서 뒤바뀜을 메시지 수준에서 걸러낸다. [사실][^ref-031] 명령 실행 신뢰성의 본론은 [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md)에서 다룬다.\\n\\n클라우드 브로커를 쓸 때 VDA 5050 3.0.0 은 클라우드 사업자가 강제하는 주제 구조가 있으므로 MQTT 주제 단계 구조를 엄격히 정하지 않는다. [사실][^ref-031] 클라우드 브로커는 구조를 개별 조정할 수 있으나 제안 구조를 대략 따라야 하며, 주제 이름(order·state 등)은 필수다. [사실][^ref-031]\\n\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"append\",\"content\":\"\\n### 버전 규칙·범위와 오픈소스 API 의 현재 서술 (2026-10-09 갱신)\\n\\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md)에 있다.\\n\\n- **VDA 5050 3.0.0** — [의미적 버전 관리](../../glossary/semantic-versioning.md)를 써서 주 버전(x.0.0)은 대체로(typically) 새 필수 필드 도입 같은 하위 호환을 깨는 변경에, 부 버전(3.x.0)은 대체로 선택 매개변수 추가 같은 새 기능에, 수 버전(3.0.x)은 대체로 문서 오탈자 같은 작은 수정에 쓴다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] VDA 5050 3.0.0 이 지역(local) 브로커용으로 제안하는 주제 구조에서는 MQTT 주제 경로에 'v' 를 붙인 주 버전(예 v3)을 넣는다. 이 주제 구조는 엄격한 규정이 아니며 클라우드 브로커는 조정할 수 있다([대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md)). [사실][^ref-031] 명세는 주변 설비·기반 시설·외부 IT 시스템과의 인터페이스, 안전 요구사항, 교통 관리 로직, 운영 책임 배분, 사이버보안 조치를 범위 밖에 둔다. [사실][^ref-031]\\n- **Open-RMF 플릿 어댑터** — Open-RMF 핵심 문서는 플릿 어댑터를 [플릿 제어 수준](../../glossary/fleet-control-level.md) 네 가지(Full Control·Traffic Light·Read Only·No Interface)로 나누고, Full Control 에는 재사용 C++ API(파이썬 바인딩 포함)를 제공한다(발행일 미확인, 2026-10-09 확인). [사실][^ref-004] 같은 문서인 Open-RMF 책 rmf-core 장(작성 시점 미확인)은 Read Only 용 예비 ROS 2 메시지 API 가 향후 판에서 C++ API 로 대체되어 폐기될 예정이고 Traffic Light 용 재사용 API 는 아직 구현되지 않았다고 서술하지만, 이는 책의 서술이며 현재 배포판의 상태는 미확인이다. [추정][^ref-004]\\n- **Open-RMF rmf-web API 서버** — [기존 주제 페이지](../../topics/2026/2026-09-30-area41-s7.md)에 있는 서술(신원 제공자 기반 인증, 역할·동작·권한 그룹 판정)에 더해, 2026-10-09 확인한 README 에는 OAuth 2.0 client_credentials(기계 간, M2M) 흐름에서 신원 제공자가 표준 클레임을 빼고 네임스페이스 붙은 클레임만 주는 경우를 위한 선택 설정 preferred_username_claim_namespace 가 있다. [사실][^ref-762] README 의 TODO 절 기준으로, 자원의 권한 그룹을 정하는 방식이 아직 정해지지 않아 현재는 모든 자원이 기본 빈 그룹('')에 들어간다(코드 동작으로는 확인하지 않음). [사실][^ref-762] 서버는 자체 사용자·역할·권한 데이터베이스를 신원 제공자와 동기화하지 않으므로, rmf-server 에서 사용자를 지워도 로그인만 요구하는 반보호 API 접근은 막지 못하고 로그인 자체를 막으려면 신원 제공자에서 사용자를 지워야 한다. [사실][^ref-762] 역방향 프록시 뒤에서 쓸 때는 public_url 을 공개 주소로 설정하고 프록시가 경로 접두어를 제거하게 해야 한다. [사실][^ref-762]\\n\"},{\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"action\":\"append\",\"content\":\"\\n### 전달 보장과 외부 API 의 인증·권한 범위 (2026-10-09 갱신)\\n\\n로봇–관제 표준인 VDA 5050 3.0.0 은 외부 IT 시스템과의 인터페이스와 사이버보안 조치를 범위 밖에 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] 사이버보안은 [52. 통신 보호·위협 관리·감사](../security-and-privacy/communication-protection-threat-management-and-audit.md), 안전 요구는 [M. 안전](../safety/index.md) 쪽에서 다루며 이 영역에서는 표준 범위 밖이라는 사실만 적는다.\\n\\n- **외부 이벤트 전달 보장**: VDA 5050 은 주문 갱신 번호(orderUpdateId)로 재전송·순서 문제를 다루지만 대부분 주제에 QoS 0 최선 노력 전달을 쓰고 외부 IT 시스템 인터페이스를 범위 밖에 둔다. 그래서 업무 시스템에 내보내는 웹훅·이벤트의 전달 보장(재시도·순서·중복 제거)은 ROP 의 외부 API 가 따로 정해야 할 것으로 보인다(구축자 판단, oq-208 부분 근거). [추정][^ref-031]\\n- **외부 API 의 인증·권한 범위**: rmf-web API 서버는 README 기준으로 권한 그룹 결정이 미구현이고 사용자 해지가 신원 제공자에 달려 있다. 그래서 Open-RMF 웹 API 를 ROP 외부 API 의 기반으로 쓰면 고객·현장별 자원 구분과 외부 계정 해지를 ROP 가 신원 제공자 연동과 권한 그룹 규칙으로 직접 채워야 할 것으로 보인다(구축자 판단). [추정][^ref-762] 고객·현장 격리 자체는 [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md)에서 다룬다.\\n- **연결이 끊긴 동안의 실행**: 연계 대상: 로봇 자체 지능·제어 — 연결이 끊긴 로봇이 base(관제가 해제한 노드·엣지 구간)의 끝까지 수행하는 동작과 위치 추정·경로 실행은 로봇 쪽 기능이다. [사실][^ref-031] ROP 몫은 base·horizon 을 얼마나 해제할지 정하는 정책과 그 인터페이스로 한정되는 것으로 보인다(구축자 판단). [추정][^ref-031]\\n\"},{\"section\":\"11. 열린 질문\",\"action\":\"append\",\"content\":\"\\n### 부분 근거와 새 질문 (2026-10-09 갱신)\\n\\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-09-30-area41-s11.md)에 있다.\\n\\n아래 질문은 이번 실행에서 부분 근거만 얻었으므로 모두 열림 상태를 유지한다.\\n\\n- **oq-206** (상태: 열림) 클라우드 연결이 끊길 때 로봇과 현장 서버가 어디까지 계속 동작하는가 — VDA 5050 의 base 끝까지 수행과 Open-RMF 의 중앙 교통 일정을 함께 보면, 중앙 조율 위치와 base 길이를 함께 정해야 할 것으로 보인다([대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md), 구축자 판단). [추정][^ref-031][^ref-004] 네이버 ARC 의 끊김 동작은 여전히 미확인이다.\\n- **oq-207** (상태: 열림) 외부 API 의 버전 관리·폐기 예고 정책 — 이번에 확인한 두 출처(VDA 5050 3.0.0 명세, Open-RMF 책 rmf-core 장)에서는 버전 표기 규칙과 '향후 판에서 폐기' 같은 예고 문구는 있으나 폐기 예고 기간이나 구판 지원 기간은 정하지 않는다. [추정][^ref-031][^ref-004] 관련 개념은 용어집 [API 폐기 정책](../../glossary/api-deprecation-policy.md)에 있다.\\n- **oq-208** (상태: 열림) 웹훅·이벤트의 전달 보장 공통 기준 — 로봇–관제 쪽은 QoS 0·1 구분과 orderUpdateId 로 일부를 다루지만 외부 IT 인터페이스는 범위 밖이어서, 외부 이벤트 전달 보장은 ROP 가 정해야 할 것으로 보이며 공통 기준은 확인되지 않았다([41. 플랫폼 아키텍처·외부 API](../../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) 페이지 9절, 구축자 판단). [추정][^ref-031]\\n- **oq-300** (상태: 열림) 재시작 뒤 진행 중 작업 상태 유지 — FogROS2-FT 의 다중 클라우드 복제는 상태 없는(stateless) 로봇 서비스를 대상으로 하므로, 이 방법만으로는 답이 되지 않는 것으로 보인다. [추정][^ref-1031]\\n- **새 질문** (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-17) Open-RMF 웹 API 서버처럼 권한 그룹 자동 결정이 미구현인 오픈소스 관제 API 위에서 고객·현장별 자원 격리를 API 수준으로 구현한 공개 사례나 설계 문서가 있는가? 근거는 README TODO 절의 빈 권한 그룹 서술이다. [사실][^ref-762]\\n- oq-209(국내 TTA·KS 참조 구조 표준), oq-267(과금 단위), oq-301(OpenAPI·AsyncAPI 기반 적합성 시험 도구)은 이번 실행에서 조사하지 못했다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"content\":\"[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-10-09\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\\n[^ref-304]: Ichnowski, J., Chen, K., Dharmarajan, K. 외 (arXiv), FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2, 2022-05, https://arxiv.org/abs/2205.09778, 접근일 2026-09-30\\n[^ref-1023]: NAVER Corp., 로보틱스 l NAVER Corp., 미확인, https://www.navercorp.com/tech/robotics, 접근일 2026-09-30\\n[^ref-937]: Changi General Hospital — CHART (Centre for Healthcare Assistive & Robotics Technology), ROMI-H, 미확인, https://www.cgh.com.sg/chart/projects/romi-h, 접근일 2026-09-30\\n[^ref-1024]: AsyncAPI Initiative, AsyncAPI Specification 3.1.0, 미확인, https://www.asyncapi.com/docs/reference/specification/v3.1.0, 접근일 2026-09-30\\n[^ref-1025]: OpenAPI Initiative, OpenAPI Specification v3.1.0, 2021-02-15, https://spec.openapis.org/oas/v3.1.0, 접근일 2026-09-30\\n[^ref-308]: Brorsson, E., Ceder, K., Zhang, Z. 외 (arXiv), Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives, 2025-12, https://arxiv.org/abs/2512.15215, 접근일 2026-09-30\\n[^ref-1027]: Singhal, A., Kejriwal, N., Pallav, P., Choudhury, S., Sinha, R., & Kumar, S. (arXiv), Managing a Fleet of Autonomous Mobile Robots (AMR) using Cloud Robotics Platform, 2017-06, https://arxiv.org/abs/1706.08931, 접근일 2026-09-30\\n[^ref-1028]: Open Robotics (open-rmf), rmf_api_msgs — README, 미확인, https://github.com/open-rmf/rmf_api_msgs, 접근일 2026-09-30\\n[^ref-774]: Mobile Industrial Robots (MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-30\\n[^ref-1030]: Locus Robotics, Seamless Integrations with LocusOne Robotics, 미확인, https://locusrobotics.com/locusone/automated-warehouse-software/integrations, 접근일 2026-09-30\\n[^ref-1031]: Chen, K., Hari, K., Chung, T. 외 (IROS 2024, arXiv), FogROS2-FT: Fault Tolerant Cloud Robotics, 2024-12, https://arxiv.org/abs/2412.05408, 접근일 2026-09-30\"}]}],\"changelog_entry\":\"2026-10-09 | 41. 플랫폼 아키텍처·외부 API | 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) | run 2026-10-09-17\",\"index_updates\":{\"home_recent\":\"2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 연결 끊김 때 판단 배치(VDA 5050 base·Open-RMF 중앙 교통 일정), 메시지 전달 보장 수준, 외부 API 인증·권한 범위 갱신(신뢰도 low)\",\"category_recent\":\"2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 6·7·9·11절 갱신 — VDA 5050 3.0.0 버전 규칙·QoS·범위 제외, rmf-web API 서버 M2M 설정·빈 권한 그룹, 외부 이벤트 전달 보장 추정, 열린 질문 부분 근거\",\"area_recent\":\"2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 6절 끊김 때 판단 배치·전달 보장 수준, 7절 VDA 5050 버전 규칙·Open-RMF 플릿 제어 수준·rmf-web 인증 설정, 9절 전달 보장·권한 범위 추정, 11절 oq-206·oq-207·oq-208·oq-300 부분 근거와 새 질문 1건 (실행 2026-10-09-17)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"mqtt-quality-of-service-level\",\"term_ko\":\"MQTT 서비스 품질 수준\",\"term_en\":\"MQTT Quality of Service (QoS) Level\",\"definition\":\"MQTT 에서 메시지 전달 보장 수준을 고르는 설정으로, VDA 5050 3.0.0 은 대부분 주제에 최선 노력(QoS 0)을, 연결 상태 주제에 최소 한 번(QoS 1)을 쓴다.\",\"description\":\"VDA 5050 3.0.0 은 통신 부하를 줄이려고 order·state 등 주제에 QoS 0 을, connection 주제에 QoS 1 을 쓴다. 이번 출처는 QoS 0·1 만 다루며 그 밖의 수준은 이 항목에서 다루지 않는다.\",\"related_areas\":[41,20,42,29],\"sources\":[\"ref-031\"]},{\"action\":\"new\",\"slug\":\"oauth2-client-credentials-grant\",\"term_ko\":\"클라이언트 자격 증명 흐름\",\"term_en\":\"OAuth 2.0 Client Credentials Grant (Machine-to-Machine)\",\"definition\":\"사람 사용자 없이 서비스나 기계가 자기 자격 증명으로 접근 토큰을 받아 API 를 부르는 OAuth 2.0 인가 방식이다.\",\"description\":\"Open-RMF rmf-web API 서버 README 는 이 흐름(M2M)에서 신원 제공자가 표준 클레임 대신 네임스페이스 붙은 클레임만 주는 경우를 위한 선택 설정 preferred_username_claim_namespace 를 둔다(2026-10-09 확인).\",\"related_areas\":[41,51],\"sources\":[\"ref-762\"]}],\"reference_updates\":[{\"id\":\"ref-004\",\"org\":\"Open Robotics\",\"title\":\"RMF Core Overview — Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/rmf-core.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 핵심 구성(교통 일정·협상, 작업 계획)과 플릿 어댑터 제어 수준 4종, 수준별 API 제공 상태를 설명하는 공식 문서. 수준별 API 제공 상태 서술은 작성 시점 미확인으로 현재 배포판과 다를 수 있다.\",\"cited_by\":[\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\"],\"source_unopened\":false},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"플릿 관제와 이동 로봇 사이 제조사 중립 통신 인터페이스 VDA 5050 3.0.0 명세. MQTT·JSON 전송, 버전 규칙, QoS, 주문·갱신·취소, 범위 제외 항목을 정한다.\",\"cited_by\":[\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\"],\"source_unopened\":false},{\"id\":\"ref-762\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — packages/api-server/README.md\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 웹 API 서버의 설정, 지원 DB, 프록시 운용, OpenID Connect 인증과 역할·권한 그룹 인가, M2M 클레임 설정, 사용자 데이터 비동기화 방침을 설명하는 README.\",\"cited_by\":[\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\"],\"source_unopened\":false}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"Open-RMF 웹 API 서버처럼 권한 그룹 자동 결정이 미구현인 오픈소스 관제 API 위에서 고객·현장별 자원 격리를 API 수준으로 구현한 공개 사례나 설계 문서가 있는가?\",\"areas\":[41,51],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[],\"additional_research_requests\":[\"7절 Open-RMF 플릿 어댑터: 현재 Open-RMF rmf_ros2 배포판(latest API 문서)에서 Traffic Light 용 재사용 API 의 제공 여부와 Read Only 예비 ROS 2 메시지 API 의 폐기 여부·시점을 공식 문서로 확인해 달라 — 책 rmf-core 장의 서술(작성 시점 미확인)을 [추정]으로 강등했고 현재 상태는 미확인으로 두었다.\",\"11절 oq-209: 국내 클라우드 로봇·이기종 로봇 통합관제 참조 구조나 외부 API 를 정한 TTA·KS 표준 여부를 한국어로 검색해 달라 — 이번 브리프는 검색 0회였다.\",\"11절 oq-301: OpenAPI·AsyncAPI 로 기술한 외부 API 를 연동 적합성 시험 기준으로 쓴 공개 시험 도구·절차를 조사해 달라.\",\"11절 oq-267: 다중 제조사 오케스트레이션 플랫폼의 과금 단위(로봇당·작업당·현장당·구독) 비교 자료를 조사해 달라.\",\"5절 적용 사례: 상업 시설·가정·실외 현장에서 플랫폼 배치(클라우드·현장 서버·로봇)나 외부 API 가 드러난 사례가 필요하다 — 현재 사례는 병원·제조 공장·물류창고·기타 네 건뿐이다.\",\"7·11절 VDA 5050: 3.0.0 명세의 발행일과 원문 마지막 약 7,700자(검증자 미확인 구간)에 폐기·구판 지원 규정이 있는지 확인해 달라.\",\"7절 rmf-web: README 의 preferred_username_claim_namespace(M2M) 설정이 언제 들어갔는지 저장소 변경 이력으로 확인해 달라 — 리서치·검증 모두 확인하지 못해 '2026-10-09 확인한 README 에 있다'로만 썼다.\",\"용어집: 기존 'mqtt' 항목의 정의가 QoS 수준 설명을 이미 포함하는지 확인해 달라 — 입력에 정의 본문이 없어 'MQTT 서비스 품질 수준'을 QoS 0·1 만으로 새로 등록 제안했다. 중복이면 퍼블리셔 단계에서 합치거나 제외한다.\"],\"fixes_applied\":[\"f1: 7절 갱신 소절에서 'v' 붙은 주 버전 표기를 'VDA 5050 3.0.0 이 지역(local) 브로커용으로 제안하는 주제 구조에서'로 한정하고 엄격한 규정이 아니며 클라우드 브로커는 조정할 수 있다고 덧붙였으며, 주·부·수 버전 의미에 '대체로(typically)'를 살렸다.\",\"f2: 6절 '메시지 전달 보장 수준' 소절에서 QoS 0 사용 이유를 '통신 부하를 줄이려고'로 쓰고, 무선망의 끊김·손실은 6절 첫 소절 첫 문장에서 통신 전반의 전제로 따로 썼다.\",\"f5: 6절에서 클라우드 브로커는 구조를 개별 조정할 수 있으나 제안 구조를 대략 따라야 하며 주제 이름은 필수라는 조건을 함께 썼다.\",\"f7: 6절에서 '선 유도(line-guided) 로봇의 경로 계산·안내'로 고치고, 로봇 기능 목록 앞에 '연계 대상: 로봇 자체 지능·제어'를 표시했으며, 교통 통제는 '관제에 기능을 요구하되 그 로직은 정하지 않고 범위 밖에 둔다'로 썼다.\",\"f9: 7절에서 네 플릿 제어 수준과 Full Control C++ API(파이썬 바인딩)는 [사실]로, Read Only API 폐기 예정·Traffic Light 재사용 API 미구현은 'Open-RMF 책 rmf-core 장(작성 시점 미확인)의 서술'로 밝혀 [추정]으로 강등하고 현재 상태를 미확인으로 두었으며, 현재 상태 확인을 additional_research_requests 로 넘겼다.\",\"f17: 11절 oq-207 항목에서 범위를 '이번에 확인한 두 출처(VDA 5050 3.0.0 명세, Open-RMF 책 rmf-core 장)에서는'으로 한정하고 용어집 [API 폐기 정책](api-deprecation-policy) 링크를 달았으며, 위키 전체에 근거가 없다고 쓰지 않고 상태를 열림으로 유지했다.\",\"f11: 7절에서 M2M 네임스페이스 클레임 설정을 '2026-10-09 확인한 README 에 있다'로만 쓰고 새로 추가됐다고 쓰지 않았다.\",\"f12: 7절에서 빈 권한 그룹 서술을 'README 의 TODO 절 기준'으로 밝히고 코드 동작으로는 확인하지 않았다고 적었으며, 9절에서도 'README 기준'으로 썼다.\",\"f11·f12·f14 중복: OIDC·JWT 독립 검증, 역할·동작·권한 그룹 구조, /docs API 정의는 새 문장으로 반복하지 않고 기존 주제 페이지의 서술로만 가리켰으며, 새로 더한 것은 M2M 설정·빈 그룹·사용자 비동기화·프록시 설정뿐이고 기존 각주 [^ref-762]를 재사용했다.\",\"f1·f9 중복: 주제 페이지의 기존 서술을 지우지 않고 7절에 갱신 소절을 덧붙이는 방식으로 반영했으며 새 각주를 만들지 않고 [^ref-031]·[^ref-004]를 재사용했다.\",\"f3·f18 용어: 6절에서 처음 나올 때 'base(관제가 해제(released)한 노드·엣지 구간. 용어집의 해제 구역과는 다른 개념)'로 쓰고 해제 구역 용어집 링크를 달아 구분했다.\",\"f9 표기: 7절에서 '제어 수준'을 용어집 표기 [플릿 제어 수준](fleet-control-level) 링크로 통일했다.\",\"f3·f7 범위: 6절과 9절에서 끊긴 로봇이 base 끝까지 수행하는 동작과 위치 추정·경로 실행을 '연계 대상: 로봇 자체 지능·제어'로 표시하고, 9절에서 ROP 몫을 base·horizon 해제 정책과 그 인터페이스로 한정했다.\",\"f8·f15·f18: 9절과 11절에서 [추정]으로 두고 '구축자 판단'을 밝혔으며, f15 는 51. 인증·권한·격리, f6 의 사이버보안 제외는 52. 통신 보호·위협 관리·감사에 링크하고, f4 는 29. 명령·작업 실행의 신뢰성, f10·f18 은 27. 다중 로봇 경로·교통 관리 — MAPF·42. 분산 시스템·통신·컴퓨팅 구조에 번호와 이름을 함께 써서 연결만 했다.\",\"11절 열린 질문: oq-206(f18)·oq-207(f1·f9·f17)·oq-208(f2·f4·f8)·oq-300(f16)은 부분 근거만 적고 상태를 열림으로 유지했으며(open_question_updates 에 상태 변경을 내지 않음), 새 질문 1건을 관련 영역 41·51 로 open_question_updates 에 등록했다.\",\"용어 후보 'MQTT 서비스 품질 수준': 정의에서 QoS 2(정확히 한 번)를 빼고 QoS 0·1 만 남겼다. 기존 'mqtt' 항목의 정의 본문이 입력에 없어 같은 정의인지 확인하지 못했으므로 additional_research_requests 에 중복 확인을 요청했다.\",\"각주: 13절 패치(각주 정의만 교체)로 [^ref-004]·[^ref-031]·[^ref-762]를 참고문헌 색인 줄 형식(ref-762 제목 'rmf-web — packages/api-server/README.md')과 접근일 2026-10-09 로 고치고, [^ref-1031]은 기존 줄(접근일 2026-09-30) 그대로 두었으며 reference_updates 에 ref-1031 을 넣지 않아 접근일을 바꾸지 않았다.\",\"5절·현장 유형 매트릭스: 현장 유형이 없는 f7·f12 를 사례 칸에 넣지 않았고, 5절을 패치하지 않았으며 site_matrix_updates 를 빈 배열로 냈다.\",\"차등 갱신: 6·7·9·11절은 기존 요약 문장과 주제 페이지 링크를 지우지 않고 append 로 갱신 소절을 덧붙였다. 각주 지시 이행을 위해 13절 각주 정의만 replace 로 함께 보냈고 그 밖의 절은 보내지 않았다.\",\"2차: 6·7·11절 기존 주제 페이지 링크 유실 — 6·7·11절 append 패치의 갱신 소절 첫머리(### 제목 바로 아래)에 각각 '이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md)/[… — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md)/[… — 열린 질문](../../topics/2026/2026-09-30-area41-s11.md)에 있다' 문장을 넣어 분리 뒤 주제 페이지 본문에도 따라가게 했다.\",\"2차: 7절 rmf-web 항목 — '주제 페이지에 있는 기존 서술'을 '[기존 주제 페이지](../../topics/2026/2026-09-30-area41-s7.md)에 있는 서술'로 바꿔 링크했다.\",\"2차: 분리 주제 페이지 안의 절 참조 — 7절의 '(6절)'과 11절 oq-206 의 '(6절, 구축자 판단)'을 [대표 접근법과 기술] 링크로 바꾸고, 11절 oq-208 의 '(9절, 구축자 판단)'을 '[41. 플랫폼 아키텍처·외부 API] 페이지 9절'로 원 페이지를 밝혀 고쳤다. 링크 경로는 지시의 '2026-10-09-area41-s6.md' 대신 세부영역 폴더와 docs/topics/2026/ 양쪽에서 같은 대상을 가리키는 '../../topics/2026/2026-10-09-area41-s6.md'(원 페이지는 '../../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md')로 썼다 — 패치가 세부영역 페이지에 들어간 뒤 코드가 주제 페이지로 옮기므로 분리 전후 모두 유효하게 하기 위해서다.\",\"2차: f1 한정어 — 7절 VDA 5050 항목에서 주 버전에 '대체로(typically)'를 유지하고 부 버전·수 버전 설명에도 '대체로'를 붙였다.\",\"2차: last_run — 6절 패치의 frontmatter 필드로 세부영역 페이지 프런트매터 last_run 을 2026-10-09 로 고쳤다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-09-17",
+    "outline": [
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 250,
+        "summary": "변경 없음. 외부 API 는 업무 시스템과 개발자가 로봇 운영을 만나는 접점이고 판단 배치가 운영 연속성을 좌우한다. [추정][^ref-031][^ref-774][^ref-1030][^ref-1031]",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 150,
+        "summary": "변경 없음. 클라우드 로보틱스·계산 오프로딩·현장 클라우드·플릿 어댑터·OpenAPI·AsyncAPI·웹훅 개념은 주제 페이지에 있다.",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 2600,
+        "summary": "변경 없음(1차 검증 지시: 현장 유형이 없는 f7·f12 는 사례 칸에 넣지 않는다). 병원·제조 공장·물류창고·기타 사례 4건.",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 2100,
+        "summary": "기존 요약 유지, 이전 주제 페이지 링크를 갱신 소절 첫머리에 두고, VDA 5050 3.0.0 의 끊김 전제와 base 끝까지 수행, 관제·로봇 기능 분담, Open-RMF 중앙 교통 일정, QoS 0·1 구분과 주문 갱신 번호를 덧붙인다. 연결이 끊긴 로봇은 base 의 마지막 노드까지 주문을 수행한다. [사실][^ref-031]",
+        "planned_findings": [
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f7",
+          "f10",
+          "f18"
+        ]
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 1650,
+        "summary": "기존 요약 유지, 이전 주제 페이지 링크, VDA 5050 3.0.0 의 버전 규칙(주·부·수 버전 모두 '대체로' 한정)·범위 제외, Open-RMF 플릿 제어 수준과 책의 폐기 예고 서술(추정), rmf-web API 서버의 M2M 설정·빈 권한 그룹·사용자 비동기화·프록시 설정. VDA 5050 3.0.0 은 외부 IT 시스템 인터페이스와 사이버보안 조치를 범위 밖에 둔다. [사실][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f6",
+          "f9",
+          "f11",
+          "f12",
+          "f13",
+          "f14"
+        ]
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 150,
+        "summary": "변경 없음. 클라우드 오프로딩 두 연구와 플릿 관리 구조 두 연구(초록 기준). [사실][^ref-304][^ref-1031][^ref-1027][^ref-308]",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+        "budget_chars": 1700,
+        "summary": "기존 표·원문 문장 유지에 더해, 외부 이벤트 전달 보장과 외부 API 의 인증·권한 범위를 ROP 몫으로 보는 추정과 base·horizon 해제 정책의 경계를 덧붙인다. 업무 시스템에 내보내는 웹훅·이벤트의 전달 보장은 ROP 외부 API 가 따로 정해야 할 것으로 보인다. [추정][^ref-031]",
+        "planned_findings": [
+          "f3",
+          "f6",
+          "f7",
+          "f8",
+          "f15"
+        ]
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 150,
+        "summary": "변경 없음. 연결 영역 목록은 주제 페이지에 있다.",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1250,
+        "summary": "기존 요약 유지, 이전 주제 페이지 링크, oq-206·oq-207·oq-208·oq-300 의 부분 근거(상태 열림 유지), 미조사 질문, 새 질문 1건. 확인한 두 출처는 폐기 예고 기간을 정하지 않는다. [추정][^ref-031][^ref-004]",
+        "planned_findings": [
+          "f8",
+          "f16",
+          "f17",
+          "f18"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09",
+        "patches": [
+          {
+            "section": "6. 대표 접근법과 기술",
+            "action": "append",
+            "frontmatter": {
+              "last_run": "2026-10-09"
+            },
+            "content": "\n### 연결이 끊길 때 판단을 어디에 두는가 (2026-10-09 갱신)\n\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md)에 있다.\n\n로봇–관제 인터페이스인 [VDA 5050](../../glossary/vda-5050.md) 3.0.0 은 무선망에서 연결 끊김과 메시지 손실이 생길 수 있다는 것을 통신 전반의 전제로 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] 연계 대상: 로봇 자체 지능·제어 — 이 명세에서 브로커와 연결이 끊긴 로봇은 주문 정보를 유지하고 base(관제가 해제(released)한 노드·엣지 구간. 용어집의 [해제 구역](../../glossary/release-zone.md)과는 다른 개념)의 마지막 노드까지 주문을 수행한다. [사실][^ref-031] 같은 명세는 [메시지 큐잉 원격 측정 전송](../../glossary/mqtt.md)(Message Queuing Telemetry Transport, MQTT)이 비동기이고 무선 전송을 믿을 수 없으므로 관제가 이미 해제한 base 를 바꿀 수 없고 실행된 것으로 간주해야 하며, 주문 취소([cancelOrder](../../glossary/vda-5050-cancel-order.md))도 같은 이유로 신뢰할 수 없다고 본다. [사실][^ref-031]\n\nVDA 5050 3.0.0 은 판단을 관제와 로봇으로 나눈다. 관제의 최소 기능으로는 주문 배정, 선 유도(line-guided) 로봇의 경로 계산·안내, 교착 탐지·해소, 에너지 관리, 교통 통제, 문·게이트·승강기 같은 주변 시스템과의 통신, 통신 오류 탐지·해소를 든다. [사실][^ref-031] 명세는 관제에 교통 통제 기능을 요구하되 그 로직은 정하지 않고 범위 밖에 둔다. [사실][^ref-031] 연계 대상: 로봇 자체 지능·제어 — 위치 추정·경로 실행·동작 실행·상태 연속 전송은 같은 명세가 로봇의 기능으로 드는 것이다. [사실][^ref-031]\n\nOpen-RMF 의 교통 일정은 플랫폼 중립의 중앙 데이터베이스로, 배치된 모든 플릿 관리자가 예상 경로를 보고하고, 충돌이 예상되면 플릿 관리자들이 협상하며 시스템 통합사가 둔 제3자 판정자가 제안을 고른다(발행일 미확인, 2026-10-09 확인). [사실][^ref-004] 긴급 작업은 의도적으로 충돌을 올려 협상을 강제할 수 있다. [사실][^ref-004] 교통 조율 자체의 본론은 [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)에서 다루고, 이 영역에서는 중앙 조율을 어디에 둘지 정하는 근거로만 쓴다.\n\n두 자료를 함께 보면, ROP 의 판단 배치 정책은 중앙 조율 서비스를 클라우드와 현장 서버 가운데 어디에 둘지와 함께, 연결이 끊긴 동안 로봇이 계속 갈 수 있는 base 의 길이를 정해야 할 것으로 보인다(구축자 판단, oq-206 부분 근거). [추정][^ref-031][^ref-004] base 의 길이는 관제의 교통 통제 기능에 걸치므로 27. 다중 로봇 경로·교통 관리 — MAPF와 [42. 분산 시스템·통신·컴퓨팅 구조](distributed-systems-communication-and-computing.md)에서 함께 다룬다.\n\n### 메시지 전달 보장 수준 (2026-10-09 갱신)\n\nVDA 5050 3.0.0 은 통신 부하를 줄이려고 order·instantActions·state·factsheet·zoneSet·responses·visualization 주제에는 MQTT 서비스 품질(Quality of Service, QoS) 0(최선 노력)을, connection 주제에는 QoS 1(최소 한 번)을 쓰게 한다. [사실][^ref-031] 로봇이 예기치 않게 끊기면 브로커가 [유언 메시지](../../glossary/mqtt-last-will.md)(last will)로 다른 구독자에게 알린다. [사실][^ref-031]\n\n주문 갱신은 같은 orderId 에 orderUpdateId 를 늘려 보낸다. [사실][^ref-031] 로봇은 같은 orderUpdateId 로 같은 내용이 다시 오면 무시하고, 내용이 다르면 SAME_ORDER_UPDATE_ID, 더 낮은 orderUpdateId 면 OUTDATED_ORDER_UPDATE 경고를 보고해 재전송과 순서 뒤바뀜을 메시지 수준에서 걸러낸다. [사실][^ref-031] 명령 실행 신뢰성의 본론은 [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md)에서 다룬다.\n\n클라우드 브로커를 쓸 때 VDA 5050 3.0.0 은 클라우드 사업자가 강제하는 주제 구조가 있으므로 MQTT 주제 단계 구조를 엄격히 정하지 않는다. [사실][^ref-031] 클라우드 브로커는 구조를 개별 조정할 수 있으나 제안 구조를 대략 따라야 하며, 주제 이름(order·state 등)은 필수다. [사실][^ref-031]\n"
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "append",
+            "content": "\n### 버전 규칙·범위와 오픈소스 API 의 현재 서술 (2026-10-09 갱신)\n\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md)에 있다.\n\n- **VDA 5050 3.0.0** — [의미적 버전 관리](../../glossary/semantic-versioning.md)를 써서 주 버전(x.0.0)은 대체로(typically) 새 필수 필드 도입 같은 하위 호환을 깨는 변경에, 부 버전(3.x.0)은 대체로 선택 매개변수 추가 같은 새 기능에, 수 버전(3.0.x)은 대체로 문서 오탈자 같은 작은 수정에 쓴다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] VDA 5050 3.0.0 이 지역(local) 브로커용으로 제안하는 주제 구조에서는 MQTT 주제 경로에 'v' 를 붙인 주 버전(예 v3)을 넣는다. 이 주제 구조는 엄격한 규정이 아니며 클라우드 브로커는 조정할 수 있다([대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md)). [사실][^ref-031] 명세는 주변 설비·기반 시설·외부 IT 시스템과의 인터페이스, 안전 요구사항, 교통 관리 로직, 운영 책임 배분, 사이버보안 조치를 범위 밖에 둔다. [사실][^ref-031]\n- **Open-RMF 플릿 어댑터** — Open-RMF 핵심 문서는 플릿 어댑터를 [플릿 제어 수준](../../glossary/fleet-control-level.md) 네 가지(Full Control·Traffic Light·Read Only·No Interface)로 나누고, Full Control 에는 재사용 C++ API(파이썬 바인딩 포함)를 제공한다(발행일 미확인, 2026-10-09 확인). [사실][^ref-004] 같은 문서인 Open-RMF 책 rmf-core 장(작성 시점 미확인)은 Read Only 용 예비 ROS 2 메시지 API 가 향후 판에서 C++ API 로 대체되어 폐기될 예정이고 Traffic Light 용 재사용 API 는 아직 구현되지 않았다고 서술하지만, 이는 책의 서술이며 현재 배포판의 상태는 미확인이다. [추정][^ref-004]\n- **Open-RMF rmf-web API 서버** — [기존 주제 페이지](../../topics/2026/2026-09-30-area41-s7.md)에 있는 서술(신원 제공자 기반 인증, 역할·동작·권한 그룹 판정)에 더해, 2026-10-09 확인한 README 에는 OAuth 2.0 client_credentials(기계 간, M2M) 흐름에서 신원 제공자가 표준 클레임을 빼고 네임스페이스 붙은 클레임만 주는 경우를 위한 선택 설정 preferred_username_claim_namespace 가 있다. [사실][^ref-762] README 의 TODO 절 기준으로, 자원의 권한 그룹을 정하는 방식이 아직 정해지지 않아 현재는 모든 자원이 기본 빈 그룹('')에 들어간다(코드 동작으로는 확인하지 않음). [사실][^ref-762] 서버는 자체 사용자·역할·권한 데이터베이스를 신원 제공자와 동기화하지 않으므로, rmf-server 에서 사용자를 지워도 로그인만 요구하는 반보호 API 접근은 막지 못하고 로그인 자체를 막으려면 신원 제공자에서 사용자를 지워야 한다. [사실][^ref-762] 역방향 프록시 뒤에서 쓸 때는 public_url 을 공개 주소로 설정하고 프록시가 경로 접두어를 제거하게 해야 한다. [사실][^ref-762]\n"
+          },
+          {
+            "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+            "action": "append",
+            "content": "\n### 전달 보장과 외부 API 의 인증·권한 범위 (2026-10-09 갱신)\n\n로봇–관제 표준인 VDA 5050 3.0.0 은 외부 IT 시스템과의 인터페이스와 사이버보안 조치를 범위 밖에 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031] 사이버보안은 [52. 통신 보호·위협 관리·감사](../security-and-privacy/communication-protection-threat-management-and-audit.md), 안전 요구는 [M. 안전](../safety/index.md) 쪽에서 다루며 이 영역에서는 표준 범위 밖이라는 사실만 적는다.\n\n- **외부 이벤트 전달 보장**: VDA 5050 은 주문 갱신 번호(orderUpdateId)로 재전송·순서 문제를 다루지만 대부분 주제에 QoS 0 최선 노력 전달을 쓰고 외부 IT 시스템 인터페이스를 범위 밖에 둔다. 그래서 업무 시스템에 내보내는 웹훅·이벤트의 전달 보장(재시도·순서·중복 제거)은 ROP 의 외부 API 가 따로 정해야 할 것으로 보인다(구축자 판단, oq-208 부분 근거). [추정][^ref-031]\n- **외부 API 의 인증·권한 범위**: rmf-web API 서버는 README 기준으로 권한 그룹 결정이 미구현이고 사용자 해지가 신원 제공자에 달려 있다. 그래서 Open-RMF 웹 API 를 ROP 외부 API 의 기반으로 쓰면 고객·현장별 자원 구분과 외부 계정 해지를 ROP 가 신원 제공자 연동과 권한 그룹 규칙으로 직접 채워야 할 것으로 보인다(구축자 판단). [추정][^ref-762] 고객·현장 격리 자체는 [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md)에서 다룬다.\n- **연결이 끊긴 동안의 실행**: 연계 대상: 로봇 자체 지능·제어 — 연결이 끊긴 로봇이 base(관제가 해제한 노드·엣지 구간)의 끝까지 수행하는 동작과 위치 추정·경로 실행은 로봇 쪽 기능이다. [사실][^ref-031] ROP 몫은 base·horizon 을 얼마나 해제할지 정하는 정책과 그 인터페이스로 한정되는 것으로 보인다(구축자 판단). [추정][^ref-031]\n"
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "append",
+            "content": "\n### 부분 근거와 새 질문 (2026-10-09 갱신)\n\n이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-09-30-area41-s11.md)에 있다.\n\n아래 질문은 이번 실행에서 부분 근거만 얻었으므로 모두 열림 상태를 유지한다.\n\n- **oq-206** (상태: 열림) 클라우드 연결이 끊길 때 로봇과 현장 서버가 어디까지 계속 동작하는가 — VDA 5050 의 base 끝까지 수행과 Open-RMF 의 중앙 교통 일정을 함께 보면, 중앙 조율 위치와 base 길이를 함께 정해야 할 것으로 보인다([대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md), 구축자 판단). [추정][^ref-031][^ref-004] 네이버 ARC 의 끊김 동작은 여전히 미확인이다.\n- **oq-207** (상태: 열림) 외부 API 의 버전 관리·폐기 예고 정책 — 이번에 확인한 두 출처(VDA 5050 3.0.0 명세, Open-RMF 책 rmf-core 장)에서는 버전 표기 규칙과 '향후 판에서 폐기' 같은 예고 문구는 있으나 폐기 예고 기간이나 구판 지원 기간은 정하지 않는다. [추정][^ref-031][^ref-004] 관련 개념은 용어집 [API 폐기 정책](../../glossary/api-deprecation-policy.md)에 있다.\n- **oq-208** (상태: 열림) 웹훅·이벤트의 전달 보장 공통 기준 — 로봇–관제 쪽은 QoS 0·1 구분과 orderUpdateId 로 일부를 다루지만 외부 IT 인터페이스는 범위 밖이어서, 외부 이벤트 전달 보장은 ROP 가 정해야 할 것으로 보이며 공통 기준은 확인되지 않았다([41. 플랫폼 아키텍처·외부 API](../../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) 페이지 9절, 구축자 판단). [추정][^ref-031]\n- **oq-300** (상태: 열림) 재시작 뒤 진행 중 작업 상태 유지 — FogROS2-FT 의 다중 클라우드 복제는 상태 없는(stateless) 로봇 서비스를 대상으로 하므로, 이 방법만으로는 답이 되지 않는 것으로 보인다. [추정][^ref-1031]\n- **새 질문** (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-17) Open-RMF 웹 API 서버처럼 권한 그룹 자동 결정이 미구현인 오픈소스 관제 API 위에서 고객·현장별 자원 격리를 API 수준으로 구현한 공개 사례나 설계 문서가 있는가? 근거는 README TODO 절의 빈 권한 그룹 서술이다. [사실][^ref-762]\n- oq-209(국내 TTA·KS 참조 구조 표준), oq-267(과금 단위), oq-301(OpenAPI·AsyncAPI 기반 적합성 시험 도구)은 이번 실행에서 조사하지 못했다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "content": "[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-10-09\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\n[^ref-304]: Ichnowski, J., Chen, K., Dharmarajan, K. 외 (arXiv), FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2, 2022-05, https://arxiv.org/abs/2205.09778, 접근일 2026-09-30\n[^ref-1023]: NAVER Corp., 로보틱스 l NAVER Corp., 미확인, https://www.navercorp.com/tech/robotics, 접근일 2026-09-30\n[^ref-937]: Changi General Hospital — CHART (Centre for Healthcare Assistive & Robotics Technology), ROMI-H, 미확인, https://www.cgh.com.sg/chart/projects/romi-h, 접근일 2026-09-30\n[^ref-1024]: AsyncAPI Initiative, AsyncAPI Specification 3.1.0, 미확인, https://www.asyncapi.com/docs/reference/specification/v3.1.0, 접근일 2026-09-30\n[^ref-1025]: OpenAPI Initiative, OpenAPI Specification v3.1.0, 2021-02-15, https://spec.openapis.org/oas/v3.1.0, 접근일 2026-09-30\n[^ref-308]: Brorsson, E., Ceder, K., Zhang, Z. 외 (arXiv), Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives, 2025-12, https://arxiv.org/abs/2512.15215, 접근일 2026-09-30\n[^ref-1027]: Singhal, A., Kejriwal, N., Pallav, P., Choudhury, S., Sinha, R., & Kumar, S. (arXiv), Managing a Fleet of Autonomous Mobile Robots (AMR) using Cloud Robotics Platform, 2017-06, https://arxiv.org/abs/1706.08931, 접근일 2026-09-30\n[^ref-1028]: Open Robotics (open-rmf), rmf_api_msgs — README, 미확인, https://github.com/open-rmf/rmf_api_msgs, 접근일 2026-09-30\n[^ref-774]: Mobile Industrial Robots (MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-30\n[^ref-1030]: Locus Robotics, Seamless Integrations with LocusOne Robotics, 미확인, https://locusrobotics.com/locusone/automated-warehouse-software/integrations, 접근일 2026-09-30\n[^ref-1031]: Chen, K., Hari, K., Chung, T. 외 (IROS 2024, arXiv), FogROS2-FT: Fault Tolerant Cloud Robotics, 2024-12, https://arxiv.org/abs/2412.05408, 접근일 2026-09-30"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-09 | 41. 플랫폼 아키텍처·외부 API | 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) | run 2026-10-09-17",
+    "index_updates": {
+      "home_recent": "2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 연결 끊김 때 판단 배치(VDA 5050 base·Open-RMF 중앙 교통 일정), 메시지 전달 보장 수준, 외부 API 인증·권한 범위 갱신(신뢰도 low)",
+      "category_recent": "2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 6·7·9·11절 갱신 — VDA 5050 3.0.0 버전 규칙·QoS·범위 제외, rmf-web API 서버 M2M 설정·빈 권한 그룹, 외부 이벤트 전달 보장 추정, 열린 질문 부분 근거",
+      "area_recent": "2026-10-09 — 41. 플랫폼 아키텍처·외부 API: 6절 끊김 때 판단 배치·전달 보장 수준, 7절 VDA 5050 버전 규칙·Open-RMF 플릿 제어 수준·rmf-web 인증 설정, 9절 전달 보장·권한 범위 추정, 11절 oq-206·oq-207·oq-208·oq-300 부분 근거와 새 질문 1건 (실행 2026-10-09-17)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "mqtt-quality-of-service-level",
+        "term_ko": "MQTT 서비스 품질 수준",
+        "term_en": "MQTT Quality of Service (QoS) Level",
+        "definition": "MQTT 에서 메시지 전달 보장 수준을 고르는 설정으로, VDA 5050 3.0.0 은 대부분 주제에 최선 노력(QoS 0)을, 연결 상태 주제에 최소 한 번(QoS 1)을 쓴다.",
+        "description": "VDA 5050 3.0.0 은 통신 부하를 줄이려고 order·state 등 주제에 QoS 0 을, connection 주제에 QoS 1 을 쓴다. 이번 출처는 QoS 0·1 만 다루며 그 밖의 수준은 이 항목에서 다루지 않는다.",
+        "related_areas": [
+          41,
+          20,
+          42,
+          29
+        ],
+        "sources": [
+          "ref-031"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "oauth2-client-credentials-grant",
+        "term_ko": "클라이언트 자격 증명 흐름",
+        "term_en": "OAuth 2.0 Client Credentials Grant (Machine-to-Machine)",
+        "definition": "사람 사용자 없이 서비스나 기계가 자기 자격 증명으로 접근 토큰을 받아 API 를 부르는 OAuth 2.0 인가 방식이다.",
+        "description": "Open-RMF rmf-web API 서버 README 는 이 흐름(M2M)에서 신원 제공자가 표준 클레임 대신 네임스페이스 붙은 클레임만 주는 경우를 위한 선택 설정 preferred_username_claim_namespace 를 둔다(2026-10-09 확인).",
+        "related_areas": [
+          41,
+          51
+        ],
+        "sources": [
+          "ref-762"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-004",
+        "org": "Open Robotics",
+        "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 핵심 구성(교통 일정·협상, 작업 계획)과 플릿 어댑터 제어 수준 4종, 수준별 API 제공 상태를 설명하는 공식 문서. 수준별 API 제공 상태 서술은 작성 시점 미확인으로 현재 배포판과 다를 수 있다.",
+        "cited_by": [
+          "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "플릿 관제와 이동 로봇 사이 제조사 중립 통신 인터페이스 VDA 5050 3.0.0 명세. MQTT·JSON 전송, 버전 규칙, QoS, 주문·갱신·취소, 범위 제외 항목을 정한다.",
+        "cited_by": [
+          "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-762",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — packages/api-server/README.md",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 웹 API 서버의 설정, 지원 DB, 프록시 운용, OpenID Connect 인증과 역할·권한 그룹 인가, M2M 클레임 설정, 사용자 데이터 비동기화 방침을 설명하는 README.",
+        "cited_by": [
+          "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md"
+        ],
+        "source_unopened": false
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "Open-RMF 웹 API 서버처럼 권한 그룹 자동 결정이 미구현인 오픈소스 관제 API 위에서 고객·현장별 자원 격리를 API 수준으로 구현한 공개 사례나 설계 문서가 있는가?",
+        "areas": [
+          41,
+          51
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [],
+    "additional_research_requests": [
+      "7절 Open-RMF 플릿 어댑터: 현재 Open-RMF rmf_ros2 배포판(latest API 문서)에서 Traffic Light 용 재사용 API 의 제공 여부와 Read Only 예비 ROS 2 메시지 API 의 폐기 여부·시점을 공식 문서로 확인해 달라 — 책 rmf-core 장의 서술(작성 시점 미확인)을 [추정]으로 강등했고 현재 상태는 미확인으로 두었다.",
+      "11절 oq-209: 국내 클라우드 로봇·이기종 로봇 통합관제 참조 구조나 외부 API 를 정한 TTA·KS 표준 여부를 한국어로 검색해 달라 — 이번 브리프는 검색 0회였다.",
+      "11절 oq-301: OpenAPI·AsyncAPI 로 기술한 외부 API 를 연동 적합성 시험 기준으로 쓴 공개 시험 도구·절차를 조사해 달라.",
+      "11절 oq-267: 다중 제조사 오케스트레이션 플랫폼의 과금 단위(로봇당·작업당·현장당·구독) 비교 자료를 조사해 달라.",
+      "5절 적용 사례: 상업 시설·가정·실외 현장에서 플랫폼 배치(클라우드·현장 서버·로봇)나 외부 API 가 드러난 사례가 필요하다 — 현재 사례는 병원·제조 공장·물류창고·기타 네 건뿐이다.",
+      "7·11절 VDA 5050: 3.0.0 명세의 발행일과 원문 마지막 약 7,700자(검증자 미확인 구간)에 폐기·구판 지원 규정이 있는지 확인해 달라.",
+      "7절 rmf-web: README 의 preferred_username_claim_namespace(M2M) 설정이 언제 들어갔는지 저장소 변경 이력으로 확인해 달라 — 리서치·검증 모두 확인하지 못해 '2026-10-09 확인한 README 에 있다'로만 썼다.",
+      "용어집: 기존 'mqtt' 항목의 정의가 QoS 수준 설명을 이미 포함하는지 확인해 달라 — 입력에 정의 본문이 없어 'MQTT 서비스 품질 수준'을 QoS 0·1 만으로 새로 등록 제안했다. 중복이면 퍼블리셔 단계에서 합치거나 제외한다."
+    ],
+    "fixes_applied": [
+      "f1: 7절 갱신 소절에서 'v' 붙은 주 버전 표기를 'VDA 5050 3.0.0 이 지역(local) 브로커용으로 제안하는 주제 구조에서'로 한정하고 엄격한 규정이 아니며 클라우드 브로커는 조정할 수 있다고 덧붙였으며, 주·부·수 버전 의미에 '대체로(typically)'를 살렸다.",
+      "f2: 6절 '메시지 전달 보장 수준' 소절에서 QoS 0 사용 이유를 '통신 부하를 줄이려고'로 쓰고, 무선망의 끊김·손실은 6절 첫 소절 첫 문장에서 통신 전반의 전제로 따로 썼다.",
+      "f5: 6절에서 클라우드 브로커는 구조를 개별 조정할 수 있으나 제안 구조를 대략 따라야 하며 주제 이름은 필수라는 조건을 함께 썼다.",
+      "f7: 6절에서 '선 유도(line-guided) 로봇의 경로 계산·안내'로 고치고, 로봇 기능 목록 앞에 '연계 대상: 로봇 자체 지능·제어'를 표시했으며, 교통 통제는 '관제에 기능을 요구하되 그 로직은 정하지 않고 범위 밖에 둔다'로 썼다.",
+      "f9: 7절에서 네 플릿 제어 수준과 Full Control C++ API(파이썬 바인딩)는 [사실]로, Read Only API 폐기 예정·Traffic Light 재사용 API 미구현은 'Open-RMF 책 rmf-core 장(작성 시점 미확인)의 서술'로 밝혀 [추정]으로 강등하고 현재 상태를 미확인으로 두었으며, 현재 상태 확인을 additional_research_requests 로 넘겼다.",
+      "f17: 11절 oq-207 항목에서 범위를 '이번에 확인한 두 출처(VDA 5050 3.0.0 명세, Open-RMF 책 rmf-core 장)에서는'으로 한정하고 용어집 [API 폐기 정책](api-deprecation-policy) 링크를 달았으며, 위키 전체에 근거가 없다고 쓰지 않고 상태를 열림으로 유지했다.",
+      "f11: 7절에서 M2M 네임스페이스 클레임 설정을 '2026-10-09 확인한 README 에 있다'로만 쓰고 새로 추가됐다고 쓰지 않았다.",
+      "f12: 7절에서 빈 권한 그룹 서술을 'README 의 TODO 절 기준'으로 밝히고 코드 동작으로는 확인하지 않았다고 적었으며, 9절에서도 'README 기준'으로 썼다.",
+      "f11·f12·f14 중복: OIDC·JWT 독립 검증, 역할·동작·권한 그룹 구조, /docs API 정의는 새 문장으로 반복하지 않고 기존 주제 페이지의 서술로만 가리켰으며, 새로 더한 것은 M2M 설정·빈 그룹·사용자 비동기화·프록시 설정뿐이고 기존 각주 [^ref-762]를 재사용했다.",
+      "f1·f9 중복: 주제 페이지의 기존 서술을 지우지 않고 7절에 갱신 소절을 덧붙이는 방식으로 반영했으며 새 각주를 만들지 않고 [^ref-031]·[^ref-004]를 재사용했다.",
+      "f3·f18 용어: 6절에서 처음 나올 때 'base(관제가 해제(released)한 노드·엣지 구간. 용어집의 해제 구역과는 다른 개념)'로 쓰고 해제 구역 용어집 링크를 달아 구분했다.",
+      "f9 표기: 7절에서 '제어 수준'을 용어집 표기 [플릿 제어 수준](fleet-control-level) 링크로 통일했다.",
+      "f3·f7 범위: 6절과 9절에서 끊긴 로봇이 base 끝까지 수행하는 동작과 위치 추정·경로 실행을 '연계 대상: 로봇 자체 지능·제어'로 표시하고, 9절에서 ROP 몫을 base·horizon 해제 정책과 그 인터페이스로 한정했다.",
+      "f8·f15·f18: 9절과 11절에서 [추정]으로 두고 '구축자 판단'을 밝혔으며, f15 는 51. 인증·권한·격리, f6 의 사이버보안 제외는 52. 통신 보호·위협 관리·감사에 링크하고, f4 는 29. 명령·작업 실행의 신뢰성, f10·f18 은 27. 다중 로봇 경로·교통 관리 — MAPF·42. 분산 시스템·통신·컴퓨팅 구조에 번호와 이름을 함께 써서 연결만 했다.",
+      "11절 열린 질문: oq-206(f18)·oq-207(f1·f9·f17)·oq-208(f2·f4·f8)·oq-300(f16)은 부분 근거만 적고 상태를 열림으로 유지했으며(open_question_updates 에 상태 변경을 내지 않음), 새 질문 1건을 관련 영역 41·51 로 open_question_updates 에 등록했다.",
+      "용어 후보 'MQTT 서비스 품질 수준': 정의에서 QoS 2(정확히 한 번)를 빼고 QoS 0·1 만 남겼다. 기존 'mqtt' 항목의 정의 본문이 입력에 없어 같은 정의인지 확인하지 못했으므로 additional_research_requests 에 중복 확인을 요청했다.",
+      "각주: 13절 패치(각주 정의만 교체)로 [^ref-004]·[^ref-031]·[^ref-762]를 참고문헌 색인 줄 형식(ref-762 제목 'rmf-web — packages/api-server/README.md')과 접근일 2026-10-09 로 고치고, [^ref-1031]은 기존 줄(접근일 2026-09-30) 그대로 두었으며 reference_updates 에 ref-1031 을 넣지 않아 접근일을 바꾸지 않았다.",
+      "5절·현장 유형 매트릭스: 현장 유형이 없는 f7·f12 를 사례 칸에 넣지 않았고, 5절을 패치하지 않았으며 site_matrix_updates 를 빈 배열로 냈다.",
+      "차등 갱신: 6·7·9·11절은 기존 요약 문장과 주제 페이지 링크를 지우지 않고 append 로 갱신 소절을 덧붙였다. 각주 지시 이행을 위해 13절 각주 정의만 replace 로 함께 보냈고 그 밖의 절은 보내지 않았다.",
+      "2차: 6·7·11절 기존 주제 페이지 링크 유실 — 6·7·11절 append 패치의 갱신 소절 첫머리(### 제목 바로 아래)에 각각 '이전 서술은 주제 페이지 [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-09-30-area41-s6.md)/[… — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area41-s7.md)/[… — 열린 질문](../../topics/2026/2026-09-30-area41-s11.md)에 있다' 문장을 넣어 분리 뒤 주제 페이지 본문에도 따라가게 했다.",
+      "2차: 7절 rmf-web 항목 — '주제 페이지에 있는 기존 서술'을 '[기존 주제 페이지](../../topics/2026/2026-09-30-area41-s7.md)에 있는 서술'로 바꿔 링크했다.",
+      "2차: 분리 주제 페이지 안의 절 참조 — 7절의 '(6절)'과 11절 oq-206 의 '(6절, 구축자 판단)'을 [대표 접근법과 기술] 링크로 바꾸고, 11절 oq-208 의 '(9절, 구축자 판단)'을 '[41. 플랫폼 아키텍처·외부 API] 페이지 9절'로 원 페이지를 밝혀 고쳤다. 링크 경로는 지시의 '2026-10-09-area41-s6.md' 대신 세부영역 폴더와 docs/topics/2026/ 양쪽에서 같은 대상을 가리키는 '../../topics/2026/2026-10-09-area41-s6.md'(원 페이지는 '../../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md')로 썼다 — 패치가 세부영역 페이지에 들어간 뒤 코드가 주제 페이지로 옮기므로 분리 전후 모두 유효하게 하기 위해서다.",
+      "2차: f1 한정어 — 7절 VDA 5050 항목에서 주 버전에 '대체로(typically)'를 유지하고 부 버전·수 버전 설명에도 '대체로'를 붙였다.",
+      "2차: last_run — 6절 패치의 frontmatter 필드로 세부영역 페이지 프런트매터 last_run 을 2026-10-09 로 고쳤다."
+    ]
+  },
+  "ttft_ms": 40664,
+  "type": "result",
+  "duration_ms": 146730,
+  "uuid": "f39447cc-04c5-4230-ac85-dc57464b3fd9",
+  "ttft_stream_ms": 1113,
+  "time_to_request_ms": 137,
+  "time_to_request_phases_ms": {
+    "other": 34,
+    "system_prompt": 24,
+    "resume_other": 0,
+    "process_user_input": 8,
+    "input_attachments": 15,
+    "input_hooks": 3,
+    "tool_pool_refresh": 3,
+    "init_message": 10,
+    "engine_pickup": 2,
+    "message_prep": 2,
+    "model_config_wait": 1,
+    "autocompact": 3,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 4,
+    "message_normalization": 2,
+    "client_creation": 9,
+    "request_build": 16
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 87,
+  "time_to_request_cpu_ms": 207,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 8,
+    "cpu_ms": 17,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1114,
+  "time_to_request_from_spawn_ms": 21599720,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791527866908.1636,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 148.4
+}
