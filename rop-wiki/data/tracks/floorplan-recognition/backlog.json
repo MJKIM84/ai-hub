@@ -185,9 +185,9 @@
       "question": "물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가?",
       "stage": 1,
       "origin": "f18",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-21",
+      "answer_link": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-05",
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-05"
     },
@@ -218,9 +218,9 @@
       "question": "물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가?",
       "stage": 1,
       "origin": "f21",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-21",
+      "answer_link": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-06",
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-11"
     },
@@ -273,7 +273,7 @@
       "question": "국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가? (q1-04 에서 파생)",
       "stage": 1,
       "origin": "f17",
-      "status": "열림",
+      "status": "조사 중",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-25",
@@ -619,6 +619,28 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-84"
+    },
+    {
+      "id": "q2-10",
+      "question": "물류센터·창고 평면도 인식에 필요한 학습 데이터(랙·도크·충전 구역·작업 스테이션·엘리베이터 라벨, 규모)를 어떻게 마련하는가 — 소량 직접 주석으로 미세조정, 절차적 합성 평면도 사전학습, 산업단지를 포함한 비주거 CAD 데이터셋(ArchCAD-400K 등) 활용 가운데 무엇이 가능하며 각각의 이용 조건(비상업 제한)은 어떤가? (q1-05 에서 파생)",
+      "stage": 2,
+      "origin": "f9",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-21"
+    },
+    {
+      "id": "q3-12",
+      "question": "BIM 에서 층·문·계단을 자동 추출하는 로봇 밖 도구(실내 GIS 가져오기, 피난 시뮬레이터)의 출력을 ROP 공간 그래프의 입력 초안으로 그대로 쓸 수 있는가, 쓴다면 엘리베이터·충전 위치·작업 스테이션은 어떤 정보로 보완하는가? (q1-06 에서 파생)",
+      "stage": 3,
+      "origin": "f17",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-21"
     }
   ]
 }

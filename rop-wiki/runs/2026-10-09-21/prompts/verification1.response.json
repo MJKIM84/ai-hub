@@ -1,0 +1,383 @@
+{
+  "duration_api_ms": 301610,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.767909900000001,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 457777,
+    "cache_read_input_tokens": 2747404,
+    "output_tokens": 23254,
+    "output_tokens_details": {
+      "thinking_tokens": 11712
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 457777,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 10890,
+        "cache_read_input_tokens": 540026,
+        "cache_creation_input_tokens": 6545,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6545
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 208151,
+      "outputTokens": 20540,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 6,
+      "costUSD": 0.0910851,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12512,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 23254,
+      "cacheReadInputTokens": 2747404,
+      "cacheCreationInputTokens": 457777,
+      "webSearchRequests": 0,
+      "costUSD": 4.6768247999999994,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11712,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 24,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-21\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv HTML v3 를 열어 대조했다. 주거 14%, 사무 단지·산업단지를 포함한 대형 공공·상업 건물, 27개 범주(Door·Stairs 포함)가 원문에 있다. 엘리베이터·물류창고·병원은 언급되지 않는다. 단일 출처다.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록에 'over 10,000', 'ranging from residential to commercial buildings', '30 object categories' 가 있다(v1 2021-05-15, v2 2021-11-29). 기존 아이디어 페이지 3절은 프로젝트 페이지(ref-066)를 근거로 15,663장·35개 범주라고 적는다. 범주 수가 서로 다르므로 두 값을 함께 제시해야 한다(수정 지시 참조).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: AI Hub 페이지를 열어 대조했다. 48,033장(아파트 38,521, 연립다세대 4,859, 단독주택 4,653), 구조 8·공간 12·객체 5개 클래스, '내국인만 데이터 신청이 가능합니다'가 있고 상업 이용 조항은 페이지에 없다. 1.0 은 2023-07-26, 1.1 은 2023-12-15 에 공개됐고 마지막 변경은 2025-05-08 이다. q2-04·oq-197 의 부분 근거가 되지만 해결로 판정하지는 않는다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검증 단계에서도 403). 검색 결과에서 Aalto 석사 논문의 초록 요약을 확인했다. 500장, Kalervo 외(2019a) 모델, 실제 건축 웹 응용에서 수집, 수작업 32장·사용자 주석 298장, 사용자 주석 쪽이 불일치 때문에 더 나쁨이 모두 초록과 일치한다. 저자·연도·성능 수치는 미확인이고 단일 출처라 신뢰도 low 를 유지한다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 연구실 페이지를 열어 대조했다(Automation in Construction, 2022-01). 1995~2021년 검토, 'most research relies on a particular plan style', 표준 지표 부재, 공개 데이터셋 제한이 초록과 일치한다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록에 0.96(아홉 단계 과제), 작은 지도·단순 과제에서 더 잘함, 'its performance drops in large open areas' 가 있다. v1 은 2024-09-19, v2 는 2025-11-24 개정이다. 기준일 2024-09 는 v1 기준이다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록에 'up to an order of magnitude performance degradation', 저데이터 설정에서 'up to 40%' 개선이 있다(v1 2026-07-07, v2 2026-09-21). 이 결과는 인식이 아닌 생성 과제이며 주거 데이터셋 사이의 비교이므로, 물류 도면 인식에 대해서는 유추 근거로만 쓴다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록에 'nearly 20K floorplan images', LLM·다중 모달 기반 모델로 정리, 'diverse building types, locations, and data formats', WACV 2025 채택이 있다. 저자가 확인됐다(Ganon, Alper, Mikulinsky, Averbuch-Elor). 브리프의 '저자 미확인'은 고쳐야 한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 종합을 유지한다(신뢰도 low). '둘 다 비상업 이용 제한'에서 FloorPlanCAD 라이선스(CC BY-NC 4.0)는 ref-067 초록이 아니라 ref-066(프로젝트 페이지)이 근거이므로 각주를 보완해야 한다. 부재 확인이 아님을 명시한 점은 적절하다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(data/source_texts/ref-079.txt)와 대조했다. 배경 이미지를 캔버스로 씀, 정점 속성 Add, 승강기 대화상자의 이름·기준층·칸 중심 좌표, 로봇 지도 정합 'Through visual feedback' 가 모두 원문에 있다. 원문 표기는 'backgroud' 오탈자이므로 직접 인용 시 주의한다. 원문 텍스트로 열람했는데 fetched_via 는 github_raw, fetch_url 은 null 로 적혀 표시가 서로 맞지 않는다(경미).\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Esri 문서를 열어 대조했다. Rooms·Stairs·Shaft Openings → Units, Doors·Stairs·Walls·Windows 등 → Details, 'The source BIM data must be georeferenced before running the tool', 출력을 실내 경로망 생성에 쓸 수 있음이 문서에 있고 엘리베이터 범주는 없다. 벤더 주장 [추정] 표기가 적정하다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Pathfinder 2026-1 문서를 열어 대조했다. 층·문·계단 자동 추출, 형상 제외, 비바닥 슬래브 삭제, Close Gaps, 재실자·출구 수동 배치가 문서에 있고 엘리베이터 언급은 없다. 벤더 주장 [추정]이며, ROP 밖 도구의 비교 사례로만 쓴다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"브리프는 원문 미열람으로 표시했다. 검증 단계에서 ANT lab 페이지가 열렸다. 조이스틱 수동 주행으로 원시 지도를 만들고 동적 물체를 지워 위치추정 기준 특징을 정하는 내용이 있고, CAD·DWG·DXF 가져오기 언급은 없다. 안전 레이저 스캐너 기록이라는 부분은 BlueBotics 다른 페이지의 검색 결과로 확인했다. '연계 대상'·벤더 주장 표기가 적정하다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검증 단계에서도 socket hang up). 검색 결과에서 ABB 페이지가 Layout designer 로 Visual SLAM 지도 또는 가져온 도면 위에 경로를 그리고 매핑 중 관심 지점·스테이션을 정의한다고 설명하는 것을 확인했다. 자동 추출 언급은 확인되지 않았다. 벤더 주장 [추정]·low 가 적정하다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 보도자료(2026-04-20)를 열어 대조했다. 구간별 주행 시간·속도 분석, NDC8 에서 시뮬레이션 전 피드백 제공이 있고 CAD·DXF 가져오기, 자동 레이아웃 생성, 문·승강기·충전소 검출 언급은 없다. 벤더 주장 [추정]이다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(MDPI 403). KIST 저장소 서지·초록 검색 결과에서 Lee·Yun, Applied Sciences 14(13), 2024-07, DOI 10.3390/app14135671, CAD 평면도→격자 지도, GVG 세선화, 방 분할·분류, 다층 건물 CAD 도면으로 평가한 사실을 확인했다. 초록은 '실제' 건물이라고 명시하지 않으므로 표현을 고쳐야 한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 종합을 유지한다(신뢰도 low). 근거가 된 f10~f16 은 모두 확인했다. ref-227 은 이전 실행 재인용이며 원문 미열람이고 벤더 주장이다. '부재 확인 아님' 표기가 있다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: KCI 서지를 열어 대조했다(로봇학회 논문지 21(1), 48–57, 2026). KAIST N1 5~9층, 27분, 기준 대비 탐사 시간 약 33% 단축이 초록에 있다. 자율 탐사·SLAM 은 '연계 대상'이며 현장 유형은 기타(대학 건물)다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 기사(2020-04-28)를 열어 대조했다. 25만㎡ 시설, 400㎡ 시범 구역, Geek+ 8대, 'took three weeks to be implemented', 피커 2주 교육이 있고 단계별 분해는 없다. 물류 전문지 단일 출처라 low 다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"브리프는 원문 미열람으로 표시했다. 검증 단계에서 기사가 열렸다. 발행일은 2022-10-26 이다(브리프는 미확인). STORK UP(NAF Logistics Group)의 홍콩 신규 창고이며, 12일이라는 수치는 Geek+ 임원 인용이라 벤더 주장 표기가 적정하다. 기준일을 2022-10-26 으로 고쳐야 한다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 종합을 유지한다(신뢰도 low). 근거 f18·f19·f20 은 확인했다. 부분 답 처리가 적정하다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f2(FloorPlanCAD 초록: 1만 장 이상·30개 범주, ref-067)와 아이디어 3. 건축 도면 자동 인식 3절 표의 FloorPlanCAD 15,663장·35개 범주(ref-066)가 범주 수에서 다르다 — 출처 충돌\",\"ref-1012 와 ref-074 는 같은 AI Hub 건축 도면 데이터(dataSetSn=71465)를 가리키는 서로 다른 URL 의 참고문헌이다 — 이번 실행은 ref-1012 를 재사용한다\",\"신규 출처 id ref-1367~ref-1376 이 실행 2026-10-09-19 브리프가 다른 출처(바이라인네트워크·Hunton·Mender·W3C Trace Context·OpenTelemetry·Bédard 외·Lumpp 외)에 부여한 id 와 겹친다\",\"새 열린 질문(국내 공공 데이터의 비주거 도면 라벨)은 oq-197(AI Hub 라벨·비주거 비율)과 q2-04(AI Hub·CubiCasa5K 클래스·이용 조건)와 일부 겹친다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f2: 단계 1 페이지 q1-05 소절과 아이디어 페이지에서 FloorPlanCAD 규모를 '초록 기준 1만 장 이상·30개 범주(ref-067)'로 적고, 기존 3절 표의 '15,663장·35개 범주(ref-066)'는 지우지 않고 둘 다 제시한다. open_question_updates 에 '출처 충돌: FloorPlanCAD 의 범주 수는 30개(arXiv 초록)인가 35개(프로젝트 페이지)인가 | 관련 영역: 14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해 | 근거: f2 | 종류: 출처 충돌'을 올린다 — 한쪽을 고르지 않는다(5.3).\",\"f9: '둘 다 비상업 이용 제한' 문장에 FloorPlanCAD 라이선스 근거로 ref-066 각주를 더한다 — ref-067 초록에는 라이선스가 없다.\",\"f20·ref-1377: 참고문헌 발행일을 2022-10-26 으로, 본문 기준일도 2022-10-26 으로 적는다. 12일 수치는 Geek+ 임원 발언이므로 [추정]·'벤더 주장' 병기를 유지한다 — 검증 단계에서 기사를 열어 확인했다.\",\"ref-1378: 기관 표기를 'Ganon, K., Alper, M., Mikulinsky, R., & Averbuch-Elor, H. (WACV 2025)'로 고친다 — arXiv 초록 페이지에서 저자를 확인했다.\",\"ref-1012: 각주 발행일은 2023-07-26(1.0 공개)으로 두고 본문에 '1.1 판 2023-12-15, 최종 변경 2025-05-08, 확인일 2026-10-09'를 병기한다. 같은 데이터셋의 ref-074 는 새로 인용하지 않는다.\",\"f16: '실제 다층 건물의 CAD 도면'을 '다층 건물의 CAD 도면'으로 고치고, 각주 접근일 뒤에 ' (원문 미열람)'을 유지한다 — 초록에 '실제'라는 표현이 없다.\",\"f4·f14·f16·ref-227: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. f4 의 저자·연도는 '미확인'으로 남긴다.\",\"f7: 본문에서 '생성 과제·주거 데이터셋 사이 결과이며 인식 과제에 대한 유추'임을 같은 문장에 밝히고 '최대'를 유지한다.\",\"직접 인용: f1(ref-073)과 f10(ref-079)의 근거 발췌에 인용 구절이 여럿이므로, 페이지에서는 출처당 직접 인용을 1회 이하로 두고 나머지는 재서술한다. ref-079 원문의 'backgroud' 오탈자 구절은 인용하지 않는다.\",\"q1-05·q1-06 답(단계 1 페이지 3절 {#q1-05}·{#q1-06}): 첫 문장에 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'과 종합 신뢰도 low 를 밝히고, 결론 문장(f9·f17)은 [추정]으로 둔다. 백로그·2절 표는 q1-05·q1-06 을 '답함'으로, q1-08 은 부분 답이므로 백로그 '조사 중'·2절 표 '열림'(answer_link null)으로 둔다.\",\"질문–finding 대응: 이번 실행은 앞 단계로 되돌아온 단계 1 질문만 다뤘으므로 단계 1 페이지 갱신 제안의 rationale 을 규약 1항의 rationale 로 읽는다. 현재 단계 페이지(단계 2. 필요한 데이터와 표준 조사)의 6절 '다음 단계로 전환: 아니오(관계(엣지) 쪽 표준 대응 없음; 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09)' 줄과 상태 줄 '진행 중'은 바꾸지 않는다. track_updates.stage_transition 은 넣지 않는다.\",\"새 트랙 질문 2건(단계 2: 물류 도면 학습 데이터 마련, 단계 3: 로봇 밖 BIM 추출 도구 출력의 공간 그래프 입력 활용)은 백로그 중복이 없으므로 origin f9·f17 로 등록한다.\",\"open_questions_new: 질문 문장 끝에 '(관련 기존 질문: oq-197, 트랙 질문 q2-04)'를 덧붙여 등록하고, areas 는 [14, 45]로 둔다.\",\"용어 후보 '일반화 보로노이 그래프': 브리프 출처가 '가장 가까운 장애물 둘 이상과 같은 거리' 정의를 뒷받침하지 않는다. 정의를 f16(ref-1370)이 말하는 범위('격자 지도 세선화로 초기 노드를 만들고 방 분할에 쓰는 골격 그래프')로 줄여 ref-1370 각주를 달거나, 등록하지 않는다. '도메인 이동' 정의에는 ref-1369 각주를 단다.\",\"참고문헌 id: reference_updates 에는 브리프 id 를 그대로 쓰고, 각 항목의 URL·제목을 브리프 sources 와 글자 단위로 같게 적는다. ref-1367~ref-1376 이 실행 2026-10-09-19 의 같은 id(다른 URL)와 충돌한다는 사실을 changelog_entry 에 적어, 퍼블리셔의 id 충돌 검사가 걸리면 게시 전에 재번호하게 한다.\",\"세부영역 반영 제안 3건(14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해, 55. 현장 조사·설치·시운전)은 area_reflection_proposals 로만 내고 세부영역 페이지는 직접 고치지 않는다. 55절 사례로 제안할 때 f19 는 '물류창고', f18 은 '기타'(대학 건물, 연계 대상)로 현장 유형을 밝힌다.\",\"범위: f13·f18 의 '연계 대상:' 표시를 유지하고, f11·f12 는 '로봇 관제 제품이 아닌 실내 GIS·피난 시뮬레이터 도구의 비교 사례'임을 같은 문장에 밝힌다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 확인 21건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1368, ref-1370, ref-1374, ref-227(ref-1376·ref-1377 은 브리프에서 미열람으로 표시했으나 검증 단계에서 열어 내용을 확인함). 주의: 핵심 결론(q1-05·q1-06 답)은 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'과 근접 근거로 만든 이 위키의 종합([추정])이다. 모든 사실 주장은 단일 출처이며, 물류 시설 도면을 대상으로 한 인식 성능 측정값은 없다. FloorPlanCAD 범주 수는 30개(arXiv 초록)와 35개(프로젝트 페이지)로 출처가 충돌해 둘 다 제시한다. AI Hub 건축 도면 데이터는 주거 3유형뿐임이 확인되어 q2-04·oq-197 의 부분 근거가 되지만 해결로 바꾸지 않는다. 신규 출처 id ref-1367~ref-1376 이 실행 2026-10-09-19 의 id 와 겹쳐 게시 전 확인이 필요하다. 검증 검색 6회를 썼다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 미충족(부족: 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안에 없음; 단계 2 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09, 되돌아온 질문 q1-08 부분 답). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q1-08).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-10-09-21",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv HTML v3 를 열어 대조했다. 주거 14%, 사무 단지·산업단지를 포함한 대형 공공·상업 건물, 27개 범주(Door·Stairs 포함)가 원문에 있다. 엘리베이터·물류창고·병원은 언급되지 않는다. 단일 출처다."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록에 'over 10,000', 'ranging from residential to commercial buildings', '30 object categories' 가 있다(v1 2021-05-15, v2 2021-11-29). 기존 아이디어 페이지 3절은 프로젝트 페이지(ref-066)를 근거로 15,663장·35개 범주라고 적는다. 범주 수가 서로 다르므로 두 값을 함께 제시해야 한다(수정 지시 참조)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: AI Hub 페이지를 열어 대조했다. 48,033장(아파트 38,521, 연립다세대 4,859, 단독주택 4,653), 구조 8·공간 12·객체 5개 클래스, '내국인만 데이터 신청이 가능합니다'가 있고 상업 이용 조항은 페이지에 없다. 1.0 은 2023-07-26, 1.1 은 2023-12-15 에 공개됐고 마지막 변경은 2025-05-08 이다. q2-04·oq-197 의 부분 근거가 되지만 해결로 판정하지는 않는다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검증 단계에서도 403). 검색 결과에서 Aalto 석사 논문의 초록 요약을 확인했다. 500장, Kalervo 외(2019a) 모델, 실제 건축 웹 응용에서 수집, 수작업 32장·사용자 주석 298장, 사용자 주석 쪽이 불일치 때문에 더 나쁨이 모두 초록과 일치한다. 저자·연도·성능 수치는 미확인이고 단일 출처라 신뢰도 low 를 유지한다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 연구실 페이지를 열어 대조했다(Automation in Construction, 2022-01). 1995~2021년 검토, 'most research relies on a particular plan style', 표준 지표 부재, 공개 데이터셋 제한이 초록과 일치한다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록에 0.96(아홉 단계 과제), 작은 지도·단순 과제에서 더 잘함, 'its performance drops in large open areas' 가 있다. v1 은 2024-09-19, v2 는 2025-11-24 개정이다. 기준일 2024-09 는 v1 기준이다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록에 'up to an order of magnitude performance degradation', 저데이터 설정에서 'up to 40%' 개선이 있다(v1 2026-07-07, v2 2026-09-21). 이 결과는 인식이 아닌 생성 과제이며 주거 데이터셋 사이의 비교이므로, 물류 도면 인식에 대해서는 유추 근거로만 쓴다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록에 'nearly 20K floorplan images', LLM·다중 모달 기반 모델로 정리, 'diverse building types, locations, and data formats', WACV 2025 채택이 있다. 저자가 확인됐다(Ganon, Alper, Mikulinsky, Averbuch-Elor). 브리프의 '저자 미확인'은 고쳐야 한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 종합을 유지한다(신뢰도 low). '둘 다 비상업 이용 제한'에서 FloorPlanCAD 라이선스(CC BY-NC 4.0)는 ref-067 초록이 아니라 ref-066(프로젝트 페이지)이 근거이므로 각주를 보완해야 한다. 부재 확인이 아님을 명시한 점은 적절하다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(data/source_texts/ref-079.txt)와 대조했다. 배경 이미지를 캔버스로 씀, 정점 속성 Add, 승강기 대화상자의 이름·기준층·칸 중심 좌표, 로봇 지도 정합 'Through visual feedback' 가 모두 원문에 있다. 원문 표기는 'backgroud' 오탈자이므로 직접 인용 시 주의한다. 원문 텍스트로 열람했는데 fetched_via 는 github_raw, fetch_url 은 null 로 적혀 표시가 서로 맞지 않는다(경미)."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Esri 문서를 열어 대조했다. Rooms·Stairs·Shaft Openings → Units, Doors·Stairs·Walls·Windows 등 → Details, 'The source BIM data must be georeferenced before running the tool', 출력을 실내 경로망 생성에 쓸 수 있음이 문서에 있고 엘리베이터 범주는 없다. 벤더 주장 [추정] 표기가 적정하다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Pathfinder 2026-1 문서를 열어 대조했다. 층·문·계단 자동 추출, 형상 제외, 비바닥 슬래브 삭제, Close Gaps, 재실자·출구 수동 배치가 문서에 있고 엘리베이터 언급은 없다. 벤더 주장 [추정]이며, ROP 밖 도구의 비교 사례로만 쓴다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "브리프는 원문 미열람으로 표시했다. 검증 단계에서 ANT lab 페이지가 열렸다. 조이스틱 수동 주행으로 원시 지도를 만들고 동적 물체를 지워 위치추정 기준 특징을 정하는 내용이 있고, CAD·DWG·DXF 가져오기 언급은 없다. 안전 레이저 스캐너 기록이라는 부분은 BlueBotics 다른 페이지의 검색 결과로 확인했다. '연계 대상'·벤더 주장 표기가 적정하다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검증 단계에서도 socket hang up). 검색 결과에서 ABB 페이지가 Layout designer 로 Visual SLAM 지도 또는 가져온 도면 위에 경로를 그리고 매핑 중 관심 지점·스테이션을 정의한다고 설명하는 것을 확인했다. 자동 추출 언급은 확인되지 않았다. 벤더 주장 [추정]·low 가 적정하다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 보도자료(2026-04-20)를 열어 대조했다. 구간별 주행 시간·속도 분석, NDC8 에서 시뮬레이션 전 피드백 제공이 있고 CAD·DXF 가져오기, 자동 레이아웃 생성, 문·승강기·충전소 검출 언급은 없다. 벤더 주장 [추정]이다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(MDPI 403). KIST 저장소 서지·초록 검색 결과에서 Lee·Yun, Applied Sciences 14(13), 2024-07, DOI 10.3390/app14135671, CAD 평면도→격자 지도, GVG 세선화, 방 분할·분류, 다층 건물 CAD 도면으로 평가한 사실을 확인했다. 초록은 '실제' 건물이라고 명시하지 않으므로 표현을 고쳐야 한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 종합을 유지한다(신뢰도 low). 근거가 된 f10~f16 은 모두 확인했다. ref-227 은 이전 실행 재인용이며 원문 미열람이고 벤더 주장이다. '부재 확인 아님' 표기가 있다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: KCI 서지를 열어 대조했다(로봇학회 논문지 21(1), 48–57, 2026). KAIST N1 5~9층, 27분, 기준 대비 탐사 시간 약 33% 단축이 초록에 있다. 자율 탐사·SLAM 은 '연계 대상'이며 현장 유형은 기타(대학 건물)다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 기사(2020-04-28)를 열어 대조했다. 25만㎡ 시설, 400㎡ 시범 구역, Geek+ 8대, 'took three weeks to be implemented', 피커 2주 교육이 있고 단계별 분해는 없다. 물류 전문지 단일 출처라 low 다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "브리프는 원문 미열람으로 표시했다. 검증 단계에서 기사가 열렸다. 발행일은 2022-10-26 이다(브리프는 미확인). STORK UP(NAF Logistics Group)의 홍콩 신규 창고이며, 12일이라는 수치는 Geek+ 임원 인용이라 벤더 주장 표기가 적정하다. 기준일을 2022-10-26 으로 고쳐야 한다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 종합을 유지한다(신뢰도 low). 근거 f18·f19·f20 은 확인했다. 부분 답 처리가 적정하다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f2(FloorPlanCAD 초록: 1만 장 이상·30개 범주, ref-067)와 아이디어 3. 건축 도면 자동 인식 3절 표의 FloorPlanCAD 15,663장·35개 범주(ref-066)가 범주 수에서 다르다 — 출처 충돌",
+        "ref-1012 와 ref-074 는 같은 AI Hub 건축 도면 데이터(dataSetSn=71465)를 가리키는 서로 다른 URL 의 참고문헌이다 — 이번 실행은 ref-1012 를 재사용한다",
+        "신규 출처 id ref-1367~ref-1376 이 실행 2026-10-09-19 브리프가 다른 출처(바이라인네트워크·Hunton·Mender·W3C Trace Context·OpenTelemetry·Bédard 외·Lumpp 외)에 부여한 id 와 겹친다",
+        "새 열린 질문(국내 공공 데이터의 비주거 도면 라벨)은 oq-197(AI Hub 라벨·비주거 비율)과 q2-04(AI Hub·CubiCasa5K 클래스·이용 조건)와 일부 겹친다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f2: 단계 1 페이지 q1-05 소절과 아이디어 페이지에서 FloorPlanCAD 규모를 '초록 기준 1만 장 이상·30개 범주(ref-067)'로 적고, 기존 3절 표의 '15,663장·35개 범주(ref-066)'는 지우지 않고 둘 다 제시한다. open_question_updates 에 '출처 충돌: FloorPlanCAD 의 범주 수는 30개(arXiv 초록)인가 35개(프로젝트 페이지)인가 | 관련 영역: 14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해 | 근거: f2 | 종류: 출처 충돌'을 올린다 — 한쪽을 고르지 않는다(5.3).",
+      "f9: '둘 다 비상업 이용 제한' 문장에 FloorPlanCAD 라이선스 근거로 ref-066 각주를 더한다 — ref-067 초록에는 라이선스가 없다.",
+      "f20·ref-1377: 참고문헌 발행일을 2022-10-26 으로, 본문 기준일도 2022-10-26 으로 적는다. 12일 수치는 Geek+ 임원 발언이므로 [추정]·'벤더 주장' 병기를 유지한다 — 검증 단계에서 기사를 열어 확인했다.",
+      "ref-1378: 기관 표기를 'Ganon, K., Alper, M., Mikulinsky, R., & Averbuch-Elor, H. (WACV 2025)'로 고친다 — arXiv 초록 페이지에서 저자를 확인했다.",
+      "ref-1012: 각주 발행일은 2023-07-26(1.0 공개)으로 두고 본문에 '1.1 판 2023-12-15, 최종 변경 2025-05-08, 확인일 2026-10-09'를 병기한다. 같은 데이터셋의 ref-074 는 새로 인용하지 않는다.",
+      "f16: '실제 다층 건물의 CAD 도면'을 '다층 건물의 CAD 도면'으로 고치고, 각주 접근일 뒤에 ' (원문 미열람)'을 유지한다 — 초록에 '실제'라는 표현이 없다.",
+      "f4·f14·f16·ref-227: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. f4 의 저자·연도는 '미확인'으로 남긴다.",
+      "f7: 본문에서 '생성 과제·주거 데이터셋 사이 결과이며 인식 과제에 대한 유추'임을 같은 문장에 밝히고 '최대'를 유지한다.",
+      "직접 인용: f1(ref-073)과 f10(ref-079)의 근거 발췌에 인용 구절이 여럿이므로, 페이지에서는 출처당 직접 인용을 1회 이하로 두고 나머지는 재서술한다. ref-079 원문의 'backgroud' 오탈자 구절은 인용하지 않는다.",
+      "q1-05·q1-06 답(단계 1 페이지 3절 {#q1-05}·{#q1-06}): 첫 문장에 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'과 종합 신뢰도 low 를 밝히고, 결론 문장(f9·f17)은 [추정]으로 둔다. 백로그·2절 표는 q1-05·q1-06 을 '답함'으로, q1-08 은 부분 답이므로 백로그 '조사 중'·2절 표 '열림'(answer_link null)으로 둔다.",
+      "질문–finding 대응: 이번 실행은 앞 단계로 되돌아온 단계 1 질문만 다뤘으므로 단계 1 페이지 갱신 제안의 rationale 을 규약 1항의 rationale 로 읽는다. 현재 단계 페이지(단계 2. 필요한 데이터와 표준 조사)의 6절 '다음 단계로 전환: 아니오(관계(엣지) 쪽 표준 대응 없음; 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09)' 줄과 상태 줄 '진행 중'은 바꾸지 않는다. track_updates.stage_transition 은 넣지 않는다.",
+      "새 트랙 질문 2건(단계 2: 물류 도면 학습 데이터 마련, 단계 3: 로봇 밖 BIM 추출 도구 출력의 공간 그래프 입력 활용)은 백로그 중복이 없으므로 origin f9·f17 로 등록한다.",
+      "open_questions_new: 질문 문장 끝에 '(관련 기존 질문: oq-197, 트랙 질문 q2-04)'를 덧붙여 등록하고, areas 는 [14, 45]로 둔다.",
+      "용어 후보 '일반화 보로노이 그래프': 브리프 출처가 '가장 가까운 장애물 둘 이상과 같은 거리' 정의를 뒷받침하지 않는다. 정의를 f16(ref-1370)이 말하는 범위('격자 지도 세선화로 초기 노드를 만들고 방 분할에 쓰는 골격 그래프')로 줄여 ref-1370 각주를 달거나, 등록하지 않는다. '도메인 이동' 정의에는 ref-1369 각주를 단다.",
+      "참고문헌 id: reference_updates 에는 브리프 id 를 그대로 쓰고, 각 항목의 URL·제목을 브리프 sources 와 글자 단위로 같게 적는다. ref-1367~ref-1376 이 실행 2026-10-09-19 의 같은 id(다른 URL)와 충돌한다는 사실을 changelog_entry 에 적어, 퍼블리셔의 id 충돌 검사가 걸리면 게시 전에 재번호하게 한다.",
+      "세부영역 반영 제안 3건(14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해, 55. 현장 조사·설치·시운전)은 area_reflection_proposals 로만 내고 세부영역 페이지는 직접 고치지 않는다. 55절 사례로 제안할 때 f19 는 '물류창고', f18 은 '기타'(대학 건물, 연계 대상)로 현장 유형을 밝힌다.",
+      "범위: f13·f18 의 '연계 대상:' 표시를 유지하고, f11·f12 는 '로봇 관제 제품이 아닌 실내 GIS·피난 시뮬레이터 도구의 비교 사례'임을 같은 문장에 밝힌다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 확인 21건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1368, ref-1370, ref-1374, ref-227(ref-1376·ref-1377 은 브리프에서 미열람으로 표시했으나 검증 단계에서 열어 내용을 확인함). 주의: 핵심 결론(q1-05·q1-06 답)은 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'과 근접 근거로 만든 이 위키의 종합([추정])이다. 모든 사실 주장은 단일 출처이며, 물류 시설 도면을 대상으로 한 인식 성능 측정값은 없다. FloorPlanCAD 범주 수는 30개(arXiv 초록)와 35개(프로젝트 페이지)로 출처가 충돌해 둘 다 제시한다. AI Hub 건축 도면 데이터는 주거 3유형뿐임이 확인되어 q2-04·oq-197 의 부분 근거가 되지만 해결로 바꾸지 않는다. 신규 출처 id ref-1367~ref-1376 이 실행 2026-10-09-19 의 id 와 겹쳐 게시 전 확인이 필요하다. 검증 검색 6회를 썼다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 미충족(부족: 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안에 없음; 단계 2 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09, 되돌아온 질문 q1-08 부분 답). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q1-08).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 36935,
+  "type": "result",
+  "duration_ms": 269230,
+  "uuid": "8007e014-64a5-4a32-84c9-9f47e8ad975b",
+  "ttft_stream_ms": 1816,
+  "time_to_request_ms": 225,
+  "time_to_request_phases_ms": {
+    "other": 43,
+    "system_prompt": 14,
+    "resume_other": 1,
+    "process_user_input": 15,
+    "input_attachments": 82,
+    "input_hooks": 8,
+    "tool_pool_refresh": 4,
+    "init_message": 8,
+    "engine_pickup": 1,
+    "message_prep": 2,
+    "model_config_wait": 1,
+    "autocompact": 3,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 7,
+    "message_normalization": 2,
+    "client_creation": 7,
+    "request_build": 26
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 101,
+  "time_to_request_cpu_ms": 293,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "at_mentioned_files",
+    "slowest_producer_ms": 42,
+    "cpu_ms": 115,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1817,
+  "time_to_request_from_spawn_ms": 638951,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791540819330.3792,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 271.3
+}

@@ -26,6 +26,26 @@ version: 1
 | 2026-10-09-22 | 요약 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-04 답함(신뢰도 low, 통합 설정·어댑터 코드·운용 중 상태 보고로 보완되는 정보), q2-02 기계가독 형식의 단위 표기·자유 텍스트 보강, 문서 유형 매트릭스 5절 첫 작성, 후속 질문 q3-09·q4-17 |
 | 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 되돌아온 질문 q1-05·q1-06 답함(3절 {#q1-05}·{#q1-06}), q1-08 부분 답, 2절 질문 목록 표 재작성, 4절 결론·불확실성 추가, 5절 후속 질문 q2-10·q3-12와 q1-05·q1-06 행 상태 답함, 6절 전환 줄, 7절 반영 제안, 8절 새 각주, 9절 이력 행, 상태 줄(재개)·프런트매터(sources·related_areas·last_run) 갱신, ArchCAD-400K 엘리베이터 근거 충돌 연결 문장 |
+| 2026-10-09-21 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 '물류 시설 도면 인식과 도면 자동 가져오기의 근거 보강' 소절 추가(비주거 데이터셋 구성·FloorPlanCAD 범주 수 출처 충돌·AI Hub 주거 한정·전이 근거, 제품·로봇 밖 도구 근거, 도입 기간 사례), 프런트매터 sources 에 새 출처 13건 추가, last_run 2026-10-09 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 상태 줄을 현재 단계 2·마지막 트랙 실행 2026-10-09로 고치고 프런트매터 last_run 2026-10-09, 6절에 실행 2026-10-09-21(되돌아온 단계 1 질문 q1-05·q1-06 답함, q1-08 부분 답, 초안 v1.2 유지, 단계 전환 미승인) 단락 추가 |
+| 2026-10-09-21 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 2: 되돌아온 단계 1 질문 q1-05·q1-06 답함(종합 신뢰도 low), q1-08 부분 답, 후속 질문 q2-10·q3-12, 공간 그래프 스키마 초안 v1.2 유지, 아이디어 3 페이지 3절 근거 보강, 출처 충돌 열린 질문 2건(FloorPlanCAD 범주 수, ArchCAD-400K 엘리베이터 범주). 신규 참고문헌 ref-1329~ref-1372 이 실행 2026-10-09-19 브리프의 같은 id(다른 URL)와 충돌하므로 게시 전 id 충돌 검사와 재번호 확인 필요 |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1329.md](references/ref-1329.md) | 참고문헌 ref-1329 등록: Automatic floor plan analysis and recognition |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1330.md](references/ref-1330.md) | 참고문헌 ref-1330 등록: A deep learning approach to wall recognition in industrial a… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1331.md](references/ref-1331.md) | 참고문헌 ref-1331 등록: Mitigating Domain Shift in Conditioned Floor Plan Generation… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1332.md](references/ref-1332.md) | 참고문헌 ref-1332 등록: Automated Destination Renewal Process for Location-Based Rob… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1367.md](references/ref-1367.md) | 참고문헌 ref-1367 등록: Import BIM To Indoor Dataset (Indoors) |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1368.md](references/ref-1368.md) | 참고문헌 ref-1368 등록: IFC Import (Pathfinder How-To) |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1369.md](references/ref-1369.md) | 참고문헌 ref-1369 등록: CEVA deploys Automated Mobile Robots at its Melbourne site |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1370.md](references/ref-1370.md) | 참고문헌 ref-1370 등록: AMR Studio — A simple and intuitive way to set up AMRs |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1371.md](references/ref-1371.md) | 참고문헌 ref-1371 등록: Kollmorgen launches NDC Layout Assistant |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1372.md](references/ref-1372.md) | 참고문헌 ref-1372 등록: ANT lab configuration software |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1373.md](references/ref-1373.md) | 참고문헌 ref-1373 등록: Fulfillment centre deploys AMRs in 12 days |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1374.md](references/ref-1374.md) | 참고문헌 ref-1374 등록: WAFFLE: Multimodal Floorplan Understanding in the Wild |
+| 2026-10-09-21 | 생성 | [docs/glossary/domain-shift.md](glossary/domain-shift.md) | 용어집 항목 도메인 이동 |
+| 2026-10-09-21 | 생성 | [docs/glossary/generalized-voronoi-graph.md](glossary/generalized-voronoi-graph.md) | 용어집 항목 일반화 보로노이 그래프 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-19 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s6.md](topics/2026/2026-10-09-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s7.md](topics/2026/2026-10-09-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 |

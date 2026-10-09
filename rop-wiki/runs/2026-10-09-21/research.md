@@ -1,0 +1,196 @@
+# 리서치 브리프 2026-10-09-21
+
+| 항목 | 값 |
+|---|---|
+| 실행 id | 2026-10-09-21 |
+| 날짜 | 2026-10-09 |
+| 실행 유형 | track (트랙 실행) |
+| 대상 영역 | 14. 도면·BIM에서 지도 만들기 |
+| 대분류 | D. 공간·지도 모델 |
+
+트랙 실행: 트랙 `floorplan-recognition` · 단계 2 · 답한 질문 q1-05, q1-06
+
+## 갭(비어 있거나 약한 섹션)
+
+- 되돌아온 단계 1 질문 q1-05·q1-06·q1-08 열림(target.json 지정: 사용자 지정 0건, 되돌아온 질문 3건). 단계 1 페이지 3절에 세 질문의 소제목 없음
+- q1-05: 물류센터·창고 평면도 대상 공개 인식 데이터셋 유무와 주거 데이터셋 학습 모델의 이전 성능 근거 없음(아이디어 3. 건축 도면 자동 인식 3절 '한계' 소절은 '찾지 못함'만 기록)
+- q1-06: 물류 로봇 관제 제품의 CAD·BIM 자동 가져오기 기능을 공개 문서로 확인한 근거 없음(벤더 주장 3건만 있음)
+- q1-08: 국내 물류센터 로봇 도입의 단계별 소요 시간 자료 없음
+- 현재 단계(단계 2. 필요한 데이터와 표준 조사) 완료 조건: 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안에 없음, 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09 — 이번 실행 밖
+- 14. 도면·BIM에서 지도 만들기 섹션 8. 대표 연구와 자료 — 비주거 도면 인식의 이전 성능 근거 없음(oq-196·oq-299 관련)
+
+## 조사 질문
+
+1. 이미 있는 도면과 건물 모델에서 로봇이 쓸 지도를 얼마나 자동으로 만들 수 있는가? [분류원문]
+2. q1-05 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가?
+3. q1-06 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가?
+4. q1-08 국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가? (q1-04 에서 파생)
+5. 비주거(사무·산업·상업) 건물을 담은 평면도 데이터셋의 건물 유형 구성과 이용 조건은 무엇이며, 주거 평면도로 학습한 인식 모델이 크고 복잡하거나 개방 구역이 많은 도면에서 얼마나 떨어지는지 보고한 자료가 있는가? (q2-04·oq-196·oq-197·oq-299 관련, 섹션 8 겨냥)
+6. BIM·CAD 에서 문·계단·승강기를 자동 추출하는 로봇 밖 상용 도구(실내 GIS, 피난 시뮬레이션)와 국내 연구는 무엇을 자동화하고 무엇을 사람에게 남기는가? (q1-06 보조, 섹션 6 겨냥)
+
+## 발견 사항
+
+| id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
+|---|---|---|---|---|---|---|---|---|
+| f1 | [사실] | ArchCAD-400K 논문(v3)은 자료에서 주거 건물이 14%에 그치고 사무 단지·산업단지 같은 대형 공공·상업 건물이 상당 부분을 차지하며, 의미 범주 27개에 문(Door)·계단(Stairs)을 두지만 엘리베이터 범주는 확인되지 않는다고 적는다. | ref-073 | 아니오 | medium | 2025-03 | 작업 대상 | — |
+| f2 | [사실] | FloorPlanCAD 초록은 데이터셋이 주거부터 상업 건물까지의 벡터 평면도 1만 장 이상과 30개 객체 범주로 이루어진다고 적는다. | ref-067 | 아니오 | medium | 2021-05 | 작업 대상 | — |
+| f3 | [사실] | AI Hub 건축 도면 데이터는 도면 48,033장이 모두 주거 유형(아파트 38,521, 연립다세대 4,859, 단독주택 4,653)이고 라벨은 구조 8·공간 12·객체 5의 25개 클래스이며, 내국인만 승인 뒤 받을 수 있고 상업적 이용 허용 여부는 데이터 소개 페이지에 명시되어 있지 않다. | ref-1012 | 아니오 | medium | 2023-07-26 | 작업 대상 | — |
+| f4 | [사실] | Aalto 대학 석사 논문은 Kalervo 외(CubiCasa5K) 평면도 분석 모델을 실제 건축 웹 응용에서 모은 산업용 건물 평면도 이미지 500장에 적용했을 때 크거나 해상도가 낮거나 시각적으로 복잡한 이미지에서 일반화가 어려웠고, 수작업 주석 32장으로 재학습한 경우가 가장 좋았으며 사용자 그림 주석 298장으로 학습한 경우는 불일치 때문에 더 나빴다고 보고했다. | ref-1368 | 아니오 | low | 2026-10-09 | — | 원문 미열람 |
+| f5 | [사실] | Pizarro 외(Automation in Construction, 2022)의 1995~2021년 평면도 분석 문헌 검토는 대부분의 연구가 특정 도면 양식에 기대며, 표준 평가 지표가 없고 공개 데이터셋이 제한되어 일반화와 비교에 문제가 있다고 정리했다. | ref-1367 | 아니오 | medium | 2022-01 | — | — |
+| f6 | [사실] | DeFazio 외(2024-09)는 시각-언어 모델의 평면도 지도 해석이 작은 지도와 단순 과제에서 더 잘 되고 큰 개방 구역에서는 성능이 떨어진다고 초록에 적었다. | ref-076 | 아니오 | medium | 2024-09 | — | — |
+| f7 | [사실] | Ospici 외(arXiv 2607.06483, 2026-07)는 조건부 평면도 생성 모델이 RPLAN·MagicPlan·Swiss Dwellings 데이터셋 사이로 옮기면 성능이 최대 한 자릿수 배까지 떨어진다고 보고하고, 절차적으로 만든 합성 평면도 사전학습이 영점 교차 도메인 성능과 미세조정 초기값을 개선한다고 제안했다. | ref-1369 | 아니오 | medium | 2026-07 | — | — |
+| f8 | [사실] | WAFFLE(arXiv 2412.00955, WACV 2025 채택)은 인터넷에서 모아 대규모 언어 모델·다중 모달 기반 모델로 정리한 약 2만 장의 평면도 이미지와 메타데이터로 다양한 건물 유형·지역·형식을 담는다고 밝히나, 주거·비주거 비율은 초록에서 확인되지 않는다. | ref-1378 | 아니오 | medium | 2024-12 | — | — |
+| f9 | [추정] | q1-05 에 대해 이번 검색 범위(평면도 데이터셋 관련 검색 7회)에서는 랙·도크·충전 구역을 라벨로 둔 물류센터·창고 평면도 인식 공개 데이터셋이나 모델을 찾지 못했고(부재 확인 아님), 비주거 도면을 담은 가장 가까운 공개 자료는 산업단지·사무 단지를 포함한 ArchCAD-400K 와 상업 건물을 포함한 FloorPlanCAD(둘 다 비상업 이용 제한)이며, 산업용 건물 도면 전이 실패·개방 구역 성능 저하·도면 양식 의존 보고를 보면 주거 데이터로 학습한 모델은 물류 시설 도면에서 성능이 떨어져 자체 주석 재학습이 필요할 것으로 보이나 그 저하 폭을 물류 도면으로 잰 자료는 없다. | ref-073, ref-067, ref-1012, ref-1368, ref-076, ref-1367, ref-1369 | 아니오 | low | 2026-10-09 | — | — |
+| f10 | [사실] | Open-RMF traffic-editor 문서는 평면도 이미지를 배경 캔버스로 불러온 뒤 사람이 경유점 속성(is_charger, dock_name, pickup_dispenser 등)과 벽·문·승강기를 직접 주석하고, 로봇 지도 레이어는 축척·이동·회전 값을 화면을 보며 맞추게 해, 도면에서 충전 위치·문·승강기를 자동 추출하지 않는다. | ref-079 | 아니오 | medium | 2026-10-09 | 수행 자원 | — |
+| f11 | [추정] | Esri ArcGIS Pro 의 Import BIM To Indoor Dataset 도구 문서는 Revit 의 Rooms·Stairs·Shaft Openings 를 Units 로, Doors·Stairs·Walls·Windows 등을 Details 피처 클래스로 가져오고 그 결과를 실내 경로망 생성에 쓸 수 있으며 원본 BIM 은 미리 지리참조되어 있어야 한다고 설명하나, 엘리베이터 범주는 목록에 없다. | ref-1371 | 아니오 | medium | 2026-10-09 | — | 벤더 주장 |
+| f12 | [추정] | Thunderhead Engineering 의 피난 시뮬레이터 Pathfinder 문서는 IFC 가져오기에서 층·문·계단을 자동 추출한다고 하면서, 방 분할을 망치는 형상 제외, 바닥이 아닌 슬래브 삭제, 좁은 연결 끊기(Close Gaps), 재실자·출구 배치는 사람이 해야 한다고 적으며 엘리베이터는 언급하지 않는다. | ref-1372 | 아니오 | medium | 2026-10-09 | 수행 자원 | 벤더 주장 |
+| f13 | [추정] | 연계 대상: BlueBotics 는 ANT lab 구성 소프트웨어가 차량 안전 레이저 스캐너 기록으로 2D 지도를 만들고 운영자가 동적 물체를 지워 위치추정 기준 특징을 정하는 방식을 소개하며, CAD 도면 가져오기는 공개 자료에서 확인되지 않는다. | ref-1376 | 아니오 | low | 2026-10-09 | — | 원문 미열람, 벤더 주장 |
+| f14 | [추정] | ABB 는 AMR Studio 에서 Visual SLAM 지도나 도면을 바탕으로 궤적을 그리고 지도 작성 중에 관심 지점·스테이션을 정의한다고 소개하나, 도면에서 문·승강기·충전 위치를 자동 추출한다는 설명은 확인되지 않는다. | ref-1374 | 아니오 | low | 2026-10-09 | — | 원문 미열람, 벤더 주장 |
+| f15 | [추정] | Kollmorgen 의 NDC Layout Assistant 발표(2026-04-20)는 Layout Designer 로 만든 레이아웃을 구간 단위 주행 시간·속도로 분석해 시뮬레이션 전에 개선 지점을 보여 준다고 소개하며, CAD 가져오기나 문·승강기·충전소 자동 인식은 언급하지 않는다. | ref-1375 | 아니오 | low | 2026-04-20 | — | 벤더 주장 |
+| f16 | [사실] | KIST 의 Lee·Yun(Applied Sciences 14(13), 2024-07)은 새 공간의 CAD 평면도를 로봇 주행용 격자 지도로 바꾼 뒤 일반화 보로노이 그래프(GVG) 세선화로 초기 노드를 만들고 방 분할·분류로 심부름 목적지를 갱신하는 절차를 제안해 실제 다층 건물의 CAD 도면으로 단계별 성능을 평가했다. | ref-1370 | 아니오 | medium | 2024-07 | 작업 대상 | 원문 미열람 |
+| f17 | [추정] | q1-06 에 대해 이번 검색 범위(제품 관련 검색 8회)에서는 물류 로봇 관제 제품의 공개 매뉴얼·API 문서에서 CAD·BIM 도면의 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 확인하지 못했고(부재 확인 아님), 확인한 로봇 쪽 도구·제품은 주행 지도 작성이나 도면을 배경으로 둔 사람의 스테이션·충전 위치 지정에 기대는 반면, 도면에서 문·계단을 자동 추출하는 기능은 실내 GIS·피난 시뮬레이션 같은 로봇 밖 도구와 연구에서만 확인되고 그마저 엘리베이터·충전 위치는 다루지 않는 것으로 보인다. | ref-079, ref-1376, ref-1374, ref-1375, ref-227, ref-1371, ref-1372, ref-1370 | 아니오 | low | 2026-10-09 | — | — |
+| f18 | [사실] | 연계 대상: 노주형 외(로봇학회 논문지, 2026)는 탐사와 엘리베이터 연계로 다층 실내 지도를 자율 구축하는 시스템이 KAIST N1 건물 5개 층(5~9층)에서 연속 탐사와 엘리베이터 이동을 27분 안에 마쳤고 기준 탐사 방법보다 탐사 시간이 약 33% 줄었다고 보고했으나, 수작업 지도 작성과의 비교는 없다. | ref-163 | 아니오 | medium | 2026 | 기타 / 예외·성과 | — |
+| f19 | [사실] | 물류 전문지 기사(2020-04-28)는 CEVA Logistics 호주 멜버른 시설(약 25만㎡)에서 400㎡ 시범 구역에 Geek+ 로봇 8대를 설치하는 사업이 3주 만에 구현되었다고 전하나, 지도 작성·설정 단계별 소요 시간은 나누지 않았다. | ref-1373 | 아니오 | low | 2020-04-28 | 물류창고 / 예외·성과 | — |
+| f20 | [추정] | 업체 제공 기사는 홍콩의 한 풀필먼트 센터에서 Geek+ 시스템의 하드웨어 구현이 12일 걸렸다고 전하나, 지도 작성·시운전 기간을 나누지 않는다. | ref-1377 | 아니오 | low | 2026-10-09 | 물류창고 / 예외·성과 | 원문 미열람, 벤더 주장 |
+| f21 | [추정] | q1-08 에 대해 이번 검색 범위(한국어 검색 6회, 한국로봇산업진흥원·KCI 대상 포함)에서는 국내 물류센터의 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬 시간을 단계별로 공개한 공공·학술 자료를 찾지 못했고(부재 확인 아님), 확인한 정량 자료는 대학 건물의 자율 다층 지도 작성 시간과 해외 물류센터의 단계 구분 없는 전체 구현 기간뿐이라 q1-08 은 부분적으로만 답할 수 있는 것으로 보인다. | ref-163, ref-1373, ref-1377 | 아니오 | low | 2026-10-09 | — | — |
+
+### 근거 발췌
+
+- **f1**: residential structures 14%; "large-scale public and commercial buildings, including office complexes, industrial parks"; 27 semantic categories(Door, Stairs). 엘리베이터 언급 없음(열람 범위 기준). 물류창고·병원 언급 없음.
+- **f2**: 초록: floor plans "ranging from residential to commercial buildings", over 10,000 plans, 30 categories. 학교·병원·쇼핑몰 포함 여부는 개정판 본문 미열람으로 미확인.
+- **f3**: 건물 유형 3종(아파트·연립다세대·단독주택)만 표기, 공간 클래스 예: 거실·침실·주방·화장실, 객체: 변기·세면대·싱크대·욕조·가스레인지. "내국인만 데이터 신청이 가능합니다". 이용정책 별도 페이지는 미열람.
+- **f4**: 검색 요약 기준: pretrained model struggles to generalize to industrial building images that are large, low-resolution, or visually complex; 벽 인식 대상, 수치 미확인. 저자·연도 미확인 (발행일 미확인, 확인일 기준)
+- **f5**: "most research relies on a particular plan style"; 표준 지표 부재와 제한된 공개 데이터셋으로 일반화·비교 문제.
+- **f6**: 초록: 아홉 단계 과제 성공률 0.96, VLM 은 작은 지도·단순 과제에서 더 나으며 "its performance drops in large open areas".
+- **f7**: "up to an order of magnitude performance degradation" (교차 데이터셋 전이). 합성 사전학습은 저데이터 설정에서 실데이터 초기화보다 최대 40% 낫다고 저자 보고. 인식이 아닌 생성 과제이며 주거 데이터셋 사이 비교.
+- **f8**: "nearly 20K floorplan images and metadata", "diverse building types, locations, and data formats". 건물 유형별 수와 라벨 종류는 초록에 없음.
+- **f9**: 이 위키의 종합. 근거: f1·f2(비주거 포함 자료), f3(국내 공공 자료는 주거만), f4(산업용 건물 도면 전이 실패, 미열람), f5(양식 의존), f6(개방 구역 저하), f7(생성 과제의 교차 도메인 저하, 유추). 물류 도면 대상 측정값 없음.
+- **f10**: "import these types of background images to serve as a canvas"; 승강기는 Sidebar 대화상자에서 이름·기준층·칸 중심 좌표를 입력, 정점 속성은 선택 후 Add 로 추가. 로봇 지도 정합은 'Through visual feedback' 로 값 결정. (발행일 미확인, 확인일 기준)
+- **f11**: 벤더 주장: Revit 범주→Indoors 피처 클래스 대응표, "The source BIM data must be georeferenced before running the tool". 실내 경로망은 도구가 직접 만들지 않고 출력으로 생성 가능. 로봇 관제 제품 아님. (발행일 미확인, 확인일 기준)
+- **f12**: 벤더 주장: "automatic extraction of floors, doors, and stairs"; "Pathfinder interprets all slab objects as floors" 라 비바닥 슬래브는 숨기거나 삭제. 로봇 관제 제품 아님. (발행일 미확인, 확인일 기준)
+- **f13**: 벤더 주장: 검색 요약 기준, ANT lab records data from the vehicle's safety laser scanners to generate a 2D map; operator cleans the map. CAD 가져오기 언급 없음. (발행일 미확인, 확인일 기준)
+- **f14**: 벤더 주장: 검색 요약 기준 "draw trajectories based on a Visual SLAM map or a drawing", points of interest and stations defined while mapping. 페이지 원문 열람 실패(socket hang up). (발행일 미확인, 확인일 기준)
+- **f15**: 벤더 주장: "fast, structured insight into layout quality", 구간별 travel time·drive speed 표시. CAD·DXF 가져오기, 자동 레이아웃 생성, 문·승강기·충전소 검출 언급 없음.
+- **f16**: 검색 요약 기준: converts an available floor plan (CAD drawing) of a new space into a grid map; GVG thinning; room segmentation. 건물 유형·단계별 수치·소요 시간 미확인(원문 403).
+- **f17**: 이 위키의 종합. 근거: f10(수동 주석), f13·f14·f15(벤더 자료, CAD 자동 추출 언급 없음), ref-227(MiR, PNG 평면도 업로드와 축척 요건 — 이전 실행 재인용, 벤더 주장), f11·f12(로봇 밖 도구의 문·계단 자동 추출), f16(연구).
+- **f18**: 초록: "successfully completed continuous exploration and elevator transitions in 27 minutes"; 기준 방법 대비 탐사 시간 약 33% 단축. 대학 건물 대상이며 물류센터 아님.
+- **f19**: "The project took three weeks to be implemented"; trial 400 sq m within a 250,000 sq m facility, eight robots; 피커 교육 2주 언급. 단계별 분해 없음.
+- **f20**: 벤더 주장: 검색 요약 기준 "took 12 days for hardware implementation" (업체 제공 기사). 본문 미열람. (발행일 미확인, 확인일 기준)
+- **f21**: 이 위키의 종합. 근거: f18(국내 연구, 대학 건물 27분), f19(해외 시범 3주), f20(벤더 주장 12일). 국내 보도(트위니·DLS 등)는 도입 규모만 전하고 기간 분해 없음.
+
+## 출처
+
+| id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
+|---|---|---|---|---|---|---|---|---|
+| ref-073 | Luo, R. 외 | ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting | 2025-03 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2503.22346 | 아니오 |
+| ref-067 | Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P. | FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting | 2021-05 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2105.07147 | 아니오 |
+| ref-1012 | AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주) | 건축 도면 데이터 | 2023-07-26 | 정부·연구기관 | high | 2026-10-09 | https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465 | 아니오 |
+| ref-076 | DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S. | Vision Language Models Can Parse Floor Plan Maps | 2024-09 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2409.12842 | 아니오 |
+| ref-079 | Open Robotics | Traffic Editor - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-10-09 | https://osrf.github.io/ros2multirobotbook/traffic-editor.html | 아니오 |
+| ref-163 | 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지) | 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 | 2026 | 논문 | medium | 2026-10-09 | https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667 | 아니오 |
+| ref-227 | Mobile Industrial Robots(MiR) | MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본 | 2025-01 | 벤더 문서 | low | 2026-10-09 | https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330 | 예 |
+| ref-1367 | Pizarro, P. N., Hitschfeld, N., Sipiran, I., & Saavedra, J. M. (Automation in Construction) | Automatic floor plan analysis and recognition | 2022-01 | 논문 | medium | 2026-10-09 | https://meshinglab.dcc.uchile.cl/publication/pizarro-2022104348/ | 아니오 |
+| ref-1368 | Aalto University School of Science 석사 논문(저자 미확인) | A deep learning approach to wall recognition in industrial architectural floor plan images | 미확인 | 논문 | medium | 2026-10-09 | https://aaltodoc.aalto.fi/items/69293ef2-19d9-4081-99c8-b30af833da8a | 예 |
+| ref-1369 | Ospici, M., Gueze, A., Bourrat, L., & Bernhardt, A. | Mitigating Domain Shift in Conditioned Floor Plan Generation: Synthetic Pre-training for Data-Efficient Adaptation | 2026-07 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2607.06483 | 아니오 |
+| ref-1370 | Lee, W.-J., & Yun, S.-S. (KIST, Applied Sciences 14(13), 5671) | Automated Destination Renewal Process for Location-Based Robot Errands | 2024-07 | 논문 | medium | 2026-10-09 | https://www.mdpi.com/2076-3417/14/13/5671 | 예 |
+| ref-1371 | Esri (ArcGIS Pro documentation) | Import BIM To Indoor Dataset (Indoors) | 미확인 | 벤더 문서 | medium | 2026-10-09 | https://doc.esri.com/en/arcgis-pro/latest/tool-reference/indoors/import-bim-to-indoor-dataset.html | 아니오 |
+| ref-1372 | Thunderhead Engineering (Pathfinder documentation 2026-1) | IFC Import (Pathfinder How-To) | 미확인 | 벤더 문서 | medium | 2026-10-09 | https://www.thunderheadeng.com/docs/2026-1/pathfinder/examples/how-to/ifc-import | 아니오 |
+| ref-1373 | ti-insight (Transport Intelligence) | CEVA deploys Automated Mobile Robots at its Melbourne site | 2020-04-28 | 기사 | low | 2026-10-09 | https://ti-insight.com/?p=113161 | 아니오 |
+| ref-1374 | ABB Robotics | AMR Studio — A simple and intuitive way to set up AMRs | 미확인 | 벤더 문서 | low | 2026-10-09 | https://www.abb.com/gb/en/areas/robotics/products/software/amr-studio-suite/amr-studio | 예 |
+| ref-1375 | Kollmorgen | Kollmorgen launches NDC Layout Assistant | 2026-04-20 | 벤더 문서 | medium | 2026-10-09 | https://www.kollmorgen.com/en-us/company/press-releases/2026/kollmorgen-launches-ndc-layout-assistant-your-simple-solution-smart | 아니오 |
+| ref-1376 | BlueBotics | ANT lab configuration software | 미확인 | 벤더 문서 | low | 2026-10-09 | https://bluebotics.com/autonomous-navigation-technology/ant-lab-configuration-software | 예 |
+| ref-1377 | Logistics Matters | Fulfillment centre deploys AMRs in 12 days | 미확인 | 기사 | low | 2026-10-09 | https://www.logisticsmatters.co.uk/?p=1091 | 예 |
+| ref-1378 | arXiv 2412.00955 저자(미확인), WACV 2025 | WAFFLE: Multimodal Floorplan Understanding in the Wild | 2024-12 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2412.00955 | 아니오 |
+
+### 출처 요약
+
+- **ref-073**: 산업 현장에서 모은 CAD 도면 기반 대규모 파놉틱 심볼 스포팅 데이터셋. 이번에 HTML v3 본문에서 건물 유형 구성(주거 14%, 공공·상업·산업단지)과 27개 범주를 확인했다.
+- **ref-067**: 주거부터 상업 건물까지의 벡터 CAD 평면도 1만 장 이상과 30개 범주로 된 파놉틱 심볼 스포팅 데이터셋. 이번에 초록을 열어 확인했다.
+- **ref-1012**: 국내 공공 AI 학습용 건축 도면 데이터셋 소개 페이지. 도면 48,033장(아파트·연립다세대·단독주택), 25개 라벨 클래스, 내국인 신청·승인 후 다운로드 조건을 적는다.
+- **ref-076**: 시각-언어 모델로 평면도를 해석해 이동 계획을 만드는 연구. 초록에서 성공률 0.96과 큰 개방 구역의 성능 저하를 확인했다.
+- **ref-079**: 평면도 배경 이미지 위에 벽·문·승강기·차선·경유점 속성을 사람이 주석하고 로봇 지도 레이어를 정합하는 Open-RMF 편집기 문서. 입력 원문 텍스트로 확인했다.
+- **ref-163**: 탐사와 엘리베이터 연계로 다층 실내 지도를 자율 구축하는 국내 연구. 초록에서 KAIST N1 건물 5개 층 27분, 기준 대비 탐사 시간 약 33% 단축을 확인했다.
+- **ref-227**: 원문 미열람. CAD 평면도를 PNG 로 올려 지도로 쓰고 축척 요건을 둔다는 이전 실행 검증 주장의 재인용 출처. 이번 열람은 파일 크기 초과로 실패했다.
+- **ref-1367**: 1995~2021년 평면도 분석·인식 연구를 검토한 논문의 연구실 소개 페이지. 특정 도면 양식 의존, 표준 지표 부재, 공개 데이터셋 부족을 지적한다.
+- **ref-1368**: 원문 미열람. CubiCasa5K 계열 모델을 산업용 건물 평면도 이미지 500장에 적용해 일반화 한계와 재학습 효과를 다룬 석사 논문(검색 요약 기준, 페이지 403).
+- **ref-1369**: 조건부 평면도 생성 모델의 교차 데이터셋 성능 저하(최대 한 자릿수 배)와 절차적 합성 데이터 사전학습 대책을 다룬 프리프린트(2026-09 개정).
+- **ref-1370**: 원문 미열람. CAD 평면도를 격자 지도로 바꾸고 GVG 세선화·방 분할로 로봇 심부름 목적지를 자동 갱신하는 국내 연구(검색 요약 기준, MDPI·KIST 저장소 접근 차단).
+- **ref-1371**: Revit 범주를 실내 데이터셋 피처 클래스(Units·Details 등)로 가져오는 도구 문서. 지리참조 요건과 실내 경로망 생성 활용을 적는다.
+- **ref-1372**: 피난 시뮬레이터 Pathfinder 의 IFC 가져오기 안내. 층·문·계단 자동 추출과 사람이 해야 하는 보정 단계를 설명한다.
+- **ref-1373**: CEVA 멜버른 시설의 400㎡ 시범 구역에 Geek+ 로봇 8대를 3주 만에 구현했다는 물류 전문지 기사. 단계별 기간 분해는 없다.
+- **ref-1374**: 원문 미열람. Visual SLAM 지도나 도면을 바탕으로 궤적을 그리고 스테이션을 정의한다는 AMR 설정 소프트웨어 소개(검색 요약 기준, 열람 시 연결 끊김).
+- **ref-1375**: NDC8 Layout Designer 레이아웃을 구간 단위로 분석하는 도구 발표 보도자료. CAD 가져오기나 시설 자동 인식 언급은 없다.
+- **ref-1376**: 원문 미열람. 차량 레이저 스캐너 기록으로 2D 지도를 만들고 운영자가 정리하는 ANT lab 구성 소프트웨어 소개(검색 요약 기준).
+- **ref-1377**: 원문 미열람. 홍콩 풀필먼트 센터의 Geek+ 하드웨어 구현 12일을 전하는 업체 제공 기사(검색 요약 기준).
+- **ref-1378**: 인터넷에서 모은 약 2만 장의 평면도 이미지와 메타데이터로 다양한 건물 유형을 담은 다중 모달 데이터셋. 초록에서 확인했다.
+
+## 페이지 제안
+
+| 동작 | 경로 | 섹션 | 이유 |
+|---|---|---|---|
+| update | docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md | 2, 3, 4, 5, 8, 9 | q1-05 답: f1·f2·f3·f4·f5·f6·f7·f8·f9 (신뢰도 low) / q1-06 답: f10·f11·f12·f13·f14·f15·f16·f17 (신뢰도 low) / q1-08 부분 답: f18·f19·f20·f21 — 단계 1 페이지 2절 질문 상태(q1-05·q1-06 답함, q1-08 조사 중), 3절 소제목 신설({#q1-05}: 비주거 데이터셋 구성 f1·f2·f3·f8과 전이 근거 f4~f7, 종합 f9 / {#q1-06}: 로봇 쪽 도구·제품 f10·f13·f14·f15(벤더 주장), 로봇 밖 도구·연구 f11·f12(벤더 주장)·f16, 종합 f17 / {#q1-08}: f18(연계 대상)·f19·f20(벤더 주장)·f21), 4절 결론·불확실성, 5절 후속 질문, 8절 출처, 9절 이력. 되돌아온 단계 1 질문이므로 현재 단계(단계 2) 페이지가 아니라 단계 1 페이지에 싣는다. |
+| update | docs/ideas/floorplan-recognition.md | 3 | 아이디어 페이지 3절(트랙 산출물): '한계' 소절의 '물류센터·창고 평면도 데이터셋 찾지 못함' 문장 근거 보강(f1·f3·f9), 제품 사례 소절의 '공개 근거 찾지 못함' 문장 근거 보강(f11·f12·f13·f14·f15·f17, 벤더 주장 병기), 현장 모델링 부담 소절에 국내 자율 다층 지도 작성 27분(f18, 연계 대상)과 해외 구현 기간 사례(f19·f20) 추가 |
+| update | docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md | 8, 11 | 트랙 floorplan-recognition 단계 2 반영 제안 (f1, f3, f4, f6, f9, f16, f17): 8절에 비주거 도면 데이터셋 구성(ArchCAD-400K 산업단지 포함, AI Hub 는 주거만)과 산업용 건물 도면 전이 한계, KIST CAD→격자 지도·목적지 자동 갱신 연구, 11절에 oq-196·oq-197·oq-299 부분 근거. 반영은 다음 해당 영역 실행에서. |
+| update | docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md | 8 | 트랙 floorplan-recognition 단계 2 반영 제안 (f4, f5, f6, f7, f9): 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용)에 따라 도면 해석 모델의 도메인 이동 근거(산업용 건물 도면 전이 실패, 도면 양식 의존, 개방 구역 저하, 합성 사전학습)를 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 연결. |
+| update | docs/categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md | 5, 11 | 트랙 floorplan-recognition 단계 2 반영 제안 (f18, f19, f20, f21): 5절 적용 사례에 물류창고 시범 구현 기간(3주, 단계 미분해)과 기타(대학 건물) 자율 다층 지도 작성 27분(연계 대상), 11절에 국내 물류센터 단계별 설치 시간 공개 자료 부재(oq-119 관련). |
+
+## 용어 후보
+
+| 용어(한글) | 용어(영문) | 한 줄 정의 |
+|---|---|---|
+| 도메인 이동 | Domain Shift | 학습에 쓴 데이터와 실제로 적용하는 데이터의 분포가 달라(예: 주거 평면도로 학습한 모델을 산업용 건물 도면에 적용) 모델 성능이 떨어지는 현상이다. |
+| 일반화 보로노이 그래프 | Generalized Voronoi Graph (GVG) | 격자 지도의 빈 공간에서 가장 가까운 장애물 둘 이상과 같은 거리에 있는 점들을 이어 만든 골격 그래프로, 방 분할과 주행 노드 생성에 쓰인다. |
+
+## 열린 질문
+
+새로 생긴 질문:
+
+- 국내 공공 AI 학습 데이터(AI Hub 등)나 연구 과제에 물류센터·공장·병원 같은 비주거 건축 도면을 랙·도크·승강기·충전 구역 라벨과 함께 담은 데이터셋이 있거나 구축 계획이 있는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해 | 근거: f3 | 종류: 일반
+
+해결 제안(판정은 검증 에이전트):
+
+- 없음
+
+## 자체 점검
+
+- 출처 수: 19 · 교차 확인: 0
+- 예산 사용량: 검색 23회 · 신규 출처 12건
+- 미확인 항목:
+    - q1-08 부분 답: 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 단계별 소요 시간 자료 없음(한국어 검색 6회), 국내 정량 자료는 대학 건물 자율 지도 작성 27분뿐
+    - f4 Aalto 석사 논문 저자·연도·수치 미확인(원문 403)
+    - f16 Lee·Yun 논문의 건물 유형·단계별 성능 수치 미확인(MDPI 403, KIST 저장소 방화벽 차단)
+    - f13·f14·f20 벤더 자료 원문 미열람(검색 요약 기준)
+    - FloorPlanCAD 개정판이 학교·병원·쇼핑몰을 포함한다는 검색 요약과 ArchCAD-400K 가 FloorPlanCAD 를 주거 중심으로 본다는 검색 요약의 차이는 원문을 열지 못해 finding 으로 내지 않음(출처 충돌 후보)
+    - f3 AI Hub 이용정책(상업적 이용 조건) 별도 페이지 미열람, 구조 8개 클래스의 전체 목록 미확인
+    - ref-227 MiR 문서 이번 열람 실패(파일 크기 초과), 이전 실행 재인용
+    - 모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)
+- 범위 경계 위반 의심:
+    - f13: 레이저 스캐너 주행 지도 작성은 분류 원문 19장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 CAD 가져오기 부재 근거로만 씀
+    - f18: 자율 탐사·SLAM 다층 지도 작성은 로봇 자체 지능·제어 연계 영역이라 '연계 대상: '으로 표시하고 지도 작성 시간 근거로만 씀
+    - f12: 피난 시뮬레이터는 ROP 범위 밖 도구로, BIM 자동 추출 범위의 비교 사례로만 씀
+    - f7: 생성 과제의 도메인 이동은 인식 과제의 유추 근거로만 씀(f9 추정)
+- 한계: web_fetch_available: true · fetch_mode full. 검색 23회/40, 신규 출처 12건/20(ref-1367~ref-1378, 예약 구간 안), 재사용 7건(ref-073·ref-067·ref-1012·ref-076·ref-163 webfetch 재열람, ref-079 inbox 원문, ref-227 미열람). 질문 선택: target.json 지정 q1-05·q1-06·q1-08(되돌아온 단계 1 질문 3건). 세 질문 모두 단계 1 질문이라 질문–finding 대응은 현재 단계(단계 2) 페이지가 아니라 단계 1 페이지 갱신 제안의 rationale 에 적었다. q1-05·q1-06 은 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'과 근접 근거로 답했고 종합 신뢰도 low. q1-08 은 부분 답으로 answered_question_ids 에서 뺐다. 원문 열기 실패: MDPI·Aalto 403, KIST 저장소 방화벽, ABB 연결 끊김, MiR PDF 크기 초과, koreascience PDF 본문 추출 실패(그 출처는 쓰지 않음). 교차 확인 0건, 벤더 문서 근거 f11~f15·f20 은 vendor_claim·추정·'벤더 주장: ' 표시. 한국 자료: AI Hub 건축 도면 데이터(ref-1012), 노주형 외(ref-163), KIST Lee·Yun(ref-1370). 열린 질문 부분 근거(해결 제안 없음): oq-197 부분 근거 f3(건물 유형은 주거 3종뿐, 충전 위치 클래스는 공간·객체 예시에서 확인 안 됨), oq-299 부분 근거 f6·f9, oq-196 부분 근거 f4, oq-119 부분 근거 f21. 교차 규칙: 도면 해석 AI 근거(f4~f7·f9)는 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 반영 제안. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 현장 유형 사례는 물류창고(f19·f20)와 기타(f18). 온톨로지 변경 없음: 이번 finding 은 데이터셋·제품·도입 기간에 관한 것으로 공간 그래프 스키마의 개념·관계를 뒷받침하지 않는다. 후속 질문 2건. 용어집에 있는 평면도 인식·래스터–벡터 변환·BIM·IFC·IndoorGML·공간 그래프·위상 지도·점유 격자 지도·지도 정합은 후보로 내지 않았다. 정정 요청 없음. 입력 누락 없음. 페이지 제안: 트랙 산출물 2건(단계 1 페이지, 아이디어 페이지), 세부영역 반영 제안 3건(갱신 상한과 별도).
+
+## 트랙 블록
+
+- 트랙: floorplan-recognition · 단계: 2
+- 답한 질문 id: q1-05, q1-06
+
+### 새 질문
+
+| 제안 id | 질문 | 보낼 단계 | 근거 finding |
+|---|---|---|---|
+| — | 물류센터·창고 평면도 인식에 필요한 학습 데이터(랙·도크·충전 구역·작업 스테이션·엘리베이터 라벨, 규모)를 어떻게 마련하는가 — 소량 직접 주석으로 미세조정, 절차적 합성 평면도 사전학습, 산업단지를 포함한 비주거 CAD 데이터셋(ArchCAD-400K 등) 활용 가운데 무엇이 가능하며 각각의 이용 조건(비상업 제한)은 어떤가? (q1-05 에서 파생) | 2 | f9 |
+| — | BIM 에서 층·문·계단을 자동 추출하는 로봇 밖 도구(실내 GIS 가져오기, 피난 시뮬레이터)의 출력을 ROP 공간 그래프의 입력 초안으로 그대로 쓸 수 있는가, 쓴다면 엘리베이터·충전 위치·작업 스테이션은 어떤 정보로 보완하는가? (q1-06 에서 파생) | 3 | f17 |
+
+### 온톨로지 초안 변경 제안
+
+- 없음
+
+### 단계 완료 조건 자체 평가
+
+- 충족 여부(자체 평가): 미충족
+- 못 채운 조건:
+    - 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안의 개념·관계 목록 표에 없음(단계 2 완료 조건)
+    - 단계 2 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09 미답(이번 실행은 되돌아온 단계 1 질문만 다룸)
+    - 되돌아온 단계 1 질문 q1-08 부분 답으로 남음
