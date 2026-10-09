@@ -219,6 +219,7 @@ def create_personal_app(*, registry=None, origins=None):
         return JSONResponse({'status':'ok', 'mode':'personal_api'}, headers={'Cache-Control':'no-store'})
     dist = Path(__file__).resolve().parents[2]/'web/dist'
     if (dist/'assets').exists(): app.mount('/assets', StaticFiles(directory=dist/'assets'), name='assets')
+    if (dist/'materials').exists(): app.mount('/materials', StaticFiles(directory=dist/'materials'), name='materials')
     @app.get('/{path:path}')
     def index(path:str):
         return FileResponse(dist/'index.html', headers={'Cache-Control':'no-cache'})

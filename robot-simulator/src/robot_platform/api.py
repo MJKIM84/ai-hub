@@ -354,6 +354,7 @@ def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_templa
     dist=root/"web/dist"
     if dist.exists():
         if (dist/"assets").exists():app.mount("/assets",StaticFiles(directory=dist/"assets"),name="assets")
+        if (dist/"materials").exists():app.mount("/materials",StaticFiles(directory=dist/"materials"),name="materials")
 
         @app.get("/{path:path}")
         def index(path:str):return FileResponse(dist/"index.html")
