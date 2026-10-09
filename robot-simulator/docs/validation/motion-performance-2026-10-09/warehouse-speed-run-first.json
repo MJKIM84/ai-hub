@@ -1,0 +1,2441 @@
+{
+  "project": {
+    "schema_version": "1.0",
+    "id": "example-warehouse",
+    "name": "\ubb3c\ub958 \uc2dc\uc124 \u00b7 \ud63c\ud569 \ub85c\ubd07 \uc2e4\ud5d8",
+    "revision": 1,
+    "environment": {
+      "id": "env-warehouse",
+      "name": "\ubb3c\ub958 \uc2dc\uc124",
+      "version": 1,
+      "floors": [
+        {
+          "id": "floor-1",
+          "name": "1\uce35",
+          "elevation": 0,
+          "width": 24.0,
+          "depth": 18.0
+        },
+        {
+          "id": "floor-2",
+          "name": "2\uce35",
+          "elevation": 3.2,
+          "width": 24.0,
+          "depth": 18.0
+        }
+      ],
+      "elements": [
+        {
+          "id": "wall-0",
+          "kind": "wall",
+          "name": "\uc678\ubcbd",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 12.0,
+            "y": 0.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 24.0,
+            "y": 0.15,
+            "z": 2.7
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "wall-1",
+          "kind": "wall",
+          "name": "\uc678\ubcbd",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 12.0,
+            "y": 18.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 24.0,
+            "y": 0.15,
+            "z": 2.7
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "wall-2",
+          "kind": "wall",
+          "name": "\uc678\ubcbd",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 0.0,
+            "y": 9.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 0.15,
+            "y": 18.0,
+            "z": 2.7
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "wall-3",
+          "kind": "wall",
+          "name": "\uc678\ubcbd",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 24.0,
+            "y": 9.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 0.15,
+            "y": 18.0,
+            "z": 2.7
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "shelf-4",
+          "kind": "shelf",
+          "name": "\uc801\uc7ac \uc120\ubc18",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 7.0,
+            "y": 13.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 6.0,
+            "z": 2.4
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "shelf-5",
+          "kind": "shelf",
+          "name": "\uc801\uc7ac \uc120\ubc18",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 11.0,
+            "y": 13.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 6.0,
+            "z": 2.4
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "shelf-6",
+          "kind": "shelf",
+          "name": "\uc801\uc7ac \uc120\ubc18",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 15.0,
+            "y": 13.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 6.0,
+            "z": 2.4
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "shelf-7",
+          "kind": "shelf",
+          "name": "\uc801\uc7ac \uc120\ubc18",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 19.0,
+            "y": 13.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 6.0,
+            "z": 2.4
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "loading-8",
+          "kind": "loading",
+          "name": "\uc0c1\ud558\ucc28 \uad6c\uc5ed",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 3.0,
+            "y": 15.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 3.0,
+            "y": 2.0,
+            "z": 0.03
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "charger-9",
+          "kind": "charger",
+          "name": "\ucda9\uc804\uc18c",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 21.0,
+            "y": 3.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 0.025
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "dock-10",
+          "kind": "dock",
+          "name": "\ub3c4\ud0b9 \uc2a4\ud14c\uc774\uc158",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 21.0,
+            "y": 5.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 0.025
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "waiting-11",
+          "kind": "waiting",
+          "name": "\ucda9\uc804 \ud6c4 \uacbd\ub85c \ub300\uae30",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 19.488,
+            "y": 6.2,
+            "z": 0,
+            "yaw": 1.5707963267948966
+          },
+          "size": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.01
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "stairs-12",
+          "kind": "stairs",
+          "name": "\uce35\uac04 \uacc4\ub2e8",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 21.0,
+            "y": 13.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 3.2
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.16,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "elevator-13",
+          "kind": "elevator",
+          "name": "\uacf5\uc6a9 \uc2b9\uac15\uae30",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 21.0,
+            "y": 8.8,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 3.2
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 2,
+            "max_load": 350.0,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [
+              "floor-1",
+              "floor-2"
+            ],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        },
+        {
+          "id": "ramp-14",
+          "kind": "ramp",
+          "name": "\uc2dc\ud5d8 \uacbd\uc0ac\ub85c",
+          "floor_id": "floor-1",
+          "pose": {
+            "x": 16.0,
+            "y": 8.0,
+            "z": 0,
+            "yaw": 0
+          },
+          "size": {
+            "x": 3.0,
+            "y": 1.5,
+            "z": 0.3
+          },
+          "material": "concrete",
+          "friction": 0.8,
+          "mass": 20,
+          "slope": 0.1,
+          "step_height": 0.15,
+          "speed_limit": 0.5,
+          "allowed_groups": [],
+          "pedestrian_access": false,
+          "dynamic": false,
+          "facility": {
+            "capacity": 1,
+            "max_load": 500,
+            "speed": 0.5,
+            "door_duration": 2,
+            "served_floors": [],
+            "fault": false,
+            "automatic": true,
+            "door_motion": null,
+            "charge_power_w": 400,
+            "charge_efficiency": 0.9
+          }
+        }
+      ],
+      "reviewed_topology": null
+    },
+    "robots": [
+      {
+        "id": "robot-1",
+        "name": "Spot 01",
+        "model_id": "spot",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 1.0,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-2",
+        "name": "Spot 02",
+        "model_id": "spot",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 2.0,
+          "y": 4.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 1.0,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-3",
+        "name": "DELIVERY 03",
+        "model_id": "delivery",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 2.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.6,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-4",
+        "name": "AMR 04",
+        "model_id": "amr",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 4.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.7,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-5",
+        "name": "AGV 05",
+        "model_id": "agv",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 18.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.5,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": [
+          {
+            "x": 18.0,
+            "y": 3.0,
+            "z": 0,
+            "yaw": 0.0
+          },
+          {
+            "x": 19.488,
+            "y": 3.0,
+            "z": 0,
+            "yaw": 0.0
+          },
+          {
+            "x": 19.488,
+            "y": 6.2,
+            "z": 0,
+            "yaw": 1.5707963267948966
+          },
+          {
+            "x": 18.0,
+            "y": 6.2,
+            "z": 0,
+            "yaw": 3.141592653589793
+          },
+          {
+            "x": 18.0,
+            "y": 3.0,
+            "z": 0,
+            "yaw": 0.0
+          }
+        ]
+      },
+      {
+        "id": "robot-6",
+        "name": "LOGISTICS 06",
+        "model_id": "logistics",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 8.0,
+          "y": 4.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.45,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-7",
+        "name": "ARM 07",
+        "model_id": "arm",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 12.0,
+          "y": 6.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.01,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      },
+      {
+        "id": "robot-8",
+        "name": "MOBILE_MANIPULATOR 08",
+        "model_id": "mobile_manipulator",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 11.0,
+          "y": 2.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "group": "\uae30\ubcf8",
+        "battery": 100,
+        "battery_capacity_wh": 400,
+        "estimated_drive_power_w": 120,
+        "payload_mass": 0,
+        "equipment": [],
+        "sensors": {
+          "position_noise": 0.01,
+          "yaw_noise": 0.005,
+          "observation_delay": 0.05,
+          "communication_delay": 0.02,
+          "dropout": 0,
+          "rate_hz": 20,
+          "camera": false,
+          "lidar": true,
+          "imu": true,
+          "item_tracking": true
+        },
+        "max_speed": 0.4,
+        "controller": "default",
+        "gripper_kp": 400.0,
+        "fault": "none",
+        "agv_route": []
+      }
+    ],
+    "people": [
+      {
+        "id": "person-1",
+        "name": "\ubcf4\ud589\uc790 01",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 3.0,
+          "y": 8.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "path": [
+          {
+            "x": 3.0,
+            "y": 8.0,
+            "z": 0,
+            "yaw": 0
+          },
+          {
+            "x": 13.0,
+            "y": 8.0,
+            "z": 0,
+            "yaw": 0
+          }
+        ],
+        "speed": 0.6,
+        "reaction_time": 0.5,
+        "avoidance": true,
+        "sudden_probability": 0,
+        "mass": 70,
+        "behavior": null
+      }
+    ],
+    "items": [
+      {
+        "id": "item-1",
+        "name": "\uac80\uc99d \ubb3c\ud488",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 12.5,
+          "y": 6.0,
+          "z": 0.8,
+          "yaw": 0
+        },
+        "size": {
+          "x": 0.25,
+          "y": 0.2,
+          "z": 0.15
+        },
+        "mass": 1,
+        "friction": 0.5,
+        "fragility_impulse": 15
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-1",
+        "name": "Spot 01 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-1",
+        "priority": 5,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "task-2",
+        "name": "Spot 02 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 4.0,
+          "y": 5.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-2",
+        "priority": 6,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "task-3",
+        "name": "DELIVERY 03 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 7.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-3",
+        "priority": 7,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "task-4",
+        "name": "AMR 04 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 7.0,
+          "y": 5.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-4",
+        "priority": 8,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "task-6",
+        "name": "LOGISTICS 06 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 10.0,
+          "y": 5.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-6",
+        "priority": 10,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "task-8",
+        "name": "MOBILE_MANIPULATOR 08 \uc810\uac80 \uc774\ub3d9",
+        "kind": "patrol",
+        "destination": {
+          "x": 13.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-8",
+        "priority": 12,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      },
+      {
+        "id": "agv-route",
+        "name": "AGV \ucda9\uc804 \ubcf5\uadc0 \uc21c\ud658 \uacbd\ub85c",
+        "kind": "patrol",
+        "destination": {
+          "x": 18.0,
+          "y": 6.2,
+          "z": 0,
+          "yaw": 3.141592653589793
+        },
+        "approved_route": [],
+        "floor_id": "floor-1",
+        "source": null,
+        "item_id": null,
+        "predecessor_ids": [],
+        "preferred_robot": "robot-5",
+        "priority": 5,
+        "release_time": 0,
+        "deadline": null,
+        "quantity": 1,
+        "interval": 0,
+        "retries": 1,
+        "timeout": 120,
+        "dwell": 1,
+        "cooperation": null,
+        "confirmation": null,
+        "condition": null
+      }
+    ],
+    "policy": {
+      "id": "default",
+      "name": "\uac00\uae4c\uc6b4 \ub85c\ubd07 \uc6b0\uc120",
+      "version": 1,
+      "assignment": "nearest",
+      "traffic": "priority",
+      "safety_distance": 0.25,
+      "speed_limit": 1.0,
+      "charge_below": 20,
+      "charge_until": 80,
+      "charge_target_mode": "fixed",
+      "stale_after": 1,
+      "deadlock_timeout": 8,
+      "failure": "reassign",
+      "pedestrian_avoidance": null
+    },
+    "physics": {
+      "timestep": 0.002,
+      "impratio": 1.0,
+      "control_hz": 100,
+      "orchestration_hz": 5,
+      "render_hz": 20,
+      "fidelity": "detailed",
+      "seed": 42
+    },
+    "faults": [],
+    "auto_stop_after_seconds": null
+  },
+  "tasks": [
+    {
+      "id": "task-1",
+      "name": "Spot 01 \uc810\uac80 \uc774\ub3d9",
+      "status": "running",
+      "robot_id": "robot-1",
+      "reason": "nearest \uc815\ucc45 \u00b7 \uc810\uc218 2.23",
+      "started_at": 0.20000000000000015,
+      "completed_at": null,
+      "attempts": 0,
+      "progress_at": 59.80000000002712,
+      "arrival_at": null
+    },
+    {
+      "id": "task-2",
+      "name": "Spot 02 \uc810\uac80 \uc774\ub3d9",
+      "status": "completed",
+      "robot_id": "robot-2",
+      "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+      "started_at": 0.20000000000000015,
+      "completed_at": 13.400000000001144,
+      "attempts": 0,
+      "progress_at": 10.400000000000142,
+      "arrival_at": 12.300000000000777,
+      "arrival_sampled_at": 13.300000000001111
+    },
+    {
+      "id": "task-3",
+      "name": "DELIVERY 03 \uc810\uac80 \uc774\ub3d9",
+      "status": "completed",
+      "robot_id": "robot-3",
+      "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+      "started_at": 0.20000000000000015,
+      "completed_at": 10.000000000000009,
+      "attempts": 0,
+      "progress_at": 7.199999999999429,
+      "arrival_at": 8.899999999999642,
+      "arrival_sampled_at": 9.899999999999975
+    },
+    {
+      "id": "task-4",
+      "name": "AMR 04 \uc810\uac80 \uc774\ub3d9",
+      "status": "running",
+      "robot_id": "robot-4",
+      "reason": "nearest \uc815\ucc45 \u00b7 \uc810\uc218 2.24",
+      "started_at": 0.20000000000000015,
+      "completed_at": null,
+      "attempts": 0,
+      "progress_at": 52.000000000017586,
+      "arrival_at": null
+    },
+    {
+      "id": "task-6",
+      "name": "LOGISTICS 06 \uc810\uac80 \uc774\ub3d9",
+      "status": "waiting",
+      "robot_id": null,
+      "reason": "\uc9c0\uc815 \ub85c\ubd07 \uc544\ub2d8; \ud544\uc694\ud55c \uc791\uc5c5 \ub2a5\ub825 \uc5c6\uc74c",
+      "started_at": null,
+      "completed_at": null,
+      "attempts": 0,
+      "progress_at": 0,
+      "arrival_at": null
+    },
+    {
+      "id": "task-8",
+      "name": "MOBILE_MANIPULATOR 08 \uc810\uac80 \uc774\ub3d9",
+      "status": "completed",
+      "robot_id": "robot-8",
+      "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+      "started_at": 0.20000000000000015,
+      "completed_at": 11.80000000000061,
+      "attempts": 0,
+      "progress_at": 8.599999999999541,
+      "arrival_at": 10.700000000000243,
+      "arrival_sampled_at": 11.700000000000577
+    },
+    {
+      "id": "agv-route",
+      "name": "AGV \ucda9\uc804 \ubcf5\uadc0 \uc21c\ud658 \uacbd\ub85c",
+      "status": "completed",
+      "robot_id": "robot-5",
+      "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+      "started_at": 0.20000000000000015,
+      "completed_at": 38.20000000000072,
+      "attempts": 0,
+      "progress_at": 37.1999999999995,
+      "arrival_at": 37.099999999999376,
+      "arrival_sampled_at": 38.1000000000006
+    }
+  ],
+  "samples": [
+    {
+      "t": 1.0000000000000007,
+      "pose": {
+        "x": 1.9530804204313066,
+        "y": 2.0217638435665126,
+        "z": 0.449505160824423,
+        "yaw": 0.1620130659676817
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 3.15,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.5,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.8499999999999996,
+          "y": 3.15,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 2.0000000000000013,
+      "pose": {
+        "x": 2.009794768155057,
+        "y": 2.04840583093304,
+        "z": 0.45390273486254473,
+        "yaw": 0.5757450315165198
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 3.15,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.5,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.8499999999999996,
+          "y": 3.15,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 2.999999999999891,
+      "pose": {
+        "x": 2.3077226742771715,
+        "y": 2.2883291527109586,
+        "z": 0.4582637433303655,
+        "yaw": 0.6796455734652986
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 3.15,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.5,
+          "y": 2.8,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 3.8499999999999996,
+          "y": 3.15,
+          "z": 0,
+          "yaw": 0
+        },
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 3.999999999999781,
+      "pose": {
+        "x": 2.6060068235771836,
+        "y": 2.488626724180093,
+        "z": 0.4546531687659875,
+        "yaw": 0.402108220181555
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 4.999999999999671,
+      "pose": {
+        "x": 2.9098315820416047,
+        "y": 2.5814249235877615,
+        "z": 0.4546090414164506,
+        "yaw": 0.14797609123190855
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 5.999999999999561,
+      "pose": {
+        "x": 3.2853269652960932,
+        "y": 2.5942483119309467,
+        "z": 0.45623661593496884,
+        "yaw": -0.0995483364527112
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 6.999999999999451,
+      "pose": {
+        "x": 3.402780926278468,
+        "y": 2.5861919929264023,
+        "z": 0.450212665535771,
+        "yaw": 0.048082277696697574
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 7.999999999999341,
+      "pose": {
+        "x": 3.459317716776667,
+        "y": 2.6073371680773647,
+        "z": 0.4541717673454493,
+        "yaw": 0.4784970889925782
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 8.999999999999675,
+      "pose": {
+        "x": 3.638292493017354,
+        "y": 2.7203415689145505,
+        "z": 0.44992275761533285,
+        "yaw": 0.5889740302992754
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 10.000000000000009,
+      "pose": {
+        "x": 3.750708018688262,
+        "y": 2.817780650367604,
+        "z": 0.456349106616814,
+        "yaw": 0.6478278996682421
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 11.000000000000343,
+      "pose": {
+        "x": 3.842482752175802,
+        "y": 2.8829029709358087,
+        "z": 0.45488661783519596,
+        "yaw": 0.6358406187542893
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "t": 12.000000000000677,
+      "pose": {
+        "x": 3.895485689734756,
+        "y": 2.9300898111334304,
+        "z": 0.45761755769307444,
+        "yaw": 0.6510789220764556
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 13.00000000000101,
+      "pose": {
+        "x": 3.9045031500157963,
+        "y": 2.9345177667684563,
+        "z": 0.45077769152278274,
+        "yaw": 0.6505433718866256
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 14.000000000001345,
+      "pose": {
+        "x": 3.897925408940487,
+        "y": 2.923483537196821,
+        "z": 0.4467032951382351,
+        "yaw": 0.6174704639352545
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 15.000000000001679,
+      "pose": {
+        "x": 3.912343150547369,
+        "y": 2.9532057907005234,
+        "z": 0.4485393193704046,
+        "yaw": 0.5414326638504717
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 16.00000000000201,
+      "pose": {
+        "x": 3.9014942007060793,
+        "y": 2.945959572822746,
+        "z": 0.4572693177840736,
+        "yaw": 0.47554619255397856
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 17.000000000001457,
+      "pose": {
+        "x": 3.8934314296474777,
+        "y": 2.94684359109757,
+        "z": 0.4475583264781069,
+        "yaw": 0.5287208160206295
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 18.000000000000902,
+      "pose": {
+        "x": 3.926401487908586,
+        "y": 2.962035522804243,
+        "z": 0.4638593642748895,
+        "yaw": 0.45823656297507087
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 19.000000000000348,
+      "pose": {
+        "x": 3.92263056055899,
+        "y": 2.9604921569204534,
+        "z": 0.46677035543721807,
+        "yaw": 0.47573661159515374
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 19.999999999999794,
+      "pose": {
+        "x": 3.922640985883169,
+        "y": 2.9602173200062722,
+        "z": 0.46667697070823294,
+        "yaw": 0.47521708446561317
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 20.99999999999924,
+      "pose": {
+        "x": 3.9066046011199878,
+        "y": 2.9612080002951733,
+        "z": 0.4544870239413718,
+        "yaw": 0.5262710435612103
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 21.999999999998685,
+      "pose": {
+        "x": 3.8827068098483397,
+        "y": 2.9406588702881655,
+        "z": 0.4496125952618748,
+        "yaw": 0.48690789342489665
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 22.99999999999813,
+      "pose": {
+        "x": 3.909798891791943,
+        "y": 2.949980009928043,
+        "z": 0.4585033830503825,
+        "yaw": 0.40833061666637477
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 23.999999999997577,
+      "pose": {
+        "x": 3.9155070546988378,
+        "y": 2.9646741619874395,
+        "z": 0.466725378345683,
+        "yaw": 0.48953275079672504
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 24.999999999997023,
+      "pose": {
+        "x": 3.901785519580165,
+        "y": 2.958371390623684,
+        "z": 0.4477196689435066,
+        "yaw": 0.5055680438957956
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 25.99999999999647,
+      "pose": {
+        "x": 3.9056261568373016,
+        "y": 2.9630213191156196,
+        "z": 0.44935615145576896,
+        "yaw": 0.47421267505128867
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 26.999999999995914,
+      "pose": {
+        "x": 3.8925503728287087,
+        "y": 2.9534801606839647,
+        "z": 0.4545510635500426,
+        "yaw": 0.43750549563173974
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 27.99999999999536,
+      "pose": {
+        "x": 3.872355619161633,
+        "y": 2.9645239818040334,
+        "z": 0.4465245548370049,
+        "yaw": 0.3988252816530752
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 28.999999999994806,
+      "pose": {
+        "x": 3.902265333322992,
+        "y": 2.960589724915806,
+        "z": 0.4593350676610611,
+        "yaw": 0.3213848639159578
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 29.99999999999425,
+      "pose": {
+        "x": 3.9084770994155553,
+        "y": 2.9429431558906107,
+        "z": 0.44607815338739704,
+        "yaw": 0.49220643071857345
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 30.999999999993697,
+      "pose": {
+        "x": 3.892935646722184,
+        "y": 2.9322110798203935,
+        "z": 0.4585732595169719,
+        "yaw": 0.4961318389932973
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 31.999999999993143,
+      "pose": {
+        "x": 3.89837381889102,
+        "y": 2.9628266404318864,
+        "z": 0.44730826325787115,
+        "yaw": 0.5565240417547245
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 32.999999999994365,
+      "pose": {
+        "x": 3.9032367705838427,
+        "y": 2.962582921421063,
+        "z": 0.45893544808093645,
+        "yaw": 0.5323419024835654
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 33.99999999999559,
+      "pose": {
+        "x": 3.913893575665149,
+        "y": 2.955916256911504,
+        "z": 0.4666964806144345,
+        "yaw": 0.5197601655584193
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 34.99999999999681,
+      "pose": {
+        "x": 3.8982194679264435,
+        "y": 2.9485410218143473,
+        "z": 0.45489306828919546,
+        "yaw": 0.5088523072087572
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 35.99999999999803,
+      "pose": {
+        "x": 3.907066417371123,
+        "y": 2.937092595149391,
+        "z": 0.4487731860013108,
+        "yaw": 0.44723594596704447
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 36.999999999999254,
+      "pose": {
+        "x": 3.9087052301553715,
+        "y": 2.9393564065474687,
+        "z": 0.4574286707039959,
+        "yaw": 0.43753431176636975
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 38.000000000000476,
+      "pose": {
+        "x": 3.892833766946147,
+        "y": 2.944727880622111,
+        "z": 0.44697043861198454,
+        "yaw": 0.5615481213929279
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 39.0000000000017,
+      "pose": {
+        "x": 3.901530832358218,
+        "y": 2.951737592991894,
+        "z": 0.45894673161754734,
+        "yaw": 0.46021969130647344
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 40.00000000000292,
+      "pose": {
+        "x": 3.9187048383098078,
+        "y": 2.939172213048811,
+        "z": 0.4493764605136993,
+        "yaw": 0.4175573447473069
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 41.00000000000414,
+      "pose": {
+        "x": 3.92847103477779,
+        "y": 2.932534444999506,
+        "z": 0.4591928909928708,
+        "yaw": 0.5726648377236225
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 42.000000000005365,
+      "pose": {
+        "x": 3.9071735982468563,
+        "y": 2.9395006834614863,
+        "z": 0.4475422969343202,
+        "yaw": 0.6314025210466154
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 43.00000000000659,
+      "pose": {
+        "x": 3.911914076111967,
+        "y": 2.9404013592468274,
+        "z": 0.4507199712963305,
+        "yaw": 0.6528149041536674
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 44.00000000000781,
+      "pose": {
+        "x": 3.9075825359860588,
+        "y": 2.9431071367659487,
+        "z": 0.45086965575227045,
+        "yaw": 0.6851775089158817
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 45.00000000000903,
+      "pose": {
+        "x": 3.9049477847764296,
+        "y": 2.9308722120636665,
+        "z": 0.44847407137386264,
+        "yaw": 0.6111472715295061
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 46.00000000001025,
+      "pose": {
+        "x": 3.9052888121597302,
+        "y": 2.93015199204194,
+        "z": 0.45757453197063275,
+        "yaw": 0.6203190246074669
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 47.000000000011475,
+      "pose": {
+        "x": 3.918111783364807,
+        "y": 2.949887792932269,
+        "z": 0.4470831641610879,
+        "yaw": 0.5798294406614241
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 48.0000000000127,
+      "pose": {
+        "x": 3.9328046644672594,
+        "y": 2.951859865122871,
+        "z": 0.4666526007746221,
+        "yaw": 0.5383622710635853
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 49.00000000001392,
+      "pose": {
+        "x": 3.9110204062581055,
+        "y": 2.9540764666547306,
+        "z": 0.44653733444660765,
+        "yaw": 0.5905151516469542
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 50.00000000001514,
+      "pose": {
+        "x": 3.914058883945634,
+        "y": 2.946418709354358,
+        "z": 0.46645847983057853,
+        "yaw": 0.5117111300326143
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 51.000000000016364,
+      "pose": {
+        "x": 3.9064581238217517,
+        "y": 2.945028197466059,
+        "z": 0.4534792712601965,
+        "yaw": 0.560984336077612
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 52.000000000017586,
+      "pose": {
+        "x": 3.8743328796159244,
+        "y": 2.9351385820701466,
+        "z": 0.44654736704485354,
+        "yaw": 0.5714756454168309
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 53.00000000001881,
+      "pose": {
+        "x": 3.9006358659463154,
+        "y": 2.9393282717334563,
+        "z": 0.45147183553945514,
+        "yaw": 0.4281795525623921
+      },
+      "reason": "\uad00\uce21 \uae30\ubc18 \uacbd\ub85c \ucd94\uc885",
+      "path": []
+    },
+    {
+      "t": 54.00000000002003,
+      "pose": {
+        "x": 3.93204929203987,
+        "y": 2.950472254785051,
+        "z": 0.45555720571832936,
+        "yaw": 0.46891061056862493
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 55.00000000002125,
+      "pose": {
+        "x": 3.930970234237222,
+        "y": 2.956905893482394,
+        "z": 0.4666750972700472,
+        "yaw": 0.4993469173264466
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 56.000000000022474,
+      "pose": {
+        "x": 3.9310076072376128,
+        "y": 2.9569726771726197,
+        "z": 0.46667617567450614,
+        "yaw": 0.49932723014492836
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 57.0000000000237,
+      "pose": {
+        "x": 3.9310085405670003,
+        "y": 2.9569730588927805,
+        "z": 0.4666762347757481,
+        "yaw": 0.4993267868812328
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 58.00000000002492,
+      "pose": {
+        "x": 3.920901488323705,
+        "y": 2.9520104439413624,
+        "z": 0.4667550772252302,
+        "yaw": 0.5068872095561847
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 59.00000000002614,
+      "pose": {
+        "x": 3.9202314593084915,
+        "y": 2.952357192511818,
+        "z": 0.46667733153964464,
+        "yaw": 0.5078846896032498
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": []
+    },
+    {
+      "t": 60.00000000002736,
+      "pose": {
+        "x": 3.915262963197386,
+        "y": 2.9471856569609916,
+        "z": 0.4621070039124137,
+        "yaw": 0.48180074848032167
+      },
+      "reason": "\ub9c8\uc9c0\ub9c9 \ubaa9\ud45c\uc758 \uc2e4\uc81c XY \ub3c4\ub2ec \uc7ac\ud655\uc778",
+      "path": [
+        {
+          "x": 4.0,
+          "y": 3.0,
+          "z": 0,
+          "yaw": 0
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "task_count": 7,
+    "completed": 4,
+    "failed": 0,
+    "success_rate": 1.0,
+    "throughput_per_hour": 239.99999999989055,
+    "mean_completion_seconds": 18.15000000000062,
+    "distance_m": 20.098966354234175,
+    "energy_j": 14820.45937853814,
+    "collisions": 0,
+    "near_misses": 0,
+    "falls": 0,
+    "damaged_items": 0,
+    "physics_realtime_factor": 1.685168480329634,
+    "compute_seconds": 35.604748546145856,
+    "orchestration_mean_ms": 25.07958501887818,
+    "orchestration_max_ms": 83.7060830090195,
+    "peak_process_memory_native": 351256576,
+    "allocation_imbalance": 1,
+    "per_robot": {
+      "robot-1": {
+        "distance_m": 4.928369417250145,
+        "energy_j": 4369.866919736638,
+        "assignments": 1,
+        "utilization": 0.9966666666666641,
+        "waiting_seconds": 0.20000000000000015,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 4369.866919736638,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-2": {
+        "distance_m": 2.575217217618417,
+        "energy_j": 2329.227499903814,
+        "assignments": 1,
+        "utilization": 0.21999999999991762,
+        "waiting_seconds": 0.0,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 2329.227499903814,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-3": {
+        "distance_m": 2.392976063076511,
+        "energy_j": 1335.8214327492954,
+        "assignments": 1,
+        "utilization": 0.1633333333332579,
+        "waiting_seconds": 0.0,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1335.8214327492954,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-4": {
+        "distance_m": 1.815531162271239,
+        "energy_j": 1337.7235370407489,
+        "assignments": 1,
+        "utilization": 0.9966666666666641,
+        "waiting_seconds": 56.40000000002296,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1337.7235370407489,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-5": {
+        "distance_m": 6.0211361990641095,
+        "energy_j": 1622.3982875135011,
+        "assignments": 1,
+        "utilization": 0.6333333333330524,
+        "waiting_seconds": 0.0,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1622.3982875135011,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-6": {
+        "distance_m": 6.165480235473913e-07,
+        "energy_j": 1199.9999999997533,
+        "assignments": 0,
+        "utilization": 0.0,
+        "waiting_seconds": 0.0,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1199.9999999997533,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-7": {
+        "distance_m": 0.0,
+        "energy_j": 1199.9999999994886,
+        "assignments": 0,
+        "utilization": 0.0,
+        "waiting_seconds": 0.0,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1199.9999999994886,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      },
+      "robot-8": {
+        "distance_m": 2.3657356784057306,
+        "energy_j": 1425.4217015949012,
+        "assignments": 1,
+        "utilization": 0.19333333333325423,
+        "waiting_seconds": 0.0,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "charging_input_j": 0.0,
+        "charging_stored_j": 0.0,
+        "energy_demand_j": 1425.4217015949012,
+        "unserved_energy_j": 0.0,
+        "facility_queue_wait_seconds": 0.0,
+        "charging_queue_wait_seconds": 0.0
+      }
+    },
+    "per_type": {
+      "spot": {
+        "robot_count": 2,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "assignments": 2,
+        "busy_seconds": 73.0000000000282,
+        "distance_m": 7.503586634868562,
+        "energy_j": 6699.0944196404525,
+        "waiting_seconds": 0.20000000000000015,
+        "utilization": 0.6083333333332909,
+        "completion_share": 0.25
+      },
+      "delivery": {
+        "robot_count": 1,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "assignments": 1,
+        "busy_seconds": 9.799999999999942,
+        "distance_m": 2.392976063076511,
+        "energy_j": 1335.8214327492954,
+        "waiting_seconds": 0.0,
+        "utilization": 0.1633333333332579,
+        "completion_share": 0.25
+      },
+      "amr": {
+        "robot_count": 1,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "assignments": 1,
+        "busy_seconds": 59.80000000002712,
+        "distance_m": 1.815531162271239,
+        "energy_j": 1337.7235370407489,
+        "waiting_seconds": 56.40000000002296,
+        "utilization": 0.9966666666666641,
+        "completion_share": 0.0
+      },
+      "agv": {
+        "robot_count": 1,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "assignments": 1,
+        "busy_seconds": 38.000000000000476,
+        "distance_m": 6.0211361990641095,
+        "energy_j": 1622.3982875135011,
+        "waiting_seconds": 0.0,
+        "utilization": 0.6333333333330524,
+        "completion_share": 0.25
+      },
+      "logistics": {
+        "robot_count": 1,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "assignments": 0,
+        "busy_seconds": 0.0,
+        "distance_m": 6.165480235473913e-07,
+        "energy_j": 1199.9999999997533,
+        "waiting_seconds": 0.0,
+        "utilization": 0.0,
+        "completion_share": 0.0
+      },
+      "arm": {
+        "robot_count": 1,
+        "completed": 0,
+        "cooperative_completed_participations": 0,
+        "assignments": 0,
+        "busy_seconds": 0.0,
+        "distance_m": 0.0,
+        "energy_j": 1199.9999999994886,
+        "waiting_seconds": 0.0,
+        "utilization": 0.0,
+        "completion_share": 0.0
+      },
+      "mobile_manipulator": {
+        "robot_count": 1,
+        "completed": 1,
+        "cooperative_completed_participations": 0,
+        "assignments": 1,
+        "busy_seconds": 11.600000000000543,
+        "distance_m": 2.3657356784057306,
+        "energy_j": 1425.4217015949012,
+        "waiting_seconds": 0.0,
+        "utilization": 0.19333333333325423,
+        "completion_share": 0.25
+      }
+    },
+    "cooperative_recovery": {
+      "started": 0,
+      "completed": 0,
+      "failed_or_cancelled": 0,
+      "mean_active_seconds": null,
+      "mean_failure_to_recovery_seconds": null
+    },
+    "charging_input_j": 0.0,
+    "charging_stored_j": 0.0,
+    "energy_demand_j": 14820.45937853814,
+    "unserved_energy_j": 0.0,
+    "pedestrian_min_clearance_m": {
+      "robot-1": 4.204231064198084,
+      "robot-2": 2.2550651105618127,
+      "robot-3": 4.344226297223627,
+      "robot-4": 2.6185820306304333,
+      "robot-5": 4.692112135887941,
+      "robot-6": 3.1549999990510207,
+      "robot-7": 0.8300007592495082,
+      "robot-8": 3.7736201539929195
+    },
+    "pedestrian_min_clearance_basis": "actual planar circumscribed robot radius and person torso radius at every physics step",
+    "facilities": {
+      "elevator-13": {
+        "known_seconds": 60.00000000002736,
+        "unknown_seconds": 0.0,
+        "reserved_seconds": 0.0,
+        "occupied_seconds": 0.0,
+        "reserved_robot_seconds": 0.0,
+        "occupied_robot_seconds": 0.0,
+        "fault_seconds": 0.0,
+        "queue_wait_seconds": 0,
+        "completed_queue_wait_count": 0,
+        "completed_queue_wait_mean_seconds": null,
+        "completed_queue_wait_max_seconds": null,
+        "granted_queue_wait_count": 0,
+        "cancelled_queue_wait_count": 0,
+        "cancelled_queue_wait_seconds": 0,
+        "open_queue_wait_count": 0,
+        "open_queue_wait_seconds": 0,
+        "unknown_queue_wait_count": 0,
+        "left_censored_queue_wait_count": 0,
+        "censored_queue_wait_count": 0,
+        "censored_queue_wait_seconds": 0,
+        "kind": "elevator",
+        "started_at": 0.0,
+        "state": "idle",
+        "occupancy_basis": "manager_reported_occupants_zero_order_hold",
+        "occupancy_freshness_verified": false,
+        "reserved_utilization": 0.0,
+        "occupied_utilization": 0.0,
+        "completed_recovery_count": 0,
+        "mean_recovery_seconds": null,
+        "max_recovery_seconds": null,
+        "open_fault_count": 0,
+        "censored_fault_count": 0,
+        "queue_wait_intervals": [],
+        "fault_intervals": [],
+        "state_intervals": [
+          {
+            "phase": "idle",
+            "queue": [],
+            "reserved_by": [],
+            "occupants": [],
+            "fault_active": false,
+            "started_at": 0.0,
+            "ended_at": null,
+            "observed_seconds": 60.00000000002736
+          }
+        ],
+        "robots": {}
+      },
+      "charger-9": {
+        "known_seconds": 60.00000000002736,
+        "unknown_seconds": 0.0,
+        "reserved_seconds": 0.0,
+        "occupied_seconds": 0.0,
+        "reserved_robot_seconds": 0.0,
+        "occupied_robot_seconds": 0.0,
+        "fault_seconds": 0.0,
+        "queue_wait_seconds": 0,
+        "completed_queue_wait_count": 0,
+        "completed_queue_wait_mean_seconds": null,
+        "completed_queue_wait_max_seconds": null,
+        "granted_queue_wait_count": 0,
+        "cancelled_queue_wait_count": 0,
+        "cancelled_queue_wait_seconds": 0,
+        "open_queue_wait_count": 0,
+        "open_queue_wait_seconds": 0,
+        "unknown_queue_wait_count": 0,
+        "left_censored_queue_wait_count": 0,
+        "censored_queue_wait_count": 0,
+        "censored_queue_wait_seconds": 0,
+        "kind": "charger",
+        "started_at": 0.0,
+        "state": "idle",
+        "occupancy_basis": "manager_reported_occupants_zero_order_hold",
+        "occupancy_freshness_verified": false,
+        "reserved_utilization": 0.0,
+        "occupied_utilization": 0.0,
+        "completed_recovery_count": 0,
+        "mean_recovery_seconds": null,
+        "max_recovery_seconds": null,
+        "open_fault_count": 0,
+        "censored_fault_count": 0,
+        "queue_wait_intervals": [],
+        "fault_intervals": [],
+        "state_intervals": [
+          {
+            "phase": "idle",
+            "queue": [],
+            "reserved_by": [],
+            "occupants": [],
+            "fault_active": false,
+            "started_at": 0.0,
+            "ended_at": null,
+            "observed_seconds": 60.00000000002736
+          }
+        ],
+        "robots": {}
+      }
+    },
+    "facility_queue_wait_seconds": 0,
+    "charging_queue_wait_seconds": 0,
+    "facility_fault_seconds": 0.0,
+    "facility_metrics_basis": "manager-state transition intervals; robot-seconds for queue wait; facility-seconds for faults; see docs/facility-metrics.md"
+  }
+}

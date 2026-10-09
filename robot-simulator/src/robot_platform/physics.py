@@ -50,6 +50,11 @@ class PhysicsWorld:
             self.data.qpos[j.qposadr[0]]=value
         mujoco.mj_forward(self.model,self.data)
         self.robot_bodies={key:self.model.body(name).id for key,name in self.robot_body_names.items()}
+        self._joint_observations={rid:[(self.model.joint(j).name.split('/',1)[1],int(self.model.jnt_qposadr[j]))
+            for j in range(self.model.njnt) if self.model.joint(j).name.startswith(rid+'/')
+            and int(self.model.jnt_type[j]) not in (int(mujoco.mjtJoint.mjJNT_FREE),int(mujoco.mjtJoint.mjJNT_BALL))]
+            for rid in self.robot_bodies}
+        self._geom_entity_ids=[self.entity_for_geom(gid) for gid in range(self.model.ngeom)]
         self.controllers={}
         self.arm_controllers={}
         self.controller_errors={}
@@ -503,14 +508,11 @@ class PhysicsWorld:
         pos=self.data.xpos[b]; q=self.data.xquat[b]
         vel=np.zeros(6)
         mujoco.mj_objectVelocity(self.model,self.data,mujoco.mjtObj.mjOBJ_BODY,b,vel,0)
-        joints={}
-        for j in range(self.model.njnt):
-            name=self.model.joint(j).name
-            if name.startswith(robot_id+"/") and int(self.model.jnt_type[j]) not in (int(mujoco.mjtJoint.mjJNT_FREE),int(mujoco.mjtJoint.mjJNT_BALL)):
-                joints[name.split("/",1)[1]]=float(self.data.qpos[self.model.jnt_qposadr[j]])
+        joints={name:float(self.data.qpos[address]) for name,address in self._joint_observations[robot_id]}
         return dict(pose=dict(x=float(pos[0]),y=float(pos[1]),z=float(pos[2]),yaw=yaw_of(q)),quaternion=q.tolist(),velocity=vel[3:].tolist(),angular_velocity=vel[:3].tolist(),upright=float(self.data.xmat[b][8]),joints=joints)
 
     def entity_for_geom(self,gid):
+        if hasattr(self,'_geom_entity_ids'):return self._geom_entity_ids[gid]
         name=self.model.geom(gid).name or ""
         if name.startswith("floor/"): return "floor"
         bid=self.model.geom_bodyid[gid]

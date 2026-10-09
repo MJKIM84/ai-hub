@@ -1,0 +1,192 @@
+{
+  "controller": "spot-ik-trot-0.2",
+  "spot": [
+    {
+      "command_m_s": 0.4,
+      "mean_m_s": 0.39766370903285464,
+      "min_upright": 0.9967119179168664,
+      "stop_speed": 8.114047264679828e-11
+    },
+    {
+      "command_m_s": 0.8,
+      "mean_m_s": 0.7811376226270803,
+      "min_upright": 0.998829515600595,
+      "stop_speed": 7.356761032338232e-11
+    },
+    {
+      "command_m_s": 1.0,
+      "mean_m_s": 0.9914207475824972,
+      "min_upright": 0.9987431811527387,
+      "stop_speed": 7.217349894193624e-11
+    }
+  ],
+  "routes": [
+    {
+      "target": [
+        10,
+        10,
+        0
+      ],
+      "sim_s": 15.402000000001813,
+      "tasks": [
+        {
+          "id": "move",
+          "name": "\uc791\uc5c5",
+          "status": "completed",
+          "robot_id": "s",
+          "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+          "started_at": 0.20000000000000015,
+          "completed_at": 15.400000000001812,
+          "attempts": 0,
+          "progress_at": 13.600000000001211,
+          "arrival_at": 14.900000000001645,
+          "arrival_sampled_at": 15.300000000001779
+        }
+      ]
+    },
+    {
+      "target": [
+        9,
+        14,
+        1.57
+      ],
+      "sim_s": 24.401999999997354,
+      "tasks": [
+        {
+          "id": "move",
+          "name": "\uc791\uc5c5",
+          "status": "completed",
+          "robot_id": "s",
+          "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+          "started_at": 0.20000000000000015,
+          "completed_at": 24.399999999997355,
+          "attempts": 0,
+          "progress_at": 21.399999999999018,
+          "arrival_at": 23.899999999997632,
+          "arrival_sampled_at": 24.29999999999741
+        }
+      ]
+    }
+  ],
+  "crossing": {
+    "sim_s": 23.20199999999802,
+    "tasks": [
+      {
+        "id": "move",
+        "name": "\uc791\uc5c5",
+        "status": "completed",
+        "robot_id": "s",
+        "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+        "started_at": 0.20000000000000015,
+        "completed_at": 23.19999999999802,
+        "attempts": 0,
+        "progress_at": 20.99999999999924,
+        "arrival_at": 22.49999999999841,
+        "arrival_sampled_at": 23.099999999998076
+      }
+    ]
+  },
+  "warehouse_peer_arrival": {
+    "sim_s": 36.999999999999254,
+    "tasks": [
+      {
+        "id": "task-1",
+        "name": "Spot 01 \uc810\uac80 \uc774\ub3d9",
+        "status": "completed",
+        "robot_id": "robot-1",
+        "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+        "started_at": 0.20000000000000015,
+        "completed_at": 36.199999999998276,
+        "attempts": 0,
+        "progress_at": 34.59999999999632,
+        "arrival_at": 35.09999999999693,
+        "arrival_sampled_at": 36.099999999998154
+      },
+      {
+        "id": "task-2",
+        "name": "Spot 02 \uc810\uac80 \uc774\ub3d9",
+        "status": "completed",
+        "robot_id": "robot-2",
+        "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+        "started_at": 0.20000000000000015,
+        "completed_at": 12.800000000000944,
+        "attempts": 0,
+        "progress_at": 9.799999999999942,
+        "arrival_at": 11.700000000000577,
+        "arrival_sampled_at": 12.70000000000091
+      },
+      {
+        "id": "task-3",
+        "name": "DELIVERY 03 \uc810\uac80 \uc774\ub3d9",
+        "status": "completed",
+        "robot_id": "robot-3",
+        "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+        "started_at": 0.20000000000000015,
+        "completed_at": 10.000000000000009,
+        "attempts": 0,
+        "progress_at": 7.199999999999429,
+        "arrival_at": 8.899999999999642,
+        "arrival_sampled_at": 9.899999999999975
+      },
+      {
+        "id": "task-4",
+        "name": "AMR 04 \uc810\uac80 \uc774\ub3d9",
+        "status": "running",
+        "robot_id": "robot-4",
+        "reason": "nearest \uc815\ucc45 \u00b7 \uc810\uc218 2.24",
+        "started_at": 0.20000000000000015,
+        "completed_at": null,
+        "attempts": 0,
+        "progress_at": 35.99999999999803,
+        "arrival_at": null
+      },
+      {
+        "id": "task-6",
+        "name": "LOGISTICS 06 \uc810\uac80 \uc774\ub3d9",
+        "status": "waiting",
+        "robot_id": null,
+        "reason": "\uc9c0\uc815 \ub85c\ubd07 \uc544\ub2d8; \ud544\uc694\ud55c \uc791\uc5c5 \ub2a5\ub825 \uc5c6\uc74c",
+        "started_at": null,
+        "completed_at": null,
+        "attempts": 0,
+        "progress_at": 0,
+        "arrival_at": null
+      },
+      {
+        "id": "task-8",
+        "name": "MOBILE_MANIPULATOR 08 \uc810\uac80 \uc774\ub3d9",
+        "status": "completed",
+        "robot_id": "robot-8",
+        "reason": "\ubaa9\ud45c \uad00\uce21 \ub3c4\ub2ec \ubc0f \uc815\uc9c0 \ud655\uc778",
+        "started_at": 0.20000000000000015,
+        "completed_at": 11.80000000000061,
+        "attempts": 0,
+        "progress_at": 8.599999999999541,
+        "arrival_at": 10.700000000000243,
+        "arrival_sampled_at": 11.700000000000577
+      },
+      {
+        "id": "agv-route",
+        "name": "AGV \ucda9\uc804 \ubcf5\uadc0 \uc21c\ud658 \uacbd\ub85c",
+        "status": "running",
+        "robot_id": "robot-5",
+        "reason": "nearest \uc815\ucc45 \u00b7 \uc810\uc218 3.22",
+        "started_at": 0.20000000000000015,
+        "completed_at": null,
+        "attempts": 0,
+        "progress_at": 36.39999999999852,
+        "arrival_at": 36.2999999999984,
+        "arrival_sampled_at": 36.69999999999889
+      }
+    ]
+  },
+  "warehouse": {
+    "sim_s": 2.0000000000000013,
+    "wall_s": 1.300240583019331,
+    "factor": 1.5381768775096498,
+    "steps": 1000,
+    "robots": 8,
+    "people": 1,
+    "seed": 42
+  }
+}

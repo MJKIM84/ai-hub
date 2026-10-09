@@ -101,7 +101,7 @@ class Session:
         self.cooperative_stop_epochs={}
         self.facility_faults={e.id:e.facility.fault for e in project.environment.elements}
         self.facility_states={e.id:dict(id=e.id,name=e.name,kind=e.kind,position=0.,target=0.,door="closed",status="fault" if e.facility.fault else "idle",capacity=e.facility.capacity,max_load=e.facility.max_load,queue=[],occupants=[],fault=e.facility.fault) for e in project.environment.elements if e.kind in ("door","elevator","charger","dock")}
-        self.warnings=["실제 로봇 연동은 미검증입니다.","Spot 제어기는 연구용이며 4cm 계단·5° 경사로 외 조건은 검증 범위에 포함되지 않습니다.","정지 차체 물품 조작·승강기 이동은 조건부 검증이며 협업 인계는 미완료입니다.","카메라 영상·거리 센서 재질 반응과 정량적 손상 보정은 미완료입니다."]
+        self.warnings=["실제 로봇 연동은 미검증입니다.","Spot 주행은 평지 1.0m/s 연구 상한입니다. 제조사 최대 1.6m/s와 다르며 현재 보행 제어기의 계단·경사 이동은 재검증이 필요합니다.","정지 차체 물품 조작·승강기 이동은 조건부 검증이며 협업 인계는 미완료입니다.","카메라 영상·거리 센서 재질 반응과 정량적 손상 보정은 미완료입니다."]
         self.emit("run_created",None,"실행 초기화",dict(seed=project.physics.seed,physics=project.physics.model_dump(),policy=project.policy.model_dump()))
 
     @property

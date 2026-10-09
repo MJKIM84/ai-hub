@@ -55,6 +55,7 @@ import {
   type MaterialLoadStatus,
 } from "./MapMaterials";
 import { RobotDesigns } from "./RobotDesign";
+import { SceneMotion } from "./SceneMotion";
 const geomTypes = [
   "plane",
   "hfield",
@@ -178,6 +179,12 @@ interface Entity {
 interface Runtime {
   materials: MapMaterials;
   robotDesigns: RobotDesigns;
+  motion: SceneMotion;
+  humanPrevious: Map<string, HumanMotion>;
+  humanAnchors: Map<string, number>;
+  selectedId: string;
+  followCenter: THREE.Vector3 | null;
+  drawnFrames: number;
   renderer: THREE.WebGLRenderer;
   scene: THREE.Scene;
   camera: THREE.PerspectiveCamera;
@@ -831,6 +838,12 @@ export function PhysicsView({
     direction.visible = false;
     scene.add(direction);
     const rt: Runtime = {
+      motion: new SceneMotion(),
+      humanPrevious: new Map(),
+      humanAnchors: new Map(),
+      selectedId: "",
+      followCenter: null,
+      drawnFrames: 0,
       robotDesigns: new RobotDesigns(),
       materials: new MapMaterials(
         renderer.capabilities.getMaxAnisotropy(),
@@ -867,6 +880,59 @@ export function PhysicsView({
         rt.frame = 0;
         if (rt.lost) return;
         try {
+          const now = performance.now();
+          for (const [id, object] of rt.objects)
+            rt.motion.apply(id, object, now);
+          rt.robotDesigns.syncCasterFrames(rt.objects);
+          const alpha = rt.motion.alpha(now);
+          for (const [id, human] of rt.humans) {
+            const to = rt.humanMotion.get(id),
+              from = rt.humanPrevious.get(id) ?? to;
+            const anchor = rt.objects.get(rt.humanAnchors.get(id) ?? -1);
+            if (!to || !from || !anchor) continue;
+            const turn = Math.atan2(
+              Math.sin(to.heading - from.heading),
+              Math.cos(to.heading - from.heading),
+            );
+            human.update(
+              {
+                ...to,
+                position: anchor.position.toArray() as [number, number, number],
+                distance: from.distance + (to.distance - from.distance) * alpha,
+                heading: from.heading + turn * alpha,
+              },
+              id === rt.selectedId,
+            );
+          }
+          // Tracking uses the same displayed geometry as the robot, not packet-rate jumps.
+          const followed =
+            trackingRef.current && !previousRide.current && !rt.travel
+              ? entityBounds(rt, followedId.current ?? "")
+              : null;
+          if (followed && !followed.isEmpty()) {
+            const center = followed.getCenter(new THREE.Vector3());
+            const delta = center.clone().sub(rt.followCenter ?? center);
+            camera.position.add(delta);
+            controls.target.add(delta);
+            rt.followCenter = center;
+            controls.update();
+          } else rt.followCenter = null;
+          rt.selectedBounds.copy(entityBounds(rt, rt.selectedId));
+          const personAnchor = rt.objects.get(
+            rt.humanAnchors.get(rt.selectedId) ?? -1,
+          );
+          if (personAnchor)
+            rt.selectionRing.position
+              .copy(personAnchor.position)
+              .add(new THREE.Vector3(0, 0, -0.838));
+          if (rt.direction.visible && !rt.selectedBounds.isEmpty()) {
+            const center = rt.selectedBounds.getCenter(new THREE.Vector3());
+            rt.direction.position.set(
+              center.x,
+              center.y,
+              rt.selectedBounds.max.z + 0.12,
+            );
+          }
           if (rt.travel) {
             const sampled = sampleTravel(rt.travel, performance.now());
             camera.position.fromArray(sampled.view.position);
@@ -1074,7 +1140,11 @@ export function PhysicsView({
           }
           setHiddenLabelCount(hidden);
           renderer.render(scene, camera);
-          if (rt.travel) rt.invalidate();
+          renderer.domElement.dataset.renderedFrames = String(++rt.drawnFrames);
+          renderer.domElement.dataset.motion = rt.motion.active(now)
+            ? "interpolated"
+            : "received";
+          if (rt.travel || rt.motion.active(now)) rt.invalidate();
         } catch {
           rt.lost = true;
           setError(
@@ -1206,6 +1276,10 @@ export function PhysicsView({
       });
       rt.humans.forEach((human) => human.dispose());
       rt.robotDesigns.dispose();
+      rt.motion = new SceneMotion();
+      rt.humanPrevious.clear();
+      rt.humanAnchors.clear();
+      rt.followCenter = null;
       rt.materials.dispose();
       selectionRing.geometry.dispose();
       (selectionRing.material as THREE.Material).dispose();
@@ -1258,6 +1332,16 @@ export function PhysicsView({
     const meshData = new Map(meshes.map((mesh) => [mesh.id, mesh])),
       robots = new Map(state?.robots.map((robot) => [robot.id, robot])),
       geometryByName = new Map(state?.geoms.map((geom) => [geom.name, geom]));
+    rt.selectedId = selected;
+    rt.motion.receive(
+      state?.run_id ?? "",
+      state?.sim_time ?? 0,
+      state?.status === "running" &&
+        !showDiagnostics &&
+        connectionState === "connected",
+      state?.geoms ?? [],
+      performance.now(),
+    );
     const people = new Map(
       project?.people.map((person) => [person.id, person]),
     );
@@ -1482,6 +1566,10 @@ export function PhysicsView({
           rt.humans.set(person.id, human);
           rt.scene.add(human.root);
         }
+        const previous = rt.humanMotion.get(person.id);
+        if (previous?.time !== motion.time)
+          rt.humanPrevious.set(person.id, previous ?? motion);
+        rt.humanAnchors.set(person.id, anchor.id);
         human.update(motion, person.id === selected);
         human.setJacketTexture(
           showMaterials && !showDiagnostics ? rt.materials.get("jacket") : null,
@@ -1675,15 +1763,6 @@ export function PhysicsView({
           rt.travel.to.target = new THREE.Vector3(...rt.travel.to.target)
             .add(delta)
             .toArray() as [number, number, number];
-        } else {
-          const view = snapshot(rt);
-          view.position = new THREE.Vector3(...view.position)
-            .add(delta)
-            .toArray() as [number, number, number];
-          view.target = new THREE.Vector3(...view.target)
-            .add(delta)
-            .toArray() as [number, number, number];
-          travelTo(rt, view, 140);
         }
       }
       if (nextFloor && nextFloor !== floorId && !rideContext)
@@ -1705,6 +1784,7 @@ export function PhysicsView({
     materialStatus,
     visibleFloorKey,
     floorPickerOpen,
+    connectionState,
   ]);
   useEffect(() => {
     if (

@@ -1,7 +1,8 @@
 import math
 from pathlib import Path
 
-from .domain import Project, Environment, Floor, Element, Size, Pose, FacilitySettings, RobotInstance, Task, Person, Item
+from .catalog import model_by_id
+from .domain import Policy, Project, Environment, Floor, Element, Size, Pose, FacilitySettings, RobotInstance, Task, Person, Item
 
 
 TEMPLATES = [
@@ -80,7 +81,7 @@ def example(template_id="hotel") -> Project:
     specs = [("spot",2,2),("spot",2,4),("delivery",5,2),("amr",5,4),("agv",18,3),("logistics",8,4),("arm",12,6),("mobile_manipulator",11,2)]
     for i,(model,x,y) in enumerate(specs):
         robots.append(RobotInstance(id=f"robot-{i+1}",name=f"{'Spot' if model == 'spot' else model.upper()} {i+1:02}",model_id=model,
-            pose=Pose(x=x,y=y),agv_route=agv_route if model=="agv" else []))
+            pose=Pose(x=x,y=y),max_speed=max(.01,model_by_id(model)["max_speed"]),agv_route=agv_route if model=="agv" else []))
     tasks = [Task(id=f"task-{i+1}",name=f"{r.name} 점검 이동",kind="patrol",preferred_robot=r.id,destination=Pose(x=r.pose.x+2,y=r.pose.y+1),priority=5+i) for i,r in enumerate(robots) if r.model_id not in ("arm","agv")]
     tasks.append(Task(id="agv-route",name="AGV 충전 복귀 순환 경로",kind="patrol",preferred_robot="robot-5",destination=Pose(x=18,y=6.2,yaw=math.pi)))
-    return Project(id=f"example-{template_id}",name=f"{name} · 혼합 로봇 실험",environment=Environment(id=f"env-{template_id}",name=name,floors=floors,elements=elements),robots=robots,tasks=tasks,people=[Person(id="person-1",name="보행자 01",pose=Pose(x=3,y=8),path=[Pose(x=3,y=8),Pose(x=13,y=8)],speed=.6)],items=[Item(id="item-1",name="검증 물품",pose=Pose(x=12.5,y=6,z=.8))])
+    return Project(policy=Policy(speed_limit=1.0),id=f"example-{template_id}",name=f"{name} · 혼합 로봇 실험",environment=Environment(id=f"env-{template_id}",name=name,floors=floors,elements=elements),robots=robots,tasks=tasks,people=[Person(id="person-1",name="보행자 01",pose=Pose(x=3,y=8),path=[Pose(x=3,y=8),Pose(x=13,y=8)],speed=.6)],items=[Item(id="item-1",name="검증 물품",pose=Pose(x=12.5,y=6,z=.8))])

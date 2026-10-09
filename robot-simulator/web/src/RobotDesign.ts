@@ -351,7 +351,7 @@ function makeSkin(g: Geom, model: Model, part: Part): Skin {
 export class RobotDesigns {
   private entries = new Map<
     number,
-    { mesh: THREE.Mesh; key: string; skin: Skin }
+    { mesh: THREE.Mesh; key: string; skin: Skin; chassisId?: number }
   >();
 
   apply(
@@ -383,7 +383,12 @@ export class RobotDesigns {
     if (!entry) {
       const skin = makeSkin(g, model as Model, part);
       mesh.add(skin.root);
-      entry = { mesh, key, skin };
+      entry = {
+        mesh,
+        key,
+        skin,
+        chassisId: part === "caster" ? chassis?.id : undefined,
+      };
       this.entries.set(g.id, entry);
     }
     entry.skin.root.visible = enabled;
@@ -398,6 +403,18 @@ export class RobotDesigns {
     entry.skin.update(selected);
     (mesh.material as THREE.Material).visible = !enabled;
     mesh.updateMatrixWorld(true);
+  }
+
+  syncCasterFrames(objects: Map<number, THREE.Mesh>) {
+    for (const entry of this.entries.values()) {
+      const chassis = objects.get(entry.chassisId ?? -1);
+      if (!chassis) continue;
+      entry.skin.root.quaternion
+        .copy(entry.mesh.quaternion)
+        .invert()
+        .multiply(chassis.quaternion);
+      entry.skin.root.updateMatrixWorld(true);
+    }
   }
 
   retain(live: Set<number>) {

@@ -1,5 +1,6 @@
 import { workspaceStorage } from "./visitorSession";
 import { CargoProgress } from "./CargoProgress";
+import { PlaybackRate } from "./PlaybackRate";
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import {
   Activity,
@@ -1405,6 +1406,7 @@ function App() {
     void initialize();
     let timer: ReturnType<typeof setTimeout>;
     async function poll() {
+      const started = performance.now();
       let delay = 1000;
       try {
         const s = await readState();
@@ -1412,7 +1414,8 @@ function App() {
       } catch {
         /* readState fences stale failures as well as successful responses. */
       }
-      if (active) timer = setTimeout(poll, delay);
+      // Request/JSON time is part of the interval, not an extra pause after it.
+      if (active) timer = setTimeout(poll, Math.max(0, delay - (performance.now() - started)));
     }
     void poll();
     return () => {
@@ -2085,7 +2088,7 @@ function App() {
             imu: true,
             item_tracking: true,
           },
-          max_speed: Math.max(0.01, Math.min(0.5, model.max_speed)),
+          max_speed: Math.max(0.01, model.max_speed),
           controller: "default",
           fault: "none",
           agv_route: [],
@@ -2664,6 +2667,8 @@ function App() {
           </dd>
           <dt>방향 (rad)</dt>
           <dd>{fmt(observed?.observed_pose?.yaw)}</dd>
+          <dt>현재 이동 속도 · 물리</dt>
+          <dd>{observed?.velocity ? fmt(Math.hypot(observed.velocity[0], observed.velocity[1]), 2) : "—"} m/s</dd>
           <dt>배터리</dt>
           <dd>{fmt(observed?.battery, 1)} %</dd>
           <dt>충전 입력</dt>
@@ -3567,6 +3572,7 @@ function App() {
         </select>
       </div>
       <div className="simclock">
+        <PlaybackRate state={state} live={live} />
         <Badge value={!live ? "상태 수신 대기" : (state?.status ?? "미연결")} />
         <strong>
           {fmt(state?.sim_time, 3)} <small>s</small>
@@ -5522,6 +5528,17 @@ function App() {
             <div className="split">
               <section className="form-panel">
                 <h2>오케스트레이션 정책</h2>
+                <p className="muted">주행 속도는 m/s, 상단 배속은 시뮬레이션 시간의 진행 비율입니다. 구역 제한·보행자 감속·도킹 제한은 별도로 유지됩니다.</p>
+                <button onClick={() => {
+                  edit((p) => {
+                    for (const robot of p.robots) {
+                      const model = catalog.models.find((m) => m.id === robot.model_id);
+                      if (model && model.max_speed > 0) robot.max_speed = model.max_speed;
+                    }
+                    p.policy.speed_limit = Math.max(.01, ...p.robots.map((r) => r.max_speed));
+                  });
+                  setNotice("모델 기준 주행 속도를 초안에 반영했습니다. Spot 1.0m/s 연구 상한 · 실행 중인 구성은 유지됩니다. 변경을 적용하고 계획을 다시 검토하세요.");
+                }}>모델 기준 주행 속도 적용</button>
                 <div className="form-grid">
                   <label className="span-2">
                     정책 이름

@@ -1,13 +1,13 @@
 """Footprint-inflated A* on explicit environment geometry, not hidden robot truth."""
 import heapq
 import math
+from functools import lru_cache
 from collections.abc import Mapping
-from .catalog import model_by_id
+from .catalog import model_by_id, model_footprint
 
 
 def radius(robot):
-    spec=model_by_id(robot.model_id)
-    x,y=spec["size"]["x"],spec["size"]["y"]
+    x,y=model_footprint(robot.model_id)
     for e in robot.equipment:
         x=max(x,e.size.x);y=max(y,e.size.y)
     if robot.model_id in ("arm","mobile_manipulator"):return max(math.hypot(x,y)/2,.95)
@@ -225,9 +225,14 @@ class Planner:
                 route=Planner(self.environment,resolution=.2)._path_with_peer_disks(
                     start,goal,floor_id,robot,disks)
             return route
-        # Preserve the existing no-peer route, including its tie-breaking and
-        # historical final-point tolerance, byte-for-byte in the branch below.
-        if self.blocked(goal["x"],goal["y"],floor_id,robot):return None
+        # A route search sees one environment/equipment snapshot. Reuse exact
+        # occupancy answers within this call; never cache across map edits.
+        @lru_cache(maxsize=None)
+        def blocked(x,y):
+            return self.blocked(x,y,floor_id,robot)
+        directions=[e for e in self.environment.elements if e.kind=='one_way' and e.floor_id==floor_id]
+        # Keep the same neighbors, tie-breaking and endpoint tolerance.
+        if blocked(goal["x"],goal["y"]):return None
         res=self.resolution
         src=(round(start["x"]/res),round(start["y"]/res)); dst=(round(goal["x"]/res),round(goal["y"]/res))
         queue=[(0.,src)]; cost={src:0.};previous={}
@@ -243,11 +248,11 @@ class Planner:
                 return points
             for dx,dy in moves:
                 nxt=(current[0]+dx,current[1]+dy)
-                if self.blocked(nxt[0]*res,nxt[1]*res,floor_id,robot):continue
-                if dx and dy and (self.blocked((current[0]+dx)*res,current[1]*res,floor_id,robot) or self.blocked(current[0]*res,(current[1]+dy)*res,floor_id,robot)):continue
+                if blocked(nxt[0]*res,nxt[1]*res):continue
+                if dx and dy and (blocked((current[0]+dx)*res,current[1]*res) or blocked(current[0]*res,(current[1]+dy)*res)):continue
                 # One-way zones constrain actual edge direction in their local forward axis.
                 forbidden=False
-                for e in self.environment.elements:
+                for e in directions:
                     if e.kind=="one_way" and e.floor_id==floor_id and abs(current[0]*res-e.pose.x)<e.size.x/2 and abs(current[1]*res-e.pose.y)<e.size.y/2:
                         if dx*math.cos(e.pose.yaw)+dy*math.sin(e.pose.yaw)<0:forbidden=True
                 if forbidden:continue

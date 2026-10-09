@@ -426,9 +426,18 @@ class Orchestrator:
                     if record:record['arrival_at']=None
                     state['reason']='AGV 신선한 지정 경로 관측 확인 필요'
                     continue
-            while path and math.hypot(path[0]["x"]-obs["pose"]["x"],path[0]["y"]-obs["pose"]["y"])<tolerance:
+            while path and math.hypot(path[0]["x"]-obs["pose"]["x"],path[0]["y"]-obs["pose"]["y"])<(min(.10,tolerance*.5) if robot.model_id=='spot' and len(path)==1 else tolerance):
                 path.pop(0)
                 if record:record["progress_at"]=time
+            if robot.model_id=='spot' and len(path)>1 and not (record and record['spec'].approved_route):
+                # Avoid steering at each 35 cm grid vertex. Only shortcut a short,
+                # continuously collision/topology-checked portion of an automatic path.
+                for index in range(min(5,len(path)-1),0,-1):
+                    point=path[index]
+                    if math.hypot(point['x']-obs['pose']['x'],point['y']-obs['pose']['y'])>.9:continue
+                    if self.planner.path_clear(obs['pose'],[point],self._floor(obs['pose']['z']),robot):
+                        del path[:index]
+                        break
             if robot.model_id=='agv' and path:
                 target=record['spec'].destination.model_dump() if record else state.get('manual_target')
                 forward=self._guided_remaining(robot,obs,path,target,self._floor(obs['pose']['z']))
@@ -505,6 +514,11 @@ class Orchestrator:
             dx,dy=path[0]["x"]-obs["pose"]["x"],path[0]["y"]-obs["pose"]["y"]
             turn=angle(math.atan2(dy,dx)-obs["pose"]["yaw"])
             speed=min(robot.max_speed,self.policy.speed_limit,model_by_id(robot.model_id)["max_speed"])
+            if robot.model_id=='spot':
+                # Brake along the remaining approved route, not at every grid cell.
+                # Arrival still requires the original observed position + stop criteria.
+                remaining=math.hypot(dx,dy)+sum(math.hypot(b['x']-a['x'],b['y']-a['y']) for a,b in zip(path,path[1:]))
+                speed=min(speed,max(.08,remaining*.8))
             wait=None
             for other_id,other in observations.items():
                 if other_id==rid or time-other["sampled_at"]>self.policy.stale_after:continue

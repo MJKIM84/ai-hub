@@ -12,7 +12,7 @@ import numpy as np
 
 
 class SpotController:
-    VERSION = "spot-ik-trot-0.1"
+    VERSION = "spot-ik-trot-0.2"
     LEGS = ("fl", "fr", "hl", "hr")
     FEET = ("FL", "FR", "HL", "HR")
 
@@ -31,7 +31,7 @@ class SpotController:
         self.velocity = np.zeros(3)
         self.measured_velocity = np.zeros(3)
         self.velocity_integral = np.zeros(3)
-        self.joint_rate_limit = 8.0
+        self.joint_rate_limit = 14.0
         self.last_feedback = {"mode": "stand", "feet_in_contact": [], "upright_cos": 1.0, "status": "idle"}
 
     @staticmethod
@@ -51,22 +51,35 @@ class SpotController:
         if mode not in {"stand", "sit", "walk", "stop"}:
             raise ValueError(f"Unsupported Spot control mode: {mode}")
         desired = np.array([vx, vy, yaw_rate]) if mode == "walk" else np.zeros(3)
-        desired = np.clip(desired, [-0.5, -0.2, -0.6], [0.5, 0.2, 0.6])
-        self.velocity += np.clip(desired - self.velocity, -0.4 * dt, 0.4 * dt)
+        # Validated research operating ceiling; manufacturer firmware supports
+        # 1.6 m/s, which this joint-space controller does not claim to reproduce.
+        desired = np.clip(desired, [-1.0, -0.2, -0.6], [1.0, 0.2, 0.6])
+        self.velocity += np.clip(desired - self.velocity, -0.8 * dt, 0.8 * dt)
         active = np.linalg.norm(self.velocity) > 0.008
         if active:
+            self.frequency = 1.2 + 1.2 * min(1., abs(self.velocity[0]) / .8)
+            self.duty = .6 - .1 * min(1., abs(self.velocity[0]) / .8)
             self.phase = (self.phase + self.frequency * dt) % 1.0
         rot = data.xmat[self.body_id].reshape(3, 3)
         twist = np.zeros(6)
         mujoco.mj_objectVelocity(self.model, data, mujoco.mjtObj.mjOBJ_BODY, self.body_id, twist, 1)
         measured = np.array([twist[3], twist[4], twist[2]])
         self.measured_velocity += min(1.0, dt / 0.25) * (measured - self.measured_velocity)
-        if active:
+        if np.linalg.norm(desired) < .008:
+            self.velocity_integral *= math.exp(-8 * dt)
+        elif active:
             self.velocity_integral += 0.6 * (self.velocity - self.measured_velocity) * dt
-            self.velocity_integral = np.clip(self.velocity_integral, [-0.35, -0.2, -0.5], [0.35, 0.2, 0.5])
+            self.velocity_integral = np.clip(self.velocity_integral, [-1.6, -0.2, -0.5], [1.6, 0.2, 0.5])
         else:
             self.velocity_integral *= max(0.0, 1.0 - dt * 4)
-        gait_velocity = np.clip(self.velocity + self.velocity_integral, [-0.6, -0.3, -0.8], [0.6, 0.3, 0.8])
+        # Do not carry forward-speed wind-up into a stop or in-place turn.
+        braking = ((desired - self.velocity) * self.velocity < 0)
+        # Once an axis has stopped, retain velocity feedback during a turn so
+        # stance drift is corrected instead of accumulating a position error.
+        if np.linalg.norm(desired) < .008:
+            braking[:] = True
+        self.velocity_integral[braking] *= math.exp(-8 * dt)
+        gait_velocity = np.clip(self.velocity + self.velocity_integral, [-3.2, -0.3, -0.8], [3.2, 0.3, 0.8])
         roll = math.atan2(rot[2, 1], rot[2, 2])
         pitch = math.asin(float(np.clip(-rot[2, 0], -1.0, 1.0)))
         desired_height = 0.23 if mode == "sit" else 0.46
@@ -93,7 +106,7 @@ class SpotController:
             else:
                 p = (phase - self.duty) / (1.0 - self.duty)
                 sweep = -0.5 + p
-                lift = self.lift * math.sin(math.pi * p)
+                lift = (self.lift - .04 * min(1., abs(self.velocity[0]) / .8)) * math.sin(math.pi * p)
             if not active:
                 sweep, lift = 0.0, 0.0
             x = -0.035 + vx_leg * duration * sweep

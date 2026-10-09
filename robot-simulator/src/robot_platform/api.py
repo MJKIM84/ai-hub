@@ -99,13 +99,15 @@ class EngineHost:
 
     def run(self):
         last=time.monotonic();accumulator=0.
-        while not self.stop.wait(.01):
+        while not self.stop.wait(.001):
             now=time.monotonic();elapsed=min(.1,now-last);last=now
             with self.lock:
                 s=self.session
                 if s.status!="running":accumulator=0.;continue
                 accumulator+=elapsed*s.speed
-                steps=min(250,int(accumulator/s.project.physics.timestep))
+                # Yield the state lock frequently; a catch-up batch must not freeze
+                # state reads and controls for half a simulated second.
+                steps=min(max(1,int(.02/s.project.physics.timestep)),int(accumulator/s.project.physics.timestep))
                 if steps:
                     try:s.step(steps)
                     except Exception as error:

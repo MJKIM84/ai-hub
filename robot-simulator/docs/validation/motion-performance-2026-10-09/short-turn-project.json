@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "id": "834d49b31ace",
+  "name": "로봇 운영 실험",
+  "revision": 1,
+  "environment": {
+    "id": "62f0ca1fd1f4",
+    "name": "새 공간",
+    "version": 1,
+    "floors": [
+      {
+        "id": "floor-1",
+        "name": "1층",
+        "elevation": 0.0,
+        "width": 30.0,
+        "depth": 20.0
+      }
+    ],
+    "elements": [],
+    "reviewed_topology": null
+  },
+  "robots": [
+    {
+      "id": "s",
+      "name": "로봇",
+      "model_id": "spot",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 3.0,
+        "y": 10.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 1.0,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    }
+  ],
+  "people": [],
+  "items": [],
+  "tasks": [
+    {
+      "id": "move",
+      "name": "작업",
+      "kind": "patrol",
+      "destination": {
+        "x": 5.0,
+        "y": 11.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "approved_route": [],
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "s",
+      "priority": 5,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 60.0,
+      "dwell": 0.5,
+      "cooperation": null,
+      "confirmation": null,
+      "condition": null
+    }
+  ],
+  "policy": {
+    "id": "default",
+    "name": "가까운 로봇 우선",
+    "version": 1,
+    "assignment": "nearest",
+    "traffic": "priority",
+    "safety_distance": 0.25,
+    "speed_limit": 1.0,
+    "charge_below": 20.0,
+    "charge_until": 80.0,
+    "charge_target_mode": "fixed",
+    "stale_after": 1.0,
+    "deadlock_timeout": 8.0,
+    "failure": "reassign",
+    "pedestrian_avoidance": {
+      "desired_clearance_m": 0.5,
+      "slowdown_distance_m": 2.0,
+      "stop_distance_m": 0.65,
+      "resume_distance_m": 0.9,
+      "max_near_speed_m_s": 0.2,
+      "strategy": "yield",
+      "replan_after_s": 2.0,
+      "blocked_timeout_s": 15.0,
+      "observation_range_m": 6.0,
+      "braking_deceleration_m_s2": 0.8
+    }
+  },
+  "physics": {
+    "timestep": 0.002,
+    "impratio": 1.0,
+    "control_hz": 100.0,
+    "orchestration_hz": 5.0,
+    "render_hz": 20.0,
+    "fidelity": "detailed",
+    "seed": 42
+  },
+  "faults": [],
+  "auto_stop_after_seconds": null
+}
