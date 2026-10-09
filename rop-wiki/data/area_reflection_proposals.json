@@ -2233,6 +2233,66 @@
       "section": "6. 대표 접근법과 기술",
       "summary": "소프트웨어 판에 따라 기능이 추가·폐기되는 사례(Spot SDK 릴리스 노트, 벤더 주장)와 문서 판의 유지 중단 표시(Clearpath OutdoorNav 1.0.0), VDA 5050 팩트시트 구성 블록의 하드웨어·소프트웨어 판 키-값 배열(versions) — 능력 정의를 적용 판과 함께 관리할 필요(근거: 실행 2026-10-09-23 f22·f23·f24·f26).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 12,
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "summary": "5절 '물류창고·제조 공장·상업 시설에서 대화로 로봇 업무를 지시한 사례는 확인되지 않았다' 문장의 갱신 필요(f7, 실행 2026-10-09-25): 물류창고 사례 후보로 SAP EWM 연동 시제품(동료심사 전 프리프린트의 시제품 구조, 원문 미열람, 실제 창고 운영 여부 미확인 — 자연어 명령→LLM→EWM 창고 작업→자율이동로봇, QR 저장 칸 확인 뒤 EWM 확정). SAP EWM 은 분류 원문 19장의 상위 업무 시스템(연계 대상)이며 ROP 몫은 작업 수신과 완료 확정 반영. 여섯 항목 가운데 제약·예외·성과는 미확인, 검색 요약 밖 수치 금지. 반영 때 현장 유형 매트릭스(물류창고 × 시작 조건·작업 대상·수행 자원·완료·인계)에 올린다. 국내 사례(oq-142)는 KAIST 2023 학술대회 서지만 확인되어 미해결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 12,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "의존 DAG(DART-LLM, f20)를 작업 모델에 두고 잎 작업만 Open-RMF 작업 요청·VDA 5050 주문으로 하나씩 내보내며 의존·순서는 ROP 실행기가 보유하는 구성(f27, 추정)과, 옮길 때 빠지는 항목(작업 사이 의존·대안 경로·기한·지시 원문·배정 근거·확인 여부, f28 추정). 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획·47. AI·학습·적응과 모델 운영과 짝 엔진 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링을 함께 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 12,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "NVIDIA Isaac Mission Dispatch(행동 트리 잎별 VDA 5050 주문 송출, 구조 변경은 취소·재제출, f16·f17), PlanSys2(PDDL 계획→계획 그래프→행동 트리 실행, f19), Isaac Mission Control(SAP EWM 작업 변환 등은 [추정] 벤더 주장, f18). 로봇 쪽 주행·행동 실행은 로봇 자체 지능·제어의 연계 대상으로 짧게.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 24,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "행동 트리 임무를 VDA 5050 주문으로 옮기는 Isaac Mission Dispatch(f16), PDDL 계획을 행동 트리로 실행하는 PlanSys2(f19), 의존 DAG(DART-LLM, f20), LTLf→행동 트리 변환(f23), 분기·동기화·순환을 표현하는 Open-RMF 진영 워크플로 다이어그램(f24·f25, Open Robotics Discourse 포럼 공지 근거)과 crossflow README(f26, 워크플로 다이어그램의 구현으로 단정하지 않음).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 25,
+      "section": "8. 대표 연구와 자료",
+      "summary": "핵심 질문 '가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가?'와 관련해 Choe 외(arXiv 2505.13376): 창고 동기 지게차 6대 격자 시뮬레이션 100회에서 MILP 로 후보 도우미마다 경로·시간 비용을 계산하고 요청 로봇이 최저 비용 제안을 고른 시스템 전체 영향 기준 선택이 최근접 로봇 선택 대비 약 26% 효율 향상, 최근접 선택이 최적과 일치한 비율 42%(저자 보고, 시뮬레이션·프리프린트 조건, 동료심사 게재처 미확인, f5). 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획과 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09",
+      "track": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "area_no": 61,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "물류·창고 지시를 다룬 LLM 작업 분해 연구(팔레트 물류 PDDL 하이브리드 f1, 창고 격자 시나리오 f2, PIP-LLM Gazebo 창고 과제 f3, 창고 동기 지게차 도움 요청 f5 — 모두 시뮬레이션·도메인 실험 조건 저자 보고), SAP EWM 연동 시제품(f7, 동료심사 전·원문 미열람, 실제 운영 여부 미확인), 공개 물류 지시–작업 데이터셋 미발견(f11, 추정·부재 확인 아님).",
+      "status": "제안"
     }
   ]
 }

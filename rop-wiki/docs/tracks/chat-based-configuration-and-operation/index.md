@@ -6,9 +6,9 @@ related_areas: [5, 8, 9, 10, 11, 12, 13, 15, 18, 23, 24, 25, 26, 28, 29, 31, 32,
 tags: [자연어 지시, 챗봇, 채팅 기반 구성, 맵 작성, 시나리오 구성, 로봇 구성, 상황 재현, LLM, 작업 분해, 작업 배정, 스케줄링, 중점 연구 트랙, 확장 아이디어]
 status: published
 created: 2026-09-25
-updated: 2026-09-28
-last_run: 2026-09-25
-version: 19
+updated: 2026-10-09
+last_run: 2026-10-09
+version: 20
 confidence: low
 sources: [ref-807, ref-809, ref-166, ref-779, ref-674, ref-677, ref-168, ref-236, ref-746, ref-041, ref-592, ref-594, ref-611, ref-612]
 ---
@@ -17,7 +17,7 @@ sources: [ref-807, ref-809, ref-166, ref-779, ref-674, ref-677, ref-168, ref-236
 
 # 채팅 기반 구성·운영
 
-> 트랙 상태: active · 현재 단계: 단계 3. 업무 지시 구현 가설 설계 · 마지막 트랙 실행: 2026-09-25
+> 트랙 상태: active · 현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09
 
 이 페이지는 중점 연구 트랙 "채팅 기반 구성·운영"의 개요다. 이 트랙은 [아이디어 2. 채팅 기반 구성·운영](../../ideas/chat-based-configuration-and-operation.md)(확장 아이디어 2)의 연구를 위해 2026-09-25에 추가되었다. 트랙(track)은 분류 원문의 17개 대분류·67개 세부 연구영역을 바꾸지 않고, 여러 세부영역을 가로지르는 하나의 연구 주제를 단계적으로 파고드는 집중 연구 프로그램이다. 페이지 구성·백로그 형식·단계 전환 규칙은 첫 트랙 [매뉴얼 기반 로봇 기능 온톨로지](../manual-capability-ontology/index.md)와 같고, 단계는 열 개다. 2026-09-28 분류 개정에서 이 트랙은 "자연어 업무 지시 챗봇"에서 "채팅 기반 구성·운영"으로 범위를 넓혔다. 기존 단계 1~5(업무 지시)는 그대로 이어 가고, 채팅으로 맵 작성·시나리오 구성·로봇 구성·실제 상황 재현을 다루는 단계 6~9와 통합 검증 단계 10을 더했다. 이 트랙의 중심 영역은 새 대분류 [C. 채팅 기반 구성·운영](../../categories/chat-based-configuration-and-operation/index.md)의 8~13번이다.
 
@@ -124,11 +124,11 @@ sources: [ref-807, ref-809, ref-166, ref-779, ref-674, ref-677, ref-168, ref-236
 <!-- auto:track-progress:start -->
 | 단계 | 상태 | 열린 질문 수 | 완료 조건 충족 여부 |
 |---|---|---|---|
-| [단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md) | 진행 중 | 2 | 미충족 |
-| [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | 대기 | 4 | 미충족 |
-| [단계 3. 업무 지시 구현 가설 설계](stage-3-implementation-hypothesis.md) | 대기 | 12 | 미충족 |
-| [단계 4. 오해석 방지와 확인 절차](stage-4-misinterpretation-safeguards.md) | 대기 | 15 | 미충족 |
-| [단계 5. 업무 지시 검증과 가설 판정](stage-5-verification-and-hypotheses.md) | 대기 | 15 | 미충족 |
+| [단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md) | 진행 중 | 0 | 미충족 |
+| [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | 대기 | 3 | 미충족 |
+| [단계 3. 업무 지시 구현 가설 설계](stage-3-implementation-hypothesis.md) | 대기 | 13 | 미충족 |
+| [단계 4. 오해석 방지와 확인 절차](stage-4-misinterpretation-safeguards.md) | 대기 | 16 | 미충족 |
+| [단계 5. 업무 지시 검증과 가설 판정](stage-5-verification-and-hypotheses.md) | 대기 | 16 | 미충족 |
 | [단계 6. 채팅으로 맵 작성](stage-6-chat-map-authoring.md) | 대기 | 4 | 미충족 |
 | [단계 7. 채팅으로 시나리오 구성](stage-7-chat-scenario-composition.md) | 대기 | 4 | 미충족 |
 | [단계 8. 채팅으로 로봇 구성](stage-8-chat-robot-configuration.md) | 대기 | 3 | 미충족 |
@@ -150,10 +150,15 @@ sources: [ref-807, ref-809, ref-166, ref-779, ref-674, ref-677, ref-168, ref-236
 
 - 실행 2026-09-25-86 에서 CLI 로 지정된 질문으로 단계 5 의 q5-03 에 답해 3절에 잠정 가설 판정(가설 1~3 모두 부분 지지(잠정), 이 위키의 종합, 신뢰도 low)을 싣고, [실험](experiments.md)에 제안 실험 E5-01~E5-03(사용자 수행 대기)을, [아이디어 2. 채팅 기반 구성·운영](../../ideas/chat-based-configuration-and-operation.md) 6절에 '가설 판정 절차' 소절을 더했다. [업무 분해·배정 설계 초안](task-model-draft.md)은 변경 없이 v0.9 를 유지했다. 단계 3·4 완료와 단계 전환이 승인되지 않아 현재 단계는 단계 3 으로 둔다.
 
+- 위 항목들의 '현재 단계는 단계 3 으로 둔다' 서술은 각 실행 시점(실행 2026-09-25-79~2026-09-25-99) 기준이다. 실행 2026-10-09-25 기준 현재 단계는 단계 2. 필요한 데이터와 표준 조사이며 단계 전환은 승인되지 않았다(작업 요구 적재물 속성·완료 조건 미확정, 열린 질문 q2-05·q2-06·q2-07).
+- 실행 2026-10-09-25 에서 단계 1 로 되돌아온 q1-05·q1-06 에 [단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md#q1-05)에서, 단계 2 의 q2-04 에 [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md#q2-04)에서 답했다(신뢰도 low). [아이디어 2. 채팅 기반 구성·운영](../../ideas/chat-based-configuration-and-operation.md) 3절에 물류·산업 지향 연구 갱신을, 4절에 '중간 표현과 로봇 관제 인터페이스 대응' 소절을 더했다. [업무 분해·배정 설계 초안](task-model-draft.md)은 v0.9 → v1.0 으로 올라 작업 개념의 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리했다. 위 첫 항목의 '현재 버전 v0.9'는 실행 2026-09-25-86 기준이며, 1.0 은 0.1 씩 올리는 규칙에 따른 번호로 완성판을 뜻하지 않는다.
+
 ## 7. 최근 실행
 
 <!-- auto:track-recent-runs:start -->
-아직 트랙 실행 기록이 없다.
+| 실행 id | 날짜 | 단계 | 판정(1차 / 2차) | 생성 / 갱신 | 일일 로그 |
+|---|---|---|---|---|---|
+| 2026-10-09-25 | 2026-10-09 | 단계 2. 필요한 데이터와 표준 조사 | 조건부 승인 / 통과 | 0 / 5 | [로그](../../changelog.md) |
 <!-- auto:track-recent-runs:end -->
 
 ## 8. 참고 자료

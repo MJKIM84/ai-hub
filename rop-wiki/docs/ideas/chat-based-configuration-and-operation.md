@@ -6,12 +6,12 @@ related_areas: [5, 8, 9, 10, 11, 12, 13, 15, 18, 23, 24, 25, 26, 28, 29, 31, 32,
 tags: [확장 아이디어, 자연어 지시, 챗봇, 채팅 기반 구성, 맵 작성, 시나리오 구성, 로봇 구성, 상황 재현, LLM, 작업 배정, 스케줄링]
 status: published
 created: 2026-09-25
-updated: 2026-09-28
-version: 20
+updated: 2026-10-09
+version: 21
 sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-164, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-350, ref-351, ref-352, ref-353, ref-354, ref-355, ref-356, ref-357, ref-358, ref-359, ref-360, ref-362, ref-015, ref-031, ref-125, ref-130, ref-228, ref-411, ref-413, ref-418, ref-111, ref-495, ref-230, ref-496, ref-500, ref-501, ref-502, ref-116, ref-504, ref-539, ref-540, ref-541, ref-542, ref-543, ref-544, ref-545, ref-546, ref-547, ref-548, ref-056, ref-404, ref-377, ref-592, ref-593, ref-594, ref-595, ref-596, ref-598, ref-611, ref-612, ref-615, ref-616, ref-376, ref-236, ref-417, ref-586, ref-674, ref-675, ref-676, ref-711, ref-677, ref-712, ref-678, ref-656, ref-657, ref-039, ref-658, ref-659, ref-660, ref-661, ref-662, ref-663, ref-664, ref-041,
-  ref-126, ref-127, ref-680, ref-537, ref-681, ref-682, ref-683, ref-684, ref-373, ref-685, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-717, ref-730, ref-731, ref-732, ref-733, ref-734, ref-623, ref-735, ref-736, ref-737, ref-406, ref-528, ref-738, ref-739, ref-740, ref-741, ref-407, ref-743, ref-744, ref-745, ref-746, ref-416, ref-459, ref-748, ref-752, ref-753, ref-756, ref-757, ref-759, ref-760, ref-761, ref-579, ref-762, ref-763, ref-764, ref-766, ref-767, ref-768, ref-769, ref-770, ref-771, ref-776, ref-807, ref-809, ref-779, ref-400]
+  ref-126, ref-127, ref-680, ref-537, ref-681, ref-682, ref-683, ref-684, ref-373, ref-685, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-717, ref-730, ref-731, ref-732, ref-733, ref-734, ref-623, ref-735, ref-736, ref-737, ref-406, ref-528, ref-738, ref-739, ref-740, ref-741, ref-407, ref-743, ref-744, ref-745, ref-746, ref-416, ref-459, ref-748, ref-752, ref-753, ref-756, ref-757, ref-759, ref-760, ref-761, ref-579, ref-762, ref-763, ref-764, ref-766, ref-767, ref-768, ref-769, ref-770, ref-771, ref-776, ref-807, ref-809, ref-779, ref-400, ref-110, ref-780, ref-1337, ref-1338, ref-1339, ref-1340, ref-1341, ref-1342, ref-1343, ref-1344, ref-1345, ref-1346, ref-1347, ref-1348, ref-1349, ref-1350, ref-1351]
 confidence: low
-last_run: 2026-09-25
+last_run: 2026-10-09
 ---
 
 [홈](../index.md) › [확장 아이디어](index.md) › 아이디어 2. 채팅 기반 구성·운영
@@ -19,7 +19,7 @@ last_run: 2026-09-25
 # 아이디어 2. 채팅 기반 구성·운영
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: low · 페이지 버전: 20 · 마지막 갱신: 2026-09-28 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: low · 페이지 버전: 21 · 마지막 갱신: 2026-10-09 · 마지막 실행: 2026-10-09
 <!-- auto:page-status:end -->
 
 이 페이지는 확장 아이디어 2의 정리 페이지다. 이 아이디어는 새 중점 연구 트랙 [채팅 기반 구성·운영](../tracks/chat-based-configuration-and-operation/index.md)으로 연구하며, 트랙의 살아있는 산출물은 [업무 분해·배정 설계 초안](../tracks/chat-based-configuration-and-operation/task-model-draft.md)이다. 세 아이디어의 연결은 [확장 아이디어 연결 구조](index.md)에 있다. 3~6절은 트랙 실행이 출처와 함께 채우며, 그 전까지 조사하지 않은 내용은 쓰지 않는다.
@@ -238,6 +238,26 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 [^ref-360]: arXiv 2508.19114 저자(미확인), DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning, 2025-08, https://arxiv.org/abs/2508.19114, 접근일 2026-09-25 (원문 미열람)
 [^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)
 
+### 물류·산업 지향 연구 갱신(실행 2026-10-09-25)
+
+위 '무엇을 자동화하고 무엇을 사람에게 남기는가' 소절의 '물류 지시를 직접 다룬 예는 이번 검색 범위에서 LLM 이전 연구인 G3뿐이었다'는 서술은 (실행 2026-09-25 기준)이며 지우지 않는다. 실행 2026-10-09-25 에서는 물류·산업 지향 LLM 분해 연구(모두 시뮬레이션·도메인 실험·초록 수준)와 SAP EWM 연동 시제품 프리프린트(원문 미열람)를 확인했다. 자세한 내용과 출처는 [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-05)의 q1-05 와 [q1-06](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-06)에 있다.
+
+- **팔레트 물류**: Göbel 외(IFAC 2025)는 팔레트 물류 PDDL 도메인에서 GPT-4o·GPT-o1 이 실행 가능한 계획을 만드는 데 어려움을 겪고 계산 비용이 커 실시간 계획에 비실용적이라고 보고하고, LLM 이 PDDL 문제 파일 일부를 만들고 고전 계획기가 최종 계획을 내는 하이브리드 구조를 제안했다(초록 기준). [사실][^ref-1337]
+- **창고 시뮬레이션**: Chen 외(ICRA 2024)는 창고에서 착안한 2D 격자 Warehouse 시나리오에서 LLM 다중 로봇 계획 구조별 성공률을 분산형 0.0%~혼합형 HMAS-2 62.5%로 보고했고(저자 보고) [사실][^ref-1338], PIP-LLM 저자들은 Gazebo 창고 과제 10개에서 높은 성공률을 보고하면서도 미리 정의한 PDDL 도메인·닫힌 정적 세계 가정과 오탈자로 인한 실패를 한계로 밝혔다(저자 보고, 시뮬레이션 조건). [사실][^ref-181]
+- **도움 로봇 선택**: Choe 외(arXiv 2505.13376)는 창고를 동기로, 자연어 도움 요청을 STL 로 옮기고 MILP 로 후보 도우미마다 경로·시간 비용을 계산해 요청 로봇이 가장 낮은 비용의 제안을 고르게 했으며, 지게차 6대 격자 시뮬레이션에서 최근접 로봇 선택 대비 약 26% 효율 향상을 보고했다(저자 보고, 시뮬레이션, 동료심사 게재처 미확인). [사실][^ref-1348]
+- **산업 제조**: IMR-LLM 저자들은 산업 시나리오의 엄격한 순서 제약과 복잡한 의존이 가정·조작 과제와 다른 새로운 도전이라고 보고, LLM 보조 이접 그래프와 결정적 해법기의 2단 구조를 제안했다(초록 기준). [사실][^ref-170]
+- **EWM 연동 시제품**: Research Square 의 동료심사 전 프리프린트의 시제품 구조(원문 미열람, 실제 창고 운영 여부 미확인)는 운영자의 자연어 명령을 LLM 이 창고 작업으로 바꾸고 SAP EWM 창고 작업을 자율이동로봇에 보내며, 로봇이 저장 칸을 QR 코드로 확인한 뒤 EWM 에 작업을 확정한다. [사실][^ref-1339] SAP EWM 은 분류 원문 19장의 상위 업무 시스템인 연계 대상이며, ROP 몫은 작업 수신과 완료 확정 반영이다.
+- **국내 자료**: 2023-11 대한산업공학회 추계학술대회 논문집에 KAIST 연구진이 제조 물류 로봇의 LLM 활용 협업 인터페이스 구축을 발표했다(서지 기준, 내용 미확인). [추정][^ref-780]
+- **가정용 결과를 물류로 옮길 때의 차이**: 대상이 품목·선반 식별자와 수량이어서 정확 일치 접지가 필요하고 표기 오류에 취약하며, 공간 추론과 긴 계획이 필요한 과제(팔레트 물류)와 엄격한 순서 제약이 있는 과제(산업 제조)에서 결정적 계획기·해법기를 함께 두는 구조가 반복되는 것으로 보인다(이 위키의 종합, 실제 물류센터 운영 평가 미확인). [추정][^ref-1337][^ref-181][^ref-170][^ref-1338]
+- **데이터셋**: 물류창고 지시를 정답 작업과 짝지어 공개한 지시–작업 데이터셋은 이번 검색 범위에서 찾지 못했고, 가장 가까운 것은 논문 안의 시뮬레이션 과제 집합과 일반 의도 분해 벤치마크 SkillChain-RTD(물류 아님)였다(부재 확인 아님). [추정][^ref-1338][^ref-181][^ref-1348][^ref-170][^ref-1347][^ref-1339]
+
+[^ref-1337]: Göbel, K., Lorang, P., Staderini, V., & Zips, P. (AIT Austrian Institute of Technology, IFAC PapersOnline 59(18)), Integrating LLMs and Classical Planning for Pallet Logistics: A Case Study, 2025, https://publications.ait.ac.at/de/publications/integrating-llms-and-classical-planning-for-pallet-logistics-a-ca/, 접근일 2026-10-09
+[^ref-1338]: Chen, Y., Arkin, J., Zhang, Y., Roy, N., & Fan, C. (MIT, ICRA 2024), Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?, 2023-09, https://arxiv.org/abs/2309.15943, 접근일 2026-10-09
+[^ref-1339]: Research Square 프리프린트(저자 미확인), An Intelligent Warehouse Execution Framework Integrating SAP Extended WarehouseManagement, Large Language Models, SAP Business Technology Platform, and Autonomous Mobile Robots, 미확인, https://www.researchsquare.com/article/rs-10351090, 접근일 2026-10-09 (원문 미열람)
+[^ref-1347]: Keramat, F., Salimi, S., & Westerlund, T., Decentralized Intent-Based Multi-Robot Task Planner with LLM Oracles on Hyperledger Fabric, 2026-02-09, https://arxiv.org/abs/2602.08421, 접근일 2026-10-09
+[^ref-1348]: Choe, D. B., Sangeetha, S. V., Emanuel, S., Chiu, C.-Y., Coogan, S., & Kousik, S., Seeing, Saying, Solving: An LLM-to-TL Framework for Cooperative Robots, 2025-05-19, https://arxiv.org/abs/2505.13376, 접근일 2026-10-09
+[^ref-780]: 강건·강서연·배정찬(KAIST, 대한산업공학회 추계학술대회 논문집), 제조 물류 로봇에서의 대규모 언어 모델(LLM)을 활용한 로봇 협업 인터페이스 구축, 2023-11, https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11609734, 접근일 2026-10-09 (원문 미열람)
+
 ## 4. 필요한 데이터와 표준
 
 이 절은 [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md)의 결과를 싣는다. q2-01 의 답인 필요한 데이터 항목과 그 원천(실행 2026-09-25-37), q2-02 의 답인 작업·배정 결과를 표현하는 표준·형식 비교(실행 2026-09-25-51), q2-03 의 답인 해석·분해 평가 데이터(실행 2026-09-25-62)를 아래 세 소절에 실었다.
@@ -315,6 +335,41 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 - 물류에 가까운 자료는 실외 배송 항법 벤치마크(연계 대상)와 물류 AMR 임무 명세를 다룬 학위논문뿐이었고 공개 지시–정답 데이터셋 형태인지는 미확인이어서, ROP 는 화물·로케이션·기한·배정 로봇을 정답에 담은 물류 지시 평가 자료를 자체 구축해야 할 것으로 보인다(이 위키의 정리(추론), 부재의 확인은 아님). [추정][^ref-547][^ref-548] 위 3절의 물류 적용 공백과 같은 방향의 관찰이다.
 - 확인한 다중 로봇 벤치마크는 목표 상태 달성과 정답 전이 수 대비 로봇 활용도를 재지만 배정의 전체 최적성(이동거리·납기)을 정답으로 두지 않는 것으로 보여, 배정 적합성 평가에는 정답 배정이나 목적함수 기준값이 따로 필요할 것으로 보인다(이 위키의 정리(추론)). [추정][^ref-090][^ref-544]
 - 이 데이터를 쓰는 평가 지표(해석 정확도와 분해·배정 결과의 목표 달성도를 나눠 재는 방식 등)와 검증 절차는 6. 검증 방법 절에서 [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md)의 결과로 다룬다.
+
+### 중간 표현과 로봇 관제 인터페이스 대응
+
+실행 2026-10-09-25 에서 [단계 2 의 q2-04](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-04)에 답했다. 확인한 대응 사례를 이 위키가 묶으면, 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스로 가장 옮기기 쉬운 중간 표현은 하위 작업과 선행 의존을 담는 의존 DAG 이고, 잎 작업만 Open-RMF 작업 요청과 VDA 5050 주문으로 하나씩 내보내며 의존과 진행 순서는 ROP 실행기가 보유하는 구성이 선택지로 보인다(이 위키의 종합, 물류 플릿 적용 사례 미확인, 신뢰도 low). [추정][^ref-413][^ref-1340][^ref-111][^ref-1341][^ref-1343][^ref-059][^ref-181]
+
+| 중간 표현 | 로봇 관제 인터페이스로 옮기는 방식 | 옮길 때 빠지는 것 | 확인한 사례 |
+|---|---|---|---|
+| 의존 DAG | 잎 작업마다 요청 하나, 의존은 ROP 실행기가 집행 | 대안 경로, 기한 | DART-LLM |
+| PDDL | 계획 그래프를 행동 트리로 바꿔 실행 | 지시 원문, 배정 근거 | PlanSys2, PIP-LLM |
+| 행동 트리 | route·action 잎마다 VDA 5050 주문, 구조 변경은 취소·재제출 | selector 대안 경로, 작업 사이 의존 | Isaac Mission Dispatch |
+| LTL 계열 | 계획기·변환을 거친 뒤에만 | 해당 없음(명세) | Nl2Hltl2Plan, H-LTLf, LTLf→행동 트리 |
+| 워크플로 다이어그램 | 송출과 연결한 공개 사례 미확인 | 미확인 | Open-RMF 상호운용 관심 그룹 포럼 공지, crossflow README |
+
+위 표는 이 위키가 구성한 것이며 출처의 표를 옮긴 것이 아니다. [추정][^ref-413][^ref-1341][^ref-1343][^ref-059][^ref-1344][^ref-1350]
+
+- **인터페이스 쪽 구조**: VDA 5050 공식 저장소 주문 스키마(main 브랜치, 3.0.0 판, 확인일 2026-10-09)는 노드·간선을 sequenceId 순서의 한 줄 경로로 두고 주문 사이 의존·분기 필드가 없다. [사실][^ref-413] Open-RMF 사용자 정의 작업은 GoToPlace·PickUp·DropOff·PerformAction 같은 공개 단계를 순서대로 잇고, 활동 순서 스키마는 활동의 배열로 정의된다(확인일 2026-10-09 기준). [사실][^ref-110][^ref-1340] 기한·우선순위 부재와 작업 사이 의존 부재는 위 두 소절과 같은 관찰이다.
+- **잎 단위 송출 구현**: NVIDIA Isaac Mission Dispatch 는 행동 트리 임무의 route·action 노드마다 별도의 VDA 5050 주문을 차례로 보내고, sequence·selector 구조를 바꾸려면 임무를 취소하고 다시 제출해야 한다(README, 확인일 2026-10-09). [사실][^ref-1341] PlanSys2 는 PDDL 계획을 계획 그래프로 만들고 병렬 실행 흐름을 담은 행동 트리로 변환해 실행하며 [사실][^ref-1343], DART-LLM 은 하위 작업 의존 DAG 를 위상 순서로 실행한다(건설 기계 시나리오). [사실][^ref-059] 로봇 쪽 주행·행동·스킬 실행은 분류 원문 19장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다.
+- **벤더 제품**: NVIDIA Isaac Mission Control 은 README 에서 작업 행동 트리를 조립해 Mission Dispatch 로 실행하고 선택 기능으로 SAP EWM 창고 작업을 이동 임무로 바꿔 로봇을 배정한다고 밝힌다. [추정] 벤더 주장[^ref-1342]
+- **빠지는 항목**: 중간 표현을 VDA 5050 주문·Open-RMF 작업 요청으로 옮기면 작업 사이 선행 의존, 대안 경로, 기한, 지시 원문·배정 근거·확인 여부가 빠지므로 이 항목은 ROP 작업 모델과 실행기에 남겨야 할 것으로 보인다(연 스키마 범위의 부재 관찰에 기댄 추론). [추정][^ref-413][^ref-125][^ref-111][^ref-1341]
+- **LTL 계열**: LTL 계열은 계획이 아니라 명세여서 직접 변환 대상보다 계획이 현장 규칙을 지키는지 검사하는 명세층으로 쓰는 편이 맞아 보인다(서비스·실험실 조건 근거). [추정][^ref-1344][^ref-1345][^ref-1346]
+- **워크플로 형식**: Open Robotics Discourse 포럼 공지(2024-07-25, 2025-05-31)는 행동 트리로 나타내기 어려운 분기·동기화·순환을 담는 워크플로와 그 JSON 스키마('워크플로 다이어그램')를 설명하고 [사실][^ref-1349][^ref-1350], crossflow README 는 병렬 분기·동기화·경주·순환을 포함하는 워크플로 라이브러리를 소개하지만 워크플로 다이어그램과의 관계는 서술하지 않는다. [사실][^ref-1351] 제어 흐름 보관 형식의 후보가 워크플로 다이어그램까지 넓어질 수 있어 보이나 로봇 관제 송출과 연결한 공개 사례는 확인하지 못했다. [추정][^ref-1349][^ref-1350][^ref-1351]
+
+검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/chat-based-configuration-and-operation/task-model-draft.md)의 작업 개념 속성 '선후관계'(작업 사이 선행 의존, 표현 형식 후보: 의존 그래프)와 외부 표현 메모로 반영되었다(v1.0, 0.1 증가 규칙에 따른 번호이며 완성판을 뜻하지 않음).
+
+[^ref-110]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25
+[^ref-1340]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/event_description__sequence.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/event_description__sequence.json, 접근일 2026-10-09
+[^ref-1341]: NVIDIA (nvidia-isaac GitHub), isaac_mission_dispatch — README, 미확인, https://github.com/nvidia-isaac/isaac_mission_dispatch, 접근일 2026-10-09
+[^ref-1342]: NVIDIA (nvidia-isaac GitHub), isaac_mission_control — README, 미확인, https://github.com/nvidia-isaac/isaac_mission_control, 접근일 2026-10-09
+[^ref-1343]: PlanSys2 (ROS 2 Planning System 프로젝트), PlanSys2 Design, 미확인, https://plansys2.github.io/design/index.html, 접근일 2026-10-09
+[^ref-1344]: Xu, S., Luo, X., Huang, Y., Leng, L., Liu, R., & Liu, C., Nl2Hltl2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Representation, 2024-08, https://arxiv.org/abs/2408.08188, 접근일 2026-10-09
+[^ref-1345]: Luo, X., & Liu, C. (IEEE Transactions on Robotics 2025 게재 예정 표기), Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications, 2024-01, https://arxiv.org/abs/2401.04003, 접근일 2026-10-09
+[^ref-1346]: Neupane, A., Mercer, E. G., & Goodrich, M. A. (AAMAS 2023 ARMS 워크숍), Designing Behavior Trees from Goal-Oriented LTLf Formulas, 2023-07, https://arxiv.org/abs/2307.06399, 접근일 2026-10-09
+[^ref-1349]: Open Source Robotics Alliance Interoperability SIG, Open Robotics Discourse, Interoperability Interest Group August 01, 2024: Multi-Agent Process Workflows, 2024-07-25, https://discourse.openrobotics.org/t/interoperability-interest-group-august-01-2024-multi-agent-process-workflows/38794, 접근일 2026-10-09
+[^ref-1350]: Open Source Robotics Alliance Interoperability SIG, Open Robotics Discourse, Interoperability Interest Group June 5, 2025: Execution of Workflow Diagrams, 2025-05-31, https://discourse.openrobotics.org/t/interoperability-interest-group-june-5-2025-execution-of-workflow-diagrams/44032, 접근일 2026-10-09
+[^ref-1351]: Open Robotics (open-rmf GitHub), crossflow — README, 미확인, https://github.com/open-rmf/crossflow, 접근일 2026-10-09
 
 ## 5. 구현 가설
 
@@ -686,13 +741,10 @@ flowchart LR
 아래 표는 퍼블리셔가 트랙 [질문 백로그](../tracks/chat-based-configuration-and-operation/question-backlog.md)의 원천 데이터에서 상태순(열림 → 조사 중 → 답함 → 보류 → 폐기)으로 자동으로 만든다.
 
 <!-- auto:idea-backlog:start -->
-원천: [질문 백로그](../tracks/chat-based-configuration-and-operation/question-backlog.md)([채팅 기반 구성·운영](../tracks/chat-based-configuration-and-operation/index.md) 트랙) · 열림 66건 · 답함 18건 · 폐기 1건
+원천: [질문 백로그](../tracks/chat-based-configuration-and-operation/question-backlog.md)([채팅 기반 구성·운영](../tracks/chat-based-configuration-and-operation/index.md) 트랙) · 열림 66건 · 답함 21건 · 폐기 1건
 
 | 상태 | id | 질문 | 단계 | 제기 근거 | 답 |
 |---|---|---|---|---|---|
-| 열림 | q1-05 | 물류·창고 현장 지시를 다룬 LLM 작업 분해 연구가 있는가, 가정용 시뮬레이터 결과를 물류 지시로 옮길 때 무엇이 달라지는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | f15 | — |
-| 열림 | q1-06 | 팔레트 이동·출하 준비 같은 물류·창고 현장 지시를 대상으로 한 LLM 작업 분해 연구나 지시–작업 데이터셋이 있는가, 가정용 시뮬레이터(VirtualHome, AI2-THOR) 결과를 물류 지시로 옮길 때 무엇이 달라지는가? (q1-01 에서 파생) | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | f15 | — |
-| 열림 | q2-04 | 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? (q1-01 에서 파생) | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | f13 | — |
 | 열림 | q2-05 | 지시 속 현장 장소 용어(예: 3층 출하 대기장, 2번 도크)와 공간 그래프 경유점 이름·지도 id·WMS 로케이션 코드를 대응시키는 이름 사전은 어떤 형식으로 두고 누가 관리하는가? (q2-01 에서 파생) | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | f16 | — |
 | 열림 | q2-06 | 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가? (q2-01 에서 파생) | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | f17 | — |
 | 열림 | q2-07 | IEEE 1872.1-2024 로봇 작업 표현 온톨로지는 작업 분해·선후 의존·배정 대상을 어떤 개념으로 표현하며, 업무 분해·배정 설계 초안의 업무·작업·배정 개념과 어떻게 대응하는가? (q2-02 에서 파생) | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | f15 | — |
@@ -708,6 +760,7 @@ flowchart LR
 | 열림 | q3-14 | 온톨로지 기반 실행 가능성 판정이 후보를 하나도 내지 않을 때, 어느 능력·제약 때문인지를 SHACL 검증 보고처럼 제약 단위로 돌려주는 형식을 배정기 독립 출력(ReasonerOutput)에 둘 수 있는가, 그 형식에서 챗봇이 사용자에게 보여 줄 설명을 만들 수 있는가? (q3-03 에서 파생) | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | f8 | — |
 | 열림 | q3-15 | 로봇 작업의 변경 허용 상태(바꿀 수 없는 부분과 바꿀 수 있는 부분)의 경계를 어디에 둘 것인가 — VDA 5050 베이스를 얼마나 앞서 풀어 줄지, Open-RMF 단계 가운데 어디부터 동결할지, 기준생산계획의 동결 구간처럼 시간으로 둘지 단계로 둘지에 따라 지시 변경 반영 가능 범위와 이동 연속성은 어떻게 달라지는가? (q3-04 에서 파생) | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | f20 | — |
 | 열림 | q3-16 | LLM 이 루프 밖에서 설계한 규칙이 롤링 MILP 를 앞선 보고를 고려할 때, 가설 3 의 '최적화 엔진'을 해법기로 한정할지 검증을 거친 결정적 규칙 실행기까지 넓힐지, 그에 따라 스케줄링 분담 설계를 어떻게 바꾸는가? (q5-03 에서 파생) (관련: q4-08) | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | f13 | — |
+| 열림 | q3-17 | 행동 트리의 selector 같은 대안 경로나 Open-RMF 워크플로 다이어그램의 분기·동기화 같은 제어 흐름을 VDA 5050 주문(한 줄 노드–간선)과 Open-RMF 순차 단계로 옮길 때, ROP 는 그 흐름을 자체 실행기에 두고 잎 작업만 주문·작업 요청으로 하나씩 내보내야 하는가, 그때 제어 흐름 변경에 따른 취소·재제출 비용과 로봇 이동 연속성은 어떻게 되는가? (q2-04 에서 파생) (관련: q3-08, q3-15) | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | f17 | — |
 | 열림 | q4-05 | LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때, 허용 동작 대응(Huang 외)·assertion(ProgPrompt)·계획기 검사(LLM+P) 같은 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? (q1-01 에서 파생) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f14 | — |
 | 열림 | q4-06 | 작업자 음성 피킹의 체크 디지트·스캔처럼 동작 하나하나를 현장에서 확인받는 방식과, 자연어 지시의 해석 결과(작업·대상·로봇)를 배정 전에 요약해 확인받는 방식을 함께 둘 때 각각 어떤 오류를 잡고 확인 부담은 얼마나 늘어나는가? (q1-03 에서 파생) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f9 | — |
 | 열림 | q4-07 | 필수 슬롯 누락은 규칙(스키마)으로 검사하고 지시의 모호성은 KnowNo·CLARA 같은 불확실성 추정으로 판단하는 식으로 두 방식을 나눠 쓸 때, 가정용 벤치마크(AmbiK)에서 보고된 모호성 탐지의 낮은 구분 성능이 물류 지시(화물·장소·기한)에서도 나타나는가, 되묻기 횟수와 오배정은 어떻게 달라지는가? (q1-04 에서 파생) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f11 | — |
@@ -723,6 +776,7 @@ flowchart LR
 | 열림 | q4-17 | 교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (q4-03 에서 파생) (관련: q4-13) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f21 | — |
 | 열림 | q4-18 | 채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? (q4-03 에서 파생) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f22 | — |
 | 열림 | q4-19 | 실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (q4-04 에서 파생) (관련: q4-11, q4-13) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f19 | — |
+| 열림 | q4-20 | PIP-LLM 에서 오탈자가 새 품목·새 선반으로 해석된 것처럼, 물류 지시 속 품목 코드·선반·도크 식별자의 표기 오류를 이름 사전과 대조해 정규화할지 되물을지 정하는 기준은 무엇인가? (q1-05 에서 파생) (관련: q2-05, q4-07) | [단계 4. 오해석 방지와 확인 절차](../tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | f4 | — |
 | 열림 | q5-04 | 물류 지시 평가 자료를 자체 구축할 때 지시–정답 쌍의 정답을 무엇(업무 분해·배정 설계 초안의 작업 모델 인스턴스, 최종 상태·목표 조건, 배정 결과)으로 두고, ALFRED 목표 조건·SMART-LLM 최종 상태·AmbiK 명확화 질문 형식을 화물·로케이션·기한 항목으로 어떻게 확장하는가? (q2-03 에서 파생) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f16 | — |
 | 열림 | q5-05 | 배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생) (관련: q3-05, q5-01) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f17 | — |
 | 열림 | q5-07 | SDI 절제 실험처럼 결정적 검증기를 LLM 비평자로 바꿨을 때의 성공률 차이를 물류 지시(피킹·운반·출하) 시나리오로 재면 어떤 결과가 나오며, 어느 단계의 검증기가 가장 큰 차이를 만드는가? (q3-02 에서 파생) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f7 | — |
@@ -738,6 +792,7 @@ flowchart LR
 | 열림 | q5-17 | 권한 밖 지시와 프롬프트 주입이 섞인 물류 지시 시험 세트로, LLM 단의 거절과 ROP 인가 계층의 결정적 거부가 각각 권한 밖 작업 요청을 얼마나 막는지와 정상 지시의 오거부율을 어떻게 재는가? (q4-03 에서 파생) (관련: q5-13) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f6 | — |
 | 열림 | q5-18 | 물류 지시 시나리오에서 불확실성 점수만으로 되묻기를 정하는 방식과 필수 슬롯·영향 작업 규칙을 함께 쓰는 방식을 비교해 되묻기 횟수·승인 요청 수·오배정·보류 지연을 어떻게 재는가? (q4-04 에서 파생) (관련: q4-07, q5-08) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f18 | — |
 | 열림 | q5-19 | 가설 판정표에서 '잘못된 배정'(가설 1), '설명·재현 가능'(가설 2), '운영 안정성'(가설 3)을 q5-01 의 어떤 지표와 문턱으로 조작적으로 정의해야 지지·부분 지지·기각을 가를 수 있는가? (q5-03 에서 파생) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f17 | — |
+| 열림 | q5-20 | 팔레트 물류 PDDL 도메인(IFAC 2025), PIP-LLM 창고 과제 10개, 창고 동기 지게차 도움 요청 시뮬레이션 같은 과제 집합이 공개되어 있어 물류 지시 평가 자료의 출발점으로 쓸 수 있는가? (q1-06 에서 파생) (관련: q5-04) | [단계 5. 업무 지시 검증과 가설 판정](../tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | f11 | — |
 | 열림 | q6-01 | 공간을 말·글로 설명해 지도를 만드는 선행 연구·제품은 무엇이 있고 어디까지 되는가? | [단계 6. 채팅으로 맵 작성](../tracks/chat-based-configuration-and-operation/stage-6-chat-map-authoring.md) | 사용자 | — |
 | 열림 | q6-02 | 도면·사진을 올려 대화로 고칠 때 축척·치수·통과 조건을 어떤 확인 질문으로 확정하는가? | [단계 6. 채팅으로 맵 작성](../tracks/chat-based-configuration-and-operation/stage-6-chat-map-authoring.md) | 사용자 | — |
 | 열림 | q6-03 | 대화로 만든 지도를 도면 인식 트랙의 공간 그래프 초안과 어떻게 맞추는가? | [단계 6. 채팅으로 맵 작성](../tracks/chat-based-configuration-and-operation/stage-6-chat-map-authoring.md) | 사용자 | — |
@@ -760,9 +815,12 @@ flowchart LR
 | 답함 | q1-02 | LLM을 로봇 작업 계획이나 여러 로봇의 작업 배정에 쓴 연구·제품 사례는 무엇이 있고, 각각 LLM이 맡는 범위(해석·분해·배정·명령 생성)는 어디까지인가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-02) |
 | 답함 | q1-03 | 물류·시설 현장에서 채팅이나 음성으로 로봇·작업자에게 일을 지시하는 운영 인터페이스 제품은 무엇이 있고, 지시를 받은 뒤 확인·승인을 어떻게 받는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-03) |
 | 답함 | q1-04 | 자연어 지시에서 장소·대상 화물·긴급도·기한 같은 상황 정보를 뽑아내는 기존 방법은 무엇이고, 빠진 정보는 어떻게 되묻는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-04) |
+| 답함 | q1-05 | 물류·창고 현장 지시를 다룬 LLM 작업 분해 연구가 있는가, 가정용 시뮬레이터 결과를 물류 지시로 옮길 때 무엇이 달라지는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | f15 | [답](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-05) |
+| 답함 | q1-06 | 팔레트 이동·출하 준비 같은 물류·창고 현장 지시를 대상으로 한 LLM 작업 분해 연구나 지시–작업 데이터셋이 있는가, 가정용 시뮬레이터(VirtualHome, AI2-THOR) 결과를 물류 지시로 옮길 때 무엇이 달라지는가? (q1-01 에서 파생) | [단계 1. 선행 연구·제품 사례 조사](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | f15 | [답](../tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md#q1-06) |
 | 답함 | q2-01 | 채팅 지시를 작업으로 바꾸려면 어떤 정보(작업 종류, 장소, 대상 화물, 기한, 우선순위, 완료 조건)가 필요하고, 그 가운데 무엇을 로봇 기능 온톨로지·공간 그래프·업무 시스템에서 가져오는가? | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-01) |
 | 답함 | q2-02 | 분해한 작업과 배정 결과를 표현하는 기존 표준·형식(작업·미션 기술, 워크플로 기술)은 무엇이 있고, ROP의 작업 모델에 비해 무엇이 빠지는가? | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-02) |
 | 답함 | q2-03 | 해석·분해의 정확도를 평가하려면 어떤 지시–정답 작업 쌍 데이터가 필요하며, 쓸 수 있는 공개 데이터셋이 있는가? | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-03) |
+| 답함 | q2-04 | 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? (q1-01 에서 파생) | [단계 2. 필요한 데이터와 표준 조사](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | f13 | [답](../tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-04) |
 | 답함 | q3-01 | 스케줄링 결정은 LLM과 최적화 엔진 중 어디에 맡기는가? | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-01) |
 | 답함 | q3-02 | 지시 해석 → 작업 분해 → 능력 질의 → 배정 → 스케줄링 → 진행 관리의 흐름에서 단계마다 입력·출력은 무엇이고, 규칙·최적화처럼 결과가 정해진(결정적) 구성 요소는 어디에 두는가? | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-02) |
 | 답함 | q3-03 | 온톨로지 질의가 수행 가능한 로봇을 찾지 못하거나 후보를 여럿 낼 때, 챗봇은 무엇을 사용자에게 되묻고 무엇을 스스로 정하는가? | [단계 3. 업무 지시 구현 가설 설계](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 사용자 | [답](../tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-03) |

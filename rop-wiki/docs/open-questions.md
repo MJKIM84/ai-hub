@@ -364,8 +364,9 @@ version: 1
 | oq-342 | 출처 충돌: FloorPlanCAD 의 범주 수는 30개(arXiv 초록)인가 35개(프로젝트 페이지)인가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-10-09 | 2026-10-09-21 | 열림 | — |
 | oq-343 | 출처 충돌: ArchCAD-400K 의 의미 범주에 엘리베이터가 있는가(앞선 실행의 검색 요약과 v3 본문 열람 결과가 다르다)? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-10-09 | 2026-10-09-21 | 열림 | — |
 | oq-344 | 국내에서 판매·설치되는 산업용 로봇·이동로봇의 사용설명서를 한국어로 제공해야 한다는 규정이 자율안전확인 고시나 다른 법령에 있으며, 원본과 한국어 번역판의 판이 다를 때 어느 쪽을 근거로 삼는가? | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | 2026-10-09 | 2026-10-09-23 | 열림 | — |
+| oq-345 | 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업 요청)에 작업 사이 의존·대안 경로·기한을 표현하는 확장 제안이나 차기 판 논의가 있는가? (관련 기존 질문: oq-049, oq-137) | [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md)<br>[24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md) | 2026-10-09 | 2026-10-09-25 | 열림 | — |
 
-상태별 건수: 열림 342건, 조사 중 1건, 해결 1건
+상태별 건수: 열림 343건, 조사 중 1건, 해결 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

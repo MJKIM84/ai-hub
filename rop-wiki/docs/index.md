@@ -124,7 +124,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q2-05 — 언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q5-02 — 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? ([답](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-02)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
+| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q2-04 — 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? (q1-01 에서 파생) ([답](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-04)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 35 | q1-06 — 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [단계 2. 로봇 문서 유형과 정보 구조 조사](tracks/manual-capability-ontology/stage-2-document-types.md) — q2-02·q2-03·q2-05 답함(신뢰도 낮음), 3절 q2-03의 AMR 샘플 미발견 문장을 MiR·Clearpath 샘플로 대체, q2-05 소제목 신설, 4~6·9절 갱신, 7절 반영 제안 추가, 후속 질문 q3-10. 2차: 단계 상태 줄을 열린 질문 2건·답한 질문 5건으로 고치고, 새 각주 정의를 8절로 옮기고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
-- 2026-10-09 · 갱신 · [능력 온톨로지 초안](tracks/manual-capability-ontology/ontology-draft.md) — v0.4 → v0.5: 근거 문서 속성 '언어(원본 / 번역 구분)' 추가(f16·f17·f20), 속성 '적용 구성'은 6절 질문에 합침. 2차: H1·머리 단락·4절 도식·3절·5절을 v0.5와 샘플 11건에 맞추고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
-- 2026-10-09 · 갱신 · [문서 유형 매트릭스](tracks/manual-capability-ontology/document-type-matrix.md) — 4절 공개 문서 샘플 4건 → 11건(AMR 4건 포함), 'AMR 샘플 미발견' 문장 대체, 3절에 두산 웹 매뉴얼 사양 표·UR 별도 오류 코드 문서 메모, 8절 이력. 2차: 머리 상태 줄을 '공개 문서 샘플: 11건'으로 고치고, 3절 메모의 추론 문장에 태그를 붙이고, 새 각주 정의를 7절로 옮겼다 (실행 2026-10-09-23)
-- 2026-10-09 · 갱신 · [매뉴얼 기반 로봇 기능 온톨로지](tracks/manual-capability-ontology/index.md) — 6절 살아있는 산출물 링크: 온톨로지 초안 v0.5, 문서 유형 매트릭스 샘플 11건, 백로그 q2-02·q2-03·q2-05 답함·q3-10 등록, 아이디어 페이지 갱신 반영. 2차: 머리 상태 줄의 현재 단계를 단계 2. 로봇 문서 유형과 정보 구조 조사로 고쳤다 (실행 2026-10-09-23)
-- 2026-10-09 · 갱신 · [아이디어 1. 로봇 기능 온톨로지](ideas/robot-capability-ontology.md) — 3절에 근거 형태별 문서 이해·데이터시트 추출·매뉴얼 질의응답 측정 자료, 4절에 AMR 공개 문서 접근·재사용 조건과 근거 문서의 언어·판 기록 필요(실행 2026-10-09-23) 추가. 2차: 3절 끝 추론 문장에 태그를 붙이고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
+- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — q2-04 답함(3절 '### q2-04' 소절 신설, 중간 표현별 대응표는 이 위키 구성), 상태 줄·2절·4절·5절(q3-17)·6절(검증 판정 행별: 조건 1 충족·미승인, 조건 2 미충족·미승인, 전환 아니오)·7절·8절·9절 갱신 (실행 2026-10-09-25)
+- 2026-10-09 · 갱신 · [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) — 되돌아온 질문 q1-05·q1-06 답함(3절 두 소제목, 신뢰도 low, 물류창고 사례 표), 상태 줄·프런트매터 sources(6건 추가)·2절(도입 문단 q1-01 출처 서술 유지)·4절·5절(q1-05 답함, q4-20·q5-20 추가)·6절 전환 줄·8절·9절(이력 표 맨 위 행, 버전 6) 갱신 (실행 2026-10-09-25)
+- 2026-10-09 · 갱신 · [업무 분해·배정 설계 초안](tracks/chat-based-configuration-and-operation/task-model-draft.md) — 초안 v0.9 → v1.0: 작업 개념 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모 추가(상태 확정 유지, 관계 추가 없음), 6절에 q2-04 답 링크와 질문 2건 추가 (실행 2026-10-09-25)
+- 2026-10-09 · 갱신 · [아이디어 2. 채팅 기반 구성·운영](ideas/chat-based-configuration-and-operation.md) — 3절에 물류·산업 지향 연구 갱신 소절(G3 서술은 실행 2026-09-25 기준임을 밝힘), 4절에 '중간 표현과 로봇 관제 인터페이스 대응' 소절 추가(결론은 추정) (실행 2026-10-09-25)
+- 2026-10-09 · 갱신 · [채팅 기반 구성·운영](tracks/chat-based-configuration-and-operation/index.md) — 상태 줄을 '현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고치고, 6절에 '현재 단계는 단계 3' 서술이 각 실행 시점 기준임과 실행 2026-10-09-25 결과를 덧붙임 (실행 2026-10-09-25)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

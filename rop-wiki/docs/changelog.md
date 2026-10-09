@@ -20,6 +20,33 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-04 답함(3절 '### q2-04' 소절 신설, 중간 표현별 대응표는 이 위키 구성), 상태 줄·2절·4절·5절(q3-17)·6절(검증 판정 행별: 조건 1 충족·미승인, 조건 2 미충족·미승인, 전환 아니오)·7절·8절·9절 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 되돌아온 질문 q1-05·q1-06 답함(3절 두 소제목, 신뢰도 low, 물류창고 사례 표), 상태 줄·프런트매터 sources(6건 추가)·2절(도입 문단 q1-01 출처 서술 유지)·4절·5절(q1-05 답함, q4-20·q5-20 추가)·6절 전환 줄·8절·9절(이력 표 맨 위 행, 버전 6) 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.9 → v1.0: 작업 개념 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모 추가(상태 확정 유지, 관계 추가 없음), 6절에 q2-04 답 링크와 질문 2건 추가 |
+| 2026-10-09-25 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절에 물류·산업 지향 연구 갱신 소절(G3 서술은 실행 2026-09-25 기준임을 밝힘), 4절에 '중간 표현과 로봇 관제 인터페이스 대응' 소절 추가(결론은 추정) |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 상태 줄을 '현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고치고, 6절에 '현재 단계는 단계 3' 서술이 각 실행 시점 기준임과 실행 2026-10-09-25 결과를 덧붙임 |
+| 2026-10-09-25 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 채팅 기반 구성·운영 단계 2: q1-05·q1-06(물류·산업 지향 LLM 작업 분해 연구, 물류 지시 데이터셋)과 q2-04(중간 표현과 VDA 5050 주문·Open-RMF 작업 요청 대응) 답함, 새 질문 3건, 업무 분해·배정 설계 초안 v0.9 → v1.0, 1차 조건부 승인 수정 23건·2차 수정 7건 이행 |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1337.md](references/ref-1337.md) | 참고문헌 ref-1337 등록: Integrating LLMs and Classical Planning for Pallet Logistics… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1338.md](references/ref-1338.md) | 참고문헌 ref-1338 등록: Scalable Multi-Robot Collaboration with Large Language Model… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1339.md](references/ref-1339.md) | 참고문헌 ref-1339 등록: An Intelligent Warehouse Execution Framework Integrating SAP… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1340.md](references/ref-1340.md) | 참고문헌 ref-1340 등록: rmf_ros2 — rmf_fleet_adapter/schemas/event_description__sequ… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1341.md](references/ref-1341.md) | 참고문헌 ref-1341 등록: isaac_mission_dispatch — README |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1342.md](references/ref-1342.md) | 참고문헌 ref-1342 등록: isaac_mission_control — README |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1343.md](references/ref-1343.md) | 참고문헌 ref-1343 등록: PlanSys2 Design |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1344.md](references/ref-1344.md) | 참고문헌 ref-1344 등록: Nl2Hltl2Plan: Scaling Up Natural Language Understanding for… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1345.md](references/ref-1345.md) | 참고문헌 ref-1345 등록: Simultaneous Task Allocation and Planning for Multi-Robots u… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1346.md](references/ref-1346.md) | 참고문헌 ref-1346 등록: Designing Behavior Trees from Goal-Oriented LTLf Formulas |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1347.md](references/ref-1347.md) | 참고문헌 ref-1347 등록: Decentralized Intent-Based Multi-Robot Task Planner with LLM… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1348.md](references/ref-1348.md) | 참고문헌 ref-1348 등록: Seeing, Saying, Solving: An LLM-to-TL Framework for Cooperat… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1349.md](references/ref-1349.md) | 참고문헌 ref-1349 등록: Interoperability Interest Group August 01, 2024: Multi-Agent… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1350.md](references/ref-1350.md) | 참고문헌 ref-1350 등록: Interoperability Interest Group June 5, 2025: Execution of W… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1351.md](references/ref-1351.md) | 참고문헌 ref-1351 등록: crossflow — README |
+| 2026-10-09-25 | 생성 | [docs/glossary/linear-temporal-logic-on-finite-traces.md](glossary/linear-temporal-logic-on-finite-traces.md) | 용어집 항목 유한 트레이스 선형 시간 논리 |
+| 2026-10-09-25 | 생성 | [docs/glossary/task-dependency-graph.md](glossary/task-dependency-graph.md) | 용어집 항목 작업 의존 그래프 |
+| 2026-10-09-25 | 생성 | [docs/glossary/workflow-diagram.md](glossary/workflow-diagram.md) | 용어집 항목 워크플로 다이어그램 |
+| 2026-10-09-25 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-02·q2-03·q2-05 답함(신뢰도 낮음), 3절 q2-03의 AMR 샘플 미발견 문장을 MiR·Clearpath 샘플로 대체, q2-05 소제목 신설, 4~6·9절 갱신, 7절 반영 제안 추가, 후속 질문 q3-10. 2차: 단계 상태 줄을 열린 질문 2건·답한 질문 5건으로 고치고, 새 각주 정의를 8절로 옮기고 ref-1386 기관 표기를 참고문헌과 맞췄다 |
 | 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.4 → v0.5: 근거 문서 속성 '언어(원본 / 번역 구분)' 추가(f16·f17·f20), 속성 '적용 구성'은 6절 질문에 합침. 2차: H1·머리 단락·4절 도식·3절·5절을 v0.5와 샘플 11건에 맞추고 ref-1386 기관 표기를 참고문헌과 맞췄다 |
 | 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 4절 공개 문서 샘플 4건 → 11건(AMR 4건 포함), 'AMR 샘플 미발견' 문장 대체, 3절에 두산 웹 매뉴얼 사양 표·UR 별도 오류 코드 문서 메모, 8절 이력. 2차: 머리 상태 줄을 '공개 문서 샘플: 11건'으로 고치고, 3절 메모의 추론 문장에 태그를 붙이고, 새 각주 정의를 7절로 옮겼다 |

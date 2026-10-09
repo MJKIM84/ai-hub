@@ -3,22 +3,22 @@ title: "단계 2. 필요한 데이터와 표준 조사"
 type: track-stage
 track: chat-based-configuration-and-operation
 stage: 2
-related_areas: [5, 15, 23, 24, 25, 26, 31, 47, 48, 54]
+related_areas: [5, 12, 15, 23, 24, 25, 26, 31, 44, 47, 48, 54, 61]
 tags: [데이터 항목, 작업 표현 형식, 평가 데이터셋, Open-RMF, VDA 5050, ISA-95]
 status: published
 confidence: low
 created: 2026-09-25
-updated: 2026-09-25
-sources: [ref-015, ref-031, ref-125, ref-130, ref-228, ref-360, ref-410, ref-411, ref-412, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-111, ref-495, ref-230, ref-496, ref-500, ref-501, ref-502, ref-503, ref-116, ref-504, ref-539, ref-540, ref-541, ref-542, ref-543, ref-544, ref-545, ref-546, ref-547, ref-548, ref-089, ref-090, ref-164, ref-354, ref-359, ref-056]
-last_run: 2026-09-25
-version: 4
+updated: 2026-10-09
+sources: [ref-015, ref-031, ref-125, ref-130, ref-228, ref-360, ref-410, ref-411, ref-412, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-111, ref-495, ref-230, ref-496, ref-500, ref-501, ref-502, ref-503, ref-116, ref-504, ref-539, ref-540, ref-541, ref-542, ref-543, ref-544, ref-545, ref-546, ref-547, ref-548, ref-089, ref-090, ref-164, ref-354, ref-359, ref-056, ref-110, ref-059, ref-181, ref-1340, ref-1341, ref-1342, ref-1343, ref-1344, ref-1345, ref-1346, ref-1349, ref-1350, ref-1351]
+last_run: 2026-10-09
+version: 5
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [채팅 기반 구성·운영](index.md) › 단계 2. 필요한 데이터와 표준 조사
 
 # 단계 2. 필요한 데이터와 표준 조사
 
-> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 3건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
+> 단계 상태: 진행 중 · 열린 질문: 3건 · 답한 질문: 4건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09
 
 ## 1. 이 단계에서 밝힐 것
 
@@ -35,7 +35,7 @@ version: 4
 | q2-01 | 채팅 지시를 작업으로 바꾸려면 어떤 정보(작업 종류, 장소, 대상 화물, 기한, 우선순위, 완료 조건)가 필요하고, 그 가운데 무엇을 로봇 기능 온톨로지·공간 그래프·업무 시스템에서 가져오는가? | 답함 | 사용자 | 2026-09-25-37 | [#q2-01](#q2-01) |
 | q2-02 | 분해한 작업과 배정 결과를 표현하는 기존 표준·형식(작업·미션 기술, 워크플로 기술)은 무엇이 있고, ROP의 작업 모델에 비해 무엇이 빠지는가? | 답함 | 사용자 | 2026-09-25-51 | [#q2-02](#q2-02) |
 | q2-03 | 해석·분해의 정확도를 평가하려면 어떤 지시–정답 작업 쌍 데이터가 필요하며, 쓸 수 있는 공개 데이터셋이 있는가? | 답함 | 사용자 | 2026-09-25-62 | [#q2-03](#q2-03) |
-| q2-04 | 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? | 열림 | f13 | | |
+| q2-04 | 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? | 답함 | f13 | 2026-10-09-25 | [#q2-04](#q2-04) |
 | q2-05 | 지시 속 현장 장소 용어(예: 3층 출하 대기장, 2번 도크)와 공간 그래프 경유점 이름·지도 id·WMS 로케이션 코드를 대응시키는 이름 사전은 어떤 형식으로 두고 누가 관리하는가? | 열림 | f16 | | |
 | q2-06 | 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가? | 열림 | f17 | | |
 | q2-07 | IEEE 1872.1-2024 로봇 작업 표현 온톨로지는 작업 분해·선후 의존·배정 대상을 어떤 개념으로 표현하며, 업무 분해·배정 설계 초안의 업무·작업·배정 개념과 어떻게 대응하는가? | 열림 | f15 | | |
@@ -201,6 +201,67 @@ version: 4
 
 25. 작업 배정 — MRTA 의 핵심 질문(위 q2-01 절에 인용)과 관련해, 확인한 다중 로봇 벤치마크는 목표 상태 달성과 정답 전이 수 대비 로봇 활용도를 재지만 누구에게 배정했는지의 전체 최적성(이동거리·납기)을 정답으로 두지 않는 것으로 보여, 배정 적합성을 평가하려면 정답 배정이나 목적함수 기준값을 따로 마련해야 할 것으로 보인다(이 위키의 정리(추론)). [추정][^ref-090][^ref-544] 창고 실측 비교를 묻는 열린 질문 [oq-052](../../open-questions.md)와 이어지며, 정답 배정을 최적화 해법기로 만드는 방법은 후속 질문 q5-05 로 보냈다.
 
+### q2-04 중간 표현과 로봇 관제 인터페이스 대응 {#q2-04}
+
+확인한 대응 사례를 이 위키가 묶으면, [업무 분해·배정 설계 초안](task-model-draft.md)의 작업 모델과 로봇 관제 인터페이스로 가장 옮기기 쉬운 중간 표현은 하위 작업과 선행 의존을 그대로 담는 의존 DAG(또는 PDDL 계획을 의존 그래프로 바꾼 형태)이고, 잎 작업은 Open-RMF 작업 요청과 VDA 5050 주문으로 하나씩 옮기되 의존과 진행 순서는 ROP 실행기가 보유해 선행 작업이 끝난 뒤 다음 요청을 내보내는 구성이 선택지로 보인다(이 위키의 종합, 물류 플릿 적용 사례 미확인, 신뢰도 low). [추정][^ref-413][^ref-1340][^ref-111][^ref-1341][^ref-1343][^ref-059][^ref-181] 이 답은 로봇 관제 인터페이스 스키마, 중간 표현을 주문·작업 요청으로 옮긴 오픈소스 구현, 시간 논리 명세 연구, Open-RMF 진영의 워크플로 형식 자료를 대조해 얻었다. 모든 사실 근거는 단일 출처이며 교차 확인된 것은 없다.
+
+#### 로봇 관제 인터페이스 쪽이 받는 구조
+
+- VDA 5050 공식 저장소의 주문 스키마(main 브랜치, 3.0.0 판, 확인일 2026-10-09)는 주문 id·갱신 id·노드·간선을 필수로 두고, 노드·간선을 공유 sequenceId 순서의 한 줄 경로로 두며 released 로 베이스·호라이즌을 나누고, 동작에 차단 유형(blockingType: NONE·SOFT·SINGLE·HARD)을 붙인다. [사실][^ref-413] 이 스키마에서 주문 사이를 잇는 필드는 한 주문의 갱신 묶음을 나타내는 orderId·orderUpdateId 뿐이고, 주문 사이 의존이나 대안 경로(분기)를 담는 필드는 없다(연 스키마 범위의 부재 관찰). [사실][^ref-413] 기한·우선순위 필드가 없다는 점은 위 [q2-01](#q2-01)에 적은 관찰과 같아 여기서 반복하지 않는다.
+- Open-RMF 의 사용자 정의 작업(compose)은 GoToPlace·PickUp·DropOff·PerformAction 같은 공개 단계를 순서대로 이어 만들고, 활동 순서(Activity Sequence) 스키마는 범주·기술을 필수로 가진 활동의 배열로 정의되며, 승강기 요청 같은 단계는 RMF 가 필요할 때 자동으로 넣는다(확인일 2026-10-09 기준, 두 출처는 같은 Open Robotics 계열이라 독립 교차가 아니다). [사실][^ref-110][^ref-1340] 병렬·분기 활동 범주가 있는지는 미확인이다.
+- Open-RMF 작업 상태 스키마에서 의존(deps)이 같은 작업 단계 안 사건 사이에만 있어 작업과 작업 사이 선행 의존을 담는 자리가 확인되지 않는다는 점은 위 [q2-02](#q2-02)의 관찰과 같다. [사실][^ref-111]
+
+#### 중간 표현을 주문·작업 요청으로 옮긴 오픈소스 구현
+
+- NVIDIA Isaac Mission Dispatch 는 임무를 sequence·selector·route·action·notify 노드로 된 행동 트리(암묵적 루트 sequence)로 받아 route·action 노드마다 별도의 VDA 5050 주문으로 옮기고 행동 트리 진행에 따라 주문을 차례로 보내며, action 노드의 동작은 로봇 현재 위치에 해당하는 주문 첫 노드에 붙인다(README, 확인일 2026-10-09 기준). [사실][^ref-1341]
+- 같은 README 는 이 디스패처가 작업 배정·충돌 해결을 다루지 않고 VDA 5050 만 지원하며, 완료된 route 노드는 갱신할 수 없고 sequence·selector 구조를 바꾸려면 임무를 취소하고 다시 제출해야 하며, 실행 중 임무의 취소는 현재 임무가 끝난 뒤 처리된다고 밝힌다. [사실][^ref-1341]
+- NVIDIA Isaac Mission Control 의 README 는 제출된 임무로 작업 행동 트리를 조립해 Mission Dispatch 가 VDA 5050 으로 실행하게 하고, 선택 기능으로 SAP EWM 창고 작업을 받아 이동 임무로 바꿔 로봇을 배정하며, VDA 5050 차량 유형에 MANIPULATOR·HUMANOID 를 더한 확장을 제공한다고 밝힌다(독립 확인 없음). [추정] 벤더 주장[^ref-1342]
+- ROS 2 계획 시스템 PlanSys2 의 실행기(Executor)는 PDDL 계획을 받아 앞 행동의 효과와 뒤 행동의 요구를 짝지은 계획 그래프로 의존 관계를 만들고, 그 그래프의 실행 흐름들을 병렬로 돌리는 행동 트리로 변환해 실행하며, 기본 계획기는 POPF 이다(설계 문서, 확인일 2026-10-09 기준). [사실][^ref-1343]
+- DART-LLM 의 질의응답 LLM 은 하위 작업마다 실행 함수 이름·선행 의존 작업·대상 물체 키워드를 담은 구조화 출력(의존 DAG)을 내고, 특정 로봇을 지명하면 그 로봇에, 그렇지 않으면 파서가 맞는 스킬을 가진 가용 로봇에 배정하며, 하위 작업은 위상 순서로, 의존이 없는 작업은 병렬로 실행된다(평가는 건설 기계 시나리오). [사실][^ref-059]
+- 연계 대상: 위 구현들에서 로봇 쪽 주행·행동·스킬 실행(Mission Dispatch 의 주문 수행, PlanSys2 의 행동 실행, DART-LLM 의 내비게이션·스킬 실행)은 분류 원문 19장의 '로봇 자체 지능·제어' 경계에 속한다. 여기서는 행동 트리·의존 그래프를 주문·작업 요청으로 내보내는 경계와 위상 순서 집행 구조만 ROP 설계 근거로 쓴다.
+
+#### 시간 논리 명세
+
+- Nl2Hltl2Plan(Xu 외, arXiv v4 2024-12-05, 게재처 표기 없음)은 LLM 이 계층 작업 트리를 만들고 미세 조정한 LLM 이 하위 작업을 평면 LTL 식으로 옮긴 뒤 최하위가 순서 있는 로봇 행동인 계층 LTL 명세로 모아 기성 계획기로 푼다. 저자들은 같은 지시가 여러 형식 명세로 번역될 수 있어 정확도와 다중 로봇 계획 효율이 떨어질 수 있다고 지적하고, 작업 배정과 계획의 비용을 개선했다고 보고했다(초록 기준). [사실][^ref-1344]
+- Luo·Liu(IEEE T-RO 2025 게재 예정 표기, arXiv v4 2025-06-05)는 유한 트레이스 LTL 의 계층 확장 H-LTLf 를 정의하고, 명세별 하위 탐색 공간을 오가며 다중 로봇의 작업 배정과 계획을 동시에 합성하는 탐색 방법을 제안해 서비스 과제 시뮬레이션에서 계획 시간을 줄였다고 보고했다(초록 기준). [사실][^ref-1345]
+- Neupane·Mercer·Goodrich(AAMAS 2023 ARMS 워크숍, arXiv v2 2023-12-19)는 목표 지향 LTLf 식의 부분집합을 행동 트리로 바꾸는 방법을 제안해, 성공한 실행 궤적이 해당 LTL 식을 만족하게 하고 행동 노드는 여러 계획기로 구현할 수 있게 했다(초록 기준). [사실][^ref-1346]
+
+#### 행동 트리보다 넓은 워크플로 형식
+
+- Open Robotics Discourse 포럼에 Open-RMF 상호운용 관심 그룹 발표(2024-08-01)를 알린 공지(2024-07-25 게시, 작성자 grey, 발표 내용 자체는 미열람)는 행동 트리의 트리 구조가 임의의 분기·동기화·순환을 표현하기 어렵게(때로 불가능하게) 만들며, 행동 트리는 모두 동등한 워크플로로 바꿀 수 있지만 모든 워크플로를 행동 트리로 나타낼 수는 없다고 설명한다. [사실][^ref-1349]
+- 같은 포럼의 공지(2025-05-31 게시)는 그래픽 다이어그램으로 나타낼 수 있는 워크플로를 사람이 읽을 수 있는 JSON 스키마('워크플로 다이어그램')로 정의하고, 라이브러리가 실행 시 이를 빌드해 실행하며, 빌드 단계에서 호환되지 않는 메시지·끝나지 않는 워크플로·정의되지 않은 연산 같은 오류를 실행 전에 보고한다고 밝힌다. [사실][^ref-1350] 두 근거는 프로젝트 포럼 공지(개발자 설명)이며 JSON 스키마 원문은 열람하지 못했다.
+- open-rmf 조직의 crossflow 저장소 README 는 crossflow 를 bevy ECS 기반 반응형 프로그래밍 라이브러리로 소개하고, 그 워크플로가 병렬 분기·동기화·경주(race)·순환을 포함할 수 있으며 ROS 2 통합은 별도 브랜치에 있다고 적는다(확인일 2026-10-09 기준). [사실][^ref-1351] README 는 JSON 다이어그램 형식과 차세대 Open-RMF 와의 관계를 서술하지 않으므로, 이 위키는 crossflow 를 워크플로 다이어그램의 구현으로 단정하지 않는다.
+
+#### 중간 표현별 대응
+
+아래 표는 위 관찰을 이 위키가 구성한 것이며 출처의 표를 옮긴 것이 아니다. "빠지는 것"은 연 스키마 범위의 부재 관찰을 바탕으로 한 추론이고 부재의 확인이 아니다. [추정][^ref-413][^ref-111][^ref-1341][^ref-1343][^ref-059][^ref-1344][^ref-1349][^ref-1350]
+
+| 중간 표현 | 작업 모델로 옮기기 | VDA 5050 주문·Open-RMF 작업 요청으로 옮기기 | 옮길 때 빠지는 것 | 확인한 사례 |
+|---|---|---|---|---|
+| 의존 DAG | 하위 작업과 선행 의존을 그대로 담음 | 잎 작업마다 요청 하나, 의존은 ROP 실행기가 집행 | 대안 경로, 기한 | DART-LLM |
+| PDDL | 계획기를 거쳐 계획 그래프로 바꾼 뒤 | 계획 그래프를 행동 트리로 바꿔 실행 | 지시 원문, 배정 근거 | PlanSys2, PIP-LLM |
+| 행동 트리 | sequence·selector 구조 | route·action 잎마다 주문, 구조 변경은 취소·재제출 | selector 대안 경로, 작업 사이 의존 | Isaac Mission Dispatch |
+| LTL 계열 | 계획이 아닌 명세 | 계획기·변환을 거친 뒤에만 | 해당 없음(직접 변환 대상 아님) | Nl2Hltl2Plan, H-LTLf, LTLf→행동 트리 |
+| 워크플로 다이어그램 | 분기·동기화·순환 표현 | 송출과 연결한 공개 사례 미확인 | 미확인 | Open-RMF 상호운용 관심 그룹 공지, crossflow README |
+
+```mermaid
+flowchart LR
+  instr[채팅 지시] --> dag[작업 모델의 의존 그래프]
+  dag --> exec[ROP 실행기 선행 작업 완료 확인]
+  exec -->|잎 작업 하나씩| rmf[Open-RMF 작업 요청]
+  exec -->|잎 작업 하나씩| vda[VDA 5050 주문]
+  rmf --> fleet[제조사 관제와 로봇 연계 대상]
+  vda --> fleet
+  fleet -->|상태와 완료| exec
+```
+
+위 도식은 아래 첫 항목의 추정 구성을 그린 것이다.
+
+- Mission Dispatch(행동 트리를 잎별 주문으로 차례로 송출), PlanSys2(PDDL 계획을 계획 그래프와 행동 트리로 변환), DART-LLM(의존 DAG 를 위상 순서로 집행)이 모두 잎 단위로 내보내고 의존은 상위에서 보유하는 구조를 보이므로, ROP 도 의존 그래프를 작업 모델에 두고 잎 작업만 Open-RMF 작업 요청(배송·compose 단계)과 VDA 5050 주문으로 하나씩 내보내는 구성이 선택지로 보인다(이 위키의 종합, 물류 플릿 적용 사례 미확인). [추정][^ref-413][^ref-1340][^ref-111][^ref-1341][^ref-1343][^ref-059][^ref-181]
+- 중간 표현을 VDA 5050 주문·Open-RMF 작업 요청으로 옮기면 작업 사이 선행 의존, 행동 트리 selector 같은 대안 경로, 기한(VDA 5050 은 우선순위도), 지시 원문·배정 근거·확인 여부가 빠지므로 이 항목은 ROP 작업 모델과 실행기에 남겨야 하고, 행동 트리의 제어 흐름을 바꾸려면 Mission Dispatch 처럼 취소·재제출이 필요해지는 것으로 보인다. 각 '필드 없음'은 연 스키마 범위의 부재 관찰이며, 배정 근거·확인 여부의 누락은 위 q2-02 결론과 같은 방향이다. [추정][^ref-413][^ref-125][^ref-111][^ref-1341]
+- LTL 계열 표현은 계획이 아니라 명세여서 계획기(계층 LTL 계획, LTLf→행동 트리 변환)를 거친 뒤에야 로봇 관제 인터페이스로 옮길 수 있으므로, ROP 에서는 직접 변환 대상보다 의존 그래프·계획이 금지 구역·순서 같은 현장 규칙을 지키는지 검사하는 명세층으로 쓰는 편이 맞아 보인다(근거 연구는 서비스·실험실 조건). [추정][^ref-1344][^ref-1345][^ref-1346] 이 검사층 설계는 백로그 q4-14 와 [열린 질문](../../open-questions.md) oq-302·oq-314 와 같은 방향이어서 새 질문으로 등록하지 않았다.
+- 행동 트리로 나타내기 어려운 분기·동기화·순환을 표현하는 워크플로 형식(Open-RMF 진영의 워크플로 다이어그램, crossflow)이 등장하고 있어, ROP 실행기가 작업 사이 제어 흐름을 보관하는 형식의 후보가 행동 트리·의존 DAG 외에 워크플로 다이어그램까지 넓어질 수 있는 것으로 보이나, 이를 VDA 5050 주문·Open-RMF 작업 요청 송출과 연결한 공개 사례는 이번 범위에서 확인하지 못했다(부재 확인 아님). [추정][^ref-1349][^ref-1350][^ref-1351]
+
 ## 4. 결론과 남은 불확실성
 
 **결론**
@@ -225,6 +286,17 @@ version: 4
 - 데이터셋 수치(ALFRED 25,743개 지시·8,055개 시연, SMART-LLM 36개 지시, MAT-THOR 70개 작업, NoisyToolBench 200건, Lang2LTL 말뭉치)는 모두 저자 보고이며 논문 원문을 열람하지 못했다. TEACh 의 TATC 벤치마크와 LoTa-Bench 의 성공률 지표는 README 에서 확인되지 않았고, Lang2LTL 의 OSM 평가 자료 규모(지역 수 21·22개, 명령 수)는 미확인이다.
 - AI Hub 데이터의 구축 기관·규모·정답 형식·발행일과 Högskolan Väst 학위논문의 저자·발행일·평가 자료 규모는 미확인이다. 평가 지표 정의와 검증 절차는 단계 5 에서 다룬다.
 
+**결론(실행 2026-10-09-25 추가)**
+- VDA 5050 공식 저장소 주문 스키마(main 브랜치, 3.0.0 판, 확인일 2026-10-09)는 노드·간선을 sequenceId 순서의 한 줄 경로로 두고 주문 사이 의존·분기 필드가 없으며, NVIDIA Isaac Mission Dispatch 는 행동 트리의 route·action 잎마다 별도의 VDA 5050 주문을 낸다(README, 확인일 2026-10-09). [사실][^ref-413][^ref-1341]
+- q2-04 의 핵심 답인 '의존 DAG 를 작업 모델에 두고 잎 작업만 주문·작업 요청으로 내보내는 구성', '옮길 때 빠지는 항목', 'LTL 계열의 검사층 활용', '워크플로 다이어그램 후보'는 이 위키의 종합이며(신뢰도 low), 교차 확인된 finding 은 0건이다. [추정][^ref-413][^ref-111][^ref-1341][^ref-1343][^ref-059][^ref-1349]
+- 초안 반영: [업무 분해·배정 설계 초안](task-model-draft.md)을 실행 2026-10-09-25 에서 v0.9 → v1.0 으로 올려 작업 개념의 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모를 더했다. 관계는 더하지 않았고 초안 6절의 '작업 사이 선행 의존을 관계로 드러낼 것인가' 질문은 닫지 않았다. 1.0 은 0.1 씩 올리는 규칙에 따른 번호이며 완성판을 뜻하지 않는다.
+
+**남은 불확실성(실행 2026-10-09-25 추가)**
+- 의존 DAG 잎 단위 송출 구성을 물류 플릿에 적용한 사례는 확인하지 못했다.
+- Open-RMF 플릿 어댑터 스키마 전체에서 병렬·분기 활동 범주가 있는지, 워크플로 다이어그램 JSON 스키마 원문과 차세대 Open-RMF 와의 공식 관계는 미확인이다.
+- 시간 논리 연구(Nl2Hltl2Plan, H-LTLf, LTLf→행동 트리)는 초록만 열람해 계획기 이름·로봇 수를 확인하지 못했다.
+- Isaac Mission Control 의 SAP EWM 연동·차량 유형 확장은 벤더 주장이며 독립 확인이 없다.
+
 ## 5. 이 단계가 낳은 후속 질문
 
 | 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |
@@ -239,16 +311,24 @@ version: 4
 
 기한을 가장 이른 시작 시각·우선순위·배정 순서로 바꾸는 규칙을 LLM 과 최적화 엔진 가운데 어디에 둘지는 기존 질문 q3-01(스케줄링 결정을 LLM 과 최적화 엔진 중 어디에 맡기는가)의 범위에 들어가므로 새 id 를 만들지 않고 q3-01 에 근거 f15(실행 2026-09-25-37)로 연결했다. q3-08 은 중간 표현을 작업 모델·로봇 관제 인터페이스로 옮기는 q2-04 와 인접하지만, 기존 형식의 채택 여부와 배정 근거·확인 여부의 보존 위치를 묻는 점이 달라 따로 두었다. q5-05 는 LLM 직접 배정과 해법기 배정을 비교한 연구를 묻는 q3-05, 지표를 묻는 q5-01 과 인접하지만 정답 배정의 생성 방법을 묻는 점이 달라 따로 두었다. 국내 물류센터 지시–정답 데이터셋 여부는 트랙 백로그 q1-06 과 뜻이 겹쳐 새 질문으로 만들지 않았다.
 
+실행 2026-10-09-25 에서 q2-04 로부터 생긴 후속 질문은 다음과 같다.
+
+| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |
+|---|---|---|---|---|
+| q3-17 | 행동 트리의 selector 같은 대안 경로나 Open-RMF 워크플로 다이어그램의 분기·동기화 같은 제어 흐름을 VDA 5050 주문(한 줄 노드–간선)과 Open-RMF 순차 단계로 옮길 때, ROP 는 그 흐름을 자체 실행기에 두고 잎 작업만 주문·작업 요청으로 하나씩 내보내야 하는가, 그때 제어 흐름 변경에 따른 취소·재제출 비용과 로봇 이동 연속성은 어떻게 되는가? | 단계 3. 업무 지시 구현 가설 설계 | f17 (실행 2026-10-09-25) | 열림 |
+
+q3-17 은 기존 형식 채택 여부를 묻는 q3-08, 변경 허용 상태의 경계를 묻는 q3-15 와 관련된다. LTL 계열을 명세 검사층으로 둘지는 백로그 q4-14, 열린 질문 oq-302·oq-314 와 같은 방향이어서 새 질문으로 만들지 않았다. 같은 실행에서 단계 1 의 q1-05·q1-06 답에서 생긴 후속 질문(q4-20, q5-20)은 [단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md)의 5절에 있다.
+
 ## 6. 완료 조건 충족 현황
 
 충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.
 
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
-| 필요한 데이터 항목과 표준·형식 목록이 [아이디어 2. 채팅 기반 구성·운영](../../ideas/chat-based-configuration-and-operation.md)의 "4. 필요한 데이터와 표준" 절에 실림 | 충족 | 4절에 "필요한 데이터 항목과 원천"(실행 2026-09-25-37), "작업·배정 결과를 표현하는 표준·형식"(실행 2026-09-25-51), "해석·분해 평가 데이터"(실행 2026-09-25-62) 소절을 실음 | 충족 · 미승인 |
-| 작업 모델의 정보 항목이 [업무 분해·배정 설계 초안](task-model-draft.md)의 개념 목록 표에 반영됨 | 미충족 | v0.4 에서 상황·업무, v0.5 에서 진행 상태·배정의 외부 표현 메모를 반영했으나 작업 요구 적재물 속성과 완료 조건은 미확정 | 미충족 · 미승인 |
+| 필요한 데이터 항목과 표준·형식 목록이 [아이디어 2. 채팅 기반 구성·운영](../../ideas/chat-based-configuration-and-operation.md)의 "4. 필요한 데이터와 표준" 절에 실림 | 충족 | 4절에 "필요한 데이터 항목과 원천"(실행 2026-09-25-37), "작업·배정 결과를 표현하는 표준·형식"(실행 2026-09-25-51), "해석·분해 평가 데이터"(실행 2026-09-25-62), "중간 표현과 로봇 관제 인터페이스 대응"(실행 2026-10-09-25) 소절을 실음 | 충족 · 미승인 |
+| 작업 모델의 정보 항목이 [업무 분해·배정 설계 초안](task-model-draft.md)의 개념 목록 표에 반영됨 | 미충족 | v0.4 에서 상황·업무, v0.5 에서 진행 상태·배정의 외부 표현 메모, v1.0 에서 작업의 선후관계를 반영했으나 작업 요구 적재물 속성과 완료 조건은 미확정 | 미충족 · 미승인 |
 
-다음 단계로 전환: 아니오(작업 모델 정보 항목 일부만 반영 — 작업 요구 적재물 속성·완료 조건 미확정, 열린 질문 q2-04·q2-05·q2-06·q2-07)
+다음 단계로 전환: 아니오(작업 요구 적재물 속성·완료 조건 미확정, 열린 질문 q2-05·q2-06·q2-07)
 
 ## 7. 관련 세부영역
 
@@ -264,6 +344,13 @@ version: 4
 - [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) — 지시 수행 벤치마크(ALFRED, LoTa-Bench)와 시뮬레이터 최종 상태·목표 조건 기반 자동 평가, 물류 지시 평가 자료를 검색 범위에서 찾지 못한 점(추정)을 8. 대표 연구와 자료에 반영 제안
 - [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md) — 자연어 명령의 안전 속성 추출과 작업 안전 계약(SafeGate, 개인 돌봄 로봇 표준 기반·물류 현장 미평가)을 6. 대표 접근법과 기술에 반영 제안
 - [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — LLM 지시 해석(DELIVER, SayPlan, SafeGate)은 이 영역의 연구 방법이 25. 작업 배정 — MRTA 와 31. 사람–로봇 협업에 적용된 예이므로 양쪽에 연결한다. 실행 2026-09-25-62 의 LLM 지시 해석·계획 평가 벤치마크(LoTa-Bench, AmbiK, NoisyToolBench, Lang2LTL 말뭉치)와 해석·계획 두 층 평가(추정)를 8. 대표 연구와 자료에 반영 제안한다
+
+실행 2026-10-09-25 의 반영 제안(트랙 로그의 "세부영역 반영 제안"으로만 남기고 세부영역 페이지는 직접 고치지 않는다):
+
+- [12. 채팅으로 업무 지시·오케스트레이션](../../categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) — 의존 DAG 위상 실행과 잎 단위 송출 구조(추정)를 6. 대표 접근법과 기술에, Isaac Mission Dispatch·PlanSys2(로봇 쪽 실행은 연계 대상)와 Isaac Mission Control(벤더 주장)을 7. 관련 표준·프레임워크·오픈소스에 반영 제안. 5. 적용 사례 (현장 유형 명시)에 대한 제안은 [단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md)의 q1-05 에서 나왔다
+- [24. 작업·워크플로 모델링](../../categories/planning-and-optimization/task-and-workflow-modeling.md) — 행동 트리 임무를 VDA 5050 주문으로 옮기는 Mission Dispatch, PDDL 계획을 행동 트리로 실행하는 PlanSys2, 의존 DAG(DART-LLM), LTLf→행동 트리 변환, 분기·동기화·순환을 표현하는 Open-RMF 진영 워크플로 다이어그램(포럼 공지 근거)을 7. 관련 표준·프레임워크·오픈소스에 반영 제안
+- [44. 로봇 기반 모델·언어 모델 계획](../../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) — 교차 규칙에 따라 LLM 의존 DAG 생성(DART-LLM)과 LLM→LTL 명세 연구를 47. AI·학습·적응과 모델 운영과 함께 적용 대상 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링에 연결
+- [61. 물류창고](../../categories/site-type-applications/warehouse.md) — 물류·창고 지시를 다룬 LLM 작업 분해 연구와 공개 물류 지시–작업 데이터셋 미발견(추정)을 6. 대표 접근법과 기술에 반영 제안(근거는 단계 1 의 q1-05·q1-06)
 
 ## 8. 출처
 
@@ -309,12 +396,27 @@ version: 4
 [^ref-359]: Wang, W. 외, Learning to Ask: When LLM Agents Meet Unclear Instruction, 2024-09, https://arxiv.org/abs/2409.00557, 접근일 2026-09-25 (원문 미열람)
 [^ref-056]: Liu, J. X. 외, Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments, 2023-02, https://arxiv.org/abs/2302.11649, 접근일 2026-09-25 (원문 미열람)
 
+[^ref-110]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25
+[^ref-059]: Wang, Y. 외(DART-LLM 저자), DART-LLM: Dependency-Aware Multi-Robot Task Decomposition and Execution using Large Language Models, 2024-11, https://arxiv.org/abs/2411.09022, 접근일 2026-10-09
+[^ref-181]: Shi, G., Wu, Y., Kumar, V., & Sukhatme, G. S., PIP-LLM: Integrating PDDL-Integer Programming with LLMs for Coordinating Multi-Robot Teams Using Natural Language, 2025-10, https://arxiv.org/abs/2510.22784, 접근일 2026-10-09
+[^ref-1340]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/event_description__sequence.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/event_description__sequence.json, 접근일 2026-10-09
+[^ref-1341]: NVIDIA (nvidia-isaac GitHub), isaac_mission_dispatch — README, 미확인, https://github.com/nvidia-isaac/isaac_mission_dispatch, 접근일 2026-10-09
+[^ref-1342]: NVIDIA (nvidia-isaac GitHub), isaac_mission_control — README, 미확인, https://github.com/nvidia-isaac/isaac_mission_control, 접근일 2026-10-09
+[^ref-1343]: PlanSys2 (ROS 2 Planning System 프로젝트), PlanSys2 Design, 미확인, https://plansys2.github.io/design/index.html, 접근일 2026-10-09
+[^ref-1344]: Xu, S., Luo, X., Huang, Y., Leng, L., Liu, R., & Liu, C., Nl2Hltl2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Representation, 2024-08, https://arxiv.org/abs/2408.08188, 접근일 2026-10-09
+[^ref-1345]: Luo, X., & Liu, C. (IEEE Transactions on Robotics 2025 게재 예정 표기), Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications, 2024-01, https://arxiv.org/abs/2401.04003, 접근일 2026-10-09
+[^ref-1346]: Neupane, A., Mercer, E. G., & Goodrich, M. A. (AAMAS 2023 ARMS 워크숍), Designing Behavior Trees from Goal-Oriented LTLf Formulas, 2023-07, https://arxiv.org/abs/2307.06399, 접근일 2026-10-09
+[^ref-1349]: Open Source Robotics Alliance Interoperability SIG, Open Robotics Discourse, Interoperability Interest Group August 01, 2024: Multi-Agent Process Workflows, 2024-07-25, https://discourse.openrobotics.org/t/interoperability-interest-group-august-01-2024-multi-agent-process-workflows/38794, 접근일 2026-10-09
+[^ref-1350]: Open Source Robotics Alliance Interoperability SIG, Open Robotics Discourse, Interoperability Interest Group June 5, 2025: Execution of Workflow Diagrams, 2025-05-31, https://discourse.openrobotics.org/t/interoperability-interest-group-june-5-2025-execution-of-workflow-diagrams/44032, 접근일 2026-10-09
+[^ref-1351]: Open Robotics (open-rmf GitHub), crossflow — README, 미확인, https://github.com/open-rmf/crossflow, 접근일 2026-10-09
+
 ## 9. 이력
 
 실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.
 
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |
 |---|---|---|---|---|---|
+| 2026-10-09 | 2026-10-09-25 | q2-04(같은 실행에서 단계 1 의 q1-05·q1-06 도 답함) | q3-17(단계 1 쪽 q4-20, q5-20) | v0.9 → v1.0 | 5 |
 | 2026-09-25 | 2026-09-25-62 | q2-03 | q5-04, q5-05 | 없음 | 4 |
 | 2026-09-25 | 2026-09-25-51 | q2-02 | q2-07, q3-08, q3-09 | v0.4 → v0.5 | 3 |
 | 2026-09-25 | 2026-09-25-37 | q2-01 | q2-05, q2-06 | v0.3 → v0.4 | 2 |

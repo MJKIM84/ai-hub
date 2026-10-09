@@ -4628,6 +4628,65 @@
       "ref_id": "ref-1387",
       "run_id": "2026-10-09-23",
       "date": "2026-10-09"
+    },
+    {
+      "name": "NVIDIA Isaac Mission Dispatch",
+      "org": "NVIDIA (nvidia-isaac)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        20,
+        24
+      ],
+      "url": "https://github.com/nvidia-isaac/isaac_mission_dispatch",
+      "summary": "행동 트리 임무의 route·action 노드마다 별도의 VDA 5050 주문을 만들어 차례로 보내는 디스패처. 작업 배정·충돌 해결은 다루지 않고 VDA 5050 만 지원하며, 구조 변경은 취소·재제출이 필요하다(README, 확인일 2026-10-09).",
+      "ref_id": "ref-1341",
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "NVIDIA Isaac Mission Control",
+      "org": "NVIDIA (nvidia-isaac)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        20,
+        23
+      ],
+      "url": "https://github.com/nvidia-isaac/isaac_mission_control",
+      "summary": "README 기준 경량 플릿 관리자로, 작업 행동 트리를 조립해 Mission Dispatch 로 VDA 5050 실행하고 선택 기능으로 SAP EWM 작업을 이동 임무로 바꾼다고 밝힌다(벤더 주장, 독립 확인 없음).",
+      "ref_id": "ref-1342",
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "PlanSys2 (ROS 2 Planning System)",
+      "org": "PlanSys2 프로젝트",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        24,
+        26
+      ],
+      "url": "https://plansys2.github.io/design/index.html",
+      "summary": "PDDL 계획을 효과–요구 짝짓기 계획 그래프로 만들고 병렬 실행 흐름을 담은 행동 트리로 변환해 실행하는 ROS 2 계획 시스템. 기본 계획기 POPF(설계 문서, 확인일 2026-10-09).",
+      "ref_id": "ref-1343",
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "crossflow",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        24
+      ],
+      "url": "https://github.com/open-rmf/crossflow",
+      "summary": "bevy ECS 기반 반응형 워크플로 라이브러리로 병렬 분기·동기화·경주·순환을 포함한 워크플로를 다룬다. README 는 Open-RMF 진영의 워크플로 다이어그램·차세대 Open-RMF 와의 관계를 서술하지 않는다(확인일 2026-10-09).",
+      "ref_id": "ref-1351",
+      "run_id": "2026-10-09-25",
+      "date": "2026-10-09"
     }
   ]
 }
