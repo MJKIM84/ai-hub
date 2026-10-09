@@ -1,0 +1,89 @@
+{
+  "calls": [
+    {
+      "step": "research",
+      "role": "researcher",
+      "attempt": 1,
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 236161,
+      "cache_read_input_tokens": 2564620,
+      "output_tokens": 59935,
+      "cost_usd": 3.7185,
+      "seconds": 540.9,
+      "num_turns": 20,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-5-5"
+      ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 299473,
+      "cache_read_input_tokens": 461840,
+      "output_tokens": 24204,
+      "cost_usd": 2.9864,
+      "seconds": 219.8,
+      "num_turns": 14,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 140842,
+      "cache_read_input_tokens": 71882,
+      "output_tokens": 58638,
+      "cost_usd": 2.3139,
+      "seconds": 431.8,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-formatfix1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 201838,
+      "cache_read_input_tokens": 71882,
+      "output_tokens": 37406,
+      "cost_usd": 2.3772,
+      "seconds": 247.1,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-formatfix2",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 178828,
+      "cache_read_input_tokens": 71882,
+      "output_tokens": 36304,
+      "cost_usd": 2.1711,
+      "seconds": 237.4,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 28,
+    "cache_creation_input_tokens": 1057142,
+    "cache_read_input_tokens": 3242106,
+    "output_tokens": 216487,
+    "cost_usd": 13.5671,
+    "calls": 5
+  }
+}
