@@ -1,6 +1,7 @@
 import { workspaceStorage } from "./visitorSession";
 import { CargoProgress } from "./CargoProgress";
 import { PlaybackRate } from "./PlaybackRate";
+import { isNewerState, openStateStream } from "./StateStream";
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import {
   Activity,
@@ -1192,7 +1193,8 @@ function App() {
       if (
         epoch === stateEpoch.current &&
         request > statePublished.current &&
-        !runTransition.current
+        !runTransition.current &&
+        isNewerState(currentState.current, s)
       ) {
         statePublished.current = request;
         currentState.current = s;
@@ -1405,12 +1407,38 @@ function App() {
     }
     void initialize();
     let timer: ReturnType<typeof setTimeout>;
+    let stream: ReturnType<typeof openStateStream> | null = null;
+    let streamEpoch = -1;
+    let nextStreamAttempt = 0;
     async function poll() {
       const started = performance.now();
       let delay = 1000;
+      if (streamEpoch !== stateEpoch.current || stream?.expired()) {
+        stream?.close();
+        stream = null;
+        if (streamEpoch !== stateEpoch.current) nextStreamAttempt = 0;
+      }
+      if (!stream && !runTransition.current && started >= nextStreamAttempt) {
+        const epoch = stateEpoch.current;
+        streamEpoch = epoch;
+        nextStreamAttempt = started + 15000;
+        stream = openStateStream((s) => {
+          if (!active || epoch !== stateEpoch.current || runTransition.current ||
+              !isNewerState(currentState.current, s)) return;
+          statePublished.current = ++stateRequest.current;
+          currentState.current = s;
+          setState(s);
+          if (Number.isFinite(s.speed)) setSpeed(s.speed);
+          setConnected(true);
+          setLastUpdate(Date.now());
+        });
+      }
       try {
-        const s = await readState();
-        delay = 1000 / Math.max(1, Math.min(20, s.render_hz ?? 5));
+        if (stream?.healthy() || runTransition.current) delay = 250;
+        else {
+          const s = await readState();
+          delay = 1000 / Math.max(1, Math.min(20, s.render_hz ?? 5));
+        }
       } catch {
         /* readState fences stale failures as well as successful responses. */
       }
@@ -1420,6 +1448,7 @@ function App() {
     void poll();
     return () => {
       active = false;
+      stream?.close();
       clearTimeout(timer);
       clearTimeout(initTimer);
     };

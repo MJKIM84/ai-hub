@@ -181,6 +181,7 @@ interface Runtime {
   robotDesigns: RobotDesigns;
   motion: SceneMotion;
   humanPrevious: Map<string, HumanMotion>;
+  humanDisplayed: Map<string, HumanMotion>;
   humanAnchors: Map<string, number>;
   selectedId: string;
   followCenter: THREE.Vector3 | null;
@@ -840,6 +841,7 @@ export function PhysicsView({
     const rt: Runtime = {
       motion: new SceneMotion(),
       humanPrevious: new Map(),
+      humanDisplayed: new Map(),
       humanAnchors: new Map(),
       selectedId: "",
       followCenter: null,
@@ -894,15 +896,14 @@ export function PhysicsView({
               Math.sin(to.heading - from.heading),
               Math.cos(to.heading - from.heading),
             );
-            human.update(
-              {
+            const displayed = {
                 ...to,
                 position: anchor.position.toArray() as [number, number, number],
                 distance: from.distance + (to.distance - from.distance) * alpha,
                 heading: from.heading + turn * alpha,
-              },
-              id === rt.selectedId,
-            );
+              };
+            rt.humanDisplayed.set(id, displayed);
+            human.update(displayed, id === rt.selectedId);
           }
           // Tracking uses the same displayed geometry as the robot, not packet-rate jumps.
           const followed =
@@ -1144,6 +1145,7 @@ export function PhysicsView({
           renderer.domElement.dataset.motion = rt.motion.active(now)
             ? "interpolated"
             : "received";
+          renderer.domElement.dataset.packetGapMs = rt.motion.packetGap.toFixed(1);
           if (rt.travel || rt.motion.active(now)) rt.invalidate();
         } catch {
           rt.lost = true;
@@ -1278,6 +1280,7 @@ export function PhysicsView({
       rt.robotDesigns.dispose();
       rt.motion = new SceneMotion();
       rt.humanPrevious.clear();
+      rt.humanDisplayed.clear();
       rt.humanAnchors.clear();
       rt.followCenter = null;
       rt.materials.dispose();
@@ -1319,6 +1322,8 @@ export function PhysicsView({
       });
       rt.humans.clear();
       rt.humanMotion.clear();
+      rt.humanPrevious.clear();
+      rt.humanDisplayed.clear();
       rt.runId = state?.run_id ?? null;
       rt.meshSource = meshes;
       if (changedRun) {
@@ -1568,7 +1573,7 @@ export function PhysicsView({
         }
         const previous = rt.humanMotion.get(person.id);
         if (previous?.time !== motion.time)
-          rt.humanPrevious.set(person.id, previous ?? motion);
+          rt.humanPrevious.set(person.id, rt.humanDisplayed.get(person.id) ?? previous ?? motion);
         rt.humanAnchors.set(person.id, anchor.id);
         human.update(motion, person.id === selected);
         human.setJacketTexture(

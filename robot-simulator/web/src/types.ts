@@ -492,6 +492,8 @@ export interface MeshData {
   faces: number[];
 }
 export interface RunState {
+  state_source?: string;
+  state_sequence?: number;
   items?:{id:string;name:string;position:number[];owner:string|null;custody:string;damaged:boolean;sampled_at:number}[];
   people?: Record<string, PedestrianRuntime>;
   run_id: string;

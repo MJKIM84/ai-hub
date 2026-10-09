@@ -21,6 +21,8 @@ export class SceneMotion {
   private arrivedAt = 0;
   private duration = 0;
   private smoothing = false;
+  private gaps: number[] = [];
+  packetGap = 0;
 
   alpha(now: number) {
     return this.duration
@@ -47,7 +49,7 @@ export class SceneMotion {
       run === this.run &&
       time > this.simTime &&
       gap > 0 &&
-      gap <= 250;
+      gap <= 2000;
     const alpha = this.alpha(now);
     const next = new Map<number, Track>();
     for (const g of geoms) {
@@ -69,7 +71,18 @@ export class SceneMotion {
     this.simTime = time;
     this.smoothing = enabled;
     this.arrivedAt = now;
-    this.duration = smooth ? Math.min(120, gap) : 0;
+    this.packetGap = gap;
+    if (smooth) {
+      this.gaps.push(gap);
+      if (this.gaps.length > 12) this.gaps.shift();
+      const sorted = [...this.gaps].sort((a, b) => a-b);
+      // Cover ordinary packet jitter (also on the GET fallback). The previous
+      // 120 ms cap/250 ms cutoff turned cloud latency into visible stop-jumps.
+      this.duration = Math.min(1200, Math.max(40, sorted[Math.floor((sorted.length-1)*.9)]*1.2));
+    } else {
+      this.gaps = [];
+      this.duration = 0;
+    }
   }
 
   apply(id: number, object: THREE.Object3D, now: number) {

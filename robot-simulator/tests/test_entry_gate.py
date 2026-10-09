@@ -27,7 +27,7 @@ def test_direct_runtime_url_and_api_are_locked_until_single_use_handoff(monkeypa
     with TestClient(app,base_url=ORIGIN) as c:
         assert c.get('/healthz').json()['access_required'] is True
         assert '비밀번호' in c.get('/').text
-        for route in ['/api/session','/api/project','/api/state','/assets/app.js']:
+        for route in ['/api/session','/api/project','/api/state','/api/state/stream','/assets/app.js']:
             assert c.get(route,headers={'X-Robot-Request':'1'}).status_code==401
         assert not app.state.visitors.visitors
         h={'Origin':ORIGIN}

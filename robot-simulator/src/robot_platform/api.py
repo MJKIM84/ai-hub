@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 import threading
 import time
+import uuid
 from urllib.parse import parse_qs, quote
 
 from fastapi import FastAPI,HTTPException,Request
@@ -94,8 +95,17 @@ class EngineHost:
         self.store=Store(data_dir/"projects")
         self.experiment_dir=data_dir/"experiments";self.experiment_dir.mkdir(parents=True,exist_ok=True)
         self.plan_service=None
+        self.state_source=uuid.uuid4().hex
+        self.state_sequence=0
+        self.state_streams=0
         self.stop=threading.Event()
         self.thread=threading.Thread(target=self.run,daemon=True,name="physics-worker")
+
+    def snapshot(self):
+        with self.lock:
+            self.state_sequence+=1
+            return dict(self.session.snapshot(), state_source=self.state_source,
+                        state_sequence=self.state_sequence)
 
     def run(self):
         last=time.monotonic();accumulator=0.
@@ -214,7 +224,10 @@ def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_templa
 
     @app.get("/api/state")
     def state():
-        with host.lock:return host.session.snapshot()
+        return host.snapshot()
+
+    from .state_stream import install_state_stream
+    install_state_stream(app, host)
 
     @app.get("/api/scene")
     def scene():
