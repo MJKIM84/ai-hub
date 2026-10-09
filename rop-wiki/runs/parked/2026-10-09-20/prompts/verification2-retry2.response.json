@@ -1,0 +1,190 @@
+{
+  "duration_api_ms": 112197,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 6.159898800000001,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 737129,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 12255,
+    "output_tokens_details": {
+      "thinking_tokens": 7867
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 737129,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12255,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 737129,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 737129
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 12255,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 737129,
+      "webSearchRequests": 0,
+      "costUSD": 6.159898800000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7867,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-20\",\"stage\":\"second\",\"verdict\":\"수정 후 재검증\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"트랙 개요(index.md): H1 아래 상태 줄을 '> 트랙 상태: active · 현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고친다. 지금은 '현재 단계: 단계 3 … 마지막 트랙 실행: 2026-09-25'로 남아 있어, 이번 판정(실행 대상 단계 2, 전환 미승인)과 맞지 않는다. 1차 지시와 직전 2차 지시 모두 미이행이다. patches 로 H1 아래 줄을 바꿀 수 없으면 이 페이지는 patches 대신 전체 content 로 보낸다. 트랙 실행은 공통 규칙 부록 R-7 의 차등 갱신 대상(update·category_link 실행)이 아니다.\",\"업무 분해·배정 설계 초안: H1 을 '# 업무 분해·배정 설계 초안 (v1.0)'으로 고친다. 지금 H1 은 '(v0.9)'인데 프런트매터 ontology_version '1.0'·track_updates.ontology_draft_version '1.0'·1절 서술은 v1.0 이라 네 곳이 어긋난다. patches 로 H1 을 바꿀 수 없으면 이 페이지는 전체 content 로 보낸다.\",\"단계 2 페이지: H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 3건 · 답한 질문: 4건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09'로 고친다. 지금 줄은 '열린 질문: 4건 · 답한 질문: 3건 · 마지막 실행: 2026-09-25'라서 2절 표(q2-04 답함)·프런트매터 last_run 과 맞지 않는다. 직전 2차 지시 미이행이다. 필요하면 전체 content 로 보낸다.\",\"단계 1 페이지: H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 0건 · 답한 질문: 6건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09'로 고친다. 직전 2차 지시 미이행이다. 필요하면 전체 content 로 보낸다.\",\"단계 1 페이지 2절 표: q1-05·q1-06 행을 '답함 | (기존 제기 근거 그대로) | 2026-10-09-20 | [#q1-05](#q1-05)' / '[#q1-06](#q1-06)'으로 고친다. 표 위 중복 등록 메모에는 '두 질문은 실행 2026-10-09-20 에서 q1-05 소절과 q1-06 소절로 함께 답했다'를 덧붙인다. 지금은 두 행이 '열림'이라 backlog_updates(답함)·3절 소절과 어긋난다. 원래 2절 본문은 입력의 docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md 에 있다. 2절 replace 패치 또는 전체 content 로 보낸다.\",\"단계 1 페이지 5절 표: 기존 q1-05 행의 상태를 '답함'으로 고친다. 6절 아래 줄은 '다음 단계로 전환: 아니오(지시 분해 접근 유형 목록이 업무 분해·배정 설계 초안에 미반영)'로 고친다. 지금은 q1-05 행이 '열림'이고, 전환 줄이 이미 답한 q1-05·q1-06 을 막힌 질문으로 들고 있다.\",\"단계 1 페이지 9절: 표 맨 위에 '| 2026-10-09 | 2026-10-09-20 | q1-05, q1-06 | q4-20, q5-20 | 없음(v0.9 → v1.0 변경 근거는 단계 2 의 q2-04) | 6 |' 행을 넣는다. 현재 이력 표에 이번 실행 기록이 없다.\",\"단계 1 페이지 프런트매터 sources 에 ref-1337, ref-1338, ref-1339, ref-1347, ref-780 을 더한다. 페이지 끝에 이 다섯 출처의 각주 정의와 본문 인용이 있는데 sources 에는 없다. 기존 목록은 입력 게시본의 sources 를 그대로 두고 덧붙인다.\",\"단계 1 페이지 각주 정의: [^ref-780] 의 기관 칸을 reference_updates 와 같은 '강건·강서연·배정찬(KAIST, 대한산업공학회 추계학술대회 논문집)'으로 고친다(1차 f6 지시). [^ref-1338] 의 기관 칸은 'MIT, ICRA 2024 게재, 열람 판 arXiv v2 2024-03'으로 고친다(1차 f2 지시). 아이디어 2. 채팅 기반 구성·운영 페이지의 같은 두 각주도 같은 문자열로 맞춘다. 지금 각주는 고치기 전 색인 문자열을 그대로 쓰고 있다.\",\"fixes_applied: 위 항목을 이행 위치와 함께 '이행'으로 보고한다. 'patches 불가'나 '게시본 없음'을 미이행 사유로 남긴 채 다시 내지 않는다. H1 아래 줄을 고쳐야 하는 페이지(트랙 개요, 업무 분해·배정 설계 초안, 단계 1, 단계 2)는 전체 content 로 보낸다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 수정 후 재검증. 확인 22건, 미확인 2건(f6 구성 서술, f8 일부 절), 교차 확인 0건. 강등: f6 은 서지 사실로 범위를 줄였고(추정 유지), f8 은 '로봇 수 증가 시 성공률 하락' 절과 PlanBench 근거를 뺐다(추정 유지). 사실 → 추정 강등은 없다. 원문 미열람 출처: ref-1339(Research Square 프리프린트, 검색 결과 일치로 실재 확인), ref-780(DBpia 서지만 확인). 주의: 물류 지향 근거(f1~f5)는 모두 시뮬레이션·도메인 실험·시제품이며 실제 물류센터 운영 평가는 없다. 중간 표현과 VDA 5050 주문·Open-RMF 작업 요청의 대응 결론(f22~f24)은 이 위키의 종합이고, 각 형식의 '필드 없음'은 연 스키마 범위에서 관찰한 부재다. 모든 사실 finding 이 단일 출처다. 온톨로지 변경 승인: 작업(Task) 수정(f10·f12·f14·f18, 추정 메모 f22). '의존 그래프'는 표현 형식 후보로 두고 초안 6절 질문은 유지한다. 거부: 없음. 새 질문 처리: LTLf 검사층 질문은 q4-14·oq-302·oq-314 와 중복이라 등록하지 않는다. 오탈자 정규화 질문은 단계 4(q4-20)로 등록됐다. 단계 완료 조건: 미충족(부족: 업무 분해·배정 설계 초안 개념 목록 표의 작업 요구 적재물 속성·완료 조건 미확정, 막힌 질문 q2-05·q2-06·q2-07). 단계 전환: 미승인(같은 이유). / 2차(재검증 2회차) 수정 후 재검증. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 직전 2차 지시 가운데 본문 되살림, q2-04 소절·2절·6절·9절, q1-05·q1-06 소절과 번호 정리, 초안 2절·6절 반영, 아이디어 3·4절, backlog_updates·reference_updates·용어집·열린 질문·세부영역 반영 제안·로그 문구는 이행됐다. 남은 문제는 표기 불일치다. 트랙 개요 상태 줄의 현재 단계(단계 3)·마지막 실행일, 업무 분해·배정 설계 초안 H1 의 v0.9(프런트매터는 1.0), 단계 1·2 상태 줄의 숫자·날짜, 단계 1 페이지 2절·5절(q1-05·q1-06 '열림')·6절 전환 줄·9절 이력이 백로그와 맞지 않는다. 단계 1 프런트매터 sources 에는 새 출처 다섯 건이 빠졌다. 원인은 스토리텔러가 patches 로 H1 아래 줄을 바꿀 수 없었고, 단계 1 게시본을 입력으로 받지 못한 데 있다. 이번 재검증에서 새로 지적한 것은 [^ref-780]·[^ref-1338] 각주 문자열이 1차 지시와 다른 점이다. 실행 스크립트(pipeline/run_daily, agent_runner.py) 담당에게 요청한다. 이번이 retry_count 2(= max_retries)이므로 runs/parked/ 로 보류되면 사람이 판단해야 한다. 다음 재실행이나 수동 처리 때는 (1) 트랙 실행에서는 스토리텔러가 전체 content 를 보내도록 허용하거나 patch 적용 코드가 H1 아래 상태 줄·H1 버전 표기를 고칠 수 있게 하고, (2) 갱신 대상 페이지(단계 1 게시본 포함)를 입력에 넣어 달라. 참고(수정 지시 아님): 아이디어 페이지 3절의 G3 문장 시점 표시는 새 소절에서 밝히는 방식으로 대신했고, 이를 인정한다. ref-110·ref-111·ref-125·ref-413 은 기존 각주(접근일 2026-09-25)를 재사용해 본문의 '확인일 2026-10-09'와 날짜가 다르다. ref-181 은 이번 실행에서 원문을 열었으나 단계 1 페이지의 기존 각주에는 '(원문 미열람)'이 남아 있다. 이 둘은 다음 갱신 실행에서 맞춘다.\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[\"LLM 이 만든 작업 의존 그래프나 계획을 배치 전에 금지 구역·순서 같은 현장 규칙을 담은 LTLf 명세로 검사하는 방식을 다중 플릿 오케스트레이션에 적용한 사례가 있는가, 검사층과 사람 승인을 어떻게 나누는가? (q4-14, oq-302, oq-314 와 같은 뜻)\"],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false,\"stage_tag_issues\":[]}}",
+  "structured_output": {
+    "run_id": "2026-10-09-20",
+    "stage": "second",
+    "verdict": "수정 후 재검증",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "트랙 개요(index.md): H1 아래 상태 줄을 '> 트랙 상태: active · 현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고친다. 지금은 '현재 단계: 단계 3 … 마지막 트랙 실행: 2026-09-25'로 남아 있어, 이번 판정(실행 대상 단계 2, 전환 미승인)과 맞지 않는다. 1차 지시와 직전 2차 지시 모두 미이행이다. patches 로 H1 아래 줄을 바꿀 수 없으면 이 페이지는 patches 대신 전체 content 로 보낸다. 트랙 실행은 공통 규칙 부록 R-7 의 차등 갱신 대상(update·category_link 실행)이 아니다.",
+      "업무 분해·배정 설계 초안: H1 을 '# 업무 분해·배정 설계 초안 (v1.0)'으로 고친다. 지금 H1 은 '(v0.9)'인데 프런트매터 ontology_version '1.0'·track_updates.ontology_draft_version '1.0'·1절 서술은 v1.0 이라 네 곳이 어긋난다. patches 로 H1 을 바꿀 수 없으면 이 페이지는 전체 content 로 보낸다.",
+      "단계 2 페이지: H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 3건 · 답한 질문: 4건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09'로 고친다. 지금 줄은 '열린 질문: 4건 · 답한 질문: 3건 · 마지막 실행: 2026-09-25'라서 2절 표(q2-04 답함)·프런트매터 last_run 과 맞지 않는다. 직전 2차 지시 미이행이다. 필요하면 전체 content 로 보낸다.",
+      "단계 1 페이지: H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 0건 · 답한 질문: 6건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09'로 고친다. 직전 2차 지시 미이행이다. 필요하면 전체 content 로 보낸다.",
+      "단계 1 페이지 2절 표: q1-05·q1-06 행을 '답함 | (기존 제기 근거 그대로) | 2026-10-09-20 | [#q1-05](#q1-05)' / '[#q1-06](#q1-06)'으로 고친다. 표 위 중복 등록 메모에는 '두 질문은 실행 2026-10-09-20 에서 q1-05 소절과 q1-06 소절로 함께 답했다'를 덧붙인다. 지금은 두 행이 '열림'이라 backlog_updates(답함)·3절 소절과 어긋난다. 원래 2절 본문은 입력의 docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md 에 있다. 2절 replace 패치 또는 전체 content 로 보낸다.",
+      "단계 1 페이지 5절 표: 기존 q1-05 행의 상태를 '답함'으로 고친다. 6절 아래 줄은 '다음 단계로 전환: 아니오(지시 분해 접근 유형 목록이 업무 분해·배정 설계 초안에 미반영)'로 고친다. 지금은 q1-05 행이 '열림'이고, 전환 줄이 이미 답한 q1-05·q1-06 을 막힌 질문으로 들고 있다.",
+      "단계 1 페이지 9절: 표 맨 위에 '| 2026-10-09 | 2026-10-09-20 | q1-05, q1-06 | q4-20, q5-20 | 없음(v0.9 → v1.0 변경 근거는 단계 2 의 q2-04) | 6 |' 행을 넣는다. 현재 이력 표에 이번 실행 기록이 없다.",
+      "단계 1 페이지 프런트매터 sources 에 ref-1337, ref-1338, ref-1339, ref-1347, ref-780 을 더한다. 페이지 끝에 이 다섯 출처의 각주 정의와 본문 인용이 있는데 sources 에는 없다. 기존 목록은 입력 게시본의 sources 를 그대로 두고 덧붙인다.",
+      "단계 1 페이지 각주 정의: [^ref-780] 의 기관 칸을 reference_updates 와 같은 '강건·강서연·배정찬(KAIST, 대한산업공학회 추계학술대회 논문집)'으로 고친다(1차 f6 지시). [^ref-1338] 의 기관 칸은 'MIT, ICRA 2024 게재, 열람 판 arXiv v2 2024-03'으로 고친다(1차 f2 지시). 아이디어 2. 채팅 기반 구성·운영 페이지의 같은 두 각주도 같은 문자열로 맞춘다. 지금 각주는 고치기 전 색인 문자열을 그대로 쓰고 있다.",
+      "fixes_applied: 위 항목을 이행 위치와 함께 '이행'으로 보고한다. 'patches 불가'나 '게시본 없음'을 미이행 사유로 남긴 채 다시 내지 않는다. H1 아래 줄을 고쳐야 하는 페이지(트랙 개요, 업무 분해·배정 설계 초안, 단계 1, 단계 2)는 전체 content 로 보낸다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 수정 후 재검증. 확인 22건, 미확인 2건(f6 구성 서술, f8 일부 절), 교차 확인 0건. 강등: f6 은 서지 사실로 범위를 줄였고(추정 유지), f8 은 '로봇 수 증가 시 성공률 하락' 절과 PlanBench 근거를 뺐다(추정 유지). 사실 → 추정 강등은 없다. 원문 미열람 출처: ref-1339(Research Square 프리프린트, 검색 결과 일치로 실재 확인), ref-780(DBpia 서지만 확인). 주의: 물류 지향 근거(f1~f5)는 모두 시뮬레이션·도메인 실험·시제품이며 실제 물류센터 운영 평가는 없다. 중간 표현과 VDA 5050 주문·Open-RMF 작업 요청의 대응 결론(f22~f24)은 이 위키의 종합이고, 각 형식의 '필드 없음'은 연 스키마 범위에서 관찰한 부재다. 모든 사실 finding 이 단일 출처다. 온톨로지 변경 승인: 작업(Task) 수정(f10·f12·f14·f18, 추정 메모 f22). '의존 그래프'는 표현 형식 후보로 두고 초안 6절 질문은 유지한다. 거부: 없음. 새 질문 처리: LTLf 검사층 질문은 q4-14·oq-302·oq-314 와 중복이라 등록하지 않는다. 오탈자 정규화 질문은 단계 4(q4-20)로 등록됐다. 단계 완료 조건: 미충족(부족: 업무 분해·배정 설계 초안 개념 목록 표의 작업 요구 적재물 속성·완료 조건 미확정, 막힌 질문 q2-05·q2-06·q2-07). 단계 전환: 미승인(같은 이유). / 2차(재검증 2회차) 수정 후 재검증. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 직전 2차 지시 가운데 본문 되살림, q2-04 소절·2절·6절·9절, q1-05·q1-06 소절과 번호 정리, 초안 2절·6절 반영, 아이디어 3·4절, backlog_updates·reference_updates·용어집·열린 질문·세부영역 반영 제안·로그 문구는 이행됐다. 남은 문제는 표기 불일치다. 트랙 개요 상태 줄의 현재 단계(단계 3)·마지막 실행일, 업무 분해·배정 설계 초안 H1 의 v0.9(프런트매터는 1.0), 단계 1·2 상태 줄의 숫자·날짜, 단계 1 페이지 2절·5절(q1-05·q1-06 '열림')·6절 전환 줄·9절 이력이 백로그와 맞지 않는다. 단계 1 프런트매터 sources 에는 새 출처 다섯 건이 빠졌다. 원인은 스토리텔러가 patches 로 H1 아래 줄을 바꿀 수 없었고, 단계 1 게시본을 입력으로 받지 못한 데 있다. 이번 재검증에서 새로 지적한 것은 [^ref-780]·[^ref-1338] 각주 문자열이 1차 지시와 다른 점이다. 실행 스크립트(pipeline/run_daily, agent_runner.py) 담당에게 요청한다. 이번이 retry_count 2(= max_retries)이므로 runs/parked/ 로 보류되면 사람이 판단해야 한다. 다음 재실행이나 수동 처리 때는 (1) 트랙 실행에서는 스토리텔러가 전체 content 를 보내도록 허용하거나 patch 적용 코드가 H1 아래 상태 줄·H1 버전 표기를 고칠 수 있게 하고, (2) 갱신 대상 페이지(단계 1 게시본 포함)를 입력에 넣어 달라. 참고(수정 지시 아님): 아이디어 페이지 3절의 G3 문장 시점 표시는 새 소절에서 밝히는 방식으로 대신했고, 이를 인정한다. ref-110·ref-111·ref-125·ref-413 은 기존 각주(접근일 2026-09-25)를 재사용해 본문의 '확인일 2026-10-09'와 날짜가 다르다. ref-181 은 이번 실행에서 원문을 열었으나 단계 1 페이지의 기존 각주에는 '(원문 미열람)'이 남아 있다. 이 둘은 다음 갱신 실행에서 맞춘다.",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [
+        "LLM 이 만든 작업 의존 그래프나 계획을 배치 전에 금지 구역·순서 같은 현장 규칙을 담은 LTLf 명세로 검사하는 방식을 다중 플릿 오케스트레이션에 적용한 사례가 있는가, 검사층과 사람 승인을 어떻게 나누는가? (q4-14, oq-302, oq-314 와 같은 뜻)"
+      ],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false,
+      "stage_tag_issues": []
+    }
+  },
+  "ttft_ms": 78580,
+  "type": "result",
+  "duration_ms": 112572,
+  "uuid": "6c732081-d8d6-477d-bb39-613c4d08b975",
+  "ttft_stream_ms": 2767,
+  "time_to_request_ms": 134,
+  "time_to_request_phases_ms": {
+    "other": 27,
+    "system_prompt": 14,
+    "resume_other": 1,
+    "process_user_input": 18,
+    "input_attachments": 19,
+    "input_hooks": 4,
+    "tool_pool_refresh": 2,
+    "init_message": 7,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 7,
+    "message_normalization": 3,
+    "client_creation": 5,
+    "request_build": 21
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 84,
+  "time_to_request_cpu_ms": 181,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 7,
+    "cpu_ms": 19,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 2767,
+  "time_to_request_from_spawn_ms": 9204243,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791549384887.7092,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 114.5
+}
