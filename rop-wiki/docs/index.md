@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) — '다른 대분류와의 연결' 절 신규 작성: 16개 대분류별 세부영역 연결(추정 연결 표시, 벤더 주장 6건 병기), 현장 유형별 사례, 아직 다루지 않은 세부영역 목록, 절 끝 각주 정의 44건. 2차 수정: L. AI·학습 기술 항목에 적용 대상 세부영역 링크, 약어 첫 등장 풀어 쓰기 (실행 2026-10-09-06)
-- 2026-10-09 · 요약 · [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) — K. 플랫폼 아키텍처·인프라: '다른 대분류와의 연결' 절 신규 작성(16개 대분류의 세부영역 연결, 조건부 승인 수정 18건과 2차 수정 5건 반영: f21 1 Hz 귀속 정정, f30 추정 강등) (실행 2026-10-09-06)
-- 2026-10-09 · 생성 · [MQTT 유언 메시지 (MQTT Last Will (Will Message))](glossary/mqtt-last-will.md) — 용어집 항목 MQTT 유언 메시지 (실행 2026-10-09-06)
-- 2026-10-09 · 생성 · [A/B 업데이트 (A/B Update (Dual Partition Update with Rollback))](glossary/a-b-update.md) — 용어집 항목 A/B 업데이트 (실행 2026-10-09-06)
-- 2026-10-09 · 갱신 · [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) — '다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건 (실행 2026-10-09-05)
+- 2026-10-09 · 갱신 · [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) — '다른 대분류와의 연결' 절 작성: 다른 대분류 16곳과의 연결(finding 84건, 각주 63건), 아직 다루지 않은 연결 6개 영역 명시, 1차 조건부 승인 수정 16건 반영 (실행 2026-10-09-07)
+- 2026-10-09 · 요약 · [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) — I. 설계·시뮬레이션: '다른 대분류와의 연결' 절 작성(다른 대분류 16곳, 각주 63건, 1차 조건부 승인 수정 16건 반영, 보류 실행 2026-10-09-04 대체) (실행 2026-10-09-07)
+- 2026-10-09 · 생성 · [ref-1251 — Provision of Simulation Models (IDTA 02005) 1.0 — README](references/ref-1251.md) — 참고문헌 ref-1251 등록: Provision of Simulation Models (IDTA 02005) 1.0 — README (실행 2026-10-09-07)
+- 2026-10-09 · 생성 · [ref-1247 — 클로봇, 국책사업으로 피지컬AI 기술 표준 이끈다...산자부 주관사 선정](references/ref-1247.md) — 참고문헌 ref-1247 등록: 클로봇, 국책사업으로 피지컬AI 기술 표준 이끈다...산자부 주관사 선정 (실행 2026-10-09-07)
+- 2026-10-09 · 생성 · [ref-1243 — Optimising human-robot collaboration for efficiency in retail warehousing](references/ref-1243.md) — 참고문헌 ref-1243 등록: Optimising human-robot collaboration for efficiency in retai… (실행 2026-10-09-07)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 
