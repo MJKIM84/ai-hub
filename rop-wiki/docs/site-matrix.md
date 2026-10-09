@@ -20,13 +20,13 @@ version: 1
 <!-- auto:site-matrix:start -->
 | 현장 유형 / 대분류 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **물류창고** | 3 | 9 | 12 | 1 | 5 | 4 | 5 | 4 | 4 | 2 | 4 | 4 | 3 | 1 | 4 | 1 | 1 |
-| **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 비어 있음 | 2 | 3 | 1 | 1 | 1 | 비어 있음 | 1 |
-| **병원** | 2 | 3 | 5 | 2 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 2 | 3 | 1 | 1 | 2 | 1 | 2 | 1 |
+| **물류창고** | 3 | 9 | 12 | 1 | 5 | 4 | 5 | 4 | 4 | 2 | 4 | 4 | 4 | 1 | 4 | 1 | 1 |
+| **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 비어 있음 | 2 | 3 | 2 | 1 | 1 | 비어 있음 | 1 |
+| **병원** | 2 | 3 | 5 | 2 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 2 | 3 | 1 | 2 | 2 | 1 | 2 | 1 |
 | **상업 시설** | 2 | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 |
-| **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 1 | 1 | 2 | 비어 있음 | 1 | 1 |
-| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 2 | 1 |
-| **기타** | 1 | 2 | 비어 있음 | 2 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 2 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 1 |
+| **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 1 | 2 | 2 | 비어 있음 | 1 | 1 |
+| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 1 | 3 | 1 | 비어 있음 | 2 | 1 |
+| **기타** | 1 | 2 | 비어 있음 | 2 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 2 | 1 | 2 | 비어 있음 | 1 | 비어 있음 | 1 |
 
 열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 75/119 칸.
 
@@ -44,7 +44,7 @@ version: 1
 - **J. 현장 운영·관제**: [4. 성과·경제성·프로세스 개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md#5-적용-사례-현장-유형-명시), [19. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시)
 - **K. 플랫폼 아키텍처·인프라**: [11. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md#5-적용-사례-현장-유형-명시), [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시), [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [27. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md), [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시), [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시), [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [25. 안전·위험 관리](categories/safety/safety-and-risk-management.md#5-적용-사례-현장-유형-명시), [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [25. 안전·위험 관리](categories/safety/safety-and-risk-management.md#5-적용-사례-현장-유형-명시), [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **N. 보안·개인정보**: [26. 사이버보안·접근권한·개인정보](categories/security-and-privacy/authentication-authorization-and-isolation.md#5-적용-사례-현장-유형-명시)
 - **O. 검증·도입·수명주기**: [24. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md), [23. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md), [21. 온보딩·설정·현장 시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md#5-적용-사례-현장-유형-명시), [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
 - **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
@@ -57,7 +57,7 @@ version: 1
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시), [I. 설계·시뮬레이션](categories/design-and-simulation/index.md#다른-대분류와의-연결)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시), [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시), [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **N. 보안·개인정보**: [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시)
 - **O. 검증·도입·수명주기**: [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md#5-적용-사례-현장-유형-명시)
@@ -73,7 +73,7 @@ version: 1
 - **J. 현장 운영·관제**: [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시), [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시), [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **N. 보안·개인정보**: [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시), [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
 - **O. 검증·도입·수명주기**: [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
 - **P. 거버넌스·법규·사회**: [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md#5-적용-사례-현장-유형-명시), [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
@@ -97,7 +97,7 @@ version: 1
 - **E. 사물·사람·실시간 상태**: [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md#다른-대분류와의-연결)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [I. 설계·시뮬레이션](categories/design-and-simulation/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **N. 보안·개인정보**: [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시), [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
 - **P. 거버넌스·법규·사회**: [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md#5-적용-사례-현장-유형-명시)
@@ -108,7 +108,7 @@ version: 1
 - **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [I. 설계·시뮬레이션](categories/design-and-simulation/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **N. 보안·개인정보**: [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
 - **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시), [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [66. 실외](categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시)
@@ -122,7 +122,7 @@ version: 1
 - **I. 설계·시뮬레이션**: [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시), [I. 설계·시뮬레이션](categories/design-and-simulation/index.md#다른-대분류와의-연결)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시)
-- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
+- **M. 안전**: [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시), [M. 안전](categories/safety/index.md#다른-대분류와의-연결)
 - **O. 검증·도입·수명주기**: [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [67. 기타 현장](categories/site-type-applications/other-sites.md#5-적용-사례-현장-유형-명시)
 <!-- auto:site-matrix:end -->

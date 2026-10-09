@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) — '다른 대분류와의 연결' 절 작성: 다른 대분류 16곳과의 연결(finding 84건, 각주 63건), 아직 다루지 않은 연결 6개 영역 명시, 1차 조건부 승인 수정 16건 반영 (실행 2026-10-09-07)
-- 2026-10-09 · 요약 · [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) — I. 설계·시뮬레이션: '다른 대분류와의 연결' 절 작성(다른 대분류 16곳, 각주 63건, 1차 조건부 승인 수정 16건 반영, 보류 실행 2026-10-09-04 대체) (실행 2026-10-09-07)
-- 2026-10-09 · 생성 · [ref-1251 — Provision of Simulation Models (IDTA 02005) 1.0 — README](references/ref-1251.md) — 참고문헌 ref-1251 등록: Provision of Simulation Models (IDTA 02005) 1.0 — README (실행 2026-10-09-07)
-- 2026-10-09 · 생성 · [ref-1247 — 클로봇, 국책사업으로 피지컬AI 기술 표준 이끈다...산자부 주관사 선정](references/ref-1247.md) — 참고문헌 ref-1247 등록: 클로봇, 국책사업으로 피지컬AI 기술 표준 이끈다...산자부 주관사 선정 (실행 2026-10-09-07)
-- 2026-10-09 · 생성 · [ref-1243 — Optimising human-robot collaboration for efficiency in retail warehousing](references/ref-1243.md) — 참고문헌 ref-1243 등록: Optimising human-robot collaboration for efficiency in retai… (실행 2026-10-09-07)
+- 2026-10-09 · 갱신 · [M. 안전](categories/safety/index.md) — '다른 대분류와의 연결' 절 첫 작성: 16개 대분류와의 연결(주장 70건 근거), Q. 현장 유형별 적용 현장별 정리, 아직 다루지 않은 연결 7건, 각주 정의 48건 (실행 2026-10-09-09)
+- 2026-10-09 · 요약 · [M. 안전](categories/safety/index.md) — M. 안전: 다른 대분류와의 연결 절 첫 작성(16개 대분류와의 연결, 현장 유형별 근거, 아직 다루지 않은 연결 7건) (실행 2026-10-09-09)
+- 2026-10-09 · 생성 · [ref-1253 — AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인](references/ref-1253.md) — 참고문헌 ref-1253 등록: AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인 (실행 2026-10-09-09)
+- 2026-10-09 · 생성 · [ref-1254 — ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications](references/ref-1254.md) — 참고문헌 ref-1254 등록: ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications (실행 2026-10-09-09)
+- 2026-10-09 · 생성 · [ref-1255 — ANSI/A3 R15.08-3-2026, American National Standard for Industrial Mobile Robots – Safety Requirements – Part 3: Use of IMR Applications](references/ref-1255.md) — 참고문헌 ref-1255 등록: ANSI/A3 R15.08-3-2026, American National Standard for Indust… (실행 2026-10-09-09)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

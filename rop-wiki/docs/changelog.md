@@ -20,6 +20,20 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-09 | 갱신 | [docs/categories/safety/index.md](categories/safety/index.md) | '다른 대분류와의 연결' 절 첫 작성: 16개 대분류와의 연결(주장 70건 근거), Q. 현장 유형별 적용 현장별 정리, 아직 다루지 않은 연결 7건, 각주 정의 48건 |
+| 2026-10-09-09 | 요약 | [docs/categories/safety/index.md](categories/safety/index.md) | M. 안전: 다른 대분류와의 연결 절 첫 작성(16개 대분류와의 연결, 현장 유형별 근거, 아직 다루지 않은 연결 7건) |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1253.md](references/ref-1253.md) | 참고문헌 ref-1253 등록: AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인 |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1254.md](references/ref-1254.md) | 참고문헌 ref-1254 등록: ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1255.md](references/ref-1255.md) | 참고문헌 ref-1255 등록: ANSI/A3 R15.08-3-2026, American National Standard for Indust… |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1256.md](references/ref-1256.md) | 참고문헌 ref-1256 등록: A3 announces R15.08 Part 3 safety standard for industrial mo… |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1257.md](references/ref-1257.md) | 참고문헌 ref-1257 등록: Case Study: Wireless E-Stopping Improves Safety Around Wareh… |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1258.md](references/ref-1258.md) | 참고문헌 ref-1258 등록: [법제처 유권해석] 유해하거나 위험한 작업에 필요한 안전보건교육을 추가로 해야 하는 '로봇작업'이 '산업용… |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1259.md](references/ref-1259.md) | 참고문헌 ref-1259 등록: 보도·횡단보도 걷는 배달·순찰 로봇 나온다… 실외이동로봇 시대 개막 |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1260.md](references/ref-1260.md) | 참고문헌 ref-1260 등록: DIN EN ISO 13482 - 2024-10 (Draft standard) Robotik - Sicher… |
+| 2026-10-09-09 | 생성 | [docs/references/ref-1261.md](references/ref-1261.md) | 참고문헌 ref-1261 등록: ROSMonitoring: A Runtime Verification Framework for ROS |
+| 2026-10-09-09 | 생성 | [docs/glossary/management-of-change.md](glossary/management-of-change.md) | 용어집 항목 변경 관리 |
+| 2026-10-09-09 | 생성 | [docs/glossary/safety-state-report.md](glossary/safety-state-report.md) | 용어집 항목 안전 상태 보고 |
+| 2026-10-09-09 | 생성 | [docs/glossary/wireless-safety-rated-emergency-stop.md](glossary/wireless-safety-rated-emergency-stop.md) | 용어집 항목 무선 안전 비상정지 |
 | 2026-10-09-07 | 갱신 | [docs/categories/design-and-simulation/index.md](categories/design-and-simulation/index.md) | '다른 대분류와의 연결' 절 작성: 다른 대분류 16곳과의 연결(finding 84건, 각주 63건), 아직 다루지 않은 연결 6개 영역 명시, 1차 조건부 승인 수정 16건 반영 |
 | 2026-10-09-07 | 요약 | [docs/categories/design-and-simulation/index.md](categories/design-and-simulation/index.md) | I. 설계·시뮬레이션: '다른 대분류와의 연결' 절 작성(다른 대분류 16곳, 각주 63건, 1차 조건부 승인 수정 16건 반영, 보류 실행 2026-10-09-04 대체) |
 | 2026-10-09-07 | 생성 | [docs/references/ref-1251.md](references/ref-1251.md) | 참고문헌 ref-1251 등록: Provision of Simulation Models (IDTA 02005) 1.0 — README |
