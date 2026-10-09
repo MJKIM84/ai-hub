@@ -20,6 +20,9 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-14 | 갱신 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | '다른 대분류와의 연결' 절 신규 작성: 현장 사례가 A·C~P 대분류의 세부영역에 넘기는 요구를 대분류별로 정리(B. 로봇 온톨로지는 근거 없음), 각주 정의 62건을 절 끝에 둠 |
+| 2026-10-09-14 | 요약 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | Q. 현장 유형별 적용: 다른 대분류와의 연결 절 신규 작성(현장 사례가 A·C~P 대분류 세부영역에 넘기는 요구 정리, B. 로봇 온톨로지는 근거 없음) |
+| 2026-10-09-14 | 생성 | [docs/glossary/door-to-door-robot-delivery.md](glossary/door-to-door-robot-delivery.md) | 용어집 항목 도어 투 도어 로봇 배송 |
 | 2026-10-09-11 | 갱신 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 갱신: 5절 병원 2건·기타 1건·제조 공장 1건 적용 사례 추가(물류창고 시나리오 유지), 6·7·8절에 시각·품질·만료·지속성 필터·시계 동기화와 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 행을 VDA 5050 3.0.0 7.8절에 맞춰 수정, 10절 건축 도면 자동 인식 트랙 반영 제안 2건 반영, 11절 기존 열린 질문 4건 근거 추가·새 질문 3건, 6·7·8·10·11절에 2026-09-25 판 분리 페이지 링크 유지, 13절 각주 갱신(ref-288 원문 열람 반영, 신규 15건)·프런트매터 sources 는 기존 22건에 신규·재사용 출처를 더함 |
 | 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s6.md](topics/2026/2026-10-09-area18-s6.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(2,348자)을 옮겼다 |
 | 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s10.md](topics/2026/2026-10-09-area18-s10.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,925자)을 옮겼다 |

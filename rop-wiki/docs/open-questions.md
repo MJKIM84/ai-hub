@@ -344,8 +344,10 @@ version: 1
 | oq-322 | 로봇이 직접 관측한 승강기·문 상태와 설비 제어기가 보고한 상태가 다를 때 어느 쪽을 기준으로 통과·탑승을 확정하는지 정한 표준이나 현장 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
 | oq-323 | 지속성 필터처럼 마지막 관측 뒤 시간에 따라 믿음을 낮추는 확률 모델을 문·승강기·충전기 같은 설비 상태의 허용 경과 시간 판단에 적용한 연구나 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
 | oq-324 | 실시간 세계 상태를 예측 시뮬레이션의 초기값으로 넘길 때 어떤 상태 항목·품질·시각 정보를 넘겨야 하는지 정한 인터페이스가 다중 이동로봇 운영에 쓰인 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
+| oq-325 | 병원·호텔·쇼핑몰·공동주택에서 로봇의 승강기 연동이 승강기 제조사 API, 승강기 관리 솔루션, 로봇팔 버튼 조작, 제어반 전용 통신 모듈로 갈리는데, 이 방식들을 한 현장에서 같은 승강기 인터페이스로 묶어 제조사가 다른 로봇이 함께 쓰게 한 사례나 방식별 비교 자료가 있는가(관련 기존 질문 oq-176 은 오케스트레이션 계층, oq-182 는 공동주택 연동 절차, oq-191 은 싱가포르 표준을 묻고, 이 질문은 승강기 연동 방식 간 비교를 묻는다)? | [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | 2026-10-09 | 2026-10-09-14 | 열림 | — |
+| oq-326 | 병원·오피스처럼 5G 특화망으로 로봇을 연결하거나 클라우드에서 제어하는 현장에서 통신이 끊길 때 로봇의 현장 동작과 진행 중 작업의 재배정 기준을 공개한 사례가 있는가? | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[67. 기타 현장](categories/site-type-applications/other-sites.md) | 2026-10-09 | 2026-10-09-14 | 열림 | — |
 
-상태별 건수: 열림 323건, 조사 중 1건
+상태별 건수: 열림 325건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

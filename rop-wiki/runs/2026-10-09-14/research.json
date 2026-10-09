@@ -1,0 +1,1802 @@
+{
+  "run_id": "2026-10-09-14",
+  "date": "2026-10-09",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "Q. 현장 유형별 적용"
+  },
+  "gaps": [
+    "Q. 현장 유형별 적용 대분류 페이지의 '다른 대분류와의 연결' 절이 '아직 작성되지 않음' 상태다",
+    "61. 물류창고 ~ 67. 기타 현장 일곱 세부영역의 게시 사례가 A~P 대분류의 어느 세부영역과 무엇을 주고받는지 대분류 단위로 정리되어 있지 않다",
+    "현장 유형마다 승강기·문 연동 방식, 수령 확인 방식, 제조사가 다른 로봇을 한 계층에서 묶은 공개 사례 유무가 대분류 연결 관점에서 비교되어 있지 않다",
+    "C. 채팅 기반 구성·운영, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술과 Q. 현장 유형별 적용을 잇는 현장 사례 근거가 약하다"
+  ],
+  "research_questions": [
+    "현장마다 다른 요구를 플랫폼이 어떻게 받아들이고, 실제로 어디에 어떻게 쓰이고 있는가? [분류원문]",
+    "61. 물류창고·62. 제조 공장의 게시 사례는 F. 연동(업무 시스템·관제 연동)과 G. 계획·최적화(배정·경로)에 어떤 입력과 제약을 넘기는가?",
+    "63. 병원·의료·64. 상업 시설·65. 가정·공동주택의 승강기·문 연동과 수령 확인 사례는 F. 연동의 22. 설비·건물 시스템 연동, E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적, N. 보안·개인정보와 어떻게 이어지는가?",
+    "66. 실외의 인증·보도 규정·접근성 사례는 P. 거버넌스·법규·사회와 M. 안전, D. 공간·지도 모델에 어떤 요구를 넘기는가?",
+    "67. 기타 현장(점검·건설·농업·오피스·데이터센터)의 사례는 J. 현장 운영·관제, D. 공간·지도 모델, K. 플랫폼 아키텍처·인프라와 어떻게 이어지는가?",
+    "현장 유형 전반에서 제조사가 다른 로봇을 하나의 오케스트레이션 계층으로 묶은 공개 사례가 있는가(oq-163, oq-174, oq-176, oq-183)? A. 기획·사업의 2. 사용 사례·요구·책임 범위와 어떻게 이어지는가?"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ F. 연동의 23. 업무 시스템 연동: 국내 스마트물류센터 인증 심사기준은 하차·입고를 입고예정정보 확인·하역작업·상품검수·제품정보 인식·등록으로, 상차·출고를 발주처별 분류·차량입차·상차순서관리·출고정보전달로 나누어, 물류창고 로봇 작업의 시작 조건과 완료 정보가 업무 시스템 단계에 묶여 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-919"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "인증 심사기준이 하차·입고와 상차·출고 프로세스를 세부 단계로 구분함(61. 물류창고 5절 표). (발행일 미확인, 확인일 기준) (재인용: 2026-09-29-11)",
+      "as_of": "2026-10-09",
+      "site_type": "물류창고",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f2",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ F. 연동의 20. 로봇·제조사 관제 연동·A. 기획·사업의 1. 기술·시장·업체 동향: 쿠팡 대구 풀필먼트센터가 AGV·소팅봇·무인지게차를 층별로 나눠 투입했고 다중 플릿 오케스트레이션 소프트웨어가 창고 제어 시스템에 비견된다는 시장 정의가 있어, ROP 가 WMS 와 WCS 사이에서 제조사가 다른 로봇에 작업을 배정하는 자리가 이 연결의 중심이 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-257",
+        "ref-917",
+        "ref-918",
+        "ref-919"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "61. 물류창고 9절의 종합 추정(AGV·AMR·소팅봇·무인지게차·하역 로봇 배정, 다중 플릿 오케스트레이션 시장 정의). (재인용: 2026-09-29-11)",
+      "as_of": "2026-10-09",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF·M. 안전의 49. 사람 근접 안전: 쿠팡 대구 풀필먼트센터의 AGV 는 바닥 QR 코드 경로를 따르고 무인지게차는 사람 출입을 막은 구역에서만 주행하며 경계 침범 시 안전 센서로 정지한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-917",
+        "ref-918"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "두 보도는 같은 현장 공개 행사의 회사 제공 정보에 기반해 독립성이 제한적(61. 물류창고 5절). (재인용: 2026-09-29-11)",
+      "as_of": "2023-02-07",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: Li 외(2020)는 대규모 물류창고의 지속형 다중 에이전트 경로 찾기를, Ma 외(2017)는 온라인 픽업·배송 작업의 지속형 경로 찾기를 다루어, 작업이 계속 들어오는 물류창고 운영이 경로 계획 연구의 대표 적용 대상이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-005",
+        "ref-006"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses(2020), Lifelong MAPF for Online Pickup and Delivery Tasks(2017). (재인용: 2026-09-29-11)",
+      "as_of": "2020",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적: 쿠팡 대구 풀필먼트센터의 소팅봇은 포장 라벨 바코드를 읽어 목적지별로 분류·이송하므로, 물류창고 출하 단계의 완료 확인이 작업 대상 식별에 기댄다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-917"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "소팅봇의 바코드 판독과 목적지별 분류·이송(61. 물류창고 5절 완료·인계 칸). (재인용: 2026-09-29-11)",
+      "as_of": "2023-02-07",
+      "site_type": "물류창고",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f6",
+      "claim": "연계 대상: Q. 현장 유형별 적용의 61. 물류창고 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: DHL 의 트레일러 하역 로봇은 떨어진 상자의 자동 복구 개선이 향후 목표로 보도되었을 뿐이며, 로봇 자체 복구와 ROP 재계획의 분담은 공개 자료에서 확인되지 않아 두 영역의 경계 과제로 남는 것으로 보인다(oq-166).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-921"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "떨어진 상자의 자동 복구 개선이 향후 목표(61. 물류창고 5절 예외·성과 칸, 벤더 설명). (재인용: 2026-09-29-11)",
+      "as_of": "2023-02-01",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링: Schrotenboer 외(2019)는 반품 재적치를 고객 주문 피킹 경로에 통합하는 최적화를 다루었으나 피커 기반 창고 연구이며 로봇 피킹 적용은 아니다(oq-165).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-912"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "반품 단계: 반품 재적치를 피커 경로에 통합하는 연구가 있으나 피커 기반 창고의 최적화(61. 물류창고 5절). (재인용: 2026-09-29-11)",
+      "as_of": "2019-09-01",
+      "site_type": "물류창고",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ G. 계획·최적화의 24. 작업·워크플로 모델링: Schmid·Limère(2019)는 조립라인 부품을 라인 적재·상자 공급·순서 공급·키팅 같은 공급 정책에 배정하는 조립라인 공급 문제를 분류해, 제조 공장 라인 공급 작업을 나누는 기준을 제공한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-922"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "조립라인 공급 문제(ALFP)와 라인 공급 정책 정의(62. 제조 공장 4절). (재인용: 2026-09-29-12)",
+      "as_of": "2019-02-23",
+      "site_type": "제조 공장",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f9",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ F. 연동의 21. 상호운용 표준·적합성·20. 로봇·제조사 관제 연동: SYNAOS 는 폭스바겐 하노버 공장에서 MLR 언더라이드 로봇 약 100대와 자율 견인차 40대 등 135대 이상을 제조사 독립 플랫폼이 VDA 5050 으로 관제한다고 설명한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-924"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 135대 이상을 VDA 5050 으로 관제, 하루 9,000개 랙 운반(62. 제조 공장 5절, 회사 설명). (재인용: 2026-09-29-12)",
+      "as_of": "2025-10-16",
+      "site_type": "제조 공장",
+      "flow_item": "수행 자원",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f10",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ F. 연동의 23. 업무 시스템 연동: Wally 외(2019)는 ISA-95 모델과 PDDL 로 유연 생산 시스템의 운영 계획을 자동 생성하는 방법을 제안해, 생산 관리 쪽 요청을 실행 계획으로 옮기는 연결의 연구 근거가 된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-925"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Flexible Production Systems: Automated Generation of Operations Plans Based on ISA-95 and PDDL(62. 제조 공장 5·9절 근거). (재인용: 2026-09-29-12)",
+      "as_of": "2019-11-13",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ F. 연동의 23. 업무 시스템 연동: Siemens 는 자재 관리 시스템이 생산 계획과 칸반에 따라 운송 주문을 자동 생성해 AGV 플릿에 보낸다고 설명한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-926"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 자재 관리 시스템이 생산 계획·칸반에 따라 운송 주문 자동 생성(62. 제조 공장 5절 시작 조건 칸). (발행일 미확인, 확인일 기준) (재인용: 2026-09-29-12)",
+      "as_of": "2026-10-09",
+      "site_type": "제조 공장",
+      "flow_item": "시작 조건",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f12",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계·34. 시뮬레이션·예측용 디지털 트윈: 국내 자동차 공장 연구는 시뮬레이션으로 AGV 대수·단일 차선 양방향 도로의 타당성을 따졌고(2014), 차체 버퍼 창고가 따로 운영될 때의 결품·막힘을 통합창고 모형으로 비교했다(2012).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-935",
+        "ref-936"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "두 연구는 가정한 미래를 실험하는 시뮬레이션 사례(62. 제조 공장 5절 두 번째 사례). (재인용: 2026-09-29-12)",
+      "as_of": "2014-04",
+      "site_type": "제조 공장",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f13",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업·M. 안전의 49. 사람 근접 안전: 유럽 전문가 31명 조사(2024-12-02)는 좁은 조립 공간에서 협동로봇끼리, 그리고 외골격과의 충돌을 예측·회피하는 것을 핵심 안전·기술 과제로 꼽았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-928"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "협동로봇이 무거운 부품 지지·공구 전달을 맡고 충돌 예측·회피가 과제(62. 제조 공장 5절 세 번째 사례). (재인용: 2026-09-29-12)",
+      "as_of": "2024-12-02",
+      "site_type": "제조 공장",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f14",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ M. 안전의 50. 안전 표준·인증·사고 조사: 인증 기관 Applus+ 는 ISO 3691-4:2023 이 무인 산업 차량의 사람 감지·제동·속도 제어·운용 구역 분류를 요구한다고 안내하며, 표준 원문은 확인되지 않았다(oq-170).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-938"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 인증 기관 안내 기준의 ISO 3691-4:2023 요구 항목, 표준 원문 미열람(62. 제조 공장 5절 제약 칸). (발행일 미확인, 확인일 기준) (재인용: 2026-09-29-12)",
+      "as_of": "2026-10-09",
+      "site_type": "제조 공장",
+      "flow_item": "제약",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f15",
+      "claim": "Q. 현장 유형별 적용의 62. 제조 공장 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: 국내 제조 현장에서 확인된 자료는 한국전자기술연구원(KETI)의 언어 모델·모방학습 조립공정 자동화 기술 공개(2025-03)와 자연어 지시가 언급되지 않은 정부 'AI 공장장' 사업(2026-09 보도)뿐이다(oq-142).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-931",
+        "ref-932"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "'AI 공장장' 사업은 2026 개별 물류 작업→2029 '다크팩토리 OS'로 확대 계획, 기사에 자연어 지시 언급 없음(62. 제조 공장 5·11절). (재인용: 2026-09-29-12)",
+      "as_of": "2026-09-07",
+      "site_type": "제조 공장",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ F. 연동의 22. 설비·건물 시스템 연동·G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: 고려대학교 구로병원 연구는 승강기 제어반에 단 전용 통신 모듈로 로봇의 승강기 호출·탑승을 자동화했고, 승강기 가동률 59% 미만 구간의 성공률이 95.52% 이며 실패가 가동률 90% 초과 구간에 몰렸다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "단일 기관·2025-06-18~29 비긴급 배송 122건 조건, TK50M 제어반 전용 통신 모듈(63. 병원·의료 5절). 전체 성공률 분모는 oq-215 로 미확인. (재인용: 2026-09-29-13)",
+      "as_of": "2026-03-31",
+      "site_type": "병원",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ F. 연동의 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성: 싱가포르 창이종합병원 CHART 의 RoMi-H 는 ROS 2·DDS 기반 오픈소스 미들웨어로 여러 제조사 로봇·센서·병원 정보 시스템을 잇고, 2025-05-01 부터 2년 유효한 등재 프로그램으로 시스템 통합사 5곳이 배치를 맡으며, 로봇들이 승강기를 공유하고 출입 금지 구역으로 충돌을 피한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-937",
+        "ref-872",
+        "ref-942"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "RoMi-H 네 도메인(기계·제어·중앙·통합), 등재 통합사 5곳, 승강기 공유·출입 금지 구역(63. 병원·의료 4·5절). (재인용: 2026-09-29-13)",
+      "as_of": "2025-05-01",
+      "site_type": "병원",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적·N. 보안·개인정보의 51. 인증·권한·격리: 중국 산시성 인민병원 연구에서 AMR 10대의 약품·검체 이송은 픽업·배송 지점의 RFID 신원 확인으로 완료·인계를 확인했고, 약국·병동·시스템 관리자·장비 관리자의 역할을 정한 협력 책임 체계를 두었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-929"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "단일 연구(2025-06-01~11-30) 조건, 배송 시간 32~36% 단축, RFID 신원 확인(63. 병원·의료 5절 해외 사례). (재인용: 2026-09-29-13)",
+      "as_of": "2026-04-24",
+      "site_type": "병원",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f19",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ F. 연동의 20. 로봇·제조사 관제 연동·J. 현장 운영·관제의 37. 관제 화면·실행 기록·O. 검증·도입·수명주기의 56. 운영 이관·확대·교육: 한림대성심병원은 2024-04 기준 7종 73대 서비스 로봇을 커맨드센터의 통합관제 시스템으로 관리하고 LG전자와 빅웨이브로보틱스가 배송로봇을 공급하며, 시스템 정착에 약 3년이 걸렸으나 통합관제의 인터페이스·표준은 공개되지 않았다(oq-174).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-944",
+        "ref-941"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "7종 73대 통합관제, 2023년 27,300건 배송, 정착 약 3년(63. 병원·의료 5절 국내 사례). (재인용: 2026-09-29-13)",
+      "as_of": "2024-07-15",
+      "site_type": "병원",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f20",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료·64. 상업 시설 ↔ F. 연동의 22. 설비·건물 시스템 연동·M. 안전의 50. 안전 표준·인증·사고 조사: 국가기술표준원은 2021-11-11 로봇의 엘리베이터 탑승 안전 요구사항 KS 제정을 발표했으며, 병원 이송과 호텔 배송 사례가 모두 이 요구 아래 승강기를 쓴다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-945"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다(63·64 페이지 5절 제약 칸). 조항은 oq-173 로 미확인. (재인용: 2026-09-29-16)",
+      "as_of": "2021-11-11",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f21",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ M. 안전의 48. 안전·위험 관리·N. 보안·개인정보의 53. 개인정보·영상 데이터: 병원에서 감염 관리 구역·야간 시간대·권한은 ROP 의 경로·배정 제약이 되고, 감염 관리 기준 설정과 이동형 영상정보처리기기 운영 제한 같은 법 판단은 병원 감염관리 조직·법령 쪽 연계 대상으로 남는 것으로 보인다(oq-171, oq-172).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-950",
+        "ref-929",
+        "ref-978"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "63. 병원·의료 9절 업종별 조건 행의 추정(감염 관리 구역·권한을 제약으로, 기준 설정은 연계 대상). (재인용: 2026-09-29-13)",
+      "as_of": "2026-10-09",
+      "site_type": "병원",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f22",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델: 국내 병원 로봇 도입의 장애 요인으로 속도·안전성 부족, 대당 억 단위 비용, 경사 구간·문 호환·건물마다 다른 회사의 승강기가 보도되었고, 확인된 국내 지원 제도는 과제 단위의 서비스로봇 실증사업이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-948",
+        "ref-947"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "기사가 전한 국내 병원 일반의 장애 요인(63. 병원·의료 5절 울산대병원 사례 제약 칸, 11절 oq-149). (재인용: 2026-09-29-13)",
+      "as_of": "2025-04-10",
+      "site_type": "병원",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f23",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: 분당서울대병원은 KT 5G 특화망 위의 AMR 6대가 다중 연동된 승강기·자동문을 거쳐 약 300m 연결 터널로 진료재료·약품·린넨 카트를 야간에 옮기게 했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-939"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "5G 특화망 위 AMR 6대, 승강기·자동문 다중 연동, 야간 배송으로 환자 동선 분리(63. 병원·의료 5절). (재인용: 2026-09-29-13)",
+      "as_of": "2023-07-06",
+      "site_type": "병원",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화·26. 작업 순서·스케줄링: 다층 호텔 배치 자료(3개 층 67실) 실험에서 승강기 운행 시간이 40초에서 100초로 늘면 총 이동 시간이 거의 두 배가 되었고, 로봇이 5대를 넘으면 추가 로봇의 한계 이익이 크게 줄었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-103"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "고객 노드 60개에서 225초→500초, 아침 식사·체크아웃 시간대 고려 제안(64. 상업 시설 5절 호텔 사례). (발행일 미확인, 확인일 기준) (재인용: 2026-09-29-16)",
+      "as_of": "2026-10-09",
+      "site_type": "상업 시설",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f25",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ F. 연동의 22. 설비·건물 시스템 연동: 오티스는 자사 클라우드 API(Otis Integrated Dispatch)로 로봇이 승강기를 스스로 호출·탑승·층 선택하며, 오사카 호텔에서 2022-12 부터 24시간 객실 배송을 한다고 설명한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-957"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: OID 클라우드 API, 야간 최대 60건 요청 처리(64. 상업 시설 5절). (발행일 미확인, 확인일 기준) (재인용: 2026-09-29-16)",
+      "as_of": "2026-10-09",
+      "site_type": "상업 시설",
+      "flow_item": "수행 자원",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f26",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ F. 연동의 22. 설비·건물 시스템 연동: 화성 동탄 상업시설 레이크 꼬모에서는 라이노스의 청소로봇 휠리 J40 이 클라우드 승강기 관리 솔루션 rEMS 로 전 층을 오간다고 보도되었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-963"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "층간 이동을 승강기 관리 솔루션이 맡음(64. 상업 시설 5절 매장·쇼핑몰 사례). (재인용: 2026-09-29-16)",
+      "as_of": "2025-04-02",
+      "site_type": "상업 시설",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f27",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업·32. 예외 복구·재계획·업무 연속성: 일본 헨나 호텔에서는 객실 음성 비서·짐 운반·프런트 로봇이 기본 질문과 여권 복사 같은 업무를 해내지 못해 직원이 계속 넘겨받아야 했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-961",
+        "ref-962"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "로봇이 해내지 못한 일을 직원이 계속 넘겨받음(64. 상업 시설 5절 예외·성과). (재인용: 2026-09-29-16)",
+      "as_of": "2019-01",
+      "site_type": "상업 시설",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f28",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ F. 연동의 23. 업무 시스템 연동: Sam's Club 은 약 600개 매장의 자율 바닥 청소기에 재고 스캔 타워를 달아, 로봇이 모은 가격 정확도·재고 수준·진열 위치 정보를 매장 관리자에게 전달하게 했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-952"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "청소와 재고 스캔을 한 로봇으로, 수집 정보는 매장 관리자에게 전달(64. 상업 시설 5절). (재인용: 2026-09-29-16)",
+      "as_of": "2022-02-01",
+      "site_type": "상업 시설",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f29",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: 쇼핑몰 안내 로봇 연구(2010)는 소음 속 음성 인식과 예상치 못한 지식 요구 때문에 일부 기능을 원격 조작자가 맡는 반자율 방식을 택했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-953"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "25일 현장 시험 2,642회 상호작용(초록 요약 기준, 64. 상업 시설 5절). (재인용: 2026-09-29-16)",
+      "as_of": "2010-10",
+      "site_type": "상업 시설",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f30",
+      "claim": "Q. 현장 유형별 적용의 64. 상업 시설 ↔ C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반·P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: 네덜란드 슈퍼마켓 로봇 연구는 영어·네덜란드어와 성별 집단으로 음성 인식 기술을 비교해 Whisper 가 가장 낮은 단어 오류율을 보였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-868"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "참가자 40명, 질의 분류기 정확도 약 87%(C. 채팅 기반 구성·운영 연결 절 상업 시설 사례). (재인용: 2026-10-09-01)",
+      "as_of": "2025-04-29",
+      "site_type": "상업 시설",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f31",
+      "claim": "Q. 현장 유형별 적용의 65. 가정·공동주택 ↔ F. 연동의 22. 설비·건물 시스템 연동·E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적: 서울 래미안 리더스원에서는 공동현관 자동문 개폐와 엘리베이터 호출을 연동해 배송로봇이 세대 현관까지 가고, 주문자만 음식을 꺼낼 수 있는 방식으로 넘기며 인증 수단은 공개되지 않았다(oq-184).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-966",
+        "ref-965",
+        "ref-979"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "2024-12 시범 운영, 2025 실증, 2026 요기요 연계 확대(65. 가정·공동주택 5절). (재인용: 2026-09-29-17)",
+      "as_of": "2026-09-20",
+      "site_type": "가정",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f32",
+      "claim": "Q. 현장 유형별 적용의 65. 가정·공동주택 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: 개인정보 보호법 제25조의2 는 이동형 영상정보처리기기의 운영을 제한하며, 개발용 Roomba 가 집 안에서 찍은 이미지가 라벨링 외주를 거쳐 외부에 게시된 사례가 보도되었다(세대 안 적용 여부는 oq-181).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-978",
+        "ref-968"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "민간 법령 DB 게재 조문 기준, 국가법령정보센터 원문 미열람; iRobot 개발용 기기 사례(65. 가정·공동주택 5·7절). (재인용: 2026-09-29-17)",
+      "as_of": "2023-03-14",
+      "site_type": "가정",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f33",
+      "claim": "Q. 현장 유형별 적용의 65. 가정·공동주택 ↔ F. 연동의 21. 상호운용 표준·적합성: Matter 1.2 는 로봇청소기를 기기 유형으로 더해 원격 시작과 진행 알림, 브러시·오류·충전 상태 보고를 가전 연동 표준으로 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-977"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Matter 1.2 Arrives with Nine New Device Types(65. 가정·공동주택 5절 세대 안 사례). (재인용: 2026-09-29-17)",
+      "as_of": "2023-10-23",
+      "site_type": "가정",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f34",
+      "claim": "Q. 현장 유형별 적용의 65. 가정·공동주택 ↔ F. 연동의 23. 업무 시스템 연동·J. 현장 운영·관제의 37. 관제 화면·실행 기록: LH토지주택연구원 자료를 인용한 보도는 택배 차량이 단지 집하처에서 송장번호를 인식시키면 물품 정보가 관제실로 가고, 단지 로봇 택배를 단지 중앙집하·동 단위·구역 단위 분산집하의 세 시나리오로 나눈다고 전한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-976"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "관제실이 거주자와 통신하며 로봇을 통제해 배송(65. 가정·공동주택 5절 택배 사례). (재인용: 2026-09-29-17)",
+      "as_of": "2024-07-18",
+      "site_type": "가정",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f35",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스·M. 안전의 50. 안전 표준·인증·사고 조사: 2023-11-17 개정 지능형로봇법·도로교통법 시행으로 운행안전인증을 받은 실외이동로봇이 보행자 지위를 얻고 운영자의 보험 가입 의무가 생겼으며, 인증은 로봇과 관제장치의 조합에 주어진다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-991",
+        "ref-980"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보행자 의무와 보험·공제 가입 의무, 로봇+관제장치 조합 인증(66. 실외 3·5절). (재인용: 2026-09-30-01)",
+      "as_of": "2023-11-16",
+      "site_type": "실외",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f36",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ F. 연동의 20. 로봇·제조사 관제 연동: 운행안전인증이 로봇과 관제장치의 조합을 대상으로 하므로, 제조사가 다른 실외 로봇을 하나의 오케스트레이션 계층에서 지시할 때 그 계층이 인증상 관제장치에 해당하는지가 연동 설계의 쟁점이 될 것으로 보인다(oq-187).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-980"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이종 제조사를 잇는 계층의 관제장치 해당 여부는 열린 질문(66. 실외 9절). (발행일 미확인, 확인일 기준) (재인용: 2026-09-30-01)",
+      "as_of": "2026-10-09",
+      "site_type": "실외",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f37",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ D. 공간·지도 모델의 16. 장소 의미·지도 관리·P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: 피츠버그 대학 캠퍼스에서 Starship 배송로봇이 연석 경사로를 막아 휠체어 이용자가 차도에 갇힌 뒤 대학이 시험 운행을 멈췄고, 회사는 해당 교차로의 지도 오류를 원인으로 들었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-987"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "문제 제기 뒤 두 시간이 채 안 돼 시험 운행 중단, 지도 오류 수정(66. 실외 5절, 2019-10-21 보도). (재인용: 2026-09-30-01)",
+      "as_of": "2019-10-21",
+      "site_type": "실외",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f38",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ E. 사물·사람·실시간 상태의 19. 사람·보행자 모델·G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: Gehrke 외(2023)는 대학 캠퍼스 녹화 영상으로 보도 자율 배송로봇과 보행자·자전거 이용자의 상호작용 빈도·심각도를 침범 후 시간(PET)으로 쟀다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-990"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists(66. 실외 8절). (재인용: 2026-09-30-01)",
+      "as_of": "2023-03",
+      "site_type": "실외",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f39",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성·31. 사람–로봇 협업: Dobrosovestnova 외(RO-MAN 2022)는 눈 속에 갇힌 배송로봇을 행인이 도운 사례를 탐색적으로 연구했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-993"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "With a Little Help of Humans. An Exploratory Study of Delivery Robots Stuck in Snow(66. 실외 5·8절). (재인용: 2026-09-30-01)",
+      "as_of": "2022",
+      "site_type": "실외",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f40",
+      "claim": "연계 대상: Q. 현장 유형별 적용의 66. 실외 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델: Nav2 문서는 GPS 위치추정으로 실외에서 주행하는 방법을 튜토리얼로 제공하며, 위성 위치 기반 위치추정은 로봇 자체 지능·제어 쪽 기능이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-988"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Navigating Using GPS Localization — Nav2 documentation(66. 실외 9절 로봇 자체 지능·제어 행). (발행일 미확인, 확인일 기준) (재인용: 2026-09-30-01)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f41",
+      "claim": "Q. 현장 유형별 적용의 66. 실외 ↔ F. 연동의 21. 상호운용 표준·적합성·P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스: 일본(2022년 공포 개정 도로교통법)과 미국 주별 개인 배송 장치(PDD) 법처럼 관할마다 보도 로봇의 크기·속도·신고 기준이 달라, ROP 가 관할 조건을 경로·속도 제약으로 바꿔 담는 공통 표현이 필요할 것으로 보인다(oq-190).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-985",
+        "ref-986"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "66. 실외 9절 업종별 조건 행의 추정(관할별 속도·크기·보행자 의무·신고 조건을 제약으로 반영). (재인용: 2026-09-30-01)",
+      "as_of": "2026-10-09",
+      "site_type": "실외",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f42",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석·F. 연동의 23. 업무 시스템 연동: Equinor 의 이산화탄소 포집·저장 시설에서는 4족 로봇이 계기 판독·밸브 위치 확인·누출 탐지를 하고, 현장 운영자가 연구개발 부서 도움 없이 점검 임무를 직접 만든다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-995"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "2024-11 배치, 운영자가 직접 임무 생성, 완료 확인 주체는 미확인(67. 기타 현장 5절). (재인용: 2026-09-30-02)",
+      "as_of": "2025-11-21",
+      "site_type": "기타",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f43",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기: GS건설은 4족 로봇 스팟이 모은 건설 현장 데이터를 기존 3차원 BIM 데이터와 통합해 전기·설비 공사 간섭 확인과 안전관리계획 수립에 썼다고 밝혔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1000"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "2020-07 큐픽스와 함께 국내 건설 현장 첫 도입(67. 기타 현장 5절). (재인용: 2026-09-30-02)",
+      "as_of": "2020-07-13",
+      "site_type": "기타",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f44",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조·F. 연동의 22. 설비·건물 시스템 연동: 네이버 제2사옥 1784 의 배달 로봇 루키는 클라우드 기반 멀티 로봇 시스템 ARC 가 5G 특화망으로 제어하고 로봇 전용 엘리베이터 로보포트로 층을 오간다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-997"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "초기 40대에서 100여 대로 증가, 브레인리스 로봇(67. 기타 현장 5절). 배달 시간 단축 수치는 벤더 주장이라 제외. (재인용: 2026-09-30-02)",
+      "as_of": "2023-01-11",
+      "site_type": "기타",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f45",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ F. 연동의 20. 로봇·제조사 관제 연동: 농촌진흥청 통합 관리 프로그램은 자체 개발한 방제·운반·모니터링 로봇 3종을 하나의 화면으로 관리하며, 다른 제조사 로봇의 연결 여부는 보도에 없다(oq-192).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1007"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "작업 순서 설정, 위치·속도·이동 거리 표시, SIL 2 제어기(67. 기타 현장 5절). (재인용: 2026-09-30-02)",
+      "as_of": "2025-04-23",
+      "site_type": "기타",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f46",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적: 네이버 데이터센터 각 세종에서는 서버 관리 로봇과 운반 로봇이 협력해 서버 자산 흐름을 실시간으로 추적·관리한다고 보도되었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1002"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "'세로'·'가로' 로봇이 ARC·ARM 시스템으로 공간·서비스 인프라와 연동(67. 기타 현장 5절, 2023-11 기준). (재인용: 2026-09-30-02)",
+      "as_of": "2023-11-08",
+      "site_type": "기타",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f47",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ M. 안전의 48. 안전·위험 관리: ISO 18497-3:2024 는 부분 자동·반자율·자율 농업기계의 자율 운용 구역을 다루어, 농업 현장 로봇의 운용 구역이 ROP 의 운행 제약 입력이 된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1009"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Part 3: Autonomous operating zones, 원문 미열람(67. 기타 현장 9절 업종별 조건 행). (재인용: 2026-09-30-02)",
+      "as_of": "2024",
+      "site_type": "기타",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f48",
+      "claim": "Q. 현장 유형별 적용의 67. 기타 현장 ↔ F. 연동의 20. 로봇·제조사 관제 연동: 싱가포르 창이 공항에서 Open-RMF 가 청소 로봇 운영에 쓰인다는 기사가 있으나, 제조사가 다른 로봇을 한 계층에서 묶은 기타 현장의 공개 사례로 확인할 수준은 아닌 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1004"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "기사와 벤더 주장만 있음(67. 기타 현장 9절). (재인용: 2026-09-30-02)",
+      "as_of": "2025-10-29",
+      "site_type": "기타",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f49",
+      "claim": "Q. 현장 유형별 적용의 63. 병원·의료 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기·O. 검증·도입·수명주기의 55. 현장 조사·설치·시운전: 에스토니아 타르투 대학병원 현장 시험은 Open-RMF 교통 편집기로 평면도를 주석하고 로봇 격자 지도를 정합해 중환자실에서 검사실로 혈액 검체를 운반했으며, 작은 구역으로 나눠 매핑한 뒤 합치는 편이 더 정확했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-869"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test(D. 공간·지도 모델 연결 절). (재인용: 2026-10-09-02)",
+      "as_of": "2022-08-23",
+      "site_type": "병원",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f50",
+      "claim": "Q. 현장 유형별 적용의 61. 물류창고 ↔ E. 사물·사람·실시간 상태의 19. 사람·보행자 모델: EU ILIAD 프로젝트는 학습한 사람 흐름에 맞춰 물류창고 자율 지게차의 경로를 계획했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1180"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "스웨덴 외레브로 창고의 자율 지게차 플릿, 움직임 지도 활용(E. 사물·사람·실시간 상태 연결 절). (재인용: 2026-10-09-03)",
+      "as_of": "2021-06",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f51",
+      "claim": "Q. 현장 유형별 적용 ↔ A. 기획·사업의 2. 사용 사례·요구·책임 범위: 게시된 61. 물류창고 ~ 67. 기타 현장 페이지가 확인한 국내 사례는 한 운영사가 설비별로 로봇을 들이거나 건설사·물류사 한 곳과 로봇 업체 한 곳이 짝을 이루거나 한 기관이 만든 로봇을 자체 계층으로 묶은 형태이며, 제조사가 다른 로봇을 하나의 오케스트레이션 계층으로 묶은 국내 공개 사례는 지금까지 확인되지 않은 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-917",
+        "ref-944",
+        "ref-966",
+        "ref-997",
+        "ref-1007"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "61·63·65·67 페이지 9절의 종합(oq-163, oq-174, oq-183). 조사 범위의 한계이며 부재를 뜻하지 않음. (재인용: 2026-09-30-02)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-005",
+      "org": "Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S.",
+      "title": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses",
+      "published": "2020",
+      "url": "https://arxiv.org/abs/2005.07371",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 대규모 물류창고의 지속형 다중 에이전트 경로 찾기 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-006",
+      "org": "Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.",
+      "title": "Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks",
+      "published": "2017",
+      "url": "https://arxiv.org/abs/1705.10868",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 온라인 픽업·배송 작업의 지속형 경로 찾기(MAPD) 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-103",
+      "org": "PMC 게재 논문(저자 미확인)",
+      "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+      "published": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다층 호텔 배송 로봇 경로 계획에서 승강기 대기·운행 시간을 모델링.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-257",
+      "org": "Interact Analysis",
+      "title": "AMR Multi-Fleet Orchestration Software Explained",
+      "published": null,
+      "url": "https://interactanalysis.com/insight/amr-multi-fleet-orchestration-software/",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다중 플릿 오케스트레이션 소프트웨어의 시장 정의.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-868",
+      "org": "Nandkumar, C., & Peternel, L. (Delft University of Technology), Frontiers in Robotics and AI",
+      "title": "Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents",
+      "published": "2025-04-29",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12069059/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 슈퍼마켓 로봇 대화 인터페이스의 음성 인식·질의 분류 비교.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-869",
+      "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI",
+      "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+      "published": "2022-08-23",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 타르투 대학병원 이기종 로봇 플릿 현장 시험(Open-RMF 지도 주석, 혈액 검체 운반).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": "2025-05-01",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RoMi-H 시스템 통합사 등재 프로그램(2년 유효).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-912",
+      "org": "Schrotenboer, A. H., Wruck, S., Vis, I. F. A., & Roodbergen, K. J.",
+      "title": "Integration of returns and decomposition of customer orders in e-commerce warehouses",
+      "published": "2019-09-01",
+      "url": "https://arxiv.org/abs/1909.01794",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 반품 재적치를 피커 경로에 통합하는 창고 최적화 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-917",
+      "org": "로봇신문 (장길수)",
+      "title": "쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이...",
+      "published": "2023-02-07",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=30736",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 쿠팡 대구 FC 의 AGV·소팅봇·무인지게차 현장 공개 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-918",
+      "org": "물류신문 (석한글)",
+      "title": "‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니",
+      "published": "2023-02-07",
+      "url": "https://www.klnews.co.kr/news/articleView.html?idxno=306994",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 같은 현장 공개 행사의 층별 로봇 투입 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-919",
+      "org": "스마트물류시설인증센터 (한국교통연구원)",
+      "title": "인증스마트물류센터 : 인증심사 > 심사기준 > 일반",
+      "published": null,
+      "url": "https://cslc.koti.re.kr/new_sub2/new_sub2_2_1",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 스마트물류센터 인증 심사기준(입고·출고 프로세스, 정보시스템 항목).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-921",
+      "org": "Robotics 24/7 (Eugene Demaitre)",
+      "title": "DHL Makes First Commercial Deployment of Boston Dynamics Stretch Robot to Unload Trailers and Containers",
+      "published": "2023-02-01",
+      "url": "https://www.robotics247.com/article/dhl_makes_first_commercial_deployment_boston_dynamics_stretch_robot_unload_trailers_containers",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. DHL 의 트레일러 하역 로봇 상업 배치 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-922",
+      "org": "Schmid, N. A., & Limère, V. (International Journal of Production Research 57(24))",
+      "title": "A classification of tactical assembly line feeding problems",
+      "published": "2019-02-23",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00207543.2019.1581957",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 조립라인 공급 문제의 분류 틀.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-924",
+      "org": "SYNAOS (IoT Use Case)",
+      "title": "VDA 5050: unified AGV fleet control in real time at VW",
+      "published": "2025-10-16",
+      "url": "https://www.iotusecase.com/en/solution-examples/vda-5050-agv-fleet-control",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 폭스바겐 하노버 VDA 5050 플릿 관제 사례(회사 설명).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-925",
+      "org": "Wally, B., Vyskočil, J., Novák, P., Huemer, C., Šindelář, R., Kadera, P., Mazak, A., & Wimmer, M.",
+      "title": "Flexible Production Systems: Automated Generation of Operations Plans Based on ISA-95 and PDDL",
+      "published": "2019-11-13",
+      "url": "https://arxiv.org/abs/1911.05481",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ISA-95 와 PDDL 로 생산 운영 계획을 자동 생성.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-926",
+      "org": "Siemens",
+      "title": "AGV fleet management integration with intralogistics",
+      "published": null,
+      "url": "https://resources.sw.siemens.com/en-US/white-paper-integrating-agv-automated-guided-vehicle-system-with-intralogistics/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 자재 관리 시스템과 AGV 플릿 연동 백서.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-928",
+      "org": "Pietrantoni, L., Favilla, M., Fraboni, F., Mazzoni, E., Morandini, S., Benvenuti, M., & De Angelis, M. (Frontiers in Robotics and AI)",
+      "title": "Integrating collaborative robots in manufacturing, logistics, and agriculture: Expert perspectives on technical, safety, and human factors",
+      "published": "2024-12-02",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1342130/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 협동로봇 통합에 관한 유럽 전문가 조사.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-929",
+      "org": "Li, M. 외 (Scientific Reports)",
+      "title": "Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios",
+      "published": "2026-04-24",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13276296/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 중국 병원 약품·검체 이송 로봇 운영 관리·효과 분석.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-931",
+      "org": "뉴시스",
+      "title": "\"로봇 몇 대, 어디로 움직일까\"…중소 제조현장에 'AI 공장장' 뜬다",
+      "published": "2026-09-07",
+      "url": "https://www.newsis.com/view/NISX20260907_0003779780",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 중소 제조 현장 'AI 공장장' 정부 사업 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-932",
+      "org": "테크데일리",
+      "title": "KETI, LLM 모델 및 모방학습, 조립공정 자동화 기술 공개",
+      "published": "2025-03-12",
+      "url": "https://www.techdaily.co.kr/news/articleView.html?idxno=25352",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. KETI 의 언어 모델·모방학습 조립 자동화 시연 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-935",
+      "org": "강명훈, 곽춘종 (부산대학교; Asia-Pacific Journal of Business & Commerce)",
+      "title": "시뮬레이션을 이용한 자동차 부품 공급 시스템 도입 방안 분석: R자동차 사례",
+      "published": "2014-04",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02448280",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 자동차 부품 공급 AGV 도입 시뮬레이션 분석.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-936",
+      "org": "옥창훈, 김득수, 공정수, 서윤호 (고려대학교, 현대자동차; 한국시뮬레이션학회 논문지 21(2))",
+      "title": "자동차 생산을 위한 통합창고 연구",
+      "published": "2012",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001671601",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 차체 버퍼 창고 통합 모형의 결품·막힘 비교.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-937",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "ROMI-H | Changi General Hospital",
+      "published": null,
+      "url": "https://www.cgh.com.sg/chart/projects/romi-h",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 의료 로봇 미들웨어 RoMi-H 소개.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-938",
+      "org": "Applus+ Laboratories",
+      "title": "ISO 3691-4:2023: Compliance Testing for Automated Guided Vehicles (AGVs)",
+      "published": null,
+      "url": "https://www.appluslaboratories.com/global/en/what-we-do/service-sheet/iso-3691-4-2023-compliance-testing-for-automated-guided-vehicles-agvs",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 인증 기관의 ISO 3691-4:2023 적합성 시험 안내.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-939",
+      "org": "이데일리",
+      "title": "분당서울대병원, 무거운 이송카트 로봇자율배송, 무안경 3D 의료실습에 도입",
+      "published": "2023-07-06",
+      "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01403846635671896",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 분당서울대병원 5G AMR 카트 이송 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-941",
+      "org": "데일리팜",
+      "title": "원내 약 배송로봇 도입 확대...정부 지원에 변화 바람",
+      "published": "2024-07-15",
+      "url": "https://m.dailypharm.com/user/news/15128",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 국내 병원 약 배송로봇 도입 현황 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-942",
+      "org": "Open Robotics",
+      "title": "ROMI-H: Bringing Robot Traffic Control to Healthcare",
+      "published": "2021-02-10",
+      "url": "https://www.openrobotics.org/blog/2021/2/10/romi-h-bringing-robot-traffic-control-to-healthcare",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RoMi-H 의 승강기 공유·교통 관리 소개.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-943",
+      "org": "Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03-31",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 승강기 가동률과 약품 배송 로봇 성공률 분석.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-944",
+      "org": "로봇신문",
+      "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'",
+      "published": "2024-04-15",
+      "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 한림대성심병원 7종 73대 로봇 통합관제 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-945",
+      "org": "산업통상자원부 국가기술표준원 (KDI 경제정보센터 게재)",
+      "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
+      "published": "2021-11-11",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=220004",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 엘리베이터 탑승 KS 제정 발표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-947",
+      "org": "한국로봇산업진흥원",
+      "title": "서비스로봇 실증사업",
+      "published": null,
+      "url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 과제 단위 서비스로봇 실증사업 안내.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-948",
+      "org": "비즈한국",
+      "title": "병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까",
+      "published": "2025-04-10",
+      "url": "https://bizhankook.com/articles/29394.html",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 국내 병원 로봇 도입 효과와 장애 요인 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-950",
+      "org": "한국보건산업진흥원 스마트병원 확산지원센터",
+      "title": "선도모델 및 모듈 소개",
+      "published": null,
+      "url": "https://www.khidi.or.kr/board?menuId=MENU03336&siteId=SITE00040",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 스마트병원 선도모델 소개.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-952",
+      "org": "Retail Dive (Sam Silverstein)",
+      "title": "Sam's Club rolls out inventory-checking robots chainwide",
+      "published": "2022-02-01",
+      "url": "https://www.retaildive.com/news/sams-club-rolls-out-inventory-checking-robots-chainwide/618040/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Sam's Club 청소·재고 스캔 로봇 전 매장 배치 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-953",
+      "org": "Kanda, T., Shiomi, M., Miyashita, Z., Ishiguro, H., & Hagita, N. (IEEE Transactions on Robotics 26(5))",
+      "title": "A Communication Robot in a Shopping Mall",
+      "published": "2010-10",
+      "url": "https://ieeexplore.ieee.org/abstract/document/5557825",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 쇼핑몰 안내 로봇의 반자율 현장 시험.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-957",
+      "org": "Otis Elevator Company",
+      "title": "Elevators and service robots",
+      "published": null,
+      "url": "https://www.otis.com/en/us/innovation/elevators-and-service-robots",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 오티스 승강기·서비스 로봇 연동 소개(회사 설명).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-961",
+      "org": "Responsible AI Collaborative (AI Incident Database)",
+      "title": "Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks",
+      "published": null,
+      "url": "https://incidentdatabase.ai/cite/346/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 헨나 호텔 로봇 실패 사건 기록.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-962",
+      "org": "Hotel Technology News",
+      "title": "Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce",
+      "published": "2019-01",
+      "url": "https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 헨나 호텔 로봇 절반 퇴출 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-963",
+      "org": "서울경제 (백주연)",
+      "title": "엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장",
+      "published": "2025-04-02",
+      "url": "https://www.sedaily.com/article/14048085",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 레이크 꼬모 청소로봇의 승강기 연동 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-965",
+      "org": "삼성물산 뉴스룸",
+      "title": "삼성물산, 아파트 세대 현관까지 음식배달로봇 확장 운영",
+      "published": "2026-01-15",
+      "url": "https://news.samsungcnt.com/ko/%EC%A0%84%EC%B2%B4%EA%B8%B0%EC%82%AC/%EA%B1%B4%EC%84%A4%EB%B6%80%EB%AC%B8/2026-01-%EC%82%BC%EC%84%B1%EB%AC%BC%EC%82%B0-%EC%95%84%ED%8C%8C%ED%8A%B8-%EC%84%B8%EB%8C%80-%ED%98%84%EA%B4%80%EA%B9%8C%EC%A7%80-%EC%9D%8C%EC%8B%9D%EB%B0%B0%EB%8B%AC%EB%A1%9C%EB%B4%87-%ED%99%95%EC%9E%A5/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 래미안 리더스원 세대 현관 배달로봇 확장 운영 발표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-966",
+      "org": "지디넷코리아 (신영빈)",
+      "title": "로봇이 문앞까지 택배 가져다 주는 미래 곧 온다",
+      "published": "2025-01-19",
+      "url": "https://zdnet.co.kr/view/?no=20250119062609",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 공동주택 배송로봇 실증 사례 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-968",
+      "org": "MIT Technology Review (Eileen Guo)",
+      "title": "A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook?",
+      "published": "2022-12-19",
+      "url": "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 개발용 로봇청소기 영상 유출 탐사 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-976",
+      "org": "정보통신신문 (김연균)",
+      "title": "로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’",
+      "published": "2024-07-18",
+      "url": "https://www.koit.co.kr/news/articleView.html?idxno=123976",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LH토지주택연구원 자료를 인용한 단지 로봇 택배 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-977",
+      "org": "Connectivity Standards Alliance (CSA)",
+      "title": "Matter 1.2 Arrives with Nine New Device Types & Improvements Across the Board",
+      "published": "2023-10-23",
+      "url": "https://csa-iot.org/newsroom/matter-1-2-arrives-with-nine-new-device-types-improvements-across-the-board/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Matter 1.2 의 로봇청소기 기기 유형 추가 발표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-978",
+      "org": "CaseNote (법령 게재; 원 제정 국회·개인정보보호위원회 소관)",
+      "title": "개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한)",
+      "published": "2023-03-14",
+      "url": "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EB%B3%B4%ED%98%B8%EB%B2%95/%EC%A0%9C25%EC%A1%B0%EC%9D%982",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 이동형 영상정보처리기기 운영 제한 조문(민간 법령 DB 게재).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-979",
+      "org": "미디어펜 (조태민)",
+      "title": "로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도",
+      "published": "2026-09-20",
+      "url": "https://www.mediapen.com/news/view/1124680",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 건설사의 공동현관·승강기 연동 로봇 친화 설계 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-980",
+      "org": "한국로봇산업진흥원",
+      "title": "실외이동로봇 운행안전인증",
+      "published": null,
+      "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇과 관제장치 조합 대상의 운행안전인증 안내.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-985",
+      "org": "内閣府 (일본 내각부)",
+      "title": "令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について",
+      "published": "2023",
+      "url": "https://www8.cao.go.jp/koutu//taisaku/r05kou_haku/zenbun/genkyo/topics/topic_1.html",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 일본 개정 도로교통법(원격 조작형 소형차 등) 해설.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-986",
+      "org": "Supply Chain Dive",
+      "title": "Why delivery robots face a regulatory ‘nightmare’",
+      "published": "2023-04-26",
+      "url": "https://www.supplychaindive.com/news/delivery-robot-bills-laws-proliferate-state-legislatures/648303/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 미국 주별 배송로봇 법규 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-987",
+      "org": "The Pitt News",
+      "title": "Pitt pauses testing of Starship robots due to safety concerns",
+      "published": "2019-10-21",
+      "url": "https://pittnews.com/article/151679/news/pitt-pauses-testing-of-starship-robots-due-to-safety-concerns/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 피츠버그 대학 Starship 시험 운행 중단 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-988",
+      "org": "Open Navigation (Nav2)",
+      "title": "Navigating Using GPS Localization — Nav2 documentation",
+      "published": null,
+      "url": "https://docs.nav2.org/jazzy/tutorials/general_tutorials/navigation2_with_gps/navigation2_with_gps/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Nav2 의 GPS 위치추정 주행 튜토리얼.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-990",
+      "org": "Gehrke, S. R., Phair, C. D., Russo, B. J., & Smaglik, E. J. (Transportation Research Interdisciplinary Perspectives 18)",
+      "title": "Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists",
+      "published": "2023-03",
+      "url": "https://doi.org/10.1016/j.trip.2023.100789",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 보도 배송로봇과 보행자·자전거 상호작용 관측 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-991",
+      "org": "대한민국 정책브리핑 (산업통상자원부·경찰청)",
+      "title": "‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용",
+      "published": "2023-11-16",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922726",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 개정 지능형로봇법·도로교통법 시행에 따른 실외이동로봇 보도 통행.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-993",
+      "org": "Dobrosovestnova, A., Schwaninger, I., & Weiss, A. (IEEE RO-MAN 2022)",
+      "title": "With a Little Help of Humans. An Exploratory Study of Delivery Robots Stuck in Snow",
+      "published": "2022",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9900588/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 눈 속 고립 배송로봇과 행인 도움에 관한 탐색 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-995",
+      "org": "Offshore Technology (Eve Thomas)",
+      "title": "Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones",
+      "published": "2025-11-21",
+      "url": "https://www.offshore-technology.com/features/equinor-autonomous-robotics/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Equinor 시설의 4족 점검 로봇 운영 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-997",
+      "org": "이코노미스트 (송재민)",
+      "title": "로봇이 로봇들을 움직이는, 네이버 1784",
+      "published": "2023-01-11",
+      "url": "https://economist.co.kr/article/view/ecn202301110006",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 네이버 1784 클라우드 제어 배달 로봇 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1000",
+      "org": "인더스트리뉴스 (정형우)",
+      "title": "GS건설, 4족보행 로봇 '스팟(SPOT)' 국내 최초 건설현장 도입하기로",
+      "published": "2020-07-13",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=38911",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. GS건설 스팟 도입과 BIM 데이터 통합 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1002",
+      "org": "아주경제 (윤선훈)",
+      "title": "아시아 최대 규모 데이터센터…네이버 '각 세종' 본격 가동",
+      "published": "2023-11-08",
+      "url": "https://www.ajunews.com/view/20231107091520837",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 데이터센터 서버 관리·운반 로봇 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1004",
+      "org": "The Robot Report",
+      "title": "Singapore's National Robotics Programme reveals initiatives to advance robot adoption",
+      "published": "2025-10-29",
+      "url": "https://www.therobotreport.com/singapores-national-robotics-programme-reveals-initiatives-advance-robot-adoption/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 싱가포르 국가 로보틱스 프로그램 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1007",
+      "org": "뉴스토마토 (이규하)",
+      "title": "방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동",
+      "published": "2025-04-23",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1259970",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 농촌진흥청 농업 로봇 통합 관리 프로그램 보도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1009",
+      "org": "ISO",
+      "title": "ISO 18497-3:2024 Agricultural machinery and tractors — Safety of partially automated, semi-autonomous and autonomous machinery — Part 3: Autonomous operating zones",
+      "published": "2024",
+      "url": "https://www.iso.org/standard/82687.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 자율 농업기계의 자율 운용 구역 안전 표준.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1180",
+      "org": "ILIAD 프로젝트 컨소시엄 (EU Horizon 2020)",
+      "title": "Concluding ILIAD",
+      "published": "2021-06",
+      "url": "https://iliad-project.eu/concluding-iliad/",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 창고 자율 지게차 플릿과 사람 흐름 기반 계획을 다룬 EU 프로젝트 정리.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/site-type-applications/index.md",
+      "sections": [
+        "5. 다른 대분류와의 연결"
+      ],
+      "rationale": "대분류 연결(category_link): '다른 대분류와의 연결' 절만 patches 로 채운다. 대분류별 묶음 제안 — A. 기획·사업: f2·f22·f51 / C. 채팅 기반 구성·운영: f15·f30 / D. 공간·지도 모델: f37·f40·f43·f49 / E. 사물·사람·실시간 상태: f5·f18·f31·f38·f46·f50 / F. 연동: f1·f9·f10·f11·f16·f17·f19·f20·f25·f26·f28·f33·f34·f36·f41·f45·f48 / G. 계획·최적화: f3·f4·f7·f8·f24 / H. 실행·협업·예외 복구: f6·f13·f27·f29·f39 / I. 설계·시뮬레이션: f12 / J. 현장 운영·관제: f19·f34·f42 / K. 플랫폼 아키텍처·인프라: f23·f44 / L. AI·학습 기술: f15 / M. 안전: f3·f14·f21·f35·f47 / N. 보안·개인정보: f18·f21·f32 / O. 검증·도입·수명주기: f19·f49 / P. 거버넌스·법규·사회: f35·f37·f41. 벤더 주장(f9·f11·f14·f25)은 '벤더 주장' 병기, 연계 대상(f6·f40)은 짧게. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 섞지 않는다(f12 는 가정한 미래 실험 쪽). 모든 현장에 공통인 기능은 A~P 에 두고 이 절은 현장 사례가 넘기는 요구만 적는다."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "사람-대-상품",
+      "term_en": "Person-to-Goods (PTG)",
+      "definition": "작업자가 선반·보관 위치까지 걸어가 물품을 집는 피킹 방식으로, 설비·로봇이 선반을 작업자에게 가져오는 상품-대-사람 방식과 대비된다."
+    },
+    {
+      "term_ko": "도어 투 도어 로봇 배송",
+      "term_en": "Door-to-Door Robot Delivery",
+      "definition": "공동주택 단지 입구에서 공동현관·승강기 연동을 거쳐 세대 현관 앞까지 로봇이 물품을 나르는 배송 방식이다."
+    }
+  ],
+  "open_questions_new": [
+    "병원·호텔·쇼핑몰·공동주택에서 로봇의 승강기 연동이 승강기 제조사 API, 승강기 관리 솔루션, 로봇팔 버튼 조작, 제어반 전용 통신 모듈로 갈리는데, 이 방식들을 한 현장에서 같은 승강기 인터페이스로 묶어 제조사가 다른 로봇이 함께 쓰게 한 사례나 방식별 비교 자료가 있는가? | 관련 영역: 22. 설비·건물 시스템 연동, 63. 병원·의료, 64. 상업 시설, 65. 가정·공동주택 | 근거: f16 | 종류: 일반",
+    "병원·오피스처럼 5G 특화망으로 로봇을 연결하거나 클라우드에서 제어하는 현장에서 통신이 끊길 때 로봇의 현장 동작과 진행 중 작업의 재배정 기준을 공개한 사례가 있는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 63. 병원·의료, 67. 기타 현장 | 근거: f44 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 62,
+    "cross_checked_count": 0,
+    "unverified": [
+      "직전 반환값(1회차 브리프)이 입력에 포함되지 않아 그 브리프의 신규 출처(예약 구간 ref-1539~)와 finding 을 확인할 수 없었다",
+      "f3·f5 쿠팡 사례 두 보도는 같은 현장 공개 행사 기반이라 독립 교차 확인 아님",
+      "f16 구로병원 전체 성공률 분모(oq-215) 미확인",
+      "f19 한림대성심병원 통합관제의 인터페이스·표준(oq-174) 미확인",
+      "f21 병원 감염 관리 구역 규칙(oq-172)과 영상 촬영 법 적용(oq-171) 미확인",
+      "f31 공동주택 배송로봇 수령 인증 수단(oq-184) 미확인",
+      "f36 이종 제조사 계층의 운행안전인증상 관제장치 해당 여부(oq-187) 미확인",
+      "f9·f11·f14·f25 벤더 주장은 독립 확인 없음"
+    ],
+    "scope_violations": [
+      "f6: 떨어진 상자 복구는 로봇 자체 지능·제어 경계라 claim 을 '연계 대상: '으로 시작하고 ROP 쪽은 재계획 분담만 다룸",
+      "f40: GPS 위치추정은 로봇 자체 지능·제어 경계라 '연계 대상: '으로 표시",
+      "f16·f20·f25·f26: 승강기 운행·호출 제어 자체는 시설·설비 제어 경계의 연계 대상이며 ROP 몫은 예약·상태 확인·제약 반영으로 한정해야 함",
+      "f21·f32·f35·f41: 법 적용·인증 판단은 운영자·법무·인증 기관 쪽 연계 대상"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 0
+    },
+    "limits": "재실행 1회차. 반려 사유 1(스키마 불일치: f17 이 벤더 문서만 근거로 한 [사실] 인데 vendor_claim 표시 없음): 지시에 따라 새 조사 없이 형식만 고쳤다. 다만 직전 반환값이 입력에 포함되지 않아 그대로 수정할 수 없었으므로, 입력으로 받은 게시 페이지(61. 물류창고 ~ 67. 기타 현장, A~G 대분류 연결 절)의 검증된 주장과 각주(기존 참고문헌 재사용)만으로 브리프를 다시 구성했다. 새 f17 은 RoMi-H 연결로 근거가 정부·연구기관·오픈소스 출처뿐이다. 벤더 문서만 근거로 한 finding(f9·f11·f14·f25)은 모두 tag 추정·vendor_claim true·evidence_excerpt 첫머리 '벤더 주장: '으로 냈고, [사실] finding 가운데 벤더 문서만 근거로 한 것은 없다(f31 은 기사 2건과 함께 인용). 검색 0회, WebFetch 0회, 신규 출처 0건으로 예약 구간 ref-1539~ref-1568 은 쓰지 않았다. 이번 실행에서 원문을 열지 않았으므로 모든 출처를 fetched false·source_unopened true 로 표시했고 신뢰도는 medium 이하다. 교차 확인 0건. 현장 유형: 물류창고(f1~f7·f50), 제조 공장(f8~f15), 병원(f16~f23·f49), 상업 시설(f24~f30), 가정(f31~f34), 실외(f35~f41), 기타(f42~f48)를 고르게 다뤘다. 34. 시뮬레이션·예측용 디지털 트윈(f12, 가정한 미래 실험)과 18. 실시간 세계 상태·데이터 일관성을 섞지 않았다. L. AI·학습 기술 연결 근거는 f15 하나뿐이다. 해결 제안한 열린 질문 없음. 입력 누락 없음. 우선 지정 질문·정정 요청 없음."
+  }
+}
