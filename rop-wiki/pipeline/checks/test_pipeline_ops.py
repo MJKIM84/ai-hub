@@ -436,5 +436,24 @@ class LeadSentenceTest(unittest.TestCase):
         self.assertEqual(v._lead_sentences(t2), "첫 항목이다. [사실][^r1]")
 
 
+class CategoryRefsSectionTest(unittest.TestCase):
+    """원문 각주가 없어 '참고 자료' 절 없이 시작한 대분류 페이지(scaffold.build_categories)."""
+    PAGE = ("---\ntitle: \"X. 시험\"\ntype: category\nstatus: published\n---\n[홈](../../index.md) › X. 시험\n\n"
+            + "".join(f"## {t}\n\n본문.\n\n" for t in ["핵심 질문", "개요", "세부 연구영역", "이 대분류의 핵심 포인트",
+                                                         "다른 대분류와의 연결", "이 대분류의 자료", "최근 업데이트"]))
+
+    def test_missing_refs_section_is_allowed(self):
+        errs = V.check_page("categories/x/index.md", self.PAGE)
+        self.assertFalse([e for e in errs if "H2 절" in e], errs)
+
+    def test_patch_creates_missing_template_section(self):
+        out = V.apply_patches(self.PAGE, [{"section": "참고 자료", "action": "append", "content": "[^r1]: 출처"}])
+        body = fm.parse(out)[1]
+        self.assertEqual(V.h2_titles(body)[-2:], ["최근 업데이트", "참고 자료"])
+        self.assertIn("본문.\n\n## 참고 자료\n\n[^r1]: 출처", body)
+        with self.assertRaises(ValueError):
+            V.apply_patches(self.PAGE, [{"section": "템플릿에 없는 절", "action": "append", "content": "x"}])
+
+
 if __name__ == "__main__":
     unittest.main()

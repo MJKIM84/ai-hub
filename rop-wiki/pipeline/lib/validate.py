@@ -171,15 +171,41 @@ def check_page(rel: str, text: str, strict_sections: bool = True) -> list[str]:
         exp = expected_h2(str(meta.get("type") or ""), meta.get("subtype"))
         if exp:
             got = h2_titles(body)
+            if _optional_refs_section(str(meta.get("type") or ""), exp, got):
+                exp = exp[:-1]
             if got[: len(exp)] != exp:
                 errs.append(f"H2 절 제목·순서가 템플릿과 다르다. 기대: {exp} / 실제: {got}")
     return errs
+
+
+def _optional_refs_section(page_type: str, exp: list[str], got: list[str]) -> bool:
+    """대분류 페이지의 마지막 '참고 자료' 절은 원문 각주가 있을 때만 scaffold 가 만든다(build_categories).
+    원문 각주가 없는 대분류는 그 절 없이 시작하므로, 절이 아예 없으면 기대 목록에서 뺀다."""
+    return page_type == "category" and bool(exp) and exp[-1] == "참고 자료" and "참고 자료" not in got
 
 
 # --- 차등 갱신 패치 ----------------------------------------------------------------------------
 
 def _norm_title(t: str) -> str:
     return re.sub(r"\s+", " ", (t or "").strip())
+
+
+def _insert_template_section(parts: list[tuple[str | None, str]], want: str, page_type: str, subtype) -> int | None:
+    """템플릿에 있는 절인데 페이지에 아직 없으면(예: 원문 각주가 없어 '참고 자료' 절 없이 시작한 대분류 페이지)
+    템플릿 순서상 앞 절 뒤에 빈 절을 만들고 그 위치를 돌려준다. 템플릿에 없는 절이면 None."""
+    exp = expected_h2(page_type, subtype) or []
+    norm = [_norm_title(t) for t in exp]
+    if want not in norm:
+        return None
+    before = set(norm[: norm.index(want)])
+    pos = 0
+    for i, (t, _) in enumerate(parts):
+        if t is None or _norm_title(t) in before:
+            pos = i + 1
+    if pos:
+        parts[pos - 1] = (parts[pos - 1][0], parts[pos - 1][1].rstrip("\n") + "\n\n")
+    parts.insert(pos, (exp[norm.index(want)], f"## {exp[norm.index(want)]}\n"))
+    return pos
 
 
 def apply_patches(current_text: str, patches: list[dict]) -> str:
@@ -194,6 +220,8 @@ def apply_patches(current_text: str, patches: list[dict]) -> str:
         idx = next((i for i, (t, _) in enumerate(parts) if t and _norm_title(t) == want), None)
         if idx is None and want_no:
             idx = next((i for i, (t, _) in enumerate(parts) if t and section_no(t) == want_no), None)
+        if idx is None:
+            idx = _insert_template_section(parts, want, str(meta.get("type") or ""), meta.get("subtype"))
         if idx is None:
             raise ValueError(f"패치 대상 절을 찾지 못했다: '{p.get('section')}'")
         title, text = parts[idx]
