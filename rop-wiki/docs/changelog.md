@@ -20,6 +20,31 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-11 | 갱신 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 갱신: 5절 병원 2건·기타 1건·제조 공장 1건 적용 사례 추가(물류창고 시나리오 유지), 6·7·8절에 시각·품질·만료·지속성 필터·시계 동기화와 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 행을 VDA 5050 3.0.0 7.8절에 맞춰 수정, 10절 건축 도면 자동 인식 트랙 반영 제안 2건 반영, 11절 기존 열린 질문 4건 근거 추가·새 질문 3건, 6·7·8·10·11절에 2026-09-25 판 분리 페이지 링크 유지, 13절 각주 갱신(ref-288 원문 열람 반영, 신규 15건)·프런트매터 sources 는 기존 22건에 신규·재사용 출처를 더함 |
+| 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s6.md](topics/2026/2026-10-09-area18-s6.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(2,348자)을 옮겼다 |
+| 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s10.md](topics/2026/2026-10-09-area18-s10.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,925자)을 옮겼다 |
+| 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s7.md](topics/2026/2026-10-09-area18-s7.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,700자)을 옮겼다 |
+| 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s11.md](topics/2026/2026-10-09-area18-s11.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,638자)을 옮겼다 |
+| 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s8.md](topics/2026/2026-10-09-area18-s8.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "8. 대표 연구와 자료" 절(1,245자)을 옮겼다 |
+| 2026-10-09-11 | 요약 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 18. 실시간 세계 상태·데이터 일관성: 갱신: 병원·기타·제조 공장 적용 사례 추가, 시각·품질·만료·지속성 필터·시계 동기화 접근과 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 서술을 VDA 5050 3.0.0 용도 규정에 맞춤, 건축 도면 자동 인식 트랙 반영 제안 2건 반영 |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1275.md](references/ref-1275.md) | 참고문헌 ref-1275 등록: Online Simulation at Machine Level: A Systematic Review |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1276.md](references/ref-1276.md) | 참고문헌 ref-1276 등록: Reducing Transient Behavior in Simulation-Based Digital Twin… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1277.md](references/ref-1277.md) | 참고문헌 ref-1277 등록: How to inform RMF that lift or door are not available? (#414… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1278.md](references/ref-1278.md) | 참고문헌 ref-1278 등록: Class LaneClosure — rmf_traffic API documentation |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1279.md](references/ref-1279.md) | 참고문헌 ref-1279 등록: Towards lifelong feature-based mapping in semi-static enviro… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1280.md](references/ref-1280.md) | 참고문헌 ref-1280 등록: Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Sta… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1281.md](references/ref-1281.md) | 참고문헌 ref-1281 등록: ISO/AWI 26159-2 Robotics — Infrastructure for robot applicat… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1282.md](references/ref-1282.md) | 참고문헌 ref-1282 등록: ISO/CD TS 8100-11 Lifts for the transport of persons and goo… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1283.md](references/ref-1283.md) | 참고문헌 ref-1283 등록: Changi General Hospital, CapitaLand Investment and KONE coll… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1284.md](references/ref-1284.md) | 참고문헌 ref-1284 등록: New software enables different robots to communicate with ea… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1285.md](references/ref-1285.md) | 참고문헌 ref-1285 등록: 용인세브란스병원, 지능형 의료서비스로봇 생태계 구축 |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1286.md](references/ref-1286.md) | 참고문헌 ref-1286 등록: OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현 (Design and Implement… |
+| 2026-10-09-11 | 생성 | [docs/references/ref-1287.md](references/ref-1287.md) | 참고문헌 ref-1287 등록: Multi-robot Rigid Formation Navigation via Synchronous Motio… |
+| 2026-10-09-11 | 생성 | [docs/glossary/persistence-filter.md](glossary/persistence-filter.md) | 용어집 항목 지속성 필터 |
+| 2026-10-09-11 | 생성 | [docs/glossary/lease-expiry.md](glossary/lease-expiry.md) | 용어집 항목 허가 만료 시각 |
+| 2026-10-09-11 | 생성 | [docs/glossary/online-simulation.md](glossary/online-simulation.md) | 용어집 항목 온라인 시뮬레이션 |
+| 2026-10-09-11 | 생성 | [docs/glossary/precision-time-protocol.md](glossary/precision-time-protocol.md) | 용어집 항목 정밀 시간 프로토콜 |
+| 2026-10-09-11 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-10-09-10 | 갱신 | [docs/categories/security-and-privacy/index.md](categories/security-and-privacy/index.md) | 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류와의 연결, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 절 끝에 각주 정의 43건 추가, 2차 수정 3건(장면 인식 모델 단정 삭제, C. 채팅 기반 구성·운영 호칭, 약어 풀어쓰기) 반영 |
 | 2026-10-09-10 | 요약 | [docs/categories/security-and-privacy/index.md](categories/security-and-privacy/index.md) | N. 보안·개인정보: 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 각주 정의 43건 추가, 1차 수정 26건·2차 수정 3건 반영 |
 | 2026-10-09-10 | 생성 | [docs/references/ref-1264.md](references/ref-1264.md) | 참고문헌 ref-1264 등록: Researcher who found McDonald's free-food hack turns her att… |

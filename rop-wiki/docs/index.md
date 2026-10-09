@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [N. 보안·개인정보](categories/security-and-privacy/index.md) — 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류와의 연결, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 절 끝에 각주 정의 43건 추가, 2차 수정 3건(장면 인식 모델 단정 삭제, C. 채팅 기반 구성·운영 호칭, 약어 풀어쓰기) 반영 (실행 2026-10-09-10)
-- 2026-10-09 · 요약 · [N. 보안·개인정보](categories/security-and-privacy/index.md) — N. 보안·개인정보: 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 각주 정의 43건 추가, 1차 수정 26건·2차 수정 3건 반영 (실행 2026-10-09-10)
-- 2026-10-09 · 생성 · [ref-1264 — Researcher who found McDonald's free-food hack turns her attention to Chinese restaurant robots](references/ref-1264.md) — 참고문헌 ref-1264 등록: Researcher who found McDonald's free-food hack turns her att… (실행 2026-10-09-10)
-- 2026-10-09 · 생성 · [ref-1265 — Researcher finds a way to hack Chinese Pudu service robots](references/ref-1265.md) — 참고문헌 ref-1265 등록: Researcher finds a way to hack Chinese Pudu service robots (실행 2026-10-09-10)
-- 2026-10-09 · 생성 · [ref-1266 — France Fines Amazon 32m Euros Over 'Excessive' Worker Surveillance](references/ref-1266.md) — 참고문헌 ref-1266 등록: France Fines Amazon 32m Euros Over 'Excessive' Worker Survei… (실행 2026-10-09-10)
+- 2026-10-09 · 갱신 · [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) — 갱신: 5절 병원 2건·기타 1건·제조 공장 1건 적용 사례 추가(물류창고 시나리오 유지), 6·7·8절에 시각·품질·만료·지속성 필터·시계 동기화와 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 행을 VDA 5050 3.0.0 7.8절에 맞춰 수정, 10절 건축 도면 자동 인식 트랙 반영 제안 2건 반영, 11절 기존 열린 질문 4건 근거 추가·새 질문 3건, 6·7·8·10·11절에 2026-09-25 판 분리 페이지 링크 유지, 13절 각주 갱신(ref-288 원문 열람 반영, 신규 15건)·프런트매터 sources 는 기존 22건에 신규·재사용 출처를 더함 (실행 2026-10-09-11)
+- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술](topics/2026/2026-10-09-area18-s6.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(2,348자)을 옮겼다 (실행 2026-10-09-11)
+- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결](topics/2026/2026-10-09-area18-s10.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,925자)을 옮겼다 (실행 2026-10-09-11)
+- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스](topics/2026/2026-10-09-area18-s7.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,700자)을 옮겼다 (실행 2026-10-09-11)
+- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 열린 질문](topics/2026/2026-10-09-area18-s11.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,638자)을 옮겼다 (실행 2026-10-09-11)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

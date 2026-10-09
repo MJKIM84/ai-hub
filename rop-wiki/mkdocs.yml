@@ -278,6 +278,11 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 18. 실시간 세계 상태·데이터 일관성 — 대표 연구와 자료: topics/2026/2026-10-09-area18-s8.md
+      - 18. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-10-09-area18-s7.md
+      - 18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술: topics/2026/2026-10-09-area18-s6.md
+      - 18. 실시간 세계 상태·데이터 일관성 — 열린 질문: topics/2026/2026-10-09-area18-s11.md
+      - 18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결: topics/2026/2026-10-09-area18-s10.md
       - 67. 기타 현장 — 대표 연구와 자료: topics/2026/2026-09-30-area67-s8.md
       - 67. 기타 현장 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area67-s7.md
       - 67. 기타 현장 — 대표 접근법과 기술: topics/2026/2026-09-30-area67-s6.md
@@ -932,6 +937,7 @@ nav:
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 오픈시나리오 (ASAM OpenSCENARIO): glossary/asam-openscenario.md
     - 오픈텔레메트리 (OpenTelemetry (OTel)): glossary/opentelemetry.md
+    - 온라인 시뮬레이션 (Online Simulation): glossary/online-simulation.md
     - 온톨로지 진화 (Ontology Evolution): glossary/ontology-evolution.md
     - 온톨로지 채우기 (Ontology Population): glossary/ontology-population.md
     - 온톨로지 피트폴 (Ontology Pitfall): glossary/ontology-pitfall.md
@@ -987,6 +993,7 @@ nav:
     - 전제·유지·사후 조건 (Pre-, Hold-, Post-condition): glossary/pre-hold-post-condition.md
     - 절제 실험 (Ablation Study): glossary/ablation-study.md
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
+    - 정밀 시간 프로토콜 (Precision Time Protocol (PTP)): glossary/precision-time-protocol.md
     - 정보 나이 (Age of Information (AoI)): glossary/age-of-information.md
     - 정보 전달 명세 (Information Delivery Specification (IDS)): glossary/information-delivery-specification.md
     - 제약 디코딩 (Constrained Decoding): glossary/constrained-decoding.md
@@ -999,6 +1006,7 @@ nav:
     - 지도 배포 (Map Distribution (VDA 5050 downloadMap / enableMap / deleteMap)): glossary/map-distribution.md
     - 지도 버전 (Map Version (VDA 5050 mapId / mapVersion)): glossary/map-version.md
     - 지도 정합 (Map Alignment): glossary/map-alignment.md
+    - 지속성 필터 (Persistence Filter): glossary/persistence-filter.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
@@ -1045,6 +1053,7 @@ nav:
     - 행동 영역 정의 언어 (Behavior Domain Definition Language (BDDL)): glossary/behavior-domain-definition-language.md
     - 행동 의존 그래프 (Action Dependency Graph (ADG)): glossary/action-dependency-graph.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
+    - 허가 만료 시각 (Lease Expiry (VDA 5050 leaseExpiry)): glossary/lease-expiry.md
     - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
     - 현실 격차 (Reality Gap (Sim-to-Real Gap)): glossary/reality-gap.md
     - 협동 운반 (Cooperative Object Transport): glossary/cooperative-object-transport.md
@@ -1495,7 +1504,26 @@ nav:
     - 'ref-1272 — Seeing is Not Believing: Breaking the Physical-to-Digital Trust Boundary in Robotics': references/ref-1272.md
     - ref-1273 — KUKA is First to Achieve Security Level 2 Certification for Robotics Industry: references/ref-1273.md
     - ref-1274 — Data Act explained: references/ref-1274.md
+    - 'ref-1275 — Online Simulation at Machine Level: A Systematic Review': references/ref-1275.md
+    - ? 'ref-1276 — Reducing Transient Behavior in Simulation-Based Digital Twins: A Novel Initialization Approach for Order Picking Systems'
+      : references/ref-1276.md
+    - ref-1277 — How to inform RMF that lift or door are not available? (#414): references/ref-1277.md
+    - ref-1278 — Class LaneClosure — rmf_traffic API documentation: references/ref-1278.md
+    - ref-1279 — Towards lifelong feature-based mapping in semi-static environments: references/ref-1279.md
     - ref-128 — rmf_api_msgs — rmf_api_msgs/schemas/rewind_task_request.json: references/ref-128.md
+    - 'ref-1280 — Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments': references/ref-1280.md
+    - ? 'ref-1281 — ISO/AWI 26159-2 Robotics — Infrastructure for robot applications — Part 2: Requirements for interfacing with lifts (elevators) and automatic doorways'
+      : references/ref-1281.md
+    - ? 'ref-1282 — ISO/CD TS 8100-11 Lifts for the transport of persons and goods — Part 11: Interoperability between lift and other systems'
+      : references/ref-1282.md
+    - ? ref-1283 — Changi General Hospital, CapitaLand Investment and KONE collaborate to advance the integration of robotics in buildings
+      : references/ref-1283.md
+    - ref-1284 — New software enables different robots to communicate with each other and building infrastructure: references/ref-1284.md
+    - ref-1285 — 용인세브란스병원, 지능형 의료서비스로봇 생태계 구축: references/ref-1285.md
+    - ? ref-1286 — OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현 (Design and Implementation of Real-time Digital Twin in Heterogeneous Robots using OPC UA)
+      : references/ref-1286.md
+    - ? ref-1287 — Multi-robot Rigid Formation Navigation via Synchronous Motion and Discrete-time Communication-Control Optimization
+      : references/ref-1287.md
     - ref-129 — B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd: references/ref-129.md
     - ? ref-1299 — ST Engineering Aethon Launches Zena RX, Redefining Secure Delivery of Medications, Specimens and Sensitive Goods in Hospitals
       : references/ref-1299.md

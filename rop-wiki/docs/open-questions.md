@@ -341,8 +341,11 @@ version: 1
 | oq-319 | 로봇이 발행 전 단계에서 위조한 텔레메트리를 설비 센서·다른 로봇 관측과 교차 확인해 플릿 수준에서 탐지하는 방법의 효과를 측정한 연구가 있는가? (관련: oq-082) | [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-10-09 | 2026-10-09-10 | 열림 | — |
 | oq-320 | EU 데이터법에서 여러 제조사 로봇의 데이터를 모아 관제하는 오케스트레이션 플랫폼 사업자는 사용자·제3자·데이터 보유자 가운데 어느 지위이며, 제조사에 로봇 데이터 제공을 요구할 수 있는가? (관련: oq-259) | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-10-09 | 2026-10-09-10 | 열림 | — |
 | oq-321 | 작업자 스캐너 기록의 개인별 비활동·속도 지표를 과도한 감시로 본 CNIL 판단이 로봇 작업 기록에서 만든 작업자 지표에 적용된 감독기관 결정이나 국내 해석이 있는가? (관련: oq-285) | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md)<br>[39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 2026-10-09 | 2026-10-09-10 | 열림 | — |
+| oq-322 | 로봇이 직접 관측한 승강기·문 상태와 설비 제어기가 보고한 상태가 다를 때 어느 쪽을 기준으로 통과·탑승을 확정하는지 정한 표준이나 현장 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
+| oq-323 | 지속성 필터처럼 마지막 관측 뒤 시간에 따라 믿음을 낮추는 확률 모델을 문·승강기·충전기 같은 설비 상태의 허용 경과 시간 판단에 적용한 연구나 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
+| oq-324 | 실시간 세계 상태를 예측 시뮬레이션의 초기값으로 넘길 때 어떤 상태 항목·품질·시각 정보를 넘겨야 하는지 정한 인터페이스가 다중 이동로봇 운영에 쓰인 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | 2026-10-09 | 2026-10-09-11 | 열림 | — |
 
-상태별 건수: 열림 320건, 조사 중 1건
+상태별 건수: 열림 323건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

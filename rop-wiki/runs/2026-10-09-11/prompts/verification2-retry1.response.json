@@ -1,0 +1,167 @@
+{
+  "duration_api_ms": 36738,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.1050188,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 125259,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 4259,
+    "output_tokens_details": {
+      "thinking_tokens": 2669
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 125259,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4259,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 125259,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 125259
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 4259,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 125259,
+      "webSearchRequests": 0,
+      "costUSD": 1.1050188,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2669,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-11\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 1차 조건부 승인 / 2차 통과(재검증 1회). 확인 31건, 미확인 0건, 교차 확인 1건(f7). 강등: 없음(태그 유지, f9·f26 문구 수정). 원문 미열람 출처: ref-1450(PDF 본문 추출 실패, 초록만 확인), ref-030(권고안 원문 미열람, 작업반 편집자 초안 sosa.ttl 은 확인). 주의: 대상별 허용 경과 시간·허용 시계 오차·위치 신뢰 판단 규칙(f13·f20·f22·f25·f28·f31)은 모두 설계 추정이며, 이를 정한 표준은 2026-10-09 기준 확인되지 않았다. 로봇–승강기·자동문 국제 표준(ISO/AWI 26159-2, ISO/CD TS 8100-11)은 초안 단계이고 범위 설명만 확인했다. 9절의 위치추정 신뢰 판단 서술은 VDA 5050 3.0.0 규정(품질 점수·편차 범위는 기록·시각화 전용)에 맞춰 고쳤다. 트랙 반영 제안 2건 가운데 어포던스 상태 연구와 IFAC 2024 연구는 재확인되지 않아 반영하지 않았다. 정정 요청 없음. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 직전 2차 지시 3건은 모두 이행됐다. (1) 새 분리 페이지(2026-10-09-area18-s6·s7·s8·s10·s11) 3절에 2026-09-25 분리 페이지(2026-09-25-area08-s6·s7·s8·s10·s11)로 가는 같은 폴더 상대 링크가 되살아나 기존 내용에 닿는다. (2) 프런트매터 sources 가 기존 22건(ref-004·ref-285·ref-294·ref-295 포함)에 신규·재사용 15건을 더한 형태가 됐다. (3) 용어집 online-simulation 설명이 추정 표현이 됐다. 1차 지시 14건의 이행 상태도 유지된다. 확인한 항목은 ref-288 원문 미열람 표시 해제와 v1.05.07 표기, ref-1450·ref-030 의 원문 미열람 표기, f9 '구축 진행 중' 문구, f26 '이산(discrete)' 문구, 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈의 구분, 현장 유형별 사례와 적용 사례 매트릭스 10칸의 일치, oq-028·oq-034·oq-035·oq-037 열림 유지다. 검증 측 검색 0회, 열람 0회. 후속 제안: 분리 코드가 기존 '자세한 내용은' 링크 줄을 유지하는지 pipeline 담당이 확인할 것, 용어집 localization-score 정의에 VDA 5050 3.0.0 7.8절의 용도 제한을 반영할지 다음 갱신 실행에서 검토할 것.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-11",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 1차 조건부 승인 / 2차 통과(재검증 1회). 확인 31건, 미확인 0건, 교차 확인 1건(f7). 강등: 없음(태그 유지, f9·f26 문구 수정). 원문 미열람 출처: ref-1450(PDF 본문 추출 실패, 초록만 확인), ref-030(권고안 원문 미열람, 작업반 편집자 초안 sosa.ttl 은 확인). 주의: 대상별 허용 경과 시간·허용 시계 오차·위치 신뢰 판단 규칙(f13·f20·f22·f25·f28·f31)은 모두 설계 추정이며, 이를 정한 표준은 2026-10-09 기준 확인되지 않았다. 로봇–승강기·자동문 국제 표준(ISO/AWI 26159-2, ISO/CD TS 8100-11)은 초안 단계이고 범위 설명만 확인했다. 9절의 위치추정 신뢰 판단 서술은 VDA 5050 3.0.0 규정(품질 점수·편차 범위는 기록·시각화 전용)에 맞춰 고쳤다. 트랙 반영 제안 2건 가운데 어포던스 상태 연구와 IFAC 2024 연구는 재확인되지 않아 반영하지 않았다. 정정 요청 없음. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 직전 2차 지시 3건은 모두 이행됐다. (1) 새 분리 페이지(2026-10-09-area18-s6·s7·s8·s10·s11) 3절에 2026-09-25 분리 페이지(2026-09-25-area08-s6·s7·s8·s10·s11)로 가는 같은 폴더 상대 링크가 되살아나 기존 내용에 닿는다. (2) 프런트매터 sources 가 기존 22건(ref-004·ref-285·ref-294·ref-295 포함)에 신규·재사용 15건을 더한 형태가 됐다. (3) 용어집 online-simulation 설명이 추정 표현이 됐다. 1차 지시 14건의 이행 상태도 유지된다. 확인한 항목은 ref-288 원문 미열람 표시 해제와 v1.05.07 표기, ref-1450·ref-030 의 원문 미열람 표기, f9 '구축 진행 중' 문구, f26 '이산(discrete)' 문구, 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈의 구분, 현장 유형별 사례와 적용 사례 매트릭스 10칸의 일치, oq-028·oq-034·oq-035·oq-037 열림 유지다. 검증 측 검색 0회, 열람 0회. 후속 제안: 분리 코드가 기존 '자세한 내용은' 링크 줄을 유지하는지 pipeline 담당이 확인할 것, 용어집 localization-score 정의에 VDA 5050 3.0.0 7.8절의 용도 제한을 반영할지 다음 갱신 실행에서 검토할 것.",
+    "retry_reason": null
+  },
+  "ttft_ms": 25706,
+  "type": "result",
+  "duration_ms": 36886,
+  "uuid": "882e8dda-4b09-453f-9c8d-cec3b88986e0",
+  "ttft_stream_ms": 979,
+  "time_to_request_ms": 91,
+  "time_to_request_phases_ms": {
+    "other": 21,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 4,
+    "input_attachments": 17,
+    "input_hooks": 2,
+    "tool_pool_refresh": 3,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 0,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 7,
+    "request_build": 11
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 41,
+  "time_to_request_cpu_ms": 132,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 26,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 981,
+  "time_to_request_from_spawn_ms": 14090246,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791520357518.2263,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 38.5
+}

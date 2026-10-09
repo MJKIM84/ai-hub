@@ -21,6 +21,11 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결](2026/2026-10-09-area18-s10.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 열린 질문](2026/2026-10-09-area18-s11.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술](2026/2026-10-09-area18-s6.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area18-s7.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 대표 연구와 자료](2026/2026-10-09-area18-s8.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
