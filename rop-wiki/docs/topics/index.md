@@ -40,6 +40,10 @@ version: 1
 | 2026-10-09 | [37. 관제 화면·실행 기록 — 열린 질문](2026/2026-10-09-area37-s11.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
 | 2026-10-09 | [37. 관제 화면·실행 기록 — 왜 중요한가](2026/2026-10-09-area37-s3.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
 | 2026-10-09 | [37. 관제 화면·실행 기록 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area37-s7.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 다른 연구영역과의 연결](2026/2026-10-09-area38-s10.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 열린 질문](2026/2026-10-09-area38-s11.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 왜 중요한가](2026/2026-10-09-area38-s3.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area38-s7.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |

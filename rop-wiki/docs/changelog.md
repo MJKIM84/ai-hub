@@ -20,6 +20,14 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-16 | 갱신 | [docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 3절 둘째 문단을 현재 원문 질문에 맞추고 심각도·시각 형식·통신 신호·사람 개입 근거 보강, 5절 현장 유형별 사례(병원·상업 시설·실외·기타) 추가와 물류창고 사례 재확인, 7절 표준 필드 표 추가와 2026-09-25 목록 링크 유지, 9절 내부 진단·승강기·실외 인증 경계와 직접 범위 후보 추가, 11절 2026-09-25 목록 링크 유지·부분 근거·새 질문 2건, 13절 각주 접근일·기관 표기 갱신(2차 수정 3건 반영) |
+| 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s7.md](topics/2026/2026-10-09-area38-s7.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,049자)을 옮겼다 |
+| 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s3.md](topics/2026/2026-10-09-area38-s3.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "3. 왜 중요한가" 절(1,297자)을 옮겼다 |
+| 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s11.md](topics/2026/2026-10-09-area38-s11.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "11. 열린 질문" 절(1,010자)을 옮겼다 |
+| 2026-10-09-16 | 생성 | [docs/topics/2026/2026-10-09-area38-s10.md](topics/2026/2026-10-09-area38-s10.md) | 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(648자)을 옮겼다 |
+| 2026-10-09-16 | 요약 | [docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 38. 모니터링·이상 탐지·원인 분석: 3절 심각도·시각 형식·통신 신호·사람 개입 근거 보강과 원문 질문 표현 정정, 5절 병원·상업 시설·실외·기타 사례 추가, 7절 VDA 5050·MassRobotics·Open-RMF·OpenTelemetry 필드 표, 9절 내부 진단·승강기·실외 인증 경계, 11절 부분 근거·새 질문 2건, 각주 갱신(1차 조건부 승인 수정 16건·2차 수정 3건 반영) |
+| 2026-10-09-16 | 생성 | [docs/glossary/connection-state.md](glossary/connection-state.md) | 용어집 항목 연결 상태 |
+| 2026-10-09-16 | 생성 | [docs/glossary/alert-tier.md](glossary/alert-tier.md) | 용어집 항목 경보 등급 |
 | 2026-10-09-15 | 갱신 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신 |
 | 2026-10-09-15 | 생성 | [docs/topics/2026/2026-10-09-area37-s7.md](topics/2026/2026-10-09-area37-s7.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,936자)을 옮겼다 |
 | 2026-10-09-15 | 생성 | [docs/topics/2026/2026-10-09-area37-s11.md](topics/2026/2026-10-09-area37-s11.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "11. 열린 질문" 절(2,787자)을 옮겼다 |

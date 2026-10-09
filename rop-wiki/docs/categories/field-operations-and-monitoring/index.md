@@ -219,12 +219,13 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 91건이다(논문 31건 · 기사·보고서 14건 · 업체 발표 5건 · 표준·오픈소스·기관 자료 41건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 95건이다(논문 32건 · 기사·보고서 17건 · 업체 발표 5건 · 표준·오픈소스·기관 자료 41건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
 - [ref-494](../../references/ref-494.md) — Francos, R. M., Garces, D., Akgün, O. E., Bastian, N. D., & Gil, S.(Harvard·JHU), Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems (발행 2026-08)
 - [ref-455](../../references/ref-455.md) — DBpia 게재 논문(저자 미확인), 다중 자율이동로봇 (AMR) 운영을 위한 웹 기반 사용자 중심 관제 인터페이스 설계 연구 (발행 2026-07)
+- [ref-943](../../references/ref-943.md) — Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026-03-31)
 - [ref-1226](../../references/ref-1226.md) — Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety (발행 2026)
 - [ref-102](../../references/ref-102.md) — Springer(FAIM 2025 발표 논문, 저자 미확인), Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics (발행 2025)
 - [ref-454](../../references/ref-454.md) — International Journal of Production Research(Taylor & Francis), 저자 미확인, Process mining in supply chain management: state-of-the-art, use cases and research outlook (발행 2024)
@@ -232,12 +233,12 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-453](../../references/ref-453.md) — Liu, Z., Bahety, A., & Song, S., REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction (발행 2023)
 - [ref-115](../../references/ref-115.md) — Production & Manufacturing Research 게재 논문(저자 미확인, Chalmers 공개본), Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes (발행 2023)
 - [ref-1319](../../references/ref-1319.md) — Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv), Predictive Object-Centric Process Monitoring (발행 2022-07-20)
-- [ref-1032](../../references/ref-1032.md) — Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L, arXiv), ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2 (발행 2022-07)
-- 그 밖에 21건
+- 그 밖에 22건
 
 **기사·보고서**
 
 - [ref-1154](../../references/ref-1154.md) — Proof News (Varsha Bansal), Meet the Robot That Nurses Unplugged (발행 2026-06-09)
+- [ref-995](../../references/ref-995.md) — Offshore Technology (Eve Thomas), Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones (발행 2025-11-21)
 - [ref-1007](../../references/ref-1007.md) — 뉴스토마토 (이규하), 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동 (발행 2025-04-23)
 - [ref-1103](../../references/ref-1103.md) — 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다 (발행 2025-04-07)
 - [ref-141](../../references/ref-141.md) — WERC(Warehousing Education and Research Council), WERC DC Measures Survey - 2025 (발행 2025)
@@ -246,8 +247,7 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1316](../../references/ref-1316.md) — 코메디닷컴, [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠 (발행 2024-04-20)
 - [ref-944](../../references/ref-944.md) — 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (발행 2024-04-15)
 - [ref-1317](../../references/ref-1317.md) — 바이라인네트워크 (이진호), 뉴빌리티, 실외이동 로봇 운행안전 인증 획득 (발행 2024-01-31)
-- [ref-1334](../../references/ref-1334.md) — TechTarget (Hannah Nelson, Xtelligent Healthcare Media), Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout (발행 2022-08-11)
-- 그 밖에 4건
+- 그 밖에 7건
 
 **업체 발표**
 
@@ -275,9 +275,9 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) — 5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신 (실행 2026-10-09-15)
-- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area37-s7.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,936자)을 옮겼다 (실행 2026-10-09-15)
-- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 열린 질문](../../topics/2026/2026-10-09-area37-s11.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "11. 열린 질문" 절(2,787자)을 옮겼다 (실행 2026-10-09-15)
-- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 왜 중요한가](../../topics/2026/2026-10-09-area37-s3.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "3. 왜 중요한가" 절(485자)을 옮겼다 (실행 2026-10-09-15)
-- 2026-10-09 · 요약 · [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) — 37. 관제 화면·실행 기록: 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 (실행 2026-10-09-15)
+- 2026-10-09 · 갱신 · [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) — 3절 둘째 문단을 현재 원문 질문에 맞추고 심각도·시각 형식·통신 신호·사람 개입 근거 보강, 5절 현장 유형별 사례(병원·상업 시설·실외·기타) 추가와 물류창고 사례 재확인, 7절 표준 필드 표 추가와 2026-09-25 목록 링크 유지, 9절 내부 진단·승강기·실외 인증 경계와 직접 범위 후보 추가, 11절 2026-09-25 목록 링크 유지·부분 근거·새 질문 2건, 13절 각주 접근일·기관 표기 갱신(2차 수정 3건 반영) (실행 2026-10-09-16)
+- 2026-10-09 · 생성 · [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area38-s7.md) — 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,049자)을 옮겼다 (실행 2026-10-09-16)
+- 2026-10-09 · 생성 · [38. 모니터링·이상 탐지·원인 분석 — 왜 중요한가](../../topics/2026/2026-10-09-area38-s3.md) — 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "3. 왜 중요한가" 절(1,297자)을 옮겼다 (실행 2026-10-09-16)
+- 2026-10-09 · 생성 · [38. 모니터링·이상 탐지·원인 분석 — 열린 질문](../../topics/2026/2026-10-09-area38-s11.md) — 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "11. 열린 질문" 절(1,010자)을 옮겼다 (실행 2026-10-09-16)
+- 2026-10-09 · 생성 · [38. 모니터링·이상 탐지·원인 분석 — 다른 연구영역과의 연결](../../topics/2026/2026-10-09-area38-s10.md) — 자동 분리: 38. 모니터링·이상 탐지·원인 분석 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(648자)을 옮겼다 (실행 2026-10-09-16)
 <!-- auto:category-recent:end -->

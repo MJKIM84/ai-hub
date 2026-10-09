@@ -1,0 +1,956 @@
+{
+  "duration_api_ms": 525727,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.7754124000000004,
+  "usage": {
+    "input_tokens": 32,
+    "cache_creation_input_tokens": 142428,
+    "cache_read_input_tokens": 3139541,
+    "output_tokens": 37580,
+    "output_tokens_details": {
+      "thinking_tokens": 11656
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 142428,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 27971,
+        "cache_read_input_tokens": 225209,
+        "cache_creation_input_tokens": 852,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 852
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 32,
+      "outputTokens": 37580,
+      "cacheReadInputTokens": 3139541,
+      "cacheCreationInputTokens": 142428,
+      "webSearchRequests": 0,
+      "costUSD": 2.5190602,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11656,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 540517,
+      "outputTokens": 44601,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.2563522,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 18134,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 39,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-16\",\"date\":\"2026-10-09\",\"run_type\":\"update\",\"target\":{\"area_no\":38,\"area_name\":\"38. 모니터링·이상 탐지·원인 분석\",\"category\":\"J. 현장 운영·관제\"},\"gaps\":[\"섹션 5. 적용 사례 (현장 유형 명시) — 개정 전(2026-09-25)에 쓴 물류창고 가상 시나리오 하나뿐이고 병원·제조 공장·상업 시설·가정·실외·기타 사례 없음\",\"섹션 3·7 — VDA 5050 오류 정의가 오류 수준만 인용되고 오류 유형(errorType) 사전 정의값·오류 참조(errorReferences)·안전 상태가 없음, Open-RMF 로봇 상태의 issues 필드와 ROS 2 진단 수준이 없음(바뀐 출처: VDA 5050 main 3.0.0 재확인)\",\"섹션 7·11 — 로봇 운영용 경보 관리 표준(oq-295)과 경보 심각도 등급의 대응(oq-073, oq-033) 근거 없음\",\"섹션 8. 대표 연구와 자료 — 논문이 모두 원문 미열람이며 공개 고장 분류 체계(oq-074), 다중 로봇 경보 제시 연구, 언어 모델 고장 진단(oq-315), 로봇 실행 기록 프로세스 마이닝(oq-018, oq-210)의 최근 근거 없음\",\"섹션 10 — 47. AI·학습·적응과 모델 운영 연결 문장이 '분류 개정 전 원문 8장의 교차 규칙'을 근거로 들고 있어 개정 원문의 L. AI·학습 기술 주석(2절에 인용됨) 기준으로 고칠 필요\",\"정정 요청 없음\"],\"research_questions\":[\"지연의 원인이 로봇인지, 설비인지, 통신인지, 앞 작업인지 어떻게 찾을까? [분류원문]\",\"바뀐 출처·oq-033·oq-073: VDA 5050 3.0.0 의 오류 수준·오류 유형·안전 상태, Open-RMF 로봇 상태의 issues 와 작업 사건 의존(deps), ROS 2 진단 수준은 지금 어떻게 정의되어 있고 원인 범주 대응에 무엇을 주는가? (섹션 3·7 겨냥)\",\"oq-295 다중 로봇 플릿 관제에 쓸 경보 관리 표준·지침이 있는가, 공정 산업 경보 관리 표준은 무엇을 다루며 다중 로봇 경보 제시 방식을 비교한 연구는 무엇인가? (섹션 7·8·11 겨냥)\",\"oq-074 로봇 고장·지연을 원인별로 나누는 공개 분류 체계나 데이터셋이 있는가? (섹션 8·11 겨냥)\",\"물류창고 밖의 현장 유형(병원·제조 공장·상업 시설·실외·기타)에서 로봇 이상 탐지·원격 감시·원인 구분을 운영한 사례는 무엇인가? 한국 사례 우선 (섹션 5 겨냥)\",\"oq-315·oq-018·oq-210 언어 모델 기반 고장 진단과 로봇 임무 기록의 프로세스 마이닝에 새 근거가 있는가? (섹션 8·11 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"VDA 5050 3.0.0 의 state 스키마에서 오류 객체는 오류 유형(errorType)과 오류 수준(errorLevel)을 필수로 하고, 오류 수준 네 단계를 진행 중 주문을 계속할 수 있는지와 새 주문을 받을 수 있는지로 구분한다(WARNING·URGENT 는 둘 다 가능, CRITICAL 은 진행 중 주문 계속 불가, FATAL 은 둘 다 불가하며 사용자 개입 필요).\",\"tag\":\"사실\",\"source_ids\":[\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"errorLevel enum WARNING·URGENT·CRITICAL·FATAL. FATAL: \\\"User intervention is required, mobile robot is unable to continue active or accept new order.\\\" (GitHub main 브랜치 state.schema, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f2\",\"claim\":\"VDA 5050 3.0.0 의 오류 객체는 오류 참조(errorReferences)로 오류를 nodeId·edgeId·orderId·actionId 같은 주문 요소에 연결하고, 상세 설명(errorDescription)과 해결 힌트(errorHint)를 담을 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"errorReferences: referenceKey(nodeId, edgeId, orderId, actionId 등)·referenceValue 필수 쌍. errorDescription 은 상세 설명과 가능한 원인, errorHint 는 해결 방법 힌트 (확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"VDA 5050 3.0.0 은 오류 유형을 확장 가능한 열거로 두면서 명세 본문에 NO_ROUTE_TO_TARGET·NODE_UNREACHABLE·OUTSIDE_OF_CORRIDOR·BLOCKED_ZONE_VIOLATION·RELEASE_LOST·MOBILE_ROBOT_NOT_AVAILABLE·VALIDATION_FAILURE 같은 사전 정의 오류 유형과 기본 오류 수준(예: 구역·통로 위반은 CRITICAL, 경로 없음은 WARNING)을 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\",\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"state.schema 의 errorType 은 'extensible enumeration'. 명세 3.0.0 판 6.1.4·6.4 절 등에 NO_ROUTE_TO_TARGET(WARNING), BLOCKED_ZONE_VIOLATION(CRITICAL), RELEASE_LOST(CRITICAL) 등 정의(명세 앞 100,000자만 열람)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f4\",\"claim\":\"VDA 5050 3.0.0 의 사전 정의 오류 유형은 주문 검증·경로·구역·가용성처럼 로봇이 스스로 판정할 수 있는 원인에 집중되어 있어, 문 같은 설비 원인이나 앞 작업 지연은 오류 유형만으로 가려지지 않으므로 ROP 가 설비 상태(문 모드)와 작업 상태를 함께 써서 자체 원인 범주를 만들어야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-313\",\"ref-111\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"VDA 5050 오류 유형 목록에 설비(문·승강기) 원인 항목이 보이지 않음(열람 범위 기준). 문 모드는 Open-RMF DoorMode, 작업 지연·차단은 Open-RMF task_state 의 status 에 따로 있음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"연계 대상: VDA 5050 3.0.0 의 state 메시지는 로봇 건강 상태의 재료로 비상정지 종류(activeEmergencyStop: MANUAL·REMOTE·NONE)와 보호 필드 침범 여부(fieldViolation), 운용 모드(STARTUP·AUTOMATIC·SEMIAUTOMATIC·INTERVENED·MANUAL·SERVICE·TEACH_IN), 충전 상태·배터리 건강 상태(batteryHealth, %)·충전 여부를 보고하며, 이 값을 만드는 로봇 내부 진단은 제조사 몫이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"safetyState 필수: activeEmergencyStop(MANUAL·REMOTE·NONE), fieldViolation. powerSupply 필수: stateOfCharge, charging; 선택: batteryHealth \\\"State of health in percent.\\\" (확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"Open-RMF 로봇 상태 스키마(robot_state.json)는 로봇 상태를 uninitialized·offline·shutdown·idle·charging·working·error 일곱 값으로 두고, 운영자가 해결해야 하는 문제(예: 로봇이 갇힘·길을 잃음)를 issues 배열(category·detail)로 올리며, 배터리(0~1)와 점유·요청 중인 상호 배제 그룹(mutex_groups)을 함께 보고한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1371\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"status enum: uninitialized, offline, shutdown, idle, charging, working, error. issues: 운영자가 해결해야 할 문제(stuck, lost 예시), 항목은 category·detail (확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f7\",\"claim\":\"Open-RMF 작업 상태 스키마의 사건 상태(event_state)는 그 사건이 기다리는 다른 사건 id 목록(deps)과 상태 토큰을 담아, 작업 지연이 앞 사건 대기 때문인지를 기록에서 따라갈 수 있는 재료가 된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-111\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"event_state.deps: \\\"This event may depend on other events.\\\" status 토큰에 blocked·delayed·underway 등 12값 (원문 텍스트 기준, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f8\",\"claim\":\"연계 대상: ROS 2 diagnostics 체계는 하드웨어 드라이버 진단을 /diagnostics 토픽의 DiagnosticStatus 로 모으며, 진단 수준은 OK·WARN·ERROR·STALE 네 값이고 장치 이름·메시지·hardware_id·키-값 측정값을 담으며, 집계기(diagnostic_aggregator)와 원격 기록 전달(diagnostic_remote_logging) 패키지를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1370\",\"ref-445\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"byte OK=0, WARN=1, ERROR=2, STALE=3; 필드 level·name·message·hardware_id·values. README: 진단을 /diagnostics 로 모아 /diagnostics_agg 로 집계, influxdb 등 원격 전달\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"네이버클라우드 ARC brain 관리 콘솔 문서(2026-09-17)는 로봇 상태(이동중·정지·충전 중·수동 제어·점검 중·에러), 통신 상태(정상·끊어짐), 배터리·CPU·메모리 사용률과 함께, 이상 리포트를 WARN(운영자 주의 필요)과 FATAL(서비스 중단·현장 대응 필요) 두 등급으로 나누고 상태 변경을 운영 이력으로 남긴다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1378\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"로봇 관리 상세: 상태 '이동중','정지','충전 중','수동 제어','점검 중','에러', 통신 '정상'/'끊어짐', 배터리 5% 이하 빨간색. 이상 리포트 등급 WARN·FATAL, 운영 이력(일간·주간·월간)\",\"as_of\":\"2026-09-17\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"경보·오류 심각도 등급이 규약마다 달라(VDA 5050 네 단계, Open-RMF 경보 세 단계 INFO·WARNING·ERROR, ROS 2 진단 네 값, 국내 클라우드 로봇 관리 콘솔 두 단계 WARN·FATAL), 이종 로봇을 한 관제에서 다루는 ROP 는 등급을 공통 우선순위로 맞추는 대응 규칙을 스스로 정해야 할 것으로 보이며, 이번 조사에서도 공개 대응 규칙은 찾지 못했다(oq-033, oq-073).\",\"tag\":\"추정\",\"source_ids\":[\"ref-051\",\"ref-448\",\"ref-1370\",\"ref-1378\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"VDA errorLevel 4값, rmf Alert.msg tier INFO=0·WARNING=1·ERROR=2, DiagnosticStatus OK·WARN·ERROR·STALE, ARC 이상 리포트 WARN·FATAL. 서로의 대응표는 어느 출처에도 없음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"IEC 62682:2022(제2판, 2022-12-08)는 공정 산업 설비의 경보 시스템 관리 원칙·절차를 정하며, 기본 공정 제어·경보 표시기·패키지 시스템·안전 계장 시스템에서 오는 경보를 다루고, 운영자 알림 외에 경보·사건 기록, 경보 이력 저장소, 경보 시스템 성과 지표 생성을 기능으로 들고, 연속·배치·이산 공정에 적용된다고 밝힌다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1369\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IEC 웹스토어 소개: \\\"applicable to continuous, batch, and discrete processes\\\"; 부가 기능으로 alarm and event log, alarm historian, performance metrics (표준 본문 미열람)\",\"as_of\":\"2022-12-08\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f12\",\"claim\":\"IEC 62682 는 이산 공정까지 적용 범위에 두지만 대상이 공정 산업 제어 시스템이어서, 다중 로봇 플릿 관제용 경보 우선순위·경보 홍수 기준을 정한 로봇 전용 표준·지침은 이번 조사에서도 확인하지 못했고 공정 경보 관리 표준을 옮겨 쓰는 수준으로 보인다(oq-295 미해결).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1369\",\"ref-1368\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"IEC 62682 범위는 process industries 시설. 로봇 쪽 근거는 실험실 연구(2011 HFES)뿐. 경보 홍수 수치(10분 10건)는 2차 출처에만 있어 넣지 않음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"Mehrotra·Sycara·Lewis·Chien·Wang(HFES 2011)은 다중 로봇 수색·구조 과제에서 경보 없음, 모든 경보 표시, 최상위 경보 하나만 보여 주는 결정 보조의 세 조건을 비교했고, 탐색 면적·발견 수에는 차이가 없었으나 모든 경보를 표시한 조건의 운영자가 로봇 고장과 대상 발견을 더 빨리 알아차렸다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1368\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"세 조건: no alarms, freely annunciated alarms(ADSC), top alarm only 결정 보조. 면적·발견 수 차이 없음, 자유 표시 조건이 고장·대상 탐지 더 빠름 (실험실 USAR 과제)\",\"as_of\":\"2011\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f14\",\"claim\":\"Carlson(2004, 사우스플로리다대 석사 논문)은 수색·구조와 도시 군사 작전 현장의 13개 신뢰성 연구에서 모은 지상 이동로봇 고장 44건으로 물리적 고장과 사람 고장을 나누는 분류 체계를 제안했고, 평균 고장 간격을 고장 정의에 따라 6~20시간으로, 물리적 고장의 주된 원인을 구동부와 제어 시스템으로, 무선 통신 거리·대역폭 부족을 공통 문제로 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1367\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Overall robot reliability in field environments is low\\\", MTBF 6~20시간, 구동부·제어 시스템이 물리적 고장의 최다 원인, 사람 고장은 slip 이 mistake 보다 많음, 약 2/3 현장 수리 가능\",\"as_of\":\"2004\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f15\",\"claim\":\"Carlson 의 분류 체계는 단일 로봇의 물리적·사람 고장을 다루며 설비 대기나 앞 작업 지연은 범주로 두지 않고, VDA 5050 오류 유형도 확장 가능한 열거여서, 물류 로봇 작업 지연을 로봇·설비·통신·공정 원인으로 나누는 공개 분류 체계나 현장 데이터셋은 여전히 확인되지 않은 것으로 보인다(oq-074 미해결).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1367\",\"ref-051\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Carlson 범주: physical(구동부·제어·통신 등) vs human(slip·mistake). VDA errorType 은 'extensible enumeration'으로 공통 원인 범주 없음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"Bang·Shin·Paek(ICTC 2025, 중앙대·현대자동차그룹)은 공장 Wi-Fi 로 운행하는 생산 라인 AGV 의 현장 관측에서 잠재적 통신 장애를 가리키는 반복 현상을 확인하고, 이를 이상으로 정의해 다변량 시계열 이상 탐지 방식들을 비교했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1374\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약 기준 초록: production line AGVs 의 field observations 에서 latent communication failure 를 가리키는 recurrent phenomena 확인, 공장 Wi-Fi 에 맞는 탐지 방식 비교. 선택 방식·성능은 미확인\",\"as_of\":\"2025-10\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f17\",\"claim\":\"Bertoli·Battilani·Fantuzzi(IFAC SAFEPROCESS 2024)는 각 AGV 와 주변 환경의 상호작용까지 고려한 다중 AGV 시스템 고장 진단 방법을 제안하고 제조 공장 사용 사례로 검증했으며, 기존 연구가 차량 내부 부품 진단과 환경과의 상호작용 기능 고장 식별로 나뉜다고 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1377\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약 기준: fault diagnosis in multi-AGVs system, considering the interaction between each single AGV and the environment; 제조 공장 사례로 검증. 공장·AGV 대수 미확인\",\"as_of\":\"2024-06\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"제조 공장 연구 두 건은 로봇 내부 고장과 환경·통신 쪽 원인을 나눠 다루므로, 통신 원인을 가리려면 로봇이 보내는 연결 상태(VDA 5050 CONNECTION_BROKEN) 외에 무선망 쪽 관측도 함께 써야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1374\",\"ref-1377\",\"ref-449\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"VDA connection.schema 는 MQTT 유언 메시지로 CONNECTION_BROKEN 만 알림. Bang 외는 공장 Wi-Fi 쪽 다변량 시계열로 잠재 통신 장애를 탐지\",\"as_of\":\"2026-10-09\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f19\",\"claim\":\"Aethon(2015)은 병원에 설치된 TUG 로봇 전체를 Wi-Fi 와 VPN 으로 연결한 클라우드 커맨드 센터를 연중무휴로 운영해, 알고리즘이 문제를 감지하면 지원 기술자가 대응하고 경보의 97% 이상을 원격으로 해결하며 나머지(복도를 막은 침대 등)는 병원 직원을 보내 처리한다고 밝혔다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1373\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: \\\"over 97 percent of all alerts that the robots make to the command center can be resolved remotely\\\"; 24시간·365일, Wi-Fi + VPN, 나머지는 고객 직원 파견\",\"as_of\":\"2015-12-15\",\"site_type\":\"병원\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f20\",\"claim\":\"LG유플러스는 H+양지병원(2021-11)의 약제배송로봇이 4층 약제부에서 승강기로 5~8층 간호실까지 가며 관제 웹으로 호출·이동 명령을 내릴 수 있다고 밝혔으나, 상태 감시나 고장 알림은 공개 자료에 없다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1379\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 관제 웹으로 호출, 이동 명령을 내릴 수 있다고 설명. 상태 모니터링·장애 알림 언급 없음 (2021-11-02 보도자료)\",\"as_of\":\"2021-11-02\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\",\"vendor_claim\":true},{\"id\":\"f21\",\"claim\":\"Avidbots(2024)는 매장 청소 로봇의 상태·위치와 청소 이력을 원격으로 보여 주는 관제 소프트웨어와, 로봇 카메라와 탑재 진단으로 멈춘 로봇을 원격으로 다시 움직이게 하는 원격 지원 서비스를 설명하며, 로봇이 환경 변화로 갇힐 수 있다고 적지만 그때의 자동 알림은 설명하지 않는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1375\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: Remote Assistance 가 \\\"the robot's cameras and onboard diagnostics\\\"로 현장 문제를 해결, 원격 관제로 상태·위치·이력 확인. 갇힘 알림 기능 설명 없음\",\"as_of\":\"2024-06-11\",\"site_type\":\"상업 시설\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f22\",\"claim\":\"Equinor 의 이산화탄소 포집·저장 시설에서는 4족 로봇이 계기 판독·밸브 위치 확인·누출 탐지를 하며 현장 운영자가 점검 임무를 직접 만든다고 보도되어, 기타 현장에서는 로봇이 설비 이상 탐지의 관측 수단이 된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-995\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"4족 로봇의 계기 판독·밸브 위치 확인·누출 탐지, 운영자가 연구개발 부서 도움 없이 임무 생성 (재인용: 2026-10-09-14)\",\"as_of\":\"2025-11-21\",\"site_type\":\"기타\",\"flow_item\":\"작업 대상\",\"source_unopened\":true},{\"id\":\"f23\",\"claim\":\"Herrmann 외(2024-10, ICLR 2025 워크숍)는 산업 로봇 지원 티켓의 이슈 설명·로그 파일·지원 엔지니어 소통·기준 근본 원인으로 2,500건이 넘는 비공개 벤치마크 SYSDIAGBENCH 를 만들고, QLoRA 로 미세 조정한 70억 매개변수 모델이 GPT-4 보다 진단 정확도가 높았다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1372\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SYSDIAGBENCH: 'over 2500 reported issues', proprietary. 7B QLoRA 모델이 GPT-4 대비 정확도 우위, 전문가 연구로 LLM 평가자 검증. 로봇 종류는 미명시(산업 응용)\",\"as_of\":\"2024-10-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"SYSDIAGBENCH 는 단일 출처의 비공개 산업 로봇 지원 티켓 기반이어서, 제조사가 다른 이동로봇 플릿의 실행 기록·오류 코드에 언어 모델 고장 진단을 적용해 정확도를 잰 공개 사례는 여전히 확인되지 않은 것으로 보인다(oq-315 미해결).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1372\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤치마크 비공개(proprietary), 대상은 industrial applications 의 robotics issues. 이종 이동로봇 플릿 데이터 언급 없음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"Pettinari 외(Robotics and Autonomous Systems, 2026)는 로봇 임무 데이터를 프로세스 마이닝 표준에 맞는 사건 로그로 만드는 방법과 도구 ROBOTRACE 를 제안하며, 임무 실행을 더 높은 추상 수준으로 기록하고 공간 점유·에너지 소비·상호작용 같은 저수준 맥락 데이터를 결합하라고 하고, 다중 로봇 사례와 전문가 연구로 평가했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1376\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 임무 실행을 higher level of abstraction 으로 기록해 제어 흐름 발견, spatial occupancy·energy·interactions 결합, multi-robot case study 와 전문가 연구로 평가\",\"as_of\":\"2026\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"ROBOTRACE 초록은 병목 탐지나 이동로봇·작업대·승강기가 섞인 창고 흐름을 다루지 않아, oq-018 에는 로봇 임무 기록을 사건 로그로 만드는 방법 쪽 부분 근거만 되는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1376\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"초록에 process discovery·contextual visualizations 만 있고 bottleneck·warehouse 언급 없음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f27\",\"claim\":\"2절의 핵심 질문에 대해 공개 규약이 주는 재료를 원인 범주별로 모으면 로봇은 VDA 5050 오류 수준·유형과 Open-RMF 로봇 issues, 설비는 Open-RMF 문 모드, 통신은 VDA 5050 연결 상태, 앞 작업은 Open-RMF 작업 사건 의존(deps)과 MassRobotics 외부·내부 사건 대기 상태이며, 이를 같은 시각과 작업 id 로 맞춰 판정하는 규칙은 ROP 가 정해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-051\",\"ref-1371\",\"ref-313\",\"ref-449\",\"ref-111\",\"ref-230\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 규약은 자기 필드만 정의: errorLevel/errorType, issues, DoorMode, connectionState, event_state.deps, operationalState(waitingExternalEvent·waitingInternalEvent). 서로의 판정 규칙은 어느 출처에도 없음\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 의 로봇 state 메시지 JSON 스키마(main 브랜치, 3.0.0). 오류 객체(errorType·errorLevel·errorReferences), 안전 상태, 운용 모드, 전원 상태 정의를 다시 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema\"},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세 본문. 사전 정의 오류 유형과 기본 오류 수준을 확인했다(본문 앞 100,000자만 열람).\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-111\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 작업 상태 JSON 스키마. 상태 토큰 12값, 배차 상태, 단계·사건 상태와 사건 의존(deps), 중단·취소 기록.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-313\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 문 모드 메시지. closed·moving·open·offline·unknown 다섯 값.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-448\",\"org\":\"Open Robotics (open-rmf/rmf_internal_msgs)\",\"title\":\"rmf_task_msgs/msg/Alert.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 경보 메시지. 심각도 등급 INFO·WARNING·ERROR, 응답 목록, 관련 작업 id.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-449\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/connection.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 연결 상태 스키마. MQTT 유언 메시지로 CONNECTION_BROKEN 을 알리고 ONLINE·OFFLINE·HIBERNATING 을 구분한다.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"MassRobotics AMR 상호운용 표준 JSON 스키마. statusReport 의 운용 상태 아홉 값(waitingHumanEvent·waitingExternalEvent·waitingInternalEvent 포함)과 오류 코드 배열.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-445\",\"org\":\"ROS (ros/diagnostics GitHub)\",\"title\":\"diagnostics — README (ros2 branch)\",\"published\":null,\"url\":\"https://github.com/ros/diagnostics/blob/ros2/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"ROS 2 diagnostics 저장소 README. /diagnostics 토픽, 집계기, 원격 기록 전달 패키지와 데이터 흐름.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-995\",\"org\":\"Offshore Technology (Eve Thomas)\",\"title\":\"Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones\",\"published\":\"2025-11-21\",\"url\":\"https://www.offshore-technology.com/features/equinor-autonomous-robotics/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. Equinor 시설의 4족 점검 로봇이 계기 판독·밸브 확인·누출 탐지를 하고 운영자가 임무를 직접 만든다는 기사(이전 실행 2026-10-09-14 재인용).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1367\",\"org\":\"Carlson, J. (University of South Florida, 지도교수 Robin Murphy)\",\"title\":\"Analysis of How Mobile Robots Fail in the Field\",\"published\":\"2004\",\"url\":\"https://digitalcommons.usf.edu/etd/980\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"수색·구조와 도시 군사 작전 현장의 13개 연구에서 모은 지상 이동로봇 고장 44건으로 물리적·사람 고장 분류 체계를 제안한 석사 논문. 초록 페이지를 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://digitalcommons.usf.edu/etd/980\"},{\"id\":\"ref-1368\",\"org\":\"Mehrotra, S., Sycara, K., Lewis, M., Chien, S. Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society)\",\"title\":\"Effects of alarms on control of robot teams\",\"published\":\"2011\",\"url\":\"https://d-scholarship.pitt.edu/12400/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"다중 로봇 수색·구조 과제에서 경보 없음·모든 경보 표시·최상위 경보만 표시를 비교한 사용자 연구. 피츠버그대 저장소의 초록 페이지를 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://d-scholarship.pitt.edu/12400/\"},{\"id\":\"ref-1369\",\"org\":\"IEC\",\"title\":\"IEC 62682:2022 Management of alarm systems for the process industries\",\"published\":\"2022-12-08\",\"url\":\"https://webstore.iec.ch/publication/65543\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"공정 산업 경보 시스템 관리 표준 제2판의 IEC 웹스토어 소개 페이지. 범위·부가 기능(경보·사건 기록, 이력 저장소, 성과 지표)을 확인했고 유료 본문은 열지 못했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://webstore.iec.ch/publication/65543\"},{\"id\":\"ref-1370\",\"org\":\"ROS 2 (ros2/common_interfaces GitHub)\",\"title\":\"diagnostic_msgs/msg/DiagnosticStatus.msg\",\"published\":null,\"url\":\"https://github.com/ros2/common_interfaces/blob/rolling/diagnostic_msgs/msg/DiagnosticStatus.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"ROS 2 진단 상태 메시지 정의. 수준 OK·WARN·ERROR·STALE 과 name·message·hardware_id·values 필드.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/common_interfaces/rolling/diagnostic_msgs/msg/DiagnosticStatus.msg\"},{\"id\":\"ref-1371\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 로봇 상태 JSON 스키마. 상태 일곱 값, 운영자가 해결할 문제 목록(issues), 배터리, 상호 배제 그룹.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/robot_state.json\"},{\"id\":\"ref-1372\",\"org\":\"Herrmann, J. E., Mandakath Gopinath, A., Norrlöf, M., & Müller, M. N. (arXiv)\",\"title\":\"Diagnosing Robotics Systems Issues with Large Language Models\",\"published\":\"2024-10-06\",\"url\":\"https://arxiv.org/abs/2410.09084\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"산업 로봇 지원 티켓 2,500여 건의 비공개 벤치마크 SYSDIAGBENCH 로 언어 모델 근본 원인 분석을 평가한 프리프린트. 초록 페이지를 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2410.09084\"},{\"id\":\"ref-1373\",\"org\":\"Aethon\",\"title\":\"Aethon TUG Autonomous Mobile Robot Discussed in RIA Magazine\",\"published\":\"2015-12-15\",\"url\":\"https://aethon.com/aethon-tug-autonomous-mobile-robot-discussed-ria-magazine/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"병원용 TUG 로봇의 클라우드 커맨드 센터 원격 지원과 경보 원격 해결 비율을 소개한 제조사 글(RIA 기사 인용).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://aethon.com/aethon-tug-autonomous-mobile-robot-discussed-ria-magazine/\"},{\"id\":\"ref-1374\",\"org\":\"Bang, S., Shin, J. H., & Paek, J. (중앙대학교·현대자동차그룹; ICTC 2025)\",\"title\":\"Anomaly Detection of AGV Communication Failures in Factory Wi-Fi Network\",\"published\":\"2025-10\",\"url\":\"https://nsl.cau.ac.kr/papers/ictc/ictc2025-bang-wifi-anomaly.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 공장 Wi-Fi 에서 생산 라인 AGV 의 잠재적 통신 장애를 다변량 시계열 이상 탐지로 다룬 학회 논문. PDF 본문 텍스트를 추출하지 못해 검색 요약의 초록 기준이다.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1375\",\"org\":\"Avidbots\",\"title\":\"Robots in Retail: Floor Cleaning Robots' Remote Capabilities\",\"published\":\"2024-06-11\",\"url\":\"https://avidbots.com/resources/blog/robots-in-retail-floor-cleaning-robots-remote-capabilities/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"매장 청소 로봇의 원격 관제(상태·위치·이력)와 카메라·탑재 진단을 쓰는 원격 지원 서비스를 소개한 제조사 블로그.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://avidbots.com/resources/blog/robots-in-retail-floor-cleaning-robots-remote-capabilities/\"},{\"id\":\"ref-1376\",\"org\":\"Pettinari, S., Re, B., Rossi, L., & Tiezzi, F. (Robotics and Autonomous Systems)\",\"title\":\"Enhancing Robotic Mission Analysis via Process Mining and Visual Analytics\",\"published\":\"2026\",\"url\":\"https://pubblicazioni.unicam.it/handle/11581/504004\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"로봇 임무 데이터를 프로세스 마이닝 사건 로그로 만들고 ROBOTRACE 도구로 과정 발견·맥락 시각화를 하는 방법(DOI 10.1016/j.robot.2026.105680). 기관 저장소 초록 페이지를 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://pubblicazioni.unicam.it/handle/11581/504004\"},{\"id\":\"ref-1377\",\"org\":\"Bertoli, A., Battilani, N., & Fantuzzi, C. (12th IFAC SAFEPROCESS 2024)\",\"title\":\"Fault Diagnosis and Identification in AGVs System\",\"published\":\"2024-06\",\"url\":\"https://iris.unimore.it/bitstream/11380/1372170/1/1-s2.0-S2405896324003094-main.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 다중 AGV 시스템에서 AGV 와 환경의 상호작용을 고려한 고장 진단을 제조 공장 사례로 검증한 학회 논문. PDF 는 메타데이터만 읽혀 검색 요약 기준이다.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1378\",\"org\":\"네이버클라우드 (NAVER Cloud)\",\"title\":\"ARC brain 로봇 관리 (VPC) — 사용 가이드\",\"published\":\"2026-09-17\",\"url\":\"https://guide.ncloud-docs.com/docs/arc-brain-admin-robot-mgmt-vpc\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"클라우드 로봇 관리 콘솔의 로봇 상태·통신 상태·배터리·이상 리포트(WARN·FATAL)·운영 이력 화면 항목을 설명한 국내 제조사 사용 설명서.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://guide.ncloud-docs.com/docs/arc-brain-admin-robot-mgmt-vpc\"},{\"id\":\"ref-1379\",\"org\":\"LG유플러스 (LG 미디어 보도자료)\",\"title\":\"LG유플러스, 자율주행 ‘U+약제배송로봇’이 H+양지병원 일손 거든다\",\"published\":\"2021-11-02\",\"url\":\"https://www.lg.co.kr/media/release/24050\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"H+양지병원 약제배송로봇의 승강기 이용 층간 이동과 관제 웹 호출·이동 명령을 소개한 보도자료. 상태 감시·고장 알림 언급은 없다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.lg.co.kr/media/release/24050\"}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"sections\":[\"3\",\"5\",\"7\",\"8\",\"10\",\"11\"],\"rationale\":\"갱신(차등): 섹션 3 — 오류 수준이 주문 계속·새 주문 수락 기준으로 나뉜다는 점(f1)과 원인 범주별 재료 종합(f27), 심각도 등급 불일치(f10) / 섹션 5 — 기존 물류창고 사례는 두고 현장 유형마다 나눠 추가: 병원 f19(벤더 주장 병기)·f20(벤더 주장, 국내), 제조 공장 f16·f17·f18(국내 생산 라인 AGV 통신 장애 포함), 상업 시설 f21(벤더 주장), 기타 f22. 가정·실외는 이번에도 근거 없음 / 섹션 7 — 표준 표에 VDA 5050 오류 참조·사전 정의 오류 유형·안전 상태·전원 상태(f2·f3·f5, 바뀐 출처 재확인), Open-RMF 로봇 상태 issues(f6)·사건 의존(f7), ROS 2 진단 수준(f8, 연계 대상), 국내 클라우드 로봇 관리 콘솔 항목(f9), IEC 62682:2022(f11) 행 추가 / 섹션 8 — 고장 분류 체계(f14), 다중 로봇 경보 제시 연구(f13), 언어 모델 고장 진단 벤치마크(f23), 로봇 임무 프로세스 마이닝(f25) 추가 / 섹션 10 — 47. AI·학습·적응과 모델 운영 연결 문장의 근거를 '분류 개정 전 원문 8장'에서 2절에 인용된 개정 원문 L. AI·학습 기술 주석(장애 분석은 38번에 적용)으로 고치고, 42. 분산 시스템·통신·컴퓨팅 구조와의 연결(f16·f18 통신 원인) 추가 / 섹션 11 — oq-033·oq-073 부분 근거(f10), oq-295 미해결(f11·f12·f13), oq-074 미해결(f14·f15), oq-315 미해결(f23·f24), oq-018·oq-210 부분 근거(f25·f26), 새 질문 2건. 4·6·7·8·11절 본문은 주제 페이지로 분리되어 있으므로 해당 주제 페이지(docs/topics/2026/2026-09-25-area19-s7.md 등)로의 반영은 분량 규칙에 따른다. 다음 실행 후보: 37. 관제 화면·실행 기록 페이지에 f9(국내 관제 콘솔 화면 항목)·f13 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"오류 수준\",\"term_en\":\"Error Level (VDA 5050 errorLevel)\",\"definition\":\"VDA 5050 에서 로봇이 보고하는 오류를 진행 중 주문을 계속할 수 있는지와 새 주문을 받을 수 있는지에 따라 WARNING·URGENT·CRITICAL·FATAL 네 단계로 나눈 값이다.\"},{\"term_ko\":\"진단 수준\",\"term_en\":\"Diagnostic Level (ROS 2 diagnostic_msgs)\",\"definition\":\"ROS 2 진단 메시지가 장치·구성요소 상태를 OK·WARN·ERROR·STALE 네 값 가운데 하나로 알리는 필드이며, STALE 은 진단 갱신이 끊긴 상태를 뜻한다.\"},{\"term_ko\":\"경보 기반 감독 제어\",\"term_en\":\"Annunciator-Driven Supervisory Control (ADSC)\",\"definition\":\"경보로 운영자의 주의를 이상이 생긴 대상에 돌려 여러 대상을 감독하게 하는 제어 방식으로, 다중 로봇 관제에서는 로봇의 자기 진단 결과를 경보로 띄워 구현한다.\"}],\"open_questions_new\":[\"VDA 5050 오류 수준 네 단계, Open-RMF 경보 세 단계, ROS 2 진단 네 값, 제조사 관제 콘솔의 두 단계처럼 서로 다른 심각도 등급을 하나의 ROP 경보 우선순위로 맞추는 공개 대응 규칙이나 그 효과를 평가한 연구가 있는가? | 관련 영역: 38. 모니터링·이상 탐지·원인 분석, 20. 로봇·제조사 관제 연동 | 근거: f10 | 종류: 일반\",\"공장 Wi-Fi 쪽 측정값으로 탐지한 AGV 통신 장애를 로봇이 보고하는 연결 상태와 함께 써서 플릿 관제의 지연 원인 판정(통신 원인)에 연결한 사례나 방법이 있는가? | 관련 영역: 38. 모니터링·이상 탐지·원인 분석, 42. 분산 시스템·통신·컴퓨팅 구조 | 근거: f18 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":22,\"cross_checked_count\":0,\"unverified\":[\"f3 VDA 5050 명세의 오류 절(6.6.5 등) 뒷부분 107,761자 미열람 — 사전 정의 오류 유형 전체 목록과 information 배열 수준은 미확인\",\"f11 IEC 62682:2022 본문 미열람(유료), 경보 홍수 정의(10분 10건)는 2차 출처에만 있어 넣지 않음\",\"f16 Bang 외 논문의 선택 탐지 방식·성능·AGV 대수 미확인(PDF 텍스트 추출 실패)\",\"f17 Bertoli 외 논문의 공장 종류·AGV 대수·결과 미확인(PDF 텍스트 추출 실패, ScienceDirect 403)\",\"f19 Aethon 97% 원격 해결 수치는 벤더 주장이며 독립 확인 실패\",\"f20·f21 벤더 기능 설명 독립 확인 없음\",\"f22 ref-995 는 이전 실행 재인용이며 이번에 다시 열지 않음\",\"실외 현장(보도 배송로봇 원격 감시) 사례: Starship 등 자율 비율은 회사 주장뿐이고 감시·알림 방식 공개 자료 없음\",\"가정 현장 사례 없음\",\"oq-075 국내 원인별 정지·지연 비율 실측 자료 미확인\"],\"scope_violations\":[\"f5: 비상정지·배터리 건강 상태를 만드는 로봇 내부 진단은 로봇 자체 지능·제어 쪽이라 claim 을 '연계 대상: '으로 시작했고 ROP 몫은 보고값 수집·원인 범주 반영으로 한정해야 함\",\"f8: ROS 2 diagnostics 는 로봇 내부 하드웨어 진단이라 '연계 대상: '으로 표시\",\"f16·f18: 공장 무선망 자체의 운영·진단은 연계 대상(통신 인프라)이며 ROP 는 그 결과를 원인 판정에 쓰는 쪽으로만 서술해야 함\",\"f22: 설비 이상 판정·보전 작업 지시는 설비 보전 시스템 쪽 연계 대상(oq-194)\"],\"budget_used\":{\"queries\":17,\"sources\":13},\"limits\":\"web_fetch_available: true · fetch_mode full. 갱신(update) 실행이며 정정 요청이 없어 비거나 약한 절(5절 현장 사례, 3·7절 표준 필드, 8절 연구, 10절 연결 근거 문구, 11절 열린 질문)과 바뀐 출처(VDA 5050 main 3.0.0 state.schema·명세)만 조사했다. 검색 17회/30, 신규 출처 13건/15(ref-1367~ref-1379, 예약 구간 안), 재사용 9건(ref-051·ref-031 은 github_raw 로 다시 열었고 ref-111·ref-313·ref-448·ref-449·ref-230·ref-445 는 입력의 원문 텍스트, ref-995 는 이전 실행 재인용으로 미열람). 신규 출처 가운데 ref-1374·ref-1377 은 PDF 본문을 읽지 못해 fetched false·원문 미열람이고 나머지 11건은 원문 또는 공식 소개·초록 페이지를 열었다. 교차 확인 0건: 같은 기관(VDA)의 스키마·명세는 독립 출처가 아니어서 cross_checked 를 주지 않았다. 벤더 주장 3건(f19·f20·f21)은 추정·vendor_claim. 현장 유형: 병원(f19·f20, 국내 1건), 제조 공장(f16·f17·f18, 국내 1건), 상업 시설(f21), 기타(f22). 실외·가정은 근거를 찾지 못했다. 핵심 질문에 대해서는 규약별 원인 재료를 범주로 모은 종합(f27, 추정)만 있고 판정 규칙을 정한 공개 자료는 없다. 해결 제안한 열린 질문 없음: oq-033·oq-073 부분 근거(f10), oq-295·oq-074·oq-315 미해결, oq-018·oq-210 부분 근거(f25·f26). 교차 규칙: 언어 모델 고장 진단(f23·f24)은 47. AI·학습·적응과 모델 운영과 이 영역에 함께 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈을 섞지 않았다. 용어집에 이미 있는 경보 관리·근본 원인 분석·고장 탐지·진단·프로세스 마이닝·관측성은 후보로 내지 않았다. 입력 누락 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-10-09-16",
+    "date": "2026-10-09",
+    "run_type": "update",
+    "target": {
+      "area_no": 38,
+      "area_name": "38. 모니터링·이상 탐지·원인 분석",
+      "category": "J. 현장 운영·관제"
+    },
+    "gaps": [
+      "섹션 5. 적용 사례 (현장 유형 명시) — 개정 전(2026-09-25)에 쓴 물류창고 가상 시나리오 하나뿐이고 병원·제조 공장·상업 시설·가정·실외·기타 사례 없음",
+      "섹션 3·7 — VDA 5050 오류 정의가 오류 수준만 인용되고 오류 유형(errorType) 사전 정의값·오류 참조(errorReferences)·안전 상태가 없음, Open-RMF 로봇 상태의 issues 필드와 ROS 2 진단 수준이 없음(바뀐 출처: VDA 5050 main 3.0.0 재확인)",
+      "섹션 7·11 — 로봇 운영용 경보 관리 표준(oq-295)과 경보 심각도 등급의 대응(oq-073, oq-033) 근거 없음",
+      "섹션 8. 대표 연구와 자료 — 논문이 모두 원문 미열람이며 공개 고장 분류 체계(oq-074), 다중 로봇 경보 제시 연구, 언어 모델 고장 진단(oq-315), 로봇 실행 기록 프로세스 마이닝(oq-018, oq-210)의 최근 근거 없음",
+      "섹션 10 — 47. AI·학습·적응과 모델 운영 연결 문장이 '분류 개정 전 원문 8장의 교차 규칙'을 근거로 들고 있어 개정 원문의 L. AI·학습 기술 주석(2절에 인용됨) 기준으로 고칠 필요",
+      "정정 요청 없음"
+    ],
+    "research_questions": [
+      "지연의 원인이 로봇인지, 설비인지, 통신인지, 앞 작업인지 어떻게 찾을까? [분류원문]",
+      "바뀐 출처·oq-033·oq-073: VDA 5050 3.0.0 의 오류 수준·오류 유형·안전 상태, Open-RMF 로봇 상태의 issues 와 작업 사건 의존(deps), ROS 2 진단 수준은 지금 어떻게 정의되어 있고 원인 범주 대응에 무엇을 주는가? (섹션 3·7 겨냥)",
+      "oq-295 다중 로봇 플릿 관제에 쓸 경보 관리 표준·지침이 있는가, 공정 산업 경보 관리 표준은 무엇을 다루며 다중 로봇 경보 제시 방식을 비교한 연구는 무엇인가? (섹션 7·8·11 겨냥)",
+      "oq-074 로봇 고장·지연을 원인별로 나누는 공개 분류 체계나 데이터셋이 있는가? (섹션 8·11 겨냥)",
+      "물류창고 밖의 현장 유형(병원·제조 공장·상업 시설·실외·기타)에서 로봇 이상 탐지·원격 감시·원인 구분을 운영한 사례는 무엇인가? 한국 사례 우선 (섹션 5 겨냥)",
+      "oq-315·oq-018·oq-210 언어 모델 기반 고장 진단과 로봇 임무 기록의 프로세스 마이닝에 새 근거가 있는가? (섹션 8·11 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "VDA 5050 3.0.0 의 state 스키마에서 오류 객체는 오류 유형(errorType)과 오류 수준(errorLevel)을 필수로 하고, 오류 수준 네 단계를 진행 중 주문을 계속할 수 있는지와 새 주문을 받을 수 있는지로 구분한다(WARNING·URGENT 는 둘 다 가능, CRITICAL 은 진행 중 주문 계속 불가, FATAL 은 둘 다 불가하며 사용자 개입 필요).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "errorLevel enum WARNING·URGENT·CRITICAL·FATAL. FATAL: \"User intervention is required, mobile robot is unable to continue active or accept new order.\" (GitHub main 브랜치 state.schema, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f2",
+        "claim": "VDA 5050 3.0.0 의 오류 객체는 오류 참조(errorReferences)로 오류를 nodeId·edgeId·orderId·actionId 같은 주문 요소에 연결하고, 상세 설명(errorDescription)과 해결 힌트(errorHint)를 담을 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "errorReferences: referenceKey(nodeId, edgeId, orderId, actionId 등)·referenceValue 필수 쌍. errorDescription 은 상세 설명과 가능한 원인, errorHint 는 해결 방법 힌트 (확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "VDA 5050 3.0.0 은 오류 유형을 확장 가능한 열거로 두면서 명세 본문에 NO_ROUTE_TO_TARGET·NODE_UNREACHABLE·OUTSIDE_OF_CORRIDOR·BLOCKED_ZONE_VIOLATION·RELEASE_LOST·MOBILE_ROBOT_NOT_AVAILABLE·VALIDATION_FAILURE 같은 사전 정의 오류 유형과 기본 오류 수준(예: 구역·통로 위반은 CRITICAL, 경로 없음은 WARNING)을 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031",
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "state.schema 의 errorType 은 'extensible enumeration'. 명세 3.0.0 판 6.1.4·6.4 절 등에 NO_ROUTE_TO_TARGET(WARNING), BLOCKED_ZONE_VIOLATION(CRITICAL), RELEASE_LOST(CRITICAL) 등 정의(명세 앞 100,000자만 열람)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f4",
+        "claim": "VDA 5050 3.0.0 의 사전 정의 오류 유형은 주문 검증·경로·구역·가용성처럼 로봇이 스스로 판정할 수 있는 원인에 집중되어 있어, 문 같은 설비 원인이나 앞 작업 지연은 오류 유형만으로 가려지지 않으므로 ROP 가 설비 상태(문 모드)와 작업 상태를 함께 써서 자체 원인 범주를 만들어야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-313",
+          "ref-111"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "VDA 5050 오류 유형 목록에 설비(문·승강기) 원인 항목이 보이지 않음(열람 범위 기준). 문 모드는 Open-RMF DoorMode, 작업 지연·차단은 Open-RMF task_state 의 status 에 따로 있음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "연계 대상: VDA 5050 3.0.0 의 state 메시지는 로봇 건강 상태의 재료로 비상정지 종류(activeEmergencyStop: MANUAL·REMOTE·NONE)와 보호 필드 침범 여부(fieldViolation), 운용 모드(STARTUP·AUTOMATIC·SEMIAUTOMATIC·INTERVENED·MANUAL·SERVICE·TEACH_IN), 충전 상태·배터리 건강 상태(batteryHealth, %)·충전 여부를 보고하며, 이 값을 만드는 로봇 내부 진단은 제조사 몫이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "safetyState 필수: activeEmergencyStop(MANUAL·REMOTE·NONE), fieldViolation. powerSupply 필수: stateOfCharge, charging; 선택: batteryHealth \"State of health in percent.\" (확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "Open-RMF 로봇 상태 스키마(robot_state.json)는 로봇 상태를 uninitialized·offline·shutdown·idle·charging·working·error 일곱 값으로 두고, 운영자가 해결해야 하는 문제(예: 로봇이 갇힘·길을 잃음)를 issues 배열(category·detail)로 올리며, 배터리(0~1)와 점유·요청 중인 상호 배제 그룹(mutex_groups)을 함께 보고한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1371"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "status enum: uninitialized, offline, shutdown, idle, charging, working, error. issues: 운영자가 해결해야 할 문제(stuck, lost 예시), 항목은 category·detail (확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f7",
+        "claim": "Open-RMF 작업 상태 스키마의 사건 상태(event_state)는 그 사건이 기다리는 다른 사건 id 목록(deps)과 상태 토큰을 담아, 작업 지연이 앞 사건 대기 때문인지를 기록에서 따라갈 수 있는 재료가 된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-111"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "event_state.deps: \"This event may depend on other events.\" status 토큰에 blocked·delayed·underway 등 12값 (원문 텍스트 기준, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f8",
+        "claim": "연계 대상: ROS 2 diagnostics 체계는 하드웨어 드라이버 진단을 /diagnostics 토픽의 DiagnosticStatus 로 모으며, 진단 수준은 OK·WARN·ERROR·STALE 네 값이고 장치 이름·메시지·hardware_id·키-값 측정값을 담으며, 집계기(diagnostic_aggregator)와 원격 기록 전달(diagnostic_remote_logging) 패키지를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1370",
+          "ref-445"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "byte OK=0, WARN=1, ERROR=2, STALE=3; 필드 level·name·message·hardware_id·values. README: 진단을 /diagnostics 로 모아 /diagnostics_agg 로 집계, influxdb 등 원격 전달",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "네이버클라우드 ARC brain 관리 콘솔 문서(2026-09-17)는 로봇 상태(이동중·정지·충전 중·수동 제어·점검 중·에러), 통신 상태(정상·끊어짐), 배터리·CPU·메모리 사용률과 함께, 이상 리포트를 WARN(운영자 주의 필요)과 FATAL(서비스 중단·현장 대응 필요) 두 등급으로 나누고 상태 변경을 운영 이력으로 남긴다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1378"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "로봇 관리 상세: 상태 '이동중','정지','충전 중','수동 제어','점검 중','에러', 통신 '정상'/'끊어짐', 배터리 5% 이하 빨간색. 이상 리포트 등급 WARN·FATAL, 운영 이력(일간·주간·월간)",
+        "as_of": "2026-09-17",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "경보·오류 심각도 등급이 규약마다 달라(VDA 5050 네 단계, Open-RMF 경보 세 단계 INFO·WARNING·ERROR, ROS 2 진단 네 값, 국내 클라우드 로봇 관리 콘솔 두 단계 WARN·FATAL), 이종 로봇을 한 관제에서 다루는 ROP 는 등급을 공통 우선순위로 맞추는 대응 규칙을 스스로 정해야 할 것으로 보이며, 이번 조사에서도 공개 대응 규칙은 찾지 못했다(oq-033, oq-073).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-051",
+          "ref-448",
+          "ref-1370",
+          "ref-1378"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "VDA errorLevel 4값, rmf Alert.msg tier INFO=0·WARNING=1·ERROR=2, DiagnosticStatus OK·WARN·ERROR·STALE, ARC 이상 리포트 WARN·FATAL. 서로의 대응표는 어느 출처에도 없음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "IEC 62682:2022(제2판, 2022-12-08)는 공정 산업 설비의 경보 시스템 관리 원칙·절차를 정하며, 기본 공정 제어·경보 표시기·패키지 시스템·안전 계장 시스템에서 오는 경보를 다루고, 운영자 알림 외에 경보·사건 기록, 경보 이력 저장소, 경보 시스템 성과 지표 생성을 기능으로 들고, 연속·배치·이산 공정에 적용된다고 밝힌다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1369"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IEC 웹스토어 소개: \"applicable to continuous, batch, and discrete processes\"; 부가 기능으로 alarm and event log, alarm historian, performance metrics (표준 본문 미열람)",
+        "as_of": "2022-12-08",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f12",
+        "claim": "IEC 62682 는 이산 공정까지 적용 범위에 두지만 대상이 공정 산업 제어 시스템이어서, 다중 로봇 플릿 관제용 경보 우선순위·경보 홍수 기준을 정한 로봇 전용 표준·지침은 이번 조사에서도 확인하지 못했고 공정 경보 관리 표준을 옮겨 쓰는 수준으로 보인다(oq-295 미해결).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1369",
+          "ref-1368"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "IEC 62682 범위는 process industries 시설. 로봇 쪽 근거는 실험실 연구(2011 HFES)뿐. 경보 홍수 수치(10분 10건)는 2차 출처에만 있어 넣지 않음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "Mehrotra·Sycara·Lewis·Chien·Wang(HFES 2011)은 다중 로봇 수색·구조 과제에서 경보 없음, 모든 경보 표시, 최상위 경보 하나만 보여 주는 결정 보조의 세 조건을 비교했고, 탐색 면적·발견 수에는 차이가 없었으나 모든 경보를 표시한 조건의 운영자가 로봇 고장과 대상 발견을 더 빨리 알아차렸다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1368"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "세 조건: no alarms, freely annunciated alarms(ADSC), top alarm only 결정 보조. 면적·발견 수 차이 없음, 자유 표시 조건이 고장·대상 탐지 더 빠름 (실험실 USAR 과제)",
+        "as_of": "2011",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f14",
+        "claim": "Carlson(2004, 사우스플로리다대 석사 논문)은 수색·구조와 도시 군사 작전 현장의 13개 신뢰성 연구에서 모은 지상 이동로봇 고장 44건으로 물리적 고장과 사람 고장을 나누는 분류 체계를 제안했고, 평균 고장 간격을 고장 정의에 따라 6~20시간으로, 물리적 고장의 주된 원인을 구동부와 제어 시스템으로, 무선 통신 거리·대역폭 부족을 공통 문제로 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1367"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Overall robot reliability in field environments is low\", MTBF 6~20시간, 구동부·제어 시스템이 물리적 고장의 최다 원인, 사람 고장은 slip 이 mistake 보다 많음, 약 2/3 현장 수리 가능",
+        "as_of": "2004",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f15",
+        "claim": "Carlson 의 분류 체계는 단일 로봇의 물리적·사람 고장을 다루며 설비 대기나 앞 작업 지연은 범주로 두지 않고, VDA 5050 오류 유형도 확장 가능한 열거여서, 물류 로봇 작업 지연을 로봇·설비·통신·공정 원인으로 나누는 공개 분류 체계나 현장 데이터셋은 여전히 확인되지 않은 것으로 보인다(oq-074 미해결).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1367",
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Carlson 범주: physical(구동부·제어·통신 등) vs human(slip·mistake). VDA errorType 은 'extensible enumeration'으로 공통 원인 범주 없음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "Bang·Shin·Paek(ICTC 2025, 중앙대·현대자동차그룹)은 공장 Wi-Fi 로 운행하는 생산 라인 AGV 의 현장 관측에서 잠재적 통신 장애를 가리키는 반복 현상을 확인하고, 이를 이상으로 정의해 다변량 시계열 이상 탐지 방식들을 비교했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1374"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약 기준 초록: production line AGVs 의 field observations 에서 latent communication failure 를 가리키는 recurrent phenomena 확인, 공장 Wi-Fi 에 맞는 탐지 방식 비교. 선택 방식·성능은 미확인",
+        "as_of": "2025-10",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f17",
+        "claim": "Bertoli·Battilani·Fantuzzi(IFAC SAFEPROCESS 2024)는 각 AGV 와 주변 환경의 상호작용까지 고려한 다중 AGV 시스템 고장 진단 방법을 제안하고 제조 공장 사용 사례로 검증했으며, 기존 연구가 차량 내부 부품 진단과 환경과의 상호작용 기능 고장 식별로 나뉜다고 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1377"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약 기준: fault diagnosis in multi-AGVs system, considering the interaction between each single AGV and the environment; 제조 공장 사례로 검증. 공장·AGV 대수 미확인",
+        "as_of": "2024-06",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "제조 공장 연구 두 건은 로봇 내부 고장과 환경·통신 쪽 원인을 나눠 다루므로, 통신 원인을 가리려면 로봇이 보내는 연결 상태(VDA 5050 CONNECTION_BROKEN) 외에 무선망 쪽 관측도 함께 써야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1374",
+          "ref-1377",
+          "ref-449"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "VDA connection.schema 는 MQTT 유언 메시지로 CONNECTION_BROKEN 만 알림. Bang 외는 공장 Wi-Fi 쪽 다변량 시계열로 잠재 통신 장애를 탐지",
+        "as_of": "2026-10-09",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f19",
+        "claim": "Aethon(2015)은 병원에 설치된 TUG 로봇 전체를 Wi-Fi 와 VPN 으로 연결한 클라우드 커맨드 센터를 연중무휴로 운영해, 알고리즘이 문제를 감지하면 지원 기술자가 대응하고 경보의 97% 이상을 원격으로 해결하며 나머지(복도를 막은 침대 등)는 병원 직원을 보내 처리한다고 밝혔다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1373"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: \"over 97 percent of all alerts that the robots make to the command center can be resolved remotely\"; 24시간·365일, Wi-Fi + VPN, 나머지는 고객 직원 파견",
+        "as_of": "2015-12-15",
+        "site_type": "병원",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f20",
+        "claim": "LG유플러스는 H+양지병원(2021-11)의 약제배송로봇이 4층 약제부에서 승강기로 5~8층 간호실까지 가며 관제 웹으로 호출·이동 명령을 내릴 수 있다고 밝혔으나, 상태 감시나 고장 알림은 공개 자료에 없다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1379"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 관제 웹으로 호출, 이동 명령을 내릴 수 있다고 설명. 상태 모니터링·장애 알림 언급 없음 (2021-11-02 보도자료)",
+        "as_of": "2021-11-02",
+        "site_type": "병원",
+        "flow_item": "수행 자원",
+        "vendor_claim": true
+      },
+      {
+        "id": "f21",
+        "claim": "Avidbots(2024)는 매장 청소 로봇의 상태·위치와 청소 이력을 원격으로 보여 주는 관제 소프트웨어와, 로봇 카메라와 탑재 진단으로 멈춘 로봇을 원격으로 다시 움직이게 하는 원격 지원 서비스를 설명하며, 로봇이 환경 변화로 갇힐 수 있다고 적지만 그때의 자동 알림은 설명하지 않는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1375"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: Remote Assistance 가 \"the robot's cameras and onboard diagnostics\"로 현장 문제를 해결, 원격 관제로 상태·위치·이력 확인. 갇힘 알림 기능 설명 없음",
+        "as_of": "2024-06-11",
+        "site_type": "상업 시설",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f22",
+        "claim": "Equinor 의 이산화탄소 포집·저장 시설에서는 4족 로봇이 계기 판독·밸브 위치 확인·누출 탐지를 하며 현장 운영자가 점검 임무를 직접 만든다고 보도되어, 기타 현장에서는 로봇이 설비 이상 탐지의 관측 수단이 된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-995"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "4족 로봇의 계기 판독·밸브 위치 확인·누출 탐지, 운영자가 연구개발 부서 도움 없이 임무 생성 (재인용: 2026-10-09-14)",
+        "as_of": "2025-11-21",
+        "site_type": "기타",
+        "flow_item": "작업 대상",
+        "source_unopened": true
+      },
+      {
+        "id": "f23",
+        "claim": "Herrmann 외(2024-10, ICLR 2025 워크숍)는 산업 로봇 지원 티켓의 이슈 설명·로그 파일·지원 엔지니어 소통·기준 근본 원인으로 2,500건이 넘는 비공개 벤치마크 SYSDIAGBENCH 를 만들고, QLoRA 로 미세 조정한 70억 매개변수 모델이 GPT-4 보다 진단 정확도가 높았다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1372"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SYSDIAGBENCH: 'over 2500 reported issues', proprietary. 7B QLoRA 모델이 GPT-4 대비 정확도 우위, 전문가 연구로 LLM 평가자 검증. 로봇 종류는 미명시(산업 응용)",
+        "as_of": "2024-10-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "SYSDIAGBENCH 는 단일 출처의 비공개 산업 로봇 지원 티켓 기반이어서, 제조사가 다른 이동로봇 플릿의 실행 기록·오류 코드에 언어 모델 고장 진단을 적용해 정확도를 잰 공개 사례는 여전히 확인되지 않은 것으로 보인다(oq-315 미해결).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1372"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤치마크 비공개(proprietary), 대상은 industrial applications 의 robotics issues. 이종 이동로봇 플릿 데이터 언급 없음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "Pettinari 외(Robotics and Autonomous Systems, 2026)는 로봇 임무 데이터를 프로세스 마이닝 표준에 맞는 사건 로그로 만드는 방법과 도구 ROBOTRACE 를 제안하며, 임무 실행을 더 높은 추상 수준으로 기록하고 공간 점유·에너지 소비·상호작용 같은 저수준 맥락 데이터를 결합하라고 하고, 다중 로봇 사례와 전문가 연구로 평가했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1376"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 임무 실행을 higher level of abstraction 으로 기록해 제어 흐름 발견, spatial occupancy·energy·interactions 결합, multi-robot case study 와 전문가 연구로 평가",
+        "as_of": "2026",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "ROBOTRACE 초록은 병목 탐지나 이동로봇·작업대·승강기가 섞인 창고 흐름을 다루지 않아, oq-018 에는 로봇 임무 기록을 사건 로그로 만드는 방법 쪽 부분 근거만 되는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1376"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "초록에 process discovery·contextual visualizations 만 있고 bottleneck·warehouse 언급 없음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f27",
+        "claim": "2절의 핵심 질문에 대해 공개 규약이 주는 재료를 원인 범주별로 모으면 로봇은 VDA 5050 오류 수준·유형과 Open-RMF 로봇 issues, 설비는 Open-RMF 문 모드, 통신은 VDA 5050 연결 상태, 앞 작업은 Open-RMF 작업 사건 의존(deps)과 MassRobotics 외부·내부 사건 대기 상태이며, 이를 같은 시각과 작업 id 로 맞춰 판정하는 규칙은 ROP 가 정해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-051",
+          "ref-1371",
+          "ref-313",
+          "ref-449",
+          "ref-111",
+          "ref-230"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 규약은 자기 필드만 정의: errorLevel/errorType, issues, DoorMode, connectionState, event_state.deps, operationalState(waitingExternalEvent·waitingInternalEvent). 서로의 판정 규칙은 어느 출처에도 없음",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 의 로봇 state 메시지 JSON 스키마(main 브랜치, 3.0.0). 오류 객체(errorType·errorLevel·errorReferences), 안전 상태, 운용 모드, 전원 상태 정의를 다시 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema"
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세 본문. 사전 정의 오류 유형과 기본 오류 수준을 확인했다(본문 앞 100,000자만 열람).",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-111",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 작업 상태 JSON 스키마. 상태 토큰 12값, 배차 상태, 단계·사건 상태와 사건 의존(deps), 중단·취소 기록.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-313",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 문 모드 메시지. closed·moving·open·offline·unknown 다섯 값.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-448",
+        "org": "Open Robotics (open-rmf/rmf_internal_msgs)",
+        "title": "rmf_task_msgs/msg/Alert.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 경보 메시지. 심각도 등급 INFO·WARNING·ERROR, 응답 목록, 관련 작업 id.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-449",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/connection.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 연결 상태 스키마. MQTT 유언 메시지로 CONNECTION_BROKEN 을 알리고 ONLINE·OFFLINE·HIBERNATING 을 구분한다.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. statusReport 의 운용 상태 아홉 값(waitingHumanEvent·waitingExternalEvent·waitingInternalEvent 포함)과 오류 코드 배열.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-445",
+        "org": "ROS (ros/diagnostics GitHub)",
+        "title": "diagnostics — README (ros2 branch)",
+        "published": null,
+        "url": "https://github.com/ros/diagnostics/blob/ros2/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "ROS 2 diagnostics 저장소 README. /diagnostics 토픽, 집계기, 원격 기록 전달 패키지와 데이터 흐름.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-995",
+        "org": "Offshore Technology (Eve Thomas)",
+        "title": "Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones",
+        "published": "2025-11-21",
+        "url": "https://www.offshore-technology.com/features/equinor-autonomous-robotics/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. Equinor 시설의 4족 점검 로봇이 계기 판독·밸브 확인·누출 탐지를 하고 운영자가 임무를 직접 만든다는 기사(이전 실행 2026-10-09-14 재인용).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1367",
+        "org": "Carlson, J. (University of South Florida, 지도교수 Robin Murphy)",
+        "title": "Analysis of How Mobile Robots Fail in the Field",
+        "published": "2004",
+        "url": "https://digitalcommons.usf.edu/etd/980",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "수색·구조와 도시 군사 작전 현장의 13개 연구에서 모은 지상 이동로봇 고장 44건으로 물리적·사람 고장 분류 체계를 제안한 석사 논문. 초록 페이지를 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://digitalcommons.usf.edu/etd/980"
+      },
+      {
+        "id": "ref-1368",
+        "org": "Mehrotra, S., Sycara, K., Lewis, M., Chien, S. Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society)",
+        "title": "Effects of alarms on control of robot teams",
+        "published": "2011",
+        "url": "https://d-scholarship.pitt.edu/12400/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "다중 로봇 수색·구조 과제에서 경보 없음·모든 경보 표시·최상위 경보만 표시를 비교한 사용자 연구. 피츠버그대 저장소의 초록 페이지를 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://d-scholarship.pitt.edu/12400/"
+      },
+      {
+        "id": "ref-1369",
+        "org": "IEC",
+        "title": "IEC 62682:2022 Management of alarm systems for the process industries",
+        "published": "2022-12-08",
+        "url": "https://webstore.iec.ch/publication/65543",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "공정 산업 경보 시스템 관리 표준 제2판의 IEC 웹스토어 소개 페이지. 범위·부가 기능(경보·사건 기록, 이력 저장소, 성과 지표)을 확인했고 유료 본문은 열지 못했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://webstore.iec.ch/publication/65543"
+      },
+      {
+        "id": "ref-1370",
+        "org": "ROS 2 (ros2/common_interfaces GitHub)",
+        "title": "diagnostic_msgs/msg/DiagnosticStatus.msg",
+        "published": null,
+        "url": "https://github.com/ros2/common_interfaces/blob/rolling/diagnostic_msgs/msg/DiagnosticStatus.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "ROS 2 진단 상태 메시지 정의. 수준 OK·WARN·ERROR·STALE 과 name·message·hardware_id·values 필드.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/common_interfaces/rolling/diagnostic_msgs/msg/DiagnosticStatus.msg"
+      },
+      {
+        "id": "ref-1371",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 로봇 상태 JSON 스키마. 상태 일곱 값, 운영자가 해결할 문제 목록(issues), 배터리, 상호 배제 그룹.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/robot_state.json"
+      },
+      {
+        "id": "ref-1372",
+        "org": "Herrmann, J. E., Mandakath Gopinath, A., Norrlöf, M., & Müller, M. N. (arXiv)",
+        "title": "Diagnosing Robotics Systems Issues with Large Language Models",
+        "published": "2024-10-06",
+        "url": "https://arxiv.org/abs/2410.09084",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "산업 로봇 지원 티켓 2,500여 건의 비공개 벤치마크 SYSDIAGBENCH 로 언어 모델 근본 원인 분석을 평가한 프리프린트. 초록 페이지를 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2410.09084"
+      },
+      {
+        "id": "ref-1373",
+        "org": "Aethon",
+        "title": "Aethon TUG Autonomous Mobile Robot Discussed in RIA Magazine",
+        "published": "2015-12-15",
+        "url": "https://aethon.com/aethon-tug-autonomous-mobile-robot-discussed-ria-magazine/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "병원용 TUG 로봇의 클라우드 커맨드 센터 원격 지원과 경보 원격 해결 비율을 소개한 제조사 글(RIA 기사 인용).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://aethon.com/aethon-tug-autonomous-mobile-robot-discussed-ria-magazine/"
+      },
+      {
+        "id": "ref-1374",
+        "org": "Bang, S., Shin, J. H., & Paek, J. (중앙대학교·현대자동차그룹; ICTC 2025)",
+        "title": "Anomaly Detection of AGV Communication Failures in Factory Wi-Fi Network",
+        "published": "2025-10",
+        "url": "https://nsl.cau.ac.kr/papers/ictc/ictc2025-bang-wifi-anomaly.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 공장 Wi-Fi 에서 생산 라인 AGV 의 잠재적 통신 장애를 다변량 시계열 이상 탐지로 다룬 학회 논문. PDF 본문 텍스트를 추출하지 못해 검색 요약의 초록 기준이다.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1375",
+        "org": "Avidbots",
+        "title": "Robots in Retail: Floor Cleaning Robots' Remote Capabilities",
+        "published": "2024-06-11",
+        "url": "https://avidbots.com/resources/blog/robots-in-retail-floor-cleaning-robots-remote-capabilities/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "매장 청소 로봇의 원격 관제(상태·위치·이력)와 카메라·탑재 진단을 쓰는 원격 지원 서비스를 소개한 제조사 블로그.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://avidbots.com/resources/blog/robots-in-retail-floor-cleaning-robots-remote-capabilities/"
+      },
+      {
+        "id": "ref-1376",
+        "org": "Pettinari, S., Re, B., Rossi, L., & Tiezzi, F. (Robotics and Autonomous Systems)",
+        "title": "Enhancing Robotic Mission Analysis via Process Mining and Visual Analytics",
+        "published": "2026",
+        "url": "https://pubblicazioni.unicam.it/handle/11581/504004",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "로봇 임무 데이터를 프로세스 마이닝 사건 로그로 만들고 ROBOTRACE 도구로 과정 발견·맥락 시각화를 하는 방법(DOI 10.1016/j.robot.2026.105680). 기관 저장소 초록 페이지를 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://pubblicazioni.unicam.it/handle/11581/504004"
+      },
+      {
+        "id": "ref-1377",
+        "org": "Bertoli, A., Battilani, N., & Fantuzzi, C. (12th IFAC SAFEPROCESS 2024)",
+        "title": "Fault Diagnosis and Identification in AGVs System",
+        "published": "2024-06",
+        "url": "https://iris.unimore.it/bitstream/11380/1372170/1/1-s2.0-S2405896324003094-main.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 다중 AGV 시스템에서 AGV 와 환경의 상호작용을 고려한 고장 진단을 제조 공장 사례로 검증한 학회 논문. PDF 는 메타데이터만 읽혀 검색 요약 기준이다.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1378",
+        "org": "네이버클라우드 (NAVER Cloud)",
+        "title": "ARC brain 로봇 관리 (VPC) — 사용 가이드",
+        "published": "2026-09-17",
+        "url": "https://guide.ncloud-docs.com/docs/arc-brain-admin-robot-mgmt-vpc",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "클라우드 로봇 관리 콘솔의 로봇 상태·통신 상태·배터리·이상 리포트(WARN·FATAL)·운영 이력 화면 항목을 설명한 국내 제조사 사용 설명서.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://guide.ncloud-docs.com/docs/arc-brain-admin-robot-mgmt-vpc"
+      },
+      {
+        "id": "ref-1379",
+        "org": "LG유플러스 (LG 미디어 보도자료)",
+        "title": "LG유플러스, 자율주행 ‘U+약제배송로봇’이 H+양지병원 일손 거든다",
+        "published": "2021-11-02",
+        "url": "https://www.lg.co.kr/media/release/24050",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "H+양지병원 약제배송로봇의 승강기 이용 층간 이동과 관제 웹 호출·이동 명령을 소개한 보도자료. 상태 감시·고장 알림 언급은 없다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.lg.co.kr/media/release/24050"
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "sections": [
+          "3",
+          "5",
+          "7",
+          "8",
+          "10",
+          "11"
+        ],
+        "rationale": "갱신(차등): 섹션 3 — 오류 수준이 주문 계속·새 주문 수락 기준으로 나뉜다는 점(f1)과 원인 범주별 재료 종합(f27), 심각도 등급 불일치(f10) / 섹션 5 — 기존 물류창고 사례는 두고 현장 유형마다 나눠 추가: 병원 f19(벤더 주장 병기)·f20(벤더 주장, 국내), 제조 공장 f16·f17·f18(국내 생산 라인 AGV 통신 장애 포함), 상업 시설 f21(벤더 주장), 기타 f22. 가정·실외는 이번에도 근거 없음 / 섹션 7 — 표준 표에 VDA 5050 오류 참조·사전 정의 오류 유형·안전 상태·전원 상태(f2·f3·f5, 바뀐 출처 재확인), Open-RMF 로봇 상태 issues(f6)·사건 의존(f7), ROS 2 진단 수준(f8, 연계 대상), 국내 클라우드 로봇 관리 콘솔 항목(f9), IEC 62682:2022(f11) 행 추가 / 섹션 8 — 고장 분류 체계(f14), 다중 로봇 경보 제시 연구(f13), 언어 모델 고장 진단 벤치마크(f23), 로봇 임무 프로세스 마이닝(f25) 추가 / 섹션 10 — 47. AI·학습·적응과 모델 운영 연결 문장의 근거를 '분류 개정 전 원문 8장'에서 2절에 인용된 개정 원문 L. AI·학습 기술 주석(장애 분석은 38번에 적용)으로 고치고, 42. 분산 시스템·통신·컴퓨팅 구조와의 연결(f16·f18 통신 원인) 추가 / 섹션 11 — oq-033·oq-073 부분 근거(f10), oq-295 미해결(f11·f12·f13), oq-074 미해결(f14·f15), oq-315 미해결(f23·f24), oq-018·oq-210 부분 근거(f25·f26), 새 질문 2건. 4·6·7·8·11절 본문은 주제 페이지로 분리되어 있으므로 해당 주제 페이지(docs/topics/2026/2026-09-25-area19-s7.md 등)로의 반영은 분량 규칙에 따른다. 다음 실행 후보: 37. 관제 화면·실행 기록 페이지에 f9(국내 관제 콘솔 화면 항목)·f13 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "오류 수준",
+        "term_en": "Error Level (VDA 5050 errorLevel)",
+        "definition": "VDA 5050 에서 로봇이 보고하는 오류를 진행 중 주문을 계속할 수 있는지와 새 주문을 받을 수 있는지에 따라 WARNING·URGENT·CRITICAL·FATAL 네 단계로 나눈 값이다."
+      },
+      {
+        "term_ko": "진단 수준",
+        "term_en": "Diagnostic Level (ROS 2 diagnostic_msgs)",
+        "definition": "ROS 2 진단 메시지가 장치·구성요소 상태를 OK·WARN·ERROR·STALE 네 값 가운데 하나로 알리는 필드이며, STALE 은 진단 갱신이 끊긴 상태를 뜻한다."
+      },
+      {
+        "term_ko": "경보 기반 감독 제어",
+        "term_en": "Annunciator-Driven Supervisory Control (ADSC)",
+        "definition": "경보로 운영자의 주의를 이상이 생긴 대상에 돌려 여러 대상을 감독하게 하는 제어 방식으로, 다중 로봇 관제에서는 로봇의 자기 진단 결과를 경보로 띄워 구현한다."
+      }
+    ],
+    "open_questions_new": [
+      "VDA 5050 오류 수준 네 단계, Open-RMF 경보 세 단계, ROS 2 진단 네 값, 제조사 관제 콘솔의 두 단계처럼 서로 다른 심각도 등급을 하나의 ROP 경보 우선순위로 맞추는 공개 대응 규칙이나 그 효과를 평가한 연구가 있는가? | 관련 영역: 38. 모니터링·이상 탐지·원인 분석, 20. 로봇·제조사 관제 연동 | 근거: f10 | 종류: 일반",
+      "공장 Wi-Fi 쪽 측정값으로 탐지한 AGV 통신 장애를 로봇이 보고하는 연결 상태와 함께 써서 플릿 관제의 지연 원인 판정(통신 원인)에 연결한 사례나 방법이 있는가? | 관련 영역: 38. 모니터링·이상 탐지·원인 분석, 42. 분산 시스템·통신·컴퓨팅 구조 | 근거: f18 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 22,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f3 VDA 5050 명세의 오류 절(6.6.5 등) 뒷부분 107,761자 미열람 — 사전 정의 오류 유형 전체 목록과 information 배열 수준은 미확인",
+        "f11 IEC 62682:2022 본문 미열람(유료), 경보 홍수 정의(10분 10건)는 2차 출처에만 있어 넣지 않음",
+        "f16 Bang 외 논문의 선택 탐지 방식·성능·AGV 대수 미확인(PDF 텍스트 추출 실패)",
+        "f17 Bertoli 외 논문의 공장 종류·AGV 대수·결과 미확인(PDF 텍스트 추출 실패, ScienceDirect 403)",
+        "f19 Aethon 97% 원격 해결 수치는 벤더 주장이며 독립 확인 실패",
+        "f20·f21 벤더 기능 설명 독립 확인 없음",
+        "f22 ref-995 는 이전 실행 재인용이며 이번에 다시 열지 않음",
+        "실외 현장(보도 배송로봇 원격 감시) 사례: Starship 등 자율 비율은 회사 주장뿐이고 감시·알림 방식 공개 자료 없음",
+        "가정 현장 사례 없음",
+        "oq-075 국내 원인별 정지·지연 비율 실측 자료 미확인"
+      ],
+      "scope_violations": [
+        "f5: 비상정지·배터리 건강 상태를 만드는 로봇 내부 진단은 로봇 자체 지능·제어 쪽이라 claim 을 '연계 대상: '으로 시작했고 ROP 몫은 보고값 수집·원인 범주 반영으로 한정해야 함",
+        "f8: ROS 2 diagnostics 는 로봇 내부 하드웨어 진단이라 '연계 대상: '으로 표시",
+        "f16·f18: 공장 무선망 자체의 운영·진단은 연계 대상(통신 인프라)이며 ROP 는 그 결과를 원인 판정에 쓰는 쪽으로만 서술해야 함",
+        "f22: 설비 이상 판정·보전 작업 지시는 설비 보전 시스템 쪽 연계 대상(oq-194)"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 13
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 갱신(update) 실행이며 정정 요청이 없어 비거나 약한 절(5절 현장 사례, 3·7절 표준 필드, 8절 연구, 10절 연결 근거 문구, 11절 열린 질문)과 바뀐 출처(VDA 5050 main 3.0.0 state.schema·명세)만 조사했다. 검색 17회/30, 신규 출처 13건/15(ref-1367~ref-1379, 예약 구간 안), 재사용 9건(ref-051·ref-031 은 github_raw 로 다시 열었고 ref-111·ref-313·ref-448·ref-449·ref-230·ref-445 는 입력의 원문 텍스트, ref-995 는 이전 실행 재인용으로 미열람). 신규 출처 가운데 ref-1374·ref-1377 은 PDF 본문을 읽지 못해 fetched false·원문 미열람이고 나머지 11건은 원문 또는 공식 소개·초록 페이지를 열었다. 교차 확인 0건: 같은 기관(VDA)의 스키마·명세는 독립 출처가 아니어서 cross_checked 를 주지 않았다. 벤더 주장 3건(f19·f20·f21)은 추정·vendor_claim. 현장 유형: 병원(f19·f20, 국내 1건), 제조 공장(f16·f17·f18, 국내 1건), 상업 시설(f21), 기타(f22). 실외·가정은 근거를 찾지 못했다. 핵심 질문에 대해서는 규약별 원인 재료를 범주로 모은 종합(f27, 추정)만 있고 판정 규칙을 정한 공개 자료는 없다. 해결 제안한 열린 질문 없음: oq-033·oq-073 부분 근거(f10), oq-295·oq-074·oq-315 미해결, oq-018·oq-210 부분 근거(f25·f26). 교차 규칙: 언어 모델 고장 진단(f23·f24)은 47. AI·학습·적응과 모델 운영과 이 영역에 함께 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈을 섞지 않았다. 용어집에 이미 있는 경보 관리·근본 원인 분석·고장 탐지·진단·프로세스 마이닝·관측성은 후보로 내지 않았다. 입력 누락 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 13225,
+  "type": "result",
+  "duration_ms": 428311,
+  "uuid": "79b75d21-b5a2-456f-a89a-bab2fbc5ae57",
+  "ttft_stream_ms": 696,
+  "time_to_request_ms": 89,
+  "time_to_request_phases_ms": {
+    "other": 23,
+    "system_prompt": 10,
+    "resume_other": 1,
+    "process_user_input": 5,
+    "input_attachments": 8,
+    "input_hooks": 2,
+    "tool_pool_refresh": 2,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 0,
+    "model_gates": 3,
+    "tool_schema_build": 6,
+    "message_normalization": 3,
+    "client_creation": 4,
+    "request_build": 12
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 39,
+  "time_to_request_cpu_ms": 139,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 4,
+    "cpu_ms": 16,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 697,
+  "time_to_request_from_spawn_ms": 19025674,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791525292546.906,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 430.5
+}

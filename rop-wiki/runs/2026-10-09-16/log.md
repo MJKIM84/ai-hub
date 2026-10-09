@@ -1,0 +1,89 @@
+# 실행 로그 2026-10-09-16
+
+- 2026-10-09 14:34:05 KST [준비] 실행 시작 (date=2026-10-09 run_id=2026-10-09-16 resume=없음 step=전체 run_type=update area=38 track=자동)
+- 2026-10-09 14:34:05 KST [준비] 웹 도구 점검 생략(--skip-probe): 기존 probe.json 사용
+- 2026-10-09 14:34:05 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: true
+- 2026-10-09 14:34:05 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: true
+- 2026-10-09 14:34:06 KST [대상 선정] 결과: 성공 · 소요 1초 · update · 38. 모니터링·이상 탐지·원인 분석
+- 2026-10-09 14:54:52 KST [리서치 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/research.md (160,215자, 규칙은 시스템 프롬프트 researcher-e90ce8b81cf3.md)
+- 2026-10-09 15:02:03 KST [리서치 에이전트] 호출 완료(시도 1): 턴 39 · 7분 10초 · 비용 $2.7754 · subtype success
+- 2026-10-09 15:02:03 KST [리서치 에이전트] 스키마 불일치(시도 1) 1건: finding f9: 벤더 문서만 근거로 한 [사실] 인데 vendor_claim 표시가 없다(6.2 항목 13)
+- 2026-10-09 15:04:59 KST [리서치 에이전트] 호출 완료(시도 2): 턴 2 · 2분 56초 · 비용 $1.2057 · subtype success
+- 2026-10-09 15:04:59 KST [리서치 에이전트] 저장: runs/2026-10-09-16/research.json
+- 2026-10-09 15:04:59 KST [형식 검증] 리서치 산출물 검사: 출처 16건 중 원문 열람 10건 · 신뢰도 상한 적용 10건
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-051: data/source_texts 의 원문 텍스트(data/source_texts/ref-051.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-449: data/source_texts 의 원문 텍스트(data/source_texts/ref-449.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-031: data/source_texts 의 원문 텍스트(data/source_texts/ref-031.txt)가 있어 fetched true(github_raw)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-230: data/source_texts 의 원문 텍스트(data/source_texts/ref-230.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-111: data/source_texts 의 원문 텍스트(data/source_texts/ref-111.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-448: data/source_texts 의 원문 텍스트(data/source_texts/ref-448.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-313: data/source_texts 의 원문 텍스트(data/source_texts/ref-313.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-283: data/source_texts 의 원문 텍스트(data/source_texts/ref-283.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-445: data/source_texts 의 원문 텍스트(data/source_texts/ref-445.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [형식 검증]   - 출처 ref-447: data/source_texts 의 원문 텍스트(data/source_texts/ref-447.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 15:04:59 KST [리서치] 예산 점검: 예산 안
+- 2026-10-09 15:04:59 KST [리서치] 결과: 성공 · 소요 30분 53초 · 예산 안
+- 2026-10-09 15:05:00 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/verification1.md (243,006자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-10-09 15:08:54 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 9 · 3분 54초 · 비용 $1.7447 · subtype success
+- 2026-10-09 15:08:54 KST [내용 검증 에이전트] 저장: runs/2026-10-09-16/verification.json
+- 2026-10-09 15:08:54 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-10-09 15:08:54 KST [1차 검증] 결과: 조건부 승인 · 소요 3분 55초 · 신뢰도 low
+- 2026-10-09 15:28:03 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/storyteller.md (252,344자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-10-09 15:33:32 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 30초 · 비용 $2.1429 · subtype success
+- 2026-10-09 15:33:32 KST [스토리텔러 에이전트] 저장: runs/2026-10-09-16/pages.json
+- 2026-10-09 15:33:33 KST [스토리텔러] 결과: 성공 · 소요 24분 39초 · 페이지 1개
+- 2026-10-09 15:33:33 KST [퍼블리셔] 퍼블리셔 시작: 2026-10-09-16 (갱신)
+- 2026-10-09 15:33:33 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-10-09 15:33:33 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-10-09 15:33:35 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-10-09 15:33:35 KST [퍼블리셔] 스냅숏 저장: runs/2026-10-09-16/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-10-09 15:33:40 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-10-09 15:33:51 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-10-09 15:33:51 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-10-09 15:33:51 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-10-09 15:33:52 KST [형식 검증] 원고 형식 검사: 통과 · 패치 적용 1건 · 자동 분리 4건
+- 2026-10-09 15:33:52 KST [형식 검증] 결과: 통과 · 소요 19초 · 패치 적용 1건 · 자동 분리 4건
+- 2026-10-09 15:33:52 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/verification2.md (143,147자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-10-09 15:35:59 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 2분 7초 · 비용 $1.0354 · subtype success
+- 2026-10-09 15:35:59 KST [내용 검증 에이전트] 저장: runs/2026-10-09-16/verification2.json
+- 2026-10-09 15:35:59 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-10-09 15:35:59 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
+- 2026-10-09 15:35:59 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 2분 7초 · required_fixes 참고
+- 2026-10-09 15:36:10 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/storyteller-retry1.md (333,533자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-10-09 15:39:06 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 2분 57초 · 비용 $2.2594 · subtype success
+- 2026-10-09 15:39:06 KST [스토리텔러 에이전트] 저장: runs/2026-10-09-16/pages.json
+- 2026-10-09 15:39:07 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 3분 7초 · 페이지 1개
+- 2026-10-09 15:39:07 KST [퍼블리셔] 퍼블리셔 시작: 2026-10-09-16 (갱신)
+- 2026-10-09 15:39:07 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-10-09 15:39:07 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-10-09 15:39:09 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-10-09 15:39:10 KST [퍼블리셔] 스냅숏 저장: runs/2026-10-09-16/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-10-09 15:39:15 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-10-09 15:39:27 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-10-09 15:39:27 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-10-09 15:39:27 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-10-09 15:39:27 KST [형식 검증] 원고 형식 검사: 통과 · 패치 적용 1건 · 자동 분리 4건
+- 2026-10-09 15:39:28 KST [형식 검증] 결과: 통과 · 소요 20초 · 패치 적용 1건 · 자동 분리 4건
+- 2026-10-09 15:39:28 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-10-09-16/prompts/verification2-retry1.md (147,743자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-10-09 15:40:05 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 37초 · 비용 $0.8749 · subtype success
+- 2026-10-09 15:40:05 KST [내용 검증 에이전트] 저장: runs/2026-10-09-16/verification2.json
+- 2026-10-09 15:40:05 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-10-09 15:40:06 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 38초 · 신뢰도 low
+- 2026-10-09 15:40:06 KST [준비] 실행 시작 (date=2026-10-09 run_id=2026-10-09-16 resume=2026-10-09-16 step=publish run_type=자동 area=자동 track=자동)
+- 2026-10-09 15:40:06 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-10-09 15:40:07 KST [준비] 결과: 성공 · 소요 1초 · 건너뜀
+- 2026-10-09 15:40:07 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-10-09 15:40:07 KST [퍼블리셔] 퍼블리셔 시작: 2026-10-09-16 (갱신)
+- 2026-10-09 15:40:07 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-10-09 15:40:07 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 low)
+- 2026-10-09 15:40:10 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-10-09 15:40:10 KST [퍼블리셔] 스냅숏 저장: runs/2026-10-09-16/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-10-09 15:40:15 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-10-09 15:40:26 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-10-09 15:47:06 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 4/갱신 1/폐기 0, 용어 2, 참고문헌 0, 표준 0, 열린 질문 2, 매트릭스 칸 16, 백로그 0, 정정 0; auto 영역 갱신 28개 페이지, mkdocs.yml 갱신
+- 2026-10-09 15:51:34 KST [퍼블리셔] 6단계 사이트 빌드 성공 ('mkdocs build --strict', 4분 28초)
+- 2026-10-09 15:51:34 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-10-09.md · summary.json (종료 상태: 게시 완료)
+- 2026-10-09 16:02:22 KST [퍼블리셔] 8단계 확정 로그 반영 뒤 사이트 재빌드 성공
+- 2026-10-09 16:02:23 KST [퍼블리셔] 퍼블리셔 완료: 생성 4/갱신 1 · 22분 16초
+- 2026-10-09 16:02:23 KST [퍼블리셔] 결과: 성공 · 소요 22분 16초 · 게시 완료
+- 2026-10-09 16:02:23 KST [퍼블리셔] 7단계 커밋: run(2026-10-09): 갱신 38. 모니터링·이상 탐지·원인 분석 — 생성 4/갱신 1 (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

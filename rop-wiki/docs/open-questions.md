@@ -353,8 +353,10 @@ version: 1
 | oq-331 | OpenSCENARIO 2 DSL 로 다중 로봇 플릿의 작업 배정과 승강기·문 같은 설비 사건을 기술할 수 있는가, 기술하려면 어떤 확장 라이브러리가 필요한가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-09 | 2026-10-09-13 | 열림 | — |
 | oq-332 | VDA 5050 동작 상태, MassRobotics 운용 상태, Open-RMF 작업 상태 값 사이의 대응표를 공개한 표준 기구나 프로젝트가 있는가, 없다면 플릿 관제 기록에서 어떤 기준으로 대응시키는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-09 | 2026-10-09-15 | 열림 | — |
 | oq-333 | 국내 실외이동로봇 운행안전인증의 관제 장치 항목은 관제 화면 표시와 운행 기록 저장·보관을 어디까지 요구하는가? 평가 항목 수가 바이라인네트워크 보도(16개 항목)와 한국로봇산업진흥원 안내(관제장치를 포함한 8개 심사 항목)에서 다르게 표현되므로 현행 기준도 함께 확인해야 한다. | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[66. 실외](categories/site-type-applications/outdoor.md) | 2026-10-09 | 2026-10-09-15 | 열림 | — |
+| oq-334 | MassRobotics 상태 보고의 오류 코드는 심각도 없는 자유 문자열인데, 이 표준을 쓰는 로봇과 VDA 5050 로봇이 섞인 플릿에서 오류 심각도를 어떤 기준으로 부여해 한 경보 체계에 넣는가? (관련: oq-033, oq-073) | [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-09 | 2026-10-09-16 | 열림 | — |
+| oq-335 | VDA 5050 headerId 결번이나 상태 메시지가 오지 않는 구간을 통신 원인으로 판정하는 기준(결번 수, 무응답 시간)을 정한 표준이나 현장 연구가 있는가? | [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)<br>[42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | 2026-10-09 | 2026-10-09-16 | 열림 | — |
 
-상태별 건수: 열림 331건, 조사 중 1건, 해결 1건
+상태별 건수: 열림 333건, 조사 중 1건, 해결 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
