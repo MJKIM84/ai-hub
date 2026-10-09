@@ -123,7 +123,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 46 | q2-04 — 문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가(제조사 문의, 시험, 커뮤니티)? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-04)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q2-05 — 언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q5-02 — 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? ([답](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-02)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 35 | q1-06 — 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [단계 2. 로봇 문서 유형과 정보 구조 조사](tracks/manual-capability-ontology/stage-2-document-types.md) — q2-04 답함(신뢰도 low, 3절 {#q2-04} 소절 신설), q2-02에 기계가독 형식의 단위 표기·자유 텍스트 보강과 OmniDocBench 문서 유형·교차 규칙 문구 정정, q2-03 재인용 확인, 4·5·6·7·8·9절과 상태 줄 갱신, 후속 질문 2건(q3-09·q4-17) (실행 2026-10-09-22)
-- 2026-10-09 · 갱신 · [문서 유형 매트릭스](tracks/manual-capability-ontology/document-type-matrix.md) — 5절 '문서에 없는 정보'를 정보 항목별로 처음 작성(통합·시운전과 운용 중 상태 보고·관측만 보완 경로로 기록, 제조사 문의·커뮤니티 미확인), 3절에 팩트시트 단위 표기·자유 텍스트 메모 추가(채운 칸 9 / 64 유지), 각주 ref-228·ref-230 접근일 갱신과 ref-230 원문 미열람 표시 제거, 상태 줄·이력 갱신 (실행 2026-10-09-22)
-- 2026-10-09 · 갱신 · [매뉴얼 기반 로봇 기능 온톨로지](tracks/manual-capability-ontology/index.md) — 상태 줄의 마지막 트랙 실행을 2026-10-09로 갱신, 6절의 문서 유형 매트릭스·질문 백로그 줄에 실행 2026-10-09-22 변동 기록 (실행 2026-10-09-22)
-- 2026-10-09 · 요약 · [단계 2. 로봇 문서 유형과 정보 구조 조사](tracks/manual-capability-ontology/stage-2-document-types.md) — 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-04 답함(신뢰도 low, 통합 설정·어댑터 코드·운용 중 상태 보고로 보완되는 정보), q2-02 기계가독 형식의 단위 표기·자유 텍스트 보강, 문서 유형 매트릭스 5절 첫 작성, 후속 질문 q3-09·q4-17 (실행 2026-10-09-22)
-- 2026-10-09 · 갱신 · [질문 백로그](tracks/manual-capability-ontology/question-backlog.md) — 백로그 항목 5건 갱신 (실행 2026-10-09-22)
+- 2026-10-09 · 갱신 · [단계 2. 로봇 문서 유형과 정보 구조 조사](tracks/manual-capability-ontology/stage-2-document-types.md) — q2-02·q2-03·q2-05 답함(신뢰도 낮음), 3절 q2-03의 AMR 샘플 미발견 문장을 MiR·Clearpath 샘플로 대체, q2-05 소제목 신설, 4~6·9절 갱신, 7절 반영 제안 추가, 후속 질문 q3-10. 2차: 단계 상태 줄을 열린 질문 2건·답한 질문 5건으로 고치고, 새 각주 정의를 8절로 옮기고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
+- 2026-10-09 · 갱신 · [능력 온톨로지 초안](tracks/manual-capability-ontology/ontology-draft.md) — v0.4 → v0.5: 근거 문서 속성 '언어(원본 / 번역 구분)' 추가(f16·f17·f20), 속성 '적용 구성'은 6절 질문에 합침. 2차: H1·머리 단락·4절 도식·3절·5절을 v0.5와 샘플 11건에 맞추고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
+- 2026-10-09 · 갱신 · [문서 유형 매트릭스](tracks/manual-capability-ontology/document-type-matrix.md) — 4절 공개 문서 샘플 4건 → 11건(AMR 4건 포함), 'AMR 샘플 미발견' 문장 대체, 3절에 두산 웹 매뉴얼 사양 표·UR 별도 오류 코드 문서 메모, 8절 이력. 2차: 머리 상태 줄을 '공개 문서 샘플: 11건'으로 고치고, 3절 메모의 추론 문장에 태그를 붙이고, 새 각주 정의를 7절로 옮겼다 (실행 2026-10-09-23)
+- 2026-10-09 · 갱신 · [매뉴얼 기반 로봇 기능 온톨로지](tracks/manual-capability-ontology/index.md) — 6절 살아있는 산출물 링크: 온톨로지 초안 v0.5, 문서 유형 매트릭스 샘플 11건, 백로그 q2-02·q2-03·q2-05 답함·q3-10 등록, 아이디어 페이지 갱신 반영. 2차: 머리 상태 줄의 현재 단계를 단계 2. 로봇 문서 유형과 정보 구조 조사로 고쳤다 (실행 2026-10-09-23)
+- 2026-10-09 · 갱신 · [아이디어 1. 로봇 기능 온톨로지](ideas/robot-capability-ontology.md) — 3절에 근거 형태별 문서 이해·데이터시트 추출·매뉴얼 질의응답 측정 자료, 4절에 AMR 공개 문서 접근·재사용 조건과 근거 문서의 언어·판 기록 필요(실행 2026-10-09-23) 추가. 2차: 3절 끝 추론 문장에 태그를 붙이고 ref-1386 기관 표기를 참고문헌과 맞췄다 (실행 2026-10-09-23)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

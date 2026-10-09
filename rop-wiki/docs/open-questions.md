@@ -363,12 +363,13 @@ version: 1
 | oq-341 | 국내 공공 AI 학습 데이터(AI Hub 등)나 연구 과제에 물류센터·공장·병원 같은 비주거 건축 도면을 랙·도크·승강기·충전 구역 라벨과 함께 담은 데이터셋이 있거나 구축 계획이 있는가? (관련 기존 질문: oq-197, 트랙 질문 q2-04) | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-10-09 | 2026-10-09-21 | 열림 | — |
 | oq-342 | 출처 충돌: FloorPlanCAD 의 범주 수는 30개(arXiv 초록)인가 35개(프로젝트 페이지)인가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-10-09 | 2026-10-09-21 | 열림 | — |
 | oq-343 | 출처 충돌: ArchCAD-400K 의 의미 범주에 엘리베이터가 있는가(앞선 실행의 검색 요약과 v3 본문 열람 결과가 다르다)? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-10-09 | 2026-10-09-21 | 열림 | — |
+| oq-344 | 국내에서 판매·설치되는 산업용 로봇·이동로봇의 사용설명서를 한국어로 제공해야 한다는 규정이 자율안전확인 고시나 다른 법령에 있으며, 원본과 한국어 번역판의 판이 다를 때 어느 쪽을 근거로 삼는가? | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | 2026-10-09 | 2026-10-09-23 | 열림 | — |
 
-상태별 건수: 열림 341건, 조사 중 1건, 해결 1건
+상태별 건수: 열림 342건, 조사 중 1건, 해결 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
-- 매뉴얼 기반 로봇 기능 온톨로지: [질문 백로그](tracks/manual-capability-ontology/question-backlog.md) (열린 질문 46건)
+- 매뉴얼 기반 로봇 기능 온톨로지: [질문 백로그](tracks/manual-capability-ontology/question-backlog.md) (열린 질문 44건)
 - 채팅 기반 구성·운영: [질문 백로그](tracks/chat-based-configuration-and-operation/question-backlog.md) (열린 질문 66건)
 - 건축 도면 자동 인식: [질문 백로그](tracks/floorplan-recognition/question-backlog.md) (열린 질문 35건)
 <!-- auto:open-questions:end -->
