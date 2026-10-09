@@ -20,6 +20,23 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-05·q2-06 답함(#q2-05·#q2-06 소절 신설), q2-07 부분 답 소절(#q2-07), 4절 결론·불확실성 갱신(VDA 5050 loads 문장에 기준일 표시), 후속 질문 q4-21·q4-22, 완료 조건 미충족·전환 아니오, 반영 제안 3건, 출처 10건 추가 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v1.0 → v1.1: 상황 개념의 대상 표현에 해석 결과 '대상 화물 참조'(품목 단위 / 적재 단위) 짝 추가(f10·f11·f12·f13, 대응 원천은 f15 추정 메모, 상태 확정 유지), 1절 v1.1 요지, 6절에 q2-05·q2-06·q2-07 답 링크(질문은 닫지 않음) |
+| 2026-10-09-27 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 4절에 '이름 사전 형식'·'대상 화물의 두 식별 단위와 대응 원천'·'IEEE 1872.1-2024 의 공개 자료 범위 분해 구조' 소절 추가(기존 표와 '미확인' 표기 유지) |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 살아있는 산출물에 실행 2026-10-09-27 항목 추가(q2-05·q2-06 답함, q2-07 부분 답, 초안 v1.0 → v1.1, 전환 미승인); 상태 줄은 현재 단계 2·마지막 트랙 실행 2026-10-09 그대로 |
+| 2026-10-09-27 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 채팅 기반 구성·운영 단계 2: q2-05·q2-06 답함, q2-07 부분 답, 업무 분해·배정 설계 초안 v1.0 → v1.1(상황 개념에 대상 화물 참조), 새 질문 2건(q4-21·q4-22), 1차 조건부 승인 수정 20건 이행 |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1391.md](references/ref-1391.md) | 참고문헌 ref-1391 등록: EPCIS — JSON-Schema/schemas/AggregationEvent-JSON-Schema.jso… |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1392.md](references/ref-1392.md) | 참고문헌 ref-1392 등록: Indoor Mapping Data Format (IMDF) 1.0.0 — Unit |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1393.md](references/ref-1393.md) | 참고문헌 ref-1393 등록: SKOS Simple Knowledge Organization System Reference |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1394.md](references/ref-1394.md) | 참고문헌 ref-1394 등록: Logistic units |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1395.md](references/ref-1395.md) | 참고문헌 ref-1395 등록: Towards a Robot Task Ontology Standard |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1396.md](references/ref-1396.md) | 참고문헌 ref-1396 등록: Multi-Robot Task Planning for Multi-Object Retrieval Tasks w… |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1397.md](references/ref-1397.md) | 참고문헌 ref-1397 등록: GLN extension component |
+| 2026-10-09-27 | 생성 | [docs/glossary/skos.md](glossary/skos.md) | 용어집 항목 단순 지식 조직 체계 |
+| 2026-10-09-27 | 생성 | [docs/glossary/gln-extension-component.md](glossary/gln-extension-component.md) | 용어집 항목 GLN 확장 성분 |
+| 2026-10-09-27 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-04·q2-06 답함(3절 소제목 신설, q2-02 표 갱신 칸 병기), 2절 표·상태 줄 갱신, 4절 결론·불확실성 보강, 후속 질문 3건, 6절 완료 조건(전환 아니오), 출처·이력 추가. 2차: q2-04 소절의 충전 위치 소절 위치 표기와 2절 첫 문단 표현 수정 |
 | 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.2 → v1.3: 충전 위치에 속성 'BIM 표현(후보)' 추가(2절 보충 표), 6절 충전소 항목 범위 한정·RECHARGER·IDS 근거 보강 |
 | 2026-10-09-26 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 공개 데이터셋 비교표 갱신 소절(CubiCasa5K·AI Hub 행, q2-04), 4절에 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구 소절(q2-06, BIM 소절 셋째 항목 범위 한정) 추가 |

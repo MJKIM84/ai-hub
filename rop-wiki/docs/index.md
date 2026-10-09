@@ -124,7 +124,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q2-05 — 언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q2-04 — 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? (q1-01 에서 파생) ([답](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-04)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
+| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 67 | q2-06 — 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가? (q2-01 에서 파생) ([답](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-06)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 37 | q2-06 — 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가? (q1-03 에서 파생) ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/floorplan-recognition/stage-2-data-and-standards.md) — q2-04·q2-06 답함(3절 소제목 신설, q2-02 표 갱신 칸 병기), 2절 표·상태 줄 갱신, 4절 결론·불확실성 보강, 후속 질문 3건, 6절 완료 조건(전환 아니오), 출처·이력 추가. 2차: q2-04 소절의 충전 위치 소절 위치 표기와 2절 첫 문단 표현 수정 (실행 2026-10-09-26)
-- 2026-10-09 · 갱신 · [공간 그래프 스키마 초안](tracks/floorplan-recognition/space-graph-schema-draft.md) — v1.2 → v1.3: 충전 위치에 속성 'BIM 표현(후보)' 추가(2절 보충 표), 6절 충전소 항목 범위 한정·RECHARGER·IDS 근거 보강 (실행 2026-10-09-26)
-- 2026-10-09 · 갱신 · [아이디어 3. 건축 도면 자동 인식](ideas/floorplan-recognition.md) — 3절에 공개 데이터셋 비교표 갱신 소절(CubiCasa5K·AI Hub 행, q2-04), 4절에 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구 소절(q2-06, BIM 소절 셋째 항목 범위 한정) 추가 (실행 2026-10-09-26)
-- 2026-10-09 · 갱신 · [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) — 3절 끝에 q1-08 보강 소절(f25·f26) 추가, 출처 ref-1422, 이력 메모. 2차: 머리말 패치로 프런트매터 sources 에 ref-1422 추가 (실행 2026-10-09-26)
-- 2026-10-09 · 갱신 · [건축 도면 자동 인식](tracks/floorplan-recognition/index.md) — 6절에 실행 2026-10-09-26 요약 문단 추가(스키마 초안 v1.3, q2-04·q2-06 답함). 상태 줄은 이미 최신이라 바꾸지 않음 (실행 2026-10-09-26)
+- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — q2-05·q2-06 답함(#q2-05·#q2-06 소절 신설), q2-07 부분 답 소절(#q2-07), 4절 결론·불확실성 갱신(VDA 5050 loads 문장에 기준일 표시), 후속 질문 q4-21·q4-22, 완료 조건 미충족·전환 아니오, 반영 제안 3건, 출처 10건 추가 (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [업무 분해·배정 설계 초안](tracks/chat-based-configuration-and-operation/task-model-draft.md) — 초안 v1.0 → v1.1: 상황 개념의 대상 표현에 해석 결과 '대상 화물 참조'(품목 단위 / 적재 단위) 짝 추가(f10·f11·f12·f13, 대응 원천은 f15 추정 메모, 상태 확정 유지), 1절 v1.1 요지, 6절에 q2-05·q2-06·q2-07 답 링크(질문은 닫지 않음) (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [아이디어 2. 채팅 기반 구성·운영](ideas/chat-based-configuration-and-operation.md) — 4절에 '이름 사전 형식'·'대상 화물의 두 식별 단위와 대응 원천'·'IEEE 1872.1-2024 의 공개 자료 범위 분해 구조' 소절 추가(기존 표와 '미확인' 표기 유지) (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [채팅 기반 구성·운영](tracks/chat-based-configuration-and-operation/index.md) — 6절 살아있는 산출물에 실행 2026-10-09-27 항목 추가(q2-05·q2-06 답함, q2-07 부분 답, 초안 v1.0 → v1.1, 전환 미승인); 상태 줄은 현재 단계 2·마지막 트랙 실행 2026-10-09 그대로 (실행 2026-10-09-27)
+- 2026-10-09 · 요약 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — 채팅 기반 구성·운영 단계 2: q2-05·q2-06 답함, q2-07 부분 답, 업무 분해·배정 설계 초안 v1.0 → v1.1(상황 개념에 대상 화물 참조), 새 질문 2건(q4-21·q4-22), 1차 조건부 승인 수정 20건 이행 (실행 2026-10-09-27)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

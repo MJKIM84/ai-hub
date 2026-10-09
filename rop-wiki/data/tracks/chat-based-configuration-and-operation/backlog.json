@@ -284,9 +284,9 @@
       "question": "지시 속 현장 장소 용어(예: 3층 출하 대기장, 2번 도크)와 공간 그래프 경유점 이름·지도 id·WMS 로케이션 코드를 대응시키는 이름 사전은 어떤 형식으로 두고 누가 관리하는가? (q2-01 에서 파생)",
       "stage": 2,
       "origin": "f16",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-27",
+      "answer_link": "docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-05",
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-37"
     },
@@ -295,9 +295,9 @@
       "question": "채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가? (q2-01 에서 파생)",
       "stage": 2,
       "origin": "f17",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-27",
+      "answer_link": "docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-06",
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-37"
     },
@@ -306,7 +306,7 @@
       "question": "IEEE 1872.1-2024 로봇 작업 표현 온톨로지는 작업 분해·선후 의존·배정 대상을 어떤 개념으로 표현하며, 업무 분해·배정 설계 초안의 업무·작업·배정 개념과 어떻게 대응하는가? (q2-02 에서 파생)",
       "stage": 2,
       "origin": "f15",
-      "status": "열림",
+      "status": "조사 중",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-25",
@@ -931,6 +931,39 @@
       "answer_link": null,
       "created": "2026-10-09",
       "origin_run_id": "2026-10-09-25"
+    },
+    {
+      "id": "q4-21",
+      "question": "이름 사전의 별칭(altLabel·hiddenLabel)이 여러 장소에 겹칠 때(예: '2번 도크'가 두 층에 있음) 챗봇은 층·구역 맥락으로 좁힐지 되물을지를 어떤 규칙으로 정하고, 그 규칙을 이름 사전에 어떻게 기록하는가? (q2-05 에서 파생) (관련: q4-20, q4-07)",
+      "stage": 4,
+      "origin": "f8",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-27"
+    },
+    {
+      "id": "q4-22",
+      "question": "SSCC 같은 적재 단위로 받은 지시에서 로봇이 보고한 loadId 가 지시한 SSCC 와 다르거나 빈 값일 때 ROP 는 진행·보류·재스캔·사람 확인 가운데 무엇을 하는가? (q2-06 에서 파생) (관련: oq-003, oq-036)",
+      "stage": 4,
+      "origin": "f10",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-27"
+    },
+    {
+      "id": "q2-08",
+      "question": "IEEE 1872.1-2024 의 실무 구현 지침 P1872.1.1 이나 공개 사용 사례·OWL 파일이 있어 작업 분해·선후 의존·배정 대상 개념을 본문 없이 확인할 수 있는가? (q2-07 에서 파생)",
+      "stage": 2,
+      "origin": "f17",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-27"
     }
   ]
 }
