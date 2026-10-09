@@ -1,0 +1,53 @@
+# 실행 로그 2026-10-09-24
+
+- 2026-10-09 20:22:38 KST [준비] 실행 시작 (date=2026-10-09 run_id=2026-10-09-24 resume=없음 step=전체 run_type=track area=자동 track=floorplan-recognition)
+- 2026-10-09 20:22:38 KST [준비] 웹 도구 점검 생략(--skip-probe): 기존 probe.json 사용
+- 2026-10-09 20:22:38 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: true
+- 2026-10-09 20:22:39 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: true
+- 2026-10-09 20:22:39 KST [대상 선정] 결과: 성공 · 소요 0초 · track · 14. 도면·BIM에서 지도 만들기
+- 2026-10-09 20:22:41 KST [리서치 에이전트] 프롬프트 저장: runs/2026-10-09-24/prompts/research.md (601,381자, 규칙은 시스템 프롬프트 researcher-e90ce8b81cf3.md)
+- 2026-10-09 20:34:18 KST [리서치 에이전트] 호출 완료(시도 1): 턴 47 · 11분 37초 · 비용 $8.0969 · subtype success
+- 2026-10-09 20:34:18 KST [리서치 에이전트] 저장: runs/2026-10-09-24/research.json
+- 2026-10-09 20:34:18 KST [형식 검증] 리서치 산출물 검사: 출처 18건 중 원문 열람 17건 · 신뢰도 상한 적용 3건
+- 2026-10-09 20:34:18 KST [형식 검증]   - 출처 ref-213: data/source_texts 의 원문 텍스트(data/source_texts/ref-213.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-10-09 20:34:18 KST [형식 검증]   - 출처 ref-214: data/source_texts 의 원문 텍스트(data/source_texts/ref-214.txt)가 있어 fetched true(github_raw)
+- 2026-10-09 20:34:18 KST [형식 검증]   - 출처 ref-215: data/source_texts 의 원문 텍스트(data/source_texts/ref-215.txt)가 있어 fetched true(github_raw)
+- 2026-10-09 20:34:18 KST [리서치] 예산 점검: 예산 안
+- 2026-10-09 20:34:18 KST [리서치] 결과: 성공 · 소요 11분 39초 · 예산 안
+- 2026-10-09 20:34:19 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-10-09-24/prompts/verification1.md (628,933자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-10-09 20:40:03 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 21 · 5분 44초 · 비용 $4.8168 · subtype success
+- 2026-10-09 20:40:03 KST [내용 검증 에이전트] 저장: runs/2026-10-09-24/verification.json
+- 2026-10-09 20:40:03 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-10-09 20:40:03 KST [1차 검증] 결과: 조건부 승인 · 소요 5분 45초 · 신뢰도 low
+- 2026-10-09 20:40:05 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-10-09-24/prompts/storyteller.md (608,097자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-10-09 21:08:19 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 4 · 28분 14초 · 비용 $12.5051 · subtype success
+- 2026-10-09 21:08:19 KST [스토리텔러 에이전트] 저장: runs/2026-10-09-24/pages.json
+- 2026-10-09 21:08:19 KST [스토리텔러] 결과: 성공 · 소요 28분 16초 · 페이지 5개
+- 2026-10-09 21:08:32 KST [퍼블리셔] 퍼블리셔 시작: 2026-10-09-24 (트랙 실행)
+- 2026-10-09 21:08:32 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-10-09 21:08:32 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-10-09 21:08:34 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-10-09 21:08:35 KST [퍼블리셔] 스냅숏 저장: runs/2026-10-09-24/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-10-09 21:08:40 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-10-09 21:08:52 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-10-09 21:08:53 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-10-09 21:08:53 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-10-09 21:08:53 KST [형식 검증] 원고 형식 검사: 통과 · 패치 적용 5건
+- 2026-10-09 21:08:53 KST [형식 검증] 결과: 통과 · 소요 34초 · 패치 적용 5건
+- 2026-10-09 21:08:55 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-10-09-24/prompts/verification2.md (1,047,186자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-10-09 21:11:30 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 2분 36초 · 비용 $6.4959 · subtype success
+- 2026-10-09 21:11:31 KST [내용 검증 에이전트] 저장: runs/2026-10-09-24/verification2.json
+- 2026-10-09 21:11:31 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-10-09 21:11:31 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
+- 2026-10-09 21:11:31 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 2분 37초 · required_fixes 참고
+- 2026-10-09 21:36:01 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-10-09-24/prompts/storyteller-retry1.md (986,055자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-10-09 21:51:57 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 4 · 15분 56초 · 비용 $8.6847 · subtype success
+- 2026-10-09 21:51:57 KST [스토리텔러 에이전트] 스키마 불일치(시도 1) 2건: 트랙 실행인데 pages.json 에 track_updates 가 없다
+- 2026-10-09 22:08:28 KST [스토리텔러 에이전트] 호출 완료(시도 2): 턴 4 · 16분 31초 · 비용 $11.3760 · subtype success
+- 2026-10-09 22:08:28 KST [스토리텔러 에이전트] 스키마 불일치(시도 2) 1건: pages[0] docs/tracks/floorplan-recognition/stage-2-data-and-standards.md: content(전체 페이지)와 patches(바꿀 절) 가 모두 없다
+- 2026-10-09 22:08:28 KST [스토리텔러 에이전트] 실패: 스토리텔러 에이전트 출력이 재실행 뒤에도 스키마와 맞지 않는다: ['pages[0] docs/tracks/floorplan-recognition/stage-2-data-and-standards.md: content(전체 페이지)와 patches(바꿀 절) 가 모두 없다']
+- 2026-10-09 22:08:28 KST [스토리텔러] 보류: 스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)
+- 2026-10-09 22:08:29 KST [스토리텔러] 결과: 재시도 후 보류 · 소요 56분 57초 · 스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)
+- 2026-10-09 22:08:29 KST [보류] 보류(runs/parked/2026-10-09-24/): 스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)
+- 2026-10-09 22:08:29 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-10-09.md · summary.json (종료 상태: 보류(runs/parked/))
+- 2026-10-09 22:20:07 KST [퍼블리셔] 로그 커밋: run(2026-10-09): 트랙 실행 14. 도면·BIM에서 지도 만들기 — 생성 0/갱신 0 (보류) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

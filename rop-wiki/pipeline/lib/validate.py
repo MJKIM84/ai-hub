@@ -190,6 +190,9 @@ def _norm_title(t: str) -> str:
     return re.sub(r"\s+", " ", (t or "").strip())
 
 
+PREAMBLE_SECTION = "머리말"   # patches 의 section 값: 첫 H2 앞 전체(이동 경로·H1·상태 줄·도입 문단)를 replace 한다
+
+
 def _insert_template_section(parts: list[tuple[str | None, str]], want: str, page_type: str, subtype) -> int | None:
     """템플릿에 있는 절인데 페이지에 아직 없으면(예: 원문 각주가 없어 '참고 자료' 절 없이 시작한 대분류 페이지)
     템플릿 순서상 앞 절 뒤에 빈 절을 만들고 그 위치를 돌려준다. 템플릿에 없는 절이면 None."""
@@ -216,6 +219,16 @@ def apply_patches(current_text: str, patches: list[dict]) -> str:
     parts = split_sections(body)
     for p in patches:
         want = _norm_title(p.get("section", ""))
+        if want == PREAMBLE_SECTION:
+            # 첫 H2 앞(이동 경로·H1·상태 줄·도입 문단). 손으로 쓰는 상태 줄(트랙 개요·단계 페이지)과 H1 은 이 패치로만 바꿀 수 있다
+            new_pre = (p.get("content") or "").strip("\n") + "\n\n"
+            if parts and parts[0][0] is None:
+                parts[0] = (None, new_pre)
+            else:
+                parts.insert(0, (None, new_pre))
+            for k, v in (p.get("frontmatter") or {}).items():
+                meta[k] = v
+            continue
         want_no = section_no(want)
         idx = next((i for i, (t, _) in enumerate(parts) if t and _norm_title(t) == want), None)
         if idx is None and want_no:

@@ -1,0 +1,44 @@
+{
+  "run_id": "2026-10-09-25",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "참고문헌 id 충돌 의심(ref-1343~ref-1351, 실행 2026-10-09-23)은 reference_updates 비고와 additional_research_requests 로 넘겨졌다. 퍼블리셔 확인이 남아 있다",
+      "ref-110 각주는 단계 2·아이디어 페이지에서 참고문헌 색인 형식('Tasks in RMF (task_new)')으로 통일했다. 다만 12. 채팅으로 업무 지시·오케스트레이션 페이지의 기존 각주('Supporting a new Task in RMF (task_new)', 접근일 2026-09-29)는 이번 실행 대상이 아니어서 그대로 남는다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 확인 30건, 미확인 0건, 교차 확인 0건. 강등: 없음(f5·f6·f9 는 문구 수정을 이행했고, f8 은 서지 사실 범위를 유지했다). 원문 미열람 출처: ref-1339(Research Square 프리프린트, 검색 결과 일치로 실재 확인), ref-780(DBpia 서지만 확인). 주의: 물류 지향 근거(f1~f7)는 모두 시뮬레이션·도메인 실험·초록·시제품 수준이며, 실제 물류센터 운영 평가는 없다. 중간 표현과 VDA 5050 주문·Open-RMF 작업 요청의 대응 결론(f27~f30)은 이 위키의 종합이다. 각 형식의 '필드 없음'은 연 스키마 범위 안에서 부재를 관찰한 것이다. 워크플로 다이어그램 근거는 프로젝트 포럼 공지와 README 이며, crossflow 와의 관계는 확인하지 못했다. 모든 사실 finding 은 단일 출처다. 참고문헌 id 충돌 의심(ref-1343~ref-1351, 실행 2026-10-09-23)은 퍼블리셔가 등록 전에 확인해야 한다. 2차 재검증: 직전 2차 수정 지시 7건을 모두 이행했다. 이행 내용은 다음과 같다. 단계 1 프런트매터 sources 에 6건을 추가했다. 단계 1 2절 도입 문단의 q1-01 출처 서술을 복원했다. 단계 1 5절의 q1-05 를 '답함'으로 바꿨다. 단계 1 6절 전환 줄에서 열린 질문 부분을 지웠다. 단계 1 9절 이력 표 맨 위에 행을 넣고 버전 칸을 6으로 했다. 단계 2 6절 첫 행 검증 판정을 '충족 · 미승인'으로 고쳤다. site_matrix_updates 는 비웠다. 드리프트 없음. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 수정 지시 대상이 아닌 사소한 표기 세 가지를 적어 둔다. ref-413·ref-111·ref-059·ref-181 각주는 기존 각주를 재사용해 접근일이 본문의 확인일 2026-10-09 와 다르다. 아이디어 페이지 4절 도입은 아직 '세 소절'이라고 적는다. 단계 1 6절 첫 행 검증 판정 칸 '충족(1차 예비, 2차에서 확정)'은 기존 문구를 그대로 둔 것이다. 트랙 개요 상태 줄(단계 2)과 자동 진행 표·트랙 정의 current_stage(단계 1)가 서로 다르다. 트랙 정의 담당이 current_stage 를 확인해야 한다. 온톨로지 변경 승인: 작업(Task) 수정. 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모를 더했다(f12·f14·f16·f20, 추정 메모 f27). 초안은 v0.9 → v1.0 이며 H1·프런트매터·track_updates 가 일치한다. 거부: 없음. 새 질문 q3-17(f17)·q4-20(f4)·q5-20(f11)의 등록을 확인했다. 단계 완료 조건: 미충족(부족: 업무 분해·배정 설계 초안 개념 목록 표의 작업 요구 적재물 속성·완료 조건 미확정. 막힌 질문 q2-05·q2-06·q2-07). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q2-05·q2-06·q2-07).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

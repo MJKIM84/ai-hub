@@ -1,0 +1,76 @@
+# 1차 검증(브리프) 2026-10-09-22
+
+**판정: 조건부 승인** · 신뢰도: low
+
+## 주장별 검증
+
+| finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
+|---|---|---|---|---|---|
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: 입력 원문(data/source_texts/ref-228)과 검증 재열람(raw main factsheet.schema, 2026-10-09) 모두 maximumLoadMass unit kg·minimum 0, maximumSpeed m/s, maximumAngularSpeed rad/s 를 보인다. 다만 '수치 필드마다'는 과잉 일반화다: loadDimensions length·width 는 unit 속성 없이 설명문에 'in meters'로만 적고, maximumDeceleration·minimumHeight·maximumHeight 에는 minimum 이 없다. 범위 축소 수정 지시로 처리. 단일 출처. |
+| f2 | 예 | 예 | 아니오 | 유지 | 확인: seriesDescription·actionDescription·actionResult·wheel constraints 가 'Free text' 설명, mobileRobotKinematics·mobileRobotClass 가 'Extensible enum'(enum 키워드 없이 설명문) 이다(원문·재열람 일치). evidence_excerpt 에 원문 구절 3개를 직접 인용했으므로 페이지에서는 재서술한다. |
+| f3 | 예 | 예 | 아니오 | 유지 | [추정] 유지: f2 에서 도출한 이 위키의 추론이며 측정 근거 없음을 브리프가 밝혔다. 신뢰도 low. |
+| f4 | 예 | 예 | 아니오 | 유지 | 확인: cargoMaxWeight 설명 'Max weight of cargo in kg'·type string, cargoType type string, productDocumentation format uri(원문·재열람 일치). 기존 실행 2026-09-25-35 f6 와 같은 관찰이므로 ref-230 각주를 재사용한다. identityReport 의 한국어 표기는 용어집 '신원 보고'를 따른다. |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: task_capabilities loop·delivery True, actions ["some_action_here"], voltage 12.0 # V, capacity 24.0 # Ahr, charging_current 5.0 # A, mass 20.0 # kg, footprint 0.3 # radius in m(원문·재열람 일치). 값은 템플릿 예시값(tinyRobot·some_action_here)이며, limits 는 단위 없이 '# velocity, acceleration' 주석만, friction_coefficient 는 주석 없음 — 페이지에서 예시값임을 밝힌다. |
+| f6 | 예 | 예 | 아니오 | 유지 | [추정] 유지: f1·f2·f4·f5 를 대응시킨 추론이며 측정 근거 없음을 명시했다. ref-513 은 리서치가 이번에 열지 않았는데 이 finding 의 source_unopened 가 false 로 적혀 있다(브리프 표기 불일치, 코드 상한 적용 대상). 검증 에이전트가 ref-513 README 를 raw 경로로 재열람해 실재를 확인했다. 신뢰도 low. |
+| f7 | 예 | 예 | 아니오 | 유지 | 확인(검증 재열람 raw README, 2026-10-09): 평가를 텍스트 문단·수식·표·읽기 순서로 나누고 문서 유형 목록에 매뉴얼이 없다. 단 목록의 'research report'를 '재무 보고서'로 옮긴 것은 원문과 다르다(목록: 학술 문헌, PPT→PDF, 책, 컬러 교과서, 시험지, 손글씨 노트, 잡지, 연구 보고서, 신문 — 소개문은 10종이라 하나 9종만 열거). 문구 수정 지시. 기존 단계 2 페이지 q2-02 문장과 같은 내용이므로 새 각주 없이 재사용. |
+| f8 | 예 | 예 | 아니오 | 유지 | 확인(검증 재열람 raw README): '20191101-BDSDK-SL' 라이선스 표기가 있다. 리서치는 이번에 열지 않음(재인용). [추정] 벤더 주장 유지. 기존 단계 2 페이지 q2-03 문장과 중복 — 새 내용 없음. |
+| f9 | 예 | 예 | 아니오 | 유지 | 확인(검증 재열람 raw LICENSE): BSD 3-Clause. 리서치 미열람(재인용). [추정] 벤더 주장 유지. 기존 페이지와 중복. |
+| f10 | 예 | 예 | 아니오 | 유지 | 확인(검증 재열람): doosan-robot2 humble README 배지 Apache 2.0·BSD 3-Clause, rbpodo LICENSE Apache 2.0. ref-511 URL 은 2026-10-09 현재 service-portal.doosanrobotics.ai 로 302 리디렉션되어 매뉴얼 게시판 내용을 확인하지 못했다(원문 미열람). 주장은 '이용 조건 미확인'이므로 유지. [추정] 벤더 주장 유지. |
+| f11 | 예 | 예 | 아니오 | 유지 | [추정] 유지: productDocumentation 이 URI 링크 필드라는 점은 ref-230 으로 확인. 나머지는 '이번 실행 입력 범위'에 대한 진술이며 새 검색이 없었으므로 AMR 매뉴얼 샘플 부재의 근거가 아니다 — 페이지에서는 실행 범위 한계로만 쓴다. |
+| f12 | 예 | 예 | 아니오 | 유지 | 확인: start_activity docstring 'This is specific to the robot and the use case', actions 로 이름만 선언, fleet manager 가 동작을 모르면 execution.finished() 로 종료(원문·재열람 일치). 단일 출처. |
+| f13 | 예 | 예 | 아니오 | 유지 | 확인: 'RMF would relinquish control…' 문장과 update 루프의 is_command_completed → execution.finished() 가 있다. 다만 튜토리얼은 별도 콜백으로 완료를 표시하는 방식도 허용하므로 '…해야 완료로 처리한다'는 '튜토리얼 예시에서는 …로 완료를 알린다(별도 콜백도 가능)'로 좁힌다. 5. 로봇 능력·작업 표현 5절 완료·인계 칸과 같은 근거(ref-040). |
+| f14 | 예 | 예 | 아니오 | 유지 | 확인: reference_coordinates L1 rmf·robot 4쌍, charger, recharge_threshold 0.10·recharge_soc 1.0, mass·moment_of_inertia·friction_coefficient, ambient·tool power, fleet_manager prefix·user·password(원문·재열람 일치). 단 reference_coordinates 는 '# Optional' 표시가 붙은 선택 항목이므로 '채우게 한다'를 '두며, 좌표 대응점은 선택 항목이다'로 고친다. |
+| f15 | 예 | 아니오 | 아니오 | 강등 | 부분 뒷받침: 좌표 대응점·충전기 배정·동작–로봇 API 매핑·완료 확인 코드가 통합자 몫이라는 점은 ref-105·ref-040 이 뒷받침한다. 그러나 '배터리 하한'을 제조사 문서에서 가져올 수 없다고 한 부분은 출처가 뒷받침하지 않고, VDA 5050 3.0.0 팩트시트가 batteryCharging.criticalLowChargingLevel 을 선언하게 한다는 기존 검증 사실(실행 2026-09-25-23, 검증 재열람으로 재확인)과 충돌한다(oq-068). 이미 [추정]이므로 강등은 '배터리 하한' 삭제와 [추정]·신뢰도 low 유지로 이행한다. 제조사 문의·커뮤니티 경로 근거 없음. |
+| f16 | 예 | 예 | 아니오 | 유지 | 확인: 스키마 description 첫 문장과 쓰임(유형 비교, 계획·규모 산정·시뮬레이션, VD[M]A-5050 플릿 관제 통합)이 원문·재열람과 일치. evidence_excerpt 가 원문 문장을 직접 인용 — ref-228 의 페이지 직접 인용은 1회 이내로 제한. |
+| f17 | 예 | 예 | 아니오 | 유지 | 확인: batteryPercentage·remainingRunTime·loadPercentageStillAvailable·errorCodes(문자열 배열) 가 statusReport 에 있다. 단 필수는 uuid·timestamp·operationalState·location 뿐이고 네 필드는 선택이므로 '보고하게 한다'를 '선택 필드로 둔다'로 고친다. 실행 2026-09-25-35 f2 와 같은 관찰(ref-230 재사용). 18. 실시간 세계 상태·데이터 일관성의 현재 상태 표현으로만 다룬다. |
+| f18 | 예 | 예 | 아니오 | 유지 | 확인(검색 결과 일치, 원문 미열람): Scientific Reports 2025-10-02, DOI 10.1038/s41598-025-16649-3, Naqvi 외 — 제조사 공개 능력과 관측 능력을 구분하는 Robotic Capability Ontology 를 제시(PMC·HAL 기록). nature.com 은 로그인 리디렉션으로 열리지 않음. 5. 로봇 능력·작업 표현 3절의 기존 [사실] 문장과 같은 주장 — 기존 각주 재사용. 원문 미열람이라 medium 상한. |
+| f19 | 예 | 아니오 | 아니오 | 강등 | 부분 뒷받침: 팩트시트가 유형 시리즈 수준 선언(f16)이고 개체별 실제 성능 저하는 운용 관측으로 보완된다(f17·f18)는 추론은 성립한다. 그러나 '오류 코드의 뜻'을 상태 보고로 보완한다는 부분은 뒷받침되지 않는다 — 상태 보고의 errorCodes 는 뜻 없는 자유 문자열이고(f17), 뜻은 오류 코드표 문서 유형(매트릭스에서 미조사)의 몫이다. 또 '상태 보고로만 드러나므로'는 identityReport 의 maxRunTime(예상 가동 시간)과 어긋난다. 강등은 '오류 코드의 뜻' 삭제·'로만' 삭제와 [추정]·low 유지로 이행. ref-041 이 미열람인데 source_unopened false 로 적힌 표기 불일치도 있다. |
+
+## 항목별 결과
+
+| 항목 | 결과 | 내용 |
+|---|---|---|
+| 분류 적합성 | 예 | — |
+| 범위 경계 | 예 | — |
+| 중복·모순 | 아니오 | f7·f8·f9·f10 은 단계 2 페이지 3절 q2-02·q2-03 의 기존 검증 문장(실행 2026-09-25-57)과 같은 내용이다 — 새 문장·새 각주를 만들지 않고 기존 문장·각주를 유지한다, f4·f17 은 실행 2026-09-25-35 의 MassRobotics 관찰(모델·표준 비교표, 아이디어 1 페이지 4절)과 겹친다 — ref-230 각주 재사용, f13 은 5. 로봇 능력·작업 표현 5절 완료·인계 칸의 ref-040 문장과, f18 은 같은 페이지 3절·능력 온톨로지 초안 '능력 출처 구분' 근거와 같다 — 기존 각주 재사용, f15 의 '배터리 하한을 제조사 문서에서 가져올 수 없다'는 VDA 5050 3.0.0 팩트시트 batteryCharging.criticalLowChargingLevel 에 관한 기존 검증 사실(실행 2026-09-25-23, 능력 온톨로지 초안 6절)과 열린 질문 oq-068 과 충돌한다, f19 의 '오류 코드의 뜻은 상태 보고로 보완'은 문서 유형 매트릭스의 오류 코드표 행(미조사)과 어긋난다 |
+| 용어 일관성 | 아니오 | MassRobotics identityReport 를 브리프는 '식별 보고'로 쓰나 용어집은 '신원 보고 (Identity Report (MassRobotics identityReport))'다, Open-RMF 의 PerformAction 사용자 정의 동작을 브리프는 '사용자 정의 동작'으로만 쓰나 용어집 항목은 '수행 가능 동작 (Performable Action (Open-RMF perform_action))'이다 |
+| 인용 길이·저작권 | 아니오 | ref-228 에서 직접 인용 구절이 f2(Free text 설명 3개)와 f16(description 첫 문장)에 걸쳐 여러 번 계획돼 있다 — 페이지에서는 출처당 1회만 허용, ref-040 에서 f12(start_activity docstring)와 f13('RMF would relinquish control…') 두 구절을 직접 인용하고 있다 — 페이지에서는 1회만 허용 |
+| 정정 요청 반영 | — | — |
+
+## 수정 지시(required_fixes)
+
+- f1: '수치 필드마다 단위와 최솟값 제약을 스키마 속성으로 단다'를 '주요 수치 필드(maximumLoadMass kg, maximumSpeed m/s, maximumAngularSpeed rad/s 등)에 단위를 스키마 속성(unit)으로 단다'로 좁히고, 적재 치수(loadDimensions)처럼 단위를 설명문에만 적는 필드도 있다는 점을 함께 적는다 — 원문에서 모든 수치 필드에 unit·minimum 이 있지는 않다.
+- f5: Open-RMF config.yaml 의 값(tinyRobot, some_action_here, 12.0 V 등)이 템플릿 예시값임을 밝히고, limits 는 단위 없이 '# velocity, acceleration' 주석만 있다는 점을 넣거나 단위 주석 사례를 battery·mechanical·profile 항목으로 한정한다 — 원문 그대로의 범위.
+- f7: OmniDocBench 문서 유형의 '재무 보고서'를 '연구 보고서(research report)'로 고친다. 단계 2 페이지 3절 q2-02 의 기존 같은 문장도 이번 갱신에서 함께 고친다 — 검증 재열람(2026-10-09) README 의 목록과 다르다.
+- f13: '…execution.finished() 를 호출해야 완료로 처리한다'를 '튜토리얼 예시에서는 갱신 루프가 is_command_completed 로 완료를 확인한 뒤 execution.finished() 를 호출하며, 별도 콜백으로 완료를 표시할 수도 있다'로 고친다 — 튜토리얼이 대안을 허용한다.
+- f14: reference_coordinates 는 템플릿에서 '# Optional' 로 표시된 선택 항목임을 밝힌다('채우게 한다' → '두며, 층별 좌표 대응점은 선택 항목이다').
+- f15: [추정]·신뢰도 low 를 유지하되 '제조사 문서에서 가져올 수 없는' 항목에서 '배터리 하한'을 뺀다. 충전 하한은 VDA 5050 3.0.0 팩트시트가 criticalLowChargingLevel 로 선언할 수 있고 운영 설정 recharge_threshold 와의 관계는 열린 질문 oq-068 이라는 점을 함께 적어 두 값을 모두 제시한다 — 기존 검증 사실과 충돌.
+- f17: '상태 보고는 … 실행 중 값으로 보고하게 한다'를 '상태 보고는 … 를 선택 필드로 둔다(필수는 uuid·timestamp·operationalState·location)'로 고친다.
+- f19: [추정]·신뢰도 low 를 유지하되 '오류 코드의 뜻' 구절을 삭제하고 '상태 보고로만 드러나므로'의 '로만'을 뺀다. 오류 코드의 뜻은 오류 코드표 문서 유형의 몫이며 매트릭스에서 아직 미조사라고 적는다 — 상태 보고의 errorCodes 는 뜻 없는 자유 문자열이다.
+- 단계 2 페이지 3절 q2-04 소절({#q2-04}): q2-04 는 답함(신뢰도 low)으로 처리하되, 근거가 로봇 제조사 매뉴얼이 아니라 Open-RMF 통합 문서·템플릿과 표준 스키마이므로 '문서에 없다'는 판단은 이 위키의 추론이고, 질문이 든 보완 경로 가운데 제조사 문의·커뮤니티는 근거 출처가 없다(미확인)는 점을 소절과 4절 불확실성에 명시한다.
+- f11: AMR 공개 매뉴얼 샘플에 관해서는 '이번 실행은 새 검색을 하지 않았다'는 실행 범위 한계로만 적고, 부재의 근거로 쓰지 않는다. q2-03·q2-07 상태는 바꾸지 않는다.
+- 용어: MassRobotics identityReport 는 용어집대로 '신원 보고(identityReport)'로 쓰고, Open-RMF 사용자 정의 동작은 첫 등장에서 용어집 '수행 가능 동작(Performable Action)'과 연결한다 — 용어집과 다른 '식별 보고' 표기를 이 실행이 고치는 문장에서 쓰지 않는다.
+- 인용: 페이지에서 ref-228 과 ref-040 의 원문 직접 인용은 각각 1회 이내로 하고, f2·f12·f13·f16 의 나머지 원문 구절은 한국어로 재서술한다.
+- 교차 규칙: f6·f7(문서 파싱·추출 난이도)을 다루는 문장은 현행 분류의 교차 규칙(매뉴얼 해석은 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전에 적용되는 방법이며 방법 영역은 45. 문서·도면·장면 이해, 실행 사용 기준은 47. AI·학습·적응과 모델 운영)으로 적고 45. 문서·도면·장면 이해 연결을 둔다. 이번에 갱신하는 단계 2 페이지 3절 q2-02 의 '분류 개정 전 원문 8장 교차 규칙에 따라 47…' 문장도 같이 고친다.
+- 각주: 이번 실행에서 inbox 원문으로 연 ref-040·ref-105·ref-228·ref-230 은 접근일 2026-10-09, '(원문 미열람)' 없이 적는다(단계 2 페이지·문서 유형 매트릭스의 기존 ref-230 각주의 '(원문 미열람)'도 제거). 리서치가 다시 열지 않은 ref-505·ref-506·ref-507·ref-508·ref-511·ref-513·ref-041 은 기존 각주 줄(접근일 2026-09-25, 기존 표기)을 그대로 재사용하고 접근일을 2026-10-09 로 바꾸지 않는다. reference_updates 에서 ref-041·ref-511 은 source_unopened: true.
+- 현장 유형: 이번 finding 은 site_type 이 모두 null 이므로 f12·f13·f14·f17·f19 의 flow_item 이 있어도 site_matrix_updates 를 내지 않고 적용 사례로 쓰지 않는다.
+- 세부영역 반영 제안 2건(5. 로봇 능력·작업 표현 6절, 55. 현장 조사·설치·시운전 6절)은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 반영 제안으로만 남기며, 제안 문구에 f15·f19 의 위 축소를 반영한다.
+- 문서 유형 매트릭스 5절 '문서에 없는 정보': 정보 항목별 요약은 수정된 f15·f19 기준으로 쓰고, 보완 경로는 '통합·시운전의 측정·시험과 어댑터 구현', '운용 중 상태 보고·관측 능력 기록'만 적으며 제조사 문의·커뮤니티는 '미확인'으로 둔다. 3절에 새로 채운 칸이 없으면 상단 상태 줄의 '채운 칸: 9 / 64'를 유지한다.
+- 트랙: 단계 2 페이지 6절은 두 조건 모두 '미충족 · 미승인'을 유지하고 '다음 단계로 전환: 아니오(q2-02·q2-03 조사 중, q2-05·q2-06·q2-07 열림, 매트릭스 미조사 칸)'로 적으며, 2절 표에서 q2-04 를 답함(답한 실행 2026-10-09-22, 답 위치 #q2-04), q2-02·q2-03 은 열림(백로그 조사 중)으로 둔다. 새 질문 2건은 단계 3·단계 4 태그 그대로 backlog_updates 에 넣고 origin 은 f2·f12 로 한다. track_updates.stage_transition 은 넣지 않는다.
+
+## 검증 노트
+
+판정: 조건부 승인. 확인 17건, 미확인 2건(f15·f19 부분 뒷받침), 교차 확인 0건. 강등: f15·f19 — 이미 [추정]이므로 문장 축소로 이행(f15 '배터리 하한' 삭제, f19 '오류 코드의 뜻' 삭제). 원문 미열람 출처: 리서치 기준 ref-041·ref-505·ref-506·ref-507·ref-508·ref-511·ref-513(이번 실행에서 다시 열지 않은 재인용). 검증 에이전트가 2026-10-09 에 ref-505~508·ref-513 은 공식 저장소 raw 경로로 재열람해 라이선스·문서 유형 표기를 확인했고, ref-041 은 검색 결과(PMC·HAL 기록)로만 확인했으며, ref-511 URL 은 service-portal.doosanrobotics.ai 로 리디렉션되어 매뉴얼 게시판 내용을 확인하지 못했다. 주의: 이번 브리프는 반려 뒤 재실행으로 새 검색 0회·신규 출처 0건이며 한국어·영어 검색을 하지 않았다(직전 1차 판정 파일은 입력에 없어 반려 사유 해소 여부는 브리프 self_check 서술로만 확인). 벤더 문서만 근거로 한 finding(f8·f9·f10)은 [추정]·vendor_claim 표시가 되어 있다. 브리프 표기 불일치: ref-040·ref-105·ref-228·ref-230 의 fetched_via 가 github_raw 로 적혔으나 실제 근거는 inbox 원문 텍스트(fetch_url 없음)이고, f6·f19 는 미열람 출처(ref-513·ref-041)에 기대면서 source_unopened 가 false 다 — 다음 리서치 실행에서 바로잡을 것. q2-04 는 답함으로 인정하되 신뢰도 low 다: 근거가 로봇 제조사 매뉴얼이 아니라 Open-RMF 통합 문서·템플릿과 표준 스키마이고, '문서에 없다'는 판단과 보완 경로는 이 위키의 추론이며, 제조사 문의·커뮤니티 경로는 근거가 없다. 열린 질문 oq-068(충전 하한 기준)과 연결된다. 온톨로지 변경 승인: 없음 / 거부: 없음(변경 제안 없음). 단계 완료 조건: 미충족(부족: 문서 유형 매트릭스 64칸 중 9칸만 채움 — 사용자 매뉴얼·오류 코드표·치수도·도면 행 미조사, 공개 문서 샘플에 AMR 샘플 없음·포털 매뉴얼 이용 조건 미확인). 단계 전환: 미승인(막힌 질문 q2-02·q2-03 조사 중, q2-05·q2-06·q2-07 열림).
+
+## 트랙 추가 검증
+
+| 항목 | 결과 |
+|---|---|
+| 표준 출처(발행 기관 자료) | 예 |
+| 벤더 주장 표기 | 예 |
+| 온톨로지 변경 근거 | 예 |
+| 백로그 중복 질문 | — |
+| 단계 태그 문제 | — |
+| 완전성 표현 | 예 |
+| 단계 완료 판정 | 미충족 |
+| 단계 전환 승인 | 아니오 |

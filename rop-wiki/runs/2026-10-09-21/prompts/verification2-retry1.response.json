@@ -1,0 +1,177 @@
+{
+  "duration_api_ms": 72697,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.8355348,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 581386,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 8334,
+    "output_tokens_details": {
+      "thinking_tokens": 6398
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 581386,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 8334,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 581386,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 581386
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 8334,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 581386,
+      "webSearchRequests": 0,
+      "costUSD": 4.8355348,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6398,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-21\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 확인 21건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1368, ref-1370, ref-1374, ref-227. ref-1376·ref-1377 은 검증 단계에서 열어 확인했지만 페이지 각주에는 원문 미열람 표시를 유지했다. 주의: q1-05·q1-06 답의 핵심 결론은 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'이다. 이 결론은 근접 근거로 만든 이 위키의 종합([추정])이다. 모든 사실 주장은 단일 출처이며, 물류 시설 도면을 대상으로 잰 인식 성능 측정값은 없다. FloorPlanCAD 범주 수(30개 대 35개)는 출처가 충돌해 둘 다 제시했다. ArchCAD-400K 의 엘리베이터 범주도 앞선 실행의 검색 요약과 이번 v3 열람 결과가 달라 둘 다 제시했으며, 두 건 모두 열린 질문으로 올렸다. AI Hub 건축 도면 데이터가 주거 3유형뿐이라는 확인은 q2-04·oq-197 의 부분 근거일 뿐이며 해결로 바꾸지 않았다. 남은 표기 문제가 셋 있다. 첫째, 단계 1 페이지·아이디어 페이지의 ref-067·ref-073·ref-076·ref-079·ref-163 각주 정의는 앞선 실행의 '접근일 2026-09-25'(일부 '원문 미열람')로 남아 있어 참고문헌 색인의 이번 접근일과 다를 수 있다. 둘째, 트랙 개요·아이디어 페이지 프런트매터의 related_areas 에 8·14 가 빠진 것은 이번 실행 전부터 있던 불일치다. 셋째, 트랙 현재 단계 표기가 트랙 정의(current_stage 1)·자동 진행 표(단계 1)·개요 상태 줄(단계 2)에서 서로 달라 pipeline 담당의 정리가 필요하다. 신규 출처 id ref-1367~ref-1376 은 실행 2026-10-09-19 의 id 와 겹치므로 게시 전 id 충돌 검사가 필요하다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 미충족(부족: 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안에 없음; 단계 2 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q2-10; 되돌아온 질문 q1-08 은 부분 답). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q2-10·q1-08). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증에서 직전 2차 수정 지시 9건이 모두 이행된 것을 확인했다: 대분류 최근 업데이트의 번호+이름 표기, 단계 1 페이지 프런트매터(sources·related_areas·last_run)·상태 줄(재개)·5절 상태·6절 전환 줄·9절 버전, ArchCAD-400K 엘리베이터 근거 충돌 연결 문장과 열린 질문, 트랙 개요 상태 줄과 last_run, 아이디어 페이지 last_run. 1차 수정 지시 17건의 이행도 유지됐다. 2차 검증은 도구를 쓰지 않았다.\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-10-09-21",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 확인 21건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1368, ref-1370, ref-1374, ref-227. ref-1376·ref-1377 은 검증 단계에서 열어 확인했지만 페이지 각주에는 원문 미열람 표시를 유지했다. 주의: q1-05·q1-06 답의 핵심 결론은 '이번 검색 범위에서 찾지 못함(부재 확인 아님)'이다. 이 결론은 근접 근거로 만든 이 위키의 종합([추정])이다. 모든 사실 주장은 단일 출처이며, 물류 시설 도면을 대상으로 잰 인식 성능 측정값은 없다. FloorPlanCAD 범주 수(30개 대 35개)는 출처가 충돌해 둘 다 제시했다. ArchCAD-400K 의 엘리베이터 범주도 앞선 실행의 검색 요약과 이번 v3 열람 결과가 달라 둘 다 제시했으며, 두 건 모두 열린 질문으로 올렸다. AI Hub 건축 도면 데이터가 주거 3유형뿐이라는 확인은 q2-04·oq-197 의 부분 근거일 뿐이며 해결로 바꾸지 않았다. 남은 표기 문제가 셋 있다. 첫째, 단계 1 페이지·아이디어 페이지의 ref-067·ref-073·ref-076·ref-079·ref-163 각주 정의는 앞선 실행의 '접근일 2026-09-25'(일부 '원문 미열람')로 남아 있어 참고문헌 색인의 이번 접근일과 다를 수 있다. 둘째, 트랙 개요·아이디어 페이지 프런트매터의 related_areas 에 8·14 가 빠진 것은 이번 실행 전부터 있던 불일치다. 셋째, 트랙 현재 단계 표기가 트랙 정의(current_stage 1)·자동 진행 표(단계 1)·개요 상태 줄(단계 2)에서 서로 달라 pipeline 담당의 정리가 필요하다. 신규 출처 id ref-1367~ref-1376 은 실행 2026-10-09-19 의 id 와 겹치므로 게시 전 id 충돌 검사가 필요하다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 미충족(부족: 관계(엣지) 쪽 표준 대응이 공간 그래프 스키마 초안에 없음; 단계 2 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q2-10; 되돌아온 질문 q1-08 은 부분 답). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q2-04·q2-06·q2-07·q2-08·q2-09·q2-10·q1-08). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증에서 직전 2차 수정 지시 9건이 모두 이행된 것을 확인했다: 대분류 최근 업데이트의 번호+이름 표기, 단계 1 페이지 프런트매터(sources·related_areas·last_run)·상태 줄(재개)·5절 상태·6절 전환 줄·9절 버전, ArchCAD-400K 엘리베이터 근거 충돌 연결 문장과 열린 질문, 트랙 개요 상태 줄과 last_run, 아이디어 페이지 last_run. 1차 수정 지시 17건의 이행도 유지됐다. 2차 검증은 도구를 쓰지 않았다.",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 59197,
+  "type": "result",
+  "duration_ms": 73076,
+  "uuid": "6a42a732-a74f-4b74-bdf5-e6eb8244c825",
+  "ttft_stream_ms": 2829,
+  "time_to_request_ms": 109,
+  "time_to_request_phases_ms": {
+    "other": 22,
+    "system_prompt": 17,
+    "resume_other": 0,
+    "process_user_input": 14,
+    "input_attachments": 14,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 15
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 59,
+  "time_to_request_cpu_ms": 129,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 14,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 2829,
+  "time_to_request_from_spawn_ms": 3252759,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791543433561.1843,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 74.6
+}

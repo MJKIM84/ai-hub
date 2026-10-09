@@ -20,6 +20,131 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-05·q2-06 답함(#q2-05·#q2-06 소절 신설), q2-07 부분 답 소절(#q2-07), 4절 결론·불확실성 갱신(VDA 5050 loads 문장에 기준일 표시), 후속 질문 q4-21·q4-22, 완료 조건 미충족·전환 아니오, 반영 제안 3건, 출처 10건 추가 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v1.0 → v1.1: 상황 개념의 대상 표현에 해석 결과 '대상 화물 참조'(품목 단위 / 적재 단위) 짝 추가(f10·f11·f12·f13, 대응 원천은 f15 추정 메모, 상태 확정 유지), 1절 v1.1 요지, 6절에 q2-05·q2-06·q2-07 답 링크(질문은 닫지 않음) |
+| 2026-10-09-27 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 4절에 '이름 사전 형식'·'대상 화물의 두 식별 단위와 대응 원천'·'IEEE 1872.1-2024 의 공개 자료 범위 분해 구조' 소절 추가(기존 표와 '미확인' 표기 유지) |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 살아있는 산출물에 실행 2026-10-09-27 항목 추가(q2-05·q2-06 답함, q2-07 부분 답, 초안 v1.0 → v1.1, 전환 미승인); 상태 줄은 현재 단계 2·마지막 트랙 실행 2026-10-09 그대로 |
+| 2026-10-09-27 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 채팅 기반 구성·운영 단계 2: q2-05·q2-06 답함, q2-07 부분 답, 업무 분해·배정 설계 초안 v1.0 → v1.1(상황 개념에 대상 화물 참조), 새 질문 2건(q4-21·q4-22), 1차 조건부 승인 수정 20건 이행 |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1391.md](references/ref-1391.md) | 참고문헌 ref-1391 등록: EPCIS — JSON-Schema/schemas/AggregationEvent-JSON-Schema.jso… |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1392.md](references/ref-1392.md) | 참고문헌 ref-1392 등록: Indoor Mapping Data Format (IMDF) 1.0.0 — Unit |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1393.md](references/ref-1393.md) | 참고문헌 ref-1393 등록: SKOS Simple Knowledge Organization System Reference |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1394.md](references/ref-1394.md) | 참고문헌 ref-1394 등록: Logistic units |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1395.md](references/ref-1395.md) | 참고문헌 ref-1395 등록: Towards a Robot Task Ontology Standard |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1396.md](references/ref-1396.md) | 참고문헌 ref-1396 등록: Multi-Robot Task Planning for Multi-Object Retrieval Tasks w… |
+| 2026-10-09-27 | 생성 | [docs/references/ref-1397.md](references/ref-1397.md) | 참고문헌 ref-1397 등록: GLN extension component |
+| 2026-10-09-27 | 생성 | [docs/glossary/skos.md](glossary/skos.md) | 용어집 항목 단순 지식 조직 체계 |
+| 2026-10-09-27 | 생성 | [docs/glossary/gln-extension-component.md](glossary/gln-extension-component.md) | 용어집 항목 GLN 확장 성분 |
+| 2026-10-09-27 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-10-09-27 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-04·q2-06 답함(3절 소제목 신설, q2-02 표 갱신 칸 병기), 2절 표·상태 줄 갱신, 4절 결론·불확실성 보강, 후속 질문 3건, 6절 완료 조건(전환 아니오), 출처·이력 추가. 2차: q2-04 소절의 충전 위치 소절 위치 표기와 2절 첫 문단 표현 수정 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.2 → v1.3: 충전 위치에 속성 'BIM 표현(후보)' 추가(2절 보충 표), 6절 충전소 항목 범위 한정·RECHARGER·IDS 근거 보강 |
+| 2026-10-09-26 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 공개 데이터셋 비교표 갱신 소절(CubiCasa5K·AI Hub 행, q2-04), 4절에 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구 소절(q2-06, BIM 소절 셋째 항목 범위 한정) 추가 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 3절 끝에 q1-08 보강 소절(f25·f26) 추가, 출처 ref-1422, 이력 메모. 2차: 머리말 패치로 프런트매터 sources 에 ref-1422 추가 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-10-09-26 요약 문단 추가(스키마 초안 v1.3, q2-04·q2-06 답함). 상태 줄은 이미 최신이라 바꾸지 않음 |
+| 2026-10-09-26 | 요약 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | 건축 도면 자동 인식 단계 2: q2-04·q2-06 답함, q1-08 보강(조사 중 유지), 공간 그래프 스키마 초안 v1.2 → v1.3, 후속 질문 3건 |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1352.md](references/ref-1352.md) | 참고문헌 ref-1352 등록: AI 허브 이용정책 (데이터 이용정책) |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1353.md](references/ref-1353.md) | 참고문헌 ref-1353 등록: CubiCasa5k |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1354.md](references/ref-1354.md) | 참고문헌 ref-1354 등록: CubiCasa5k — floortrans/loaders/house.py |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1355.md](references/ref-1355.md) | 참고문헌 ref-1355 등록: 경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105 |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1356.md](references/ref-1356.md) | 참고문헌 ref-1356 등록: IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1357.md](references/ref-1357.md) | 참고문헌 ref-1357 등록: IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1358.md](references/ref-1358.md) | 참고문헌 ref-1358 등록: IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1359.md](references/ref-1359.md) | 참고문헌 ref-1359 등록: IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1360.md](references/ref-1360.md) | 참고문헌 ref-1360 등록: Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 do… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1361.md](references/ref-1361.md) | 참고문헌 ref-1361 등록: Information Delivery Specification (IDS) |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1362.md](references/ref-1362.md) | 참고문헌 ref-1362 등록: IDS — Documentation/UserManual/README.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1363.md](references/ref-1363.md) | 참고문헌 ref-1363 등록: IDS — Documentation/UserManual/entity-facet.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1364.md](references/ref-1364.md) | 참고문헌 ref-1364 등록: IDS — Documentation/UserManual/property-facet.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1365.md](references/ref-1365.md) | 참고문헌 ref-1365 등록: IDS — Documentation/UserManual/restrictions.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1366.md](references/ref-1366.md) | 참고문헌 ref-1366 등록: 4.0 Object Properties & Property Grouping — 4.3 IFC properti… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1421.md](references/ref-1421.md) | 참고문헌 ref-1421 등록: Live semantic data from building digital twins for robot nav… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1422.md](references/ref-1422.md) | 참고문헌 ref-1422 등록: RGo Robotics introduces AI-powered Intelligent Mapping syste… |
+| 2026-10-09-26 | 생성 | [docs/glossary/buildingsmart-data-dictionary.md](glossary/buildingsmart-data-dictionary.md) | 용어집 항목 buildingSMART 데이터 사전 |
+| 2026-10-09-26 | 생성 | [docs/glossary/building-element-proxy.md](glossary/building-element-proxy.md) | 용어집 항목 건물 요소 프록시 |
+| 2026-10-09-26 | 생성 | [docs/glossary/user-defined-property-set.md](glossary/user-defined-property-set.md) | 용어집 항목 사용자 정의 속성 세트 |
+| 2026-10-09-26 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 7건 갱신 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-04 답함(3절 '### q2-04' 소절 신설, 중간 표현별 대응표는 이 위키 구성), 상태 줄·2절·4절·5절(q3-17)·6절(검증 판정 행별: 조건 1 충족·미승인, 조건 2 미충족·미승인, 전환 아니오)·7절·8절·9절 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 되돌아온 질문 q1-05·q1-06 답함(3절 두 소제목, 신뢰도 low, 물류창고 사례 표), 상태 줄·프런트매터 sources(6건 추가)·2절(도입 문단 q1-01 출처 서술 유지)·4절·5절(q1-05 답함, q4-20·q5-20 추가)·6절 전환 줄·8절·9절(이력 표 맨 위 행, 버전 6) 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.9 → v1.0: 작업 개념 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모 추가(상태 확정 유지, 관계 추가 없음), 6절에 q2-04 답 링크와 질문 2건 추가 |
+| 2026-10-09-25 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절에 물류·산업 지향 연구 갱신 소절(G3 서술은 실행 2026-09-25 기준임을 밝힘), 4절에 '중간 표현과 로봇 관제 인터페이스 대응' 소절 추가(결론은 추정) |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 상태 줄을 '현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고치고, 6절에 '현재 단계는 단계 3' 서술이 각 실행 시점 기준임과 실행 2026-10-09-25 결과를 덧붙임 |
+| 2026-10-09-25 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 채팅 기반 구성·운영 단계 2: q1-05·q1-06(물류·산업 지향 LLM 작업 분해 연구, 물류 지시 데이터셋)과 q2-04(중간 표현과 VDA 5050 주문·Open-RMF 작업 요청 대응) 답함, 새 질문 3건, 업무 분해·배정 설계 초안 v0.9 → v1.0, 1차 조건부 승인 수정 23건·2차 수정 7건 이행 |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1337.md](references/ref-1337.md) | 참고문헌 ref-1337 등록: Integrating LLMs and Classical Planning for Pallet Logistics… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1338.md](references/ref-1338.md) | 참고문헌 ref-1338 등록: Scalable Multi-Robot Collaboration with Large Language Model… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1339.md](references/ref-1339.md) | 참고문헌 ref-1339 등록: An Intelligent Warehouse Execution Framework Integrating SAP… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1340.md](references/ref-1340.md) | 참고문헌 ref-1340 등록: rmf_ros2 — rmf_fleet_adapter/schemas/event_description__sequ… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1341.md](references/ref-1341.md) | 참고문헌 ref-1341 등록: isaac_mission_dispatch — README |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1342.md](references/ref-1342.md) | 참고문헌 ref-1342 등록: isaac_mission_control — README |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1343.md](references/ref-1343.md) | 참고문헌 ref-1343 등록: PlanSys2 Design |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1344.md](references/ref-1344.md) | 참고문헌 ref-1344 등록: Nl2Hltl2Plan: Scaling Up Natural Language Understanding for… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1345.md](references/ref-1345.md) | 참고문헌 ref-1345 등록: Simultaneous Task Allocation and Planning for Multi-Robots u… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1346.md](references/ref-1346.md) | 참고문헌 ref-1346 등록: Designing Behavior Trees from Goal-Oriented LTLf Formulas |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1347.md](references/ref-1347.md) | 참고문헌 ref-1347 등록: Decentralized Intent-Based Multi-Robot Task Planner with LLM… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1348.md](references/ref-1348.md) | 참고문헌 ref-1348 등록: Seeing, Saying, Solving: An LLM-to-TL Framework for Cooperat… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1349.md](references/ref-1349.md) | 참고문헌 ref-1349 등록: Interoperability Interest Group August 01, 2024: Multi-Agent… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1350.md](references/ref-1350.md) | 참고문헌 ref-1350 등록: Interoperability Interest Group June 5, 2025: Execution of W… |
+| 2026-10-09-25 | 생성 | [docs/references/ref-1351.md](references/ref-1351.md) | 참고문헌 ref-1351 등록: crossflow — README |
+| 2026-10-09-25 | 생성 | [docs/glossary/linear-temporal-logic-on-finite-traces.md](glossary/linear-temporal-logic-on-finite-traces.md) | 용어집 항목 유한 트레이스 선형 시간 논리 |
+| 2026-10-09-25 | 생성 | [docs/glossary/task-dependency-graph.md](glossary/task-dependency-graph.md) | 용어집 항목 작업 의존 그래프 |
+| 2026-10-09-25 | 생성 | [docs/glossary/workflow-diagram.md](glossary/workflow-diagram.md) | 용어집 항목 워크플로 다이어그램 |
+| 2026-10-09-25 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-02·q2-03·q2-05 답함(신뢰도 낮음), 3절 q2-03의 AMR 샘플 미발견 문장을 MiR·Clearpath 샘플로 대체, q2-05 소제목 신설, 4~6·9절 갱신, 7절 반영 제안 추가, 후속 질문 q3-10. 2차: 단계 상태 줄을 열린 질문 2건·답한 질문 5건으로 고치고, 새 각주 정의를 8절로 옮기고 ref-1386 기관 표기를 참고문헌과 맞췄다 |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.4 → v0.5: 근거 문서 속성 '언어(원본 / 번역 구분)' 추가(f16·f17·f20), 속성 '적용 구성'은 6절 질문에 합침. 2차: H1·머리 단락·4절 도식·3절·5절을 v0.5와 샘플 11건에 맞추고 ref-1386 기관 표기를 참고문헌과 맞췄다 |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 4절 공개 문서 샘플 4건 → 11건(AMR 4건 포함), 'AMR 샘플 미발견' 문장 대체, 3절에 두산 웹 매뉴얼 사양 표·UR 별도 오류 코드 문서 메모, 8절 이력. 2차: 머리 상태 줄을 '공개 문서 샘플: 11건'으로 고치고, 3절 메모의 추론 문장에 태그를 붙이고, 새 각주 정의를 7절로 옮겼다 |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 6절 살아있는 산출물 링크: 온톨로지 초안 v0.5, 문서 유형 매트릭스 샘플 11건, 백로그 q2-02·q2-03·q2-05 답함·q3-10 등록, 아이디어 페이지 갱신 반영. 2차: 머리 상태 줄의 현재 단계를 단계 2. 로봇 문서 유형과 정보 구조 조사로 고쳤다 |
+| 2026-10-09-23 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 3절에 근거 형태별 문서 이해·데이터시트 추출·매뉴얼 질의응답 측정 자료, 4절에 AMR 공개 문서 접근·재사용 조건과 근거 문서의 언어·판 기록 필요(실행 2026-10-09-23) 추가. 2차: 3절 끝 추론 문장에 태그를 붙이고 ref-1386 기관 표기를 참고문헌과 맞췄다 |
+| 2026-10-09-23 | 요약 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-02·q2-03·q2-05 답함(신뢰도 낮음), AMR 등 공개 문서 샘플 7건 추가, 온톨로지 v0.4 → v0.5(근거 문서 속성 언어), 후속 질문 q3-10 |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1375.md](references/ref-1375.md) | 참고문헌 ref-1375 등록: MiR250 HW 2.0 SW 2.x — Product documents |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1376.md](references/ref-1376.md) | 참고문헌 ref-1376 등록: MiR1350 Pallet Lift HW 1.0 SW 2.x — Product documents |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1377.md](references/ref-1377.md) | 참고문헌 ref-1377 등록: User Manuals (PolyScope X 10.13 landing page) |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1378.md](references/ref-1378.md) | 참고문헌 ref-1378 등록: Copyright and disclaimers (SW 5.26 manual) |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1379.md](references/ref-1379.md) | 참고문헌 ref-1379 등록: IndoorNav User Manual — Getting Started |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1380.md](references/ref-1380.md) | 참고문헌 ref-1380 등록: IndoorNav User Manual — Appendix A: IndoorNav ROS 2 API |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1381.md](references/ref-1381.md) | 참고문헌 ref-1381 등록: OutdoorNav User Manual 1.0.0 — API Overview |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1382.md](references/ref-1382.md) | 참고문헌 ref-1382 등록: Download center |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1383.md](references/ref-1383.md) | 참고문헌 ref-1383 등록: Spot SDK Release Notes |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1384.md](references/ref-1384.md) | 참고문헌 ref-1384 등록: Doosan Robotics User Manual 3.2.1 — Manipulator (M/H Series) |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1385.md](references/ref-1385.md) | 참고문헌 ref-1385 등록: 두산로보틱스 사용자 매뉴얼 3.2.1 — M1013 |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1386.md](references/ref-1386.md) | 참고문헌 ref-1386 등록: Directive 2006/42/EC on machinery — Annex I |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1387.md](references/ref-1387.md) | 참고문헌 ref-1387 등록: MMLongBench-Doc: Benchmarking Long-context Document Understa… |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1388.md](references/ref-1388.md) | 참고문헌 ref-1388 등록: Beyond Text: Optimizing RAG with Multimodal Inputs for Indus… |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1389.md](references/ref-1389.md) | 참고문헌 ref-1389 등록: Agri-Query: A Case Study on RAG vs. Long-Context LLMs for Cr… |
+| 2026-10-09-23 | 생성 | [docs/references/ref-1390.md](references/ref-1390.md) | 참고문헌 ref-1390 등록: A Multimodal Manufacturing Safety Chatbot: Knowledge Base De… |
+| 2026-10-09-23 | 생성 | [docs/glossary/original-instructions.md](glossary/original-instructions.md) | 용어집 항목 원본 설명서 |
+| 2026-10-09-23 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-10-09-23 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-04 답함(신뢰도 low, 3절 {#q2-04} 소절 신설), q2-02에 기계가독 형식의 단위 표기·자유 텍스트 보강과 OmniDocBench 문서 유형·교차 규칙 문구 정정, q2-03 재인용 확인, 4·5·6·7·8·9절과 상태 줄 갱신, 후속 질문 2건(q3-09·q4-17) |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 5절 '문서에 없는 정보'를 정보 항목별로 처음 작성(통합·시운전과 운용 중 상태 보고·관측만 보완 경로로 기록, 제조사 문의·커뮤니티 미확인), 3절에 팩트시트 단위 표기·자유 텍스트 메모 추가(채운 칸 9 / 64 유지), 각주 ref-228·ref-230 접근일 갱신과 ref-230 원문 미열람 표시 제거, 상태 줄·이력 갱신 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 상태 줄의 마지막 트랙 실행을 2026-10-09로 갱신, 6절의 문서 유형 매트릭스·질문 백로그 줄에 실행 2026-10-09-22 변동 기록 |
+| 2026-10-09-22 | 요약 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-04 답함(신뢰도 low, 통합 설정·어댑터 코드·운용 중 상태 보고로 보완되는 정보), q2-02 기계가독 형식의 단위 표기·자유 텍스트 보강, 문서 유형 매트릭스 5절 첫 작성, 후속 질문 q3-09·q4-17 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 되돌아온 질문 q1-05·q1-06 답함(3절 {#q1-05}·{#q1-06}), q1-08 부분 답, 2절 질문 목록 표 재작성, 4절 결론·불확실성 추가, 5절 후속 질문 q2-10·q3-12와 q1-05·q1-06 행 상태 답함, 6절 전환 줄, 7절 반영 제안, 8절 새 각주, 9절 이력 행, 상태 줄(재개)·프런트매터(sources·related_areas·last_run) 갱신, ArchCAD-400K 엘리베이터 근거 충돌 연결 문장 |
+| 2026-10-09-21 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 '물류 시설 도면 인식과 도면 자동 가져오기의 근거 보강' 소절 추가(비주거 데이터셋 구성·FloorPlanCAD 범주 수 출처 충돌·AI Hub 주거 한정·전이 근거, 제품·로봇 밖 도구 근거, 도입 기간 사례), 프런트매터 sources 에 새 출처 13건 추가, last_run 2026-10-09 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 상태 줄을 현재 단계 2·마지막 트랙 실행 2026-10-09로 고치고 프런트매터 last_run 2026-10-09, 6절에 실행 2026-10-09-21(되돌아온 단계 1 질문 q1-05·q1-06 답함, q1-08 부분 답, 초안 v1.2 유지, 단계 전환 미승인) 단락 추가 |
+| 2026-10-09-21 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 2: 되돌아온 단계 1 질문 q1-05·q1-06 답함(종합 신뢰도 low), q1-08 부분 답, 후속 질문 q2-10·q3-12, 공간 그래프 스키마 초안 v1.2 유지, 아이디어 3 페이지 3절 근거 보강, 출처 충돌 열린 질문 2건(FloorPlanCAD 범주 수, ArchCAD-400K 엘리베이터 범주). 신규 참고문헌 ref-1329~ref-1372 이 실행 2026-10-09-19 브리프의 같은 id(다른 URL)와 충돌하므로 게시 전 id 충돌 검사와 재번호 확인 필요 |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1329.md](references/ref-1329.md) | 참고문헌 ref-1329 등록: Automatic floor plan analysis and recognition |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1330.md](references/ref-1330.md) | 참고문헌 ref-1330 등록: A deep learning approach to wall recognition in industrial a… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1331.md](references/ref-1331.md) | 참고문헌 ref-1331 등록: Mitigating Domain Shift in Conditioned Floor Plan Generation… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1332.md](references/ref-1332.md) | 참고문헌 ref-1332 등록: Automated Destination Renewal Process for Location-Based Rob… |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1367.md](references/ref-1367.md) | 참고문헌 ref-1367 등록: Import BIM To Indoor Dataset (Indoors) |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1368.md](references/ref-1368.md) | 참고문헌 ref-1368 등록: IFC Import (Pathfinder How-To) |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1369.md](references/ref-1369.md) | 참고문헌 ref-1369 등록: CEVA deploys Automated Mobile Robots at its Melbourne site |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1370.md](references/ref-1370.md) | 참고문헌 ref-1370 등록: AMR Studio — A simple and intuitive way to set up AMRs |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1371.md](references/ref-1371.md) | 참고문헌 ref-1371 등록: Kollmorgen launches NDC Layout Assistant |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1372.md](references/ref-1372.md) | 참고문헌 ref-1372 등록: ANT lab configuration software |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1373.md](references/ref-1373.md) | 참고문헌 ref-1373 등록: Fulfillment centre deploys AMRs in 12 days |
+| 2026-10-09-21 | 생성 | [docs/references/ref-1374.md](references/ref-1374.md) | 참고문헌 ref-1374 등록: WAFFLE: Multimodal Floorplan Understanding in the Wild |
+| 2026-10-09-21 | 생성 | [docs/glossary/domain-shift.md](glossary/domain-shift.md) | 용어집 항목 도메인 이동 |
+| 2026-10-09-21 | 생성 | [docs/glossary/generalized-voronoi-graph.md](glossary/generalized-voronoi-graph.md) | 용어집 항목 일반화 보로노이 그래프 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-10-09-21 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-19 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s6.md](topics/2026/2026-10-09-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s7.md](topics/2026/2026-10-09-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 |

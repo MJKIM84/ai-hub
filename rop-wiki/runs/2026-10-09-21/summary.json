@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-10-09-21",
+  "date": "2026-10-09",
+  "run_type": "track",
+  "target": {
+    "area_no": 14,
+    "area_name": "14. 도면·BIM에서 지도 만들기",
+    "category": "D. 공간·지도 모델",
+    "slug": "floorplan-recognition",
+    "stage": 2,
+    "question_ids": [
+      "q1-05",
+      "q1-06",
+      "q1-08"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 3,
+  "new_sources": 12,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "ccb47c6",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 23,
+    "sources": 12
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3975.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 건축 도면 자동 인식 단계 2 | 되돌아온 단계 1 질문 q1-05·q1-06 답함(종합 신뢰도 low), q1-08 부분 답, 후속 질문 q2-10·q3-12, 공간 그래프 스키마 초안 v1.2 유지, 아이디어 3 페이지 3절 근거 보강, 출처 충돌 열린 질문 2건(FloorPlanCAD 범주 수, ArchCAD-400K 엘리베이터 범주). 신규 참고문헌 ref-1329~ref-1372 이 실행 2026-10-09-19 브리프의 같은 id(다른 URL)와 충돌하므로 게시 전 id 충돌 검사와 재번호 확인 필요 | run 2026-10-09-21",
+  "notes": [
+    "참고문헌 생성: references/ref-1329.md",
+    "참고문헌 생성: references/ref-1330.md",
+    "참고문헌 생성: references/ref-1331.md",
+    "참고문헌 생성: references/ref-1332.md",
+    "참고문헌 생성: references/ref-1367.md",
+    "참고문헌 생성: references/ref-1368.md",
+    "참고문헌 생성: references/ref-1369.md",
+    "참고문헌 생성: references/ref-1370.md",
+    "참고문헌 생성: references/ref-1371.md",
+    "참고문헌 생성: references/ref-1372.md",
+    "참고문헌 생성: references/ref-1373.md",
+    "참고문헌 생성: references/ref-1374.md",
+    "용어집 생성: glossary/domain-shift.md",
+    "용어집 생성: glossary/generalized-voronoi-graph.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 3,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 12,
+    "standards": 0,
+    "open_questions": 3,
+    "flow_cells": 0,
+    "backlog": 5,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 20:10:47 KST",
+  "usage": {
+    "input_tokens": 82,
+    "cache_creation_input_tokens": 3069876,
+    "cache_read_input_tokens": 16677198,
+    "output_tokens": 233740,
+    "cost_usd": 32.9816,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 7.4809,
+        "output_tokens": 40120,
+        "cache_read_input_tokens": 13600571,
+        "cache_creation_input_tokens": 456181
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.7679,
+        "output_tokens": 23254,
+        "cache_read_input_tokens": 2747404,
+        "cache_creation_input_tokens": 457777
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 10.8833,
+        "output_tokens": 147345,
+        "cache_read_input_tokens": 143764,
+        "cache_creation_input_tokens": 988447
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 9.7521,
+        "output_tokens": 22550,
+        "cache_read_input_tokens": 177588,
+        "cache_creation_input_tokens": 1158198
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/floorplan-recognition.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 13,
+  "cross_checked_findings": 0
+}

@@ -123,9 +123,9 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 45 | q2-01 — 제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-01)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q5-02 — 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? ([답](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-02)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
-| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 35 | q5-03 — 가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가? ([답](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-03)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q2-05 — 언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 67 | q2-06 — 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가? (q2-01 에서 파생) ([답](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-06)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
+| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 37 | q2-06 — 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가? (q1-03 에서 파생) ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례
@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) — 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 (실행 2026-10-09-19)
-- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 대표 접근법과 기술](topics/2026/2026-10-09-area43-s6.md) — 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 (실행 2026-10-09-19)
-- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](topics/2026/2026-10-09-area43-s7.md) — 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 (실행 2026-10-09-19)
-- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 열린 질문](topics/2026/2026-10-09-area43-s11.md) — 자동 분리: 43. 데이터·관측성·배포 의 "11. 열린 질문" 절(1,457자)을 옮겼다 (실행 2026-10-09-19)
-- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 다른 연구영역과의 연결](topics/2026/2026-10-09-area43-s10.md) — 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,426자)을 옮겼다 (실행 2026-10-09-19)
+- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — q2-05·q2-06 답함(#q2-05·#q2-06 소절 신설), q2-07 부분 답 소절(#q2-07), 4절 결론·불확실성 갱신(VDA 5050 loads 문장에 기준일 표시), 후속 질문 q4-21·q4-22, 완료 조건 미충족·전환 아니오, 반영 제안 3건, 출처 10건 추가 (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [업무 분해·배정 설계 초안](tracks/chat-based-configuration-and-operation/task-model-draft.md) — 초안 v1.0 → v1.1: 상황 개념의 대상 표현에 해석 결과 '대상 화물 참조'(품목 단위 / 적재 단위) 짝 추가(f10·f11·f12·f13, 대응 원천은 f15 추정 메모, 상태 확정 유지), 1절 v1.1 요지, 6절에 q2-05·q2-06·q2-07 답 링크(질문은 닫지 않음) (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [아이디어 2. 채팅 기반 구성·운영](ideas/chat-based-configuration-and-operation.md) — 4절에 '이름 사전 형식'·'대상 화물의 두 식별 단위와 대응 원천'·'IEEE 1872.1-2024 의 공개 자료 범위 분해 구조' 소절 추가(기존 표와 '미확인' 표기 유지) (실행 2026-10-09-27)
+- 2026-10-09 · 갱신 · [채팅 기반 구성·운영](tracks/chat-based-configuration-and-operation/index.md) — 6절 살아있는 산출물에 실행 2026-10-09-27 항목 추가(q2-05·q2-06 답함, q2-07 부분 답, 초안 v1.0 → v1.1, 전환 미승인); 상태 줄은 현재 단계 2·마지막 트랙 실행 2026-10-09 그대로 (실행 2026-10-09-27)
+- 2026-10-09 · 요약 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — 채팅 기반 구성·운영 단계 2: q2-05·q2-06 답함, q2-07 부분 답, 업무 분해·배정 설계 초안 v1.0 → v1.1(상황 개념에 대상 화물 참조), 새 질문 2건(q4-21·q4-22), 1차 조건부 승인 수정 20건 이행 (실행 2026-10-09-27)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

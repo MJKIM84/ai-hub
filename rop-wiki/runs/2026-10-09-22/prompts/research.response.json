@@ -1,0 +1,916 @@
+{
+  "duration_api_ms": 639024,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 6.4544007999999975,
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 339773,
+    "cache_read_input_tokens": 12438971,
+    "output_tokens": 45458,
+    "output_tokens_details": {
+      "thinking_tokens": 18729
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 339773,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 32278,
+        "cache_read_input_tokens": 421304,
+        "cache_creation_input_tokens": 2102,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2102
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 64,
+      "outputTokens": 45458,
+      "cacheReadInputTokens": 12438971,
+      "cacheCreationInputTokens": 339773,
+      "webSearchRequests": 0,
+      "costUSD": 6.115394199999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 18729,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 650101,
+      "outputTokens": 47993,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 25,
+      "costUSD": 0.3390066,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 20036,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 47,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-22\",\"date\":\"2026-10-09\",\"run_type\":\"track\",\"target\":{\"area_no\":5,\"area_name\":\"5. 로봇 능력·작업 표현\",\"category\":\"B. 로봇 온톨로지\"},\"gaps\":[\"단계 2 질문 q2-02(조사 중, 실행 2026-09-25-57 부분 답), q2-03(조사 중, 부분 답), q2-04(열림): target.json 지정(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 6건 중 오래된 순)\",\"q2-02 남은 부분: 로봇 매뉴얼의 형태별(문장·표·그림·코드) 추출 난이도를 잰 자료 없음. 범용 문서 파싱 벤치마크 OmniDocBench는 매뉴얼을 문서 유형에 두지 않음\",\"q2-03 남은 부분: AMR 제조사 공개 매뉴얼 샘플이 없고, 포털 매뉴얼 문서 자체의 이용 조건 미확인\",\"q2-04: 문서에 없지만 실행에 필요한 정보와 그 보완 경로에 대한 조사 결과 없음\",\"완료 조건: 문서 유형 매트릭스 64칸 가운데 9칸만 채움(사용자 매뉴얼·오류 코드표·치수도·도면 행 미조사), 매트릭스 5절 '문서에 없는 정보' 비어 있음\",\"완료 조건: 공개 문서 샘플 목록에 AMR 샘플 없음\"],\"research_questions\":[\"로봇이 할 수 있는 일과 작업이 요구하는 조건을 어떻게 같은 말로 표현할 것인가? [분류원문]\",\"q2-02 기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가? (이번 실행은 매뉴얼을 포함한 문서 레이아웃·표·다국어 파싱 벤치마크와 로봇 매뉴얼 대상 평가로 보강, 단계 2 페이지 3절 겨냥)\",\"q2-03 공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가? (이번 실행은 AMR 제조사 문서와 접근 조건에 집중, 매트릭스 4절 겨냥)\",\"q2-04 문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가(제조사 문의, 시험, 커뮤니티)? (매트릭스 5절과 단계 2 페이지 3절 겨냥)\",\"제조사 사양서가 적은 성능값은 어떤 조건(적재 유무, 바닥, 현장 조건)에 묶여 있으며, 플릿 연동 설정이 요구하는 현장·물리 파라미터 가운데 문서 밖에서 정해야 하는 것은 무엇인가? (q2-04 보강)\",\"한국어 같은 비라틴 문자 문서의 파싱 성능 자료가 공개 벤치마크에 있는가? (oq-225 관련, 한국 자료 우선 규칙)\",\"국내 AMR 제조사(유진로봇·트위니 등)는 매뉴얼·API 문서를 공개하는가? (q2-03·q2-07 관련, 한국 자료 우선 규칙)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"DocLayNet 데이터셋은 금융 보고서·매뉴얼·과학 논문·법령·특허·정부 입찰 문서의 6개 범주에서 사람이 주석한 80,863쪽에 11개 레이아웃 라벨(Caption, Footnote, Formula, List-item, Page-footer, Page-header, Picture, Section-header, Table, Text, Title)을 달았으며, 매뉴얼은 금융 보고서와 함께 가장 큰 두 범주에 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1397\",\"ref-1398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"논문(arXiv 2206.01062)은 11개 라벨과 80,863쪽을 밝히고 Financial Reports와 Manuals가 가장 큰 두 범주라고 적는다. 공식 저장소 README는 범주를 'Finance, Science, Patents, Tenders, Law texts and Manuals'로 나열하고 학습 69,375·검증 6,489·시험 4,999쪽으로 나눈다. 두 출처는 같은 저자 집단의 자료다.\",\"as_of\":\"2022-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"DocLayNet 시험 세트에서 사람 주석자 사이 일치도(mAP@0.5-0.95)는 Picture 69~71, Table 77~81, Title 60~72로 Text 84~86보다 낮았고, 가장 좋은 기준 모델 YOLOv5x6의 mAP는 전체 76.8, Text 88.1, Table 86.3, Picture 77.1이었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1397\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"논문 Table 1·2 기준. 사람 일치도 전체 82~83, 모델(MRCNN R50 72.4, MRCNN R101 73.5, FRCNN R101 73.4, YOLOv5x6 76.8). 지표는 레이아웃 영역 검출이며 내용 추출 정확도가 아니다.\",\"as_of\":\"2022-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"DocLayNet은 문서 범주에 매뉴얼을 두지만 범주별 성능을 따로 보고하지 않고 영역 검출만 재므로, 그림·표 영역이 글 영역보다 경계를 정하기 어렵다는 근거는 되나 로봇 매뉴얼의 형태별 내용 추출 난이도는 여전히 공개 측정 자료로 확인되지 않은 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1397\",\"ref-513\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"논문 본문은 범주별 쪽 비율도 그림으로만 보이고 수치를 적지 않는다. OmniDocBench(실행 2026-09-25-57 확인)는 매뉴얼을 문서 유형에 두지 않는다. 부재 확정 아님.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"TableVQA-Bench(Kim·Yim·Song, 2024-04)는 같은 표를 이미지로 준 멀티모달 언어 모델이 텍스트로 준 언어 모델보다 낮은 성능을 보여, 시각 입력 처리가 텍스트 입력보다 어렵다고 결론지었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1399\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'processing visual inputs is more challenging than text inputs'. 초록에는 차이의 수치가 없다(검색 요약의 '20%p 이상' 수치는 원문에서 확인하지 못해 쓰지 않음).\",\"as_of\":\"2024-04\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"VisR-Bench(Chen 외, 2025-08)는 16개 언어 약 1.2천 개 장문 문서와 3.5만 개 이상의 그림·글·표 질문으로 시각 검색 증강 생성을 평가해, 멀티모달 언어 모델이 가장 좋았지만 구조화된 표와 저자원 언어에서 여전히 어려움을 겪는다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1400\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록(v2, 2025-08-25): MLLMs 'still struggle with structured tables and low-resource languages'. 초록은 제품 매뉴얼 같은 문서 유형을 명시하지 않는다(매뉴얼 포함은 2차 목록 기준이라 쓰지 않음).\",\"as_of\":\"2025-08\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"MDPBench(Li 외, 2026-03)는 한국어를 포함한 17개 언어의 디지털·촬영 문서 이미지 3,400장으로 문서 파싱을 평가해, 공개 모델이 비라틴 문자에서 평균 14.0%, 촬영 문서에서 평균 17.8% 성능이 떨어지고 비공개 모델은 상대적으로 견고하다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1401\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"비라틴 문자 8개 언어에 한국어(KO)가 있고 Table 2에 KO 열이 있다(Gemini-3-pro-preview 74.8). 문서 유형에 로봇 매뉴얼이 있는지는 확인하지 않았다.\",\"as_of\":\"2026-03\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"Singh 외(arXiv 2511.11847, 2025-11, 2026-02 개정)는 Universal Robots UR5e 사용자 매뉴얼을 포함한 세 기계의 매뉴얼로 전문가 검증 질의응답 벤치마크를 만들어 24개 검색 증강 생성 구성을 비교했고, 최고 구성은 정답률 86.66%, 평균 지연 10.04초였으며, 여러 절에 흩어진 정보가 필요한 질문을 어려운 문항으로 따로 두었으나 그림·표·난이도별 결과는 나누어 보고하지 않았다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1402\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"UR5 문항은 쉬움 23·보통 30·어려움 7. 쉬운 문항은 'answered from a single section of a manual', 어려운 문항은 'details scattered across different technical sections'. 기계가독 PDF는 PyMuPDF, 이미지가 든 문서는 Mistral OCR로 텍스트만 추출했다. 86.66%는 세 기계 전체 기준.\",\"as_of\":\"2026-02\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"VDA 5050 팩트시트 스키마(main)는 기계가독 형식이면서도 바퀴 정의의 제약(constraints), 선택 파라미터의 설명(description), 동작 설명(actionDescription)·결과(actionResult)를 자유 텍스트로 두어 제조사가 실행 관련 조건을 문장으로 적게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-228\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"wheelDefinitions.constraints: 'Free text: can be used by the manufacturer to define constraints'. optionalParameters.description 예시는 파라미터가 왜 필요한지와 NURBS 지원 범위를 문장으로 적는다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"범용 벤치마크(DocLayNet·TableVQA-Bench·VisR-Bench·MDPBench)와 로봇 매뉴얼 RAG 평가를 함께 보면 그림·표·여러 절에 흩어진 정보와 비라틴 문자 문서가 글 단락보다 다루기 어렵다는 방향은 뒷받침되고, 기계가독 스키마 안에도 자유 텍스트가 남지만, 로봇 매뉴얼에서 형태별 추출 정확도를 직접 잰 자료는 이번에도 찾지 못한 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1397\",\"ref-1399\",\"ref-1400\",\"ref-1401\",\"ref-1402\",\"ref-228\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f4·f5·f6·f7·f8의 종합(이 위키의 추론). 각 벤치마크의 과제(영역 검출, 표 질의응답, 검색, 파싱, 매뉴얼 질의응답)가 서로 달라 하나의 난이도 순서로 합칠 수 없다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"MiR250 제품 문서 페이지는 사용자 가이드·빠른 시작·리튬이온 배터리 취급 문서·적합성 문서를 로그인 표시 없이 두고, 인터페이스 가이드·시운전 가이드·기술 가이드·위험성평가 가이드·사이버보안 가이드·공간 요구 모범 사례·네트워크와 Wi-Fi 가이드·48V 배터리 문제 해결 가이드·REST API 참조는 MiR 지원 포털 로그인이 필요하다고 표시하며, 문서 자체의 이용 조건 문구는 두지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1403\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"REST API 절은 지원 포털의 REST API 파일 목록 링크 옆에 '(Sign in required)'를 적는다. 페이지 하단에는 저작권 표기와 개인정보·쿠키·납품 약관 링크만 있다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"Clearpath IndoorNav 사용자 매뉴얼의 API 절은 Fleet·Autonomy·Platform API 문서를 docs.ottomotors.com 에 두고, API 문서 묶음의 직접 다운로드에는 OTTO Motors 계정 로그인이 필요하며, 같은 문서를 clearpath-api 패키지에 넣어 설치 뒤 오프라인으로 볼 수 있게 한다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"다운로드는 'requires an OTTO Motors account to log in', 오프라인 문서 경로 /opt/clearpath/ros2-api-1.3.3/share/public. API는 ROS 2 도메인(Fleet 100, Autonomy 110, Platform 95)으로 나뉜다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f12\",\"claim\":\"Omron은 LD-250 자율이동로봇 사용자 매뉴얼(I642)을 files.omron.eu 에 공개 PDF로 두며, 이 매뉴얼은 FLOW v3.3.1 이 지원하는 기능을 설명하고 구성은 Fleet Operations Workspace Core 사용자 매뉴얼(I635)을 참조하게 하는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1407\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 결과 요약 기준. PDF가 열람 도구의 크기 상한(10MB)을 넘어 원문을 열지 못했다. 판·발행일·저작권 문구 미확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f13\",\"claim\":\"확인한 AMR 제조사 문서(MiR·Clearpath/OTTO·Omron)를 보면 사용자 가이드 수준의 문서는 공개되지만 REST API 참조·인터페이스·시운전 가이드 같은 통합 수준 문서는 계정 로그인이나 패키지 설치 뒤에 제공되는 경향이 있고, 확인한 페이지 어디에도 문서 자체의 이용(재사용) 조건은 적혀 있지 않은 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1403\",\"ref-1406\",\"ref-1407\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f10·f11·f12의 종합(세 제조사 표본). Omron 은 원문 미열람이라 접근·이용 조건을 확인하지 못했다. 국내 AMR 제조사(유진로봇·트위니) 공개 문서는 이번 검색에서 찾지 못함(부재 확정 아님).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f14\",\"claim\":\"Naqvi 외(Scientific Reports, 2025-10-02)는 제조사 매뉴얼에서 가져온 광고 능력과 운용 환경에서 측정한 운용 능력을 온톨로지에서 구분하며, NED-2 사례에서는 명령한 목표 위치와 실제 도달 위치(피드백)를 기록해 그 표준편차로 반복 정밀도를 계산했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-041\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"PMC 전문 기준. 광고 사양은 제조사 매뉴얼 표(Table 2: 가반하중·반복 정밀도·관절 범위)에서, 운용 반복 정밀도는 'the standard deviation of feedback positions'로 구한다. ISO 9283 같은 측정 표준은 언급하지 않는다.\",\"as_of\":\"2025-10-02\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f15\",\"claim\":\"같은 논문은 Airbus UK 의 날개 상자 자동 조립 셀에서 관절형 로봇이 보정한 기구학 모델로도 ±0.2 mm 절대 정확도를 달성하지 못했고 온도 변화가 성능을 떨어뜨려 리브 위치·드릴 구멍이 허용 사양을 벗어났다는 사례를 들어 선언 사양과 운용 성능의 차이를 보인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-041\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"논문이 인용한 사례(재인용). 리브는 ±0.5 mm 정확도로 위치시켜야 했으나 측정 편차 수치는 본문에 없다.\",\"as_of\":\"2025-10-02\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\"},{\"id\":\"f16\",\"claim\":\"MiR1350·MiR250 사양 페이지는 가동 시간을 최대 적재와 무적재로 나눈 두 값으로 적고, 바닥 조건('Clean and dry', 'No water, no oil, no dirt')과 실내 전용·습도 조건을 두며, 사양이 현장 조건과 적용 구성에 따라 달라질 수 있다는 단서를 붙인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1404\",\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"두 페이지 공통 단서: 'Specifications may vary based on local conditions and application setup'. MiR1350 은 통로·문 폭이 기본 구성과 보호 필드를 끈 최소 외곽 구성에서 다르다고 적는다. 같은 제조사 자료라 독립 교차 확인이 아니다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"MiR 사양 페이지 기준으로 MiR1350 은 최대 적재 1,350 kg 에서 가동 6시간 45분·무적재 9시간 50분, MiR250 은 최대 적재 250 kg 에서 최대 13시간·무적재 최대 17시간 30분이며 최고 속도 2.0 m/s 다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1404\",\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 제조사 사양 페이지의 성능값. 다른 언어판 페이지는 MiR1350 값을 '최대 10시간/7시간'으로 적는다는 검색 요약이 있어 판 차이가 있을 수 있다(미확인). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\",\"vendor_claim\":true},{\"id\":\"f18\",\"claim\":\"Open-RMF 플릿 어댑터 템플릿은 로봇 좌표계와 RMF(traffic_editor) 지도 좌표계 사이 변환을 위해 같은 위치를 가리키는 [x,y] 좌표 쌍(reference_coordinates)을 설정 파일에 적게 하고 최소 4개의 대응 지점을 권장한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1408\",\"ref-105\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 'A minimum of 4 matching waypoints is recommended.' 템플릿 config.yaml 은 층 L1 에 rmf·robot 좌표 4쌍을 예시로 둔다. 좌표 쌍을 얻는 방법은 적지 않는다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f19\",\"claim\":\"Open-RMF 배터리 소모 모델(rmf_battery)의 MechanicalSystem 은 질량(kg), 요축 관성 모멘트(kg·m²), 바퀴에서 측정한 운동 마찰 또는 구름 저항 계수를 모두 0보다 큰 값으로 요구하며, 템플릿 설정은 이와 함께 배터리 전압·용량·충전 전류, 주변 장치·도구 소비 전력, 재충전 하한을 적게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1409\",\"ref-105\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"API 문서: 마찰 계수는 'coefficient of kinetic friction or rolling resistance coefficient measured at the wheels of the robot'. 값의 출처(사양·측정·추정)는 적지 않는다. config.yaml 예: 12 V, 24 Ah, 5 A, 20 kg, 10 kg·m², 0.22, recharge_threshold 0.10.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f20\",\"claim\":\"MassRobotics AMR 상호운용 표준의 식별 보고는 제품 문서 링크(productDocumentation), 비상 연락처, 공급 업체 이름·연락처를 선택 필드로 두어 로봇 등록 정보에서 매뉴얼과 제조사 문의 경로를 가리키게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-230\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"identityReport 선택 필드: productDocumentation('Link to product documenation', uri), emergencyContactInformation, supportVendorName, supportVendorContactInformation.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"확인한 자료를 종합하면 문서에 없거나 문서만으로 정해지지 않는 실행 정보는 (1) 현장 지도와 로봇 좌표계의 대응점, (2) 배터리 소모 예측에 쓰는 물리 파라미터(구름 저항 계수 등), (3) 적재·바닥·현장 조건에 따라 달라지는 성능값, (4) 운용 중 실제로 관측되는 능력이며, 이는 시운전 현장 측정, 운용 기록에 근거한 측정, 계정으로만 받는 제조사 통합 문서·지원 포털로 보완되는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1408\",\"ref-1409\",\"ref-1404\",\"ref-041\",\"ref-1403\",\"ref-230\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f10·f14·f16·f18·f19·f20의 종합(이 위키의 추론). 이 목록을 제시한 단일 출처는 없다. 질문이 든 '커뮤니티' 보완 경로는 쓸 수 있는 출처(공식 문서)로 확인하지 못했다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1397\",\"org\":\"Pfitzmann, B., Auer, C., Dolfi, M., Nassar, A. S., & Staar, P. W. J.\",\"title\":\"DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis\",\"published\":\"2022-06\",\"url\":\"https://arxiv.org/abs/2206.01062\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"사람이 주석한 80,863쪽·11개 레이아웃 라벨의 문서 레이아웃 데이터셋. 매뉴얼을 포함한 6개 문서 범주와 라벨별 사람 일치도·모델 mAP를 보고한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2206.01062\"},{\"id\":\"ref-1398\",\"org\":\"DS4SD (DocLayNet GitHub)\",\"title\":\"DocLayNet — README\",\"published\":null,\"url\":\"https://github.com/DS4SD/DocLayNet\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"DocLayNet 공식 저장소 README. 6개 문서 범주(매뉴얼 포함)와 학습·검증·시험 분할 쪽수를 밝힌다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/DS4SD/DocLayNet/main/README.md\"},{\"id\":\"ref-1399\",\"org\":\"Kim, Y., Yim, M., & Song, K. Y.\",\"title\":\"TableVQA-Bench: A Visual Question Answering Benchmark on Multiple Table Domains\",\"published\":\"2024-04\",\"url\":\"https://arxiv.org/abs/2404.19205\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"여러 영역의 표를 이미지로 만든 표 시각 질의응답 벤치마크. 이미지 표 입력이 텍스트 표 입력보다 어렵다고 결론짓는다(프리프린트 초록 확인).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2404.19205\"},{\"id\":\"ref-1400\",\"org\":\"Chen, J. 외\",\"title\":\"VisR-Bench: An Empirical Study on Visual Retrieval-Augmented Generation for Multilingual Long Document Understanding\",\"published\":\"2025-08\",\"url\":\"https://arxiv.org/abs/2508.07493\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"16개 언어 장문 문서의 그림·글·표 질문으로 시각 검색 증강 생성을 평가한 벤치마크. 멀티모달 모델도 구조화된 표와 저자원 언어에 약하다고 보고한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2508.07493\"},{\"id\":\"ref-1401\",\"org\":\"Li, Z. 외\",\"title\":\"MDPBench: A Benchmark for Multilingual Document Parsing in Real-World Scenarios\",\"published\":\"2026-03\",\"url\":\"https://arxiv.org/abs/2603.28130\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"한국어를 포함한 17개 언어 디지털·촬영 문서 3,400장의 다국어 문서 파싱 벤치마크. 공개 모델은 비라틴 문자·촬영 문서에서 성능이 크게 떨어진다고 보고한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2603.28130\"},{\"id\":\"ref-1402\",\"org\":\"Singh, R. 외\",\"title\":\"A Multimodal Manufacturing Safety Chatbot: Knowledge Base Design, Benchmark Development, and Evaluation of Multiple RAG Approaches\",\"published\":\"2025-11\",\"url\":\"https://arxiv.org/abs/2511.11847\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"UR5e 협동로봇 사용자 매뉴얼 등 세 기계의 매뉴얼로 만든 질의응답 벤치마크에서 24개 검색 증강 생성 구성을 비교한 프리프린트(v2 2026-02).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2511.11847\"},{\"id\":\"ref-1403\",\"org\":\"Mobile Industrial Robots (MiR)\",\"title\":\"MiR250 HW 2.0 SW 2.x — Product documents\",\"published\":null,\"url\":\"https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"MiR250 의 문서 목록 페이지. 사용자 가이드·빠른 시작은 공개, 인터페이스·시운전·기술 가이드와 REST API 참조는 지원 포털 로그인이 필요하다고 표시한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1\"},{\"id\":\"ref-1404\",\"org\":\"Mobile Industrial Robots (MiR)\",\"title\":\"MiR1350 — Specifications\",\"published\":null,\"url\":\"https://mobile-industrial-robots.com/products/robots/mir1350/specifications\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"MiR1350 사양 페이지. 적재 유무별 가동 시간, 바닥·환경 조건과 사양이 현장 조건에 따라 달라질 수 있다는 단서를 둔다(성능값은 벤더 주장).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://mobile-industrial-robots.com/products/robots/mir1350/specifications\"},{\"id\":\"ref-1405\",\"org\":\"Mobile Industrial Robots (MiR)\",\"title\":\"MiR250 — Specifications\",\"published\":null,\"url\":\"https://mobile-industrial-robots.com/products/robots/mir250/specifications\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"MiR250 사양 페이지. 적재 유무별 가동 시간, 최고 속도, 바닥·온도 조건과 같은 단서를 둔다(성능값은 벤더 주장).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://mobile-industrial-robots.com/products/robots/mir250/specifications\"},{\"id\":\"ref-1406\",\"org\":\"Clearpath Robotics / OTTO Motors\",\"title\":\"IndoorNav User Manual — API\",\"published\":null,\"url\":\"https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"IndoorNav 자율주행 소프트웨어의 API 안내. API 문서는 docs.ottomotors.com 에 있고 직접 다운로드는 OTTO Motors 계정이 필요하며 clearpath-api 패키지에 오프라인 문서가 들어 있다고 적는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api\"},{\"id\":\"ref-1407\",\"org\":\"OMRON\",\"title\":\"LD-250 Autonomous Mobile Robot User's Manual (I642)\",\"published\":null,\"url\":\"https://files.omron.eu/downloads/latest/manual/en/i642_ld-250_user_manual_users_manual_en.pdf\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 검색 결과 기준 Omron 공식 다운로드 서버의 LD-250 AMR 사용자 매뉴얼 PDF로, FLOW v3.3.1 기능을 설명하고 Fleet Operations Workspace Core 매뉴얼(I635)을 참조한다.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-1408\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"fleet_adapter_template — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/fleet_adapter_template\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 플릿 어댑터 템플릿 README. config.yaml 의 rmf_fleet 절과 로봇·RMF 좌표 대응점(reference_coordinates, 최소 4개 권장)을 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/fleet_adapter_template/main/README.md\"},{\"id\":\"ref-1409\",\"org\":\"Open Robotics (Open-RMF rmf_battery API docs)\",\"title\":\"Class MechanicalSystem — rmf_battery\",\"published\":null,\"url\":\"https://openrmf.readthedocs.io/projects/rmf-battery/en/latest/api/classrmf__battery_1_1agv_1_1MechanicalSystem.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 배터리 소모 모델의 기계계 파라미터(질량, 요축 관성 모멘트, 바퀴에서 측정한 구름 저항 계수)와 양수 제약을 정의하는 API 문서.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://openrmf.readthedocs.io/projects/rmf-battery/en/latest/api/classrmf__battery_1_1agv_1_1MechanicalSystem.html\"},{\"id\":\"ref-041\",\"org\":\"Naqvi, M. R. 외(Scientific Reports)\",\"title\":\"Ontology-driven integration of advertised and operational capabilities in robots\",\"published\":\"2025-10-02\",\"url\":\"https://www.nature.com/articles/s41598-025-16649-3\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"제조사가 광고한 능력과 운용 중 측정한 능력을 로봇 능력 온톨로지로 구분·통합하는 방법을 제시한 논문. 이번 실행에서 PMC 전문을 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12491535/\"},{\"id\":\"ref-105\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"fleet_adapter_template — fleet_adapter_template/config.yaml\",\"published\":null,\"url\":\"https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 플릿 어댑터 템플릿 설정 파일. 속도·외곽, 배터리·기계·주변·도구 전력, 작업 능력, 동작, 충전기, 좌표 대응점을 선언한다.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 main(3.0.0) 팩트시트 JSON 스키마. 유형 명세·물리 파라미터·프로토콜 한계·지원 기능·기하·적재 명세와 자유 텍스트 설명 필드를 둔다.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"MassRobotics AMR 상호운용 표준 공식 JSON 스키마. 식별 보고(제품 문서 링크·공급 업체 연락처 포함)와 상태 보고를 정의한다.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-513\",\"org\":\"OpenDataLab (opendatalab/OmniDocBench GitHub)\",\"title\":\"OmniDocBench — README\",\"published\":null,\"url\":\"https://github.com/opendatalab/OmniDocBench\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"PDF 문서 파싱 벤치마크 README. 문단·표·수식·읽기 순서를 나눠 평가하며 문서 유형에 매뉴얼을 명시하지 않는다(이번 실행에서 다시 열지 않음).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/stage-2-document-types.md\",\"sections\":[\"2\",\"3\",\"4\",\"5\",\"6\",\"8\",\"9\"],\"rationale\":\"q2-03 답: f10·f11·f12·f13 (신뢰도 low) / q2-04 답: f14·f15·f16·f17·f18·f19·f20·f21 (신뢰도 low) / q2-02 부분 답: f1·f2·f3·f4·f5·f6·f7·f8·f9 — 2절 q2-03·q2-04 답함, q2-02 조사 중 유지, 3절 q2-02 소제목에 매뉴얼 범주를 둔 레이아웃 데이터셋(f1·f2·f3)·표 이미지 입력의 어려움(f4·f5)·한국어 포함 다국어 파싱(f6)·UR5e 매뉴얼 RAG 평가(f7)·기계가독 스키마 안의 자유 텍스트(f8)·종합(f9) 보강, q2-03 소제목에 AMR 샘플(MiR·Clearpath/OTTO·Omron)과 접근 조건(f10~f13) 추가, q2-04 소제목({#q2-04}) 신설(광고·운용 능력 f14·f15, 조건부 사양 f16, 벤더 성능값 f17은 벤더 주장 병기, 현장 좌표 대응점 f18, 배터리 모델 물리 파라미터 f19, 문서 링크·연락처 필드 f20, 종합 f21), 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건 현황, 8절 출처, 9절 이력\"},{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/document-type-matrix.md\",\"sections\":[\"3\",\"4\",\"5\",\"7\",\"8\"],\"rationale\":\"트랙 산출물 갱신: 3절 사양서·데이터시트 행 제약 칸에 MiR 사양의 적재 유무별 가동 시간·바닥 조건(f16, 형태 표, 성능값 f17은 벤더 주장), 사양서·데이터시트 행 제약 칸 보강에 VDA 5050 자유 텍스트 제약(f8), 통합·API 가이드 행 인터페이스 칸에 Clearpath IndoorNav(f11) 추가 / 4절 공개 문서 샘플에 MiR250(사용자 가이드 공개, REST API·시운전 가이드 로그인 필요, f10), Clearpath IndoorNav(계정·오프라인 패키지, f11), Omron LD-250(공개 PDF, 원문 미열람, f12) 추가, AMR 샘플 없음 문장 갱신(f13) / 5절 '문서에 없는 정보' 첫 내용: 좌표 대응점(f18)·배터리 모델 물리 파라미터(f19)·조건부 성능값(f16)·운용 능력(f14)과 보완 경로(f21) / 7절 출처 / 8절 이력\"},{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/ontology-draft.md\",\"sections\":[\"2\",\"6\"],\"rationale\":\"트랙 산출물 갱신: track.ontology_changes 가 검증 승인되면 근거 문서 속성 '접근 조건(공개 / 계정·로그인 필요 / 설치 패키지 동봉)'을 2절에 반영(f10·f11, v0.4 → v0.5). 미승인 시 6절 '근거 문서의 단위와 버전' 질문에 합친다\"},{\"action\":\"update\",\"path\":\"docs/ideas/robot-capability-ontology.md\",\"sections\":[\"4\"],\"rationale\":\"아이디어 페이지 4절: 온보딩 능력 정의 초안의 입력이 될 AMR 제조사 문서의 공개·로그인 범위(f10·f11·f13), 문서 밖에서 측정해야 하는 값(f18·f19)과 조건부 사양(f16), 광고·운용 능력 구분(f14) 보강\"},{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/robot-capability-and-task-representation.md\",\"sections\":[\"3\",\"11\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f14, f16, f21): 제조사 사양값이 적재·현장 조건에 묶여 있고 운용 능력은 측정으로 보완된다는 점을 3절에, oq-024(선언 능력과 운용 능력 가운데 배정 기준) 부분 근거로 11절에. 반영은 다음 해당 영역 실행에서\"},{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/heterogeneous-robot-registration.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f10, f11, f13, f20): 등록 때 모을 AMR 제조사 문서의 공개·계정 필요 범위와 MassRobotics 식별 보고의 제품 문서 링크·공급 업체 연락처 필드. 교차 규칙(매뉴얼 해석은 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전)에 따라 45. 문서·도면·장면 이해와 함께 연결\"},{\"action\":\"update\",\"path\":\"docs/categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f16, f18, f19): 시운전 때 문서 밖에서 정해야 하는 값(로봇·지도 좌표 대응점 4개 이상, 배터리 소모 모델의 질량·관성 모멘트·바퀴 구름 저항 계수)과 현장 조건에 따라 달라지는 제조사 사양\"},{\"action\":\"update\",\"path\":\"docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md\",\"sections\":[\"8\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f1, f2, f4, f5, f6, f7): 매뉴얼 범주를 둔 레이아웃 데이터셋 DocLayNet, 표 이미지 입력의 어려움(TableVQA-Bench·VisR-Bench), 한국어 포함 다국어 파싱 벤치마크 MDPBench, UR5e 매뉴얼 RAG 평가. 교차 규칙에 따라 적용 대상 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전 페이지와 양쪽 연결, oq-225·oq-226 부분 근거\"}],\"glossary_candidates\":[{\"term_ko\":\"광고 능력·운용 능력\",\"term_en\":\"Advertised Capability / Operational Capability\",\"definition\":\"제조사가 매뉴얼·사양서로 선언한 로봇 능력과 실제 운용 환경에서 측정·관측한 능력을 구분한 표현으로, 둘의 차이를 함께 기록해 배정·검증에 쓴다.\"},{\"term_ko\":\"로봇 능력 온톨로지\",\"term_en\":\"Robot Capability Ontology\",\"definition\":\"로봇이 수행할 수 있는 기능과 그 품질·성능 같은 능력을 개념과 관계로 명시해, 제조사 사양과 운용 측정값을 같은 어휘로 표현하게 하는 온톨로지다.\"}],\"open_questions_new\":[],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":18,\"cross_checked_count\":0,\"unverified\":[\"q2-02 부분 답: 로봇 매뉴얼을 대상으로 형태별(문장·표·그림·코드) 추출 정확도를 잰 자료를 찾지 못함. DocLayNet은 매뉴얼 범주를 두지만 범주별 결과를 보고하지 않고, UR5e 매뉴얼 RAG 평가는 그림·표별 결과를 나누지 않음\",\"f12: Omron LD-250 매뉴얼 PDF가 열람 크기 상한(10MB)을 넘어 원문 미열람. 판·발행일·저작권 문구 미확인\",\"f13: 국내 AMR 제조사(유진로봇 GoCart·트위니) 공개 매뉴얼·API 문서를 한국어 검색에서 찾지 못함(기사만 나와 출처로 넣지 않음, 부재 확정 아님)\",\"f17: MiR1350 가동 시간이 언어판마다 다르게 적혔다는 검색 요약(최대 10시간/7시간)을 원문으로 확인하지 못함\",\"f4: TableVQA-Bench의 이미지 표 대 텍스트 표 성능 차이 수치는 초록에 없어 미확인\",\"f21: 질문이 든 '커뮤니티' 보완 경로는 공식 문서 근거를 찾지 못함\",\"MiR·Clearpath·Omron 문서 자체의 재사용·자동 추출 허용 여부(이용 약관) 미확인 — q6-07과 연결\",\"모든 finding 교차 확인 없음(같은 기관 자료이거나 단일 출처)\"],\"scope_violations\":[\"f15: 관절형 로봇의 절대 정확도는 분류 원문 19장 '로봇 자체 지능·제어' 쪽 연계 대상이므로 문서 선언과 운용 성능의 차이를 보이는 사례로만 쓰고 ROP 직접 범위로 서술하지 않음\",\"f19: 배터리 소모 물리 모델 파라미터는 로봇 구동계 특성이므로 ROP 몫은 그 값을 설정·검증하는 일로 한정해 서술해야 함\",\"f1~f7: 문서 파싱·레이아웃 분석은 L. AI·학습 기술의 45. 문서·도면·장면 이해 방법이며 적용 대상 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전과 함께 연결하도록 제안함\"],\"budget_used\":{\"queries\":21,\"sources\":13},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 21회/40, 신규 출처 13건/20(ref-1397~ref-1409, 예약 구간 안), 재사용 5건(ref-041 은 PMC 전문을 webfetch 로 새로 열었고, ref-105·ref-228·ref-230 은 inbox 원문, ref-513 은 다시 열지 않음). 질문 선택: target.json 지정 q2-02·q2-03·q2-04. 답한 질문: q2-03(AMR 샘플과 접근 조건을 더해 답으로 올림, 문서 재사용 허용 여부는 기존 q6-07 몫), q2-04. q2-02 는 범용 벤치마크로 방향은 보강했으나 로봇 매뉴얼 직접 측정이 없어 부분 답. 원문 열기 실패: DocLayNet PDF·Omron PDF(압축 스트림·크기 상한), Springer s10845-026-02894-4(기술 데이터시트 추출 비교, 인증 리다이렉트), nature.com(리다이렉트, PMC 로 대체), Omron 일본 다운로드 페이지(403). 제외한 자료: Open Robotics Discourse 의 Open-RMF 관리자 댓글(배터리 물리 파라미터를 늘 알 수는 없다는 취지)은 커뮤니티 게시글이라 출처로 넣지 않았다. 검색 요약에만 나온 VisR-Bench 의 '제품 매뉴얼 포함', TableVQA 의 '20%p' 수치도 쓰지 않았다. 다른 질문의 부분 근거(해결 제안 아님): q2-07 은 f10~f13, oq-225 는 f6(한국어 포함 다국어 파싱 벤치마크), oq-226 은 f7(로봇 매뉴얼 RAG 정답률, 추출 정확도는 아님), oq-024 는 f14·f16. 벤더 성능값 f17 은 vendor_claim·추정·'벤더 주장: ' 표시. 현장 유형 finding 은 f15(제조 공장, 논문 재인용 사례)뿐. 온톨로지 변경 1건 제안(근거 문서 속성 '접근 조건'). 후속 질문 4건. 용어 후보 2건(트랙 glossary_targets 가운데 '로봇 능력 온톨로지' 포함, SPARQL·온톨로지 학습은 이번 근거 없음). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음(관련 질문 oq-225·oq-226·oq-024 가 이미 있음). 입력 누락 없음.\"},\"track\":{\"slug\":\"manual-capability-ontology\",\"stage\":2,\"answered_question_ids\":[\"q2-03\",\"q2-04\"],\"new_questions\":[{\"question\":\"Open-RMF 배터리 소모 모델이 요구하는 질량·요축 관성 모멘트·바퀴 구름 저항 계수처럼 제조사 사양서에서 찾기 어려운 물리 파라미터를 시운전 때 어떻게 측정·추정하고, 그 값으로 낸 배터리 소모 예측 오차를 어떻게 검증하는가? (q2-04 에서 파생)\",\"stage\":4,\"rationale_finding_id\":\"f19\"},{\"question\":\"제조사 사양의 조건부 값(적재 유무별 가동 시간, 바닥·습도 조건, '현장 조건과 적용 구성에 따라 달라질 수 있음' 단서)을 능력 온톨로지에서 속성 값과 그 값이 성립하는 조건으로 함께 표현하려면 어떤 구조가 필요한가? (q2-04 에서 파생)\",\"stage\":4,\"rationale_finding_id\":\"f16\"},{\"question\":\"MiR REST API 참조·시운전 가이드나 OTTO API 문서처럼 계정 로그인 뒤에만 받을 수 있는 통합 문서를 능력 정의 초안의 근거 문서로 쓸 때, 접근 권한 확보와 문서 판 보관·재배포 제한을 누가 관리하고 어떻게 기록하는가? (q2-03 에서 파생)\",\"stage\":6,\"rationale_finding_id\":\"f13\"},{\"question\":\"UR5e 사용자 매뉴얼 RAG 평가처럼 로봇 매뉴얼을 대상으로 한 공개 평가에서 그림·표·여러 절에 흩어진 정보가 필요한 질문의 정답률을 따로 잰 자료가 있는가, 없으면 그런 분할 평가를 어떻게 설계하는가? (q2-02 에서 파생)\",\"stage\":3,\"rationale_finding_id\":\"f7\"}],\"ontology_changes\":[{\"op\":\"modify\",\"kind\":\"concept\",\"name\":\"근거 문서 (Evidence Document)\",\"evidence_finding_ids\":[\"f10\",\"f11\"],\"description\":\"속성 '접근 조건(공개 / 계정·로그인 필요 / 설치 패키지 동봉)'을 더하는 제안. MiR 은 사용자 가이드는 공개하고 REST API 참조·시운전 가이드는 지원 포털 로그인 뒤에 두며(f10), Clearpath IndoorNav 는 API 문서 다운로드에 계정을 요구하고 설치 패키지에 오프라인 문서를 넣는다(f11). v0.4 의 속성 '이용 조건(라이선스)'과는 다른 축(누가 받을 수 있는가 대 어떻게 써도 되는가)이며 충돌하지 않는다. 6절 '근거 문서의 단위와 버전' 질문과 함께 검토 필요.\"}],\"stage_completion_self_assessment\":{\"met\":false,\"missing\":[\"문서 유형 매트릭스: 64칸 가운데 대부분 미조사(사용자 매뉴얼·오류 코드표·치수도·도면 행 근거 없음), 이번 실행으로 일부 칸과 5절만 채울 근거 추가\",\"공개 문서 샘플 목록: AMR 샘플 3건 근거를 더했으나 Omron 은 원문 미열람, 국내 AMR 샘플 없음, 문서 이용 조건 미확인\",\"q2-02 부분 답(로봇 매뉴얼 형태별 추출 정확도 측정 자료 없음)\",\"q2-05·q2-06·q2-07 열림\"]}}}",
+  "structured_output": {
+    "run_id": "2026-10-09-22",
+    "date": "2026-10-09",
+    "run_type": "track",
+    "target": {
+      "area_no": 5,
+      "area_name": "5. 로봇 능력·작업 표현",
+      "category": "B. 로봇 온톨로지"
+    },
+    "gaps": [
+      "단계 2 질문 q2-02(조사 중, 실행 2026-09-25-57 부분 답), q2-03(조사 중, 부분 답), q2-04(열림): target.json 지정(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 6건 중 오래된 순)",
+      "q2-02 남은 부분: 로봇 매뉴얼의 형태별(문장·표·그림·코드) 추출 난이도를 잰 자료 없음. 범용 문서 파싱 벤치마크 OmniDocBench는 매뉴얼을 문서 유형에 두지 않음",
+      "q2-03 남은 부분: AMR 제조사 공개 매뉴얼 샘플이 없고, 포털 매뉴얼 문서 자체의 이용 조건 미확인",
+      "q2-04: 문서에 없지만 실행에 필요한 정보와 그 보완 경로에 대한 조사 결과 없음",
+      "완료 조건: 문서 유형 매트릭스 64칸 가운데 9칸만 채움(사용자 매뉴얼·오류 코드표·치수도·도면 행 미조사), 매트릭스 5절 '문서에 없는 정보' 비어 있음",
+      "완료 조건: 공개 문서 샘플 목록에 AMR 샘플 없음"
+    ],
+    "research_questions": [
+      "로봇이 할 수 있는 일과 작업이 요구하는 조건을 어떻게 같은 말로 표현할 것인가? [분류원문]",
+      "q2-02 기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가? (이번 실행은 매뉴얼을 포함한 문서 레이아웃·표·다국어 파싱 벤치마크와 로봇 매뉴얼 대상 평가로 보강, 단계 2 페이지 3절 겨냥)",
+      "q2-03 공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가? (이번 실행은 AMR 제조사 문서와 접근 조건에 집중, 매트릭스 4절 겨냥)",
+      "q2-04 문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가(제조사 문의, 시험, 커뮤니티)? (매트릭스 5절과 단계 2 페이지 3절 겨냥)",
+      "제조사 사양서가 적은 성능값은 어떤 조건(적재 유무, 바닥, 현장 조건)에 묶여 있으며, 플릿 연동 설정이 요구하는 현장·물리 파라미터 가운데 문서 밖에서 정해야 하는 것은 무엇인가? (q2-04 보강)",
+      "한국어 같은 비라틴 문자 문서의 파싱 성능 자료가 공개 벤치마크에 있는가? (oq-225 관련, 한국 자료 우선 규칙)",
+      "국내 AMR 제조사(유진로봇·트위니 등)는 매뉴얼·API 문서를 공개하는가? (q2-03·q2-07 관련, 한국 자료 우선 규칙)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "DocLayNet 데이터셋은 금융 보고서·매뉴얼·과학 논문·법령·특허·정부 입찰 문서의 6개 범주에서 사람이 주석한 80,863쪽에 11개 레이아웃 라벨(Caption, Footnote, Formula, List-item, Page-footer, Page-header, Picture, Section-header, Table, Text, Title)을 달았으며, 매뉴얼은 금융 보고서와 함께 가장 큰 두 범주에 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1397",
+          "ref-1398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "논문(arXiv 2206.01062)은 11개 라벨과 80,863쪽을 밝히고 Financial Reports와 Manuals가 가장 큰 두 범주라고 적는다. 공식 저장소 README는 범주를 'Finance, Science, Patents, Tenders, Law texts and Manuals'로 나열하고 학습 69,375·검증 6,489·시험 4,999쪽으로 나눈다. 두 출처는 같은 저자 집단의 자료다.",
+        "as_of": "2022-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "DocLayNet 시험 세트에서 사람 주석자 사이 일치도(mAP@0.5-0.95)는 Picture 69~71, Table 77~81, Title 60~72로 Text 84~86보다 낮았고, 가장 좋은 기준 모델 YOLOv5x6의 mAP는 전체 76.8, Text 88.1, Table 86.3, Picture 77.1이었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1397"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "논문 Table 1·2 기준. 사람 일치도 전체 82~83, 모델(MRCNN R50 72.4, MRCNN R101 73.5, FRCNN R101 73.4, YOLOv5x6 76.8). 지표는 레이아웃 영역 검출이며 내용 추출 정확도가 아니다.",
+        "as_of": "2022-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "DocLayNet은 문서 범주에 매뉴얼을 두지만 범주별 성능을 따로 보고하지 않고 영역 검출만 재므로, 그림·표 영역이 글 영역보다 경계를 정하기 어렵다는 근거는 되나 로봇 매뉴얼의 형태별 내용 추출 난이도는 여전히 공개 측정 자료로 확인되지 않은 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1397",
+          "ref-513"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "논문 본문은 범주별 쪽 비율도 그림으로만 보이고 수치를 적지 않는다. OmniDocBench(실행 2026-09-25-57 확인)는 매뉴얼을 문서 유형에 두지 않는다. 부재 확정 아님.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "TableVQA-Bench(Kim·Yim·Song, 2024-04)는 같은 표를 이미지로 준 멀티모달 언어 모델이 텍스트로 준 언어 모델보다 낮은 성능을 보여, 시각 입력 처리가 텍스트 입력보다 어렵다고 결론지었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1399"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'processing visual inputs is more challenging than text inputs'. 초록에는 차이의 수치가 없다(검색 요약의 '20%p 이상' 수치는 원문에서 확인하지 못해 쓰지 않음).",
+        "as_of": "2024-04",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "VisR-Bench(Chen 외, 2025-08)는 16개 언어 약 1.2천 개 장문 문서와 3.5만 개 이상의 그림·글·표 질문으로 시각 검색 증강 생성을 평가해, 멀티모달 언어 모델이 가장 좋았지만 구조화된 표와 저자원 언어에서 여전히 어려움을 겪는다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1400"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록(v2, 2025-08-25): MLLMs 'still struggle with structured tables and low-resource languages'. 초록은 제품 매뉴얼 같은 문서 유형을 명시하지 않는다(매뉴얼 포함은 2차 목록 기준이라 쓰지 않음).",
+        "as_of": "2025-08",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "MDPBench(Li 외, 2026-03)는 한국어를 포함한 17개 언어의 디지털·촬영 문서 이미지 3,400장으로 문서 파싱을 평가해, 공개 모델이 비라틴 문자에서 평균 14.0%, 촬영 문서에서 평균 17.8% 성능이 떨어지고 비공개 모델은 상대적으로 견고하다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1401"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "비라틴 문자 8개 언어에 한국어(KO)가 있고 Table 2에 KO 열이 있다(Gemini-3-pro-preview 74.8). 문서 유형에 로봇 매뉴얼이 있는지는 확인하지 않았다.",
+        "as_of": "2026-03",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "Singh 외(arXiv 2511.11847, 2025-11, 2026-02 개정)는 Universal Robots UR5e 사용자 매뉴얼을 포함한 세 기계의 매뉴얼로 전문가 검증 질의응답 벤치마크를 만들어 24개 검색 증강 생성 구성을 비교했고, 최고 구성은 정답률 86.66%, 평균 지연 10.04초였으며, 여러 절에 흩어진 정보가 필요한 질문을 어려운 문항으로 따로 두었으나 그림·표·난이도별 결과는 나누어 보고하지 않았다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1402"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "UR5 문항은 쉬움 23·보통 30·어려움 7. 쉬운 문항은 'answered from a single section of a manual', 어려운 문항은 'details scattered across different technical sections'. 기계가독 PDF는 PyMuPDF, 이미지가 든 문서는 Mistral OCR로 텍스트만 추출했다. 86.66%는 세 기계 전체 기준.",
+        "as_of": "2026-02",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "VDA 5050 팩트시트 스키마(main)는 기계가독 형식이면서도 바퀴 정의의 제약(constraints), 선택 파라미터의 설명(description), 동작 설명(actionDescription)·결과(actionResult)를 자유 텍스트로 두어 제조사가 실행 관련 조건을 문장으로 적게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "wheelDefinitions.constraints: 'Free text: can be used by the manufacturer to define constraints'. optionalParameters.description 예시는 파라미터가 왜 필요한지와 NURBS 지원 범위를 문장으로 적는다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "범용 벤치마크(DocLayNet·TableVQA-Bench·VisR-Bench·MDPBench)와 로봇 매뉴얼 RAG 평가를 함께 보면 그림·표·여러 절에 흩어진 정보와 비라틴 문자 문서가 글 단락보다 다루기 어렵다는 방향은 뒷받침되고, 기계가독 스키마 안에도 자유 텍스트가 남지만, 로봇 매뉴얼에서 형태별 추출 정확도를 직접 잰 자료는 이번에도 찾지 못한 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1397",
+          "ref-1399",
+          "ref-1400",
+          "ref-1401",
+          "ref-1402",
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f4·f5·f6·f7·f8의 종합(이 위키의 추론). 각 벤치마크의 과제(영역 검출, 표 질의응답, 검색, 파싱, 매뉴얼 질의응답)가 서로 달라 하나의 난이도 순서로 합칠 수 없다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "MiR250 제품 문서 페이지는 사용자 가이드·빠른 시작·리튬이온 배터리 취급 문서·적합성 문서를 로그인 표시 없이 두고, 인터페이스 가이드·시운전 가이드·기술 가이드·위험성평가 가이드·사이버보안 가이드·공간 요구 모범 사례·네트워크와 Wi-Fi 가이드·48V 배터리 문제 해결 가이드·REST API 참조는 MiR 지원 포털 로그인이 필요하다고 표시하며, 문서 자체의 이용 조건 문구는 두지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1403"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "REST API 절은 지원 포털의 REST API 파일 목록 링크 옆에 '(Sign in required)'를 적는다. 페이지 하단에는 저작권 표기와 개인정보·쿠키·납품 약관 링크만 있다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "Clearpath IndoorNav 사용자 매뉴얼의 API 절은 Fleet·Autonomy·Platform API 문서를 docs.ottomotors.com 에 두고, API 문서 묶음의 직접 다운로드에는 OTTO Motors 계정 로그인이 필요하며, 같은 문서를 clearpath-api 패키지에 넣어 설치 뒤 오프라인으로 볼 수 있게 한다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "다운로드는 'requires an OTTO Motors account to log in', 오프라인 문서 경로 /opt/clearpath/ros2-api-1.3.3/share/public. API는 ROS 2 도메인(Fleet 100, Autonomy 110, Platform 95)으로 나뉜다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f12",
+        "claim": "Omron은 LD-250 자율이동로봇 사용자 매뉴얼(I642)을 files.omron.eu 에 공개 PDF로 두며, 이 매뉴얼은 FLOW v3.3.1 이 지원하는 기능을 설명하고 구성은 Fleet Operations Workspace Core 사용자 매뉴얼(I635)을 참조하게 하는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1407"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 결과 요약 기준. PDF가 열람 도구의 크기 상한(10MB)을 넘어 원문을 열지 못했다. 판·발행일·저작권 문구 미확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f13",
+        "claim": "확인한 AMR 제조사 문서(MiR·Clearpath/OTTO·Omron)를 보면 사용자 가이드 수준의 문서는 공개되지만 REST API 참조·인터페이스·시운전 가이드 같은 통합 수준 문서는 계정 로그인이나 패키지 설치 뒤에 제공되는 경향이 있고, 확인한 페이지 어디에도 문서 자체의 이용(재사용) 조건은 적혀 있지 않은 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1403",
+          "ref-1406",
+          "ref-1407"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f10·f11·f12의 종합(세 제조사 표본). Omron 은 원문 미열람이라 접근·이용 조건을 확인하지 못했다. 국내 AMR 제조사(유진로봇·트위니) 공개 문서는 이번 검색에서 찾지 못함(부재 확정 아님).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f14",
+        "claim": "Naqvi 외(Scientific Reports, 2025-10-02)는 제조사 매뉴얼에서 가져온 광고 능력과 운용 환경에서 측정한 운용 능력을 온톨로지에서 구분하며, NED-2 사례에서는 명령한 목표 위치와 실제 도달 위치(피드백)를 기록해 그 표준편차로 반복 정밀도를 계산했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-041"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "PMC 전문 기준. 광고 사양은 제조사 매뉴얼 표(Table 2: 가반하중·반복 정밀도·관절 범위)에서, 운용 반복 정밀도는 'the standard deviation of feedback positions'로 구한다. ISO 9283 같은 측정 표준은 언급하지 않는다.",
+        "as_of": "2025-10-02",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f15",
+        "claim": "같은 논문은 Airbus UK 의 날개 상자 자동 조립 셀에서 관절형 로봇이 보정한 기구학 모델로도 ±0.2 mm 절대 정확도를 달성하지 못했고 온도 변화가 성능을 떨어뜨려 리브 위치·드릴 구멍이 허용 사양을 벗어났다는 사례를 들어 선언 사양과 운용 성능의 차이를 보인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-041"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "논문이 인용한 사례(재인용). 리브는 ±0.5 mm 정확도로 위치시켜야 했으나 측정 편차 수치는 본문에 없다.",
+        "as_of": "2025-10-02",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f16",
+        "claim": "MiR1350·MiR250 사양 페이지는 가동 시간을 최대 적재와 무적재로 나눈 두 값으로 적고, 바닥 조건('Clean and dry', 'No water, no oil, no dirt')과 실내 전용·습도 조건을 두며, 사양이 현장 조건과 적용 구성에 따라 달라질 수 있다는 단서를 붙인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1404",
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "두 페이지 공통 단서: 'Specifications may vary based on local conditions and application setup'. MiR1350 은 통로·문 폭이 기본 구성과 보호 필드를 끈 최소 외곽 구성에서 다르다고 적는다. 같은 제조사 자료라 독립 교차 확인이 아니다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "MiR 사양 페이지 기준으로 MiR1350 은 최대 적재 1,350 kg 에서 가동 6시간 45분·무적재 9시간 50분, MiR250 은 최대 적재 250 kg 에서 최대 13시간·무적재 최대 17시간 30분이며 최고 속도 2.0 m/s 다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1404",
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 제조사 사양 페이지의 성능값. 다른 언어판 페이지는 MiR1350 값을 '최대 10시간/7시간'으로 적는다는 검색 요약이 있어 판 차이가 있을 수 있다(미확인). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약",
+        "vendor_claim": true
+      },
+      {
+        "id": "f18",
+        "claim": "Open-RMF 플릿 어댑터 템플릿은 로봇 좌표계와 RMF(traffic_editor) 지도 좌표계 사이 변환을 위해 같은 위치를 가리키는 [x,y] 좌표 쌍(reference_coordinates)을 설정 파일에 적게 하고 최소 4개의 대응 지점을 권장한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1408",
+          "ref-105"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 'A minimum of 4 matching waypoints is recommended.' 템플릿 config.yaml 은 층 L1 에 rmf·robot 좌표 4쌍을 예시로 둔다. 좌표 쌍을 얻는 방법은 적지 않는다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f19",
+        "claim": "Open-RMF 배터리 소모 모델(rmf_battery)의 MechanicalSystem 은 질량(kg), 요축 관성 모멘트(kg·m²), 바퀴에서 측정한 운동 마찰 또는 구름 저항 계수를 모두 0보다 큰 값으로 요구하며, 템플릿 설정은 이와 함께 배터리 전압·용량·충전 전류, 주변 장치·도구 소비 전력, 재충전 하한을 적게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1409",
+          "ref-105"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "API 문서: 마찰 계수는 'coefficient of kinetic friction or rolling resistance coefficient measured at the wheels of the robot'. 값의 출처(사양·측정·추정)는 적지 않는다. config.yaml 예: 12 V, 24 Ah, 5 A, 20 kg, 10 kg·m², 0.22, recharge_threshold 0.10.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f20",
+        "claim": "MassRobotics AMR 상호운용 표준의 식별 보고는 제품 문서 링크(productDocumentation), 비상 연락처, 공급 업체 이름·연락처를 선택 필드로 두어 로봇 등록 정보에서 매뉴얼과 제조사 문의 경로를 가리키게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-230"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "identityReport 선택 필드: productDocumentation('Link to product documenation', uri), emergencyContactInformation, supportVendorName, supportVendorContactInformation.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 자료를 종합하면 문서에 없거나 문서만으로 정해지지 않는 실행 정보는 (1) 현장 지도와 로봇 좌표계의 대응점, (2) 배터리 소모 예측에 쓰는 물리 파라미터(구름 저항 계수 등), (3) 적재·바닥·현장 조건에 따라 달라지는 성능값, (4) 운용 중 실제로 관측되는 능력이며, 이는 시운전 현장 측정, 운용 기록에 근거한 측정, 계정으로만 받는 제조사 통합 문서·지원 포털로 보완되는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1408",
+          "ref-1409",
+          "ref-1404",
+          "ref-041",
+          "ref-1403",
+          "ref-230"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f10·f14·f16·f18·f19·f20의 종합(이 위키의 추론). 이 목록을 제시한 단일 출처는 없다. 질문이 든 '커뮤니티' 보완 경로는 쓸 수 있는 출처(공식 문서)로 확인하지 못했다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1397",
+        "org": "Pfitzmann, B., Auer, C., Dolfi, M., Nassar, A. S., & Staar, P. W. J.",
+        "title": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+        "published": "2022-06",
+        "url": "https://arxiv.org/abs/2206.01062",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "사람이 주석한 80,863쪽·11개 레이아웃 라벨의 문서 레이아웃 데이터셋. 매뉴얼을 포함한 6개 문서 범주와 라벨별 사람 일치도·모델 mAP를 보고한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2206.01062"
+      },
+      {
+        "id": "ref-1398",
+        "org": "DS4SD (DocLayNet GitHub)",
+        "title": "DocLayNet — README",
+        "published": null,
+        "url": "https://github.com/DS4SD/DocLayNet",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "DocLayNet 공식 저장소 README. 6개 문서 범주(매뉴얼 포함)와 학습·검증·시험 분할 쪽수를 밝힌다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/DS4SD/DocLayNet/main/README.md"
+      },
+      {
+        "id": "ref-1399",
+        "org": "Kim, Y., Yim, M., & Song, K. Y.",
+        "title": "TableVQA-Bench: A Visual Question Answering Benchmark on Multiple Table Domains",
+        "published": "2024-04",
+        "url": "https://arxiv.org/abs/2404.19205",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "여러 영역의 표를 이미지로 만든 표 시각 질의응답 벤치마크. 이미지 표 입력이 텍스트 표 입력보다 어렵다고 결론짓는다(프리프린트 초록 확인).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2404.19205"
+      },
+      {
+        "id": "ref-1400",
+        "org": "Chen, J. 외",
+        "title": "VisR-Bench: An Empirical Study on Visual Retrieval-Augmented Generation for Multilingual Long Document Understanding",
+        "published": "2025-08",
+        "url": "https://arxiv.org/abs/2508.07493",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "16개 언어 장문 문서의 그림·글·표 질문으로 시각 검색 증강 생성을 평가한 벤치마크. 멀티모달 모델도 구조화된 표와 저자원 언어에 약하다고 보고한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2508.07493"
+      },
+      {
+        "id": "ref-1401",
+        "org": "Li, Z. 외",
+        "title": "MDPBench: A Benchmark for Multilingual Document Parsing in Real-World Scenarios",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.28130",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "한국어를 포함한 17개 언어 디지털·촬영 문서 3,400장의 다국어 문서 파싱 벤치마크. 공개 모델은 비라틴 문자·촬영 문서에서 성능이 크게 떨어진다고 보고한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2603.28130"
+      },
+      {
+        "id": "ref-1402",
+        "org": "Singh, R. 외",
+        "title": "A Multimodal Manufacturing Safety Chatbot: Knowledge Base Design, Benchmark Development, and Evaluation of Multiple RAG Approaches",
+        "published": "2025-11",
+        "url": "https://arxiv.org/abs/2511.11847",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "UR5e 협동로봇 사용자 매뉴얼 등 세 기계의 매뉴얼로 만든 질의응답 벤치마크에서 24개 검색 증강 생성 구성을 비교한 프리프린트(v2 2026-02).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2511.11847"
+      },
+      {
+        "id": "ref-1403",
+        "org": "Mobile Industrial Robots (MiR)",
+        "title": "MiR250 HW 2.0 SW 2.x — Product documents",
+        "published": null,
+        "url": "https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "MiR250 의 문서 목록 페이지. 사용자 가이드·빠른 시작은 공개, 인터페이스·시운전·기술 가이드와 REST API 참조는 지원 포털 로그인이 필요하다고 표시한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1"
+      },
+      {
+        "id": "ref-1404",
+        "org": "Mobile Industrial Robots (MiR)",
+        "title": "MiR1350 — Specifications",
+        "published": null,
+        "url": "https://mobile-industrial-robots.com/products/robots/mir1350/specifications",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "MiR1350 사양 페이지. 적재 유무별 가동 시간, 바닥·환경 조건과 사양이 현장 조건에 따라 달라질 수 있다는 단서를 둔다(성능값은 벤더 주장).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://mobile-industrial-robots.com/products/robots/mir1350/specifications"
+      },
+      {
+        "id": "ref-1405",
+        "org": "Mobile Industrial Robots (MiR)",
+        "title": "MiR250 — Specifications",
+        "published": null,
+        "url": "https://mobile-industrial-robots.com/products/robots/mir250/specifications",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "MiR250 사양 페이지. 적재 유무별 가동 시간, 최고 속도, 바닥·온도 조건과 같은 단서를 둔다(성능값은 벤더 주장).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://mobile-industrial-robots.com/products/robots/mir250/specifications"
+      },
+      {
+        "id": "ref-1406",
+        "org": "Clearpath Robotics / OTTO Motors",
+        "title": "IndoorNav User Manual — API",
+        "published": null,
+        "url": "https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "IndoorNav 자율주행 소프트웨어의 API 안내. API 문서는 docs.ottomotors.com 에 있고 직접 다운로드는 OTTO Motors 계정이 필요하며 clearpath-api 패키지에 오프라인 문서가 들어 있다고 적는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api"
+      },
+      {
+        "id": "ref-1407",
+        "org": "OMRON",
+        "title": "LD-250 Autonomous Mobile Robot User's Manual (I642)",
+        "published": null,
+        "url": "https://files.omron.eu/downloads/latest/manual/en/i642_ld-250_user_manual_users_manual_en.pdf",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 검색 결과 기준 Omron 공식 다운로드 서버의 LD-250 AMR 사용자 매뉴얼 PDF로, FLOW v3.3.1 기능을 설명하고 Fleet Operations Workspace Core 매뉴얼(I635)을 참조한다.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1408",
+        "org": "Open Robotics (open-rmf)",
+        "title": "fleet_adapter_template — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/fleet_adapter_template",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 플릿 어댑터 템플릿 README. config.yaml 의 rmf_fleet 절과 로봇·RMF 좌표 대응점(reference_coordinates, 최소 4개 권장)을 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/fleet_adapter_template/main/README.md"
+      },
+      {
+        "id": "ref-1409",
+        "org": "Open Robotics (Open-RMF rmf_battery API docs)",
+        "title": "Class MechanicalSystem — rmf_battery",
+        "published": null,
+        "url": "https://openrmf.readthedocs.io/projects/rmf-battery/en/latest/api/classrmf__battery_1_1agv_1_1MechanicalSystem.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 배터리 소모 모델의 기계계 파라미터(질량, 요축 관성 모멘트, 바퀴에서 측정한 구름 저항 계수)와 양수 제약을 정의하는 API 문서.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://openrmf.readthedocs.io/projects/rmf-battery/en/latest/api/classrmf__battery_1_1agv_1_1MechanicalSystem.html"
+      },
+      {
+        "id": "ref-041",
+        "org": "Naqvi, M. R. 외(Scientific Reports)",
+        "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+        "published": "2025-10-02",
+        "url": "https://www.nature.com/articles/s41598-025-16649-3",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "제조사가 광고한 능력과 운용 중 측정한 능력을 로봇 능력 온톨로지로 구분·통합하는 방법을 제시한 논문. 이번 실행에서 PMC 전문을 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12491535/"
+      },
+      {
+        "id": "ref-105",
+        "org": "Open Robotics (open-rmf)",
+        "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+        "published": null,
+        "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 플릿 어댑터 템플릿 설정 파일. 속도·외곽, 배터리·기계·주변·도구 전력, 작업 능력, 동작, 충전기, 좌표 대응점을 선언한다.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 main(3.0.0) 팩트시트 JSON 스키마. 유형 명세·물리 파라미터·프로토콜 한계·지원 기능·기하·적재 명세와 자유 텍스트 설명 필드를 둔다.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "MassRobotics AMR 상호운용 표준 공식 JSON 스키마. 식별 보고(제품 문서 링크·공급 업체 연락처 포함)와 상태 보고를 정의한다.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-513",
+        "org": "OpenDataLab (opendatalab/OmniDocBench GitHub)",
+        "title": "OmniDocBench — README",
+        "published": null,
+        "url": "https://github.com/opendatalab/OmniDocBench",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "PDF 문서 파싱 벤치마크 README. 문단·표·수식·읽기 순서를 나눠 평가하며 문서 유형에 매뉴얼을 명시하지 않는다(이번 실행에서 다시 열지 않음).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/stage-2-document-types.md",
+        "sections": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "rationale": "q2-03 답: f10·f11·f12·f13 (신뢰도 low) / q2-04 답: f14·f15·f16·f17·f18·f19·f20·f21 (신뢰도 low) / q2-02 부분 답: f1·f2·f3·f4·f5·f6·f7·f8·f9 — 2절 q2-03·q2-04 답함, q2-02 조사 중 유지, 3절 q2-02 소제목에 매뉴얼 범주를 둔 레이아웃 데이터셋(f1·f2·f3)·표 이미지 입력의 어려움(f4·f5)·한국어 포함 다국어 파싱(f6)·UR5e 매뉴얼 RAG 평가(f7)·기계가독 스키마 안의 자유 텍스트(f8)·종합(f9) 보강, q2-03 소제목에 AMR 샘플(MiR·Clearpath/OTTO·Omron)과 접근 조건(f10~f13) 추가, q2-04 소제목({#q2-04}) 신설(광고·운용 능력 f14·f15, 조건부 사양 f16, 벤더 성능값 f17은 벤더 주장 병기, 현장 좌표 대응점 f18, 배터리 모델 물리 파라미터 f19, 문서 링크·연락처 필드 f20, 종합 f21), 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건 현황, 8절 출처, 9절 이력"
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/document-type-matrix.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "7",
+          "8"
+        ],
+        "rationale": "트랙 산출물 갱신: 3절 사양서·데이터시트 행 제약 칸에 MiR 사양의 적재 유무별 가동 시간·바닥 조건(f16, 형태 표, 성능값 f17은 벤더 주장), 사양서·데이터시트 행 제약 칸 보강에 VDA 5050 자유 텍스트 제약(f8), 통합·API 가이드 행 인터페이스 칸에 Clearpath IndoorNav(f11) 추가 / 4절 공개 문서 샘플에 MiR250(사용자 가이드 공개, REST API·시운전 가이드 로그인 필요, f10), Clearpath IndoorNav(계정·오프라인 패키지, f11), Omron LD-250(공개 PDF, 원문 미열람, f12) 추가, AMR 샘플 없음 문장 갱신(f13) / 5절 '문서에 없는 정보' 첫 내용: 좌표 대응점(f18)·배터리 모델 물리 파라미터(f19)·조건부 성능값(f16)·운용 능력(f14)과 보완 경로(f21) / 7절 출처 / 8절 이력"
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "sections": [
+          "2",
+          "6"
+        ],
+        "rationale": "트랙 산출물 갱신: track.ontology_changes 가 검증 승인되면 근거 문서 속성 '접근 조건(공개 / 계정·로그인 필요 / 설치 패키지 동봉)'을 2절에 반영(f10·f11, v0.4 → v0.5). 미승인 시 6절 '근거 문서의 단위와 버전' 질문에 합친다"
+      },
+      {
+        "action": "update",
+        "path": "docs/ideas/robot-capability-ontology.md",
+        "sections": [
+          "4"
+        ],
+        "rationale": "아이디어 페이지 4절: 온보딩 능력 정의 초안의 입력이 될 AMR 제조사 문서의 공개·로그인 범위(f10·f11·f13), 문서 밖에서 측정해야 하는 값(f18·f19)과 조건부 사양(f16), 광고·운용 능력 구분(f14) 보강"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/robot-capability-and-task-representation.md",
+        "sections": [
+          "3",
+          "11"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f14, f16, f21): 제조사 사양값이 적재·현장 조건에 묶여 있고 운용 능력은 측정으로 보완된다는 점을 3절에, oq-024(선언 능력과 운용 능력 가운데 배정 기준) 부분 근거로 11절에. 반영은 다음 해당 영역 실행에서"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f10, f11, f13, f20): 등록 때 모을 AMR 제조사 문서의 공개·계정 필요 범위와 MassRobotics 식별 보고의 제품 문서 링크·공급 업체 연락처 필드. 교차 규칙(매뉴얼 해석은 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전)에 따라 45. 문서·도면·장면 이해와 함께 연결"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f16, f18, f19): 시운전 때 문서 밖에서 정해야 하는 값(로봇·지도 좌표 대응점 4개 이상, 배터리 소모 모델의 질량·관성 모멘트·바퀴 구름 저항 계수)과 현장 조건에 따라 달라지는 제조사 사양"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "sections": [
+          "8"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f1, f2, f4, f5, f6, f7): 매뉴얼 범주를 둔 레이아웃 데이터셋 DocLayNet, 표 이미지 입력의 어려움(TableVQA-Bench·VisR-Bench), 한국어 포함 다국어 파싱 벤치마크 MDPBench, UR5e 매뉴얼 RAG 평가. 교차 규칙에 따라 적용 대상 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전 페이지와 양쪽 연결, oq-225·oq-226 부분 근거"
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "광고 능력·운용 능력",
+        "term_en": "Advertised Capability / Operational Capability",
+        "definition": "제조사가 매뉴얼·사양서로 선언한 로봇 능력과 실제 운용 환경에서 측정·관측한 능력을 구분한 표현으로, 둘의 차이를 함께 기록해 배정·검증에 쓴다."
+      },
+      {
+        "term_ko": "로봇 능력 온톨로지",
+        "term_en": "Robot Capability Ontology",
+        "definition": "로봇이 수행할 수 있는 기능과 그 품질·성능 같은 능력을 개념과 관계로 명시해, 제조사 사양과 운용 측정값을 같은 어휘로 표현하게 하는 온톨로지다."
+      }
+    ],
+    "open_questions_new": [],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 18,
+      "cross_checked_count": 0,
+      "unverified": [
+        "q2-02 부분 답: 로봇 매뉴얼을 대상으로 형태별(문장·표·그림·코드) 추출 정확도를 잰 자료를 찾지 못함. DocLayNet은 매뉴얼 범주를 두지만 범주별 결과를 보고하지 않고, UR5e 매뉴얼 RAG 평가는 그림·표별 결과를 나누지 않음",
+        "f12: Omron LD-250 매뉴얼 PDF가 열람 크기 상한(10MB)을 넘어 원문 미열람. 판·발행일·저작권 문구 미확인",
+        "f13: 국내 AMR 제조사(유진로봇 GoCart·트위니) 공개 매뉴얼·API 문서를 한국어 검색에서 찾지 못함(기사만 나와 출처로 넣지 않음, 부재 확정 아님)",
+        "f17: MiR1350 가동 시간이 언어판마다 다르게 적혔다는 검색 요약(최대 10시간/7시간)을 원문으로 확인하지 못함",
+        "f4: TableVQA-Bench의 이미지 표 대 텍스트 표 성능 차이 수치는 초록에 없어 미확인",
+        "f21: 질문이 든 '커뮤니티' 보완 경로는 공식 문서 근거를 찾지 못함",
+        "MiR·Clearpath·Omron 문서 자체의 재사용·자동 추출 허용 여부(이용 약관) 미확인 — q6-07과 연결",
+        "모든 finding 교차 확인 없음(같은 기관 자료이거나 단일 출처)"
+      ],
+      "scope_violations": [
+        "f15: 관절형 로봇의 절대 정확도는 분류 원문 19장 '로봇 자체 지능·제어' 쪽 연계 대상이므로 문서 선언과 운용 성능의 차이를 보이는 사례로만 쓰고 ROP 직접 범위로 서술하지 않음",
+        "f19: 배터리 소모 물리 모델 파라미터는 로봇 구동계 특성이므로 ROP 몫은 그 값을 설정·검증하는 일로 한정해 서술해야 함",
+        "f1~f7: 문서 파싱·레이아웃 분석은 L. AI·학습 기술의 45. 문서·도면·장면 이해 방법이며 적용 대상 4. 이기종 로봇 등록·55. 현장 조사·설치·시운전과 함께 연결하도록 제안함"
+      ],
+      "budget_used": {
+        "queries": 21,
+        "sources": 13
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 21회/40, 신규 출처 13건/20(ref-1397~ref-1409, 예약 구간 안), 재사용 5건(ref-041 은 PMC 전문을 webfetch 로 새로 열었고, ref-105·ref-228·ref-230 은 inbox 원문, ref-513 은 다시 열지 않음). 질문 선택: target.json 지정 q2-02·q2-03·q2-04. 답한 질문: q2-03(AMR 샘플과 접근 조건을 더해 답으로 올림, 문서 재사용 허용 여부는 기존 q6-07 몫), q2-04. q2-02 는 범용 벤치마크로 방향은 보강했으나 로봇 매뉴얼 직접 측정이 없어 부분 답. 원문 열기 실패: DocLayNet PDF·Omron PDF(압축 스트림·크기 상한), Springer s10845-026-02894-4(기술 데이터시트 추출 비교, 인증 리다이렉트), nature.com(리다이렉트, PMC 로 대체), Omron 일본 다운로드 페이지(403). 제외한 자료: Open Robotics Discourse 의 Open-RMF 관리자 댓글(배터리 물리 파라미터를 늘 알 수는 없다는 취지)은 커뮤니티 게시글이라 출처로 넣지 않았다. 검색 요약에만 나온 VisR-Bench 의 '제품 매뉴얼 포함', TableVQA 의 '20%p' 수치도 쓰지 않았다. 다른 질문의 부분 근거(해결 제안 아님): q2-07 은 f10~f13, oq-225 는 f6(한국어 포함 다국어 파싱 벤치마크), oq-226 은 f7(로봇 매뉴얼 RAG 정답률, 추출 정확도는 아님), oq-024 는 f14·f16. 벤더 성능값 f17 은 vendor_claim·추정·'벤더 주장: ' 표시. 현장 유형 finding 은 f15(제조 공장, 논문 재인용 사례)뿐. 온톨로지 변경 1건 제안(근거 문서 속성 '접근 조건'). 후속 질문 4건. 용어 후보 2건(트랙 glossary_targets 가운데 '로봇 능력 온톨로지' 포함, SPARQL·온톨로지 학습은 이번 근거 없음). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음(관련 질문 oq-225·oq-226·oq-024 가 이미 있음). 입력 누락 없음."
+    },
+    "track": {
+      "slug": "manual-capability-ontology",
+      "stage": 2,
+      "answered_question_ids": [
+        "q2-03",
+        "q2-04"
+      ],
+      "new_questions": [
+        {
+          "question": "Open-RMF 배터리 소모 모델이 요구하는 질량·요축 관성 모멘트·바퀴 구름 저항 계수처럼 제조사 사양서에서 찾기 어려운 물리 파라미터를 시운전 때 어떻게 측정·추정하고, 그 값으로 낸 배터리 소모 예측 오차를 어떻게 검증하는가? (q2-04 에서 파생)",
+          "stage": 4,
+          "rationale_finding_id": "f19"
+        },
+        {
+          "question": "제조사 사양의 조건부 값(적재 유무별 가동 시간, 바닥·습도 조건, '현장 조건과 적용 구성에 따라 달라질 수 있음' 단서)을 능력 온톨로지에서 속성 값과 그 값이 성립하는 조건으로 함께 표현하려면 어떤 구조가 필요한가? (q2-04 에서 파생)",
+          "stage": 4,
+          "rationale_finding_id": "f16"
+        },
+        {
+          "question": "MiR REST API 참조·시운전 가이드나 OTTO API 문서처럼 계정 로그인 뒤에만 받을 수 있는 통합 문서를 능력 정의 초안의 근거 문서로 쓸 때, 접근 권한 확보와 문서 판 보관·재배포 제한을 누가 관리하고 어떻게 기록하는가? (q2-03 에서 파생)",
+          "stage": 6,
+          "rationale_finding_id": "f13"
+        },
+        {
+          "question": "UR5e 사용자 매뉴얼 RAG 평가처럼 로봇 매뉴얼을 대상으로 한 공개 평가에서 그림·표·여러 절에 흩어진 정보가 필요한 질문의 정답률을 따로 잰 자료가 있는가, 없으면 그런 분할 평가를 어떻게 설계하는가? (q2-02 에서 파생)",
+          "stage": 3,
+          "rationale_finding_id": "f7"
+        }
+      ],
+      "ontology_changes": [
+        {
+          "op": "modify",
+          "kind": "concept",
+          "name": "근거 문서 (Evidence Document)",
+          "evidence_finding_ids": [
+            "f10",
+            "f11"
+          ],
+          "description": "속성 '접근 조건(공개 / 계정·로그인 필요 / 설치 패키지 동봉)'을 더하는 제안. MiR 은 사용자 가이드는 공개하고 REST API 참조·시운전 가이드는 지원 포털 로그인 뒤에 두며(f10), Clearpath IndoorNav 는 API 문서 다운로드에 계정을 요구하고 설치 패키지에 오프라인 문서를 넣는다(f11). v0.4 의 속성 '이용 조건(라이선스)'과는 다른 축(누가 받을 수 있는가 대 어떻게 써도 되는가)이며 충돌하지 않는다. 6절 '근거 문서의 단위와 버전' 질문과 함께 검토 필요."
+        }
+      ],
+      "stage_completion_self_assessment": {
+        "met": false,
+        "missing": [
+          "문서 유형 매트릭스: 64칸 가운데 대부분 미조사(사용자 매뉴얼·오류 코드표·치수도·도면 행 근거 없음), 이번 실행으로 일부 칸과 5절만 채울 근거 추가",
+          "공개 문서 샘플 목록: AMR 샘플 3건 근거를 더했으나 Omron 은 원문 미열람, 국내 AMR 샘플 없음, 문서 이용 조건 미확인",
+          "q2-02 부분 답(로봇 매뉴얼 형태별 추출 정확도 측정 자료 없음)",
+          "q2-05·q2-06·q2-07 열림"
+        ]
+      }
+    }
+  },
+  "ttft_ms": 17344,
+  "type": "result",
+  "duration_ms": 581542,
+  "uuid": "f63e93f4-2ae6-4095-b287-101cb8e85ffa",
+  "ttft_stream_ms": 3098,
+  "time_to_request_ms": 155,
+  "time_to_request_phases_ms": {
+    "other": 24,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 8,
+    "input_attachments": 43,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 2,
+    "model_config_wait": 0,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 6,
+    "message_normalization": 3,
+    "client_creation": 7,
+    "request_build": 38
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 54,
+  "time_to_request_cpu_ms": 228,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "at_mentioned_files",
+    "slowest_producer_ms": 21,
+    "cpu_ms": 73,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 3098,
+  "time_to_request_from_spawn_ms": 111874,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791540291872.5837,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 583.9
+}

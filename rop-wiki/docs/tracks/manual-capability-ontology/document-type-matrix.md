@@ -3,22 +3,22 @@ title: "문서 유형 매트릭스"
 type: track
 subtype: matrix
 track: manual-capability-ontology
-related_areas: [5, 47, 55]
-tags: [문서 유형 매트릭스, 제조사 문서, 정보 항목, 공개 문서 샘플, 단계 2 산출물]
+related_areas: [5, 18, 47, 55]
+tags: [문서 유형 매트릭스, 제조사 문서, 정보 항목, 공개 문서 샘플, 암묵지, 단계 2 산출물]
 status: published
 confidence: low
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-505, ref-506, ref-507, ref-508, ref-511, ref-512, ref-228, ref-230]
-last_run: 2026-09-25
-version: 2
+updated: 2026-10-09
+sources: [ref-505, ref-506, ref-507, ref-508, ref-511, ref-512, ref-228, ref-230, ref-040, ref-105, ref-041, ref-1375, ref-1376, ref-1377, ref-1378, ref-1379, ref-1380, ref-1381, ref-1382, ref-1384, ref-1385]
+last_run: 2026-10-09
+version: 4
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [매뉴얼 기반 로봇 기능 온톨로지](index.md) › 문서 유형 매트릭스
 
 # 문서 유형 매트릭스
 
-> 산출 단계: [단계 2. 로봇 문서 유형과 정보 구조 조사](stage-2-document-types.md) · 상태: 초안 · 채운 칸: 9 / 64 · 공개 문서 샘플: 4건 · 마지막 실행: 2026-09-25
+> 산출 단계: [단계 2. 로봇 문서 유형과 정보 구조 조사](stage-2-document-types.md) · 상태: 초안 · 채운 칸: 9 / 64 · 공개 문서 샘플: 11건 · 마지막 실행: 2026-10-09
 
 ## 1. 목적과 쓰임
 
@@ -26,7 +26,7 @@ version: 2
 
 매트릭스는 뒤 단계의 입력이다. 정보가 어느 문서 유형에 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 있는지에 따라 단계 3(비정형 문서에서 온톨로지를 추출하는 방법 조사)이 다룰 추출 방법이 달라지고, 어느 정보가 문서에 없는지가 가설 1(문서만으로 어디까지 구조화할 수 있는가)의 근거가 된다.
 
-단계 2 트랙 실행에서 스토리텔러 에이전트가 내용 검증 에이전트의 승인을 받은 발견 사항만으로 채운다. 실행 2026-09-25-57에서 처음 일부 칸과 샘플 목록을 채웠다.
+단계 2 트랙 실행에서 스토리텔러 에이전트가 내용 검증 에이전트의 승인을 받은 발견 사항만으로 채운다. 실행 2026-09-25-57에서 처음 일부 칸과 샘플 목록을 채웠고, 실행 2026-10-09-22에서 5절 "문서에 없는 정보"를 처음 채웠다.
 
 ## 2. 축의 뜻
 
@@ -62,9 +62,13 @@ version: 2
 
 채운 칸은 64칸 가운데 9칸이다. 칸의 값은 샘플의 문서 구성에서 이 위키가 대응시킨 종합이며 측정 근거는 없다. 사양서·데이터시트 행은 제조사 샘플이 아니라 표준 스키마(VDA 5050 팩트시트)를 대응물로 본 이 위키의 해석이다. 사용자 매뉴얼, 오류 코드표, 치수도·도면 행은 이번 샘플에서 확인하지 못해 모두 미조사로 남겼다. 문서 유형별 정보는 제조사·기종·문서 버전에 따라 다를 수 있다(q2-05).
 
+실행 2026-10-09-22는 새 칸을 채우지 않았다. 다만 사양서·데이터시트 행의 표준 대응물인 VDA 5050 팩트시트는 주요 수치 필드(최대 적재 질량·최대 속도 등)에 단위를 스키마 속성으로 달면서도 적재 치수처럼 설명문에만 단위를 적는 필드가 있고, 동작 결과·바퀴 제약 같은 항목은 자유 텍스트로 둔다(확인일 2026-10-09). [사실][^ref-228] 그래서 같은 "기계가독 스키마" 칸이라도 단위 정규화와 문장 해석이 따로 필요할 것으로 보인다. [추정][^ref-228]
+
+**실행 2026-10-09-23 메모.** 두산로보틱스 한국어 웹 매뉴얼(3.2.1)은 M1013 사양을 '구분 / 항목 / 사양 정보' 세 열의 웹 페이지 표로 두고 가반 하중·최대 반경·관절 범위와 속도·반복 정밀도·IP 등급·사용 환경을 단위와 함께 적으며, 그 페이지에 작업 영역 그림은 없다(확인일 2026-10-09). [추정] 벤더 주장[^ref-1385] 제조사 웹 매뉴얼의 사양 표가 사양서·데이터시트 행의 정보를 담는 사례이지만, 칸 값은 표준 대응물(VDA 5050 팩트시트) 기준 그대로 두었다. Universal Robots 사용자 매뉴얼 안내 페이지는 사용자 매뉴얼과 별도로 오류 코드, 스크립트 명세, 소프트웨어 핸드북을 메뉴로 둔다(확인일 2026-10-09). [추정] 벤더 주장[^ref-1377] 그래서 오류 의미와 명령 인터페이스 정보가 사용자 매뉴얼 밖의 별도 문서에 있는 것으로 보인다. [추정][^ref-1377] 각 문서의 내부 형태는 확인하지 않아 오류 코드표 행은 미조사로 둔다. 채운 칸은 9 / 64 그대로다.
+
 ## 4. 공개 문서 샘플 목록
 
-시작 질문 q2-03(공개적으로 접근할 수 있는 대표 문서 샘플과 이용 조건)의 답이 여기에 쌓인다. 샘플은 문서 구조와 정보 형태의 사례로만 인용한다. 문서에 적힌 기능·성능은 독립 출처로 확인되기 전까지 `[추정]`에 "벤더 주장"을 병기하며, "벤더 주장 표기" 열은 그 샘플에서 가져온 값이 어디에 어떤 태그로 실렸는지를 적는다. 제조사 문서 원문을 통째로 옮기지 않는다.
+시작 질문 q2-03(공개적으로 접근할 수 있는 대표 문서 샘플과 이용 조건)의 답이 여기에 쌓인다. 샘플은 문서 구조와 정보 형태의 사례로만 인용한다. 문서에 적힌 기능·성능은 독립 출처로 확인되기 전까지 `[추정]`에 "벤더 주장"을 병기하며, "벤더 주장 표기" 열은 그 샘플에서 가져온 값이 어디에 어떤 태그로 실렸는지를 적는다. 제조사 문서 원문을 통째로 옮기지 않는다. 이용 조건 열은 페이지에 보이는 접근·저작권 표기의 관찰이며 법적 판단이 아니다.
 
 | 기종 | 제조사 | 문서 유형 | URL | 이용 조건 | 벤더 주장 표기 |
 |---|---|---|---|---|---|
@@ -72,12 +76,29 @@ version: 2
 | Gen3·Gen3 lite(로봇팔) | Kinova | 통합·API 가이드, 릴리스 노트(펌웨어·API 판별 다운로드) | https://github.com/Kinovarobotics/kortex (접근일 2026-09-25) | BSD 3-Clause 라이선스 [추정] 벤더 주장[^ref-506] | [단계 2](stage-2-document-types.md) 3절 q2-01·q2-02·q2-03, 이 페이지 3절 — [추정] 벤더 주장 |
 | 협동로봇(README 예시 m1013·E0609) | 두산로보틱스 | 통합·API 가이드(ROS2 패키지), 설치 매뉴얼·기타 매뉴얼(로봇랩 포털) | https://github.com/doosan-robotics/doosan-robot2 , https://robotlab.doosanrobotics.com/ko/board/Resources/Manual (접근일 2026-09-25, 포털은 원문 미열람) | 저장소는 Apache 2.0·BSD 3-Clause, 포털 매뉴얼 문서의 이용 조건은 미확인 [추정] 벤더 주장[^ref-507][^ref-511] | [단계 2](stage-2-document-types.md) 3절 q2-01·q2-03, 이 페이지 3절 — [추정] 벤더 주장 |
 | RB 시리즈 협동로봇 | 레인보우로보틱스 | 통합·API 가이드(클라이언트 라이브러리 rbpodo), 협동로봇 기술자료 공개 페이지(rb_cobot_docs) | https://github.com/RainbowRobotics/rbpodo , https://rainbowrobotics.github.io/rb_cobot_docs/ko/ (접근일 2026-09-25, 기술자료 페이지는 원문 미열람) | rbpodo 는 Apache 2.0, 기술자료 페이지의 이용 조건은 미확인 [추정] 벤더 주장[^ref-508][^ref-512] | [단계 2](stage-2-document-types.md) 3절 q2-01·q2-03, 이 페이지 3절 — [추정] 벤더 주장 |
+| MiR250(AMR) | Mobile Industrial Robots(MiR) | 사용자 가이드·빠른 시작·적합성 문서, 인터페이스·시운전·기술·위험성평가·사이버보안 가이드, 판별 REST API 참조 | https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1 (접근일 2026-10-09) | 사용자 가이드·빠른 시작·적합성 문서는 로그인 표시 없이 내려받기, 통합 수준 문서와 REST API 참조는 MiR 지원 포털 로그인 필요, 페이지에 문서 이용 조건 표기 없음 [추정] 벤더 주장[^ref-1375] | [단계 2](stage-2-document-types.md) 3절 q2-03·q2-05 — [추정] 벤더 주장 |
+| MiR1350 Pallet Lift(AMR, 상위 모듈 장착) | Mobile Industrial Robots(MiR) | MiR250 과 같은 문서 구성, 로봇·상위 모듈 하드웨어 판 별도 표기 | https://mobile-industrial-robots.com/product-documents/mir1350-pallet-lift-hw-10-sw-2-v1 (접근일 2026-10-09) | MiR250 과 같은 접근 구분 [추정] 벤더 주장[^ref-1376] | [단계 2](stage-2-document-types.md) 3절 q2-03·q2-05 — [추정] 벤더 주장 |
+| IndoorNav(OTTO Motors 실내 자율주행 소프트웨어 기반 AMR) | Clearpath Robotics by Rockwell Automation | 사용자 매뉴얼(웹), ROS 2 API 부록 | https://docs.clearpathrobotics.com/docs_indoornav_user_manual/getting_started , https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api (접근일 2026-10-09) | 웹 매뉴얼은 로그인 없이 열리고 'All rights reserved' 표기, 전체 ROS 2 API 문서는 설치 패키지(clearpath-api) 또는 OTTO Motors 계정이 필요한 사이트 [추정] 벤더 주장[^ref-1379][^ref-1380] | [단계 2](stage-2-document-types.md) 3절 q2-03·q2-05 — [추정] 벤더 주장 |
+| OutdoorNav(이동로봇 자율주행 소프트웨어) | Clearpath Robotics by Rockwell Automation | 사용자 매뉴얼 API 개요(판 선택) | https://docs.clearpathrobotics.com/docs_outdoornav_user_manual/1.0.0/api/api_overview (접근일 2026-10-09) | 판 선택(0.7.0~2.3.0과 Legacy), 1.0.0 판 유지 중단 표시, 이용 조건은 미확인 [추정] 벤더 주장[^ref-1381] | [단계 2](stage-2-document-types.md) 3절 q2-05 — [추정] 벤더 주장 |
+| UR Series·e-Series(협동로봇) | Universal Robots | 모델별 사용자 매뉴얼, 오류 코드·스크립트 명세·소프트웨어 핸드북(별도 메뉴) | https://www.universal-robots.com/manuals/EN/HTML/SW10_13/Content/Landingpages/WebPolyX/Usermanual.htm (접근일 2026-10-09) | 사전 서면 승인 없는 전부·일부 복제 금지, 예고 없는 변경 고지 [추정] 벤더 주장[^ref-1378][^ref-1377] | [단계 2](stage-2-document-types.md) 3절 q2-02·q2-03·q2-05, 이 페이지 3절 — [추정] 벤더 주장 |
+| 제품 자료(문서 유형 미확인) | OMRON Robotics | 다운로드 센터 | https://robotics.omron.com/browse-documents/?dir_id=125 (접근일 2026-10-09) | 양식 제출 요구, 제출 즉시 접근 안내와 검토 중·거절 상태 메시지, 하단 이용 약관 링크의 다운로드 적용 여부 미확인 [추정] 벤더 주장[^ref-1382] | [단계 2](stage-2-document-types.md) 3절 q2-03 — [추정] 벤더 주장 |
+| M/H·A·E·P 시리즈 협동로봇(V3 웹 매뉴얼) | 두산로보틱스 | 웹 사용자 매뉴얼(PART 1 안전 매뉴얼~PART 4 사용자 매뉴얼 개요, 시스템 사양 표), PDF 내려받기·ROS 2·API 문서 링크 | https://manual.doosanrobotics.com/en/user-manual/3.2.1/1-m-h-series/manipulator , https://manual.doosanrobotics.com/ko/user-manual/3.2.1/1-m-h-series/m1013 (접근일 2026-10-09) | 로그인 없이 열림, 'Copyright Doosan Robotics Inc.'와 개인정보 처리방침만 있고 별도 이용 조건·재사용 허락 문구 없음, PDF 내려받기 포털의 로그인 여부 미확인 [추정] 벤더 주장[^ref-1384][^ref-1385] | [단계 2](stage-2-document-types.md) 3절 q2-02·q2-03·q2-05, 이 페이지 3절 — [추정] 벤더 주장 |
 
-AMR 제조사의 공개 매뉴얼 샘플은 이번 조사에서 찾지 못했으며(부재 확정 아님), AMR 쪽은 VDA 5050 팩트시트·MassRobotics 스키마 같은 표준 스키마로만 대신되는 것으로 보인다. [추정][^ref-228][^ref-230] AMR 공개 문서는 후속 질문 q2-07에서 다룬다.
+실행 2026-10-09-23에서 AMR 샘플(MiR250, MiR1350 Pallet Lift, Clearpath IndoorNav·OutdoorNav)을 더했다. MiR·Clearpath 는 통합 수준 문서(REST API 참조·인터페이스·시운전 가이드·전체 API)를 계정·로그인 뒤에 두는 경향이 있는 것으로 보이고, 두산로보틱스는 ROS 2·API 문서를 로그인 없이 공개하는 예외가 있다. 이 판단은 제조사 5곳 샘플의 관찰을 종합한 것이며 법적 판단이 아니다. [추정][^ref-1375][^ref-1379][^ref-1380][^ref-1384] 국내 AMR 제조사의 공개 매뉴얼·API 문서는 이번 한국어 검색에서 찾지 못했다(부재 확정 아님). AMR 공개 문서와 표준 스키마로 대신할 수 있는 정보는 후속 질문 q2-07이 계속 다루고, 매뉴얼 재가공의 허용 여부는 q6-07에서 다룬다.
 
 ## 5. 문서에 없는 정보
 
-아직 없음. 시작 질문 q2-04(문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가)의 답을 정보 항목별로 여기에 요약한다. 문서에 없어서 채우지 못한 정보는 지어내지 않고 "미확인(문서에 없음)"으로 남기며, 보완 경로(제조사 문의, 시험, 커뮤니티)는 확인된 것만 적는다. 이 요약은 가설 1의 판정 근거 중 하나가 된다. 3절의 "미조사" 칸은 문서에 없다는 뜻이 아니라 아직 확인하지 않았다는 뜻이다.
+시작 질문 q2-04(문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가)의 답을 정보 항목별로 요약한다. 답 전체는 [단계 2의 q2-04 답](stage-2-document-types.md#q2-04)에 있다. 이 요약의 근거는 로봇 제조사 매뉴얼이 아니라 Open-RMF 통합 문서·플릿 어댑터 템플릿과 표준 스키마이므로, 아래 항목이 문서 밖에 남는다는 판단은 이 위키의 추론이다. [추정][^ref-105][^ref-040] 보완 경로는 확인된 두 가지(통합·시운전의 측정·시험과 어댑터 구현, 운용 중 상태 보고·관측 능력 기록)만 적고, 질문이 든 제조사 문의·커뮤니티는 근거 출처가 없어 미확인으로 둔다.
+
+| 정보 항목 | 문서 밖에 남는 것으로 보이는 정보 | 보완 경로 | 근거 |
+|---|---|---|---|
+| 인터페이스(명령·상태) | 사용자 정의 동작을 로봇 API 호출로 옮기는 매핑 코드와 완료 확인 코드. 동작은 설정 파일에 이름만 선언되고, 매핑은 로봇과 사용 사례마다 통합자가 구현한다 | 통합·시운전의 어댑터 구현 | Open-RMF PerformAction 튜토리얼 [사실][^ref-040] |
+| 실행 조건 | 층별 좌표 대응점(템플릿에서 선택 항목), 로봇별 충전기 배정, 제조사 관제 접속 정보 같은 현장 설정 | 통합·시운전의 측정·시험과 어댑터 설정 | Open-RMF 플릿 어댑터 템플릿 config.yaml [사실][^ref-105], 현장에 따라 정해진다는 판단 [추정][^ref-105][^ref-040] |
+| 실행 조건(충전 하한) | 문서 밖에 남는다고 단정하지 않는다. 제조사가 팩트시트로 선언하는 임계 저충전 수준(criticalLowChargingLevel)과 운영 설정 recharge_threshold 가 함께 있을 수 있으며, 기준 선택은 열린 질문 oq-068 이다 | 미확인(oq-068) | VDA 5050 팩트시트 스키마 [사실][^ref-228], 템플릿 config.yaml [사실][^ref-105] |
+| 파라미터 범위(개체별 실제 값) | 개체별 실제 성능 저하처럼 유형 시리즈 수준의 팩트시트 선언과 달라지는 값 | 운용 중 상태 보고(배터리 비율·남은 가동 시간·적재 여유)와 관측 능력 기록 | [추정][^ref-228][^ref-230][^ref-041] |
+| 오류 의미 | 상태 보고의 오류 코드는 자유 문자열로만 보고되며, 그 뜻은 상태 보고가 아니라 오류 코드표 문서 유형의 몫으로 보인다 | 미확인(오류 코드표 행 미조사) | [추정][^ref-230] |
+
+나머지 정보 항목(기능, 제약, 안전 제약, 장착 장비)은 이번 근거로 문서 밖에 남는 정보를 판단하지 않았다. 3절의 "미조사" 칸은 문서에 없다는 뜻이 아니라 아직 확인하지 않았다는 뜻이다. 이 요약은 가설 1의 판정 근거 중 하나가 된다.
 
 ## 6. 갱신 규칙
 
@@ -95,8 +116,21 @@ AMR 제조사의 공개 매뉴얼 샘플은 이번 조사에서 찾지 못했으
 [^ref-508]: Rainbow Robotics (RainbowRobotics/rbpodo GitHub), rbpodo — README, 미확인, https://github.com/RainbowRobotics/rbpodo, 접근일 2026-09-25
 [^ref-511]: 두산로보틱스, 매뉴얼 : Doosan Robotics Training & Service, 미확인, https://robotlab.doosanrobotics.com/ko/board/Resources/Manual, 접근일 2026-09-25 (원문 미열람)
 [^ref-512]: Rainbow Robotics, Rainbow Robotics 협동로봇 기술자료 (rb_cobot_docs), 미확인, https://rainbowrobotics.github.io/rb_cobot_docs/ko/, 접근일 2026-09-25 (원문 미열람)
-[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
-[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25 (원문 미열람)
+[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-10-09
+[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-09
+[^ref-040]: Open Robotics, PerformAction Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html, 접근일 2026-10-09
+[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-10-09
+[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)
+[^ref-1375]: Mobile Industrial Robots (MiR), MiR250 HW 2.0 SW 2.x — Product documents, 미확인, https://mobile-industrial-robots.com/product-documents/mir250-hw-20-sw-2-v1, 접근일 2026-10-09
+[^ref-1376]: Mobile Industrial Robots (MiR), MiR1350 Pallet Lift HW 1.0 SW 2.x — Product documents, 미확인, https://mobile-industrial-robots.com/product-documents/mir1350-pallet-lift-hw-10-sw-2-v1, 접근일 2026-10-09
+[^ref-1377]: Universal Robots A/S, User Manuals (PolyScope X 10.13 landing page), 미확인, https://www.universal-robots.com/manuals/EN/HTML/SW10_13/Content/Landingpages/WebPolyX/Usermanual.htm, 접근일 2026-10-09
+[^ref-1378]: Universal Robots A/S, Copyright and disclaimers (SW 5.26 manual), 미확인, https://www.universal-robots.com/manuals/EN/HTML/SW5_26/Content/prod-fu-tp/fu-tp-copyright-and-disclaimers.htm, 접근일 2026-10-09
+[^ref-1379]: Clearpath Robotics by Rockwell Automation, IndoorNav User Manual — Getting Started, 2025-07-18, https://docs.clearpathrobotics.com/docs_indoornav_user_manual/getting_started, 접근일 2026-10-09
+[^ref-1380]: Clearpath Robotics by Rockwell Automation, IndoorNav User Manual — Appendix A: IndoorNav ROS 2 API, 미확인, https://docs.clearpathrobotics.com/docs_indoornav_user_manual/api, 접근일 2026-10-09
+[^ref-1381]: Clearpath Robotics by Rockwell Automation, OutdoorNav User Manual 1.0.0 — API Overview, 미확인, https://docs.clearpathrobotics.com/docs_outdoornav_user_manual/1.0.0/api/api_overview, 접근일 2026-10-09
+[^ref-1382]: OMRON Robotics, Download center, 미확인, https://robotics.omron.com/browse-documents/?dir_id=125, 접근일 2026-10-09
+[^ref-1384]: 두산로보틱스, Doosan Robotics User Manual 3.2.1 — Manipulator (M/H Series), 미확인, https://manual.doosanrobotics.com/en/user-manual/3.2.1/1-m-h-series/manipulator, 접근일 2026-10-09
+[^ref-1385]: 두산로보틱스, 두산로보틱스 사용자 매뉴얼 3.2.1 — M1013, 미확인, https://manual.doosanrobotics.com/ko/user-manual/3.2.1/1-m-h-series/m1013, 접근일 2026-10-09
 
 ## 8. 이력
 
@@ -104,5 +138,7 @@ AMR 제조사의 공개 매뉴얼 샘플은 이번 조사에서 찾지 못했으
 
 | 날짜 | 실행 id | 변경 | 버전 |
 |---|---|---|---|
+| 2026-10-09 | 2026-10-09-23 | 4절 공개 문서 샘플 4건 → 11건(AMR 4건, Universal Robots, OMRON, 두산로보틱스 웹 매뉴얼 추가)과 'AMR 샘플 미발견' 문장 대체, 3절에 두산 웹 매뉴얼 사양 표·UR 별도 오류 코드 문서 메모 추가(채운 칸 9 / 64 유지), 머리 상태 줄의 샘플 수 갱신 | 4 |
+| 2026-10-09 | 2026-10-09-22 | 5절 "문서에 없는 정보" 첫 작성(정보 항목 5행, 근거는 Open-RMF 통합 문서·템플릿과 표준 스키마), 3절에 팩트시트 단위 표기·자유 텍스트 메모 추가(채운 칸 9 / 64 유지), ref-228·ref-230 접근일 갱신 | 3 |
 | 2026-09-25 | 2026-09-25-57 | 행 "페이로드·액세서리 문서" 추가(8행 × 8열), 9칸 채움(통합·API 가이드·사양서·데이터시트·안전 매뉴얼·릴리스 노트·페이로드·액세서리 문서 행 일부), 공개 문서 샘플 4건 등록, AMR 샘플 미발견 기록 | 2 |
 | 2026-09-24 | build-2026-09-24(구축 시드, 파이프라인 실행 아님) | 빈 틀 생성: 문서 유형 7행 × 정보 항목 8열(모든 칸 미조사), 공개 문서 샘플 목록 표(비어 있음) | 1 |

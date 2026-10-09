@@ -75,9 +75,9 @@
       "question": "기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "조사 중",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-23",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-2-document-types.md#q2-02",
       "created": "2026-09-24"
     },
     {
@@ -85,9 +85,9 @@
       "question": "공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "조사 중",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-23",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-2-document-types.md#q2-03",
       "created": "2026-09-24"
     },
     {
@@ -95,9 +95,9 @@
       "question": "문서에 없지만 실행에 필요한 정보(암묵지)는 무엇이고 어디서 보완하는가(제조사 문의, 시험, 커뮤니티)?",
       "stage": 2,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-22",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-2-document-types.md#q2-04",
       "created": "2026-09-24"
     },
     {
@@ -105,9 +105,9 @@
       "question": "언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-10-09-23",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-2-document-types.md#q2-05",
       "created": "2026-09-24"
     },
     {
@@ -600,6 +600,39 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-57"
+    },
+    {
+      "id": "q3-09",
+      "question": "VDA 5050 팩트시트의 동작 결과(actionResult)·제약(constraints)·동작 설명처럼 기계가독 스키마 안에 남은 자유 텍스트 필드를 능력 온톨로지의 완료 확인·제약으로 옮길 때 어떤 추출·검토 방법을 쓰는가? (q2-02 에서 파생)",
+      "stage": 3,
+      "origin": "f2",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-22"
+    },
+    {
+      "id": "q4-17",
+      "question": "통합자가 플릿 어댑터에 구현한 동작–로봇 API 매핑과 완료 확인 코드를 능력 온톨로지의 근거 문서로 기록하고, 제조사 문서 선언과 어떻게 구분해 관리하는가? (q2-04 에서 파생)",
+      "stage": 4,
+      "origin": "f12",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-22"
+    },
+    {
+      "id": "q3-10",
+      "question": "제조사 매뉴얼의 언어판 사이에 판 번호·내용이 어긋날 때(번역판이 원본보다 오래된 판인 경우) 능력 정의 초안의 추출 근거로 어느 언어판을 고르고, 언어판 사이 차이를 어떻게 검출하는가? (q2-05 에서 파생)",
+      "stage": 3,
+      "origin": "f19",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-10-09",
+      "origin_run_id": "2026-10-09-23"
     }
   ]
 }

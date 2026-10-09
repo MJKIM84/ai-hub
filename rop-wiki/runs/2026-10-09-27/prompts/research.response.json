@@ -1,0 +1,1003 @@
+{
+  "duration_api_ms": 802207,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 9.2378926,
+  "usage": {
+    "input_tokens": 78,
+    "cache_creation_input_tokens": 476175,
+    "cache_read_input_tokens": 20222324,
+    "output_tokens": 51168,
+    "output_tokens_details": {
+      "thinking_tokens": 18532
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 476175,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 36023,
+        "cache_read_input_tokens": 558215,
+        "cache_creation_input_tokens": 1593,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1593
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 78,
+      "outputTokens": 51168,
+      "cacheReadInputTokens": 20222324,
+      "cacheCreationInputTokens": 476175,
+      "webSearchRequests": 0,
+      "costUSD": 8.877536800000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 18532,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 698543,
+      "outputTokens": 61003,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 26,
+      "costUSD": 0.3603558,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 26148,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 61,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-27\",\"date\":\"2026-10-09\",\"run_type\":\"track\",\"target\":{\"area_no\":12,\"area_name\":\"12. 채팅으로 업무 지시·오케스트레이션\",\"category\":\"C. 채팅 기반 구성·운영\"},\"gaps\":[\"단계 2 질문 q2-05·q2-06·q2-07 열림 — target.json 지정(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 3건 중 오래된 순). 단계 2 페이지 3절에 {#q2-05}·{#q2-06}·{#q2-07} 소절 없음\",\"단계 2 완료 조건: 업무 분해·배정 설계 초안 개념 목록 표에 작업 요구 적재물 속성·완료 조건 미확정\",\"업무 분해·배정 설계 초안 6절 '작업 요구에 적재물 식별과 적재물 유형·치수·중량을 더할 것인가' 질문과 '현장 장소 용어와 경유점 이름·지도 id·WMS 로케이션 코드를 잇는 이름 대응 규칙' 질문에 근거 없음\",\"12. 채팅으로 업무 지시·오케스트레이션 섹션 7. 관련 표준·프레임워크·오픈소스 — 장소 이름 정규화·화물 식별 단위 관련 표준(SKOS, IMDF, GS1 SSCC·EPCIS 집계 이벤트) 없음\"],\"research_questions\":[\"대화로 받은 지시를 확인 가능한 계획으로 바꾸고, 승인 뒤 실행과 진행 설명까지 이어 갈 수 있는가? [분류원문]\",\"q2-05 지시 속 현장 장소 용어(예: 3층 출하 대기장, 2번 도크)와 공간 그래프 경유점 이름·지도 id·WMS 로케이션 코드를 대응시키는 이름 사전은 어떤 형식으로 두고 누가 관리하는가?\",\"q2-06 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가?\",\"q2-07 IEEE 1872.1-2024 로봇 작업 표현 온톨로지는 작업 분해·선후 의존·배정 대상을 어떤 개념으로 표현하며, 업무 분해·배정 설계 초안의 업무·작업·배정 개념과 어떻게 대응하는가?\",\"장소의 선호 이름·대체 이름·검색용 숨은 이름을 표현하는 기존 표준(SKOS, IMDF)과 현장 장소 식별자(Open-RMF 경유점 이름, VDMA LIF 스테이션, WMS 저장 빈 좌표, GS1 GLN 확장 구성요소)는 무엇이며 누가 정하는가? (q2-05 하위, 초안 6절 이름 대응 질문 겨냥)\",\"국내 자료 가운데 장소 별칭·로케이션 코드 체계나 물류 단위 식별(SSCC)을 다룬 공공 자료가 있는가? (oq-029 겨냥, 한국어 검색)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"W3C SKOS Reference(2009-08-18 권고)는 개념에 선호 이름(prefLabel)·대체 이름(altLabel)·숨은 이름(hiddenLabel)을 붙이게 하고, 세 속성을 서로 배타적으로 두며 언어 태그마다 선호 이름을 하나까지만 허용하고, 숨은 이름은 오탈자처럼 검색에는 쓰되 화면에 보이지 않는 이름으로 정의한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1391\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"W3C 권고 SKOS Reference 5절(REC-skos-reference-20090818): prefLabel·altLabel·hiddenLabel 은 rdfs:label 의 하위 속성이고 쌍마다 배타적이며, 한 자원은 언어 태그마다 prefLabel 을 최대 1개 가진다. hiddenLabel 예시는 사용자가 입력할 수 있는 오탈자.\",\"as_of\":\"2009-08-18\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"OGC 커뮤니티 표준 IMDF 1.0.0(OGC 20-094)의 Unit 피처는 현장 운영 조직(Venue Organization)이 선언한 이름(name)과 대체 이름(alt_name)을 언어별 라벨로 두고, 둘 다 있으면 하나를 표시용으로 우선하되 검색은 둘 다 대상으로 하며 우선 이름만 돌려주게 하고, 이름에 주소 정보를 넣지 않게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1393\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IMDF Unit 페이지(OGC 20-094, 2021-02-18 발행): name(null 또는 LABELS)은 Venue Organization 이 선언한 이름, alt_name 은 대체 이름. 둘 다 있으면 표시용 하나를 우선하고 검색은 둘 다, 결과는 우선 라벨만. 주소는 Address unit 값을 쓴다.\",\"as_of\":\"2021-02-18\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f3\",\"claim\":\"Open-RMF 교통 편집기(traffic-editor) 문서는 경유점 이름이 기본값으로 비어 있고 작업이 끝나는 경유점에는 이름을 붙여야 한다고 하며, 경유점에 충전기·주차·대기 지점·디스펜서·인제스터·도킹 이름 같은 속성을 두게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1395\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"traffic-editor 장(mdBook 원본, 확인일 2026-10-09): vertex 는 x·y·고도·이름·선택 속성 목록으로 저장되고 name 은 기본값이 비어 있다. 속성 is_charger·is_parking_spot·is_holding_point·pickup_dispenser·dropoff_ingestor·dock_name 등. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f4\",\"claim\":\"VDMA 레이아웃 교환 형식(LIF) 지침은 스테이션을 차량이 환경과 명시적으로 상호작용하는 모든 지점으로 정의하고, 스테이션 식별자(stationId)를 모든 레이아웃에서 유일한 문자열로 두며, 레이아웃이 스테이션 배열을 가진다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1397\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"VDMA FuI Guideline LIF(PDF, 메타데이터 2024-03-14) 검색 요약: station 은 차량이 환경과 명시적으로 상호작용하는 모든 지점, stationId 는 모든 레이아웃에서 유일한 문자열, layout 은 stations 배열. PDF 본문 추출 실패로 원문 미열람.\",\"as_of\":\"2024-03\",\"site_type\":null,\"flow_item\":\"작업 대상\",\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"SAP S/4HANA EWM 교육 자료는 저장 빈 좌표를 창고 안에서 유일한 최대 18자 문자열로 두고 통로·스택·단·빈 세분·깊이 식별자와 숫자·문자·상수 템플릿으로 생성하게 하며, 이동 위치를 저장 유형·저장 구역·빈의 조합으로 나타내고, 주행 거리 계산용 x·y·z 좌표와 RF·음성 피킹 확인용 검증 값을 빈 좌표와 따로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SAP Learning 'Creating Storage Bins': 빈 좌표는 최대 18자이고 창고 안에서 유일; 구조 필드(통로·스택·단·빈 세분·깊이)와 N/A/C 템플릿으로 빈 마스터 생성; 위치는 저장 유형+저장 구역+빈. 지리 좌표·검증 속성은 별도. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f6\",\"claim\":\"GS1 은 GLN 확장 구성요소를 물리적 위치를 식별하는 GLN 과 함께만 써서 그 안의 하위 위치(구역·선반 등)를 식별하게 하고, 이를 지원하는 표준을 쓰는 당사자 사이에서는 합의로 외부와 교환할 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1394\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"gs1.org GLN extension component 페이지 검색 요약: 물리적 위치 GLN 과 함께만 사용, 표준이 지원하면 둘 이상 당사자 간 합의로 교환 가능. 페이지 열람 403 으로 원문 미열람. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\",\"source_unopened\":true},{\"id\":\"f7\",\"claim\":\"Rasa 문서는 동의어(synonym) 기능으로 추출된 엔티티 값을 대소문자 구분 없이 하나의 정규화 값으로 바꾸며 이 바꾸기는 추출 뒤에 일어난다고 하고, 조회 표(lookup table)는 알려진 값 목록에서 정규식 패턴을 만들어 추출을 돕는다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1396\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Rasa docs nlu-training-data.mdx(main 브랜치): synonyms 는 추출된 엔티티를 정규화 값으로 매핑(예: 'credit card account'→credit), 매핑은 추출 뒤 적용되므로 학습 예시에 동의어 표현을 넣어야 함. lookup tables 는 대소문자 무시 정규식 생성. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"Lang2LTL(CoRL 2023)은 대상 환경의 사전 언어 데이터 없이 LLM 으로 항법 명령을 선형 시간 논리 명세로 접지하며, 21개 도시 규모 환경에서 평가하고 실내 두 곳에서 실제 로봇이 52개 명령을 수행했다고 저자들이 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-056\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2302.11649(v1 2023-02-22, v2 2023-10-17, Comments: CoRL 2023) 초록: 21개 도시 규모 환경, 실내 환경 2곳에서 52개 의미적으로 다양한 항법 명령(저자 보고). 랜드마크 대응 방식의 세부는 초록에서 확인되지 않음.\",\"as_of\":\"2023-10\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f9\",\"claim\":\"국토지리정보원이 공공데이터포털에 제공하는 국가관심지점정보(POI)는 여러 명칭으로 불리는 대상(학교·병원 등)에 다른 명칭을 부여하고 정식명칭을 축약한 별칭 POI 를 두어 검색 편의를 높이며, 민간에서는 실내외 위치검색·길찾기에 쓰인다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1399\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"공공데이터포털 '국토교통부 국토지리정보원_국가관심지점정보(POI) 시도별' 메타데이터 검색 요약: 별칭 국가관심지점정보는 다양한 명칭으로 불리는 대상에 다른 명칭을 부여하고 정식명칭을 축약해 검색 편의 제공. 접속 오류로 원문 미열람.\",\"as_of\":\"2025-06-24\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f10\",\"claim\":\"Lee·Park·Kim(arXiv 2609.27340, 2026-09)은 점유 격자를 LLM 이 쓰기 어렵다는 문제에 대해 경유점 수준 관측과 로봇 자세를 기록하는 의미 주석 모듈과 지도 이미지 모듈을 MCP 도구로 노출해 기존 ROS 항법 스택을 고치지 않고 자연어 지시로 목표를 고르게 했으며, 모의 실내 환경에서 지도 커버리지 97% 이상을 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2609.27340 v1(2026-09-23) 초록: semantic annotation 모듈이 경유점 수준 관측을 로봇 자세와 함께 기록하고 MCP 도구로 제공, 모의 실내 환경에서 지도 커버리지 97% 이상(저자 보고). 이름 사전·동의어 처리는 초록에 없음.\",\"as_of\":\"2026-09-23\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f11\",\"claim\":\"q2-05 에 대해 확인한 자료를 종합하면, 이름 사전은 장소 하나를 개념 하나로 두고 언어별 선호 이름·대체 이름·숨은 이름(오탈자)을 붙인 뒤(SKOS·IMDF 방식) 각 장소에 Open-RMF 경유점 이름, VDA 5050 지도 id·노드 id 또는 LIF 스테이션 id, WMS 저장 빈 좌표(저장 유형·구역 포함), GLN 과 확장 구성요소 같은 외부 식별자를 대응시키는 표 형식으로 두고, 지시 해석은 추출 뒤 사전으로 정규화하되 사전에 없거나 여러 장소에 걸리는 이름은 되묻는 구성이 선택지로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1391\",\"ref-1393\",\"ref-1395\",\"ref-1397\",\"ref-1398\",\"ref-1394\",\"ref-1396\",\"ref-413\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합(추정). SKOS·IMDF 의 선호·대체 이름 구조(f1·f2), 현장 식별자 형식(f3~f6), 추출 뒤 정규화(f7)를 묶은 구성이며 로봇 이름 사전을 직접 정한 출처는 찾지 못함. 물류 현장 적용 사례 미확인.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f12\",\"claim\":\"q2-05 의 관리 주체에 대해 확인한 자료는 장소 이름을 현장 운영 조직이 선언하고(IMDF), 하위 위치 식별자를 위치 GLN 과 함께 쓰며(GS1), 저장 빈 좌표를 창고 단위 설정으로 정하고(SAP EWM), 경유점 이름을 지도 작성 때 붙이게(Open-RMF) 하므로, 이름 사전의 내용은 현장 운영자가 소유하고 ROP 는 외부 식별자 대응의 유일성 검사와 지도·사전 판 관리를 맡는 분담이 선택지로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1393\",\"ref-1394\",\"ref-1398\",\"ref-1395\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합(추정). 관리 주체를 직접 정한 출처는 없고 각 형식이 이름·식별자를 누가 정하는지에서 도출함. 지도 판이 바뀔 때 대응 이전 문제는 열린 질문 oq-201 과 같은 방향.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f13\",\"claim\":\"VDA 5050 공식 저장소의 상태 메시지 스키마(main 브랜치)는 적재물 목록(loads)을 선택 필드로 두고 빈 배열을 무적재로 보며, 적재물 항목의 적재물 id(바코드·RFID 같은 유일 ID, 아직 식별 전이면 빈 값, 식별할 수 없는 로봇은 생략)·적재물 유형·적재 위치·경계 상자·치수·중량을 모두 선택 필드로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1392\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"state.schema(main): loads 는 required 아님, 빈 배열은 unloaded. load 항목 loadId·loadType·loadPosition·boundingBoxReference·loadDimensions·weight 모두 선택; loadId 는 미식별 시 빈 값, 식별 불가 시 생략. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f14\",\"claim\":\"Open-RMF 의 픽업·하역 사건 스키마(payload_transfer)는 장소와 적재물을 필수로, 처리 설비(handler)를 선택으로 두고, 적재물 항목은 품목 코드(sku) 문자열과 수량 정수를 필수로, 칸(compartment)을 선택으로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-411\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"event_description__payload_transfer.json(main, 확인일 2026-10-09): required place·payload; payload_component 의 required sku(string)·quantity(integer, minimum 0), compartment 선택. 적재 단위 식별자 필드는 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f15\",\"claim\":\"GS1 Australia 는 SSCC 를 보관·운송을 위해 함께 묶은 거래 품목 조합(케이스·팔레트·소포)인 물류 단위를 식별하는 18자리 키로 설명하며, 응용 식별자 (00)으로 표시하고, 물류 단위의 수명 동안 번호를 유지하며, EDI·EPCIS 로 공유하면 출하 정보와 연결할 수 있다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1400\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"GS1 Australia SSCC 페이지: logistic unit 은 보관·운송용으로 묶은 거래 품목 조합, 18자리(회사 코드·일련 참조·확장 숫자·체크 디지트), AI (00), 수명 동안 유지, 출하일로부터 1년 안 재사용 금지, 출하 통지(ASN)와 연결. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f16\",\"claim\":\"GS1 EPCIS 공식 저장소의 JSON 스키마는 집계 이벤트(AggregationEvent)에 상위 식별자(parentID)·하위 개체 목록(childEPCs)·하위 수량 목록(childQuantityList)과 동작(OBSERVE·ADD·DELETE)을 두고, DELETE 가 아니면 하위 개체나 하위 수량 가운데 하나를 요구하며, 수량 항목은 품목 분류(epcClass)를 필수로 수량·단위를 선택으로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1401\",\"ref-1402\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"AggregationEvent-JSON-Schema: type·action 필수, childEPCs 또는 childQuantityList(1개 이상) 필요(action DELETE 제외). event-definitions: quantityElement 는 epcClass 필수, quantity·uom 선택, action enum OBSERVE·ADD·DELETE. 저장소 README 는 초안이라 게시판과 다를 수 있다고 적음.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f17\",\"claim\":\"SAP 문서는 취급 단위(handling unit)를 포장재와 그 안의 물품으로 된 물리 단위로 보고, 클라이언트 안의 유일성은 번호 범위 객체로, 시스템 전체 유일성은 SSCC18 부여로 보장하며, 포장재 유형이 번호 부여 방식을 정하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1403\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SAP Library LO-HU 'Unique Identification of Handling Units': HU 는 포장재+내용물, 클라이언트 내 유일성은 번호 범위 객체, 시스템 전체 유일성은 SSCC18; 포장재 유형별 번호 부여 유형 설정, 중복 ID 는 스캐너 처리 실패를 낳는다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f18\",\"claim\":\"q2-06 에 대해 확인한 자료를 종합하면, 로봇 관제 인터페이스는 품목 단위(Open-RMF 배송의 sku·수량)나 적재 단위(VDA 5050 적재물 id·유형, 팩트시트 적재 명세) 가운데 한쪽만 받고, 적재 단위(SSCC·취급 단위)와 그 안 품목·수량의 대응은 WMS 의 취급 단위 기록과 EPCIS 집계 이벤트가 보유하므로, ROP 는 채팅 지시의 대상 화물을 어느 단위로 받든 업무 시스템 조회로 두 단위를 함께 확정해 작업 모델에 두고 로봇 쪽으로는 플릿 인터페이스가 받는 단위만 넘기는 구성이 선택지로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1392\",\"ref-411\",\"ref-1400\",\"ref-1401\",\"ref-1403\",\"ref-031\",\"ref-228\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합(추정). 인터페이스 필드(f13·f14)와 물류 단위·집계 표현(f15~f17)을 묶은 구성이며 채팅 지시의 화물 단위를 정한 출처는 찾지 못함. 상위 업무 시스템(WMS)은 분류 원문 19장의 연계 대상.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f19\",\"claim\":\"VDA 5050 상태 메시지는 적재물 id 를 아직 식별하지 못했으면 비우고 식별할 수 없는 로봇은 생략하게 하므로, 어느 SSCC 를 실었는지를 로봇 상태 보고만으로 확정하지 못하는 경우가 있어 ROP 는 별도 스캔 이벤트나 업무 시스템 확정 같은 다른 근거로 적재 단위를 확인해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1392\",\"ref-1400\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 추론(추정). loadId 미식별·생략 규정(f13)과 SSCC 가 물류 단위의 기준 식별자라는 점(f15)에서 도출. 판독 실패 처리(oq-003)·재고 기록 불일치(oq-036)와 이어짐.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f20\",\"claim\":\"IEEE SA 의 IEEE 1872.1-2024 페이지는 이 표준을 학습·로봇·자동화 분야의 작업 지식을 표현·추론·교환하는 온톨로지로 소개하고, 핵심 용어와 정의·속성·유형·구조·성질·제약·관계를 포함하며 계층적 계획기와 설계자가 온톨로지 계층의 수준 사이에서 소통하도록 작업 지식을 표현하는 방식을 다룬다고 밝히며, 발행일 2024-06-18, 이사회 승인 2024-02-15, RTR 작업반(RAS 표준 상임위원회)으로 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-504\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IEEE SA 표준 페이지(확인일 2026-10-09): Active Standard, Published 2024-06-18, Board Approval 2024-02-15, Working Group RTR, Society RAS/SC. 범위 요약만 열람했고 표준 본문(유료)은 미열람.\",\"as_of\":\"2024-06-18\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"IEEE SA 의 P1872.1.1 PAR(2023-12-06 승인)은 IEEE 1872.1-2024 를 실무에 구현하는 지침과 로봇 해법 활용을 돕는 예시 사용 사례를 만드는 개발 중 과제이며, RTR 작업반(의장 Stephen Balakirsky)이 맡는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IEEE SA P1872.1.1 페이지: Guide for Practical Implementations of IEEE 1872.1-2024 Standard for Robot Task Representation, PAR Approval 2023-12-06, Active PAR, 범위에 illustrative use cases. 작업 분해·배정 용어는 페이지에 없음.\",\"as_of\":\"2023-12-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"IEEE 작업 표현 연구반의 Balakirsky 외(MSEC 2017)는 작업을 하위 클래스·범주·관계로 분해하는 작업 구조 표현과 모든 작업에 공통인 속성·작업 유형별 속성, 작업과 플랫폼·작업과 사용자 사이 관계를 다루는 온톨로지를 목표로 제시했으나, 이는 최종 표준 이전 연구반 단계 자료다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1404\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"NIST 출판물 페이지 'Towards a Robot Task Ontology Standard'(MSEC 2017, 2017-06-08) 초록: 작업 구조를 하위 클래스·범주·관계로 분해, 공통·유형별 속성, 작업–플랫폼·작업–사용자 관계. 논문 PDF 는 본문 추출 실패로 초록만 확인.\",\"as_of\":\"2017-06-08\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"q2-07 에 대해 공개 요약만으로 보면 IEEE 1872.1-2024 의 계층 수준 표현은 초안의 업무→작업 분해와, 작업–플랫폼 관계는 작업 요구·배정과 대응할 후보로 보이나, 작업 사이 선행 의존을 어떤 개념으로 표현하는지와 정식 용어 정의는 표준 본문을 열람하지 못해 확인할 수 없다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-504\",\"ref-1404\",\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 추론(추정). 근거는 표준 범위 요약(f20)과 2017 연구반 초록(f22)뿐이며 둘 다 개념 이름·정의를 담지 않음. 실제 대응은 표준 본문 확보 뒤 확인 필요(부분 답).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1391\",\"org\":\"W3C Semantic Web Deployment Working Group (편집 Alistair Miles, Sean Bechhofer)\",\"title\":\"SKOS Simple Knowledge Organization System Reference\",\"published\":\"2009-08-18\",\"url\":\"https://www.w3.org/TR/skos-reference/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"SKOS 권고안. 5절 어휘 라벨에서 prefLabel·altLabel·hiddenLabel 의 정의, 상호 배타성, 언어 태그당 prefLabel 1개 제약, 검색용 숨은 이름을 정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1392\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 공식 저장소 main 브랜치의 상태 메시지 JSON 스키마. loads 배열과 load 항목(loadId·loadType·loadPosition·경계 상자·치수·중량)을 모두 선택 필드로 정의한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema\"},{\"id\":\"ref-1393\",\"org\":\"OGC (Apple 제출, Indoor Mapping Data Format 1.0.0, OGC 20-094 Community Standard)\",\"title\":\"Indoor Mapping Data Format — Unit\",\"published\":\"2021-02-18\",\"url\":\"https://docs.ogc.org/cs/20-094/Unit/index.html\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"IMDF Unit 피처 정의. 현장 운영 조직이 선언한 name 과 alt_name(언어별 라벨), 표시·검색 규칙, display_point 등을 정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1394\",\"org\":\"GS1\",\"title\":\"GLN extension component\",\"published\":null,\"url\":\"https://gs1.org/standards/id-keys/gln/extension-component\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 검색 요약 기준: GLN 확장 구성요소는 물리적 위치 GLN 과 함께만 써서 하위 위치를 식별하고, 지원 표준이면 당사자 간 합의로 교환할 수 있다.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1395\",\"org\":\"Open Robotics\",\"title\":\"Traffic Editor - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 교통 편집기 장. 경유점 이름(기본값 빈 값)과 충전기·주차·대기 지점·디스펜서·인제스터·도킹 이름 같은 경유점 속성을 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md\"},{\"id\":\"ref-1396\",\"org\":\"Rasa Technologies (RasaHQ/rasa GitHub)\",\"title\":\"NLU Training Data — Rasa documentation (docs/docs/nlu-training-data.mdx)\",\"published\":null,\"url\":\"https://github.com/RasaHQ/rasa/blob/main/docs/docs/nlu-training-data.mdx\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Rasa NLU 학습 데이터 문서. 엔티티 동의어로 추출 값을 정규화 값으로 바꾸는 방법과 조회 표(lookup table)로 알려진 값 목록을 추출에 쓰는 방법을 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/RasaHQ/rasa/main/docs/docs/nlu-training-data.mdx\"},{\"id\":\"ref-1397\",\"org\":\"VDMA Fördertechnik und Intralogistik\",\"title\":\"Materials Handling and Intralogistics — LIF (Layout Interchange Format) Guideline\",\"published\":\"2024-03\",\"url\":\"https://www.vdma.eu/documents/34570/3317035/FuI_Guideline_LIF_GB.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. PDF 본문 추출 실패, 메타데이터 작성일 2024-03-14. 검색 요약 기준: station 정의(차량이 환경과 명시적으로 상호작용하는 지점)와 모든 레이아웃에서 유일한 stationId.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1398\",\"org\":\"SAP (SAP Learning)\",\"title\":\"Creating Storage Bins — Basic Customizing in SAP S/4HANA EWM\",\"published\":null,\"url\":\"https://learning.sap.com/courses/basic-customizing-in-sap-s-4hana-ewm/creating-storage-bins\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"SAP EWM 저장 빈 생성 교육 자료. 빈 좌표(최대 18자, 창고 내 유일), 구조 식별자와 템플릿, 저장 유형·구역·빈 조합, 별도 지리 좌표와 검증 속성을 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1399\",\"org\":\"국토교통부 국토지리정보원(공공데이터포털)\",\"title\":\"국토교통부 국토지리정보원_국가관심지점정보(POI) 시도별\",\"published\":\"2025-06-24\",\"url\":\"https://www.data.go.kr/biz/dcat/metadata/15144087.do\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 접속 오류(ECONNRESET), 검색 요약 기준: 국가관심지점정보의 별칭 POI 는 여러 명칭으로 불리는 대상에 다른 명칭·축약명을 부여해 검색 편의를 준다. 발행일은 검색 요약의 등록일.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1400\",\"org\":\"GS1 Australia\",\"title\":\"Serial Shipping Container Code (SSCC)\",\"published\":null,\"url\":\"https://www.gs1au.org/standards/id-keys/sscc\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"GS1 회원기관의 SSCC 소개. 물류 단위 정의, 18자리 구조, AI (00), 번호의 수명 동안 유지와 재사용 제한, EDI·EPCIS 로 출하 정보와 연결을 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1401\",\"org\":\"GS1 (gs1/EPCIS GitHub)\",\"title\":\"EPCIS — JSON-Schema/schemas/AggregationEvent-JSON-Schema.json\",\"published\":null,\"url\":\"https://github.com/gs1/EPCIS/blob/master/JSON-Schema/schemas/AggregationEvent-JSON-Schema.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"GS1 공식 EPCIS 저장소의 집계 이벤트 JSON 스키마. parentID·childEPCs·childQuantityList·action 과 필수 조건을 정의한다. 저장소 README 는 초안이라 게시판과 다를 수 있다고 적는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-Schema/schemas/AggregationEvent-JSON-Schema.json\"},{\"id\":\"ref-1402\",\"org\":\"GS1 (gs1/EPCIS GitHub)\",\"title\":\"EPCIS — JSON-Schema/schemas/event-definitions-JSON-Schema.json\",\"published\":null,\"url\":\"https://github.com/gs1/EPCIS/blob/master/JSON-Schema/schemas/event-definitions-JSON-Schema.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"EPCIS 이벤트 공통 정의. quantityElement(epcClass 필수, quantity·uom 선택)와 action 값(OBSERVE·ADD·DELETE)을 정의한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-Schema/schemas/event-definitions-JSON-Schema.json\"},{\"id\":\"ref-1403\",\"org\":\"SAP (SAP Library, LO-HU)\",\"title\":\"Unique Identification of Handling Units\",\"published\":null,\"url\":\"https://help.sap.com/SAPHELP_470/Helpdata/EN/41/17ab3caad811d2b44f006094b9b9dd/content.htm\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"SAP 취급 단위 관리 문서. 취급 단위의 정의, 번호 범위와 SSCC18 에 의한 유일성, 포장재 유형별 번호 부여 설정을 설명한다. 대상 릴리스는 페이지에서 확인되지 않음.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1404\",\"org\":\"Balakirsky, S. B., Schlenoff, C. I., Fiorini, S. R. 외(NIST 출판물 페이지, MSEC 2017)\",\"title\":\"Towards a Robot Task Ontology Standard\",\"published\":\"2017-06-08\",\"url\":\"https://www.nist.gov/publications/towards-robot-task-ontology-standard\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"IEEE 작업 표현 연구반의 작업 온톨로지 표준 구상 논문 초록. 작업 구조 분해, 공통·유형별 속성, 작업–플랫폼·작업–사용자 관계를 목표로 제시한다. 논문 본문은 PDF 추출 실패로 미확인.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1405\",\"org\":\"IEEE Standards Association\",\"title\":\"P1872.1.1 — Guide for Practical Implementations of IEEE 1872.1-2024 Standard for Robot Task Representation\",\"published\":\"2023-12-06\",\"url\":\"https://standards.ieee.org/ieee/1872.1.1/11500/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"IEEE 1872.1-2024 실무 구현 지침 PAR(2023-12-06 승인, 개발 중). RTR 작업반, 예시 사용 사례 포함 범위.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1406\",\"org\":\"Lee, J., Park, J., & Kim, W.\",\"title\":\"Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP\",\"published\":\"2026-09-23\",\"url\":\"https://arxiv.org/abs/2609.27340\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"점유 격자 지도 이미지와 경유점 수준 의미 주석을 MCP 도구로 LLM 에 노출해 자연어 항법 목표를 고르게 한 프리프린트(초록만 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-504\",\"org\":\"IEEE Standards Association\",\"title\":\"IEEE 1872.1-2024 — IEEE Standard for Robot Task Representation\",\"published\":\"2024-06-18\",\"url\":\"https://standards.ieee.org/ieee/1872.1/6993/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"IEEE 1872.1-2024 발행 기관 소개 페이지. 이번 실행에서 페이지(범위 요약·발행일·작업반)를 열람했으며 표준 본문(유료)은 열람하지 못했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-411\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payload_transfer.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/event_description__payload_transfer.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 픽업·하역 사건 스키마. 장소·적재물 필수, 적재물 항목 sku·quantity 필수와 compartment 선택.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_fleet_adapter/schemas/event_description__payload_transfer.json\"},{\"id\":\"ref-056\",\"org\":\"Liu, J. X. 외\",\"title\":\"Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments\",\"published\":\"2023-02\",\"url\":\"https://arxiv.org/abs/2302.11649\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Lang2LTL 논문(CoRL 2023). 이번 실행에서 arXiv 초록을 열람했다: 대상 환경 사전 언어 데이터 없이 항법 명령을 LTL 로 접지, 21개 도시 규모 환경·실내 52개 명령 평가.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-413\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/order.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/order.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 주문 스키마(재사용, 이번 실행에서 다시 열지 않음). 노드 위치에 지도 id 를 둔다는 기존 관찰의 근거.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 공식 명세(재사용, 이번 실행에서 다시 열지 않음). pick·drop 동작의 적재물 유형·id 선택 파라미터에 관한 기존 관찰의 근거.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 팩트시트 스키마(재사용, 이번 실행에서 다시 열지 않음). 로봇이 선언하는 적재 명세(적재물 유형·치수·최대 중량)의 근거.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md\",\"sections\":[\"2\",\"3\",\"4\",\"5\",\"6\",\"8\",\"9\"],\"rationale\":\"q2-05 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12 (신뢰도 low) / q2-06 답: f13·f14·f15·f16·f17·f18·f19 (신뢰도 low) / q2-07 부분 답: f20·f21·f22·f23 — 2절 q2-05·q2-06 답함(답한 실행 2026-10-09-27, #q2-05·#q2-06), q2-07 은 열림 유지(표준 본문 미열람). 3절 소제목 신설: {#q2-05} 이름 표현 표준(SKOS f1, IMDF f2), 현장 식별자 형식(Open-RMF 경유점 f3, LIF 스테이션 f4 원문 미열람, SAP EWM 저장 빈 f5 벤더 문서 구조, GLN 확장 구성요소 f6 원문 미열람), 추출 뒤 정규화(Rasa f7), 접지 연구(Lang2LTL f8, MCP 의미 주석 f10), 국내 별칭 POI(f9, 원문 미열람), 형식 종합 f11·관리 분담 f12(추정, 대응표는 이 위키 구성) / {#q2-06} 로봇 쪽 단위(VDA 5050 loads f13, Open-RMF payload f14), 물류 단위·집계(SSCC f15, EPCIS 집계 이벤트 f16, SAP 취급 단위 f17), 종합 f18·loadId 미식별 처리 f19(추정; WMS 는 연계 대상) / {#q2-07} 부분 답 소절: 공개 요약(f20·f21·f22)과 대응 후보 추정 f23, 표준 본문 미열람 명시. 2절 표 위 q2-01 항목–원천 대응표의 '장소'·'대상 화물' 행 비고에 q2-05·q2-06 링크. 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건(두 행 모두 미충족 유지 판단은 검증), 8절 출처, 9절 이력.\"},{\"action\":\"update\",\"path\":\"docs/tracks/chat-based-configuration-and-operation/task-model-draft.md\",\"sections\":[\"2\",\"6\"],\"rationale\":\"트랙 산출물 갱신: track.ontology_changes 2건(상황 개념의 장소 표현에 '장소 이름 사전 항목 참조(후보)' 메모, 상황 개념의 대상 표현에 '화물 참조(식별 단위 후보: 품목 단위 sku·수량 / 적재 단위 loadId·SSCC)' 메모)이 승인되면 2절 반영과 초안 버전 인상(f1·f2·f3·f5·f6·f13·f14·f15·f16·f17). 6절 '현장 장소 용어와 경유점 이름·지도 id·WMS 로케이션 코드를 잇는 이름 대응 규칙' 항목에 q2-05 답 링크(f11·f12 추정)를, '작업 요구에 적재물 식별…' 항목에 q2-06 답 링크(f18·f19 추정)를 덧붙이되 두 질문은 닫지 않음(작업 요구는 능력 온톨로지 초안과의 대조 전). IEEE 1872.1-2024 대응 항목에 q2-07 부분 답(f20~f23) 연결.\"},{\"action\":\"update\",\"path\":\"docs/ideas/chat-based-configuration-and-operation.md\",\"sections\":[\"4\"],\"rationale\":\"아이디어 페이지 4절: '장소 이름 사전' 소절(f1~f12, 형식·관리 분담은 추정)과 '대상 화물 식별 단위' 소절(f13~f19, 결론은 추정) 추가, 'IEEE 1872.1-2024 대응' 은 부분 답(f20~f23)으로 한 줄 언급.\"},{\"action\":\"update\",\"path\":\"docs/categories/space-and-map-model/place-semantics-and-map-management.md\",\"sections\":[\"7\"],\"rationale\":\"트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f1, f2, f3, f4, f6, f9, f11, f12): 16. 장소 의미·지도 관리 7절에 SKOS 선호·대체·숨은 이름, IMDF name·alt_name, LIF 스테이션 id(원문 미열람), GLN 확장 구성요소(원문 미열람), 국가관심지점정보 별칭 POI(원문 미열람)를 장소 이름 표현·식별 수단으로. 반영은 다음 해당 영역 실행에서.\"},{\"action\":\"update\",\"path\":\"docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md\",\"sections\":[\"7\"],\"rationale\":\"트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f13, f14, f15, f16, f17, f19): 17. 작업 대상·자산 식별과 인계 추적 7절에 VDA 5050 상태 메시지 loads(loadId 미식별 규정), Open-RMF payload(sku·수량), GS1 SSCC, EPCIS 집계 이벤트 스키마, SAP 취급 단위 식별(벤더 문서)을 품목 단위·적재 단위 식별 근거로.\"},{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/robot-capability-and-task-representation.md\",\"sections\":[\"7\"],\"rationale\":\"트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f20, f21, f22): 5. 로봇 능력·작업 표현 7절의 IEEE 1872.1-2024 항목에 발행·승인일, RTR 작업반, 구현 지침 P1872.1.1(개발 중), 2017 연구반 구상(작업 구조 분해·작업–플랫폼 관계)을 보강. 표준 본문 미열람 명시.\"},{\"action\":\"update\",\"path\":\"docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f7, f8, f10, f11): 13. 대화형 기능의 신뢰·기반의 '오해석 방지·근거 표시'와 관련해 추출 뒤 이름 사전 정규화(Rasa 동의어), 장소 접지 연구(Lang2LTL, MCP 의미 주석), 사전에 없거나 여러 장소에 걸리는 이름의 되묻기(추정)를 6절에. C. 채팅 기반 구성·운영의 짝 엔진 규칙에 따라 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리와 연결.\"}],\"glossary_candidates\":[{\"term_ko\":\"단순 지식 조직 체계\",\"term_en\":\"Simple Knowledge Organization System (SKOS)\",\"definition\":\"개념마다 선호 이름·대체 이름·검색용 숨은 이름을 언어별로 붙이고 개념 사이 관계를 표현하는 W3C 권고(2009) 어휘다.\"},{\"term_ko\":\"GLN 확장 구성요소\",\"term_en\":\"GLN Extension Component\",\"definition\":\"물리적 위치를 식별하는 GS1 GLN 과 함께 써서 그 안의 구역·선반 같은 하위 위치를 식별하는 GS1 구성요소로, 당사자 간 합의로 외부와 교환할 수 있다.\"},{\"term_ko\":\"취급 단위\",\"term_en\":\"Handling Unit (HU)\",\"definition\":\"포장재와 그 안의 물품으로 이루어진 물리 단위로, 창고 관리 시스템이 번호(시스템 전체 유일성이 필요하면 SSCC)로 식별해 내용물과 함께 관리한다.\"}],\"open_questions_new\":[\"VDA 5050 로봇이 적재물 id 를 비우거나 생략해 보고할 때 ROP 는 어느 SSCC(물류 단위)를 실었는지를 별도 스캔 이벤트·업무 시스템 확정·사람 확인 가운데 무엇으로 확정하며, 이를 정한 운영 기준이나 국내 사례가 있는가? (관련 기존 질문: oq-003, oq-036) | 관련 영역: 17. 작업 대상·자산 식별과 인계 추적, 29. 명령·작업 실행의 신뢰성 | 근거: f19 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":22,\"cross_checked_count\":0,\"unverified\":[\"q2-07 부분 답: IEEE 1872.1-2024 표준 본문(유료) 미열람으로 작업 분해·선후 의존·배정 대상을 표현하는 개념 이름과 정의를 확인하지 못함(공개 요약·PAR·2017 연구반 초록만)\",\"ref-1404 NIST 출판물 PDF·폴리미 저장소 PDF 는 본문 추출 실패로 초록만 확인\",\"ref-1397 VDMA LIF 지침 PDF 본문 추출 실패, station 필드(stationName·interactionNodeIds 등) 세부 미확인; 공식 저장소 README 는 표지·법적 고지만 담고 있음\",\"ref-1394 GS1 GLN 확장 구성요소 페이지 403, 검색 요약 기준(형식 AI 254·자릿수는 2차 자료라 finding 에 넣지 않음)\",\"ref-1399 공공데이터포털 메타데이터 접속 오류, 검색 요약 기준\",\"IMDF LABELS 자료형의 공식 정의(언어 코드 키 객체)는 Unit 페이지에 없어 미확인\",\"SAP 취급 단위 문서(ref-1403)의 대상 릴리스와 현행 S/4HANA EWM 과의 차이 미확인\",\"국내 물류센터의 로케이션 코드 체계나 로봇 경유점 이름 대응을 정한 공공 자료는 한국어 검색 4회에서 찾지 못함(부재 확인 아님)\",\"IEEE 1872.1-2024 쪽수는 2차 자료마다 30쪽·32쪽으로 다르게 나와 쓰지 않음\",\"모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)\"],\"scope_violations\":[\"f5·f17: SAP EWM 저장 빈·취급 단위는 상위 업무 시스템(분류 원문 19장의 연계 대상) 제품 구조이며 WMS 쪽 식별자 형식의 근거로만 씀\",\"f18: WMS 취급 단위 기록·EPCIS 집계는 연계 대상이고 ROP 몫은 조회해 작업 모델에 두는 경계로 한정\",\"f10: ROS 항법 스택의 목표 주행은 로봇 자체 지능·제어 쪽 연계 대상이며 의미 주석을 LLM 도구로 노출하는 구조만 근거로 씀\",\"f8: Lang2LTL 의 실제 로봇 주행은 로봇 쪽 연계 대상이며 명령을 장소·명세로 접지하는 부분만 씀\"],\"budget_used\":{\"queries\":21,\"sources\":16},\"limits\":\"트랙 실행(단계 2), web_fetch_available: true · fetch_mode full. 검색 21회/40, 신규 출처 16건/20(ref-1391~ref-1406, 예약 구간 안), 재사용 6건(ref-504·ref-056 webfetch 재열람, ref-411 github_raw 재열람, ref-413·ref-031·ref-228 미열람 재인용). 질문 선택: target.json 지정 q2-05·q2-06·q2-07(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 3건 중 오래된 순). 답한 질문: q2-05(이름 표현 표준·현장 식별자 형식은 원문, 형식·관리 분담 결론은 이 위키의 종합 low), q2-06(인터페이스 필드·물류 단위 표현은 원문, 단위 선택 결론은 종합 low). q2-07 은 표준 본문을 열지 못해 부분 답으로 두고 answered_question_ids 에서 뺐다. 원문 열기 실패: NIST·폴리미·VDMA LIF PDF(바이너리 추출 실패), gs1.org·GS1 UK(403), 공공데이터포털(ECONNRESET), continua-systems LIF 스키마(403·404). 한국 자료: 국가관심지점정보 별칭 POI(ref-1399, 원문 미열람) 외에 국내 물류 로케이션·SSCC 공식 자료는 한국어 검색 4회에서 찾지 못함. 벤더 문서(ref-1398·ref-1403)는 데이터 구조 서술만 써서 vendor_claim 대상 아님. 교차 규칙: 채팅 지시의 장소 접지(f7·f8·f10·f11)는 C. 채팅 기반 구성·운영의 짝 엔진인 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리와, L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획에 함께 연결하도록 제안. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않음. 후속 질문 2건. 온톨로지 변경 2건 제안(상황 개념 메모 2건, 관계 추가 없음, 작업 요구는 능력 온톨로지 초안과 충돌 확인 전이라 건드리지 않음). 열린 질문 1건(이름 사전의 지도 판 이전 문제는 oq-201·oq-029 와 겹쳐 새로 내지 않음). 정정 요청 없음, 입력 누락 없음, 우선 지정 질문 없음. 페이지 제안: 트랙 산출물 3건(단계 2 페이지, 초안, 아이디어 페이지), 세부영역 반영 제안 4건(갱신 상한과 별도).\"},\"track\":{\"slug\":\"chat-based-configuration-and-operation\",\"stage\":2,\"answered_question_ids\":[\"q2-05\",\"q2-06\"],\"new_questions\":[{\"question\":\"채팅 대화 중 사용자가 장소에 새 별칭을 붙이거나(예: '저쪽 끝 도크를 B 도크라 부르자') 사전에 없는 이름을 쓸 때, 그 별칭을 이름 사전에 반영하는 승인 절차와 적용 범위(개인 대화 한정·현장 공용)를 어떻게 정하며, 여러 장소에 걸리는 이름은 언제 되묻는가? (q2-05 에서 파생) (관련: q4-20, q4-07)\",\"stage\":4,\"rationale_finding_id\":\"f11\"},{\"question\":\"채팅 지시의 대상 화물을 적재 단위(SSCC·취급 단위)로 확정한 뒤 품목 단위를 받는 Open-RMF 배송(sku·수량)과 적재물 id 를 받는 VDA 5050 pick·drop 으로 각각 내보낼 때, 두 단위 사이 변환 규칙과 업무 시스템 조회를 ROP 작업 모델·플릿 어댑터 가운데 어디에 두는가? (q2-06 에서 파생) (관련: q3-08)\",\"stage\":3,\"rationale_finding_id\":\"f18\"}],\"ontology_changes\":[{\"op\":\"modify\",\"kind\":\"concept\",\"name\":\"상황 (Situation) — 장소 표현의 이름 사전 참조\",\"evidence_finding_ids\":[\"f1\",\"f2\",\"f3\",\"f5\",\"f6\"],\"description\":\"상황 개념의 '장소 표현과 그 해석 결과인 공간 노드 참조' 속성에 메모를 더한다: 장소 표현은 이름 사전 항목(선호 이름·대체 이름·숨은 이름을 언어별로 가진 장소 개념, SKOS f1·IMDF f2 방식)을 거쳐 공간 노드 참조와 외부 식별자(Open-RMF 경유점 이름 f3, WMS 저장 빈 좌표 f5, GLN 확장 구성요소 f6)로 이어진다(후보). 이름 사전 자체를 개념으로 둘지, 관리 주체(f12 추정)는 정하지 않고 초안 6절 질문으로 둔다. 기존 속성과 충돌하지 않으며 관계는 더하지 않는다.\"},{\"op\":\"modify\",\"kind\":\"concept\",\"name\":\"상황 (Situation) — 대상 표현의 화물 참조\",\"evidence_finding_ids\":[\"f13\",\"f14\",\"f15\",\"f16\",\"f17\"],\"description\":\"상황 개념의 '대상 표현'에 해석 결과 '화물 참조'를 짝으로 두고 식별 단위 값 후보를 메모한다: 품목 단위(Open-RMF payload sku·수량 f14) / 적재 단위(VDA 5050 loadId·loadType f13, GS1 SSCC f15, 취급 단위 f17). 두 단위의 대응은 업무 시스템(WMS 취급 단위, EPCIS 집계 이벤트 f16)에서 가져온다는 점은 추정(f18)이라 정의에 넣지 않는다. 작업 요구 개념(능력 온톨로지 초안과 같은 개념)은 바꾸지 않으므로 이전 실행에서 거부된 작업 요구 적재물 속성 제안과 충돌하지 않는다.\"}],\"stage_completion_self_assessment\":{\"met\":false,\"missing\":[\"업무 분해·배정 설계 초안 개념 목록 표에 작업 요구 적재물 속성·업무 완료 조건 미확정\",\"q2-07 부분 답(IEEE 1872.1-2024 본문 미열람)으로 단계 2 열린 질문 남음\",\"q2-05·q2-06 답과 아이디어 페이지 4절 반영은 검증 승인 전\"]}}}",
+  "structured_output": {
+    "run_id": "2026-10-09-27",
+    "date": "2026-10-09",
+    "run_type": "track",
+    "target": {
+      "area_no": 12,
+      "area_name": "12. 채팅으로 업무 지시·오케스트레이션",
+      "category": "C. 채팅 기반 구성·운영"
+    },
+    "gaps": [
+      "단계 2 질문 q2-05·q2-06·q2-07 열림 — target.json 지정(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 3건 중 오래된 순). 단계 2 페이지 3절에 {#q2-05}·{#q2-06}·{#q2-07} 소절 없음",
+      "단계 2 완료 조건: 업무 분해·배정 설계 초안 개념 목록 표에 작업 요구 적재물 속성·완료 조건 미확정",
+      "업무 분해·배정 설계 초안 6절 '작업 요구에 적재물 식별과 적재물 유형·치수·중량을 더할 것인가' 질문과 '현장 장소 용어와 경유점 이름·지도 id·WMS 로케이션 코드를 잇는 이름 대응 규칙' 질문에 근거 없음",
+      "12. 채팅으로 업무 지시·오케스트레이션 섹션 7. 관련 표준·프레임워크·오픈소스 — 장소 이름 정규화·화물 식별 단위 관련 표준(SKOS, IMDF, GS1 SSCC·EPCIS 집계 이벤트) 없음"
+    ],
+    "research_questions": [
+      "대화로 받은 지시를 확인 가능한 계획으로 바꾸고, 승인 뒤 실행과 진행 설명까지 이어 갈 수 있는가? [분류원문]",
+      "q2-05 지시 속 현장 장소 용어(예: 3층 출하 대기장, 2번 도크)와 공간 그래프 경유점 이름·지도 id·WMS 로케이션 코드를 대응시키는 이름 사전은 어떤 형식으로 두고 누가 관리하는가?",
+      "q2-06 채팅 지시의 '대상 화물'을 품목 단위(sku·수량)로 받을지 적재 단위(loadId·SSCC)로 받을지, 둘 사이 대응은 어느 시스템에서 가져오는가?",
+      "q2-07 IEEE 1872.1-2024 로봇 작업 표현 온톨로지는 작업 분해·선후 의존·배정 대상을 어떤 개념으로 표현하며, 업무 분해·배정 설계 초안의 업무·작업·배정 개념과 어떻게 대응하는가?",
+      "장소의 선호 이름·대체 이름·검색용 숨은 이름을 표현하는 기존 표준(SKOS, IMDF)과 현장 장소 식별자(Open-RMF 경유점 이름, VDMA LIF 스테이션, WMS 저장 빈 좌표, GS1 GLN 확장 구성요소)는 무엇이며 누가 정하는가? (q2-05 하위, 초안 6절 이름 대응 질문 겨냥)",
+      "국내 자료 가운데 장소 별칭·로케이션 코드 체계나 물류 단위 식별(SSCC)을 다룬 공공 자료가 있는가? (oq-029 겨냥, 한국어 검색)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "W3C SKOS Reference(2009-08-18 권고)는 개념에 선호 이름(prefLabel)·대체 이름(altLabel)·숨은 이름(hiddenLabel)을 붙이게 하고, 세 속성을 서로 배타적으로 두며 언어 태그마다 선호 이름을 하나까지만 허용하고, 숨은 이름은 오탈자처럼 검색에는 쓰되 화면에 보이지 않는 이름으로 정의한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1391"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "W3C 권고 SKOS Reference 5절(REC-skos-reference-20090818): prefLabel·altLabel·hiddenLabel 은 rdfs:label 의 하위 속성이고 쌍마다 배타적이며, 한 자원은 언어 태그마다 prefLabel 을 최대 1개 가진다. hiddenLabel 예시는 사용자가 입력할 수 있는 오탈자.",
+        "as_of": "2009-08-18",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "OGC 커뮤니티 표준 IMDF 1.0.0(OGC 20-094)의 Unit 피처는 현장 운영 조직(Venue Organization)이 선언한 이름(name)과 대체 이름(alt_name)을 언어별 라벨로 두고, 둘 다 있으면 하나를 표시용으로 우선하되 검색은 둘 다 대상으로 하며 우선 이름만 돌려주게 하고, 이름에 주소 정보를 넣지 않게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1393"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IMDF Unit 페이지(OGC 20-094, 2021-02-18 발행): name(null 또는 LABELS)은 Venue Organization 이 선언한 이름, alt_name 은 대체 이름. 둘 다 있으면 표시용 하나를 우선하고 검색은 둘 다, 결과는 우선 라벨만. 주소는 Address unit 값을 쓴다.",
+        "as_of": "2021-02-18",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f3",
+        "claim": "Open-RMF 교통 편집기(traffic-editor) 문서는 경유점 이름이 기본값으로 비어 있고 작업이 끝나는 경유점에는 이름을 붙여야 한다고 하며, 경유점에 충전기·주차·대기 지점·디스펜서·인제스터·도킹 이름 같은 속성을 두게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1395"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "traffic-editor 장(mdBook 원본, 확인일 2026-10-09): vertex 는 x·y·고도·이름·선택 속성 목록으로 저장되고 name 은 기본값이 비어 있다. 속성 is_charger·is_parking_spot·is_holding_point·pickup_dispenser·dropoff_ingestor·dock_name 등. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f4",
+        "claim": "VDMA 레이아웃 교환 형식(LIF) 지침은 스테이션을 차량이 환경과 명시적으로 상호작용하는 모든 지점으로 정의하고, 스테이션 식별자(stationId)를 모든 레이아웃에서 유일한 문자열로 두며, 레이아웃이 스테이션 배열을 가진다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1397"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "VDMA FuI Guideline LIF(PDF, 메타데이터 2024-03-14) 검색 요약: station 은 차량이 환경과 명시적으로 상호작용하는 모든 지점, stationId 는 모든 레이아웃에서 유일한 문자열, layout 은 stations 배열. PDF 본문 추출 실패로 원문 미열람.",
+        "as_of": "2024-03",
+        "site_type": null,
+        "flow_item": "작업 대상",
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "SAP S/4HANA EWM 교육 자료는 저장 빈 좌표를 창고 안에서 유일한 최대 18자 문자열로 두고 통로·스택·단·빈 세분·깊이 식별자와 숫자·문자·상수 템플릿으로 생성하게 하며, 이동 위치를 저장 유형·저장 구역·빈의 조합으로 나타내고, 주행 거리 계산용 x·y·z 좌표와 RF·음성 피킹 확인용 검증 값을 빈 좌표와 따로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SAP Learning 'Creating Storage Bins': 빈 좌표는 최대 18자이고 창고 안에서 유일; 구조 필드(통로·스택·단·빈 세분·깊이)와 N/A/C 템플릿으로 빈 마스터 생성; 위치는 저장 유형+저장 구역+빈. 지리 좌표·검증 속성은 별도. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f6",
+        "claim": "GS1 은 GLN 확장 구성요소를 물리적 위치를 식별하는 GLN 과 함께만 써서 그 안의 하위 위치(구역·선반 등)를 식별하게 하고, 이를 지원하는 표준을 쓰는 당사자 사이에서는 합의로 외부와 교환할 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1394"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "gs1.org GLN extension component 페이지 검색 요약: 물리적 위치 GLN 과 함께만 사용, 표준이 지원하면 둘 이상 당사자 간 합의로 교환 가능. 페이지 열람 403 으로 원문 미열람. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상",
+        "source_unopened": true
+      },
+      {
+        "id": "f7",
+        "claim": "Rasa 문서는 동의어(synonym) 기능으로 추출된 엔티티 값을 대소문자 구분 없이 하나의 정규화 값으로 바꾸며 이 바꾸기는 추출 뒤에 일어난다고 하고, 조회 표(lookup table)는 알려진 값 목록에서 정규식 패턴을 만들어 추출을 돕는다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1396"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Rasa docs nlu-training-data.mdx(main 브랜치): synonyms 는 추출된 엔티티를 정규화 값으로 매핑(예: 'credit card account'→credit), 매핑은 추출 뒤 적용되므로 학습 예시에 동의어 표현을 넣어야 함. lookup tables 는 대소문자 무시 정규식 생성. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "Lang2LTL(CoRL 2023)은 대상 환경의 사전 언어 데이터 없이 LLM 으로 항법 명령을 선형 시간 논리 명세로 접지하며, 21개 도시 규모 환경에서 평가하고 실내 두 곳에서 실제 로봇이 52개 명령을 수행했다고 저자들이 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-056"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2302.11649(v1 2023-02-22, v2 2023-10-17, Comments: CoRL 2023) 초록: 21개 도시 규모 환경, 실내 환경 2곳에서 52개 의미적으로 다양한 항법 명령(저자 보고). 랜드마크 대응 방식의 세부는 초록에서 확인되지 않음.",
+        "as_of": "2023-10",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f9",
+        "claim": "국토지리정보원이 공공데이터포털에 제공하는 국가관심지점정보(POI)는 여러 명칭으로 불리는 대상(학교·병원 등)에 다른 명칭을 부여하고 정식명칭을 축약한 별칭 POI 를 두어 검색 편의를 높이며, 민간에서는 실내외 위치검색·길찾기에 쓰인다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1399"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "공공데이터포털 '국토교통부 국토지리정보원_국가관심지점정보(POI) 시도별' 메타데이터 검색 요약: 별칭 국가관심지점정보는 다양한 명칭으로 불리는 대상에 다른 명칭을 부여하고 정식명칭을 축약해 검색 편의 제공. 접속 오류로 원문 미열람.",
+        "as_of": "2025-06-24",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f10",
+        "claim": "Lee·Park·Kim(arXiv 2609.27340, 2026-09)은 점유 격자를 LLM 이 쓰기 어렵다는 문제에 대해 경유점 수준 관측과 로봇 자세를 기록하는 의미 주석 모듈과 지도 이미지 모듈을 MCP 도구로 노출해 기존 ROS 항법 스택을 고치지 않고 자연어 지시로 목표를 고르게 했으며, 모의 실내 환경에서 지도 커버리지 97% 이상을 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2609.27340 v1(2026-09-23) 초록: semantic annotation 모듈이 경유점 수준 관측을 로봇 자세와 함께 기록하고 MCP 도구로 제공, 모의 실내 환경에서 지도 커버리지 97% 이상(저자 보고). 이름 사전·동의어 처리는 초록에 없음.",
+        "as_of": "2026-09-23",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f11",
+        "claim": "q2-05 에 대해 확인한 자료를 종합하면, 이름 사전은 장소 하나를 개념 하나로 두고 언어별 선호 이름·대체 이름·숨은 이름(오탈자)을 붙인 뒤(SKOS·IMDF 방식) 각 장소에 Open-RMF 경유점 이름, VDA 5050 지도 id·노드 id 또는 LIF 스테이션 id, WMS 저장 빈 좌표(저장 유형·구역 포함), GLN 과 확장 구성요소 같은 외부 식별자를 대응시키는 표 형식으로 두고, 지시 해석은 추출 뒤 사전으로 정규화하되 사전에 없거나 여러 장소에 걸리는 이름은 되묻는 구성이 선택지로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1391",
+          "ref-1393",
+          "ref-1395",
+          "ref-1397",
+          "ref-1398",
+          "ref-1394",
+          "ref-1396",
+          "ref-413"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합(추정). SKOS·IMDF 의 선호·대체 이름 구조(f1·f2), 현장 식별자 형식(f3~f6), 추출 뒤 정규화(f7)를 묶은 구성이며 로봇 이름 사전을 직접 정한 출처는 찾지 못함. 물류 현장 적용 사례 미확인.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f12",
+        "claim": "q2-05 의 관리 주체에 대해 확인한 자료는 장소 이름을 현장 운영 조직이 선언하고(IMDF), 하위 위치 식별자를 위치 GLN 과 함께 쓰며(GS1), 저장 빈 좌표를 창고 단위 설정으로 정하고(SAP EWM), 경유점 이름을 지도 작성 때 붙이게(Open-RMF) 하므로, 이름 사전의 내용은 현장 운영자가 소유하고 ROP 는 외부 식별자 대응의 유일성 검사와 지도·사전 판 관리를 맡는 분담이 선택지로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1393",
+          "ref-1394",
+          "ref-1398",
+          "ref-1395"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합(추정). 관리 주체를 직접 정한 출처는 없고 각 형식이 이름·식별자를 누가 정하는지에서 도출함. 지도 판이 바뀔 때 대응 이전 문제는 열린 질문 oq-201 과 같은 방향.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f13",
+        "claim": "VDA 5050 공식 저장소의 상태 메시지 스키마(main 브랜치)는 적재물 목록(loads)을 선택 필드로 두고 빈 배열을 무적재로 보며, 적재물 항목의 적재물 id(바코드·RFID 같은 유일 ID, 아직 식별 전이면 빈 값, 식별할 수 없는 로봇은 생략)·적재물 유형·적재 위치·경계 상자·치수·중량을 모두 선택 필드로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1392"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "state.schema(main): loads 는 required 아님, 빈 배열은 unloaded. load 항목 loadId·loadType·loadPosition·boundingBoxReference·loadDimensions·weight 모두 선택; loadId 는 미식별 시 빈 값, 식별 불가 시 생략. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f14",
+        "claim": "Open-RMF 의 픽업·하역 사건 스키마(payload_transfer)는 장소와 적재물을 필수로, 처리 설비(handler)를 선택으로 두고, 적재물 항목은 품목 코드(sku) 문자열과 수량 정수를 필수로, 칸(compartment)을 선택으로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-411"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "event_description__payload_transfer.json(main, 확인일 2026-10-09): required place·payload; payload_component 의 required sku(string)·quantity(integer, minimum 0), compartment 선택. 적재 단위 식별자 필드는 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f15",
+        "claim": "GS1 Australia 는 SSCC 를 보관·운송을 위해 함께 묶은 거래 품목 조합(케이스·팔레트·소포)인 물류 단위를 식별하는 18자리 키로 설명하며, 응용 식별자 (00)으로 표시하고, 물류 단위의 수명 동안 번호를 유지하며, EDI·EPCIS 로 공유하면 출하 정보와 연결할 수 있다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1400"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "GS1 Australia SSCC 페이지: logistic unit 은 보관·운송용으로 묶은 거래 품목 조합, 18자리(회사 코드·일련 참조·확장 숫자·체크 디지트), AI (00), 수명 동안 유지, 출하일로부터 1년 안 재사용 금지, 출하 통지(ASN)와 연결. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f16",
+        "claim": "GS1 EPCIS 공식 저장소의 JSON 스키마는 집계 이벤트(AggregationEvent)에 상위 식별자(parentID)·하위 개체 목록(childEPCs)·하위 수량 목록(childQuantityList)과 동작(OBSERVE·ADD·DELETE)을 두고, DELETE 가 아니면 하위 개체나 하위 수량 가운데 하나를 요구하며, 수량 항목은 품목 분류(epcClass)를 필수로 수량·단위를 선택으로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1401",
+          "ref-1402"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "AggregationEvent-JSON-Schema: type·action 필수, childEPCs 또는 childQuantityList(1개 이상) 필요(action DELETE 제외). event-definitions: quantityElement 는 epcClass 필수, quantity·uom 선택, action enum OBSERVE·ADD·DELETE. 저장소 README 는 초안이라 게시판과 다를 수 있다고 적음.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f17",
+        "claim": "SAP 문서는 취급 단위(handling unit)를 포장재와 그 안의 물품으로 된 물리 단위로 보고, 클라이언트 안의 유일성은 번호 범위 객체로, 시스템 전체 유일성은 SSCC18 부여로 보장하며, 포장재 유형이 번호 부여 방식을 정하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1403"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SAP Library LO-HU 'Unique Identification of Handling Units': HU 는 포장재+내용물, 클라이언트 내 유일성은 번호 범위 객체, 시스템 전체 유일성은 SSCC18; 포장재 유형별 번호 부여 유형 설정, 중복 ID 는 스캐너 처리 실패를 낳는다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f18",
+        "claim": "q2-06 에 대해 확인한 자료를 종합하면, 로봇 관제 인터페이스는 품목 단위(Open-RMF 배송의 sku·수량)나 적재 단위(VDA 5050 적재물 id·유형, 팩트시트 적재 명세) 가운데 한쪽만 받고, 적재 단위(SSCC·취급 단위)와 그 안 품목·수량의 대응은 WMS 의 취급 단위 기록과 EPCIS 집계 이벤트가 보유하므로, ROP 는 채팅 지시의 대상 화물을 어느 단위로 받든 업무 시스템 조회로 두 단위를 함께 확정해 작업 모델에 두고 로봇 쪽으로는 플릿 인터페이스가 받는 단위만 넘기는 구성이 선택지로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1392",
+          "ref-411",
+          "ref-1400",
+          "ref-1401",
+          "ref-1403",
+          "ref-031",
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합(추정). 인터페이스 필드(f13·f14)와 물류 단위·집계 표현(f15~f17)을 묶은 구성이며 채팅 지시의 화물 단위를 정한 출처는 찾지 못함. 상위 업무 시스템(WMS)은 분류 원문 19장의 연계 대상.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f19",
+        "claim": "VDA 5050 상태 메시지는 적재물 id 를 아직 식별하지 못했으면 비우고 식별할 수 없는 로봇은 생략하게 하므로, 어느 SSCC 를 실었는지를 로봇 상태 보고만으로 확정하지 못하는 경우가 있어 ROP 는 별도 스캔 이벤트나 업무 시스템 확정 같은 다른 근거로 적재 단위를 확인해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1392",
+          "ref-1400"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 추론(추정). loadId 미식별·생략 규정(f13)과 SSCC 가 물류 단위의 기준 식별자라는 점(f15)에서 도출. 판독 실패 처리(oq-003)·재고 기록 불일치(oq-036)와 이어짐.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f20",
+        "claim": "IEEE SA 의 IEEE 1872.1-2024 페이지는 이 표준을 학습·로봇·자동화 분야의 작업 지식을 표현·추론·교환하는 온톨로지로 소개하고, 핵심 용어와 정의·속성·유형·구조·성질·제약·관계를 포함하며 계층적 계획기와 설계자가 온톨로지 계층의 수준 사이에서 소통하도록 작업 지식을 표현하는 방식을 다룬다고 밝히며, 발행일 2024-06-18, 이사회 승인 2024-02-15, RTR 작업반(RAS 표준 상임위원회)으로 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-504"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IEEE SA 표준 페이지(확인일 2026-10-09): Active Standard, Published 2024-06-18, Board Approval 2024-02-15, Working Group RTR, Society RAS/SC. 범위 요약만 열람했고 표준 본문(유료)은 미열람.",
+        "as_of": "2024-06-18",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "IEEE SA 의 P1872.1.1 PAR(2023-12-06 승인)은 IEEE 1872.1-2024 를 실무에 구현하는 지침과 로봇 해법 활용을 돕는 예시 사용 사례를 만드는 개발 중 과제이며, RTR 작업반(의장 Stephen Balakirsky)이 맡는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IEEE SA P1872.1.1 페이지: Guide for Practical Implementations of IEEE 1872.1-2024 Standard for Robot Task Representation, PAR Approval 2023-12-06, Active PAR, 범위에 illustrative use cases. 작업 분해·배정 용어는 페이지에 없음.",
+        "as_of": "2023-12-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "IEEE 작업 표현 연구반의 Balakirsky 외(MSEC 2017)는 작업을 하위 클래스·범주·관계로 분해하는 작업 구조 표현과 모든 작업에 공통인 속성·작업 유형별 속성, 작업과 플랫폼·작업과 사용자 사이 관계를 다루는 온톨로지를 목표로 제시했으나, 이는 최종 표준 이전 연구반 단계 자료다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1404"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "NIST 출판물 페이지 'Towards a Robot Task Ontology Standard'(MSEC 2017, 2017-06-08) 초록: 작업 구조를 하위 클래스·범주·관계로 분해, 공통·유형별 속성, 작업–플랫폼·작업–사용자 관계. 논문 PDF 는 본문 추출 실패로 초록만 확인.",
+        "as_of": "2017-06-08",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "q2-07 에 대해 공개 요약만으로 보면 IEEE 1872.1-2024 의 계층 수준 표현은 초안의 업무→작업 분해와, 작업–플랫폼 관계는 작업 요구·배정과 대응할 후보로 보이나, 작업 사이 선행 의존을 어떤 개념으로 표현하는지와 정식 용어 정의는 표준 본문을 열람하지 못해 확인할 수 없다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-504",
+          "ref-1404",
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 추론(추정). 근거는 표준 범위 요약(f20)과 2017 연구반 초록(f22)뿐이며 둘 다 개념 이름·정의를 담지 않음. 실제 대응은 표준 본문 확보 뒤 확인 필요(부분 답).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1391",
+        "org": "W3C Semantic Web Deployment Working Group (편집 Alistair Miles, Sean Bechhofer)",
+        "title": "SKOS Simple Knowledge Organization System Reference",
+        "published": "2009-08-18",
+        "url": "https://www.w3.org/TR/skos-reference/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "SKOS 권고안. 5절 어휘 라벨에서 prefLabel·altLabel·hiddenLabel 의 정의, 상호 배타성, 언어 태그당 prefLabel 1개 제약, 검색용 숨은 이름을 정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1392",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 공식 저장소 main 브랜치의 상태 메시지 JSON 스키마. loads 배열과 load 항목(loadId·loadType·loadPosition·경계 상자·치수·중량)을 모두 선택 필드로 정의한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema"
+      },
+      {
+        "id": "ref-1393",
+        "org": "OGC (Apple 제출, Indoor Mapping Data Format 1.0.0, OGC 20-094 Community Standard)",
+        "title": "Indoor Mapping Data Format — Unit",
+        "published": "2021-02-18",
+        "url": "https://docs.ogc.org/cs/20-094/Unit/index.html",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "IMDF Unit 피처 정의. 현장 운영 조직이 선언한 name 과 alt_name(언어별 라벨), 표시·검색 규칙, display_point 등을 정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1394",
+        "org": "GS1",
+        "title": "GLN extension component",
+        "published": null,
+        "url": "https://gs1.org/standards/id-keys/gln/extension-component",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 검색 요약 기준: GLN 확장 구성요소는 물리적 위치 GLN 과 함께만 써서 하위 위치를 식별하고, 지원 표준이면 당사자 간 합의로 교환할 수 있다.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1395",
+        "org": "Open Robotics",
+        "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 교통 편집기 장. 경유점 이름(기본값 빈 값)과 충전기·주차·대기 지점·디스펜서·인제스터·도킹 이름 같은 경유점 속성을 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md"
+      },
+      {
+        "id": "ref-1396",
+        "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
+        "title": "NLU Training Data — Rasa documentation (docs/docs/nlu-training-data.mdx)",
+        "published": null,
+        "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/nlu-training-data.mdx",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Rasa NLU 학습 데이터 문서. 엔티티 동의어로 추출 값을 정규화 값으로 바꾸는 방법과 조회 표(lookup table)로 알려진 값 목록을 추출에 쓰는 방법을 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/RasaHQ/rasa/main/docs/docs/nlu-training-data.mdx"
+      },
+      {
+        "id": "ref-1397",
+        "org": "VDMA Fördertechnik und Intralogistik",
+        "title": "Materials Handling and Intralogistics — LIF (Layout Interchange Format) Guideline",
+        "published": "2024-03",
+        "url": "https://www.vdma.eu/documents/34570/3317035/FuI_Guideline_LIF_GB.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. PDF 본문 추출 실패, 메타데이터 작성일 2024-03-14. 검색 요약 기준: station 정의(차량이 환경과 명시적으로 상호작용하는 지점)와 모든 레이아웃에서 유일한 stationId.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1398",
+        "org": "SAP (SAP Learning)",
+        "title": "Creating Storage Bins — Basic Customizing in SAP S/4HANA EWM",
+        "published": null,
+        "url": "https://learning.sap.com/courses/basic-customizing-in-sap-s-4hana-ewm/creating-storage-bins",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "SAP EWM 저장 빈 생성 교육 자료. 빈 좌표(최대 18자, 창고 내 유일), 구조 식별자와 템플릿, 저장 유형·구역·빈 조합, 별도 지리 좌표와 검증 속성을 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1399",
+        "org": "국토교통부 국토지리정보원(공공데이터포털)",
+        "title": "국토교통부 국토지리정보원_국가관심지점정보(POI) 시도별",
+        "published": "2025-06-24",
+        "url": "https://www.data.go.kr/biz/dcat/metadata/15144087.do",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 접속 오류(ECONNRESET), 검색 요약 기준: 국가관심지점정보의 별칭 POI 는 여러 명칭으로 불리는 대상에 다른 명칭·축약명을 부여해 검색 편의를 준다. 발행일은 검색 요약의 등록일.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1400",
+        "org": "GS1 Australia",
+        "title": "Serial Shipping Container Code (SSCC)",
+        "published": null,
+        "url": "https://www.gs1au.org/standards/id-keys/sscc",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "GS1 회원기관의 SSCC 소개. 물류 단위 정의, 18자리 구조, AI (00), 번호의 수명 동안 유지와 재사용 제한, EDI·EPCIS 로 출하 정보와 연결을 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1401",
+        "org": "GS1 (gs1/EPCIS GitHub)",
+        "title": "EPCIS — JSON-Schema/schemas/AggregationEvent-JSON-Schema.json",
+        "published": null,
+        "url": "https://github.com/gs1/EPCIS/blob/master/JSON-Schema/schemas/AggregationEvent-JSON-Schema.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "GS1 공식 EPCIS 저장소의 집계 이벤트 JSON 스키마. parentID·childEPCs·childQuantityList·action 과 필수 조건을 정의한다. 저장소 README 는 초안이라 게시판과 다를 수 있다고 적는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-Schema/schemas/AggregationEvent-JSON-Schema.json"
+      },
+      {
+        "id": "ref-1402",
+        "org": "GS1 (gs1/EPCIS GitHub)",
+        "title": "EPCIS — JSON-Schema/schemas/event-definitions-JSON-Schema.json",
+        "published": null,
+        "url": "https://github.com/gs1/EPCIS/blob/master/JSON-Schema/schemas/event-definitions-JSON-Schema.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "EPCIS 이벤트 공통 정의. quantityElement(epcClass 필수, quantity·uom 선택)와 action 값(OBSERVE·ADD·DELETE)을 정의한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-Schema/schemas/event-definitions-JSON-Schema.json"
+      },
+      {
+        "id": "ref-1403",
+        "org": "SAP (SAP Library, LO-HU)",
+        "title": "Unique Identification of Handling Units",
+        "published": null,
+        "url": "https://help.sap.com/SAPHELP_470/Helpdata/EN/41/17ab3caad811d2b44f006094b9b9dd/content.htm",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "SAP 취급 단위 관리 문서. 취급 단위의 정의, 번호 범위와 SSCC18 에 의한 유일성, 포장재 유형별 번호 부여 설정을 설명한다. 대상 릴리스는 페이지에서 확인되지 않음.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1404",
+        "org": "Balakirsky, S. B., Schlenoff, C. I., Fiorini, S. R. 외(NIST 출판물 페이지, MSEC 2017)",
+        "title": "Towards a Robot Task Ontology Standard",
+        "published": "2017-06-08",
+        "url": "https://www.nist.gov/publications/towards-robot-task-ontology-standard",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "IEEE 작업 표현 연구반의 작업 온톨로지 표준 구상 논문 초록. 작업 구조 분해, 공통·유형별 속성, 작업–플랫폼·작업–사용자 관계를 목표로 제시한다. 논문 본문은 PDF 추출 실패로 미확인.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1405",
+        "org": "IEEE Standards Association",
+        "title": "P1872.1.1 — Guide for Practical Implementations of IEEE 1872.1-2024 Standard for Robot Task Representation",
+        "published": "2023-12-06",
+        "url": "https://standards.ieee.org/ieee/1872.1.1/11500/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "IEEE 1872.1-2024 실무 구현 지침 PAR(2023-12-06 승인, 개발 중). RTR 작업반, 예시 사용 사례 포함 범위.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1406",
+        "org": "Lee, J., Park, J., & Kim, W.",
+        "title": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
+        "published": "2026-09-23",
+        "url": "https://arxiv.org/abs/2609.27340",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "점유 격자 지도 이미지와 경유점 수준 의미 주석을 MCP 도구로 LLM 에 노출해 자연어 항법 목표를 고르게 한 프리프린트(초록만 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-504",
+        "org": "IEEE Standards Association",
+        "title": "IEEE 1872.1-2024 — IEEE Standard for Robot Task Representation",
+        "published": "2024-06-18",
+        "url": "https://standards.ieee.org/ieee/1872.1/6993/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "IEEE 1872.1-2024 발행 기관 소개 페이지. 이번 실행에서 페이지(범위 요약·발행일·작업반)를 열람했으며 표준 본문(유료)은 열람하지 못했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-411",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payload_transfer.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/event_description__payload_transfer.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 픽업·하역 사건 스키마. 장소·적재물 필수, 적재물 항목 sku·quantity 필수와 compartment 선택.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_fleet_adapter/schemas/event_description__payload_transfer.json"
+      },
+      {
+        "id": "ref-056",
+        "org": "Liu, J. X. 외",
+        "title": "Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments",
+        "published": "2023-02",
+        "url": "https://arxiv.org/abs/2302.11649",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Lang2LTL 논문(CoRL 2023). 이번 실행에서 arXiv 초록을 열람했다: 대상 환경 사전 언어 데이터 없이 항법 명령을 LTL 로 접지, 21개 도시 규모 환경·실내 52개 명령 평가.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-413",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/order.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/order.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 주문 스키마(재사용, 이번 실행에서 다시 열지 않음). 노드 위치에 지도 id 를 둔다는 기존 관찰의 근거.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 공식 명세(재사용, 이번 실행에서 다시 열지 않음). pick·drop 동작의 적재물 유형·id 선택 파라미터에 관한 기존 관찰의 근거.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 팩트시트 스키마(재사용, 이번 실행에서 다시 열지 않음). 로봇이 선언하는 적재 명세(적재물 유형·치수·최대 중량)의 근거.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md",
+        "sections": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "rationale": "q2-05 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12 (신뢰도 low) / q2-06 답: f13·f14·f15·f16·f17·f18·f19 (신뢰도 low) / q2-07 부분 답: f20·f21·f22·f23 — 2절 q2-05·q2-06 답함(답한 실행 2026-10-09-27, #q2-05·#q2-06), q2-07 은 열림 유지(표준 본문 미열람). 3절 소제목 신설: {#q2-05} 이름 표현 표준(SKOS f1, IMDF f2), 현장 식별자 형식(Open-RMF 경유점 f3, LIF 스테이션 f4 원문 미열람, SAP EWM 저장 빈 f5 벤더 문서 구조, GLN 확장 구성요소 f6 원문 미열람), 추출 뒤 정규화(Rasa f7), 접지 연구(Lang2LTL f8, MCP 의미 주석 f10), 국내 별칭 POI(f9, 원문 미열람), 형식 종합 f11·관리 분담 f12(추정, 대응표는 이 위키 구성) / {#q2-06} 로봇 쪽 단위(VDA 5050 loads f13, Open-RMF payload f14), 물류 단위·집계(SSCC f15, EPCIS 집계 이벤트 f16, SAP 취급 단위 f17), 종합 f18·loadId 미식별 처리 f19(추정; WMS 는 연계 대상) / {#q2-07} 부분 답 소절: 공개 요약(f20·f21·f22)과 대응 후보 추정 f23, 표준 본문 미열람 명시. 2절 표 위 q2-01 항목–원천 대응표의 '장소'·'대상 화물' 행 비고에 q2-05·q2-06 링크. 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건(두 행 모두 미충족 유지 판단은 검증), 8절 출처, 9절 이력."
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/chat-based-configuration-and-operation/task-model-draft.md",
+        "sections": [
+          "2",
+          "6"
+        ],
+        "rationale": "트랙 산출물 갱신: track.ontology_changes 2건(상황 개념의 장소 표현에 '장소 이름 사전 항목 참조(후보)' 메모, 상황 개념의 대상 표현에 '화물 참조(식별 단위 후보: 품목 단위 sku·수량 / 적재 단위 loadId·SSCC)' 메모)이 승인되면 2절 반영과 초안 버전 인상(f1·f2·f3·f5·f6·f13·f14·f15·f16·f17). 6절 '현장 장소 용어와 경유점 이름·지도 id·WMS 로케이션 코드를 잇는 이름 대응 규칙' 항목에 q2-05 답 링크(f11·f12 추정)를, '작업 요구에 적재물 식별…' 항목에 q2-06 답 링크(f18·f19 추정)를 덧붙이되 두 질문은 닫지 않음(작업 요구는 능력 온톨로지 초안과의 대조 전). IEEE 1872.1-2024 대응 항목에 q2-07 부분 답(f20~f23) 연결."
+      },
+      {
+        "action": "update",
+        "path": "docs/ideas/chat-based-configuration-and-operation.md",
+        "sections": [
+          "4"
+        ],
+        "rationale": "아이디어 페이지 4절: '장소 이름 사전' 소절(f1~f12, 형식·관리 분담은 추정)과 '대상 화물 식별 단위' 소절(f13~f19, 결론은 추정) 추가, 'IEEE 1872.1-2024 대응' 은 부분 답(f20~f23)으로 한 줄 언급."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+        "sections": [
+          "7"
+        ],
+        "rationale": "트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f1, f2, f3, f4, f6, f9, f11, f12): 16. 장소 의미·지도 관리 7절에 SKOS 선호·대체·숨은 이름, IMDF name·alt_name, LIF 스테이션 id(원문 미열람), GLN 확장 구성요소(원문 미열람), 국가관심지점정보 별칭 POI(원문 미열람)를 장소 이름 표현·식별 수단으로. 반영은 다음 해당 영역 실행에서."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md",
+        "sections": [
+          "7"
+        ],
+        "rationale": "트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f13, f14, f15, f16, f17, f19): 17. 작업 대상·자산 식별과 인계 추적 7절에 VDA 5050 상태 메시지 loads(loadId 미식별 규정), Open-RMF payload(sku·수량), GS1 SSCC, EPCIS 집계 이벤트 스키마, SAP 취급 단위 식별(벤더 문서)을 품목 단위·적재 단위 식별 근거로."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/robot-capability-and-task-representation.md",
+        "sections": [
+          "7"
+        ],
+        "rationale": "트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f20, f21, f22): 5. 로봇 능력·작업 표현 7절의 IEEE 1872.1-2024 항목에 발행·승인일, RTR 작업반, 구현 지침 P1872.1.1(개발 중), 2017 연구반 구상(작업 구조 분해·작업–플랫폼 관계)을 보강. 표준 본문 미열람 명시."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 chat-based-configuration-and-operation 단계 2 반영 제안 (f7, f8, f10, f11): 13. 대화형 기능의 신뢰·기반의 '오해석 방지·근거 표시'와 관련해 추출 뒤 이름 사전 정규화(Rasa 동의어), 장소 접지 연구(Lang2LTL, MCP 의미 주석), 사전에 없거나 여러 장소에 걸리는 이름의 되묻기(추정)를 6절에. C. 채팅 기반 구성·운영의 짝 엔진 규칙에 따라 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리와 연결."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "단순 지식 조직 체계",
+        "term_en": "Simple Knowledge Organization System (SKOS)",
+        "definition": "개념마다 선호 이름·대체 이름·검색용 숨은 이름을 언어별로 붙이고 개념 사이 관계를 표현하는 W3C 권고(2009) 어휘다."
+      },
+      {
+        "term_ko": "GLN 확장 구성요소",
+        "term_en": "GLN Extension Component",
+        "definition": "물리적 위치를 식별하는 GS1 GLN 과 함께 써서 그 안의 구역·선반 같은 하위 위치를 식별하는 GS1 구성요소로, 당사자 간 합의로 외부와 교환할 수 있다."
+      },
+      {
+        "term_ko": "취급 단위",
+        "term_en": "Handling Unit (HU)",
+        "definition": "포장재와 그 안의 물품으로 이루어진 물리 단위로, 창고 관리 시스템이 번호(시스템 전체 유일성이 필요하면 SSCC)로 식별해 내용물과 함께 관리한다."
+      }
+    ],
+    "open_questions_new": [
+      "VDA 5050 로봇이 적재물 id 를 비우거나 생략해 보고할 때 ROP 는 어느 SSCC(물류 단위)를 실었는지를 별도 스캔 이벤트·업무 시스템 확정·사람 확인 가운데 무엇으로 확정하며, 이를 정한 운영 기준이나 국내 사례가 있는가? (관련 기존 질문: oq-003, oq-036) | 관련 영역: 17. 작업 대상·자산 식별과 인계 추적, 29. 명령·작업 실행의 신뢰성 | 근거: f19 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 22,
+      "cross_checked_count": 0,
+      "unverified": [
+        "q2-07 부분 답: IEEE 1872.1-2024 표준 본문(유료) 미열람으로 작업 분해·선후 의존·배정 대상을 표현하는 개념 이름과 정의를 확인하지 못함(공개 요약·PAR·2017 연구반 초록만)",
+        "ref-1404 NIST 출판물 PDF·폴리미 저장소 PDF 는 본문 추출 실패로 초록만 확인",
+        "ref-1397 VDMA LIF 지침 PDF 본문 추출 실패, station 필드(stationName·interactionNodeIds 등) 세부 미확인; 공식 저장소 README 는 표지·법적 고지만 담고 있음",
+        "ref-1394 GS1 GLN 확장 구성요소 페이지 403, 검색 요약 기준(형식 AI 254·자릿수는 2차 자료라 finding 에 넣지 않음)",
+        "ref-1399 공공데이터포털 메타데이터 접속 오류, 검색 요약 기준",
+        "IMDF LABELS 자료형의 공식 정의(언어 코드 키 객체)는 Unit 페이지에 없어 미확인",
+        "SAP 취급 단위 문서(ref-1403)의 대상 릴리스와 현행 S/4HANA EWM 과의 차이 미확인",
+        "국내 물류센터의 로케이션 코드 체계나 로봇 경유점 이름 대응을 정한 공공 자료는 한국어 검색 4회에서 찾지 못함(부재 확인 아님)",
+        "IEEE 1872.1-2024 쪽수는 2차 자료마다 30쪽·32쪽으로 다르게 나와 쓰지 않음",
+        "모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)"
+      ],
+      "scope_violations": [
+        "f5·f17: SAP EWM 저장 빈·취급 단위는 상위 업무 시스템(분류 원문 19장의 연계 대상) 제품 구조이며 WMS 쪽 식별자 형식의 근거로만 씀",
+        "f18: WMS 취급 단위 기록·EPCIS 집계는 연계 대상이고 ROP 몫은 조회해 작업 모델에 두는 경계로 한정",
+        "f10: ROS 항법 스택의 목표 주행은 로봇 자체 지능·제어 쪽 연계 대상이며 의미 주석을 LLM 도구로 노출하는 구조만 근거로 씀",
+        "f8: Lang2LTL 의 실제 로봇 주행은 로봇 쪽 연계 대상이며 명령을 장소·명세로 접지하는 부분만 씀"
+      ],
+      "budget_used": {
+        "queries": 21,
+        "sources": 16
+      },
+      "limits": "트랙 실행(단계 2), web_fetch_available: true · fetch_mode full. 검색 21회/40, 신규 출처 16건/20(ref-1391~ref-1406, 예약 구간 안), 재사용 6건(ref-504·ref-056 webfetch 재열람, ref-411 github_raw 재열람, ref-413·ref-031·ref-228 미열람 재인용). 질문 선택: target.json 지정 q2-05·q2-06·q2-07(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 3건 중 오래된 순). 답한 질문: q2-05(이름 표현 표준·현장 식별자 형식은 원문, 형식·관리 분담 결론은 이 위키의 종합 low), q2-06(인터페이스 필드·물류 단위 표현은 원문, 단위 선택 결론은 종합 low). q2-07 은 표준 본문을 열지 못해 부분 답으로 두고 answered_question_ids 에서 뺐다. 원문 열기 실패: NIST·폴리미·VDMA LIF PDF(바이너리 추출 실패), gs1.org·GS1 UK(403), 공공데이터포털(ECONNRESET), continua-systems LIF 스키마(403·404). 한국 자료: 국가관심지점정보 별칭 POI(ref-1399, 원문 미열람) 외에 국내 물류 로케이션·SSCC 공식 자료는 한국어 검색 4회에서 찾지 못함. 벤더 문서(ref-1398·ref-1403)는 데이터 구조 서술만 써서 vendor_claim 대상 아님. 교차 규칙: 채팅 지시의 장소 접지(f7·f8·f10·f11)는 C. 채팅 기반 구성·운영의 짝 엔진인 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리와, L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획에 함께 연결하도록 제안. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않음. 후속 질문 2건. 온톨로지 변경 2건 제안(상황 개념 메모 2건, 관계 추가 없음, 작업 요구는 능력 온톨로지 초안과 충돌 확인 전이라 건드리지 않음). 열린 질문 1건(이름 사전의 지도 판 이전 문제는 oq-201·oq-029 와 겹쳐 새로 내지 않음). 정정 요청 없음, 입력 누락 없음, 우선 지정 질문 없음. 페이지 제안: 트랙 산출물 3건(단계 2 페이지, 초안, 아이디어 페이지), 세부영역 반영 제안 4건(갱신 상한과 별도)."
+    },
+    "track": {
+      "slug": "chat-based-configuration-and-operation",
+      "stage": 2,
+      "answered_question_ids": [
+        "q2-05",
+        "q2-06"
+      ],
+      "new_questions": [
+        {
+          "question": "채팅 대화 중 사용자가 장소에 새 별칭을 붙이거나(예: '저쪽 끝 도크를 B 도크라 부르자') 사전에 없는 이름을 쓸 때, 그 별칭을 이름 사전에 반영하는 승인 절차와 적용 범위(개인 대화 한정·현장 공용)를 어떻게 정하며, 여러 장소에 걸리는 이름은 언제 되묻는가? (q2-05 에서 파생) (관련: q4-20, q4-07)",
+          "stage": 4,
+          "rationale_finding_id": "f11"
+        },
+        {
+          "question": "채팅 지시의 대상 화물을 적재 단위(SSCC·취급 단위)로 확정한 뒤 품목 단위를 받는 Open-RMF 배송(sku·수량)과 적재물 id 를 받는 VDA 5050 pick·drop 으로 각각 내보낼 때, 두 단위 사이 변환 규칙과 업무 시스템 조회를 ROP 작업 모델·플릿 어댑터 가운데 어디에 두는가? (q2-06 에서 파생) (관련: q3-08)",
+          "stage": 3,
+          "rationale_finding_id": "f18"
+        }
+      ],
+      "ontology_changes": [
+        {
+          "op": "modify",
+          "kind": "concept",
+          "name": "상황 (Situation) — 장소 표현의 이름 사전 참조",
+          "evidence_finding_ids": [
+            "f1",
+            "f2",
+            "f3",
+            "f5",
+            "f6"
+          ],
+          "description": "상황 개념의 '장소 표현과 그 해석 결과인 공간 노드 참조' 속성에 메모를 더한다: 장소 표현은 이름 사전 항목(선호 이름·대체 이름·숨은 이름을 언어별로 가진 장소 개념, SKOS f1·IMDF f2 방식)을 거쳐 공간 노드 참조와 외부 식별자(Open-RMF 경유점 이름 f3, WMS 저장 빈 좌표 f5, GLN 확장 구성요소 f6)로 이어진다(후보). 이름 사전 자체를 개념으로 둘지, 관리 주체(f12 추정)는 정하지 않고 초안 6절 질문으로 둔다. 기존 속성과 충돌하지 않으며 관계는 더하지 않는다."
+        },
+        {
+          "op": "modify",
+          "kind": "concept",
+          "name": "상황 (Situation) — 대상 표현의 화물 참조",
+          "evidence_finding_ids": [
+            "f13",
+            "f14",
+            "f15",
+            "f16",
+            "f17"
+          ],
+          "description": "상황 개념의 '대상 표현'에 해석 결과 '화물 참조'를 짝으로 두고 식별 단위 값 후보를 메모한다: 품목 단위(Open-RMF payload sku·수량 f14) / 적재 단위(VDA 5050 loadId·loadType f13, GS1 SSCC f15, 취급 단위 f17). 두 단위의 대응은 업무 시스템(WMS 취급 단위, EPCIS 집계 이벤트 f16)에서 가져온다는 점은 추정(f18)이라 정의에 넣지 않는다. 작업 요구 개념(능력 온톨로지 초안과 같은 개념)은 바꾸지 않으므로 이전 실행에서 거부된 작업 요구 적재물 속성 제안과 충돌하지 않는다."
+        }
+      ],
+      "stage_completion_self_assessment": {
+        "met": false,
+        "missing": [
+          "업무 분해·배정 설계 초안 개념 목록 표에 작업 요구 적재물 속성·업무 완료 조건 미확정",
+          "q2-07 부분 답(IEEE 1872.1-2024 본문 미열람)으로 단계 2 열린 질문 남음",
+          "q2-05·q2-06 답과 아이디어 페이지 4절 반영은 검증 승인 전"
+        ]
+      }
+    }
+  },
+  "ttft_ms": 12957,
+  "type": "result",
+  "duration_ms": 744435,
+  "uuid": "6bc1f3df-3694-4fb1-b195-77c723bc21ae",
+  "ttft_stream_ms": 2399,
+  "time_to_request_ms": 123,
+  "time_to_request_phases_ms": {
+    "other": 28,
+    "system_prompt": 13,
+    "resume_other": 0,
+    "process_user_input": 12,
+    "input_attachments": 15,
+    "input_hooks": 3,
+    "tool_pool_refresh": 3,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 2,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "model_gates": 1,
+    "tool_schema_build": 8,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 21
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 73,
+  "time_to_request_cpu_ms": 184,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 7,
+    "cpu_ms": 25,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 2400,
+  "time_to_request_from_spawn_ms": 14072678,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791554253334.7932,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 746.4
+}

@@ -738,6 +738,7 @@ nav:
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
     - ECLASS (ECLASS): glossary/eclass.md
+    - GLN 확장 성분 (GLN Extension Component): glossary/gln-extension-component.md
     - HMI 철학 (HMI Philosophy (ISA-TR101.01)): glossary/hmi-philosophy.md
     - I-PASS 인계 프로그램 (I-PASS Handoff Program): glossary/i-pass-handoff-program.md
     - IEC 공통 데이터 사전 (IEC Common Data Dictionary (IEC CDD)): glossary/iec-common-data-dictionary.md
@@ -756,6 +757,7 @@ nav:
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
+    - buildingSMART 데이터 사전 (buildingSMART Data Dictionary (bSDD)): glossary/buildingsmart-data-dictionary.md
     - pass^k 지표 (pass^k): glossary/pass-k.md
     - 가명처리 (Pseudonymisation): glossary/pseudonymisation.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
@@ -764,6 +766,7 @@ nav:
     - 감사 추적 (Audit Trail): glossary/audit-trail.md
     - 개인 배송 장치 (Personal Delivery Device (PDD)): glossary/personal-delivery-device.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
+    - 건물 요소 프록시 (Building Element Proxy (IfcBuildingElementProxy)): glossary/building-element-proxy.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
     - 결정 중심 학습 (Decision-Focused Learning): glossary/decision-focused-learning.md
@@ -813,11 +816,13 @@ nav:
     - 다중 운행 차량 경로 문제 (Multi-Trip Vehicle Routing Problem (MTVRP)): glossary/multi-trip-vehicle-routing-problem.md
     - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
     - 단계적 배포 (Phased Rollout (Staged Rollout)): glossary/phased-rollout.md
+    - 단순 지식 조직 체계 (Simple Knowledge Organization System (SKOS)): glossary/skos.md
     - 대리 모델 (Surrogate Model): glossary/surrogate-model.md
     - 대조적 설명 (Contrastive Explanation): glossary/contrastive-explanation.md
     - 대체 이름 (Alternative Name (IMDF alt_name)): glossary/alternative-name.md
     - 데이터 보유자 (Data Holder (EU Data Act)): glossary/data-holder.md
     - 데이터 출처 추적 (Data Provenance (W3C PROV)): glossary/data-provenance.md
+    - 도메인 이동 (Domain Shift): glossary/domain-shift.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
     - 도어 투 도어 로봇 배송 (Door-to-Door Robot Delivery): glossary/door-to-door-robot-delivery.md
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
@@ -896,6 +901,7 @@ nav:
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용 후 평가 (Post-Occupancy Evaluation (POE)): glossary/post-occupancy-evaluation.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
+    - 사용자 정의 속성 세트 (User-defined Property Set): glossary/user-defined-property-set.md
     - 사이버복원력법 (Cyber Resilience Act (CRA)): glossary/cyber-resilience-act.md
     - 사전 실행 계획 검증 (Pre-execution Plan Verification): glossary/pre-execution-plan-verification.md
     - 사회적 내비게이션 (Social Robot Navigation (Human-aware Navigation)): glossary/social-robot-navigation.md
@@ -990,9 +996,11 @@ nav:
     - 운용 상태 (Operational State (MassRobotics statusReport operationalState)): glossary/operational-state.md
     - 움직임 지도 (Maps of Dynamics (MoD)): glossary/maps-of-dynamics.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
+    - 워크플로 다이어그램 (Workflow Diagram (Open-RMF 상호운용 관심 그룹 제안)): glossary/workflow-diagram.md
     - 원격 조작 (Teleoperation): glossary/teleoperation.md
     - 원격 조작형 소형차 (Remote-controlled Small Vehicle (遠隔操作型小型車)): glossary/remote-controlled-small-vehicle.md
     - 원격 증명 (Remote Attestation): glossary/remote-attestation.md
+    - 원본 설명서 (Original Instructions): glossary/original-instructions.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 웹훅 (Webhook): glossary/webhook.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
@@ -1000,6 +1008,7 @@ nav:
     - 위치추정 품질 점수 (Localization Score (VDA 5050 localizationScore)): glossary/localization-score.md
     - 위험성평가 (Risk Assessment (ISO 12100)): glossary/risk-assessment.md
     - 유사 변환 (Similarity Transformation): glossary/similarity-transformation.md
+    - 유한 트레이스 선형 시간 논리 (Linear Temporal Logic on Finite Traces (LTLf)): glossary/linear-temporal-logic-on-finite-traces.md
     - 윤리적 블랙박스 (Ethical Black Box (EBB)): glossary/ethical-black-box.md
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
@@ -1014,6 +1023,7 @@ nav:
     - 이해관계자 요구사항 명세 (Stakeholder Requirements Specification (StRS)): glossary/stakeholder-requirements-specification.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 인프라 장착 센서 (Infrastructure-mounted Sensing): glossary/infrastructure-mounted-sensing.md
+    - 일반화 보로노이 그래프 (Generalized Voronoi Graph (GVG)): glossary/generalized-voronoi-graph.md
     - 일정 안정성 (Schedule Stability): glossary/schedule-stability.md
     - 자동 사건 기록 (Automatic Recording of Events (Logs, EU AI Act Article 12)): glossary/automatic-recording-of-events.md
     - 자동 시뮬레이션 모델 생성 (Automatic Simulation Model Generation (ASMG)): glossary/automatic-simulation-model-generation.md
@@ -1024,6 +1034,7 @@ nav:
     - 자율 시스템 투명성 수준 (Transparency Level (IEEE 7001-2021)): glossary/transparency-level-ieee-7001.md
     - 자율 실험실 (Self-driving Laboratory (Autonomous Laboratory)): glossary/self-driving-laboratory.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
+    - 작업 의존 그래프 (Task Dependency Graph (Dependency DAG)): glossary/task-dependency-graph.md
     - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
     - 잠금·표지 (Lockout/Tagout (LOTO)): glossary/lockout-tagout.md
     - 잠재 실패 (Latent Failure): glossary/latent-failure.md
@@ -1621,22 +1632,95 @@ nav:
     - 'ref-1326 — Moved: Generative AI semantic conventions': references/ref-1326.md
     - ref-1327 — Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems: references/ref-1327.md
     - ref-1328 — A Design Flow based on Docker and Kubernetes for ROS-based Robotic Software Applications: references/ref-1328.md
+    - ref-1329 — Automatic floor plan analysis and recognition: references/ref-1329.md
     - 'ref-133 — Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?': references/ref-133.md
+    - ref-1330 — A deep learning approach to wall recognition in industrial architectural floor plan images: references/ref-1330.md
+    - ? 'ref-1331 — Mitigating Domain Shift in Conditioned Floor Plan Generation: Synthetic Pre-training for Data-Efficient Adaptation'
+      : references/ref-1331.md
+    - ref-1332 — Automated Destination Renewal Process for Location-Based Robot Errands: references/ref-1332.md
     - ref-1333 — ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries: references/ref-1333.md
     - ref-1334 — Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout: references/ref-1334.md
     - ref-1335 — Effects of alarms on control of robot teams: references/ref-1335.md
     - ref-1336 — 마약통합시스템 시행 2개월…병원·약국 다빈도 질문은: references/ref-1336.md
+    - 'ref-1337 — Integrating LLMs and Classical Planning for Pallet Logistics: A Case Study': references/ref-1337.md
+    - 'ref-1338 — Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?': references/ref-1338.md
+    - ? ref-1339 — An Intelligent Warehouse Execution Framework Integrating SAP Extended WarehouseManagement, Large Language Models, SAP Business Technology Platform, and Autonomous Mobile Robots
+      : references/ref-1339.md
     - ref-134 — To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter: references/ref-134.md
+    - ref-1340 — rmf_ros2 — rmf_fleet_adapter/schemas/event_description__sequence.json: references/ref-1340.md
+    - ref-1341 — isaac_mission_dispatch — README: references/ref-1341.md
+    - ref-1342 — isaac_mission_control — README: references/ref-1342.md
+    - ref-1343 — PlanSys2 Design: references/ref-1343.md
+    - ? 'ref-1344 — Nl2Hltl2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Representation'
+      : references/ref-1344.md
+    - ref-1345 — Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications: references/ref-1345.md
+    - ref-1346 — Designing Behavior Trees from Goal-Oriented LTLf Formulas: references/ref-1346.md
+    - ref-1347 — Decentralized Intent-Based Multi-Robot Task Planner with LLM Oracles on Hyperledger Fabric: references/ref-1347.md
+    - 'ref-1348 — Seeing, Saying, Solving: An LLM-to-TL Framework for Cooperative Robots': references/ref-1348.md
+    - 'ref-1349 — Interoperability Interest Group August 01, 2024: Multi-Agent Process Workflows': references/ref-1349.md
     - ref-135 — SCOR Digital Standard — Introduction and Front Matter (SCOR Version 14.0, 2025): references/ref-135.md
+    - 'ref-1350 — Interoperability Interest Group June 5, 2025: Execution of Workflow Diagrams': references/ref-1350.md
+    - ref-1351 — crossflow — README: references/ref-1351.md
+    - ref-1352 — AI 허브 이용정책 (데이터 이용정책): references/ref-1352.md
+    - ref-1353 — CubiCasa5k: references/ref-1353.md
+    - ref-1354 — CubiCasa5k — floortrans/loaders/house.py: references/ref-1354.md
+    - ref-1355 — 경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105: references/ref-1355.md
+    - ref-1356 — IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1356.md
+    - ref-1357 — IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1357.md
+    - ref-1358 — IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1358.md
+    - ref-1359 — IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1359.md
     - ? 'ref-136 — Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector'
       : references/ref-136.md
+    - ? ref-1360 — Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 documentation (IFC4X3_ADD2 development build, 개발 빌드 경로로 이동)
+      : references/ref-1360.md
+    - ref-1361 — Information Delivery Specification (IDS): references/ref-1361.md
+    - ref-1362 — IDS — Documentation/UserManual/README.md: references/ref-1362.md
+    - ref-1363 — IDS — Documentation/UserManual/entity-facet.md: references/ref-1363.md
+    - ref-1364 — IDS — Documentation/UserManual/property-facet.md: references/ref-1364.md
+    - ref-1365 — IDS — Documentation/UserManual/restrictions.md: references/ref-1365.md
+    - ref-1366 — 4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0): references/ref-1366.md
+    - ref-1367 — Import BIM To Indoor Dataset (Indoors): references/ref-1367.md
+    - ref-1368 — IFC Import (Pathfinder How-To): references/ref-1368.md
+    - ref-1369 — CEVA deploys Automated Mobile Robots at its Melbourne site: references/ref-1369.md
     - ref-137 — 물류센터 관리시스템에 로봇 연동…"물류 자동화 새 표준 만든다": references/ref-137.md
+    - ref-1370 — AMR Studio — A simple and intuitive way to set up AMRs: references/ref-1370.md
+    - ref-1371 — Kollmorgen launches NDC Layout Assistant: references/ref-1371.md
+    - ref-1372 — ANT lab configuration software: references/ref-1372.md
+    - ref-1373 — Fulfillment centre deploys AMRs in 12 days: references/ref-1373.md
+    - 'ref-1374 — WAFFLE: Multimodal Floorplan Understanding in the Wild': references/ref-1374.md
+    - ref-1375 — MiR250 HW 2.0 SW 2.x — Product documents: references/ref-1375.md
+    - ref-1376 — MiR1350 Pallet Lift HW 1.0 SW 2.x — Product documents: references/ref-1376.md
+    - ref-1377 — User Manuals (PolyScope X 10.13 landing page): references/ref-1377.md
+    - ref-1378 — Copyright and disclaimers (SW 5.26 manual): references/ref-1378.md
+    - ref-1379 — IndoorNav User Manual — Getting Started: references/ref-1379.md
     - 'ref-138 — KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델': references/ref-138.md
+    - 'ref-1380 — IndoorNav User Manual — Appendix A: IndoorNav ROS 2 API': references/ref-1380.md
+    - ref-1381 — OutdoorNav User Manual 1.0.0 — API Overview: references/ref-1381.md
+    - ref-1382 — Download center: references/ref-1382.md
+    - ref-1383 — Spot SDK Release Notes: references/ref-1383.md
+    - ref-1384 — Doosan Robotics User Manual 3.2.1 — Manipulator (M/H Series): references/ref-1384.md
+    - ref-1385 — 두산로보틱스 사용자 매뉴얼 3.2.1 — M1013: references/ref-1385.md
+    - ref-1386 — Directive 2006/42/EC on machinery — Annex I: references/ref-1386.md
+    - 'ref-1387 — MMLongBench-Doc: Benchmarking Long-context Document Understanding with Visualizations': references/ref-1387.md
+    - 'ref-1388 — Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications': references/ref-1388.md
+    - 'ref-1389 — Agri-Query: A Case Study on RAG vs. Long-Context LLMs for Cross-Lingual Technical Question Answering': references/ref-1389.md
     - ? 'ref-139 — ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions'
       : references/ref-139.md
+    - ? 'ref-1390 — A Multimodal Manufacturing Safety Chatbot: Knowledge Base Design, Benchmark Development, and Evaluation of Multiple RAG Approaches'
+      : references/ref-1390.md
+    - ref-1391 — EPCIS — JSON-Schema/schemas/AggregationEvent-JSON-Schema.json: references/ref-1391.md
+    - ref-1392 — Indoor Mapping Data Format (IMDF) 1.0.0 — Unit: references/ref-1392.md
+    - ref-1393 — SKOS Simple Knowledge Organization System Reference: references/ref-1393.md
+    - ref-1394 — Logistic units: references/ref-1394.md
+    - ref-1395 — Towards a Robot Task Ontology Standard: references/ref-1395.md
+    - ? ref-1396 — Multi-Robot Task Planning for Multi-Object Retrieval Tasks with Distributed On-Site Knowledge via Large Language Models
+      : references/ref-1396.md
+    - ref-1397 — GLN extension component: references/ref-1397.md
     - 'ref-140 — SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment': references/ref-140.md
     - ref-141 — WERC DC Measures Survey - 2025: references/ref-141.md
     - 'ref-142 — Overall Equipment Effectiveness: consistency of ISO standard with literature': references/ref-142.md
+    - 'ref-1421 — Live semantic data from building digital twins for robot navigation: Overview of data transfer methods': references/ref-1421.md
+    - ref-1422 — RGo Robotics introduces AI-powered Intelligent Mapping system: references/ref-1422.md
     - ref-143 — Little’s Law – A Practical Approach to Understanding Production System Performance: references/ref-143.md
     - 'ref-144 — Robotized and Automated Warehouse Systems: Review and Recent Developments': references/ref-144.md
     - ref-145 — Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers: references/ref-145.md

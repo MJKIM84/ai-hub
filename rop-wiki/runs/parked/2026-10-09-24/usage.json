@@ -1,0 +1,104 @@
+{
+  "calls": [
+    {
+      "step": "research",
+      "role": "researcher",
+      "attempt": 1,
+      "input_tokens": 54,
+      "cache_creation_input_tokens": 491596,
+      "cache_read_input_tokens": 14166907,
+      "output_tokens": 45947,
+      "cost_usd": 8.0969,
+      "seconds": 697.0,
+      "num_turns": 47,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-5-5"
+      ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 464723,
+      "cache_read_input_tokens": 2261751,
+      "output_tokens": 29250,
+      "cost_usd": 4.8168,
+      "seconds": 343.9,
+      "num_turns": 21,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 957990,
+      "cache_read_input_tokens": 631332,
+      "output_tokens": 235745,
+      "cost_usd": 12.5051,
+      "seconds": 1693.9,
+      "num_turns": 4,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 769101,
+      "cache_read_input_tokens": 88794,
+      "output_tokens": 16265,
+      "cost_usd": 6.4959,
+      "seconds": 155.9,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 708197,
+      "cache_read_input_tokens": 143764,
+      "output_tokens": 132098,
+      "cost_usd": 8.6847,
+      "seconds": 956.0,
+      "num_turns": 4,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-retry1-schema-retry",
+      "role": "storyteller",
+      "attempt": 2,
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 709617,
+      "cache_read_input_tokens": 143764,
+      "output_tokens": 133681,
+      "cost_usd": 11.376,
+      "seconds": 991.1,
+      "num_turns": 4,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 80,
+    "cache_creation_input_tokens": 4101224,
+    "cache_read_input_tokens": 17436312,
+    "output_tokens": 592986,
+    "cost_usd": 51.9754,
+    "calls": 6
+  }
+}

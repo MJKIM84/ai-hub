@@ -1,0 +1,923 @@
+{
+  "duration_api_ms": 736382,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 8.096935199999997,
+  "usage": {
+    "input_tokens": 54,
+    "cache_creation_input_tokens": 491596,
+    "cache_read_input_tokens": 14166907,
+    "output_tokens": 45947,
+    "output_tokens_details": {
+      "thinking_tokens": 16768
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 491596,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 29228,
+        "cache_read_input_tokens": 571421,
+        "cache_creation_input_tokens": 3808,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3808
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 54,
+      "outputTokens": 45947,
+      "cacheReadInputTokens": 14166907,
+      "cacheCreationInputTokens": 491596,
+      "webSearchRequests": 0,
+      "costUSD": 7.685305399999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 16768,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 693518,
+      "outputTokens": 64556,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 31,
+      "costUSD": 0.41162979999999993,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 28165,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 47,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-24\",\"date\":\"2026-10-09\",\"run_type\":\"track\",\"target\":{\"area_no\":14,\"area_name\":\"14. 도면·BIM에서 지도 만들기\",\"category\":\"D. 공간·지도 모델\"},\"gaps\":[\"되돌아온 단계 1 질문 q1-08 조사 중(실행 2026-10-09-21 부분 답), 단계 2 질문 q2-04·q2-06 열림 — target.json 지정(사용자 지정 0건, 되돌아온 질문 1건, 현재 단계 열린 질문 6건 중 오래된 순)\",\"단계 2 페이지 2절 표에서 q2-04·q2-06 미답, 3절에 두 질문의 소제목 없음\",\"단계 2 페이지 q2-02 비교표의 래스터 열 '엘리베이터: 공개 데이터셋 라벨 미확인(추정)' 칸과 CubiCasa5K 계단 라벨 서술이 클래스 목록 원문으로 확인되지 않음\",\"공간 그래프 스키마 초안 6절: 로봇 충전소가 IFC 4.3 유형 값에 없을 때의 BIM 표현 방식(q2-06) 미해결\",\"단계 2 완료 조건: 관계(엣지) 쪽 표준 대응이 스키마 초안에 없음 — 이번 실행 밖\",\"14. 도면·BIM에서 지도 만들기 섹션 7. 관련 표준·프레임워크·오픈소스 — IDS·사용자 정의 속성 세트 같은 BIM 납품 요구 수단 없음, 섹션 11 oq-197 미해결\"],\"research_questions\":[\"이미 있는 도면과 건물 모델에서 로봇이 쓸 지도를 얼마나 자동으로 만들 수 있는가? [분류원문]\",\"q2-04 AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가?\",\"q2-06 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가?\",\"q1-08 국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가?\",\"IFC 4.3 의 프록시 요소·USERDEFINED·속성 세트 명명 규칙과 IDS 의 패싯은 표준 밖 운영 시설을 납품 요구로 기술하는 데 무엇을 제공하는가? (단계 2 페이지 3절, 14. 도면·BIM에서 지도 만들기 섹션 7 겨냥)\",\"AI Hub 라벨에 충전 위치 같은 로봇 운영 클래스가 있는가, 학습 모델의 상업적 이용과 데이터 재배포는 어떻게 제한되는가? (oq-197, 섹션 11 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"AI Hub 건축 도면 데이터의 라벨은 구조 8종(여닫이문·미닫이문·기타문, 여닫이창·미닫이창·기타창, 철근콘크리트벽·기타벽), 공간 12종(거실·침실·주방·현관·발코니·화장실·실외기룸·드레스룸·기타·엘리베이터홀·계단실·엘리베이터), 객체 5종(변기·세면대·싱크대·욕조·가스레인지)이며, 계단은 별도 클래스 없이 계단실에 포함되고 충전 위치 같은 로봇 운영 클래스는 없다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1012\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"데이터셋 소개 페이지 라벨 목록: 공간 클래스에 '엘리베이터홀, 계단실, 엘리베이터'가 있고 객체 클래스는 변기·세면대·싱크대·욕조·가스레인지 5종뿐(2026-10-09 열람).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"AI Hub 건축 도면 데이터 소개 페이지는 '내국인만 데이터 신청이 가능'하고 다운로드 승인이 필요하다고 적지만, 상업적 이용 허용 여부나 라이선스는 페이지 본문에 명시하지 않고 하단 이용약관 링크만 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1012\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"내국인만 데이터 신청이 가능합니다.\\\" 다운로드 승인 뒤 API 다운로드 이용 가능. 상업적 이용·라이선스 문구 없음(2026-10-09 열람).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"공공데이터포털에 등록된 고양시의 AI 학습용 샘플 데이터 페이지는 AI허브 데이터의 이용 조건을 '학습한 AI 모델·서비스는 자유롭게 배포·활용 가능하고 영리 판매·활용도 제한하지 않으나 AI허브 데이터 사용을 명시해야 하며, NIA·구축기업과 사전 협의한 경우 외에는 데이터를 재가공해 배포하는 행위는 원칙적으로 불가'로 옮겨 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1429\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"'데이터 한계' 항목: AI허브 데이터로 학습한 모델과 서비스는 자유롭게 배포·활용 가능, 영리 판매는 제한하지 않으나 사용 사실 명시, 사전 협의 없는 재가공 배포는 원칙적 불가. AI허브 원 약관이 아니라 2차 기술임.\",\"as_of\":\"2026-06-16\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"바이라인네트워크 기사(2022-09-06)는 NIA 를 출처로 표시한 사진 설명에서 AI허브가 국내 AI 기술 개발을 위한 플랫폼이므로 내려받은 데이터는 국내에서만 활용할 수 있다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1430\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"사진 설명(출처 NIA): \\\"다운로드 받은 데이터는 국내에서만 활용할 수 있다.\\\" 기자 서술이며 NIA 관계자 직접 발언은 아님.\",\"as_of\":\"2022-09-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"q2-04 의 AI Hub 이용 조건은 데이터셋 페이지가 신청 자격(내국인)과 승인 절차만 밝히고, 학습 모델의 영리 활용 허용·출처 표시·재가공 배포 제한은 AI허브 원 약관이 아닌 2차 자료에서만 확인되므로, 상용 ROP 가 이 데이터로 학습한 인식 모델을 쓰는 것은 가능해 보이나 데이터 자체의 가공·재배포와 해외 활용은 제한될 수 있어 원 약관 확인이 필요해 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1012\",\"ref-1429\",\"ref-1430\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"데이터셋 페이지(f2)·공공데이터포털 2차 기술(f3)·2022 기사 사진 설명(f4)의 종합. AI허브 이용약관·이용정책 페이지는 이번 실행에서 연결 오류로 열지 못함.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"CubiCasa5K 데이터셋의 Zenodo 레코드(1.0 판, 2019-03-28 게시)는 라이선스를 Creative Commons Attribution Non Commercial Share Alike 4.0 International(CC BY-NC-SA 4.0)로 표기한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1427\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Zenodo 레코드: Version 1.0, Published March 28, 2019, License cc-by-nc-sa-4.0 (Non Commercial). 공식 GitHub README 에는 라이선스 문구가 없음.\",\"as_of\":\"2019-03-28\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"CubiCasa5K 공식 코드(floortrans/loaders/house.py)는 원 주석 방 범주 목록에 Elevator·StairWell·Stairs 를 두지만, 학습용 매핑(rooms_selected·room_name_map)에서는 Elevator·StairWell 을 일반 방(Room, 값 11)으로 합치고 Stairs 처리 블록은 주석 처리해, 기본 학습 라벨(배경·실외·벽·주방·거실·침실·욕실·현관·난간·수납·차고·기타 방)에는 계단·엘리베이터가 따로 남지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1428\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"room_name_map: \\\"StairWell\\\": \\\"Room\\\", \\\"Elevator\\\": \\\"Room\\\"; rooms_selected 에 Stairs 없음; 코드 '# if \\\"Stairs\\\" in e.getAttribute(\\\"class\\\"):' 블록 주석 처리. 아이콘 목록에도 엘리베이터 없음(master 브랜치, 2026-10-09 열람).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"CubiCasa5K 의 공식 저장소 README 와 arXiv 초록(v1, 2019-04-03 제출)은 5,000장·80개 이상 범주의 다각형 주석이라고만 적고 계단·엘리베이터와 라이선스는 언급하지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-062\",\"ref-063\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"over 80 floorplan object categories\\\", 데이터는 Zenodo 링크로 안내. arXiv 초록에도 stairs·elevator 언급 없음.\",\"as_of\":\"2019-04-03\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"q2-04 에 대해, AI Hub 건축 도면 데이터는 엘리베이터·엘리베이터홀·계단실을 공간 클래스로 두는 반면 CubiCasa5K 는 원 주석에 엘리베이터·계단실·계단 범주가 있어도 공식 학습 라벨에서는 일반 방으로 합치거나 쓰지 않으므로, 두 자료 가운데 승강기·계단 영역을 바로 학습할 수 있는 것은 AI Hub 쪽이고, CubiCasa5K 는 비상업(CC BY-NC-SA 4.0) 조건이라 상용 ROP 에서는 쓸 수 없으며 두 자료 모두 충전 위치 라벨은 없는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1012\",\"ref-1428\",\"ref-1427\",\"ref-1429\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1·f6·f7·f3 종합. AI Hub 계단실·엘리베이터 라벨은 주거(아파트 코어) 도면 기준이며 비주거 승강기·계단 인식에 옮겨지는지는 미확인.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"AI Hub 건축 도면 데이터는 도면 48,033장이 모두 주거 유형(아파트 38,521, 연립다세대 4,859, 단독주택 4,653)이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1012\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"데이터셋 소개 페이지의 건물 유형 분포(1.0 판 2023-07-26). (재인용: 2026-10-09-21)\",\"as_of\":\"2023-07-26\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"IFC 4.3 문서(개발 브랜치)는 IfcBuildingElementProxy 를 미리 정해진 의미 없이 건축 요소와 같은 기능을 하는 프록시로 정의해 참여 응용이 의미 정의를 줄 수 없는 요소에 쓰게 하고, PredefinedType 을 USERDEFINED 로 두면 ObjectType 을 반드시 주게 하며, IFC4.3.0.0 부터는 공간 자리표시·예비 공간 용도로 쓰지 말고 IfcVirtualElement 를 쓰라고 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1432\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"provides the same functionality as subtypes of IfcBuiltElement, but without having a predefined meaning\\\"; USERDEFINED 이면 ObjectType 필수; 공간 자리표시는 IfcVirtualElement 사용(ifc4.3-main 원본, ADD2 와 문구가 다를 수 있음).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f12\",\"claim\":\"IFC 4.3 문서의 IfcTransportElement 도 PredefinedType 이 USERDEFINED 이면 상속받은 ObjectType 을 제공하도록 형식 제약(CorrectPredefinedType)을 두어, 표준 유형 값에 없는 하위 유형은 USERDEFINED 와 ObjectType 문자열로 표현하는 구조임을 보여 준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-213\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Formal Propositions — CorrectPredefinedType: PredefinedType 을 USERDEFINED 로 두면 ObjectType 을 제공해야 함(ifc4.3-main 원본, 입력 원문 텍스트).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"IFC 4.3 문서의 IfcPropertySet 은 'Pset_' 접두어를 명세에 정의된 속성 세트에만 쓰고 명세에 선언되지 않은 사용자 정의 속성 세트는 이름에 'Pset_' 를 넣지 않게 하며, 속성 세트는 IfcRelDefinesByProperties 로 개별 객체에, 유형 객체의 HasPropertySets 로 같은 유형의 모든 객체에 붙인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1431\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Property sets that are not declared as part of the IFC specification shall have a Name value\\\"(Pset_ 접두어 제외). 개별 객체는 IfcRelDefinesByProperties, 유형은 DefinesType 으로 연결(ifc4.3-main 원본).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"IFC 4.3 의 콘센트 유형 열거(IfcOutletTypeEnum)와 전기기기 유형 열거(IfcElectricApplianceTypeEnum)에는 차량·로봇 충전 설비를 뜻하는 값이 없고 USERDEFINED·NOTDEFINED 만 남는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-214\",\"ref-215\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"개발 브랜치 ifc4.3-main 의 두 열거 문서 기준(같은 발행 주체라 독립 교차 확인 아님). (재인용: 2026-09-25-19)\",\"as_of\":\"2026-09-25\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f15\",\"claim\":\"buildingSMART 는 IDS(Information Delivery Specification)를 정보 요구사항을 컴퓨터가 해석할 수 있는 형태로 정의하는 표준으로 소개하며, 2024-06-01 승인된 IDS 1.0 으로 IFC 모델에서 객체·분류·재료·속성·값이 어떻게 전달되어야 하는지를 지정하게 하되 기하 정보는 다루지 않고, bSDD 를 IDS 작성 때 쓸 수 있는 공유 속성 라이브러리로 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1433\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"A user of IDS can specify how objects, classifications, materials, properties, and even values should be delivered\\\"; 1.0 승인 2024-06-01; \\\"doesn't cover geometrical aspects\\\".\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"IDS 사용자 매뉴얼은 명세를 적용 대상(applicability)과 요구(requirements) 두 부분으로 나누고 둘 다 Entity·Attribute·Classification·Property·Material·PartOf 패싯으로 구성하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1434\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"적용 대상은 \\\"describing what elements are subject to this specification\\\", 요구는 그 요소가 가져야(또는 가지지 말아야) 할 항목. 패싯별 값 제한 문법은 별도 문서(미열람).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f17\",\"claim\":\"뉴질랜드 Masterspec 의 Open BIM Object standard(OBOS) V1.0 은 IFC4 Add2 에 맞는 IfcElementType 이 없는 객체를 IfcExportAs 를 IfcBuildingElementProxy 로, IfcExportType 을 USERDEFINED 로 내보내고 객체 유형을 설명하는 이름을 'ElementType' 속성에 넣도록 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1435\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"4.3.3 IFC proxy object designation: \\\"the 'IfcExportAs' property shall be completed with 'IfcBuildingElementProxy'\\\", IfcExportType=USERDEFINED, 추가 속성 ElementType 에 설명적 이름. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"KIT 의 Sartorius·von Both 는 eCAADe 2025 예고 논문(JuBot 프로젝트, 고령자 주거의 보조 휴머노이드 로봇)에서 로봇 안내용 IFC 4.3 스키마의 공백을 문짝·문틀·손잡이 객체로 보이고 확장을 제안했으며, 주거 설비용 새 속성 세트(가구의 이동성 지수 포함)를 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1436\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약 기준: 'gaps in the current IFC 4.3 schema are revealed', 문 패널·문틀·손잡이 확장, 가구 mobility index 를 담은 새 속성 세트 제안. 논문 제목·본문 미확인(PDF 텍스트 추출 실패).\",\"as_of\":\"2025\",\"site_type\":\"가정\",\"flow_item\":\"작업 대상\",\"source_unopened\":true},{\"id\":\"f19\",\"claim\":\"Pauwels 외(Advanced Engineering Informatics 56, 2023-04)는 BIM 모델에서 로컬 저장소(디지털 트윈)를 거쳐 로봇으로 가는 RDF·JSON 데이터 흐름을 만들어 대학 건물에서 BIM 기반 주행을 시험했고, 건물 데이터 모델을 더 신뢰할 수 있게 표준화하려면 모델링 가이드라인과 로봇 세계 모델이 필요하다고 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1437\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Data flows are built from BIM model to local repository and further to the robot\\\"; 시험 장소 university building; 향후 과제로 modelling guidelines·robot world model 제시(초록 기준).\",\"as_of\":\"2023-04\",\"site_type\":\"기타\",\"flow_item\":\"작업 대상\"},{\"id\":\"f20\",\"claim\":\"q2-06 에 대해 확인한 규칙을 종합하면, IFC 4.3 유형 값에 없는 로봇 충전소·작업 스테이션은 관련 엔터티나 IfcBuildingElementProxy 의 PredefinedType USERDEFINED 와 ObjectType 값으로 유형을 나타내고 'Pset_' 접두어가 없는 프로젝트 속성 세트에 접근 지점·도킹 이름 같은 운영 속성을 담는 방식이 표준이 허용하는 경로로 보이며, 이를 IDS 의 Entity·Attribute·Property 패싯으로 납품 요구로 적어 검사할 수 있을 것으로 보이나, 로봇 충전소·작업 스테이션용 공개 IDS·속성 세트 관례나 실제 사례는 이번 검색 범위에서 찾지 못했다(부재 확인 아님).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1432\",\"ref-213\",\"ref-1431\",\"ref-214\",\"ref-1433\",\"ref-1434\",\"ref-1435\",\"ref-1436\",\"ref-1437\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f11~f19 의 이 위키 종합. 충전소 관련 검색 4회(영어 3·한국어 1)에서 IDS·속성 세트·bSDD 분류 사례 없음. 연구는 확장 제안(f18)과 가이드라인 필요성(f19)에 머묾.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"연계 대상: Robotics 24/7 기사(2025-03-12)는 AMR 현장 설정(commissioning)이 흔히 수개월의 수작업이 드는 병목이라고 서술하고, RGo Robotics 가 3D 비전 기반 지능형 지도 작성으로 현장 설정을 수개월이 아니라 며칠 안에 끝낼 수 있다고 밝혔다고 전하나, 도면(CAD) 사용 언급은 없다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1438\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: \\\"transition site commissioning into an automatic process that can be completed in days rather than months\\\"(RGo said). 수개월 병목 문장은 출처 표시 없는 기자 서술.\",\"as_of\":\"2025-03-12\",\"site_type\":null,\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f22\",\"claim\":\"q1-08 에 대해 이번 실행의 추가 검색(한국어 8회·영어 2회, 한국로봇산업진흥원 실증·도입 가이드·KCI 사례 대상 포함)에서도 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 시간을 단계별로 공개한 공공·학술 자료를 찾지 못했고(부재 확인 아님), 새로 확인한 것은 해외 업체의 현장 설정 기간 단축 주장뿐이라 q1-08 은 여전히 부분적으로만 답할 수 있는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1438\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 결과는 실증 사업 전체 통계·PoC 일정·업체 보도뿐이고 단계별 시간 없음. 앞 실행의 국내 근거는 대학 건물 자율 다층 지도 27분 1건(재인용: 2026-10-09-21).\",\"as_of\":\"2026-10-09\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\"}],\"sources\":[{\"id\":\"ref-1012\",\"org\":\"AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주)\",\"title\":\"건축 도면 데이터\",\"published\":\"2023-07-26\",\"url\":\"https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"AI Hub 의 주거 건축 도면 48,033장 데이터셋 소개 페이지. 이번에 구조 8·공간 12·객체 5 클래스 이름과 신청 자격(내국인)·승인 절차를 원문으로 확인했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465\"},{\"id\":\"ref-213\",\"org\":\"buildingSMART (IFC4.3.x-development GitHub)\",\"title\":\"IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"엘리베이터·에스컬레이터 등 운송 요소 엔터티 정의와 USERDEFINED 시 ObjectType 제약.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-214\",\"org\":\"buildingSMART (IFC4.3.x-development GitHub)\",\"title\":\"IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcOutletTypeEnum.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 콘센트 유형 열거. 차량·로봇 충전 설비 값이 없다는 이전 실행 확인을 재인용.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-062\",\"org\":\"CubiCasa (Kalervo, A. 외)\",\"title\":\"CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis)\",\"published\":null,\"url\":\"https://github.com/CubiCasa/CubiCasa5k\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"CubiCasa5K 공식 저장소 README. 80개 이상 범주 주석과 Zenodo 내려받기 안내만 있고 라이선스·클래스 목록은 없다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/CubiCasa/CubiCasa5k/master/README.md\"},{\"id\":\"ref-063\",\"org\":\"Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.\",\"title\":\"CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis\",\"published\":\"2019-04\",\"url\":\"https://arxiv.org/abs/1904.01920\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"5,000장 평면도 데이터셋과 다중 작업 모델 논문. 이번에 초록을 열어 계단·엘리베이터 언급이 없음을 확인했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/1904.01920\"},{\"id\":\"ref-1427\",\"org\":\"Zenodo (CubiCasa)\",\"title\":\"CubiCasa5k\",\"published\":\"2019-03-28\",\"url\":\"https://zenodo.org/record/2613548\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"CubiCasa5K 데이터셋의 공식 배포 레코드(1.0 판). 라이선스를 CC BY-NC-SA 4.0 으로 표기한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://zenodo.org/record/2613548\"},{\"id\":\"ref-1428\",\"org\":\"CubiCasa (CubiCasa/CubiCasa5k GitHub)\",\"title\":\"CubiCasa5k — floortrans/loaders/house.py\",\"published\":null,\"url\":\"https://github.com/CubiCasa/CubiCasa5k/blob/master/floortrans/loaders/house.py\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"CubiCasa5K 주석 로더 코드. 원 방·아이콘 범주 목록과 학습용 클래스 매핑을 정의하며, 엘리베이터·계단실을 일반 방으로 합치고 계단 처리를 주석 처리한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/CubiCasa/CubiCasa5k/master/floortrans/loaders/house.py\"},{\"id\":\"ref-1429\",\"org\":\"경기도 고양시(공공데이터포털)\",\"title\":\"경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105\",\"published\":\"2025-08-16\",\"url\":\"https://www.data.go.kr/data/15146382/fileData.do\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"AI허브 데이터에서 만든 샘플 파일 데이터 페이지. '데이터 한계' 항목에 AI허브 데이터의 학습 모델 영리 활용·출처 표시·재가공 배포 제한 조건을 옮겨 적었다(AI허브 원 약관 아님).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.data.go.kr/data/15146382/fileData.do\"},{\"id\":\"ref-1430\",\"org\":\"바이라인네트워크(이진호)\",\"title\":\"모을 수 있는 데이터는 다있다…11억건 넘는 데이터 나눠주는 ‘AI 허브’\",\"published\":\"2022-09-06\",\"url\":\"https://byline.network/2022/09/0905_03/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"AI허브 소개 기사. NIA 를 출처로 한 사진 설명에서 내려받은 데이터는 국내에서만 활용할 수 있다고 적는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://byline.network/2022/09/0905_03/\"},{\"id\":\"ref-1431\",\"org\":\"buildingSMART (IFC4.3.x-development GitHub)\",\"title\":\"IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"속성 세트 엔터티 정의. 'Pset_' 접두어는 명세 정의 세트에만 쓰고 사용자 정의 세트는 접두어 없이 이름 짓는 규칙과 객체·유형 연결 관계를 담는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md\"},{\"id\":\"ref-1432\",\"org\":\"buildingSMART (IFC4.3.x-development GitHub)\",\"title\":\"IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"의미가 정해지지 않은 건축 요소용 프록시 엔터티 정의. USERDEFINED 시 ObjectType 필수, 공간 자리표시에는 IfcVirtualElement 사용 규칙.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md\"},{\"id\":\"ref-1433\",\"org\":\"buildingSMART International\",\"title\":\"Information Delivery Specification (IDS)\",\"published\":null,\"url\":\"https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"IDS 공식 소개 페이지. 2024-06-01 승인된 1.0 판, IFC 모델의 객체·분류·재료·속성·값 전달 요구를 기계 해석 가능하게 정의하고 기하는 다루지 않으며 bSDD 를 공유 속성 라이브러리로 활용한다고 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/\"},{\"id\":\"ref-1434\",\"org\":\"buildingSMART (buildingSMART/IDS GitHub)\",\"title\":\"IDS — Documentation/UserManual/README.md\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/README.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"IDS 사용자 매뉴얼 첫 페이지. 명세를 적용 대상과 요구로 나누고 Entity·Attribute·Classification·Property·Material·PartOf 패싯으로 구성한다고 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/buildingSMART/IDS/development/Documentation/UserManual/README.md\"},{\"id\":\"ref-1435\",\"org\":\"Construction Information Limited (Masterspec, 뉴질랜드)\",\"title\":\"4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0)\",\"published\":null,\"url\":\"https://masterspec.co.nz/43-IFC-Properties/7266/\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"뉴질랜드 BIM 객체 표준의 IFC 속성 절. 적합한 IFC 유형이 없는 객체를 IfcBuildingElementProxy·USERDEFINED 로 내보내고 ElementType 속성에 설명적 이름을 넣도록 정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://masterspec.co.nz/43-IFC-Properties/7266/\"},{\"id\":\"ref-1436\",\"org\":\"Sartorius, M. P., & von Both, P. (KIT, eCAADe 2025)\",\"title\":\"eCAADe 2025 preprint ecaade2025_535 (JuBot 프로젝트 논문, 원문 제목 미확인)\",\"published\":\"2025\",\"url\":\"https://conf.dap.tuwien.ac.at/preprints/ecaade2025/ecaade2025_535.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 고령자 주거의 보조 휴머노이드 로봇을 위해 IFC 4.3 스키마의 공백을 문 객체로 보이고 주거 설비 속성 세트(가구 이동성 지수 포함)를 제안한 예고 논문(검색 요약 기준, PDF 텍스트 추출 실패).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-1437\",\"org\":\"Pauwels, P., de Koning, R., Hendrikx, B., & Torta, E. (Advanced Engineering Informatics 56, 101959)\",\"title\":\"Live semantic data from building digital twins for robot navigation: Overview of data transfer methods\",\"published\":\"2023-04\",\"url\":\"https://research.tue.nl/en/publications/live-semantic-data-from-building-digital-twins-for-robot-navigati/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"BIM 에서 디지털 트윈을 거쳐 로봇으로 가는 데이터 흐름을 대학 건물에서 시험하고 건물 데이터 모델의 모델링 가이드라인 필요성을 제시한 논문(TU/e 저장소 초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://research.tue.nl/en/publications/live-semantic-data-from-building-digital-twins-for-robot-navigati/\"},{\"id\":\"ref-1438\",\"org\":\"Robotics 24/7\",\"title\":\"RGo Robotics introduces AI-powered Intelligent Mapping system\",\"published\":\"2025-03-12\",\"url\":\"https://www.robotics247.com/article/rgo-robotics-introduces-ai-powered-intelligent-mapping-system\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"RGo Robotics 의 3D 비전 기반 지능형 지도 작성 시스템 소개 기사. AMR 현장 설정 기간을 수개월에서 며칠로 줄인다는 회사 주장과 업계 병목 서술을 담는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.robotics247.com/article/rgo-robotics-introduces-ai-powered-intelligent-mapping-system\"},{\"id\":\"ref-215\",\"org\":\"buildingSMART (IFC4.3.x-development GitHub)\",\"title\":\"IFC 4.3 — IfcElectricApplianceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)\",\"published\":null,\"url\":\"https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricApplianceTypeEnum.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 전기기기 유형 열거. 차량·로봇 충전 설비 값이 없다는 이전 실행 확인을 재인용.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/tracks/floorplan-recognition/stage-2-data-and-standards.md\",\"sections\":[\"2\",\"3\",\"4\",\"5\",\"6\",\"8\",\"9\"],\"rationale\":\"q2-04 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10 (신뢰도 medium) / q2-06 답: f11·f12·f13·f14·f15·f16·f17·f18·f19·f20 (신뢰도 low) / q1-08 부분 답: f21·f22 — 2절 q2-04·q2-06 답함, 3절 소제목 신설({#q2-04}: AI Hub 라벨 25종과 신청 자격 f1·f2·f10, 이용 조건 2차 근거 f3·f4·종합 f5, CubiCasa5K 라이선스·코드상 클래스 매핑 f6·f7·f8, 종합 f9 / {#q2-06}: IFC 프록시·USERDEFINED·ObjectType 규칙 f11·f12, 사용자 정의 속성 세트 명명 f13, 충전 설비 유형 값 부재 f14 재인용, IDS f15·f16, 실무 관례 f17, 연구 f18·f19, 종합 f20), q2-02 비교표 래스터 열의 엘리베이터·계단 칸은 f1·f7 로 근거 보강 제안(CubiCasa5K 계단 '라벨 있음' 서술은 f7 과 맞지 않아 열린 질문으로), 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건 현황(엣지 쪽 표준 대응 여전히 없음), 8절 출처, 9절 이력. q1-08 은 되돌아온 단계 1 질문이라 본문은 단계 1 페이지 {#q1-08} 소절에 싣고 이 페이지에는 싣지 않는다.\"},{\"action\":\"update\",\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"sections\":[\"2\",\"3\",\"8\",\"9\"],\"rationale\":\"트랙 산출물 갱신: q1-08 부분 답: f21·f22 — 3절 {#q1-08} 소절에 해외 업체의 현장 설정 기간 단축 주장(f21, 벤더 주장·연계 대상)과 이번 추가 검색에서도 국내 단계별 시간 자료를 찾지 못했다는 점(f22) 추가, 2절 q1-08 상태는 조사 중 유지.\"},{\"action\":\"update\",\"path\":\"docs/ideas/floorplan-recognition.md\",\"sections\":[\"4\"],\"rationale\":\"아이디어 페이지 4절: '입력 형식별 정보 항목' 소절에 학습 데이터 라벨·이용 조건(f1·f6·f7·f9, f5 추정), BIM 쪽 '시사점'에 표준 밖 운영 시설의 IFC 표현 경로와 IDS 납품 요구(f11·f13·f15·f16·f17, 종합 f20 추정).\"},{\"action\":\"update\",\"path\":\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\",\"sections\":[\"2\",\"6\"],\"rationale\":\"트랙 산출물 갱신: track.ontology_changes(충전 위치에 'BIM 표현(후보)' 속성)가 승인되면 2절 반영과 초안 v1.3 인상(f11·f12·f13·f14·f17). 미승인 시 6절 '로봇 충전소는 IFC 4.3 유형 값에 없어…' 항목(q2-06)의 근거 보강(f11·f13·f15·f20).\"},{\"action\":\"update\",\"path\":\"docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md\",\"sections\":[\"7\",\"8\",\"11\"],\"rationale\":\"트랙 floorplan-recognition 단계 2 반영 제안 (f1, f6, f7, f11, f13, f15, f20): 7절에 IDS 1.0 과 IFC 프록시·사용자 정의 속성 세트 규칙을 BIM 입력 요구 수단으로, 8절에 AI Hub·CubiCasa5K 의 계단·엘리베이터 라벨과 라이선스, 11절에 oq-197 해결 근거(f1·f10). 반영은 다음 해당 영역 실행에서.\"},{\"action\":\"update\",\"path\":\"docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md\",\"sections\":[\"8\"],\"rationale\":\"트랙 floorplan-recognition 단계 2 반영 제안 (f1, f5, f6, f7, f9): 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용)에 따라 도면 해석 학습 데이터의 클래스 구성(학습용 매핑에서 엘리베이터·계단실이 일반 방으로 합쳐짐)과 이용 조건(비상업·재배포 제한)을 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 연결.\"},{\"action\":\"update\",\"path\":\"docs/categories/integration/interoperability-standards-and-conformance.md\",\"sections\":[\"7\"],\"rationale\":\"트랙 floorplan-recognition 단계 2 반영 제안 (f13, f15, f16, f17): IDS 1.0(2024-06-01 승인)의 패싯 구조와 IFC 사용자 정의 속성 세트 명명 규칙을 BIM 데이터 교환 요구·적합성 검사 수단으로.\"}],\"glossary_candidates\":[{\"term_ko\":\"buildingSMART 데이터 사전\",\"term_en\":\"buildingSMART Data Dictionary (bSDD)\",\"definition\":\"buildingSMART 가 운영하는 분류·속성 정의의 공유 온라인 사전으로, IDS 같은 정보 요구사항을 만들 때 표준화된 용어와 속성을 가져다 쓰는 공유 속성 라이브러리 역할을 한다.\"},{\"term_ko\":\"건물 요소 프록시\",\"term_en\":\"Building Element Proxy (IfcBuildingElementProxy)\",\"definition\":\"미리 정해진 의미 없이 건축 요소와 같은 기능을 하는 IFC 엔터티로, 응용이 의미를 정의할 수 없는 특수 요소를 교환할 때 쓰며 PredefinedType 을 USERDEFINED 로 두면 ObjectType 으로 유형 이름을 적어야 한다.\"},{\"term_ko\":\"사용자 정의 속성 세트\",\"term_en\":\"User-defined Property Set\",\"definition\":\"IFC 명세에 선언되지 않은 프로젝트·조직 고유의 속성 묶음으로, 표준 세트에만 쓰는 'Pset_' 접두어 없이 이름을 짓고 IfcRelDefinesByProperties 등으로 객체에 붙인다.\"}],\"open_questions_new\":[\"CubiCasa5K 는 계단을 학습 라벨로 제공하는가? 이전 실행의 검색 요약은 CubiCasa5K 가 계단을 주석한다고 전하지만, 공식 코드는 Stairs 처리 블록을 주석 처리하고 계단실·엘리베이터를 일반 방으로 합친다. 원 SVG 주석에는 계단·엘리베이터가 별도 범주로 남아 있는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해 | 근거: f7 | 종류: 출처 충돌\",\"AI허브 건축 도면 데이터의 원 이용약관은 학습 모델의 상업적 이용, 데이터 재가공·재배포, 해외 활용을 어떻게 규정하며, 공공데이터포털 샘플 페이지가 옮긴 조건과 '국내에서만 활용' 안내가 이 데이터셋에도 그대로 적용되는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 59. 법·규제·보험·라이선스 | 근거: f5 | 종류: 일반\",\"국내 공공건축 BIM 납품 기준(건설산업 BIM 시행지침 등)이나 로봇 친화형 건축물 인증이 로봇 충전 공간·작업 스테이션을 BIM 객체·속성으로 납품하도록 요구하거나 그 IDS·속성 세트를 정한 사례가 있는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 21. 상호운용 표준·적합성 | 근거: f20 | 종류: 일반\"],\"open_questions_resolved\":[\"oq-197\"],\"self_check\":{\"source_count\":18,\"cross_checked_count\":0,\"unverified\":[\"q1-08 부분 답: 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 단계별 소요 시간 공개 자료 여전히 없음(이번 한국어 검색 8회 포함)\",\"AI허브 이용약관·이용정책 원문 미열람(aihub.or.kr 이용정책 페이지 연결 오류), 이용 조건은 공공데이터포털 2차 기술(f3)과 2022 기사 사진 설명(f4) 기준\",\"f18 eCAADe 2025 예고 논문의 원문 제목·본문 미확인(PDF 텍스트 추출 실패, 검색 요약 기준)\",\"IDS 패싯별 값 제한(열거·패턴·범위) 문법과 USERDEFINED·사용자 정의 속성 세트 예시는 원문에서 확인하지 못함\",\"로봇 충전소·작업 스테이션용 공개 IDS·속성 세트·bSDD 분류 사례는 이번 검색 범위에서 찾지 못함(부재 확인 아님)\",\"CubiCasa5K 원 SVG 주석의 계단·엘리베이터 범주 존재 여부와 실제 주석 개수 미확인(코드 기준 관찰)\",\"ref-214·ref-215 는 이번 실행에서 다시 열지 않은 재인용\",\"모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)\"],\"scope_violations\":[\"f21: 3D 비전 기반 지도 작성은 분류 원문 19장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 현장 설정 기간 주장 근거로만 씀(벤더 주장)\",\"f18: 휴머노이드 로봇 주행은 로봇 쪽 기능이며, IFC 4.3 확장 제안 사례로만 씀\"],\"budget_used\":{\"queries\":22,\"sources\":12},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 22회/40, 신규 출처 12건/20(ref-1427~ref-1438, 예약 구간 안), 재사용 6건(ref-1012 webfetch 재열람, ref-213 inbox 원문, ref-062 github raw 재열람, ref-063 arXiv 초록 재열람, ref-214·ref-215 미열람 재인용). 질문 선택: target.json 지정 q1-08(되돌아온 단계 1 질문)·q2-04·q2-06. 답한 질문: q2-04(AI Hub 클래스·신청 조건은 원문, 상업 이용은 2차 근거라 종합 신뢰도 medium), q2-06(IFC·IDS 규칙은 원문, 로봇 운영 시설용 관례·사례는 찾지 못해 종합 신뢰도 low). q1-08 은 새 국내 근거가 없어 부분 답으로 두고 answered_question_ids 에서 뺐다. 원문 열기 실패: aihub.or.kr 첫 URL·이용정책 페이지 ECONNRESET(대체 URL 로 데이터셋 페이지는 열림), eCAADe·koreascience PDF 는 바이너리로 본문 추출 실패, 트위니 인터뷰 기사(바이라인)는 유료 구간에서 끊겨 근거로 쓰지 않음, IJLM 사례 연구(Grover·Ashraf 2024)는 페이지에 도입 기간 서술이 없어 쓰지 않음. 블로그·가이드 사이트의 AMR 단계별 일정 표는 출처 기준 미달로 쓰지 않음. 벤더 근거 f21 은 vendor_claim·추정·'벤더 주장: ' 표시. oq-197 해결 근거: f1·f10(AI Hub 라벨에 충전 위치 같은 로봇 운영 클래스 없음, 도면은 모두 주거 유형). 단계 2 페이지 q2-02 표의 CubiCasa5K 계단 '라벨 있음' 서술은 f7 과 맞지 않아 출처 충돌 열린 질문으로 올림. 한국 자료: AI Hub 데이터셋 페이지(ref-1012), 공공데이터포털(ref-1429), 국내 기사(ref-1430). 교차 규칙: 학습 데이터 근거(f1·f6·f7·f9)는 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 반영 제안. 18. 실시간 세계 상태·데이터 일관성·34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(f19 의 디지털 트윈은 BIM 데이터 저장소 의미로만 인용). 정정 요청 없음. 입력 누락 없음. 후속 질문 2건. 온톨로지 변경 1건 제안(충전 위치 'BIM 표현(후보)' 속성). 페이지 제안: 트랙 산출물 4건(단계 2·단계 1 페이지, 아이디어 페이지, 스키마 초안), 세부영역 반영 제안 3건(갱신 상한과 별도).\"},\"track\":{\"slug\":\"floorplan-recognition\",\"stage\":2,\"answered_question_ids\":[\"q2-04\",\"q2-06\"],\"new_questions\":[{\"question\":\"ROP 가 BIM 납품 요구로 쓸 로봇 운영 시설용 IDS(충전 위치·작업 스테이션을 관련 엔터티나 IfcBuildingElementProxy 의 USERDEFINED 와 ObjectType 값 목록으로 지정하고, 'Pset_' 가 아닌 프로젝트 속성 세트에 접근 자세·도킹 이름·상호작용 노드 속성을 요구하는 형태)를 어떤 항목으로 정의하며, 설계·시공 측이 그 값을 채울 수 있는가, 채울 수 없으면 어느 단계에서 누가 보완하는가? (q2-06 에서 파생)\",\"stage\":3,\"rationale_finding_id\":\"f20\"},{\"question\":\"AI Hub 건축 도면 데이터의 엘리베이터·엘리베이터홀·계단실 라벨(아파트 코어 기준)로 학습한 모델이 물류센터·병원 같은 비주거 도면의 화물용 승강기·계단실을 얼마나 인식하는가, 라벨 정의서는 계단실과 엘리베이터 영역을 어떤 기준으로 그리는가? (q2-04 에서 파생)\",\"stage\":2,\"rationale_finding_id\":\"f1\"}],\"ontology_changes\":[{\"op\":\"modify\",\"kind\":\"concept\",\"name\":\"충전 위치 (Charging Location)\",\"evidence_finding_ids\":[\"f11\",\"f12\",\"f13\",\"f14\",\"f17\"],\"description\":\"속성 'BIM 표현(후보)'을 더한다: IFC 4.3 콘센트·전기기기 유형 열거에 충전 설비 값이 없으므로(f14) 관련 엔터티 또는 IfcBuildingElementProxy 의 PredefinedType USERDEFINED 와 ObjectType 값(f11·f12, 실무 관례 f17), 운영 속성(접근 지점·도킹 이름)은 'Pset_' 접두어가 없는 프로젝트 속성 세트(f13). 작업 스테이션도 같은 후보를 가질 수 있으나 작업 스테이션의 공용 자원 포함 여부(6절 질문)와 엮이므로 이번 제안은 충전 위치에 한정한다. IDS 로 납품 요구를 적는 방식(f20)은 추정이라 정의에 넣지 않고 6절 질문으로 둔다. 기존 속성(위치·수·접근 지점)과 충돌하지 않는다.\"}],\"stage_completion_self_assessment\":{\"met\":false,\"missing\":[\"표준과 대응시킨 관계(엣지) 유형이 공간 그래프 스키마 초안의 관계 목록 표에 없음\",\"q2-04·q2-06 답은 검증 승인 전이며 아이디어 3. 건축 도면 자동 인식 4절에 아직 반영되지 않음\",\"단계 2 열린 질문 q2-07·q2-08·q2-09·q2-10 미답\",\"되돌아온 단계 1 질문 q1-08 부분 답으로 남음\"]}}}",
+  "structured_output": {
+    "run_id": "2026-10-09-24",
+    "date": "2026-10-09",
+    "run_type": "track",
+    "target": {
+      "area_no": 14,
+      "area_name": "14. 도면·BIM에서 지도 만들기",
+      "category": "D. 공간·지도 모델"
+    },
+    "gaps": [
+      "되돌아온 단계 1 질문 q1-08 조사 중(실행 2026-10-09-21 부분 답), 단계 2 질문 q2-04·q2-06 열림 — target.json 지정(사용자 지정 0건, 되돌아온 질문 1건, 현재 단계 열린 질문 6건 중 오래된 순)",
+      "단계 2 페이지 2절 표에서 q2-04·q2-06 미답, 3절에 두 질문의 소제목 없음",
+      "단계 2 페이지 q2-02 비교표의 래스터 열 '엘리베이터: 공개 데이터셋 라벨 미확인(추정)' 칸과 CubiCasa5K 계단 라벨 서술이 클래스 목록 원문으로 확인되지 않음",
+      "공간 그래프 스키마 초안 6절: 로봇 충전소가 IFC 4.3 유형 값에 없을 때의 BIM 표현 방식(q2-06) 미해결",
+      "단계 2 완료 조건: 관계(엣지) 쪽 표준 대응이 스키마 초안에 없음 — 이번 실행 밖",
+      "14. 도면·BIM에서 지도 만들기 섹션 7. 관련 표준·프레임워크·오픈소스 — IDS·사용자 정의 속성 세트 같은 BIM 납품 요구 수단 없음, 섹션 11 oq-197 미해결"
+    ],
+    "research_questions": [
+      "이미 있는 도면과 건물 모델에서 로봇이 쓸 지도를 얼마나 자동으로 만들 수 있는가? [분류원문]",
+      "q2-04 AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가?",
+      "q2-06 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가?",
+      "q1-08 국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가?",
+      "IFC 4.3 의 프록시 요소·USERDEFINED·속성 세트 명명 규칙과 IDS 의 패싯은 표준 밖 운영 시설을 납품 요구로 기술하는 데 무엇을 제공하는가? (단계 2 페이지 3절, 14. 도면·BIM에서 지도 만들기 섹션 7 겨냥)",
+      "AI Hub 라벨에 충전 위치 같은 로봇 운영 클래스가 있는가, 학습 모델의 상업적 이용과 데이터 재배포는 어떻게 제한되는가? (oq-197, 섹션 11 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "AI Hub 건축 도면 데이터의 라벨은 구조 8종(여닫이문·미닫이문·기타문, 여닫이창·미닫이창·기타창, 철근콘크리트벽·기타벽), 공간 12종(거실·침실·주방·현관·발코니·화장실·실외기룸·드레스룸·기타·엘리베이터홀·계단실·엘리베이터), 객체 5종(변기·세면대·싱크대·욕조·가스레인지)이며, 계단은 별도 클래스 없이 계단실에 포함되고 충전 위치 같은 로봇 운영 클래스는 없다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1012"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "데이터셋 소개 페이지 라벨 목록: 공간 클래스에 '엘리베이터홀, 계단실, 엘리베이터'가 있고 객체 클래스는 변기·세면대·싱크대·욕조·가스레인지 5종뿐(2026-10-09 열람).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "AI Hub 건축 도면 데이터 소개 페이지는 '내국인만 데이터 신청이 가능'하고 다운로드 승인이 필요하다고 적지만, 상업적 이용 허용 여부나 라이선스는 페이지 본문에 명시하지 않고 하단 이용약관 링크만 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1012"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"내국인만 데이터 신청이 가능합니다.\" 다운로드 승인 뒤 API 다운로드 이용 가능. 상업적 이용·라이선스 문구 없음(2026-10-09 열람).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "공공데이터포털에 등록된 고양시의 AI 학습용 샘플 데이터 페이지는 AI허브 데이터의 이용 조건을 '학습한 AI 모델·서비스는 자유롭게 배포·활용 가능하고 영리 판매·활용도 제한하지 않으나 AI허브 데이터 사용을 명시해야 하며, NIA·구축기업과 사전 협의한 경우 외에는 데이터를 재가공해 배포하는 행위는 원칙적으로 불가'로 옮겨 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1429"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "'데이터 한계' 항목: AI허브 데이터로 학습한 모델과 서비스는 자유롭게 배포·활용 가능, 영리 판매는 제한하지 않으나 사용 사실 명시, 사전 협의 없는 재가공 배포는 원칙적 불가. AI허브 원 약관이 아니라 2차 기술임.",
+        "as_of": "2026-06-16",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "바이라인네트워크 기사(2022-09-06)는 NIA 를 출처로 표시한 사진 설명에서 AI허브가 국내 AI 기술 개발을 위한 플랫폼이므로 내려받은 데이터는 국내에서만 활용할 수 있다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1430"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "사진 설명(출처 NIA): \"다운로드 받은 데이터는 국내에서만 활용할 수 있다.\" 기자 서술이며 NIA 관계자 직접 발언은 아님.",
+        "as_of": "2022-09-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "q2-04 의 AI Hub 이용 조건은 데이터셋 페이지가 신청 자격(내국인)과 승인 절차만 밝히고, 학습 모델의 영리 활용 허용·출처 표시·재가공 배포 제한은 AI허브 원 약관이 아닌 2차 자료에서만 확인되므로, 상용 ROP 가 이 데이터로 학습한 인식 모델을 쓰는 것은 가능해 보이나 데이터 자체의 가공·재배포와 해외 활용은 제한될 수 있어 원 약관 확인이 필요해 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1012",
+          "ref-1429",
+          "ref-1430"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "데이터셋 페이지(f2)·공공데이터포털 2차 기술(f3)·2022 기사 사진 설명(f4)의 종합. AI허브 이용약관·이용정책 페이지는 이번 실행에서 연결 오류로 열지 못함.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "CubiCasa5K 데이터셋의 Zenodo 레코드(1.0 판, 2019-03-28 게시)는 라이선스를 Creative Commons Attribution Non Commercial Share Alike 4.0 International(CC BY-NC-SA 4.0)로 표기한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1427"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Zenodo 레코드: Version 1.0, Published March 28, 2019, License cc-by-nc-sa-4.0 (Non Commercial). 공식 GitHub README 에는 라이선스 문구가 없음.",
+        "as_of": "2019-03-28",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "CubiCasa5K 공식 코드(floortrans/loaders/house.py)는 원 주석 방 범주 목록에 Elevator·StairWell·Stairs 를 두지만, 학습용 매핑(rooms_selected·room_name_map)에서는 Elevator·StairWell 을 일반 방(Room, 값 11)으로 합치고 Stairs 처리 블록은 주석 처리해, 기본 학습 라벨(배경·실외·벽·주방·거실·침실·욕실·현관·난간·수납·차고·기타 방)에는 계단·엘리베이터가 따로 남지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1428"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "room_name_map: \"StairWell\": \"Room\", \"Elevator\": \"Room\"; rooms_selected 에 Stairs 없음; 코드 '# if \"Stairs\" in e.getAttribute(\"class\"):' 블록 주석 처리. 아이콘 목록에도 엘리베이터 없음(master 브랜치, 2026-10-09 열람).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "CubiCasa5K 의 공식 저장소 README 와 arXiv 초록(v1, 2019-04-03 제출)은 5,000장·80개 이상 범주의 다각형 주석이라고만 적고 계단·엘리베이터와 라이선스는 언급하지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-062",
+          "ref-063"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"over 80 floorplan object categories\", 데이터는 Zenodo 링크로 안내. arXiv 초록에도 stairs·elevator 언급 없음.",
+        "as_of": "2019-04-03",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "q2-04 에 대해, AI Hub 건축 도면 데이터는 엘리베이터·엘리베이터홀·계단실을 공간 클래스로 두는 반면 CubiCasa5K 는 원 주석에 엘리베이터·계단실·계단 범주가 있어도 공식 학습 라벨에서는 일반 방으로 합치거나 쓰지 않으므로, 두 자료 가운데 승강기·계단 영역을 바로 학습할 수 있는 것은 AI Hub 쪽이고, CubiCasa5K 는 비상업(CC BY-NC-SA 4.0) 조건이라 상용 ROP 에서는 쓸 수 없으며 두 자료 모두 충전 위치 라벨은 없는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1012",
+          "ref-1428",
+          "ref-1427",
+          "ref-1429"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1·f6·f7·f3 종합. AI Hub 계단실·엘리베이터 라벨은 주거(아파트 코어) 도면 기준이며 비주거 승강기·계단 인식에 옮겨지는지는 미확인.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "AI Hub 건축 도면 데이터는 도면 48,033장이 모두 주거 유형(아파트 38,521, 연립다세대 4,859, 단독주택 4,653)이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1012"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "데이터셋 소개 페이지의 건물 유형 분포(1.0 판 2023-07-26). (재인용: 2026-10-09-21)",
+        "as_of": "2023-07-26",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "IFC 4.3 문서(개발 브랜치)는 IfcBuildingElementProxy 를 미리 정해진 의미 없이 건축 요소와 같은 기능을 하는 프록시로 정의해 참여 응용이 의미 정의를 줄 수 없는 요소에 쓰게 하고, PredefinedType 을 USERDEFINED 로 두면 ObjectType 을 반드시 주게 하며, IFC4.3.0.0 부터는 공간 자리표시·예비 공간 용도로 쓰지 말고 IfcVirtualElement 를 쓰라고 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1432"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"provides the same functionality as subtypes of IfcBuiltElement, but without having a predefined meaning\"; USERDEFINED 이면 ObjectType 필수; 공간 자리표시는 IfcVirtualElement 사용(ifc4.3-main 원본, ADD2 와 문구가 다를 수 있음).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f12",
+        "claim": "IFC 4.3 문서의 IfcTransportElement 도 PredefinedType 이 USERDEFINED 이면 상속받은 ObjectType 을 제공하도록 형식 제약(CorrectPredefinedType)을 두어, 표준 유형 값에 없는 하위 유형은 USERDEFINED 와 ObjectType 문자열로 표현하는 구조임을 보여 준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-213"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Formal Propositions — CorrectPredefinedType: PredefinedType 을 USERDEFINED 로 두면 ObjectType 을 제공해야 함(ifc4.3-main 원본, 입력 원문 텍스트).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "IFC 4.3 문서의 IfcPropertySet 은 'Pset_' 접두어를 명세에 정의된 속성 세트에만 쓰고 명세에 선언되지 않은 사용자 정의 속성 세트는 이름에 'Pset_' 를 넣지 않게 하며, 속성 세트는 IfcRelDefinesByProperties 로 개별 객체에, 유형 객체의 HasPropertySets 로 같은 유형의 모든 객체에 붙인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1431"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Property sets that are not declared as part of the IFC specification shall have a Name value\"(Pset_ 접두어 제외). 개별 객체는 IfcRelDefinesByProperties, 유형은 DefinesType 으로 연결(ifc4.3-main 원본).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "IFC 4.3 의 콘센트 유형 열거(IfcOutletTypeEnum)와 전기기기 유형 열거(IfcElectricApplianceTypeEnum)에는 차량·로봇 충전 설비를 뜻하는 값이 없고 USERDEFINED·NOTDEFINED 만 남는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-214",
+          "ref-215"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "개발 브랜치 ifc4.3-main 의 두 열거 문서 기준(같은 발행 주체라 독립 교차 확인 아님). (재인용: 2026-09-25-19)",
+        "as_of": "2026-09-25",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f15",
+        "claim": "buildingSMART 는 IDS(Information Delivery Specification)를 정보 요구사항을 컴퓨터가 해석할 수 있는 형태로 정의하는 표준으로 소개하며, 2024-06-01 승인된 IDS 1.0 으로 IFC 모델에서 객체·분류·재료·속성·값이 어떻게 전달되어야 하는지를 지정하게 하되 기하 정보는 다루지 않고, bSDD 를 IDS 작성 때 쓸 수 있는 공유 속성 라이브러리로 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1433"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"A user of IDS can specify how objects, classifications, materials, properties, and even values should be delivered\"; 1.0 승인 2024-06-01; \"doesn't cover geometrical aspects\".",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "IDS 사용자 매뉴얼은 명세를 적용 대상(applicability)과 요구(requirements) 두 부분으로 나누고 둘 다 Entity·Attribute·Classification·Property·Material·PartOf 패싯으로 구성하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1434"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "적용 대상은 \"describing what elements are subject to this specification\", 요구는 그 요소가 가져야(또는 가지지 말아야) 할 항목. 패싯별 값 제한 문법은 별도 문서(미열람).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f17",
+        "claim": "뉴질랜드 Masterspec 의 Open BIM Object standard(OBOS) V1.0 은 IFC4 Add2 에 맞는 IfcElementType 이 없는 객체를 IfcExportAs 를 IfcBuildingElementProxy 로, IfcExportType 을 USERDEFINED 로 내보내고 객체 유형을 설명하는 이름을 'ElementType' 속성에 넣도록 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1435"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "4.3.3 IFC proxy object designation: \"the 'IfcExportAs' property shall be completed with 'IfcBuildingElementProxy'\", IfcExportType=USERDEFINED, 추가 속성 ElementType 에 설명적 이름. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "KIT 의 Sartorius·von Both 는 eCAADe 2025 예고 논문(JuBot 프로젝트, 고령자 주거의 보조 휴머노이드 로봇)에서 로봇 안내용 IFC 4.3 스키마의 공백을 문짝·문틀·손잡이 객체로 보이고 확장을 제안했으며, 주거 설비용 새 속성 세트(가구의 이동성 지수 포함)를 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1436"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약 기준: 'gaps in the current IFC 4.3 schema are revealed', 문 패널·문틀·손잡이 확장, 가구 mobility index 를 담은 새 속성 세트 제안. 논문 제목·본문 미확인(PDF 텍스트 추출 실패).",
+        "as_of": "2025",
+        "site_type": "가정",
+        "flow_item": "작업 대상",
+        "source_unopened": true
+      },
+      {
+        "id": "f19",
+        "claim": "Pauwels 외(Advanced Engineering Informatics 56, 2023-04)는 BIM 모델에서 로컬 저장소(디지털 트윈)를 거쳐 로봇으로 가는 RDF·JSON 데이터 흐름을 만들어 대학 건물에서 BIM 기반 주행을 시험했고, 건물 데이터 모델을 더 신뢰할 수 있게 표준화하려면 모델링 가이드라인과 로봇 세계 모델이 필요하다고 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1437"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Data flows are built from BIM model to local repository and further to the robot\"; 시험 장소 university building; 향후 과제로 modelling guidelines·robot world model 제시(초록 기준).",
+        "as_of": "2023-04",
+        "site_type": "기타",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f20",
+        "claim": "q2-06 에 대해 확인한 규칙을 종합하면, IFC 4.3 유형 값에 없는 로봇 충전소·작업 스테이션은 관련 엔터티나 IfcBuildingElementProxy 의 PredefinedType USERDEFINED 와 ObjectType 값으로 유형을 나타내고 'Pset_' 접두어가 없는 프로젝트 속성 세트에 접근 지점·도킹 이름 같은 운영 속성을 담는 방식이 표준이 허용하는 경로로 보이며, 이를 IDS 의 Entity·Attribute·Property 패싯으로 납품 요구로 적어 검사할 수 있을 것으로 보이나, 로봇 충전소·작업 스테이션용 공개 IDS·속성 세트 관례나 실제 사례는 이번 검색 범위에서 찾지 못했다(부재 확인 아님).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1432",
+          "ref-213",
+          "ref-1431",
+          "ref-214",
+          "ref-1433",
+          "ref-1434",
+          "ref-1435",
+          "ref-1436",
+          "ref-1437"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f11~f19 의 이 위키 종합. 충전소 관련 검색 4회(영어 3·한국어 1)에서 IDS·속성 세트·bSDD 분류 사례 없음. 연구는 확장 제안(f18)과 가이드라인 필요성(f19)에 머묾.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "연계 대상: Robotics 24/7 기사(2025-03-12)는 AMR 현장 설정(commissioning)이 흔히 수개월의 수작업이 드는 병목이라고 서술하고, RGo Robotics 가 3D 비전 기반 지능형 지도 작성으로 현장 설정을 수개월이 아니라 며칠 안에 끝낼 수 있다고 밝혔다고 전하나, 도면(CAD) 사용 언급은 없다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1438"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: \"transition site commissioning into an automatic process that can be completed in days rather than months\"(RGo said). 수개월 병목 문장은 출처 표시 없는 기자 서술.",
+        "as_of": "2025-03-12",
+        "site_type": null,
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f22",
+        "claim": "q1-08 에 대해 이번 실행의 추가 검색(한국어 8회·영어 2회, 한국로봇산업진흥원 실증·도입 가이드·KCI 사례 대상 포함)에서도 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 시간을 단계별로 공개한 공공·학술 자료를 찾지 못했고(부재 확인 아님), 새로 확인한 것은 해외 업체의 현장 설정 기간 단축 주장뿐이라 q1-08 은 여전히 부분적으로만 답할 수 있는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1438"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 결과는 실증 사업 전체 통계·PoC 일정·업체 보도뿐이고 단계별 시간 없음. 앞 실행의 국내 근거는 대학 건물 자율 다층 지도 27분 1건(재인용: 2026-10-09-21).",
+        "as_of": "2026-10-09",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1012",
+        "org": "AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주)",
+        "title": "건축 도면 데이터",
+        "published": "2023-07-26",
+        "url": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "AI Hub 의 주거 건축 도면 48,033장 데이터셋 소개 페이지. 이번에 구조 8·공간 12·객체 5 클래스 이름과 신청 자격(내국인)·승인 절차를 원문으로 확인했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465"
+      },
+      {
+        "id": "ref-213",
+        "org": "buildingSMART (IFC4.3.x-development GitHub)",
+        "title": "IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "엘리베이터·에스컬레이터 등 운송 요소 엔터티 정의와 USERDEFINED 시 ObjectType 제약.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-214",
+        "org": "buildingSMART (IFC4.3.x-development GitHub)",
+        "title": "IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcOutletTypeEnum.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 콘센트 유형 열거. 차량·로봇 충전 설비 값이 없다는 이전 실행 확인을 재인용.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-062",
+        "org": "CubiCasa (Kalervo, A. 외)",
+        "title": "CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis)",
+        "published": null,
+        "url": "https://github.com/CubiCasa/CubiCasa5k",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "CubiCasa5K 공식 저장소 README. 80개 이상 범주 주석과 Zenodo 내려받기 안내만 있고 라이선스·클래스 목록은 없다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/CubiCasa/CubiCasa5k/master/README.md"
+      },
+      {
+        "id": "ref-063",
+        "org": "Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.",
+        "title": "CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis",
+        "published": "2019-04",
+        "url": "https://arxiv.org/abs/1904.01920",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "5,000장 평면도 데이터셋과 다중 작업 모델 논문. 이번에 초록을 열어 계단·엘리베이터 언급이 없음을 확인했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/1904.01920"
+      },
+      {
+        "id": "ref-1427",
+        "org": "Zenodo (CubiCasa)",
+        "title": "CubiCasa5k",
+        "published": "2019-03-28",
+        "url": "https://zenodo.org/record/2613548",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "CubiCasa5K 데이터셋의 공식 배포 레코드(1.0 판). 라이선스를 CC BY-NC-SA 4.0 으로 표기한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://zenodo.org/record/2613548"
+      },
+      {
+        "id": "ref-1428",
+        "org": "CubiCasa (CubiCasa/CubiCasa5k GitHub)",
+        "title": "CubiCasa5k — floortrans/loaders/house.py",
+        "published": null,
+        "url": "https://github.com/CubiCasa/CubiCasa5k/blob/master/floortrans/loaders/house.py",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "CubiCasa5K 주석 로더 코드. 원 방·아이콘 범주 목록과 학습용 클래스 매핑을 정의하며, 엘리베이터·계단실을 일반 방으로 합치고 계단 처리를 주석 처리한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/CubiCasa/CubiCasa5k/master/floortrans/loaders/house.py"
+      },
+      {
+        "id": "ref-1429",
+        "org": "경기도 고양시(공공데이터포털)",
+        "title": "경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105",
+        "published": "2025-08-16",
+        "url": "https://www.data.go.kr/data/15146382/fileData.do",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "AI허브 데이터에서 만든 샘플 파일 데이터 페이지. '데이터 한계' 항목에 AI허브 데이터의 학습 모델 영리 활용·출처 표시·재가공 배포 제한 조건을 옮겨 적었다(AI허브 원 약관 아님).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.data.go.kr/data/15146382/fileData.do"
+      },
+      {
+        "id": "ref-1430",
+        "org": "바이라인네트워크(이진호)",
+        "title": "모을 수 있는 데이터는 다있다…11억건 넘는 데이터 나눠주는 ‘AI 허브’",
+        "published": "2022-09-06",
+        "url": "https://byline.network/2022/09/0905_03/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "AI허브 소개 기사. NIA 를 출처로 한 사진 설명에서 내려받은 데이터는 국내에서만 활용할 수 있다고 적는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://byline.network/2022/09/0905_03/"
+      },
+      {
+        "id": "ref-1431",
+        "org": "buildingSMART (IFC4.3.x-development GitHub)",
+        "title": "IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "속성 세트 엔터티 정의. 'Pset_' 접두어는 명세 정의 세트에만 쓰고 사용자 정의 세트는 접두어 없이 이름 짓는 규칙과 객체·유형 연결 관계를 담는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md"
+      },
+      {
+        "id": "ref-1432",
+        "org": "buildingSMART (IFC4.3.x-development GitHub)",
+        "title": "IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "의미가 정해지지 않은 건축 요소용 프록시 엔터티 정의. USERDEFINED 시 ObjectType 필수, 공간 자리표시에는 IfcVirtualElement 사용 규칙.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md"
+      },
+      {
+        "id": "ref-1433",
+        "org": "buildingSMART International",
+        "title": "Information Delivery Specification (IDS)",
+        "published": null,
+        "url": "https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "IDS 공식 소개 페이지. 2024-06-01 승인된 1.0 판, IFC 모델의 객체·분류·재료·속성·값 전달 요구를 기계 해석 가능하게 정의하고 기하는 다루지 않으며 bSDD 를 공유 속성 라이브러리로 활용한다고 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/"
+      },
+      {
+        "id": "ref-1434",
+        "org": "buildingSMART (buildingSMART/IDS GitHub)",
+        "title": "IDS — Documentation/UserManual/README.md",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/README.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "IDS 사용자 매뉴얼 첫 페이지. 명세를 적용 대상과 요구로 나누고 Entity·Attribute·Classification·Property·Material·PartOf 패싯으로 구성한다고 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/buildingSMART/IDS/development/Documentation/UserManual/README.md"
+      },
+      {
+        "id": "ref-1435",
+        "org": "Construction Information Limited (Masterspec, 뉴질랜드)",
+        "title": "4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0)",
+        "published": null,
+        "url": "https://masterspec.co.nz/43-IFC-Properties/7266/",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "뉴질랜드 BIM 객체 표준의 IFC 속성 절. 적합한 IFC 유형이 없는 객체를 IfcBuildingElementProxy·USERDEFINED 로 내보내고 ElementType 속성에 설명적 이름을 넣도록 정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://masterspec.co.nz/43-IFC-Properties/7266/"
+      },
+      {
+        "id": "ref-1436",
+        "org": "Sartorius, M. P., & von Both, P. (KIT, eCAADe 2025)",
+        "title": "eCAADe 2025 preprint ecaade2025_535 (JuBot 프로젝트 논문, 원문 제목 미확인)",
+        "published": "2025",
+        "url": "https://conf.dap.tuwien.ac.at/preprints/ecaade2025/ecaade2025_535.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 고령자 주거의 보조 휴머노이드 로봇을 위해 IFC 4.3 스키마의 공백을 문 객체로 보이고 주거 설비 속성 세트(가구 이동성 지수 포함)를 제안한 예고 논문(검색 요약 기준, PDF 텍스트 추출 실패).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1437",
+        "org": "Pauwels, P., de Koning, R., Hendrikx, B., & Torta, E. (Advanced Engineering Informatics 56, 101959)",
+        "title": "Live semantic data from building digital twins for robot navigation: Overview of data transfer methods",
+        "published": "2023-04",
+        "url": "https://research.tue.nl/en/publications/live-semantic-data-from-building-digital-twins-for-robot-navigati/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "BIM 에서 디지털 트윈을 거쳐 로봇으로 가는 데이터 흐름을 대학 건물에서 시험하고 건물 데이터 모델의 모델링 가이드라인 필요성을 제시한 논문(TU/e 저장소 초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://research.tue.nl/en/publications/live-semantic-data-from-building-digital-twins-for-robot-navigati/"
+      },
+      {
+        "id": "ref-1438",
+        "org": "Robotics 24/7",
+        "title": "RGo Robotics introduces AI-powered Intelligent Mapping system",
+        "published": "2025-03-12",
+        "url": "https://www.robotics247.com/article/rgo-robotics-introduces-ai-powered-intelligent-mapping-system",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "RGo Robotics 의 3D 비전 기반 지능형 지도 작성 시스템 소개 기사. AMR 현장 설정 기간을 수개월에서 며칠로 줄인다는 회사 주장과 업계 병목 서술을 담는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.robotics247.com/article/rgo-robotics-introduces-ai-powered-intelligent-mapping-system"
+      },
+      {
+        "id": "ref-215",
+        "org": "buildingSMART (IFC4.3.x-development GitHub)",
+        "title": "IFC 4.3 — IfcElectricApplianceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
+        "published": null,
+        "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricApplianceTypeEnum.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 전기기기 유형 열거. 차량·로봇 충전 설비 값이 없다는 이전 실행 확인을 재인용.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/tracks/floorplan-recognition/stage-2-data-and-standards.md",
+        "sections": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "rationale": "q2-04 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10 (신뢰도 medium) / q2-06 답: f11·f12·f13·f14·f15·f16·f17·f18·f19·f20 (신뢰도 low) / q1-08 부분 답: f21·f22 — 2절 q2-04·q2-06 답함, 3절 소제목 신설({#q2-04}: AI Hub 라벨 25종과 신청 자격 f1·f2·f10, 이용 조건 2차 근거 f3·f4·종합 f5, CubiCasa5K 라이선스·코드상 클래스 매핑 f6·f7·f8, 종합 f9 / {#q2-06}: IFC 프록시·USERDEFINED·ObjectType 규칙 f11·f12, 사용자 정의 속성 세트 명명 f13, 충전 설비 유형 값 부재 f14 재인용, IDS f15·f16, 실무 관례 f17, 연구 f18·f19, 종합 f20), q2-02 비교표 래스터 열의 엘리베이터·계단 칸은 f1·f7 로 근거 보강 제안(CubiCasa5K 계단 '라벨 있음' 서술은 f7 과 맞지 않아 열린 질문으로), 4절 결론·불확실성, 5절 후속 질문, 6절 완료 조건 현황(엣지 쪽 표준 대응 여전히 없음), 8절 출처, 9절 이력. q1-08 은 되돌아온 단계 1 질문이라 본문은 단계 1 페이지 {#q1-08} 소절에 싣고 이 페이지에는 싣지 않는다."
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "sections": [
+          "2",
+          "3",
+          "8",
+          "9"
+        ],
+        "rationale": "트랙 산출물 갱신: q1-08 부분 답: f21·f22 — 3절 {#q1-08} 소절에 해외 업체의 현장 설정 기간 단축 주장(f21, 벤더 주장·연계 대상)과 이번 추가 검색에서도 국내 단계별 시간 자료를 찾지 못했다는 점(f22) 추가, 2절 q1-08 상태는 조사 중 유지."
+      },
+      {
+        "action": "update",
+        "path": "docs/ideas/floorplan-recognition.md",
+        "sections": [
+          "4"
+        ],
+        "rationale": "아이디어 페이지 4절: '입력 형식별 정보 항목' 소절에 학습 데이터 라벨·이용 조건(f1·f6·f7·f9, f5 추정), BIM 쪽 '시사점'에 표준 밖 운영 시설의 IFC 표현 경로와 IDS 납품 요구(f11·f13·f15·f16·f17, 종합 f20 추정)."
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "sections": [
+          "2",
+          "6"
+        ],
+        "rationale": "트랙 산출물 갱신: track.ontology_changes(충전 위치에 'BIM 표현(후보)' 속성)가 승인되면 2절 반영과 초안 v1.3 인상(f11·f12·f13·f14·f17). 미승인 시 6절 '로봇 충전소는 IFC 4.3 유형 값에 없어…' 항목(q2-06)의 근거 보강(f11·f13·f15·f20)."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+        "sections": [
+          "7",
+          "8",
+          "11"
+        ],
+        "rationale": "트랙 floorplan-recognition 단계 2 반영 제안 (f1, f6, f7, f11, f13, f15, f20): 7절에 IDS 1.0 과 IFC 프록시·사용자 정의 속성 세트 규칙을 BIM 입력 요구 수단으로, 8절에 AI Hub·CubiCasa5K 의 계단·엘리베이터 라벨과 라이선스, 11절에 oq-197 해결 근거(f1·f10). 반영은 다음 해당 영역 실행에서."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "sections": [
+          "8"
+        ],
+        "rationale": "트랙 floorplan-recognition 단계 2 반영 제안 (f1, f5, f6, f7, f9): 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용)에 따라 도면 해석 학습 데이터의 클래스 구성(학습용 매핑에서 엘리베이터·계단실이 일반 방으로 합쳐짐)과 이용 조건(비상업·재배포 제한)을 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 연결."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "sections": [
+          "7"
+        ],
+        "rationale": "트랙 floorplan-recognition 단계 2 반영 제안 (f13, f15, f16, f17): IDS 1.0(2024-06-01 승인)의 패싯 구조와 IFC 사용자 정의 속성 세트 명명 규칙을 BIM 데이터 교환 요구·적합성 검사 수단으로."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "buildingSMART 데이터 사전",
+        "term_en": "buildingSMART Data Dictionary (bSDD)",
+        "definition": "buildingSMART 가 운영하는 분류·속성 정의의 공유 온라인 사전으로, IDS 같은 정보 요구사항을 만들 때 표준화된 용어와 속성을 가져다 쓰는 공유 속성 라이브러리 역할을 한다."
+      },
+      {
+        "term_ko": "건물 요소 프록시",
+        "term_en": "Building Element Proxy (IfcBuildingElementProxy)",
+        "definition": "미리 정해진 의미 없이 건축 요소와 같은 기능을 하는 IFC 엔터티로, 응용이 의미를 정의할 수 없는 특수 요소를 교환할 때 쓰며 PredefinedType 을 USERDEFINED 로 두면 ObjectType 으로 유형 이름을 적어야 한다."
+      },
+      {
+        "term_ko": "사용자 정의 속성 세트",
+        "term_en": "User-defined Property Set",
+        "definition": "IFC 명세에 선언되지 않은 프로젝트·조직 고유의 속성 묶음으로, 표준 세트에만 쓰는 'Pset_' 접두어 없이 이름을 짓고 IfcRelDefinesByProperties 등으로 객체에 붙인다."
+      }
+    ],
+    "open_questions_new": [
+      "CubiCasa5K 는 계단을 학습 라벨로 제공하는가? 이전 실행의 검색 요약은 CubiCasa5K 가 계단을 주석한다고 전하지만, 공식 코드는 Stairs 처리 블록을 주석 처리하고 계단실·엘리베이터를 일반 방으로 합친다. 원 SVG 주석에는 계단·엘리베이터가 별도 범주로 남아 있는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 45. 문서·도면·장면 이해 | 근거: f7 | 종류: 출처 충돌",
+      "AI허브 건축 도면 데이터의 원 이용약관은 학습 모델의 상업적 이용, 데이터 재가공·재배포, 해외 활용을 어떻게 규정하며, 공공데이터포털 샘플 페이지가 옮긴 조건과 '국내에서만 활용' 안내가 이 데이터셋에도 그대로 적용되는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 59. 법·규제·보험·라이선스 | 근거: f5 | 종류: 일반",
+      "국내 공공건축 BIM 납품 기준(건설산업 BIM 시행지침 등)이나 로봇 친화형 건축물 인증이 로봇 충전 공간·작업 스테이션을 BIM 객체·속성으로 납품하도록 요구하거나 그 IDS·속성 세트를 정한 사례가 있는가? | 관련 영역: 14. 도면·BIM에서 지도 만들기, 21. 상호운용 표준·적합성 | 근거: f20 | 종류: 일반"
+    ],
+    "open_questions_resolved": [
+      "oq-197"
+    ],
+    "self_check": {
+      "source_count": 18,
+      "cross_checked_count": 0,
+      "unverified": [
+        "q1-08 부분 답: 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 단계별 소요 시간 공개 자료 여전히 없음(이번 한국어 검색 8회 포함)",
+        "AI허브 이용약관·이용정책 원문 미열람(aihub.or.kr 이용정책 페이지 연결 오류), 이용 조건은 공공데이터포털 2차 기술(f3)과 2022 기사 사진 설명(f4) 기준",
+        "f18 eCAADe 2025 예고 논문의 원문 제목·본문 미확인(PDF 텍스트 추출 실패, 검색 요약 기준)",
+        "IDS 패싯별 값 제한(열거·패턴·범위) 문법과 USERDEFINED·사용자 정의 속성 세트 예시는 원문에서 확인하지 못함",
+        "로봇 충전소·작업 스테이션용 공개 IDS·속성 세트·bSDD 분류 사례는 이번 검색 범위에서 찾지 못함(부재 확인 아님)",
+        "CubiCasa5K 원 SVG 주석의 계단·엘리베이터 범주 존재 여부와 실제 주석 개수 미확인(코드 기준 관찰)",
+        "ref-214·ref-215 는 이번 실행에서 다시 열지 않은 재인용",
+        "모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)"
+      ],
+      "scope_violations": [
+        "f21: 3D 비전 기반 지도 작성은 분류 원문 19장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 현장 설정 기간 주장 근거로만 씀(벤더 주장)",
+        "f18: 휴머노이드 로봇 주행은 로봇 쪽 기능이며, IFC 4.3 확장 제안 사례로만 씀"
+      ],
+      "budget_used": {
+        "queries": 22,
+        "sources": 12
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 22회/40, 신규 출처 12건/20(ref-1427~ref-1438, 예약 구간 안), 재사용 6건(ref-1012 webfetch 재열람, ref-213 inbox 원문, ref-062 github raw 재열람, ref-063 arXiv 초록 재열람, ref-214·ref-215 미열람 재인용). 질문 선택: target.json 지정 q1-08(되돌아온 단계 1 질문)·q2-04·q2-06. 답한 질문: q2-04(AI Hub 클래스·신청 조건은 원문, 상업 이용은 2차 근거라 종합 신뢰도 medium), q2-06(IFC·IDS 규칙은 원문, 로봇 운영 시설용 관례·사례는 찾지 못해 종합 신뢰도 low). q1-08 은 새 국내 근거가 없어 부분 답으로 두고 answered_question_ids 에서 뺐다. 원문 열기 실패: aihub.or.kr 첫 URL·이용정책 페이지 ECONNRESET(대체 URL 로 데이터셋 페이지는 열림), eCAADe·koreascience PDF 는 바이너리로 본문 추출 실패, 트위니 인터뷰 기사(바이라인)는 유료 구간에서 끊겨 근거로 쓰지 않음, IJLM 사례 연구(Grover·Ashraf 2024)는 페이지에 도입 기간 서술이 없어 쓰지 않음. 블로그·가이드 사이트의 AMR 단계별 일정 표는 출처 기준 미달로 쓰지 않음. 벤더 근거 f21 은 vendor_claim·추정·'벤더 주장: ' 표시. oq-197 해결 근거: f1·f10(AI Hub 라벨에 충전 위치 같은 로봇 운영 클래스 없음, 도면은 모두 주거 유형). 단계 2 페이지 q2-02 표의 CubiCasa5K 계단 '라벨 있음' 서술은 f7 과 맞지 않아 출처 충돌 열린 질문으로 올림. 한국 자료: AI Hub 데이터셋 페이지(ref-1012), 공공데이터포털(ref-1429), 국내 기사(ref-1430). 교차 규칙: 학습 데이터 근거(f1·f6·f7·f9)는 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 반영 제안. 18. 실시간 세계 상태·데이터 일관성·34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(f19 의 디지털 트윈은 BIM 데이터 저장소 의미로만 인용). 정정 요청 없음. 입력 누락 없음. 후속 질문 2건. 온톨로지 변경 1건 제안(충전 위치 'BIM 표현(후보)' 속성). 페이지 제안: 트랙 산출물 4건(단계 2·단계 1 페이지, 아이디어 페이지, 스키마 초안), 세부영역 반영 제안 3건(갱신 상한과 별도)."
+    },
+    "track": {
+      "slug": "floorplan-recognition",
+      "stage": 2,
+      "answered_question_ids": [
+        "q2-04",
+        "q2-06"
+      ],
+      "new_questions": [
+        {
+          "question": "ROP 가 BIM 납품 요구로 쓸 로봇 운영 시설용 IDS(충전 위치·작업 스테이션을 관련 엔터티나 IfcBuildingElementProxy 의 USERDEFINED 와 ObjectType 값 목록으로 지정하고, 'Pset_' 가 아닌 프로젝트 속성 세트에 접근 자세·도킹 이름·상호작용 노드 속성을 요구하는 형태)를 어떤 항목으로 정의하며, 설계·시공 측이 그 값을 채울 수 있는가, 채울 수 없으면 어느 단계에서 누가 보완하는가? (q2-06 에서 파생)",
+          "stage": 3,
+          "rationale_finding_id": "f20"
+        },
+        {
+          "question": "AI Hub 건축 도면 데이터의 엘리베이터·엘리베이터홀·계단실 라벨(아파트 코어 기준)로 학습한 모델이 물류센터·병원 같은 비주거 도면의 화물용 승강기·계단실을 얼마나 인식하는가, 라벨 정의서는 계단실과 엘리베이터 영역을 어떤 기준으로 그리는가? (q2-04 에서 파생)",
+          "stage": 2,
+          "rationale_finding_id": "f1"
+        }
+      ],
+      "ontology_changes": [
+        {
+          "op": "modify",
+          "kind": "concept",
+          "name": "충전 위치 (Charging Location)",
+          "evidence_finding_ids": [
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f17"
+          ],
+          "description": "속성 'BIM 표현(후보)'을 더한다: IFC 4.3 콘센트·전기기기 유형 열거에 충전 설비 값이 없으므로(f14) 관련 엔터티 또는 IfcBuildingElementProxy 의 PredefinedType USERDEFINED 와 ObjectType 값(f11·f12, 실무 관례 f17), 운영 속성(접근 지점·도킹 이름)은 'Pset_' 접두어가 없는 프로젝트 속성 세트(f13). 작업 스테이션도 같은 후보를 가질 수 있으나 작업 스테이션의 공용 자원 포함 여부(6절 질문)와 엮이므로 이번 제안은 충전 위치에 한정한다. IDS 로 납품 요구를 적는 방식(f20)은 추정이라 정의에 넣지 않고 6절 질문으로 둔다. 기존 속성(위치·수·접근 지점)과 충돌하지 않는다."
+        }
+      ],
+      "stage_completion_self_assessment": {
+        "met": false,
+        "missing": [
+          "표준과 대응시킨 관계(엣지) 유형이 공간 그래프 스키마 초안의 관계 목록 표에 없음",
+          "q2-04·q2-06 답은 검증 승인 전이며 아이디어 3. 건축 도면 자동 인식 4절에 아직 반영되지 않음",
+          "단계 2 열린 질문 q2-07·q2-08·q2-09·q2-10 미답",
+          "되돌아온 단계 1 질문 q1-08 부분 답으로 남음"
+        ]
+      }
+    }
+  },
+  "ttft_ms": 17700,
+  "type": "result",
+  "duration_ms": 695092,
+  "uuid": "fb678b33-7566-4bbf-967e-7c4a096d2a63",
+  "ttft_stream_ms": 1615,
+  "time_to_request_ms": 184,
+  "time_to_request_phases_ms": {
+    "other": 28,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 14,
+    "input_attachments": 69,
+    "input_hooks": 4,
+    "tool_pool_refresh": 3,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 3,
+    "client_creation": 6,
+    "request_build": 28
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 74,
+  "time_to_request_cpu_ms": 267,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "at_mentioned_files",
+    "slowest_producer_ms": 38,
+    "cpu_ms": 113,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1616,
+  "time_to_request_from_spawn_ms": 4780464,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791544961031.1401,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 697.0
+}
