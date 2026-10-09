@@ -219,7 +219,7 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 77건이다(논문 29건 · 기사·보고서 10건 · 업체 발표 4건 · 표준·오픈소스·기관 자료 34건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 91건이다(논문 31건 · 기사·보고서 14건 · 업체 발표 5건 · 표준·오픈소스·기관 자료 41건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -231,25 +231,27 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-146](../../references/ref-146.md) — Omega 게재 논문(저자 미확인), The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority (발행 2024)
 - [ref-453](../../references/ref-453.md) — Liu, Z., Bahety, A., & Song, S., REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction (발행 2023)
 - [ref-115](../../references/ref-115.md) — Production & Manufacturing Research 게재 논문(저자 미확인, Chalmers 공개본), Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes (발행 2023)
+- [ref-1319](../../references/ref-1319.md) — Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv), Predictive Object-Centric Process Monitoring (발행 2022-07-20)
 - [ref-1032](../../references/ref-1032.md) — Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L, arXiv), ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2 (발행 2022-07)
-- [ref-1120](../../references/ref-1120.md) — Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv), An Ethical Black Box for Social Robots: a draft Open Standard (발행 2022-05-13)
-- 그 밖에 19건
+- 그 밖에 21건
 
 **기사·보고서**
 
 - [ref-1154](../../references/ref-1154.md) — Proof News (Varsha Bansal), Meet the Robot That Nurses Unplugged (발행 2026-06-09)
+- [ref-1007](../../references/ref-1007.md) — 뉴스토마토 (이규하), 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동 (발행 2025-04-23)
 - [ref-1103](../../references/ref-1103.md) — 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다 (발행 2025-04-07)
 - [ref-141](../../references/ref-141.md) — WERC(Warehousing Education and Research Council), WERC DC Measures Survey - 2025 (발행 2025)
 - [ref-1199](../../references/ref-1199.md) — ZDNet Korea, 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인) (발행 2024-09-19)
+- [ref-976](../../references/ref-976.md) — 정보통신신문 (김연균), 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’ (발행 2024-07-18)
+- [ref-1316](../../references/ref-1316.md) — 코메디닷컴, [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠 (발행 2024-04-20)
 - [ref-944](../../references/ref-944.md) — 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (발행 2024-04-15)
+- [ref-1317](../../references/ref-1317.md) — 바이라인네트워크 (이진호), 뉴빌리티, 실외이동 로봇 운행안전 인증 획득 (발행 2024-01-31)
 - [ref-1334](../../references/ref-1334.md) — TechTarget (Hannah Nelson, Xtelligent Healthcare Media), Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout (발행 2022-08-11)
-- [ref-1336](../../references/ref-1336.md) — 데일리팜 (김지은), 마약통합시스템 시행 2개월…병원·약국 다빈도 질문은 (발행 2018-07-13)
-- [ref-1152](../../references/ref-1152.md) — 한국일보, “딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인) (발행 2017-04-18)
-- [ref-150](../../references/ref-150.md) — CIO Korea, 오토스토어, 물류 자동화 시스템의 경제적 효과 연구 보고서 발표 (발행 미확인)
-- [ref-143](../../references/ref-143.md) — Project Production Institute, Little’s Law – A Practical Approach to Understanding Production System Performance (발행 미확인)
+- 그 밖에 4건
 
 **업체 발표**
 
+- [ref-1315](../../references/ref-1315.md) — LG CNS (LG 미디어 보도자료), ‘로봇 통합운영 플랫폼’ 개발 (발행 2023-07-06)
 - [ref-1156](../../references/ref-1156.md) — OMRON Industrial Automation Europe, Autonomous Mobile Robots (AMR) (발행 미확인)
 - [ref-1102](../../references/ref-1102.md) — 네이버클라우드, ARC brain 개요 - 사용 가이드 (발행 미확인)
 - [ref-1101](../../references/ref-1101.md) — 현대자동차그룹 로보틱스랩, PROJECTS — Robot Fleet Management (NARCHON) (발행 미확인)
@@ -259,23 +261,23 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 
 - [ref-1228](../../references/ref-1228.md) — European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations (발행 2026-09-11)
 - [ref-1157](../../references/ref-1157.md) — 고용노동부 (국가법령정보센터), 산업안전보건기준에 관한 규칙 제222조(교시 등) (발행 2025-09-01)
+- [ref-1314](../../references/ref-1314.md) — European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 26: Obligations of deployers of high-risk AI systems (발행 2024-07-12)
+- [ref-1313](../../references/ref-1313.md) — European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 19: Automatically generated logs (발행 2024-07-12)
+- [ref-863](../../references/ref-863.md) — European Commission — AI Act Service Desk, Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act) (발행 2024-06-13)
+- [ref-1312](../../references/ref-1312.md) — IEEE Standards Association, How To Make Autonomous Systems More Transparent and Trustworthy (발행 2022-05-11)
 - [ref-1220](../../references/ref-1220.md) — 대한민국 국회 (법률 제16320호, 케이스노트 게재), 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) (발행 2019-04-16)
 - [ref-782](../../references/ref-782.md) — ISO, ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management (발행 2017-04)
 - [ref-1333](../../references/ref-1333.md) — ISA (ANSI Webstore 게재), ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries (발행 2016)
 - [ref-139](../../references/ref-139.md) — ISO, ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions (발행 2014)
-- [ref-1148](../../references/ref-1148.md) — UK Health and Safety Executive (HSE) (humanfactors101.com 게재본), Human Factors Briefing Note No. 8 — Safety-Critical Communications (발행 2005)
-- [ref-781](../../references/ref-781.md) — ISO, ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions (발행 미확인)
-- [ref-762](../../references/ref-762.md) — Open Robotics (open-rmf), rmf-web — packages/api-server/README.md (발행 미확인)
-- [ref-569](../../references/ref-569.md) — Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg (발행 미확인)
-- 그 밖에 24건
+- 그 밖에 31건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [J. 현장 운영·관제](index.md) — '다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건 (실행 2026-10-09-05)
-- 2026-10-09 · 요약 · [J. 현장 운영·관제](index.md) — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, B. 로봇 온톨로지 근거 없음 명시, 각주 47건, 1차 조건부 승인 수정 22건 반영) (실행 2026-10-09-05)
-- 2026-09-30 · 갱신 · [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) — 영역 심화: 3~11절 신규 작성, 13절 각주 정의 16건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 16건 반영). 2차 재실행에서 이 페이지 본문은 변경 없음 (실행 2026-09-30-18)
-- 2026-09-30 · 생성 · [40. 운영 절차·요청 창구 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area40-s6.md) — 자동 분리: 40. 운영 절차·요청 창구 의 "6. 대표 접근법과 기술" 절(1,472자)을 옮겼다. 2차: '전담 운영 조직' 소제목의 호텔 문장에서 출처에 없는 '전담 조직 없이'를 뺌 (실행 2026-09-30-18)
-- 2026-09-30 · 생성 · [40. 운영 절차·요청 창구 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area40-s7.md) — 자동 분리: 40. 운영 절차·요청 창구 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다(2차 재실행에서 변경 없음) (실행 2026-09-30-18)
+- 2026-10-09 · 갱신 · [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) — 5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신 (실행 2026-10-09-15)
+- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area37-s7.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,936자)을 옮겼다 (실행 2026-10-09-15)
+- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 열린 질문](../../topics/2026/2026-10-09-area37-s11.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "11. 열린 질문" 절(2,787자)을 옮겼다 (실행 2026-10-09-15)
+- 2026-10-09 · 생성 · [37. 관제 화면·실행 기록 — 왜 중요한가](../../topics/2026/2026-10-09-area37-s3.md) — 자동 분리: 37. 관제 화면·실행 기록 의 "3. 왜 중요한가" 절(485자)을 옮겼다 (실행 2026-10-09-15)
+- 2026-10-09 · 요약 · [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) — 37. 관제 화면·실행 기록: 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 (실행 2026-10-09-15)
 <!-- auto:category-recent:end -->

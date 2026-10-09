@@ -20,6 +20,24 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-15 | 갱신 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신 |
+| 2026-10-09-15 | 생성 | [docs/topics/2026/2026-10-09-area37-s7.md](topics/2026/2026-10-09-area37-s7.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,936자)을 옮겼다 |
+| 2026-10-09-15 | 생성 | [docs/topics/2026/2026-10-09-area37-s11.md](topics/2026/2026-10-09-area37-s11.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "11. 열린 질문" 절(2,787자)을 옮겼다 |
+| 2026-10-09-15 | 생성 | [docs/topics/2026/2026-10-09-area37-s3.md](topics/2026/2026-10-09-area37-s3.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "3. 왜 중요한가" 절(485자)을 옮겼다 |
+| 2026-10-09-15 | 요약 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 37. 관제 화면·실행 기록: 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1312.md](references/ref-1312.md) | 참고문헌 ref-1312 등록: How To Make Autonomous Systems More Transparent and Trustwor… |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1313.md](references/ref-1313.md) | 참고문헌 ref-1313 등록: Article 19: Automatically generated logs |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1314.md](references/ref-1314.md) | 참고문헌 ref-1314 등록: Article 26: Obligations of deployers of high-risk AI systems |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1315.md](references/ref-1315.md) | 참고문헌 ref-1315 등록: ‘로봇 통합운영 플랫폼’ 개발 |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1316.md](references/ref-1316.md) | 참고문헌 ref-1316 등록: [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠 |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1317.md](references/ref-1317.md) | 참고문헌 ref-1317 등록: 뉴빌리티, 실외이동 로봇 운행안전 인증 획득 |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1318.md](references/ref-1318.md) | 참고문헌 ref-1318 등록: Transparency in Multi-Human Multi-Robot Interaction |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1319.md](references/ref-1319.md) | 참고문헌 ref-1319 등록: Predictive Object-Centric Process Monitoring |
+| 2026-10-09-15 | 생성 | [docs/references/ref-1320.md](references/ref-1320.md) | 참고문헌 ref-1320 등록: ISO 11064-1:2000 Ergonomic design of control centres — Part… |
+| 2026-10-09-15 | 생성 | [docs/glossary/operational-state.md](glossary/operational-state.md) | 용어집 항목 운용 상태 |
+| 2026-10-09-15 | 생성 | [docs/glossary/action-status.md](glossary/action-status.md) | 용어집 항목 동작 상태 |
+| 2026-10-09-15 | 생성 | [docs/glossary/transparency-level-ieee-7001.md](glossary/transparency-level-ieee-7001.md) | 용어집 항목 자율 시스템 투명성 수준 |
+| 2026-10-09-15 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-09-14 | 갱신 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | '다른 대분류와의 연결' 절 신규 작성: 현장 사례가 A·C~P 대분류의 세부영역에 넘기는 요구를 대분류별로 정리(B. 로봇 온톨로지는 근거 없음), 각주 정의 62건을 절 끝에 둠 |
 | 2026-10-09-14 | 요약 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | Q. 현장 유형별 적용: 다른 대분류와의 연결 절 신규 작성(현장 사례가 A·C~P 대분류 세부영역에 넘기는 요구 정리, B. 로봇 온톨로지는 근거 없음) |
 | 2026-10-09-14 | 생성 | [docs/glossary/door-to-door-robot-delivery.md](glossary/door-to-door-robot-delivery.md) | 용어집 항목 도어 투 도어 로봇 배송 |

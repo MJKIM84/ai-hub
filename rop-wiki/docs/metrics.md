@@ -31,7 +31,7 @@ version: 1
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
-| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
+| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
@@ -127,7 +127,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | 2026-09-30 | 2 |
+| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | 2026-10-09 | 3 |
 | [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | 2026-09-25 | 2 |
 | [39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | 2026-09-26 | 3 |
 | [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | 2026-09-30 | 2 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 142회 중 최종 통과 140회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 140, None 2
-- 2차 검증 판정: 통과 140, None 2
+- 실행 143회 중 최종 통과 141회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 141, None 2
+- 2차 검증 판정: 통과 141, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 562 |
+| 논문 | 564 |
 | 오픈소스 문서 | 225 |
-| 표준 | 188 |
-| 기사 | 122 |
-| 정부·연구기관 | 114 |
-| 벤더 문서 | 77 |
+| 표준 | 190 |
+| 기사 | 124 |
+| 정부·연구기관 | 116 |
+| 벤더 문서 | 78 |
 | 업계 보고서 | 27 |
 
-신뢰도: medium 945건, high 250건, low 120건
+신뢰도: medium 949건, high 252건, low 123건
 
 ### 현장 유형 매트릭스 채움률
 
-- 79/119 칸 (66%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 82/119 칸 (69%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

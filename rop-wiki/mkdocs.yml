@@ -278,6 +278,9 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 37. 관제 화면·실행 기록 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-10-09-area37-s7.md
+      - 37. 관제 화면·실행 기록 — 왜 중요한가: topics/2026/2026-10-09-area37-s3.md
+      - 37. 관제 화면·실행 기록 — 열린 질문: topics/2026/2026-10-09-area37-s11.md
       - 33. 시나리오 모델·편집 — 대표 연구와 자료: topics/2026/2026-10-09-area33-s8.md
       - 33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-10-09-area33-s7.md
       - 33. 시나리오 모델·편집 — 대표 접근법과 기술: topics/2026/2026-10-09-area33-s6.md
@@ -801,6 +804,7 @@ nav:
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
     - 동기화 손실 (Synchronization Loss): glossary/synchronization-loss.md
     - 동력·힘 제한 (Power and Force Limiting (PFL)): glossary/power-and-force-limiting.md
+    - 동작 상태 (Action Status (VDA 5050 actionStatus)): glossary/action-status.md
     - 등각 예측 (Conformal Prediction): glossary/conformal-prediction.md
     - 등재 프로그램 (Empanelment Programme): glossary/empanelment-programme.md
     - 디스펜서·인제스터 (Dispenser / Ingestor): glossary/dispenser-ingestor.md
@@ -962,6 +966,7 @@ nav:
     - 우선순위 상속·되돌림 (Priority Inheritance with Backtracking (PIBT)): glossary/priority-inheritance-with-backtracking.md
     - 운용 구역 (Operating Zone (ISO 3691-4)): glossary/operating-zone.md
     - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
+    - 운용 상태 (Operational State (MassRobotics statusReport operationalState)): glossary/operational-state.md
     - 움직임 지도 (Maps of Dynamics (MoD)): glossary/maps-of-dynamics.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 원격 조작 (Teleoperation): glossary/teleoperation.md
@@ -995,6 +1000,7 @@ nav:
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
     - 자산관리셸 레지스트리·디스커버리 (AAS Registry / Discovery): glossary/aas-registry-and-discovery.md
     - 자원 제약 프로젝트 스케줄링 문제 (Resource-Constrained Project Scheduling Problem (RCPSP)): glossary/resource-constrained-project-scheduling-problem.md
+    - 자율 시스템 투명성 수준 (Transparency Level (IEEE 7001-2021)): glossary/transparency-level-ieee-7001.md
     - 자율 실험실 (Self-driving Laboratory (Autonomous Laboratory)): glossary/self-driving-laboratory.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
@@ -1571,8 +1577,18 @@ nav:
     - 'ref-131 — OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (OPC 10031-4)': references/ref-131.md
     - ref-1310 — ros2_fault_injection documentation: references/ref-1310.md
     - ref-1311 — Scenario Generation for Robot Simulation from Public Data: references/ref-1311.md
+    - ref-1312 — How To Make Autonomous Systems More Transparent and Trustworthy: references/ref-1312.md
+    - 'ref-1313 — Article 19: Automatically generated logs': references/ref-1313.md
+    - 'ref-1314 — Article 26: Obligations of deployers of high-risk AI systems': references/ref-1314.md
+    - ref-1315 — ‘로봇 통합운영 플랫폼’ 개발: references/ref-1315.md
+    - ref-1316 — [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠: references/ref-1316.md
+    - ref-1317 — 뉴빌리티, 실외이동 로봇 운행안전 인증 획득: references/ref-1317.md
+    - ref-1318 — Transparency in Multi-Human Multi-Robot Interaction: references/ref-1318.md
+    - ref-1319 — Predictive Object-Centric Process Monitoring: references/ref-1319.md
     - ? 'ref-132 — Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations'
       : references/ref-132.md
+    - ? 'ref-1320 — ISO 11064-1:2000 Ergonomic design of control centres — Part 1: Principles for the design of control centres (preview)'
+      : references/ref-1320.md
     - 'ref-133 — Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?': references/ref-133.md
     - ref-1333 — ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries: references/ref-1333.md
     - ref-1334 — Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout: references/ref-1334.md
