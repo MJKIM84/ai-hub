@@ -1,0 +1,806 @@
+{
+  "duration_api_ms": 294967,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.6422352000000005,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 350670,
+    "cache_read_input_tokens": 1384322,
+    "output_tokens": 27333,
+    "output_tokens_details": {
+      "thinking_tokens": 12380
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 350670,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 17819,
+        "cache_read_input_tokens": 437326,
+        "cache_creation_input_tokens": 2138,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2138
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 60553,
+      "outputTokens": 14527,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.0133188,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8330,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 27333,
+      "cacheReadInputTokens": 1384322,
+      "cacheCreationInputTokens": 350670,
+      "webSearchRequests": 0,
+      "costUSD": 3.6289164,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12380,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 13,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-08\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 게시된 44. 로봇 기반 모델·언어 모델 계획 5절의 [추정] 벤더 주장과 같은 내용. ref-1051 이번 실행 재열람 안 함(원문 미열람, 검증 예산). 벤더 주장 병기와 10·11개월 기간 충돌(oq-219) 병기 유지.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 44 페이지 5절 게시 주장 재인용. 80%·90%는 실측이 아닌 목표치임을 본문에 유지. ref-1052 원문 미열람(검증 예산), 벤더 주장 병기.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"검증자가 arXiv 초록(2609.29043, 2026-09-24 제출)을 열람: 로컬 오픈소스·프런티어 클라우드 배치 맥락의 세 모델을 평가한 것은 확인되나, 초록은 접근법의 동기를 단일 프롬프트 계획의 문맥 비대화·'Lost in the Middle'로 들고 API 비용·지연은 언급하지 않는다. '비교의 동기는 클라우드 API 비용과 지연' 부분과 그에 기댄 A. 기획·사업의 3. 경제성·조달·사업 모델 연결은 쓰지 않는다. 남는 '로컬·클라우드 배치 모델을 함께 평가했다'만 K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조 연결로 [사실] 사용 가능. K 대분류 연결 절(실행 2026-10-09-06)의 같은 문장과 충돌.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자가 Cal Poly 석사논문 초록 열람(2026-06): RaaS 과금에서 처리량 최대화 기준의 과대 산정, 라인당 비용 최소화, DES·SOQN·XGBoost 대리 모델 확인. 저자 보고값, 독립 재현 없음.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 재열람: BKL 해설은 '에너지, 보건의료, 원자력, 교통, 교육 등 특정 영역에서 활용되는' AI를 고영향으로 설명하나 '산업이 아니라 영역'이라는 대비 문장은 없다. 대비 표현을 빼고 해설 문구 범위로 재서술한다. 시행령(안)·고시(안) 초안 기준, 확정본 일치 미확인. 로봇 언급 없음.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 게시 인용. 두 연구는 서로 다른 방법이며 교차 확인 아님. '교차 규칙의 매뉴얼 해석이 등록 정보 작성으로 이어진다'는 출처 진술이 아니라 분류 원문 교차 규칙을 가리키는 연결 설명이므로 [사실] 범위에서 분리한다. 원문 미열람(검증 예산).\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: B. 로봇 온톨로지 대분류 연결 절의 [사실]과 같은 각주(ref-239, ref-238). 원문 미열람(검증 예산).\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 45 페이지 9절 [추정]과 같은 방향, 로봇 매뉴얼 적용 구현 미확인 병기. 원문 미열람.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자가 arXiv 초록(2606.02167, 2026-06-01 제출, CASE 2026 채택) 열람: VDI 3682·IEC 61360-1·IDTA 02011·IDTA 02016으로 구성한 AAS 능력 모델에서 PDDL 문제를 자동 생성하고 다중 AAS 구조를 계획 문제로 변환한다는 점 확인. '출력이 표준 PDDL이라 어떤 계획기든 쓸 수 있다'와 Festo MPS 500은 초록에 없으므로 그 구절은 삭제한다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. f9(축소 후)와 LLM+P 결합 해석, 두 방식 결합 사례 미확인 병기.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지, oq-216과 일치. VLA 저수준 정책은 연계 대상 문맥으로만.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 44 페이지·G 대분류 페이지 게시 인용. '두 영역이 만난다'는 분류 원문 C 주석(업무 지시는 25·26번)에 기댄 연결 설명. 원문 미열람(검증 예산).\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: E·K 대분류 연결 절의 검증된 [사실]과 같은 각주(ref-854). 시연은 시뮬레이션, 발표 내용 자체 미열람 병기.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. C 주석의 '사람이 확인·승인한 계획만 실행'은 [분류원문] 문장을 글자 그대로 인용할 때만 그 태그를 쓴다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 게시 인용. 세 자료는 서로 다른 내용, KnowNo 목표는 저자 보고.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I. 설계·시뮬레이션 대분류 연결 실행(2026-10-09-07)과 같은 각주. 제약 공정 설계 적용이며 로봇 플릿 사례 아님 병기.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: B·D 대분류 연결 절과 같은 각주(ref-076).\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 분류 원문 C 주석(맵 작성은 14·15번)과 연결.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I 대분류 연결 실행과 같은 각주(ref-1305). 단일 이동 매니퓰레이터 평가.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45·D 페이지 게시 인용, 교차 규칙(도면 해석은 14번). AI Hub 라벨의 로봇 운영 클래스는 oq-197.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 5절 게시 수치, 단일 출처 논문 평가값이며 로봇 현장 배치가 아님 병기.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 게시 인용, 제목 일치.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 5절 실외 사례 게시 주장. 로봇 대수·수치 미확인.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: D 대분류 연결 절과 같은 각주(ref-1018). 검색 결과 요약 기준(원문 미열람).\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 5절 제조 공장 사례 게시. 카메라 설치·동기화는 시설·설비 경계의 연계 대상.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래) 구분을 본문에 유지. oq-227.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: E 대분류 연결 절의 L 연결 [추정]과 같은 각주.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 5절 물류창고 사례 게시. 9절은 경계 이동 사례로 분류.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 벤더 주장, '연계 대상'으로 시작. 상위 업무 시스템 수요예측은 원문 19장 외부 연계 영역. oq-223.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 44 페이지 7절 [사실] 게시(ref-171, 참고문헌 원문 열람 '예').\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 교차 규칙(학습 기반 배정은 25번). 시뮬레이션 창고 조건 병기. 원문 미열람(검증 예산).\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 5절 병원 사례 게시, 동료 심사 전 프리프린트·저자 보고.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 5절 [사실] 게시. 아마존 연구진 논문이므로 학습 데이터 규모는 저자 보고.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 벤더 주장, 10%는 독립 측정 없음.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 6절 [추정] 요약과 같은 범위.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 게시 인용, 제목 일치.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 44 페이지 게시 인용. 저수준 로봇 프로그램 생성은 로봇 자체 제어 경계의 연계 대상 문맥으로만.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 4절 근거 자료. 로봇 현장 적용 미확인 병기.\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 3절 게시 근거, 제목 일치. 원문 미열람(검증 예산).\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지, oq-107과 일치.\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: arXiv 2306.15724(v1 2023-06-27, v4 2023-10-16, CoRL 2023) 초록에서 계층적 경험 요약·LLM 실패 설명·언어 기반 계획기의 수정·RoboFail 데이터셋 확인. 단일 로봇 조작 작업이며 플릿 적용 아님 병기.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: arXiv 2410.09084(2024-10-06) 초록에서 2,500건 이상 보고 이슈의 비공개(proprietary) 벤치마크 SYSDIAGBENCH, QLoRA 7B 모델의 진단 정확도 GPT-4 상회, 사람 전문가 연구로 LLM 평가자 검증 확인. 구체 정확도 수치 없음.\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I 대분류 연결 실행과 같은 각주(ref-1308). 저자 보고.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 46 페이지 6절 주제 페이지의 2차 검증 결과([의견]→[추정])와 같다. 18·34 구분 유지.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: Howard 초록에서 SOQN 약 5%, XGBoost 대리 모델 교차 검증 약 3%, 등각 예측 구간 확인. 저자 보고값.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I 대분류 연결 실행과 같은 각주. 생성 환경은 실제 현장 지도가 아님 병기.\"},{\"finding_id\":\"f47\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I 대분류 연결 실행에서 정정된 SRCC 표현 그대로. 원문 미열람(검증 예산).\"},{\"finding_id\":\"f48\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 현실 격차 보정은 로봇 제조사·시뮬레이션 도구와의 연계 문맥.\"},{\"finding_id\":\"f49\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: I 대분류 연결 실행과 같은 각주(ref-241).\"},{\"finding_id\":\"f50\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 5절 기타 사례 게시, 91%는 저자 보고. 교차 규칙(장애 분석은 38번).\"},{\"finding_id\":\"f51\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 벤더 주장. 정확도 산정 방법 미공개. 부품 수준 신호 감시는 연계 대상.\"},{\"finding_id\":\"f52\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 7절 게시. ISO 소개 페이지 기준, 표준 원문 미열람.\"},{\"finding_id\":\"f53\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: AI Act Service Desk 제12조(2026-07-27 EUR-Lex 통합본) — 제1항 수명 기간 자동 사건 기록, 제2항 (a) 제79조(1)의 위험·실질적 변경 식별, (b) 제72조 시판 후 감시, (c) 제26조(5) 운영 감시 확인. Digital Omnibus 개정 표시 없음. 통합본 기준일을 함께 적는다.\"},{\"finding_id\":\"f54\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지, 고위험 해당 여부는 oq-106 열린 질문으로.\"},{\"finding_id\":\"f55\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: K 대분류 연결 실행과 같은 각주(ref-304). 원문 미열람.\"},{\"finding_id\":\"f56\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: K 대분류 연결 실행과 같은 각주. 규약이 개발(Development) 단계임 병기(oq-212).\"},{\"finding_id\":\"f57\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 게시. 로봇 플랫폼 적용 사례 미확인.\"},{\"finding_id\":\"f58\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 3절 [사실]과 같은 각주.\"},{\"finding_id\":\"f59\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 게시 인용.\"},{\"finding_id\":\"f60\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 8절 게시(공식 저장소 README). '다중 로봇 공통 벤치마크 미확인'은 출처 진술이 아니라 조사 한계이므로 태그 없이 쓰고 oq-217로 연결.\"},{\"finding_id\":\"f61\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 46 페이지 게시 인용, oq-220.\"},{\"finding_id\":\"f62\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지, 온보딩 소요 측정 사례 미확인 병기.\"},{\"finding_id\":\"f63\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: arXiv 2410.13691(v1 2024-10-17, v2 2024-11-09) 초록에서 세 설정(Dolphins 자율주행 LLM 화이트박스, GPT-4o 계획기 Jackal 그레이박스, GPT-3.5 연동 Go2 블랙박스)과 Go2가 배치된 상용 로봇 시스템의 첫 탈옥 성공이라는 저자 진술 확인. 다만 '자주 100%'는 RoboPAIR와 여러 정적 기준 방법을 함께 가리키므로 주어를 고친다.\"},{\"finding_id\":\"f64\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: arXiv 2503.07885(v1 2025-03-10, v2 2026-03-03) 초록에서 신뢰 기점 LLM·시간 논리 제어 합성, 최악 탈옥 공격에서 위험 계획 실행 92% 초과→3% 미만, 안전 계획 성능 유지 확인. v2 기준임을 밝힌다. 저자 보고값.\"},{\"finding_id\":\"f65\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 로봇 자체 안전 기능·인증은 연계 대상, 다중 로봇 플릿 적용 사례 미확인 병기. oq-106.\"},{\"finding_id\":\"f66\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 재열람: 고시(안) 제7조 제1항의 개발 단계 개입 기준·'긴급 정지 등의 개입 방법', 제2항 운영 단계 성능 저하·오류 정기 점검과 관리자 교육·훈련 확인. 시행령(안)·고시(안)·가이드라인(안) 초안 기준(2025-09-30)이며 확정본 일치 미확인.\"},{\"finding_id\":\"f67\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: 메트로신문 2026-05-06 기사에서 ICT 규제샌드박스 심의위원회의 뉴빌리티 실증특례 승인과 부가 조건(연구 목적 내 활용·개인 식별 금지·제3자 제공 금지·관리 조직·단계별 관리 체계·보호대책) 확인. 기사 1건 기준, 정부 보도자료 미확인 병기.\"},{\"finding_id\":\"f68\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 45 페이지 5절 제약 칸 게시. oq-228과 연결.\"},{\"finding_id\":\"f69\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. f13·f63 결합 해석, 권한 설계 사례 미확인 병기.\"},{\"finding_id\":\"f70\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 3절 [사실]과 같은 각주·기준일 2026-01-22. ref-620 원문 미열람, 고영향 영역 목록 미확인.\"},{\"finding_id\":\"f71\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 3절 [사실]. 적용 시점은 개정 논의로 확정하지 않음 병기. 원문 미열람.\"},{\"finding_id\":\"f72\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증자 열람: BKL 해설에서 위험관리방안(주기적 점검·갱신), 결과 도출 주요 기준·학습용데이터 개요 설명방안, 이용자 보호방안, 홈페이지 게시, 시행령(안) 제26조 표의 5년 보관 확인. 초안 기준.\"},{\"finding_id\":\"f73\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: [추정] 유지. 책무 귀속 판단은 법무·운영 사업자 쪽 연계 대상, oq-105.\"},{\"finding_id\":\"f74\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 47 페이지 게시 인용. 세 자료는 서로 다른 문서이며 발행일은 각주별로 적는다(as_of 2023-02는 대표값). 원문 미열람.\"},{\"finding_id\":\"f75\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 44 페이지 5절 가정 사례 [사실]. 연구 평가이며 상용 배치 아님, 저수준 조작 정책은 연계 대상.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f3 ↔ K. 플랫폼 아키텍처·인프라 대분류 연결 절(실행 2026-10-09-06 f40)의 'Bruno·Sim·Hagiwara 비교의 동기는 클라우드 API 비용과 지연' 문장: 이번 검증에서 초록상 동기는 문맥 비대화·'Lost in the Middle'로 확인되어 충돌한다(이 페이지에는 동기를 쓰지 않는다)\",\"f13·f55·f56 ↔ E·K 대분류 연결 절의 같은 주장·각주(ref-854, ref-304, ref-1037) 재사용\",\"f16·f19·f43·f45·f46·f47·f48·f49 ↔ I. 설계·시뮬레이션 대분류 연결 실행(2026-10-09-07)의 같은 주장·각주 재사용\",\"f7·f17 ↔ B. 로봇 온톨로지 대분류 연결 절, f17·f24 ↔ D. 공간·지도 모델 대분류 연결 절의 L 연결, f27 ↔ E 대분류 연결 절의 L 연결과 같은 주장·각주\",\"f12·f31 ↔ G. 계획·최적화 대분류 연결 절의 47 연결과 같은 각주(ref-090, ref-623)\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"page_proposals 의 절 이름: L. AI·학습 기술 페이지의 H2 는 번호 없는 '다른 대분류와의 연결'이므로 patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 쓰고 그 절만 replace 한다 — 대분류 H2 정본(부록 C)에 번호가 없다.\",\"각주 정의 자리: L 페이지에는 '참고 자료' 절이 없으므로, D·E 대분류 페이지처럼 페이지 끝에 '## 참고 자료' 절을 append 해 이번 절이 쓴 각주 정의를 모두 두고, auto 마커(category-area-table, category-sources, category-recent)와 그 사이 내용은 건드리지 않는다 — 각주 참조가 정의 없이 남지 않게 하기 위함이다.\",\"f3: '비교의 동기는 클라우드 API 비용과 지연이었다'와 A. 기획·사업의 3. 경제성·조달·사업 모델 연결을 쓰지 않고, '로컬 오픈소스와 프런티어 클라우드 배치 맥락의 모델을 함께 평가했다'만 K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조 연결로 [사실][^ref-1043] 표기한다 — 초록이 동기로 문맥 비대화·'Lost in the Middle'을 들고 비용·지연은 언급하지 않는다.\",\"f9: '출력이 표준 PDDL이라 어떤 계획기든 쓸 수 있다고 보고했다' 구절을 삭제하고, 'VDI 3682·IEC 61360-1·IDTA 02011·IDTA 02016 으로 구성한 자산관리셸 능력 모델에서 PDDL 문제를 자동 생성한다(CASE 2026 채택)' 범위로만 [사실][^ref-201] 표기한다 — 그 구절은 초록에 없다.\",\"f63: '공격 성공률이 자주 100%에 이르렀다'의 주어를 'RoboPAIR 와 여러 정적 기준 방법'으로 고치고 어느 설정에서 100%였는지는 미확인으로 둔다 — 초록이 두 방법을 함께 들어 보고한다.\",\"f5: '사업자가 속한 산업이 아니라 AI 가 쓰이는 영역으로 판단한다는 해설' 대비 표현을 빼고 '에너지·보건의료·원자력·교통·교육 등 특정 영역에서 활용되는 AI 를 고영향으로 설명하는 해설'로 고쳐 [추정]을 유지한다 — 해설에 산업과의 대비 문장이 없다.\",\"f5·f66·f72: 문장 안에 '2025-09-30 공개된 시행령(안)·고시(안)·가이드라인(안) 기준이며 확정본과의 일치는 미확인'을 함께 적는다 — ref-1341 은 초안 해설이다.\",\"f1·f2·f29·f34·f51: [추정]에 '벤더 주장'을 병기하고 f2 는 수치가 목표치(실측 아님), f1 은 배치 기간 10·11개월 충돌(oq-219)을 함께 적는다 — 독립 확인이 없는 제조사·도입사·기사 전언이다.\",\"f29·f37·f50·f51·f63·f64·f65·f67·f70~f73 관련 문장: 수요예측·저수준 로봇 프로그램 생성·부품 신호 감시·로봇 자체 안전 기능과 인증·법령 해석은 '연계 대상'으로 짧게 쓰고 ROP 몫은 계획 채택 전 검사·기록·결과 반영으로만 서술한다 — 분류 원문 19장 경계.\",\"f6·f12·f20·f31·f50: '분류 원문 교차 규칙의 …에 해당한다/이어진다'는 출처 진술이 아니므로 태그 없는 연결 설명으로 쓰고, [사실] 태그는 출처가 말한 연구 내용에만 붙인다. 교차 규칙 원문을 옮길 때는 대분류 페이지 '이 대분류의 핵심 포인트'의 [분류원문] 문장을 글자 그대로 쓴다.\",\"f60: '현장 제약이 있는 다중 로봇 계획기의 공통 벤치마크는 확인하지 못했다(oq-217)'는 태그 없이 조사 한계로 쓰고 [사실]은 LoTa-Bench 와 공식 저장소에만 붙인다.\",\"f26·f44: 18. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험이라는 구분을 해당 문장에 그대로 유지한다.\",\"f53: 기준을 '2026-07-27 EUR-Lex 통합본 기준'으로 적고, 직접 인용은 ref-863 에 한 번만 짧게 쓴다.\",\"f67: 문장 끝에 '기사 1건 기준이며 정부 보도자료는 확인하지 못했다'를 적는다 — 단일 언론 출처다.\",\"재사용 연결(f7·f13·f16·f17·f19·f24·f27·f43·f45~f49·f55·f56): 다른 대분류 페이지와 같은 각주 id 를 그대로 쓰고, E 대분류 페이지처럼 '같은 연결은 … 페이지의 연결 절에도 있다'를 덧붙일 수 있다. 새 각주 id 를 만들지 않는다.\",\"각주 정의: research.json 에서 fetched false 인 출처(ref-1337~ref-1342·ref-863 을 뺀 나머지)는 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다.\",\"'아직 다루지 않은 연결'에 근거가 없는 17. 작업 대상·자산 식별과 인계 추적, 30. 로봇 간 협업·물리적 인계, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사, 60. 노동·수용성·접근성을 번호와 이름으로 적는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 74건, 미확인 1건(f3), 교차 확인 0건. 강등: f3 사실 → 범위 축소(비용·지연 동기와 A. 기획·사업의 3. 경제성·조달·사업 모델 연결 삭제, 로컬·클라우드 모델 평가 사실만 유지). 원문 미열람 출처: 재사용 62건(ref-1337~ref-1342·ref-863 을 뺀 전부; 검증 중 ref-201·ref-1043·ref-1315 는 초록을 열어 범위를 확인). 주의: 연결 주장은 모두 단일 출처이거나 서로 다른 내용의 출처 조합이라 교차 확인된 주장이 없고, 75건 가운데 22건이 [추정]이며 벤더 주장 5건(f1·f2·f29·f34·f51)이 섞여 있다. 한국 인공지능 기본법 책무(f5·f66·f72)는 2025-09-30 초안 해설 기준이다. RoboPAIR·RoboGuard·SYSDIAGBENCH 수치는 저자 보고값이다. 이번 검증은 검색 0회, 열람 11회로 했다. K. 플랫폼 아키텍처·인프라 대분류 연결 절(실행 2026-10-09-06)의 Bruno·Sim·Hagiwara '비용·지연 동기' 문장은 초록과 맞지 않으므로 다음 갱신 실행에서 재확인을 권한다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-08",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 게시된 44. 로봇 기반 모델·언어 모델 계획 5절의 [추정] 벤더 주장과 같은 내용. ref-1051 이번 실행 재열람 안 함(원문 미열람, 검증 예산). 벤더 주장 병기와 10·11개월 기간 충돌(oq-219) 병기 유지."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 44 페이지 5절 게시 주장 재인용. 80%·90%는 실측이 아닌 목표치임을 본문에 유지. ref-1052 원문 미열람(검증 예산), 벤더 주장 병기."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "검증자가 arXiv 초록(2609.29043, 2026-09-24 제출)을 열람: 로컬 오픈소스·프런티어 클라우드 배치 맥락의 세 모델을 평가한 것은 확인되나, 초록은 접근법의 동기를 단일 프롬프트 계획의 문맥 비대화·'Lost in the Middle'로 들고 API 비용·지연은 언급하지 않는다. '비교의 동기는 클라우드 API 비용과 지연' 부분과 그에 기댄 A. 기획·사업의 3. 경제성·조달·사업 모델 연결은 쓰지 않는다. 남는 '로컬·클라우드 배치 모델을 함께 평가했다'만 K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조 연결로 [사실] 사용 가능. K 대분류 연결 절(실행 2026-10-09-06)의 같은 문장과 충돌."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자가 Cal Poly 석사논문 초록 열람(2026-06): RaaS 과금에서 처리량 최대화 기준의 과대 산정, 라인당 비용 최소화, DES·SOQN·XGBoost 대리 모델 확인. 저자 보고값, 독립 재현 없음."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 재열람: BKL 해설은 '에너지, 보건의료, 원자력, 교통, 교육 등 특정 영역에서 활용되는' AI를 고영향으로 설명하나 '산업이 아니라 영역'이라는 대비 문장은 없다. 대비 표현을 빼고 해설 문구 범위로 재서술한다. 시행령(안)·고시(안) 초안 기준, 확정본 일치 미확인. 로봇 언급 없음."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 게시 인용. 두 연구는 서로 다른 방법이며 교차 확인 아님. '교차 규칙의 매뉴얼 해석이 등록 정보 작성으로 이어진다'는 출처 진술이 아니라 분류 원문 교차 규칙을 가리키는 연결 설명이므로 [사실] 범위에서 분리한다. 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: B. 로봇 온톨로지 대분류 연결 절의 [사실]과 같은 각주(ref-239, ref-238). 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 45 페이지 9절 [추정]과 같은 방향, 로봇 매뉴얼 적용 구현 미확인 병기. 원문 미열람."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자가 arXiv 초록(2606.02167, 2026-06-01 제출, CASE 2026 채택) 열람: VDI 3682·IEC 61360-1·IDTA 02011·IDTA 02016으로 구성한 AAS 능력 모델에서 PDDL 문제를 자동 생성하고 다중 AAS 구조를 계획 문제로 변환한다는 점 확인. '출력이 표준 PDDL이라 어떤 계획기든 쓸 수 있다'와 Festo MPS 500은 초록에 없으므로 그 구절은 삭제한다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. f9(축소 후)와 LLM+P 결합 해석, 두 방식 결합 사례 미확인 병기."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지, oq-216과 일치. VLA 저수준 정책은 연계 대상 문맥으로만."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 44 페이지·G 대분류 페이지 게시 인용. '두 영역이 만난다'는 분류 원문 C 주석(업무 지시는 25·26번)에 기댄 연결 설명. 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: E·K 대분류 연결 절의 검증된 [사실]과 같은 각주(ref-854). 시연은 시뮬레이션, 발표 내용 자체 미열람 병기."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. C 주석의 '사람이 확인·승인한 계획만 실행'은 [분류원문] 문장을 글자 그대로 인용할 때만 그 태그를 쓴다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 게시 인용. 세 자료는 서로 다른 내용, KnowNo 목표는 저자 보고."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I. 설계·시뮬레이션 대분류 연결 실행(2026-10-09-07)과 같은 각주. 제약 공정 설계 적용이며 로봇 플릿 사례 아님 병기."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: B·D 대분류 연결 절과 같은 각주(ref-076)."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 분류 원문 C 주석(맵 작성은 14·15번)과 연결."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I 대분류 연결 실행과 같은 각주(ref-1305). 단일 이동 매니퓰레이터 평가."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45·D 페이지 게시 인용, 교차 규칙(도면 해석은 14번). AI Hub 라벨의 로봇 운영 클래스는 oq-197."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 5절 게시 수치, 단일 출처 논문 평가값이며 로봇 현장 배치가 아님 병기."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 게시 인용, 제목 일치."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 5절 실외 사례 게시 주장. 로봇 대수·수치 미확인."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: D 대분류 연결 절과 같은 각주(ref-1018). 검색 결과 요약 기준(원문 미열람)."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 5절 제조 공장 사례 게시. 카메라 설치·동기화는 시설·설비 경계의 연계 대상."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래) 구분을 본문에 유지. oq-227."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: E 대분류 연결 절의 L 연결 [추정]과 같은 각주."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 5절 물류창고 사례 게시. 9절은 경계 이동 사례로 분류."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 벤더 주장, '연계 대상'으로 시작. 상위 업무 시스템 수요예측은 원문 19장 외부 연계 영역. oq-223."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 44 페이지 7절 [사실] 게시(ref-171, 참고문헌 원문 열람 '예')."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 교차 규칙(학습 기반 배정은 25번). 시뮬레이션 창고 조건 병기. 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 5절 병원 사례 게시, 동료 심사 전 프리프린트·저자 보고."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 5절 [사실] 게시. 아마존 연구진 논문이므로 학습 데이터 규모는 저자 보고."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 벤더 주장, 10%는 독립 측정 없음."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 6절 [추정] 요약과 같은 범위."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 게시 인용, 제목 일치."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 44 페이지 게시 인용. 저수준 로봇 프로그램 생성은 로봇 자체 제어 경계의 연계 대상 문맥으로만."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 4절 근거 자료. 로봇 현장 적용 미확인 병기."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 3절 게시 근거, 제목 일치. 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지, oq-107과 일치."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: arXiv 2306.15724(v1 2023-06-27, v4 2023-10-16, CoRL 2023) 초록에서 계층적 경험 요약·LLM 실패 설명·언어 기반 계획기의 수정·RoboFail 데이터셋 확인. 단일 로봇 조작 작업이며 플릿 적용 아님 병기."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: arXiv 2410.09084(2024-10-06) 초록에서 2,500건 이상 보고 이슈의 비공개(proprietary) 벤치마크 SYSDIAGBENCH, QLoRA 7B 모델의 진단 정확도 GPT-4 상회, 사람 전문가 연구로 LLM 평가자 검증 확인. 구체 정확도 수치 없음."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I 대분류 연결 실행과 같은 각주(ref-1308). 저자 보고."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 46 페이지 6절 주제 페이지의 2차 검증 결과([의견]→[추정])와 같다. 18·34 구분 유지."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: Howard 초록에서 SOQN 약 5%, XGBoost 대리 모델 교차 검증 약 3%, 등각 예측 구간 확인. 저자 보고값."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I 대분류 연결 실행과 같은 각주. 생성 환경은 실제 현장 지도가 아님 병기."
+      },
+      {
+        "finding_id": "f47",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I 대분류 연결 실행에서 정정된 SRCC 표현 그대로. 원문 미열람(검증 예산)."
+      },
+      {
+        "finding_id": "f48",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 현실 격차 보정은 로봇 제조사·시뮬레이션 도구와의 연계 문맥."
+      },
+      {
+        "finding_id": "f49",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: I 대분류 연결 실행과 같은 각주(ref-241)."
+      },
+      {
+        "finding_id": "f50",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 5절 기타 사례 게시, 91%는 저자 보고. 교차 규칙(장애 분석은 38번)."
+      },
+      {
+        "finding_id": "f51",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 벤더 주장. 정확도 산정 방법 미공개. 부품 수준 신호 감시는 연계 대상."
+      },
+      {
+        "finding_id": "f52",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 7절 게시. ISO 소개 페이지 기준, 표준 원문 미열람."
+      },
+      {
+        "finding_id": "f53",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: AI Act Service Desk 제12조(2026-07-27 EUR-Lex 통합본) — 제1항 수명 기간 자동 사건 기록, 제2항 (a) 제79조(1)의 위험·실질적 변경 식별, (b) 제72조 시판 후 감시, (c) 제26조(5) 운영 감시 확인. Digital Omnibus 개정 표시 없음. 통합본 기준일을 함께 적는다."
+      },
+      {
+        "finding_id": "f54",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지, 고위험 해당 여부는 oq-106 열린 질문으로."
+      },
+      {
+        "finding_id": "f55",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: K 대분류 연결 실행과 같은 각주(ref-304). 원문 미열람."
+      },
+      {
+        "finding_id": "f56",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: K 대분류 연결 실행과 같은 각주. 규약이 개발(Development) 단계임 병기(oq-212)."
+      },
+      {
+        "finding_id": "f57",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 게시. 로봇 플랫폼 적용 사례 미확인."
+      },
+      {
+        "finding_id": "f58",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 3절 [사실]과 같은 각주."
+      },
+      {
+        "finding_id": "f59",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 게시 인용."
+      },
+      {
+        "finding_id": "f60",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 8절 게시(공식 저장소 README). '다중 로봇 공통 벤치마크 미확인'은 출처 진술이 아니라 조사 한계이므로 태그 없이 쓰고 oq-217로 연결."
+      },
+      {
+        "finding_id": "f61",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 46 페이지 게시 인용, oq-220."
+      },
+      {
+        "finding_id": "f62",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지, 온보딩 소요 측정 사례 미확인 병기."
+      },
+      {
+        "finding_id": "f63",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: arXiv 2410.13691(v1 2024-10-17, v2 2024-11-09) 초록에서 세 설정(Dolphins 자율주행 LLM 화이트박스, GPT-4o 계획기 Jackal 그레이박스, GPT-3.5 연동 Go2 블랙박스)과 Go2가 배치된 상용 로봇 시스템의 첫 탈옥 성공이라는 저자 진술 확인. 다만 '자주 100%'는 RoboPAIR와 여러 정적 기준 방법을 함께 가리키므로 주어를 고친다."
+      },
+      {
+        "finding_id": "f64",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: arXiv 2503.07885(v1 2025-03-10, v2 2026-03-03) 초록에서 신뢰 기점 LLM·시간 논리 제어 합성, 최악 탈옥 공격에서 위험 계획 실행 92% 초과→3% 미만, 안전 계획 성능 유지 확인. v2 기준임을 밝힌다. 저자 보고값."
+      },
+      {
+        "finding_id": "f65",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 로봇 자체 안전 기능·인증은 연계 대상, 다중 로봇 플릿 적용 사례 미확인 병기. oq-106."
+      },
+      {
+        "finding_id": "f66",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 재열람: 고시(안) 제7조 제1항의 개발 단계 개입 기준·'긴급 정지 등의 개입 방법', 제2항 운영 단계 성능 저하·오류 정기 점검과 관리자 교육·훈련 확인. 시행령(안)·고시(안)·가이드라인(안) 초안 기준(2025-09-30)이며 확정본 일치 미확인."
+      },
+      {
+        "finding_id": "f67",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: 메트로신문 2026-05-06 기사에서 ICT 규제샌드박스 심의위원회의 뉴빌리티 실증특례 승인과 부가 조건(연구 목적 내 활용·개인 식별 금지·제3자 제공 금지·관리 조직·단계별 관리 체계·보호대책) 확인. 기사 1건 기준, 정부 보도자료 미확인 병기."
+      },
+      {
+        "finding_id": "f68",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 45 페이지 5절 제약 칸 게시. oq-228과 연결."
+      },
+      {
+        "finding_id": "f69",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. f13·f63 결합 해석, 권한 설계 사례 미확인 병기."
+      },
+      {
+        "finding_id": "f70",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 3절 [사실]과 같은 각주·기준일 2026-01-22. ref-620 원문 미열람, 고영향 영역 목록 미확인."
+      },
+      {
+        "finding_id": "f71",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 3절 [사실]. 적용 시점은 개정 논의로 확정하지 않음 병기. 원문 미열람."
+      },
+      {
+        "finding_id": "f72",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증자 열람: BKL 해설에서 위험관리방안(주기적 점검·갱신), 결과 도출 주요 기준·학습용데이터 개요 설명방안, 이용자 보호방안, 홈페이지 게시, 시행령(안) 제26조 표의 5년 보관 확인. 초안 기준."
+      },
+      {
+        "finding_id": "f73",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: [추정] 유지. 책무 귀속 판단은 법무·운영 사업자 쪽 연계 대상, oq-105."
+      },
+      {
+        "finding_id": "f74",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 47 페이지 게시 인용. 세 자료는 서로 다른 문서이며 발행일은 각주별로 적는다(as_of 2023-02는 대표값). 원문 미열람."
+      },
+      {
+        "finding_id": "f75",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 44 페이지 5절 가정 사례 [사실]. 연구 평가이며 상용 배치 아님, 저수준 조작 정책은 연계 대상."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f3 ↔ K. 플랫폼 아키텍처·인프라 대분류 연결 절(실행 2026-10-09-06 f40)의 'Bruno·Sim·Hagiwara 비교의 동기는 클라우드 API 비용과 지연' 문장: 이번 검증에서 초록상 동기는 문맥 비대화·'Lost in the Middle'로 확인되어 충돌한다(이 페이지에는 동기를 쓰지 않는다)",
+        "f13·f55·f56 ↔ E·K 대분류 연결 절의 같은 주장·각주(ref-854, ref-304, ref-1037) 재사용",
+        "f16·f19·f43·f45·f46·f47·f48·f49 ↔ I. 설계·시뮬레이션 대분류 연결 실행(2026-10-09-07)의 같은 주장·각주 재사용",
+        "f7·f17 ↔ B. 로봇 온톨로지 대분류 연결 절, f17·f24 ↔ D. 공간·지도 모델 대분류 연결 절의 L 연결, f27 ↔ E 대분류 연결 절의 L 연결과 같은 주장·각주",
+        "f12·f31 ↔ G. 계획·최적화 대분류 연결 절의 47 연결과 같은 각주(ref-090, ref-623)"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "page_proposals 의 절 이름: L. AI·학습 기술 페이지의 H2 는 번호 없는 '다른 대분류와의 연결'이므로 patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 쓰고 그 절만 replace 한다 — 대분류 H2 정본(부록 C)에 번호가 없다.",
+      "각주 정의 자리: L 페이지에는 '참고 자료' 절이 없으므로, D·E 대분류 페이지처럼 페이지 끝에 '## 참고 자료' 절을 append 해 이번 절이 쓴 각주 정의를 모두 두고, auto 마커(category-area-table, category-sources, category-recent)와 그 사이 내용은 건드리지 않는다 — 각주 참조가 정의 없이 남지 않게 하기 위함이다.",
+      "f3: '비교의 동기는 클라우드 API 비용과 지연이었다'와 A. 기획·사업의 3. 경제성·조달·사업 모델 연결을 쓰지 않고, '로컬 오픈소스와 프런티어 클라우드 배치 맥락의 모델을 함께 평가했다'만 K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조 연결로 [사실][^ref-1043] 표기한다 — 초록이 동기로 문맥 비대화·'Lost in the Middle'을 들고 비용·지연은 언급하지 않는다.",
+      "f9: '출력이 표준 PDDL이라 어떤 계획기든 쓸 수 있다고 보고했다' 구절을 삭제하고, 'VDI 3682·IEC 61360-1·IDTA 02011·IDTA 02016 으로 구성한 자산관리셸 능력 모델에서 PDDL 문제를 자동 생성한다(CASE 2026 채택)' 범위로만 [사실][^ref-201] 표기한다 — 그 구절은 초록에 없다.",
+      "f63: '공격 성공률이 자주 100%에 이르렀다'의 주어를 'RoboPAIR 와 여러 정적 기준 방법'으로 고치고 어느 설정에서 100%였는지는 미확인으로 둔다 — 초록이 두 방법을 함께 들어 보고한다.",
+      "f5: '사업자가 속한 산업이 아니라 AI 가 쓰이는 영역으로 판단한다는 해설' 대비 표현을 빼고 '에너지·보건의료·원자력·교통·교육 등 특정 영역에서 활용되는 AI 를 고영향으로 설명하는 해설'로 고쳐 [추정]을 유지한다 — 해설에 산업과의 대비 문장이 없다.",
+      "f5·f66·f72: 문장 안에 '2025-09-30 공개된 시행령(안)·고시(안)·가이드라인(안) 기준이며 확정본과의 일치는 미확인'을 함께 적는다 — ref-1341 은 초안 해설이다.",
+      "f1·f2·f29·f34·f51: [추정]에 '벤더 주장'을 병기하고 f2 는 수치가 목표치(실측 아님), f1 은 배치 기간 10·11개월 충돌(oq-219)을 함께 적는다 — 독립 확인이 없는 제조사·도입사·기사 전언이다.",
+      "f29·f37·f50·f51·f63·f64·f65·f67·f70~f73 관련 문장: 수요예측·저수준 로봇 프로그램 생성·부품 신호 감시·로봇 자체 안전 기능과 인증·법령 해석은 '연계 대상'으로 짧게 쓰고 ROP 몫은 계획 채택 전 검사·기록·결과 반영으로만 서술한다 — 분류 원문 19장 경계.",
+      "f6·f12·f20·f31·f50: '분류 원문 교차 규칙의 …에 해당한다/이어진다'는 출처 진술이 아니므로 태그 없는 연결 설명으로 쓰고, [사실] 태그는 출처가 말한 연구 내용에만 붙인다. 교차 규칙 원문을 옮길 때는 대분류 페이지 '이 대분류의 핵심 포인트'의 [분류원문] 문장을 글자 그대로 쓴다.",
+      "f60: '현장 제약이 있는 다중 로봇 계획기의 공통 벤치마크는 확인하지 못했다(oq-217)'는 태그 없이 조사 한계로 쓰고 [사실]은 LoTa-Bench 와 공식 저장소에만 붙인다.",
+      "f26·f44: 18. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험이라는 구분을 해당 문장에 그대로 유지한다.",
+      "f53: 기준을 '2026-07-27 EUR-Lex 통합본 기준'으로 적고, 직접 인용은 ref-863 에 한 번만 짧게 쓴다.",
+      "f67: 문장 끝에 '기사 1건 기준이며 정부 보도자료는 확인하지 못했다'를 적는다 — 단일 언론 출처다.",
+      "재사용 연결(f7·f13·f16·f17·f19·f24·f27·f43·f45~f49·f55·f56): 다른 대분류 페이지와 같은 각주 id 를 그대로 쓰고, E 대분류 페이지처럼 '같은 연결은 … 페이지의 연결 절에도 있다'를 덧붙일 수 있다. 새 각주 id 를 만들지 않는다.",
+      "각주 정의: research.json 에서 fetched false 인 출처(ref-1337~ref-1342·ref-863 을 뺀 나머지)는 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다.",
+      "'아직 다루지 않은 연결'에 근거가 없는 17. 작업 대상·자산 식별과 인계 추적, 30. 로봇 간 협업·물리적 인계, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사, 60. 노동·수용성·접근성을 번호와 이름으로 적는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 74건, 미확인 1건(f3), 교차 확인 0건. 강등: f3 사실 → 범위 축소(비용·지연 동기와 A. 기획·사업의 3. 경제성·조달·사업 모델 연결 삭제, 로컬·클라우드 모델 평가 사실만 유지). 원문 미열람 출처: 재사용 62건(ref-1337~ref-1342·ref-863 을 뺀 전부; 검증 중 ref-201·ref-1043·ref-1315 는 초록을 열어 범위를 확인). 주의: 연결 주장은 모두 단일 출처이거나 서로 다른 내용의 출처 조합이라 교차 확인된 주장이 없고, 75건 가운데 22건이 [추정]이며 벤더 주장 5건(f1·f2·f29·f34·f51)이 섞여 있다. 한국 인공지능 기본법 책무(f5·f66·f72)는 2025-09-30 초안 해설 기준이다. RoboPAIR·RoboGuard·SYSDIAGBENCH 수치는 저자 보고값이다. 이번 검증은 검색 0회, 열람 11회로 했다. K. 플랫폼 아키텍처·인프라 대분류 연결 절(실행 2026-10-09-06)의 Bruno·Sim·Hagiwara '비용·지연 동기' 문장은 초록과 맞지 않으므로 다음 갱신 실행에서 재확인을 권한다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 56007,
+  "type": "result",
+  "duration_ms": 261180,
+  "uuid": "432a9acd-6955-4e03-b2eb-f1eafe3c0b9a",
+  "ttft_stream_ms": 1286,
+  "time_to_request_ms": 135,
+  "time_to_request_phases_ms": {
+    "other": 22,
+    "system_prompt": 18,
+    "resume_other": 0,
+    "process_user_input": 9,
+    "input_attachments": 42,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 15
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 85,
+  "time_to_request_cpu_ms": 164,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "mcp_resources",
+    "slowest_producer_ms": 10,
+    "cpu_ms": 43,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1286,
+  "time_to_request_from_spawn_ms": 6075465,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791512342487.6711,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 263.2
+}

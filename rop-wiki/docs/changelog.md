@@ -34,6 +34,11 @@ version: 1
 | 2026-10-09-09 | 생성 | [docs/glossary/management-of-change.md](glossary/management-of-change.md) | 용어집 항목 변경 관리 |
 | 2026-10-09-09 | 생성 | [docs/glossary/safety-state-report.md](glossary/safety-state-report.md) | 용어집 항목 안전 상태 보고 |
 | 2026-10-09-09 | 생성 | [docs/glossary/wireless-safety-rated-emergency-stop.md](glossary/wireless-safety-rated-emergency-stop.md) | 용어집 항목 무선 안전 비상정지 |
+| 2026-10-09-08 | 갱신 | [docs/categories/ai-and-learning/index.md](categories/ai-and-learning/index.md) | '다른 대분류와의 연결' 절 신규 작성(A~K·M~Q 16개 대분류, 교차 규칙 네 갈래와 C 원칙 반영, 미연결 7개 영역 명시), 페이지 끝에 '참고 자료' 절 추가(각주 정의 70건). 2차: 번호만 쓴 항목 제목 2곳 수정, 52번 항목의 근거 없는 해석 문장을 태그 없는 연결 설명으로 교체, 38·12번 항목을 하위 항목으로 나눔, ROS 첫 등장 풀어쓰기 |
+| 2026-10-09-08 | 요약 | [docs/categories/ai-and-learning/index.md](categories/ai-and-learning/index.md) | L. AI·학습 기술: 다른 대분류와의 연결 절 신규 작성(A~K·M~Q 16개 대분류, 교차 규칙 네 갈래·C 원칙 반영, 미연결 7개 영역 명시)과 참고 자료 절 추가 |
+| 2026-10-09-08 | 생성 | [docs/references/ref-1262.md](references/ref-1262.md) | 참고문헌 ref-1262 등록: Diagnosing Robotics Systems Issues with Large Language Model… |
+| 2026-10-09-08 | 생성 | [docs/references/ref-1263.md](references/ref-1263.md) | 참고문헌 ref-1263 등록: AI·커머스·플랫폼 분야 규제 특례 확대…사업화 지원 |
+| 2026-10-09-08 | 생성 | [docs/glossary/automatic-recording-of-events.md](glossary/automatic-recording-of-events.md) | 용어집 항목 자동 사건 기록 |
 | 2026-10-09-07 | 갱신 | [docs/categories/design-and-simulation/index.md](categories/design-and-simulation/index.md) | '다른 대분류와의 연결' 절 작성: 다른 대분류 16곳과의 연결(finding 84건, 각주 63건), 아직 다루지 않은 연결 6개 영역 명시, 1차 조건부 승인 수정 16건 반영 |
 | 2026-10-09-07 | 요약 | [docs/categories/design-and-simulation/index.md](categories/design-and-simulation/index.md) | I. 설계·시뮬레이션: '다른 대분류와의 연결' 절 작성(다른 대분류 16곳, 각주 63건, 1차 조건부 승인 수정 16건 반영, 보류 실행 2026-10-09-04 대체) |
 | 2026-10-09-07 | 생성 | [docs/references/ref-1251.md](references/ref-1251.md) | 참고문헌 ref-1251 등록: Provision of Simulation Models (IDTA 02005) 1.0 — README |
