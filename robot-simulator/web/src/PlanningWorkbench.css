@@ -810,6 +810,19 @@
   flex-wrap: wrap;
 }
 @media (min-width: 1001px) {
+  #root:has(> .visitor-banner):has(.page-planner) {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+  }
+  #root:has(.page-planner) > .visitor-banner {
+    flex-shrink: 0;
+  }
+  #root:has(.page-planner) > .visitor-banner + .app {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+  }
   .content.page-planner {
     display: flex;
     flex-direction: column;
