@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) — '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, 아직 다루지 않은 연결 목록), '참고 자료' 절에 각주 정의 39건 추가 (실행 2026-10-09-03)
-- 2026-10-09 · 요약 · [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) — E. 사물·사람·실시간 상태: '다른 대분류와의 연결' 절 신규 작성(15개 대분류 연결·아직 다루지 않은 연결 목록, f7·f41 강등 반영, 각주 39건 추가) (실행 2026-10-09-03)
-- 2026-10-09 · 생성 · [ref-1299 — ST Engineering Aethon Launches Zena RX, Redefining Secure Delivery of Medications, Specimens and Sensitive Goods in Hospitals](references/ref-1299.md) — 참고문헌 ref-1299 등록: ST Engineering Aethon Launches Zena RX, Redefining Secure De… (실행 2026-10-09-03)
-- 2026-10-09 · 생성 · [ref-1300 — 엘리베이터 타는 배달로봇과의 조우](references/ref-1300.md) — 참고문헌 ref-1300 등록: 엘리베이터 타는 배달로봇과의 조우 (실행 2026-10-09-03)
-- 2026-10-09 · 생성 · [ref-1301 — 내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다](references/ref-1301.md) — 참고문헌 ref-1301 등록: 내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다 (실행 2026-10-09-03)
+- 2026-10-09 · 갱신 · [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) — '다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건 (실행 2026-10-09-05)
+- 2026-10-09 · 요약 · [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, B. 로봇 온톨로지 근거 없음 명시, 각주 47건, 1차 조건부 승인 수정 22건 반영) (실행 2026-10-09-05)
+- 2026-10-09 · 생성 · [ref-1333 — ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries](references/ref-1333.md) — 참고문헌 ref-1333 등록: ANSI/ISA 18.2-2016 Management of Alarm Systems for the Proce… (실행 2026-10-09-05)
+- 2026-10-09 · 생성 · [ref-1334 — Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout](references/ref-1334.md) — 참고문헌 ref-1334 등록: Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse… (실행 2026-10-09-05)
+- 2026-10-09 · 생성 · [ref-1335 — Effects of alarms on control of robot teams](references/ref-1335.md) — 참고문헌 ref-1335 등록: Effects of alarms on control of robot teams (실행 2026-10-09-05)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

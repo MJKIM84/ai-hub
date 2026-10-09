@@ -1,0 +1,172 @@
+{
+  "duration_api_ms": 65096,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.1932068,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 127415,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 7806,
+    "output_tokens_details": {
+      "thinking_tokens": 5831
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 127415,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 7806,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 127415,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 127415
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 7806,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 127415,
+      "webSearchRequests": 0,
+      "costUSD": 1.1932068,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 5831,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-05\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f26(39. 운영 성과 측정·개선 ↔ 18. 실시간 세계 상태·데이터 일관성)과 f28(39 ↔ 28. 공용 자원·충전·에너지 최적화)은 A. 기획·사업 페이지 '다른 대분류와의 연결' 절과 같은 각주(ref-148, ref-146)·같은 단서 표현을 쓴다. 본문에서 그 절로 링크했다\",\"f20(38. 모니터링·이상 탐지·원인 분석 ↔ 25. 작업 배정 — MRTA)은 G. 계획·최적화 페이지 연결 절과 같은 각주 ref-494를 쓴다. 본문에서 그 절로 링크했다\",\"f2·f29는 I. 설계·시뮬레이션 대분류 연결 브리프(2026-10-09-04)와 같은 출처·같은 결론을 쓰며, 서로 모순되지 않는다\",\"f13·f26은 E. 사물·사람·실시간 상태 대분류 연결 브리프(2026-10-09-03)와 같은 방향의 연결이며, 서로 모순되지 않는다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 1차에서는 43건을 확인했고 미확인은 0건, 교차 확인도 0건이다. 이번 검증에서 원문을 연 출처는 신규 출처 6건(ref-1359~ref-1364)과 ref-762, ref-1093이다. 재인용 출처에만 기댄 19건(f7, f8, f9, f12, f20, f23, f24, f28~f33, f38~f43)은 원문을 다시 열지 않았다. 대신 게시 페이지의 기존 검증 결과에 기대어 확인으로 셌다. 강등은 없다. 다만 f16·f17·f26은 해석 부분을 별도 [추정] 문장으로 나눴다. f10·f18은 원문이 말하는 범위로 좁혀 썼다. 원문 미열람 출처는 다음과 같다: ref-1093, ref-1096, ref-302, ref-1099, ref-1098, ref-1103, ref-494, ref-453, ref-1228, ref-139, ref-140, ref-146, ref-102, ref-1226, ref-1220, ref-096, ref-145, ref-1153, ref-1157, ref-1150, ref-1151, ref-944, ref-1199, ref-1152, ref-1154, ref-781, ref-782. 주의 사항은 다음과 같다. 대부분의 연결은 단일 출처이거나, 게시된 세부영역 페이지의 판단을 다시 인용한 것이다. ANSI/ISA 18.2-2016은 공정 산업 표준이다. ISO 22400-2 개정판은 2026-10-09 기준 아직 발행되지 않았다. 마약류 관리대장 보관 기간은 2018년 기사 기준이며 현행 법령인지는 확인하지 못했다. B. 로봇 온톨로지와 잇는 근거는 없다. 현장 근거도 물류창고·제조 공장·병원·상업 시설로 한정된다. 정정 요청은 없다. 2차 검증에서는 드리프트가 없었다. 연결 절의 문장은 모두 브리프 finding f1~f43, 분류 원문 교차 규칙, 또는 기존 각주(ref-781·ref-782)에 대응한다. 1차 수정 지시 22건도 모두 이행됐다. [분류원문]이 붙은 줄과 auto 마커는 그대로 남아 있고, 섹션 순서와 링크도 이상이 없다. 2차에서는 도구를 쓰지 않았다. 퍼블리셔 참고 사항이 하나 있다. reference_updates는 이번 실행 기준으로 source_unopened: true를 적었다. 그런데 이 가운데 ref-944, ref-1093, ref-1096, ref-1098, ref-1099, ref-1103, ref-1150~ref-1152, ref-1154, ref-1157, ref-1199, ref-302는 이전 실행에서 원문을 연 출처다(참고문헌 목록 '예'). 따라서 이번 값이 참고문헌 페이지의 기존 열람 이력을 덮어쓰지 않도록 확인이 필요하다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-05",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f26(39. 운영 성과 측정·개선 ↔ 18. 실시간 세계 상태·데이터 일관성)과 f28(39 ↔ 28. 공용 자원·충전·에너지 최적화)은 A. 기획·사업 페이지 '다른 대분류와의 연결' 절과 같은 각주(ref-148, ref-146)·같은 단서 표현을 쓴다. 본문에서 그 절로 링크했다",
+        "f20(38. 모니터링·이상 탐지·원인 분석 ↔ 25. 작업 배정 — MRTA)은 G. 계획·최적화 페이지 연결 절과 같은 각주 ref-494를 쓴다. 본문에서 그 절로 링크했다",
+        "f2·f29는 I. 설계·시뮬레이션 대분류 연결 브리프(2026-10-09-04)와 같은 출처·같은 결론을 쓰며, 서로 모순되지 않는다",
+        "f13·f26은 E. 사물·사람·실시간 상태 대분류 연결 브리프(2026-10-09-03)와 같은 방향의 연결이며, 서로 모순되지 않는다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 1차에서는 43건을 확인했고 미확인은 0건, 교차 확인도 0건이다. 이번 검증에서 원문을 연 출처는 신규 출처 6건(ref-1359~ref-1364)과 ref-762, ref-1093이다. 재인용 출처에만 기댄 19건(f7, f8, f9, f12, f20, f23, f24, f28~f33, f38~f43)은 원문을 다시 열지 않았다. 대신 게시 페이지의 기존 검증 결과에 기대어 확인으로 셌다. 강등은 없다. 다만 f16·f17·f26은 해석 부분을 별도 [추정] 문장으로 나눴다. f10·f18은 원문이 말하는 범위로 좁혀 썼다. 원문 미열람 출처는 다음과 같다: ref-1093, ref-1096, ref-302, ref-1099, ref-1098, ref-1103, ref-494, ref-453, ref-1228, ref-139, ref-140, ref-146, ref-102, ref-1226, ref-1220, ref-096, ref-145, ref-1153, ref-1157, ref-1150, ref-1151, ref-944, ref-1199, ref-1152, ref-1154, ref-781, ref-782. 주의 사항은 다음과 같다. 대부분의 연결은 단일 출처이거나, 게시된 세부영역 페이지의 판단을 다시 인용한 것이다. ANSI/ISA 18.2-2016은 공정 산업 표준이다. ISO 22400-2 개정판은 2026-10-09 기준 아직 발행되지 않았다. 마약류 관리대장 보관 기간은 2018년 기사 기준이며 현행 법령인지는 확인하지 못했다. B. 로봇 온톨로지와 잇는 근거는 없다. 현장 근거도 물류창고·제조 공장·병원·상업 시설로 한정된다. 정정 요청은 없다. 2차 검증에서는 드리프트가 없었다. 연결 절의 문장은 모두 브리프 finding f1~f43, 분류 원문 교차 규칙, 또는 기존 각주(ref-781·ref-782)에 대응한다. 1차 수정 지시 22건도 모두 이행됐다. [분류원문]이 붙은 줄과 auto 마커는 그대로 남아 있고, 섹션 순서와 링크도 이상이 없다. 2차에서는 도구를 쓰지 않았다. 퍼블리셔 참고 사항이 하나 있다. reference_updates는 이번 실행 기준으로 source_unopened: true를 적었다. 그런데 이 가운데 ref-944, ref-1093, ref-1096, ref-1098, ref-1099, ref-1103, ref-1150~ref-1152, ref-1154, ref-1157, ref-1199, ref-302는 이전 실행에서 원문을 연 출처다(참고문헌 목록 '예'). 따라서 이번 값이 참고문헌 페이지의 기존 열람 이력을 덮어쓰지 않도록 확인이 필요하다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 50704,
+  "type": "result",
+  "duration_ms": 65265,
+  "uuid": "6f684fcd-8a57-49e0-b4ee-7239d55e91d7",
+  "ttft_stream_ms": 805,
+  "time_to_request_ms": 113,
+  "time_to_request_phases_ms": {
+    "other": 28,
+    "system_prompt": 16,
+    "resume_other": 1,
+    "process_user_input": 6,
+    "input_attachments": 11,
+    "input_hooks": 3,
+    "tool_pool_refresh": 4,
+    "init_message": 7,
+    "engine_pickup": 2,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 7,
+    "message_normalization": 2,
+    "client_creation": 7,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 63,
+  "time_to_request_cpu_ms": 165,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 13,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 806,
+  "time_to_request_from_spawn_ms": 3683049,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791509950300.8125,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 66.8
+}

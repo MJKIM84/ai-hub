@@ -314,8 +314,10 @@ version: 1
 | oq-292 | 시뮬레이션·가상 시운전에 쓰는 3D 자산(로봇 모델·건물 모델)의 라이선스와 저작자 표기를 자산 단위로 추적하는 표준 방법이 있으며, SPDX 로 3D 자산의 라이선스를 기술한 사례가 있는가? | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-09-30 | 2026-09-30-23 | 열림 | — |
 | oq-293 | 병원 운반 로봇의 생체 인식·PIN 수령 확인처럼 수령인 인증 결과를 작업 완료·인계 이벤트로 ROP 와 병원 정보 시스템에 남기는 공개 인터페이스나 표준 필드가 있는가? | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)<br>[51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-10-09 | 2026-10-09-03 | 열림 | — |
 | oq-294 | 사람 존재 정보로 세계 상태 정보의 확실도를 낮추는 방식을 물류창고·병원 같은 이동로봇 현장의 문·통로·적재물 상태 판단에 적용한 연구나 사례가 있는가? | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 2026-10-09 | 2026-10-09-03 | 열림 | — |
+| oq-295 | 다중 로봇 플릿 관제에서 경보 우선순위, 경보 홍수 기준, 경보 합리화 절차를 ANSI/ISA 18.2 처럼 정한 로봇 운영용 경보 관리 표준이나 공개 지침이 있는가? | [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)<br>[31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 2026-10-09 | 2026-10-09-05 | 열림 | — |
+| oq-296 | 전자의무기록 주문이 로봇 작업 요청을 자동으로 만드는 병원 연동에서 주문 취소·변경을 진행 중인 로봇 작업에 반영하고 결과를 기록에 되돌린 공개 사례가 있는가? | [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-10-09 | 2026-10-09-05 | 열림 | — |
 
-상태별 건수: 열림 293건, 조사 중 1건
+상태별 건수: 열림 295건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

@@ -20,6 +20,15 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-05 | 갱신 | [docs/categories/field-operations-and-monitoring/index.md](categories/field-operations-and-monitoring/index.md) | '다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건 |
+| 2026-10-09-05 | 요약 | [docs/categories/field-operations-and-monitoring/index.md](categories/field-operations-and-monitoring/index.md) | J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, B. 로봇 온톨로지 근거 없음 명시, 각주 47건, 1차 조건부 승인 수정 22건 반영) |
+| 2026-10-09-05 | 생성 | [docs/references/ref-1333.md](references/ref-1333.md) | 참고문헌 ref-1333 등록: ANSI/ISA 18.2-2016 Management of Alarm Systems for the Proce… |
+| 2026-10-09-05 | 생성 | [docs/references/ref-1334.md](references/ref-1334.md) | 참고문헌 ref-1334 등록: Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse… |
+| 2026-10-09-05 | 생성 | [docs/references/ref-1335.md](references/ref-1335.md) | 참고문헌 ref-1335 등록: Effects of alarms on control of robot teams |
+| 2026-10-09-05 | 생성 | [docs/references/ref-1336.md](references/ref-1336.md) | 참고문헌 ref-1336 등록: 마약통합시스템 시행 2개월…병원·약국 다빈도 질문은 |
+| 2026-10-09-05 | 생성 | [docs/glossary/alarm-management.md](glossary/alarm-management.md) | 용어집 항목 경보 관리 |
+| 2026-10-09-05 | 생성 | [docs/glossary/runtime-tracing.md](glossary/runtime-tracing.md) | 용어집 항목 런타임 추적 |
+| 2026-10-09-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-10-09-03 | 갱신 | [docs/categories/objects-people-and-live-state/index.md](categories/objects-people-and-live-state/index.md) | '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, 아직 다루지 않은 연결 목록), '참고 자료' 절에 각주 정의 39건 추가 |
 | 2026-10-09-03 | 요약 | [docs/categories/objects-people-and-live-state/index.md](categories/objects-people-and-live-state/index.md) | E. 사물·사람·실시간 상태: '다른 대분류와의 연결' 절 신규 작성(15개 대분류 연결·아직 다루지 않은 연결 목록, f7·f41 강등 반영, 각주 39건 추가) |
 | 2026-10-09-03 | 생성 | [docs/references/ref-1299.md](references/ref-1299.md) | 참고문헌 ref-1299 등록: ST Engineering Aethon Launches Zena RX, Redefining Secure De… |
