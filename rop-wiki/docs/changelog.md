@@ -20,6 +20,20 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-10 | 갱신 | [docs/categories/security-and-privacy/index.md](categories/security-and-privacy/index.md) | 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류와의 연결, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 절 끝에 각주 정의 43건 추가, 2차 수정 3건(장면 인식 모델 단정 삭제, C. 채팅 기반 구성·운영 호칭, 약어 풀어쓰기) 반영 |
+| 2026-10-09-10 | 요약 | [docs/categories/security-and-privacy/index.md](categories/security-and-privacy/index.md) | N. 보안·개인정보: 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 각주 정의 43건 추가, 1차 수정 26건·2차 수정 3건 반영 |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1264.md](references/ref-1264.md) | 참고문헌 ref-1264 등록: Researcher who found McDonald's free-food hack turns her att… |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1265.md](references/ref-1265.md) | 참고문헌 ref-1265 등록: Researcher finds a way to hack Chinese Pudu service robots |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1266.md](references/ref-1266.md) | 참고문헌 ref-1266 등록: France Fines Amazon 32m Euros Over 'Excessive' Worker Survei… |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1267.md](references/ref-1267.md) | 참고문헌 ref-1267 등록: Employee monitoring: CNIL fined AMAZON FRANCE LOGISTIQUE €32… |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1268.md](references/ref-1268.md) | 참고문헌 ref-1268 등록: 개인정보위 "로봇청소기 5개 브랜드, 특별한 침해 위험 없어" |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1269.md](references/ref-1269.md) | 참고문헌 ref-1269 등록: 과기정통부, 선박·우주·로봇 보안 매뉴얼 공개 |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1272.md](references/ref-1272.md) | 참고문헌 ref-1272 등록: Seeing is Not Believing: Breaking the Physical-to-Digital Tr… |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1273.md](references/ref-1273.md) | 참고문헌 ref-1273 등록: KUKA is First to Achieve Security Level 2 Certification for… |
+| 2026-10-09-10 | 생성 | [docs/references/ref-1274.md](references/ref-1274.md) | 참고문헌 ref-1274 등록: Data Act explained |
+| 2026-10-09-10 | 생성 | [docs/glossary/actively-exploited-vulnerability.md](glossary/actively-exploited-vulnerability.md) | 용어집 항목 적극 악용 취약점 |
+| 2026-10-09-10 | 갱신 | [docs/glossary/data-holder.md](glossary/data-holder.md) | 용어집 항목 연결 제품 |
+| 2026-10-09-10 | 생성 | [docs/glossary/remote-attestation.md](glossary/remote-attestation.md) | 용어집 항목 원격 증명 |
 | 2026-10-09-09 | 갱신 | [docs/categories/safety/index.md](categories/safety/index.md) | '다른 대분류와의 연결' 절 첫 작성: 16개 대분류와의 연결(주장 70건 근거), Q. 현장 유형별 적용 현장별 정리, 아직 다루지 않은 연결 7건, 각주 정의 48건 |
 | 2026-10-09-09 | 요약 | [docs/categories/safety/index.md](categories/safety/index.md) | M. 안전: 다른 대분류와의 연결 절 첫 작성(16개 대분류와의 연결, 현장 유형별 근거, 아직 다루지 않은 연결 7건) |
 | 2026-10-09-09 | 생성 | [docs/references/ref-1253.md](references/ref-1253.md) | 참고문헌 ref-1253 등록: AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인 |

@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [M. 안전](categories/safety/index.md) — '다른 대분류와의 연결' 절 첫 작성: 16개 대분류와의 연결(주장 70건 근거), Q. 현장 유형별 적용 현장별 정리, 아직 다루지 않은 연결 7건, 각주 정의 48건 (실행 2026-10-09-09)
-- 2026-10-09 · 요약 · [M. 안전](categories/safety/index.md) — M. 안전: 다른 대분류와의 연결 절 첫 작성(16개 대분류와의 연결, 현장 유형별 근거, 아직 다루지 않은 연결 7건) (실행 2026-10-09-09)
-- 2026-10-09 · 생성 · [ref-1253 — AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인](references/ref-1253.md) — 참고문헌 ref-1253 등록: AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인 (실행 2026-10-09-09)
-- 2026-10-09 · 생성 · [ref-1254 — ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications](references/ref-1254.md) — 참고문헌 ref-1254 등록: ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications (실행 2026-10-09-09)
-- 2026-10-09 · 생성 · [ref-1255 — ANSI/A3 R15.08-3-2026, American National Standard for Industrial Mobile Robots – Safety Requirements – Part 3: Use of IMR Applications](references/ref-1255.md) — 참고문헌 ref-1255 등록: ANSI/A3 R15.08-3-2026, American National Standard for Indust… (실행 2026-10-09-09)
+- 2026-10-09 · 갱신 · [N. 보안·개인정보](categories/security-and-privacy/index.md) — 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류와의 연결, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 절 끝에 각주 정의 43건 추가, 2차 수정 3건(장면 인식 모델 단정 삭제, C. 채팅 기반 구성·운영 호칭, 약어 풀어쓰기) 반영 (실행 2026-10-09-10)
+- 2026-10-09 · 요약 · [N. 보안·개인정보](categories/security-and-privacy/index.md) — N. 보안·개인정보: 다른 대분류와의 연결 절 첫 작성(A~Q 가운데 16개 대분류, 현장 유형별 재묶음, 아직 다루지 않은 연결 목록), 참고 자료 각주 정의 43건 추가, 1차 수정 26건·2차 수정 3건 반영 (실행 2026-10-09-10)
+- 2026-10-09 · 생성 · [ref-1264 — Researcher who found McDonald's free-food hack turns her attention to Chinese restaurant robots](references/ref-1264.md) — 참고문헌 ref-1264 등록: Researcher who found McDonald's free-food hack turns her att… (실행 2026-10-09-10)
+- 2026-10-09 · 생성 · [ref-1265 — Researcher finds a way to hack Chinese Pudu service robots](references/ref-1265.md) — 참고문헌 ref-1265 등록: Researcher finds a way to hack Chinese Pudu service robots (실행 2026-10-09-10)
+- 2026-10-09 · 생성 · [ref-1266 — France Fines Amazon 32m Euros Over 'Excessive' Worker Surveillance](references/ref-1266.md) — 참고문헌 ref-1266 등록: France Fines Amazon 32m Euros Over 'Excessive' Worker Survei… (실행 2026-10-09-10)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

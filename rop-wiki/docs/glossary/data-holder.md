@@ -3,15 +3,15 @@ title: "데이터 보유자 (Data Holder (EU Data Act))"
 type: glossary
 term_ko: 데이터 보유자
 term_en: Data Holder (EU Data Act)
-definition: EU 데이터법에서 연결 제품이나 관련 서비스가 만든 데이터를 이용·제공할 권리나 의무를 가진 자로, 사용자 요청 시 데이터를 사용자나 제3자에게 제공해야 하며, 사용자의 동의 없이 비개인 데이터를 이용할 수 없고, 데이터 권리를 사용자와의 계약으로 정해야 한다.
-related_areas: [58, 53]
+definition: 사용·성능·환경 데이터를 만들고 전송할 수 있는 제품으로, EU 데이터법이 사용자에게 그 데이터의 접근·공유 권리를 주는 대상이며 집행위원회 해설은 로봇과 산업 기계를 예로 든다.
+related_areas: [53, 58]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-30
-updated: 2026-09-30
-sources: [ref-1191]
-version: 1
+updated: 2026-10-09
+sources: [ref-1191, ref-1274]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 데이터 보유자
@@ -26,7 +26,7 @@ version: 1
 
 ## 한 줄 정의
 
-EU 데이터법에서 연결 제품이나 관련 서비스가 만든 데이터를 이용·제공할 권리나 의무를 가진 자로, 사용자 요청 시 데이터를 사용자나 제3자에게 제공해야 하며, 사용자의 동의 없이 비개인 데이터를 이용할 수 없고, 데이터 권리를 사용자와의 계약으로 정해야 한다. [추정][^ref-1191]
+사용·성능·환경 데이터를 만들고 전송할 수 있는 제품으로, EU 데이터법이 사용자에게 그 데이터의 접근·공유 권리를 주는 대상이며 집행위원회 해설은 로봇과 산업 기계를 예로 든다. [추정][^ref-1274]
 
 ## 설명
 
@@ -39,6 +39,6 @@ EU 데이터법에서 연결 제품이나 관련 서비스가 만든 데이터�
 
 ## 출처
 
-[^ref-1191]: European Commission (Shaping Europe's digital future), Data Act explained, 2025-12-15, https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained, 접근일 2026-09-30
 
 - 참고문헌 페이지: [ref-1191](../references/ref-1191.md)
+[^ref-1274]: European Commission (Shaping Europe's digital future), Data Act explained, 미확인, https://digital-strategy.ec.europa.eu/en/policies/data-act-explained, 접근일 2026-10-09
