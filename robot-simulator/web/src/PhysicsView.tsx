@@ -8,6 +8,7 @@ import {
   ArrowRight,
   ArrowUp,
   Box,
+  Bot,
   Crosshair,
   Maximize2,
   Minus,
@@ -53,6 +54,7 @@ import {
   surfaceFor,
   type MaterialLoadStatus,
 } from "./MapMaterials";
+import { RobotDesigns } from "./RobotDesign";
 const geomTypes = [
   "plane",
   "hfield",
@@ -175,6 +177,7 @@ interface Entity {
 }
 interface Runtime {
   materials: MapMaterials;
+  robotDesigns: RobotDesigns;
   renderer: THREE.WebGLRenderer;
   scene: THREE.Scene;
   camera: THREE.PerspectiveCamera;
@@ -235,6 +238,7 @@ export function PhysicsView({
   const [showLabels, setShowLabels] = useState(true);
   const [showDiagnostics, setShowDiagnostics] = useState(false);
   const [showMaterials, setShowMaterials] = useState(true);
+  const [showRobotDesigns, setShowRobotDesigns] = useState(true);
   const [materialStatus, setMaterialStatus] = useState<MaterialLoadStatus>({
     loaded: 0,
     failed: [],
@@ -827,6 +831,7 @@ export function PhysicsView({
     direction.visible = false;
     scene.add(direction);
     const rt: Runtime = {
+      robotDesigns: new RobotDesigns(),
       materials: new MapMaterials(
         renderer.capabilities.getMaxAnisotropy(),
         setMaterialStatus,
@@ -1200,6 +1205,7 @@ export function PhysicsView({
         (object.material as THREE.Material).dispose();
       });
       rt.humans.forEach((human) => human.dispose());
+      rt.robotDesigns.dispose();
       rt.materials.dispose();
       selectionRing.geometry.dispose();
       (selectionRing.material as THREE.Material).dispose();
@@ -1226,6 +1232,7 @@ export function PhysicsView({
     // App owns selection across run changes: live selections reset there,
     // while a selected draft remains available in the editor.
     if (changedRun || rt.meshSource !== meshes) {
+      rt.robotDesigns.dispose();
       rt.objects.forEach((object) => {
         rt.scene.remove(object);
         object.geometry.dispose();
@@ -1426,6 +1433,13 @@ export function PhysicsView({
         material.needsUpdate = true;
       }
       material.emissive.setHex(g.entity_id === selected ? 0x102559 : 0);
+      rt.robotDesigns.apply(
+        object,
+        g,
+        robot?.model_id ?? "",
+        showRobotDesigns && !showDiagnostics,
+        g.entity_id === selected,
+      );
       const group = rt.byEntity.get(g.entity_id) ?? [];
       if (!people.has(g.entity_id)) group.push(object);
       rt.byEntity.set(g.entity_id, group);
@@ -1441,6 +1455,7 @@ export function PhysicsView({
         (object.material as THREE.Material).dispose();
         rt.objects.delete(id);
       }
+    rt.robotDesigns.retain(live);
     let humanFailure = false;
     const liveHumans = new Set<string>();
     for (const person of people.values()) {
@@ -1685,6 +1700,7 @@ export function PhysicsView({
     generation,
     showDiagnostics,
     showMaterials,
+    showRobotDesigns,
     materialStatus,
     visibleFloorKey,
     floorPickerOpen,
@@ -1807,6 +1823,18 @@ export function PhysicsView({
           onClick={() => setShowMaterials((value) => !value)}
         >
           <Paintbrush size={14} /> 재질
+        </button>
+        <button
+          aria-pressed={showRobotDesigns && !showDiagnostics}
+          disabled={showDiagnostics}
+          title={
+            showDiagnostics
+              ? "물리 진단을 끄면 로봇 외장을 표시합니다"
+              : "종류별 로봇 외장 표시 · 실제 차체·바퀴·관절 위치를 따릅니다"
+          }
+          onClick={() => setShowRobotDesigns((value) => !value)}
+        >
+          <Bot size={14} /> 로봇 외장
         </button>
         {selected && (
           <button
