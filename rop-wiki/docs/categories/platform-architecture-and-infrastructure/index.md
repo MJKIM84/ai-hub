@@ -227,7 +227,7 @@ P. 거버넌스·법규·사회와의 연결은 현재 위의 연계 대상 추�
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 62건이다(논문 14건 · 기사·보고서 4건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 35건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 72건이다(논문 16건 · 기사·보고서 6건 · 업체 발표 10건 · 표준·오픈소스·기관 자료 40건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -238,16 +238,18 @@ P. 거버넌스·법규·사회와의 연결은 현재 위의 연계 대상 추�
 - [ref-308](../../references/ref-308.md) — Brorsson, E. 외, Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives (발행 2025-12)
 - [ref-1039](../../references/ref-1039.md) — Zhang, J., Yu, X., & Westerlund, T. (Sensors 25(16):5067), Enhancing the Resilience of ROS 2-Based Multi-Robot Systems with Kubernetes: A Case Study on UWB-Based Relative Positioning (발행 2025-08-14)
 - [ref-1031](../../references/ref-1031.md) — Chen, K., Hari, K., Chung, T. 외 (IROS 2024, arXiv), FogROS2-FT: Fault Tolerant Cloud Robotics (발행 2024-12)
+- [ref-1328](../../references/ref-1328.md) — Lumpp, F., Panato, M., Bombieri, N., & Fummi, F. (Università di Verona IRIS), A Design Flow based on Docker and Kubernetes for ROS-based Robotic Software Applications (발행 2024)
+- [ref-1327](../../references/ref-1327.md) — Bédard, C., Lajoie, P.-Y., Beltrame, G., & Dagenais, M. (Robotics and Autonomous Systems 161, arXiv), Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems (발행 2023-03)
 - [ref-1032](../../references/ref-1032.md) — Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L, arXiv), ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2 (발행 2022-07)
-- [ref-1120](../../references/ref-1120.md) — Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv), An Ethical Black Box for Social Robots: a draft Open Standard (발행 2022-05-13)
-- [ref-304](../../references/ref-304.md) — Ichnowski, J., Chen, K. 외(UC Berkeley AUTOLAB), FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2 (발행 2022-05)
-- 그 밖에 4건
+- 그 밖에 6건
 
 **기사·보고서**
 
 - [ref-1026](../../references/ref-1026.md) — 뉴스핌, 카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다 (발행 2026-05-13)
 - [ref-870](../../references/ref-870.md) — 로봇신문, [기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막 (발행 2025-11-09)
+- [ref-1321](../../references/ref-1321.md) — 바이라인네트워크 (곽중희), 개인정보위, 인터넷망 일률 차단제도 개선 “위험기반 보호로 전환” (발행 2025-10-31)
 - [ref-309](../../references/ref-309.md) — FreightWaves, Warehouses face $100K-hour downtime risk as cloud outages mount (발행 미확인)
+- [ref-1322](../../references/ref-1322.md) — Hunton Andrews Kurth (Privacy & Cybersecurity Law Blog), EU Digital Omnibus on AI Enters into Force (발행 미확인)
 - [ref-1041](../../references/ref-1041.md) — FinOps Foundation, FinOps Phases (발행 미확인)
 
 **업체 발표**
@@ -257,6 +259,7 @@ P. 거버넌스·법규·사회와의 연결은 현재 위의 연계 대상 추�
 - [ref-227](../../references/ref-227.md) — Mobile Industrial Robots(MiR), MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본 (발행 2025-01)
 - [ref-307](../../references/ref-307.md) — CJ대한통운, CJ대한통운, 물류센터 최초 5G 개통 … 속도 1000배 빨라진다 (발행 2023-04)
 - [ref-1035](../../references/ref-1035.md) — Foxglove, MCAP as the ROS 2 Default Bag Format (발행 2022-12-22)
+- [ref-1324](../../references/ref-1324.md) — Northern.tech (Mender blog, Farshad Tavakoli), Managing fleets of connected devices with Phased Rollout (발행 2020-01-28)
 - [ref-774](../../references/ref-774.md) — Mobile Industrial Robots(MiR), MiR Fleet (발행 미확인)
 - [ref-1030](../../references/ref-1030.md) — Locus Robotics, Seamless Integrations with LocusOne Robotics (발행 미확인)
 - [ref-1029](../../references/ref-1029.md) — InOrbit, Contents — InOrbit Developer Portal (발행 미확인)
@@ -266,23 +269,23 @@ P. 거버넌스·법규·사회와의 연결은 현재 위의 연계 대상 추�
 
 - [ref-854](../../references/ref-854.md) — Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse, Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP) (발행 2026-06-25)
 - [ref-1042](../../references/ref-1042.md) — FinOps Foundation, Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconciliation, and more (발행 2025-06-03)
+- [ref-1314](../../references/ref-1314.md) — European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 26: Obligations of deployers of high-risk AI systems (발행 2024-07-12)
+- [ref-1313](../../references/ref-1313.md) — European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 19: Automatically generated logs (발행 2024-07-12)
 - [ref-1034](../../references/ref-1034.md) — Open Robotics (ROS 2 Documentation), Iron Irwini (iron) (발행 2023-05-23)
+- [ref-1325](../../references/ref-1325.md) — W3C, Trace Context (발행 2021-11-23)
 - [ref-045](../../references/ref-045.md) — GS1, gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0) (발행 2021-09-30)
 - [ref-1025](../../references/ref-1025.md) — OpenAPI Initiative, OpenAPI Specification v3.1.0 (발행 2021-02-15)
 - [ref-306](../../references/ref-306.md) — OASIS, MQTT Version 5.0 (발행 2019-03)
 - [ref-303](../../references/ref-303.md) — NIST, NIST Special Publication (SP) 500-325, Fog Computing Conceptual Model (발행 2018-03)
-- [ref-937](../../references/ref-937.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), ROMI-H \| Changi General Hospital (발행 미확인)
-- [ref-831](../../references/ref-831.md) — ROS 2 (ros2/rosbag2 GitHub), rosbag2 — README (Recording and playback of ROS 2 communications) (발행 미확인)
-- [ref-766](../../references/ref-766.md) — 국가법령정보센터(개인정보보호위원회 고시), 개인정보의 안전성 확보조치 기준 (발행 미확인)
-- 그 밖에 25건
+- 그 밖에 30건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [41. 플랫폼 아키텍처·외부 API](platform-architecture-and-external-api.md) — 6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09 (실행 2026-10-09-17)
-- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](../../topics/2026/2026-10-09-area41-s6.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(2,053자)을 옮겼다 (실행 2026-10-09-17)
-- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area41-s7.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,615자)을 옮겼다 (실행 2026-10-09-17)
-- 2026-10-09 · 생성 · [41. 플랫폼 아키텍처·외부 API — 열린 질문](../../topics/2026/2026-10-09-area41-s11.md) — 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "11. 열린 질문" 절(1,248자)을 옮겼다 (실행 2026-10-09-17)
-- 2026-10-09 · 요약 · [41. 플랫폼 아키텍처·외부 API](platform-architecture-and-external-api.md) — 41. 플랫폼 아키텍처·외부 API: 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) (실행 2026-10-09-17)
+- 2026-10-09 · 갱신 · [43. 데이터·관측성·배포](data-observability-and-deployment.md) — 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 (실행 2026-10-09-19)
+- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 대표 접근법과 기술](../../topics/2026/2026-10-09-area43-s6.md) — 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 (실행 2026-10-09-19)
+- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area43-s7.md) — 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 (실행 2026-10-09-19)
+- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 열린 질문](../../topics/2026/2026-10-09-area43-s11.md) — 자동 분리: 43. 데이터·관측성·배포 의 "11. 열린 질문" 절(1,457자)을 옮겼다 (실행 2026-10-09-19)
+- 2026-10-09 · 생성 · [43. 데이터·관측성·배포 — 다른 연구영역과의 연결](../../topics/2026/2026-10-09-area43-s10.md) — 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,426자)을 옮겼다 (실행 2026-10-09-19)
 <!-- auto:category-recent:end -->

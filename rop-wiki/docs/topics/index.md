@@ -47,6 +47,11 @@ version: 1
 | 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 열린 질문](2026/2026-10-09-area41-s11.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
 | 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](2026/2026-10-09-area41-s6.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
 | 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area41-s7.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 다른 연구영역과의 연결](2026/2026-10-09-area43-s10.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 열린 질문](2026/2026-10-09-area43-s11.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 대표 접근법과 기술](2026/2026-10-09-area43-s6.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area43-s7.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 대표 연구와 자료](2026/2026-10-09-area43-s8.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |

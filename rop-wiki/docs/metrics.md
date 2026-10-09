@@ -32,7 +32,7 @@ version: 1
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
@@ -138,7 +138,7 @@ version: 1
 |---|---|---|---|---|
 | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-10-09 | 3 |
 | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
-| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-09-30 | 2 |
+| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-10-09 | 3 |
 
 **L. AI·학습 기술**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 145회 중 최종 통과 143회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 143, None 2
-- 2차 검증 판정: 통과 143, None 2
+- 실행 146회 중 최종 통과 144회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 144, None 2
+- 2차 검증 판정: 통과 144, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 564 |
-| 오픈소스 문서 | 225 |
-| 표준 | 190 |
-| 기사 | 124 |
+| 논문 | 566 |
+| 오픈소스 문서 | 227 |
+| 표준 | 191 |
+| 기사 | 126 |
 | 정부·연구기관 | 116 |
-| 벤더 문서 | 78 |
+| 벤더 문서 | 79 |
 | 업계 보고서 | 27 |
 
-신뢰도: medium 949건, high 252건, low 123건
+신뢰도: medium 951건, high 255건, low 126건
 
 ### 현장 유형 매트릭스 채움률
 

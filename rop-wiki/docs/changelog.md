@@ -20,6 +20,25 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-19 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 |
+| 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s6.md](topics/2026/2026-10-09-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 |
+| 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s7.md](topics/2026/2026-10-09-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 |
+| 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s11.md](topics/2026/2026-10-09-area43-s11.md) | 자동 분리: 43. 데이터·관측성·배포 의 "11. 열린 질문" 절(1,457자)을 옮겼다 |
+| 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s10.md](topics/2026/2026-10-09-area43-s10.md) | 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,426자)을 옮겼다 |
+| 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s8.md](topics/2026/2026-10-09-area43-s8.md) | 자동 분리: 43. 데이터·관측성·배포 의 "8. 대표 연구와 자료" 절(1,079자)을 옮겼다 |
+| 2026-10-09-19 | 요약 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 43. 데이터·관측성·배포: 5·6·7·8·9·10·11·13절 차등 갱신: 병원 사례 수행 자원·제약 채움과 성공률 분모 재확인, Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거 6건과 새 질문 3건(2차 수정: 6·7·10·11절 이전 주제 페이지 링크 복원, 7절 기준일 문구 명확화, 표준 목록 이름의 규정 번호 삭제) |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1321.md](references/ref-1321.md) | 참고문헌 ref-1321 등록: 개인정보위, 인터넷망 일률 차단제도 개선 “위험기반 보호로 전환” |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1322.md](references/ref-1322.md) | 참고문헌 ref-1322 등록: EU Digital Omnibus on AI Enters into Force |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1323.md](references/ref-1323.md) | 참고문헌 ref-1323 등록: State scripts |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1324.md](references/ref-1324.md) | 참고문헌 ref-1324 등록: Managing fleets of connected devices with Phased Rollout |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1325.md](references/ref-1325.md) | 참고문헌 ref-1325 등록: Trace Context |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1326.md](references/ref-1326.md) | 참고문헌 ref-1326 등록: Moved: Generative AI semantic conventions |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1327.md](references/ref-1327.md) | 참고문헌 ref-1327 등록: Message Flow Analysis with Complex Causal Links for Distribu… |
+| 2026-10-09-19 | 생성 | [docs/references/ref-1328.md](references/ref-1328.md) | 참고문헌 ref-1328 등록: A Design Flow based on Docker and Kubernetes for ROS-based R… |
+| 2026-10-09-19 | 생성 | [docs/glossary/trace-context.md](glossary/trace-context.md) | 용어집 항목 추적 문맥 |
+| 2026-10-09-19 | 생성 | [docs/glossary/phased-rollout.md](glossary/phased-rollout.md) | 용어집 항목 단계적 배포 |
+| 2026-10-09-19 | 생성 | [docs/glossary/state-script.md](glossary/state-script.md) | 용어집 항목 상태 스크립트 |
+| 2026-10-09-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-09-17 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 6·7·9·11절에 2026-10-09 갱신 소절 덧붙임(끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호·클라우드 브로커 주제 조정, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준과 책의 폐기 예고 서술 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화·프록시, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건), 13절 ref-004·ref-031·ref-762 접근일 갱신. 2차 수정: 6·7·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, rmf-web 기존 서술 링크, 절 참조 명확화, 부·수 버전 '대체로' 한정, last_run 2026-10-09 |
 | 2026-10-09-17 | 생성 | [docs/topics/2026/2026-10-09-area41-s6.md](topics/2026/2026-10-09-area41-s6.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(2,053자)을 옮겼다 |
 | 2026-10-09-17 | 생성 | [docs/topics/2026/2026-10-09-area41-s7.md](topics/2026/2026-10-09-area41-s7.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,615자)을 옮겼다 |
