@@ -23,6 +23,26 @@ version: 1
 | 2026-10-09-14 | 갱신 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | '다른 대분류와의 연결' 절 신규 작성: 현장 사례가 A·C~P 대분류의 세부영역에 넘기는 요구를 대분류별로 정리(B. 로봇 온톨로지는 근거 없음), 각주 정의 62건을 절 끝에 둠 |
 | 2026-10-09-14 | 요약 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | Q. 현장 유형별 적용: 다른 대분류와의 연결 절 신규 작성(현장 사례가 A·C~P 대분류 세부영역에 넘기는 요구 정리, B. 로봇 온톨로지는 근거 없음) |
 | 2026-10-09-14 | 생성 | [docs/glossary/door-to-door-robot-delivery.md](glossary/door-to-door-robot-delivery.md) | 용어집 항목 도어 투 도어 로봇 배송 |
+| 2026-10-09-12 | 갱신 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 차등 갱신: 5절 상업 시설 사례 근거를 ref-1182→ref-1288 로 정정하고 병원(고려대 구로병원)·실외(대학 캠퍼스 보도) 사례 추가, 4절 덧붙임, 6·7·8·10·11절 기존 요약·2026-09-30 주제 페이지 링크 유지와 새 내용 추가, 9절 경계 표 보강, 13절 각주 정리, 프런트매터 sources 에 기존 ref-1175·ref-1079 유지(2차 수정 반영) |
+| 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s6.md](topics/2026/2026-10-09-area19-s6.md) | 자동 분리: 19. 사람·보행자 모델 의 "6. 대표 접근법과 기술" 절(1,552자)을 옮겼다 |
+| 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s8.md](topics/2026/2026-10-09-area19-s8.md) | 자동 분리: 19. 사람·보행자 모델 의 "8. 대표 연구와 자료" 절(1,472자)을 옮겼다 |
+| 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s11.md](topics/2026/2026-10-09-area19-s11.md) | 자동 분리: 19. 사람·보행자 모델 의 "11. 열린 질문" 절(1,150자)을 옮겼다 |
+| 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s7.md](topics/2026/2026-10-09-area19-s7.md) | 자동 분리: 19. 사람·보행자 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절(925자)을 옮겼다 |
+| 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s10.md](topics/2026/2026-10-09-area19-s10.md) | 자동 분리: 19. 사람·보행자 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(733자)을 옮겼다 |
+| 2026-10-09-12 | 요약 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 19. 사람·보행자 모델: 갱신: 상업 시설 사례의 쇼핑몰 시험 근거를 HRI 2013(ref-1182)에서 TRO 2015 확장판(ref-1288)으로 정정, 병원(고려대 구로병원 승강기 혼잡)·실외(대학 캠퍼스 보도 배송로봇) 사례 추가, Open-RMF 사람 장애물·차선 차단과 움직임 지도 기반 배정·예측 보강, 열린 질문 부분 근거·새 질문 2건 |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1288.md](references/ref-1288.md) | 참고문헌 ref-1288 등록: Simulation-Based Behavior Planning to Prevent Congestion of… |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1289.md](references/ref-1289.md) | 참고문헌 ref-1289 등록: Person Tracking in Large Public Spaces Using 3-D Range Senso… |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1290.md](references/ref-1290.md) | 참고문헌 ref-1290 등록: Got robot delivery? New research demonstrates need for robot… |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1291.md](references/ref-1291.md) | 참고문헌 ref-1291 등록: 경찰청 제공 실시간 교통신호정보, 보행자와 함께 거닐 실외 이동로봇의 눈이 되다 |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1292.md](references/ref-1292.md) | 참고문헌 ref-1292 등록: rmf_obstacle_msgs/msg/Obstacle.msg |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1293.md](references/ref-1293.md) | 참고문헌 ref-1293 등록: rmf_obstacle — README |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1294.md](references/ref-1294.md) | 참고문헌 ref-1294 등록: Kairos: Grounded Forecasting of Presence and Directional Flo… |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1295.md](references/ref-1295.md) | 참고문헌 ref-1295 등록: Feasibility of autonomous medication delivery robots conside… |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1296.md](references/ref-1296.md) | 참고문헌 ref-1296 등록: 현대자동차·기아, 한림대의료원과 로봇 친화 병원 공동 구축 위한 업무협약 체결 |
+| 2026-10-09-12 | 생성 | [docs/references/ref-1297.md](references/ref-1297.md) | 참고문헌 ref-1297 등록: Long-Term Human Motion Prediction Using Spatio-Temporal Maps… |
+| 2026-10-09-12 | 생성 | [docs/glossary/average-displacement-error.md](glossary/average-displacement-error.md) | 용어집 항목 평균 변위 오차 |
+| 2026-10-09-12 | 생성 | [docs/glossary/4d-scene-graph.md](glossary/4d-scene-graph.md) | 용어집 항목 4차원 장면 그래프 |
+| 2026-10-09-12 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-09-11 | 갱신 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 갱신: 5절 병원 2건·기타 1건·제조 공장 1건 적용 사례 추가(물류창고 시나리오 유지), 6·7·8절에 시각·품질·만료·지속성 필터·시계 동기화와 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 행을 VDA 5050 3.0.0 7.8절에 맞춰 수정, 10절 건축 도면 자동 인식 트랙 반영 제안 2건 반영, 11절 기존 열린 질문 4건 근거 추가·새 질문 3건, 6·7·8·10·11절에 2026-09-25 판 분리 페이지 링크 유지, 13절 각주 갱신(ref-288 원문 열람 반영, 신규 15건)·프런트매터 sources 는 기존 22건에 신규·재사용 출처를 더함 |
 | 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s6.md](topics/2026/2026-10-09-area18-s6.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(2,348자)을 옮겼다 |
 | 2026-10-09-11 | 생성 | [docs/topics/2026/2026-10-09-area18-s10.md](topics/2026/2026-10-09-area18-s10.md) | 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,925자)을 옮겼다 |

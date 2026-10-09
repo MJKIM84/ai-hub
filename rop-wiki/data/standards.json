@@ -4482,6 +4482,36 @@
       "ref_id": "ref-1283",
       "run_id": "2026-10-09-11",
       "date": "2026-10-09"
+    },
+    {
+      "name": "Open-RMF 장애물 메시지(rmf_internal_msgs의 rmf_obstacle_msgs)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        18,
+        27
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_obstacle_msgs/msg/Obstacle.msg",
+      "summary": "프레임·시각, 발행 주체, 층, 분류 라벨(human 등), 3차원 경계 상자, 수명, 추가·삭제 동작을 담는 장애물 메시지. 확인한 정의에 검출 신뢰도·익명화 필드는 없다(확인일 2026-10-09).",
+      "ref_id": "ref-1292",
+      "run_id": "2026-10-09-12",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Open-RMF rmf_obstacle (사람 검출·lane_blocker)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        27,
+        18
+      ],
+      "url": "https://github.com/open-rmf/rmf_obstacle",
+      "summary": "단안 카메라(YOLO-V4)·OAK-D 사람 검출 노드와, 장애물이 플릿 주행 차선과 겹치면 차선을 닫거나 속도를 제한(기본 0.5 m/s)하는 lane_blocker 노드를 제공한다(확인일 2026-10-09).",
+      "ref_id": "ref-1293",
+      "run_id": "2026-10-09-12",
+      "date": "2026-10-09"
     }
   ]
 }

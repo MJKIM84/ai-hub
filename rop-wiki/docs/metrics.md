@@ -26,7 +26,7 @@ version: 1
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
-| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
+| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 31 | 0 | 0 | 31 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
@@ -84,7 +84,7 @@ version: 1
 |---|---|---|---|---|
 | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | published | medium | 2026-09-25 | 4 |
 | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | 2026-10-09 | 3 |
-| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-09-30 | 2 |
+| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-10-09 | 3 |
 
 **F. 연동**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 140회 중 최종 통과 138회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 138, None 2
-- 2차 검증 판정: 통과 138, None 2
+- 실행 141회 중 최종 통과 139회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 139, None 2
+- 2차 검증 판정: 통과 139, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 551 |
-| 오픈소스 문서 | 221 |
+| 논문 | 556 |
+| 오픈소스 문서 | 223 |
 | 표준 | 187 |
-| 기사 | 121 |
-| 정부·연구기관 | 113 |
-| 벤더 문서 | 75 |
+| 기사 | 122 |
+| 정부·연구기관 | 114 |
+| 벤더 문서 | 76 |
 | 업계 보고서 | 27 |
 
-신뢰도: medium 932건, high 244건, low 119건
+신뢰도: medium 938건, high 247건, low 120건
 
 ### 현장 유형 매트릭스 채움률
 
-- 78/119 칸 (66%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 79/119 칸 (66%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

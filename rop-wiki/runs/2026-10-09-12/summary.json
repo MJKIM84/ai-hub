@@ -1,0 +1,161 @@
+{
+  "run_id": "2026-10-09-12",
+  "date": "2026-10-09",
+  "run_type": "update",
+  "target": {
+    "area_no": 19,
+    "area_name": "19. 사람·보행자 모델",
+    "category": "E. 사물·사람·실시간 상태"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 11
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 6004.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 19. 사람·보행자 모델 | 갱신: 상업 시설 사례의 쇼핑몰 시험 근거를 HRI 2013(ref-1182)에서 TRO 2015 확장판(ref-1288)으로 정정, 병원(고려대 구로병원 승강기 혼잡)·실외(대학 캠퍼스 보도 배송로봇) 사례 추가, Open-RMF 사람 장애물·차선 차단과 움직임 지도 기반 배정·예측 보강, 열린 질문 부분 근거·새 질문 2건 | run 2026-10-09-12",
+  "notes": [
+    "참고문헌 생성: references/ref-1288.md",
+    "참고문헌 생성: references/ref-1289.md",
+    "참고문헌 생성: references/ref-1290.md",
+    "참고문헌 생성: references/ref-1291.md",
+    "참고문헌 생성: references/ref-1292.md",
+    "참고문헌 생성: references/ref-1293.md",
+    "참고문헌 생성: references/ref-1294.md",
+    "참고문헌 생성: references/ref-1295.md",
+    "참고문헌 생성: references/ref-1296.md",
+    "참고문헌 생성: references/ref-1297.md",
+    "용어집 생성: glossary/average-displacement-error.md",
+    "용어집 생성: glossary/4d-scene-graph.md"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 10,
+    "standards": 2,
+    "open_questions": 2,
+    "flow_cells": 13,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 14:24:12 KST",
+  "usage": {
+    "input_tokens": 110,
+    "cache_creation_input_tokens": 957152,
+    "cache_read_input_tokens": 11201642,
+    "output_tokens": 165683,
+    "cost_usd": 13.5133,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.4627,
+        "output_tokens": 41770,
+        "cache_read_input_tokens": 9613070,
+        "cache_creation_input_tokens": 181771
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.8567,
+        "output_tokens": 17549,
+        "cache_read_input_tokens": 1259349,
+        "cache_creation_input_tokens": 151811
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.9367,
+        "output_tokens": 88990,
+        "cache_read_input_tokens": 143764,
+        "cache_creation_input_tokens": 391011
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.1592,
+        "output_tokens": 16922,
+        "cache_read_input_tokens": 177588,
+        "cache_creation_input_tokens": 223155
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0603,
+        "output_tokens": 235,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5377
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0377,
+        "output_tokens": 217,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4027
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md (9개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-09-area19-s6.md",
+        "chars": 1552
+      },
+      {
+        "from": "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-09-area19-s8.md",
+        "chars": 1472
+      },
+      {
+        "from": "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-09-area19-s11.md",
+        "chars": 1150
+      },
+      {
+        "from": "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-09-area19-s7.md",
+        "chars": 925
+      },
+      {
+        "from": "docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-09-area19-s10.md",
+        "chars": 733
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 0
+}

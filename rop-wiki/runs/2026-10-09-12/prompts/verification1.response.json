@@ -1,0 +1,380 @@
+{
+  "duration_api_ms": 275997,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.8566554,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 151811,
+    "cache_read_input_tokens": 1259349,
+    "output_tokens": 17549,
+    "output_tokens_details": {
+      "thinking_tokens": 6145
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 151811,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12717,
+        "cache_read_input_tokens": 238899,
+        "cache_creation_input_tokens": 1706,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1706
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 244351,
+      "outputTokens": 29669,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.039269599999999995,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 21236,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 17549,
+      "cacheReadInputTokens": 1259349,
+      "cacheCreationInputTokens": 151811,
+      "webSearchRequests": 0,
+      "costUSD": 1.8173857999999996,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6145,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 20,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-12\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw.githubusercontent.com 원문 열람. 머리 필드 Status Draft·Type Informational·Created 11-Jan-2022, 익명 사람 ID 는 영구 보장 없음, location_confidence 1/1 미만/0 규칙, 개인정보·동의 언급 없음. 단일 출처(공식 원문). 기준일 2026-10-09 확인일.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Aalto 연구 포털 초록 열람. IJRR 42(11) pp. 977-1006, 온라인 2023-08-03, 인쇄 2023-09. 정의·구축·용도·새 분류 체계·성숙하나 빠르게 발전 중이라는 결론 모두 초록에 있음. 본문 미열람이므로 '초록 기준' 범위로만 쓴다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OpenAlex 초록 복원. 세 모델(보행자 흐름·상호작용·보행 쾌적성), friendly-patrolling 시나리오, 현장 실험에서 노출만 최대화한 로봇보다 쾌적성 개선. 초록에 shopping mall 언급 없음 — 게시 페이지 5절의 '실제 쇼핑몰에서 시험(원문 미열람, 검색 결과 기준)' 서술의 정정 근거. HRI 2013 pp. 259-266, 2013-03.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OpenAlex 초록. TRO 31(6) pp. 1419-1431, 2015-11-11, 저자 일치. 군중 형성 예측·보행 쾌적성·혼잡 사전 회피 계획, 'real shopping mall' 시험에서 혼잡에 의한 쾌적성 영향 감소. 효과 수치 초록에 없음(미확인).\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OpenAlex 초록(THMS 43(6) pp. 522-534, 2013-10-17). 사람 키보다 높게 단 여러 3차원 거리 센서, 위치·방향·키 추적, 쇼핑센터 구현. ref-1176 은 이번 실행에서 열지 않았고(원문 미열람) 같은 저자군이므로 교차 확인 아님. 센서 수·면적은 이 출처로 확인되지 않음.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Obstacle.msg 원문(github_raw). header(frame_id 기준), id, source, level_name, classification(human, chair 등), bbox, data_resolution, data(옥트리), lifetime, action(ADD·DELETE·DELETEALL). 신뢰도·익명화 필드 없음. 발행일 미확인, 확인일 2026-10-09.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: README 원문. 단, 'CCTV·영상 센서로 군중 검출' 용도는 단안 카메라용 rmf_human_detector(YOLO-V4)에 적힌 것이고 OAK-D 노드는 MobileNet-SSD 칩 내 추론이다. lane_blocker 기본값 lane_closure_threshold 1, speed_limit_threshold 3, speed_limit 0.5 m/s 확인. 검출 모델 실행은 연계 대상.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f6·f7·f1 종합 해석. 다만 '신뢰도·익명화 형식은 정해져 있지 않아'는 부정확 — Open-RMF 장애물 메시지에는 신뢰도 필드가 없고 REP-155 에는 location_confidence 가 있으며, 두 형식 모두 익명화·집계 규칙이 없다로 구분해 쓰게 한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록·HTML. 'time-dependent discrete probabilistic model', ATC 데이터셋(오사카 쇼핑몰) 궤적 재생 시뮬레이션, 로봇은 car-like 차량 모델, 실제 로봇 실험 없음, 최대 26%·19% 단축, IROS 2025 채택 표기. 시뮬레이션 결과임을 본문에 명시해야 함.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: SAGE 원문 열람. 고려대 구로병원, DOGU IROI, 비긴급 122건(2025-06-18~29), 성공률 87.03%, EOR 59.01% 미만 95.52%, 실패 14건(승강기 막힘 8·복도 자율주행 4·호출 통신 2), 탑승 인원 OR 1.73, AUC 0.779, r 0.458·0.224. 주의: 논문은 성공률 분모를 밝히지 않으며 122건·실패 14건으로는 약 88.5% 가 되어 87.03% 와 맞지 않는다(논문 내부 불일치). 단일 병원·단일 기종 단일 출처.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록 결론 'scheduled when congestion is below critical thresholds', 4.2절 'defer dispatch if in transit and EOR ≥ 60%', 4.3절 비긴급 작업 미루기·묶기, 59.01% 는 현장 고유값으로 다른 병원에서 재보정 필요. 승강기 운행·호출 제어 자체는 시설·설비 제어 연계 대상.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f9(시뮬레이션)와 f10·f11(승강기 혼잡 지표) 종합. f10 의 혼잡 지표가 승강기 가동률·탑승 인원이지 복도 보행자 흐름이 아니라는 점은 원문과 맞음. oq-273 해결 아님.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OpenAlex 초록. 노던애리조나대 캠퍼스 10곳 일주일 현장 영상, PET 로 심각도 측정, 중간·위험 충돌 예측 요인 모델링, TRIP 18 article 100789, 2023-03-01.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: NAU Review 2023-05-16. 충돌(0초) 12건, 위험 기준 1.5초 미만, 좁은 보도·많은 교차와 위험 증가, 넓은 보도 평행 주행·붐비는 지점 횡단 최소화·덜 붐비는 표시 지점 배송 권고, 심각 충돌은 대부분 가로지르기·추월 때. 논문과 같은 기관 보도라 독립 출처 아님.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 연구진 권고를 ROP 경로 비용으로 옮긴 해석이며 플랫폼 적용 사례는 미확인. 보도 위 국소 회피·양보는 로봇 제조사 몫(연계 대상).\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 보안뉴스 2024-08-10(기자 박미영). 의왕 부곡파출소 앞 횡단보도 시연('지난 9일'), 경찰청 실시간 교통신호정보 수집·제공 시스템과 현대차·기아 로보틱스랩 관제 연동, 카메라 인식과 이중화, 참여 경찰청·의왕시·도로교통공단·현대차·기아. 인파·보행자 수 데이터 언급 없음. 기사 1건, '연계 대상:' 표시 적정.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 미발견 진술. ref-1177 은 이번 실행에서 원문 미열람(기존 게시 각주는 2026-09-30 열람). oq-274 해결 아님.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 현대자동차그룹 2025-04-07 발표. 한림대학교성심병원 실증 거점, 병원 맞춤형 배송 로봇·관제 시스템 개발, 환자·의료진·휠체어·이동식 침대 혼재 고밀도 환경 규정, 로봇 대수·대기 규칙 언급 없음. 기능·성능 주장이 아닌 협약 내용 진술이라 벤더 주장 병기 대상 아님. ref-1181(조선비즈)은 이번 실행 원문 미열람.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록·HTML. 복셀별 방향 혼합·존재율, 스펙트럼 예측기로 임의 미래 시각 예측, 주행 노드로 점유 가중 집계(VI-A1)·흐름 정렬 점수(VI-A2), 캠퍼스·쇼핑몰·11개월 역 구내, 시간 불변 지도보다 같은 성공률에서 더 많은 사람을 만남, 코드 공개. 동료심사 전 프리프린트(2026-09-23). 데이터셋 약칭(ATC·HB)과 환경 대응은 미확인.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: Kairos 가 지도 판 관리·교환 형식을 다루지 않는다는 점은 열람 범위와 맞음. oq-298 해결 아님.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록(2025-10-03, IEEE RA-L 표기). 시간 조건부 MoD 가 가장 정확, 예측 구간 최대 60초, 실제 데이터셋 두 개, 학습 기반 방법 대비 ADE 최대 50% 개선. 데이터셋 이름은 초록에 없어 미확인.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-406.txt. 'Data logged from hardware trials can be used to recreate the scenario in simulation', crowdsim 은 rmf_traffic_editor 에서 켜는 선택 기능·menge 엔진, airport_terminal.launch.xml use_crowdsim:=1 예. 기록된 사람 흐름을 crowdsim 입력으로 옮기는 설명 없음. 발행일 미확인.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f3·f4 는 게시 페이지 5절 상업 시설 사례(ref-1182, '실제 쇼핑몰에서 시험했다(원문 미열람, 검색 결과 기준)')와 겹치며 그 문장을 정정한다 — 쇼핑몰 시험의 근거는 ref-1479 다\",\"f1 은 게시 페이지 7절의 REP-155 Draft 문장(ref-1173)과 같은 주장이므로 기존 각주를 재사용한다\",\"f2 는 게시 페이지 3·4·8절이 인용한 ref-1171(원문 미열람 표시)의 재확인이다\",\"f5 는 게시 페이지 5절 ATC 데이터셋 문장(ref-1176)과 같은 저자군 자료이며 교차 확인이 아니다\",\"f22 는 oq-256·oq-303 에 걸린 기존 ref-406 각주를 재사용한다\",\"f9·f21 의 움직임 지도 기반 배정·예측은 46. 예측·학습 기반 최적화 페이지와 내용이 이어지므로 양쪽 연결만 한다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"5절 상업 시설 사례: 사례 제목과 표의 근거를 ref-1479(Kidokoro 외, IEEE Transactions on Robotics 31(6), 2015)로 바꾸고 '실제 쇼핑몰에서 시험했다' 문장의 각주를 [^ref-1182] 에서 [^ref-1479] 로 고친다. '(원문 미열람, 검색 결과 기준)' 문구는 삭제한다. ref-1182(HRI 2013)는 f3 범위(세 모델, 친근한 순찰 시나리오의 현장 실험, 초록에 쇼핑몰 언급 없음)로만 인용한다 — 근거: HRI 2013 초록에 shopping mall 이 없고 TRO 2015 초록에 'real shopping mall' 이 있다.\",\"13절 각주: ref-1171 과 ref-1182 는 이번 실행에서 초록을 열었으므로 접근일을 2026-10-09 로 바꾸고 ' (원문 미열람)' 을 뺀다. ref-1171 발행일은 2023-09(IJRR 42(11), pp. 977-1006)로 적는다. 본문에서 이 두 출처는 '초록 기준'임을 밝힌다 — 본문 PDF 는 열지 못했다.\",\"13절 각주: 이번 실행에서 열지 않은 ref-1176·ref-1177·ref-1181 은 기존 각주 줄(접근일 2026-09-30)을 그대로 두고 접근일을 2026-10-09 로 바꾸지 않는다.\",\"f5: ref-1480 과 ref-1176 을 교차 확인으로 쓰지 않는다 — 같은 ATR 저자군이다. ATC 센서 49대·약 900㎡ 수치는 기존 ref-1176 각주로만 둔다.\",\"f7: 'CCTV·기존 영상 센서로 군중 검출' 용도는 단안 카메라용 rmf_human_detector(YOLO-V4)에만 붙인다. OAK-D 노드는 칩 내 추론(MobileNet-SSD)으로 따로 적는다. 사람 검출 모델 실행·카메라는 '연계 대상'으로 짧게 둔다. ROP 직접 범위는 /rmf_obstacles 장애물을 모아 차선 폐쇄·속도 제한으로 바꾸는 부분으로 한정한다 — 분류 원문 19장 '로봇 자체 지능·제어(센서 인식)' 경계다.\",\"f8(9절·11절): '신뢰도·익명화 형식은 정해져 있지 않다'를 'Open-RMF 장애물 메시지에는 검출 신뢰도 필드가 없고, REP-155 는 location_confidence 를 두지만 두 형식 모두 익명화·집계 규칙이 없다'로 구분해 쓴다. [추정] 태그를 유지한다.\",\"f10: 성공률 87.03% 는 '논문 보고값'으로 적는다. 논문이 분모를 밝히지 않았고 보고된 122건·실패 14건과 맞지 않으므로 '성공률 산출 기준 미확인'을 함께 적는다. 수치를 다시 계산해 바꾸지 않는다. '단일 병원·단일 기종' 한계를 유지한다.\",\"f10·f11: 혼잡 지표는 용어집의 '승강기 가동률 (Elevator Operating Rate (EOR))'으로 표기한다. 승강기 운행·호출 제어는 '연계 대상'으로 둔다. ROP 쪽은 혼잡 지표를 받아 배정·출발 시점을 정하는 부분으로만 쓴다(6절·9절).\",\"f13·f14: 지표는 용어집의 '침범 후 시간 (Post-Encroachment Time (PET))'으로 적는다. f14 는 논문과 같은 기관의 보도이므로 교차 확인으로 쓰지 않는다. 보도 위 국소 회피·양보 동작은 제조사 '연계 대상'으로 둔다. f15 는 [추정] 으로 둔다.\",\"5절 '사례를 찾지 못한 현장 유형' 문장: '실외에서는 … 찾지 못했다'를 고쳐 실외 사례(f13·f14, 현장 유형 실외)를 여섯 항목 표로 추가한다. 제조 공장·가정은 여전히 사례가 없다고 남긴다. 의왕시 교통신호 연동 시연(f16)은 '연계 대상'으로 9절에 짧게 둔다.\",\"f9 는 '기록 궤적을 재생한 시뮬레이션 결과이며 실제 로봇 실험은 없다'를 함께 적는다. f19 는 '동료심사 전 프리프린트(2026-09-23)'임을, f21 은 '데이터셋 이름 미확인'임을 함께 적는다. f9·f21(학습·예측 기반)은 46. 예측·학습 기반 최적화와 25. 작업 배정 — MRTA 양쪽에 연결한다(교차 규칙).\",\"f6·f7(현재 관측)은 18. 실시간 세계 상태·데이터 일관성 쪽으로 둔다. f22(crowdsim, 기록 재현)는 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 쪽으로 구분해 연결한다 — 두 영역을 섞지 않는다.\",\"11절: oq-256·oq-272·oq-273·oq-274·oq-298·oq-303 은 부분 근거만 더한다. 상태는 '열림'으로 두고 해결로 바꾸지 않는다 — 어느 finding 도 질문에 완전히 답하지 않는다.\",\"용어집: '평균 변위 오차'·'4차원 장면 그래프'는 신규 등록하되, '4차원 장면 그래프' 정의에 기존 용어 '3차원 장면 그래프 (3D Scene Graph)'와 연결한다. 움직임 지도·차선 폐쇄·승강기 가동률·침범 후 시간은 이미 있으므로 신규 등록하지 않는다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 확인 22건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1176, ref-1177, ref-1181(이번 실행에서 다시 열지 않음, 기존 각주는 2026-09-30 열람). 주의: 신규 근거는 모두 단일 출처다. 같은 저자군·같은 기관 쌍(ref-1480과 ref-1176, ref-1482와 ref-1481)은 독립 출처가 아니다. ref-1171·ref-1182·ref-1479·ref-1480·ref-1481 은 초록만 확인했다. 게시 페이지 5절의 '쇼핑몰 시험' 근거는 HRI 2013(ref-1182)이 아니라 TRO 2015 확장판(ref-1479)으로 정정된다. 고려대 구로병원 연구(ref-1487)는 성공률 87.03% 의 분모를 밝히지 않았고, 보고된 임무 122건·실패 14건과 맞지 않는다. 같은 연구는 단일 병원·단일 기종이며 혼잡 지표는 승강기 가동률이다. Kazemi Eskeri 외(ref-1083)는 시뮬레이션 결과이고 Kairos(ref-1486)는 동료심사 전 프리프린트다. 3·6·9절의 핵심 판단은 여전히 [추정]이다. 열린 질문 oq-256·oq-272·oq-273·oq-274·oq-298·oq-303 은 부분 근거만 있어 해결로 인정하지 않는다. 정정 요청 없음. 브리프 기록 주의: ref-406 은 fetched_via 가 github_raw 로 적혔으나 실제 근거는 입력 원문(data/source_texts/ref-406.txt, inbox)이고 fetch_url 이 비어 있다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-12",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw.githubusercontent.com 원문 열람. 머리 필드 Status Draft·Type Informational·Created 11-Jan-2022, 익명 사람 ID 는 영구 보장 없음, location_confidence 1/1 미만/0 규칙, 개인정보·동의 언급 없음. 단일 출처(공식 원문). 기준일 2026-10-09 확인일."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Aalto 연구 포털 초록 열람. IJRR 42(11) pp. 977-1006, 온라인 2023-08-03, 인쇄 2023-09. 정의·구축·용도·새 분류 체계·성숙하나 빠르게 발전 중이라는 결론 모두 초록에 있음. 본문 미열람이므로 '초록 기준' 범위로만 쓴다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OpenAlex 초록 복원. 세 모델(보행자 흐름·상호작용·보행 쾌적성), friendly-patrolling 시나리오, 현장 실험에서 노출만 최대화한 로봇보다 쾌적성 개선. 초록에 shopping mall 언급 없음 — 게시 페이지 5절의 '실제 쇼핑몰에서 시험(원문 미열람, 검색 결과 기준)' 서술의 정정 근거. HRI 2013 pp. 259-266, 2013-03."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OpenAlex 초록. TRO 31(6) pp. 1419-1431, 2015-11-11, 저자 일치. 군중 형성 예측·보행 쾌적성·혼잡 사전 회피 계획, 'real shopping mall' 시험에서 혼잡에 의한 쾌적성 영향 감소. 효과 수치 초록에 없음(미확인)."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OpenAlex 초록(THMS 43(6) pp. 522-534, 2013-10-17). 사람 키보다 높게 단 여러 3차원 거리 센서, 위치·방향·키 추적, 쇼핑센터 구현. ref-1176 은 이번 실행에서 열지 않았고(원문 미열람) 같은 저자군이므로 교차 확인 아님. 센서 수·면적은 이 출처로 확인되지 않음."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Obstacle.msg 원문(github_raw). header(frame_id 기준), id, source, level_name, classification(human, chair 등), bbox, data_resolution, data(옥트리), lifetime, action(ADD·DELETE·DELETEALL). 신뢰도·익명화 필드 없음. 발행일 미확인, 확인일 2026-10-09."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: README 원문. 단, 'CCTV·영상 센서로 군중 검출' 용도는 단안 카메라용 rmf_human_detector(YOLO-V4)에 적힌 것이고 OAK-D 노드는 MobileNet-SSD 칩 내 추론이다. lane_blocker 기본값 lane_closure_threshold 1, speed_limit_threshold 3, speed_limit 0.5 m/s 확인. 검출 모델 실행은 연계 대상."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f6·f7·f1 종합 해석. 다만 '신뢰도·익명화 형식은 정해져 있지 않아'는 부정확 — Open-RMF 장애물 메시지에는 신뢰도 필드가 없고 REP-155 에는 location_confidence 가 있으며, 두 형식 모두 익명화·집계 규칙이 없다로 구분해 쓰게 한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록·HTML. 'time-dependent discrete probabilistic model', ATC 데이터셋(오사카 쇼핑몰) 궤적 재생 시뮬레이션, 로봇은 car-like 차량 모델, 실제 로봇 실험 없음, 최대 26%·19% 단축, IROS 2025 채택 표기. 시뮬레이션 결과임을 본문에 명시해야 함."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: SAGE 원문 열람. 고려대 구로병원, DOGU IROI, 비긴급 122건(2025-06-18~29), 성공률 87.03%, EOR 59.01% 미만 95.52%, 실패 14건(승강기 막힘 8·복도 자율주행 4·호출 통신 2), 탑승 인원 OR 1.73, AUC 0.779, r 0.458·0.224. 주의: 논문은 성공률 분모를 밝히지 않으며 122건·실패 14건으로는 약 88.5% 가 되어 87.03% 와 맞지 않는다(논문 내부 불일치). 단일 병원·단일 기종 단일 출처."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록 결론 'scheduled when congestion is below critical thresholds', 4.2절 'defer dispatch if in transit and EOR ≥ 60%', 4.3절 비긴급 작업 미루기·묶기, 59.01% 는 현장 고유값으로 다른 병원에서 재보정 필요. 승강기 운행·호출 제어 자체는 시설·설비 제어 연계 대상."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f9(시뮬레이션)와 f10·f11(승강기 혼잡 지표) 종합. f10 의 혼잡 지표가 승강기 가동률·탑승 인원이지 복도 보행자 흐름이 아니라는 점은 원문과 맞음. oq-273 해결 아님."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OpenAlex 초록. 노던애리조나대 캠퍼스 10곳 일주일 현장 영상, PET 로 심각도 측정, 중간·위험 충돌 예측 요인 모델링, TRIP 18 article 100789, 2023-03-01."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: NAU Review 2023-05-16. 충돌(0초) 12건, 위험 기준 1.5초 미만, 좁은 보도·많은 교차와 위험 증가, 넓은 보도 평행 주행·붐비는 지점 횡단 최소화·덜 붐비는 표시 지점 배송 권고, 심각 충돌은 대부분 가로지르기·추월 때. 논문과 같은 기관 보도라 독립 출처 아님."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 연구진 권고를 ROP 경로 비용으로 옮긴 해석이며 플랫폼 적용 사례는 미확인. 보도 위 국소 회피·양보는 로봇 제조사 몫(연계 대상)."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 보안뉴스 2024-08-10(기자 박미영). 의왕 부곡파출소 앞 횡단보도 시연('지난 9일'), 경찰청 실시간 교통신호정보 수집·제공 시스템과 현대차·기아 로보틱스랩 관제 연동, 카메라 인식과 이중화, 참여 경찰청·의왕시·도로교통공단·현대차·기아. 인파·보행자 수 데이터 언급 없음. 기사 1건, '연계 대상:' 표시 적정."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 미발견 진술. ref-1177 은 이번 실행에서 원문 미열람(기존 게시 각주는 2026-09-30 열람). oq-274 해결 아님."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 현대자동차그룹 2025-04-07 발표. 한림대학교성심병원 실증 거점, 병원 맞춤형 배송 로봇·관제 시스템 개발, 환자·의료진·휠체어·이동식 침대 혼재 고밀도 환경 규정, 로봇 대수·대기 규칙 언급 없음. 기능·성능 주장이 아닌 협약 내용 진술이라 벤더 주장 병기 대상 아님. ref-1181(조선비즈)은 이번 실행 원문 미열람."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록·HTML. 복셀별 방향 혼합·존재율, 스펙트럼 예측기로 임의 미래 시각 예측, 주행 노드로 점유 가중 집계(VI-A1)·흐름 정렬 점수(VI-A2), 캠퍼스·쇼핑몰·11개월 역 구내, 시간 불변 지도보다 같은 성공률에서 더 많은 사람을 만남, 코드 공개. 동료심사 전 프리프린트(2026-09-23). 데이터셋 약칭(ATC·HB)과 환경 대응은 미확인."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: Kairos 가 지도 판 관리·교환 형식을 다루지 않는다는 점은 열람 범위와 맞음. oq-298 해결 아님."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록(2025-10-03, IEEE RA-L 표기). 시간 조건부 MoD 가 가장 정확, 예측 구간 최대 60초, 실제 데이터셋 두 개, 학습 기반 방법 대비 ADE 최대 50% 개선. 데이터셋 이름은 초록에 없어 미확인."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-406.txt. 'Data logged from hardware trials can be used to recreate the scenario in simulation', crowdsim 은 rmf_traffic_editor 에서 켜는 선택 기능·menge 엔진, airport_terminal.launch.xml use_crowdsim:=1 예. 기록된 사람 흐름을 crowdsim 입력으로 옮기는 설명 없음. 발행일 미확인."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f3·f4 는 게시 페이지 5절 상업 시설 사례(ref-1182, '실제 쇼핑몰에서 시험했다(원문 미열람, 검색 결과 기준)')와 겹치며 그 문장을 정정한다 — 쇼핑몰 시험의 근거는 ref-1479 다",
+        "f1 은 게시 페이지 7절의 REP-155 Draft 문장(ref-1173)과 같은 주장이므로 기존 각주를 재사용한다",
+        "f2 는 게시 페이지 3·4·8절이 인용한 ref-1171(원문 미열람 표시)의 재확인이다",
+        "f5 는 게시 페이지 5절 ATC 데이터셋 문장(ref-1176)과 같은 저자군 자료이며 교차 확인이 아니다",
+        "f22 는 oq-256·oq-303 에 걸린 기존 ref-406 각주를 재사용한다",
+        "f9·f21 의 움직임 지도 기반 배정·예측은 46. 예측·학습 기반 최적화 페이지와 내용이 이어지므로 양쪽 연결만 한다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "5절 상업 시설 사례: 사례 제목과 표의 근거를 ref-1479(Kidokoro 외, IEEE Transactions on Robotics 31(6), 2015)로 바꾸고 '실제 쇼핑몰에서 시험했다' 문장의 각주를 [^ref-1182] 에서 [^ref-1479] 로 고친다. '(원문 미열람, 검색 결과 기준)' 문구는 삭제한다. ref-1182(HRI 2013)는 f3 범위(세 모델, 친근한 순찰 시나리오의 현장 실험, 초록에 쇼핑몰 언급 없음)로만 인용한다 — 근거: HRI 2013 초록에 shopping mall 이 없고 TRO 2015 초록에 'real shopping mall' 이 있다.",
+      "13절 각주: ref-1171 과 ref-1182 는 이번 실행에서 초록을 열었으므로 접근일을 2026-10-09 로 바꾸고 ' (원문 미열람)' 을 뺀다. ref-1171 발행일은 2023-09(IJRR 42(11), pp. 977-1006)로 적는다. 본문에서 이 두 출처는 '초록 기준'임을 밝힌다 — 본문 PDF 는 열지 못했다.",
+      "13절 각주: 이번 실행에서 열지 않은 ref-1176·ref-1177·ref-1181 은 기존 각주 줄(접근일 2026-09-30)을 그대로 두고 접근일을 2026-10-09 로 바꾸지 않는다.",
+      "f5: ref-1480 과 ref-1176 을 교차 확인으로 쓰지 않는다 — 같은 ATR 저자군이다. ATC 센서 49대·약 900㎡ 수치는 기존 ref-1176 각주로만 둔다.",
+      "f7: 'CCTV·기존 영상 센서로 군중 검출' 용도는 단안 카메라용 rmf_human_detector(YOLO-V4)에만 붙인다. OAK-D 노드는 칩 내 추론(MobileNet-SSD)으로 따로 적는다. 사람 검출 모델 실행·카메라는 '연계 대상'으로 짧게 둔다. ROP 직접 범위는 /rmf_obstacles 장애물을 모아 차선 폐쇄·속도 제한으로 바꾸는 부분으로 한정한다 — 분류 원문 19장 '로봇 자체 지능·제어(센서 인식)' 경계다.",
+      "f8(9절·11절): '신뢰도·익명화 형식은 정해져 있지 않다'를 'Open-RMF 장애물 메시지에는 검출 신뢰도 필드가 없고, REP-155 는 location_confidence 를 두지만 두 형식 모두 익명화·집계 규칙이 없다'로 구분해 쓴다. [추정] 태그를 유지한다.",
+      "f10: 성공률 87.03% 는 '논문 보고값'으로 적는다. 논문이 분모를 밝히지 않았고 보고된 122건·실패 14건과 맞지 않으므로 '성공률 산출 기준 미확인'을 함께 적는다. 수치를 다시 계산해 바꾸지 않는다. '단일 병원·단일 기종' 한계를 유지한다.",
+      "f10·f11: 혼잡 지표는 용어집의 '승강기 가동률 (Elevator Operating Rate (EOR))'으로 표기한다. 승강기 운행·호출 제어는 '연계 대상'으로 둔다. ROP 쪽은 혼잡 지표를 받아 배정·출발 시점을 정하는 부분으로만 쓴다(6절·9절).",
+      "f13·f14: 지표는 용어집의 '침범 후 시간 (Post-Encroachment Time (PET))'으로 적는다. f14 는 논문과 같은 기관의 보도이므로 교차 확인으로 쓰지 않는다. 보도 위 국소 회피·양보 동작은 제조사 '연계 대상'으로 둔다. f15 는 [추정] 으로 둔다.",
+      "5절 '사례를 찾지 못한 현장 유형' 문장: '실외에서는 … 찾지 못했다'를 고쳐 실외 사례(f13·f14, 현장 유형 실외)를 여섯 항목 표로 추가한다. 제조 공장·가정은 여전히 사례가 없다고 남긴다. 의왕시 교통신호 연동 시연(f16)은 '연계 대상'으로 9절에 짧게 둔다.",
+      "f9 는 '기록 궤적을 재생한 시뮬레이션 결과이며 실제 로봇 실험은 없다'를 함께 적는다. f19 는 '동료심사 전 프리프린트(2026-09-23)'임을, f21 은 '데이터셋 이름 미확인'임을 함께 적는다. f9·f21(학습·예측 기반)은 46. 예측·학습 기반 최적화와 25. 작업 배정 — MRTA 양쪽에 연결한다(교차 규칙).",
+      "f6·f7(현재 관측)은 18. 실시간 세계 상태·데이터 일관성 쪽으로 둔다. f22(crowdsim, 기록 재현)는 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 쪽으로 구분해 연결한다 — 두 영역을 섞지 않는다.",
+      "11절: oq-256·oq-272·oq-273·oq-274·oq-298·oq-303 은 부분 근거만 더한다. 상태는 '열림'으로 두고 해결로 바꾸지 않는다 — 어느 finding 도 질문에 완전히 답하지 않는다.",
+      "용어집: '평균 변위 오차'·'4차원 장면 그래프'는 신규 등록하되, '4차원 장면 그래프' 정의에 기존 용어 '3차원 장면 그래프 (3D Scene Graph)'와 연결한다. 움직임 지도·차선 폐쇄·승강기 가동률·침범 후 시간은 이미 있으므로 신규 등록하지 않는다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 확인 22건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1176, ref-1177, ref-1181(이번 실행에서 다시 열지 않음, 기존 각주는 2026-09-30 열람). 주의: 신규 근거는 모두 단일 출처다. 같은 저자군·같은 기관 쌍(ref-1480과 ref-1176, ref-1482와 ref-1481)은 독립 출처가 아니다. ref-1171·ref-1182·ref-1479·ref-1480·ref-1481 은 초록만 확인했다. 게시 페이지 5절의 '쇼핑몰 시험' 근거는 HRI 2013(ref-1182)이 아니라 TRO 2015 확장판(ref-1479)으로 정정된다. 고려대 구로병원 연구(ref-1487)는 성공률 87.03% 의 분모를 밝히지 않았고, 보고된 임무 122건·실패 14건과 맞지 않는다. 같은 연구는 단일 병원·단일 기종이며 혼잡 지표는 승강기 가동률이다. Kazemi Eskeri 외(ref-1083)는 시뮬레이션 결과이고 Kairos(ref-1486)는 동료심사 전 프리프린트다. 3·6·9절의 핵심 판단은 여전히 [추정]이다. 열린 질문 oq-256·oq-272·oq-273·oq-274·oq-298·oq-303 은 부분 근거만 있어 해결로 인정하지 않는다. 정정 요청 없음. 브리프 기록 주의: ref-406 은 fetched_via 가 github_raw 로 적혔으나 실제 근거는 입력 원문(data/source_texts/ref-406.txt, inbox)이고 fetch_url 이 비어 있다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 5176,
+  "type": "result",
+  "duration_ms": 205180,
+  "uuid": "0a60be30-bb9f-4617-ab66-4096e6f0c040",
+  "ttft_stream_ms": 1593,
+  "time_to_request_ms": 159,
+  "time_to_request_phases_ms": {
+    "other": 40,
+    "system_prompt": 32,
+    "resume_other": 1,
+    "process_user_input": 6,
+    "input_attachments": 14,
+    "input_hooks": 6,
+    "tool_pool_refresh": 3,
+    "init_message": 13,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 2,
+    "autocompact": 2,
+    "query_setup": 2,
+    "model_gates": 0,
+    "tool_schema_build": 8,
+    "message_normalization": 3,
+    "client_creation": 8,
+    "request_build": 17
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 106,
+  "time_to_request_cpu_ms": 148,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 8,
+    "cpu_ms": 14,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1593,
+  "time_to_request_from_spawn_ms": 9971474,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791516237792.4727,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 207.9
+}

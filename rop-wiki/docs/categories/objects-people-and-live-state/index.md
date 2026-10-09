@@ -202,24 +202,25 @@ C. 채팅 기반 구성·운영의 업무 지시는 25. 작업 배정 — MRTA·
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 84건이다(논문 27건 · 기사·보고서 5건 · 업체 발표 1건 · 표준·오픈소스·기관 자료 51건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 96건이다(논문 34건 · 기사·보고서 6건 · 업체 발표 2건 · 표준·오픈소스·기관 자료 54건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
+- [ref-1294](../../references/ref-1294.md) — Catalano, I., Placed, J. A., Civera, J., & Peña Queralta, J. (arXiv), Kairos: Grounded Forecasting of Presence and Directional Flow in 4D Scene Graphs (발행 2026-09-23)
+- [ref-1295](../../references/ref-1295.md) — Lee, Y. 외, Park, I.-H. (교신) (Digital Health 12, 고려대학교 구로병원), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026-03-31)
 - [ref-1287](../../references/ref-1287.md) — Yang, Q., & Liew, S. C. (The Chinese University of Hong Kong, arXiv), Multi-robot Rigid Formation Navigation via Synchronous Motion and Discrete-time Communication-Control Optimization (발행 2025-10-10)
+- [ref-1297](../../references/ref-1297.md) — Zhu, Y., Rudenko, A., Kucner, T. P., Lilienthal, A. J., & Magnusson, M. (arXiv; IEEE RA-L 표기), Long-Term Human Motion Prediction Using Spatio-Temporal Maps of Dynamics (발행 2025-10-03)
 - [ref-041](../../references/ref-041.md) — Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots (발행 2025-10-02)
+- [ref-1083](../../references/ref-1083.md) — Kazemi Eskeri, M., Kyrki, V., Baumann, D., & Kucner, T. P. (IROS 2025, arXiv), Efficient Human-Aware Task Allocation for Multi-Robot Systems in Shared Environments (발행 2025-08-27)
 - [ref-1280](../../references/ref-1280.md) — Saavedra-Ruiz, M., Nashed, S. B., Gauthier, C., & Paull, L. (arXiv; IROS 2025 채택 표기), Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments (발행 2025-07-24)
 - [ref-575](../../references/ref-575.md) — Schulze, P. R., Müller, S., Müller, T., & Gross, H.-M. (TU Ilmenau), On realizing autonomous transport services in multi story buildings with doors and elevators (발행 2025-02-25)
 - [ref-1214](../../references/ref-1214.md) — Han, H. Z. 외 (Carnegie Mellon University) — CHI '24, Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations (발행 2024-04-07)
 - [ref-1275](../../references/ref-1275.md) — Deubert, D., Klingel, L., & Selig, A. (arXiv; The International Journal of Advanced Manufacturing Technology 2024 표기), Online Simulation at Machine Level: A Systematic Review (발행 2024-01-15)
-- [ref-1276](../../references/ref-1276.md) — Galka, S. (Winter Simulation Conference 2024), Reducing Transient Behavior in Simulation-Based Digital Twins: A Novel Initialization Approach for Order Picking Systems (발행 2024)
-- [ref-1128](../../references/ref-1128.md) — Gulino, C., Fu, J., Luo, W. 외 (Waymo, arXiv), Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research (발행 2023-10-12)
-- [ref-1179](../../references/ref-1179.md) — Pérez-Higueras, N., Otero, R., Caballero, F., & Merino, L. (arXiv; IEEE RA-L 2023), HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarking Human-Aware Robot Navigation (발행 2023-09-13)
-- [ref-1286](../../references/ref-1286.md) — 김지형 (KoreaScience 수록, 한국인터넷방송통신학회논문지 표기), OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현 (Design and Implementation of Real-time Digital Twin in Heterogeneous Robots using OPC UA) (발행 2023-08-31)
-- 그 밖에 17건
+- 그 밖에 24건
 
 **기사·보고서**
 
+- [ref-1291](../../references/ref-1291.md) — 보안뉴스 (박미영), 경찰청 제공 실시간 교통신호정보, 보행자와 함께 거닐 실외 이동로봇의 눈이 되다 (발행 2024-08-10)
 - [ref-1181](../../references/ref-1181.md) — 조선비즈 (이정아, 다음 뉴스 게재), 로봇과 인간이 공존하는 병원…약 배달 로봇에 길 비켜주고 엘리베이터도 잡아줘 (발행 2024-07-12)
 - [ref-1285](../../references/ref-1285.md) — 메디포뉴스 (이형규), 용인세브란스병원, 지능형 의료서비스로봇 생태계 구축 (발행 2022-11-18)
 - [ref-1284](../../references/ref-1284.md) — The Straits Times (SingHealth 게재, Wong Shiying), New software enables different robots to communicate with each other and building infrastructure (발행 2022-05-28)
@@ -228,6 +229,7 @@ C. 채팅 기반 구성·운영의 업무 지시는 25. 작업 배정 — MRTA·
 
 **업체 발표**
 
+- [ref-1296](../../references/ref-1296.md) — 현대자동차그룹, 현대자동차·기아, 한림대의료원과 로봇 친화 병원 공동 구축 위한 업무협약 체결 (발행 2025-04-07)
 - [ref-1299](../../references/ref-1299.md) — ST Engineering Aethon (Newswire 게재 보도자료), ST Engineering Aethon Launches Zena RX, Redefining Secure Delivery of Medications, Specimens and Sensitive Goods in Hospitals (발행 2024-04-29)
 
 **표준·오픈소스·기관 자료**
@@ -238,21 +240,21 @@ C. 채팅 기반 구성·운영의 업무 지시는 25. 작업 배정 — MRTA·
 - [ref-1277](../../references/ref-1277.md) — Open Robotics Discourse (open-rmf 질의응답 #414), How to inform RMF that lift or door are not available? (#414) (발행 2024-01-13)
 - [ref-012](../../references/ref-012.md) — ISO/IEC, ISO/IEC 19988:2024 - Information technology — GS1 Core Business Vocabulary (CBV) (발행 2024)
 - [ref-1177](../../references/ref-1177.md) — 행정안전부 (대한민국 정책브리핑), 29일부터 인파관리지원시스템 본격 운영…다중운집 인파사고 예방 (발행 2023-12-27)
+- [ref-1290](../../references/ref-1290.md) — Northern Arizona University (NAU Review), Got robot delivery? New research demonstrates need for robot-friendly infrastructure (발행 2023-05-16)
 - [ref-1283](../../references/ref-1283.md) — Changi General Hospital (CGH), Changi General Hospital, CapitaLand Investment and KONE collaborate to advance the integration of robotics in buildings (발행 2022-05-28)
 - [ref-1173](../../references/ref-1173.md) — ROS (ros-infrastructure/rep 저장소), Séverin Lemaignan, REP 155 -- Conventions, Topics, Interfaces for Perception in Human-Robot Interaction (발행 2022-01-11)
 - [ref-022](../../references/ref-022.md) — VDA(Verband der Automobilindustrie), VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control (발행 2022-01)
-- [ref-045](../../references/ref-045.md) — GS1, gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0) (발행 2021-09-30)
-- 그 밖에 41건
+- 그 밖에 44건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [18. 실시간 세계 상태·데이터 일관성](real-time-world-state-and-data-consistency.md) — 갱신: 5절 병원 2건·기타 1건·제조 공장 1건 적용 사례 추가(물류창고 시나리오 유지), 6·7·8절에 시각·품질·만료·지속성 필터·시계 동기화와 로봇–승강기 표준 초안 추가, 9절 위치 신뢰 판단 행을 VDA 5050 3.0.0 7.8절에 맞춰 수정, 10절 건축 도면 자동 인식 트랙 반영 제안 2건 반영, 11절 기존 열린 질문 4건 근거 추가·새 질문 3건, 6·7·8·10·11절에 2026-09-25 판 분리 페이지 링크 유지, 13절 각주 갱신(ref-288 원문 열람 반영, 신규 15건)·프런트매터 sources 는 기존 22건에 신규·재사용 출처를 더함 (실행 2026-10-09-11)
-- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술](../../topics/2026/2026-10-09-area18-s6.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(2,348자)을 옮겼다 (실행 2026-10-09-11)
-- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결](../../topics/2026/2026-10-09-area18-s10.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,925자)을 옮겼다 (실행 2026-10-09-11)
-- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area18-s7.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,700자)을 옮겼다 (실행 2026-10-09-11)
-- 2026-10-09 · 생성 · [18. 실시간 세계 상태·데이터 일관성 — 열린 질문](../../topics/2026/2026-10-09-area18-s11.md) — 자동 분리: 18. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,638자)을 옮겼다 (실행 2026-10-09-11)
+- 2026-10-09 · 갱신 · [19. 사람·보행자 모델](people-and-pedestrian-model.md) — 차등 갱신: 5절 상업 시설 사례 근거를 ref-1182→ref-1288 로 정정하고 병원(고려대 구로병원)·실외(대학 캠퍼스 보도) 사례 추가, 4절 덧붙임, 6·7·8·10·11절 기존 요약·2026-09-30 주제 페이지 링크 유지와 새 내용 추가, 9절 경계 표 보강, 13절 각주 정리, 프런트매터 sources 에 기존 ref-1175·ref-1079 유지(2차 수정 반영) (실행 2026-10-09-12)
+- 2026-10-09 · 생성 · [19. 사람·보행자 모델 — 대표 접근법과 기술](../../topics/2026/2026-10-09-area19-s6.md) — 자동 분리: 19. 사람·보행자 모델 의 "6. 대표 접근법과 기술" 절(1,552자)을 옮겼다 (실행 2026-10-09-12)
+- 2026-10-09 · 생성 · [19. 사람·보행자 모델 — 대표 연구와 자료](../../topics/2026/2026-10-09-area19-s8.md) — 자동 분리: 19. 사람·보행자 모델 의 "8. 대표 연구와 자료" 절(1,472자)을 옮겼다 (실행 2026-10-09-12)
+- 2026-10-09 · 생성 · [19. 사람·보행자 모델 — 열린 질문](../../topics/2026/2026-10-09-area19-s11.md) — 자동 분리: 19. 사람·보행자 모델 의 "11. 열린 질문" 절(1,150자)을 옮겼다 (실행 2026-10-09-12)
+- 2026-10-09 · 생성 · [19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-09-area19-s7.md) — 자동 분리: 19. 사람·보행자 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절(925자)을 옮겼다 (실행 2026-10-09-12)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료
