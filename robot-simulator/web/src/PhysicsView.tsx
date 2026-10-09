@@ -12,6 +12,7 @@ import {
   Maximize2,
   Minus,
   Move,
+  Paintbrush,
   Plus,
   RotateCcw,
   RotateCw,
@@ -46,6 +47,12 @@ import {
   type HumanMotion,
 } from "./HumanVisual";
 import "./PhysicsView.css";
+import {
+  MapMaterials,
+  mapSurfaceUVs,
+  surfaceFor,
+  type MaterialLoadStatus,
+} from "./MapMaterials";
 const geomTypes = [
   "plane",
   "hfield",
@@ -162,10 +169,12 @@ interface Entity {
   name: string;
   floor: string;
   kind: string;
+  surfaceKind?: string;
   dynamic: boolean;
   floorAnchor?: { name: string; centerOffset: number };
 }
 interface Runtime {
+  materials: MapMaterials;
   renderer: THREE.WebGLRenderer;
   scene: THREE.Scene;
   camera: THREE.PerspectiveCamera;
@@ -225,6 +234,12 @@ export function PhysicsView({
     [tracking, setTracking] = useState(false);
   const [showLabels, setShowLabels] = useState(true);
   const [showDiagnostics, setShowDiagnostics] = useState(false);
+  const [showMaterials, setShowMaterials] = useState(true);
+  const [materialStatus, setMaterialStatus] = useState<MaterialLoadStatus>({
+    loaded: 0,
+    failed: [],
+    total: 5,
+  });
   const [humanDisplayFailure, setHumanDisplayFailure] = useState(false);
   const trackingRef = useRef(false),
     previousCenter = useRef<THREE.Vector3 | null>(null);
@@ -278,6 +293,7 @@ export function PhysicsView({
         name: e.name,
         floor: e.floor_id,
         kind: "시설·공간",
+        surfaceKind: e.kind,
         dynamic: e.dynamic || e.kind === "elevator",
         floorAnchor: { name: `${e.id}/shape`, centerOffset: e.size.z / 2 },
       });
@@ -811,6 +827,10 @@ export function PhysicsView({
     direction.visible = false;
     scene.add(direction);
     const rt: Runtime = {
+      materials: new MapMaterials(
+        renderer.capabilities.getMaxAnisotropy(),
+        setMaterialStatus,
+      ),
       renderer,
       scene,
       camera,
@@ -834,6 +854,8 @@ export function PhysicsView({
       travel: null,
       focusId: null,
     };
+    setMaterialStatus(rt.materials.status);
+    rt.materials.load();
     rt.invalidate = () => {
       if (rt.frame || rt.lost) return;
       rt.frame = requestAnimationFrame(() => {
@@ -1178,6 +1200,7 @@ export function PhysicsView({
         (object.material as THREE.Material).dispose();
       });
       rt.humans.forEach((human) => human.dispose());
+      rt.materials.dispose();
       selectionRing.geometry.dispose();
       (selectionRing.material as THREE.Material).dispose();
       selection.geometry.dispose();
@@ -1306,6 +1329,7 @@ export function PhysicsView({
       }
       live.add(g.id);
       const shape = `${g.type}:${g.size.join(",")}:${g.mesh_id}`;
+      const surface = surfaceFor(g, entities.get(g.entity_id)?.surfaceKind);
       let object = rt.objects.get(g.id);
       if (object && object.userData.shape !== shape) {
         rt.scene.remove(object);
@@ -1331,6 +1355,11 @@ export function PhysicsView({
         object.userData.shape = shape;
         rt.objects.set(g.id, object);
         rt.scene.add(object);
+      }
+      const uvKey = `${surface}:${surface === "floor" ? g.position.join(",") : ""}`;
+      if (surface && object.userData.materialUvKey !== uvKey) {
+        mapSurfaceUVs(object.geometry, surface, g);
+        object.userData.materialUvKey = uvKey;
       }
       const entity = entities.get(g.entity_id),
         robot = robots.get(g.entity_id);
@@ -1383,6 +1412,7 @@ export function PhysicsView({
       object.userData.selectable = !!entity || !!robot;
       const material = object.material as THREE.MeshStandardMaterial;
       material.color.setRGB(g.rgba[0], g.rgba[1], g.rgba[2]);
+      rt.materials.apply(material, surface, showMaterials && !showDiagnostics);
       material.opacity = people.has(g.entity_id)
         ? 0.24
         : (object.userData.sourceOpacity as number);
@@ -1437,6 +1467,9 @@ export function PhysicsView({
           rt.scene.add(human.root);
         }
         human.update(motion, person.id === selected);
+        human.setJacketTexture(
+          showMaterials && !showDiagnostics ? rt.materials.get("jacket") : null,
+        );
         rt.humanMotion.set(person.id, motion);
         const shown = visibleFloorIds.has(entityFloors.get(person.id) ?? "");
         human.root.visible = shown;
@@ -1651,6 +1684,8 @@ export function PhysicsView({
     floorId,
     generation,
     showDiagnostics,
+    showMaterials,
+    materialStatus,
     visibleFloorKey,
     floorPickerOpen,
   ]);
@@ -1760,6 +1795,18 @@ export function PhysicsView({
         >
           <Box size={14} />
           물리 진단
+        </button>
+        <button
+          aria-pressed={showMaterials && !showDiagnostics}
+          disabled={showDiagnostics}
+          title={
+            showDiagnostics
+              ? "물리 진단을 끄면 재질을 표시합니다"
+              : "벽·바닥·시설·작업복 재질 표시. 물리 형상은 바뀌지 않습니다."
+          }
+          onClick={() => setShowMaterials((value) => !value)}
+        >
+          <Paintbrush size={14} /> 재질
         </button>
         {selected && (
           <button
@@ -1992,6 +2039,20 @@ export function PhysicsView({
             3D 화면을 다시 열어주세요.
           </div>
         )}
+        {showMaterials &&
+          !showDiagnostics &&
+          materialStatus.loaded < materialStatus.total && (
+            <div className="physics-view__material-status" role="status">
+              {materialStatus.failed.length
+                ? "일부 재질을 불러오지 못해 기본 색상으로 표시합니다."
+                : `재질 불러오는 중 · ${materialStatus.loaded}/${materialStatus.total}`}
+              {materialStatus.failed.length > 0 && (
+                <button onClick={() => runtime.current?.materials.retry()}>
+                  재질 다시 불러오기
+                </button>
+              )}
+            </div>
+          )}
         {showDiagnostics && !humanDisplayFailure && (
           <div className="physics-view__diagnostic-note">
             사람 외형: 관절 시각 모델 · 물리: 몸통 단일 충돌체

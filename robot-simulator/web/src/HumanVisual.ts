@@ -74,10 +74,11 @@ export interface HumanVisual {
   root: THREE.Group;
   meshes: THREE.Mesh[];
   update: (motion: HumanMotion, selected: boolean) => void;
+  setJacketTexture: (texture: THREE.Texture | null) => void;
   dispose: () => void;
 }
 
-/** Native, clothed 1.70 m visual human. No external asset or loading fallback. */
+/** Native, clothed 1.70 m visual human; optional fabric never changes its gait. */
 export function createHumanVisual(id: string): HumanVisual {
   const root = new THREE.Group();
   root.name = `${id}/human-visual`;
@@ -279,6 +280,14 @@ export function createHumanVisual(id: string): HumanVisual {
     root,
     meshes,
     update,
+    setJacketTexture: (texture) => {
+      if (materials.jacket.map === texture) return;
+      materials.jacket.map = texture;
+      materials.jacket.color.setHex(
+        texture ? 0xffffff : colors[seed % colors.length],
+      );
+      materials.jacket.needsUpdate = true;
+    },
     dispose: () => {
       meshes.forEach((mesh) => mesh.geometry.dispose());
       Object.values(materials).forEach((material) => material.dispose());
