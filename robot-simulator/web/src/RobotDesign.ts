@@ -27,7 +27,8 @@ export const robotLiveries = {
   },
 } as const;
 type Model = keyof typeof robotLiveries;
-type Part = "chassis" | "cargo-box" | "tire" | "link" | "palm" | "finger";
+type Part =
+  "chassis" | "cargo-box" | "tire" | "caster" | "link" | "palm" | "finger";
 
 export function robotDesignPart(g: Geom, model: string): Part | null {
   if (!Object.prototype.hasOwnProperty.call(robotLiveries, model)) return null;
@@ -52,6 +53,7 @@ export function robotDesignPart(g: Geom, model: string): Part | null {
     return "finger";
   if (kind === "capsule" && /^arm-link-\d+$/.test(part)) return "link";
   if (kind === "cylinder" && /^(left|right)-tire$/.test(part)) return "tire";
+  if (kind === "sphere" && /^caster-(-1|1)$/.test(part)) return "caster";
   return null; // Payloads, equipment, Spot meshes and unknown geometry stay authoritative.
 }
 
@@ -260,6 +262,45 @@ function makeSkin(g: Geom, model: Model, part: Part): Skin {
       }
     }
     // Geom quaternion supplies wheel rotation. Never animate from time or commands.
+  } else if (part === "caster") {
+    // A wheel-and-fork cover for the research model's spherical contact support.
+    // Same contact height/radius; the fork is chassis-aligned, never ball-aligned.
+    // Axially symmetric surfaces avoid inventing wheel rotation or caster steering.
+    const wheel = add(new THREE.CylinderGeometry(a, a, a * 0.62, 32), "rubber");
+    wheel.name = "caster-wheel-cover";
+    for (const sign of [-1, 1]) {
+      const hub = add(
+        new THREE.CylinderGeometry(a * 0.53, a * 0.53, a * 0.04, 24),
+        "metal",
+        0,
+        sign * a * 0.32,
+        0,
+      );
+      hub.name = "caster-hub";
+      // The arms extend from the observed contact centre to the chassis underside.
+      box(
+        a * 0.48,
+        a * 0.12,
+        a * 1.7,
+        "metal",
+        0,
+        sign * a * 0.46,
+        a * 0.69,
+        a * 0.07,
+      );
+    }
+    add(new THREE.CylinderGeometry(a * 0.18, a * 0.18, a * 1.08, 16), "dark");
+    const mount = box(
+      a * 1.15,
+      a * 1.18,
+      a * 0.22,
+      "dark",
+      0,
+      0,
+      a * 1.72,
+      a * 0.07,
+    );
+    mount.name = "caster-mount";
   } else if (part === "link") {
     add(
       new THREE.CapsuleGeometry(a, b * 2, 5, 12).rotateX(Math.PI / 2),
@@ -306,7 +347,7 @@ function makeSkin(g: Geom, model: Model, part: Part): Skin {
   };
 }
 
-/** Each visual is a child of its actual geom, including wheels, fingers and links. */
+/** Visuals follow actual geoms. Caster covers use contact position + chassis orientation. */
 export class RobotDesigns {
   private entries = new Map<
     number,
@@ -319,8 +360,17 @@ export class RobotDesigns {
     model: string,
     enabled: boolean,
     selected: boolean,
+    chassis?: Geom,
   ) {
-    const part = robotDesignPart(g, model);
+    let part = robotDesignPart(g, model);
+    if (
+      part === "caster" &&
+      (!chassis ||
+        chassis.entity_id !== g.entity_id ||
+        chassis.quaternion.length !== 4 ||
+        !chassis.quaternion.every(Number.isFinite))
+    )
+      part = null; // Preserve the diagnostic sphere if its chassis pose is unavailable.
     const key = `${model}:${part}:${g.size.join(",")}`;
     let entry = this.entries.get(g.id);
     if (entry && (entry.key !== key || entry.mesh !== mesh)) {
@@ -337,6 +387,14 @@ export class RobotDesigns {
       this.entries.set(g.id, entry);
     }
     entry.skin.root.visible = enabled;
+    if (part === "caster" && chassis) {
+      const [w, x, y, z] = chassis.quaternion;
+      // Counteract the ball joint's unrestricted spin: a mounting fork cannot tumble.
+      entry.skin.root.quaternion
+        .copy(mesh.quaternion)
+        .invert()
+        .multiply(new THREE.Quaternion(x, y, z, w));
+    }
     entry.skin.update(selected);
     (mesh.material as THREE.Material).visible = !enabled;
     mesh.updateMatrixWorld(true);

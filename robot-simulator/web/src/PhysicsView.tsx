@@ -1439,6 +1439,7 @@ export function PhysicsView({
         robot?.model_id ?? "",
         showRobotDesigns && !showDiagnostics,
         g.entity_id === selected,
+        geometryByName.get(`${g.entity_id}/chassis`),
       );
       const group = rt.byEntity.get(g.entity_id) ?? [];
       if (!people.has(g.entity_id)) group.push(object);

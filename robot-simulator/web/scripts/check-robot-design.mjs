@@ -156,10 +156,62 @@ try {
     part.geometry.dispose();
     part.material.dispose();
   }
+  // Ball contact can roll on every axis; its mounting bracket must stay with the chassis.
+  const caster = new THREE.Mesh(
+    new THREE.SphereGeometry(0.07),
+    new THREE.MeshStandardMaterial(),
+  );
+  const casterGeom = {
+    ...g,
+    id: 2,
+    name: "r1/caster-1",
+    type: 2,
+    size: [0.07, 0, 0],
+  };
+  const casterSource = JSON.stringify(casterGeom);
+  const bodyQ = new THREE.Quaternion().setFromEuler(
+    new THREE.Euler(0.08, -0.12, 1.2),
+  );
+  const chassis = { ...g, quaternion: [bodyQ.w, bodyQ.x, bodyQ.y, bodyQ.z] };
+  caster.position.set(4.3, 5, 0.07);
+  for (const spin of [0, 1.4, 3.1]) {
+    caster.quaternion.setFromEuler(new THREE.Euler(spin, spin * 0.7, -spin));
+    designs.apply(caster, casterGeom, "amr", true, false, chassis);
+    const cover = caster.children[0];
+    assert.ok(
+      cover.getWorldQuaternion(new THREE.Quaternion()).angleTo(bodyQ) < 1e-7,
+      "fork must stay chassis-aligned while the contact sphere spins",
+    );
+    assert.ok(
+      cover.getWorldPosition(new THREE.Vector3()).distanceTo(caster.position) <
+        1e-10,
+      "caster cover must keep the observed contact centre",
+    );
+    const wheel = cover.getObjectByName("caster-wheel-cover");
+    wheel.geometry.computeBoundingBox();
+    assert.ok(
+      Math.abs(wheel.geometry.boundingBox.min.z + 0.07) < 1e-7,
+      "wheel must preserve the spherical support's contact height",
+    );
+  }
+  assert.equal(JSON.stringify(casterGeom), casterSource);
+  designs.apply(caster, casterGeom, "amr", false, false, chassis);
+  assert.equal(caster.material.visible, true);
+  assert.equal(caster.children[0].visible, false);
+  designs.apply(caster, casterGeom, "amr", true, false);
+  assert.equal(
+    caster.children.length,
+    0,
+    "missing chassis pose must retain the source sphere",
+  );
+  assert.equal(caster.material.visible, true);
+  caster.geometry.dispose();
+  caster.material.dispose();
+  designs.dispose();
   mesh.geometry.dispose();
   mesh.material.dispose();
   console.log(
-    "PASS: six robot designs, envelope bounds, physical-state immutability, live pose/joint inheritance, selection, diagnostics, reuse and GPU cleanup; Spot/cargo/equipment preserved.",
+    "PASS: six robot designs, envelope bounds, physical-state immutability, live pose/joint inheritance, chassis-aligned caster covers/contact height/fallback, selection, diagnostics, reuse and GPU cleanup; Spot/cargo/equipment preserved.",
   );
 } finally {
   await rm(dir, { recursive: true, force: true });
