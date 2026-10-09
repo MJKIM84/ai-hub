@@ -23,6 +23,28 @@ version: 1
 | 2026-10-09-14 | 갱신 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | '다른 대분류와의 연결' 절 신규 작성: 현장 사례가 A·C~P 대분류의 세부영역에 넘기는 요구를 대분류별로 정리(B. 로봇 온톨로지는 근거 없음), 각주 정의 62건을 절 끝에 둠 |
 | 2026-10-09-14 | 요약 | [docs/categories/site-type-applications/index.md](categories/site-type-applications/index.md) | Q. 현장 유형별 적용: 다른 대분류와의 연결 절 신규 작성(현장 사례가 A·C~P 대분류 세부영역에 넘기는 요구 정리, B. 로봇 온톨로지는 근거 없음) |
 | 2026-10-09-14 | 생성 | [docs/glossary/door-to-door-robot-delivery.md](glossary/door-to-door-robot-delivery.md) | 용어집 항목 도어 투 도어 로봇 배송 |
+| 2026-10-09-13 | 갱신 | [docs/categories/design-and-simulation/scenario-model-and-editing.md](categories/design-and-simulation/scenario-model-and-editing.md) | 차등 갱신: 3절 면담 근거 추가, 5절 물류창고 경진대회 사례 추가·문장 교체, 6·7·8·10절 요약 덧붙임과 2026-09-30 주제 페이지 링크 복원, 9절 판 관리 문장 정정, 11절 첫 문장 건수 정정·진행 현황, 13절 각주 11건 추가, related_areas 에 57·61 추가, last_run 2026-10-09 (2차 수정 5건 반영) |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s6.md](topics/2026/2026-10-09-area33-s6.md) | 자동 분리: 33. 시나리오 모델·편집 의 "6. 대표 접근법과 기술" 절(2,409자)을 옮겼다 |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s8.md](topics/2026/2026-10-09-area33-s8.md) | 자동 분리: 33. 시나리오 모델·편집 의 "8. 대표 연구와 자료" 절(1,827자)을 옮겼다 |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s10.md](topics/2026/2026-10-09-area33-s10.md) | 자동 분리: 33. 시나리오 모델·편집 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,294자)을 옮겼다 |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s11.md](topics/2026/2026-10-09-area33-s11.md) | 자동 분리: 33. 시나리오 모델·편집 의 "11. 열린 질문" 절(1,273자)을 옮겼다 |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s7.md](topics/2026/2026-10-09-area33-s7.md) | 자동 분리: 33. 시나리오 모델·편집 의 "7. 관련 표준·프레임워크·오픈소스" 절(996자)을 옮겼다 |
+| 2026-10-09-13 | 생성 | [docs/topics/2026/2026-10-09-area33-s3.md](topics/2026/2026-10-09-area33-s3.md) | 자동 분리: 33. 시나리오 모델·편집 의 "3. 왜 중요한가" 절(589자)을 옮겼다 |
+| 2026-10-09-13 | 요약 | [docs/categories/design-and-simulation/scenario-model-and-editing.md](categories/design-and-simulation/scenario-model-and-editing.md) | 33. 시나리오 모델·편집: 갱신: 5절 물류창고 경진대회 사례 추가, 9절 시나리오 판 관리 문장 정정, Open-RMF Site Editor 전환·OpenSCENARIO 2 로봇 재사용·RoboVAST 반영, 1차 조건부 승인 수정 15건·2차 수정 5건 반영(2026-09-30 주제 페이지 링크 복원, 11절 건수 정정) |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1298.md](references/ref-1298.md) | 참고문헌 ref-1298 등록: Interoperability Interest Group June 6, 2024: Preview of the… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1303.md](references/ref-1303.md) | 참고문헌 ref-1303 등록: ASAM OpenSCENARIO XML v1.4.0 — 5 Backward compatibility |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1304.md](references/ref-1304.md) | 참고문헌 ref-1304 등록: Scenario Execution for Robotics: A generic, backend-agnostic… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1305.md](references/ref-1305.md) | 참고문헌 ref-1305 등록: ScenicNL: Generating Probabilistic Scenario Programs from Cr… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1306.md](references/ref-1306.md) | 참고문헌 ref-1306 등록: Scaling Lifelong Multi-Agent Path Finding to More Realistic… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1307.md](references/ref-1307.md) | 참고문헌 ref-1307 등록: Replicable Simulation-Based Robot Validation through Provena… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1308.md](references/ref-1308.md) | 참고문헌 ref-1308 등록: Composable and executable scenarios for simulation-based tes… |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1309.md](references/ref-1309.md) | 참고문헌 ref-1309 등록: Isaac Sim Documentation — Warehouse Creator Extension |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1310.md](references/ref-1310.md) | 참고문헌 ref-1310 등록: ros2_fault_injection documentation |
+| 2026-10-09-13 | 생성 | [docs/references/ref-1311.md](references/ref-1311.md) | 참고문헌 ref-1311 등록: Scenario Generation for Robot Simulation from Public Data |
+| 2026-10-09-13 | 생성 | [docs/glossary/data-provenance.md](glossary/data-provenance.md) | 용어집 항목 데이터 출처 추적 |
+| 2026-10-09-13 | 생성 | [docs/glossary/abstract-and-concrete-scenario.md](glossary/abstract-and-concrete-scenario.md) | 용어집 항목 추상 시나리오·구체 시나리오 |
+| 2026-10-09-13 | 생성 | [docs/glossary/strict-schema.md](glossary/strict-schema.md) | 용어집 항목 엄격 스키마 |
+| 2026-10-09-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-09-12 | 갱신 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 차등 갱신: 5절 상업 시설 사례 근거를 ref-1182→ref-1288 로 정정하고 병원(고려대 구로병원)·실외(대학 캠퍼스 보도) 사례 추가, 4절 덧붙임, 6·7·8·10·11절 기존 요약·2026-09-30 주제 페이지 링크 유지와 새 내용 추가, 9절 경계 표 보강, 13절 각주 정리, 프런트매터 sources 에 기존 ref-1175·ref-1079 유지(2차 수정 반영) |
 | 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s6.md](topics/2026/2026-10-09-area19-s6.md) | 자동 분리: 19. 사람·보행자 모델 의 "6. 대표 접근법과 기술" 절(1,552자)을 옮겼다 |
 | 2026-10-09-12 | 생성 | [docs/topics/2026/2026-10-09-area19-s8.md](topics/2026/2026-10-09-area19-s8.md) | 자동 분리: 19. 사람·보행자 모델 의 "8. 대표 연구와 자료" 절(1,472자)을 옮겼다 |

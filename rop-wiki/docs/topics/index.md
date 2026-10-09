@@ -31,6 +31,12 @@ version: 1
 | 2026-10-09 | [19. 사람·보행자 모델 — 대표 접근법과 기술](2026/2026-10-09-area19-s6.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
 | 2026-10-09 | [19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area19-s7.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
 | 2026-10-09 | [19. 사람·보행자 모델 — 대표 연구와 자료](2026/2026-10-09-area19-s8.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 다른 연구영역과의 연결](2026/2026-10-09-area33-s10.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 열린 질문](2026/2026-10-09-area33-s11.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 왜 중요한가](2026/2026-10-09-area33-s3.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 대표 접근법과 기술](2026/2026-10-09-area33-s6.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area33-s7.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 대표 연구와 자료](2026/2026-10-09-area33-s8.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |

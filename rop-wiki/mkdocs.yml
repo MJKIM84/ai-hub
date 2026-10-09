@@ -278,6 +278,12 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 33. 시나리오 모델·편집 — 대표 연구와 자료: topics/2026/2026-10-09-area33-s8.md
+      - 33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-10-09-area33-s7.md
+      - 33. 시나리오 모델·편집 — 대표 접근법과 기술: topics/2026/2026-10-09-area33-s6.md
+      - 33. 시나리오 모델·편집 — 왜 중요한가: topics/2026/2026-10-09-area33-s3.md
+      - 33. 시나리오 모델·편집 — 열린 질문: topics/2026/2026-10-09-area33-s11.md
+      - 33. 시나리오 모델·편집 — 다른 연구영역과의 연결: topics/2026/2026-10-09-area33-s10.md
       - 19. 사람·보행자 모델 — 대표 연구와 자료: topics/2026/2026-10-09-area19-s8.md
       - 19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-10-09-area19-s7.md
       - 19. 사람·보행자 모델 — 대표 접근법과 기술: topics/2026/2026-10-09-area19-s6.md
@@ -789,6 +795,7 @@ nav:
     - 대조적 설명 (Contrastive Explanation): glossary/contrastive-explanation.md
     - 대체 이름 (Alternative Name (IMDF alt_name)): glossary/alternative-name.md
     - 데이터 보유자 (Data Holder (EU Data Act)): glossary/data-holder.md
+    - 데이터 출처 추적 (Data Provenance (W3C PROV)): glossary/data-provenance.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
     - 도어 투 도어 로봇 배송 (Door-to-Door Robot Delivery): glossary/door-to-door-robot-delivery.md
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
@@ -929,6 +936,7 @@ nav:
     - 어포던스 (Affordance): glossary/affordance.md
     - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
     - 얼굴 가림 (Face Obfuscation): glossary/face-obfuscation.md
+    - 엄격 스키마 (Strict Schema (deprecated elements removed)): glossary/strict-schema.md
     - 업무 연속성 관리 시스템 (Business Continuity Management System (BCMS)): glossary/business-continuity-management-system.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 에이전틱 AI (Agentic AI): glossary/agentic-ai.md
@@ -1021,6 +1029,7 @@ nav:
     - 총소유비용 (Total Cost of Ownership (TCO)): glossary/total-cost-of-ownership.md
     - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
     - 최적성 간격 (Optimality Gap): glossary/optimality-gap.md
+    - 추상 시나리오·구체 시나리오 (Abstract Scenario / Concrete Scenario): glossary/abstract-and-concrete-scenario.md
     - 출처 근거 연결 (Source Grounding): glossary/source-grounding.md
     - 충돌 기반 탐색 (Conflict-Based Search (CBS)): glossary/conflict-based-search.md
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
@@ -1544,13 +1553,24 @@ nav:
       : references/ref-1295.md
     - ref-1296 — 현대자동차·기아, 한림대의료원과 로봇 친화 병원 공동 구축 위한 업무협약 체결: references/ref-1296.md
     - ref-1297 — Long-Term Human Motion Prediction Using Spatio-Temporal Maps of Dynamics: references/ref-1297.md
+    - 'ref-1298 — Interoperability Interest Group June 6, 2024: Preview of the RMF Site Editor': references/ref-1298.md
     - ? ref-1299 — ST Engineering Aethon Launches Zena RX, Redefining Secure Delivery of Medications, Specimens and Sensitive Goods in Hospitals
       : references/ref-1299.md
     - ref-130 — UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv): references/ref-130.md
     - ref-1300 — 엘리베이터 타는 배달로봇과의 조우: references/ref-1300.md
     - ref-1301 — 내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다: references/ref-1301.md
     - ref-1302 — Supporting a Human-Aware World Model through Sensor Fusion: references/ref-1302.md
+    - ref-1303 — ASAM OpenSCENARIO XML v1.4.0 — 5 Backward compatibility: references/ref-1303.md
+    - ? 'ref-1304 — Scenario Execution for Robotics: A generic, backend-agnostic library for running reproducible robotics experiments and tests'
+      : references/ref-1304.md
+    - 'ref-1305 — ScenicNL: Generating Probabilistic Scenario Programs from Crash Reports': references/ref-1305.md
+    - 'ref-1306 — Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings: Research Challenges and Opportunities': references/ref-1306.md
+    - ref-1307 — Replicable Simulation-Based Robot Validation through Provenance: references/ref-1307.md
+    - ref-1308 — Composable and executable scenarios for simulation-based testing of mobile robots: references/ref-1308.md
+    - ref-1309 — Isaac Sim Documentation — Warehouse Creator Extension: references/ref-1309.md
     - 'ref-131 — OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (OPC 10031-4)': references/ref-131.md
+    - ref-1310 — ros2_fault_injection documentation: references/ref-1310.md
+    - ref-1311 — Scenario Generation for Robot Simulation from Public Data: references/ref-1311.md
     - ? 'ref-132 — Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations'
       : references/ref-132.md
     - 'ref-133 — Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?': references/ref-133.md

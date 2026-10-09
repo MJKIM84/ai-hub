@@ -348,8 +348,11 @@ version: 1
 | oq-326 | 병원·오피스처럼 5G 특화망으로 로봇을 연결하거나 클라우드에서 제어하는 현장에서 통신이 끊길 때 로봇의 현장 동작과 진행 중 작업의 재배정 기준을 공개한 사례가 있는가? | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[67. 기타 현장](categories/site-type-applications/other-sites.md) | 2026-10-09 | 2026-10-09-14 | 열림 | — |
 | oq-327 | 시설 카메라의 사람 검출 결과로 플릿 주행 차선을 닫거나 속도를 제한하는 방식(Open-RMF lane_blocker)을 여러 제조사 로봇 현장에서 운영할 때 오검출·과도한 차선 폐쇄가 처리량과 지연에 주는 영향을 측정한 자료가 있는가? | [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-10-09 | 2026-10-09-12 | 열림 | — |
 | oq-328 | 병원 승강기 가동률·탑승 인원 같은 혼잡 임계값(예: 고려대 구로병원의 약 60%)을 다른 병원·건물로 옮겨 로봇 배정 시점에 쓸 때 재보정하는 방법이나 다기관 연구가 있는가? | [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-09 | 2026-10-09-12 | 열림 | — |
+| oq-329 | RoboVAST 처럼 추상 시나리오를 구체 인스턴스로 해석하고 실행마다 출처를 기록하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비가 함께 있는 다중 로봇 시나리오에 적용한 사례가 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-09 | 2026-10-09-13 | 열림 | — |
+| oq-330 | Open-RMF Site Editor 의 현장 형식이 기존 traffic-editor 의 .building.yaml 을 대체하는가, 그리고 기존 건물 파일을 옮기는 공식 변환 도구나 판 이전 규칙이 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-10-09 | 2026-10-09-13 | 열림 | — |
+| oq-331 | OpenSCENARIO 2 DSL 로 다중 로봇 플릿의 작업 배정과 승강기·문 같은 설비 사건을 기술할 수 있는가, 기술하려면 어떤 확장 라이브러리가 필요한가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-09 | 2026-10-09-13 | 열림 | — |
 
-상태별 건수: 열림 327건, 조사 중 1건
+상태별 건수: 열림 330건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

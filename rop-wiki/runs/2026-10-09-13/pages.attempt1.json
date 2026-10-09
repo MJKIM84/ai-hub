@@ -1,0 +1,598 @@
+{
+  "run_id": "2026-10-09-13",
+  "outline": [
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 450,
+      "summary": "이동로봇 시뮬레이션 시험 전문가 14명 면담에서 시나리오 변형 관리가 주요 장벽으로 나타났다는 직접 근거를 기존 종합 추정에 더한다. [사실][^ref-1516]",
+      "planned_findings": [
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1100,
+      "summary": "기존 다섯 사례에 물류창고 현장 유형의 League of Robot Runners 경진대회 시나리오를 더하되 실제 물류창고 배치가 아님을 밝힌다. [사실][^ref-1514]",
+      "planned_findings": [
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "Open-RMF 편집기의 Site Editor 전환, OpenSCENARIO 2 의 로봇 재사용, 환경·추상 시나리오·변형 분리, 장애 매개변수 선언 사례를 더한다. [사실][^ref-1510][^ref-1512][^ref-1515]",
+      "planned_findings": [
+        "f4",
+        "f7",
+        "f8",
+        "f9",
+        "f11",
+        "f12",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "Site Editor, OpenSCENARIO XML 판 호환 규칙, Scenario Execution for Robotics, RoboVAST, League of Robot Runners 를 표로 더한다. [사실][^ref-482][^ref-1511][^ref-1512][^ref-1515][^ref-1514]",
+      "planned_findings": [
+        "f1",
+        "f4",
+        "f7",
+        "f15",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 900,
+      "summary": "조합형 실행 시나리오, 출처 기록 기반 재현, OpenSCENARIO 2 로봇 실행, 사고 보고서 변환, 경진대회, 공개 데이터 기반 생성 연구를 더한다. [사실][^ref-1516][^ref-1515][^ref-1513]",
+      "planned_findings": [
+        "f5",
+        "f13",
+        "f14",
+        "f22",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 1500,
+      "summary": "판 관리 문장을 도로 교통 표준의 판 이전 규칙(사실)과 로봇 형식 미확인(추정)으로 나누어 고치고, OpenSCENARIO 2 를 과제·사건 기술 언어 후보로 추정하며 외부 형식 판 규칙을 연계 대상으로 둔다. [추정][^ref-1511][^ref-1515]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f6",
+        "f10",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 700,
+      "summary": "54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리, 61. 물류창고, 27. 다중 로봇 경로·교통 관리 — MAPF, 36·11번 재현 영역, 15. 지도·공간·위치 모델과의 연결을 더한다. [추정][^ref-1515][^ref-1511]",
+      "planned_findings": [
+        "f4",
+        "f9",
+        "f14",
+        "f1",
+        "f6",
+        "f19",
+        "f22",
+        "f23",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 800,
+      "summary": "oq-234·oq-233 은 부분 근거, oq-235·oq-131·oq-236 은 미해결, oq-135 는 미조사로 적고 새 질문 3건을 올린다. [추정][^ref-1511][^ref-1515]",
+      "planned_findings": [
+        "f3",
+        "f6",
+        "f10",
+        "f12",
+        "f18",
+        "f23"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "차등 갱신: 3절 면담 근거 추가, 5절 물류창고 경진대회 사례 추가·문장 교체, 6·7·8·10·11절 요약 덧붙임, 9절 판 관리 문장 정정과 OpenSCENARIO 2·외부 형식 판 규칙 반영, 13절 각주 11건 추가, related_areas 에 57·61 추가",
+      "patches": [
+        {
+          "section": "3. 왜 중요한가",
+          "action": "append",
+          "frontmatter": {
+            "related_areas": [
+              9,
+              11,
+              14,
+              15,
+              18,
+              19,
+              22,
+              24,
+              27,
+              32,
+              34,
+              36,
+              44,
+              54,
+              57,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66
+            ],
+            "sources": [
+              "ref-1086",
+              "ref-104",
+              "ref-079",
+              "ref-971",
+              "ref-528",
+              "ref-1087",
+              "ref-1088",
+              "ref-726",
+              "ref-1089",
+              "ref-815",
+              "ref-1090",
+              "ref-116",
+              "ref-1091",
+              "ref-1092",
+              "ref-046",
+              "ref-482",
+              "ref-1510",
+              "ref-1511",
+              "ref-1512",
+              "ref-1513",
+              "ref-1514",
+              "ref-1515",
+              "ref-1516",
+              "ref-1517",
+              "ref-1518",
+              "ref-1519"
+            ]
+          },
+          "content": "위 종합을 보강하는 면담 근거로, Ortega·Parra·Schneider·Hochgeschwender(Frontiers in Robotics and AI, 2024-08-02)는 이동로봇 시뮬레이션 시험 일반의 도메인 전문가 14명을 면담해 환경 모델과 로봇 과제를 묶은 시험 시나리오의 변형 관리가 이동로봇 시뮬레이션 시험을 꺼리는 주요 장벽으로 나타났다고 보고했다. [사실][^ref-1516] 같은 연구는 기존 CAD·3D 모델링 도구가 시험 목적에 따라 바뀌어야 하는 장면에 맞지 않는다고 지적했다. [사실][^ref-1516] 면담 대상은 이동로봇 시뮬레이션 시험 분야의 전문가이며, ROP 실무자를 면담한 자료는 아직 찾지 못했다."
+        },
+        {
+          "section": "5. 적용 사례 (현장 유형 명시)",
+          "action": "replace",
+          "content": "아래 여섯 사례는 모두 실제 현장 배치가 아니라 공개된 시뮬레이션 예제 월드·벤치마크·경진대회 시나리오를 여섯 항목으로 정리한 것이며, 이 영역에서는 각 시나리오가 무엇을 어떤 단위로 담았는지를 본다. [사실][^ref-104][^ref-971][^ref-1087][^ref-1514]\n\n**현장 유형:** 상업 시설\n\n**사례:** Open-RMF 예제 호텔·공항 터미널 월드의 다중 플릿 순찰·청소 시나리오(시뮬레이션 예제 월드)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 월드를 띄운 뒤 dispatch_clean·dispatch_patrol 같은 작업 명령을 따로 넣으면 작업이 생긴다. [사실][^ref-104] |\n| 작업 대상 | 호텔 월드의 로비와 객실 2개 층 공간을 순찰(loop)·청소한다(예제 명령은 로비 청소). [사실][^ref-104] |\n| 수행 자원 | 호텔 월드에는 로봇 플릿 3개(로봇 4대), 승강기 2대, 여러 문이 있고, 디스패처가 [플릿 어댑터](../../glossary/fleet-adapter.md)들 사이의 작업 입찰을 조율한다. [사실][^ref-104] |\n| 제약 | 공항 터미널 월드는 차선·목적지·로봇이 많은 대형 지도에 선택적으로 군중 시뮬레이션과 사람이 모는 읽기 전용(read_only) 카트를 더해 순찰·배송·청소를 실행한다. [사실][^ref-104] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 해당 없음 |\n\nrmf_demos의 시나리오는 건물 구성(차선·승강기·문·충전 위치)을 담은 월드를 띄운 뒤 작업을 명령으로 따로 넣는 구조다(2026-09-30 확인). [사실][^ref-104] 호텔·공항 터미널 모두 시뮬레이션 예제 월드이며 실제 시설의 도입 사례가 아니다.\n\n**현장 유형:** 병원\n\n**사례:** Open-RMF 예제 클리닉 월드에서 두 층의 간호 스테이션 사이 순찰(시뮬레이션 예제 월드)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 순찰 명령(dispatch_patrol)으로 작업을 넣는다. 예제 명령은 1층과 2층의 간호 스테이션을 순찰 지점으로 지정한다. [사실][^ref-104] |\n| 작업 대상 | 두 층에 걸친 간호 스테이션 사이의 순찰 경로(공간) [사실][^ref-104] |\n| 수행 자원 | 역할이 다른 로봇 플릿 2개와 승강기 2대 [사실][^ref-104] |\n| 제약 | 로봇이 승강기 2대가 있는 2개 층 시설에서 층을 오가며 순찰해야 한다. [사실][^ref-104] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 해당 없음 |\n\n클리닉 월드는 병원형 시나리오 예제이며 실제 병원 배치 사례가 아니다. 이 월드는 승강기 2대가 있는 2개 층 시설이고, 로봇이 층을 오가며 순찰한다. [사실][^ref-104] 층간 이동이 승강기를 거친다는 점에서 이 예제는 설비를 시나리오 요소로 담는 예로 볼 수 있다. [추정][^ref-104]\n\n**현장 유형:** 실외\n\n**사례:** Open-RMF 예제 캠퍼스 월드의 배송 로봇 장거리 순찰(시뮬레이션 예제 월드)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 작업 명령으로 장거리 순찰을 넣는다. [사실][^ref-104] |\n| 작업 대상 | 차선을 GPS WGS84 좌표로 행성 규모에 주석한 넓은 캠퍼스 공간 [사실][^ref-104] |\n| 수행 자원 | 여러 대의 배송 로봇 [사실][^ref-104] |\n| 제약 | 해당 없음 |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 해당 없음 |\n\n캠퍼스 월드는 실내 층 좌표 대신 지구 좌표로 공간을 주석한 실외 시나리오 예제다. [사실][^ref-104] 같은 예제 모음의 제조·물류 월드는 영상 데모뿐이라 사례로 세우지 않고 7절에서만 다룬다.\n\n**현장 유형:** 가정\n\n**사례:** BEHAVIOR-1K의 일상 가정 활동 라이브러리(벤치마크)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 해당 없음 |\n| 작업 대상 | '로봇이 무엇을 해 주길 바라는가' 설문으로 고른 일상 가정 활동 1,000개를 BDDL로 명세하고, 장면 50개와 물리·의미 속성을 주석한 객체 9,000개 이상(강체·변형체·액체)을 OmniGibson 시뮬레이터에 구현했다. [사실][^ref-971] |\n| 수행 자원 | 해당 없음 |\n| 제약 | 해당 없음 |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 해당 없음 |\n\n이 사례는 활동이 일상 가정 활동이라서 현장 유형을 '가정'으로 분류했으며, 장면에는 주택뿐 아니라 정원·식당·사무실도 들어 있다. [사실][^ref-971] 실제 가정 배치가 아니라 시뮬레이션 벤치마크다.\n\n**현장 유형:** 제조 공장\n\n**사례:** NIST ARIAC 전기차 배터리 생산 시설 시나리오의 키팅·모듈 조립과 장애 주입(경진대회 시나리오)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 키팅과 모듈 조립 두 작업을 주문으로 받는다. [사실][^ref-1087] |\n| 작업 대상 | 배터리 셀 4개를 트레이에 담는 키트, 셀 4개와 상하 케이스로 조립하는 모듈 [사실][^ref-1087] |\n| 수행 자원 | 시나리오에 컨베이어·전압 시험기·진공 그리퍼가 들어 있고, 각각을 고장 대상으로 선언할 수 있다. [사실][^ref-528] |\n| 제약 | 해당 없음 |\n| 완료·인계 | 아직 발표되지 않은 긴급 주문이 남아 있으면 경기 상태가 '주문 완료'로 바뀌지 않는다. [사실][^ref-1087] |\n| 예외·성과 | 컨베이어 고장(시작 시각·지속 시간), 전압 시험기 고장(시작·지속·대상 시험기), 진공 그리퍼 파지 실패(도구·몇 번째 파지인지), 긴급 주문(시작 시각·주문 id) 네 과제를 매개변수로 선언해 시각이나 발생 횟수 조건으로 주입한다. [사실][^ref-528] |\n\nARIAC는 경진대회용 시뮬레이션 시나리오이며 실제 공장 사례가 아니다. ARIAC는 장애와 긴급 요청을 매개변수로 선언해 시나리오에 주입한다. [사실][^ref-528] 예외를 시나리오 안의 선언으로 다루는 이 방식은 이 영역이 참고할 점으로 보인다. [추정][^ref-528]\n\n**현장 유형:** 물류창고\n\n**사례:** 2023 League of Robot Runners 경진대회의 Warehouse·Sortation 지도 시나리오(경진대회 벤치마크 시나리오이며 실제 물류창고 배치가 아니다)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 외부 작업 배정기가 에이전트가 현재 목표에 도달할 때마다 새 목표를 정확히 하나씩 주는 방식으로 작업이 생긴다. [사실][^ref-1514] |\n| 작업 대상 | Warehouse 지도(140×500, 정점 38,586개)와 Sortation 지도(140×500, 정점 54,320개 — 논문 표 1 기준; 같은 논문 그림 설명은 54,230개)의 공간 [사실][^ref-1514] |\n| 수행 자원 | Warehouse 지도에 에이전트 8,000, Sortation 지도에 에이전트 10,000 [사실][^ref-1514] |\n| 제약 | 단계당 1초 계획 제한이 있고, 지도는 미리 주어져 30분 전처리를 허용한다. [사실][^ref-1514] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 처리량(단계당 평균 도달 목표 수)으로 겨룬다. [사실][^ref-1514] |\n\n이 경진대회는 Amazon Robotics 가 후원한 지속형 다중 에이전트 경로 찾기 대회이며, 위 시나리오는 경진대회 벤치마크 시나리오이고 실제 물류창고 배치가 아니다(SoCS 2024 논문, 2024-04-24 기준). [사실][^ref-1514] 같은 벤치마크 계열인 Moving AI 격자 지도는 현장 사례가 아니어서 7절에 두었지만, 이 시나리오는 ARIAC 처럼 작업 발생 규칙(목표 도달 시 새 목표 1개 배정)과 계획 시간 제한을 갖춘 경진대회 시나리오이므로 사례로 세웠다.\n\n물류창고 환경을 만드는 편집 도구로, NVIDIA 는 Isaac Sim 의 Warehouse Creator 확장이 2D 격자 배치를 Modular Warehouse 자산 묶음의 USD 창고로 바꾸는 대화형 배치 편집기이며 바닥·벽·기둥 같은 건물 요소를 생성한다고 설명하고, 문서(2026-09-18 갱신)에 로봇·랙 배치에 관한 설명은 없다. [추정] 벤더 주장[^ref-1517]\n\n실제 물류창고 현장의 시나리오 예제와 국내 자료는 여전히 찾지 못했다. Moving AI 경로 찾기 벤치마크의 시나리오 파일과 VDMA 레이아웃 교환 형식은 현장 사례가 아니므로 7절에서 다룬다."
+        },
+        {
+          "section": "6. 대표 접근법과 기술",
+          "action": "append",
+          "content": "### 2026-10-09 갱신에서 더한 접근\n\n**시설 주석 편집기의 전환.** Open-RMF 상호운용 그룹 공지(2024-06-05)는 Site Editor 를 예전 traffic-editor 를 대체하는 도구로 소개하고, 시각화·시뮬레이션용 3D 환경, 환경 안의 로봇, 로봇 교통 규칙, 승강기와 문을 편집 대상으로 들었다. [사실][^ref-1510] Site Editor(rmf_site)는 Rust 와 Bevy 게임 엔진으로 만든 대규모 RMF 배치 현장 시각화·편집 도구로 데스크톱과 웹(WebAssembly)에서 돌며, rmf_site_ros2 의 rmf_site_cmake 가 Site Editor 프로젝트에서 시뮬레이션과 주행 그래프를 생성한다(2026-10-09 확인). [사실][^ref-482] traffic-editor 문서는 편집기의 목표를 여러 플릿의 의도를 제조사 중립 방식으로 표현하고 실제 환경을 반영한 3D 시뮬레이션 월드를 생성하는 것으로 밝히면서, 다음 판은 영상 좌표 대신 데카르트 좌표나 위경도 좌표를 기본으로 하려 하나 일정은 정해지지 않았다고 적는다. [사실][^ref-079] 그래서 ROP 시나리오 모델이 건물 파일을 환경 참조로 묶는다면 편집기·건물 형식 전환에 따른 참조 이전 규칙이 함께 필요할 것으로 보이며, 기존 .building.yaml 을 Site Editor 형식으로 옮기는 공식 방법은 확인하지 못했다(세 출처 모두 Open-RMF 쪽 자료라 독립 확인이 아니다). [추정][^ref-482][^ref-1510][^ref-079]\n\n**도로 교통 시나리오 언어의 로봇 재사용.** Pasch 외(Intel Labs 외, 2024-09)의 Scenario Execution for Robotics 는 [ASAM OpenSCENARIO](../../glossary/asam-openscenario.md) 2 로 쓴 로봇 시나리오를 구문 분석해 [행동 트리](../../glossary/behavior-tree.md)(PyTrees)로 바꿔 실행하는 백엔드·미들웨어 독립 파이썬 라이브러리이며, Gazebo·Nav2·PyBullet 라이브러리를 두고 매개변수 값 목록을 조합마다 하나의 실행 시나리오로 펼친다. [사실][^ref-1512] 저자들은 시뮬레이션과 실물 실험에서 위치 데이터만 바꾼 같은 시나리오 파일을 썼다고 보고했다. [사실][^ref-1512]\n\n**환경·추상 시나리오·변형의 분리.** Ortega·Wiest·Pasch·Hochgeschwender(2026-05, ERAS 2026 채택)가 확장한 시험 틀 RoboVAST 는 환경을 FloorPlan 모델(.fpm), 과제를 OpenSCENARIO DSL 의 추상 시나리오, 시작·목표 자세·장애물 수·센서 잡음·설정 파일을 변형 파일(.vast)로 나누고, 각 인스턴스를 모든 값이 정해진 구체 시험 구성(scenario.config)으로 해석한 뒤 실행마다 해석된 매개변수·rosbag·시각·합격 여부·결정적 실행 식별자를 남긴다. [사실][^ref-1515] 기존 모델에 의미를 덧붙이는 조합형 실행 시나리오 연구는 8절에 정리했다.\n\n**장애를 시나리오 매개변수로 선언.** 아래는 시나리오에 [장애 주입](../../glossary/fault-injection.md)을 매개변수로 선언하는 방식의 예이며, 센서·메시지 수준 장애 주입 자체는 로봇 자체 지능·제어 쪽 연계 대상이라 ROP가 직접 만드는 기능으로 다루지 않는다. Scenario Execution 연구는 2D 라이다 스캔에 가우시안 잡음을 더하거나 검출을 무작위로 빼는 ROS 2 노드로 장애를 주입하고 잡음 크기와 누락 비율을 시나리오 매개변수로 두었으며, 장애 수준이 높아질수록 AMCL 위치추정 오차가 커지는 것을 기능 시연으로 보였다. [사실][^ref-1512] ros2_fault_injection 은 ROS 2 의 토픽·변환(TF)·서비스에 장애를 주입하는 프레임워크로, 오도메트리·LaserScan·관절 상태·IMU·TF·Twist·트리거 서비스·점군 장애 유형을 두고 문서에 단언(assertion)과 pluginlib 기반 주입기 팩토리 절을 둔다(관리 주체·판 미확인, 2026-10-09 확인). [사실][^ref-1518] 확인한 장애 선언은 ARIAC 의 설비·도구 장애(시작 시각·지속 시간·발생 횟수 매개변수), Scenario Execution 의 센서 잡음 매개변수, ros2_fault_injection 의 메시지 단위 장애로 나뉘며, 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애를 한 형식으로 선언하는 사례는 이번에도 찾지 못했다. [추정][^ref-528][^ref-1512][^ref-1518]\n\n이번에 확인한 자료를 더하면, 로봇 쪽에서도 환경 모델·추상 시나리오·변형을 나누고 구체 인스턴스를 해석·기록하는 도구와 자율주행 시나리오 언어의 재사용이 나타나지만, 환경·로봇·사람·물품·작업·정책·물리·장애를 한 형식으로 담는 공통 표준은 여전히 확인하지 못한 것으로 보인다. [추정][^ref-1515][^ref-1512][^ref-1516][^ref-116]"
+        },
+        {
+          "section": "7. 관련 표준·프레임워크·오픈소스",
+          "action": "append",
+          "content": "### 2026-10-09 갱신에서 더한 항목\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| RMF Site Editor (rmf_site) | 오픈소스 | 예전 traffic-editor 를 대체하는 Open-RMF 현장 편집 도구로, 3D 환경·로봇·교통 규칙·승강기·문을 편집하고 시뮬레이션과 주행 그래프를 생성한다. [사실][^ref-482][^ref-1510] | [^ref-482][^ref-1510] |\n| ASAM OpenSCENARIO XML 1.4.0 하위 호환성 절 | 표준 | 판별 호환 선언, 1.2.0→1.3.0 XSLT 이전 스크립트, 폐기 요소를 뺀 엄격 스키마로 시나리오 파일의 판 이전을 다룬다(발행일 미확인, 2026-10-09 확인). [사실][^ref-1511] | [^ref-1511] |\n| Scenario Execution for Robotics | 오픈소스 | OpenSCENARIO 2 로 쓴 로봇 시나리오를 행동 트리로 바꿔 실행하고 매개변수 조합을 펼친다. [사실][^ref-1512] | [^ref-1512] |\n| RoboVAST | 프레임워크 | 환경(FloorPlan 모델)·추상 시나리오(OpenSCENARIO DSL)·변형 파일을 나누고 구체 구성과 실행 기록을 남기는 시험 틀이다. [사실][^ref-1515] | [^ref-1515] |\n| League of Robot Runners (2023) | 평가 프로그램 | Warehouse·Sortation 지도를 포함한 지속형 다중 에이전트 경로 찾기 경진대회 시나리오다(5절 물류창고 사례, 실제 현장 아님). [사실][^ref-1514] | [^ref-1514] |\n\n전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다."
+        },
+        {
+          "section": "8. 대표 연구와 자료",
+          "action": "append",
+          "content": "### 2026-10-09 갱신에서 더한 연구\n\n- Ortega, A., Parra, S., Schneider, S., Hochgeschwender, N., Composable and executable scenarios for simulation-based testing of mobile robots(Frontiers in Robotics and AI 11, 2024-08-02) — 기존 모델을 고치지 않고 동적 문·다른 과제 명세 같은 의미를 덧붙이는 조합형 실행 시나리오를 제안해 점유 격자 지도·3D 메시·Gazebo 월드·주행 경유점을 생성했고, 정적 시험·무작위로 움직이는 문·로봇이 다가오면 닫히는 문의 세 시나리오로 공개 주행 스택에서 1년 넘게 드러나지 않은 설정 오류를 찾았다. [사실][^ref-1516] 면담 근거는 3절에 있다.\n- Ortega, A., Wiest, S., Pasch, F., Hochgeschwender, N., Replicable Simulation-Based Robot Validation through Provenance(arXiv 2605.29973, 2026-05-28, ERAS 2026 채택) — 시험 산출물 사이의 관계를 W3C PROV(PROV-O)를 핵심 메타모델로 DCAT·Dublin Core·QUDT 와 함께 JSON-LD 로 기록해 SPARQL 로 질의하게 했으며, 저자들은 이 메타모델이 일반화하기 어려울 수 있고 로봇 분야 공동 어휘가 없다고 한계를 밝혔다. [사실][^ref-1515]\n- Pasch, F., Mirus, F., Zhang, Y., Scholl, K.-U.(Intel Labs 외), Scenario Execution for Robotics(arXiv 2409.07080, 2024-09-11) — 자율주행 시나리오 언어 OpenSCENARIO 2 를 로봇 시험 시나리오 기술에 쓰는 라이브러리로, 6절에 요약했다. [사실][^ref-1512]\n- Elmaaroufi, K. 외, ScenicNL(COLM 2024) — 여러 대규모 언어 모델 프롬프트를 컴파일러·시뮬레이터와 엮어, 세부가 불확실한 경찰 사고 보고서(최근 5년 캘리포니아 자율주행차 사고 보고)를 불확실성을 확률 분포로 담은 Scenic 시나리오 프로그램으로 바꿨다(도로 교통 분야). [사실][^ref-1513]\n- Jiang, H., Zhang, Y., Veerapaneni, R., Li, J., Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings(SoCS 2024) — 2023 League of Robot Runners 경진대회의 지도·작업 발생 규칙·계획 시간 제한을 기술하며, 5절 물류창고 사례의 근거다. [사실][^ref-1514]\n- Sánchez de la Fuente, S. 외(레온 대학교), Scenario Generation for Robot Simulation from Public Data(WAF 2025) — 공개 지리공간 데이터로 3D 시나리오를 만들어 주요 로봇 플랫폼에서 쓸 수 있는 시뮬레이션 모델을 생성하고 Gazebo·Unity 의 ROS 2 시스템과 연동하는 방법을 제안했다(초록 기준). [사실][^ref-1519]"
+        },
+        {
+          "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+          "action": "replace",
+          "content": "확인한 자료를 종합하면 ROP는 시나리오 모델·현장 유형별 예제 라이브러리·편집기·형식 변환을 맡고, 물리·센서 시뮬레이션 엔진과 로봇 모델, 설비 제어, 도로 교통 시나리오 표준은 참조·변환해 묶는 연계 대상으로 두는 것으로 보인다. [추정][^ref-104][^ref-528][^ref-1092][^ref-1088]\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 시나리오에 어떤 로봇을 어디에 둘지(로봇 구성)를 정하고 로봇 모델을 참조로 묶는다. [추정][^ref-104][^ref-1092] | 물리·센서 시뮬레이션 엔진과 로봇 기구학·동역학·센서 모델(SDFormat 로봇 기술)은 시뮬레이터·로봇 제조사 쪽 연계 대상이다. [추정][^ref-1092] |\n| 시설·설비 제어 | 승강기·문·컨베이어 같은 설비를 시나리오 요소로 선언하고 설비 장애를 시각·발생 조건으로 주입한다. [추정][^ref-104][^ref-528] | 컨베이어·작업셀 같은 설비 제어 자체는 설비 쪽 연계 대상이다. [추정][^ref-104][^ref-528] |\n| 업종별 조건 | 도로 교통 시나리오 표준의 구조(정적·동적 분리, 매개변수화)를 참조 설계로 삼는다. [추정][^ref-1088] OpenSCENARIO 2 가 이동로봇 주행 시나리오 기술(Scenario Execution for Robotics, RoboVAST)에 다시 쓰이고 있으므로 로봇 시나리오의 과제·사건 기술 언어 후보로 볼 수 있으나, 근거 두 연구는 공동 저자를 공유해 독립 확인이 아니다. [추정][^ref-1512][^ref-1515][^ref-1088] | 도로 교통 시나리오 표준(OpenSCENARIO·OpenDRIVE) 자체는 ASAM 이 관리하는 자율주행 분야의 연계 대상이다. [추정][^ref-1088] |\n\nROP가 직접 맡을 범위는 네 가지로 보인다: 환경 참조·로봇 구성·사람 흐름·작업·정책·장애 주입을 묶은 시나리오 모델, 현장 유형별 예제 라이브러리, 시설 주석·작업·미션을 그리는 편집기와 미션 형식 선택, 시나리오를 여러 시뮬레이터 형식으로 내보내는 변환이다. [추정][^ref-104][^ref-528][^ref-079][^ref-1090][^ref-116][^ref-1092]\n\n시나리오 모델에 판(버전)을 두는 것은 1절 리스트업이 정한 목표다. 도로 교통 시나리오 표준인 ASAM OpenSCENARIO XML 1.4.0 문서의 하위 호환성 절은 판 사이 호환 여부를 판마다 선언한다: 1.4.0 은 1.3.1 과, 1.3.1 은 1.3.0 과 완전히 호환되고, 1.2.0 은 1.1.1·1.0.0 과 호환되지만, 1.3.0 은 의미상 잘못된 시나리오를 허용하던 스키마 오류를 고쳐 1.2.0 과 완전히 호환되지 않는다(2026-10-09 확인). [사실][^ref-1511] 같은 표준은 1.2.0 시나리오 파일을 1.3.0 으로 옮기는 XSLT 이전 스크립트를 제공하고 스크립트가 경고를 내면 원래부터 잘못된 시나리오이므로 사람이 고치게 하며, 모든 판에 폐기 요소를 뺀 엄격 스키마를 두어 폐기 요소를 찾아 바꾸게 한다. [사실][^ref-1511]\n\n따라서 개별 시나리오 파일을 형식 판 사이에서 옮기는 규칙(판별 호환 선언, 이전 스크립트, 엄격 스키마 검사)은 도로 교통 분야에서는 공개되어 있으나, 로봇 시뮬레이션 형식(SDFormat·Open-RMF 건물 파일)의 같은 규칙은 아직 확인하지 못했다. [추정][^ref-1511][^ref-1088] RoboVAST 처럼 환경 모델·추상 시나리오·변형을 나누고 인스턴스를 구체 구성으로 해석해 출처 기록과 함께 남기는 방식은 형식 판 이전 규칙과 별개로 개별 시나리오 인스턴스를 식별·재현하는 근거가 될 것으로 보이나, 단일 로봇 주행 시험 기준이라 다중 플릿·설비 시나리오에 맞는지는 확인하지 못했다(관련 질문 oq-234 는 열린 채로 둔다). [추정][^ref-1515] 그래서 로봇 시뮬레이션 형식을 참조하는 ROP 시나리오 모델의 판 관리 규칙은 아직 직접 근거 없이 설계해야 하는 부분으로 남는다. [추정][^ref-046][^ref-104][^ref-079]\n\n연계 대상: OpenSCENARIO XML 의 판 이전 스크립트나 Open-RMF 편집기 전환 같은 외부 시나리오·건물 형식의 판 규칙은 각 형식 관리 주체의 몫이며, ROP 는 자기 시나리오 모델의 판 규칙과 참조하는 외부 형식 판의 대응을 맡을 것으로 보인다. [추정][^ref-1511][^ref-482]\n\n경계는 제품 전략에 따라 이동할 수 있다. 이종 제조사를 연결하는 ROP는 시뮬레이터·제조사·설비 쪽 기능을 직접 만들기보다 참조·변환해 시나리오에 묶는 역할을 맡을 것으로 보인다. [추정][^ref-1092][^ref-104][^ref-528][^ref-1088] 경계 기준은 [범위 경계](../../about/scope-boundary.md)에 있다."
+        },
+        {
+          "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+          "action": "append",
+          "content": "### 2026-10-09 갱신에서 더한 연결\n\n- [54. 시험·형식 검증·벤치마크](../verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) — RoboVAST 는 실행마다 해석된 매개변수·rosbag·합격 여부·결정적 실행 식별자를 남기고, 조합형 실행 시나리오는 동적 문 시나리오로 공개 주행 스택의 설정 오류를 찾았다. [사실][^ref-1515][^ref-1516] Scenario Execution 의 라이다 잡음 매개변수처럼 장애를 시나리오 매개변수로 선언하는 방식도 시험 시나리오와 이어지며, 센서 장애 주입 자체는 로봇 자체 지능·제어 쪽 연계 대상이다. [추정][^ref-1512]\n- [57. 자산·소프트웨어 수명주기 관리](../verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 시나리오 형식의 판 호환 선언·이전 스크립트·엄격 스키마와 인스턴스별 구체 구성 기록은 시나리오 자산의 수명주기 관리와 이어질 것으로 보인다(9절). [추정][^ref-1511][^ref-1515]\n- [61. 물류창고](../site-type-applications/warehouse.md)·[27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — League of Robot Runners 의 Warehouse·Sortation 지도 시나리오는 지속형 다중 에이전트 경로 찾기 경진대회 벤치마크이며 실제 물류창고 배치가 아니다(5절). [사실][^ref-1514]\n- [36. 가상 시운전·실제 상황 재현](virtual-commissioning-and-real-situation-replay.md)·[11. 채팅으로 실제 상황 시뮬레이션 재현](../chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) — 사고 보고서 같은 서술형 기록을 확률적 시나리오 프로그램으로 바꾸는 방법은 도로 교통 분야에 있으나, 로봇 플릿의 실행 기록을 시나리오 사양으로 바꾸는 공개 형식은 찾지 못했다. [추정][^ref-1513][^ref-1086] 이 변환은 언어 모델을 쓰므로 L. AI·학습 기술의 [44. 로봇 기반 모델·언어 모델 계획](../ai-and-learning/robot-foundation-models-and-llm-planning.md)과도 이어진다. [사실][^ref-1513]\n- [15. 지도·공간·위치 모델](../space-and-map-model/map-space-and-location-model.md) — Open-RMF 편집기가 traffic-editor 에서 Site Editor 로 넘어가고 traffic-editor 의 다음 판은 데카르트·위경도 좌표를 기본으로 하려 하므로, 시나리오가 참조하는 건물 파일의 형식·좌표계 전환을 함께 따라가야 할 것으로 보인다. [추정][^ref-482][^ref-1510][^ref-079]"
+        },
+        {
+          "section": "11. 열린 질문",
+          "action": "append",
+          "content": "### 2026-10-09 갱신(실행 2026-10-09-13)\n\n이번 조사로 해결 처리한 질문은 없다. 기존 질문의 진행은 다음과 같다.\n\n- **oq-234** (상태: 열림) 부분 근거: 도로 교통 표준(ASAM OpenSCENARIO XML)은 시나리오 파일의 판 이전 규칙을 공개하고 RoboVAST 는 인스턴스를 구체 구성으로 해석해 기록하지만, 로봇 시뮬레이션 형식(SDFormat·Open-RMF 건물 파일)의 같은 규칙은 아직 확인하지 못했다(9절). [추정][^ref-1511][^ref-1515]\n- **oq-233** (상태: 열림) 부분 근거: OpenSCENARIO 2 가 이동로봇 주행 시나리오 기술에 다시 쓰이고 있어 기존 형식 조합 쪽 근거가 될 수 있으나 두 근거 연구는 공동 저자를 공유하며, Open-RMF 편집기의 Site Editor 전환으로 건물 파일 참조의 이전 규칙도 함께 필요할 것으로 보인다. [추정][^ref-1512][^ref-1515][^ref-482][^ref-1510]\n- **oq-235** (상태: 열림) 미해결: 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애를 한 형식으로 선언하는 사례를 이번에도 찾지 못했다. [추정][^ref-528][^ref-1512][^ref-1518]\n- **oq-131** (상태: 열림) 미해결: 로봇 플릿 실행 기록(작업·배정·위치·사건 시각)을 시나리오 사양으로 바꾸는 공개 형식이나 변환 규칙을 이번에도 찾지 못했다. [추정][^ref-1513][^ref-1086]\n- **oq-236** (상태: 열림) 미해결: 국내 다중 로봇 시나리오 예제 라이브러리를 이번에도 찾지 못했다.\n- **oq-135** (상태: 열림) 이번 실행에서 조사하지 않았다.\n\n이번에 새로 올린 질문(번호는 [열린 질문](../../open-questions.md)에서 부여된다):\n\n- RoboVAST 처럼 추상 시나리오를 구체 인스턴스로 해석하고 실행마다 출처를 기록하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비가 함께 있는 다중 로봇 시나리오에 적용한 사례가 있는가?\n- Open-RMF Site Editor 의 현장 형식이 기존 traffic-editor 의 .building.yaml 을 대체하는가, 그리고 기존 건물 파일을 옮기는 공식 변환 도구나 판 이전 규칙이 있는가?\n- OpenSCENARIO 2 DSL 로 다중 로봇 플릿의 작업 배정과 승강기·문 같은 설비 사건을 기술할 수 있는가, 기술하려면 어떤 확장 라이브러리가 필요한가?"
+        },
+        {
+          "section": "13. 참고 자료 (각주)",
+          "action": "append",
+          "content": "[^ref-482]: Open-RMF (open-rmf/rmf_site), rmf_site — RMF Site Editor (README), 미확인, https://github.com/open-rmf/rmf_site, 접근일 2026-10-09\n[^ref-1510]: Open Robotics Discourse (Open-RMF 상호운용 그룹, 작성자 grey), Interoperability Interest Group June 6, 2024: Preview of the RMF Site Editor, 2024-06-05, https://discourse.openrobotics.org/t/interoperability-interest-group-june-6-2024-preview-of-the-rmf-site-editor/38070, 접근일 2026-10-09\n[^ref-1511]: ASAM e.V., ASAM OpenSCENARIO XML v1.4.0 — 5 Backward compatibility, 미확인, https://openscenario.asam.net/ASAM_OpenSCENARIO_XML/v1.4.0/05_backward_compatibility/01_backward_compatibility.html, 접근일 2026-10-09\n[^ref-1512]: Pasch, F., Mirus, F., Zhang, Y., & Scholl, K.-U. (Intel Labs 외, arXiv), Scenario Execution for Robotics: A generic, backend-agnostic library for running reproducible robotics experiments and tests, 2024-09-11, https://arxiv.org/abs/2409.07080, 접근일 2026-10-09\n[^ref-1513]: Elmaaroufi, K., Shanker, D., Cismaru, A., Vazquez-Chanlatte, M., Sangiovanni-Vincentelli, A., Zaharia, M., & Seshia, S. A. (COLM 2024, arXiv), ScenicNL: Generating Probabilistic Scenario Programs from Crash Reports, 2024-05-03, https://arxiv.org/abs/2405.03709, 접근일 2026-10-09\n[^ref-1514]: Jiang, H., Zhang, Y., Veerapaneni, R., & Li, J. (SoCS 2024, arXiv), Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings: Research Challenges and Opportunities, 2024-04-24, https://arxiv.org/abs/2404.16162, 접근일 2026-10-09\n[^ref-1515]: Ortega, A., Wiest, S., Pasch, F., & Hochgeschwender, N. (arXiv, ERAS 2026 채택), Replicable Simulation-Based Robot Validation through Provenance, 2026-05-28, https://arxiv.org/abs/2605.29973, 접근일 2026-10-09\n[^ref-1516]: Ortega, A., Parra, S., Schneider, S., & Hochgeschwender, N. (Frontiers in Robotics and AI 11), Composable and executable scenarios for simulation-based testing of mobile robots, 2024-08-02, https://pmc.ncbi.nlm.nih.gov/articles/PMC11327003/, 접근일 2026-10-09\n[^ref-1517]: NVIDIA, Isaac Sim Documentation — Warehouse Creator Extension, 미확인, https://docs.isaacsim.omniverse.nvidia.com/latest/assets/asset_utilities/ext_omni_warehouse_creator.html, 접근일 2026-10-09\n[^ref-1518]: ros2_fault_injection 프로젝트 (Read the Docs), ros2_fault_injection documentation, 미확인, https://ros2-fault-injection.readthedocs.io/, 접근일 2026-10-09\n[^ref-1519]: Sánchez de la Fuente, S., Prieto López, L., González Santamarta, M. Á., Matellán Olivera, V. 외 (Universidad de León, WAF 2025), Scenario Generation for Robot Simulation from Public Data, 2025, https://portalcientifico.unileon.es/documentos/6972798ce66b2902147b1aeb, 접근일 2026-10-09"
+        }
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"6. 대표 접근법과 기술\" 절(2,303자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"8. 대표 연구와 자료\" 절(1,645자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"11. 열린 질문\" 절(1,193자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,059자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(835자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-09-area33-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 33. 시나리오 모델·편집 의 \"3. 왜 중요한가\" 절(520자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-10-09 | 33. 시나리오 모델·편집 | 갱신: 5절 물류창고 경진대회 사례 추가, 9절 시나리오 판 관리 문장 정정, Open-RMF Site Editor 전환·OpenSCENARIO 2 로봇 재사용·RoboVAST 반영, 1차 조건부 승인 수정 15건 반영 | run 2026-10-09-13",
+  "index_updates": {
+    "home_recent": "2026-10-09 — 33. 시나리오 모델·편집: 물류창고 경진대회 시나리오 사례 추가, 시나리오 판 이전 규칙(OpenSCENARIO XML)과 로봇 형식 미확인을 9절에 정정 반영",
+    "category_recent": "2026-10-09 — 33. 시나리오 모델·편집: 3·5·6·7·8·9·10·11절 차등 갱신(League of Robot Runners 물류창고 사례, Open-RMF Site Editor 전환, OpenSCENARIO 2 로봇 재사용, RoboVAST 인스턴스 기록)",
+    "area_recent": "2026-10-09 — 33. 시나리오 모델·편집: 갱신(차등) — 5절 물류창고 사례(경진대회 벤치마크) 추가, 9절 판 관리 문장 정정, 6·7·8·10·11절 요약 덧붙임, 각주 11건 추가, 1차 조건부 승인 수정 15건 반영"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "data-provenance",
+      "term_ko": "데이터 출처 추적",
+      "term_en": "Data Provenance (W3C PROV)",
+      "definition": "어떤 산출물이 어떤 입력·설정·실행·주체로부터 만들어졌는지를 기계가 읽을 수 있는 관계로 기록하는 일로, W3C PROV 가 그 표준 데이터 모델이며 시뮬레이션 시험의 재현성 확보에 쓰인다.",
+      "description": "RoboVAST 확장 연구는 PROV-O 를 핵심 메타모델로 DCAT·Dublin Core·QUDT 와 함께 JSON-LD 로 기록해 SPARQL 로 질의하게 했다.",
+      "related_areas": [
+        33,
+        54,
+        57
+      ],
+      "sources": [
+        "ref-1515"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "abstract-and-concrete-scenario",
+      "term_ko": "추상 시나리오·구체 시나리오",
+      "term_en": "Abstract Scenario / Concrete Scenario",
+      "definition": "매개변수와 변형 범위만 정한 시나리오(추상)와 모든 값이 하나로 정해져 바로 실행할 수 있는 시나리오 인스턴스(구체)를 구분하는 말로, 시험 도구가 추상 시나리오를 여러 구체 시나리오로 펼쳐 실행한다.",
+      "description": "RoboVAST 는 OpenSCENARIO DSL 추상 시나리오와 변형 파일을 구체 시험 구성(scenario.config)으로 해석하고, Scenario Execution for Robotics 는 매개변수 값 목록을 조합마다 하나의 실행 시나리오로 펼친다.",
+      "related_areas": [
+        33,
+        54
+      ],
+      "sources": [
+        "ref-1515",
+        "ref-1512"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "strict-schema",
+      "term_ko": "엄격 스키마",
+      "term_en": "Strict Schema (deprecated elements removed)",
+      "definition": "형식의 판에서 폐기 예정 요소를 뺀 검증용 스키마로, 기존 시나리오 파일을 이 스키마로 검사해 다음 판에서 사라질 요소를 찾아 바꾸게 한다(ASAM OpenSCENARIO XML).",
+      "related_areas": [
+        33,
+        57
+      ],
+      "sources": [
+        "ref-1511"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-482",
+      "org": "Open-RMF (open-rmf/rmf_site)",
+      "title": "rmf_site — RMF Site Editor (README)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_site",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Rust·Bevy 기반 RMF 배치 현장 시각화·편집 도구 Site Editor 의 README. 데스크톱·웹 빌드, rmf_site_ros2 로 시뮬레이션·주행 그래프 생성.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1510",
+      "org": "Open Robotics Discourse (Open-RMF 상호운용 그룹, 작성자 grey)",
+      "title": "Interoperability Interest Group June 6, 2024: Preview of the RMF Site Editor",
+      "published": "2024-06-05",
+      "url": "https://discourse.openrobotics.org/t/interoperability-interest-group-june-6-2024-preview-of-the-rmf-site-editor/38070",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "Site Editor 를 예전 traffic-editor 의 대체 도구로 소개하고 편집 대상(3D 환경·로봇·교통 규칙·승강기·문)과 Bevy 기반 확장성을 설명한 공지.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1511",
+      "org": "ASAM e.V.",
+      "title": "ASAM OpenSCENARIO XML v1.4.0 — 5 Backward compatibility",
+      "published": null,
+      "url": "https://openscenario.asam.net/ASAM_OpenSCENARIO_XML/v1.4.0/05_backward_compatibility/01_backward_compatibility.html",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "OpenSCENARIO XML 판 사이 하위 호환성 선언, 1.2.0→1.3.0 XSLT 이전 스크립트, 폐기 요소 없는 엄격 스키마를 설명하는 공식 문서 절. 발행일 미확인(문서 머리의 2026-05-08 표기가 발행일인지 불분명).",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1512",
+      "org": "Pasch, F., Mirus, F., Zhang, Y., & Scholl, K.-U. (Intel Labs 외, arXiv)",
+      "title": "Scenario Execution for Robotics: A generic, backend-agnostic library for running reproducible robotics experiments and tests",
+      "published": "2024-09-11",
+      "url": "https://arxiv.org/abs/2409.07080",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "OpenSCENARIO 2 로 쓴 로봇 시나리오를 행동 트리로 바꿔 실행하는 라이브러리. 매개변수 변형, 라이다 장애 주입, 시뮬레이션–실물 같은 시나리오 파일 사용(프리프린트, 본문 HTML 확인). 저자 Zhang, Y. 의 소속은 카를스루에 응용과학대·KIT.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1513",
+      "org": "Elmaaroufi, K., Shanker, D., Cismaru, A., Vazquez-Chanlatte, M., Sangiovanni-Vincentelli, A., Zaharia, M., & Seshia, S. A. (COLM 2024, arXiv)",
+      "title": "ScenicNL: Generating Probabilistic Scenario Programs from Crash Reports",
+      "published": "2024-05-03",
+      "url": "https://arxiv.org/abs/2405.03709",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "대규모 언어 모델·컴파일러·시뮬레이터를 엮어 경찰 사고 보고서를 확률적 Scenic 시나리오 프로그램으로 바꾸는 연구(초록 페이지 기준, 최종 수정 2024-10-02).",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1514",
+      "org": "Jiang, H., Zhang, Y., Veerapaneni, R., & Li, J. (SoCS 2024, arXiv)",
+      "title": "Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings: Research Challenges and Opportunities",
+      "published": "2024-04-24",
+      "url": "https://arxiv.org/abs/2404.16162",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "2023 League of Robot Runners 우승 방법과 연구 과제. Warehouse·Sortation 등 경진대회 지도 규모, 목표 배정 방식, 단계당 1초 계획 제한을 기술(본문 HTML 확인). Sortation 정점 수는 표 1 은 54,320, 그림 설명은 54,230.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1515",
+      "org": "Ortega, A., Wiest, S., Pasch, F., & Hochgeschwender, N. (arXiv, ERAS 2026 채택)",
+      "title": "Replicable Simulation-Based Robot Validation through Provenance",
+      "published": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29973",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "RoboVAST 시험 틀에 W3C PROV 기반 출처 기록과 FAIR 메타데이터를 더해 시뮬레이션 시험의 재현성을 높이는 연구. 환경·추상 시나리오·변형 분리와 구체 구성 해석(v1 2026-05-28, 본문 HTML v2 확인).",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1516",
+      "org": "Ortega, A., Parra, S., Schneider, S., & Hochgeschwender, N. (Frontiers in Robotics and AI 11)",
+      "title": "Composable and executable scenarios for simulation-based testing of mobile robots",
+      "published": "2024-08-02",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327003/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "전문가 14명 면담으로 시나리오 변형 관리의 어려움을 확인하고, FloorPlan DSL 기반 조합형 실행 시나리오로 Gazebo 월드·지도·경유점을 생성해 주행 스택 설정 오류를 찾은 연구.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1517",
+      "org": "NVIDIA",
+      "title": "Isaac Sim Documentation — Warehouse Creator Extension",
+      "published": null,
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/assets/asset_utilities/ext_omni_warehouse_creator.html",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "2D 격자 배치를 USD 창고로 바꾸는 Isaac Sim 확장(omni.warehouse.creator.api/ui) 문서. 바닥·벽·기둥 같은 건물 요소를 생성하며 로봇·랙 배치 설명은 없다. 벤더 주장. 페이지 갱신 2026-09-18.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1518",
+      "org": "ros2_fault_injection 프로젝트 (Read the Docs)",
+      "title": "ros2_fault_injection documentation",
+      "published": null,
+      "url": "https://ros2-fault-injection.readthedocs.io/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "ROS 2 토픽·TF·서비스 장애 주입 프레임워크 문서 첫 페이지. 장애 유형 목록, 단언·pluginlib 주입기 팩토리 절(목차 수준 확인). 관리 주체·판 미표기.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1519",
+      "org": "Sánchez de la Fuente, S., Prieto López, L., González Santamarta, M. Á., Matellán Olivera, V. 외 (Universidad de León, WAF 2025)",
+      "title": "Scenario Generation for Robot Simulation from Public Data",
+      "published": "2025",
+      "url": "https://portalcientifico.unileon.es/documentos/6972798ce66b2902147b1aeb",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "공개 지리공간 데이터로 로봇 시뮬레이션용 3D 시나리오를 생성해 Gazebo·Unity 의 ROS 2 시스템과 연동하는 방법(학회 논문집 초록 기준).",
+      "cited_by": [
+        "docs/categories/design-and-simulation/scenario-model-and-editing.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "RoboVAST 처럼 추상 시나리오를 구체 인스턴스로 해석하고 실행마다 출처를 기록하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비가 함께 있는 다중 로봇 시나리오에 적용한 사례가 있는가?",
+      "areas": [
+        33,
+        54
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "Open-RMF Site Editor 의 현장 형식이 기존 traffic-editor 의 .building.yaml 을 대체하는가, 그리고 기존 건물 파일을 옮기는 공식 변환 도구나 판 이전 규칙이 있는가?",
+      "areas": [
+        33,
+        15
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "OpenSCENARIO 2 DSL 로 다중 로봇 플릿의 작업 배정과 승강기·문 같은 설비 사건을 기술할 수 있는가, 기술하려면 어떤 확장 라이브러리가 필요한가?",
+      "areas": [
+        33,
+        22
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "물류창고",
+      "item": "시작 조건",
+      "link": "docs/categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시",
+      "title": "33. 시나리오 모델·편집"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "작업 대상",
+      "link": "docs/categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시",
+      "title": "33. 시나리오 모델·편집"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시",
+      "title": "33. 시나리오 모델·편집"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "제약",
+      "link": "docs/categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시",
+      "title": "33. 시나리오 모델·편집"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시",
+      "title": "33. 시나리오 모델·편집"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "Scenario Execution for Robotics (OpenSCENARIO 2 기반 로봇 시나리오 실행 라이브러리)",
+      "kind": "오픈소스",
+      "org": "Pasch, F. 외 (Intel Labs 외)",
+      "url": "https://arxiv.org/abs/2409.07080",
+      "related_areas": [
+        33,
+        54
+      ],
+      "summary": "ASAM OpenSCENARIO 2 로 쓴 로봇 시나리오를 행동 트리(PyTrees)로 바꿔 실행하는 백엔드·미들웨어 독립 파이썬 라이브러리로, Gazebo·Nav2·PyBullet 라이브러리와 매개변수 조합 전개를 둔다.",
+      "ref_id": "ref-1512"
+    },
+    {
+      "name": "RoboVAST (출처 기록 기반 시뮬레이션 시험 틀)",
+      "kind": "프레임워크",
+      "org": "Ortega, A., Wiest, S., Pasch, F., & Hochgeschwender, N.",
+      "url": "https://arxiv.org/abs/2605.29973",
+      "related_areas": [
+        33,
+        54,
+        57
+      ],
+      "summary": "환경(FloorPlan 모델)·추상 시나리오(OpenSCENARIO DSL)·변형 파일을 나누고 인스턴스를 구체 시험 구성으로 해석해 실행별 기록과 W3C PROV 기반 출처를 남기는 시험 틀이다.",
+      "ref_id": "ref-1515"
+    }
+  ],
+  "additional_research_requests": [
+    "9절·11절(oq-234): 로봇 시뮬레이션 형식(SDFormat·Open-RMF 건물 파일·Site Editor 형식)에서 개별 시나리오 인스턴스를 형식 판 사이에서 옮기는 규칙이나 변환 도구가 있는지 — 현재 판 이전 규칙은 도로 교통 표준에서만 확인됐다.",
+    "6절·11절(oq-233 및 새 질문): 기존 .building.yaml 을 Site Editor 형식으로 옮기는 공식 방법과 Site Editor 저장 형식의 판 규칙 — 편집기 전환에 따른 환경 참조 이전 규칙을 서술하는 데 필요하다.",
+    "5절(oq-236): 실제 물류창고 현장의 시나리오 예제·템플릿과 국내 다중 로봇 시나리오 예제 라이브러리 — 현재 물류창고 사례는 경진대회 벤치마크뿐이다.",
+    "5절: League of Robot Runners 공식 사이트·2024 대회 자료로 지도 규모·작업 발생 규칙(f19·f20)을 교차 확인 — 현재 우승 팀 논문 단일 출처이며 Sortation 정점 수가 논문 안에서 두 값으로 적혀 있다.",
+    "11절(oq-135): 로봇 작업 시나리오 구성에서 되물어야 할 항목의 표준 질문 목록 — 이번 실행에서 조사하지 않았다.",
+    "예산으로 미룸: 주제 페이지 docs/topics/2026/2026-09-30-area33-s7.md 표에 Site Editor·Scenario Execution·RoboVAST·ros2_fault_injection·League of Robot Runners 행 추가(1차 수정 지시로 이번 실행에서 주제 페이지를 갱신하지 않음).",
+    "참고문헌 정리: ref-1516(PMC URL)과 ref-1134(Frontiers URL)가 같은 논문(Ortega 외, Frontiers in Robotics and AI, 2024-08-02)을 가리키므로 병합 여부 확인이 필요하다."
+  ],
+  "fixes_applied": [
+    "ref-1512 기관 표기 — 13절 각주와 reference_updates 의 org 를 '(Intel Labs 외, arXiv)'로 고치고, 6·8절 본문에서도 'Pasch 외(Intel Labs 외)'로만 써서 Intel Labs 연구진으로 단정하지 않았다.",
+    "f11 — 6절에 '…Twist·트리거 서비스·점군 장애 유형을 두고 문서에 단언(assertion)과 pluginlib 기반 주입기 팩토리 절을 둔다' 수준으로 좁힌 문장을 [사실]로 썼고, ref-1518 각주 발행일은 '미확인'으로 두었다.",
+    "f19 — 5절 물류창고 사례 작업 대상 칸에 Sortation 정점 수를 '54,320개 — 논문 표 1 기준; 같은 논문 그림 설명은 54,230개'로 병기했다.",
+    "f21 — '만' 한정을 빼고 '바닥·벽·기둥 같은 건물 요소를 생성한다고 설명하고, 문서에 로봇·랙 배치에 관한 설명은 없다'로 고쳤으며 [추정] 벤더 주장 병기를 유지했다.",
+    "f21 — 5절 물류창고 사례의 여섯 항목 표 칸에는 쓰지 않고 사례 아래 설명문 한 단락에만 [추정] 벤더 주장과 함께 짧게 언급했다.",
+    "f22 — ''만약 ~였다면' 시나리오를 탐색하게 했다' 구절을 빼고 8절에서 나머지만 [사실]로 썼다.",
+    "5절 — 사례 제목과 사례 아래 문장에 '경진대회 벤치마크 시나리오이며 실제 물류창고 배치가 아니다'를 밝히고, Moving AI 격자 지도를 7절에 둔 판단과의 차이를 '작업 발생 규칙(목표 도달 시 새 목표 1개 배정)과 계획 시간 제한을 갖춘 경진대회 시나리오' 기준으로 설명했으며, 기존 문장을 '실제 물류창고 현장의 시나리오 예제와 국내 자료는 여전히 찾지 못했다'로 바꿨다.",
+    "9절 — '개별 시나리오 인스턴스의 버전 관리 방식은 공개 자료에서 찾지 못했다' 문장을 f1·f2 의 OpenSCENARIO XML 판별 호환 선언·이전 스크립트·엄격 스키마 [사실] 두 문장과 f3·f6 [추정] 문장으로 나눠 다시 썼고, '로봇 시뮬레이션 형식(SDFormat·Open-RMF 건물 파일)의 같은 규칙은 아직 확인하지 못했다' 단서를 남겼으며 oq-234 는 열린 채로 두었다.",
+    "9절 표 — 업종별 조건 행의 'ROP가 직접 맡는 것' 칸에 OpenSCENARIO 2 를 '로봇 시나리오의 과제·사건 기술 언어 후보'로 [추정]으로만 쓰고 두 근거 연구가 공동 저자를 공유해 독립 확인이 아님을 적었으며, 표준 자체(ASAM 관리)는 '외부와 연계하는 것' 칸에 두었다.",
+    "f9·f11·f12 — 6절 요약에서 '시나리오에 장애를 매개변수로 선언하는 방식의 예'로만 쓰고 센서·메시지 수준 장애 주입은 로봇 자체 지능·제어 쪽 연계 대상이라 ROP가 직접 만들지 않는다고 밝혔으며, 10절 54. 시험·형식 검증·벤치마크 연결에서도 같은 단서를 두었다.",
+    "3절 — f13 을 [사실]로 덧붙이며 면담 대상이 이동로봇 시뮬레이션 시험 일반의 도메인 전문가 14명임을 밝혔고, 기존 종합 문장의 [추정] 태그는 그대로 두었다.",
+    "분할된 절(6·7·8·10·11)은 영역 페이지 해당 절에 append 패치로만 요약을 더했고, 기존 주제 페이지 2026-09-30-area33-s6·s7·s8·s10·s11 은 갱신하지 않았으며 s7 표 행 추가는 additional_research_requests 에 다음 실행 후보로 넘겼다.",
+    "11절 — oq-234(f3·f6)·oq-233(f10·f18)은 부분 근거, oq-235(f12)·oq-131(f23)·oq-236(국내 자료 없음)은 미해결로 적고 oq-135 는 이번 실행에서 조사하지 않았다고 밝혔으며, 해결 처리와 open_question_updates 의 상태 변경은 하지 않았다.",
+    "ref-1088·ref-1086·ref-116 — 13절의 기존 각주 줄(접근일 2026-09-30)을 그대로 두고 접근일을 바꾸지 않았으며, reference_updates 에는 넣지 않았다.",
+    "ref-1515 각주 발행일을 2026-05-28(v1)로 적고 기관 표기에 'ERAS 2026 채택'을 병기했으며, ref-1511 각주 발행일은 '미확인'으로 두었다.",
+    "분량 초과 자동 분리: 33. 시나리오 모델·편집 본문 13,296자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 6,686자"
+  ]
+}
