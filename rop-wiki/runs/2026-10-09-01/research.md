@@ -1,0 +1,327 @@
+# 리서치 브리프 2026-10-09-01
+
+| 항목 | 값 |
+|---|---|
+| 실행 id | 2026-10-09-01 |
+| 날짜 | 2026-10-09 |
+| 실행 유형 | category_link (대분류 연결) |
+| 대상 영역 | 해당 없음 |
+| 대분류 | C. 채팅 기반 구성·운영 |
+
+## 갭(비어 있거나 약한 섹션)
+
+- C. 채팅 기반 구성·운영 대분류 페이지의 '다른 대분류와의 연결' 절이 비어 있다(아직 작성되지 않음)
+- E. 사물·사람·실시간 상태의 19. 사람·보행자 모델과 C. 채팅 기반 구성·운영 세부영역을 잇는 근거가 게시 페이지에 없다(11. 채팅으로 실제 상황 시뮬레이션 재현의 '사람 흐름' 재현이 후보)
+- D. 공간·지도 모델의 16. 장소 의미·지도 관리와 12. 채팅으로 업무 지시·오케스트레이션 사이의 장소 이름 해석 연결은 oq-204 로만 남아 있고 근거 출처가 없다
+- J. 현장 운영·관제의 39. 운영 성과 측정·개선·40. 운영 절차·요청 창구, M. 안전의 49. 사람 근접 안전·50. 안전 표준·인증·사고 조사, O. 검증·도입·수명주기의 56. 운영 이관·확대·교육, H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계, F. 연동의 23. 업무 시스템 연동과의 연결 근거가 게시 페이지에 없다
+- K. 플랫폼 아키텍처·인프라·N. 보안·개인정보 쪽 연결은 13. 대화형 기능의 신뢰·기반 한 영역에 근거가 몰려 있다
+- 연결 상대 대분류 가운데 C·D·E 대분류 페이지는 seed 상태이고, A·B·F·G 대분류 페이지의 연결 절은 이전 분류 기준이라 C. 채팅 기반 구성·운영과의 연결이 상대편에 아직 없다
+
+## 조사 질문
+
+1. 맵 작성, 시나리오 구성, 로봇 구성, 실제 상황 재현, 업무 지시를 비전문 사용자가 대화만으로 할 수 있게 하려면? [분류원문]
+2. 원문 주석이 대화의 짝 엔진으로 둔 영역(14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델, 33. 시나리오 모델·편집·36. 가상 시운전·실제 상황 재현, 5. 로봇 능력·작업 표현, 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링)과 C. 채팅 기반 구성·운영의 각 세부영역은 무엇을 주고받는가?
+3. 대화 결과를 계획으로 두고 사람이 승인한 계획만 실행하는 구조는 F. 연동, H. 실행·협업·예외 복구, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라의 어느 세부영역과 만나는가(관제 작업 요청 스키마, 사전 검증, 진행 기록, 도구 호출 프로토콜)?
+4. 13. 대화형 기능의 신뢰·기반이 M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회와 공유하는 위협·방어·기록·평가·규제는 무엇인가?
+5. L. AI·학습 기술의 교차 규칙에 따라 C. 채팅 기반 구성·운영이 쓰는 언어 모델 계획·도면 해석·실패 설명 방법은 어느 L. AI·학습 기술 영역과 적용 대상 영역에 함께 이어지는가?
+6. A. 기획·사업, B. 로봇 온톨로지, E. 사물·사람·실시간 상태, Q. 현장 유형별 적용과의 연결 근거(대수 산정·비용, 능력 모델, 인계 기록, 현장 사례)는 게시 페이지에 무엇이 있는가?
+
+## 발견 사항
+
+| id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
+|---|---|---|---|---|---|---|---|---|
+| f1 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기: CAD 파일에서 로봇 내비게이션용 실내 지도를 자동 생성하는 연구가 있어, 도면 해석 결과가 대화로 지도를 만들고 고치는 일의 입력이 될 것으로 보인다. | ref-083 | 아니오 | low | 2025-07 | 작업 대상 | 원문 미열람 |
+| f2 | [사실] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델: Open-RMF traffic-editor 빌딩 맵의 축척은 실제 거리를 아는 두 점의 미터 값을 사람이 넣어야 정해지며, 층·승강기·문·차선과 충전·주차 속성을 가진 꼭짓점을 지도 요소로 주석한다. | ref-079 | 아니오 | medium | 2026-10-09 | 제약 | — |
+| f3 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ F. 연동의 21. 상호운용 표준·적합성: 대화로 만든 지도 요소를 Open-RMF 빌딩 맵과 VDMA 레이아웃 교환 형식(LIF)처럼 서로 다른 플릿 지도 형식으로 내보내야 하나 두 형식 사이의 공식 변환 규칙은 확인되지 않아, 공통 중간 표현이 상호운용 과제로 넘어갈 것으로 보인다(oq-124). | ref-046, ref-079 | 아니오 | low | 2026-10-09 | 완료·인계 | — |
+| f4 | [추정] | 연계 대상: C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ F. 연동의 22. 설비·건물 시스템 연동에서, 대화로 승강기·문을 지도 요소로 등록하고 통과 조건을 제약으로 반영하는 일은 ROP 쪽이고 승강기 호출·버튼 조작 같은 실제 설비 제어는 분류 원문 19장의 시설·설비 제어 경계에 따라 외부가 맡는 것으로 보인다. | ref-079, ref-104 | 아니오 | low | 2026-10-09 | 수행 자원 | — |
+| f5 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ L. AI·학습 기술의 45. 문서·도면·장면 이해: 언어 유도 평면도 생성 데이터셋 연구와 구조화 평면도 공간 추론 벤치마크가 언어 모델의 공간·물리 제약 준수를 핵심 난점으로 지목하므로, 대화로 만든 지도 요소는 45. 문서·도면·장면 이해 쪽 방법과 기하 검증·사람 확인을 함께 거쳐야 할 것으로 보인다. | ref-787, ref-812 | 아니오 | low | 2025-07-10 | 제약 | 원문 미열람 |
+| f6 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ O. 검증·도입·수명주기의 55. 현장 조사·설치·시운전: 국내 업체 모빌리오는 공장 순찰 로봇의 라이다 지도(PGM)와 CAD·BIM 도면을 기준점 3개 이상으로 운영자가 정합해 관제 지도로 쓴다고 설명해, 도면·센서 지도 정합 결과를 누가 확인하는지가 시운전 단계의 과제로 이어질 것으로 보인다(oq-126). | ref-817 | 아니오 | low | 2026-08-24 | 제조 공장 / 완료·인계 | 원문 미열람, 벤더 주장 |
+| f7 | [사실] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF·28. 공용 자원·충전·에너지 최적화: Open-RMF traffic-editor 로 주석한 차선·경유점 그래프는 building_map_generator 로 주행 그래프로 내보내져 플릿 어댑터의 경로 계획에 쓰이고, 주차·충전기 위치도 같은 지도에 주석된다. | ref-079 | 아니오 | medium | 2026-10-09 | 작업 대상 | — |
+| f8 | [사실] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ Q. 현장 유형별 적용의 66. 실외: 국내 연구는 공공 지도 서비스 데이터에서 실외 이동 로봇의 전역 경로 계획용 분기점 단위 위상 지도를 만들고 A* 기반 모의실험으로 유효성을 검증해, 이미 있는 외부 데이터가 대화로 만드는 지도의 시작점이 될 수 있음을 보인다. | ref-811 | 아니오 | medium | 2022-06 | 실외 / 작업 대상 | 원문 미열람 |
+| f9 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ D. 공간·지도 모델의 16. 장소 의미·지도 관리: 기반 모델로 위상 지도에 의미 정보를 더하는 SENT Map 연구가 있어, 대화로 붙인 구역·장소 이름과 용도가 16. 장소 의미·지도 관리의 장소 이름·별칭 체계와 맞물릴 것으로 보인다. | ref-786 | 아니오 | low | 2025-11-05 | 작업 대상 | 원문 미열람 |
+| f10 | [추정] | C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: 언어 지시로 3차원 체화 AI 환경을 생성하는 Holodeck 연구가 있어, 대화로 만든 지도가 가정한 운영을 실험하는 시뮬레이션의 초기 환경이 되는 경로가 있을 것으로 보이나 실제 로봇 현장 지도에 쓴 사례는 확인하지 못했다. | ref-815 | 아니오 | low | 2023-12-14 | — | 원문 미열람 |
+| f11 | [추정] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성 ↔ G. 계획·최적화의 24. 작업·워크플로 모델링: 언어 모델로 공정 모델을 만드는 연구(2024-03)와 텍스트 공정 설명에서 BPMN 모델을 다단계로 생성하는 연구(2026-04)가 있어, 대화로 정한 할 일·순서·실패 처리 조건을 워크플로 모델로 옮겨 유효성을 검사하는 경로가 될 것으로 보인다. | ref-843, ref-844 | 아니오 | low | 2026-04-13 | 작업 대상 | 원문 미열람 |
+| f12 | [사실] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성 ↔ F. 연동의 20. 로봇·제조사 관제 연동: Open-RMF 작업 요청 스키마는 시각·순서 관련 필드로 가장 이른 시작 시각과 우선순위를 두고, 마감 시각이나 다른 작업과의 선후를 지정하는 필드는 두지 않는다. | ref-125 | 아니오 | medium | 2026-10-09 | 시작 조건 | — |
+| f13 | [추정] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성 ↔ I. 설계·시뮬레이션의 33. 시나리오 모델·편집·G. 계획·최적화의 26. 작업 순서·스케줄링: 완료 기한·반복·실패 처리 조건은 관제 작업 요청에 자리가 없으므로, 대화로 정한 시나리오는 33. 시나리오 모델·편집의 시나리오 모델에 담고 실행 시점에 26. 작업 순서·스케줄링을 거쳐 작업 요청으로 변환해야 할 것으로 보인다(oq-137). | ref-110, ref-125 | 아니오 | low | 2026-10-09 | 제약 | — |
+| f14 | [사실] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성 ↔ F. 연동의 22. 설비·건물 시스템 연동: Open-RMF 는 작업 실행 중 층 이동이 필요하면 승강기 요청(RequestLift) 단계를 내부에서 자동으로 넣는다. | ref-110 | 아니오 | medium | 2026-10-09 | 수행 자원 | — |
+| f15 | [추정] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적: Open-RMF 작업 구성은 물품 인계를 PickUp·DropOff 단계로 담지만 설비의 인수 결과(IngestorResult)에는 화물 식별자·인계 당사자가 없으므로, 대화로 정한 물품·수령인 조건은 17. 작업 대상·자산 식별과 인계 추적의 식별·인계 기록과 결합해야 할 것으로 보인다. | ref-110, ref-049 | 아니오 | low | 2026-10-09 | 완료·인계 | — |
+| f16 | [사실] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성·12. 채팅으로 업무 지시·오케스트레이션 ↔ Q. 현장 유형별 적용의 63. 병원·의료·H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: 병원 보조 로봇 연구는 간호 인력의 자연어 지시를 실행 가능한 작업 순서열로 바꾸고, 실행 중 추가 요청에 유전 알고리즘 기반 준최적 재스케줄링으로 대응하며, 실행 실패를 시각-언어 추론과 AI 제안으로 복구하는 시스템을 Temi 로봇에 배치했다고 보고했다. | ref-847 | 아니오 | medium | 2026 | 병원 / 예외·성과 | 원문 미열람 |
+| f17 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: 사건 기반 재계획을 하는 이기종 로봇 팀 계층 계획·실행 연구(CoMuRoS)가 있어, 사람이 승인한 계획이 실행 중 재계획될 때 어느 범위까지 자동 재계획을 허용하고 어디부터 다시 승인받을지가 두 대분류의 경계가 될 것으로 보인다(oq-140). | ref-677 | 아니오 | low | 2025-11 | 예외·성과 | 원문 미열람 |
+| f18 | [사실] | C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성·13. 대화형 기능의 신뢰·기반 ↔ L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: 서로 다른 두 연구 그룹(Ren 외의 KnowNo, Mullen·Manocha 의 LBAP)이 언어 모델 계획기의 불확실도를 통계적으로 보정해 확신이 없을 때만 사람에게 되묻는 설계를 각각 보고했다. | ref-351, ref-864 | 예 | medium | 2025-06-17 | — | 원문 미열람 |
+| f19 | [추정] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성 ↔ B. 로봇 온톨로지의 5. 로봇 능력·작업 표현: 요구 능력과 제공 능력을 같은 모델로 적는 IDTA 02020 능력 기술 서브모델과 자산관리셸 능력 모델에서 PDDL 계획 문제를 자동 생성하는 연구(2026-06)가 있어, 대화로 정한 로봇 구성의 수행 가능 여부를 확인하는 엔진이 5. 로봇 능력·작업 표현에서 올 것으로 보인다. | ref-229, ref-201 | 아니오 | low | 2026-06 | 수행 자원 | 원문 미열람 |
+| f20 | [사실] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성 ↔ F. 연동의 20. 로봇·제조사 관제 연동·B. 로봇 온톨로지의 4. 이기종 로봇 등록: VDA 5050 팩트시트는 적재 명세(loadSets)와 지원 동작(mobileRobotActions)을, Open-RMF 플릿 어댑터 템플릿 설정은 수행 가능한 작업 유형(task_capabilities)과 동작 이름(actions)을 선언한다. | ref-228, ref-105 | 아니오 | medium | 2026-10-09 | 수행 자원 | — |
+| f21 | [사실] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성 ↔ I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계·Q. 현장 유형별 적용의 61. 물류창고: 작업자 피킹(picker-to-parts) 창고의 협동 자율이동로봇 대수 산정 연구는 비용 기준 최적 로봇 대 작업자 비율이 수요에 따라 1:1 에서 2.5:1 로 옮겨 가고, 처리량 기준 산정은 구독형 과금 아래에서 대수를 과대 산정한다고 보고했다. | ref-822 | 아니오 | medium | 2026-06 | 물류창고 / 수행 자원 | 원문 미열람 |
+| f22 | [추정] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델: 국내 업체 폴라리스3D 는 공장 공정 간 이송 자율이동로봇 대수를 일일 목표 이송 횟수·시간당 적재량·이동 거리·기존 설비 연동 여부로 산정하고 투자 수익을 인건비 절감·생산성 향상으로 계산한다고 설명해, 대화로 대수를 정할 때 처리량과 비용 가운데 어느 목적을 누가 정하는지가 3. 경제성·조달·사업 모델의 판단과 이어질 것으로 보인다(oq-129). | ref-823 | 아니오 | low | 2026-06-12 | 제조 공장 / 시작 조건 | 원문 미열람, 벤더 주장 |
+| f23 | [사실] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성·12. 채팅으로 업무 지시·오케스트레이션 ↔ O. 검증·도입·수명주기의 55. 현장 조사·설치·시운전·I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현: KTH 연구는 자연어 명령을 구조화 작업 계획으로 바꾸고 물리적 실행 가능성을 기호적으로 검증한 뒤, Unity3D 디지털 트윈에서 운영자가 계획을 검토·수정·재검증한 다음에만 실제 로봇에서 실행하는 계획·시운전 구조를 제안했다. | ref-674 | 아니오 | medium | 2026-06 | 완료·인계 | — |
+| f24 | [사실] | C. 채팅 기반 구성·운영의 10. 채팅으로 로봇 구성 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: Ko·Lin(2026)의 '제안–검증–결정' 흐름에서 로컬 언어 모델이 만든 라인·작업 조정 후보를 디지털 트윈 시뮬레이션이 평균 164.39초에 검증했고, 시험 사례 18건 가운데 잘못된 입력 8건 중 7건을 검증 단계에서 거부했다. | ref-759 | 아니오 | medium | 2026-09 | 예외·성과 | 원문 미열람 |
+| f25 | [추정] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현: DEVS 형식론으로 사양에서 이산 사건 세계 모델을 생성·평가하는 연구(2026-03)와 시뮬레이션 모델·디지털 트윈을 부분 트레이스 조건으로 검증하는 연구(2026-07)가 있어, 원문 주석이 짝으로 둔 36. 가상 시운전·실제 상황 재현의 엔진이 기록에서 시뮬레이터를 만들고 트레이스로 대조하는 일을 맡을 것으로 보인다. | ref-825, ref-826 | 아니오 | low | 2026-07-19 | — | 원문 미열람 |
+| f26 | [추정] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈(E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성과 구분): 언어 모델 에이전트가 시뮬레이션 모델로 통제 실험을 수행하는 연구와 시뮬레이션으로 언어 모델을 접지하는 Simulation Agent 구조를 보면, 조건을 바꿔 비교하는 일은 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈 쪽이고, 재현의 입력이 되는 실제 기록은 현재 상태를 표현하는 18. 실시간 세계 상태·데이터 일관성과 실행 기록 쪽에서 오는 것으로 보인다. | ref-832, ref-824 | 아니오 | low | 2026-08-22 | — | 원문 미열람 |
+| f27 | [추정] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록: 이벤트 로그에서 업무 프로세스 시뮬레이션 모델을 자동 발견하는 연구가 있고 rosbag2 는 로봇 한 대의 ROS 2 통신을 기록·재생하는 수준이므로, 플릿 관제의 실행 기록(작업·배정·위치·사건 시각)을 시나리오 사양으로 바꾸는 변환이 두 대분류를 잇는 지점이 될 것으로 보인다(oq-131). | ref-828, ref-831 | 아니오 | low | 2020 | 시작 조건 | 원문 미열람 |
+| f28 | [사실] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ Q. 현장 유형별 적용의 62. 제조 공장·I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계: 제조 로봇 플릿·공장 배치의 시나리오 기반 디지털 트윈 연구는 기존 공장에서는 혼잡 때문에 플릿 확장 효과가 체감하고, 신규 공장에서는 배치·플릿 규모·역할 비율을 비교해 로봇당 생산성을 줄이지 않고 처리량을 최대 3.5배 높이는 구성을 찾았다고 보고했으며, 국내 연구는 AGV 자동물류시스템의 설계 검증과 운영 모니터링을 한 디지털트윈으로 묶었다. | ref-838, ref-830 | 아니오 | medium | 2026-07-18 | 제조 공장 / 예외·성과 | 원문 미열람 |
+| f29 | [사실] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ Q. 현장 유형별 적용의 63. 병원·의료: 국내 연구는 감염병 환자 도착부터 병원에서 일어나는 전 과정을 시나리오로 정의하고, 간호사 추종 음압 이송 침대 로봇 여러 대의 운용을 연합 디지털 트윈으로 시뮬레이션해 시스템 성능을 검증했다. | ref-837 | 아니오 | medium | 2025-12-17 | 병원 / 시작 조건 | 원문 미열람 |
+| f30 | [추정] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: 시뮬레이션 모델·디지털 트윈을 부분 트레이스 조건으로 검증하는 방법이 있어, 재현이 실제 기록과 '맞는다'고 판정할 지표와 허용 기준, 그 판정의 승인이 54. 시험·형식 검증·벤치마크의 과제로 넘어갈 것으로 보인다(oq-132). | ref-826 | 아니오 | low | 2026-07-19 | 완료·인계 | 원문 미열람 |
+| f31 | [사실] | C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현 ↔ L. AI·학습 기술의 47. AI·학습·적응과 모델 운영: 언어 모델을 디지털 트윈 모델링에 쓰는 연구 동향 서베이는 정확한 모델링을 위한 데이터 부족, 시스템 분석의 비효율, 물리–디지털 상호작용의 설명 부족을 공통 과제로 꼽는다. | ref-827 | 아니오 | medium | 2025-03-04 | — | 원문 미열람 |
+| f32 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링: SMART-LLM 은 상위 작업 지시를 작업 분해→연합 형성→작업 배정의 세 단계로 다중 로봇 작업 계획으로 바꾸며, 각 단계를 소수 예시 프로그램형 프롬프트로 언어 모델에 수행시킨다. | ref-090 | 아니오 | medium | 2023-09 | — | 원문 미열람 |
+| f33 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·26. 작업 순서·스케줄링: 형식 언어 기반 이기종 로봇 팀 스케줄링(FLEET)과 의존 관계 인지 작업 분해(DART-LLM) 연구를 보면, 언어 모델은 작업 그래프·능력 요구를 만들고 실제 배정·일정은 원문 주석이 짝으로 둔 25. 작업 배정 — MRTA와 26. 작업 순서·스케줄링의 엔진이 계산하는 분담이 될 것으로 보인다. | ref-242, ref-059 | 아니오 | low | 2025-10 | 수행 자원 | 원문 미열람 |
+| f34 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ F. 연동의 20. 로봇·제조사 관제 연동·K. 플랫폼 아키텍처·인프라의 41. 플랫폼 아키텍처·외부 API: OSRA Interop SIG(2026-07-02)에서 발표된 Nayantra 는 Open-RMF REST API 를 언어 모델이 부를 수 있는 MCP 도구로 감싼 서버로, 에이전트가 짐 픽업·배송 같은 평문 지시를 여러 단계 RMF 임무로 바꾸고 Open-RMF 가 이를 Nav2 로 보내 Isaac Sim 창고 시뮬레이션의 로봇이 실행하며, 게시글은 실행 전 사람 확인·접근통제를 언급하지 않는다. | ref-854 | 아니오 | medium | 2026-06-25 | 시작 조건 | — |
+| f35 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·13. 대화형 기능의 신뢰·기반 ↔ K. 플랫폼 아키텍처·인프라의 41. 플랫폼 아키텍처·외부 API: MCP 명세가 도구 호출 전 사용자 동의를 프로토콜이 아니라 호스트의 책임으로 두고, 관제 API 를 MCP 도구로 노출한 공개 발표도 승인 절차를 언급하지 않으므로, 사람 승인 관문을 에이전트·MCP 서버·관제 외부 API 가운데 어디에 둘지가 두 대분류의 설계 쟁점이 될 것으로 보인다(oq-141). | ref-856, ref-854 | 아니오 | low | 2026-06-25 | 제약 | — |
+| f36 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ H. 실행·협업·예외 복구의 29. 명령·작업 실행의 신뢰성: 언어 모델로 로봇 작업 계획을 실행 전에 검증하는 VerifyLLM 과 계획의 물리적 실행 가능성을 기호적으로 검증한 뒤 실행하는 KTH 구조를 보면, 승인 전 자동 검증과 승인된 계획의 1회 변환이 29. 명령·작업 실행의 신뢰성이 다루는 실행 보장의 앞단이 될 것으로 보인다. | ref-753, ref-674 | 아니오 | low | 2026-06 | 완료·인계 | — |
+| f37 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: HMCF 는 로봇마다 자기 능력을 아는 언어 모델 에이전트를 두어 이기종 로봇의 작업 배정·실행을 맡기고 사람은 필요할 때만 개입해 감독·검증하는 틀로, 시뮬레이션에서 기존 작업 계획 방법보다 작업 성공률이 4.76% 높았다고 보고했다. | ref-849 | 아니오 | medium | 2025-05-01 | 수행 자원 | — |
+| f38 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록: Open-RMF 작업 상태 스키마가 상태 값·시작·종료 시각·취소·강제 종료·중단 요청 기록을 담으므로, '어디까지 했는지, 왜 멈췄는지'를 대화로 답하는 근거는 37. 관제 화면·실행 기록의 실행 기록이 될 것으로 보인다. | ref-111 | 아니오 | low | 2026-10-09 | 완료·인계 | — |
+| f39 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ Q. 현장 유형별 적용의 66. 실외: Argenziano 외(2025)는 언어 모델과 자동 계획을 결합해 사람이 자연어로 상위 활동을 지정하고 로봇에게 질문해 과거·현재·미래 행동에 걸친 실행 진행을 확인하는 구조를 실제 정밀 농업 시나리오에서 구현·시험했다. | ref-850 | 아니오 | medium | 2025-09-19 | 실외 / 완료·인계 | 원문 미열람 |
+| f40 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석·L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: REFLECT 는 로봇의 다중 감각 관측을 계층 요약으로 만들고 언어 모델로 실패 원인을 추론해 그 설명으로 언어 기반 계획기가 실패를 바로잡게 하며, 평가용 RoboFail 데이터셋을 만들었다. | ref-453 | 아니오 | medium | 2023 | 예외·성과 | — |
+| f41 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: 다중 로봇 시스템의 언어 모델 연구 서베이는 연구를 상위 수준 작업 배정·중간 수준 동작 계획·하위 수준 행동 생성·사람 개입의 네 층으로 나누고, 운영자 인지 부담이 정량화되지 않았다고 지적했다. | ref-165 | 아니오 | medium | 2025-02 | — | 원문 미열람 |
+| f42 | [추정] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션 ↔ A. 기획·사업의 1. 기술·시장·업체 동향: 이 영역에 관해 확인된 국내 자료는 ETRI 의 거대언어모델 기반 로봇 인공지능 기술 동향(2024-02)과 KAIST 연구진의 자연어 로봇 제어 기술 동향(2024-10) 같은 동향 논문이며, 대화로 여러 로봇에 업무를 지시한 국내 운영 사례는 이번 실행의 한·영 검색에서도 확인되지 않았다. | ref-851, ref-848 | 아니오 | low | 2024-10 | — | 원문 미열람 |
+| f43 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ N. 보안·개인정보의 52. 통신 보호·위협 관리·감사·M. 안전의 48. 안전·위험 관리: 언어 모델의 오해석뿐 아니라 프롬프트 주입·탈옥 같은 외부 조작이 도구 호출이나 로봇의 물리 동작으로 이어진다는 위협을 서로 다른 세 발행 주체(OWASP, Robey 외, Huang 외)가 각각 보고했다. | ref-855, ref-857, ref-859 | 예 | medium | 2025-12-17 | 제약 | 원문 미열람 |
+| f44 | [사실] | C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·13. 대화형 기능의 신뢰·기반 ↔ M. 안전의 48. 안전·위험 관리: RoboGuard 는 공격 프롬프트에서 격리된 신뢰 근간 언어 모델이 미리 정한 안전 규칙을 로봇 환경에 맞는 시간 논리 제약으로 바꾸고, 시간 논리 제어 합성으로 위험할 수 있는 계획을 사용자 선호를 최소한으로 어기며 고치는 2단계 가드레일로, 최악 조건 탈옥 공격 실험에서 위험 계획 실행을 92% 초과에서 3% 미만으로 줄였다고 보고했다. | ref-700 | 아니오 | medium | 2026-03-03 | 제약 | — |
+| f45 | [추정] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ N. 보안·개인정보의 51. 인증·권한·격리: AI 에이전트의 사용자 권한을 인터페이스부터 강제까지 다룬 연구가 있어, 사용자별로 대화로 지시할 수 있는 로봇·구역·작업의 범위를 정하는 일은 51. 인증·권한·격리의 권한 모델에 기대 도구 호출 수준에서 강제해야 할 것으로 보인다. | ref-867 | 아니오 | low | 2026-07-20 | 제약 | 원문 미열람 |
+| f46 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스·N. 보안·개인정보의 53. 개인정보·영상 데이터: EU AI Act 제12조는 고위험 AI 시스템이 수명 동안 사건을 자동으로 기록(로그)할 수 있도록 기술적으로 갖추게 하며, ROP 의 대화 기능이 이에 해당하는지와 기록 항목·보존 기간은 열린 질문이다(oq-143). | ref-863 | 아니오 | medium | 2024-06-13 | 제약 | 원문 미열람 |
+| f47 | [추정] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: 개인정보보호위원회가 2025-08 생성형 AI 개발·활용을 위한 개인정보 처리 안내서를 냈으므로, 대화 기록의 보존·보호 요구는 53. 개인정보·영상 데이터의 처리 기준과 함께 정해야 할 것으로 보인다. | ref-862 | 아니오 | low | 2025-08 | 제약 | 원문 미열람 |
+| f48 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포: OpenTelemetry 의 생성형 AI 의미 규약은 별도 저장소로 옮겨져 생성형 AI 클라이언트와 MCP 의 스팬·지표·이벤트를 다루며, 지표 문서는 에이전트 호출 시간·추론 호출 수·도구 호출 수(gen_ai.invoke_agent.tool_calls)·도구 실행 시간 같은 지표를 모두 개발(Development) 단계로 두고 토큰 지표는 별도 문서의 gen_ai.client.inference.usage.* 로 안내한다. | ref-1240, ref-1241 | 아니오 | medium | 2026-10-09 | — | — |
+| f49 | [추정] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ L. AI·학습 기술의 47. AI·학습·적응과 모델 운영·O. 검증·도입·수명주기의 57. 자산·소프트웨어 수명주기 관리·P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: 언어 모델 게이트웨이의 모델 대체·라우팅 희석을 블랙박스로 감사하는 연구가 있어, 실제로 응답한 모델을 기록하고 교체를 통제하는 일이 모델 운영·소프트웨어 수명주기·공급자 계약으로 이어질 것으로 보인다(oq-145). | ref-865 | 아니오 | low | 2026-07-23 | — | 원문 미열람 |
+| f50 | [추정] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: 로봇 시스템에서 음성 인식을 온라인 API 대신 로컬 모델로 통합하는 연구를 정리한 서베이와 로컬 언어 모델을 쓴 디지털 트윈 검증 연구가 있어, 음성 인식·언어 모델을 현장 서버·로봇·클라우드 가운데 어디에 둘지가 42. 분산 시스템·통신·컴퓨팅 구조의 배치 쟁점과 이어질 것으로 보인다. | ref-866, ref-759 | 아니오 | low | 2026-07-13 | 수행 자원 | 원문 미열람 |
+| f51 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반·10. 채팅으로 로봇 구성 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: 실제 도메인의 도구–에이전트–사용자 상호작용을 평가하는 τ-bench(반복 시행 신뢰도 지표 pass^k)와 체화 의사결정에서 언어 모델을 평가하는 Embodied Agent Interface(NeurIPS 2024 데이터셋·벤치마크) 같은 공개 벤치마크가 있다. | ref-738, ref-858 | 아니오 | medium | 2025-01-19 | 예외·성과 | 원문 미열람 |
+| f52 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ Q. 현장 유형별 적용의 64. 상업 시설·P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: 네덜란드 슈퍼마켓 로봇 연구는 영어·네덜란드어와 성별 집단으로 음성 인식 기술을 비교해 Whisper 가 가장 낮은 단어 오류율을 보였고(참가자 40명), 질의 분류기 정확도 약 87%, 다층 언어 모델 구조가 참가자 16명 평가에서 GPT-4 Turbo 보다 13개 항목 중 4개에서 유의하게 높았다고 보고했다. | ref-868 | 아니오 | medium | 2025-04-29 | 상업 시설 / 예외·성과 | 원문 미열람 |
+| f53 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: 한국은 2026-01-28부터 무인정보단말기를 설치·운영하는 사업자에게 접근성 검증기준을 지킨 기기 설치를 기존 기기까지 전면 의무화했고, 바닥면적 50㎡ 미만 소규모 근린생활시설·소상공인 사업장·테이블 주문형 소형 기기는 보조기기·보조 인력·호출벨 가운데 하나로 대신할 수 있게 했다. | ref-1217 | 아니오 | medium | 2026-01-28 | 제약 | — |
+| f54 | [사실] | C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반 ↔ B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동: Nakajima·Miura(IROS 2024)는 서비스 로봇의 '가져다 줘' 작업에서 언어 모델의 상식 지식을 환경 정보가 담긴 온톨로지로 접지해 환각을 줄이고, 온톨로지만으로는 풀지 못해 사용자에게 되물어야 했던 모호성을 줄이는 결합 시스템을 제안했다. | ref-818 | 아니오 | medium | 2024-10-22 | 작업 대상 | — |
+
+### 근거 발췌
+
+- **f1**: Zhang 외(2025-07)는 CAD 파일에서 로봇 내비게이션용 실내 OpenStreetMap 지도를 생성한다. 8번 페이지 10절은 이를 짝 엔진의 입력으로 본다(재인용: 2026-09-29-01)
+- **f2**: traffic-editor 문서: 두 측정점 사이 실제 거리(미터)로 축척을 정하고 층·승강기·문·차선·꼭짓점 속성을 주석한다(재인용: 2026-09-29-01) (발행일 미확인, 확인일 기준)
+- **f3**: 8번 페이지 7절: 형식마다 요소 대응이 필요하고 두 형식 사이 공식 변환 규칙은 확인하지 못했다(재인용: 2026-09-29-01)
+- **f4**: Open-RMF Clinic 데모는 두 층·승강기 2대·플릿 2개를 둔 시뮬레이션 빌딩 맵이다. 8번 페이지 9절이 승강기 제어를 연계 대상으로 둔다(재인용: 2026-09-29-01)
+- **f5**: 8번 페이지 3절: Tell2Design(2023)과 FloorplanQA(2025-07)가 각각 언어 모델의 공간·물리 제약 준수를 난점으로 지목(재인용: 2026-09-29-01)
+- **f6**: 벤더 주장: 기둥·모서리 등 기준점 3개 이상으로 라이다 지도와 도면을 맞추고 회전각·크기를 미세 조정한다(재인용: 2026-09-29-01)
+- **f7**: B. 로봇 온톨로지 대분류 연결 절에 실린 검증된 주장: 주행 그래프 내보내기와 충전기·주차 위치 주석(재인용: 2026-09-25-38) (발행일 미확인, 확인일 기준)
+- **f8**: 김영재·김세윤·김홍준(대한공간정보학회지, 2022-06): 공공 맵 데이터로 분기점 단위 위상 지도 생성, A* 모의실험으로 검증(재인용: 2026-09-29-01)
+- **f9**: SENT Map(2025-11): Semantically Enhanced Topological Maps with Foundation Models. 8번 페이지 6절의 위상·의미 층 근거(재인용: 2026-09-29-01)
+- **f10**: Holodeck(2023-12): Language Guided Generation of 3D Embodied AI Environments(재인용: 2026-09-29-01)
+- **f11**: 9번 페이지 9절: 워크플로 모델과 실행 지향 검사로 시나리오 유효성 확인을 직접 범위로 추정(재인용: 2026-09-29-04)
+- **f12**: G. 계획·최적화 대분류 연결 절에 실린 검증된 주장(task_request.json, 2026-09-25 확인)(재인용: 2026-09-25-38) (발행일 미확인, 확인일 기준)
+- **f13**: 9번 페이지 7절·10절: 할 일·순서·물품 인계·시작 시각·우선순위는 작업 구성에 자리가 있으나 기한·반복·실패 처리는 없다(재인용: 2026-09-29-04)
+- **f14**: 9번 페이지 9절: 승강기 호출 자체는 연계 대상이며 Open-RMF 는 필요할 때 RequestLift 단계를 자동 삽입(재인용: 2026-09-29-04) (발행일 미확인, 확인일 기준)
+- **f15**: IngestorResult 는 시각·요청 id·워크셀 id·상태만 담는다(B. 로봇 온톨로지 대분류 연결 절, 재인용: 2026-09-25-38)
+- **f16**: Autonomous Robots(2026) 게재 연구, 검색 결과 요약 범위. 실행 전 사람 승인 절차 유무는 미확인(재인용: 2026-09-29-05)
+- **f17**: 12번 페이지 9절: 실행 중 재계획은 승인된 계획과의 차이로 표시해 32번과 함께 다룬다는 추정(재인용: 2026-09-29-05)
+- **f18**: KnowNo 는 등각 예측으로 예측 집합을 만들어 둘 이상 남을 때만 되묻는다. 13번 페이지 6절은 두 그룹의 같은 접근을 사실로 실었다(재인용: 2026-09-29-06)
+- **f19**: 10번 페이지 10절: 원문 주석의 로봇 구성 짝 엔진 영역(5번), 능력 기술과 PDDL 생성 연구를 적합성 확인 엔진 후보로 추정(재인용: 2026-09-29-02)
+- **f20**: F. 연동·B. 로봇 온톨로지 대분류 연결 절에 같은 각주로 실린 검증된 주장. 두 자료는 서로 다른 인터페이스의 사례(재인용: 2026-09-25-38) (발행일 미확인, 확인일 기준)
+- **f21**: Howard(Cal Poly 석사논문, 2026-06): FlexSim 이산 사건 시뮬레이션 27,000회·반개방형 대기행렬·XGBoost 대리모델(재인용: 2026-09-29-02)
+- **f22**: 벤더 주장: 도입 전 전문가 인터뷰나 시뮬레이션 사전 분석이 필수이며 ROI 는 인건비 절감·생산성 향상으로 계산(재인용: 2026-09-29-02)
+- **f23**: Liu 외(2026-06) 초록: Specifier-Designer-Inspector 구조, LLM 은 언어 이해·맥락 추론에만 쓰고 검증·순서·실행은 결정적으로 유지. 정량 결과는 초록에 없음
+- **f24**: 가상 수술기구 분류 라인 4개, 배치 검증 통과율 97.50%, 요청–검증 근거–결정 추적 기록(재인용: 2026-09-29-02). 출처는 현장 유형을 명시하지 않음
+- **f25**: 11번 페이지 10절: 사양·기록에서 시뮬레이터를 만들고 트레이스로 대조하는 방법은 11번과 36번 양쪽에 연결(재인용: 2026-09-29-03)
+- **f26**: 11번 페이지 6절: 언어 모델은 인터페이스·실험 설계를, 수치 결론은 시뮬레이션 실행에서 얻는 구조로 수렴(재인용: 2026-09-29-03)
+- **f27**: 11번 페이지 9절: 플릿 수준 실행 기록을 시나리오 사양으로 바꾸는 일은 직접 범위, 로봇 한 대의 통신 기록 재생은 연계 대상(재인용: 2026-09-29-03)
+- **f28**: Valiollahi 외(Scientific Reports, 2026-07, 저자 보고값, 초록 기준), 이동건 외(한국CDE학회 논문집, 2021-12). 두 연구 모두 실제 운영 기록 재현은 아님(재인용: 2026-09-29-03)
+- **f29**: Woo·Shin·Jeon·Park(Electronics 14(24), 2025-12-17), 초록 기준. 정량 결과·완료 판정 기준 미확인(재인용: 2026-09-29-03)
+- **f30**: Ghasemloo·Eckman·Li(2026-07): Subtrace-Conditional Validation of Simulation Models and Digital Twins(재인용: 2026-09-29-03)
+- **f31**: Yang·Luo·Cheng·Yu(2025-03-04) 서베이, 11번 페이지 3절에 사실로 실림(재인용: 2026-09-29-03)
+- **f32**: Kannan·Venkatesh·Min(2023-09), 네 가지 복잡도의 벤치마크·시뮬레이션·실제 로봇으로 평가(재인용: 2026-09-29-05)
+- **f33**: 12번 페이지 10절의 구축자 추정(재인용: 2026-09-29-05)
+- **f34**: "I'll present an MCP server that exposes the Open-RMF REST API as LLM-callable tools" — 발표 예고 게시글, 엔드포인트 목록 없음
+- **f35**: 13번 페이지 9절: MCP 명세는 도구 호출 전 동의를 호스트 책임으로 둔다(재인용: 2026-09-29-06). Nayantra 게시글은 승인 절차 언급 없음
+- **f36**: 12번 페이지 9절: 자동 검증을 거쳐 사람 승인을 받은 계획만 관제 작업 요청으로 한 번 변환해 보낸다는 추정(재인용: 2026-09-29-05)
+- **f37**: Li 외(2025-05) 초록: 사람 감독과 작업 검증으로 언어 모델 환각을 줄이며 "intervening only when necessary". 승인 절차의 세부는 초록에 없음
+- **f38**: A. 기획·사업·F. 연동 대분류 연결 절에 실린 task_state.json 필드(재인용: 2026-09-25-38), 12번 페이지 9절의 진행 설명 범위
+- **f39**: 초록 기준. 로봇 종류·대수·답의 근거 기록 형식은 미확인(재인용: 2026-09-29-05)
+- **f40**: Liu·Bahety·Song(2023) 초록. 원문 교차 규칙상 장애 분석은 38번에 적용되는 AI 연구 방법
+- **f41**: Li·An·Abrar·Zhou(2025-02, v5 2026-05-03). 12번 페이지 8절·11절(재인용: 2026-09-29-05)
+- **f42**: oq-142 와 같은 공백. 이번 검색에서 확인된 국내 통합 제어 플랫폼 소식은 노코드 블록코딩 방식이라 출처로 넣지 않음
+- **f43**: 13번 페이지 3절에 세 출처로 실린 검증된 주장(재인용: 2026-09-29-06). OWASP LLM01 프롬프트 주입·LLM06 과도한 에이전시 포함
+- **f44**: Ravichandran·Robey·Kumar·Pappas·Hassani, arXiv 2503.07885 v2(2026-03-03 개정) 초록: 시뮬레이션·실기 실험, "without compromising performance on safe plans". v1 은 92.3%→2.5% 미만으로 보고
+- **f45**: Michael·Roesner(2026-07): How Agents Ask for Permission. 13번 페이지 9절: 도구 호출 수준의 권한 검사를 직접 범위로 추정(재인용: 2026-09-29-06)
+- **f46**: AI Act Service Desk, Article 12: Record-keeping(Regulation (EU) 2024/1689). 13번 페이지 7절(재인용: 2026-09-29-06)
+- **f47**: 13번 페이지 7절의 국내 안내서 목록(재인용: 2026-09-29-06). 안내서의 구체 조항은 이번 실행에서 다시 확인하지 않음
+- **f48**: semantic-conventions-genai README: spans, metrics, events for GenAI clients, MCP. gen-ai-metrics.md: 지표 9종 모두 Development, gen_ai.client.token.usage 는 이 문서에 정의되지 않음(oq-212 관련)
+- **f49**: Zhang·Zhang·Qin(2026-07): IRIS, Budgeted Black-Box Auditing of Model Substitution and Routing Dilution in LLM Gateways(재인용: 2026-09-29-06)
+- **f50**: Li 외(2026-07) 서베이 제목: Casting Everything to Online API Services?; Ko·Lin(2026-09)은 로컬 언어 모델 사용(재인용: 2026-09-29-06, 2026-09-29-02)
+- **f51**: 13번 페이지 7·8절의 평가 벤치마크(재인용: 2026-09-29-06). 로봇 구성 대화 전용 벤치마크는 미확인(oq-127)
+- **f52**: Nandkumar·Peternel(Frontiers in Robotics and AI, 2025-04-29), 모든 응답을 1,612개 상품 데이터베이스 항목에 근거(재인용: 2026-09-29-06)
+- **f53**: 보건복지부 정책브리핑(2026-01-28): 무인정보단말기 위치 음성 안내 같은 정당한 편의도 제공. 로봇 현장 단말·채팅 화면이 무인정보단말기에 해당하는지는 기사에 없음
+- **f54**: arXiv 2410.16804 초록: 저자들의 기존 온톨로지를 환경 데이터로 확장, 언어 모델 지식을 더해 명확화 질의를 줄이려 함. 정량 결과는 초록에 없음
+
+## 출처
+
+| id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
+|---|---|---|---|---|---|---|---|---|
+| ref-083 | Zhang, J. 외 | Generation of Indoor Open Street Maps for Robot Navigation from CAD Files | 2025-07 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2507.00552 | 예 |
+| ref-079 | Open Robotics | Traffic Editor - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://osrf.github.io/ros2multirobotbook/traffic-editor.html | 아니오 |
+| ref-046 | VDMA (Intralogistics-2X-LIF GitHub) | Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA) | 2023-09 | 표준 | medium | 2026-10-09 | https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format | 예 |
+| ref-104 | Open Robotics (open-rmf) | rmf_demos — Demonstrations of Open-RMF (README) | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/open-rmf/rmf_demos | 예 |
+| ref-787 | Leng, S., Zhou, Y., Dupty, M. H., Lee, W. S., Joyce, S. C., & Lu, W. | Tell2Design: A Dataset for Language-Guided Floor Plan Generation | 2023 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2311.15941 | 예 |
+| ref-812 | Rodionov, F., Eldesokey, A., Birsak, M., Femiani, J., Ghanem, B., & Wonka, P. | FloorplanQA: A Benchmark for Spatial Reasoning in LLMs using Structured Representations | 2025-07-10 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2507.07644 | 예 |
+| ref-817 | 모빌리오(Mobilio) | [최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 관제를 웹 화면 하나로 끝내는 방법 | 2026-08-24 | 벤더 문서 | low | 2026-10-09 | https://www.mobilio.io/ko/%eb%aa%a8%eb%b9%8c%eb%a6%ac%ec%98%a4-%ed%86%b5%ed%95%a9-%eb%8c%80%ec%8b%9c%eb%b3%b4%eb%93%9c-%ec%86%94%eb%a3%a8%ec%85%98/ | 예 |
+| ref-811 | 김영재, 김세윤, 김홍준 (대한공간정보학회지) | 공공 맵 데이터를 이용한 자율주행 이동 로봇의 전역 경로 계획용 지도 생성 방법에 관한 연구 | 2022-06 | 논문 | medium | 2026-10-09 | https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11079654 | 예 |
+| ref-786 | Rajendran Kathirvel, R. S., Chavis, Z. A., Guy, S. J., & Desingh, K. | SENT Map -- Semantically Enhanced Topological Maps with Foundation Models | 2025-11-05 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2511.03165 | 예 |
+| ref-815 | Yang, Y., Sun, F.-Y., Weihs, L. 외 (Allen Institute for AI 등) | Holodeck: Language Guided Generation of 3D Embodied AI Environments | 2023-12-14 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2312.09067 | 예 |
+| ref-843 | Kourani, H., Berti, A., Schuster, D., & van der Aalst, W. M. P. | Process Modeling With Large Language Models | 2024-03-12 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2403.07541 | 예 |
+| ref-844 | Matei, I., Zhenirovskyy, M., Menaka Sekar, P. K., & Wong, H. Y. | Automated BPMN Model Generation from Textual Process Descriptions: A Multi-Stage LLM-Driven Approach | 2026-04-13 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2604.12105 | 예 |
+| ref-125 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_request.json | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json | 아니오 |
+| ref-110 | Open Robotics | Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://osrf.github.io/ros2multirobotbook/task_new.html | 아니오 |
+| ref-049 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg | 아니오 |
+| ref-847 | Chiang, Y.-C., Lee, I.-P., Fu, L.-C. 외 (Autonomous Robots 50, Article 28, 2026) | Agile assistive hospital robot for suboptimal Task execution in dynamic environments | 2026 | 논문 | medium | 2026-10-09 | https://link.springer.com/article/10.1007/s10514-026-10255-6 | 예 |
+| ref-677 | CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재) | LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning | 2025-11 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2511.22354 | 예 |
+| ref-351 | Ren, A. Z. 외 | Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners | 2023-07 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2307.01928 | 예 |
+| ref-864 | Mullen, J. F., Jr., & Manocha, D. | Towards Robots That Know When They Need Help: Affordance-Based Uncertainty for Large Language Model Planners | 2025-06-17 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2403.13198 | 예 |
+| ref-229 | IDTA(Industrial Digital Twin Association) | IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates) | 미확인 | 표준 | medium | 2026-10-09 | https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description | 예 |
+| ref-201 | Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A. | From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation | 2026-06 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2606.02167 | 예 |
+| ref-228 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/factsheet.schema | 미확인 | 표준 | medium | 2026-10-09 | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema | 아니오 |
+| ref-105 | Open Robotics (open-rmf) | fleet_adapter_template — fleet_adapter_template/config.yaml | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml | 아니오 |
+| ref-822 | Howard, T. L. (California Polytechnic State University, 석사논문) | A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities | 2026-06 | 논문 | medium | 2026-10-09 | https://digitalcommons.calpoly.edu/theses/3387/ | 예 |
+| ref-823 | 폴라리스3D(Polaris3D) | AMR 도입 ROI 어떻게 계산할까? 물류 자동화 투자 회수 기간 알아보기 | 2026-06-12 | 벤더 문서 | low | 2026-10-09 | https://polaris3d.com/blog/trends/amr-roi-calculator/ | 예 |
+| ref-674 | Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH) | Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins | 2026-06 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2606.08214 | 아니오 |
+| ref-759 | Ko, T.-H., & Lin, C.-T.(National Central University) | Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin | 2026-09 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2609.29061 | 예 |
+| ref-825 | Chen, Z., Zhuang, H., Li, Z., & Li, C. | Specification-Driven Generation and Evaluation of Discrete-Event World Models via the DEVS Formalism | 2026-03-04 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2603.03784 | 예 |
+| ref-826 | Ghasemloo, M., Eckman, D. J., & Li, Y. | Subtrace-Conditional Validation of Simulation Models and Digital Twins | 2026-07-19 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2607.17088 | 예 |
+| ref-832 | Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P. | LLM Agents Perform Controlled Experiments Using Simulation Models | 2026-08-22 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2608.23622 | 예 |
+| ref-824 | Kleiman, J., Frank, K., Voyles, J., & Campagna, S. | Simulation Agent: A Framework for Integrating Simulation and Large Language Models for Enhanced Decision-Making | 2025-05-19 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2505.13761 | 예 |
+| ref-828 | Camargo, M., Dumas, M., & González-Rojas, O. | Automated Discovery of Business Process Simulation Models from Event Logs | 2020 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/1910.05404 | 예 |
+| ref-831 | ROS 2 (ros2/rosbag2 GitHub) | rosbag2 — README (Recording and playback of ROS 2 communications) | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/ros2/rosbag2 | 예 |
+| ref-838 | Valiollahi, S., Rodríguez, I., Eriksen, S. N., Zhang, W., Damsgaard, S., & Mogensen, P. (Scientific Reports) | Digital twin for scenario-based design evaluation of manufacturing robotic fleets and factory layouts | 2026-07-18 | 논문 | medium | 2026-10-09 | https://www.nature.com/articles/s41598-026-57316-5 | 예 |
+| ref-830 | 이동건, 송승현, 이찬혁, 노상도(성균관대학교), 윤상문, 이현영(LG전자) (한국CDE학회 논문집 26(4)) | 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용 | 2021-12 | 논문 | medium | 2026-10-09 | https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10671861 | 예 |
+| ref-837 | Woo, J., Shin, H., Jeon, C., & Park, S. (Electronics 14(24)) | Design and Application of a Nurse-Following Medical Bed Robot with a Negative Pressure Chamber for Patient Transportation in the Hospital: A Korean Case of Federated Digital Twins | 2025-12-17 | 논문 | medium | 2026-10-09 | https://www.mdpi.com/2079-9292/14/24/4954 | 예 |
+| ref-827 | Yang, L., Luo, S., Cheng, X., & Yu, L. | Leveraging Large Language Models for Enhanced Digital Twin Modeling: Trends, Methods, and Challenges | 2025-03-04 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2503.02167 | 예 |
+| ref-090 | Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C. | SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models | 2023-09 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2309.10062 | 예 |
+| ref-242 | Rivera, C., Byrd, G., Booker, M., Kemp, B., Gaines, A., Holmes, E., Uplinger, J., de Melo, C. M., & Handelman, D.(JHU APL·JHU·DEVCOM ARL) | FLEET: Formal Language-Grounded Scheduling for Heterogeneous Robot Teams | 2025-10 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2510.07417 | 예 |
+| ref-059 | Wang, Y. 외(DART-LLM 저자) | DART-LLM: Dependency-Aware Multi-Robot Task Decomposition and Execution using Large Language Models | 2024-11 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2411.09022 | 예 |
+| ref-854 | Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse | Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP) | 2026-06-25 | 오픈소스 문서 | medium | 2026-10-09 | https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687 | 아니오 |
+| ref-856 | Model Context Protocol (Anthropic 주도 오픈소스 프로젝트) | Specification — Model Context Protocol (2025-06-18) | 2025-06-18 | 오픈소스 문서 | medium | 2026-10-09 | https://modelcontextprotocol.io/specification/2025-06-18 | 예 |
+| ref-753 | VerifyLLM 저자(arXiv 2507.05118) | VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots | 2025-07 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2507.05118 | 예 |
+| ref-849 | Li, Z., Wu, W., Wang, Y., Xu, Y., Hunt, W., & Stein, S. | HMCF: A Human-in-the-loop Multi-Robot Collaboration Framework Based on Large Language Models | 2025-05-01 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2505.00820 | 아니오 |
+| ref-111 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_state.json | 미확인 | 오픈소스 문서 | medium | 2026-10-09 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json | 아니오 |
+| ref-850 | Argenziano, F., Umili, E., Leotta, F., & Nardi, D. | Defining and Monitoring Complex Robot Activities via LLMs and Symbolic Reasoning | 2025-09-19 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2509.16006 | 예 |
+| ref-453 | Liu, Z., Bahety, A., & Song, S. | REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction | 2023 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2306.15724 | 아니오 |
+| ref-165 | Autonomous Robots 게재 서베이(arXiv 2502.03814) 저자 | Large Language Models for Multi-Robot Systems: A Survey | 2025-02 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2502.03814 | 예 |
+| ref-851 | 한국전자통신연구원(ETRI) 이준기, 박성오, 김낙우, 김은주, 고석갑 (전자통신동향분석 39(1)) | 거대언어모델 기반 로봇 인공지능 기술 동향 | 2024-02 | 정부·연구기관 | medium | 2026-10-09 | https://ettrends.etri.re.kr/ettrends/206/0905206009/0905206009.html | 예 |
+| ref-848 | 손승아, 강태민, 하동수 (한국과학기술원), 정보과학회지 42(10) | 자연어 로봇 제어 기술 동향: 분류, 기술, 응용 | 2024-10 | 논문 | medium | 2026-10-09 | https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11940459 | 예 |
+| ref-855 | OWASP GenAI Security Project | OWASP Top 10 for LLM Applications 2025 | 2025 | 업계 보고서 | medium | 2026-10-09 | https://genai.owasp.org/llm-top-10/ | 예 |
+| ref-857 | Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J. | Jailbreaking LLM-Controlled Robots | 2024-11-09 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2410.13691 | 예 |
+| ref-859 | Huang, X., Karthick V B, S., Chen, T., Bryson, M., Chaffey, T., Chen, H., Choo, K.-K. R., & Manchester, I. R. | Trust in LLM-controlled Robotics: a Survey of Security Threats, Defenses and Challenges | 2025-12-17 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2601.02377 | 예 |
+| ref-700 | Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H. | Safety Guardrails for LLM-Enabled Robots | 2025-03 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2503.07885 | 아니오 |
+| ref-867 | Michael, A. E., & Roesner, F. | How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement | 2026-07-20 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2607.13718 | 예 |
+| ref-863 | European Commission — AI Act Service Desk | Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act) | 2024-06-13 | 정부·연구기관 | medium | 2026-10-09 | https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12 | 예 |
+| ref-862 | 개인정보보호위원회 | 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.) | 2025-08 | 정부·연구기관 | medium | 2026-10-09 | https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20836 | 예 |
+| ref-1240 | OpenTelemetry (open-telemetry/semantic-conventions-genai GitHub) | semantic-conventions-genai — README | 미확인 | 오픈소스 문서 | high | 2026-10-09 | https://github.com/open-telemetry/semantic-conventions-genai | 아니오 |
+| ref-1241 | OpenTelemetry (open-telemetry/semantic-conventions-genai GitHub) | Semantic conventions for generative AI metrics (docs/gen-ai/gen-ai-metrics.md) | 미확인 | 오픈소스 문서 | high | 2026-10-09 | https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-metrics.md | 아니오 |
+| ref-865 | Zhang, Y., Zhang, Z.-H., & Qin, H. | Which Model Is Actually Serving You? IRIS: Budgeted Black-Box Auditing of Model Substitution and Routing Dilution in LLM Gateways | 2026-07-23 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2607.20860 | 예 |
+| ref-866 | Li, S., Li, J., Schijve, F., Hu, J., & Barakova, E. | Casting Everything to Online API Services? A Survey of Integrating Localized Speech Recognition Models in Robotic Systems | 2026-07-13 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2607.11792 | 예 |
+| ref-738 | Yao, S. 외(Sierra, τ-bench 저자) | τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains | 2024-06 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2406.12045 | 예 |
+| ref-858 | Li, M., Zhao, S., Wang, Q., Wang, K., Zhou, Y., Srivastava, S., Gokmen, C., Lee, T., Li, L. E., Zhang, R., Liu, W., Liang, P., Li, F.-F., Mao, J., & Wu, J. (NeurIPS 2024 Datasets and Benchmarks) | Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making | 2025-01-19 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2410.07166 | 예 |
+| ref-868 | Nandkumar, C., & Peternel, L. (Delft University of Technology), Frontiers in Robotics and AI | Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents | 2025-04-29 | 논문 | medium | 2026-10-09 | https://pmc.ncbi.nlm.nih.gov/articles/PMC12069059/ | 예 |
+| ref-1217 | 대한민국 정책브리핑 (보건복지부) | 장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행 | 2026-01-28 | 정부·연구기관 | medium | 2026-10-09 | https://www.korea.kr/news/policyNewsView.do?newsId=148958690 | 아니오 |
+| ref-818 | Nakajima, H., & Miura, J. (IROS 2024) | Combining Ontological Knowledge and Large Language Model for User-Friendly Service Robots | 2024-10-22 | 논문 | medium | 2026-10-09 | https://arxiv.org/abs/2410.16804 | 아니오 |
+
+### 출처 요약
+
+- **ref-083**: 원문 미열람. CAD 파일에서 로봇 내비게이션용 실내 OSM 지도를 자동 생성하는 연구. 이번 실행에서 다시 열지 않은 기존 참고문헌.
+- **ref-079**: 원문 미열람. Open-RMF 빌딩 맵 편집기: 층·차선·꼭짓점·문·승강기 주석, 축척 측정, 주행 그래프 내보내기. 이번 실행에서 다시 열지 않음.
+- **ref-046**: 원문 미열람. VDMA 의 레이아웃 교환 형식(LIF) 저장소. 이번 실행에서 다시 열지 않음.
+- **ref-104**: 원문 미열람. Open-RMF 데모(Clinic·Hotel 등) 설명. 이번 실행에서 다시 열지 않음.
+- **ref-787**: 원문 미열람. 언어 유도 평면도 생성 데이터셋. 이번 실행에서 다시 열지 않음.
+- **ref-812**: 원문 미열람. 구조화 평면도 표현에 대한 언어 모델 공간 추론 벤치마크. 이번 실행에서 다시 열지 않음.
+- **ref-817**: 원문 미열람. 순찰 로봇 라이다 지도와 CAD·BIM 도면 정합 기능 소개(벤더 주장). 이번 실행에서 다시 열지 않음.
+- **ref-811**: 원문 미열람. 공공 지도 데이터로 실외 로봇 전역 경로 계획용 위상 지도를 만드는 국내 연구. 이번 실행에서 다시 열지 않음.
+- **ref-786**: 원문 미열람. 기반 모델로 의미 정보를 더한 위상 지도. 이번 실행에서 다시 열지 않음.
+- **ref-815**: 원문 미열람. 언어 지시로 3차원 체화 AI 환경을 생성하는 연구. 이번 실행에서 다시 열지 않음.
+- **ref-843**: 원문 미열람. 언어 모델을 이용한 프로세스 모델링 연구. 이번 실행에서 다시 열지 않음.
+- **ref-844**: 원문 미열람. 텍스트 공정 설명에서 BPMN 모델을 다단계로 생성. 이번 실행에서 다시 열지 않음.
+- **ref-125**: 원문 미열람. Open-RMF 작업 요청 JSON 스키마(가장 이른 시작 시각·우선순위·플릿 지정 등). 이번 실행에서 다시 열지 않음.
+- **ref-110**: 원문 미열람. Open-RMF 작업 구성(compose, PickUp·DropOff, RequestLift 자동 삽입). 이번 실행에서 다시 열지 않음.
+- **ref-049**: 원문 미열람. 워크셀 인수 결과 메시지(시각·요청 id·워크셀 id·상태). 이번 실행에서 다시 열지 않음.
+- **ref-847**: 원문 미열람. 간호 인력 자연어 지시를 작업 순서열로 바꾸고 재스케줄링·실패 복구하는 병원 보조 로봇 연구.
+- **ref-677**: 원문 미열람. 사건 기반 재계획을 하는 이기종 로봇 팀 계층 계획·실행. 이번 실행에서 다시 열지 않음.
+- **ref-351**: 원문 미열람. 등각 예측 기반으로 불확실할 때만 되묻는 KnowNo. 이번 실행에서 다시 열지 않음.
+- **ref-864**: 원문 미열람. 어포던스 기반 불확실도로 도움 요청 시점을 정하는 LBAP. 이번 실행에서 다시 열지 않음.
+- **ref-229**: 원문 미열람. 자산관리셸 능력 기술 서브모델 템플릿. 이번 실행에서 다시 열지 않음.
+- **ref-201**: 원문 미열람. 자산관리셸 능력 모델에서 PDDL 을 자동 생성. 이번 실행에서 다시 열지 않음.
+- **ref-228**: 원문 미열람. VDA 5050 팩트시트 JSON 스키마(적재 명세·지원 동작 등). 이번 실행에서 다시 열지 않음.
+- **ref-105**: 원문 미열람. 플릿 어댑터 템플릿 설정(task_capabilities·actions·충전 설정·기준 좌표). 이번 실행에서 다시 열지 않음.
+- **ref-822**: 원문 미열람. 작업자 피킹 창고의 협동 AMR 대수 산정(시뮬레이션·대기행렬·대리모델). 이번 실행에서 다시 열지 않음.
+- **ref-823**: 원문 미열람. AMR 대수·ROI 산정 입력을 설명하는 업체 블로그(벤더 주장). 이번 실행에서 다시 열지 않음.
+- **ref-674**: 자연어 명령을 구조화 계획으로 바꾸고 기호적 실행 가능성 검증, Unity3D 디지털 트윈에서 운영자 검토·재검증 뒤 실기 실행하는 구조(초록 확인).
+- **ref-759**: 원문 미열람. 로컬 언어 모델 제안–디지털 트윈 검증–운영자 결정 흐름. 이번 실행에서 다시 열지 않음.
+- **ref-825**: 원문 미열람. DEVS 형식론으로 사양에서 이산 사건 세계 모델 생성·평가. 이번 실행에서 다시 열지 않음.
+- **ref-826**: 원문 미열람. 부분 트레이스 조건부 시뮬레이션 모델·디지털 트윈 검증. 이번 실행에서 다시 열지 않음.
+- **ref-832**: 원문 미열람. 언어 모델 에이전트가 시뮬레이션 모델로 통제 실험 수행. 이번 실행에서 다시 열지 않음.
+- **ref-824**: 원문 미열람. 시뮬레이션과 언어 모델을 결합한 의사결정 틀. 이번 실행에서 다시 열지 않음.
+- **ref-828**: 원문 미열람. 이벤트 로그에서 업무 프로세스 시뮬레이션 모델 자동 발견. 이번 실행에서 다시 열지 않음.
+- **ref-831**: 원문 미열람. ROS 2 통신 기록·재생 도구. 이번 실행에서 다시 열지 않음.
+- **ref-838**: 원문 미열람. 제조 로봇 플릿·공장 배치 시나리오 비교 디지털 트윈(초록 기준).
+- **ref-830**: 원문 미열람. 국내 제조업체 AGV 자동물류시스템의 설계 검증·운영 디지털트윈. 이번 실행에서 다시 열지 않음.
+- **ref-837**: 원문 미열람. 음압 이송 침대 로봇 여러 대를 연합 디지털 트윈으로 시뮬레이션 검증한 국내 병원 사례(초록 기준).
+- **ref-827**: 원문 미열람. 언어 모델의 디지털 트윈 모델링 활용 동향 서베이. 이번 실행에서 다시 열지 않음.
+- **ref-090**: 원문 미열람. 작업 분해·연합 형성·작업 배정 단계의 언어 모델 다중 로봇 계획. 이번 실행에서 다시 열지 않음.
+- **ref-242**: 원문 미열람. 형식 언어 기반 이기종 로봇 팀 스케줄링. 이번 실행에서 다시 열지 않음.
+- **ref-059**: 원문 미열람. 의존 관계 인지 다중 로봇 작업 분해·실행. 이번 실행에서 다시 열지 않음.
+- **ref-854**: Nayantra 발표 예고: Open-RMF REST API 를 MCP 도구로 감싸 평문 지시를 RMF 임무로 바꾸고 Nav2·Isaac Sim 창고에서 실행. 승인·접근통제 언급 없음.
+- **ref-856**: 원문 미열람. MCP 명세(도구 호출 전 사용자 동의를 호스트 책임으로 둠). 이번 실행에서 다시 열지 않음.
+- **ref-753**: 원문 미열람. 언어 모델 기반 로봇 작업 계획 사전 실행 검증. 이번 실행에서 다시 열지 않음.
+- **ref-849**: 로봇별 언어 모델 에이전트와 필요할 때만 개입하는 사람 감독을 결합한 이기종 다중 로봇 협업 틀, 시뮬레이션 성공률 4.76% 향상(초록 확인).
+- **ref-111**: 원문 미열람. Open-RMF 작업 상태 스키마(상태 값·시각·취소·강제 종료·중단 요청 기록). 이번 실행에서 다시 열지 않음.
+- **ref-850**: 원문 미열람. 언어 모델·자동 계획으로 활동 지정과 진행 질의, 정밀 농업 시나리오 시험. 이번 실행에서 다시 열지 않음.
+- **ref-453**: 다중 감각 관측의 계층 요약과 언어 모델 추론으로 로봇 실패를 설명하고 수정 계획을 이끄는 틀, RoboFail 데이터셋(초록 확인).
+- **ref-165**: 원문 미열람. 다중 로봇 시스템의 언어 모델 연구를 네 층으로 정리한 서베이. 이번 실행에서 다시 열지 않음.
+- **ref-851**: 원문 미열람. 거대언어모델 기반 로봇 AI 국내 기술 동향. 이번 실행에서 다시 열지 않음.
+- **ref-848**: 원문 미열람. 자연어 로봇 제어 기술 동향 국내 논문. 이번 실행에서 다시 열지 않음.
+- **ref-855**: 원문 미열람. LLM 응용 10대 위험(프롬프트 주입·과도한 에이전시 등). 이번 실행에서 다시 열지 않음.
+- **ref-857**: 원문 미열람. 언어 모델 제어 로봇 탈옥 공격 연구. 이번 실행에서 다시 열지 않음.
+- **ref-859**: 원문 미열람. 언어 모델 제어 로봇의 보안 위협·방어 서베이. 이번 실행에서 다시 열지 않음.
+- **ref-700**: RoboGuard: 신뢰 근간 언어 모델이 안전 규칙을 시간 논리 제약으로 접지하고 제어 합성으로 위험 계획을 고치는 2단계 가드레일. v2(2026-03-03) 초록 기준 위험 계획 실행 92% 초과→3% 미만. 프리프린트.
+- **ref-867**: 원문 미열람. AI 에이전트 사용자 권한의 인터페이스·강제 연구. 이번 실행에서 다시 열지 않음.
+- **ref-863**: 원문 미열람. EU AI Act 제12조 기록 보존(고위험 AI 시스템의 자동 로그). 이번 실행에서 다시 열지 않음.
+- **ref-862**: 원문 미열람. 생성형 AI 개인정보 처리 안내서. 이번 실행에서 다시 열지 않음.
+- **ref-1240**: OpenTelemetry 생성형 AI 의미 규약 저장소. 생성형 AI 클라이언트·MCP·공급자별 규약의 스팬·지표·이벤트를 다루며 사람이 읽는 문서는 docs/ 에 있다.
+- **ref-1241**: 생성형 AI 지표 문서. 에이전트 호출 시간·추론 호출 수·도구 호출 수·도구 실행 시간 등 지표 9종이 모두 Development 단계이고, 토큰 지표는 별도 Inference Token Metrics 문서로 안내한다.
+- **ref-865**: 원문 미열람. 언어 모델 게이트웨이 모델 대체·라우팅 희석 감사. 이번 실행에서 다시 열지 않음.
+- **ref-866**: 원문 미열람. 로봇 시스템의 로컬 음성 인식 모델 통합 서베이. 이번 실행에서 다시 열지 않음.
+- **ref-738**: 원문 미열람. 도구–에이전트–사용자 상호작용 벤치마크(pass^k). 이번 실행에서 다시 열지 않음.
+- **ref-858**: 원문 미열람. 체화 의사결정 언어 모델 벤치마크. 이번 실행에서 다시 열지 않음.
+- **ref-868**: 원문 미열람. 슈퍼마켓 로봇의 다국어·형평 음성 대화 인터페이스 연구. 이번 실행에서 다시 열지 않음.
+- **ref-1217**: 2026-01-28부터 무인정보단말기 접근성 검증기준 준수 기기 설치 전면 의무화, 소규모 시설·소상공인·테이블 주문형 기기는 보조기기·보조 인력·호출벨로 대체 가능(보도자료).
+- **ref-818**: '가져다 줘' 작업에서 환경 정보 온톨로지로 언어 모델 상식을 접지해 환각과 명확화 질의를 줄이는 결합 시스템(초록 확인).
+
+## 페이지 제안
+
+| 동작 | 경로 | 섹션 | 이유 |
+|---|---|---|---|
+| update | docs/categories/chat-based-configuration-and-operation/index.md | 5. 다른 대분류와의 연결 | '다른 대분류와의 연결' 절만 patches 로 채운다. B. 로봇 온톨로지: f19·f20·f54 / D. 공간·지도 모델: f1·f2·f9 / E. 사물·사람·실시간 상태: f15·f26(18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 구분) / F. 연동: f3·f4·f12·f14·f20·f34 / G. 계획·최적화: f7·f11·f13·f32·f33 / H. 실행·협업·예외 복구: f16·f17·f36·f37 / I. 설계·시뮬레이션: f10·f13·f21·f23·f24·f25·f26·f28 / J. 현장 운영·관제: f27·f38·f40 / K. 플랫폼 아키텍처·인프라: f34·f35·f48·f50 / L. AI·학습 기술: f5·f18·f31·f40·f41·f49(교차 규칙: 도면 해석 f5 → 14·45, 장애 분석 f40 → 38) / M. 안전: f43·f44 / N. 보안·개인정보: f43·f45·f46·f47 / O. 검증·도입·수명주기: f6·f23·f30·f49·f51 / P. 거버넌스·법규·사회: f46·f49·f52·f53 / A. 기획·사업: f22·f42 / Q. 현장 유형별 적용: f8(실외)·f16(병원)·f21(물류창고)·f28(제조 공장)·f29(병원)·f39(실외)·f52(상업 시설). 원문 주석의 짝 엔진(14·15, 33·36, 5, 25·26)을 먼저 서술하고 '사람이 확인·승인한 계획만 실행' 주석을 F·H·K·M 연결의 축으로 쓴다. f4 는 승강기 제어를 연계 대상으로 표시, f6·f22 는 벤더 주장 병기. '아직 다루지 않은 연결'에 19. 사람·보행자 모델, 16. 장소 의미·지도 관리의 장소 이름 해석(oq-204), 23. 업무 시스템 연동, 30. 로봇 간 협업·물리적 인계, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사, 56. 운영 이관·확대·교육을 적는다. 다음 실행 후보: 13. 대화형 기능의 신뢰·기반 페이지 8절에 f44(RoboGuard)·f48(OpenTelemetry 생성형 AI 지표), 12. 채팅으로 업무 지시·오케스트레이션 페이지 7절에 f34(Nayantra)·f37(HMCF) 반영. |
+
+## 용어 후보
+
+| 용어(한글) | 용어(영문) | 한 줄 정의 |
+|---|---|---|
+| 안전 가드레일 | Safety Guardrail (LLM-enabled robots) | 언어 모델이 제안한 로봇 계획을 실행 전에 안전 규칙에 비추어 검사하고 위험한 부분을 막거나 고치는 별도의 감독 계층으로, RoboGuard 는 안전 규칙을 시간 논리 제약으로 바꿔 제어 합성으로 계획을 수정한다. |
+| 생성형 AI 의미 규약 | OpenTelemetry GenAI Semantic Conventions | 생성형 AI 클라이언트·에이전트·도구 호출·MCP 의 스팬·지표·이벤트 이름과 속성을 정한 OpenTelemetry 규약으로, 2026-10 확인 시점에 지표는 개발(Development) 단계다. |
+
+## 열린 질문
+
+새로 생긴 질문:
+
+- RoboGuard 처럼 안전 규칙을 시간 논리 제약으로 바꿔 언어 모델 계획을 고치는 안전 가드레일을 다중 로봇 오케스트레이션의 승인 전 검사에 두면 사람 승인 부담을 얼마나 줄일 수 있으며, 가드레일이 계획을 수정했을 때 무엇을 사람에게 다시 승인받아야 하는가? | 관련 영역: 12. 채팅으로 업무 지시·오케스트레이션, 48. 안전·위험 관리, 13. 대화형 기능의 신뢰·기반 | 근거: f44 | 종류: 일반
+- 대화로 실제 상황을 재현할 때 운영 기록에 남은 사람 흐름·혼잡을 시뮬레이션의 보행자 모델 입력으로 옮긴 연구나 사례가 있는가? | 관련 영역: 11. 채팅으로 실제 상황 시뮬레이션 재현, 19. 사람·보행자 모델, 36. 가상 시운전·실제 상황 재현 | 근거: f26 | 종류: 일반
+
+해결 제안(판정은 검증 에이전트):
+
+- 없음
+
+## 자체 점검
+
+- 출처 수: 60 · 교차 확인: 2
+- 예산 사용량: 검색 5회 · 신규 출처 4건
+- 미확인 항목:
+    - 대한민국 정책브리핑 인공지능기본법 시행 기사(newsId=148958380)는 두 번 열기를 시도했으나 연결이 끊겨 출처로 넣지 않음 — 사람의 최종 결정과 고영향 인공지능 제외 설명은 이번 실행에서 확인하지 못함
+    - OpenTelemetry 토큰 지표 이름: 지표 문서는 gen_ai.client.inference.usage.* 를 별도 문서로 안내하고, 검색 결과의 2026 블로그는 gen_ai.client.token.usage 를 쓴다고 요약해 이름 차이(oq-212)를 해소하지 못함. Inference Token Metrics 문서는 열지 않음
+    - RoboGuard 수치는 v1(92.3%→2.5% 미만)과 v2(92% 초과→3% 미만)가 다르며 f44 는 v2 초록 기준
+    - Nayantra 발표 녹화 내용은 확인하지 않았고 게시글 본문만 읽음(f34)
+    - f16·f28·f29 근거 논문은 원문 미열람(초록·검색 요약 기준)
+    - 재사용 출처 54건은 이번 실행에서 다시 열지 않았고 게시 페이지의 검증된 주장을 재인용함
+    - 국내에서 대화로 로봇 업무를 지시한 운영 사례는 한국어 검색 2회에서도 확인되지 않음(oq-142 미해결)
+- 범위 경계 위반 의심:
+    - f4: 승강기 호출·버튼 조작은 분류 원문 19장 '시설·설비 제어' 경계의 연계 대상으로 표시하고 ROP 는 지도 요소 등록·통과 제약 반영만 맡는 것으로 제안
+    - f14: 승강기 요청 단계는 Open-RMF 내부 동작이며 승강기 제어 자체는 연계 대상
+    - f46·f47·f53: 법 적용 여부·개인정보 처리 적법성·접근성 의무 해당 여부 판단은 운영자·법무 몫이며 59. 법·규제·보험·라이선스·53. 개인정보·영상 데이터·60. 노동·수용성·접근성으로만 연결
+    - f50: 음성 인식 모델의 소음·다국어 강건성은 공급자 몫(연계 대상)이고 이 연결은 배치 위치 쟁점으로만 다룸
+    - f6·f8: 라이다 SLAM 지도 생성은 로봇 자체 지능·제어 쪽이며 채팅 맵 작성은 그 결과를 입력으로 받는 쪽으로 서술
+- 한계: web_fetch_available: true · fetch_mode full. 대분류 연결 실행으로 근거 대부분을 게시된 8. 채팅으로 맵 작성 ~ 13. 대화형 기능의 신뢰·기반 페이지와 A. 기획·사업·B. 로봇 온톨로지·F. 연동·G. 계획·최적화 대분류 연결 절의 검증된 주장·각주에서 재인용했다(재사용 56건, 그 가운데 ref-854·ref-849·ref-453·ref-674·ref-818 은 이번에 webfetch 로 초록·본문을 다시 열어 보강). 신규 출처 4건(ref-700 RoboGuard, ref-1240·ref-1241 OpenTelemetry 생성형 AI 의미 규약 저장소 README·지표 문서는 github_raw, ref-1217 무인정보단말기 정책브리핑), 예약 구간 ref-700~ref-1268 안. 검색 5회/30(영어 2, 한국어 3), 신규 출처 4건/15. 재사용 출처 ref-228·ref-049 는 이번 대상 페이지 인용 목록에 없지만 B. 로봇 온톨로지·F. 연동 대분류 페이지 각주 값을 그대로 썼다. 이전 브리프(2026-09-30-23·24)가 쓴 ref-1245·ref-1268 은 현재 참고문헌 번호 체계(전체 1238건)와 맞지 않을 수 있어 재사용하지 않았고, 무인정보단말기 기사는 같은 URL 로 새 id(ref-1217)를 주었다 — 같은 URL 이 이미 있으면 퍼블리셔가 병합 필요. 교차 확인 2건(f18: KnowNo·LBAP, f43: OWASP·Robey 외·Huang 외). 벤더 주장 2건(f6 모빌리오, f22 폴라리스3D). 18. 실시간 세계 상태·데이터 일관성(현재 상태·실행 기록)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)은 f26 에서 구분했다. L. AI·학습 기술 교차 규칙에 따라 도면 해석(f5)은 14·45, 장애 분석(f40)은 38·44 로 함께 연결했다. 19. 사람·보행자 모델, 23. 업무 시스템 연동, 30. 로봇 간 협업·물리적 인계, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사, 56. 운영 이관·확대·교육과의 연결은 검증된 근거가 없어 finding 을 내지 않았다. 16. 장소 의미·지도 관리의 장소 이름 해석은 oq-204 로만 남아 있어 8. 채팅으로 맵 작성 쪽 f9 로만 연결했다. 60 번 영역 브리프가 올린 '채팅 화면·로봇 단말이 무인정보단말기에 해당하는가' 질문과 겹치지 않도록 f53 관련 열린 질문은 새로 내지 않았다. 국내 자료: ETRI·KAIST 동향 논문, 국내 지도·디지털트윈·병원 연구, 정책브리핑. 이번 한국어 검색에서는 대화형 다중 로봇 지시의 국내 운영 사례를 찾지 못했다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결 제안 없음.

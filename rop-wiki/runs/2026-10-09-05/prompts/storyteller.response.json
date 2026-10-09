@@ -1,0 +1,1072 @@
+{
+  "duration_api_ms": 455317,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.3960964000000002,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 141164,
+    "cache_read_input_tokens": 71882,
+    "output_tokens": 62620,
+    "output_tokens_details": {
+      "thinking_tokens": 24483
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 141164,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 62620,
+        "cache_read_input_tokens": 71882,
+        "cache_creation_input_tokens": 141164,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 141164
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 62620,
+      "cacheReadInputTokens": 71882,
+      "cacheCreationInputTokens": 141164,
+      "webSearchRequests": 0,
+      "costUSD": 2.3960964000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 24483,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-05\",\"outline\":[{\"path\":\"docs/categories/field-operations-and-monitoring/index.md\",\"section\":\"다른 대분류와의 연결\",\"budget_chars\":9000,\"summary\":\"J. 현장 운영·관제의 네 세부영역은 D·E·F에서 지도·현재 상태·제조사 신호를 받아 보여 주고, 판정·경보·지표를 G·H·I·K·L·M·N·P로 넘긴다. Open-RMF 상태·경보 스키마가 연결의 주된 근거다. [사실][^ref-148][^ref-448] B. 로봇 온톨로지와의 연결 근거는 없다.\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\",\"f27\",\"f28\",\"f29\",\"f30\",\"f31\",\"f32\",\"f33\",\"f34\",\"f35\",\"f36\",\"f37\",\"f38\",\"f39\",\"f40\",\"f41\",\"f42\",\"f43\"]}],\"pages\":[{\"path\":\"docs/categories/field-operations-and-monitoring/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"'다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건\",\"patches\":[{\"section\":\"다른 대분류와의 연결\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-031\",\"ref-051\",\"ref-096\",\"ref-102\",\"ref-111\",\"ref-125\",\"ref-139\",\"ref-140\",\"ref-145\",\"ref-146\",\"ref-148\",\"ref-230\",\"ref-283\",\"ref-302\",\"ref-313\",\"ref-447\",\"ref-448\",\"ref-449\",\"ref-453\",\"ref-494\",\"ref-569\",\"ref-762\",\"ref-781\",\"ref-782\",\"ref-944\",\"ref-1093\",\"ref-1094\",\"ref-1096\",\"ref-1098\",\"ref-1099\",\"ref-1103\",\"ref-1150\",\"ref-1151\",\"ref-1152\",\"ref-1153\",\"ref-1154\",\"ref-1157\",\"ref-1199\",\"ref-1236\",\"ref-1272\",\"ref-1278\",\"ref-1359\",\"ref-1360\",\"ref-1361\",\"ref-1362\",\"ref-1363\",\"ref-1364\"]},\"content\":\"J. 현장 운영·관제의 네 세부영역은 다른 대분류가 만든 지도·상태·계획·기록을 받아 운영자에게 보여 주고, 판정·경보·지표를 다시 다른 대분류로 넘긴다. 아래 연결은 게시된 세부영역 페이지(37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구)와 2026-10-09 조사·검증을 거친 주장에 기댄다. 대부분 단일 출처이거나 세부영역 페이지의 판단을 다시 인용한 것이므로, 두 영역이 이어진다고 해석한 문장은 추정 표기로 남겼다.\\n\\n### 한눈에 보기\\n\\n| 다른 대분류 | J. 현장 운영·관제 쪽 세부영역 | 상대 세부영역 |\\n|---|---|---|\\n| A. 기획·사업 | 39. 운영 성과 측정·개선 | 3. 경제성·조달·사업 모델 |\\n| B. 로봇 온톨로지 | 근거 없음 | 아래 '아직 다루지 않은 연결' |\\n| C. 채팅 기반 구성·운영 | 37. 관제 화면·실행 기록 | 11. 채팅으로 실제 상황 시뮬레이션 재현, 12. 채팅으로 업무 지시·오케스트레이션 |\\n| D. 공간·지도 모델 | 37. 관제 화면·실행 기록, 40. 운영 절차·요청 창구 | 15. 지도·공간·위치 모델, 16. 장소 의미·지도 관리 |\\n| E. 사물·사람·실시간 상태 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선 | 17. 작업 대상·자산 식별과 인계 추적, 18. 실시간 세계 상태·데이터 일관성 |\\n| F. 연동 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 20. 로봇·제조사 관제 연동, 22. 설비·건물 시스템 연동, 23. 업무 시스템 연동 |\\n| G. 계획·최적화 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 25. 작업 배정 — MRTA, 26. 작업 순서·스케줄링, 27. 다중 로봇 경로·교통 관리 — MAPF, 28. 공용 자원·충전·에너지 최적화 |\\n| H. 실행·협업·예외 복구 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석 | 29. 명령·작업 실행의 신뢰성, 31. 사람–로봇 협업, 32. 예외 복구·재계획·업무 연속성 |\\n| I. 설계·시뮬레이션 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선 | 35. 처리능력·규모·배치 설계, 36. 가상 시운전·실제 상황 재현 |\\n| K. 플랫폼 아키텍처·인프라 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석 | 43. 데이터·관측성·배포 |\\n| L. AI·학습 기술 | 38. 모니터링·이상 탐지·원인 분석 | 47. AI·학습·적응과 모델 운영 |\\n| M. 안전 | 37. 관제 화면·실행 기록, 40. 운영 절차·요청 창구 | 50. 안전 표준·인증·사고 조사 |\\n| N. 보안·개인정보 | 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터 |\\n| O. 검증·도입·수명주기 | 40. 운영 절차·요청 창구 | 56. 운영 이관·확대·교육 |\\n| P. 거버넌스·법규·사회 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 59. 법·규제·보험·라이선스, 60. 노동·수용성·접근성 |\\n| Q. 현장 유형별 적용 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 61. 물류창고, 62. 제조 공장, 63. 병원·의료, 64. 상업 시설 |\\n\\n### [A. 기획·사업](../planning-and-business/index.md)\\n\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [3. 경제성·조달·사업 모델](../planning-and-business/economics-procurement-and-business-models.md): 39. 운영 성과 측정·개선 페이지는 투자 수익률·순현재가치·회수 기간 같은 재무 평가를 연계 대상으로 두고 ROP는 그 입력인 처리량·가동률·충전·예외 실행 데이터를 제공한다고 보므로, 운영 지표가 투자 효과 판단으로 넘어가는 지점에서 두 영역이 이어지는 것으로 보인다. [추정][^ref-148] 그 계량 데이터를 누가 재고 어떻게 합의하는지는 열린 질문 oq-268 로 남아 있다.\\n\\n### [B. 로봇 온톨로지](../robot-ontology/index.md)\\n\\n게시된 페이지에서 B. 로봇 온톨로지와 J. 현장 운영·관제를 잇는 검증된 근거를 찾지 못했다. 아래 '아직 다루지 않은 연결'에 적었다.\\n\\n### [C. 채팅 기반 구성·운영](../chat-based-configuration-and-operation/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [11. 채팅으로 실제 상황 시뮬레이션 재현](../chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md): 11. 채팅으로 실제 상황 시뮬레이션 재현은 재현 결과를 실제 기록의 시각·위치·사건 순서와 비교해야 하며, 그 실제 기록은 37. 관제 화면·실행 기록이 정규화해 저장하는 실행 기록에서 나올 것으로 보인다. [추정][^ref-1094][^ref-1096] 이 대화 기능이 부르는 엔진은 36. 가상 시운전·실제 상황 재현이므로 아래 I. 설계·시뮬레이션 항목과 함께 읽는다.\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [12. 채팅으로 업무 지시·오케스트레이션](../chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md): 12. 채팅으로 업무 지시·오케스트레이션이 진행 상황 질의에 실행 기록과 시각을 근거로 답할 때, Open-RMF 작업 상태 스키마의 상태 값, 시작·종료 시각, 단계 목록, 취소·강제 종료 기록이 그 답의 근거 자료가 될 것으로 보인다. [추정][^ref-111] 업무 지시가 부르는 엔진은 25. 작업 배정 — MRTA와 26. 작업 순서·스케줄링이다.\\n\\n### [D. 공간·지도 모델](../space-and-map-model/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [15. 지도·공간·위치 모델](../space-and-map-model/map-space-and-location-model.md): Open-RMF rmf_visualization 은 층 평면도 위에 로봇 위치, 문·승강기, 주행 그래프, 예측 궤적을 겹쳐 표시한다(발행일 미확인, 2026-10-09 확인). [사실][^ref-1093]\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [16. 장소 의미·지도 관리](../space-and-map-model/place-semantics-and-map-management.md): Open-RMF 차선 요청(LaneRequest)이 플릿 이름과 열고 닫을 차선 목록 세 필드만 두므로, 임시 통제 구역을 누가 왜 언제까지 닫았는지는 40. 운영 절차·요청 창구의 운영 기록이, 차선·구역 반영은 16. 장소 의미·지도 관리가 맡는 접점이 될 것으로 보인다. [추정][^ref-569] 통제 구역의 선언·해제 절차를 공개한 현장 사례는 열린 질문 oq-203 으로 남아 있다([차선 폐쇄](../../glossary/lane-closure.md) 참고).\\n\\n### [E. 사물·사람·실시간 상태](../objects-people-and-live-state/index.md)\\n\\n이 대분류와의 연결은 지금의 상태를 표현하는 18. 실시간 세계 상태·데이터 일관성 쪽이다. 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈 쪽 연결은 섞지 않고 아래 I. 설계·시뮬레이션 항목에 따로 둔다.\\n\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md): Open-RMF 로봇 상태가 상태 값·문제 목록과 함께 기록 시각을 담으므로, 지연 원인 구분은 18. 실시간 세계 상태·데이터 일관성이 시각과 함께 유지하는 로봇·문·작업의 현재 상태를 같은 시간축에 맞춘 데이터를 쓸 것으로 보인다. [추정][^ref-148][^ref-051][^ref-313]\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md): Open-RMF 로봇 상태 스키마는 상태 값 7개(uninitialized·offline·shutdown·idle·charging·working·error), 0~1 범위의 배터리, 현재 작업 id, 문제 목록, 기록 시각을 담는다(2026-10-09 확인). [사실][^ref-148] 이 값이 가동률·충전·오류 시간 지표의 원천이 될 것으로 보인다. [추정][^ref-148] 같은 해석이 [A. 기획·사업의 '다른 대분류와의 연결'](../planning-and-business/index.md#다른-대분류와의-연결)에도 같은 각주로 실려 있다.\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)(병원): 현대차·기아와 한림대학교의료원이 안면 인식 기반 수령 인증과 특수 물품 배송 이력 관리 시스템을 함께 개발하기로 한 협약 보도(2025-04-07, 운영 결과 미확인)를 보면, 병원의 완료·인계 단계에서 수령인 확인과 배송 이력 기록이 한 기록으로 묶일 것으로 보인다. [추정][^ref-1103]\\n\\n### [F. 연동](../integration/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md): VDA 5050 3.0.0 은 차량 위치·계획 경로를 시각화 시스템에 보내는 visualization 토픽을 상태(state) 토픽과 따로 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md): VDA 5050 의 오류 수준과 연결 상태(CONNECTION_BROKEN), MassRobotics 의 외부 사건 대기(waitingExternalEvent), Open-RMF 의 작업 지연·차단은 서로 다른 어휘로 보고되므로, 20. 로봇·제조사 관제 연동에서 들어온 신호를 ROP 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-111] 공통 매핑 표준은 확인되지 않았고 열린 질문 oq-033·oq-073 으로 남아 있다.\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md): Open-RMF 문 모드는 closed·moving·open·offline·unknown 다섯 값이고, 문 어댑터는 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다(2026-10-09 확인). [사실][^ref-313][^ref-283] 문 개폐 제어 자체는 시설·설비 제어 경계의 연계 대상이며, 이 연결에서 ROP 몫은 문 상태 확인과 작업 요청으로 한정된다.\\n- 연계 대상: [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)(병원): 미국 MultiCare 계열 두 병원의 Moxi 로봇은 복도·층간 이동에서 길을 잃고 승강기 버튼을 스스로 누르지 못해 사람이 계속 따라다녀야 했다고 2026-06-09 보도되었다. [사실][^ref-1154] 승강기 조작은 시설·설비 제어 경계의 연계 대상이며, 40. 운영 절차·요청 창구 페이지도 승강기 연동을 이 영역 밖의 설비 연계로 둔다.\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [23. 업무 시스템 연동](../integration/business-system-integration.md)(물류창고): 로봇·작업 상태 기록만으로는 완전 주문 이행률·주문 이행 사이클 타임 같은 주문 단위 지표를 계산할 수 없으므로, 이 지표는 23. 업무 시스템 연동을 거쳐 WMS·ERP 주문 데이터와 이어야 계산될 것으로 보인다. [추정][^ref-140][^ref-148][^ref-111] 이를 실제로 검증한 공개 사례는 열린 질문 oq-015 로 남아 있다.\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [23. 업무 시스템 연동](../integration/business-system-integration.md)(병원): 미국 ChristianaCare 는 간호사가 키오스크에서 Moxi 로봇을 호출하던 방식에 더해, 로봇을 Cerner 전자의무기록과 연동해 주문이 들어오면 로봇이 물품을 가지러 가게 하는 계획을 밝혔다(2022-08-11 보도, 계획 단계이며 운영 결과 미확인). [사실][^ref-1362] 주문 취소·변경을 진행 중인 로봇 작업에 반영한 공개 사례가 있는지는 [열린 질문](../../open-questions.md)에 새로 올렸다.\\n\\n### [G. 계획·최적화](../planning-and-optimization/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md): [설명 가능한 다중 에이전트 경로 찾기](../../glossary/explainable-mapf.md) 연구(Kottinger·Almagor·Lahijanian, ICAPS 2022)는 경로 계획을 사람이 확인할 수 있게 나눠 보여 주는 설명 문제를 다루지만 알고리즘 수준의 연구다. [사실][^ref-1098]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [25. 작업 배정 — MRTA](../planning-and-optimization/task-allocation-mrta.md): 위치 스푸핑을 다룬 2026-08 프리프린트의 신뢰 인지 모니터가 위치 신뢰도와 실행 행동 증거를 결합해 에이전트를 분류하는 것으로 미루어, 실행 기록으로 이상 로봇을 가려 배정 후보에서 빼는 일이 두 영역의 접점이 될 것으로 보이며 물류센터 적용은 확인되지 않았다. [추정][^ref-494] 같은 연결이 [G. 계획·최적화의 '다른 대분류와의 연결'](../planning-and-optimization/index.md#다른-대분류와의-연결)에도 같은 각주로 실려 있고, 배정 전 검증 기준은 열린 질문 oq-082 로 남아 있다.\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [28. 공용 자원·충전·에너지 최적화](../planning-and-optimization/shared-resource-charging-and-energy-optimization.md)(물류창고): Omega(2024) 게재 연구는 로봇 이동형 풀필먼트 시스템에서 동적 우선순위 규칙이 선착순보다 에너지 소비를 3.41% 줄이고 처리량을 26.07% 높였다고 보고했으며, 이는 모델·시뮬레이션 조건의 저자 보고값이고 현장 실측이 아니다. [사실][^ref-146] A. 기획·사업 페이지의 연결 절에도 같은 값과 단서가 실려 있다.\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [26. 작업 순서·스케줄링](../planning-and-optimization/task-sequencing-and-scheduling.md): Open-RMF 작업 요청 스키마가 가장 이른 시작 시각과 우선순위만 두고 마감 시각 필드는 두지 않으므로, 요청 창구에서 받은 긴급도·기한을 순서 결정 입력으로 옮기는 규칙이 두 영역의 접점이 될 것으로 보인다. [추정][^ref-125]\\n\\n### [H. 실행·협업·예외 복구](../execution-collaboration-and-recovery/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [31. 사람–로봇 협업](../execution-collaboration-and-recovery/human-robot-collaboration.md): 다중 로봇 인터페이스 연구(Roldán 외, Sensors 2017-07-27)는 운영자 [상황 인식](../../glossary/situation-awareness.md)을 위한 설계 요건으로 정보 선별과 관련 정보로의 주의 유도를 들었으며, 이 연구의 몰입·예측 실험은 실험실 조건이다. [사실][^ref-1099]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md): Open-RMF 작업 상태 스키마는 blocked·error·failed·delayed·canceled·killed 를 포함한 12개 상태 값과 작업에 걸린 중단(interruptions)·취소·강제 종료 요청 기록, 시작·종료 시각을 담는다(2026-10-09 확인). [사실][^ref-111] 그래서 실행 결과 확인과 이상 탐지가 같은 기록을 쓰는 것으로 보인다. [추정][^ref-111]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md): Open-RMF 경보(Alert) 메시지는 심각도 등급(info 0·warning 1·error 2), 운영자가 고를 수 있는 응답 목록(responses_available), 관련 작업 id 를 담는다(2026-10-09 확인). [사실][^ref-448] 원인 판정 뒤의 운영자 선택이 이 메시지를 거쳐 복구 조치로 넘어가는 것으로 보인다. [추정][^ref-448]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [31. 사람–로봇 협업](../execution-collaboration-and-recovery/human-robot-collaboration.md): 다중 로봇 수색·구조 과제 실험(Mehrotra·Sycara·Lewis·Chien·Wang, HFES 2011)은 경보 없음, 경보 자유 표시, 최상위 경보만 보이는 의사결정 보조의 세 조건을 비교했고, 자유 표시 조건의 운영자가 고장과 피해자를 더 빨리 탐지했으며 탐색 면적과 발견한 피해자 수에는 차이가 없었다(실험실 시뮬레이션 조건). [사실][^ref-1363] 경보 관리 표준으로는 ANSI/ISA 18.2-2016 이 공정 산업 시설에서 제어 시스템을 거쳐 운영자에게 표시되는 경보 전체의 수명주기 관리 원칙과 절차를 정하지만 이는 공정 산업 표준이며, 다중 로봇 플릿에 특화된 경보 관리 표준은 2026-10-09 조사에서 찾지 못했다. [사실][^ref-1359] 로봇 운영용 경보 관리 표준이나 지침이 있는지는 [열린 질문](../../open-questions.md)에 새로 올렸다.\\n\\n### [I. 설계·시뮬레이션](../design-and-simulation/index.md)\\n\\n이 대분류와의 연결은 현재 상태 표현이 아니라 기록 재현과 가정한 미래의 설계 쪽이다.\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [36. 가상 시운전·실제 상황 재현](../design-and-simulation/virtual-commissioning-and-real-situation-replay.md): Open-RMF 작업 이벤트 로그는 작업·단계·사건의 3계층으로 나뉘고 [MCAP](../../glossary/mcap.md) 은 시각 색인을 둔 기록 형식이어서 37. 관제 화면·실행 기록이 남긴 기록은 시간축 재현의 입력이 될 수 있어 보이지만, 이 기록을 시뮬레이션 시나리오로 바꾸는 공개 형식은 확인되지 않았다. [추정][^ref-1094][^ref-1096] 변환 규칙은 열린 질문 oq-131 로 남아 있다.\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [35. 처리능력·규모·배치 설계](../design-and-simulation/capacity-sizing-and-layout-design.md)(물류창고): AMR 물류센터 플릿 규모 산정 시뮬레이션 연구(FAIM 2025)에서는 충전기가 부족하면 큰 지연이, 남으면 불필요한 비용이 생겼으며, 이는 시뮬레이션 결과다. [사실][^ref-102]\\n\\n### [K. 플랫폼 아키텍처·인프라](../platform-architecture-and-infrastructure/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md): Open-RMF 웹 대시보드의 API 서버(rmf-server)는 기본으로 메모리 안의 SQLite 를 쓰고 PostgreSQL·SQLite·MySQL·MariaDB 를 지원하므로, 실행 기록을 영속 저장하는 것은 배포 설정의 몫이다(2026-10-09 확인, 두 문서는 같은 프로젝트라 독립 출처가 아니다). [사실][^ref-762][^ref-302]\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md): ros2_tracing(Bédard·Lütkebohle·Dagenais, IEEE RA-L 2022)은 저부하 LTTng 추적기로 ROS 2 실행 정보를 모으며 모든 ROS 2 계측을 켰을 때 메시지 종단 지연 증가가 평균 0.0033 ms 였다고 보고했는데, 이는 저자 실험값이고 독립 재현은 미확인이다. [사실][^ref-1361] 플랫폼 서비스 쪽 [분산 추적](../../glossary/distributed-tracing.md)(OpenTelemetry)과 ROS 2 런타임 쪽 추적(ros2_tracing)은 서로 다른 계층의 실행 정보를 모으므로, 지연 원인 분석에 두 계층을 함께 쓰려면 작업 식별자로 기록을 잇는 관측성 설계가 필요할 것으로 보인다. [추정][^ref-447][^ref-1361] 두 계층을 이은 공개 사례는 열린 질문 oq-210 으로 남아 있다.\\n\\n### [L. AI·학습 기술](../ai-and-learning/index.md)\\n\\n분류 원문의 교차 규칙은 장애 분석을 38. 모니터링·이상 탐지·원인 분석에 적용되는 AI 연구 방법으로 둔다.\\n\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md): 대규모 언어 모델로 로봇 실패를 설명하고 수정하는 REFLECT(2023) 같은 [실패 설명](../../glossary/failure-explanation.md) 연구가 두 영역을 잇는 예가 될 것으로 보인다. [추정][^ref-453]\\n\\n### [M. 안전](../safety/index.md)\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md): Winfield 외(2022-05-13)의 [윤리적 블랙박스](../../glossary/ethical-black-box.md) 초안 공개 표준은 사고·아차 사고 조사를 돕기 위해 소셜 로봇의 센서·구동기·제어 결정 데이터를 안전하게 기록하는 장치나 소프트웨어 모듈을 제안하며, 초안 표준은 논문 부속서에 토론용 초안으로 실렸다. [사실][^ref-1360] 초록에는 플릿·플랫폼 수준 기록에 대한 언급이 없다(부속서 본문은 열람하지 않음). [사실][^ref-1360] 플랫폼 수준의 최소 기록 항목은 열린 질문 oq-252 로 남아 있다.\\n- 연계 대상: [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md): 40. 운영 절차·요청 창구 페이지는 로봇 교시·정비 작업 지침(산업안전보건기준에 관한 규칙 제222조)과 ANSI/A3 R15.08-3-2026 이 사용자에게 두는 운영 요구를 사업주·제조사 책임의 연계 대상으로 두므로, ROP는 요청·권한·기록 층으로 그 이행을 받쳐 주는 쪽인 것으로 보인다. [추정][^ref-1157][^ref-1153] 누가 이를 이행하는지는 열린 질문 oq-265 로 남아 있다.\\n\\n### [N. 보안·개인정보](../security-and-privacy/index.md)\\n\\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [52. 통신 보호·위협 관리·감사](../security-and-privacy/communication-protection-threat-management-and-audit.md): [사이버복원력법](../../glossary/cyber-resilience-act.md)은 2026-09-11부터 디지털 요소 제품의 제조자에게 실제 악용되는 취약점과 중대 보안 사고를 24시간 안에 조기 경보하게 하므로, 이상 탐지가 보안 사고를 가려내는 시점이 보고 의무와 맞물릴 가능성이 있으며 오케스트레이션 플랫폼의 제조자 해당 여부는 미확인이다. [추정][^ref-1236]\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [53. 개인정보·영상 데이터](../security-and-privacy/privacy-and-video-data.md)(물류창고): 창고 작업자 12명을 반구조화 면담한 연구(Malik·Brandão·Coopamootoo, 2026)는 로봇 운영에 따르는 데이터 감시에 대한 작업자 우려를 확인하고, 감시 활동 알림·개인정보 통제 같은 작업자 중심 요구를 제시했다. [사실][^ref-1278]\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md): Open-RMF API 서버(rmf-server)는 OpenID Connect 신원 공급자로 인증하고 권한은 앱 안에서 역할·동작·자원 권한 그룹으로 판정하며, 관리자는 모든 그룹에서 모든 동작을 할 수 있고 현재 모든 자원은 빈 문자열 기본 그룹에 들어간다(2026-10-09 확인). [사실][^ref-762]\\n\\n### [O. 검증·도입·수명주기](../verification-deployment-and-lifecycle/index.md)\\n\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [56. 운영 이관·확대·교육](../verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md)(상업 시설): 중국 고급 호텔 직원 19명 면담 연구(Fu·Zheng·Wong, 2022)에서는 로봇이 어느 부서 소속인지 불분명해 정비 책임과 부서 간 소통 부담이 생겼고, 근무 중 로봇 교육·동료 교육·고장 처리·고객 안내 같은 추가 업무가 직원의 사용 저항으로 이어졌다. [사실][^ref-1150] 운영 책임 조직과 교육의 연결은 열린 질문 oq-266·oq-278 로 남아 있다([역할 모호성](../../glossary/role-ambiguity.md) 참고).\\n\\n### [P. 거버넌스·법규·사회](../governance-law-and-society/index.md)\\n\\n- 연계 대상: [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md): 국내 병원·약국은 2018-05-18 입고 내역부터 마약류 취급 내역을 마약류통합관리시스템에 전산 보고하고 종전 마약류 관리대장은 2년간 보관한다고 2018-07-13 보도되었으며, 법령 원문과 현행 여부는 미확인이다. [사실][^ref-1364] 로봇 배송 이력이 이 보고·보관 대상에 드는지는 열린 질문 oq-239 로 남아 있다.\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md): 한국 근로자참여법 제20조가 신기계·기술 도입과 사업장 내 근로자 감시 설비 설치를 노사협의회 협의 사항으로 두므로, 성과 측정이 개별 작업자의 처리량·위치까지 기록하면 도입 전 노동자 참여 절차가 필요할 가능성이 있으며 법적 해당 여부는 미확인이다. [추정][^ref-1272][^ref-1278]\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md)(병원): 병원 자율 배송 로봇(TUG) 민족지 연구(Mutlu·Forlizzi, HRI 2008)에서 내과 병동은 업무 중단에 대한 낮은 허용도, 비용과 이익의 불일치, 통행이 많은 곳의 주행 중단 때문에 직원 저항을 보였고, 산후 병동은 로봇을 업무 흐름에 통합했다. [사실][^ref-1151]\\n\\n### [Q. 현장 유형별 적용](../site-type-applications/index.md)\\n\\nQ. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 현장에 공통인 운영·관제 기능은 J. 현장 운영·관제에 둔다. 이번 근거는 물류창고·제조 공장·병원·상업 시설에 한정되며 가정·실외·기타 현장의 근거는 없다.\\n\\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md): 국내 병원 현장에서 관제 시스템과 특수 물품 배송 이력 관리를 함께 개발하기로 한 협약이 2025-04-07 보도되었고, 37. 관제 화면·실행 기록 페이지가 찾은 현장 근거는 이 병원 사례 한 건뿐이다. [사실][^ref-1103]\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [61. 물류창고](../site-type-applications/warehouse.md): 로봇 이동형 풀필먼트 시스템 대기행렬 모델(Lamballais 외, 2017)에서는 처리량이 보관 구역 둘레의 작업대 위치에 영향을 받았으며, 이는 모델 연구로 현장 실측이 아니다. [사실][^ref-096] 협업형 AMR 피킹 해석 모델(Ghelichi·Kilaru, 2021)에서는 처리율·피킹 구역 크기·클러스터 크기가 성과를 가장 크게 좌우했으며, 이 역시 모델 연구로 현장 실측이 아니다. [사실][^ref-145]\\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [62. 제조 공장](../site-type-applications/manufacturing-plant.md): ISO 22400-2:2014 는 제조 운영 관리의 핵심성과지표 정의를 다루는 현행판이다. [사실][^ref-139] 에너지 관리 KPI 를 더한 개정 1(ISO 22400-2:2014/Amd 1:2017, 2017-04)이 있다. [사실][^ref-782] 개정판 ISO/DIS 22400-2 의 발행은 2026-09-26 확인 기준으로 확인되지 않았다. [사실][^ref-781] 이동로봇 플릿에 OEE 를 적용하는 합의된 정의는 열린 질문 oq-016 으로 남아 있다.\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md): 한림대학교성심병원은 전담 부서인 커맨드센터가 7종 73대의 서비스 로봇을 통합 관제로 운영해 의료진이 로봇을 직접 운용하지 않아도 되게 했다고 보도되었으며, 이는 2024년 보도 기준이고 두 보도가 병원 발표에서 나왔을 수 있어 독립 확인으로 보지 않는다. [사실][^ref-1199][^ref-944]\\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [64. 상업 시설](../site-type-applications/commercial-facilities.md): 미국 뉴욕 알로프트 호텔에서는 투숙객이 전화로 프런트에 요청하면 사람이 주문 물건과 객실 번호를 확인해 처리했고, 배송 로봇(Savioke Relay)은 객실 앞에 도착하면 객실 전화로 자동 알림을 보냈다(2017-04-18 보도). [사실][^ref-1152]\\n\\n### 아직 다루지 않은 연결\\n\\n- [B. 로봇 온톨로지](../robot-ontology/index.md) 전체(4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리): 게시된 페이지에 J. 현장 운영·관제와 잇는 근거가 없다.\\n- 이번 근거가 없는 세부영역: 41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 45. 문서·도면·장면 이해, 46. 예측·학습 기반 최적화, 49. 사람 근접 안전, 54. 시험·형식 검증·벤치마크, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터.\\n- Q. 현장 유형별 적용 가운데 65. 가정·공동주택, 66. 실외, 67. 기타 현장과의 연결 근거는 없다.\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-10-09\\n[^ref-096]: Lamballais, T., Roy, D., & de Koster, M. B. M., Estimating performance in a Robotic Mobile Fulfillment System, 2017, https://repub.eur.nl/pub/107376/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-102]: Springer(FAIM 2025 발표 논문, 저자 미확인), Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics, 2025, https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69, 접근일 2026-10-09 (원문 미열람)\\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\\n[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-10-09\\n[^ref-139]: ISO, ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions, 2014, https://www.iso.org/standard/54497.html, 접근일 2026-10-09 (원문 미열람)\\n[^ref-140]: ASCM, SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment, 미확인, https://scor.ascm.org/performance/reliability/RL.1.1, 접근일 2026-10-09 (원문 미열람)\\n[^ref-145]: Ghelichi, Z., & Kilaru, S., Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers, 2021, https://www.sciencedirect.com/science/article/pii/S0307904X20305801, 접근일 2026-10-09 (원문 미열람)\\n[^ref-146]: Omega 게재 논문(저자 미확인), The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority, 2024, https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336, 접근일 2026-10-09 (원문 미열람)\\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-10-09\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-09\\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-10-09\\n[^ref-302]: Open Robotics (open-rmf), rmf-web — README, 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09 (원문 미열람)\\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-10-09\\n[^ref-447]: OpenTelemetry (CNCF), OpenTelemetry Specification — Overview, 미확인, https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md, 접근일 2026-10-09\\n[^ref-448]: Open Robotics (open-rmf/rmf_internal_msgs), rmf_task_msgs/msg/Alert.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg, 접근일 2026-10-09\\n[^ref-449]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/connection.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema, 접근일 2026-10-09\\n[^ref-453]: Liu, Z., Bahety, A., & Song, S., REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction, 2023, https://arxiv.org/abs/2306.15724, 접근일 2026-10-09 (원문 미열람)\\n[^ref-494]: Francos, R. M., Garces, D., Akgün, O. E., Bastian, N. D., & Gil, S.(Harvard·JHU), Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems, 2026-08, https://arxiv.org/abs/2608.25690, 접근일 2026-10-09 (원문 미열람)\\n[^ref-569]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-10-09\\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\\n[^ref-781]: ISO, ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions, 미확인, https://www.iso.org/standard/87563.html, 접근일 2026-09-26 (원문 미열람)\\n[^ref-782]: ISO, ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management, 2017-04, https://www.iso.org/standard/68295.html, 접근일 2026-09-26 (원문 미열람)\\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1093]: Open Robotics (open-rmf/rmf_visualization), rmf_visualization — README, 미확인, https://github.com/open-rmf/rmf_visualization, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1094]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_log.json (Task Event Log), 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json, 접근일 2026-10-09\\n[^ref-1096]: MCAP 프로젝트 (Foxglove), MCAP Format Specification, 미확인, https://mcap.dev/spec, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1098]: Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022), Conflict-Based Search for Explainable Multi-Agent Path Finding, 2022-02, https://arxiv.org/abs/2202.09930, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1099]: Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8)), Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction, 2017-07-27, https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1103]: 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다, 2025-04-07, https://www.ajunews.com/view/20250407084333272, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1150]: Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management), The perils of hotel technology: The robot usage resistance model, 2022, https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1151]: Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008), Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction, 2008-03, https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1152]: 한국일보, “딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인), 2017-04-18, https://www.hankookilbo.com/news/article/201704180418820469, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1153]: ANSI (The ANSI Blog), ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications, 미확인, https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1154]: Proof News (Varsha Bansal), Meet the Robot That Nurses Unplugged, 2026-06-09, https://www.proofnews.org/moxi/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1157]: 고용노동부 (국가법령정보센터), 산업안전보건기준에 관한 규칙 제222조(교시 등), 2025-09-01, https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000727281&chrClsCd=010202, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1199]: ZDNet Korea, 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인), 2024-09-19, https://zdnet.co.kr/view/?no=20240919162124, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1236]: European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations, 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1272]: 대한민국 국회 (법률 제16320호, 케이스노트 게재), 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항), 2019-04-16, https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1278]: Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety, 2026, https://doi.org/10.1007/s12369-026-01359-1, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1359]: ISA (ANSI Webstore 게재), ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries, 2016, https://webstore.ansi.org/standards/isa/ansiisa182016, 접근일 2026-10-09\\n[^ref-1360]: Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv), An Ethical Black Box for Social Robots: a draft Open Standard, 2022-05-13, https://arxiv.org/abs/2205.06564, 접근일 2026-10-09\\n[^ref-1361]: Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L 7(3), arXiv), ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2, 2022-07, https://arxiv.org/abs/2201.00393, 접근일 2026-10-09\\n[^ref-1362]: TechTarget (Hannah Nelson, Xtelligent Healthcare Media), Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout, 2022-08-11, https://techtarget.com/searchhealthit/feature/Hospital-Looks-to-Cobot-EHR-Integration-to-Alleviate-Nurse-Burnout, 접근일 2026-10-09\\n[^ref-1363]: Mehrotra, S., Sycara, K., Lewis, M., Chien, S.-Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society), Effects of alarms on control of robot teams, 2011, https://d-scholarship.pitt.edu/12400/, 접근일 2026-10-09\\n[^ref-1364]: 데일리팜 (김지은), 마약통합시스템 시행 2개월…병원·약국 다빈도 질문은, 2018-07-13, https://dailypharm.com/user/news/85066, 접근일 2026-10-09\"}]}],\"changelog_entry\":\"2026-10-09 | J. 현장 운영·관제 | '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, B. 로봇 온톨로지 근거 없음 명시, 각주 47건, 1차 조건부 승인 수정 22건 반영) | run 2026-10-09-05\",\"index_updates\":{\"home_recent\":\"2026-10-09 — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결 정리, B. 로봇 온톨로지는 근거 미확보로 명시)\",\"category_recent\":\"2026-10-09 — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(37~40번 세부영역과 15개 대분류의 연결, 아직 다루지 않은 연결 목록 포함)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"alarm-management\",\"term_ko\":\"경보 관리\",\"term_en\":\"Alarm Management (ANSI/ISA 18.2)\",\"definition\":\"운영자에게 표시되는 경보를 정의·설계·운영·유지·변경하는 수명주기 전체를 관리하는 일로, 공정 산업에서는 ANSI/ISA 18.2-2016 이 일반 원칙과 절차를 정한다.\",\"description\":\"ANSI/ISA 18.2-2016 은 공정 산업 시설의 기본 공정 제어·경보판·화재·가스 패키지·안전계장 시스템 경보를 포함하는 공정 산업 표준이다. 다중 로봇 플릿에 특화된 경보 관리 표준은 2026-10-09 조사에서 찾지 못했다.\",\"related_areas\":[38,31],\"sources\":[\"ref-1359\"]},{\"action\":\"new\",\"slug\":\"runtime-tracing\",\"term_ko\":\"런타임 추적\",\"term_en\":\"Runtime Tracing (ros2_tracing)\",\"definition\":\"실행 중인 소프트웨어 내부의 콜백·메시지 전달 같은 실행 정보를 저부하 추적기로 기록하는 방법으로, ROS 2 에서는 LTTng 기반 ros2_tracing 이 이를 제공한다.\",\"description\":\"기존 용어 '분산 추적'이 플랫폼 서비스 사이의 요청 흐름(OpenTelemetry 등)을 다루는 것과 달리, 런타임 추적은 ROS 2 런타임 내부라는 다른 계층의 실행 정보를 모은다. 두 계층을 작업 식별자로 잇는 공개 사례는 미확인이다.\",\"related_areas\":[38,43],\"sources\":[\"ref-1361\",\"ref-447\"]}],\"reference_updates\":[{\"id\":\"ref-1359\",\"org\":\"ISA (ANSI Webstore 게재)\",\"title\":\"ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries\",\"published\":\"2016\",\"url\":\"https://webstore.ansi.org/standards/isa/ansiisa182016\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"공정 산업 시설에서 운영자에게 표시되는 경보 시스템의 수명주기 관리 원칙·절차를 정한 표준의 판매 소개 페이지. 본문은 유료라 소개 문구만 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1360\",\"org\":\"Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv)\",\"title\":\"An Ethical Black Box for Social Robots: a draft Open Standard\",\"published\":\"2022-05-13\",\"url\":\"https://arxiv.org/abs/2205.06564\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"사고·아차 사고 조사를 위해 소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록하는 윤리적 블랙박스의 초안 공개 표준. 초록만 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1361\",\"org\":\"Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L 7(3), arXiv)\",\"title\":\"ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2\",\"published\":\"2022-07\",\"url\":\"https://arxiv.org/abs/2201.00393\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"LTTng 기반 ROS 2 실행 정보 추적 도구와 계측. 저자 실험에서 평균 종단 지연 증가는 0.0033 ms 였다. 초록만 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1362\",\"org\":\"TechTarget (Hannah Nelson, Xtelligent Healthcare Media)\",\"title\":\"Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout\",\"published\":\"2022-08-11\",\"url\":\"https://techtarget.com/searchhealthit/feature/Hospital-Looks-to-Cobot-EHR-Integration-to-Alleviate-Nurse-Burnout\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"ChristianaCare 가 키오스크로 호출하던 Moxi 로봇을 Cerner 전자의무기록과 연동해 주문으로 출동시키려는 계획을 다룬 보도.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1363\",\"org\":\"Mehrotra, S., Sycara, K., Lewis, M., Chien, S.-Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society)\",\"title\":\"Effects of alarms on control of robot teams\",\"published\":\"2011\",\"url\":\"https://d-scholarship.pitt.edu/12400/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"다중 로봇 수색·구조 과제에서 경보 없음·자유 표시·최상위 경보만 표시 조건을 비교한 실험. 저장소의 초록을 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1364\",\"org\":\"데일리팜 (김지은)\",\"title\":\"마약통합시스템 시행 2개월…병원·약국 다빈도 질문은\",\"published\":\"2018-07-13\",\"url\":\"https://dailypharm.com/user/news/85066\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"2018-05-18 시행된 마약류통합관리시스템 전산 보고와 종전 마약류 관리대장 2년 보관, 과태료 유예를 다룬 보도.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"관제–이동로봇 통신 명세(main 3.0.0). visualization·state 토픽 분리 등.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 상태 메시지 JSON 스키마(오류 수준 등).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-096\",\"org\":\"Lamballais, T., Roy, D., & de Koster, M. B. M.\",\"title\":\"Estimating performance in a Robotic Mobile Fulfillment System\",\"published\":\"2017\",\"url\":\"https://repub.eur.nl/pub/107376/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. RMFS 대기행렬 모델로 작업대 위치 등이 처리량에 미치는 영향을 추정.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-102\",\"org\":\"Springer(FAIM 2025 발표 논문, 저자 미확인)\",\"title\":\"Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics\",\"published\":\"2025\",\"url\":\"https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 물류센터 AMR 플릿·충전기 규모를 시뮬레이션으로 산정한 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-111\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"작업 상태 값 12개, 시작·종료 시각, 단계, 중단·취소·강제 종료 기록을 담는 Open-RMF 작업 상태 스키마. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-125\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_request.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 작업 요청 스키마(가장 이른 시작 시각·우선순위·플릿 지정).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-139\",\"org\":\"ISO\",\"title\":\"ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions\",\"published\":\"2014\",\"url\":\"https://www.iso.org/standard/54497.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 제조 운영 관리 핵심성과지표의 정의와 설명.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-140\",\"org\":\"ASCM\",\"title\":\"SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment\",\"published\":null,\"url\":\"https://scor.ascm.org/performance/reliability/RL.1.1\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. SCOR 완전 주문 이행률 지표 정의.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-145\",\"org\":\"Ghelichi, Z., & Kilaru, S.\",\"title\":\"Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers\",\"published\":\"2021\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0307904X20305801\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 협업형 AMR 피킹의 해석적 성과 모델.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-146\",\"org\":\"Omega 게재 논문(저자 미확인)\",\"title\":\"The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority\",\"published\":\"2024\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. RMFS 에서 동적 우선순위 규칙의 에너지·처리량 효과를 모델·시뮬레이션으로 평가.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-148\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"로봇 상태 값 7개, 배터리, 현재 작업 id, 문제 목록, 위치, 기록 시각을 담는 로봇 상태 스키마. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"MassRobotics AMR 상호운용 표준 JSON 스키마(운용 상태 waitingExternalEvent 등).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-283\",\"org\":\"Open Robotics\",\"title\":\"Doors (integration_doors) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_doors.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 문 연동과 문 어댑터의 상태 감독자 역할 설명.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-302\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 웹 대시보드·API 서버 저장소 README(기본 비영속 저장). 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-313\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"문 모드 다섯 값(closed·moving·open·offline·unknown) 정의.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-447\",\"org\":\"OpenTelemetry (CNCF)\",\"title\":\"OpenTelemetry Specification — Overview\",\"published\":null,\"url\":\"https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"분산 서비스의 추적·지표·로그 신호와 컨텍스트 전파를 정의하는 명세 개요.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-448\",\"org\":\"Open Robotics (open-rmf/rmf_internal_msgs)\",\"title\":\"rmf_task_msgs/msg/Alert.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"심각도 등급(info·warning·error), 응답 목록, 관련 작업 id 를 담는 경보 메시지 정의. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-449\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/connection.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 연결 상태(ONLINE·OFFLINE·CONNECTION_BROKEN) 스키마.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-453\",\"org\":\"Liu, Z., Bahety, A., & Song, S.\",\"title\":\"REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction\",\"published\":\"2023\",\"url\":\"https://arxiv.org/abs/2306.15724\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 로봇 경험 요약과 대규모 언어 모델로 실패를 설명하고 수정하는 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-494\",\"org\":\"Francos, R. M., Garces, D., Akgün, O. E., Bastian, N. D., & Gil, S.(Harvard·JHU)\",\"title\":\"Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems\",\"published\":\"2026-08\",\"url\":\"https://arxiv.org/abs/2608.25690\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 위치 스푸핑 공격 모델과 신뢰 인지 모니터로 적대 에이전트를 계획에서 빼는 다중 로봇 롤아웃 계획 프리프린트.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-569\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"플릿 이름과 열고 닫을 차선 목록만 담는 차선 요청 메시지. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-762\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — packages/api-server/README.md\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"rmf-server 의 OIDC 인증, 앱 내 역할·동작·그룹 기반 권한 판정, 기본 메모리 내 SQLite 와 지원 데이터베이스를 설명한다. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-781\",\"org\":\"ISO\",\"title\":\"ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions\",\"published\":null,\"url\":\"https://www.iso.org/standard/87563.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 22400-2 개정판 초안(DIS) 페이지. 2026-09-26 확인 기준 새 판 발행은 확인되지 않았다.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-782\",\"org\":\"ISO\",\"title\":\"ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management\",\"published\":\"2017-04\",\"url\":\"https://www.iso.org/standard/68295.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 22400-2:2014 에 에너지 관리 KPI 를 더한 개정 1.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-944\",\"org\":\"로봇신문\",\"title\":\"국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'\",\"published\":\"2024-04-15\",\"url\":\"http://www.irobotnews.com/news/articleView.html?idxno=34601\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"한림대학교성심병원 커맨드센터의 서비스 로봇 통합 관제·요청 경로 보도. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1093\",\"org\":\"Open Robotics (open-rmf/rmf_visualization)\",\"title\":\"rmf_visualization — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_visualization\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"층 평면도 위에 로봇·문·승강기·주행 그래프·예측 궤적을 표시하는 Open-RMF 시각화 패키지 README. 브리프 기준 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1094\",\"org\":\"Open Robotics (open-rmf/rmf_api_msgs)\",\"title\":\"rmf_api_msgs schemas — task_log.json (Task Event Log)\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"작업·단계·사건 3계층 로그 구조를 정의한 작업 이벤트 로그 스키마. 이번 실행에서 원문을 다시 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1096\",\"org\":\"MCAP 프로젝트 (Foxglove)\",\"title\":\"MCAP Format Specification\",\"published\":null,\"url\":\"https://mcap.dev/spec\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"시각 색인을 둔 로봇 기록 컨테이너 형식 명세. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1098\",\"org\":\"Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022)\",\"title\":\"Conflict-Based Search for Explainable Multi-Agent Path Finding\",\"published\":\"2022-02\",\"url\":\"https://arxiv.org/abs/2202.09930\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"사람이 확인할 수 있게 나눠 보여 주는 설명 가능한 다중 에이전트 경로 계획 연구. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1099\",\"org\":\"Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8))\",\"title\":\"Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction\",\"published\":\"2017-07-27\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"다중 로봇 인터페이스의 몰입·예측이 운영자 상황 인식에 주는 영향을 실험한 연구. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1103\",\"org\":\"아주경제\",\"title\":\"현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다\",\"published\":\"2025-04-07\",\"url\":\"https://www.ajunews.com/view/20250407084333272\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"현대차·기아와 한림대학교의료원의 배송 로봇·관제·수령 인증·특수 물품 배송 이력 관리 공동 개발 협약 보도. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1150\",\"org\":\"Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)\",\"title\":\"The perils of hotel technology: The robot usage resistance model\",\"published\":\"2022\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"호텔 직원 면담으로 로봇 사용 저항 요인(역할 모호성·추가 업무 등)을 정리한 연구. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1151\",\"org\":\"Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008)\",\"title\":\"Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction\",\"published\":\"2008-03\",\"url\":\"https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"병원 자율 배송 로봇(TUG) 민족지 연구. 병동별 수용 차이를 업무 흐름·사회·환경 요인으로 설명. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1152\",\"org\":\"한국일보\",\"title\":\"“딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인)\",\"published\":\"2017-04-18\",\"url\":\"https://www.hankookilbo.com/news/article/201704180418820469\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"뉴욕 알로프트 호텔의 프런트 경유 요청과 배송 로봇(Savioke Relay) 운영 보도. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1153\",\"org\":\"ANSI (The ANSI Blog)\",\"title\":\"ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications\",\"published\":null,\"url\":\"https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 산업용 이동로봇 적용(사용자 측 요구) 표준 소개 글.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1154\",\"org\":\"Proof News (Varsha Bansal)\",\"title\":\"Meet the Robot That Nurses Unplugged\",\"published\":\"2026-06-09\",\"url\":\"https://www.proofnews.org/moxi/\",\"type\":\"기사\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"MultiCare 계열 병원의 Moxi 로봇 운영 문제(길 잃음, 승강기 버튼 조작 불가, 사람 동행)를 다룬 보도. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1157\",\"org\":\"고용노동부 (국가법령정보센터)\",\"title\":\"산업안전보건기준에 관한 규칙 제222조(교시 등)\",\"published\":\"2025-09-01\",\"url\":\"https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000727281&chrClsCd=010202\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"산업용 로봇 교시 등 작업 시 작업 지침 등을 정한 조항. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1199\",\"org\":\"ZDNet Korea\",\"title\":\"로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인)\",\"published\":\"2024-09-19\",\"url\":\"https://zdnet.co.kr/view/?no=20240919162124\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"한림대학교성심병원 커맨드센터의 7종 73대 로봇 운영과 누적 사용 건수 보도. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1236\",\"org\":\"European Commission (Shaping Europe's digital future)\",\"title\":\"Cyber Resilience Act - Reporting obligations\",\"published\":\"2026-09-11\",\"url\":\"https://digital-strategy.ec.europa.eu/en/policies/cra-reporting\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"EU 사이버복원력법의 취약점·중대 사고 보고 의무(24시간 조기 경보, 72시간 통지, 최종 보고) 안내. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1272\",\"org\":\"대한민국 국회 (법률 제16320호, 케이스노트 게재)\",\"title\":\"근로자참여 및 협력증진에 관한 법률 제20조(협의 사항)\",\"published\":\"2019-04-16\",\"url\":\"https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"노사협의회 협의 사항(신기계·기술 도입, 근로자 감시 설비 설치 등)을 정한 조항. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]},{\"id\":\"ref-1278\",\"org\":\"Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics)\",\"title\":\"Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety\",\"published\":\"2026\",\"url\":\"https://doi.org/10.1007/s12369-026-01359-1\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"창고 작업자 12명 면담으로 로봇 운영의 데이터 감시 우려와 작업자 중심 요구(수동 무시·개인정보 통제·감시 알림)를 확인한 연구. 이번 실행에서는 원문 미열람.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/index.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"다중 로봇 플릿 관제에서 경보 우선순위, 경보 홍수 기준, 경보 합리화 절차를 ANSI/ISA 18.2 처럼 정한 로봇 운영용 경보 관리 표준이나 공개 지침이 있는가?\",\"areas\":[38,31],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"전자의무기록 주문이 로봇 작업 요청을 자동으로 만드는 병원 연동에서 주문 취소·변경을 진행 중인 로봇 작업에 반영하고 결과를 기록에 되돌린 공개 사례가 있는가?\",\"areas\":[40,23,63],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[],\"standards_updates\":[{\"name\":\"ANSI/ISA 18.2-2016 공정 산업 경보 시스템 관리 (Management of Alarm Systems for the Process Industries)\",\"kind\":\"표준\",\"org\":\"ISA(International Society of Automation)\",\"url\":\"https://webstore.ansi.org/standards/isa/ansiisa182016\",\"related_areas\":[38,31],\"summary\":\"공정 산업 시설에서 제어 시스템을 거쳐 운영자에게 표시되는 경보 전체의 수명주기 관리 원칙과 절차를 정한 표준(2009년 판 개정). 공정 산업 표준이며 다중 로봇 플릿 적용은 확인되지 않았다.\",\"ref_id\":\"ref-1359\"}],\"additional_research_requests\":[\"대분류 페이지 '다른 대분류와의 연결' 절의 B. 로봇 온톨로지 항목: 4. 이기종 로봇 등록·5. 로봇 능력·작업 표현의 능력·상태 어휘가 37. 관제 화면·실행 기록의 표시나 38. 모니터링·이상 탐지·원인 분석의 원인 범주와 이어진다는 검증된 근거가 게시 페이지에 없어 '아직 다루지 않은 연결'로만 적었다. 두 대분류를 잇는 자료 조사가 필요하다.\",\"같은 절의 '아직 다루지 않은 연결'(41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 45. 문서·도면·장면 이해, 46. 예측·학습 기반 최적화, 49. 사람 근접 안전, 54. 시험·형식 검증·벤치마크, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터)과 가정·실외·기타 현장 유형 근거: 다음 대분류 연결 실행에서 J. 현장 운영·관제와의 연결 근거를 찾아야 한다.\",\"f25 의 오토스토어 경제성 수치(ref-150)는 벤더 주장이라 본문에서 뺐다. A. 기획·사업 연결에 쓸 독립 출처의 투자 효과 측정 자료(oq-017)가 필요하다.\",\"다음 영역 실행 후보(브리프 제안): 38. 모니터링·이상 탐지·원인 분석 10절에 f18·f19·f21·f22 반영, 37. 관제 화면·실행 기록 11절 oq-252 에 f10, oq-239 에 f11 근거 추가. 하루 갱신 상한으로 이번 실행에서는 대분류 페이지만 고쳤다.\",\"f11 마약류 관리대장 보관 기간은 2018년 기사 기준이다. 37. 관제 화면·실행 기록 ↔ 59. 법·규제·보험·라이선스 연결을 보강하려면 현행 마약류 관리법령 원문의 보관·보고 조항 확인이 필요하다.\"],\"fixes_applied\":[\"patches 대상 절 — 페이지 H2 와 같은 번호 없는 '다른 대분류와의 연결'로 patch(action replace)를 보내 '아직 작성되지 않음(에이전트가 채운다).'를 교체했고, 다른 절과 auto 마커는 건드리지 않았다.\",\"각주 정의 — 절에서 쓴 각주 47건을 '[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일 …' 형식으로 이번 patch 절 끝에 두었다. 이번 실행 브리프 출처는 접근일 2026-10-09, 브리프에 없는 기존 각주 ref-781·ref-782 는 실제 접근일인 2026-09-26 으로 적었다.\",\"원문 미열람 표시 — 지시된 26건과 ref-781·ref-782 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 에서도 source_unopened: true 로 두었다(ref-150 은 인용하지 않아 넣지 않음).\",\"f16 — 12개 상태 값과 중단·취소·강제 종료 기록은 [사실][^ref-111], '실행 결과 확인과 이상 탐지가 같은 기록을 쓴다'는 별도 문장 [추정][^ref-111]으로 H. 실행·협업·예외 복구 항목에 썼다.\",\"f17 — Alert 메시지 필드(심각도 등급·응답 목록·관련 작업 id)는 [사실][^ref-448], '운영자 선택이 복구 조치로 넘어간다'는 별도 문장 [추정][^ref-448]으로 분리했다.\",\"f26 — 로봇 상태 스키마 필드는 [사실][^ref-148], '가동률·충전·오류 시간 지표의 원천'은 별도 문장 [추정][^ref-148]으로 분리하고 A. 기획·사업 연결 절로 링크했다.\",\"f18 — '최상위 경보 하나만 보여 준 조건보다'를 빼고 비교한 세 조건, 자유 표시 조건의 빠른 탐지, 탐색 면적·피해자 수 무차이를 [사실][^ref-1363]으로 쓰고 실험실 시뮬레이션 조건을 붙였다.\",\"f10 — '초록에는 플릿·플랫폼 수준 기록에 대한 언급이 없다(부속서 본문 미열람)'로 좁혔고, 초안 표준이 논문 부속서에 토론용 초안으로 실렸음을 밝혔으며 용어집 '윤리적 블랙박스'로 링크했다.\",\"f11 — '연계 대상:'으로 시작하는 두 문장으로 줄이고 '2018-05-18 입고 내역부터 전산 보고, 종전 관리대장 2년 보관', 기준일 2018-07-13 보도, '법령 원문·현행 여부 미확인'을 병기했으며 로봇 배송 이력 해당 여부는 oq-239 로 남겼다.\",\"f33 — 개정 1(2017-04) 진술에 [^ref-782], ISO/DIS 22400-2 미발행 진술에 [^ref-781]을 붙이고 기준일을 '2026-09-26 확인'으로 두었다.\",\"f25 — ref-150 의 오토스토어 수치와 각주를 본문에 쓰지 않았고, 문장은 [추정][^ref-148]로만 썼다.\",\"f32 — Lamballais 외(2017)와 Ghelichi·Kilaru(2021)를 문장별로 나눠 연도를 밝히고 각각 '모델 연구로 현장 실측이 아니다'를 붙였다.\",\"f28·f22·f29·f41 — 각 문장 안에 '모델·시뮬레이션 조건의 저자 보고값이고 현장 실측이 아니다', '저자 실험값이며 독립 재현은 미확인', '시뮬레이션 결과', '2024년 보도 기준이고 병원 발표에서 나왔을 수 있어 독립 확인으로 보지 않는다'를 유지했다.\",\"추정·low finding — f3·f9·f20·f23·f24·f25·f31·f38 을 '것으로 보인다'·'가능성이 있다' 형태로만 썼고, f24 에 '오케스트레이션 플랫폼의 제조자 해당 여부는 미확인', f31 에 '법적 해당 여부는 미확인'을 병기했다.\",\"범위 경계 — f11·f38·f43 항목을 '연계 대상:'으로 시작해 짧게 썼고, f15 에서 문 개폐 제어를, f43 에서 승강기 조작을 연계 대상으로 밝혀 ROP 몫을 상태 확인·요청으로 한정했으며, f19 는 공정 산업 표준이고 로봇 플릿용 경보 관리 표준은 찾지 못했다고 쓰고 새 열린 질문과 이었다.\",\"18 대 34 구분 — E. 사물·사람·실시간 상태 항목 머리에 현재 상태 표현(18. 실시간 세계 상태·데이터 일관성) 쪽임을, I. 설계·시뮬레이션 항목 머리에 기록 재현·가정한 미래 쪽임을 밝혀 f13·f26 과 f2·f29 를 따로 썼다.\",\"L. AI·학습 기술 — 교차 규칙은 [분류원문] 인용 없이 태그 없는 서술로 쓰고, f23 은 38. 모니터링·이상 탐지·원인 분석과 47. AI·학습·적응과 모델 운영 페이지 양쪽으로 링크했다.\",\"'아직 다루지 않은 연결' 소절 — B. 로봇 온톨로지 전체(4~7 세부영역 이름 포함), 지시된 9개 세부영역, Q. 현장 유형별 적용의 가정·실외·기타 근거 부재를 번호와 이름으로 적었다.\",\"중복 각주 재사용 — f26·f28 은 ref-148·ref-146, f20 은 ref-494 를 쓰고 같은 단서 표현을 유지했으며 A. 기획·사업과 G. 계획·최적화의 '다른 대분류와의 연결' 절로 링크했다.\",\"표기 — 대분류는 문자와 이름, 세부영역은 번호와 이름을 함께 썼고(요약 표 포함), 링크는 docs/categories/field-operations-and-monitoring/index.md 기준 상대 경로(.md 포함)로 썼다. Mermaid 도식은 쓰지 않았다.\",\"직접 인용 — f34·f11·f19 를 포함한 모든 출처를 재서술로만 써서 출처당 1회 이하를 지켰다.\",\"새 열린 질문 2건(경보 관리 표준 — areas 38·31, EHR 주문 연동 취소·변경 — areas 40·23·63)을 open_question_updates 로 등록하고 본문에서 열린 질문 페이지로 연결했으며, 용어 '경보 관리'와 '런타임 추적'을 glossary_updates 로 내면서 '런타임 추적' 설명에 기존 '분산 추적'과 다른 계층(ROS 2 런타임 내부)임을 밝혔다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-09-05",
+    "outline": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/index.md",
+        "section": "다른 대분류와의 연결",
+        "budget_chars": 9000,
+        "summary": "J. 현장 운영·관제의 네 세부영역은 D·E·F에서 지도·현재 상태·제조사 신호를 받아 보여 주고, 판정·경보·지표를 G·H·I·K·L·M·N·P로 넘긴다. Open-RMF 상태·경보 스키마가 연결의 주된 근거다. [사실][^ref-148][^ref-448] B. 로봇 온톨로지와의 연결 근거는 없다.",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f27",
+          "f28",
+          "f29",
+          "f30",
+          "f31",
+          "f32",
+          "f33",
+          "f34",
+          "f35",
+          "f36",
+          "f37",
+          "f38",
+          "f39",
+          "f40",
+          "f41",
+          "f42",
+          "f43"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "'다른 대분류와의 연결' 절 신규 작성: 15개 대분류와의 연결(요약 표 + 대분류별 근거), B. 로봇 온톨로지와 근거 없는 세부영역을 '아직 다루지 않은 연결'로 명시, 절 끝에 각주 정의 47건",
+        "patches": [
+          {
+            "section": "다른 대분류와의 연결",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-031",
+                "ref-051",
+                "ref-096",
+                "ref-102",
+                "ref-111",
+                "ref-125",
+                "ref-139",
+                "ref-140",
+                "ref-145",
+                "ref-146",
+                "ref-148",
+                "ref-230",
+                "ref-283",
+                "ref-302",
+                "ref-313",
+                "ref-447",
+                "ref-448",
+                "ref-449",
+                "ref-453",
+                "ref-494",
+                "ref-569",
+                "ref-762",
+                "ref-781",
+                "ref-782",
+                "ref-944",
+                "ref-1093",
+                "ref-1094",
+                "ref-1096",
+                "ref-1098",
+                "ref-1099",
+                "ref-1103",
+                "ref-1150",
+                "ref-1151",
+                "ref-1152",
+                "ref-1153",
+                "ref-1154",
+                "ref-1157",
+                "ref-1199",
+                "ref-1236",
+                "ref-1272",
+                "ref-1278",
+                "ref-1359",
+                "ref-1360",
+                "ref-1361",
+                "ref-1362",
+                "ref-1363",
+                "ref-1364"
+              ]
+            },
+            "content": "J. 현장 운영·관제의 네 세부영역은 다른 대분류가 만든 지도·상태·계획·기록을 받아 운영자에게 보여 주고, 판정·경보·지표를 다시 다른 대분류로 넘긴다. 아래 연결은 게시된 세부영역 페이지(37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구)와 2026-10-09 조사·검증을 거친 주장에 기댄다. 대부분 단일 출처이거나 세부영역 페이지의 판단을 다시 인용한 것이므로, 두 영역이 이어진다고 해석한 문장은 추정 표기로 남겼다.\n\n### 한눈에 보기\n\n| 다른 대분류 | J. 현장 운영·관제 쪽 세부영역 | 상대 세부영역 |\n|---|---|---|\n| A. 기획·사업 | 39. 운영 성과 측정·개선 | 3. 경제성·조달·사업 모델 |\n| B. 로봇 온톨로지 | 근거 없음 | 아래 '아직 다루지 않은 연결' |\n| C. 채팅 기반 구성·운영 | 37. 관제 화면·실행 기록 | 11. 채팅으로 실제 상황 시뮬레이션 재현, 12. 채팅으로 업무 지시·오케스트레이션 |\n| D. 공간·지도 모델 | 37. 관제 화면·실행 기록, 40. 운영 절차·요청 창구 | 15. 지도·공간·위치 모델, 16. 장소 의미·지도 관리 |\n| E. 사물·사람·실시간 상태 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선 | 17. 작업 대상·자산 식별과 인계 추적, 18. 실시간 세계 상태·데이터 일관성 |\n| F. 연동 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 20. 로봇·제조사 관제 연동, 22. 설비·건물 시스템 연동, 23. 업무 시스템 연동 |\n| G. 계획·최적화 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 25. 작업 배정 — MRTA, 26. 작업 순서·스케줄링, 27. 다중 로봇 경로·교통 관리 — MAPF, 28. 공용 자원·충전·에너지 최적화 |\n| H. 실행·협업·예외 복구 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석 | 29. 명령·작업 실행의 신뢰성, 31. 사람–로봇 협업, 32. 예외 복구·재계획·업무 연속성 |\n| I. 설계·시뮬레이션 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선 | 35. 처리능력·규모·배치 설계, 36. 가상 시운전·실제 상황 재현 |\n| K. 플랫폼 아키텍처·인프라 | 37. 관제 화면·실행 기록, 38. 모니터링·이상 탐지·원인 분석 | 43. 데이터·관측성·배포 |\n| L. AI·학습 기술 | 38. 모니터링·이상 탐지·원인 분석 | 47. AI·학습·적응과 모델 운영 |\n| M. 안전 | 37. 관제 화면·실행 기록, 40. 운영 절차·요청 창구 | 50. 안전 표준·인증·사고 조사 |\n| N. 보안·개인정보 | 38. 모니터링·이상 탐지·원인 분석, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터 |\n| O. 검증·도입·수명주기 | 40. 운영 절차·요청 창구 | 56. 운영 이관·확대·교육 |\n| P. 거버넌스·법규·사회 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 59. 법·규제·보험·라이선스, 60. 노동·수용성·접근성 |\n| Q. 현장 유형별 적용 | 37. 관제 화면·실행 기록, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구 | 61. 물류창고, 62. 제조 공장, 63. 병원·의료, 64. 상업 시설 |\n\n### [A. 기획·사업](../planning-and-business/index.md)\n\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [3. 경제성·조달·사업 모델](../planning-and-business/economics-procurement-and-business-models.md): 39. 운영 성과 측정·개선 페이지는 투자 수익률·순현재가치·회수 기간 같은 재무 평가를 연계 대상으로 두고 ROP는 그 입력인 처리량·가동률·충전·예외 실행 데이터를 제공한다고 보므로, 운영 지표가 투자 효과 판단으로 넘어가는 지점에서 두 영역이 이어지는 것으로 보인다. [추정][^ref-148] 그 계량 데이터를 누가 재고 어떻게 합의하는지는 열린 질문 oq-268 로 남아 있다.\n\n### [B. 로봇 온톨로지](../robot-ontology/index.md)\n\n게시된 페이지에서 B. 로봇 온톨로지와 J. 현장 운영·관제를 잇는 검증된 근거를 찾지 못했다. 아래 '아직 다루지 않은 연결'에 적었다.\n\n### [C. 채팅 기반 구성·운영](../chat-based-configuration-and-operation/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [11. 채팅으로 실제 상황 시뮬레이션 재현](../chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md): 11. 채팅으로 실제 상황 시뮬레이션 재현은 재현 결과를 실제 기록의 시각·위치·사건 순서와 비교해야 하며, 그 실제 기록은 37. 관제 화면·실행 기록이 정규화해 저장하는 실행 기록에서 나올 것으로 보인다. [추정][^ref-1094][^ref-1096] 이 대화 기능이 부르는 엔진은 36. 가상 시운전·실제 상황 재현이므로 아래 I. 설계·시뮬레이션 항목과 함께 읽는다.\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [12. 채팅으로 업무 지시·오케스트레이션](../chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md): 12. 채팅으로 업무 지시·오케스트레이션이 진행 상황 질의에 실행 기록과 시각을 근거로 답할 때, Open-RMF 작업 상태 스키마의 상태 값, 시작·종료 시각, 단계 목록, 취소·강제 종료 기록이 그 답의 근거 자료가 될 것으로 보인다. [추정][^ref-111] 업무 지시가 부르는 엔진은 25. 작업 배정 — MRTA와 26. 작업 순서·스케줄링이다.\n\n### [D. 공간·지도 모델](../space-and-map-model/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [15. 지도·공간·위치 모델](../space-and-map-model/map-space-and-location-model.md): Open-RMF rmf_visualization 은 층 평면도 위에 로봇 위치, 문·승강기, 주행 그래프, 예측 궤적을 겹쳐 표시한다(발행일 미확인, 2026-10-09 확인). [사실][^ref-1093]\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [16. 장소 의미·지도 관리](../space-and-map-model/place-semantics-and-map-management.md): Open-RMF 차선 요청(LaneRequest)이 플릿 이름과 열고 닫을 차선 목록 세 필드만 두므로, 임시 통제 구역을 누가 왜 언제까지 닫았는지는 40. 운영 절차·요청 창구의 운영 기록이, 차선·구역 반영은 16. 장소 의미·지도 관리가 맡는 접점이 될 것으로 보인다. [추정][^ref-569] 통제 구역의 선언·해제 절차를 공개한 현장 사례는 열린 질문 oq-203 으로 남아 있다([차선 폐쇄](../../glossary/lane-closure.md) 참고).\n\n### [E. 사물·사람·실시간 상태](../objects-people-and-live-state/index.md)\n\n이 대분류와의 연결은 지금의 상태를 표현하는 18. 실시간 세계 상태·데이터 일관성 쪽이다. 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈 쪽 연결은 섞지 않고 아래 I. 설계·시뮬레이션 항목에 따로 둔다.\n\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md): Open-RMF 로봇 상태가 상태 값·문제 목록과 함께 기록 시각을 담으므로, 지연 원인 구분은 18. 실시간 세계 상태·데이터 일관성이 시각과 함께 유지하는 로봇·문·작업의 현재 상태를 같은 시간축에 맞춘 데이터를 쓸 것으로 보인다. [추정][^ref-148][^ref-051][^ref-313]\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md): Open-RMF 로봇 상태 스키마는 상태 값 7개(uninitialized·offline·shutdown·idle·charging·working·error), 0~1 범위의 배터리, 현재 작업 id, 문제 목록, 기록 시각을 담는다(2026-10-09 확인). [사실][^ref-148] 이 값이 가동률·충전·오류 시간 지표의 원천이 될 것으로 보인다. [추정][^ref-148] 같은 해석이 [A. 기획·사업의 '다른 대분류와의 연결'](../planning-and-business/index.md#다른-대분류와의-연결)에도 같은 각주로 실려 있다.\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)(병원): 현대차·기아와 한림대학교의료원이 안면 인식 기반 수령 인증과 특수 물품 배송 이력 관리 시스템을 함께 개발하기로 한 협약 보도(2025-04-07, 운영 결과 미확인)를 보면, 병원의 완료·인계 단계에서 수령인 확인과 배송 이력 기록이 한 기록으로 묶일 것으로 보인다. [추정][^ref-1103]\n\n### [F. 연동](../integration/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md): VDA 5050 3.0.0 은 차량 위치·계획 경로를 시각화 시스템에 보내는 visualization 토픽을 상태(state) 토픽과 따로 둔다(발행일 미확인, 2026-10-09 확인). [사실][^ref-031]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md): VDA 5050 의 오류 수준과 연결 상태(CONNECTION_BROKEN), MassRobotics 의 외부 사건 대기(waitingExternalEvent), Open-RMF 의 작업 지연·차단은 서로 다른 어휘로 보고되므로, 20. 로봇·제조사 관제 연동에서 들어온 신호를 ROP 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-111] 공통 매핑 표준은 확인되지 않았고 열린 질문 oq-033·oq-073 으로 남아 있다.\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md): Open-RMF 문 모드는 closed·moving·open·offline·unknown 다섯 값이고, 문 어댑터는 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다(2026-10-09 확인). [사실][^ref-313][^ref-283] 문 개폐 제어 자체는 시설·설비 제어 경계의 연계 대상이며, 이 연결에서 ROP 몫은 문 상태 확인과 작업 요청으로 한정된다.\n- 연계 대상: [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)(병원): 미국 MultiCare 계열 두 병원의 Moxi 로봇은 복도·층간 이동에서 길을 잃고 승강기 버튼을 스스로 누르지 못해 사람이 계속 따라다녀야 했다고 2026-06-09 보도되었다. [사실][^ref-1154] 승강기 조작은 시설·설비 제어 경계의 연계 대상이며, 40. 운영 절차·요청 창구 페이지도 승강기 연동을 이 영역 밖의 설비 연계로 둔다.\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [23. 업무 시스템 연동](../integration/business-system-integration.md)(물류창고): 로봇·작업 상태 기록만으로는 완전 주문 이행률·주문 이행 사이클 타임 같은 주문 단위 지표를 계산할 수 없으므로, 이 지표는 23. 업무 시스템 연동을 거쳐 WMS·ERP 주문 데이터와 이어야 계산될 것으로 보인다. [추정][^ref-140][^ref-148][^ref-111] 이를 실제로 검증한 공개 사례는 열린 질문 oq-015 로 남아 있다.\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [23. 업무 시스템 연동](../integration/business-system-integration.md)(병원): 미국 ChristianaCare 는 간호사가 키오스크에서 Moxi 로봇을 호출하던 방식에 더해, 로봇을 Cerner 전자의무기록과 연동해 주문이 들어오면 로봇이 물품을 가지러 가게 하는 계획을 밝혔다(2022-08-11 보도, 계획 단계이며 운영 결과 미확인). [사실][^ref-1362] 주문 취소·변경을 진행 중인 로봇 작업에 반영한 공개 사례가 있는지는 [열린 질문](../../open-questions.md)에 새로 올렸다.\n\n### [G. 계획·최적화](../planning-and-optimization/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md): [설명 가능한 다중 에이전트 경로 찾기](../../glossary/explainable-mapf.md) 연구(Kottinger·Almagor·Lahijanian, ICAPS 2022)는 경로 계획을 사람이 확인할 수 있게 나눠 보여 주는 설명 문제를 다루지만 알고리즘 수준의 연구다. [사실][^ref-1098]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [25. 작업 배정 — MRTA](../planning-and-optimization/task-allocation-mrta.md): 위치 스푸핑을 다룬 2026-08 프리프린트의 신뢰 인지 모니터가 위치 신뢰도와 실행 행동 증거를 결합해 에이전트를 분류하는 것으로 미루어, 실행 기록으로 이상 로봇을 가려 배정 후보에서 빼는 일이 두 영역의 접점이 될 것으로 보이며 물류센터 적용은 확인되지 않았다. [추정][^ref-494] 같은 연결이 [G. 계획·최적화의 '다른 대분류와의 연결'](../planning-and-optimization/index.md#다른-대분류와의-연결)에도 같은 각주로 실려 있고, 배정 전 검증 기준은 열린 질문 oq-082 로 남아 있다.\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [28. 공용 자원·충전·에너지 최적화](../planning-and-optimization/shared-resource-charging-and-energy-optimization.md)(물류창고): Omega(2024) 게재 연구는 로봇 이동형 풀필먼트 시스템에서 동적 우선순위 규칙이 선착순보다 에너지 소비를 3.41% 줄이고 처리량을 26.07% 높였다고 보고했으며, 이는 모델·시뮬레이션 조건의 저자 보고값이고 현장 실측이 아니다. [사실][^ref-146] A. 기획·사업 페이지의 연결 절에도 같은 값과 단서가 실려 있다.\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [26. 작업 순서·스케줄링](../planning-and-optimization/task-sequencing-and-scheduling.md): Open-RMF 작업 요청 스키마가 가장 이른 시작 시각과 우선순위만 두고 마감 시각 필드는 두지 않으므로, 요청 창구에서 받은 긴급도·기한을 순서 결정 입력으로 옮기는 규칙이 두 영역의 접점이 될 것으로 보인다. [추정][^ref-125]\n\n### [H. 실행·협업·예외 복구](../execution-collaboration-and-recovery/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [31. 사람–로봇 협업](../execution-collaboration-and-recovery/human-robot-collaboration.md): 다중 로봇 인터페이스 연구(Roldán 외, Sensors 2017-07-27)는 운영자 [상황 인식](../../glossary/situation-awareness.md)을 위한 설계 요건으로 정보 선별과 관련 정보로의 주의 유도를 들었으며, 이 연구의 몰입·예측 실험은 실험실 조건이다. [사실][^ref-1099]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md): Open-RMF 작업 상태 스키마는 blocked·error·failed·delayed·canceled·killed 를 포함한 12개 상태 값과 작업에 걸린 중단(interruptions)·취소·강제 종료 요청 기록, 시작·종료 시각을 담는다(2026-10-09 확인). [사실][^ref-111] 그래서 실행 결과 확인과 이상 탐지가 같은 기록을 쓰는 것으로 보인다. [추정][^ref-111]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md): Open-RMF 경보(Alert) 메시지는 심각도 등급(info 0·warning 1·error 2), 운영자가 고를 수 있는 응답 목록(responses_available), 관련 작업 id 를 담는다(2026-10-09 확인). [사실][^ref-448] 원인 판정 뒤의 운영자 선택이 이 메시지를 거쳐 복구 조치로 넘어가는 것으로 보인다. [추정][^ref-448]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [31. 사람–로봇 협업](../execution-collaboration-and-recovery/human-robot-collaboration.md): 다중 로봇 수색·구조 과제 실험(Mehrotra·Sycara·Lewis·Chien·Wang, HFES 2011)은 경보 없음, 경보 자유 표시, 최상위 경보만 보이는 의사결정 보조의 세 조건을 비교했고, 자유 표시 조건의 운영자가 고장과 피해자를 더 빨리 탐지했으며 탐색 면적과 발견한 피해자 수에는 차이가 없었다(실험실 시뮬레이션 조건). [사실][^ref-1363] 경보 관리 표준으로는 ANSI/ISA 18.2-2016 이 공정 산업 시설에서 제어 시스템을 거쳐 운영자에게 표시되는 경보 전체의 수명주기 관리 원칙과 절차를 정하지만 이는 공정 산업 표준이며, 다중 로봇 플릿에 특화된 경보 관리 표준은 2026-10-09 조사에서 찾지 못했다. [사실][^ref-1359] 로봇 운영용 경보 관리 표준이나 지침이 있는지는 [열린 질문](../../open-questions.md)에 새로 올렸다.\n\n### [I. 설계·시뮬레이션](../design-and-simulation/index.md)\n\n이 대분류와의 연결은 현재 상태 표현이 아니라 기록 재현과 가정한 미래의 설계 쪽이다.\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [36. 가상 시운전·실제 상황 재현](../design-and-simulation/virtual-commissioning-and-real-situation-replay.md): Open-RMF 작업 이벤트 로그는 작업·단계·사건의 3계층으로 나뉘고 [MCAP](../../glossary/mcap.md) 은 시각 색인을 둔 기록 형식이어서 37. 관제 화면·실행 기록이 남긴 기록은 시간축 재현의 입력이 될 수 있어 보이지만, 이 기록을 시뮬레이션 시나리오로 바꾸는 공개 형식은 확인되지 않았다. [추정][^ref-1094][^ref-1096] 변환 규칙은 열린 질문 oq-131 로 남아 있다.\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [35. 처리능력·규모·배치 설계](../design-and-simulation/capacity-sizing-and-layout-design.md)(물류창고): AMR 물류센터 플릿 규모 산정 시뮬레이션 연구(FAIM 2025)에서는 충전기가 부족하면 큰 지연이, 남으면 불필요한 비용이 생겼으며, 이는 시뮬레이션 결과다. [사실][^ref-102]\n\n### [K. 플랫폼 아키텍처·인프라](../platform-architecture-and-infrastructure/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md): Open-RMF 웹 대시보드의 API 서버(rmf-server)는 기본으로 메모리 안의 SQLite 를 쓰고 PostgreSQL·SQLite·MySQL·MariaDB 를 지원하므로, 실행 기록을 영속 저장하는 것은 배포 설정의 몫이다(2026-10-09 확인, 두 문서는 같은 프로젝트라 독립 출처가 아니다). [사실][^ref-762][^ref-302]\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md): ros2_tracing(Bédard·Lütkebohle·Dagenais, IEEE RA-L 2022)은 저부하 LTTng 추적기로 ROS 2 실행 정보를 모으며 모든 ROS 2 계측을 켰을 때 메시지 종단 지연 증가가 평균 0.0033 ms 였다고 보고했는데, 이는 저자 실험값이고 독립 재현은 미확인이다. [사실][^ref-1361] 플랫폼 서비스 쪽 [분산 추적](../../glossary/distributed-tracing.md)(OpenTelemetry)과 ROS 2 런타임 쪽 추적(ros2_tracing)은 서로 다른 계층의 실행 정보를 모으므로, 지연 원인 분석에 두 계층을 함께 쓰려면 작업 식별자로 기록을 잇는 관측성 설계가 필요할 것으로 보인다. [추정][^ref-447][^ref-1361] 두 계층을 이은 공개 사례는 열린 질문 oq-210 으로 남아 있다.\n\n### [L. AI·학습 기술](../ai-and-learning/index.md)\n\n분류 원문의 교차 규칙은 장애 분석을 38. 모니터링·이상 탐지·원인 분석에 적용되는 AI 연구 방법으로 둔다.\n\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md): 대규모 언어 모델로 로봇 실패를 설명하고 수정하는 REFLECT(2023) 같은 [실패 설명](../../glossary/failure-explanation.md) 연구가 두 영역을 잇는 예가 될 것으로 보인다. [추정][^ref-453]\n\n### [M. 안전](../safety/index.md)\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md): Winfield 외(2022-05-13)의 [윤리적 블랙박스](../../glossary/ethical-black-box.md) 초안 공개 표준은 사고·아차 사고 조사를 돕기 위해 소셜 로봇의 센서·구동기·제어 결정 데이터를 안전하게 기록하는 장치나 소프트웨어 모듈을 제안하며, 초안 표준은 논문 부속서에 토론용 초안으로 실렸다. [사실][^ref-1360] 초록에는 플릿·플랫폼 수준 기록에 대한 언급이 없다(부속서 본문은 열람하지 않음). [사실][^ref-1360] 플랫폼 수준의 최소 기록 항목은 열린 질문 oq-252 로 남아 있다.\n- 연계 대상: [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md): 40. 운영 절차·요청 창구 페이지는 로봇 교시·정비 작업 지침(산업안전보건기준에 관한 규칙 제222조)과 ANSI/A3 R15.08-3-2026 이 사용자에게 두는 운영 요구를 사업주·제조사 책임의 연계 대상으로 두므로, ROP는 요청·권한·기록 층으로 그 이행을 받쳐 주는 쪽인 것으로 보인다. [추정][^ref-1157][^ref-1153] 누가 이를 이행하는지는 열린 질문 oq-265 로 남아 있다.\n\n### [N. 보안·개인정보](../security-and-privacy/index.md)\n\n- [38. 모니터링·이상 탐지·원인 분석](monitoring-anomaly-detection-and-root-cause-analysis.md) ↔ [52. 통신 보호·위협 관리·감사](../security-and-privacy/communication-protection-threat-management-and-audit.md): [사이버복원력법](../../glossary/cyber-resilience-act.md)은 2026-09-11부터 디지털 요소 제품의 제조자에게 실제 악용되는 취약점과 중대 보안 사고를 24시간 안에 조기 경보하게 하므로, 이상 탐지가 보안 사고를 가려내는 시점이 보고 의무와 맞물릴 가능성이 있으며 오케스트레이션 플랫폼의 제조자 해당 여부는 미확인이다. [추정][^ref-1236]\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [53. 개인정보·영상 데이터](../security-and-privacy/privacy-and-video-data.md)(물류창고): 창고 작업자 12명을 반구조화 면담한 연구(Malik·Brandão·Coopamootoo, 2026)는 로봇 운영에 따르는 데이터 감시에 대한 작업자 우려를 확인하고, 감시 활동 알림·개인정보 통제 같은 작업자 중심 요구를 제시했다. [사실][^ref-1278]\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md): Open-RMF API 서버(rmf-server)는 OpenID Connect 신원 공급자로 인증하고 권한은 앱 안에서 역할·동작·자원 권한 그룹으로 판정하며, 관리자는 모든 그룹에서 모든 동작을 할 수 있고 현재 모든 자원은 빈 문자열 기본 그룹에 들어간다(2026-10-09 확인). [사실][^ref-762]\n\n### [O. 검증·도입·수명주기](../verification-deployment-and-lifecycle/index.md)\n\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [56. 운영 이관·확대·교육](../verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md)(상업 시설): 중국 고급 호텔 직원 19명 면담 연구(Fu·Zheng·Wong, 2022)에서는 로봇이 어느 부서 소속인지 불분명해 정비 책임과 부서 간 소통 부담이 생겼고, 근무 중 로봇 교육·동료 교육·고장 처리·고객 안내 같은 추가 업무가 직원의 사용 저항으로 이어졌다. [사실][^ref-1150] 운영 책임 조직과 교육의 연결은 열린 질문 oq-266·oq-278 로 남아 있다([역할 모호성](../../glossary/role-ambiguity.md) 참고).\n\n### [P. 거버넌스·법규·사회](../governance-law-and-society/index.md)\n\n- 연계 대상: [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md): 국내 병원·약국은 2018-05-18 입고 내역부터 마약류 취급 내역을 마약류통합관리시스템에 전산 보고하고 종전 마약류 관리대장은 2년간 보관한다고 2018-07-13 보도되었으며, 법령 원문과 현행 여부는 미확인이다. [사실][^ref-1364] 로봇 배송 이력이 이 보고·보관 대상에 드는지는 열린 질문 oq-239 로 남아 있다.\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md): 한국 근로자참여법 제20조가 신기계·기술 도입과 사업장 내 근로자 감시 설비 설치를 노사협의회 협의 사항으로 두므로, 성과 측정이 개별 작업자의 처리량·위치까지 기록하면 도입 전 노동자 참여 절차가 필요할 가능성이 있으며 법적 해당 여부는 미확인이다. [추정][^ref-1272][^ref-1278]\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md)(병원): 병원 자율 배송 로봇(TUG) 민족지 연구(Mutlu·Forlizzi, HRI 2008)에서 내과 병동은 업무 중단에 대한 낮은 허용도, 비용과 이익의 불일치, 통행이 많은 곳의 주행 중단 때문에 직원 저항을 보였고, 산후 병동은 로봇을 업무 흐름에 통합했다. [사실][^ref-1151]\n\n### [Q. 현장 유형별 적용](../site-type-applications/index.md)\n\nQ. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 현장에 공통인 운영·관제 기능은 J. 현장 운영·관제에 둔다. 이번 근거는 물류창고·제조 공장·병원·상업 시설에 한정되며 가정·실외·기타 현장의 근거는 없다.\n\n- [37. 관제 화면·실행 기록](control-screen-and-execution-records.md) ↔ [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md): 국내 병원 현장에서 관제 시스템과 특수 물품 배송 이력 관리를 함께 개발하기로 한 협약이 2025-04-07 보도되었고, 37. 관제 화면·실행 기록 페이지가 찾은 현장 근거는 이 병원 사례 한 건뿐이다. [사실][^ref-1103]\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [61. 물류창고](../site-type-applications/warehouse.md): 로봇 이동형 풀필먼트 시스템 대기행렬 모델(Lamballais 외, 2017)에서는 처리량이 보관 구역 둘레의 작업대 위치에 영향을 받았으며, 이는 모델 연구로 현장 실측이 아니다. [사실][^ref-096] 협업형 AMR 피킹 해석 모델(Ghelichi·Kilaru, 2021)에서는 처리율·피킹 구역 크기·클러스터 크기가 성과를 가장 크게 좌우했으며, 이 역시 모델 연구로 현장 실측이 아니다. [사실][^ref-145]\n- [39. 운영 성과 측정·개선](operational-performance-measurement-and-improvement.md) ↔ [62. 제조 공장](../site-type-applications/manufacturing-plant.md): ISO 22400-2:2014 는 제조 운영 관리의 핵심성과지표 정의를 다루는 현행판이다. [사실][^ref-139] 에너지 관리 KPI 를 더한 개정 1(ISO 22400-2:2014/Amd 1:2017, 2017-04)이 있다. [사실][^ref-782] 개정판 ISO/DIS 22400-2 의 발행은 2026-09-26 확인 기준으로 확인되지 않았다. [사실][^ref-781] 이동로봇 플릿에 OEE 를 적용하는 합의된 정의는 열린 질문 oq-016 으로 남아 있다.\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md): 한림대학교성심병원은 전담 부서인 커맨드센터가 7종 73대의 서비스 로봇을 통합 관제로 운영해 의료진이 로봇을 직접 운용하지 않아도 되게 했다고 보도되었으며, 이는 2024년 보도 기준이고 두 보도가 병원 발표에서 나왔을 수 있어 독립 확인으로 보지 않는다. [사실][^ref-1199][^ref-944]\n- [40. 운영 절차·요청 창구](operating-procedures-and-request-channels.md) ↔ [64. 상업 시설](../site-type-applications/commercial-facilities.md): 미국 뉴욕 알로프트 호텔에서는 투숙객이 전화로 프런트에 요청하면 사람이 주문 물건과 객실 번호를 확인해 처리했고, 배송 로봇(Savioke Relay)은 객실 앞에 도착하면 객실 전화로 자동 알림을 보냈다(2017-04-18 보도). [사실][^ref-1152]\n\n### 아직 다루지 않은 연결\n\n- [B. 로봇 온톨로지](../robot-ontology/index.md) 전체(4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리): 게시된 페이지에 J. 현장 운영·관제와 잇는 근거가 없다.\n- 이번 근거가 없는 세부영역: 41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 45. 문서·도면·장면 이해, 46. 예측·학습 기반 최적화, 49. 사람 근접 안전, 54. 시험·형식 검증·벤치마크, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터.\n- Q. 현장 유형별 적용 가운데 65. 가정·공동주택, 66. 실외, 67. 기타 현장과의 연결 근거는 없다.\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-10-09\n[^ref-096]: Lamballais, T., Roy, D., & de Koster, M. B. M., Estimating performance in a Robotic Mobile Fulfillment System, 2017, https://repub.eur.nl/pub/107376/, 접근일 2026-10-09 (원문 미열람)\n[^ref-102]: Springer(FAIM 2025 발표 논문, 저자 미확인), Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics, 2025, https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69, 접근일 2026-10-09 (원문 미열람)\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\n[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-10-09\n[^ref-139]: ISO, ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions, 2014, https://www.iso.org/standard/54497.html, 접근일 2026-10-09 (원문 미열람)\n[^ref-140]: ASCM, SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment, 미확인, https://scor.ascm.org/performance/reliability/RL.1.1, 접근일 2026-10-09 (원문 미열람)\n[^ref-145]: Ghelichi, Z., & Kilaru, S., Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers, 2021, https://www.sciencedirect.com/science/article/pii/S0307904X20305801, 접근일 2026-10-09 (원문 미열람)\n[^ref-146]: Omega 게재 논문(저자 미확인), The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority, 2024, https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336, 접근일 2026-10-09 (원문 미열람)\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-10-09\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-09\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-10-09\n[^ref-302]: Open Robotics (open-rmf), rmf-web — README, 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09 (원문 미열람)\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-10-09\n[^ref-447]: OpenTelemetry (CNCF), OpenTelemetry Specification — Overview, 미확인, https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md, 접근일 2026-10-09\n[^ref-448]: Open Robotics (open-rmf/rmf_internal_msgs), rmf_task_msgs/msg/Alert.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg, 접근일 2026-10-09\n[^ref-449]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/connection.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema, 접근일 2026-10-09\n[^ref-453]: Liu, Z., Bahety, A., & Song, S., REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction, 2023, https://arxiv.org/abs/2306.15724, 접근일 2026-10-09 (원문 미열람)\n[^ref-494]: Francos, R. M., Garces, D., Akgün, O. E., Bastian, N. D., & Gil, S.(Harvard·JHU), Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems, 2026-08, https://arxiv.org/abs/2608.25690, 접근일 2026-10-09 (원문 미열람)\n[^ref-569]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-10-09\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\n[^ref-781]: ISO, ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions, 미확인, https://www.iso.org/standard/87563.html, 접근일 2026-09-26 (원문 미열람)\n[^ref-782]: ISO, ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management, 2017-04, https://www.iso.org/standard/68295.html, 접근일 2026-09-26 (원문 미열람)\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\n[^ref-1093]: Open Robotics (open-rmf/rmf_visualization), rmf_visualization — README, 미확인, https://github.com/open-rmf/rmf_visualization, 접근일 2026-10-09 (원문 미열람)\n[^ref-1094]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_log.json (Task Event Log), 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json, 접근일 2026-10-09\n[^ref-1096]: MCAP 프로젝트 (Foxglove), MCAP Format Specification, 미확인, https://mcap.dev/spec, 접근일 2026-10-09 (원문 미열람)\n[^ref-1098]: Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022), Conflict-Based Search for Explainable Multi-Agent Path Finding, 2022-02, https://arxiv.org/abs/2202.09930, 접근일 2026-10-09 (원문 미열람)\n[^ref-1099]: Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8)), Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction, 2017-07-27, https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/, 접근일 2026-10-09 (원문 미열람)\n[^ref-1103]: 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다, 2025-04-07, https://www.ajunews.com/view/20250407084333272, 접근일 2026-10-09 (원문 미열람)\n[^ref-1150]: Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management), The perils of hotel technology: The robot usage resistance model, 2022, https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/, 접근일 2026-10-09 (원문 미열람)\n[^ref-1151]: Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008), Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction, 2008-03, https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf, 접근일 2026-10-09 (원문 미열람)\n[^ref-1152]: 한국일보, “딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인), 2017-04-18, https://www.hankookilbo.com/news/article/201704180418820469, 접근일 2026-10-09 (원문 미열람)\n[^ref-1153]: ANSI (The ANSI Blog), ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications, 미확인, https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/, 접근일 2026-10-09 (원문 미열람)\n[^ref-1154]: Proof News (Varsha Bansal), Meet the Robot That Nurses Unplugged, 2026-06-09, https://www.proofnews.org/moxi/, 접근일 2026-10-09 (원문 미열람)\n[^ref-1157]: 고용노동부 (국가법령정보센터), 산업안전보건기준에 관한 규칙 제222조(교시 등), 2025-09-01, https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000727281&chrClsCd=010202, 접근일 2026-10-09 (원문 미열람)\n[^ref-1199]: ZDNet Korea, 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인), 2024-09-19, https://zdnet.co.kr/view/?no=20240919162124, 접근일 2026-10-09 (원문 미열람)\n[^ref-1236]: European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations, 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting, 접근일 2026-10-09 (원문 미열람)\n[^ref-1272]: 대한민국 국회 (법률 제16320호, 케이스노트 게재), 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항), 2019-04-16, https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0, 접근일 2026-10-09 (원문 미열람)\n[^ref-1278]: Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety, 2026, https://doi.org/10.1007/s12369-026-01359-1, 접근일 2026-10-09 (원문 미열람)\n[^ref-1359]: ISA (ANSI Webstore 게재), ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries, 2016, https://webstore.ansi.org/standards/isa/ansiisa182016, 접근일 2026-10-09\n[^ref-1360]: Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv), An Ethical Black Box for Social Robots: a draft Open Standard, 2022-05-13, https://arxiv.org/abs/2205.06564, 접근일 2026-10-09\n[^ref-1361]: Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L 7(3), arXiv), ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2, 2022-07, https://arxiv.org/abs/2201.00393, 접근일 2026-10-09\n[^ref-1362]: TechTarget (Hannah Nelson, Xtelligent Healthcare Media), Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout, 2022-08-11, https://techtarget.com/searchhealthit/feature/Hospital-Looks-to-Cobot-EHR-Integration-to-Alleviate-Nurse-Burnout, 접근일 2026-10-09\n[^ref-1363]: Mehrotra, S., Sycara, K., Lewis, M., Chien, S.-Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society), Effects of alarms on control of robot teams, 2011, https://d-scholarship.pitt.edu/12400/, 접근일 2026-10-09\n[^ref-1364]: 데일리팜 (김지은), 마약통합시스템 시행 2개월…병원·약국 다빈도 질문은, 2018-07-13, https://dailypharm.com/user/news/85066, 접근일 2026-10-09"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-09 | J. 현장 운영·관제 | '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, B. 로봇 온톨로지 근거 없음 명시, 각주 47건, 1차 조건부 승인 수정 22건 반영) | run 2026-10-09-05",
+    "index_updates": {
+      "home_recent": "2026-10-09 — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결 정리, B. 로봇 온톨로지는 근거 미확보로 명시)",
+      "category_recent": "2026-10-09 — J. 현장 운영·관제: '다른 대분류와의 연결' 절 신규 작성(37~40번 세부영역과 15개 대분류의 연결, 아직 다루지 않은 연결 목록 포함)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "alarm-management",
+        "term_ko": "경보 관리",
+        "term_en": "Alarm Management (ANSI/ISA 18.2)",
+        "definition": "운영자에게 표시되는 경보를 정의·설계·운영·유지·변경하는 수명주기 전체를 관리하는 일로, 공정 산업에서는 ANSI/ISA 18.2-2016 이 일반 원칙과 절차를 정한다.",
+        "description": "ANSI/ISA 18.2-2016 은 공정 산업 시설의 기본 공정 제어·경보판·화재·가스 패키지·안전계장 시스템 경보를 포함하는 공정 산업 표준이다. 다중 로봇 플릿에 특화된 경보 관리 표준은 2026-10-09 조사에서 찾지 못했다.",
+        "related_areas": [
+          38,
+          31
+        ],
+        "sources": [
+          "ref-1359"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "runtime-tracing",
+        "term_ko": "런타임 추적",
+        "term_en": "Runtime Tracing (ros2_tracing)",
+        "definition": "실행 중인 소프트웨어 내부의 콜백·메시지 전달 같은 실행 정보를 저부하 추적기로 기록하는 방법으로, ROS 2 에서는 LTTng 기반 ros2_tracing 이 이를 제공한다.",
+        "description": "기존 용어 '분산 추적'이 플랫폼 서비스 사이의 요청 흐름(OpenTelemetry 등)을 다루는 것과 달리, 런타임 추적은 ROS 2 런타임 내부라는 다른 계층의 실행 정보를 모은다. 두 계층을 작업 식별자로 잇는 공개 사례는 미확인이다.",
+        "related_areas": [
+          38,
+          43
+        ],
+        "sources": [
+          "ref-1361",
+          "ref-447"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-1359",
+        "org": "ISA (ANSI Webstore 게재)",
+        "title": "ANSI/ISA 18.2-2016 Management of Alarm Systems for the Process Industries",
+        "published": "2016",
+        "url": "https://webstore.ansi.org/standards/isa/ansiisa182016",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "공정 산업 시설에서 운영자에게 표시되는 경보 시스템의 수명주기 관리 원칙·절차를 정한 표준의 판매 소개 페이지. 본문은 유료라 소개 문구만 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1360",
+        "org": "Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv)",
+        "title": "An Ethical Black Box for Social Robots: a draft Open Standard",
+        "published": "2022-05-13",
+        "url": "https://arxiv.org/abs/2205.06564",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "사고·아차 사고 조사를 위해 소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록하는 윤리적 블랙박스의 초안 공개 표준. 초록만 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1361",
+        "org": "Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L 7(3), arXiv)",
+        "title": "ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2",
+        "published": "2022-07",
+        "url": "https://arxiv.org/abs/2201.00393",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "LTTng 기반 ROS 2 실행 정보 추적 도구와 계측. 저자 실험에서 평균 종단 지연 증가는 0.0033 ms 였다. 초록만 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1362",
+        "org": "TechTarget (Hannah Nelson, Xtelligent Healthcare Media)",
+        "title": "Hospital Looks to 'Cobot' EHR Integration to Alleviate Nurse Burnout",
+        "published": "2022-08-11",
+        "url": "https://techtarget.com/searchhealthit/feature/Hospital-Looks-to-Cobot-EHR-Integration-to-Alleviate-Nurse-Burnout",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "ChristianaCare 가 키오스크로 호출하던 Moxi 로봇을 Cerner 전자의무기록과 연동해 주문으로 출동시키려는 계획을 다룬 보도.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1363",
+        "org": "Mehrotra, S., Sycara, K., Lewis, M., Chien, S.-Y., & Wang, H. (Proceedings of the Human Factors and Ergonomics Society)",
+        "title": "Effects of alarms on control of robot teams",
+        "published": "2011",
+        "url": "https://d-scholarship.pitt.edu/12400/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "다중 로봇 수색·구조 과제에서 경보 없음·자유 표시·최상위 경보만 표시 조건을 비교한 실험. 저장소의 초록을 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1364",
+        "org": "데일리팜 (김지은)",
+        "title": "마약통합시스템 시행 2개월…병원·약국 다빈도 질문은",
+        "published": "2018-07-13",
+        "url": "https://dailypharm.com/user/news/85066",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "2018-05-18 시행된 마약류통합관리시스템 전산 보고와 종전 마약류 관리대장 2년 보관, 과태료 유예를 다룬 보도.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "관제–이동로봇 통신 명세(main 3.0.0). visualization·state 토픽 분리 등.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 상태 메시지 JSON 스키마(오류 수준 등).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-096",
+        "org": "Lamballais, T., Roy, D., & de Koster, M. B. M.",
+        "title": "Estimating performance in a Robotic Mobile Fulfillment System",
+        "published": "2017",
+        "url": "https://repub.eur.nl/pub/107376/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. RMFS 대기행렬 모델로 작업대 위치 등이 처리량에 미치는 영향을 추정.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-102",
+        "org": "Springer(FAIM 2025 발표 논문, 저자 미확인)",
+        "title": "Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics",
+        "published": "2025",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 물류센터 AMR 플릿·충전기 규모를 시뮬레이션으로 산정한 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-111",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "작업 상태 값 12개, 시작·종료 시각, 단계, 중단·취소·강제 종료 기록을 담는 Open-RMF 작업 상태 스키마. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-125",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 작업 요청 스키마(가장 이른 시작 시각·우선순위·플릿 지정).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-139",
+        "org": "ISO",
+        "title": "ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+        "published": "2014",
+        "url": "https://www.iso.org/standard/54497.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 제조 운영 관리 핵심성과지표의 정의와 설명.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-140",
+        "org": "ASCM",
+        "title": "SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment",
+        "published": null,
+        "url": "https://scor.ascm.org/performance/reliability/RL.1.1",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. SCOR 완전 주문 이행률 지표 정의.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-145",
+        "org": "Ghelichi, Z., & Kilaru, S.",
+        "title": "Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers",
+        "published": "2021",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0307904X20305801",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 협업형 AMR 피킹의 해석적 성과 모델.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-146",
+        "org": "Omega 게재 논문(저자 미확인)",
+        "title": "The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority",
+        "published": "2024",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. RMFS 에서 동적 우선순위 규칙의 에너지·처리량 효과를 모델·시뮬레이션으로 평가.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-148",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "로봇 상태 값 7개, 배터리, 현재 작업 id, 문제 목록, 위치, 기록 시각을 담는 로봇 상태 스키마. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마(운용 상태 waitingExternalEvent 등).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-283",
+        "org": "Open Robotics",
+        "title": "Doors (integration_doors) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_doors.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 문 연동과 문 어댑터의 상태 감독자 역할 설명.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-302",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 웹 대시보드·API 서버 저장소 README(기본 비영속 저장). 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-313",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "문 모드 다섯 값(closed·moving·open·offline·unknown) 정의.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-447",
+        "org": "OpenTelemetry (CNCF)",
+        "title": "OpenTelemetry Specification — Overview",
+        "published": null,
+        "url": "https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "분산 서비스의 추적·지표·로그 신호와 컨텍스트 전파를 정의하는 명세 개요.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-448",
+        "org": "Open Robotics (open-rmf/rmf_internal_msgs)",
+        "title": "rmf_task_msgs/msg/Alert.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "심각도 등급(info·warning·error), 응답 목록, 관련 작업 id 를 담는 경보 메시지 정의. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-449",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/connection.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 연결 상태(ONLINE·OFFLINE·CONNECTION_BROKEN) 스키마.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-453",
+        "org": "Liu, Z., Bahety, A., & Song, S.",
+        "title": "REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction",
+        "published": "2023",
+        "url": "https://arxiv.org/abs/2306.15724",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 로봇 경험 요약과 대규모 언어 모델로 실패를 설명하고 수정하는 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-494",
+        "org": "Francos, R. M., Garces, D., Akgün, O. E., Bastian, N. D., & Gil, S.(Harvard·JHU)",
+        "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+        "published": "2026-08",
+        "url": "https://arxiv.org/abs/2608.25690",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 위치 스푸핑 공격 모델과 신뢰 인지 모니터로 적대 에이전트를 계획에서 빼는 다중 로봇 롤아웃 계획 프리프린트.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-569",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "플릿 이름과 열고 닫을 차선 목록만 담는 차선 요청 메시지. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-762",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — packages/api-server/README.md",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "rmf-server 의 OIDC 인증, 앱 내 역할·동작·그룹 기반 권한 판정, 기본 메모리 내 SQLite 와 지원 데이터베이스를 설명한다. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-781",
+        "org": "ISO",
+        "title": "ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+        "published": null,
+        "url": "https://www.iso.org/standard/87563.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 22400-2 개정판 초안(DIS) 페이지. 2026-09-26 확인 기준 새 판 발행은 확인되지 않았다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-782",
+        "org": "ISO",
+        "title": "ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management",
+        "published": "2017-04",
+        "url": "https://www.iso.org/standard/68295.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 22400-2:2014 에 에너지 관리 KPI 를 더한 개정 1.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-944",
+        "org": "로봇신문",
+        "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'",
+        "published": "2024-04-15",
+        "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "한림대학교성심병원 커맨드센터의 서비스 로봇 통합 관제·요청 경로 보도. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1093",
+        "org": "Open Robotics (open-rmf/rmf_visualization)",
+        "title": "rmf_visualization — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_visualization",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "층 평면도 위에 로봇·문·승강기·주행 그래프·예측 궤적을 표시하는 Open-RMF 시각화 패키지 README. 브리프 기준 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1094",
+        "org": "Open Robotics (open-rmf/rmf_api_msgs)",
+        "title": "rmf_api_msgs schemas — task_log.json (Task Event Log)",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "작업·단계·사건 3계층 로그 구조를 정의한 작업 이벤트 로그 스키마. 이번 실행에서 원문을 다시 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1096",
+        "org": "MCAP 프로젝트 (Foxglove)",
+        "title": "MCAP Format Specification",
+        "published": null,
+        "url": "https://mcap.dev/spec",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "시각 색인을 둔 로봇 기록 컨테이너 형식 명세. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1098",
+        "org": "Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022)",
+        "title": "Conflict-Based Search for Explainable Multi-Agent Path Finding",
+        "published": "2022-02",
+        "url": "https://arxiv.org/abs/2202.09930",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "사람이 확인할 수 있게 나눠 보여 주는 설명 가능한 다중 에이전트 경로 계획 연구. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1099",
+        "org": "Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8))",
+        "title": "Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction",
+        "published": "2017-07-27",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "다중 로봇 인터페이스의 몰입·예측이 운영자 상황 인식에 주는 영향을 실험한 연구. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1103",
+        "org": "아주경제",
+        "title": "현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다",
+        "published": "2025-04-07",
+        "url": "https://www.ajunews.com/view/20250407084333272",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "현대차·기아와 한림대학교의료원의 배송 로봇·관제·수령 인증·특수 물품 배송 이력 관리 공동 개발 협약 보도. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1150",
+        "org": "Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)",
+        "title": "The perils of hotel technology: The robot usage resistance model",
+        "published": "2022",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "호텔 직원 면담으로 로봇 사용 저항 요인(역할 모호성·추가 업무 등)을 정리한 연구. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1151",
+        "org": "Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008)",
+        "title": "Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction",
+        "published": "2008-03",
+        "url": "https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "병원 자율 배송 로봇(TUG) 민족지 연구. 병동별 수용 차이를 업무 흐름·사회·환경 요인으로 설명. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1152",
+        "org": "한국일보",
+        "title": "“딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인)",
+        "published": "2017-04-18",
+        "url": "https://www.hankookilbo.com/news/article/201704180418820469",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "뉴욕 알로프트 호텔의 프런트 경유 요청과 배송 로봇(Savioke Relay) 운영 보도. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1153",
+        "org": "ANSI (The ANSI Blog)",
+        "title": "ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications",
+        "published": null,
+        "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 산업용 이동로봇 적용(사용자 측 요구) 표준 소개 글.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1154",
+        "org": "Proof News (Varsha Bansal)",
+        "title": "Meet the Robot That Nurses Unplugged",
+        "published": "2026-06-09",
+        "url": "https://www.proofnews.org/moxi/",
+        "type": "기사",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "MultiCare 계열 병원의 Moxi 로봇 운영 문제(길 잃음, 승강기 버튼 조작 불가, 사람 동행)를 다룬 보도. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1157",
+        "org": "고용노동부 (국가법령정보센터)",
+        "title": "산업안전보건기준에 관한 규칙 제222조(교시 등)",
+        "published": "2025-09-01",
+        "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000727281&chrClsCd=010202",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "산업용 로봇 교시 등 작업 시 작업 지침 등을 정한 조항. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1199",
+        "org": "ZDNet Korea",
+        "title": "로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인)",
+        "published": "2024-09-19",
+        "url": "https://zdnet.co.kr/view/?no=20240919162124",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "한림대학교성심병원 커맨드센터의 7종 73대 로봇 운영과 누적 사용 건수 보도. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1236",
+        "org": "European Commission (Shaping Europe's digital future)",
+        "title": "Cyber Resilience Act - Reporting obligations",
+        "published": "2026-09-11",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "EU 사이버복원력법의 취약점·중대 사고 보고 의무(24시간 조기 경보, 72시간 통지, 최종 보고) 안내. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1272",
+        "org": "대한민국 국회 (법률 제16320호, 케이스노트 게재)",
+        "title": "근로자참여 및 협력증진에 관한 법률 제20조(협의 사항)",
+        "published": "2019-04-16",
+        "url": "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "노사협의회 협의 사항(신기계·기술 도입, 근로자 감시 설비 설치 등)을 정한 조항. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      },
+      {
+        "id": "ref-1278",
+        "org": "Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics)",
+        "title": "Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety",
+        "published": "2026",
+        "url": "https://doi.org/10.1007/s12369-026-01359-1",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "창고 작업자 12명 면담으로 로봇 운영의 데이터 감시 우려와 작업자 중심 요구(수동 무시·개인정보 통제·감시 알림)를 확인한 연구. 이번 실행에서는 원문 미열람.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/index.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "다중 로봇 플릿 관제에서 경보 우선순위, 경보 홍수 기준, 경보 합리화 절차를 ANSI/ISA 18.2 처럼 정한 로봇 운영용 경보 관리 표준이나 공개 지침이 있는가?",
+        "areas": [
+          38,
+          31
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "전자의무기록 주문이 로봇 작업 요청을 자동으로 만드는 병원 연동에서 주문 취소·변경을 진행 중인 로봇 작업에 반영하고 결과를 기록에 되돌린 공개 사례가 있는가?",
+        "areas": [
+          40,
+          23,
+          63
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [],
+    "standards_updates": [
+      {
+        "name": "ANSI/ISA 18.2-2016 공정 산업 경보 시스템 관리 (Management of Alarm Systems for the Process Industries)",
+        "kind": "표준",
+        "org": "ISA(International Society of Automation)",
+        "url": "https://webstore.ansi.org/standards/isa/ansiisa182016",
+        "related_areas": [
+          38,
+          31
+        ],
+        "summary": "공정 산업 시설에서 제어 시스템을 거쳐 운영자에게 표시되는 경보 전체의 수명주기 관리 원칙과 절차를 정한 표준(2009년 판 개정). 공정 산업 표준이며 다중 로봇 플릿 적용은 확인되지 않았다.",
+        "ref_id": "ref-1359"
+      }
+    ],
+    "additional_research_requests": [
+      "대분류 페이지 '다른 대분류와의 연결' 절의 B. 로봇 온톨로지 항목: 4. 이기종 로봇 등록·5. 로봇 능력·작업 표현의 능력·상태 어휘가 37. 관제 화면·실행 기록의 표시나 38. 모니터링·이상 탐지·원인 분석의 원인 범주와 이어진다는 검증된 근거가 게시 페이지에 없어 '아직 다루지 않은 연결'로만 적었다. 두 대분류를 잇는 자료 조사가 필요하다.",
+      "같은 절의 '아직 다루지 않은 연결'(41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 45. 문서·도면·장면 이해, 46. 예측·학습 기반 최적화, 49. 사람 근접 안전, 54. 시험·형식 검증·벤치마크, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터)과 가정·실외·기타 현장 유형 근거: 다음 대분류 연결 실행에서 J. 현장 운영·관제와의 연결 근거를 찾아야 한다.",
+      "f25 의 오토스토어 경제성 수치(ref-150)는 벤더 주장이라 본문에서 뺐다. A. 기획·사업 연결에 쓸 독립 출처의 투자 효과 측정 자료(oq-017)가 필요하다.",
+      "다음 영역 실행 후보(브리프 제안): 38. 모니터링·이상 탐지·원인 분석 10절에 f18·f19·f21·f22 반영, 37. 관제 화면·실행 기록 11절 oq-252 에 f10, oq-239 에 f11 근거 추가. 하루 갱신 상한으로 이번 실행에서는 대분류 페이지만 고쳤다.",
+      "f11 마약류 관리대장 보관 기간은 2018년 기사 기준이다. 37. 관제 화면·실행 기록 ↔ 59. 법·규제·보험·라이선스 연결을 보강하려면 현행 마약류 관리법령 원문의 보관·보고 조항 확인이 필요하다."
+    ],
+    "fixes_applied": [
+      "patches 대상 절 — 페이지 H2 와 같은 번호 없는 '다른 대분류와의 연결'로 patch(action replace)를 보내 '아직 작성되지 않음(에이전트가 채운다).'를 교체했고, 다른 절과 auto 마커는 건드리지 않았다.",
+      "각주 정의 — 절에서 쓴 각주 47건을 '[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일 …' 형식으로 이번 patch 절 끝에 두었다. 이번 실행 브리프 출처는 접근일 2026-10-09, 브리프에 없는 기존 각주 ref-781·ref-782 는 실제 접근일인 2026-09-26 으로 적었다.",
+      "원문 미열람 표시 — 지시된 26건과 ref-781·ref-782 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 에서도 source_unopened: true 로 두었다(ref-150 은 인용하지 않아 넣지 않음).",
+      "f16 — 12개 상태 값과 중단·취소·강제 종료 기록은 [사실][^ref-111], '실행 결과 확인과 이상 탐지가 같은 기록을 쓴다'는 별도 문장 [추정][^ref-111]으로 H. 실행·협업·예외 복구 항목에 썼다.",
+      "f17 — Alert 메시지 필드(심각도 등급·응답 목록·관련 작업 id)는 [사실][^ref-448], '운영자 선택이 복구 조치로 넘어간다'는 별도 문장 [추정][^ref-448]으로 분리했다.",
+      "f26 — 로봇 상태 스키마 필드는 [사실][^ref-148], '가동률·충전·오류 시간 지표의 원천'은 별도 문장 [추정][^ref-148]으로 분리하고 A. 기획·사업 연결 절로 링크했다.",
+      "f18 — '최상위 경보 하나만 보여 준 조건보다'를 빼고 비교한 세 조건, 자유 표시 조건의 빠른 탐지, 탐색 면적·피해자 수 무차이를 [사실][^ref-1363]으로 쓰고 실험실 시뮬레이션 조건을 붙였다.",
+      "f10 — '초록에는 플릿·플랫폼 수준 기록에 대한 언급이 없다(부속서 본문 미열람)'로 좁혔고, 초안 표준이 논문 부속서에 토론용 초안으로 실렸음을 밝혔으며 용어집 '윤리적 블랙박스'로 링크했다.",
+      "f11 — '연계 대상:'으로 시작하는 두 문장으로 줄이고 '2018-05-18 입고 내역부터 전산 보고, 종전 관리대장 2년 보관', 기준일 2018-07-13 보도, '법령 원문·현행 여부 미확인'을 병기했으며 로봇 배송 이력 해당 여부는 oq-239 로 남겼다.",
+      "f33 — 개정 1(2017-04) 진술에 [^ref-782], ISO/DIS 22400-2 미발행 진술에 [^ref-781]을 붙이고 기준일을 '2026-09-26 확인'으로 두었다.",
+      "f25 — ref-150 의 오토스토어 수치와 각주를 본문에 쓰지 않았고, 문장은 [추정][^ref-148]로만 썼다.",
+      "f32 — Lamballais 외(2017)와 Ghelichi·Kilaru(2021)를 문장별로 나눠 연도를 밝히고 각각 '모델 연구로 현장 실측이 아니다'를 붙였다.",
+      "f28·f22·f29·f41 — 각 문장 안에 '모델·시뮬레이션 조건의 저자 보고값이고 현장 실측이 아니다', '저자 실험값이며 독립 재현은 미확인', '시뮬레이션 결과', '2024년 보도 기준이고 병원 발표에서 나왔을 수 있어 독립 확인으로 보지 않는다'를 유지했다.",
+      "추정·low finding — f3·f9·f20·f23·f24·f25·f31·f38 을 '것으로 보인다'·'가능성이 있다' 형태로만 썼고, f24 에 '오케스트레이션 플랫폼의 제조자 해당 여부는 미확인', f31 에 '법적 해당 여부는 미확인'을 병기했다.",
+      "범위 경계 — f11·f38·f43 항목을 '연계 대상:'으로 시작해 짧게 썼고, f15 에서 문 개폐 제어를, f43 에서 승강기 조작을 연계 대상으로 밝혀 ROP 몫을 상태 확인·요청으로 한정했으며, f19 는 공정 산업 표준이고 로봇 플릿용 경보 관리 표준은 찾지 못했다고 쓰고 새 열린 질문과 이었다.",
+      "18 대 34 구분 — E. 사물·사람·실시간 상태 항목 머리에 현재 상태 표현(18. 실시간 세계 상태·데이터 일관성) 쪽임을, I. 설계·시뮬레이션 항목 머리에 기록 재현·가정한 미래 쪽임을 밝혀 f13·f26 과 f2·f29 를 따로 썼다.",
+      "L. AI·학습 기술 — 교차 규칙은 [분류원문] 인용 없이 태그 없는 서술로 쓰고, f23 은 38. 모니터링·이상 탐지·원인 분석과 47. AI·학습·적응과 모델 운영 페이지 양쪽으로 링크했다.",
+      "'아직 다루지 않은 연결' 소절 — B. 로봇 온톨로지 전체(4~7 세부영역 이름 포함), 지시된 9개 세부영역, Q. 현장 유형별 적용의 가정·실외·기타 근거 부재를 번호와 이름으로 적었다.",
+      "중복 각주 재사용 — f26·f28 은 ref-148·ref-146, f20 은 ref-494 를 쓰고 같은 단서 표현을 유지했으며 A. 기획·사업과 G. 계획·최적화의 '다른 대분류와의 연결' 절로 링크했다.",
+      "표기 — 대분류는 문자와 이름, 세부영역은 번호와 이름을 함께 썼고(요약 표 포함), 링크는 docs/categories/field-operations-and-monitoring/index.md 기준 상대 경로(.md 포함)로 썼다. Mermaid 도식은 쓰지 않았다.",
+      "직접 인용 — f34·f11·f19 를 포함한 모든 출처를 재서술로만 써서 출처당 1회 이하를 지켰다.",
+      "새 열린 질문 2건(경보 관리 표준 — areas 38·31, EHR 주문 연동 취소·변경 — areas 40·23·63)을 open_question_updates 로 등록하고 본문에서 열린 질문 페이지로 연결했으며, 용어 '경보 관리'와 '런타임 추적'을 glossary_updates 로 내면서 '런타임 추적' 설명에 기존 '분산 추적'과 다른 계층(ROS 2 런타임 내부)임을 밝혔다."
+    ]
+  },
+  "ttft_ms": 203564,
+  "type": "result",
+  "duration_ms": 455476,
+  "uuid": "e7d6d845-c972-4f69-86ea-1dce7b015ffe",
+  "ttft_stream_ms": 823,
+  "time_to_request_ms": 91,
+  "time_to_request_phases_ms": {
+    "other": 22,
+    "system_prompt": 14,
+    "resume_other": 1,
+    "process_user_input": 5,
+    "input_attachments": 9,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 3,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 41,
+  "time_to_request_cpu_ms": 130,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 4,
+    "cpu_ms": 10,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 824,
+  "time_to_request_from_spawn_ms": 1084171,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791507351547.6096,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 456.9
+}

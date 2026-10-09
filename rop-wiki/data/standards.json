@@ -4382,6 +4382,224 @@
       "ref_id": "ref-1231",
       "run_id": "2026-09-30-23",
       "date": "2026-09-30"
+    },
+    {
+      "name": "ANSI/ISA 18.2-2016 공정 산업 경보 시스템 관리 (Management of Alarm Systems for the Process Industries)",
+      "org": "ISA(International Society of Automation)",
+      "kind": "표준",
+      "related_areas": [
+        38,
+        31
+      ],
+      "url": "https://webstore.ansi.org/standards/isa/ansiisa182016",
+      "summary": "공정 산업 시설에서 제어 시스템을 거쳐 운영자에게 표시되는 경보 전체의 수명주기 관리 원칙과 절차를 정한 표준(2009년 판 개정). 공정 산업 표준이며 다중 로봇 플릿 적용은 확인되지 않았다.",
+      "ref_id": "ref-1333",
+      "run_id": "2026-10-09-05",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "IDTA 02005 Provision of Simulation Models (1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        34,
+        36,
+        4,
+        58
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision%20of%20Simulation%20Models",
+      "summary": "자산관리셸 서브모델 템플릿으로, 자산의 시뮬레이션 모델 파일을 모델 유형·사용법·적용 분야와 함께 제공하게 하고 시뮬레이션 모델 검색과 제조사·유통사에 대한 모델 파일 요청을 사용 사례로 둔다(저장소 README 기준, 발행일 미확인).",
+      "ref_id": "ref-1251",
+      "run_id": "2026-10-09-07",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "autoware_rosbag2_anonymizer",
+      "org": "Autoware Foundation",
+      "kind": "오픈소스",
+      "related_areas": [
+        53,
+        36
+      ],
+      "url": "https://github.com/autowarefoundation/autoware_rosbag2_anonymizer",
+      "summary": "ROS 2 백 파일(sqlite3·mcap) 이미지에서 얼굴·번호판 같은 대상을 탐지·분할 모델로 찾아 가우시안 블러로 가린 익명화 백 파일을 만드는 도구(자율주행 생태계).",
+      "ref_id": "ref-1246",
+      "run_id": "2026-10-09-07",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Gazebo Fuel Tools (gz-fuel-tools)",
+      "org": "Open Robotics",
+      "kind": "오픈소스",
+      "related_areas": [
+        34,
+        57
+      ],
+      "url": "https://github.com/gazebosim/gz-fuel-tools",
+      "summary": "Gazebo Fuel 서버의 모델·월드를 목록·다운로드·업로드하는 클라이언트 라이브러리와 명령 도구. README 로드맵은 원격 모델 새 버전 감지를 미해결 과제로 적는다.",
+      "ref_id": "ref-1250",
+      "run_id": "2026-10-09-07",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "ISO/AWI 26159-2 로봇 응용을 위한 기반시설 — 승강기·자동문 연동 요구사항 (초안)",
+      "org": "ISO (ISO/TC 299 Robotics)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        22
+      ],
+      "url": "https://www.iso.org/standard/92741.html",
+      "summary": "2025-11-13 신규 과제로 등록된 초안(Stage 20.00). 로봇–승강기·자동문 연동의 최소 데이터 교환·하드웨어 요구·안전 고려와 비상·비정상 상황 통신을 다루고 디지털·이산 방식 승강기 제어를 모두 대상으로 하며 특정 메시지 프로토콜은 범위에서 뺀다.",
+      "ref_id": "ref-1281",
+      "run_id": "2026-10-09-11",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "ISO/CD TS 8100-11 승강기와 다른 시스템의 상호운용 (위원회 초안)",
+      "org": "ISO (ISO/TC 178 Lifts, escalators and moving walks)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        22
+      ],
+      "url": "https://www.iso.org/standard/73063.html",
+      "summary": "2026-08-28 의견 수렴이 끝난 위원회 초안(Stage 30.60). 원격 감시·원격 호출 등록·건물 자동화·로봇 연동 네 사용 사례를 위한 승강기 상호운용 온톨로지와 안전 관련 기능을 정하고 oneM2M·OPC UA 를 적용 예로 든다.",
+      "ref_id": "ref-1282",
+      "run_id": "2026-10-09-11",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "싱가포르 Technical Reference 93 (TR 93) 로봇–건물 설비 데이터 교환",
+      "org": "싱가포르 (CGH 보도자료 기준, 발행 기관명 미확인)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        22
+      ],
+      "url": "https://www.cgh.com.sg/news/announcements/changi-general-hospital-capitaland-investment-and-kone-collaborate-to-advance-the-integration-of-robotics-in-buildings",
+      "summary": "CGH 보도자료(2022-05-28)에 따르면 자율 로봇과 승강기·자동문 같은 건물 설비 사이의 데이터 교환 지침이며, KONE 차세대 승강기가 TR 93 에 맞춘 개방 API 로 RoMi-H 로봇과 시험 연동되었다. 본문 미열람.",
+      "ref_id": "ref-1283",
+      "run_id": "2026-10-09-11",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Open-RMF 장애물 메시지(rmf_internal_msgs의 rmf_obstacle_msgs)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        18,
+        27
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_obstacle_msgs/msg/Obstacle.msg",
+      "summary": "프레임·시각, 발행 주체, 층, 분류 라벨(human 등), 3차원 경계 상자, 수명, 추가·삭제 동작을 담는 장애물 메시지. 확인한 정의에 검출 신뢰도·익명화 필드는 없다(확인일 2026-10-09).",
+      "ref_id": "ref-1292",
+      "run_id": "2026-10-09-12",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Open-RMF rmf_obstacle (사람 검출·lane_blocker)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        27,
+        18
+      ],
+      "url": "https://github.com/open-rmf/rmf_obstacle",
+      "summary": "단안 카메라(YOLO-V4)·OAK-D 사람 검출 노드와, 장애물이 플릿 주행 차선과 겹치면 차선을 닫거나 속도를 제한(기본 0.5 m/s)하는 lane_blocker 노드를 제공한다(확인일 2026-10-09).",
+      "ref_id": "ref-1293",
+      "run_id": "2026-10-09-12",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Scenario Execution for Robotics (OpenSCENARIO 2 기반 로봇 시나리오 실행 라이브러리)",
+      "org": "Pasch, F. 외 (Intel Labs 외)",
+      "kind": "오픈소스",
+      "related_areas": [
+        33,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2409.07080",
+      "summary": "ASAM OpenSCENARIO 2 로 쓴 로봇 시나리오를 행동 트리(PyTrees)로 바꿔 실행하는 백엔드·미들웨어 독립 파이썬 라이브러리로, Gazebo·Nav2·PyBullet 라이브러리와 매개변수 조합 전개를 둔다.",
+      "ref_id": "ref-1304",
+      "run_id": "2026-10-09-13",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "RoboVAST (출처 기록 기반 시뮬레이션 시험 틀)",
+      "org": "Ortega, A., Wiest, S., Pasch, F., & Hochgeschwender, N.",
+      "kind": "프레임워크",
+      "related_areas": [
+        33,
+        54,
+        57
+      ],
+      "url": "https://arxiv.org/abs/2605.29973",
+      "summary": "환경(FloorPlan 모델)·추상 시나리오(OpenSCENARIO DSL)·변형 파일을 나누고 인스턴스를 구체 시험 구성으로 해석해 실행별 기록과 W3C PROV 기반 출처를 남기는 시험 틀이다.",
+      "ref_id": "ref-1307",
+      "run_id": "2026-10-09-13",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "ISO 11064 관제 센터 인간공학 설계(Ergonomic design of control centres) 계열",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        37,
+        38
+      ],
+      "url": "https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf",
+      "summary": "설계 원칙, 관제 공간·관제실 배치, 작업대 배치·치수, 표시 장치와 조작기, 환경 요건, 관제 센터 평가 원칙 등 여러 부로 관제 센터의 인간공학 설계를 다룬다. ISO 11064-1:2000 미리보기 머리말 기준이며 각 부의 이후 개정 여부·적용 범위는 미확인이다.",
+      "ref_id": "ref-1320",
+      "run_id": "2026-10-09-15",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "IEEE 7001-2021 자율 시스템 투명성 표준",
+      "org": "IEEE Standards Association",
+      "kind": "표준",
+      "related_areas": [
+        37,
+        31,
+        50
+      ],
+      "url": "https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy",
+      "summary": "사용자, 검증·인증 담당자, 고장·사고 조사자, 전문 자문가, 일반 대중의 이해관계자 범주마다 객관적으로 평가할 수 있는 다섯 단계 투명성 수준을 정한다. IEEE SA 소개 글(2022-05-11) 기준이며 표준 본문은 미열람이다.",
+      "ref_id": "ref-1312",
+      "run_id": "2026-10-09-15",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "W3C Trace Context (traceparent·tracestate, 권고안 2021-11-23)",
+      "org": "W3C",
+      "kind": "표준",
+      "related_areas": [
+        43,
+        38,
+        21
+      ],
+      "url": "https://www.w3.org/TR/trace-context/",
+      "summary": "분산 추적 문맥을 traceparent·tracestate 헤더로 전달하는 형식을 HTTP 에 대해 정한 W3C 권고안이다. 다른 통신 프로토콜의 직렬화는 확장·외부 명세에 맡긴다.",
+      "ref_id": "ref-1325",
+      "run_id": "2026-10-09-19",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "EU AI Act 제19조 자동 생성 로그 (Article 19)",
+      "org": "European Union (유럽위원회 AI Act Service Desk 게재)",
+      "kind": "프레임워크",
+      "related_areas": [
+        43,
+        59,
+        47
+      ],
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-19",
+      "summary": "고위험 AI 시스템 제공자가 자기 통제 아래 있는 자동 생성 로그를 의도된 목적에 맞는 기간, 적어도 6개월 보관하게 하는 조항이다(2026-07-27 기준 통합본).",
+      "ref_id": "ref-1313",
+      "run_id": "2026-10-09-19",
+      "date": "2026-10-09"
     }
   ]
 }

@@ -1,0 +1,253 @@
+{
+  "run_id": "2026-10-09-15",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력의 VDA 5050 3.0.0 원문 텍스트(data/source_texts/ref-031.txt)의 표 5 동작 상태 열(INITIALIZING·RUNNING·PAUSED·FINISHED·FAILED·RETRIABLE), 6.6.5.1 오류 수준 4단계, errorDescription·errorHint, 6.6.5.3 ISO 639-1 번역과 일치. 단일 출처(표준 원문). 발행일 미확인이므로 판(3.0.0, main)과 확인일 2026-10-09 를 기준일로 둔다. 브리프는 fetched_via github_raw·fetch_url null 로 적었으나 실제 근거는 입력 원문 텍스트(inbox)다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 6.6.4 'shall not use the information for logic; ... only be used for visualization and debugging', 표 4 logReport(reason), 표 5 'The report has been stored. The name of the log is reported as part of the action state.' 와 일치. 로봇 쪽 로그 자체는 연계 대상이고 ROP 는 요청과 로그 이름 수신만 맡는다고 서술해야 한다(브리프 scope_violations 와 같음)."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증자가 raw.githubusercontent.com 의 AMR_Interop_Standard.json 을 열어 statusReport 필수 uuid·timestamp·operationalState·location, operationalState 9개 값, errorCodes('should be omitted for normal operation'), path(최대 10개, 'Short term path of AGV ~10 sec'), destinations, batteryPercentage 를 확인했다. 공식 저장소의 JSON 스키마(공식 산출물)이며 표준 본문 PDF 는 아님. 브리프는 원문 미열람(source_unopened: true)으로 표시했다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 텍스트의 task_state.json — status enum 12개, $defs.dispatch.status enum 5개, booking.requester·labels, interruptions(resumed_by 포함)·cancellation·killed·skip_requests 의 unix_millis_request_time·labels 와 일치. 다만 개입 요청(일시정지·취소 등)에는 요청자 필드가 없고 라벨만 있으므로 '누가 ... 개입했는지'는 과장이다 — 수정 지시 참조."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 세 출처가 각각 동작 단위(VDA 5050)·로봇 단위(MassRobotics)·작업·단계·사건 단위(Open-RMF) 상태 값을 정한다는 점은 f1·f3·f4 검증으로 확인. '대응표가 필요할 것'은 추론이므로 [추정] 유지."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: api-server README 'by default it uses a in-memory sqlite instance', db_url 형식, 지원 DB PostgreSQL·SQLite·MySQL·MariaDB(postgres·mysql·maria 추가 설치), 상위 README 'In the default scenario, the API server will use an internal non-persistent database.' 두 출처는 같은 저장소라 독립 교차 확인이 아니다. '실행 기록이 남지 않지만'은 원문에 없는 표현이므로 '기본은 비영속 저장'으로 고친다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: log_entry.json 필수 seq·tier·unix_millis_time·text, tier enum uninitialized·info·warning·error 를 검증자가 열어 재확인. 2026-09-30 서술과 같아 기존 각주 ref-1095 재사용."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: IEEE SA 글(2022-05-11) — 이해관계자 다섯 범주, 범주별 다섯 단계(minimally acceptable ~ stringent), 'specific, measurable levels of transparency that can be assessed objectively'. 공동 후원은 IEEE Vehicular Technology Society·Intelligent Transportation Systems Society·Robotics and Automation Society 셋이므로 로봇·자동화 학회는 '공동 후원 학회 가운데 하나'로 써야 한다. 표준 본문 미열람(발행 기관 소개 자료 기준)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 이해관계자 범주에 사용자와 조사자가 따로 있음은 IEEE SA 글로 확인. 화면·기록 요건 포함 여부 미확인이라는 단서가 있어 [추정] 유지."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ISO 11064-1:2000 미리보기 머리말의 8개 부(Part 1~8) 제목과 일치. 발행 2000년(2년 경과) 자료이며 각 부의 이후 개정 여부는 확인하지 않았으므로 'ISO 11064-1:2000 머리말 기준'을 기준일로 밝힌다. 적용 범위 절 미확인."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2205.06564 v1 2022-05-13, ICRES 2022 제출, 초록의 소셜 로봇 센서·구동기·제어 결정 안전 기록, 사고·아차 사고 조사, 첫 초안(draft for discussion) 과 일치. 부록(기록 항목·보관 기간) 미확인."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 초안이 단일 소셜 로봇 대상(f11), VDA 5050 logReport 는 생성·저장 요청과 로그 이름 보고만 정함(f2). '확인하지 못했다'는 조사 범위 진술이므로 [추정] 유지, oq-252 는 열림 유지."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: AI Act Service Desk 제12조 제1항 'automatic recording of events (logs) over the lifetime of the system', 제2항 (a) 제79조 제1항 위험·실질적 변경, (b) 제72조 출시 후 모니터링, (c) 제26조 제5항 운용 모니터링과 일치. 규정 2024/1689 발행 2024-07-12. 법 해석은 연계 대상."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 제19조 제1항(공급자, 'to the extent such logs are under their control', 'at least six months', 개인정보 보호법 등 다른 법 우선)과 제26조 제6항(배포자, 같은 기간 규정) 일치. 두 조문은 같은 규정이라 독립 교차 확인이 아니다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: '통제하는 범위에서' 문구는 제19조·제26조로 확인. 로봇 플랫폼 적용 해석은 자료 없음 — '연계 대상: ' 표시와 [추정] 유지. oq-316 은 부분 근거일 뿐 해결 아님."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인·교차 확인: 코메디닷컴(2024-04-20) 7종 73대, 통합관제시스템, '각기 다른 제조사의 로봇들을 하나의 관제시스템으로 연결하는 일이 중요하다'(커맨드센터 파트장). 검증자가 로봇신문(ref-944, 2024-04-15)을 열어 '7종 73대', '제조사마다 상이한 다종 다수의 로봇 관제를 통합관제 시스템을 이용해 중앙에서' 관리한다는 서술을 확인했다. 브리프는 ref-944 를 원문 미열람으로 표시했다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 코메디닷컴에 2022-08~2024-03 3만 1607건, 관제 화면 항목·배송 이력 미공개. 단일 기사 수치이므로 '보도 기준'을 밝힌다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: LG 보도자료(2023-07-06) — Open-RMF 기반, '로봇들의 동선과 작업 처리결과 등도 실시간으로 한눈에 모니터링', AGV·오토스토어·소팅로봇 연계(AMR 지원 서술), G마켓 동탄 물류센터 PoC 착수. 벤더 주장 표시(vendor_claim·첫머리 '벤더 주장: ')와 [추정] 적정. 운영 결과 미공개."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인: 바이라인네트워크(2024-01-31) '총 16개 항목 ... 모든 기준을 만족', 평가 대상에 '관제 장치' 포함. 검증자가 한국로봇산업진흥원 안내(ref-980)를 열어 인증 대상이 '실외이동로봇과 그 운행에 필요한 관제장치 조합의 일체'이고 관제장치가 심사 항목임을 확인 — 관제장치 평가·조합 인증은 독립 2출처 교차 확인. 다만 진흥원 페이지는 심사 항목을 8개(규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치)로 나열해 기사 '16개 항목'과 표현이 다르다 — 둘 다 제시 지시. 관제 장치 세부 요건(화면·기록)은 두 출처 모두 없음."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증자가 뉴스토마토(2025-04-23)를 열어 방제(2022)·운반(2023)·모니터링(2024) 로봇 3종, 농촌진흥청 자체 개발, 개인용 컴퓨터·휴대전화 하나로 관리, 다른 제조사 언급 없음을 확인. 2026-10-09-14 브리프 f45 와 같은 주장이므로 기존 각주 ref-1007 재사용. 브리프는 원문 미열람으로 표시."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증자가 정보통신신문(2024-07-18)을 열어 '택배차량이 물류집합처에 도착해 송장번호를 인식시켜 관제실로 물품정보를 전송' 서술(LH토지주택연구원 인용)을 확인. 시나리오 단계 서술임을 밝힌다. 2026-10-09-14 f34 와 같은 출처 재사용."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2101.10495 v2(2021-05-14, v1 2021-01-26) 초록 — none·central·peripheral·mixed 네 모드, 18명 사용자 연구, awareness·trust·workload 측정. 프리프린트."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Patel 외 18명(f22), Roldán 외 24명 실험실 비교(ref-1099, 2026-09-30-13 검증분 재사용, 이번에 다시 열지 않음). 현장 측정 자료 미발견은 조사 범위 진술이므로 [추정] 유지, oq-238 열림 유지."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ar5iv 본문 'The RoboCup Logisitcs League (RCLL) is a simulation of factory logistics', 활동 11개(clear-mps ~ produce-cx), OCEL JSON 저장, 활동·시각 예측. 세 번째 객체 유형을 본문이 'components'와 'products'로 섞어 쓰므로 '부품(제품)'으로 적는다. 예측 대상은 다음 사건뿐 아니라 남은 사건 순서(접미 예측)까지다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Rohrer 외는 예측 모니터링 목적이며 시나리오 생성을 다루지 않음. oq-131 은 부분 근거일 뿐 해결 아님 — [추정] 유지."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f16·f20·f21 은 2026-10-09-14 브리프(f19·f45·f34)와 같은 주장·출처(ref-944·ref-1007·ref-976)다 — 새 각주를 만들지 않고 기존 id 를 재사용한다(브리프가 이미 재사용).",
+      "f6 은 현재 페이지 7절 표의 rmf-web 행('기본은 비영속 저장', ref-302)을 갱신하는 내용이며 모순이 아니다.",
+      "f7 은 현재 페이지 7절의 log_entry 서술(ref-1095)을 재확인한 것으로 새 사실이 아니다.",
+      "현재 페이지 5절 '관제 화면·실행 기록의 현장 근거를 찾은 것은 병원 한 건' 문장과 마지막 '찾지 못했다' 문장은 이번 사례(f16~f21)로 바뀌어야 하며 모순이 남지 않게 해야 한다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f4: '누가 어떤 창구로 작업에 개입했는지'를 '작업 요청자(booking.requester)와, 일시정지·재개·취소·강제 종료·단계 건너뛰기 요청마다의 요청 시각·라벨(예: dashboard)로 어떤 창구에서 개입했는지'로 고친다 — 원문 task_state.json 에서 개입 요청에는 요청자 필드가 없고 라벨만 있다.",
+    "f6: '실행 기록이 남지 않지만'을 '기본 설정은 메모리 안의 SQLite(비영속 내부 데이터베이스)를 쓰며'로 고친다 — 두 README 는 비영속이라고만 쓰고 실행 기록 소실을 직접 말하지 않는다. 7절 rmf-web 행 갱신에 ref-762 각주를 더한다.",
+    "f19: '16개 항목'은 바이라인네트워크 기사(ref-1317) 기준임을 밝히고, 한국로봇산업진흥원 안내(ref-980)는 심사 항목을 8개(관제장치 포함)로 나열한다는 점을 함께 적어 어느 한쪽을 고르지 않는다 — 두 출처의 항목 수 표현이 다르다. 이 차이를 open_questions_new 둘째 질문(운행안전인증 관제 장치 항목)에 덧붙여 열린 질문으로 남긴다. 로봇·관제장치 조합 인증과 관제장치 평가는 두 출처로 확인됐으므로 [사실] 유지.",
+    "f19: 5절 실외 사례에서 인증 판단은 인증 기관·운영자 쪽 연계 대상이고 ROP 에는 실외 현장의 제약으로만 반영된다고 쓴다(분류 원문 19장 업종별 조건).",
+    "f10: 7절 ISO 11064 행에 'ISO 11064-1:2000 미리보기 머리말 기준(확인일 2026-10-09), 각 부의 이후 개정 여부·적용 범위는 미확인'을 적는다 — 발행 2000년 자료다.",
+    "f8: 'IEEE 로봇·자동화 학회가 공동 후원했다'를 'IEEE 로봇·자동화 학회가 공동 후원 학회 가운데 하나다'로 고친다 — IEEE SA 글은 차량기술학회·지능형교통시스템학회와 함께 셋을 공동 후원으로 든다. 표준 본문이 아니라 IEEE SA 소개 글 기준임을 밝힌다.",
+    "f2: 7·9절에서 VDA 5050 logReport 로 생성되는 로그 자체는 로봇 쪽 기록(연계 대상)이고 ROP 는 생성 요청과 로그 이름(동작 상태) 수신만 맡는다고 쓴다.",
+    "f13·f14·f15: 9절에서 EU AI Act 로그 보관 의무의 해당 여부·해석은 연계 대상(59. 법·규제·보험·라이선스)으로 짧게 다루고, ROP 몫은 보관 기간 설정과 로그 통제 주체 표시 기능으로 한정해 [추정]으로 쓴다. f14 의 두 조문은 같은 규정이므로 교차 확인으로 표시하지 않는다.",
+    "f17: '3만 1607건'은 코메디닷컴 단일 보도 기준(2024-04-20)임을 밝힌다.",
+    "f18: 5절 물류창고 사례는 [추정] 뒤에 '벤더 주장'을 병기하고, PoC 착수 발표뿐이며 운영 결과는 확인되지 않았다고 쓴다. 흐름 단계는 서술하지 않는다(근거 없음).",
+    "f24: 객체 유형을 '로봇·주문·부품(제품)'으로 적고 예측 대상을 '이후 사건과 그 시각(남은 사건 순서 포함)'으로 쓴다 — 본문이 세 번째 객체 유형을 components 와 products 로 섞어 쓴다.",
+    "f1·f2: 7절 VDA 5050 행의 기준을 '3.0.0(main), 발행일 미확인, 확인일 2026-10-09'로 적고 기존 각주 ref-031 을 재사용한다.",
+    "각주·참고문헌: 브리프가 원문 미열람(source_unopened: true)으로 표시한 ref-944·ref-1007·ref-976·ref-980·ref-1099·ref-253 의 각주 정의에는 접근일 뒤 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다.",
+    "11절: oq-237 은 해결로 바꾼다(근거 f1·f3·f4, 남은 대응표 문제는 새 질문으로 잇는다). oq-238·oq-239 는 열림 유지, oq-131·oq-240·oq-252·oq-316 은 해결로 바꾸지 않고 부분 근거(각 finding id)만 덧붙인다. 기존 11절의 '(새 질문, 상태: 열림)' 네 줄은 실제 id(oq-237·oq-238·oq-239·oq-240)로 표기한다.",
+    "용어집: '운용 상태'(MassRobotics operationalState) 정의에 기존 용어 '운용 모드 (Operating Mode (VDA 5050 operatingMode))'와 다른 개념임을 한 문장으로 밝힌다 — 이름이 비슷해 혼동될 수 있다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 확인 25건, 미확인 0건, 교차 확인 2건(f16 한림대학교성심병원 7종 73대 통합관제: 코메디닷컴·로봇신문 / f19 실외이동로봇 운행안전인증의 로봇·관제장치 조합 인증: 바이라인네트워크·한국로봇산업진흥원). 강등: 없음. 원문 미열람 출처(브리프 표시): ref-944, ref-1007, ref-976, ref-980, ref-1099, ref-253 — 이 가운데 ref-944·ref-1007·ref-976·ref-980·ref-253 은 검증자가 이번 검증에서 열어 주장과 일치함을 확인했고 ref-1099 는 2026-09-30-13 검증분 재사용이다. oq-237 해결 인정(f1·f3·f4: VDA 5050 동작 상태·오류 수준과 MassRobotics 운용 상태가 Open-RMF 밖의 공개 상태 값 규약이며, 세 규약 사이 대응표는 새 질문으로 남김). oq-238·oq-239 열림 유지, oq-131·oq-240·oq-252·oq-316 은 부분 근거만. 정정 요청 없음. 주의: 새 사실은 대부분 단일 출처(표준 원문·공식 스키마·조문)이고 9절의 책임 경계와 현장 적용 해석은 [추정]이다. 실외 운행안전인증의 평가 항목 수는 기사(16개)와 진흥원 안내(8개 심사 항목)의 표현이 달라 둘 다 제시한다. ISO 11064 는 2000년판 머리말 기준이며 IEEE 7001-2021 은 표준 본문이 아니라 IEEE SA 소개 글 기준이다. 물류창고 사례(LG CNS)는 벤더 주장이고 제조 공장·상업 시설 사례는 이번에도 찾지 못했다. 브리프는 ref-031·ref-111 을 fetched_via github_raw(fetch_url 없음)로 적었으나 실제 근거는 입력 원문 텍스트다(판정에는 영향 없음). 검증 검색 0회, 열람 19회.",
+  "retry_reason": null
+}

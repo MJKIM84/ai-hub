@@ -1,0 +1,800 @@
+{
+  "duration_api_ms": 384442,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.883724,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 233087,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 50951,
+    "output_tokens_details": {
+      "thinking_tokens": 22140
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 233087,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 50951,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 233087,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 233087
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 50951,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 233087,
+      "webSearchRequests": 0,
+      "costUSD": 2.883724,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 22140,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-15\",\"outline\":[{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":2600,\"summary\":\"관제 화면·실행 기록의 현장 근거는 병원·물류창고·실외·가정·기타에서 찾았지만 대부분 보도·발표 단계이며, 화면 항목과 기록 형식을 공개한 사례는 확인하지 못했다. [추정][^ref-1344][^ref-1343]\",\"planned_findings\":[\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":2200,\"summary\":\"Open-RMF 작업 상태 스키마 외에 VDA 5050 3.0.0 동작 상태·오류 수준과 MassRobotics 운용 상태가 공개 상태 값 규약이며, 관제실 설계(ISO 11064)·투명성(IEEE 7001-2021)·윤리적 블랙박스 초안을 더했다. [사실][^ref-031][^ref-1337]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f6\",\"f7\",\"f8\",\"f10\",\"f11\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"budget_chars\":1700,\"summary\":\"ROP는 여러 규약의 상태 값을 대응표로 정규화하고 logReport 요청·로그 이름 수신을 맡으며, 로봇 쪽 로그·인증 판단·로그 보관 의무 해석은 연계 대상이다. [추정][^ref-031][^ref-1341]\",\"planned_findings\":[\"f2\",\"f5\",\"f13\",\"f14\",\"f15\",\"f19\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1800,\"summary\":\"oq-237 은 해결, oq-131·oq-240·oq-252·oq-316 은 부분 근거만 더했고 oq-238·oq-239 는 열림이며 새 질문 2건을 올린다. [추정][^ref-031][^ref-1337]\",\"planned_findings\":[\"f5\",\"f9\",\"f12\",\"f15\",\"f22\",\"f23\",\"f24\",\"f25\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"section\":\"13. 참고 자료 (각주)\",\"budget_chars\":0,\"summary\":\"각주 정의 37건(신규 13건, 재사용 출처의 접근일·원문 미열람 표시 갱신).\"}],\"pages\":[{\"path\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신\",\"patches\":[{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"replace\",\"content\":\"관제 화면·실행 기록의 현장 근거는 병원·물류창고·실외·가정·기타 현장에서 찾았지만 대부분 보도·발표 단계 자료여서, 화면 항목과 기록 형식까지 공개한 사례는 2026-10-09 기준으로 확인하지 못했다. [추정][^ref-1103][^ref-1344][^ref-1343][^ref-1345][^ref-976][^ref-1007]\\n\\n### 병원 — 특수 물품 배송 이력 관리 계획\\n\\n**현장 유형:** 병원\\n\\n**사례:** 병원에서 특수 물품을 로봇으로 배송하고 수령 인증과 배송 이력을 남기는 계획(한림대학교의료원 협약, 2025-04-07 보도 기준)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 특수 물품(품목 범위는 미확인) [사실][^ref-1103] |\\n| 수행 자원 | 병원 맞춤형 배송 로봇과 관제 시스템(공동 개발 계획) [사실][^ref-1103] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 안면 인식 기반 수령 인증, 특수 물품 배송 이력 관리 시스템(개발 계획) [사실][^ref-1103] |\\n| 예외·성과 | 미확인(운영 결과 보도 없음) |\\n\\n아주경제 2025-04-07 보도에 따르면 현대차·기아는 한림대학교의료원과 업무협약을 맺고 병원 맞춤형 배송 로봇과 관제 시스템, 안면 인식 기반 수령 인증, 특수 물품 배송 이력 관리 시스템을 함께 개발하기로 했다. [사실][^ref-1103] 이 보도는 협약·개발 계획 단계이며, 실제 운영 여부와 처리량·시간 같은 결과는 확인되지 않았다.\\n\\n이 사례에서 37. 관제 화면·실행 기록은 완료·인계 칸에 관여한다. 배송 이력을 남겨야 하는 현장에서는 실행 기록이 '누구에게 넘겨졌는가'를 나중에 확인하는 근거가 된다. [추정][^ref-1103]\\n\\n### 병원 — 여러 제조사 서비스 로봇의 통합 관제\\n\\n**현장 유형:** 병원\\n\\n**사례:** 커맨드센터가 7종 73대의 서비스 로봇을 하나의 통합관제시스템으로 운영(한림대학교성심병원, 2024-04 보도 기준)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인(로봇 종류는 안내·배송·방역 등) |\\n| 수행 자원 | 안내·배송·방역 로봇 등 7종 73대의 서비스 로봇과 커맨드센터의 통합관제시스템 [사실][^ref-1344][^ref-944] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인(관제 화면 항목·배송 이력 조회 방식 미공개) |\\n| 예외·성과 | 2022-08부터 2024-03까지 로봇 서비스 3만 1607건 시행(코메디닷컴 단일 보도 기준, 2024-04-20) [사실][^ref-1344] |\\n\\n한림대학교성심병원은 2024-04 기준 안내·배송·방역 로봇 등 7종 73대의 서비스 로봇을 커맨드센터의 통합관제시스템으로 운영하며, 이 내용은 코메디닷컴(2024-04-20)과 로봇신문(2024-04-15) 두 보도가 함께 전한다. [사실][^ref-1344][^ref-944] 커맨드센터 담당자는 “각기 다른 제조사의 로봇들을 하나의 관제시스템으로 연결하는 일이 중요하다”고 밝혔다. [사실][^ref-1344] 같은 코메디닷컴 보도에 따르면 로봇 서비스는 2022-08부터 2024-03까지 3만 1607건 시행되었고, 이 수치는 단일 보도 기준이다. [사실][^ref-1344] 관제 화면 항목이나 배송 이력 조회 방식은 공개되지 않았다. [사실][^ref-1344]\\n\\n이 사례에서 37. 관제 화면·실행 기록은 서로 다른 제조사 로봇을 한 관제시스템으로 묶는 수행 자원 칸에 관여하는 것으로 보인다. [추정][^ref-1344]\\n\\n### 물류창고 — 통합운영 플랫폼 기술검증 착수\\n\\n**현장 유형:** 물류창고\\n\\n**사례:** Open-RMF 기반 로봇 통합운영 플랫폼의 물류센터 기술검증 착수(LG CNS·G마켓 동탄 물류센터, 2023-07-06 발표)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | AGV·AMR·오토스토어·소팅로봇을 연계한 로봇 통합운영 플랫폼 [추정] 벤더 주장[^ref-1343] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인(기술검증 착수 발표뿐이며 운영 결과 미공개) |\\n\\nLG CNS 는 2023-07-06 보도자료에서 Open-RMF 를 바탕으로 한 로봇 통합운영 플랫폼에서 고객이 로봇의 이동 동선과 작업 처리 결과를 실시간으로 한눈에 확인할 수 있고, AGV·AMR·오토스토어·소팅로봇이 연계되어 있으며, G마켓 동탄 물류센터에서 기술검증에 착수했다고 밝혔다. [추정] 벤더 주장[^ref-1343] 이는 기술검증 착수 발표뿐이며, 운영 결과는 확인되지 않았다.\\n\\n### 실외 — 운행안전인증과 관제 장치\\n\\n**현장 유형:** 실외\\n\\n**사례:** 실외이동로봇을 운행하기 전에 로봇과 관제장치의 조합으로 운행안전인증을 받는 경우(2024-01 보도 기준)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | 미확인 |\\n| 제약 | 운행안전인증은 로봇과 관제장치의 조합에 주어지고 관제 장치가 평가 대상에 든다. 평가 항목 수는 기사(16개)와 한국로봇산업진흥원 안내(심사 항목 8개)의 표현이 다르다 [사실][^ref-1345][^ref-980] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n국내 [실외이동로봇 운행안전인증](../../glossary/outdoor-mobile-robot-operational-safety-certification.md)은 로봇과 관제장치의 조합에 주어지고 관제 장치가 평가 대상에 들며, 이는 바이라인네트워크 보도(2024-01-31)와 한국로봇산업진흥원 안내 두 출처로 확인된다. [사실][^ref-1345][^ref-980] 평가 항목 수는 출처마다 표현이 다르다. 바이라인네트워크 보도는 속도 제어·비상정지·장애물 감지·횡단보도 통행·운행구역 준수·관제 장치 등 16개 항목을 평가하고 모든 기준을 만족해야 인증한다고 전한다. [사실][^ref-1345] 한국로봇산업진흥원 안내는 관제장치를 포함한 8개 심사 항목을 나열한다. [사실][^ref-980]\\n\\n어느 쪽이 현행 기준인지와 관제 장치 항목이 화면 표시·운행 기록을 어디까지 요구하는지는 확인하지 못해 11절 열린 질문으로 올렸다. 인증 판단은 인증 기관과 운영자 쪽의 연계 대상이며, ROP 에는 실외 현장에서 관제 장치가 운행 제약의 하나가 된다는 점으로만 반영될 것으로 보인다. [추정][^ref-1345][^ref-980]\\n\\n### 가정 — 공동주택 로봇 택배의 관제실 연동\\n\\n**현장 유형:** 가정\\n\\n**사례:** 공동주택 단지 로봇 택배에서 집하처의 송장번호 인식으로 관제실에 물품 정보를 전달하는 시나리오(LH토지주택연구원 자료 인용 보도, 2024-07-18)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 택배 차량이 단지 집하처에 송장번호를 인식시키면 물품 정보가 관제실로 전달된다(시나리오 단계 서술) [사실][^ref-976] |\\n| 작업 대상 | 택배 물품과 송장번호로 인식한 물품 정보 [사실][^ref-976] |\\n| 수행 자원 | 미확인 |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n정보통신신문 보도(2024-07-18)는 LH토지주택연구원 자료를 인용해, 공동주택 단지 로봇 택배에서 택배 차량이 단지 집하처에 송장번호를 인식시키면 물품 정보가 관제실로 전달된다고 전하며, 이는 시나리오 단계 서술이다. [사실][^ref-976] 이 사례에서 37. 관제 화면·실행 기록은 관제실이 받은 물품 정보로 배송 작업 기록이 시작되는 시작 조건 칸에 관여하는 것으로 보인다. [추정][^ref-976]\\n\\n### 기타 — 농업 로봇 통합 관리 프로그램\\n\\n**현장 유형:** 기타\\n\\n**사례:** 농촌진흥청이 자체 개발한 농업 로봇 3종을 하나의 화면으로 관리(2025-04-23 보도 기준)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | 자체 개발한 방제·운반·모니터링 로봇 3종과 이를 하나의 화면으로 관리하는 통합 관리 프로그램 [사실][^ref-1007] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n농촌진흥청의 통합 관리 프로그램은 자체 개발한 방제·운반·모니터링 로봇 3종을 하나의 화면으로 관리한다(2025-04-23 보도 기준). [사실][^ref-1007] 다른 제조사 로봇의 연결 여부는 보도에 없다. [사실][^ref-1007]\\n\\n제조 공장·상업 시설 현장의 관제 화면·실행 기록 사례는 이번 조사(2026-10-09)에서도 찾지 못했다.\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"replace\",\"content\":\"관제 화면·실행 기록에 쓸 수 있는 공개 구현과 명세는 다음과 같다(확인일 2026-09-30, 상태 값 규약·관제실·투명성·기록 장치 행은 2026-10-09 추가). [사실][^ref-1093][^ref-031][^ref-1096]\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| Open-RMF rmf_visualization | 오픈소스 | 층 평면도 위에 로봇 위치·문·승강기·주행 그래프·예측 궤적 표시 | [사실][^ref-1093] |\\n| Open-RMF rmf-web | 오픈소스 | 웹 대시보드·API 서버. 기본 설정은 메모리 안의 SQLite(비영속 내부 데이터베이스)를 쓰며, 설정의 db_url 로 PostgreSQL·SQLite·MySQL·MariaDB 를 지정해 영속 저장할 수 있다(확인일 2026-10-09, 두 문서는 같은 저장소라 독립 출처가 아니다) | [사실][^ref-1346][^ref-302] |\\n| Open-RMF rmf_api_msgs 작업 상태·작업 로그 스키마 | 오픈소스 | 상태 값 12개, 작업·단계·사건 3계층 로그. 로그 항목은 순번(seq)·수준(tier)·밀리초 유닉스 시각·본문이 필수이고 수준 값은 uninitialized·info·warning·error 다(2026-10-09 재확인) | [사실][^ref-111][^ref-1094][^ref-1095] |\\n| Open-RMF 작업 상태 스키마의 배차 상태·개입 기록 | 오픈소스 | 작업 상태 값과 별도로 배차 상태를 queued·selected·dispatched·failed_to_assign·canceled_in_flight 로 기록한다. 작업 요청자(booking.requester)와, 일시정지·재개·취소·강제 종료·단계 건너뛰기 요청마다의 요청 시각·라벨(예: dashboard)로 어떤 창구에서 개입했는지를 담으며, 개입 요청 자체에는 요청자 필드가 없다(확인일 2026-10-09) | [사실][^ref-111] |\\n| VDA 5050 3.0.0 visualization·state 토픽 | 표준 | 차량 위치·계획 경로를 시각화 시스템에 보내는 토픽을 상태 토픽과 분리. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\\n| VDA 5050 3.0.0 동작 상태·오류 수준 | 표준 | 로봇이 보고하는 동작 상태 값 INITIALIZING·RUNNING·PAUSED·FINISHED·FAILED·RETRIABLE, 오류 수준 WARNING·URGENT·CRITICAL·FATAL 네 단계, 오류마다 사람이 읽는 설명(errorDescription)·조치 힌트(errorHint)와 ISO 639-1 언어 코드별 번역. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\\n| VDA 5050 3.0.0 information 배열·logReport | 표준 | 로봇이 state 메시지의 information 배열로 보내는 부가 정보는 플릿 관제가 로직에 쓰지 않고 시각화·디버깅에만 쓴다. logReport 즉시 동작으로 로봇에 로그 보고서 생성·저장을 요청하고 저장된 로그 이름을 동작 상태로 보고받는다. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\\n| MassRobotics AMR 상호운용 표준 statusReport | 표준 | uuid·timestamp·operationalState·location 이 필수이고, 운용 상태를 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 아홉 값으로 정한다. 오류 코드 배열, 약 10초의 단기 경로(예측 위치 최대 10개), 목적지, 배터리 잔량은 선택 항목이다. 공식 저장소 JSON 스키마 기준, 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-1337] |\\n| MCAP | 오픈소스 | 시각 색인을 둔 기록 컨테이너 형식 | [사실][^ref-1096] |\\n| ISA-101.01-2015, ISA-TR101.01-2022(HMI 철학), ISA-TR101.02-2019(HMI 사용성과 성능) | 표준 | HMI 수명주기(설계·구현·운영·지속 개선)를 다루며 연속·배치·이산 산업에 적용된다고 밝힌다. 표준 본문은 유료라 발행 기관 소개 페이지 기준 | [사실][^ref-1100] |\\n| ISO 11064 관제 센터 인간공학 설계 계열 | 표준 | 설계 원칙, 관제 공간 배치, 관제실 배치, 작업대 배치·치수, 표시 장치와 조작기, 환경 요건, 관제 센터 평가 원칙, 특정 적용의 인간공학 요건의 여러 부로 나뉜다. ISO 11064-1:2000 미리보기 머리말 기준(확인일 2026-10-09)이며, 각 부의 이후 개정 여부와 적용 범위는 미확인 | [사실][^ref-1349] |\\n| IEEE 7001-2021 자율 시스템 투명성 표준 | 표준 | 사용자, 검증·인증 담당자, 고장·사고 조사자, 소송·행정 절차의 전문 자문가, 일반 대중의 이해관계자 범주마다 최소 수준부터 엄격한 수준까지 객관적으로 평가할 수 있는 다섯 단계의 투명성 수준을 정한다. IEEE 로봇·자동화 학회가 공동 후원 학회 가운데 하나다. 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준 | [사실][^ref-1338] |\\n| [윤리적 블랙박스](../../glossary/ethical-black-box.md) 공개 표준 초안 | 프레임워크 | 사고·아차 사고 조사를 돕기 위해 소셜 로봇의 센서·구동기·제어 결정 같은 운용 데이터를 안전하게 기록하는 장치 또는 소프트웨어 모듈의 첫 초안(Winfield 외, 2022-05-13, ICRES 2022 제출). 부록의 기록 항목·보관 기간은 미확인 | [사실][^ref-1339] |\\n| Foxglove 재생 기능 | 벤더 도구 | 시간축 탐색·사건 주석·lookback 재생 | [추정] 벤더 주장[^ref-1097] |\\n\\nVDA 5050 logReport 로 생성되는 로그 자체는 로봇 쪽 기록이어서 연계 대상이고, ROP 는 생성 요청과 로그 이름(동작 상태) 수신만 맡는 것으로 본다. [추정][^ref-031] 세 상태 값 규약(VDA 5050, MassRobotics, Open-RMF)은 값 집합과 단위가 서로 달라 9절과 11절에서 정규화 문제로 다룬다.\\n\\n전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\"},{\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"action\":\"replace\",\"content\":\"ROP는 제조사 플릿과 설비가 내보내는 상태를 받아 하나의 화면과 기록으로 묶는 쪽을 맡고, 로봇 내부 기록과 설비 자체 관제 화면은 연계 대상으로 둘 것으로 보인다. [추정][^ref-1093][^ref-031]\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 여러 제조사 플릿이 보고한 위치·계획 경로·작업 상태를 하나의 층별 지도에 표시하고, 공통 작업 상태 값·단계·수준별 로그로 정규화해 기록 [추정][^ref-1093][^ref-111][^ref-1094] | 로봇 온보드 센서·주행 기록(로봇 쪽 bag·MCAP 기록), 로컬 회피 시각화 — 로봇 제조사 [추정][^ref-1096][^ref-031] |\\n| 로봇 자체 지능·제어(상태 값·로봇 로그) | VDA 5050 동작 상태·오류 수준, MassRobotics 운용 상태, Open-RMF 작업 상태처럼 값 집합과 단위(동작·로봇·작업)가 다른 상태 값을 대응표로 맞추는 정규화 [추정][^ref-031][^ref-1337][^ref-111]; VDA 5050 logReport 생성 요청과 로그 이름(동작 상태) 수신 [추정][^ref-031] | logReport 로 생성되는 로그 자체와 로봇 내부의 센서·구동기·제어 결정 기록(윤리적 블랙박스 초안이 다루는 대상) — 로봇 제조사 [추정][^ref-031][^ref-1339] |\\n| 시설·설비 제어 | 승강기·문 상태를 같은 지도에 겹쳐 표시하고 기록 [추정][^ref-1093] | 승강기·자동문·CCTV 같은 설비의 자체 관제 화면 — 시설·설비 쪽 [추정][^ref-1093] |\\n| 업종별 조건(실외) | 실외이동로봇 운행안전인증이 로봇과 관제장치의 조합에 주어지는 점을 실외 현장의 운행 제약으로 반영 [추정][^ref-1345][^ref-980] | 인증 여부 판단과 관제 장치 항목의 세부 요건 충족 — 인증 기관·운영자 [추정][^ref-980] |\\n\\n이번 자료를 종합하면 ROP가 직접 맡을 범위는 통합 화면, 정규화한 실행 기록, 그 기록의 영속 저장과 시각 색인 기반 재생·사건 검색, 계획을 사람이 확인할 수 있게 나눠 보여 주는 설명 표시다. [추정][^ref-1093][^ref-302][^ref-111][^ref-1094][^ref-1096][^ref-1098][^ref-477] 6절에서 예로 든 나콘·ARC brain·Foxglove도 같은 범위의 기능을 내세우지만 독립 확인이 없다. [추정] 벤더 주장[^ref-1101][^ref-1102][^ref-1097] ROP는 VDA 5050 visualization·state 토픽처럼 제조사가 내보내는 상태를 받는 인터페이스를 맡는다. [추정][^ref-031]\\n\\n실행 기록의 보관 의무는 연계 대상이다. EU AI Act 제12조는 고위험 AI 시스템이 수명 동안 [자동 사건 기록](../../glossary/automatic-recording-of-events.md)을 할 수 있게 기술적으로 갖추고, 그 기록이 위험 상황·실질적 변경의 식별, 출시 후 모니터링, 배포자의 운용 모니터링을 뒷받침하게 한다(규정 2024/1689, 2024-07-12 발행). [사실][^ref-1340] 같은 규정의 제19조 제1항과 제26조 제6항은 자동 생성 로그를 공급자와 배포자가 각자 통제하는 범위에서 목적에 맞는 기간, 최소 6개월 보관하게 하고, 개인정보 보호법 등 다른 법이 다르게 정하면 그에 따르게 한다(두 조문은 같은 규정이다). [사실][^ref-1341][^ref-1342] 로봇 플랫폼의 AI 구성요소가 고위험 AI 에 해당하는지와 보관 의무의 해석은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md) 쪽 연계 대상이며, ROP 몫은 실행 기록의 보관 기간 설정과 로그 통제 주체 표시 기능으로 한정될 것으로 보인다. [추정][^ref-1340][^ref-1341][^ref-1342]\\n\\n이 경계는 제품 전략에 따라 이동할 수 있다. 자사 로봇까지 만드는 회사는 로컬 주행을 포함할 수 있지만, **이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다.** [분류원문]\\n\\n범위 경계 전체는 [범위 경계](../../about/scope-boundary.md)에 있다.\"},{\"section\":\"11. 열린 질문\",\"action\":\"replace\",\"content\":\"공통 상태 값 규약을 묻던 oq-237 은 해결로 보고, 나머지 질문에는 부분 근거만 더했다(2026-10-09 기준). 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n- **oq-131** (상태: 열림) 플릿 관제의 실행 기록(작업·배정·위치·사건 시각)을 시뮬레이션 시나리오 사양으로 바꾸는 공개 형식이나 변환 규칙이 있는가, 아니면 프로세스 마이닝식 로그 발견을 로봇 플릿 기록에 맞게 새로 정의해야 하는가? 이번 실행(2026-09-30-13)에서도 공개 형식을 찾지 못했다. 부분 근거로, Rohrer 외(2022)는 공장 물류를 모사한 RoboCup Logistics League 시뮬레이션의 사건을 데이터베이스에서 꺼내 로봇·주문·부품(제품) 객체와 11개 활동을 담은 [객체 중심 이벤트 로그](../../glossary/ocel.md)(OCEL JSON)로 만들고, 이후 사건과 그 시각(남은 사건 순서 포함)을 예측하는 데 썼다. [사실][^ref-1348] 그 로그를 시뮬레이션 시나리오 사양으로 되돌리는 변환 규칙은 이번(2026-10-09-15)에도 확인하지 못해, 기록 쪽 형식만 부분 근거가 된 것으로 보인다. [추정][^ref-1348]\\n- **oq-237** (상태: 해결 · 실행 2026-10-09-15) 여러 제조사 로봇의 작업 상태와 실행 로그를 한 화면·한 기록 형식으로 모을 때 공통 작업 상태 값과 로그 수준을 정한 표준이나 공개 규약이 Open-RMF 작업 상태 스키마 말고도 있는가? 답: VDA 5050 3.0.0 은 동작 상태 값과 오류 수준 네 단계를 정한다. [사실][^ref-031] MassRobotics AMR 상호운용 표준은 로봇 운용 상태 아홉 값을 정한다. [사실][^ref-1337] 다만 세 규약의 값 집합과 단위(동작·로봇·작업)가 달라 ROP 가 대응표로 정규화해야 할 것으로 보이며, 대응표 문제는 아래 새 질문으로 잇는다. [추정][^ref-031][^ref-1337][^ref-111] 근거는 7절 표에 있다.\\n- **oq-238** (상태: 열림) 에이전트 투명성이나 계획 분할 시각화 같은 설명 가능한 표시를 실제 운영 중인 로봇 플릿 관제 화면에 적용해 운영자의 상황 인식과 대응 시간을 현장에서 측정한 연구가 있는가? Patel 외(2021)는 여러 운영자가 다중 로봇을 함께 감독할 때의 투명성을 다루며, 자기 작업 정보만 보이는 방식·다른 운영자 작업 정보를 공유하는 방식·둘을 섞은 방식·없음의 네 모드를 참가자 18명의 사용자 연구로 비교해 인식·신뢰·작업 부하를 쟀다. [사실][^ref-1347] 이처럼 이번에 확인한 연구도 실험실 사용자 연구 수준이어서, 현장 측정 연구는 여전히 확인하지 못한 것으로 보인다. [추정][^ref-1347][^ref-1099]\\n- **oq-239** (상태: 열림) 병원의 특수 물품(마약류·검체 등) 로봇 배송 이력처럼 보관 의무가 걸릴 수 있는 실행 기록의 보관 기간과 무결성 요건을 국내 법령·지침이 정하고 있는가? 이번 실행(2026-10-09-15)에서도 법령 원문으로 로봇 배송 이력의 보관 요건을 확인하지 못했다.\\n- **oq-240** (상태: 열림) 공정 산업의 ISA-101 처럼 다중 로봇 관제 화면에 특화된 화면 설계 표준이나 지침이 있는가, 아니면 공정 HMI 표준을 옮겨 써야 하는가? ISO 11064 계열은 관제 센터 인간공학 설계를 표시 장치와 조작기, 관제 센터 평가 원칙 등 여러 부로 다룬다(ISO 11064-1:2000 머리말 기준). [사실][^ref-1349] IEEE 7001-2021 은 이해관계자 범주마다 다섯 단계의 투명성 수준을 정한다(IEEE SA 소개 글 기준). [사실][^ref-1338] IEEE 7001-2021 이 운영자(사용자)와 사고 조사자를 별도 이해관계자로 두므로 설명 가능한 표시는 운영자용, 실행 기록은 조사자용 투명성으로 나눠 평가하는 근거가 될 수 있어 보이나, 표준이 화면 설계나 기록 항목을 정하는지는 확인하지 못했다. [추정][^ref-1338] 두 표준 모두 다중 로봇 관제 화면에 특화된 것인지는 확인하지 못해 질문을 열어 둔다.\\n- **oq-252** (상태: 열림) 여러 제조사 로봇을 지휘하는 플랫폼 수준에서 사고·아차 사고 조사에 필요한 최소 기록 항목(명령·정지·재가동·정비 모드 전환·상태 보고)을 정한 표준이나 공개 규약이 있는가, 윤리적 블랙박스 초안을 플릿 기록에 적용한 사례가 있는가? [윤리적 블랙박스](../../glossary/ethical-black-box.md) 초안(2022-05-13)은 소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록해 사고·아차 사고 조사를 돕는 첫 초안이다. [사실][^ref-1339] 이 초안은 로봇 한 대의 내부 기록을 대상으로 하고 VDA 5050 logReport 도 로봇 쪽 로그 생성을 요청할 뿐 기록 항목을 정하지 않아, 플랫폼 수준의 명령·정지·재가동 기록 항목을 정한 공개 규약은 이번에도 확인하지 못한 것으로 보인다. [추정][^ref-1339][^ref-031]\\n- **oq-316** (상태: 열림) 로봇 플랫폼의 AI 구성요소가 EU AI Act 고위험 AI 로 분류되면 제12조 자동 사건 기록 요건을 플랫폼 실행 기록이 충족해야 하는가, 그 기록의 보관 주체는 플랫폼 사업자와 배포자 가운데 누구인가? 9절의 제12조·제19조·제26조가 부분 근거다. 제19조와 제26조가 모두 공급자·배포자가 통제하는 범위에서 로그를 보관하게 하므로 보관 주체는 로그를 계약상 누가 통제하는지에 따라 나뉠 것으로 보이며, 로봇 플랫폼에 대한 적용 해석 자료는 찾지 못했다. [추정][^ref-1341][^ref-1342]\\n- (새 질문, 상태: 열림) VDA 5050 동작 상태, MassRobotics 운용 상태, Open-RMF 작업 상태 값 사이의 대응표를 공개한 표준 기구나 프로젝트가 있는가, 없다면 플릿 관제 기록에서 어떤 기준으로 대응시키는가?\\n- (새 질문, 상태: 열림) 국내 실외이동로봇 운행안전인증의 관제 장치 항목은 관제 화면 표시와 운행 기록 저장·보관을 어디까지 요구하는가? 평가 항목 수가 바이라인네트워크 보도(16개 항목)와 한국로봇산업진흥원 안내(관제장치를 포함한 8개 심사 항목)에서 다르게 표현되므로 현행 기준도 함께 확인해야 한다.\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"content\":\"[^ref-1093]: Open Robotics (open-rmf/rmf_visualization), rmf_visualization — README, 미확인, https://github.com/open-rmf/rmf_visualization, 접근일 2026-09-30\\n[^ref-302]: Open Robotics (open-rmf/rmf-web), rmf-web — README, 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09\\n[^ref-111]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\\n[^ref-1094]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_log.json (Task Event Log), 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json, 접근일 2026-09-30\\n[^ref-1095]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — log_entry.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/log_entry.json, 접근일 2026-10-09\\n[^ref-031]: VDA (VDA5050/VDA5050), VDA 5050 — Interface for the communication between automated guided vehicles (AGV) and a master control (VDA5050_EN.md, main 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\\n[^ref-1096]: MCAP 프로젝트 (Foxglove), MCAP Format Specification, 미확인, https://mcap.dev/spec, 접근일 2026-09-30\\n[^ref-1097]: Foxglove, Playback — Foxglove Documentation, 미확인, https://docs.foxglove.dev/docs/visualization/playback, 접근일 2026-09-30\\n[^ref-1098]: Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022), Conflict-Based Search for Explainable Multi-Agent Path Finding, 2022-02, https://arxiv.org/abs/2202.09930, 접근일 2026-09-30\\n[^ref-477]: Chen, J. Y. C., Lakhmani, S. G., Stowers, K., Selkowitz, A. R., Wright, J. L., & Barnes, M. (Theoretical Issues in Ergonomics Science 19(3)), Situation awareness-based agent transparency and human-autonomy teaming effectiveness, 2018, https://www.tandfonline.com/doi/full/10.1080/1463922X.2017.1315750, 접근일 2026-09-30 (원문 미열람)\\n[^ref-1099]: Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8)), Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction, 2017-07-27, https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1100]: ISA (International Society of Automation), ISA-101 Series of Standards, 미확인, https://www.isa.org/standards-and-publications/isa-standards/isa-101-standards, 접근일 2026-09-30\\n[^ref-1101]: 현대자동차그룹 로보틱스랩, PROJECTS — Robot Fleet Management (NARCHON), 미확인, https://robotics.hyundai.com/projects/research/view.do?seq=102, 접근일 2026-09-30\\n[^ref-1102]: 네이버클라우드, ARC brain 개요 - 사용 가이드, 미확인, https://guide.ncloud-docs.com/docs/arc-brain-overview, 접근일 2026-09-30\\n[^ref-1103]: 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다, 2025-04-07, https://www.ajunews.com/view/20250407084333272, 접근일 2026-09-30\\n[^ref-1337]: MassRobotics (MassRobotics-AMR/AMR_Interop_Standard), AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1338]: IEEE Standards Association, How To Make Autonomous Systems More Transparent and Trustworthy, 2022-05-11, https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy, 접근일 2026-10-09\\n[^ref-1339]: Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv, ICRES 2022 제출), An Ethical Black Box for Social Robots: a draft Open Standard, 2022-05-13, https://arxiv.org/abs/2205.06564, 접근일 2026-10-09\\n[^ref-1340]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 12: Record-keeping, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12, 접근일 2026-10-09\\n[^ref-1341]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 19: Automatically generated logs, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-19, 접근일 2026-10-09\\n[^ref-1342]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 26: Obligations of deployers of high-risk AI systems, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26, 접근일 2026-10-09\\n[^ref-1343]: LG CNS (LG 미디어 보도자료), ‘로봇 통합운영 플랫폼’ 개발, 2023-07-06, https://lg.co.kr/media/release/26480, 접근일 2026-10-09\\n[^ref-1344]: 코메디닷컴, [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠, 2024-04-20, https://kormedi.com/1682189/, 접근일 2026-10-09\\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1345]: 바이라인네트워크 (이진호), 뉴빌리티, 실외이동 로봇 운행안전 인증 획득, 2024-01-31, https://byline.network/2024/01/240131_00004/, 접근일 2026-10-09\\n[^ref-980]: 한국로봇산업진흥원, 실외이동로봇 운행안전인증, 미확인, https://www.kiria.org/portal/cert/portalCertEstiSafe.do, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1007]: 뉴스토마토 (이규하), 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동, 2025-04-23, https://www.newstomato.com/ReadNews.aspx?no=1259970, 접근일 2026-10-09 (원문 미열람)\\n[^ref-976]: 정보통신신문 (김연균), 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’, 2024-07-18, https://www.koit.co.kr/news/articleView.html?idxno=123976, 접근일 2026-10-09 (원문 미열람)\\n[^ref-1346]: Open Robotics (open-rmf/rmf-web), rmf-web packages/api-server — README, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\\n[^ref-1347]: Patel, J., Ramaswamy, T., Li, Z., & Pinciroli, C. (arXiv), Transparency in Multi-Human Multi-Robot Interaction, 2021-05-14, https://arxiv.org/abs/2101.10495, 접근일 2026-10-09\\n[^ref-1348]: Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv), Predictive Object-Centric Process Monitoring, 2022-07-20, https://arxiv.org/abs/2207.10017, 접근일 2026-10-09\\n[^ref-1349]: ISO (ANSI Webstore 미리보기), ISO 11064-1:2000 Ergonomic design of control centres — Part 1: Principles for the design of control centres (preview), 2000, https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf, 접근일 2026-10-09\",\"frontmatter\":{\"sources\":[\"ref-1093\",\"ref-302\",\"ref-111\",\"ref-1094\",\"ref-1095\",\"ref-031\",\"ref-1096\",\"ref-1097\",\"ref-1098\",\"ref-477\",\"ref-1099\",\"ref-1100\",\"ref-1101\",\"ref-1102\",\"ref-1103\",\"ref-1337\",\"ref-1338\",\"ref-1339\",\"ref-1340\",\"ref-1341\",\"ref-1342\",\"ref-1343\",\"ref-1344\",\"ref-944\",\"ref-1345\",\"ref-980\",\"ref-1007\",\"ref-976\",\"ref-1346\",\"ref-1347\",\"ref-1348\",\"ref-1349\"],\"confidence\":\"low\",\"last_run\":\"2026-10-09\"}}]}],\"changelog_entry\":\"2026-10-09 | 37. 관제 화면·실행 기록 | 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 | run 2026-10-09-15\",\"index_updates\":{\"home_recent\":\"2026-10-09 — 37. 관제 화면·실행 기록: 공개 상태 값 규약(VDA 5050 동작 상태·오류 수준, MassRobotics 운용 상태)과 현장 사례 6건을 더하고 oq-237 을 해결로 정리\",\"category_recent\":\"2026-10-09 — 37. 관제 화면·실행 기록: 5·7·9·11절 갱신(병원·물류창고·실외·가정·기타 사례, 상태 값 규약·관제실·투명성 표준, EU AI Act 로그 보관 연계 경계, oq-237 해결)\",\"area_recent\":\"2026-10-09 — 37. 관제 화면·실행 기록: 갱신(차등) 5절 사례 6건, 7절 표준 행 7개 추가·rmf-web 행 갱신, 9절 경계 2행·로그 보관 단락, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 32건(1차 조건부 승인 수정 15건 반영)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"operational-state\",\"term_ko\":\"운용 상태\",\"term_en\":\"Operational State (MassRobotics statusReport operationalState)\",\"definition\":\"MassRobotics AMR 상호운용 표준의 상태 보고에서 로봇이 지금 주행·대기·충전·사람 대기·수동 조작 중 어느 상태인지를 아홉 값 가운데 하나로 알리는 필드다.\",\"description\":\"값은 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 이며 statusReport 의 필수 항목이다. 이름이 비슷한 기존 용어 '운용 모드'(Operating Mode, VDA 5050 operatingMode)와는 다른 개념으로, 운용 상태는 MassRobotics 상태 보고가 로봇 단위로 알리는 상태 값이다.\",\"related_areas\":[37,20,21],\"sources\":[\"ref-1337\"]},{\"action\":\"new\",\"slug\":\"action-status\",\"term_ko\":\"동작 상태\",\"term_en\":\"Action Status (VDA 5050 actionStatus)\",\"definition\":\"VDA 5050 에서 로봇이 받은 각 동작의 진행을 INITIALIZING·RUNNING·PAUSED·FINISHED·FAILED·RETRIABLE 값으로 플릿 관제에 보고하는 상태 값이다.\",\"description\":\"VDA 5050 3.0.0 기준이다. logReport 즉시 동작에서는 보고서가 저장되면 FINISHED 와 함께 저장된 로그 이름을 동작 상태로 보고한다.\",\"related_areas\":[37,20,29],\"sources\":[\"ref-031\"]},{\"action\":\"new\",\"slug\":\"transparency-level-ieee-7001\",\"term_ko\":\"자율 시스템 투명성 수준\",\"term_en\":\"Transparency Level (IEEE 7001-2021)\",\"definition\":\"IEEE 7001-2021 이 사용자·인증 담당자·사고 조사자 등 이해관계자 범주마다 최소 수준부터 엄격한 수준까지 다섯 단계로 정한, 객관적으로 평가할 수 있는 투명성 등급이다.\",\"description\":\"이해관계자 범주는 사용자, 검증·인증 담당자, 고장·사고 조사자, 소송·행정 절차의 전문 자문가, 일반 대중이다. 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준이다.\",\"related_areas\":[37,31,50],\"sources\":[\"ref-1338\"]}],\"reference_updates\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 동작 상태 값, 오류 수준 4단계와 번역, information 배열의 시각화·디버깅 전용 규칙, logReport 즉시 동작을 확인했다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-111\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 작업 상태 JSON 스키마. 배차 상태 값, 요청자·라벨, 일시정지·취소·강제 종료·건너뛰기 요청 기록 구조를 확인했다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-302\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"rmf-web 저장소 README. API 서버·API 클라이언트·대시보드 프레임워크 구성과 기본 비영속 내부 데이터베이스 사용을 다시 확인했다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1095\",\"org\":\"Open Robotics (open-rmf/rmf_api_msgs)\",\"title\":\"rmf_api_msgs schemas — log_entry.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/log_entry.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 로그 항목 스키마. 필수 필드 seq·tier·unix_millis_time·text 와 수준 값 네 개를 다시 확인했다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-944\",\"org\":\"로봇신문\",\"title\":\"국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'\",\"published\":\"2024-04-15\",\"url\":\"http://www.irobotnews.com/news/articleView.html?idxno=34601\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 한림대성심병원의 7종 73대 서비스 로봇 통합관제 운영 보도(이전 실행 2026-10-09-14 확인 내용 재인용).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-1007\",\"org\":\"뉴스토마토 (이규하)\",\"title\":\"방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동\",\"published\":\"2025-04-23\",\"url\":\"https://www.newstomato.com/ReadNews.aspx?no=1259970\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 농촌진흥청이 자체 개발 농업 로봇 3종을 하나의 화면으로 관리하는 통합 관리 프로그램 보도(재인용).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-976\",\"org\":\"정보통신신문 (김연균)\",\"title\":\"로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’\",\"published\":\"2024-07-18\",\"url\":\"https://www.koit.co.kr/news/articleView.html?idxno=123976\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. LH토지주택연구원 자료를 인용한 공동주택 로봇 택배 관제실 연동 시나리오 보도(재인용).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-980\",\"org\":\"한국로봇산업진흥원\",\"title\":\"실외이동로봇 운행안전인증\",\"published\":null,\"url\":\"https://www.kiria.org/portal/cert/portalCertEstiSafe.do\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 실외이동로봇 운행안전인증 안내. 인증이 로봇과 관제장치의 조합에 주어진다(재인용).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-1099\",\"org\":\"Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8))\",\"title\":\"Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction\",\"published\":\"2017-07-27\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 운영자 24명이 다중 로봇 임무를 감독한 실험실 인터페이스 비교 연구(이전 실행 2026-09-30-13 확인 내용 재인용).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-1337\",\"org\":\"MassRobotics (MassRobotics-AMR/AMR_Interop_Standard)\",\"title\":\"AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. MassRobotics 공식 저장소의 상호운용 표준 JSON 스키마. identityReport·statusReport 필드와 operationalState 아홉 값을 정한다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":true},{\"id\":\"ref-1338\",\"org\":\"IEEE Standards Association\",\"title\":\"How To Make Autonomous Systems More Transparent and Trustworthy\",\"published\":\"2022-05-11\",\"url\":\"https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"IEEE 7001-2021(자율 시스템 투명성 표준)을 소개하는 IEEE SA 공식 글. 이해관계자 범주 다섯과 범주별 다섯 단계 투명성 수준을 설명한다. 표준 본문은 열지 않았다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1339\",\"org\":\"Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv, ICRES 2022 제출)\",\"title\":\"An Ethical Black Box for Social Robots: a draft Open Standard\",\"published\":\"2022-05-13\",\"url\":\"https://arxiv.org/abs/2205.06564\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록해 사고·아차 사고 조사를 돕는 윤리적 블랙박스의 공개 표준 초안. 초록만 확인했고 부록(표준 본문)은 읽지 못했다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1340\",\"org\":\"European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)\",\"title\":\"Article 12: Record-keeping\",\"published\":\"2024-07-12\",\"url\":\"https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"EU AI Act 제12조. 고위험 AI 의 수명 동안 자동 사건 기록 기능과 기록이 뒷받침해야 할 세 목적을 정한다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1341\",\"org\":\"European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)\",\"title\":\"Article 19: Automatically generated logs\",\"published\":\"2024-07-12\",\"url\":\"https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-19\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"EU AI Act 제19조. 공급자가 통제하는 자동 생성 로그를 목적에 맞는 기간, 최소 6개월 보관하게 한다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1342\",\"org\":\"European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)\",\"title\":\"Article 26: Obligations of deployers of high-risk AI systems\",\"published\":\"2024-07-12\",\"url\":\"https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"EU AI Act 제26조. 제6항이 배포자가 통제하는 자동 생성 로그를 최소 6개월 보관하게 한다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1343\",\"org\":\"LG CNS (LG 미디어 보도자료)\",\"title\":\"‘로봇 통합운영 플랫폼’ 개발\",\"published\":\"2023-07-06\",\"url\":\"https://lg.co.kr/media/release/26480\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"LG CNS 의 Open-RMF 기반 로봇 통합운영 플랫폼 발표와 G마켓 동탄 물류센터 기술검증 착수 보도자료. 기능 서술은 벤더 주장이다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1344\",\"org\":\"코메디닷컴\",\"title\":\"[메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠\",\"published\":\"2024-04-20\",\"url\":\"https://kormedi.com/1682189/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"한림대의료원 커맨드센터 파트장 인터뷰. 7종 73대 서비스 로봇, 통합관제시스템, 2022-08~2024-03 누적 3만 1607건 서비스.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1345\",\"org\":\"바이라인네트워크 (이진호)\",\"title\":\"뉴빌리티, 실외이동 로봇 운행안전 인증 획득\",\"published\":\"2024-01-31\",\"url\":\"https://byline.network/2024/01/240131_00004/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"실외이동로봇 운행안전인증이 관제 장치를 포함한 16개 항목을 평가한다는 보도. 관제 장치 항목의 세부는 없다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1346\",\"org\":\"Open Robotics (open-rmf/rmf-web)\",\"title\":\"rmf-web packages/api-server — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"rmf-web API 서버 README. 기본은 메모리 내 SQLite 이고 db_url 로 PostgreSQL·SQLite·MySQL·MariaDB 를 설정한다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1347\",\"org\":\"Patel, J., Ramaswamy, T., Li, Z., & Pinciroli, C. (arXiv)\",\"title\":\"Transparency in Multi-Human Multi-Robot Interaction\",\"published\":\"2021-05-14\",\"url\":\"https://arxiv.org/abs/2101.10495\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"여러 운영자–다중 로봇 상호작용에서 네 가지 투명성 모드를 참가자 18명 사용자 연구로 비교한 프리프린트(초록 확인).\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1348\",\"org\":\"Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv)\",\"title\":\"Predictive Object-Centric Process Monitoring\",\"published\":\"2022-07-20\",\"url\":\"https://arxiv.org/abs/2207.10017\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"RoboCup Logistics League 시뮬레이션 사건을 객체 중심 이벤트 로그(OCEL)로 만들어 이후 사건·시각을 예측한 프리프린트. 본문은 ar5iv 로 열었다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false},{\"id\":\"ref-1349\",\"org\":\"ISO (ANSI Webstore 미리보기)\",\"title\":\"ISO 11064-1:2000 Ergonomic design of control centres — Part 1: Principles for the design of control centres (preview)\",\"published\":\"2000\",\"url\":\"https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"ISO 11064-1:2000 미리보기(표지·목차·머리말·서론). 계열의 8개 부 제목을 확인했고 적용 범위 절과 본문은 미리보기에 없다.\",\"cited_by\":[\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md\"],\"source_unopened\":false}],\"open_question_updates\":[{\"action\":\"update\",\"id\":\"oq-237\",\"question\":\"여러 제조사 로봇의 작업 상태와 실행 로그를 한 화면·한 기록 형식으로 모을 때 공통 작업 상태 값과 로그 수준을 정한 표준이나 공개 규약이 Open-RMF 작업 상태 스키마 말고도 있는가?\",\"areas\":[37,21],\"status\":\"해결\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#11-열린-질문\"},{\"action\":\"new\",\"question\":\"VDA 5050 동작 상태, MassRobotics 운용 상태, Open-RMF 작업 상태 값 사이의 대응표를 공개한 표준 기구나 프로젝트가 있는가, 없다면 플릿 관제 기록에서 어떤 기준으로 대응시키는가?\",\"areas\":[37,21],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"국내 실외이동로봇 운행안전인증의 관제 장치 항목은 관제 화면 표시와 운행 기록 저장·보관을 어디까지 요구하는가? 평가 항목 수가 바이라인네트워크 보도(16개 항목)와 한국로봇산업진흥원 안내(관제장치를 포함한 8개 심사 항목)에서 다르게 표현되므로 현행 기준도 함께 확인해야 한다.\",\"areas\":[37,59,66],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"병원\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"병원\",\"item\":\"예외·성과\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"물류창고\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"실외\",\"item\":\"제약\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"가정\",\"item\":\"시작 조건\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"가정\",\"item\":\"작업 대상\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"},{\"site_type\":\"기타\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시\",\"title\":\"37. 관제 화면·실행 기록\"}],\"standards_updates\":[{\"name\":\"ISO 11064 관제 센터 인간공학 설계(Ergonomic design of control centres) 계열\",\"kind\":\"표준\",\"org\":\"ISO\",\"url\":\"https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf\",\"related_areas\":[37,38],\"summary\":\"설계 원칙, 관제 공간·관제실 배치, 작업대 배치·치수, 표시 장치와 조작기, 환경 요건, 관제 센터 평가 원칙 등 여러 부로 관제 센터의 인간공학 설계를 다룬다. ISO 11064-1:2000 미리보기 머리말 기준이며 각 부의 이후 개정 여부·적용 범위는 미확인이다.\",\"ref_id\":\"ref-1349\"},{\"name\":\"IEEE 7001-2021 자율 시스템 투명성 표준\",\"kind\":\"표준\",\"org\":\"IEEE Standards Association\",\"url\":\"https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy\",\"related_areas\":[37,31,50],\"summary\":\"사용자, 검증·인증 담당자, 고장·사고 조사자, 전문 자문가, 일반 대중의 이해관계자 범주마다 객관적으로 평가할 수 있는 다섯 단계 투명성 수준을 정한다. IEEE SA 소개 글(2022-05-11) 기준이며 표준 본문은 미열람이다.\",\"ref_id\":\"ref-1338\"}],\"additional_research_requests\":[\"5절 적용 사례: 제조 공장·상업 시설에서 여러 로봇을 하나의 관제 화면·실행 기록으로 운영한 사례가 이번에도 없다. 두 현장 유형의 사례(한국 사례 우선)를 조사해 달라.\",\"5절 실외 사례·새 열린 질문: 실외이동로봇 운행안전인증의 관제 장치 항목이 화면 표시·운행 기록 저장·보관을 어디까지 요구하는지, 평가 항목 수(기사 16개, 진흥원 안내 심사 항목 8개) 가운데 현행 기준이 무엇인지 인증 고시 원문으로 확인이 필요하다.\",\"11절 oq-252: 윤리적 블랙박스 초안 부록(기록 항목·보관 시간 창·보안 요건)을 PDF 원문으로 읽어 플랫폼 수준 기록 항목과 비교할 근거가 필요하다.\",\"11절 oq-239: 마약류 관리에 관한 법률 시행규칙 등 국내 법령 원문으로 병원 특수 물품 로봇 배송 이력의 보관 기간·무결성 요건을 확인해야 한다.\",\"7절·11절 oq-240: IEEE 7001-2021 표준 본문과 ISO 11064 각 부의 적용 범위·현행 개정판을 확인해야 화면·기록 요건 포함 여부를 판단할 수 있다.\",\"프런트매터 related_areas 는 10절(주제 페이지로 분리됨)과 맞추려고 바꾸지 않았다. 이번에 9·11절에서 연결한 21. 상호운용 표준·적합성, 50. 안전 표준·인증·사고 조사, 59. 법·규제·보험·라이선스, 66. 실외를 다음 갱신에서 10절 연결에 더할지 검토가 필요하다.\",\"참고문헌 중복 확인(퍼블리셔 담당): 브리프의 ref-1339 는 기존 ref-1120 과, ref-1346 은 기존 ref-762 와 같은 URL 이다. 브리프 id 를 그대로 썼으므로 퍼블리셔의 같은 URL 병합이 적용되는지 확인을 요청한다.\"],\"fixes_applied\":[\"f4 '누가 개입했는지' 과장 수정 — 7절 'Open-RMF 작업 상태 스키마의 배차 상태·개입 기록' 행을 '작업 요청자(booking.requester)와, 일시정지·재개·취소·강제 종료·단계 건너뛰기 요청마다의 요청 시각·라벨(예: dashboard)로 어떤 창구에서 개입했는지'로 쓰고 개입 요청에는 요청자 필드가 없다고 밝혔다.\",\"f6 '실행 기록이 남지 않지만' 수정 — 7절 rmf-web 행을 '기본 설정은 메모리 안의 SQLite(비영속 내부 데이터베이스)를 쓰며 db_url 로 영속 저장 가능'으로 고치고 ref-1346 각주를 ref-302 와 함께 달았으며 두 문서가 같은 저장소라 독립 출처가 아님을 적었다.\",\"f19 항목 수 차이 — 5절 실외 사례 표와 서술에서 '16개 항목'은 바이라인네트워크 보도 기준, 한국로봇산업진흥원 안내는 관제장치를 포함한 8개 심사 항목을 나열한다고 둘 다 제시했고, 이 차이를 둘째 새 열린 질문(11절과 open_question_updates)에 덧붙였으며 조합 인증·관제장치 평가는 [사실] 유지했다.\",\"f19 범위 경계 — 5절 실외 사례 서술과 9절 '업종별 조건(실외)' 행에 인증 판단은 인증 기관·운영자 쪽 연계 대상이고 ROP 에는 실외 현장의 운행 제약으로만 반영된다고 [추정]으로 썼다.\",\"f10 기준일 — 7절 ISO 11064 행에 'ISO 11064-1:2000 미리보기 머리말 기준(확인일 2026-10-09), 각 부의 이후 개정 여부와 적용 범위는 미확인'을 적었다.\",\"f8 공동 후원 표현 — 7절 IEEE 7001-2021 행을 'IEEE 로봇·자동화 학회가 공동 후원 학회 가운데 하나다'로 고치고 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준임을 밝혔다(11절 oq-240 항목에도 소개 글 기준 표기).\",\"f2 logReport 경계 — 7절 표 아래 문장과 9절 '로봇 자체 지능·제어(상태 값·로봇 로그)' 행에서 logReport 로 생성되는 로그 자체는 로봇 쪽 기록(연계 대상)이고 ROP 는 생성 요청과 로그 이름(동작 상태) 수신만 맡는다고 썼다.\",\"f13·f14·f15 EU AI Act — 9절 표 아래 단락에서 조문 내용은 [사실]로, 고위험 AI 해당 여부와 보관 의무 해석은 59. 법·규제·보험·라이선스 쪽 연계 대상으로 짧게 다루고 ROP 몫을 보관 기간 설정과 로그 통제 주체 표시 기능으로 한정해 [추정]으로 썼으며, 제19조·제26조는 '같은 규정'이라고 밝히고 교차 확인으로 표시하지 않았다.\",\"f17 단일 보도 — 5절 둘째 병원 사례 표와 서술에 '3만 1607건'이 코메디닷컴 단일 보도 기준(2024-04-20)임을 밝혔다.\",\"f18 벤더 주장 — 5절 물류창고 사례의 표와 서술에 [추정] 뒤 '벤더 주장'을 병기하고 기술검증 착수 발표뿐이며 운영 결과는 확인되지 않았다고 썼으며, 물류 흐름 단계는 서술하지 않았다.\",\"f24 객체 유형·예측 대상 — 11절 oq-131 항목에서 객체 유형을 '로봇·주문·부품(제품)'으로, 예측 대상을 '이후 사건과 그 시각(남은 사건 순서 포함)'으로 썼다.\",\"f1·f2 VDA 5050 기준 — 7절 VDA 5050 세 행에 '기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09'를 적고 기존 각주 ref-031 을 재사용했다(13절 접근일 2026-10-09로 갱신).\",\"각주 원문 미열람 표시 — 13절에서 ref-944·ref-1007·ref-976·ref-980·ref-1099·ref-1337 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.\",\"11절 열린 질문 정리 — oq-237 을 해결(근거 f1·f3·f4, 대응표 문제는 새 질문으로 이음)로 바꾸고, oq-238·oq-239 는 열림 유지, oq-131·oq-240·oq-252·oq-316 은 해결로 바꾸지 않고 부분 근거(f24·f25, f8·f9·f10, f11·f12, f13·f14·f15)만 덧붙였으며, 기존 '(새 질문, 상태: 열림)' 네 줄을 oq-237·oq-238·oq-239·oq-240 으로 표기했다.\",\"용어집 혼동 방지 — '운용 상태'(operational-state) 항목 설명에 기존 용어 '운용 모드'(Operating Mode, VDA 5050 operatingMode)와 다른 개념임을 한 문장으로 밝혔다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-09-15",
+    "outline": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 2600,
+        "summary": "관제 화면·실행 기록의 현장 근거는 병원·물류창고·실외·가정·기타에서 찾았지만 대부분 보도·발표 단계이며, 화면 항목과 기록 형식을 공개한 사례는 확인하지 못했다. [추정][^ref-1344][^ref-1343]",
+        "planned_findings": [
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 2200,
+        "summary": "Open-RMF 작업 상태 스키마 외에 VDA 5050 3.0.0 동작 상태·오류 수준과 MassRobotics 운용 상태가 공개 상태 값 규약이며, 관제실 설계(ISO 11064)·투명성(IEEE 7001-2021)·윤리적 블랙박스 초안을 더했다. [사실][^ref-031][^ref-1337]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f6",
+          "f7",
+          "f8",
+          "f10",
+          "f11"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+        "budget_chars": 1700,
+        "summary": "ROP는 여러 규약의 상태 값을 대응표로 정규화하고 logReport 요청·로그 이름 수신을 맡으며, 로봇 쪽 로그·인증 판단·로그 보관 의무 해석은 연계 대상이다. [추정][^ref-031][^ref-1341]",
+        "planned_findings": [
+          "f2",
+          "f5",
+          "f13",
+          "f14",
+          "f15",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1800,
+        "summary": "oq-237 은 해결, oq-131·oq-240·oq-252·oq-316 은 부분 근거만 더했고 oq-238·oq-239 는 열림이며 새 질문 2건을 올린다. [추정][^ref-031][^ref-1337]",
+        "planned_findings": [
+          "f5",
+          "f9",
+          "f12",
+          "f15",
+          "f22",
+          "f23",
+          "f24",
+          "f25"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "13. 참고 자료 (각주)",
+        "budget_chars": 0,
+        "summary": "각주 정의 37건(신규 13건, 재사용 출처의 접근일·원문 미열람 표시 갱신)."
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "5절 현장 사례를 6건(병원 2·물류창고·실외·가정·기타)으로 늘리고 '찾지 못했다' 문장 교체, 7절에 VDA 5050 동작 상태·오류 수준·logReport, MassRobotics 운용 상태, Open-RMF 배차·개입 기록, ISO 11064, IEEE 7001-2021, 윤리적 블랙박스 초안 행 추가와 rmf-web 행 갱신, 9절에 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계 추가, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 갱신",
+        "patches": [
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "replace",
+            "content": "관제 화면·실행 기록의 현장 근거는 병원·물류창고·실외·가정·기타 현장에서 찾았지만 대부분 보도·발표 단계 자료여서, 화면 항목과 기록 형식까지 공개한 사례는 2026-10-09 기준으로 확인하지 못했다. [추정][^ref-1103][^ref-1344][^ref-1343][^ref-1345][^ref-976][^ref-1007]\n\n### 병원 — 특수 물품 배송 이력 관리 계획\n\n**현장 유형:** 병원\n\n**사례:** 병원에서 특수 물품을 로봇으로 배송하고 수령 인증과 배송 이력을 남기는 계획(한림대학교의료원 협약, 2025-04-07 보도 기준)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 특수 물품(품목 범위는 미확인) [사실][^ref-1103] |\n| 수행 자원 | 병원 맞춤형 배송 로봇과 관제 시스템(공동 개발 계획) [사실][^ref-1103] |\n| 제약 | 미확인 |\n| 완료·인계 | 안면 인식 기반 수령 인증, 특수 물품 배송 이력 관리 시스템(개발 계획) [사실][^ref-1103] |\n| 예외·성과 | 미확인(운영 결과 보도 없음) |\n\n아주경제 2025-04-07 보도에 따르면 현대차·기아는 한림대학교의료원과 업무협약을 맺고 병원 맞춤형 배송 로봇과 관제 시스템, 안면 인식 기반 수령 인증, 특수 물품 배송 이력 관리 시스템을 함께 개발하기로 했다. [사실][^ref-1103] 이 보도는 협약·개발 계획 단계이며, 실제 운영 여부와 처리량·시간 같은 결과는 확인되지 않았다.\n\n이 사례에서 37. 관제 화면·실행 기록은 완료·인계 칸에 관여한다. 배송 이력을 남겨야 하는 현장에서는 실행 기록이 '누구에게 넘겨졌는가'를 나중에 확인하는 근거가 된다. [추정][^ref-1103]\n\n### 병원 — 여러 제조사 서비스 로봇의 통합 관제\n\n**현장 유형:** 병원\n\n**사례:** 커맨드센터가 7종 73대의 서비스 로봇을 하나의 통합관제시스템으로 운영(한림대학교성심병원, 2024-04 보도 기준)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인(로봇 종류는 안내·배송·방역 등) |\n| 수행 자원 | 안내·배송·방역 로봇 등 7종 73대의 서비스 로봇과 커맨드센터의 통합관제시스템 [사실][^ref-1344][^ref-944] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인(관제 화면 항목·배송 이력 조회 방식 미공개) |\n| 예외·성과 | 2022-08부터 2024-03까지 로봇 서비스 3만 1607건 시행(코메디닷컴 단일 보도 기준, 2024-04-20) [사실][^ref-1344] |\n\n한림대학교성심병원은 2024-04 기준 안내·배송·방역 로봇 등 7종 73대의 서비스 로봇을 커맨드센터의 통합관제시스템으로 운영하며, 이 내용은 코메디닷컴(2024-04-20)과 로봇신문(2024-04-15) 두 보도가 함께 전한다. [사실][^ref-1344][^ref-944] 커맨드센터 담당자는 “각기 다른 제조사의 로봇들을 하나의 관제시스템으로 연결하는 일이 중요하다”고 밝혔다. [사실][^ref-1344] 같은 코메디닷컴 보도에 따르면 로봇 서비스는 2022-08부터 2024-03까지 3만 1607건 시행되었고, 이 수치는 단일 보도 기준이다. [사실][^ref-1344] 관제 화면 항목이나 배송 이력 조회 방식은 공개되지 않았다. [사실][^ref-1344]\n\n이 사례에서 37. 관제 화면·실행 기록은 서로 다른 제조사 로봇을 한 관제시스템으로 묶는 수행 자원 칸에 관여하는 것으로 보인다. [추정][^ref-1344]\n\n### 물류창고 — 통합운영 플랫폼 기술검증 착수\n\n**현장 유형:** 물류창고\n\n**사례:** Open-RMF 기반 로봇 통합운영 플랫폼의 물류센터 기술검증 착수(LG CNS·G마켓 동탄 물류센터, 2023-07-06 발표)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | AGV·AMR·오토스토어·소팅로봇을 연계한 로봇 통합운영 플랫폼 [추정] 벤더 주장[^ref-1343] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인(기술검증 착수 발표뿐이며 운영 결과 미공개) |\n\nLG CNS 는 2023-07-06 보도자료에서 Open-RMF 를 바탕으로 한 로봇 통합운영 플랫폼에서 고객이 로봇의 이동 동선과 작업 처리 결과를 실시간으로 한눈에 확인할 수 있고, AGV·AMR·오토스토어·소팅로봇이 연계되어 있으며, G마켓 동탄 물류센터에서 기술검증에 착수했다고 밝혔다. [추정] 벤더 주장[^ref-1343] 이는 기술검증 착수 발표뿐이며, 운영 결과는 확인되지 않았다.\n\n### 실외 — 운행안전인증과 관제 장치\n\n**현장 유형:** 실외\n\n**사례:** 실외이동로봇을 운행하기 전에 로봇과 관제장치의 조합으로 운행안전인증을 받는 경우(2024-01 보도 기준)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 미확인 |\n| 제약 | 운행안전인증은 로봇과 관제장치의 조합에 주어지고 관제 장치가 평가 대상에 든다. 평가 항목 수는 기사(16개)와 한국로봇산업진흥원 안내(심사 항목 8개)의 표현이 다르다 [사실][^ref-1345][^ref-980] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n국내 [실외이동로봇 운행안전인증](../../glossary/outdoor-mobile-robot-operational-safety-certification.md)은 로봇과 관제장치의 조합에 주어지고 관제 장치가 평가 대상에 들며, 이는 바이라인네트워크 보도(2024-01-31)와 한국로봇산업진흥원 안내 두 출처로 확인된다. [사실][^ref-1345][^ref-980] 평가 항목 수는 출처마다 표현이 다르다. 바이라인네트워크 보도는 속도 제어·비상정지·장애물 감지·횡단보도 통행·운행구역 준수·관제 장치 등 16개 항목을 평가하고 모든 기준을 만족해야 인증한다고 전한다. [사실][^ref-1345] 한국로봇산업진흥원 안내는 관제장치를 포함한 8개 심사 항목을 나열한다. [사실][^ref-980]\n\n어느 쪽이 현행 기준인지와 관제 장치 항목이 화면 표시·운행 기록을 어디까지 요구하는지는 확인하지 못해 11절 열린 질문으로 올렸다. 인증 판단은 인증 기관과 운영자 쪽의 연계 대상이며, ROP 에는 실외 현장에서 관제 장치가 운행 제약의 하나가 된다는 점으로만 반영될 것으로 보인다. [추정][^ref-1345][^ref-980]\n\n### 가정 — 공동주택 로봇 택배의 관제실 연동\n\n**현장 유형:** 가정\n\n**사례:** 공동주택 단지 로봇 택배에서 집하처의 송장번호 인식으로 관제실에 물품 정보를 전달하는 시나리오(LH토지주택연구원 자료 인용 보도, 2024-07-18)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 택배 차량이 단지 집하처에 송장번호를 인식시키면 물품 정보가 관제실로 전달된다(시나리오 단계 서술) [사실][^ref-976] |\n| 작업 대상 | 택배 물품과 송장번호로 인식한 물품 정보 [사실][^ref-976] |\n| 수행 자원 | 미확인 |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n정보통신신문 보도(2024-07-18)는 LH토지주택연구원 자료를 인용해, 공동주택 단지 로봇 택배에서 택배 차량이 단지 집하처에 송장번호를 인식시키면 물품 정보가 관제실로 전달된다고 전하며, 이는 시나리오 단계 서술이다. [사실][^ref-976] 이 사례에서 37. 관제 화면·실행 기록은 관제실이 받은 물품 정보로 배송 작업 기록이 시작되는 시작 조건 칸에 관여하는 것으로 보인다. [추정][^ref-976]\n\n### 기타 — 농업 로봇 통합 관리 프로그램\n\n**현장 유형:** 기타\n\n**사례:** 농촌진흥청이 자체 개발한 농업 로봇 3종을 하나의 화면으로 관리(2025-04-23 보도 기준)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 자체 개발한 방제·운반·모니터링 로봇 3종과 이를 하나의 화면으로 관리하는 통합 관리 프로그램 [사실][^ref-1007] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n농촌진흥청의 통합 관리 프로그램은 자체 개발한 방제·운반·모니터링 로봇 3종을 하나의 화면으로 관리한다(2025-04-23 보도 기준). [사실][^ref-1007] 다른 제조사 로봇의 연결 여부는 보도에 없다. [사실][^ref-1007]\n\n제조 공장·상업 시설 현장의 관제 화면·실행 기록 사례는 이번 조사(2026-10-09)에서도 찾지 못했다."
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "replace",
+            "content": "관제 화면·실행 기록에 쓸 수 있는 공개 구현과 명세는 다음과 같다(확인일 2026-09-30, 상태 값 규약·관제실·투명성·기록 장치 행은 2026-10-09 추가). [사실][^ref-1093][^ref-031][^ref-1096]\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| Open-RMF rmf_visualization | 오픈소스 | 층 평면도 위에 로봇 위치·문·승강기·주행 그래프·예측 궤적 표시 | [사실][^ref-1093] |\n| Open-RMF rmf-web | 오픈소스 | 웹 대시보드·API 서버. 기본 설정은 메모리 안의 SQLite(비영속 내부 데이터베이스)를 쓰며, 설정의 db_url 로 PostgreSQL·SQLite·MySQL·MariaDB 를 지정해 영속 저장할 수 있다(확인일 2026-10-09, 두 문서는 같은 저장소라 독립 출처가 아니다) | [사실][^ref-1346][^ref-302] |\n| Open-RMF rmf_api_msgs 작업 상태·작업 로그 스키마 | 오픈소스 | 상태 값 12개, 작업·단계·사건 3계층 로그. 로그 항목은 순번(seq)·수준(tier)·밀리초 유닉스 시각·본문이 필수이고 수준 값은 uninitialized·info·warning·error 다(2026-10-09 재확인) | [사실][^ref-111][^ref-1094][^ref-1095] |\n| Open-RMF 작업 상태 스키마의 배차 상태·개입 기록 | 오픈소스 | 작업 상태 값과 별도로 배차 상태를 queued·selected·dispatched·failed_to_assign·canceled_in_flight 로 기록한다. 작업 요청자(booking.requester)와, 일시정지·재개·취소·강제 종료·단계 건너뛰기 요청마다의 요청 시각·라벨(예: dashboard)로 어떤 창구에서 개입했는지를 담으며, 개입 요청 자체에는 요청자 필드가 없다(확인일 2026-10-09) | [사실][^ref-111] |\n| VDA 5050 3.0.0 visualization·state 토픽 | 표준 | 차량 위치·계획 경로를 시각화 시스템에 보내는 토픽을 상태 토픽과 분리. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\n| VDA 5050 3.0.0 동작 상태·오류 수준 | 표준 | 로봇이 보고하는 동작 상태 값 INITIALIZING·RUNNING·PAUSED·FINISHED·FAILED·RETRIABLE, 오류 수준 WARNING·URGENT·CRITICAL·FATAL 네 단계, 오류마다 사람이 읽는 설명(errorDescription)·조치 힌트(errorHint)와 ISO 639-1 언어 코드별 번역. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\n| VDA 5050 3.0.0 information 배열·logReport | 표준 | 로봇이 state 메시지의 information 배열로 보내는 부가 정보는 플릿 관제가 로직에 쓰지 않고 시각화·디버깅에만 쓴다. logReport 즉시 동작으로 로봇에 로그 보고서 생성·저장을 요청하고 저장된 로그 이름을 동작 상태로 보고받는다. 기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-031] |\n| MassRobotics AMR 상호운용 표준 statusReport | 표준 | uuid·timestamp·operationalState·location 이 필수이고, 운용 상태를 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 아홉 값으로 정한다. 오류 코드 배열, 약 10초의 단기 경로(예측 위치 최대 10개), 목적지, 배터리 잔량은 선택 항목이다. 공식 저장소 JSON 스키마 기준, 발행일 미확인, 확인일 2026-10-09 | [사실][^ref-1337] |\n| MCAP | 오픈소스 | 시각 색인을 둔 기록 컨테이너 형식 | [사실][^ref-1096] |\n| ISA-101.01-2015, ISA-TR101.01-2022(HMI 철학), ISA-TR101.02-2019(HMI 사용성과 성능) | 표준 | HMI 수명주기(설계·구현·운영·지속 개선)를 다루며 연속·배치·이산 산업에 적용된다고 밝힌다. 표준 본문은 유료라 발행 기관 소개 페이지 기준 | [사실][^ref-1100] |\n| ISO 11064 관제 센터 인간공학 설계 계열 | 표준 | 설계 원칙, 관제 공간 배치, 관제실 배치, 작업대 배치·치수, 표시 장치와 조작기, 환경 요건, 관제 센터 평가 원칙, 특정 적용의 인간공학 요건의 여러 부로 나뉜다. ISO 11064-1:2000 미리보기 머리말 기준(확인일 2026-10-09)이며, 각 부의 이후 개정 여부와 적용 범위는 미확인 | [사실][^ref-1349] |\n| IEEE 7001-2021 자율 시스템 투명성 표준 | 표준 | 사용자, 검증·인증 담당자, 고장·사고 조사자, 소송·행정 절차의 전문 자문가, 일반 대중의 이해관계자 범주마다 최소 수준부터 엄격한 수준까지 객관적으로 평가할 수 있는 다섯 단계의 투명성 수준을 정한다. IEEE 로봇·자동화 학회가 공동 후원 학회 가운데 하나다. 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준 | [사실][^ref-1338] |\n| [윤리적 블랙박스](../../glossary/ethical-black-box.md) 공개 표준 초안 | 프레임워크 | 사고·아차 사고 조사를 돕기 위해 소셜 로봇의 센서·구동기·제어 결정 같은 운용 데이터를 안전하게 기록하는 장치 또는 소프트웨어 모듈의 첫 초안(Winfield 외, 2022-05-13, ICRES 2022 제출). 부록의 기록 항목·보관 기간은 미확인 | [사실][^ref-1339] |\n| Foxglove 재생 기능 | 벤더 도구 | 시간축 탐색·사건 주석·lookback 재생 | [추정] 벤더 주장[^ref-1097] |\n\nVDA 5050 logReport 로 생성되는 로그 자체는 로봇 쪽 기록이어서 연계 대상이고, ROP 는 생성 요청과 로그 이름(동작 상태) 수신만 맡는 것으로 본다. [추정][^ref-031] 세 상태 값 규약(VDA 5050, MassRobotics, Open-RMF)은 값 집합과 단위가 서로 달라 9절과 11절에서 정규화 문제로 다룬다.\n\n전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다."
+          },
+          {
+            "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+            "action": "replace",
+            "content": "ROP는 제조사 플릿과 설비가 내보내는 상태를 받아 하나의 화면과 기록으로 묶는 쪽을 맡고, 로봇 내부 기록과 설비 자체 관제 화면은 연계 대상으로 둘 것으로 보인다. [추정][^ref-1093][^ref-031]\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 여러 제조사 플릿이 보고한 위치·계획 경로·작업 상태를 하나의 층별 지도에 표시하고, 공통 작업 상태 값·단계·수준별 로그로 정규화해 기록 [추정][^ref-1093][^ref-111][^ref-1094] | 로봇 온보드 센서·주행 기록(로봇 쪽 bag·MCAP 기록), 로컬 회피 시각화 — 로봇 제조사 [추정][^ref-1096][^ref-031] |\n| 로봇 자체 지능·제어(상태 값·로봇 로그) | VDA 5050 동작 상태·오류 수준, MassRobotics 운용 상태, Open-RMF 작업 상태처럼 값 집합과 단위(동작·로봇·작업)가 다른 상태 값을 대응표로 맞추는 정규화 [추정][^ref-031][^ref-1337][^ref-111]; VDA 5050 logReport 생성 요청과 로그 이름(동작 상태) 수신 [추정][^ref-031] | logReport 로 생성되는 로그 자체와 로봇 내부의 센서·구동기·제어 결정 기록(윤리적 블랙박스 초안이 다루는 대상) — 로봇 제조사 [추정][^ref-031][^ref-1339] |\n| 시설·설비 제어 | 승강기·문 상태를 같은 지도에 겹쳐 표시하고 기록 [추정][^ref-1093] | 승강기·자동문·CCTV 같은 설비의 자체 관제 화면 — 시설·설비 쪽 [추정][^ref-1093] |\n| 업종별 조건(실외) | 실외이동로봇 운행안전인증이 로봇과 관제장치의 조합에 주어지는 점을 실외 현장의 운행 제약으로 반영 [추정][^ref-1345][^ref-980] | 인증 여부 판단과 관제 장치 항목의 세부 요건 충족 — 인증 기관·운영자 [추정][^ref-980] |\n\n이번 자료를 종합하면 ROP가 직접 맡을 범위는 통합 화면, 정규화한 실행 기록, 그 기록의 영속 저장과 시각 색인 기반 재생·사건 검색, 계획을 사람이 확인할 수 있게 나눠 보여 주는 설명 표시다. [추정][^ref-1093][^ref-302][^ref-111][^ref-1094][^ref-1096][^ref-1098][^ref-477] 6절에서 예로 든 나콘·ARC brain·Foxglove도 같은 범위의 기능을 내세우지만 독립 확인이 없다. [추정] 벤더 주장[^ref-1101][^ref-1102][^ref-1097] ROP는 VDA 5050 visualization·state 토픽처럼 제조사가 내보내는 상태를 받는 인터페이스를 맡는다. [추정][^ref-031]\n\n실행 기록의 보관 의무는 연계 대상이다. EU AI Act 제12조는 고위험 AI 시스템이 수명 동안 [자동 사건 기록](../../glossary/automatic-recording-of-events.md)을 할 수 있게 기술적으로 갖추고, 그 기록이 위험 상황·실질적 변경의 식별, 출시 후 모니터링, 배포자의 운용 모니터링을 뒷받침하게 한다(규정 2024/1689, 2024-07-12 발행). [사실][^ref-1340] 같은 규정의 제19조 제1항과 제26조 제6항은 자동 생성 로그를 공급자와 배포자가 각자 통제하는 범위에서 목적에 맞는 기간, 최소 6개월 보관하게 하고, 개인정보 보호법 등 다른 법이 다르게 정하면 그에 따르게 한다(두 조문은 같은 규정이다). [사실][^ref-1341][^ref-1342] 로봇 플랫폼의 AI 구성요소가 고위험 AI 에 해당하는지와 보관 의무의 해석은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md) 쪽 연계 대상이며, ROP 몫은 실행 기록의 보관 기간 설정과 로그 통제 주체 표시 기능으로 한정될 것으로 보인다. [추정][^ref-1340][^ref-1341][^ref-1342]\n\n이 경계는 제품 전략에 따라 이동할 수 있다. 자사 로봇까지 만드는 회사는 로컬 주행을 포함할 수 있지만, **이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다.** [분류원문]\n\n범위 경계 전체는 [범위 경계](../../about/scope-boundary.md)에 있다."
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "replace",
+            "content": "공통 상태 값 규약을 묻던 oq-237 은 해결로 보고, 나머지 질문에는 부분 근거만 더했다(2026-10-09 기준). 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n- **oq-131** (상태: 열림) 플릿 관제의 실행 기록(작업·배정·위치·사건 시각)을 시뮬레이션 시나리오 사양으로 바꾸는 공개 형식이나 변환 규칙이 있는가, 아니면 프로세스 마이닝식 로그 발견을 로봇 플릿 기록에 맞게 새로 정의해야 하는가? 이번 실행(2026-09-30-13)에서도 공개 형식을 찾지 못했다. 부분 근거로, Rohrer 외(2022)는 공장 물류를 모사한 RoboCup Logistics League 시뮬레이션의 사건을 데이터베이스에서 꺼내 로봇·주문·부품(제품) 객체와 11개 활동을 담은 [객체 중심 이벤트 로그](../../glossary/ocel.md)(OCEL JSON)로 만들고, 이후 사건과 그 시각(남은 사건 순서 포함)을 예측하는 데 썼다. [사실][^ref-1348] 그 로그를 시뮬레이션 시나리오 사양으로 되돌리는 변환 규칙은 이번(2026-10-09-15)에도 확인하지 못해, 기록 쪽 형식만 부분 근거가 된 것으로 보인다. [추정][^ref-1348]\n- **oq-237** (상태: 해결 · 실행 2026-10-09-15) 여러 제조사 로봇의 작업 상태와 실행 로그를 한 화면·한 기록 형식으로 모을 때 공통 작업 상태 값과 로그 수준을 정한 표준이나 공개 규약이 Open-RMF 작업 상태 스키마 말고도 있는가? 답: VDA 5050 3.0.0 은 동작 상태 값과 오류 수준 네 단계를 정한다. [사실][^ref-031] MassRobotics AMR 상호운용 표준은 로봇 운용 상태 아홉 값을 정한다. [사실][^ref-1337] 다만 세 규약의 값 집합과 단위(동작·로봇·작업)가 달라 ROP 가 대응표로 정규화해야 할 것으로 보이며, 대응표 문제는 아래 새 질문으로 잇는다. [추정][^ref-031][^ref-1337][^ref-111] 근거는 7절 표에 있다.\n- **oq-238** (상태: 열림) 에이전트 투명성이나 계획 분할 시각화 같은 설명 가능한 표시를 실제 운영 중인 로봇 플릿 관제 화면에 적용해 운영자의 상황 인식과 대응 시간을 현장에서 측정한 연구가 있는가? Patel 외(2021)는 여러 운영자가 다중 로봇을 함께 감독할 때의 투명성을 다루며, 자기 작업 정보만 보이는 방식·다른 운영자 작업 정보를 공유하는 방식·둘을 섞은 방식·없음의 네 모드를 참가자 18명의 사용자 연구로 비교해 인식·신뢰·작업 부하를 쟀다. [사실][^ref-1347] 이처럼 이번에 확인한 연구도 실험실 사용자 연구 수준이어서, 현장 측정 연구는 여전히 확인하지 못한 것으로 보인다. [추정][^ref-1347][^ref-1099]\n- **oq-239** (상태: 열림) 병원의 특수 물품(마약류·검체 등) 로봇 배송 이력처럼 보관 의무가 걸릴 수 있는 실행 기록의 보관 기간과 무결성 요건을 국내 법령·지침이 정하고 있는가? 이번 실행(2026-10-09-15)에서도 법령 원문으로 로봇 배송 이력의 보관 요건을 확인하지 못했다.\n- **oq-240** (상태: 열림) 공정 산업의 ISA-101 처럼 다중 로봇 관제 화면에 특화된 화면 설계 표준이나 지침이 있는가, 아니면 공정 HMI 표준을 옮겨 써야 하는가? ISO 11064 계열은 관제 센터 인간공학 설계를 표시 장치와 조작기, 관제 센터 평가 원칙 등 여러 부로 다룬다(ISO 11064-1:2000 머리말 기준). [사실][^ref-1349] IEEE 7001-2021 은 이해관계자 범주마다 다섯 단계의 투명성 수준을 정한다(IEEE SA 소개 글 기준). [사실][^ref-1338] IEEE 7001-2021 이 운영자(사용자)와 사고 조사자를 별도 이해관계자로 두므로 설명 가능한 표시는 운영자용, 실행 기록은 조사자용 투명성으로 나눠 평가하는 근거가 될 수 있어 보이나, 표준이 화면 설계나 기록 항목을 정하는지는 확인하지 못했다. [추정][^ref-1338] 두 표준 모두 다중 로봇 관제 화면에 특화된 것인지는 확인하지 못해 질문을 열어 둔다.\n- **oq-252** (상태: 열림) 여러 제조사 로봇을 지휘하는 플랫폼 수준에서 사고·아차 사고 조사에 필요한 최소 기록 항목(명령·정지·재가동·정비 모드 전환·상태 보고)을 정한 표준이나 공개 규약이 있는가, 윤리적 블랙박스 초안을 플릿 기록에 적용한 사례가 있는가? [윤리적 블랙박스](../../glossary/ethical-black-box.md) 초안(2022-05-13)은 소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록해 사고·아차 사고 조사를 돕는 첫 초안이다. [사실][^ref-1339] 이 초안은 로봇 한 대의 내부 기록을 대상으로 하고 VDA 5050 logReport 도 로봇 쪽 로그 생성을 요청할 뿐 기록 항목을 정하지 않아, 플랫폼 수준의 명령·정지·재가동 기록 항목을 정한 공개 규약은 이번에도 확인하지 못한 것으로 보인다. [추정][^ref-1339][^ref-031]\n- **oq-316** (상태: 열림) 로봇 플랫폼의 AI 구성요소가 EU AI Act 고위험 AI 로 분류되면 제12조 자동 사건 기록 요건을 플랫폼 실행 기록이 충족해야 하는가, 그 기록의 보관 주체는 플랫폼 사업자와 배포자 가운데 누구인가? 9절의 제12조·제19조·제26조가 부분 근거다. 제19조와 제26조가 모두 공급자·배포자가 통제하는 범위에서 로그를 보관하게 하므로 보관 주체는 로그를 계약상 누가 통제하는지에 따라 나뉠 것으로 보이며, 로봇 플랫폼에 대한 적용 해석 자료는 찾지 못했다. [추정][^ref-1341][^ref-1342]\n- (새 질문, 상태: 열림) VDA 5050 동작 상태, MassRobotics 운용 상태, Open-RMF 작업 상태 값 사이의 대응표를 공개한 표준 기구나 프로젝트가 있는가, 없다면 플릿 관제 기록에서 어떤 기준으로 대응시키는가?\n- (새 질문, 상태: 열림) 국내 실외이동로봇 운행안전인증의 관제 장치 항목은 관제 화면 표시와 운행 기록 저장·보관을 어디까지 요구하는가? 평가 항목 수가 바이라인네트워크 보도(16개 항목)와 한국로봇산업진흥원 안내(관제장치를 포함한 8개 심사 항목)에서 다르게 표현되므로 현행 기준도 함께 확인해야 한다."
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "content": "[^ref-1093]: Open Robotics (open-rmf/rmf_visualization), rmf_visualization — README, 미확인, https://github.com/open-rmf/rmf_visualization, 접근일 2026-09-30\n[^ref-302]: Open Robotics (open-rmf/rmf-web), rmf-web — README, 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09\n[^ref-111]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\n[^ref-1094]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — task_log.json (Task Event Log), 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json, 접근일 2026-09-30\n[^ref-1095]: Open Robotics (open-rmf/rmf_api_msgs), rmf_api_msgs schemas — log_entry.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/log_entry.json, 접근일 2026-10-09\n[^ref-031]: VDA (VDA5050/VDA5050), VDA 5050 — Interface for the communication between automated guided vehicles (AGV) and a master control (VDA5050_EN.md, main 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\n[^ref-1096]: MCAP 프로젝트 (Foxglove), MCAP Format Specification, 미확인, https://mcap.dev/spec, 접근일 2026-09-30\n[^ref-1097]: Foxglove, Playback — Foxglove Documentation, 미확인, https://docs.foxglove.dev/docs/visualization/playback, 접근일 2026-09-30\n[^ref-1098]: Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022), Conflict-Based Search for Explainable Multi-Agent Path Finding, 2022-02, https://arxiv.org/abs/2202.09930, 접근일 2026-09-30\n[^ref-477]: Chen, J. Y. C., Lakhmani, S. G., Stowers, K., Selkowitz, A. R., Wright, J. L., & Barnes, M. (Theoretical Issues in Ergonomics Science 19(3)), Situation awareness-based agent transparency and human-autonomy teaming effectiveness, 2018, https://www.tandfonline.com/doi/full/10.1080/1463922X.2017.1315750, 접근일 2026-09-30 (원문 미열람)\n[^ref-1099]: Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8)), Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction, 2017-07-27, https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/, 접근일 2026-10-09 (원문 미열람)\n[^ref-1100]: ISA (International Society of Automation), ISA-101 Series of Standards, 미확인, https://www.isa.org/standards-and-publications/isa-standards/isa-101-standards, 접근일 2026-09-30\n[^ref-1101]: 현대자동차그룹 로보틱스랩, PROJECTS — Robot Fleet Management (NARCHON), 미확인, https://robotics.hyundai.com/projects/research/view.do?seq=102, 접근일 2026-09-30\n[^ref-1102]: 네이버클라우드, ARC brain 개요 - 사용 가이드, 미확인, https://guide.ncloud-docs.com/docs/arc-brain-overview, 접근일 2026-09-30\n[^ref-1103]: 아주경제, 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다, 2025-04-07, https://www.ajunews.com/view/20250407084333272, 접근일 2026-09-30\n[^ref-1337]: MassRobotics (MassRobotics-AMR/AMR_Interop_Standard), AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-10-09 (원문 미열람)\n[^ref-1338]: IEEE Standards Association, How To Make Autonomous Systems More Transparent and Trustworthy, 2022-05-11, https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy, 접근일 2026-10-09\n[^ref-1339]: Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv, ICRES 2022 제출), An Ethical Black Box for Social Robots: a draft Open Standard, 2022-05-13, https://arxiv.org/abs/2205.06564, 접근일 2026-10-09\n[^ref-1340]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 12: Record-keeping, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12, 접근일 2026-10-09\n[^ref-1341]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 19: Automatically generated logs, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-19, 접근일 2026-10-09\n[^ref-1342]: European Commission, AI Act Service Desk (Regulation (EU) 2024/1689), Article 26: Obligations of deployers of high-risk AI systems, 2024-07-12, https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26, 접근일 2026-10-09\n[^ref-1343]: LG CNS (LG 미디어 보도자료), ‘로봇 통합운영 플랫폼’ 개발, 2023-07-06, https://lg.co.kr/media/release/26480, 접근일 2026-10-09\n[^ref-1344]: 코메디닷컴, [메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠, 2024-04-20, https://kormedi.com/1682189/, 접근일 2026-10-09\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\n[^ref-1345]: 바이라인네트워크 (이진호), 뉴빌리티, 실외이동 로봇 운행안전 인증 획득, 2024-01-31, https://byline.network/2024/01/240131_00004/, 접근일 2026-10-09\n[^ref-980]: 한국로봇산업진흥원, 실외이동로봇 운행안전인증, 미확인, https://www.kiria.org/portal/cert/portalCertEstiSafe.do, 접근일 2026-10-09 (원문 미열람)\n[^ref-1007]: 뉴스토마토 (이규하), 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동, 2025-04-23, https://www.newstomato.com/ReadNews.aspx?no=1259970, 접근일 2026-10-09 (원문 미열람)\n[^ref-976]: 정보통신신문 (김연균), 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’, 2024-07-18, https://www.koit.co.kr/news/articleView.html?idxno=123976, 접근일 2026-10-09 (원문 미열람)\n[^ref-1346]: Open Robotics (open-rmf/rmf-web), rmf-web packages/api-server — README, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-10-09\n[^ref-1347]: Patel, J., Ramaswamy, T., Li, Z., & Pinciroli, C. (arXiv), Transparency in Multi-Human Multi-Robot Interaction, 2021-05-14, https://arxiv.org/abs/2101.10495, 접근일 2026-10-09\n[^ref-1348]: Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv), Predictive Object-Centric Process Monitoring, 2022-07-20, https://arxiv.org/abs/2207.10017, 접근일 2026-10-09\n[^ref-1349]: ISO (ANSI Webstore 미리보기), ISO 11064-1:2000 Ergonomic design of control centres — Part 1: Principles for the design of control centres (preview), 2000, https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf, 접근일 2026-10-09",
+            "frontmatter": {
+              "sources": [
+                "ref-1093",
+                "ref-302",
+                "ref-111",
+                "ref-1094",
+                "ref-1095",
+                "ref-031",
+                "ref-1096",
+                "ref-1097",
+                "ref-1098",
+                "ref-477",
+                "ref-1099",
+                "ref-1100",
+                "ref-1101",
+                "ref-1102",
+                "ref-1103",
+                "ref-1337",
+                "ref-1338",
+                "ref-1339",
+                "ref-1340",
+                "ref-1341",
+                "ref-1342",
+                "ref-1343",
+                "ref-1344",
+                "ref-944",
+                "ref-1345",
+                "ref-980",
+                "ref-1007",
+                "ref-976",
+                "ref-1346",
+                "ref-1347",
+                "ref-1348",
+                "ref-1349"
+              ],
+              "confidence": "low",
+              "last_run": "2026-10-09"
+            }
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-09 | 37. 관제 화면·실행 기록 | 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 | run 2026-10-09-15",
+    "index_updates": {
+      "home_recent": "2026-10-09 — 37. 관제 화면·실행 기록: 공개 상태 값 규약(VDA 5050 동작 상태·오류 수준, MassRobotics 운용 상태)과 현장 사례 6건을 더하고 oq-237 을 해결로 정리",
+      "category_recent": "2026-10-09 — 37. 관제 화면·실행 기록: 5·7·9·11절 갱신(병원·물류창고·실외·가정·기타 사례, 상태 값 규약·관제실·투명성 표준, EU AI Act 로그 보관 연계 경계, oq-237 해결)",
+      "area_recent": "2026-10-09 — 37. 관제 화면·실행 기록: 갱신(차등) 5절 사례 6건, 7절 표준 행 7개 추가·rmf-web 행 갱신, 9절 경계 2행·로그 보관 단락, 11절 oq-237 해결·부분 근거·새 질문 2건, 13절 각주 32건(1차 조건부 승인 수정 15건 반영)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "operational-state",
+        "term_ko": "운용 상태",
+        "term_en": "Operational State (MassRobotics statusReport operationalState)",
+        "definition": "MassRobotics AMR 상호운용 표준의 상태 보고에서 로봇이 지금 주행·대기·충전·사람 대기·수동 조작 중 어느 상태인지를 아홉 값 가운데 하나로 알리는 필드다.",
+        "description": "값은 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 이며 statusReport 의 필수 항목이다. 이름이 비슷한 기존 용어 '운용 모드'(Operating Mode, VDA 5050 operatingMode)와는 다른 개념으로, 운용 상태는 MassRobotics 상태 보고가 로봇 단위로 알리는 상태 값이다.",
+        "related_areas": [
+          37,
+          20,
+          21
+        ],
+        "sources": [
+          "ref-1337"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "action-status",
+        "term_ko": "동작 상태",
+        "term_en": "Action Status (VDA 5050 actionStatus)",
+        "definition": "VDA 5050 에서 로봇이 받은 각 동작의 진행을 INITIALIZING·RUNNING·PAUSED·FINISHED·FAILED·RETRIABLE 값으로 플릿 관제에 보고하는 상태 값이다.",
+        "description": "VDA 5050 3.0.0 기준이다. logReport 즉시 동작에서는 보고서가 저장되면 FINISHED 와 함께 저장된 로그 이름을 동작 상태로 보고한다.",
+        "related_areas": [
+          37,
+          20,
+          29
+        ],
+        "sources": [
+          "ref-031"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "transparency-level-ieee-7001",
+        "term_ko": "자율 시스템 투명성 수준",
+        "term_en": "Transparency Level (IEEE 7001-2021)",
+        "definition": "IEEE 7001-2021 이 사용자·인증 담당자·사고 조사자 등 이해관계자 범주마다 최소 수준부터 엄격한 수준까지 다섯 단계로 정한, 객관적으로 평가할 수 있는 투명성 등급이다.",
+        "description": "이해관계자 범주는 사용자, 검증·인증 담당자, 고장·사고 조사자, 소송·행정 절차의 전문 자문가, 일반 대중이다. 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준이다.",
+        "related_areas": [
+          37,
+          31,
+          50
+        ],
+        "sources": [
+          "ref-1338"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세 원문. 동작 상태 값, 오류 수준 4단계와 번역, information 배열의 시각화·디버깅 전용 규칙, logReport 즉시 동작을 확인했다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-111",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 작업 상태 JSON 스키마. 배차 상태 값, 요청자·라벨, 일시정지·취소·강제 종료·건너뛰기 요청 기록 구조를 확인했다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-302",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "rmf-web 저장소 README. API 서버·API 클라이언트·대시보드 프레임워크 구성과 기본 비영속 내부 데이터베이스 사용을 다시 확인했다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1095",
+        "org": "Open Robotics (open-rmf/rmf_api_msgs)",
+        "title": "rmf_api_msgs schemas — log_entry.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/log_entry.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 로그 항목 스키마. 필수 필드 seq·tier·unix_millis_time·text 와 수준 값 네 개를 다시 확인했다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-944",
+        "org": "로봇신문",
+        "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'",
+        "published": "2024-04-15",
+        "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 한림대성심병원의 7종 73대 서비스 로봇 통합관제 운영 보도(이전 실행 2026-10-09-14 확인 내용 재인용).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1007",
+        "org": "뉴스토마토 (이규하)",
+        "title": "방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동",
+        "published": "2025-04-23",
+        "url": "https://www.newstomato.com/ReadNews.aspx?no=1259970",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 농촌진흥청이 자체 개발 농업 로봇 3종을 하나의 화면으로 관리하는 통합 관리 프로그램 보도(재인용).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-976",
+        "org": "정보통신신문 (김연균)",
+        "title": "로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’",
+        "published": "2024-07-18",
+        "url": "https://www.koit.co.kr/news/articleView.html?idxno=123976",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. LH토지주택연구원 자료를 인용한 공동주택 로봇 택배 관제실 연동 시나리오 보도(재인용).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-980",
+        "org": "한국로봇산업진흥원",
+        "title": "실외이동로봇 운행안전인증",
+        "published": null,
+        "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 실외이동로봇 운행안전인증 안내. 인증이 로봇과 관제장치의 조합에 주어진다(재인용).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1099",
+        "org": "Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8))",
+        "title": "Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction",
+        "published": "2017-07-27",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 운영자 24명이 다중 로봇 임무를 감독한 실험실 인터페이스 비교 연구(이전 실행 2026-09-30-13 확인 내용 재인용).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1337",
+        "org": "MassRobotics (MassRobotics-AMR/AMR_Interop_Standard)",
+        "title": "AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. MassRobotics 공식 저장소의 상호운용 표준 JSON 스키마. identityReport·statusReport 필드와 operationalState 아홉 값을 정한다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1338",
+        "org": "IEEE Standards Association",
+        "title": "How To Make Autonomous Systems More Transparent and Trustworthy",
+        "published": "2022-05-11",
+        "url": "https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "IEEE 7001-2021(자율 시스템 투명성 표준)을 소개하는 IEEE SA 공식 글. 이해관계자 범주 다섯과 범주별 다섯 단계 투명성 수준을 설명한다. 표준 본문은 열지 않았다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1339",
+        "org": "Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv, ICRES 2022 제출)",
+        "title": "An Ethical Black Box for Social Robots: a draft Open Standard",
+        "published": "2022-05-13",
+        "url": "https://arxiv.org/abs/2205.06564",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "소셜 로봇의 센서·구동기·제어 결정을 안전하게 기록해 사고·아차 사고 조사를 돕는 윤리적 블랙박스의 공개 표준 초안. 초록만 확인했고 부록(표준 본문)은 읽지 못했다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1340",
+        "org": "European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)",
+        "title": "Article 12: Record-keeping",
+        "published": "2024-07-12",
+        "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "EU AI Act 제12조. 고위험 AI 의 수명 동안 자동 사건 기록 기능과 기록이 뒷받침해야 할 세 목적을 정한다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1341",
+        "org": "European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)",
+        "title": "Article 19: Automatically generated logs",
+        "published": "2024-07-12",
+        "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-19",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "EU AI Act 제19조. 공급자가 통제하는 자동 생성 로그를 목적에 맞는 기간, 최소 6개월 보관하게 한다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1342",
+        "org": "European Commission, AI Act Service Desk (Regulation (EU) 2024/1689)",
+        "title": "Article 26: Obligations of deployers of high-risk AI systems",
+        "published": "2024-07-12",
+        "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "EU AI Act 제26조. 제6항이 배포자가 통제하는 자동 생성 로그를 최소 6개월 보관하게 한다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1343",
+        "org": "LG CNS (LG 미디어 보도자료)",
+        "title": "‘로봇 통합운영 플랫폼’ 개발",
+        "published": "2023-07-06",
+        "url": "https://lg.co.kr/media/release/26480",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "LG CNS 의 Open-RMF 기반 로봇 통합운영 플랫폼 발표와 G마켓 동탄 물류센터 기술검증 착수 보도자료. 기능 서술은 벤더 주장이다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1344",
+        "org": "코메디닷컴",
+        "title": "[메디피플 365] 로봇 73대가 병원 곳곳서 환자·의료진 척척 돕죠",
+        "published": "2024-04-20",
+        "url": "https://kormedi.com/1682189/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "한림대의료원 커맨드센터 파트장 인터뷰. 7종 73대 서비스 로봇, 통합관제시스템, 2022-08~2024-03 누적 3만 1607건 서비스.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1345",
+        "org": "바이라인네트워크 (이진호)",
+        "title": "뉴빌리티, 실외이동 로봇 운행안전 인증 획득",
+        "published": "2024-01-31",
+        "url": "https://byline.network/2024/01/240131_00004/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "실외이동로봇 운행안전인증이 관제 장치를 포함한 16개 항목을 평가한다는 보도. 관제 장치 항목의 세부는 없다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1346",
+        "org": "Open Robotics (open-rmf/rmf-web)",
+        "title": "rmf-web packages/api-server — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "rmf-web API 서버 README. 기본은 메모리 내 SQLite 이고 db_url 로 PostgreSQL·SQLite·MySQL·MariaDB 를 설정한다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1347",
+        "org": "Patel, J., Ramaswamy, T., Li, Z., & Pinciroli, C. (arXiv)",
+        "title": "Transparency in Multi-Human Multi-Robot Interaction",
+        "published": "2021-05-14",
+        "url": "https://arxiv.org/abs/2101.10495",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "여러 운영자–다중 로봇 상호작용에서 네 가지 투명성 모드를 참가자 18명 사용자 연구로 비교한 프리프린트(초록 확인).",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1348",
+        "org": "Rohrer, T., Farhang Ghahfarokhi, A., Behery, M., Lakemeyer, G., & van der Aalst, W. M. P. (arXiv)",
+        "title": "Predictive Object-Centric Process Monitoring",
+        "published": "2022-07-20",
+        "url": "https://arxiv.org/abs/2207.10017",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "RoboCup Logistics League 시뮬레이션 사건을 객체 중심 이벤트 로그(OCEL)로 만들어 이후 사건·시각을 예측한 프리프린트. 본문은 ar5iv 로 열었다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1349",
+        "org": "ISO (ANSI Webstore 미리보기)",
+        "title": "ISO 11064-1:2000 Ergonomic design of control centres — Part 1: Principles for the design of control centres (preview)",
+        "published": "2000",
+        "url": "https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "ISO 11064-1:2000 미리보기(표지·목차·머리말·서론). 계열의 8개 부 제목을 확인했고 적용 범위 절과 본문은 미리보기에 없다.",
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md"
+        ],
+        "source_unopened": false
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "update",
+        "id": "oq-237",
+        "question": "여러 제조사 로봇의 작업 상태와 실행 로그를 한 화면·한 기록 형식으로 모을 때 공통 작업 상태 값과 로그 수준을 정한 표준이나 공개 규약이 Open-RMF 작업 상태 스키마 말고도 있는가?",
+        "areas": [
+          37,
+          21
+        ],
+        "status": "해결",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#11-열린-질문"
+      },
+      {
+        "action": "new",
+        "question": "VDA 5050 동작 상태, MassRobotics 운용 상태, Open-RMF 작업 상태 값 사이의 대응표를 공개한 표준 기구나 프로젝트가 있는가, 없다면 플릿 관제 기록에서 어떤 기준으로 대응시키는가?",
+        "areas": [
+          37,
+          21
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "국내 실외이동로봇 운행안전인증의 관제 장치 항목은 관제 화면 표시와 운행 기록 저장·보관을 어디까지 요구하는가? 평가 항목 수가 바이라인네트워크 보도(16개 항목)와 한국로봇산업진흥원 안내(관제장치를 포함한 8개 심사 항목)에서 다르게 표현되므로 현행 기준도 함께 확인해야 한다.",
+        "areas": [
+          37,
+          59,
+          66
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "병원",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "병원",
+        "item": "예외·성과",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "실외",
+        "item": "제약",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "가정",
+        "item": "시작 조건",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "가정",
+        "item": "작업 대상",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      },
+      {
+        "site_type": "기타",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시",
+        "title": "37. 관제 화면·실행 기록"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "ISO 11064 관제 센터 인간공학 설계(Ergonomic design of control centres) 계열",
+        "kind": "표준",
+        "org": "ISO",
+        "url": "https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11064-1-2000.pdf",
+        "related_areas": [
+          37,
+          38
+        ],
+        "summary": "설계 원칙, 관제 공간·관제실 배치, 작업대 배치·치수, 표시 장치와 조작기, 환경 요건, 관제 센터 평가 원칙 등 여러 부로 관제 센터의 인간공학 설계를 다룬다. ISO 11064-1:2000 미리보기 머리말 기준이며 각 부의 이후 개정 여부·적용 범위는 미확인이다.",
+        "ref_id": "ref-1349"
+      },
+      {
+        "name": "IEEE 7001-2021 자율 시스템 투명성 표준",
+        "kind": "표준",
+        "org": "IEEE Standards Association",
+        "url": "https://standards.ieee.org/beyond-standards/how-to-make-autonomous-systems-more-transparent-and-trustworthy",
+        "related_areas": [
+          37,
+          31,
+          50
+        ],
+        "summary": "사용자, 검증·인증 담당자, 고장·사고 조사자, 전문 자문가, 일반 대중의 이해관계자 범주마다 객관적으로 평가할 수 있는 다섯 단계 투명성 수준을 정한다. IEEE SA 소개 글(2022-05-11) 기준이며 표준 본문은 미열람이다.",
+        "ref_id": "ref-1338"
+      }
+    ],
+    "additional_research_requests": [
+      "5절 적용 사례: 제조 공장·상업 시설에서 여러 로봇을 하나의 관제 화면·실행 기록으로 운영한 사례가 이번에도 없다. 두 현장 유형의 사례(한국 사례 우선)를 조사해 달라.",
+      "5절 실외 사례·새 열린 질문: 실외이동로봇 운행안전인증의 관제 장치 항목이 화면 표시·운행 기록 저장·보관을 어디까지 요구하는지, 평가 항목 수(기사 16개, 진흥원 안내 심사 항목 8개) 가운데 현행 기준이 무엇인지 인증 고시 원문으로 확인이 필요하다.",
+      "11절 oq-252: 윤리적 블랙박스 초안 부록(기록 항목·보관 시간 창·보안 요건)을 PDF 원문으로 읽어 플랫폼 수준 기록 항목과 비교할 근거가 필요하다.",
+      "11절 oq-239: 마약류 관리에 관한 법률 시행규칙 등 국내 법령 원문으로 병원 특수 물품 로봇 배송 이력의 보관 기간·무결성 요건을 확인해야 한다.",
+      "7절·11절 oq-240: IEEE 7001-2021 표준 본문과 ISO 11064 각 부의 적용 범위·현행 개정판을 확인해야 화면·기록 요건 포함 여부를 판단할 수 있다.",
+      "프런트매터 related_areas 는 10절(주제 페이지로 분리됨)과 맞추려고 바꾸지 않았다. 이번에 9·11절에서 연결한 21. 상호운용 표준·적합성, 50. 안전 표준·인증·사고 조사, 59. 법·규제·보험·라이선스, 66. 실외를 다음 갱신에서 10절 연결에 더할지 검토가 필요하다.",
+      "참고문헌 중복 확인(퍼블리셔 담당): 브리프의 ref-1339 는 기존 ref-1120 과, ref-1346 은 기존 ref-762 와 같은 URL 이다. 브리프 id 를 그대로 썼으므로 퍼블리셔의 같은 URL 병합이 적용되는지 확인을 요청한다."
+    ],
+    "fixes_applied": [
+      "f4 '누가 개입했는지' 과장 수정 — 7절 'Open-RMF 작업 상태 스키마의 배차 상태·개입 기록' 행을 '작업 요청자(booking.requester)와, 일시정지·재개·취소·강제 종료·단계 건너뛰기 요청마다의 요청 시각·라벨(예: dashboard)로 어떤 창구에서 개입했는지'로 쓰고 개입 요청에는 요청자 필드가 없다고 밝혔다.",
+      "f6 '실행 기록이 남지 않지만' 수정 — 7절 rmf-web 행을 '기본 설정은 메모리 안의 SQLite(비영속 내부 데이터베이스)를 쓰며 db_url 로 영속 저장 가능'으로 고치고 ref-1346 각주를 ref-302 와 함께 달았으며 두 문서가 같은 저장소라 독립 출처가 아님을 적었다.",
+      "f19 항목 수 차이 — 5절 실외 사례 표와 서술에서 '16개 항목'은 바이라인네트워크 보도 기준, 한국로봇산업진흥원 안내는 관제장치를 포함한 8개 심사 항목을 나열한다고 둘 다 제시했고, 이 차이를 둘째 새 열린 질문(11절과 open_question_updates)에 덧붙였으며 조합 인증·관제장치 평가는 [사실] 유지했다.",
+      "f19 범위 경계 — 5절 실외 사례 서술과 9절 '업종별 조건(실외)' 행에 인증 판단은 인증 기관·운영자 쪽 연계 대상이고 ROP 에는 실외 현장의 운행 제약으로만 반영된다고 [추정]으로 썼다.",
+      "f10 기준일 — 7절 ISO 11064 행에 'ISO 11064-1:2000 미리보기 머리말 기준(확인일 2026-10-09), 각 부의 이후 개정 여부와 적용 범위는 미확인'을 적었다.",
+      "f8 공동 후원 표현 — 7절 IEEE 7001-2021 행을 'IEEE 로봇·자동화 학회가 공동 후원 학회 가운데 하나다'로 고치고 표준 본문이 아니라 IEEE SA 소개 글(2022-05-11) 기준임을 밝혔다(11절 oq-240 항목에도 소개 글 기준 표기).",
+      "f2 logReport 경계 — 7절 표 아래 문장과 9절 '로봇 자체 지능·제어(상태 값·로봇 로그)' 행에서 logReport 로 생성되는 로그 자체는 로봇 쪽 기록(연계 대상)이고 ROP 는 생성 요청과 로그 이름(동작 상태) 수신만 맡는다고 썼다.",
+      "f13·f14·f15 EU AI Act — 9절 표 아래 단락에서 조문 내용은 [사실]로, 고위험 AI 해당 여부와 보관 의무 해석은 59. 법·규제·보험·라이선스 쪽 연계 대상으로 짧게 다루고 ROP 몫을 보관 기간 설정과 로그 통제 주체 표시 기능으로 한정해 [추정]으로 썼으며, 제19조·제26조는 '같은 규정'이라고 밝히고 교차 확인으로 표시하지 않았다.",
+      "f17 단일 보도 — 5절 둘째 병원 사례 표와 서술에 '3만 1607건'이 코메디닷컴 단일 보도 기준(2024-04-20)임을 밝혔다.",
+      "f18 벤더 주장 — 5절 물류창고 사례의 표와 서술에 [추정] 뒤 '벤더 주장'을 병기하고 기술검증 착수 발표뿐이며 운영 결과는 확인되지 않았다고 썼으며, 물류 흐름 단계는 서술하지 않았다.",
+      "f24 객체 유형·예측 대상 — 11절 oq-131 항목에서 객체 유형을 '로봇·주문·부품(제품)'으로, 예측 대상을 '이후 사건과 그 시각(남은 사건 순서 포함)'으로 썼다.",
+      "f1·f2 VDA 5050 기준 — 7절 VDA 5050 세 행에 '기준 3.0.0(main), 발행일 미확인, 확인일 2026-10-09'를 적고 기존 각주 ref-031 을 재사용했다(13절 접근일 2026-10-09로 갱신).",
+      "각주 원문 미열람 표시 — 13절에서 ref-944·ref-1007·ref-976·ref-980·ref-1099·ref-1337 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.",
+      "11절 열린 질문 정리 — oq-237 을 해결(근거 f1·f3·f4, 대응표 문제는 새 질문으로 이음)로 바꾸고, oq-238·oq-239 는 열림 유지, oq-131·oq-240·oq-252·oq-316 은 해결로 바꾸지 않고 부분 근거(f24·f25, f8·f9·f10, f11·f12, f13·f14·f15)만 덧붙였으며, 기존 '(새 질문, 상태: 열림)' 네 줄을 oq-237·oq-238·oq-239·oq-240 으로 표기했다.",
+      "용어집 혼동 방지 — '운용 상태'(operational-state) 항목 설명에 기존 용어 '운용 모드'(Operating Mode, VDA 5050 operatingMode)와 다른 개념임을 한 문장으로 밝혔다."
+    ]
+  },
+  "ttft_ms": 193651,
+  "type": "result",
+  "duration_ms": 384658,
+  "uuid": "f469ec1d-68a2-470f-bb7c-fc91721a1a2a",
+  "ttft_stream_ms": 1032,
+  "time_to_request_ms": 97,
+  "time_to_request_phases_ms": {
+    "other": 24,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 6,
+    "input_attachments": 18,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 2,
+    "model_config_wait": 0,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 3,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 13
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 47,
+  "time_to_request_cpu_ms": 130,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 26,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1033,
+  "time_to_request_from_spawn_ms": 19211711,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791525479102.5881,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 386.4
+}

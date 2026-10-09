@@ -1,0 +1,603 @@
+{
+  "duration_api_ms": 348969,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.5420567000000007,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 331115,
+    "cache_read_input_tokens": 1319685,
+    "output_tokens": 29891,
+    "output_tokens_details": {
+      "thinking_tokens": 13733
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 331115,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 18129,
+        "cache_read_input_tokens": 416652,
+        "cache_creation_input_tokens": 3257,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3257
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 29891,
+      "cacheReadInputTokens": 1319685,
+      "cacheCreationInputTokens": 331115,
+      "webSearchRequests": 0,
+      "costUSD": 3.5107090000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 13733,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 207597,
+      "outputTokens": 21176,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.03134769999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 14560,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 20,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-02\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1013 은 참고문헌 목록에 있다(이번 실행 원문 미열람, 기존 게시 페이지에서 재인용). 보도 제목 범위의 진술이고, 동향 추적 대상이라는 부분은 추정으로 표기돼 있어 적절하다. 기준일 2020-12-28.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-153 원문(source_texts)에서 nudged 변환 추정과 reference_coordinates 를 확인했다. ref-1011 은 이번 실행 원문 미열람이며 14번 페이지의 검증된 주장을 재인용한 것이다. 책임 범위 정의는 추정이고, BIM 기반 위치 추정을 로봇 쪽 연계 대상으로 둔 것은 원문 19장과 맞는다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"factsheet.schema 원문을 열어 확인했다: localizationTypes 의 열거값(NATURAL·REFLECTOR·RFID·DMC·SPOT·GRID), navigationTypes('List of path planning types'), supportedZones. 스키마에서 'map' 이 들어간 속성 이름은 없고, maximumIdLength 설명에 nodePosition.mapId 만 나온다. 발행일 미확인, 확인일 2026-10-09.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"traffic-editor 원문에서 확인했다: graph_idx(차선이 속한 그래프), bidirectional, orientation 속성이 있고, 차선은 해당 그래프를 traffic 탭에서 먼저 선택해야 편집할 수 있다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"envelopes2d(닫힌 단순 다각형)와 physicalParameters(폭·길이·높이)를 원문에서 확인했다. 두 표현을 잇는 규칙을 ROP 쪽에 둔다는 결론은 추정으로 적절하다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"traffic-editor 원문에서 확인했다: 기본 축척 1px=5cm, 일직선이 아닌 기준점 두 개 이상, 문은 시뮬레이션에서 동작하려면 이름이 필요하고, 작업이 끝나는 경유점에는 이름을 붙여야 한다. 대화형 맵 작성에 확인 단계가 남는다는 부분은 추정이다. 원문 4장 교차 규칙(맵 작성은 14·15번)과 맞는다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-079(경유점 이름 필요)와 ref-1018(초록: 의미 지도를 환경 맥락으로 쓰고 LLM 이 위치를 추론)을 확인했다. ref-1015 는 이번 실행 원문 미열람(16번 페이지 재인용). 제품 미확인을 oq-204 로 둔 추정이므로 적절하다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"simulation.md 에서 building_map_generator gazebo 가 .building.yaml 로 문·승강기·워크셀을 담은 세계를 만든다는 것을 확인했다. 재현의 선행 조건이라는 부분은 추정이다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"EPCIS.ttl 원문에서 readPoint 설명 '(Optional) The read point at which the event took place.' 를 글자 그대로 확인했고, bizLocation 정의도 확인했다. dct:modified 2021-09-30.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"location_2D(map·x·y·yaw 필수)와 EPCIS 위치 어휘를 확인했다. ref-162(GLN 하위 위치)는 원문 미열람이다(원문을 연 적 없음, 재인용). 대응 표를 ROP 가 관리한다는 부분은 추정이며 oq-029 와 연결된다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"VDA5050_EN.md 3.0.0 원문에서 확인했다: localizationScore 는 0.0~1.0, deviationRange 와 함께 'Only for logging and visualization purposes', mapStatus 는 ENABLED/DISABLED, 같은 mapId 는 한 판만 활성화할 수 있다. 확인일 2026-10-09.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f11·f35 의 근거를 종합한 추정이다. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래)을 구분한 문장이 원문 10장 주석과 맞는다. oq-028 과 연결된다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"Aalto 연구 포털에서 IJRR 42(11) 977–1006, 2023-09, DOI 10.1177/02783649231190428 를 확인했다. 초록에 MoD 의 용도(전역 경로 계획·위치 추정 개선·사람 움직임 예측)와 '실제 로봇에 널리 쓸 만큼 성숙했다'는 저자 견해가 있다. 같은 논문이 E. 사물·사람·실시간 상태 페이지에 ref-1171 로 이미 등록돼 있어 ref-1270 은 중복 id 다. ref-1171 로 바꾸도록 지시했다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"MoD 를 지도 위의 움직임 패턴 층으로 보는 해석은 초록 범위의 추정이다. f13 과 같이 각주를 ref-1171 로 바꿔야 한다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-153 원문에서 'A minimum of 4 matching waypoints is recommended' 와 nudged 추정을, ref-105 에서 층별 reference_coordinates 를 확인했다. B. 로봇 온톨로지·F. 연동 페이지에 같은 연결이 같은 각주로 이미 실려 있다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ISO 카탈로그를 2026-10-09 에 열어 확인했다: 단계 60.00(발행 진행 중) 2026-07-21, 발행 예정 2026-10, 1판, 안전 요구와 공공 도로 이동 기계는 범위에서 제외. F. 연동 페이지의 'FDIS 단계, 발행 여부 미확인'(2026-09-25)보다 새로운 정보이므로 기준일을 밝혀야 한다. 곧 발행될 수 있어 월간 재검증 대상이다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"LIF README 원문에서 1.0.0(2023-09), 'the integrator of the driverless transport vehicles will be able to initially transfer a track layout', 에지·노드·스테이션 묶음, VDA5050 인터페이스 정의의 영향을 확인했다. 판·날짜 출처 충돌(oq-025·oq-078·oq-200)은 그대로 남아 있다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1016·ref-1019 는 이번 실행에서 원문을 열지 않았고, 참고문헌 목록(이전 실행 열람)과 16번 페이지의 검증된 주장을 재인용했다. IEEE 1873-2015 의 현재 상태는 oq-202 의 전제(2026-03 비활성 보류)와 함께 써야 한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"LiftState.msg 원문에서 available_floors(string[])·current_floor·destination_floor 가 형식 규정이 없는 문자열임을 확인했다. traffic-editor 의 승강기 정의(기준 층, 운반실 중심, 층별 운반실 문, 층마다 운반실 안 경유점을 차선으로 연결)도 확인했다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정이며, 승강기 운행 제어를 원문 19장의 연계 대상으로 밝혀 범위 경계를 지켰다. oq-045 와 연결된다. 승강기협회 단체표준(F. 연동 페이지, 원문 미확인)과 겹치는지는 미확인이다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"IfcTransportElement 원문(ifc4.3-main)에서 'elevator (lift), escalator, moving walkway' 를 확인했다. 뒤쪽의 '공용 자원 후보로 가져오는 입력이 된다'는 원문에 없는 활용 진술이므로 [추정]으로 나눠 쓰게 지시했다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"traffic-editor·simulation.md 원문에서 building_map_generator nav 가 플릿 어댑터의 경로 계획용 navigation graph 를 내보낸다는 것을 확인했다. G. 계획·최적화·B. 로봇 온톨로지 페이지에 같은 연결이 이미 있다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"LaneRequest.msg(fleet_name·open_lanes·close_lanes, 주석 없음)를 확인했다. VDA 5050 3.0.0 에서 zoneSet 토픽은 관제가 발행하는 선택 토픽이고, 구역 집합은 'associated with a single map referenced through the mapId' 임을 확인했다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"traffic-editor 원문에서 경유점 속성 is_holding_point·is_parking_spot·is_charger·is_passthrough_point 를 확인했다. 충전소 지정 속성에 관한 출처 충돌(oq-069)이 있어 함께 표시해야 한다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"traffic-editor 원문에 '작업을 끝낼 경유점에는 이름을 붙여야 한다'는 진술이 있음을 확인했다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"VDA 5050 3.0.0 원문에서 확인했다: 'The mobile robot decides on its own when a node should count as traversed', allowedDeviationXY·allowedDeviationTheta 조건, nodeState 제거와 lastNodeId 갱신.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f26·f15 를 종합한 추정이며 oq-077·oq-198 과 연결된다.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"close_lanes 와 BLOCKED 구역('Mobile robots shall not enter this zone')을 확인했다. 재계획 동작을 정한 문서가 없다고 밝힌 추정이며 oq-203 과 연결된다.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"simulation.md 원문에서 확인했다: 층별 바닥·벽 메시, 주석한 모델(예: OfficeChairBlack), 로봇 모델, 관절과 libdoor 플러그인을 단 문, 운반실 프리즘 관절과 운반실·승강로 문을 갖춘 승강기, TeleportDispenser·TeleportIngestor. 짧은 직접 인용 1회('Robots in simulation neither run out of battery …')가 원문과 같다. 34. 시뮬레이션·예측용 디지털 트윈 쪽(가정한 미래)으로 구분돼 있다.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"Northumbria 포털에서 Byers·RazaviAlavi, 2022 MOC Summit Proceedings 201–208, 2022-09-14, DOI 10.29173/mocs283 를 확인했다. BIM 형상을 시뮬레이션 속 가상 로봇에 옮기는 방법과 사례 연구 1건이 있고, 정량 결과는 초록에 없다.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정이며, 정량 평가 자료가 없다고 명시했다. 35. 처리능력·규모·배치 설계 연결은 가정한 미래 쪽으로 서술해야 한다.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"rmf-web README 원문에서 확인했다: 'a web-based interface … to visualize and control all aspects of Open-RMF deployments', 벽 꼭짓점 경계 상자로 장면 경계를 정한다는 문장(문제 해결 절). 문·승강기 표시는 README 에 없다.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"벤더 주장(vendor_claim: true, 증거 첫머리 '벤더 주장: ')이고 [추정]이다. ref-817 은 이번 실행 원문 미열람이며 참고문헌 목록에 있다(2026-09-29 열람). 독립 확인은 없다.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"'Only for logging and visualization purposes' 에서 도출한 추정이다.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"location_2D.json 원문에서 required: map·x·y·yaw 와 설명 'A robot's location using 2D coordinates' 를 확인했다. 'Open-RMF 외부 API 가 주고받는 위치에 항상'은 이 스키마를 쓰는 위치로 범위를 좁혀야 한다(수정 지시).\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"VDA 5050 3.0.0 원문에서 확인했다: downloadMap(mapId·mapDownloadLink, 표 4에 mapVersion, mapHash 는 선택), enableMap·deleteMap(mapId·mapVersion), 'It is the responsibility of the fleet control to ensure that the correct maps are enabled …', 'The mobile robot itself shall not delete maps.'\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"arXiv 2403.08228(Xie·Schwertfeger, ROBIO 2024 채택, v1 2024-03-13)에서 '미세조정한 LLaMA2 가 ChatGPT-3.5 보다 낫다'를 확인했다. arXiv 2507.12753(RA-L 2026 채택)에서 의미 지도를 환경 맥락으로 쓰는 LLM 추론을 확인했다. L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획과 적용 영역 양쪽에 연결한다.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"arXiv 2409.12842 초록(v1 2024-09-19, v2 2025-11-24)에서 9개 이동 동작 작업의 성공률 0.96, 작은 지도·단순 작업에서 더 좋고 큰 개방 구역에서 떨어진다는 내용을 확인했다. 원문 13장 교차 규칙(도면 해석은 14번)에 따라 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 표기한다.\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-063·ref-071 은 원문 미열람(원문을 연 적 없음)이고 제목·목록 기준이다. 추정·low 로 적절하며 oq-196 과 연결된다.\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"SAGE 페이지에서 확인했다: IJRR 44(6) 972–988, 온라인 2024-10-19, 호 2025-05. 무결성 위험 지표, EKF·카이제곱 탐지기·국소 최근접 이웃 데이터 연관, 데이터 연관 오류의 영향, 랜드마크 밀도 효과. claim 이 '연계 대상: '으로 시작해 범위 경계를 지켰다.\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"VDA 5050 3.0.0 원문에서 'This document does not define functional, operational, or system safety requirements' 와 구역 유형 BLOCKED·SPEED_LIMIT·RELEASE 등을 확인했다.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ISO 카탈로그(2024-01-22, 2판)에서 확인했다: 자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로 통과, 지도 작성 정확도. 실내 대상, 부속서 A 는 실외 적용 가능성, 'not applicable for the verification or validation of safety requirements'. 시험 절차 세부는 유료 본문이라 미확인이다(oq-116, 해결 아님).\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-869 는 이번 실행 원문 미열람이며, 14·16번 페이지의 검증된 주장을 재인용했다. 현장 유형 병원이 명시돼 있다.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"maps 배열과 지도 배포 동작에서 도출한 추정이며 oq-201 과 연결된다.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"지디넷코리아(2023-07-28)를 열어 확인했다: 폭 80cm 초과 불가, 보도 최소 폭 250cm 이상이면 120cm 허용, 5도 경사로 주행 심사, 질량별 속도 제한. 입법예고 중인 안(의견 제출 2023-08-28까지)이므로 확정 기준이 아니다. 기사 단일 출처, low.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"arXiv 2404.05050(2024-04-07) 초록에서 확인했다: 이동장애인 15명, 실무자 8명, 공동설계 워크숍 4회, 보도 공간 경쟁, 'insufficient curb cuts', 문제가 생긴 뒤에야 접근성을 다룸, 처음부터 접근성을 반영. ref-1265 는 입력 참고문헌 목록에 없고 보류된 브리프(2026-09-30-24)의 id 를 빌렸다(verification_note 참고).\"},{\"finding_id\":\"f47\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f45·f46 을 종합한 추정이며, 법 적합성 판단을 연계 대상으로 밝혔다. oq-188 과 연결된다.\"},{\"finding_id\":\"f48\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1021 은 이번 실행 원문 미열람이며 16번 페이지의 검증된 주장을 재인용했다. 청소 로봇 제품 쪽 기능이므로 가정 현장 유형의 사례로만 쓴다.\"},{\"finding_id\":\"f49\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-956 은 이번 실행 원문 미열람이며 16번 페이지의 검증된 주장을 재인용했다. 기사 단일 출처이고 인증 원자료는 미확인, low. 현장 유형 기타.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"ref-1270(Kucner 외, Survey of maps of dynamics for mobile robots, IJRR 42(11), 2023)은 E. 사물·사람·실시간 상태 페이지에 이미 등록된 ref-1171 과 같은 논문이다. 새 id 를 만들지 말고 ref-1171 을 재사용해야 한다.\",\"ref-1265(Han 외, CHI 2024)는 입력 참고문헌 목록(전체 1238건)에 없다. 보류된 것으로 보이는 실행 2026-09-30-24 브리프의 id 를 '재사용'으로 적었고, 이 번호는 실행 2026-10-09-01 의 예약 구간(ref-1239~ref-1268) 안에 있다. ref-1269·ref-1271·ref-1272·ref-1273 도 같은 보류 브리프에서 다른 출처에 붙었던 번호이므로 퍼블리셔의 URL 병합·번호 확인이 필요하다.\",\"f15·f19·f22·f24 는 B. 로봇 온톨로지·F. 연동·G. 계획·최적화 페이지의 옛 대분류 이름 연결 절에 같은 각주로 실려 있다. 같은 각주를 재사용한다.\",\"f16(ISO 21423 단계 60.00, 2026-07-21)은 F. 연동 페이지의 'FDIS 단계, 발행 여부 미확인'(2026-09-25) 서술보다 새로운 정보다. 충돌이 아니라 갱신이며 기준일을 밝힌다.\",\"f17 의 LIF 판·날짜는 기존 출처 충돌 oq-025·oq-078·oq-200 에 걸려 있다.\",\"f24 의 충전소 속성은 출처 충돌 oq-069(is_parking_spot 대 is_charger)에 걸려 있다.\",\"새 열린 질문 1(지도 판 대응 관리)은 oq-201 과, 새 질문 3(VLM 평면도 해석의 비주거 시설 오류)은 oq-196 과 일부 겹친다.\",\"f45 의 실외이동로봇 기준은 2023-07 입법예고안 보도다. A. 기획·사업 페이지가 인용한 ref-991(2023-11-16 정책브리핑, 보도 통행 허용)의 확정 내용과 다를 수 있다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"page_proposals: 대분류 페이지의 절 제목에는 번호가 없으므로 patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 한다 — 정본 절 제목(CATEGORY_SECTIONS)과 다르면 퍼블리셔가 반려한다.\",\"참고 자료: D. 공간·지도 모델 페이지에는 '참고 자료' 절이 없다. 각주 정의는 페이지 끝(최근 업데이트 절 뒤)에 '## 참고 자료' 절을 append 패치로 새로 만들어 넣는다(A·B·F·G 대분류 페이지와 같은 위치). 그 밖의 절과 auto 마커는 바꾸지 않는다 — category_link 실행은 연결 절만 바꾸되 각주 정의가 있어야 형식 검증을 통과한다.\",\"대분류 표기: 연결 절의 소제목·링크 텍스트·도식은 새 17개 대분류의 문자와 이름(예: 'F. 연동', 'G. 계획·최적화', 'H. 실행·협업·예외 복구')과 세부영역 번호+이름으로 쓴다. B·F·G 페이지의 옛 대분류 이름(예: 'C. 연결·실행 기반')은 쓰지 않는다 — 분류 개정(2026-09-28) 기준이기 때문이다.\",\"f13·f14: 각주를 ref-1270 대신 ref-1171 로 쓰고 reference_updates 에 ref-1270 을 등록하지 않는다. 각주 정의는 참고문헌 페이지 ref-1171 의 각주 형식 줄을 그대로 쓴다 — 같은 논문(Kucner 외, IJRR 42(11))이 이미 등록돼 있다.\",\"ref-1265: 참고문헌 목록에 없으므로 reference_updates 에 기관·제목(Han 외, CHI '24, Co-design Accessible Public Robots …)·발행일 2024-04-07·URL https://arxiv.org/abs/2404.05050·접근일 2026-10-09 를 모두 채운 새 항목으로 낸다. 기존 등록이라고 가정해 정의를 생략하지 않는다 — 보류된 실행의 id 이기 때문이다.\",\"f21: 'IfcTransportElement 는 승강기·에스컬레이터·무빙워크를 표현한다'는 [사실]로, 'BIM 에서 승강기를 공용 자원 후보로 가져오는 입력이 된다'는 별도 문장의 [추정]으로 나눈다 — 뒤 문장은 원문에 없는 활용 진술이다. 개발 브랜치(ifc4.3-main) 기준이라 게시판 ADD2 와 문구가 다를 수 있다는 단서도 유지한다.\",\"f35: '외부 API 가 주고받는 위치에 지도 식별이 항상 붙는다'를 'location_2D 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다'로 좁힌다 — 출처는 이 스키마 하나만 정의한다.\",\"f18: IEEE 1873-2015 를 현행 표준으로 단정하지 말고 이후 상태를 열린 질문 oq-202 로 연결해 함께 적는다. ref-1016·ref-1019 각주는 참고문헌 페이지의 각주 형식 줄을 그대로 쓴다 — 이번 실행에서 원문을 다시 열지 않았다.\",\"f16: ISO 21423 의 단계 60.00(2026-07-21)·발행 예정 2026-10 을 '확인일 2026-10-09' 기준과 함께 쓰고, 공통 좌표계 내용은 미확인(oq-027)으로 둔다 — 곧 발행돼 바뀔 수 있는 정보다.\",\"f17: LIF 의 판·날짜는 README 기준 1.0.0(2023-09)이라고만 쓰고, VDMA 2024-03 인용과의 출처 충돌(oq-025·oq-078·oq-200)을 함께 밝힌다 — 한쪽을 고르지 않는다.\",\"f24: 충전소 속성(is_charger)을 쓸 때 출처 충돌 oq-069 를 함께 링크한다.\",\"f45: '2023-07 입법예고안 기준 보도'임을 문장에 유지하고 현행 기준으로 서술하지 않는다. 기준일 2023-07-28.\",\"f33: [추정]에 '벤더 주장'을 병기하고 독립 확인이 없음을 유지한다.\",\"f40·f48·f2: 각각 SLAM 위치추정 안전성, 청소 로봇의 의미 지도 갱신, BIM 기반 위치 추정을 '연계 대상'(로봇 자체 지능·제어)으로 표시하고 ROP 직접 범위처럼 쓰지 않는다.\",\"f12·f29~f31: 18. 실시간 세계 상태·데이터 일관성 연결은 현재 상태 표현으로, 34. 시뮬레이션·예측용 디지털 트윈·35. 처리능력·규모·배치 설계·36. 가상 시운전·실제 상황 재현 연결은 가정한 미래를 실험하는 쪽으로 나눠 쓴다.\",\"f38: 원문 13장 교차 규칙에 따라 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽을 번호와 이름으로 함께 적는다. f37 은 44. 로봇 기반 모델·언어 모델 계획과 16. 장소 의미·지도 관리 양쪽에 연결한다.\",\"각주: 이번 실행에서 fetched: false 인 출처(ref-162, ref-869, ref-1016, ref-1019, ref-1015, ref-1021, ref-956, ref-1013, ref-063, ref-071, ref-817, ref-1011)는 참고문헌 페이지의 각주 형식 줄을 그대로 쓴다. 원문을 연 적 없는 ref-162·ref-063·ref-071 은 접근일 뒤 ' (원문 미열람)'을 유지하고 reference_updates 에 넣는다면 source_unopened: true 로 한다.\",\"open_questions_new: 첫 질문은 oq-201, 셋째 질문은 oq-196 과의 관계를 연결 절에서 함께 밝혀 같은 질문이 둘로 보이지 않게 한다. 세 항목 모두 형식(네 필드·종류 '일반')은 맞으므로 그대로 등록한다.\",\"아직 다루지 않은 연결: N. 보안·개인정보(51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터), 40. 운영 절차·요청 창구(oq-203), 58. 다사업자 책임·계약·데이터(oq-281)처럼 브리프가 근거 없음으로 둔 연결은 근거 없음으로만 적고 내용을 추정해 채우지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 49건, 미확인 0건, 교차 확인 0건. 강등: 없음. f21 은 정의(사실)와 활용(추정)으로 나누고 f35 는 적용 범위를 좁히도록 지시했다. 원문 미열람 출처: ref-162·ref-063·ref-071(원문을 연 적 없음). ref-869·ref-1016·ref-1019·ref-1015·ref-1021·ref-956·ref-1013·ref-1011·ref-817 은 이번 실행에서 원문을 다시 열지 않았고, 게시 페이지의 검증된 주장을 재인용했다. 주의: 연결마다 단일 출처라 교차 확인된 핵심 주장이 없다. VDA 5050 3.0.0·Open-RMF 문서·ISO 카탈로그·초록은 2026-10-09 에 원문으로 다시 확인했다. ISO 21423 은 발행 진행 중(2026-07-21 단계 60.00)이라 곧 바뀔 수 있다. 실외 보도 폭 기준은 2023-07 입법예고안 보도다. ref-1270 은 기존 ref-1171 과 같은 논문이라 ref-1171 로 통합한다. ref-1265 와 새 id ref-1269·ref-1271~ref-1273 은 보류된 실행 2026-09-30-24 에서 다른 출처에 붙었던 번호와 겹치므로 퍼블리셔의 번호·URL 병합 확인이 필요하다. ref-153·ref-105·ref-213 은 fetched: true 인데 fetch_url 이 없다. 입력 원문 텍스트가 있어 인정했으나 브리프 기록은 불완전하다. 이번 검증은 검색을 쓰지 않고 원문 열람으로만 확인했다. 정정 요청 없음. 해결 인정한 열린 질문 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-02",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1013 은 참고문헌 목록에 있다(이번 실행 원문 미열람, 기존 게시 페이지에서 재인용). 보도 제목 범위의 진술이고, 동향 추적 대상이라는 부분은 추정으로 표기돼 있어 적절하다. 기준일 2020-12-28."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-153 원문(source_texts)에서 nudged 변환 추정과 reference_coordinates 를 확인했다. ref-1011 은 이번 실행 원문 미열람이며 14번 페이지의 검증된 주장을 재인용한 것이다. 책임 범위 정의는 추정이고, BIM 기반 위치 추정을 로봇 쪽 연계 대상으로 둔 것은 원문 19장과 맞는다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "factsheet.schema 원문을 열어 확인했다: localizationTypes 의 열거값(NATURAL·REFLECTOR·RFID·DMC·SPOT·GRID), navigationTypes('List of path planning types'), supportedZones. 스키마에서 'map' 이 들어간 속성 이름은 없고, maximumIdLength 설명에 nodePosition.mapId 만 나온다. 발행일 미확인, 확인일 2026-10-09."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "traffic-editor 원문에서 확인했다: graph_idx(차선이 속한 그래프), bidirectional, orientation 속성이 있고, 차선은 해당 그래프를 traffic 탭에서 먼저 선택해야 편집할 수 있다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "envelopes2d(닫힌 단순 다각형)와 physicalParameters(폭·길이·높이)를 원문에서 확인했다. 두 표현을 잇는 규칙을 ROP 쪽에 둔다는 결론은 추정으로 적절하다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "traffic-editor 원문에서 확인했다: 기본 축척 1px=5cm, 일직선이 아닌 기준점 두 개 이상, 문은 시뮬레이션에서 동작하려면 이름이 필요하고, 작업이 끝나는 경유점에는 이름을 붙여야 한다. 대화형 맵 작성에 확인 단계가 남는다는 부분은 추정이다. 원문 4장 교차 규칙(맵 작성은 14·15번)과 맞는다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-079(경유점 이름 필요)와 ref-1018(초록: 의미 지도를 환경 맥락으로 쓰고 LLM 이 위치를 추론)을 확인했다. ref-1015 는 이번 실행 원문 미열람(16번 페이지 재인용). 제품 미확인을 oq-204 로 둔 추정이므로 적절하다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "simulation.md 에서 building_map_generator gazebo 가 .building.yaml 로 문·승강기·워크셀을 담은 세계를 만든다는 것을 확인했다. 재현의 선행 조건이라는 부분은 추정이다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "EPCIS.ttl 원문에서 readPoint 설명 '(Optional) The read point at which the event took place.' 를 글자 그대로 확인했고, bizLocation 정의도 확인했다. dct:modified 2021-09-30."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "location_2D(map·x·y·yaw 필수)와 EPCIS 위치 어휘를 확인했다. ref-162(GLN 하위 위치)는 원문 미열람이다(원문을 연 적 없음, 재인용). 대응 표를 ROP 가 관리한다는 부분은 추정이며 oq-029 와 연결된다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "VDA5050_EN.md 3.0.0 원문에서 확인했다: localizationScore 는 0.0~1.0, deviationRange 와 함께 'Only for logging and visualization purposes', mapStatus 는 ENABLED/DISABLED, 같은 mapId 는 한 판만 활성화할 수 있다. 확인일 2026-10-09."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f11·f35 의 근거를 종합한 추정이다. 18. 실시간 세계 상태·데이터 일관성(현재 상태)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래)을 구분한 문장이 원문 10장 주석과 맞는다. oq-028 과 연결된다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "Aalto 연구 포털에서 IJRR 42(11) 977–1006, 2023-09, DOI 10.1177/02783649231190428 를 확인했다. 초록에 MoD 의 용도(전역 경로 계획·위치 추정 개선·사람 움직임 예측)와 '실제 로봇에 널리 쓸 만큼 성숙했다'는 저자 견해가 있다. 같은 논문이 E. 사물·사람·실시간 상태 페이지에 ref-1171 로 이미 등록돼 있어 ref-1270 은 중복 id 다. ref-1171 로 바꾸도록 지시했다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "MoD 를 지도 위의 움직임 패턴 층으로 보는 해석은 초록 범위의 추정이다. f13 과 같이 각주를 ref-1171 로 바꿔야 한다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-153 원문에서 'A minimum of 4 matching waypoints is recommended' 와 nudged 추정을, ref-105 에서 층별 reference_coordinates 를 확인했다. B. 로봇 온톨로지·F. 연동 페이지에 같은 연결이 같은 각주로 이미 실려 있다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ISO 카탈로그를 2026-10-09 에 열어 확인했다: 단계 60.00(발행 진행 중) 2026-07-21, 발행 예정 2026-10, 1판, 안전 요구와 공공 도로 이동 기계는 범위에서 제외. F. 연동 페이지의 'FDIS 단계, 발행 여부 미확인'(2026-09-25)보다 새로운 정보이므로 기준일을 밝혀야 한다. 곧 발행될 수 있어 월간 재검증 대상이다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "LIF README 원문에서 1.0.0(2023-09), 'the integrator of the driverless transport vehicles will be able to initially transfer a track layout', 에지·노드·스테이션 묶음, VDA5050 인터페이스 정의의 영향을 확인했다. 판·날짜 출처 충돌(oq-025·oq-078·oq-200)은 그대로 남아 있다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1016·ref-1019 는 이번 실행에서 원문을 열지 않았고, 참고문헌 목록(이전 실행 열람)과 16번 페이지의 검증된 주장을 재인용했다. IEEE 1873-2015 의 현재 상태는 oq-202 의 전제(2026-03 비활성 보류)와 함께 써야 한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "LiftState.msg 원문에서 available_floors(string[])·current_floor·destination_floor 가 형식 규정이 없는 문자열임을 확인했다. traffic-editor 의 승강기 정의(기준 층, 운반실 중심, 층별 운반실 문, 층마다 운반실 안 경유점을 차선으로 연결)도 확인했다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정이며, 승강기 운행 제어를 원문 19장의 연계 대상으로 밝혀 범위 경계를 지켰다. oq-045 와 연결된다. 승강기협회 단체표준(F. 연동 페이지, 원문 미확인)과 겹치는지는 미확인이다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "IfcTransportElement 원문(ifc4.3-main)에서 'elevator (lift), escalator, moving walkway' 를 확인했다. 뒤쪽의 '공용 자원 후보로 가져오는 입력이 된다'는 원문에 없는 활용 진술이므로 [추정]으로 나눠 쓰게 지시했다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "traffic-editor·simulation.md 원문에서 building_map_generator nav 가 플릿 어댑터의 경로 계획용 navigation graph 를 내보낸다는 것을 확인했다. G. 계획·최적화·B. 로봇 온톨로지 페이지에 같은 연결이 이미 있다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "LaneRequest.msg(fleet_name·open_lanes·close_lanes, 주석 없음)를 확인했다. VDA 5050 3.0.0 에서 zoneSet 토픽은 관제가 발행하는 선택 토픽이고, 구역 집합은 'associated with a single map referenced through the mapId' 임을 확인했다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "traffic-editor 원문에서 경유점 속성 is_holding_point·is_parking_spot·is_charger·is_passthrough_point 를 확인했다. 충전소 지정 속성에 관한 출처 충돌(oq-069)이 있어 함께 표시해야 한다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "traffic-editor 원문에 '작업을 끝낼 경유점에는 이름을 붙여야 한다'는 진술이 있음을 확인했다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "VDA 5050 3.0.0 원문에서 확인했다: 'The mobile robot decides on its own when a node should count as traversed', allowedDeviationXY·allowedDeviationTheta 조건, nodeState 제거와 lastNodeId 갱신."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f26·f15 를 종합한 추정이며 oq-077·oq-198 과 연결된다."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "close_lanes 와 BLOCKED 구역('Mobile robots shall not enter this zone')을 확인했다. 재계획 동작을 정한 문서가 없다고 밝힌 추정이며 oq-203 과 연결된다."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "simulation.md 원문에서 확인했다: 층별 바닥·벽 메시, 주석한 모델(예: OfficeChairBlack), 로봇 모델, 관절과 libdoor 플러그인을 단 문, 운반실 프리즘 관절과 운반실·승강로 문을 갖춘 승강기, TeleportDispenser·TeleportIngestor. 짧은 직접 인용 1회('Robots in simulation neither run out of battery …')가 원문과 같다. 34. 시뮬레이션·예측용 디지털 트윈 쪽(가정한 미래)으로 구분돼 있다."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "Northumbria 포털에서 Byers·RazaviAlavi, 2022 MOC Summit Proceedings 201–208, 2022-09-14, DOI 10.29173/mocs283 를 확인했다. BIM 형상을 시뮬레이션 속 가상 로봇에 옮기는 방법과 사례 연구 1건이 있고, 정량 결과는 초록에 없다."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정이며, 정량 평가 자료가 없다고 명시했다. 35. 처리능력·규모·배치 설계 연결은 가정한 미래 쪽으로 서술해야 한다."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "rmf-web README 원문에서 확인했다: 'a web-based interface … to visualize and control all aspects of Open-RMF deployments', 벽 꼭짓점 경계 상자로 장면 경계를 정한다는 문장(문제 해결 절). 문·승강기 표시는 README 에 없다."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "벤더 주장(vendor_claim: true, 증거 첫머리 '벤더 주장: ')이고 [추정]이다. ref-817 은 이번 실행 원문 미열람이며 참고문헌 목록에 있다(2026-09-29 열람). 독립 확인은 없다."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "'Only for logging and visualization purposes' 에서 도출한 추정이다."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "location_2D.json 원문에서 required: map·x·y·yaw 와 설명 'A robot's location using 2D coordinates' 를 확인했다. 'Open-RMF 외부 API 가 주고받는 위치에 항상'은 이 스키마를 쓰는 위치로 범위를 좁혀야 한다(수정 지시)."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "VDA 5050 3.0.0 원문에서 확인했다: downloadMap(mapId·mapDownloadLink, 표 4에 mapVersion, mapHash 는 선택), enableMap·deleteMap(mapId·mapVersion), 'It is the responsibility of the fleet control to ensure that the correct maps are enabled …', 'The mobile robot itself shall not delete maps.'"
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "arXiv 2403.08228(Xie·Schwertfeger, ROBIO 2024 채택, v1 2024-03-13)에서 '미세조정한 LLaMA2 가 ChatGPT-3.5 보다 낫다'를 확인했다. arXiv 2507.12753(RA-L 2026 채택)에서 의미 지도를 환경 맥락으로 쓰는 LLM 추론을 확인했다. L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획과 적용 영역 양쪽에 연결한다."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "arXiv 2409.12842 초록(v1 2024-09-19, v2 2025-11-24)에서 9개 이동 동작 작업의 성공률 0.96, 작은 지도·단순 작업에서 더 좋고 큰 개방 구역에서 떨어진다는 내용을 확인했다. 원문 13장 교차 규칙(도면 해석은 14번)에 따라 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 표기한다."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-063·ref-071 은 원문 미열람(원문을 연 적 없음)이고 제목·목록 기준이다. 추정·low 로 적절하며 oq-196 과 연결된다."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "SAGE 페이지에서 확인했다: IJRR 44(6) 972–988, 온라인 2024-10-19, 호 2025-05. 무결성 위험 지표, EKF·카이제곱 탐지기·국소 최근접 이웃 데이터 연관, 데이터 연관 오류의 영향, 랜드마크 밀도 효과. claim 이 '연계 대상: '으로 시작해 범위 경계를 지켰다."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "VDA 5050 3.0.0 원문에서 'This document does not define functional, operational, or system safety requirements' 와 구역 유형 BLOCKED·SPEED_LIMIT·RELEASE 등을 확인했다."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ISO 카탈로그(2024-01-22, 2판)에서 확인했다: 자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로 통과, 지도 작성 정확도. 실내 대상, 부속서 A 는 실외 적용 가능성, 'not applicable for the verification or validation of safety requirements'. 시험 절차 세부는 유료 본문이라 미확인이다(oq-116, 해결 아님)."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-869 는 이번 실행 원문 미열람이며, 14·16번 페이지의 검증된 주장을 재인용했다. 현장 유형 병원이 명시돼 있다."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "maps 배열과 지도 배포 동작에서 도출한 추정이며 oq-201 과 연결된다."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "지디넷코리아(2023-07-28)를 열어 확인했다: 폭 80cm 초과 불가, 보도 최소 폭 250cm 이상이면 120cm 허용, 5도 경사로 주행 심사, 질량별 속도 제한. 입법예고 중인 안(의견 제출 2023-08-28까지)이므로 확정 기준이 아니다. 기사 단일 출처, low."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "arXiv 2404.05050(2024-04-07) 초록에서 확인했다: 이동장애인 15명, 실무자 8명, 공동설계 워크숍 4회, 보도 공간 경쟁, 'insufficient curb cuts', 문제가 생긴 뒤에야 접근성을 다룸, 처음부터 접근성을 반영. ref-1265 는 입력 참고문헌 목록에 없고 보류된 브리프(2026-09-30-24)의 id 를 빌렸다(verification_note 참고)."
+      },
+      {
+        "finding_id": "f47",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f45·f46 을 종합한 추정이며, 법 적합성 판단을 연계 대상으로 밝혔다. oq-188 과 연결된다."
+      },
+      {
+        "finding_id": "f48",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1021 은 이번 실행 원문 미열람이며 16번 페이지의 검증된 주장을 재인용했다. 청소 로봇 제품 쪽 기능이므로 가정 현장 유형의 사례로만 쓴다."
+      },
+      {
+        "finding_id": "f49",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-956 은 이번 실행 원문 미열람이며 16번 페이지의 검증된 주장을 재인용했다. 기사 단일 출처이고 인증 원자료는 미확인, low. 현장 유형 기타."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "ref-1270(Kucner 외, Survey of maps of dynamics for mobile robots, IJRR 42(11), 2023)은 E. 사물·사람·실시간 상태 페이지에 이미 등록된 ref-1171 과 같은 논문이다. 새 id 를 만들지 말고 ref-1171 을 재사용해야 한다.",
+        "ref-1265(Han 외, CHI 2024)는 입력 참고문헌 목록(전체 1238건)에 없다. 보류된 것으로 보이는 실행 2026-09-30-24 브리프의 id 를 '재사용'으로 적었고, 이 번호는 실행 2026-10-09-01 의 예약 구간(ref-1239~ref-1268) 안에 있다. ref-1269·ref-1271·ref-1272·ref-1273 도 같은 보류 브리프에서 다른 출처에 붙었던 번호이므로 퍼블리셔의 URL 병합·번호 확인이 필요하다.",
+        "f15·f19·f22·f24 는 B. 로봇 온톨로지·F. 연동·G. 계획·최적화 페이지의 옛 대분류 이름 연결 절에 같은 각주로 실려 있다. 같은 각주를 재사용한다.",
+        "f16(ISO 21423 단계 60.00, 2026-07-21)은 F. 연동 페이지의 'FDIS 단계, 발행 여부 미확인'(2026-09-25) 서술보다 새로운 정보다. 충돌이 아니라 갱신이며 기준일을 밝힌다.",
+        "f17 의 LIF 판·날짜는 기존 출처 충돌 oq-025·oq-078·oq-200 에 걸려 있다.",
+        "f24 의 충전소 속성은 출처 충돌 oq-069(is_parking_spot 대 is_charger)에 걸려 있다.",
+        "새 열린 질문 1(지도 판 대응 관리)은 oq-201 과, 새 질문 3(VLM 평면도 해석의 비주거 시설 오류)은 oq-196 과 일부 겹친다.",
+        "f45 의 실외이동로봇 기준은 2023-07 입법예고안 보도다. A. 기획·사업 페이지가 인용한 ref-991(2023-11-16 정책브리핑, 보도 통행 허용)의 확정 내용과 다를 수 있다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "page_proposals: 대분류 페이지의 절 제목에는 번호가 없으므로 patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 한다 — 정본 절 제목(CATEGORY_SECTIONS)과 다르면 퍼블리셔가 반려한다.",
+      "참고 자료: D. 공간·지도 모델 페이지에는 '참고 자료' 절이 없다. 각주 정의는 페이지 끝(최근 업데이트 절 뒤)에 '## 참고 자료' 절을 append 패치로 새로 만들어 넣는다(A·B·F·G 대분류 페이지와 같은 위치). 그 밖의 절과 auto 마커는 바꾸지 않는다 — category_link 실행은 연결 절만 바꾸되 각주 정의가 있어야 형식 검증을 통과한다.",
+      "대분류 표기: 연결 절의 소제목·링크 텍스트·도식은 새 17개 대분류의 문자와 이름(예: 'F. 연동', 'G. 계획·최적화', 'H. 실행·협업·예외 복구')과 세부영역 번호+이름으로 쓴다. B·F·G 페이지의 옛 대분류 이름(예: 'C. 연결·실행 기반')은 쓰지 않는다 — 분류 개정(2026-09-28) 기준이기 때문이다.",
+      "f13·f14: 각주를 ref-1270 대신 ref-1171 로 쓰고 reference_updates 에 ref-1270 을 등록하지 않는다. 각주 정의는 참고문헌 페이지 ref-1171 의 각주 형식 줄을 그대로 쓴다 — 같은 논문(Kucner 외, IJRR 42(11))이 이미 등록돼 있다.",
+      "ref-1265: 참고문헌 목록에 없으므로 reference_updates 에 기관·제목(Han 외, CHI '24, Co-design Accessible Public Robots …)·발행일 2024-04-07·URL https://arxiv.org/abs/2404.05050·접근일 2026-10-09 를 모두 채운 새 항목으로 낸다. 기존 등록이라고 가정해 정의를 생략하지 않는다 — 보류된 실행의 id 이기 때문이다.",
+      "f21: 'IfcTransportElement 는 승강기·에스컬레이터·무빙워크를 표현한다'는 [사실]로, 'BIM 에서 승강기를 공용 자원 후보로 가져오는 입력이 된다'는 별도 문장의 [추정]으로 나눈다 — 뒤 문장은 원문에 없는 활용 진술이다. 개발 브랜치(ifc4.3-main) 기준이라 게시판 ADD2 와 문구가 다를 수 있다는 단서도 유지한다.",
+      "f35: '외부 API 가 주고받는 위치에 지도 식별이 항상 붙는다'를 'location_2D 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다'로 좁힌다 — 출처는 이 스키마 하나만 정의한다.",
+      "f18: IEEE 1873-2015 를 현행 표준으로 단정하지 말고 이후 상태를 열린 질문 oq-202 로 연결해 함께 적는다. ref-1016·ref-1019 각주는 참고문헌 페이지의 각주 형식 줄을 그대로 쓴다 — 이번 실행에서 원문을 다시 열지 않았다.",
+      "f16: ISO 21423 의 단계 60.00(2026-07-21)·발행 예정 2026-10 을 '확인일 2026-10-09' 기준과 함께 쓰고, 공통 좌표계 내용은 미확인(oq-027)으로 둔다 — 곧 발행돼 바뀔 수 있는 정보다.",
+      "f17: LIF 의 판·날짜는 README 기준 1.0.0(2023-09)이라고만 쓰고, VDMA 2024-03 인용과의 출처 충돌(oq-025·oq-078·oq-200)을 함께 밝힌다 — 한쪽을 고르지 않는다.",
+      "f24: 충전소 속성(is_charger)을 쓸 때 출처 충돌 oq-069 를 함께 링크한다.",
+      "f45: '2023-07 입법예고안 기준 보도'임을 문장에 유지하고 현행 기준으로 서술하지 않는다. 기준일 2023-07-28.",
+      "f33: [추정]에 '벤더 주장'을 병기하고 독립 확인이 없음을 유지한다.",
+      "f40·f48·f2: 각각 SLAM 위치추정 안전성, 청소 로봇의 의미 지도 갱신, BIM 기반 위치 추정을 '연계 대상'(로봇 자체 지능·제어)으로 표시하고 ROP 직접 범위처럼 쓰지 않는다.",
+      "f12·f29~f31: 18. 실시간 세계 상태·데이터 일관성 연결은 현재 상태 표현으로, 34. 시뮬레이션·예측용 디지털 트윈·35. 처리능력·규모·배치 설계·36. 가상 시운전·실제 상황 재현 연결은 가정한 미래를 실험하는 쪽으로 나눠 쓴다.",
+      "f38: 원문 13장 교차 규칙에 따라 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽을 번호와 이름으로 함께 적는다. f37 은 44. 로봇 기반 모델·언어 모델 계획과 16. 장소 의미·지도 관리 양쪽에 연결한다.",
+      "각주: 이번 실행에서 fetched: false 인 출처(ref-162, ref-869, ref-1016, ref-1019, ref-1015, ref-1021, ref-956, ref-1013, ref-063, ref-071, ref-817, ref-1011)는 참고문헌 페이지의 각주 형식 줄을 그대로 쓴다. 원문을 연 적 없는 ref-162·ref-063·ref-071 은 접근일 뒤 ' (원문 미열람)'을 유지하고 reference_updates 에 넣는다면 source_unopened: true 로 한다.",
+      "open_questions_new: 첫 질문은 oq-201, 셋째 질문은 oq-196 과의 관계를 연결 절에서 함께 밝혀 같은 질문이 둘로 보이지 않게 한다. 세 항목 모두 형식(네 필드·종류 '일반')은 맞으므로 그대로 등록한다.",
+      "아직 다루지 않은 연결: N. 보안·개인정보(51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터), 40. 운영 절차·요청 창구(oq-203), 58. 다사업자 책임·계약·데이터(oq-281)처럼 브리프가 근거 없음으로 둔 연결은 근거 없음으로만 적고 내용을 추정해 채우지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 49건, 미확인 0건, 교차 확인 0건. 강등: 없음. f21 은 정의(사실)와 활용(추정)으로 나누고 f35 는 적용 범위를 좁히도록 지시했다. 원문 미열람 출처: ref-162·ref-063·ref-071(원문을 연 적 없음). ref-869·ref-1016·ref-1019·ref-1015·ref-1021·ref-956·ref-1013·ref-1011·ref-817 은 이번 실행에서 원문을 다시 열지 않았고, 게시 페이지의 검증된 주장을 재인용했다. 주의: 연결마다 단일 출처라 교차 확인된 핵심 주장이 없다. VDA 5050 3.0.0·Open-RMF 문서·ISO 카탈로그·초록은 2026-10-09 에 원문으로 다시 확인했다. ISO 21423 은 발행 진행 중(2026-07-21 단계 60.00)이라 곧 바뀔 수 있다. 실외 보도 폭 기준은 2023-07 입법예고안 보도다. ref-1270 은 기존 ref-1171 과 같은 논문이라 ref-1171 로 통합한다. ref-1265 와 새 id ref-1269·ref-1271~ref-1273 은 보류된 실행 2026-09-30-24 에서 다른 출처에 붙었던 번호와 겹치므로 퍼블리셔의 번호·URL 병합 확인이 필요하다. ref-153·ref-105·ref-213 은 fetched: true 인데 fetch_url 이 없다. 입력 원문 텍스트가 있어 인정했으나 브리프 기록은 불완전하다. 이번 검증은 검색을 쓰지 않고 원문 열람으로만 확인했다. 정정 요청 없음. 해결 인정한 열린 질문 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 80303,
+  "type": "result",
+  "duration_ms": 277590,
+  "uuid": "fa6fd034-f82c-4b91-969c-37a6e17bf53e",
+  "ttft_stream_ms": 1232,
+  "time_to_request_ms": 137,
+  "time_to_request_phases_ms": {
+    "other": 22,
+    "system_prompt": 12,
+    "resume_other": 0,
+    "process_user_input": 9,
+    "input_attachments": 52,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 4,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 28,
+  "time_to_request_cpu_ms": 202,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "at_mentioned_files",
+    "slowest_producer_ms": 26,
+    "cpu_ms": 80,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1232,
+  "time_to_request_from_spawn_ms": 916556,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791507183908.1038,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 279.3
+}

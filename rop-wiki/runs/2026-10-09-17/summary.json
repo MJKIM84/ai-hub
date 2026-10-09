@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-10-09-17",
+  "date": "2026-10-09",
+  "run_type": "update",
+  "target": {
+    "area_no": 41,
+    "area_name": "41. 플랫폼 아키텍처·외부 API",
+    "category": "K. 플랫폼 아키텍처·인프라"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 3,
+  "pages_updated": 1,
+  "new_sources": 0,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "cebcbdd",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 0
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 4817.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 41. 플랫폼 아키텍처·외부 API | 6·7·9·11절 차등 갱신: 끊김 때 base 수행·관제/로봇 기능 분담·QoS 0·1·주문 갱신 번호, VDA 5050 버전 규칙·범위 제외, 플릿 제어 수준 폐기 예고 서술 추정 강등, rmf-web M2M 설정·빈 권한 그룹·사용자 비동기화, 전달 보장·권한 범위 추정, 열린 질문 부분 근거와 새 질문 1건(2차 수정 5건: 이전 주제 페이지 링크 복원, 절 참조 명확화, 버전 한정어, last_run) | run 2026-10-09-17",
+  "notes": [
+    "용어집 생성: glossary/mqtt-quality-of-service-level.md",
+    "용어집 생성: glossary/oauth2-client-credentials-grant.md"
+  ],
+  "counts": {
+    "create": 3,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 16:15:13 KST",
+  "usage": {
+    "input_tokens": 82,
+    "cache_creation_input_tokens": 932335,
+    "cache_read_input_tokens": 7334192,
+    "output_tokens": 145290,
+    "cost_usd": 12.1701,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 4.9643,
+        "output_tokens": 56703,
+        "cache_read_input_tokens": 6502966,
+        "cache_creation_input_tokens": 278134
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6313,
+        "output_tokens": 25182,
+        "cache_read_input_tokens": 502003,
+        "cache_creation_input_tokens": 125658
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 3.81,
+        "output_tokens": 48035,
+        "cache_read_input_tokens": 143764,
+        "cache_creation_input_tokens": 352566
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.6665,
+        "output_tokens": 14918,
+        "cache_read_input_tokens": 177588,
+        "cache_creation_input_tokens": 166573
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0603,
+        "output_tokens": 235,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5377
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0377,
+        "output_tokens": 217,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4027
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md (5개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-09-area41-s6.md",
+        "chars": 2053
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-09-area41-s7.md",
+        "chars": 1615
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-09-area41-s11.md",
+        "chars": 1248
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 3,
+  "cross_checked_findings": 0
+}

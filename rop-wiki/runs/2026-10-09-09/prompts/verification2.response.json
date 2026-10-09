@@ -1,0 +1,167 @@
+{
+  "duration_api_ms": 84654,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.3100108000000001,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 137518,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 9605,
+    "output_tokens_details": {
+      "thinking_tokens": 7867
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 137518,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 9605,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 137518,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 137518
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 9605,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 137518,
+      "webSearchRequests": 0,
+      "costUSD": 1.3100108000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7867,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-09\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 1차 기준: 확인 70건, 미확인 0건, 교차 확인 3건(f47 R15.08-3 사용자 의무, f54 ISO 10218:2025 사이버보안, f55 EN ISO 10218 관보 게재). 강등은 없다. 원문 미열람 출처는 ref-104, ref-159, ref-161, ref-417, ref-470, ref-472, ref-562, ref-563, ref-565, ref-567, ref-621, ref-945, ref-980, ref-1076, ref-1079, ref-1080, ref-1081, ref-1083, ref-1084, ref-1117, ref-1118, ref-1120, ref-1121, ref-1122, ref-1124, ref-1125, ref-1180, ref-1181, ref-1214, ref-1241, ref-1242, ref-1249, ref-857, ref-700, ref-1341 이다. 이 가운데 다수는 이전 실행에서 검증된 주장의 재인용이다. ref-1423 은 제3자 게재본 기준이며 법제처 원문은 열람하지 않았다. 주의: ANSI/A3 R15.08-3·ISO 10218·ISO 13482·ISO 3691-4 의 표준 본문은 열람하지 않았고, 발행 기관 소개·블로그·보도를 근거로 했다. 연결 주장의 3분의 1가량이 추정이다. 무선 안전 비상정지(f49)와 아마존 조끼(f68)는 벤더 주장이다. 사고 사례(f35·f36)는 기사 기준이며 원인이 확정되지 않았다. 64. 상업 시설의 실제 현장 사례는 아직 없다. 정정 요청은 없다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 16개 항목이 모두 이행됐다. 절 이름에 번호를 붙이지 않았다. f3·f4·f55 의 날짜·범위를 정리했다. f39 는 시뮬레이션 예제로만 쓰고 site_matrix 에서 뺐다. 시뮬레이션·모의 사례·보도 기준을 병기했다. 저자 보고값을 병기하고 벤더 주장을 표시했다. 연계 대상은 짧게 썼다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈을 구분했다. 원문 미열람 각주 35건을 표시했다. 열린 질문 2를 축약했다. 기존 연결 표시와 아직 다루지 않은 연결 7건도 반영됐다. 사소한 표기 의견(수정 지시 아님)은 세 가지다. 첫째, 머리 단락의 '[50. 안전 표준·인증·사고 조사](…)이'는 조사 '가'가 맞다. 둘째, '확률 페트리넷(SPN)'은 영문 풀이(Stochastic Petri Net)가 없다. 셋째, reference_updates 에서 ref-945·ref-980·ref-1076·ref-1079~ref-1084·ref-1117·ref-1118·ref-1120~ref-1125 를 source_unopened: true 로 둔 것은 이번 실행의 열람 여부만 뜻한다. 참고문헌 색인에는 이전 실행에서 '원문 열람: 예'로 기록돼 있으므로 퍼블리셔가 이 기록을 '아니오'로 덮어쓰지 않도록 주의가 필요하다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-09",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 1차 기준: 확인 70건, 미확인 0건, 교차 확인 3건(f47 R15.08-3 사용자 의무, f54 ISO 10218:2025 사이버보안, f55 EN ISO 10218 관보 게재). 강등은 없다. 원문 미열람 출처는 ref-104, ref-159, ref-161, ref-417, ref-470, ref-472, ref-562, ref-563, ref-565, ref-567, ref-621, ref-945, ref-980, ref-1076, ref-1079, ref-1080, ref-1081, ref-1083, ref-1084, ref-1117, ref-1118, ref-1120, ref-1121, ref-1122, ref-1124, ref-1125, ref-1180, ref-1181, ref-1214, ref-1241, ref-1242, ref-1249, ref-857, ref-700, ref-1341 이다. 이 가운데 다수는 이전 실행에서 검증된 주장의 재인용이다. ref-1423 은 제3자 게재본 기준이며 법제처 원문은 열람하지 않았다. 주의: ANSI/A3 R15.08-3·ISO 10218·ISO 13482·ISO 3691-4 의 표준 본문은 열람하지 않았고, 발행 기관 소개·블로그·보도를 근거로 했다. 연결 주장의 3분의 1가량이 추정이다. 무선 안전 비상정지(f49)와 아마존 조끼(f68)는 벤더 주장이다. 사고 사례(f35·f36)는 기사 기준이며 원인이 확정되지 않았다. 64. 상업 시설의 실제 현장 사례는 아직 없다. 정정 요청은 없다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 16개 항목이 모두 이행됐다. 절 이름에 번호를 붙이지 않았다. f3·f4·f55 의 날짜·범위를 정리했다. f39 는 시뮬레이션 예제로만 쓰고 site_matrix 에서 뺐다. 시뮬레이션·모의 사례·보도 기준을 병기했다. 저자 보고값을 병기하고 벤더 주장을 표시했다. 연계 대상은 짧게 썼다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈을 구분했다. 원문 미열람 각주 35건을 표시했다. 열린 질문 2를 축약했다. 기존 연결 표시와 아직 다루지 않은 연결 7건도 반영됐다. 사소한 표기 의견(수정 지시 아님)은 세 가지다. 첫째, 머리 단락의 '[50. 안전 표준·인증·사고 조사](…)이'는 조사 '가'가 맞다. 둘째, '확률 페트리넷(SPN)'은 영문 풀이(Stochastic Petri Net)가 없다. 셋째, reference_updates 에서 ref-945·ref-980·ref-1076·ref-1079~ref-1084·ref-1117·ref-1118·ref-1120~ref-1125 를 source_unopened: true 로 둔 것은 이번 실행의 열람 여부만 뜻한다. 참고문헌 색인에는 이전 실행에서 '원문 열람: 예'로 기록돼 있으므로 퍼블리셔가 이 기록을 '아니오'로 덮어쓰지 않도록 주의가 필요하다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 71886,
+  "type": "result",
+  "duration_ms": 84808,
+  "uuid": "b493e6ca-0804-4c01-ae91-d5f961e0705a",
+  "ttft_stream_ms": 839,
+  "time_to_request_ms": 91,
+  "time_to_request_phases_ms": {
+    "other": 23,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 6,
+    "input_attachments": 8,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 6,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 41,
+  "time_to_request_cpu_ms": 136,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 18,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 839,
+  "time_to_request_from_spawn_ms": 9989930,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791516257317.1152,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 86.3
+}

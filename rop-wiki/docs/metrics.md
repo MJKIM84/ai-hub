@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-09-30
+기준일: 2026-10-09
 
 ### 영역별 페이지 상태 분포
 
@@ -26,13 +26,13 @@ version: 1
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
-| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
+| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 31 | 0 | 0 | 31 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
-| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 27 | 0 | 0 | 27 |
-| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
+| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
+| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
@@ -83,8 +83,8 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | published | medium | 2026-09-25 | 4 |
-| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | 2026-09-25 | 2 |
-| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-09-30 | 2 |
+| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | 2026-10-09 | 3 |
+| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-10-09 | 3 |
 
 **F. 연동**
 
@@ -118,7 +118,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | published | low | 2026-09-30 | 2 |
+| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | published | low | 2026-10-09 | 3 |
 | [34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | published | medium | 2026-09-25 | 2 |
 | [35. 처리능력·규모·배치 설계](categories/design-and-simulation/capacity-sizing-and-layout-design.md) | published | medium | 2026-09-25 | 2 |
 | [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | 2026-09-30 | 2 |
@@ -127,8 +127,8 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | 2026-09-30 | 2 |
-| [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | 2026-09-25 | 2 |
+| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | 2026-10-09 | 3 |
+| [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | 2026-10-09 | 3 |
 | [39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | 2026-09-26 | 3 |
 | [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | 2026-09-30 | 2 |
 
@@ -136,9 +136,9 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-09-30 | 2 |
-| [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
-| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-09-30 | 2 |
+| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-10-09 | 3 |
+| [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-10-09 | 3 |
+| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-10-09 | 3 |
 
 **L. AI·학습 기술**
 
@@ -196,40 +196,40 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 129회 중 최종 통과 127회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 127, None 2
-- 2차 검증 판정: 통과 127, None 2
+- 실행 147회 중 최종 통과 145회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 145, None 2
+- 2차 검증 판정: 통과 145, None 2
 
 ### 반려·보류 건수
 
 - 1차 반려 0건, 2차 불통과·재검증 0건
-- 보류(runs/parked) 4건
+- 보류(runs/parked) 5건
 
 ### 출처 유형 분포
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 532 |
-| 오픈소스 문서 | 215 |
-| 표준 | 180 |
-| 정부·연구기관 | 109 |
-| 기사 | 105 |
-| 벤더 문서 | 71 |
-| 업계 보고서 | 26 |
+| 논문 | 566 |
+| 오픈소스 문서 | 227 |
+| 표준 | 191 |
+| 기사 | 126 |
+| 정부·연구기관 | 116 |
+| 벤더 문서 | 79 |
+| 업계 보고서 | 27 |
 
-신뢰도: medium 895건, high 237건, low 106건
+신뢰도: medium 951건, high 255건, low 126건
 
 ### 현장 유형 매트릭스 채움률
 
-- 74/119 칸 (62%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 82/119 칸 (69%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 5 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 5 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 5 | published |
-| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 5 | published |
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 5 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 14 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 14 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 14 | published |
+| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 14 | published |
+| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 14 | published |
 <!-- auto:metrics:end -->

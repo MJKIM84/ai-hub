@@ -1,0 +1,845 @@
+{
+  "duration_api_ms": 534345,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.6379319999999997,
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 164310,
+    "cache_read_input_tokens": 6419333,
+    "output_tokens": 36751,
+    "output_tokens_details": {
+      "thinking_tokens": 12136
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 164310,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 25575,
+        "cache_read_input_tokens": 247441,
+        "cache_creation_input_tokens": 502,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 502
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 58,
+      "outputTokens": 36751,
+      "cacheReadInputTokens": 6419333,
+      "cacheCreationInputTokens": 164310,
+      "webSearchRequests": 0,
+      "costUSD": 3.3335985999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12136,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 521414,
+      "outputTokens": 44384,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 23,
+      "costUSD": 0.3043333999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 17511,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 43,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-17\",\"date\":\"2026-10-09\",\"run_type\":\"update\",\"target\":{\"area_no\":41,\"area_name\":\"41. 플랫폼 아키텍처·외부 API\",\"category\":\"K. 플랫폼 아키텍처·인프라\"},\"gaps\":[\"섹션 5. 적용 사례 (현장 유형 명시) — 상업 시설·가정·실외 사례 없음, 병원·제조 공장·기타 사례도 제약·완료·인계 칸이 대부분 미확인\",\"섹션 7. 관련 표준·프레임워크·오픈소스 — 바뀐 출처: OpenAPI 는 3.1.0(ref-1025)만, AsyncAPI 3.1.0(ref-1024)은 발행일 미확인이며 ROS 2 바인딩 추가 사실이 반영되지 않음. 웹훅·이벤트 형식 공통 규약(Standard Webhooks, CloudEvents)과 계약 시험 도구가 없음\",\"섹션 6. 대표 접근법과 기술 — 배치 선택지(SaaS 전용·현장 또는 클라우드·공개/사설 클라우드)와 연결 끊김 시 동작 근거가 약함(oq-206, oq-300)\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 — 외부 API 의 버전 정책·전달 보장·기계 간 인증이 직접 범위인지 근거 없음\",\"섹션 11. 열린 질문 — oq-206·oq-207·oq-208·oq-209·oq-267·oq-300·oq-301 해결 근거 미조사\",\"정정 요청 없음. 재확인 대상 출처: ref-1025(OpenAPI 3.1.0 → 3.2.0 게시), ref-1024(AsyncAPI 3.1.0 발행일), ref-762(rmf-web API 서버 README 변경 여부)\"],\"research_questions\":[\"어떤 판단을 클라우드·현장 서버·로봇 가운데 어디에서 하고, 외부에 무엇을 열어 줄 것인가? [분류원문]\",\"바뀐 출처: OpenAPI·AsyncAPI 명세는 페이지가 인용한 판 이후 어떻게 바뀌었고, 로봇 플랫폼의 외부 API 기술에 의미 있는 변경(스트리밍 기술, ROS 2 바인딩)이 있는가? (섹션 7 겨냥)\",\"oq-207 로봇 관제 플랫폼의 외부 API 버전 관리와 하위 호환(주 버전 표기, 폐기 예고 기간) 정책을 공개한 오픈소스·제품 사례가 있는가? (섹션 6·7·11 겨냥)\",\"oq-208 로봇 플랫폼이 외부로 내보내는 웹훅·이벤트 스트림의 전달 보장(재시도, 순서, 중복 제거)을 정한 공통 기준이나 제품 문서가 있는가? (섹션 6·7·9 겨냥)\",\"oq-206·oq-300 클라우드나 관제 서버와의 연결이 끊기거나 재시작될 때 로봇과 현장 쪽이 어디까지 계속 동작하는지 정한 표준·오픈소스 근거는 무엇인가? (섹션 6·11 겨냥)\",\"oq-301·oq-209 외부 API 를 OpenAPI·AsyncAPI 로 기술해 적합성 시험 기준으로 쓰는 공개 도구가 있는가, 국내 TTA·KS 표준이 있는가? (섹션 7·11 겨냥)\",\"oq-267 및 섹션 5: 로봇 운영 플랫폼의 과금 단위와 배치 형태(SaaS·현장·사설 클라우드)를 공개한 자료, 상업 시설·가정·실외에서 플랫폼이 외부에 API 를 연 사례는 무엇인가?\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"OpenAPI 명세 3.2.0 이 2025-09-19 에 게시되어, 41. 플랫폼 아키텍처·외부 API 페이지가 인용한 3.1.0(ref-1025)보다 새 판이 나와 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"OAS 3.2.0 게시일 2025-09-19. 문서 머리에 판 번호와 게시일이 적혀 있다.\",\"as_of\":\"2025-09-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"OpenAPI 3.2.0 은 text/event-stream·application/jsonl·application/json-seq 같은 순차 미디어 타입을 다루고, 각 항목에 따로 적용하는 itemSchema 를 두어 서버 전송 이벤트 같은 스트리밍 응답을 항목 단위로 기술할 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"순차 미디어 타입은 머리·꼬리 없이 반복되는 구조이며, schema 는 전체 내용에, itemSchema 는 읽히는 대로 처리할 수 있게 각 항목에 독립 적용된다. SSE 는 HTML 규격대로 파싱한다.\",\"as_of\":\"2025-09-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"OpenAPI 3.2.0 은 major.minor 가 기능 집합을, patch 가 오류 수정을 뜻한다고 정하고, 폐기(deprecated) 표시된 요소는 다음 주 버전까지 유효하다고 하며, webhooks 필드로 API 제공자가 소비자에게 보내는 대역 외 요청을 기술하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"3.1 을 지원하는 도구는 모든 3.1.x 와 동작해야 하고 patch 판을 구별하지 않는다. 영향이 작으면 minor 판에도 비호환 변경이 드물게 들어갈 수 있다. 폐기 요소는 다음 주 버전까지 유효.\",\"as_of\":\"2025-09-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"AsyncAPI 명세 3.1.0 은 2026-01-31 에 비호환 변경 없는 minor 판으로 나왔고, 주된 추가 사항은 ROS 2 프로토콜 바인딩이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1397\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"릴리스 노트(2026-01-31, Lukasz Gornicki): 3.0.0 문서는 asyncapi 필드 값만 3.1.0 으로 바꾸면 된다. ROS 2 바인딩은 Amparo Sancho Arellano·Florian Gramß 가 기여.\",\"as_of\":\"2026-01-31\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"AsyncAPI ROS 2 바인딩 0.1.0 은 서버에 RMW 구현(Fast DDS·Zenoh)과 도메인 id 를, 동작에 역할(publisher·subscriber·service·action 의 client/server)·노드 이름·QoS 정책(reliability·history·durability·lifespan·deadline·liveliness·leaseDuration)을 기술하게 하고, 메시지 헤더는 무시하므로 ROS 2 헤더 정보를 페이로드에 넣게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1399\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"채널 바인딩은 속성 없이 예약. 동작 바인딩의 role 값: send=publisher·action_client·service_client, receive=subscriber·action_server·service_server. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"OpenAPI 3.2.0 의 스트리밍 기술(f2)과 AsyncAPI 3.1.0 의 ROS 2·MQTT 기술(f4·f5)을 함께 쓰면, ROS 2 기반 Open-RMF 같은 내부 인터페이스와 업무 시스템용 외부 REST·이벤트 API 를 같은 계열의 기계가독 계약으로 기술할 수 있을 것으로 보이나, 로봇 오케스트레이션 플랫폼이 실제로 그렇게 공개한 사례는 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1398\",\"ref-1399\",\"ref-004\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Open-RMF 의 rmf_ros2 는 ROS 2 어댑터·노드를 제공(ref-004). ROS 2 바인딩은 노드·역할·QoS 를 기술(ref-1399). OAS 3.2 는 SSE·JSONL 스트림을 기술(ref-1398). 결합 사례는 검색에서 찾지 못함.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"VDA 5050 3.0.0 은 의미적 버전 관리를 따라 주 버전은 필수 필드 추가 같은 비호환 변경, 부 버전은 선택 매개변수 같은 새 기능, 수 버전은 오탈자 수정에 쓰고, 주 버전 번호를 MQTT 주제 단계(예 vda5050/v3/…)에 넣는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Major version changes (x.0.0) typically involve breaking changes, such as the introduction of new non optional fields. 주제 단계 majorVersion 은 'v' 를 앞에 붙인 주 버전 번호. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"Boston Dynamics 의 플릿 관리 소프트웨어 Orbit(v5.2 문서)은 REST API 를 베타·실험용 v0 과 안정판으로 새 연동에 권장하는 v1 의 두 층으로 나누고, Scout 에서 Orbit 으로 이름을 바꾼 뒤 옛 bosdyn-scout 패키지를 폐기 예정으로 두고 bosdyn-orbit 으로 옮기게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1401\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Orbit v5.2 에서 두 층 API 도입: v0 은 beta/experimental, v1 은 stable·신규 연동 권장. 기존 bosdyn-scout 앱은 동작하나 bosdyn-orbit 이전 권장. 폐기 예고 기간은 문서에 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"Boston Dynamics 는 Orbit 이 현장(온프레미스) 서버나 클라우드 서버에서 돌며 Spot 플릿의 모든 임무·원격 조작 세션 데이터를 저장한다고 설명한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1401\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: Orbit 은 사이트 인식·플릿 관리·데이터 중앙화를 위한 웹 서비스 묶음으로 on-premise 또는 cloud 서버에서 실행된다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f10\",\"claim\":\"Orbit 웹훅은 등록된 엔드포인트로 ACTION_COMPLETED·ACTION_COMPLETED_WITH_ALERT 사건을 HTTP POST 로 보내고(uuid·type·timestamp 포함), 선택 비밀키가 있으면 시각과 HMAC-SHA256 값을 담은 Orbit-Signature 헤더로 서명하지만, 문서는 재시도 동작을 적지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1401\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"관리자 설정 화면 또는 /api/v0/webhooks/ 로 등록(대상 URL·구독 사건 목록). HTTPS 인증서 검증 기본, HTTP 허용하나 운영 비권장. 재시도 정책 서술 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"연계 대상: Boston Dynamics 는 Orbit 이 점검 경보가 나면 외부 작업지시 관리 시스템에 작업지시를 만들고 외부 id 를 원인 동작에 묶어 주기적으로 상태를 조회하며, 자산 관리 시스템(EAM)도 경보 웹훅을 받아 작업지시를 만들 수 있다고 설명한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1401\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 경보 시 구성된 엔드포인트로 POST 해 작업지시 생성(수동·자동), 외부 시스템 상태를 주기 조회. 이미지는 JPEG 만 지원. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"완료·인계\",\"vendor_claim\":true},{\"id\":\"f12\",\"claim\":\"Standard Webhooks 1.0.0 공개 명세는 재시도에도 바뀌지 않는 webhook-id 를 중복 제거용 멱등성 키로, 시도마다 바뀌는 webhook-timestamp 를 재전송 공격 방어용으로 두고, id·시각·본문을 묶어 HMAC-SHA256(v1) 또는 ed25519(v1a)로 서명하며, 2xx 를 성공으로 보고 지수 백오프·지터로 며칠에 걸쳐 재시도할 것을 권하지만 전달 순서는 다루지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1400\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Use the webhook-id header as an idempotency key.\\\" 예시 재시도 일정은 즉시~24h 간격으로 약 75.5시간, 지속 실패 시 다른 경로로 알리고 엔드포인트 비활성화. 권장 시간 제한 15~30초. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"CloudEvents 명세(specversion 1.0)는 id·source·specversion·type 을 필수 속성으로 두고 source 와 id 의 조합이 사건마다 유일하게 하여 같은 조합을 중복으로 볼 수 있게 하지만, 핵심 명세에서 전달 보장과 순서는 다루지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1407\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"If a duplicate event is re-sent (e.g. due to a network error) it MAY have the same id.\\\" HTTP·AMQP·MQTT·Kafka 는 전달 프로토콜 예시로만 언급. 문서는 1.0.3-wip 판. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"이번에 확인한 범위에서 로봇 플랫폼 전용의 웹훅·이벤트 전달 보장 공통 기준은 없고, 일반 명세(f12·f13)는 중복 제거 키와 재시도 권고까지만 주며 제품 문서(f10, InOrbit)는 재시도·순서 정책을 공개하지 않으므로, 41. 플랫폼 아키텍처·외부 API 에서 ROP 가 최소 1회 전달·멱등성 키·순번을 자체 규약으로 정해 공개해야 할 것으로 보인다(oq-208 부분 근거).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1400\",\"ref-1407\",\"ref-1401\",\"ref-1029\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Standard Webhooks: 순서 미규정. CloudEvents: 전달·순서 미규정. Orbit·InOrbit 문서: 재시도 정책 서술 없음.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"VDA 5050 3.0.0 은 order·state 등 주제에 MQTT QoS 0, connection 주제에 QoS 1 을 쓰게 하고, 로봇이 브로커와 끊기면 받은 주문 정보를 유지해 마지막으로 허가된(released) 노드까지 수행하게 하며, 무선 전송이 신뢰할 수 없으므로 이미 허가한 구간(base)은 바꿀 수 없다고 본다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"If the mobile robot disconnects from the broker, it keeps all the order information and fulfills the order up to the last released node. 주문 취소(cancelOrder)도 같은 이유로 신뢰할 수 없다고 적음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f16\",\"claim\":\"VDA 5050 3.0.0 은 클라우드 제공자가 주제 구조를 강제할 수 있어 클라우드 MQTT 브로커에서는 주제 구조를 조정할 수 있다고 하고, connection 주제를 플릿 관제가 로봇 상태 점검용으로 쓰지 말고 MQTT 수준 연결 확인용으로만 쓰게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"로컬 브로커는 interfaceName/majorVersion/manufacturer/serialNumber/topic 구조를 제안, 클라우드 브로커는 대략 따르도록 개별 조정 가능. 보안은 브로커 설정 몫이며 이 지침 범위 밖. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"f15 에 따르면 연결이 끊긴 동안 로봇이 계속 수행하는 범위는 플릿 관제가 미리 허가해 둔 구간까지이므로, 플릿 관제를 클라우드에 둘지 현장 서버에 둘지는 허가 구간의 길이와 끊김 시 업무 연속성을 함께 정하는 결정이 될 것으로 보인다(oq-206·oq-300 부분 근거).\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"base(허가 구간)·horizon(계획 구간) 분리, 결정 지점에서 정지, 끊김 시 마지막 허가 노드까지 수행. 재시작 후 진행 작업 상태 복원 사례는 찾지 못함.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f18\",\"claim\":\"Microcks 는 OpenAPI·AsyncAPI·gRPC·GraphQL·Postman·SOAP 계약 문서를 모의 서버로 바꾸고 같은 계약으로 실제 구현의 계약 적합성 시험을 자동 수행하는 오픈소스로, 비동기 구성요소가 Kafka·MQTT·AMQP·WebSocket·Google Pub/Sub 를 다루며 2026-05-07 CNCF 인큐베이팅 프로젝트가 되었다고 발표되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1402\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"CNCF TOC 가 인큐베이팅 프로젝트로 받아들이기로 의결(공지 2026-05-07). 2023-06-22 샌드박스 합류.\",\"as_of\":\"2026-05-07\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"Microcks 의 MQTT 지원 문서에 따르면 시험은 브로커 주제의 메시지를 받아 AsyncAPI 페이로드 스키마로 검증하고 필수 속성 누락·예상 밖 속성을 실패로 보고하며, MQTT 3.1.1(ActiveMQ Artemis·Mosquitto)로 시험되었고 모의 메시지 발행용 연결은 아직 TLS 보안 브로커를 지원하지 않는다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1403\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"mqtt:// 엔드포인트와 ASYNC API SCHEMA 실행기 사용, 브로커 자격 증명은 Secret 으로. 모의 메시지는 기본 3초마다 발행. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"VDA 5050 이 MQTT 3.1.1 이상과 주제별 JSON 스키마를 쓰므로(ref-031) 외부·관제 이벤트 API 를 AsyncAPI 로 기술하면 Microcks 같은 도구로 메시지 형식 수준의 적합성 시험은 할 수 있을 것으로 보이나, 주문 수락·갱신 순서 같은 행동 수준 시험은 스키마 검증으로 다루지 못하며 로봇 플랫폼에 적용한 공개 사례는 확인하지 못했다(oq-301 부분 근거).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1403\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Microcks 시험은 페이로드 스키마 검증(ref-1403). VDA 5050 의 주문 수락 절차는 11단계 흐름으로 정의(ref-031). 둘을 결합한 공개 시험 절차는 미확인.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"PUDU 는 2023-08-29 공개한 PUDU Open Platform 이 자사 로봇의 개발 인터페이스·프로토콜을 표준화해 원격 접근을 열고, 음식 주문·물품 배달·재고 관리·스마트 도어 개폐 같은 업무 시스템과 연동하게 하며, 식당·소매·숙박·의료 현장과 유통사·개발자를 대상으로 한다고 밝혔다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1404\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: \\\"PUDU Open Platform standardizes development interfaces and protocols for PUDU Robots\\\". SDK·클라우드·승강기 연동은 발표문에 명시되지 않음.\",\"as_of\":\"2023-08-29\",\"site_type\":\"상업 시설\",\"flow_item\":\"시작 조건\",\"vendor_claim\":true},{\"id\":\"f22\",\"claim\":\"PUDU 는 자사 API 를 공개 클라우드 API 와, 데이터 보안·규정 준수를 위해 완전히 격리해 기업 자체 호스트에서 쓰는 사설 클라우드 API 로 나눠 제공하고, AI 코딩 도구용 OpenAPI 스킬을 배포한다고 설명한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 공개 클라우드는 빠른 시험·시제품용, 사설 클라우드는 기업용 격리 배치(--private --host=your-domain). 인증 방식은 페이지에 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f23\",\"claim\":\"InOrbit FAQ 는 자사를 SaaS 로 설명하며 무료 등급, 월간 활성 로봇 수에 따라 매달 요금이 달라지는 Standard Edition 종량제(연간 선납 시 단가 인하), 대형 운영자 대량 할인, 월 3,000달러(1년 약정) Premium Support 를 적고, 현장 설치형 배치는 언급하지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"only pay for what you use\\\". 데이터는 API(JSON)·CSV 로 내보낼 수 있고 보관 기간은 구독 등급에 따름. 데이터 저장 지역은 미기재. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"InOrbit 개발자 문서는 구성 객체에 apiVersion \\\"v0.1\\\"을 쓰고, 각 로봇에 에이전트를 깔지 않고 플릿 관리자 같은 중간 애플리케이션을 거쳐 로봇을 잇는 Edge SDK 와 로봇에 넣는 Robot SDK 를 구분하지만, API 버전·폐기 정책은 적지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1029\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Robot SDK 는 Agent Core 로 로봇–클라우드 양방향 통신(C++·Python, ROS 1·2). Edge SDK 는 npm·Python, 연결 상태·자세·주행 거리 보고. 사고 관리용 외부 발신 웹훅·수신 API. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"확인한 제품들은 배치 형태를 SaaS 전용(InOrbit), 현장 또는 클라우드 서버(Orbit), 공개 또는 사설 클라우드(PUDU)로 서로 달리 내놓고 있어, 41. 플랫폼 아키텍처·외부 API 의 핵심 질문인 판단 배치는 제품 안에서 고정된 답이 아니라 고객이 고르는 배치 선택지로 제공되는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1406\",\"ref-1401\",\"ref-1405\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: InOrbit FAQ 는 클라우드 인프라만 언급, Orbit 은 on-premise 또는 cloud, PUDU 는 public/private cloud API.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f26\",\"claim\":\"Open-RMF rmf-web API 서버는 OAuth 2.0 client_credentials(기계 간) 흐름에서 표준 클레임이 빠지는 신원 제공자를 위해 이름공간이 붙은 preferred_username 클레임을 읽는 선택 설정을 두지만, 자원의 권한 그룹 결정 방식은 아직 정해지지 않아 현재는 모든 자원을 빈 이름의 기본 그룹에 넣는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-762\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"preferred_username_claim_namespace 설정, RFC 9068·RFC 7519 의 충돌 방지 이름 규칙 인용. TODO: every resource is put into a default empty group. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f27\",\"claim\":\"f26 으로 보아 외부 업무 시스템이 사람 사용자 없이 API 를 부르는 기계 간 인증 경로는 오픈소스에도 마련되어 있으나 현장·고객 단위로 권한을 나누는 기능은 미완이므로, ROP 는 외부 API 의 기계 간 인증과 함께 자원별 권한 그룹(현장·구역 단위) 결정 규칙을 직접 정해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-762\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"작업의 권한 그룹은 작업이 일어나는 구역 등으로 정할 수 있다고 예시하나 구현은 TODO 로 남음.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-004\",\"org\":\"Open Robotics\",\"title\":\"RMF Core Overview — Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/rmf-core.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 핵심 구성(rmf_traffic·rmf_task·rmf_ros2), 교통 일정·협상, 플릿 어댑터 제어 수준을 설명한다. 입력의 원문 텍스트로 확인.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md\"},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세. 의미적 버전 관리, MQTT 주제 구조와 QoS, 연결 끊김 시 주문 수행 범위, base·horizon 구분을 정한다. 입력의 원문 텍스트(앞부분 발췌)로 확인.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-762\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — packages/api-server/README.md\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 웹 API 서버의 설정, 지원 DB, OpenID Connect 인증, 역할·권한 그룹 인가, 기계 간 흐름용 클레임 이름공간 설정을 설명한다. 입력의 원문 텍스트로 확인.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf-web/main/packages/api-server/README.md\"},{\"id\":\"ref-1029\",\"org\":\"InOrbit\",\"title\":\"Contents — InOrbit Developer Portal\",\"published\":null,\"url\":\"https://developer.inorbit.ai/docs\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"InOrbit 개발자 문서. Robot SDK·Edge SDK, REST API, 사고 관리용 웹훅, 구성 객체의 apiVersion 표기를 담는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://developer.inorbit.ai/docs\"},{\"id\":\"ref-1397\",\"org\":\"AsyncAPI Initiative (Lukasz Gornicki)\",\"title\":\"AsyncAPI Spec 3.1.0 Release Notes\",\"published\":\"2026-01-31\",\"url\":\"https://www.asyncapi.com/blog/release-notes-3.1.0\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"AsyncAPI 3.1.0 릴리스 노트. 비호환 변경 없는 minor 판이며 ROS 2 프로토콜 바인딩 추가와 도구 지원 현황을 알린다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.asyncapi.com/blog/release-notes-3.1.0\"},{\"id\":\"ref-1398\",\"org\":\"OpenAPI Initiative\",\"title\":\"OpenAPI Specification v3.2.0\",\"published\":\"2025-09-19\",\"url\":\"https://spec.openapis.org/oas/v3.2.0.html\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"OpenAPI 3.2.0 명세 본문. 버전 의미, webhooks 필드, 순차 미디어 타입과 itemSchema 로 스트리밍 응답 기술, 폐기 요소 규칙을 정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://spec.openapis.org/oas/v3.2.0.html\"},{\"id\":\"ref-1399\",\"org\":\"AsyncAPI Initiative\",\"title\":\"ROS 2 Bindings — AsyncAPI bindings reference\",\"published\":null,\"url\":\"https://www.asyncapi.com/docs/reference/bindings/ros2\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"AsyncAPI ROS 2 바인딩 0.1.0. 서버(RMW 구현·도메인 id), 동작(역할·노드·QoS 정책), 메시지 타입 대응을 정의한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.asyncapi.com/docs/reference/bindings/ros2\"},{\"id\":\"ref-1400\",\"org\":\"Standard Webhooks (standard-webhooks GitHub)\",\"title\":\"Standard Webhooks specification (spec/standard-webhooks.md)\",\"published\":null,\"url\":\"https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"웹훅 헤더·서명·페이로드의 공통 형식을 정한 공개 명세 1.0.0. 멱등성 키, 재전송 방어 시각, 서명 방식, 재시도 권고를 담는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/standard-webhooks/standard-webhooks/main/spec/standard-webhooks.md\"},{\"id\":\"ref-1401\",\"org\":\"Boston Dynamics\",\"title\":\"About Orbit (formerly Scout) — Spot SDK documentation\",\"published\":null,\"url\":\"https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Orbit v5.2 개요. 현장·클라우드 배치, v0(베타)·v1(안정) 두 층 REST API, 서명된 웹훅, 작업지시 시스템 연동을 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit\"},{\"id\":\"ref-1402\",\"org\":\"Cloud Native Computing Foundation (CNCF)\",\"title\":\"Microcks becomes a CNCF incubating project\",\"published\":\"2026-05-07\",\"url\":\"https://www.cncf.io/blog/2026/05/07/microcks-becomes-a-cncf-incubating-project/\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"Microcks 의 CNCF 인큐베이팅 승격 공지. 계약 문서 기반 모의 서버와 계약 적합성 시험, 지원 비동기 프로토콜을 소개한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.cncf.io/blog/2026/05/07/microcks-becomes-a-cncf-incubating-project/\"},{\"id\":\"ref-1403\",\"org\":\"Microcks\",\"title\":\"MQTT Mocking & Testing — Microcks documentation\",\"published\":null,\"url\":\"https://microcks.io/documentation/guides/usage/async-protocols/mqtt-support/\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"AsyncAPI 계약으로 MQTT 모의 메시지를 발행하고 브로커 메시지를 페이로드 스키마로 검증하는 방법과 설정·제약을 안내한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://microcks.io/documentation/guides/usage/async-protocols/mqtt-support/\"},{\"id\":\"ref-1404\",\"org\":\"Pudu Robotics\",\"title\":\"Pudu Robotics Launches Open Platform for Deeper Integration and Remote Management of Delivery and Cleaning Robots\",\"published\":\"2023-08-29\",\"url\":\"https://www.pudurobotics.com/about/news/64eeb7cb13fc2f004432c9cd\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"PUDU Open Platform 공개 보도자료. 개발 인터페이스 표준화, 원격 관리, 주문·배달·재고·스마트 도어 연동과 대상 현장을 밝힌다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.pudurobotics.com/about/news/64eeb7cb13fc2f004432c9cd\"},{\"id\":\"ref-1405\",\"org\":\"Pudu Robotics (PUDU Open Platform)\",\"title\":\"Build robot AI integrations — PUDU SKILL\",\"published\":null,\"url\":\"https://open.pudutech.com/en/pudu-skill\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"AI 코딩 도구용 PUDU OpenAPI 스킬 안내. 공개 클라우드 API 와 사설 클라우드 API 두 배치 형태를 소개한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://open.pudutech.com/en/pudu-skill\"},{\"id\":\"ref-1406\",\"org\":\"InOrbit\",\"title\":\"InOrbit FAQ\",\"published\":null,\"url\":\"https://www.inorbit.ai/faq\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"InOrbit 자주 묻는 질문. SaaS 제공, 월간 활성 로봇 수 기반 종량제, 무료 등급, 지원 요금, 데이터 내보내기·보관을 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.inorbit.ai/faq?hsLang=en\"},{\"id\":\"ref-1407\",\"org\":\"CNCF CloudEvents (cloudevents/spec GitHub)\",\"title\":\"CloudEvents - Version 1.0.3-wip (cloudevents/spec.md)\",\"published\":null,\"url\":\"https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"사건 데이터를 공통 형식으로 기술하는 CloudEvents 핵심 명세(specversion 1.0, 작업 중 판). 필수 속성과 source·id 유일성·중복 처리를 정한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/cloudevents/spec/main/cloudevents/spec.md\"}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md\",\"sections\":[\"5\",\"6\",\"7\",\"9\",\"11\"],\"rationale\":\"갱신(차등). 섹션 5 — 상업 시설 사례 추가: f21(PUDU Open Platform, 음식 주문 시스템 연동이 시작 조건, '벤더 주장' 병기, 나머지 칸 미확인). 가정·실외는 이번에도 찾지 못함 / 섹션 6 — 배치 선택지 f22·f25(벤더 주장)와 InOrbit SaaS f23, 연결 끊김 시 수행 범위 f15·f16·f17, 웹훅 전달 보장 f10·f12·f13·f14 / 섹션 7 — 바뀐 출처: OpenAPI 3.2.0(f1·f2·f3, ref-1025 행을 3.2.0 으로 갱신하거나 병기), AsyncAPI 3.1.0 발행일 2026-01-31 과 ROS 2 바인딩(f4·f5, ref-1024 발행일 보완), f6 결합 추정, Standard Webhooks(f12)·CloudEvents(f13)·Microcks(f18·f19) 행 추가, VDA 5050 버전 규칙(f7), Orbit·InOrbit 버전 표기(f8·f24) / 섹션 9 — 외부 API 의 전달 규약(f14)·기계 간 인증과 권한 그룹 규칙(f26·f27)을 직접 범위로, 작업지시·자산 관리 시스템 판단(f11)은 연계 대상으로 / 섹션 11 — oq-207 부분 근거(f3·f7·f8·f24, 로봇 플랫폼의 폐기 예고 기간 공개 사례는 여전히 없음), oq-208 부분 근거(f10·f12·f13·f14), oq-206·oq-300 부분 근거(f15·f16·f17), oq-301 부분 근거(f18·f19·f20), oq-267 부분 근거(f23), oq-209 미해결, 새 질문 2건. 다음 실행 후보: 42. 분산 시스템·통신·컴퓨팅 구조 페이지에 f15·f16(연결 끊김 시 수행 범위), 21. 상호운용 표준·적합성 페이지에 f18·f19·f20(계약 적합성 시험), 51. 인증·권한·격리 페이지에 f26 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"클라우드이벤트\",\"term_en\":\"CloudEvents\",\"definition\":\"사건 데이터를 id·source·specversion·type 같은 공통 속성으로 기술해 서비스·플랫폼 사이에서 같은 형식으로 주고받게 하는 CNCF 의 공개 명세다.\"},{\"term_ko\":\"계약 시험\",\"term_en\":\"Contract Testing\",\"definition\":\"OpenAPI·AsyncAPI 같은 API 계약 문서를 기준으로 실제 구현의 요청·응답·메시지가 계약을 지키는지 자동으로 확인하는 시험 방식이다.\"},{\"term_ko\":\"순차 미디어 타입\",\"term_en\":\"Sequential Media Type\",\"definition\":\"JSON Lines·서버 전송 이벤트(text/event-stream)처럼 머리·꼬리 없이 같은 구조의 항목이 이어지는 형식으로, OpenAPI 3.2.0 이 itemSchema 로 항목 단위 스트리밍을 기술하게 한다.\"}],\"open_questions_new\":[\"Open-RMF 같은 ROS 2 기반 오케스트레이션 플랫폼이 AsyncAPI ROS 2 바인딩으로 내부·외부 인터페이스를 기술해 공개한 사례나 도구가 있는가? | 관련 영역: 41. 플랫폼 아키텍처·외부 API, 21. 상호운용 표준·적합성 | 근거: f6 | 종류: 일반\",\"로봇 오케스트레이션 플랫폼의 외부 API 에서 권한 그룹을 현장·구역·고객 단위로 정해 다른 현장의 작업 요청과 상태를 격리한 공개 구현이 있는가? | 관련 영역: 41. 플랫폼 아키텍처·외부 API, 51. 인증·권한·격리 | 근거: f26 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":15,\"cross_checked_count\":0,\"unverified\":[\"oq-207 부분 답: 로봇 플랫폼이 폐기 예고 기간(최소 지원 기간)을 공개한 사례를 찾지 못함. 차량 플릿 API(Fleetio·MOIA 등)의 정책은 검색 요약에만 보이고 로봇 플랫폼이 아니어서 넣지 않음\",\"oq-208 부분 답: 웹훅·이벤트 순서 보장을 정한 공통 기준 없음. InOrbit 웹훅 상세 문서(재시도·서명)는 열지 못함\",\"oq-209 미답: TTA 서비스 로봇 정보 모듈(TTAK.KO-10.1295, 2026-06-26 개정 Part 8)과 개방형 로봇 소프트웨어 플랫폼(TTAK.KO-10.0912) 계열이 검색 요약에 보였으나 TTA 표준 페이지를 열지 못해(HTTP 400) 관제 플랫폼 참조 구조와의 관련을 확인하지 못함\",\"oq-206 미답: 네이버 ARC 의 클라우드 연결 끊김 시 동작을 밝힌 공개 자료 없음\",\"oq-300 부분 답: 관제 서비스 재시작 뒤 진행 작업 상태를 이어 간 공개 구성은 찾지 못함. Open-RMF 포럼의 관리자 답변(끊긴 로봇은 마지막 명령을 계속 수행)은 커뮤니티 게시글이라 근거로 쓰지 않음\",\"oq-301 부분 답: Microcks 를 로봇 플랫폼 적합성 시험에 쓴 공개 사례 없음\",\"ref-1398 OAS 3.2.0 본문 앞 200,000자까지만 읽음\",\"ref-031 은 입력 원문 텍스트의 앞부분 발췌(48,820자)만 확인\",\"Serve Robotics·Uber Eats 실외 배송 연동은 회사 페이지가 리디렉션되고 보도에 API·연동 방식이 없어 넣지 않음\",\"Bear Robotics API 페이지(bearrobotics.ai/bear-api) 404 로 열지 못함\"],\"scope_violations\":[\"f5: ROS 2 QoS·RMW 구현은 로봇 통신 방식(20. 로봇·제조사 관제 연동, 42. 분산 시스템·통신·컴퓨팅 구조) 쪽 내용이며 이 영역에서는 인터페이스 기술 형식으로만 다룸\",\"f11: 작업지시·자산 관리 판단은 상위 업무 시스템 쪽이므로 claim 을 '연계 대상: '으로 시작하고 ROP 몫은 웹훅·API 인터페이스로 한정\",\"f15: 연결 끊김 시 주문 수행은 로봇 쪽 동작(로봇 자체 지능·제어 경계)이며 ROP 몫은 허가 구간 결정과 배치 정책으로만 서술해야 함(f17)\",\"f21: 식당 주문 판단은 업무 시스템 쪽이며 ROP 몫은 연동 인터페이스\"],\"budget_used\":{\"queries\":23,\"sources\":11},\"limits\":\"web_fetch_available: true · fetch_mode full. 갱신(update) 실행이며 정정 요청이 없어 바뀐 출처(OpenAPI 3.1.0→3.2.0, AsyncAPI 3.1.0 발행일·ROS 2 바인딩, rmf-web API 서버 README)와 빈·약한 절(5·6·7·9·11절), 이 영역에 걸린 열린 질문 7건만 조사했다. 검색 23회/30, 신규 출처 11건/15(ref-1397~ref-1407, 예약 구간 안), 재사용 4건(ref-004·ref-031·ref-762 는 입력 원문 텍스트, ref-1029 는 webfetch 로 다시 엶). 모든 출처 원문을 열었다(webfetch 9, github_raw 2, inbox 3 재사용). 교차 확인 0건: 각 사실이 단일 기관 문서에 기대므로 신뢰도는 medium 이하다. 벤더 주장 5건(f9·f11·f21·f22·f25)은 vendor_claim·추정·'벤더 주장: ' 첫머리로 냈다. 해결 제안한 열린 질문 없음: oq-206·oq-209 는 미해결, oq-207·oq-208·oq-267·oq-300·oq-301 은 부분 근거(f3·f7·f8·f24 / f10·f12·f13·f14 / f23 / f15·f16·f17 / f18·f19·f20). 핵심 질문에 대한 새 근거는 '판단 배치가 제품마다 배치 선택지로 제공된다'(f25, 추정)와 '끊김 시 로봇의 계속 수행 범위는 허가 구간까지'(f15·f17)다. 현장 유형 사례는 상업 시설 1건(f21, 벤더 주장)만 새로 찾았고 가정·실외는 찾지 못했다. 국내 표준(oq-209)은 TTA 표준 페이지를 열지 못해 확인하지 못했다. L. AI·학습 기술 관련 finding 없음(f22 의 AI 코딩 도구용 스킬은 배치 형태 근거로만 씀). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았다. 용어집에 이미 있는 웹훅·멱등성 키·적합성 시험·OpenAPI 명세·AsyncAPI 명세·의미적 버전 관리·API 폐기 정책은 후보로 내지 않았다. 입력 누락 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-10-09-17",
+    "date": "2026-10-09",
+    "run_type": "update",
+    "target": {
+      "area_no": 41,
+      "area_name": "41. 플랫폼 아키텍처·외부 API",
+      "category": "K. 플랫폼 아키텍처·인프라"
+    },
+    "gaps": [
+      "섹션 5. 적용 사례 (현장 유형 명시) — 상업 시설·가정·실외 사례 없음, 병원·제조 공장·기타 사례도 제약·완료·인계 칸이 대부분 미확인",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 — 바뀐 출처: OpenAPI 는 3.1.0(ref-1025)만, AsyncAPI 3.1.0(ref-1024)은 발행일 미확인이며 ROS 2 바인딩 추가 사실이 반영되지 않음. 웹훅·이벤트 형식 공통 규약(Standard Webhooks, CloudEvents)과 계약 시험 도구가 없음",
+      "섹션 6. 대표 접근법과 기술 — 배치 선택지(SaaS 전용·현장 또는 클라우드·공개/사설 클라우드)와 연결 끊김 시 동작 근거가 약함(oq-206, oq-300)",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 — 외부 API 의 버전 정책·전달 보장·기계 간 인증이 직접 범위인지 근거 없음",
+      "섹션 11. 열린 질문 — oq-206·oq-207·oq-208·oq-209·oq-267·oq-300·oq-301 해결 근거 미조사",
+      "정정 요청 없음. 재확인 대상 출처: ref-1025(OpenAPI 3.1.0 → 3.2.0 게시), ref-1024(AsyncAPI 3.1.0 발행일), ref-762(rmf-web API 서버 README 변경 여부)"
+    ],
+    "research_questions": [
+      "어떤 판단을 클라우드·현장 서버·로봇 가운데 어디에서 하고, 외부에 무엇을 열어 줄 것인가? [분류원문]",
+      "바뀐 출처: OpenAPI·AsyncAPI 명세는 페이지가 인용한 판 이후 어떻게 바뀌었고, 로봇 플랫폼의 외부 API 기술에 의미 있는 변경(스트리밍 기술, ROS 2 바인딩)이 있는가? (섹션 7 겨냥)",
+      "oq-207 로봇 관제 플랫폼의 외부 API 버전 관리와 하위 호환(주 버전 표기, 폐기 예고 기간) 정책을 공개한 오픈소스·제품 사례가 있는가? (섹션 6·7·11 겨냥)",
+      "oq-208 로봇 플랫폼이 외부로 내보내는 웹훅·이벤트 스트림의 전달 보장(재시도, 순서, 중복 제거)을 정한 공통 기준이나 제품 문서가 있는가? (섹션 6·7·9 겨냥)",
+      "oq-206·oq-300 클라우드나 관제 서버와의 연결이 끊기거나 재시작될 때 로봇과 현장 쪽이 어디까지 계속 동작하는지 정한 표준·오픈소스 근거는 무엇인가? (섹션 6·11 겨냥)",
+      "oq-301·oq-209 외부 API 를 OpenAPI·AsyncAPI 로 기술해 적합성 시험 기준으로 쓰는 공개 도구가 있는가, 국내 TTA·KS 표준이 있는가? (섹션 7·11 겨냥)",
+      "oq-267 및 섹션 5: 로봇 운영 플랫폼의 과금 단위와 배치 형태(SaaS·현장·사설 클라우드)를 공개한 자료, 상업 시설·가정·실외에서 플랫폼이 외부에 API 를 연 사례는 무엇인가?"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "OpenAPI 명세 3.2.0 이 2025-09-19 에 게시되어, 41. 플랫폼 아키텍처·외부 API 페이지가 인용한 3.1.0(ref-1025)보다 새 판이 나와 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "OAS 3.2.0 게시일 2025-09-19. 문서 머리에 판 번호와 게시일이 적혀 있다.",
+        "as_of": "2025-09-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "OpenAPI 3.2.0 은 text/event-stream·application/jsonl·application/json-seq 같은 순차 미디어 타입을 다루고, 각 항목에 따로 적용하는 itemSchema 를 두어 서버 전송 이벤트 같은 스트리밍 응답을 항목 단위로 기술할 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "순차 미디어 타입은 머리·꼬리 없이 반복되는 구조이며, schema 는 전체 내용에, itemSchema 는 읽히는 대로 처리할 수 있게 각 항목에 독립 적용된다. SSE 는 HTML 규격대로 파싱한다.",
+        "as_of": "2025-09-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "OpenAPI 3.2.0 은 major.minor 가 기능 집합을, patch 가 오류 수정을 뜻한다고 정하고, 폐기(deprecated) 표시된 요소는 다음 주 버전까지 유효하다고 하며, webhooks 필드로 API 제공자가 소비자에게 보내는 대역 외 요청을 기술하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "3.1 을 지원하는 도구는 모든 3.1.x 와 동작해야 하고 patch 판을 구별하지 않는다. 영향이 작으면 minor 판에도 비호환 변경이 드물게 들어갈 수 있다. 폐기 요소는 다음 주 버전까지 유효.",
+        "as_of": "2025-09-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "AsyncAPI 명세 3.1.0 은 2026-01-31 에 비호환 변경 없는 minor 판으로 나왔고, 주된 추가 사항은 ROS 2 프로토콜 바인딩이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1397"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "릴리스 노트(2026-01-31, Lukasz Gornicki): 3.0.0 문서는 asyncapi 필드 값만 3.1.0 으로 바꾸면 된다. ROS 2 바인딩은 Amparo Sancho Arellano·Florian Gramß 가 기여.",
+        "as_of": "2026-01-31",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "AsyncAPI ROS 2 바인딩 0.1.0 은 서버에 RMW 구현(Fast DDS·Zenoh)과 도메인 id 를, 동작에 역할(publisher·subscriber·service·action 의 client/server)·노드 이름·QoS 정책(reliability·history·durability·lifespan·deadline·liveliness·leaseDuration)을 기술하게 하고, 메시지 헤더는 무시하므로 ROS 2 헤더 정보를 페이로드에 넣게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1399"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "채널 바인딩은 속성 없이 예약. 동작 바인딩의 role 값: send=publisher·action_client·service_client, receive=subscriber·action_server·service_server. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "OpenAPI 3.2.0 의 스트리밍 기술(f2)과 AsyncAPI 3.1.0 의 ROS 2·MQTT 기술(f4·f5)을 함께 쓰면, ROS 2 기반 Open-RMF 같은 내부 인터페이스와 업무 시스템용 외부 REST·이벤트 API 를 같은 계열의 기계가독 계약으로 기술할 수 있을 것으로 보이나, 로봇 오케스트레이션 플랫폼이 실제로 그렇게 공개한 사례는 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1398",
+          "ref-1399",
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Open-RMF 의 rmf_ros2 는 ROS 2 어댑터·노드를 제공(ref-004). ROS 2 바인딩은 노드·역할·QoS 를 기술(ref-1399). OAS 3.2 는 SSE·JSONL 스트림을 기술(ref-1398). 결합 사례는 검색에서 찾지 못함.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "VDA 5050 3.0.0 은 의미적 버전 관리를 따라 주 버전은 필수 필드 추가 같은 비호환 변경, 부 버전은 선택 매개변수 같은 새 기능, 수 버전은 오탈자 수정에 쓰고, 주 버전 번호를 MQTT 주제 단계(예 vda5050/v3/…)에 넣는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Major version changes (x.0.0) typically involve breaking changes, such as the introduction of new non optional fields. 주제 단계 majorVersion 은 'v' 를 앞에 붙인 주 버전 번호. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "Boston Dynamics 의 플릿 관리 소프트웨어 Orbit(v5.2 문서)은 REST API 를 베타·실험용 v0 과 안정판으로 새 연동에 권장하는 v1 의 두 층으로 나누고, Scout 에서 Orbit 으로 이름을 바꾼 뒤 옛 bosdyn-scout 패키지를 폐기 예정으로 두고 bosdyn-orbit 으로 옮기게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1401"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Orbit v5.2 에서 두 층 API 도입: v0 은 beta/experimental, v1 은 stable·신규 연동 권장. 기존 bosdyn-scout 앱은 동작하나 bosdyn-orbit 이전 권장. 폐기 예고 기간은 문서에 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "Boston Dynamics 는 Orbit 이 현장(온프레미스) 서버나 클라우드 서버에서 돌며 Spot 플릿의 모든 임무·원격 조작 세션 데이터를 저장한다고 설명한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1401"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: Orbit 은 사이트 인식·플릿 관리·데이터 중앙화를 위한 웹 서비스 묶음으로 on-premise 또는 cloud 서버에서 실행된다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f10",
+        "claim": "Orbit 웹훅은 등록된 엔드포인트로 ACTION_COMPLETED·ACTION_COMPLETED_WITH_ALERT 사건을 HTTP POST 로 보내고(uuid·type·timestamp 포함), 선택 비밀키가 있으면 시각과 HMAC-SHA256 값을 담은 Orbit-Signature 헤더로 서명하지만, 문서는 재시도 동작을 적지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1401"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "관리자 설정 화면 또는 /api/v0/webhooks/ 로 등록(대상 URL·구독 사건 목록). HTTPS 인증서 검증 기본, HTTP 허용하나 운영 비권장. 재시도 정책 서술 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "연계 대상: Boston Dynamics 는 Orbit 이 점검 경보가 나면 외부 작업지시 관리 시스템에 작업지시를 만들고 외부 id 를 원인 동작에 묶어 주기적으로 상태를 조회하며, 자산 관리 시스템(EAM)도 경보 웹훅을 받아 작업지시를 만들 수 있다고 설명한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1401"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 경보 시 구성된 엔드포인트로 POST 해 작업지시 생성(수동·자동), 외부 시스템 상태를 주기 조회. 이미지는 JPEG 만 지원. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "완료·인계",
+        "vendor_claim": true
+      },
+      {
+        "id": "f12",
+        "claim": "Standard Webhooks 1.0.0 공개 명세는 재시도에도 바뀌지 않는 webhook-id 를 중복 제거용 멱등성 키로, 시도마다 바뀌는 webhook-timestamp 를 재전송 공격 방어용으로 두고, id·시각·본문을 묶어 HMAC-SHA256(v1) 또는 ed25519(v1a)로 서명하며, 2xx 를 성공으로 보고 지수 백오프·지터로 며칠에 걸쳐 재시도할 것을 권하지만 전달 순서는 다루지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1400"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Use the webhook-id header as an idempotency key.\" 예시 재시도 일정은 즉시~24h 간격으로 약 75.5시간, 지속 실패 시 다른 경로로 알리고 엔드포인트 비활성화. 권장 시간 제한 15~30초. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "CloudEvents 명세(specversion 1.0)는 id·source·specversion·type 을 필수 속성으로 두고 source 와 id 의 조합이 사건마다 유일하게 하여 같은 조합을 중복으로 볼 수 있게 하지만, 핵심 명세에서 전달 보장과 순서는 다루지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1407"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"If a duplicate event is re-sent (e.g. due to a network error) it MAY have the same id.\" HTTP·AMQP·MQTT·Kafka 는 전달 프로토콜 예시로만 언급. 문서는 1.0.3-wip 판. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "이번에 확인한 범위에서 로봇 플랫폼 전용의 웹훅·이벤트 전달 보장 공통 기준은 없고, 일반 명세(f12·f13)는 중복 제거 키와 재시도 권고까지만 주며 제품 문서(f10, InOrbit)는 재시도·순서 정책을 공개하지 않으므로, 41. 플랫폼 아키텍처·외부 API 에서 ROP 가 최소 1회 전달·멱등성 키·순번을 자체 규약으로 정해 공개해야 할 것으로 보인다(oq-208 부분 근거).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1400",
+          "ref-1407",
+          "ref-1401",
+          "ref-1029"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Standard Webhooks: 순서 미규정. CloudEvents: 전달·순서 미규정. Orbit·InOrbit 문서: 재시도 정책 서술 없음.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "VDA 5050 3.0.0 은 order·state 등 주제에 MQTT QoS 0, connection 주제에 QoS 1 을 쓰게 하고, 로봇이 브로커와 끊기면 받은 주문 정보를 유지해 마지막으로 허가된(released) 노드까지 수행하게 하며, 무선 전송이 신뢰할 수 없으므로 이미 허가한 구간(base)은 바꿀 수 없다고 본다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "If the mobile robot disconnects from the broker, it keeps all the order information and fulfills the order up to the last released node. 주문 취소(cancelOrder)도 같은 이유로 신뢰할 수 없다고 적음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f16",
+        "claim": "VDA 5050 3.0.0 은 클라우드 제공자가 주제 구조를 강제할 수 있어 클라우드 MQTT 브로커에서는 주제 구조를 조정할 수 있다고 하고, connection 주제를 플릿 관제가 로봇 상태 점검용으로 쓰지 말고 MQTT 수준 연결 확인용으로만 쓰게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "로컬 브로커는 interfaceName/majorVersion/manufacturer/serialNumber/topic 구조를 제안, 클라우드 브로커는 대략 따르도록 개별 조정 가능. 보안은 브로커 설정 몫이며 이 지침 범위 밖. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "f15 에 따르면 연결이 끊긴 동안 로봇이 계속 수행하는 범위는 플릿 관제가 미리 허가해 둔 구간까지이므로, 플릿 관제를 클라우드에 둘지 현장 서버에 둘지는 허가 구간의 길이와 끊김 시 업무 연속성을 함께 정하는 결정이 될 것으로 보인다(oq-206·oq-300 부분 근거).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "base(허가 구간)·horizon(계획 구간) 분리, 결정 지점에서 정지, 끊김 시 마지막 허가 노드까지 수행. 재시작 후 진행 작업 상태 복원 사례는 찾지 못함.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f18",
+        "claim": "Microcks 는 OpenAPI·AsyncAPI·gRPC·GraphQL·Postman·SOAP 계약 문서를 모의 서버로 바꾸고 같은 계약으로 실제 구현의 계약 적합성 시험을 자동 수행하는 오픈소스로, 비동기 구성요소가 Kafka·MQTT·AMQP·WebSocket·Google Pub/Sub 를 다루며 2026-05-07 CNCF 인큐베이팅 프로젝트가 되었다고 발표되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1402"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "CNCF TOC 가 인큐베이팅 프로젝트로 받아들이기로 의결(공지 2026-05-07). 2023-06-22 샌드박스 합류.",
+        "as_of": "2026-05-07",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "Microcks 의 MQTT 지원 문서에 따르면 시험은 브로커 주제의 메시지를 받아 AsyncAPI 페이로드 스키마로 검증하고 필수 속성 누락·예상 밖 속성을 실패로 보고하며, MQTT 3.1.1(ActiveMQ Artemis·Mosquitto)로 시험되었고 모의 메시지 발행용 연결은 아직 TLS 보안 브로커를 지원하지 않는다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1403"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "mqtt:// 엔드포인트와 ASYNC API SCHEMA 실행기 사용, 브로커 자격 증명은 Secret 으로. 모의 메시지는 기본 3초마다 발행. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "VDA 5050 이 MQTT 3.1.1 이상과 주제별 JSON 스키마를 쓰므로(ref-031) 외부·관제 이벤트 API 를 AsyncAPI 로 기술하면 Microcks 같은 도구로 메시지 형식 수준의 적합성 시험은 할 수 있을 것으로 보이나, 주문 수락·갱신 순서 같은 행동 수준 시험은 스키마 검증으로 다루지 못하며 로봇 플랫폼에 적용한 공개 사례는 확인하지 못했다(oq-301 부분 근거).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1403",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Microcks 시험은 페이로드 스키마 검증(ref-1403). VDA 5050 의 주문 수락 절차는 11단계 흐름으로 정의(ref-031). 둘을 결합한 공개 시험 절차는 미확인.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "PUDU 는 2023-08-29 공개한 PUDU Open Platform 이 자사 로봇의 개발 인터페이스·프로토콜을 표준화해 원격 접근을 열고, 음식 주문·물품 배달·재고 관리·스마트 도어 개폐 같은 업무 시스템과 연동하게 하며, 식당·소매·숙박·의료 현장과 유통사·개발자를 대상으로 한다고 밝혔다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1404"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: \"PUDU Open Platform standardizes development interfaces and protocols for PUDU Robots\". SDK·클라우드·승강기 연동은 발표문에 명시되지 않음.",
+        "as_of": "2023-08-29",
+        "site_type": "상업 시설",
+        "flow_item": "시작 조건",
+        "vendor_claim": true
+      },
+      {
+        "id": "f22",
+        "claim": "PUDU 는 자사 API 를 공개 클라우드 API 와, 데이터 보안·규정 준수를 위해 완전히 격리해 기업 자체 호스트에서 쓰는 사설 클라우드 API 로 나눠 제공하고, AI 코딩 도구용 OpenAPI 스킬을 배포한다고 설명한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 공개 클라우드는 빠른 시험·시제품용, 사설 클라우드는 기업용 격리 배치(--private --host=your-domain). 인증 방식은 페이지에 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f23",
+        "claim": "InOrbit FAQ 는 자사를 SaaS 로 설명하며 무료 등급, 월간 활성 로봇 수에 따라 매달 요금이 달라지는 Standard Edition 종량제(연간 선납 시 단가 인하), 대형 운영자 대량 할인, 월 3,000달러(1년 약정) Premium Support 를 적고, 현장 설치형 배치는 언급하지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"only pay for what you use\". 데이터는 API(JSON)·CSV 로 내보낼 수 있고 보관 기간은 구독 등급에 따름. 데이터 저장 지역은 미기재. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "InOrbit 개발자 문서는 구성 객체에 apiVersion \"v0.1\"을 쓰고, 각 로봇에 에이전트를 깔지 않고 플릿 관리자 같은 중간 애플리케이션을 거쳐 로봇을 잇는 Edge SDK 와 로봇에 넣는 Robot SDK 를 구분하지만, API 버전·폐기 정책은 적지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1029"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Robot SDK 는 Agent Core 로 로봇–클라우드 양방향 통신(C++·Python, ROS 1·2). Edge SDK 는 npm·Python, 연결 상태·자세·주행 거리 보고. 사고 관리용 외부 발신 웹훅·수신 API. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "확인한 제품들은 배치 형태를 SaaS 전용(InOrbit), 현장 또는 클라우드 서버(Orbit), 공개 또는 사설 클라우드(PUDU)로 서로 달리 내놓고 있어, 41. 플랫폼 아키텍처·외부 API 의 핵심 질문인 판단 배치는 제품 안에서 고정된 답이 아니라 고객이 고르는 배치 선택지로 제공되는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1406",
+          "ref-1401",
+          "ref-1405"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: InOrbit FAQ 는 클라우드 인프라만 언급, Orbit 은 on-premise 또는 cloud, PUDU 는 public/private cloud API.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f26",
+        "claim": "Open-RMF rmf-web API 서버는 OAuth 2.0 client_credentials(기계 간) 흐름에서 표준 클레임이 빠지는 신원 제공자를 위해 이름공간이 붙은 preferred_username 클레임을 읽는 선택 설정을 두지만, 자원의 권한 그룹 결정 방식은 아직 정해지지 않아 현재는 모든 자원을 빈 이름의 기본 그룹에 넣는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-762"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "preferred_username_claim_namespace 설정, RFC 9068·RFC 7519 의 충돌 방지 이름 규칙 인용. TODO: every resource is put into a default empty group. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f27",
+        "claim": "f26 으로 보아 외부 업무 시스템이 사람 사용자 없이 API 를 부르는 기계 간 인증 경로는 오픈소스에도 마련되어 있으나 현장·고객 단위로 권한을 나누는 기능은 미완이므로, ROP 는 외부 API 의 기계 간 인증과 함께 자원별 권한 그룹(현장·구역 단위) 결정 규칙을 직접 정해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-762"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "작업의 권한 그룹은 작업이 일어나는 구역 등으로 정할 수 있다고 예시하나 구현은 TODO 로 남음.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-004",
+        "org": "Open Robotics",
+        "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 핵심 구성(rmf_traffic·rmf_task·rmf_ros2), 교통 일정·협상, 플릿 어댑터 제어 수준을 설명한다. 입력의 원문 텍스트로 확인.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md"
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세. 의미적 버전 관리, MQTT 주제 구조와 QoS, 연결 끊김 시 주문 수행 범위, base·horizon 구분을 정한다. 입력의 원문 텍스트(앞부분 발췌)로 확인.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-762",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — packages/api-server/README.md",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 웹 API 서버의 설정, 지원 DB, OpenID Connect 인증, 역할·권한 그룹 인가, 기계 간 흐름용 클레임 이름공간 설정을 설명한다. 입력의 원문 텍스트로 확인.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf-web/main/packages/api-server/README.md"
+      },
+      {
+        "id": "ref-1029",
+        "org": "InOrbit",
+        "title": "Contents — InOrbit Developer Portal",
+        "published": null,
+        "url": "https://developer.inorbit.ai/docs",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "InOrbit 개발자 문서. Robot SDK·Edge SDK, REST API, 사고 관리용 웹훅, 구성 객체의 apiVersion 표기를 담는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://developer.inorbit.ai/docs"
+      },
+      {
+        "id": "ref-1397",
+        "org": "AsyncAPI Initiative (Lukasz Gornicki)",
+        "title": "AsyncAPI Spec 3.1.0 Release Notes",
+        "published": "2026-01-31",
+        "url": "https://www.asyncapi.com/blog/release-notes-3.1.0",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "AsyncAPI 3.1.0 릴리스 노트. 비호환 변경 없는 minor 판이며 ROS 2 프로토콜 바인딩 추가와 도구 지원 현황을 알린다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.asyncapi.com/blog/release-notes-3.1.0"
+      },
+      {
+        "id": "ref-1398",
+        "org": "OpenAPI Initiative",
+        "title": "OpenAPI Specification v3.2.0",
+        "published": "2025-09-19",
+        "url": "https://spec.openapis.org/oas/v3.2.0.html",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "OpenAPI 3.2.0 명세 본문. 버전 의미, webhooks 필드, 순차 미디어 타입과 itemSchema 로 스트리밍 응답 기술, 폐기 요소 규칙을 정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://spec.openapis.org/oas/v3.2.0.html"
+      },
+      {
+        "id": "ref-1399",
+        "org": "AsyncAPI Initiative",
+        "title": "ROS 2 Bindings — AsyncAPI bindings reference",
+        "published": null,
+        "url": "https://www.asyncapi.com/docs/reference/bindings/ros2",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "AsyncAPI ROS 2 바인딩 0.1.0. 서버(RMW 구현·도메인 id), 동작(역할·노드·QoS 정책), 메시지 타입 대응을 정의한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.asyncapi.com/docs/reference/bindings/ros2"
+      },
+      {
+        "id": "ref-1400",
+        "org": "Standard Webhooks (standard-webhooks GitHub)",
+        "title": "Standard Webhooks specification (spec/standard-webhooks.md)",
+        "published": null,
+        "url": "https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "웹훅 헤더·서명·페이로드의 공통 형식을 정한 공개 명세 1.0.0. 멱등성 키, 재전송 방어 시각, 서명 방식, 재시도 권고를 담는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/standard-webhooks/standard-webhooks/main/spec/standard-webhooks.md"
+      },
+      {
+        "id": "ref-1401",
+        "org": "Boston Dynamics",
+        "title": "About Orbit (formerly Scout) — Spot SDK documentation",
+        "published": null,
+        "url": "https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Orbit v5.2 개요. 현장·클라우드 배치, v0(베타)·v1(안정) 두 층 REST API, 서명된 웹훅, 작업지시 시스템 연동을 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit"
+      },
+      {
+        "id": "ref-1402",
+        "org": "Cloud Native Computing Foundation (CNCF)",
+        "title": "Microcks becomes a CNCF incubating project",
+        "published": "2026-05-07",
+        "url": "https://www.cncf.io/blog/2026/05/07/microcks-becomes-a-cncf-incubating-project/",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "Microcks 의 CNCF 인큐베이팅 승격 공지. 계약 문서 기반 모의 서버와 계약 적합성 시험, 지원 비동기 프로토콜을 소개한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.cncf.io/blog/2026/05/07/microcks-becomes-a-cncf-incubating-project/"
+      },
+      {
+        "id": "ref-1403",
+        "org": "Microcks",
+        "title": "MQTT Mocking & Testing — Microcks documentation",
+        "published": null,
+        "url": "https://microcks.io/documentation/guides/usage/async-protocols/mqtt-support/",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "AsyncAPI 계약으로 MQTT 모의 메시지를 발행하고 브로커 메시지를 페이로드 스키마로 검증하는 방법과 설정·제약을 안내한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://microcks.io/documentation/guides/usage/async-protocols/mqtt-support/"
+      },
+      {
+        "id": "ref-1404",
+        "org": "Pudu Robotics",
+        "title": "Pudu Robotics Launches Open Platform for Deeper Integration and Remote Management of Delivery and Cleaning Robots",
+        "published": "2023-08-29",
+        "url": "https://www.pudurobotics.com/about/news/64eeb7cb13fc2f004432c9cd",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "PUDU Open Platform 공개 보도자료. 개발 인터페이스 표준화, 원격 관리, 주문·배달·재고·스마트 도어 연동과 대상 현장을 밝힌다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.pudurobotics.com/about/news/64eeb7cb13fc2f004432c9cd"
+      },
+      {
+        "id": "ref-1405",
+        "org": "Pudu Robotics (PUDU Open Platform)",
+        "title": "Build robot AI integrations — PUDU SKILL",
+        "published": null,
+        "url": "https://open.pudutech.com/en/pudu-skill",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "AI 코딩 도구용 PUDU OpenAPI 스킬 안내. 공개 클라우드 API 와 사설 클라우드 API 두 배치 형태를 소개한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://open.pudutech.com/en/pudu-skill"
+      },
+      {
+        "id": "ref-1406",
+        "org": "InOrbit",
+        "title": "InOrbit FAQ",
+        "published": null,
+        "url": "https://www.inorbit.ai/faq",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "InOrbit 자주 묻는 질문. SaaS 제공, 월간 활성 로봇 수 기반 종량제, 무료 등급, 지원 요금, 데이터 내보내기·보관을 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.inorbit.ai/faq?hsLang=en"
+      },
+      {
+        "id": "ref-1407",
+        "org": "CNCF CloudEvents (cloudevents/spec GitHub)",
+        "title": "CloudEvents - Version 1.0.3-wip (cloudevents/spec.md)",
+        "published": null,
+        "url": "https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "사건 데이터를 공통 형식으로 기술하는 CloudEvents 핵심 명세(specversion 1.0, 작업 중 판). 필수 속성과 source·id 유일성·중복 처리를 정한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/cloudevents/spec/main/cloudevents/spec.md"
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "sections": [
+          "5",
+          "6",
+          "7",
+          "9",
+          "11"
+        ],
+        "rationale": "갱신(차등). 섹션 5 — 상업 시설 사례 추가: f21(PUDU Open Platform, 음식 주문 시스템 연동이 시작 조건, '벤더 주장' 병기, 나머지 칸 미확인). 가정·실외는 이번에도 찾지 못함 / 섹션 6 — 배치 선택지 f22·f25(벤더 주장)와 InOrbit SaaS f23, 연결 끊김 시 수행 범위 f15·f16·f17, 웹훅 전달 보장 f10·f12·f13·f14 / 섹션 7 — 바뀐 출처: OpenAPI 3.2.0(f1·f2·f3, ref-1025 행을 3.2.0 으로 갱신하거나 병기), AsyncAPI 3.1.0 발행일 2026-01-31 과 ROS 2 바인딩(f4·f5, ref-1024 발행일 보완), f6 결합 추정, Standard Webhooks(f12)·CloudEvents(f13)·Microcks(f18·f19) 행 추가, VDA 5050 버전 규칙(f7), Orbit·InOrbit 버전 표기(f8·f24) / 섹션 9 — 외부 API 의 전달 규약(f14)·기계 간 인증과 권한 그룹 규칙(f26·f27)을 직접 범위로, 작업지시·자산 관리 시스템 판단(f11)은 연계 대상으로 / 섹션 11 — oq-207 부분 근거(f3·f7·f8·f24, 로봇 플랫폼의 폐기 예고 기간 공개 사례는 여전히 없음), oq-208 부분 근거(f10·f12·f13·f14), oq-206·oq-300 부분 근거(f15·f16·f17), oq-301 부분 근거(f18·f19·f20), oq-267 부분 근거(f23), oq-209 미해결, 새 질문 2건. 다음 실행 후보: 42. 분산 시스템·통신·컴퓨팅 구조 페이지에 f15·f16(연결 끊김 시 수행 범위), 21. 상호운용 표준·적합성 페이지에 f18·f19·f20(계약 적합성 시험), 51. 인증·권한·격리 페이지에 f26 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "클라우드이벤트",
+        "term_en": "CloudEvents",
+        "definition": "사건 데이터를 id·source·specversion·type 같은 공통 속성으로 기술해 서비스·플랫폼 사이에서 같은 형식으로 주고받게 하는 CNCF 의 공개 명세다."
+      },
+      {
+        "term_ko": "계약 시험",
+        "term_en": "Contract Testing",
+        "definition": "OpenAPI·AsyncAPI 같은 API 계약 문서를 기준으로 실제 구현의 요청·응답·메시지가 계약을 지키는지 자동으로 확인하는 시험 방식이다."
+      },
+      {
+        "term_ko": "순차 미디어 타입",
+        "term_en": "Sequential Media Type",
+        "definition": "JSON Lines·서버 전송 이벤트(text/event-stream)처럼 머리·꼬리 없이 같은 구조의 항목이 이어지는 형식으로, OpenAPI 3.2.0 이 itemSchema 로 항목 단위 스트리밍을 기술하게 한다."
+      }
+    ],
+    "open_questions_new": [
+      "Open-RMF 같은 ROS 2 기반 오케스트레이션 플랫폼이 AsyncAPI ROS 2 바인딩으로 내부·외부 인터페이스를 기술해 공개한 사례나 도구가 있는가? | 관련 영역: 41. 플랫폼 아키텍처·외부 API, 21. 상호운용 표준·적합성 | 근거: f6 | 종류: 일반",
+      "로봇 오케스트레이션 플랫폼의 외부 API 에서 권한 그룹을 현장·구역·고객 단위로 정해 다른 현장의 작업 요청과 상태를 격리한 공개 구현이 있는가? | 관련 영역: 41. 플랫폼 아키텍처·외부 API, 51. 인증·권한·격리 | 근거: f26 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 15,
+      "cross_checked_count": 0,
+      "unverified": [
+        "oq-207 부분 답: 로봇 플랫폼이 폐기 예고 기간(최소 지원 기간)을 공개한 사례를 찾지 못함. 차량 플릿 API(Fleetio·MOIA 등)의 정책은 검색 요약에만 보이고 로봇 플랫폼이 아니어서 넣지 않음",
+        "oq-208 부분 답: 웹훅·이벤트 순서 보장을 정한 공통 기준 없음. InOrbit 웹훅 상세 문서(재시도·서명)는 열지 못함",
+        "oq-209 미답: TTA 서비스 로봇 정보 모듈(TTAK.KO-10.1295, 2026-06-26 개정 Part 8)과 개방형 로봇 소프트웨어 플랫폼(TTAK.KO-10.0912) 계열이 검색 요약에 보였으나 TTA 표준 페이지를 열지 못해(HTTP 400) 관제 플랫폼 참조 구조와의 관련을 확인하지 못함",
+        "oq-206 미답: 네이버 ARC 의 클라우드 연결 끊김 시 동작을 밝힌 공개 자료 없음",
+        "oq-300 부분 답: 관제 서비스 재시작 뒤 진행 작업 상태를 이어 간 공개 구성은 찾지 못함. Open-RMF 포럼의 관리자 답변(끊긴 로봇은 마지막 명령을 계속 수행)은 커뮤니티 게시글이라 근거로 쓰지 않음",
+        "oq-301 부분 답: Microcks 를 로봇 플랫폼 적합성 시험에 쓴 공개 사례 없음",
+        "ref-1398 OAS 3.2.0 본문 앞 200,000자까지만 읽음",
+        "ref-031 은 입력 원문 텍스트의 앞부분 발췌(48,820자)만 확인",
+        "Serve Robotics·Uber Eats 실외 배송 연동은 회사 페이지가 리디렉션되고 보도에 API·연동 방식이 없어 넣지 않음",
+        "Bear Robotics API 페이지(bearrobotics.ai/bear-api) 404 로 열지 못함"
+      ],
+      "scope_violations": [
+        "f5: ROS 2 QoS·RMW 구현은 로봇 통신 방식(20. 로봇·제조사 관제 연동, 42. 분산 시스템·통신·컴퓨팅 구조) 쪽 내용이며 이 영역에서는 인터페이스 기술 형식으로만 다룸",
+        "f11: 작업지시·자산 관리 판단은 상위 업무 시스템 쪽이므로 claim 을 '연계 대상: '으로 시작하고 ROP 몫은 웹훅·API 인터페이스로 한정",
+        "f15: 연결 끊김 시 주문 수행은 로봇 쪽 동작(로봇 자체 지능·제어 경계)이며 ROP 몫은 허가 구간 결정과 배치 정책으로만 서술해야 함(f17)",
+        "f21: 식당 주문 판단은 업무 시스템 쪽이며 ROP 몫은 연동 인터페이스"
+      ],
+      "budget_used": {
+        "queries": 23,
+        "sources": 11
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 갱신(update) 실행이며 정정 요청이 없어 바뀐 출처(OpenAPI 3.1.0→3.2.0, AsyncAPI 3.1.0 발행일·ROS 2 바인딩, rmf-web API 서버 README)와 빈·약한 절(5·6·7·9·11절), 이 영역에 걸린 열린 질문 7건만 조사했다. 검색 23회/30, 신규 출처 11건/15(ref-1397~ref-1407, 예약 구간 안), 재사용 4건(ref-004·ref-031·ref-762 는 입력 원문 텍스트, ref-1029 는 webfetch 로 다시 엶). 모든 출처 원문을 열었다(webfetch 9, github_raw 2, inbox 3 재사용). 교차 확인 0건: 각 사실이 단일 기관 문서에 기대므로 신뢰도는 medium 이하다. 벤더 주장 5건(f9·f11·f21·f22·f25)은 vendor_claim·추정·'벤더 주장: ' 첫머리로 냈다. 해결 제안한 열린 질문 없음: oq-206·oq-209 는 미해결, oq-207·oq-208·oq-267·oq-300·oq-301 은 부분 근거(f3·f7·f8·f24 / f10·f12·f13·f14 / f23 / f15·f16·f17 / f18·f19·f20). 핵심 질문에 대한 새 근거는 '판단 배치가 제품마다 배치 선택지로 제공된다'(f25, 추정)와 '끊김 시 로봇의 계속 수행 범위는 허가 구간까지'(f15·f17)다. 현장 유형 사례는 상업 시설 1건(f21, 벤더 주장)만 새로 찾았고 가정·실외는 찾지 못했다. 국내 표준(oq-209)은 TTA 표준 페이지를 열지 못해 확인하지 못했다. L. AI·학습 기술 관련 finding 없음(f22 의 AI 코딩 도구용 스킬은 배치 형태 근거로만 씀). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았다. 용어집에 이미 있는 웹훅·멱등성 키·적합성 시험·OpenAPI 명세·AsyncAPI 명세·의미적 버전 관리·API 폐기 정책은 후보로 내지 않았다. 입력 누락 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 11154,
+  "type": "result",
+  "duration_ms": 521189,
+  "uuid": "102f7e40-1c28-42af-9ae5-1ad2987b2a92",
+  "ttft_stream_ms": 881,
+  "time_to_request_ms": 102,
+  "time_to_request_phases_ms": {
+    "other": 24,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 5,
+    "input_attachments": 19,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 52,
+  "time_to_request_cpu_ms": 141,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 25,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 882,
+  "time_to_request_from_spawn_ms": 19029719,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791525297073.7498,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 522.9
+}

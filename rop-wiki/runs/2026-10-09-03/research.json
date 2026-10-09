@@ -1,0 +1,1400 @@
+{
+  "run_id": "2026-10-09-03",
+  "date": "2026-10-09",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "E. 사물·사람·실시간 상태"
+  },
+  "gaps": [
+    "E. 사물·사람·실시간 상태 대분류 페이지의 '다른 대분류와의 연결' 절 비어 있음(아직 작성되지 않음)",
+    "A. 기획·사업과 E. 사물·사람·실시간 상태의 세 세부영역을 직접 잇는 검증된 근거가 게시 페이지에 없음",
+    "C. 채팅 기반 구성·운영과의 연결 근거가 E 쪽 게시 페이지에 없음 — 이번 실행에서 12. 채팅으로 업무 지시·오케스트레이션 쪽 근거(ref-854)를 보강",
+    "17. 작업 대상·자산 식별과 인계 추적의 '수령인 확인'(사람에게 넘길 때)과 N. 보안·개인정보·Q. 현장 유형별 적용을 잇는 근거 없음 — 병원·공동주택·사무 건물 사례를 새로 찾음",
+    "L. AI·학습 기술의 45. 문서·도면·장면 이해와 18·19의 연결(oq-227 고정 카메라·로봇 인식 결합)은 근거 미확보",
+    "옛 분류 기준으로 다른 대분류 페이지(A·B·F·G)에 E 쪽 영역과의 연결이 실려 있으나 새 17개 대분류 이름으로 다시 정리되지 않음"
+  ],
+  "research_questions": [
+    "작업 대상·사람·설비·로봇이 지금 어디에 어떤 상태로 있는지 어떻게 믿을 수 있게 알 것인가? [분류원문] — 이 답이 다른 대분류의 어느 세부영역으로 넘어가는가?",
+    "17. 작업 대상·자산 식별과 인계 추적은 F. 연동(20·22·23), G. 계획·최적화(24), H. 실행·협업·예외 복구(30·32), P. 거버넌스·법규·사회(58)와 어떤 신호·기록을 주고받는가? (oq-001, oq-003, oq-006, oq-036, oq-079 관련)",
+    "17. 작업 대상·자산 식별과 인계 추적의 수령인 확인은 병원·공동주택 현장에서 어떤 인증 수단으로 이루어지며 N. 보안·개인정보(51·53)와 어떻게 이어지는가? (oq-180, oq-184 관련)",
+    "18. 실시간 세계 상태·데이터 일관성은 B. 로봇 온톨로지(5·6), D. 공간·지도 모델(15), F. 연동(20·22), G. 계획·최적화(28), I. 설계·시뮬레이션(34), J. 현장 운영·관제(38·39), K. 플랫폼 아키텍처·인프라(42·43), M. 안전(48)과 무엇을 주고받는가? (oq-024, oq-028, oq-034, oq-035 관련)",
+    "19. 사람·보행자 모델은 D. 공간·지도 모델(15·16), G. 계획·최적화(26·27), H. 실행·협업·예외 복구(31), I. 설계·시뮬레이션(34·36), L. AI·학습 기술(46), M. 안전(49), N. 보안·개인정보(53), O. 검증·도입·수명주기(54), P. 거버넌스·법규·사회(60), Q. 현장 유형별 적용(61·63·64·66)과 어떻게 이어지는가? (oq-256, oq-261, oq-272, oq-273, oq-274 관련)",
+    "C. 채팅 기반 구성·운영의 대화형 업무 지시가 18. 실시간 세계 상태·데이터 일관성의 현재 상태를 근거로 쓰는 공개 구현이 있는가?",
+    "E. 사물·사람·실시간 상태와 다른 대분류의 연결 가운데 근거가 아직 없는 쌍은 무엇인가? (다루지 않은 연결 목록)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ B. 로봇 온톨로지의 5. 로봇 능력·작업 표현: VDA 5050 팩트시트가 로봇이 취급할 수 있는 적재 유형을 선언하고 상태 메시지의 loadId 가 실제로 실린 적재물을 식별하므로, '이 로봇이 이 적재물을 다룰 수 있는가'를 판단하려면 능력 표현의 적재 유형과 17의 적재물 식별을 같은 어휘로 맞춰야 할 것으로 보이며 공통 어휘는 확인되지 않았다(oq-023).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-228",
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "B. 로봇 온톨로지 페이지: 팩트시트 loadSets(적재 유형·최대 중량 등). state.schema loadId: 'Unique identification number of the load (e.g., barcode or RFID).' 적재 유형 공통 코드 체계는 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f2",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ B. 로봇 온톨로지의 5. 로봇 능력·작업 표현: Naqvi 외(Scientific Reports, 2025-10-02)는 로봇 능력 온톨로지(RCO)에서 제조사가 공개한 능력 수치와 운용 중 로봇이 실제로 보인 성능을 구분해 연결한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-041"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약(PMC·HAL): RCO 는 제조사 명세와 실증 성능 데이터를 잇는 참조 온톨로지로 제조 분야를 대상으로 한다. 본문은 열지 못함(PMC 봇 차단).",
+      "as_of": "2025-10-02",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동: 18이 모은 로봇의 관측 상태(배터리·문제 목록·위치)가 능력의 '지금 실행 가능 여부' 판단과 운용 능력 갱신의 입력이 될 것으로 보이며, 선언 능력과 관측 능력 가운데 무엇을 배정 기준으로 삼을지는 열린 질문(oq-024)으로 남아 있다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-041",
+        "ref-148"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "robot_state.json 은 status·battery(0.0~1.0)·issues·location·unix_millis_time 을 담는다(f17). RCO 는 광고 능력과 운용 능력을 구분(f2).",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "수행 자원",
+      "source_unopened": false
+    },
+    {
+      "id": "f4",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션: 2026-07-02 Open Robotics 상호운용 SIG 발표(Nayantra)는 Open-RMF REST API 를 언어 모델이 호출할 수 있는 MCP 도구로 감싸고, 평이한 영어 지시를 여러 단계의 RMF 임무로 바꿔 Nav2 로 보내는 구성을 소개했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-854"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "발표 안내: an MCP server that \"exposes the Open-RMF REST API as LLM-callable tools\". 시연은 NVIDIA Isaac Sim 창고 시뮬레이션. 상태 질의 기능 여부는 안내문에 없음.",
+      "as_of": "2026-06-25",
+      "site_type": null,
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f5",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션: 대화로 '어디까지 했는가·왜 멈췄는가'에 답하려면 로봇 상태의 시각·상태 값·문제 목록 같은 현재 상태 기록을 근거로 써야 할 것으로 보이나, Open-RMF–MCP 연동이 상태 질의까지 제공하는지는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-854",
+        "ref-148"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "robot_state.json: status(uninitialized·offline·shutdown·idle·charging·working·error), issues, unix_millis_time. MCP 발표 안내는 작업 파견만 명시.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f6",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현·I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현: 실제 운영 기록을 재생해 상황을 재현하면 기록된 사람이 바뀐 조건(로봇 수·배차 정책)에 반응하지 않는 문제가 생기며, 19. 사람·보행자 모델 페이지는 이를 열린 질문(oq-256)으로 두고 기록 재현 시뮬레이터(Waymax)와 사람 행동 시뮬레이터(HuNavSim)를 참고로 든다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1128",
+        "ref-1179"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "19 페이지 11절: '기록 재현에서 사람을 반응하게 만드는 방법…은 아직 답이 없다'(추정). (재인용: 2026-09-30-20)",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델: VDA 5050 상태 스키마는 위치추정 품질(localizationScore), 미터 단위 위치 편차 범위(deviationRange), 작업 공간 지도 식별자(mapId)를 두어, 보고된 위치를 얼마나 믿을지(18)와 어느 지도 위의 위치인지(15)가 같은 메시지로 넘어온다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "state.schema(main): localizationScore 'Describes the quality of the localization'; deviationRange 'position deviation range in meters'; mapId 'ID of the map…'. 계산 방식 통일 여부는 oq-028.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f8",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리: GS1 GLN 이 도크 문·보관 위치 같은 하위 위치를 식별할 수 있으므로, 인계 이벤트의 업무 위치와 로봇 지도 위 장소를 대응시키는 계층이 ROP 쪽에 필요할 것으로 보이며 국내 적용 사례는 확인되지 않았다(oq-029).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-162",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "B. 로봇 온톨로지 페이지의 같은 연결(추정): GLN 확장 요소는 조직 내부나 거래 당사자 간 합의로만 쓰므로 대응 계층은 ROP 쪽이 맡게 될 것으로 본다. (재인용: 2026-09-25-60)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": false
+    },
+    {
+      "id": "f9",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델: 움직임 지도(maps of dynamics)는 공간에 사람의 전형적 움직임 패턴을 덧붙인 지도이며, EU ILIAD 프로젝트는 학습한 사람 흐름에 맞춰 창고 자율 지게차의 경로를 계획했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1171",
+        "ref-1180"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 5절(물류창고): 움직임 지도로 학습한 사람 흐름에 맞춘 경로 계획, 움직임별 사회적 비용으로 속도 제약. (재인용: 2026-09-30-20)",
+      "as_of": "2023",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ D. 공간·지도 모델의 16. 장소 의미·지도 관리: 한림대학교성심병원은 밤에 인식한 경로가 낮 혼잡에서는 원활하지 않을 수 있다고 보고 로봇 통행 경로와 작업 정지 지점을 전용 스티커로 표시했다(기사 1건 기준).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1181"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "조선비즈 2024-07-12: 환자나 휠체어와 마주치면 로봇이 무조건 대기. 사람 혼잡이 장소에 붙는 운영 표시(전용 통로·정지 지점)로 나타난 사례. (재인용: 2026-09-30-20)",
+      "as_of": "2024-07-12",
+      "site_type": "병원",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ F. 연동의 20. 로봇·제조사 관제 연동: VDA 5050 상태 스키마의 loads 는 로봇이 현재 취급 중인 적재물을 담고, loadId 는 바코드·RFID 같은 적재물 식별 번호, loadPosition 은 어느 적재 장치를 쓰는지를 나타낸다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "state.schema: loads 'Loads, that are currently handled by the mobile robot.'; loadId '(e.g., barcode or RFID)'. GS1 키 형식 지정은 없음(oq-007).",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f12",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ F. 연동의 22. 설비·건물 시스템 연동: Open-RMF 배송 작업에서 로봇은 픽업 지점의 DispenserResult, 하역 지점의 IngestorResult 를 받을 때까지 요청을 되풀이하고, IngestorResult 는 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-023",
+        "ref-049"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "B. 로봇 온톨로지·F. 연동 페이지에 같은 각주로 게시된 사실. (재인용: 2026-09-25-60)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f13",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ F. 연동의 22. 설비·건물 시스템 연동: 설비의 인수 결과에는 화물 식별자·인계 당사자가 없으므로 설비 쪽 SUCCESS 를 17의 식별·인계 기록과 결합해야 '무엇이 누구에게 넘겨졌는지'가 확정될 것으로 보이며, 이를 정한 표준 매핑은 확인되지 않았다(oq-001, oq-061).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-049",
+        "ref-014",
+        "ref-015"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "IngestorResult 필드: time, request_guid, source_guid, status. EPCIS 는 소유·점유·위치 이전을 source/destination 으로 표현.",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": false
+    },
+    {
+      "id": "f14",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적·18. 실시간 세계 상태·데이터 일관성 ↔ F. 연동의 23. 업무 시스템 연동: DeHoratius·Raman(2008)은 한 소매업체 37개 매장 재고 기록의 65%가 실물과 맞지 않았다고 보고했다(소매 매장 조건이며 물류센터 값이 아니다).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-292"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "18 페이지 5절 시나리오 2의 예외·성과 칸에 게시된 사실(소매 조건 단서 포함). (재인용: 2026-09-25-24)",
+      "as_of": "2008",
+      "site_type": "상업 시설",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적·18. 실시간 세계 상태·데이터 일관성 ↔ F. 연동의 23. 업무 시스템 연동: 로봇이 보고한 적재물 식별 결과와 WMS 재고 기록이 어긋나면 덮어쓰지 않고 두 기록을 함께 보관해 정정 이벤트로 업무 시스템에 되돌리는 것이 두 대분류의 넘겨받는 지점이 될 것으로 보이며, 어느 쪽을 기준으로 삼고 누가 정정하는지는 열린 질문(oq-036)이다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-292",
+        "ref-051",
+        "ref-492"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "loadId(로봇 보고), EPCIS errorDeclaration(기록 정정, f26), 재고 기록 부정확성(f14)을 종합한 추론.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과",
+      "source_unopened": false
+    },
+    {
+      "id": "f16",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ F. 연동의 22. 설비·건물 시스템 연동: Open-RMF 문 상태(DoorState)는 생성 시각 door_time·문 이름·현재 모드를, 승강기 상태(LiftState)는 생성 시각 lift_time·현재·목적 층·문 상태·운행 상태·현재 모드·제어 세션 id 를 담고, 두 메시지 모두 허용 경과 시간은 정하지 않는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-285",
+        "ref-286"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "DoorState.msg: door_time, door_name, current_mode. LiftState.msg: lift_time('when the information was generated'), current_floor, door_state, motion_state, current_mode, session_id. 몇 초까지 믿을지는 oq-034.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f17",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ F. 연동의 20. 로봇·제조사 관제 연동: Open-RMF 로봇 상태는 밀리초 유닉스 시각(unix_millis_time), 상태 7종, 0~1 배터리, 운영자가 풀어야 할 문제 목록(issues)을 담고, VDA 5050 상태는 ISO 8601 형식 시각(timestamp)을 담는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-148",
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "robot_state.json status: uninitialized, offline, shutdown, idle, charging, working, error. state.schema timestamp 'in ISO8601 format (YYYY-MM-DDTHH:mm:ss.fffZ)'.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f18",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ F. 연동의 20. 로봇·제조사 관제 연동: 관제 인터페이스마다 시각 표현과 보고 주기가 달라 20의 어댑터가 받은 상태를 18의 공통 시간축으로 옮기는 변환·시계 오차 기준이 필요할 것으로 보이나, 이를 규정한 자료는 확인하지 못했다(oq-035).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-148",
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f17 의 두 시각 표현(밀리초 정수 vs ISO 8601 문자열)에서 도출.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f19",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ G. 계획·최적화의 24. 작업·워크플로 모델링: GS1 CBV 는 도착(arriving)·입고(receiving)·인수(accepting)를 서로 다른 업무 단계로 정의하고, VDA 5050 은 하역(drop) 완료를 적재물이 로봇을 떠나 로봇이 새 적재 상태를 보고한 때로 정의한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-044",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "A. 기획·사업·B. 로봇 온톨로지 페이지에 같은 각주로 게시된 사실. 로봇 완료(arriving 수준)와 업무 완료(receiving·accepting)의 구분이 24의 완료 조건으로 넘어간다. (재인용: 2026-09-25-60)",
+      "as_of": "2021-09-30",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f20",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: Open-RMF 로봇 상태는 배터리를 0.0(빈)~1.0(가득)으로, VDA 5050 상태는 powerSupply.stateOfCharge 를 퍼센트로 보고한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-148",
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "robot_state.json battery 0.0~1.0; state.schema powerSupply.stateOfCharge 'State of Charge in %'. 표현 단위가 다르다.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f21",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: Open-RMF 가 작업을 끝낼 충전량이 부족하면 충전 작업을 일정에 끼워 넣으므로, 충전 계획은 18이 표현하는 현재 배터리 상태를 단위를 맞춰 입력으로 쓰는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-104",
+        "ref-148"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "G. 계획·최적화 페이지에 게시된 같은 연결(추정). 현재 상태 표현이며 가정한 미래 실험(34)과 구분. (재인용: 2026-09-25-55)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f22",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: Vintr 외(2022)는 장기 시공간 보행자 흐름 지도를 경로 계획에 쓰고 예상 조우(Expected Encounters)와 예상 경로 길이로 비교했으며, 대학 건물 현장 실험에서 예측형 주행은 불편을 드러낸 사람이 두 세션 모두 0명, 반응형은 2명·1명이었다(40분 세션 4회의 매우 작은 표본).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1178"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 5절 기타(UTBM 대학 홀) 사례에 게시된 사실. (재인용: 2026-09-30-20)",
+      "as_of": "2022-07-04",
+      "site_type": "기타",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f23",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ G. 계획·최적화의 26. 작업 순서·스케줄링: 낮 시간 복도 혼잡과 '무조건 대기' 규칙(병원), 혼잡을 예상해 위치를 정하는 계획(쇼핑몰 연구)처럼 사람 흐름은 로봇 작업 시간과 순서에 영향을 줄 것으로 보이나, 시간대별 혼잡을 작업 시간 추정·스케줄링에 넣어 효과를 측정한 현장 연구는 확인하지 못했다(oq-273).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1181",
+        "ref-1182"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "19 페이지 5절 병원·상업 시설 사례에서 대기 규칙의 처리 시간 영향과 효과 수치는 모두 미확인으로 게시됨.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계: EPCIS 가 소유·점유·위치 이전을 출발지·도착지(source/destination)로 표현하므로, 로봇·설비 사이 물리적 인계의 확인은 17의 식별자·인계 당사자 기록과 결합해야 할 것으로 보인다(oq-001, oq-006).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-049",
+        "ref-014",
+        "ref-015"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "B. 로봇 온톨로지 페이지에 게시된 같은 연결(추정). 시설 안 로봇 인계를 어떤 bizStep 으로 기록할지는 oq-006. (재인용: 2026-09-25-60)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": false
+    },
+    {
+      "id": "f25",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: 팔레트 RFID 태그 판독성이 제품·포장·태그 위치·적재 패턴에 따라 달라진다는 실험 보고가 있어, 판독 실패·오판독 때 인계 보류·재스캔·사람 확인 규칙이 복구 과제로 넘어갈 것으로 보인다(oq-003).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-024"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Singh 외(2009) 도크 도어 모사 RFID 포털 실험. 17 페이지 8절·B 페이지 연결 절의 추정을 재인용. (재인용: 2026-09-25-60)",
+      "as_of": "2009",
+      "site_type": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f26",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: EPCIS 1.2 는 이미 기록된 이벤트를 오류 선언(errorDeclaration)으로 정정하게 하므로, 고장 로봇에서 회수한 화물의 위치·이벤트 정정이 식별·추적 쪽 기록 규칙에 기대게 된다(oq-079).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-492"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "옛 E. 협업·현장 운영 대분류 연결 절의 같은 연결(사실, 원문 미열람). (재인용: 2026-09-25-60)",
+      "as_of": "2016-09-29",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f27",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ H. 실행·협업·예외 복구의 29. 명령·작업 실행의 신뢰성·32. 예외 복구·재계획·업무 연속성: VDA 5050 3.0.0 에서 로봇 연결이 예기치 않게 끊기면 브로커가 MQTT 유언으로 CONNECTION_BROKEN 을 대신 알리고, 로봇은 받은 주문을 유지한 채 마지막으로 해제된 노드까지 수행한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "18 페이지 5절, F. 연동 페이지 연결 절에 게시된 사실. 끊긴 동안 세계 상태의 로봇 위치는 오래된 값이 된다. (재인용: 2026-09-25-24)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f28",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성·19. 사람·보행자 모델 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: Riedelbauch·Werner·Henrich(RAAD 2017)는 사람과 함께 쓰는 작업 공간에서 세계 모델의 정보마다 확실도 값을 붙이고, 전역 센서가 감지한 사람 존재에 따라 이 값을 시간에 따라 조정해 로봇이 정보가 아직 유효한지 판단하게 했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1302"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: \"we annotate pieces of information with certainty values encoding how trustworthy they are\". 전역 센서의 사람 존재 데이터와 손목 카메라 데이터를 결합, 시제품 실험.",
+      "as_of": "2017",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f29",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성·19. 사람·보행자 모델 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: 사람이 드나든 구역의 물품·설비 상태는 관측 뒤 바뀌었을 가능성이 높으므로, 19의 사람 위치 정보가 18의 상태 신뢰도를 낮추는 근거로 쓰일 수 있을 것으로 보이나 이동로봇 현장 적용 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1302"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f28 은 고정 작업 공간(조립) 연구이며 물류창고·병원 이동로봇 적용은 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f30",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: 제조 분야 분류 자료가 현장 상태가 한 방향으로 자동 반영되는 디지털 섀도와 디지털 트윈을 구분하므로, 18은 현재 상태를 표현하고 34는 그 표현을 복제해 가정한 미래를 실험하는 쪽으로 나누는 것이 분류 원문의 구분과 맞을 것으로 보인다(근거 자료는 제조 대상).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-291",
+        "ref-290"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "18 페이지 10절·B 페이지 연결 절에 게시된 추정. (재인용: 2026-09-25-24)",
+      "as_of": "2018",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f31",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: HuNavSim 은 사람 인지 내비게이션을 벤치마크하기 위한 ROS 2 사람 이동 시뮬레이터이고, Kidokoro 외(HRI 2013)는 보행자 행동 모델로 가상 주행 상황을 시뮬레이션해 혼잡을 피하는 로봇 위치를 계획했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1179",
+        "ref-1182"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 5절(상업 시설)·7절에 게시된 사실. 사람 행동 모델이 가정한 미래 실험의 입력이 된다. (재인용: 2026-09-30-20)",
+      "as_of": "2023-09-13",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f32",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석·39. 운영 성과 측정·개선: 로봇 상태의 상태 값·배터리·문제 목록·시각과 문·승강기 상태의 시각을 한 세계 상태 기록에 모으면, 가동률·충전·오류 시간 지표와 '지연 원인이 로봇인지 문인지' 분석이 같은 기록을 쓰게 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-148",
+        "ref-285",
+        "ref-286"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "A. 기획·사업·B. 로봇 온톨로지 페이지의 같은 연결(추정)과 이번에 연 메시지 정의(f16·f17)를 종합.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f33",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: ROS 2 QoS 의 기한·생존성 정책, Sparkplug 의 노드 종료(NDEATH) 뒤 지표 STALE 표시, VDA 5050 의 MQTT 유언을 통한 연결 끊김 통지처럼 통신 계층에 상태의 오래됨을 알리는 장치가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-282",
+        "ref-287",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "B. 로봇 온톨로지·F. 연동 페이지에 같은 각주로 게시된 사실. 세 출처는 각각 한 장치만 다룬다. (재인용: 2026-09-25-60)",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f34",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적·18. 실시간 세계 상태·데이터 일관성 ↔ K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포: EPCIS 2.0 온톨로지가 발생 시각(eventTime)·기록 시각(recordTime)·UTC 차이를 구분하므로, 실행 기록과 관측 데이터에서도 발생 시각과 수신·기록 시각을 따로 남기는 설계가 두 대분류를 잇는 지점이 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-045"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "18 페이지 4절: EPCIS 2.0 온톨로지의 eventTime·recordTime·eventTimeZoneOffset 구분(사실). 43 쪽 적용은 추론.",
+      "as_of": "2021-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f35",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ L. AI·학습 기술의 46. 예측·학습 기반 최적화: Rudenko 외 서베이가 정리한 사람 움직임 궤적 예측은 19의 가까운 미래 사람 위치 추정 방법이므로, 예측 결과를 경로·배정 비용에 넣는 일이 46과 이어질 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1172"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "19 페이지 3·6절: 궤적 예측·보행자 행동 모델로 가까운 미래를 추정해 경로 비용·속도 제약에 반영(추정).",
+      "as_of": "2019-12-17",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f36",
+      "claim": "E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성 ↔ M. 안전의 48. 안전·위험 관리: Open-RMF 승강기 상태의 현재 모드에는 알 수 없음·사람·AGV·화재·오프라인·비상이 있으며 사람·AGV 모드만 설정할 수 있고 나머지는 읽기 전용이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-286"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "LiftState.msg current_mode 상수 0~5. 탑승 확정 전 최신 모드 확인은 ROP 몫, 승강기 안전 제어는 분류 원문 19장 시설·설비 제어 경계의 연계 대상.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f37",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ M. 안전의 49. 사람 근접 안전: 병원의 '사람·휠체어와 마주치면 무조건 대기' 규칙과 창고의 움직임별 사회적 비용에 따른 속도 제약처럼 사람 흐름 정보는 구역별 대기·속도 규칙으로 49와 이어지며, ROP 는 규칙을 요청·관리하고 사람 검출·안전 정지는 연계 대상으로 로봇이 맡는 경계가 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1181",
+        "ref-1180"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "19 페이지 9절 책임 경계 표(추정)를 재인용. (재인용: 2026-09-30-20)",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f38",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: ROS 규약 제안 REP-155(Draft, 2022-01-11 작성)는 사람마다 영속 ID 를 두고 얼굴·몸·음성 ID 를 후보 대응으로 연결하며, 이 문서는 개인정보·동의를 다루지 않는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1173"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "REP-155: person ID 'MUST be a unique ID… permanently associated with a unique person'. 신원 미확인은 anonymous person. 개인정보 언급 없음.",
+      "as_of": "2022-01-11",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f39",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: 사람 표현의 영속 ID 가 얼굴·음성 인식과 연결될 수 있으므로 ROP 가 보관하는 사람 정보는 구역·시간대 집계·익명화로 두는 것이 두 대분류의 경계가 될 것으로 보이며, 여러 출처의 사람 위치를 합치는 익명화 형식과 촬영 거부 의사 공유 방법은 열린 질문(oq-261, oq-272)이다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1173"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "19 페이지 9절의 추정을 재인용. (재인용: 2026-09-30-20)",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f40",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ N. 보안·개인정보의 51. 인증·권한·격리: 병원용 운반 로봇 Zena RX(ST Engineering Aethon, 2024-04 출시 발표)는 생체 인식과 직원 PIN 코드로 잠금 칸을 열게 해 권한 있는 직원만 약품·검체를 꺼낼 수 있다고 제조사는 밝힌다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1299"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: \"biometric security and staff pin codes\"; 'Only authorized staff can retrieve the delivery'. 추적·감사 기록·알림 기능은 발표문에 없음.",
+      "as_of": "2024-04-29",
+      "site_type": "병원",
+      "flow_item": "완료·인계",
+      "vendor_claim": true
+    },
+    {
+      "id": "f41",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ N. 보안·개인정보의 51. 인증·권한·격리: 2019-10 우아한형제들 본사(서울 잠실) 시범 운영에서 배달 로봇 딜리타워는 라이더가 주문번호 앞 네 자리와 층을 입력하면 승강기로 이동해 고객에게 전화를 걸고, 고객이 휴대전화 번호 뒤 네 자리를 입력해야 음식 칸이 열렸다(기사 기준).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1300"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "바이라인네트워크 2019-10-17: 두 대 승강기 중 먼저 오는 것을 호출, 사람이 자리를 차지하면 다음 승강기 대기. 배민라이더스 주문만 대상.",
+      "as_of": "2019-10-17",
+      "site_type": "기타",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f42",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ N. 보안·개인정보의 51. 인증·권한·격리: 2020-07 보도에 따르면 딜리타워의 공동주택(포레나 영등포) 도입 계획에서는 라이더와 고객이 모두 로봇 화면에 비밀번호를 눌러 적재함을 열고, 로봇은 도착 시 고객에게 문자와 전화로 알리게 되어 있었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1301"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "경향신문 2020-07-03: 30층 182세대·오피스텔 111실, 이듬해 2월 준공 예정 단지의 계획 단계 보도. 실제 운영 방식 확인은 아님.",
+      "as_of": "2020-07-03",
+      "site_type": "가정",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f43",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ N. 보안·개인정보의 51. 인증·권한·격리·53. 개인정보·영상 데이터: 확인한 사례의 수령인 확인 수단이 생체+PIN(병원), 전화번호 뒤 네 자리(사무 건물), 비밀번호(공동주택 계획)로 서로 달라, 17의 '누구에게 넘겼는가' 기록은 51의 인증 수단과 53의 생체·전화번호 처리에 기대게 될 것으로 보이며, 그 결과가 주문·업무 시스템에 완료 이벤트로 기록되는지는 확인하지 못했다(oq-180, oq-184).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1299",
+        "ref-1300",
+        "ref-1301"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f40~f42 종합. 세 출처 모두 인증 결과의 기록·전송 방식은 다루지 않는다.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f44",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: 사회적 로봇 내비게이션 알고리즘 평가 원칙·지침(Francis 외, 2023)과 장기 시공간 보행자 흐름 지도의 벤치마크 연구(Vintr 외, 2022)가 있어, 사람 모델을 쓴 계획의 효과를 시험하는 방법이 54와 이어진다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1079",
+        "ref-1178"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 7·8절에 게시된 자료(평가 지침·벤치마크). (재인용: 2026-09-30-20)",
+      "as_of": "2023-06-29",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f45",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: Han 외(CHI 2024)는 이동장애인 15명·로봇 실무자 8명 면담과 4회 공동설계 워크숍에서 보도 로봇이 들어오면 이동장애인이 보도 공간을 두고 경쟁해야 한다고 느끼며, 부족한 연석 경사로 같은 기존 장벽 위에서 로봇이 운행된다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: PwMD feel they must \"compete for space on the sidewalk\"; 실무자는 기업이 문제가 생긴 뒤에야 접근성을 다룬다고 인정; 두 집단 모두 처음부터 접근성 통합을 강조.",
+      "as_of": "2024-04-07",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f46",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: 보행 약자가 지나야 하는 연석 경사로·좁은 통로를 사람 흐름 모델의 양보·비정차 구역으로 표현해야 60의 접근성 요구가 경로·대기 위치 제약으로 이어질 것으로 보이나, 국내 기준은 확인하지 못했다(oq-188 관련).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f45 와 60 영역 브리프(2026-09-30-24) f13·f20 의 연석 경사로 대기 위치 추정을 종합. (재인용: 2026-09-30-24)",
+      "as_of": "2026-10-09",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f47",
+      "claim": "E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적 ↔ P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: CBV 의 출발지·도착지 유형(owning_party·possessing_party·location)이 소유·점유 이전을 당사자 단위로 기록하므로, 제조사·운영사·화주 사이 인계 책임의 기록 근거가 17의 이벤트에서 나올 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-014",
+        "ref-015",
+        "ref-044"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "17 페이지 4절: CBV 는 source/destination 유형으로 owning_party·possessing_party·location 을 정한다(사실). 다사업자 책임 적용은 추론.",
+      "as_of": "2021-09-30",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": false
+    },
+    {
+      "id": "f48",
+      "claim": "연계 대상: E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ Q. 현장 유형별 적용의 66. 실외 — 행정안전부 인파관리지원시스템은 2023-12-29부터 전국 중점관리지역 100곳에서 이동통신 3사 기지국 접속정보로 인파 밀집도를 추정해 위험 수준에 따라 지자체 공무원에게 경보를 보내며, 실외 로봇 운행 제약과 연동한 사례는 확인되지 않았다(oq-274).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1177"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 9절 업종별 조건 행에 연계 대상으로 게시된 사실. (재인용: 2026-09-30-20)",
+      "as_of": "2023-12-27",
+      "site_type": "실외",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f49",
+      "claim": "E. 사물·사람·실시간 상태의 19. 사람·보행자 모델 ↔ Q. 현장 유형별 적용의 61. 물류창고·63. 병원·의료·64. 상업 시설: 게시된 19. 사람·보행자 모델 페이지의 적용 사례는 스웨덴 외레브로 창고의 자율 지게차 플릿(ILIAD), 한림대학교성심병원의 복도 혼잡 대응, 쇼핑몰에서 혼잡을 예상하는 로봇(Kidokoro 외)이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1180",
+        "ref-1181",
+        "ref-1182"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "19 페이지 5절. 실외·제조 공장·가정 사례는 찾지 못함으로 게시. (재인용: 2026-09-30-20)",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-014",
+      "org": "GS1",
+      "title": "Core Business Vocabulary (CBV) Standard",
+      "published": null,
+      "url": "https://ref.gs1.org/standards/cbv/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. CBV 표준. source/destination 유형(owning_party·possessing_party·location)과 업무 단계 어휘를 정한다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-015",
+      "org": "GS1",
+      "title": "EPCIS and CBV Implementation Guideline",
+      "published": null,
+      "url": "https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. EPCIS·CBV 구현 지침. 인계 맥락(소유·점유) 표현 안내.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-023",
+      "org": "Open Robotics",
+      "title": "Workcells - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 워크셀(디스펜서·인제스터) 연동. 배송 작업에서 결과를 받을 때까지 요청을 반복하는 흐름.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-024",
+      "org": "Singh, J. 외",
+      "title": "RFID tag readability issues with palletized loads of consumer goods",
+      "published": "2009",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 도크 도어 모사 RFID 포털에서 팔레트 태그 판독성이 제품·포장·태그·적재 패턴에 따라 달라짐.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "VDA 5050 3.0.0 명세 원문. 연결 끊김 통지(MQTT 유언), drop 완료 정의, 연결 단절 시 주문 수행 범위.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-041",
+      "org": "Naqvi, M. R. 외(Scientific Reports)",
+      "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+      "published": "2025-10-02",
+      "url": "https://www.nature.com/articles/s41598-025-16649-3",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 능력 온톨로지(RCO)로 제조사 공개 능력과 운용 중 관측 성능을 구분해 연결하는 연구(제조 분야). PMC·HAL 은 봇 차단으로 열지 못함.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-044",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "CBV 2.0 온톨로지 파일. arriving·receiving·accepting 업무 단계와 source/destination 유형 정의.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-045",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "EPCIS 2.0 온톨로지 파일. eventTime·recordTime·eventTimeZoneOffset 구분.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-049",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "인제스터 결과 메시지. 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED·SUCCESS·FAILED).",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-051",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "VDA 5050 상태 메시지 JSON 스키마(main). loads·loadId·loadPosition, localizationScore·deviationRange·mapId, powerSupply.stateOfCharge, ISO 8601 timestamp 를 정의.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-104",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_demos — Demonstrations of Open-RMF (README)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 데모. 충전량 부족 시 충전 작업 삽입, 비상 경보 시 주차 위치 이동 등.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-148",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 로봇 상태 스키마. name, status(7종), task_id, unix_millis_time, location, battery(0~1), issues, commission, mutex_groups.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/robot_state.json",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-162",
+      "org": "GS1",
+      "title": "Identifying a physical location - GLN",
+      "published": null,
+      "url": "https://www.gs1.org/standards/id-keys/gln/physical-location",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. GLN 으로 물리적 위치(도크 문·보관 위치 등 하위 위치 포함)를 식별하는 안내.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-228",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "VDA 5050 팩트시트 스키마. 적재 명세(loadSets)·지원 동작 선언.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-282",
+      "org": "Open Robotics (ROS 2 Documentation)",
+      "title": "Quality of Service settings — ROS 2 Documentation: Jazzy",
+      "published": null,
+      "url": "https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "ROS 2 QoS 정책(기한·수명·생존성)과 이벤트 콜백.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-285",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorState.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 문 상태 메시지: door_time, door_name, current_mode(DoorMode).",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_internal_msgs/main/rmf_door_msgs/msg/DoorState.msg",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-286",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 승강기 상태 메시지: lift_time, 층(문자열), door_state, motion_state, current_mode(unknown·human·AGV·fire·offline·emergency; human·AGV 만 설정 가능), session_id.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_internal_msgs/main/rmf_lift_msgs/msg/LiftState.msg",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-287",
+      "org": "Eclipse Foundation (eclipse-sparkplug GitHub)",
+      "title": "Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc)",
+      "published": null,
+      "url": "https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "Sparkplug 운영 동작: 노드 종료(NDEATH) 뒤 지표 STALE 표시.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-290",
+      "org": "NIST",
+      "title": "DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH",
+      "published": null,
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ISO 23247 기반 제조 디지털 트윈 표준 접근.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-291",
+      "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
+      "title": "Digital Twin in manufacturing: A categorical literature review and classification",
+      "published": "2018",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896318316021",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 디지털 모델·디지털 섀도·디지털 트윈 구분.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-292",
+      "org": "DeHoratius, N., & Raman, A.",
+      "title": "Inventory Record Inaccuracy: An Empirical Analysis",
+      "published": "2008",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.1070.0789",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 소매업체 37개 매장 재고 기록 부정확성 실증(65%).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-492",
+      "org": "GS1",
+      "title": "EPC Information Services (EPCIS) Standard 1.2",
+      "published": "2016-09-29",
+      "url": "https://www.gs1.org/sites/default/files/docs/epc/EPCIS-Standard-1.2-r-2016-09-29.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. EPCIS 1.2. 오류 선언(errorDeclaration)으로 기록된 이벤트 정정.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-854",
+      "org": "Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse",
+      "title": "Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP)",
+      "published": "2026-06-25",
+      "url": "https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF REST API 를 LLM 호출 도구로 노출하는 MCP 서버와 영어 지시를 다단계 RMF 임무로 바꾸는 에이전트(Nayantra) 발표 안내. Isaac Sim 창고 시연.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1079",
+      "org": "Francis, A., Pérez-D'Arpino, C., Li, C. 외 (ACM Transactions on Human-Robot Interaction, arXiv)",
+      "title": "Principles and Guidelines for Evaluating Social Robot Navigation Algorithms",
+      "published": "2023-06-29",
+      "url": "https://arxiv.org/abs/2306.16740",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "사회적 로봇 내비게이션 평가 원칙·지침.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1128",
+      "org": "Gulino, C., Fu, J., Luo, W. 외 (Waymo, arXiv)",
+      "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
+      "published": "2023-10-12",
+      "url": "https://arxiv.org/abs/2310.08710",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "기록 데이터 기반 자율주행 시뮬레이터. 19 페이지에서 기록 재현 방법 참고로 인용.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1171",
+      "org": "Kucner, T. P., Magnusson, M., Mghames, S., Palmieri, L., Verdoja, F., Swaminathan, C. S., Krajník, T., Schaffernicht, E., Bellotto, N., Hanheide, M., & Lilienthal, A. J. (The International Journal of Robotics Research 42(11))",
+      "title": "Survey of maps of dynamics for mobile robots",
+      "published": "2023",
+      "url": "https://journals.sagepub.com/doi/10.1177/02783649231190428",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 이동로봇용 움직임 지도 서베이.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1172",
+      "org": "Rudenko, A., Palmieri, L., Herman, M., Kitani, K. M., Gavrila, D. M., & Arras, K. O. (arXiv; IJRR 39(8), 2020)",
+      "title": "Human Motion Trajectory Prediction: A Survey",
+      "published": "2019-12-17",
+      "url": "https://arxiv.org/abs/1905.06113",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "사람 움직임 궤적 예측 방법 서베이.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1173",
+      "org": "ROS (ros-infrastructure/rep 저장소), Séverin Lemaignan",
+      "title": "REP 155 -- Conventions, Topics, Interfaces for Perception in Human-Robot Interaction",
+      "published": "2022-01-11",
+      "url": "https://github.com/ros-infrastructure/rep/blob/master/rep-0155.rst",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "ROS4HRI 규약 제안(Draft). 사람 영속 ID 와 얼굴·몸·음성 ID 의 후보 대응, 익명 사람 표현. 개인정보는 다루지 않음.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ros-infrastructure/rep/master/rep-0155.rst",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1177",
+      "org": "행정안전부 (대한민국 정책브리핑)",
+      "title": "29일부터 인파관리지원시스템 본격 운영…다중운집 인파사고 예방",
+      "published": "2023-12-27",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148924176",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "기지국 접속정보 기반 인파 밀집도 추정·경보 시스템 운영 발표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1178",
+      "org": "Vintr, T., Blaha, J., Rektoris, M., Ulrich, J., Rouček, T., Broughton, G., Yan, Z., & Krajník, T. (Frontiers in Robotics and AI)",
+      "title": "Toward Benchmarking of Long-Term Spatio-Temporal Maps of Pedestrian Flows for Human-Aware Navigation",
+      "published": "2022-07-04",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.890013/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "장기 시공간 보행자 흐름 지도 벤치마크와 대학 건물 현장 실험.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1179",
+      "org": "Pérez-Higueras, N., Otero, R., Caballero, F., & Merino, L. (arXiv; IEEE RA-L 2023)",
+      "title": "HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarking Human-Aware Robot Navigation",
+      "published": "2023-09-13",
+      "url": "https://arxiv.org/abs/2305.01303",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "사람 인지 내비게이션 벤치마크용 ROS 2 사람 이동 시뮬레이터.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1180",
+      "org": "ILIAD 프로젝트 컨소시엄 (EU Horizon 2020)",
+      "title": "Concluding ILIAD",
+      "published": "2021-06",
+      "url": "https://iliad-project.eu/concluding-iliad/",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "EU ILIAD 프로젝트 종료 보고. 외레브로 창고 자율 지게차 플릿, 사람 흐름 학습 경로 계획.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1181",
+      "org": "조선비즈 (이정아, 다음 뉴스 게재)",
+      "title": "로봇과 인간이 공존하는 병원…약 배달 로봇에 길 비켜주고 엘리베이터도 잡아줘",
+      "published": "2024-07-12",
+      "url": "https://v.daum.net/v/bc4riunbUE",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "한림대학교성심병원 로봇 운영 기사. 전용 경로 스티커, 무조건 대기 규칙.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1182",
+      "org": "Kidokoro, H., Kanda, T., Brščić, D., & Shiomi, M. (ACM/IEEE HRI 2013)",
+      "title": "Will I bother here? - A robot anticipating its influence on pedestrian walking comfort",
+      "published": "2013-03",
+      "url": "https://www.semanticscholar.org/paper/Will-I-bother-here-A-robot-anticipating-its-on-Kidokoro-Kanda/bc0b26f1c13405fd89eb6d280bee739aed5b07a6",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 쇼핑몰에서 보행자 혼잡을 예상해 위치를 계획하는 로봇 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1214",
+      "org": "Han, H. Z. 외 (Carnegie Mellon University) — CHI '24",
+      "title": "Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations",
+      "published": "2024-04-07",
+      "url": "https://arxiv.org/abs/2404.05050",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "이동장애인·로봇 실무자 면담과 공동설계 워크숍. 보도 공간 경쟁, 연석 경사로 부족, 처음부터 접근성 통합.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2404.05050",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1299",
+      "org": "ST Engineering Aethon (Newswire 게재 보도자료)",
+      "title": "ST Engineering Aethon Launches Zena RX, Redefining Secure Delivery of Medications, Specimens and Sensitive Goods in Hospitals",
+      "published": "2024-04-29",
+      "url": "https://www.newswire.com/news/st-engineering-aethon-launches-zena-rx-redefining-secure-delivery-of-22310264",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "병원 약제·검사실용 운반 로봇 Zena RX 출시 발표. 생체 인식·직원 PIN, 독립 잠금 칸 4개, 권한 직원만 수령(벤더 주장).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.newswire.com/news/st-engineering-aethon-launches-zena-rx-redefining-secure-delivery-of-22310264",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1300",
+      "org": "바이라인네트워크 (엄지용)",
+      "title": "엘리베이터 타는 배달로봇과의 조우",
+      "published": "2019-10-17",
+      "url": "https://byline.network/2019/10/17-73/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "우아한형제들 본사(잠실) 딜리타워 시범 운영 체험기. 주문번호·층 입력, 승강기 자율 탑승, 고객 전화번호 뒤 네 자리 입력으로 수령.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://byline.network/2019/10/17-73/",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1301",
+      "org": "경향신문 (곽희양)",
+      "title": "내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다",
+      "published": "2020-07-03",
+      "url": "https://www.khan.co.kr/article/202007031130001",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "딜리타워의 공동주택(포레나 영등포) 도입 계획 보도. 라이더·고객 비밀번호 입력, 문자·전화 도착 알림.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.khan.co.kr/article/202007031130001",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1302",
+      "org": "Riedelbauch, D., Werner, T., & Henrich, D. (RAAD 2017, Springer)",
+      "title": "Supporting a Human-Aware World Model through Sensor Fusion",
+      "published": "2017",
+      "url": "https://eref.uni-bayreuth.de/92445",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "사람과 공유하는 작업 공간에서 세계 모델 정보에 확실도 값을 붙이고 사람 존재에 따라 시간적으로 조정하는 방법(바이로이트 대학 저장소 초록 기준, PDF 본문은 추출 실패).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://eref.uni-bayreuth.de/92445",
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/objects-people-and-live-state/index.md",
+      "sections": [
+        "5. 다른 대분류와의 연결"
+      ],
+      "rationale": "대분류 연결 실행: '다른 대분류와의 연결' 절만 patches 로 채움. B. 로봇 온톨로지: f1(17↔5), f2·f3(18↔5·6) / C. 채팅 기반 구성·운영: f4·f5(18↔12), f6(19↔11·36) / D. 공간·지도 모델: f7(18↔15), f8(17↔15·16), f9(19↔15), f10(19↔16) / F. 연동: f11(17↔20), f12·f13(17↔22), f14·f15(17·18↔23), f16(18↔22), f17·f18(18↔20) / G. 계획·최적화: f19(17↔24), f20·f21(18↔28), f22(19↔27), f23(19↔26) / H. 실행·협업·예외 복구: f24(17↔30), f25·f26(17↔32), f27(18↔29·32), f28·f29(18·19↔31) / I. 설계·시뮬레이션: f30(18↔34, 18·34 구분 유지), f31(19↔34) / J. 현장 운영·관제: f32(18↔38·39) / K. 플랫폼 아키텍처·인프라: f33(18↔42), f34(17·18↔43) / L. AI·학습 기술: f35(19↔46) / M. 안전: f36(18↔48), f37(19↔49) / N. 보안·개인정보: f38·f39(19↔53), f40~f43(17↔51·53, 벤더 주장 f40 병기) / O. 검증·도입·수명주기: f44(19↔54) / P. 거버넌스·법규·사회: f45·f46(19↔60), f47(17↔58) / Q. 현장 유형별 적용: f48(19↔66, 연계 대상), f49(19↔61·63·64), 수령인 확인 사례 f40(병원)·f41(기타)·f42(가정). 아직 다루지 않은 연결: A. 기획·사업 전체, 18·19 ↔ 45. 문서·도면·장면 이해(oq-227), 17 ↔ 54·55·57, 37. 관제 화면·실행 기록·40. 운영 절차·요청 창구, 52. 통신 보호·위협 관리·감사, 59. 법·규제·보험·라이선스. 추정 태그 finding 은 추정 그대로, 관련 열린 질문 id 병기."
+    }
+  ],
+  "glossary_candidates": [],
+  "open_questions_new": [
+    "병원 운반 로봇의 생체 인식·PIN 수령 확인처럼 수령인 인증 결과를 작업 완료·인계 이벤트로 ROP 와 병원 정보 시스템에 남기는 공개 인터페이스나 표준 필드가 있는가? | 관련 영역: 17. 작업 대상·자산 식별과 인계 추적, 51. 인증·권한·격리, 63. 병원·의료 | 근거: f40 | 종류: 일반",
+    "사람 존재 정보로 세계 상태 정보의 확실도를 낮추는 방식을 물류창고·병원 같은 이동로봇 현장의 문·통로·적재물 상태 판단에 적용한 연구나 사례가 있는가? | 관련 영역: 18. 실시간 세계 상태·데이터 일관성, 19. 사람·보행자 모델, 31. 사람–로봇 협업 | 근거: f28 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 40,
+    "cross_checked_count": 0,
+    "unverified": [
+      "f2 Naqvi 외 논문 본문 미열람(PMC·HAL 봇 차단), 검색 요약 기준",
+      "f4 MCP 연동이 로봇·플릿 상태 질의 도구까지 제공하는지 미확인(발표 안내문에 없음)",
+      "f40 Zena RX 의 수령 기록·감사 로그 기능 미확인(aethon.com/healthcare-eu 404), 벤더 주장이며 독립 확인 없음",
+      "f41·f42 딜리타워 수령 방식이 2019(전화번호 뒤 네 자리, 사무 건물)과 2020(비밀번호, 공동주택 계획) 보도에서 다름 — 시점·현장이 달라 출처 충돌로 올리지 않았고 현재 운영 방식은 미확인",
+      "f28 Riedelbauch 외 PDF 본문 추출 실패, 초록 기준",
+      "18·19 ↔ 45. 문서·도면·장면 이해(oq-227) 연결 근거 미확보 — 검색 결과에 고정 카메라·로봇 인식 결합 연구가 있었으나 원문을 열지 않아 넣지 않음",
+      "A. 기획·사업과의 연결 근거 미확보"
+    ],
+    "scope_violations": [
+      "f36: 승강기 화재·비상 모드 제어와 설비 안전은 분류 원문 19장 시설·설비 제어 경계의 연계 대상, ROP 는 모드 확인만으로 서술",
+      "f37: 사람 검출·안전 정지·국소 회피는 로봇 자체 지능·제어의 연계 대상으로 구분",
+      "f48: 인파관리지원시스템은 외부 공공 시스템(연계 대상: 표시)",
+      "f40: 로봇 본체 잠금 칸·생체 인식은 제조사 기능(벤더 주장), ROP 몫은 인증 결과 수신·기록으로 한정해야 함",
+      "f14: 소매 매장 재고 기록 부정확성은 물류센터 값이 아님을 명시"
+    ],
+    "budget_used": {
+      "queries": 7,
+      "sources": 4
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 대분류 연결 실행으로 근거를 게시된 17. 작업 대상·자산 식별과 인계 추적, 18. 실시간 세계 상태·데이터 일관성, 19. 사람·보행자 모델 페이지와 다른 대분류 페이지(A·B·F·G)의 검증된 주장·각주에서 먼저 찾고(재사용 36건), 빈 연결(C. 채팅 기반 구성·운영, N. 보안·개인정보의 수령인 인증, H. 실행·협업·예외 복구의 31. 사람–로봇 협업)만 새로 조사했다. 검색 7회/30, 신규 출처 4건/15(ref-1299~ref-1302, 예약 구간 안). 재사용 출처 ref-854 는 이번에 원문을 다시 열었다. 원문 열람: github_raw 로 ref-051·ref-148·ref-285·ref-286·ref-1173 을, webfetch 로 ref-854·ref-1214·ref-1299~ref-1302 를 열었다. 나머지 재사용 출처는 이번에 다시 열지 않았다(fetched false). 이전 분류 기준 대분류 연결 절(A·B·F·G 페이지, 옛 E 연결 브리프 2026-09-25-60)에서 재인용한 finding 은 evidence_excerpt 끝에 재인용 실행 id 를 적었다. 교차 확인 0건. 벤더 주장 1건(f40). 한국어 검색 2회(딜리타워·아파트 배송로봇), 국내 자료는 바이라인네트워크·경향신문·정책브리핑(재사용)·조선비즈(재사용). 현장 유형은 물류창고(f9)·병원(f10·f40)·상업 시설(f14)·기타(f22·f41)·가정(f42)·실외(f45·f46·f48)로 나눴다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 f30·f21 에서 구분했다. L. AI·학습 기술 연결은 f35(46. 예측·학습 기반 최적화)뿐이며 적용 대상 19. 사람·보행자 모델과 함께 제안했다. 새 용어 후보 없음(관련 용어가 용어집에 이미 있음). 기존 열린 질문은 해결하지 못했다(oq-180·oq-184 는 f41·f42 가 수령 인증 수단만 부분 근거로 제공, 완료 이벤트 기록 방식은 미확인). 정정 요청 없음. 우선 지정 질문 없음. 입력 누락 없음."
+  }
+}

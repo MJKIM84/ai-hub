@@ -1,0 +1,168 @@
+{
+  "run_id": "2026-10-09-13",
+  "date": "2026-10-09",
+  "run_type": "update",
+  "target": {
+    "area_no": 33,
+    "area_name": "33. 시나리오 모델·편집",
+    "category": "I. 설계·시뮬레이션"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "86299a2",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 19,
+    "sources": 11
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 6007.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 33. 시나리오 모델·편집 | 갱신: 5절 물류창고 경진대회 사례 추가, 9절 시나리오 판 관리 문장 정정, Open-RMF Site Editor 전환·OpenSCENARIO 2 로봇 재사용·RoboVAST 반영, 1차 조건부 승인 수정 15건·2차 수정 5건 반영(2026-09-30 주제 페이지 링크 복원, 11절 건수 정정) | run 2026-10-09-13",
+  "notes": [
+    "참고문헌 생성: references/ref-1298.md",
+    "참고문헌 생성: references/ref-1303.md",
+    "참고문헌 생성: references/ref-1304.md",
+    "참고문헌 생성: references/ref-1305.md",
+    "참고문헌 생성: references/ref-1306.md",
+    "참고문헌 생성: references/ref-1307.md",
+    "참고문헌 생성: references/ref-1308.md",
+    "참고문헌 생성: references/ref-1309.md",
+    "참고문헌 생성: references/ref-1310.md",
+    "참고문헌 생성: references/ref-1311.md",
+    "용어집 생성: glossary/data-provenance.md",
+    "용어집 생성: glossary/abstract-and-concrete-scenario.md",
+    "용어집 생성: glossary/strict-schema.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 10,
+    "standards": 2,
+    "open_questions": 3,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 14:44:42 KST",
+  "usage": {
+    "input_tokens": 70,
+    "cache_creation_input_tokens": 960477,
+    "cache_read_input_tokens": 6339762,
+    "output_tokens": 162291,
+    "cost_usd": 12.574,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.5724,
+        "output_tokens": 37290,
+        "cache_read_input_tokens": 5290775,
+        "cache_creation_input_tokens": 178858
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6614,
+        "output_tokens": 21332,
+        "cache_read_input_tokens": 719764,
+        "cache_creation_input_tokens": 133023
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.9872,
+        "output_tokens": 83133,
+        "cache_read_input_tokens": 143764,
+        "cache_creation_input_tokens": 411964
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.255,
+        "output_tokens": 20084,
+        "cache_read_input_tokens": 177588,
+        "cache_creation_input_tokens": 227228
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0603,
+        "output_tokens": 235,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5377
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0377,
+        "output_tokens": 217,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4027
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/design-and-simulation/scenario-model-and-editing.md (9개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-09-area33-s6.md",
+        "chars": 2409
+      },
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-09-area33-s8.md",
+        "chars": 1827
+      },
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-09-area33-s10.md",
+        "chars": 1294
+      },
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-09-area33-s11.md",
+        "chars": 1273
+      },
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-09-area33-s7.md",
+        "chars": 996
+      },
+      {
+        "from": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-09-area33-s3.md",
+        "chars": 589
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 13,
+  "cross_checked_findings": 0
+}

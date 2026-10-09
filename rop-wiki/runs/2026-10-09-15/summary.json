@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-10-09-15",
+  "date": "2026-10-09",
+  "run_type": "update",
+  "target": {
+    "area_no": 37,
+    "area_name": "37. 관제 화면·실행 기록",
+    "category": "J. 현장 운영·관제"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 3,
+  "pages_updated": 1,
+  "new_sources": 9,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "dcdffb3",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 14,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 5031.3,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 37. 관제 화면·실행 기록 | 갱신: 5절 현장 사례 6건(병원 2·물류창고·실외·가정·기타), 7절 VDA 5050·MassRobotics 상태 값 규약·ISO 11064·IEEE 7001-2021·윤리적 블랙박스 초안 추가와 rmf-web 저장 설정 갱신, 9절 상태 값 정규화·실외 인증·EU AI Act 로그 보관 경계, 11절 oq-237 해결·새 질문 2건 | run 2026-10-09-15",
+  "notes": [
+    "참고문헌 생성: references/ref-1312.md",
+    "참고문헌 생성: references/ref-1313.md",
+    "참고문헌 생성: references/ref-1314.md",
+    "참고문헌 생성: references/ref-1315.md",
+    "참고문헌 생성: references/ref-1316.md",
+    "참고문헌 생성: references/ref-1317.md",
+    "참고문헌 생성: references/ref-1318.md",
+    "참고문헌 생성: references/ref-1319.md",
+    "참고문헌 생성: references/ref-1320.md",
+    "용어집 생성: glossary/operational-state.md",
+    "용어집 생성: glossary/action-status.md",
+    "용어집 생성: glossary/transparency-level-ieee-7001.md"
+  ],
+  "counts": {
+    "create": 3,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 9,
+    "standards": 2,
+    "open_questions": 3,
+    "flow_cells": 7,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 15:17:17 KST",
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 853718,
+    "cache_read_input_tokens": 5185768,
+    "output_tokens": 113220,
+    "cost_usd": 10.4116,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.8141,
+        "output_tokens": 34882,
+        "cache_read_input_tokens": 4102216,
+        "cache_creation_input_tokens": 257469
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.6183,
+        "output_tokens": 18243,
+        "cache_read_input_tokens": 986887,
+        "cache_creation_input_tokens": 253019
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 2.8837,
+        "output_tokens": 50951,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 233087
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 0.9975,
+        "output_tokens": 8692,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 100739
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0603,
+        "output_tokens": 235,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5377
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0377,
+        "output_tokens": 217,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4027
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md (5개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-09-area37-s7.md",
+        "chars": 2936
+      },
+      {
+        "from": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-09-area37-s11.md",
+        "chars": 2787
+      },
+      {
+        "from": "docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-09-area37-s3.md",
+        "chars": 485
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 1
+}

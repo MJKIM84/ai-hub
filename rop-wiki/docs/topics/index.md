@@ -21,6 +21,41 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결](2026/2026-10-09-area18-s10.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 열린 질문](2026/2026-10-09-area18-s11.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술](2026/2026-10-09-area18-s6.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area18-s7.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 대표 연구와 자료](2026/2026-10-09-area18-s8.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
+| 2026-10-09 | [19. 사람·보행자 모델 — 다른 연구영역과의 연결](2026/2026-10-09-area19-s10.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [19. 사람·보행자 모델 — 열린 질문](2026/2026-10-09-area19-s11.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [19. 사람·보행자 모델 — 대표 접근법과 기술](2026/2026-10-09-area19-s6.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area19-s7.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [19. 사람·보행자 모델 — 대표 연구와 자료](2026/2026-10-09-area19-s8.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 다른 연구영역과의 연결](2026/2026-10-09-area33-s10.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 열린 질문](2026/2026-10-09-area33-s11.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 왜 중요한가](2026/2026-10-09-area33-s3.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 대표 접근법과 기술](2026/2026-10-09-area33-s6.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area33-s7.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [33. 시나리오 모델·편집 — 대표 연구와 자료](2026/2026-10-09-area33-s8.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-10-09 | [37. 관제 화면·실행 기록 — 열린 질문](2026/2026-10-09-area37-s11.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-10-09 | [37. 관제 화면·실행 기록 — 왜 중요한가](2026/2026-10-09-area37-s3.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-10-09 | [37. 관제 화면·실행 기록 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area37-s7.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 다른 연구영역과의 연결](2026/2026-10-09-area38-s10.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 열린 질문](2026/2026-10-09-area38-s11.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 왜 중요한가](2026/2026-10-09-area38-s3.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area38-s7.md) | [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | — |
+| 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 열린 질문](2026/2026-10-09-area41-s11.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](2026/2026-10-09-area41-s6.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-10-09 | [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area41-s7.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-10-09 | [42. 분산 시스템·통신·컴퓨팅 구조 — 다른 연구영역과의 연결](2026/2026-10-09-area42-s10.md) | [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | — |
+| 2026-10-09 | [42. 분산 시스템·통신·컴퓨팅 구조 — 열린 질문](2026/2026-10-09-area42-s11.md) | [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | — |
+| 2026-10-09 | [42. 분산 시스템·통신·컴퓨팅 구조 — 왜 중요한가](2026/2026-10-09-area42-s3.md) | [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | — |
+| 2026-10-09 | [42. 분산 시스템·통신·컴퓨팅 구조 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area42-s7.md) | [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 다른 연구영역과의 연결](2026/2026-10-09-area43-s10.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 열린 질문](2026/2026-10-09-area43-s11.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 대표 접근법과 기술](2026/2026-10-09-area43-s6.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](2026/2026-10-09-area43-s7.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-10-09 | [43. 데이터·관측성·배포 — 대표 연구와 자료](2026/2026-10-09-area43-s8.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |

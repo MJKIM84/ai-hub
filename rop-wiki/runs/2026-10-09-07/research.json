@@ -1,0 +1,2290 @@
+{
+  "run_id": "2026-10-09-07",
+  "date": "2026-10-09",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "I. 설계·시뮬레이션"
+  },
+  "gaps": [
+    "I. 설계·시뮬레이션 대분류 페이지의 '다른 대분류와의 연결' 절이 '아직 작성되지 않음' 상태다(같은 대상의 실행 2026-10-09-04 는 형식 검증 실패로 보류되어 반영되지 않았다)",
+    "보류 실행 2026-10-09-04 의 1차 검증(조건부 승인)이 낸 수정 지시가 아직 이행되지 않았다: ref-1329·ref-1330 대신 기존 ref-833·ref-832 재사용, f15·f18·f19 사실·추정 분리, SRCC 표현 정정, ref-527 발행일 정정, ref-943 단독 인용",
+    "보류 실행에서 '아직 다루지 않은 연결'로 남았던 H. 실행·협업·예외 복구의 29·30·31, K. 플랫폼 아키텍처·인프라의 41·43, N. 보안·개인정보의 53, P. 거버넌스·법규·사회의 58·60, L. AI·학습 기술의 45·46, M. 안전의 50, O. 검증·도입·수명주기의 57, C. 채팅 기반 구성·운영의 12, Q. 현장 유형별 적용의 66·67 연결 근거가 없었다",
+    "34. 시뮬레이션·예측용 디지털 트윈과 35. 처리능력·규모·배치 설계 페이지는 이전 분류(2026-09-25) 기준이라 C·L·M·N·P 대분류와 잇는 근거가 페이지 안에 없다",
+    "한국 현장의 가상 시운전·디지털 트윈 사전 검증 자료가 계획·MOU 기사 위주다"
+  ],
+  "research_questions": [
+    "현장을 바꾸거나 로봇을 늘리기 전에 가상으로 설계하고 결과를 미리 볼 수 있는가? [분류원문]",
+    "I. 설계·시뮬레이션의 네 세부영역은 C. 채팅 기반 구성·운영(9. 채팅으로 시나리오 구성, 11. 채팅으로 실제 상황 시뮬레이션 재현, 12. 채팅으로 업무 지시·오케스트레이션)과 L. AI·학습 기술(44~47)에서 무엇을 받고 무엇을 넘기는가?",
+    "34. 시뮬레이션·예측용 디지털 트윈과 36. 가상 시운전·실제 상황 재현은 F. 연동(20~23)의 어떤 인터페이스를 가상으로 대신해 시험하며, B. 로봇 온톨로지(4·7)와 O. 검증·도입·수명주기(54·55·57)로 무엇을 넘기는가?",
+    "35. 처리능력·규모·배치 설계와 34. 시뮬레이션·예측용 디지털 트윈의 결과는 G. 계획·최적화(24~28)와 H. 실행·협업·예외 복구(29~32, 특히 31. 사람–로봇 협업)의 결정과 어떻게 맞물리는가? (oq-009, oq-129 관련)",
+    "36. 가상 시운전·실제 상황 재현은 E. 사물·사람·실시간 상태(17~19)·J. 현장 운영·관제(37~39)·K. 플랫폼 아키텍처·인프라(41~43)의 상태·기록·API 를 어떻게 원천으로 쓰며, 18. 실시간 세계 상태·데이터 일관성의 현재 상태 표현과 34. 시뮬레이션·예측용 디지털 트윈의 미래 실험을 어떻게 구분하는가? (oq-131 관련)",
+    "시뮬레이션·디지털 트윈은 M. 안전(48·50), N. 보안·개인정보(51~53), P. 거버넌스·법규·사회(58~60), A. 기획·사업, Q. 현장 유형별 적용(61~67)과 어디서 만나는가(한국 자료 포함)? (oq-255, oq-292 관련)",
+    "보류 실행 2026-10-09-04 의 1차 검증 수정 지시를 이행하고, 그 실행의 '아직 다루지 않은 연결'을 얼마나 줄일 수 있는가?"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델: Howard(Cal Poly 석사논문, 2026-06)는 처리량 최대화 기준의 AMR 대수 산정이 서비스형 로봇(RaaS) 구독 과금에서 플릿을 과대 산정한다고 보고, 대수 산정을 주문 라인당 비용 최소화 문제로 바꿔 이산 사건 시뮬레이션 27,000회로 분석했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-822"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "피킹 구역제 창고, FlexSim 완전요인 DES 27,000회. 라인당 비용 곡선은 AMR:작업자 비율에 대해 U자형이며 최적 비율은 저수요 1에서 고수요 2.5로 이동. 석사논문(지도교수 Awwad), 저자 보고값.",
+      "as_of": "2026-06",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f2",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델: Rockwell Automation 사례 소개는 미국 남부 물류센터 구축에서 통합자가 컨베이어·피킹 모듈 제어를 설치 전에 에뮬레이션으로 검증해 전체 프로젝트 기간을 18% 줄이고 현장 시운전을 5주 단축했다고 밝히지만 기준선과 측정 방법은 공개하지 않았다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1165"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 18%·5주 수치는 기준선 미공개. 컨베이어·PLC 제어 코드 에뮬레이션은 설비 업체·통합자 쪽 연계 대상. (재인용: 36. 가상 시운전·실제 상황 재현 페이지 5절)",
+      "as_of": "2024-08-28",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f3",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ A. 기획·사업의 1. 기술·시장·업체 동향: NVIDIA 는 2025-01-06 산업용 로봇 플릿 디지털 트윈을 만드는 'Mega' Omniverse 블루프린트를 발표하며 센서 시뮬레이션·합성 데이터로 배치 전에 로봇 플릿을 시험·최적화할 수 있다고 내세운다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-527"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 실제 시설 배치 전 디지털 트윈에서 로봇 플릿과 피지컬 AI 를 시험·최적화, 고충실도 센서 시뮬레이션·합성 데이터 사용(블로그 2025-01-06 확인). 센서 시뮬레이션은 시뮬레이터 제공자 쪽 연계 대상.",
+      "as_of": "2025-01-06",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f4",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집·34. 시뮬레이션·예측용 디지털 트윈 ↔ B. 로봇 온톨로지의 4. 이기종 로봇 등록: 시나리오가 참조하는 로봇 모델은 SDFormat 같은 로봇·환경 기술 형식으로 시뮬레이터에 들어가므로, 기종 제원 기술(형상·질량·센서)이 시뮬레이션 자산의 원천으로 이어질 것으로 보이나 등록 정보와 시뮬레이션 모델을 잇는 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1092"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "SDFormat 은 로봇·환경을 시뮬레이터용으로 기술하는 형식. 33. 시나리오 모델·편집 페이지 9절이 로봇 모델 기술을 연계 대상으로 둠. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ B. 로봇 온톨로지의 4. 이기종 로봇 등록: IDTA 서브모델 템플릿 'Provision of Simulation Models'(1.0)는 자산관리셸(AAS)을 통해 자산의 시뮬레이션 모델 파일을 모델 유형·사용법·적용 분야와 함께 제공하게 하고, 현재 단계 사용 사례로 시뮬레이션 모델 검색과 제조사·유통사에 대한 모델 파일 요청을 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1251"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "공식 저장소 README: 주 대상은 DAE 모델이며 CAD·FMEA 모델도 포함, 특정 시뮬레이터용 파일·소스 코드·FMI 같은 교환 형식으로 제공 가능. 향후 단계로 시뮬레이션 환경 자동 통합과 BOM 기반 전체 시스템 시뮬레이션 생성을 듦.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f6",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ B. 로봇 온톨로지의 7. 온톨로지 검증·변경 관리: 7. 온톨로지 검증·변경 관리가 능력 정의에 붙이는 지원 단계(시뮬레이션 연결·시뮬레이션 검증·실기 검증)를 판정하려면 모델·시뮬레이션 신뢰도 평가와 시뮬레이션–현실 상관 지표가 기준이 될 수 있으나, 두 체계를 대응시킨 자료는 확인하지 못했다(oq-156).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1133",
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "NASA-STD-7009B 는 M&S 결과 수용·신뢰도 평가, Kadian 외는 SRCC 제안. 로봇 능력 지원 단계와의 대응 근거 없음. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성: Chat2Scenic(2026-07, 자율주행 대상)은 챗봇 인터페이스로 시나리오를 대화로 다듬으면서 검색 증강 방식으로 도메인 특화 언어 시나리오 스크립트를 만들고, 123개 시나리오 벤치마크에서 컴파일 성공률 76.42%(비교 방법 30.08%·16.26%)를 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-833"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2607.14387 초록 기준(보류 실행 1차 검증이 열람 확인). 지표는 컴파일 성공률(CSR). 자율주행 시나리오이며 로봇 플릿 대상 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2026-07-15",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성·13. 대화형 기능의 신뢰·기반: 대화로 만든 시나리오의 출력 형식은 33. 시나리오 모델·편집이 정하는 매개변수화·장애 선언 형식이 되고, 생성 스크립트가 컴파일되지 않는 경우가 남으므로 승인 전 형식 검사가 두 대분류의 인계 지점이 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-833",
+        "ref-1088",
+        "ref-528"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Chat2Scenic 컴파일 실패 잔존, OpenSCENARIO 의 매개변수화, ARIAC 의 장애 매개변수 선언을 조합한 해석. 의도 일치 검사 방법은 미확인. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f9",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현: Xia 외(2026-08, ETFA 2026 채택)는 언어 모델 에이전트가 사용자 질의와 기준 구성을 받아 비교 시뮬레이션을 설계·실행하고 결과를 해석해 공정 매개변수 변경을 권고하는 다중 에이전트 틀을 제약 공정 설계에 적용했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-832"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2608.23622 초록 기준(보류 실행 1차 검증이 열람 확인). 제약 공정 대상이며 로봇 플릿 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2026-08-22",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현: 대화로 조건을 바꿔 비교하는 일은 언어 모델이 34쪽 시뮬레이션 실험을 설계·실행하는 구조로 이어질 것으로 보이나, 비교 결과를 믿으려면 36쪽 재현 충실도 지표가 함께 필요하고 로봇 플릿에 적용한 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-832",
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Xia 외(공정 설계)와 Kadian 외(SRCC, LoCoBot 주행) 모두 로봇 플릿 대상 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션: SayPlan(Rana 외, CoRL 2023)은 언어 모델이 3차원 장면 그래프로 세운 초기 계획을 실행 전에 장면 그래프 시뮬레이터로 확인하고 그 피드백으로 실행 불가능한 동작을 고치는 반복 재계획을 두며, 최대 3개 층·36개 방·140개 자산·물체 환경에서 이동 매니퓰레이터로 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-416"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 시맨틱 탐색으로 관련 하위 그래프를 고르고, 고전 경로 계획기로 계획 범위를 줄이며, 'iterative replanning' 으로 시뮬레이터 피드백에 따라 초기 계획을 다듬는다. 단일 로봇 대상.",
+      "as_of": "2023-07-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f12",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션: 대화로 만든 계획을 사람이 승인하기 전에 36. 가상 시운전·실제 상황 재현의 '실행 전 계획 검증'으로 실행 가능성을 먼저 걸러 내는 구조가 두 영역의 접점이 될 것으로 보이나, 다중 로봇 플릿 계획에 적용한 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-416"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "SayPlan 의 시뮬레이터 피드백 재계획은 단일 이동 매니퓰레이터 대상. 분류 원문 C 주석의 '사람이 확인·승인한 계획만 실행'과의 순서 관계는 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f13",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성: Open-RMF 에서 같은 건물 파일(.building.yaml)이 주행 그래프와 시뮬레이션 월드를 모두 만들므로, 대화로 작성·수정한 지도가 같은 형식으로 저장되면 시뮬레이션 월드도 다시 생성할 수 있을 것으로 보이나 대화형 지도 작성과 연결한 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-406",
+        "ref-079"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "building_map_generator 의 gazebo 모드는 .world 와 모델 폴더를, nav 모드는 플릿 어댑터용 주행 그래프를 만든다(원문 확인). 대화형 지도 작성과의 연결은 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f14",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집·34. 시뮬레이션·예측용 디지털 트윈 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델·16. 장소 의미·지도 관리: Open-RMF 의 building_map_generator 는 traffic-editor 로 주석한 건물 파일에서 층별 바닥·벽과 문·승강기를 담은 시뮬레이션 월드와 주행 그래프를 만들고, 환경을 바꿀 때는 주석을 고쳐 다시 생성한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406",
+        "ref-079"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "simulation 장 원문(github_raw) 확인: gazebo 모드는 .building.yaml 을 파싱해 .world 파일과 모델 폴더 생성, nav 모드는 주행 그래프 생성. traffic-editor 는 문·승강기·충전기 주석. 두 출처 같은 기관.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f15",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기·L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: 언어 모델·생성 모델로 시뮬레이션 환경을 만드는 연구(Holodeck, Arena 4.0)가 33. 시나리오 모델·편집의 예제 라이브러리를 채우는 수단이 될 수 있으나, 생성 환경은 실제 현장 지도가 아니므로 D. 공간·지도 모델의 도면·현장 정합과 구분해야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-815",
+        "ref-1089"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Holodeck 은 글 지시로 3D 환경 생성, Arena 4.0 은 생성 모델 기반 환경 생성. 실측 정합 언급 없음. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성: 제조 분야 분류 자료가 데이터 흐름 자동화 정도로 디지털 모델·디지털 섀도·디지털 트윈을 구분하므로, 18은 현장 상태를 가상 모델에 반영하는 현재 상태 표현을, 34는 그 모델을 복제해 가정한 미래를 실험하는 쪽을 맡는 것이 분류 원문의 구분과 맞을 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-291"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Kritzinger 외(2018) 분류. 근거 자료는 제조 대상. E. 사물·사람·실시간 상태 대분류 페이지 연결 절에 같은 각주로 실린 주장과 같다. (재인용: 2026-10-09-03)",
+      "as_of": "2018",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ E. 사물·사람·실시간 상태의 19. 사람·보행자 모델: Waymax(2023)는 실제 주행 기록으로 다중 에이전트 주행 시뮬레이션을 초기화하거나 재생하고, 사실적 상호작용을 위해 학습된 행동 모델과 규칙 기반 행동 모델을 제공한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1128"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "자율주행 대상이며 로봇 현장 사례 아님. 기록 재생 시 다른 행위자가 반응하지 않는 문제(oq-256)의 참고. (재인용: 2026-10-09-04)",
+      "as_of": "2023-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집·34. 시뮬레이션·예측용 디지털 트윈 ↔ E. 사물·사람·실시간 상태의 19. 사람·보행자 모델·M. 안전의 49. 사람 근접 안전: Open-RMF 시뮬레이션은 menge 로 가상 사람을 움직이는 선택 기능 crowdsim 을 traffic-editor 에서 켤 수 있고, 예제 공항 터미널 월드가 이를 군중 시뮬레이션으로 쓴다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406",
+        "ref-104"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "simulation 장: crowdsim 은 선택 기능이며 menge 가 각 에이전트를 제어. rmf_demos README: 공항 터미널에서 use_crowdsim:=1 로 실행. 두 출처 같은 기관(독립 교차 아님).",
+      "as_of": "2026-10-09",
+      "site_type": "상업 시설",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f19",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적: NIST ARIAC 시나리오는 작업 대상인 배터리 셀의 종류(Li-Ion·Ni-MH)·전압 허용 범위·결함(찌그러짐·부풂·긁힘)과 4셀 키트를 정의하고, 키트는 출하 지점에서 제출 서비스가 셀 결함·전압·종류·총전압 조건을 모두 만족할 때만 받아들인다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1087"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "scenario.rst(github_raw): 전압 ±0.2 V 밖 셀은 재활용 통, 키트 총전압 4·Vcell ±0.15, AGV 이동 전 키트 품질 확인 서비스 호출. 경진대회 시뮬레이션이며 실제 공장 아님.",
+      "as_of": "2026-10-09",
+      "site_type": "제조 공장",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f20",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ E. 사물·사람·실시간 상태의 17. 작업 대상·자산 식별과 인계 추적·G. 계획·최적화의 24. 작업·워크플로 모델링: ARIAC 처럼 시나리오가 작업 대상의 속성과 완료 판정 조건을 함께 담으면, 시나리오 형식이 17의 작업 대상 식별자와 24의 완료 조건 어휘를 공유해야 할 것으로 보이나 이를 정한 공통 형식은 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1087"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "ARIAC 시나리오의 셀 속성·키트 제출 조건에서 끌어낸 해석. 물류·병원 시나리오에 적용한 공개 형식 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f21",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ F. 연동의 22. 설비·건물 시스템 연동: Open-RMF 시뮬레이션의 문·승강기 플러그인은 실제와 같은 문·승강기 요청 메시지에 응답하고, door_supervisor 는 한 로봇이 다른 로봇 앞에서 문을 닫는 것 같은 충돌을 막으며 lift_supervisor 는 여러 플릿의 승강기 요청을 관리한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "원문(github_raw): 문 플러그인은 /door_requests 의 DoorRequest, 승강기 플러그인은 /lift_requests 의 LiftRequest 에 응답. 실제 승강기·문 제어는 시설·설비 제어 경계의 연계 대상이며 ROP 는 요청·상태 확인만.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f22",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ F. 연동의 20. 로봇·제조사 관제 연동: Open-RMF 의 slotcar 플러그인은 플릿 어댑터의 경로·모드 요청(PathRequest·ModeRequest)을 받아 경유점 사이를 레일식 직선으로 움직이고 장애물을 감지하면 멈추는 단순화 로봇 모델로, 센서 기반 주행 스택을 돌리는 계산 부담을 피한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "원문(github_raw) 확인. 로봇 자체 주행·인식 거동의 충실도는 제조사·물리 시뮬레이터 쪽 연계 대상.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f23",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ F. 연동의 21. 상호운용 표준·적합성: 제조용 디지털 트윈 프레임워크 ISO 23247 은 국내에 KS X ISO 23247-1 로 들어와 있고 2026년 디지털 트윈 결합을 다루는 제6부가 발행되었으나, 물류센터 이종 로봇·설비에 그대로 쓸 수 있는지는 확인되지 않았다(oq-085).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-516",
+        "ref-518"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "두 출처는 서로 다른 부(제1부·제6부)를 가리키며 교차 확인 아님. 34 페이지 7·11절 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2026",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "연계 대상: I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ F. 연동의 23. 업무 시스템 연동: 성수기 주문·물동량 전망 같은 시나리오 입력은 상위 업무 시스템의 수요예측에서 받는 것으로 보이며, 물류·공급망 디지털 트윈 검토는 실제 데이터로 검증한 연구가 소수라고 보고한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-521"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Le·Fan(2024) 검토. 수요예측은 분류 원문 19장 상위 업무 시스템 경계의 외부 영역. (재인용: 2026-10-09-04)",
+      "as_of": "2024",
+      "site_type": "물류창고",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f25",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계·36. 가상 시운전·실제 상황 재현 ↔ F. 연동의 22. 설비·건물 시스템 연동·Q. 현장 유형별 적용의 63. 병원·의료: 고려대학교 구로병원의 약품 배송 로봇 기록(2025-06, 122건)과 몬테카를로 재현에서 승강기 가동률 59.01% 이하일 때 배송 성공률 95.5%, 90% 초과에서 실패가 몰렸다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "36 페이지 5절 검증된 [사실] 재인용. 같은 논문이 ref-060(doi)으로도 등록돼 있으나 ref-943 하나로만 인용. 승강기 제어는 연계 대상. (재인용: 2026-10-09-04)",
+      "as_of": "2026-03-31",
+      "site_type": "병원",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f26",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ F. 연동의 22. 설비·건물 시스템 연동·Q. 현장 유형별 적용의 64. 상업 시설: 다층 호텔의 배송 로봇 경로 계획 연구는 승강기를 경로 계획 안의 대기·운행 시간으로 모델링했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-103"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "35 페이지 9절 검증된 [사실] 재인용. 승강기 제어 자체는 연계 대상. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": "상업 시설",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f27",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ F. 연동의 22. 설비·건물 시스템 연동·Q. 현장 유형별 적용의 65. 가정·공동주택: 업무용 건축물 대상 로봇 친화형 건축물 인증을 아파트 단지로 확장한 국내 인증 모델(2023)은 건축·시설 설계, 네트워크·시스템, 건축 운영 관리, 로봇 지원 4개 분야 28개 항목(총점 176점)으로 구성된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-409"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "F. 연동 대분류 페이지 검증된 [사실] 재인용. 대상은 공동주택이며 물류센터 아님. 35의 '로봇 친화 공간 설계·개조'와 연결. (재인용: 2026-10-09-04)",
+      "as_of": "2023",
+      "site_type": "가정",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f28",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ F. 연동의 20. 로봇·제조사 관제 연동·O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: 2025-07 보도에 따르면 클로봇은 산업통상자원부 국가로봇테스트필드 기술개발 과제(54억원) 주관기관으로 KETI 와 함께 다종·다수 로봇 제어 FMS 요소기술, 로봇과 디지털 트윈·시뮬레이터 간 인터페이스, 실환경 연동 디지털 트윈 증강 시뮬레이션을 2028년까지 개발해 국가로봇테스트필드에 적용하는 것을 목표로 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1247"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "파이낸스스코프 2025-07-11 기사 1건 기준. 과제 공고·성과는 미확인. 국내 공공 과제가 로봇–시뮬레이터 인터페이스를 직접 다루는 사례.",
+      "as_of": "2025-07-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f29",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ F. 연동의 20. 로봇·제조사 관제 연동: 공개 오픈소스 vda5050-sim 은 VDA 5050 3.0.0 을 주 대상으로 기본 5종 AGV 를 흉내 내 실제 하드웨어 없이 관제 시스템을 시험하게 하며, 2.1.0·2.0.0·1.1.0 구형 펌웨어 로봇의 축소된 메시지와 기능도 흉내 내고, 공식 JSON 스키마 대조 적합성 시험 묶음을 둔다고 README 에 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-407"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw): 로봇별 MQTT 또는 NATS 연결, 주문·즉시 동작·상태·구역 프로토콜. 유지 기관 미기재의 개인 프로젝트 자기 기술이며 VDA·VDMA 공식 적합성 시험 아님.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f30",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: 한 유통사 물류센터 팔레트 이동 데이터로 한 AMR 플릿 규모 산정 시뮬레이션 연구(FAIM 2025)에서는 충전기가 부족하면 큰 지연이, 남으면 불필요한 비용이 생겼다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-102"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "35 페이지 3절 검증된 [사실] 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2025",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f31",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: 로봇 이동형 풀필먼트 시스템의 충전·배터리 교환 전략을 반개방형 대기행렬 네트워크로 비교한 연구(Zou 외, 2018)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-098"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "35 페이지 4·10절 검증된 [사실] 재인용. 결과 수치는 이번에 확인하지 않음. (재인용: 2026-10-09-04)",
+      "as_of": "2018",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f32",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: 창고 충전소 배치를 페이지랭크 유사 방법으로 최적화하는 연구(Stark 외, 2024-06)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-109"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "35 페이지 10절 검증된 [사실] 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2024-06",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f33",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA: Open-RMF 플릿 어댑터 템플릿 설정에서 배터리가 recharge_threshold(예시값 0.10) 아래인 로봇은 작동하지 않으며, 충전 작업의 목표 충전 수준은 recharge_soc(예시값 1.0)로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-105"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "config.yaml(github_raw): 'Battery level below which robots in this fleet will not operate'. task_capabilities 에 loop·delivery 선언.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f34",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA: 충전 임계값 아래 로봇이 작업하지 않으므로, 충전기 수·위치 같은 충전 설비 계획의 결과가 운영 중 배정 가능한 로봇 수를 좌우하는 운영 설정으로 이어질 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-105",
+        "ref-102"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "원문에 없는 연결 해석(35 페이지 10절에서도 [추정]). 공개 사례 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": false
+    },
+    {
+      "id": "f35",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ G. 계획·최적화의 26. 작업 순서·스케줄링: 랙 이동 로봇 작업대의 주문·랙 순서를 함께 정한 Boysen 외(2017)는 최적화된 주문 처리가 흔한 단순 규칙보다 필요한 로봇 대수를 절반 넘게 줄였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-381"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "G. 계획·최적화 대분류 페이지 검증된 [사실] 재인용. 저자 계산 실험 조건, 독립 재현 미확인. (재인용: 2026-10-09-04)",
+      "as_of": "2017",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f36",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA: RAWSim-O 는 로봇 이동형 풀필먼트 시스템의 여러 결정 문제를 연구하는 이산 사건 시뮬레이션이며, Merschformann 외(2019)의 시뮬레이션 조건에서는 피킹 주문 배정 규칙이 단위 처리량을 크게 바꾸었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-101",
+        "ref-398"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "34 페이지와 G 대분류 페이지 검증된 [사실] 재인용. 시뮬레이션 결과이며 현장 실측 아님. 두 출처는 도구와 연구로 서로 다른 내용. (재인용: 2026-10-09-04)",
+      "as_of": "2019",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f37",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: 다중 AGV 시스템의 경로망을 시뮬레이션으로 자동 설계하는 연구(IEEE TASE, 2024)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-267"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "34 페이지 5절 검증된 [사실] 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2024",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f38",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: 경로망 배치를 시뮬레이션으로 평가하는 일은 현재 상태 표현이 아니라 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈 쪽에 걸치는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-267"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "G. 계획·최적화 대분류 페이지가 [추정]으로 실은 위치 판단과 같다. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f39",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: Moving AI Lab 의 MAPF 벤치마크는 지도마다 시나리오 파일(even·random 각 25개)을 묶어 공개한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1091"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보류 실행 1차 검증이 벤치마크 페이지를 열어 지도별 시나리오 파일 제공을 확인. 이번 실행은 다시 열지 않음. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f40",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: 지도와 시나리오 파일을 묶어 공개하는 방식은 경로 계획기를 같은 조건에서 비교하게 하는 시나리오 라이브러리 구성의 예로 쓰일 수 있을 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1091"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤치마크 페이지는 비교 목적을 명시하지 않음(1차 검증 지적). 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f41",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ G. 계획·최적화의 24. 작업·워크플로 모델링: 로봇 미션 명세·실행 형식 비교 연구와 행동 트리 편집기(Groot2)가 33의 미션 기술 형식·편집기 선택 근거로 쓰였으므로, 시나리오 안의 작업 표현은 24의 단계·선후관계·완료 조건 표현과 같은 형식을 공유해야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-116",
+        "ref-1090"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "33 페이지 9절 재인용. Groot2 는 벤더 문서 유형이나 기능·성능 주장은 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f42",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA: VirTooS(2026-08)는 ROS 2와 Unity 를 결합한 혼합 현실 환경에서 실제·가상 로봇과 실제·가상 센서를 함께 써서 자율이동로봇 팀의 플릿 관리 작업을 시험하는 도구이며, 작업 배정 예제에서 실제 로봇과 가상 로봇이 상호작용한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1129"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 초록 기준(보류 실행 1차 검증이 열람 확인). 컨테이너 배포. (재인용: 2026-10-09-04)",
+      "as_of": "2026-08-26",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f43",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·Q. 현장 유형별 적용의 63. 병원·의료: Lee 외 저자들은 승강기 가동률을 혼잡 인지 배차의 제어 신호로 쓰고, 병원별 구조·통행·승강기 제어 정책을 재현한 병원 디지털 트윈으로 배치 전에 결과의 일반화 가능성을 부하 시험하자고 제안했다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "의견 주체: Lee 외 저자. 36 페이지 5절 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2026-03-31",
+      "site_type": "병원",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f44",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성: NIST ARIAC 는 컨베이어 고장, 전압 시험기 고장, 진공 그리퍼 파지 실패, 긴급 주문을 매개변수로 선언해 시각이나 발생 횟수 조건으로 시나리오에 주입한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-528"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "33 페이지 5절 검증된 [사실] 재인용. 경진대회 시나리오이며 실제 공장 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": "제조 공장",
+      "flow_item": "예외·성과",
+      "source_unopened": false
+    },
+    {
+      "id": "f45",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ H. 실행·협업·예외 복구의 29. 명령·작업 실행의 신뢰성·32. 예외 복구·재계획·업무 연속성: vda5050-sim 은 로봇별 고장 프로필로 연결 끊김·오류 주입·필드 위반·서비스 모드·비상 정지의 확률을 정하고, 명세의 재시도 가능 동작 흐름(RETRIABLE·retry·skipRetry)을 구현한다고 README 에 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-407"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw) 확인. 개인 프로젝트의 자기 기술이며 공식 적합성 시험 아님. 실행 신뢰성·예외 복구를 설치 전에 장애 주입으로 시험하는 도구의 예.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f46",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계: Open-RMF 시뮬레이션의 TeleportDispenser 는 DispenserRequest 에 응답해 적재물을 가장 가까운 로봇 위로 순간 이동시키고, TeleportIngestor 는 IngestorRequest 에 응답해 로봇의 적재물을 월드로 옮겨 배송 작업의 적재·하역을 흉내 낸다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "simulation 장 원문(github_raw) 확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f47",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계: 적재·하역을 순간 이동으로 대신하므로 이 시뮬레이션은 물리적 인계 동작이 아니라 인계 요청–응답 흐름과 그 순서를 시험하는 데 쓰이며, 인계 실패 같은 물리 거동은 별도 모델이 필요할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Teleport 플러그인 설명에서 끌어낸 해석. 파지·적재 물리 시뮬레이션은 로봇 자체 제어 쪽 연계 대상.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f48",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: Garg·Maywald·Naman(IJRDM, 2025)은 AMR 과 피킹 작업자 수를 바꾼 창고 구성 48가지의 이산 사건 시뮬레이션에서 처리량·효율이 AMR:작업자 약 2:1 에서 가장 높았고, 교차 통로 배치의 처리량 효과는 통계적으로 유의하지 않았다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1243"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 고속 소매·전자상거래 물류의 혼합 피킹, 비용 효율 분석 1,200 시나리오. 저자 시뮬레이션 조건이며 다른 운영에 그대로 옮겨지는지 미확인.",
+      "as_of": "2025-10-14",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f49",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업·P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: Howard(2026)의 시뮬레이션에서는 작업자 유휴 시간이 교대당 AMR 유휴 시간보다 약 2.5배 비싸 작업자와 로봇이 서로 기다리는 동기화 손실의 비용이 주로 노동 쪽에 떨어졌고, 세 배차 휴리스틱은 라인당 비용에 유의한 차이를 내지 않았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-822"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "3구역 순차 구역제·연속 도착 조건, 석사논문 저자 보고값. 작업자 배치와 로봇 대수를 함께 정하는 문제(oq-009)에 부분 근거이나 교대조 단위는 아님.",
+      "as_of": "2026-06",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f50",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록·38. 모니터링·이상 탐지·원인 분석: rosbag2 는 ROS 2 통신을 백 파일(기본 저장 형식 MCAP)로 기록하고, 재생 속도 조절(~/set_rate)·/clock 발행(--clock)·토픽 선택(--topics)·여러 백 파일의 수신 시각순 동시 재생(-i)을 지원하며, 시작 시각 지정은 ~/play 서비스로 제공한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-831"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(rolling, github_raw) 확인. 시작 시각 지정은 CLI 옵션이 아니라 서비스로 문서화됨.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f51",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록: 메시지 단위 기록 도구와 기록 기반 시뮬레이터가 있으나, 재현의 원천은 37이 남기는 오케스트레이션 수준 실행 기록(작업·배정·위치·사건 시각)이어야 할 것으로 보이며 이를 시나리오 사양으로 바꾸는 공개 형식은 확인하지 못했다(oq-131).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-831",
+        "ref-1128"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "rosbag2 는 메시지 기록·재생, Waymax 는 주행 기록 기반 시뮬레이션. 오케스트레이션 기록→시나리오 변환 형식 미확인. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f52",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ J. 현장 운영·관제의 39. 운영 성과 측정·개선: 충전 방식의 비용 비교와 국내 스마트물류센터 인증 평가에서 두 영역이 만나는 것으로 보이나, 인증 세부 지표에 로봇 대수·가동률 같은 설비 계획 지표가 들어가는지는 확인하지 못했다(oq-011).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-098",
+        "ref-106"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "35 페이지 10절 연결 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f53",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ K. 플랫폼 아키텍처·인프라의 41. 플랫폼 아키텍처·외부 API: rmf_demos 는 시뮬레이션 데모에서 플릿 어댑터의 server_uri 를 rmf-web API 서버(ws://localhost:8000/_internal)로 지정하면 어댑터가 최신 작업·로봇 상태를 API 서버에 보내고 대시보드로 볼 수 있게 하며, Docker 대시보드는 빠른 연동·시험용이라고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-104"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw): 'the fleetadapter will update rmf-web api-server with the latest task and robot states'. API 서버 localhost:8000, 대시보드 localhost:3000.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f54",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ K. 플랫폼 아키텍처·인프라의 41. 플랫폼 아키텍처·외부 API: 시뮬레이션 플릿과 실제 플릿이 같은 플랫폼 API·대시보드에 붙으므로, 외부 시스템 연동과 운영자 화면을 설치 전에 가상 플릿으로 시험할 수 있을 것으로 보이나 이를 시운전 절차로 정리한 공개 사례는 확인하지 못했다(oq-255).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-104",
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "rmf_demos 의 server_uri 연결과 시뮬레이션 플러그인이 실제와 같은 메시지에 응답한다는 설명에서 끌어낸 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f55",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: 가상 시운전 도구가 여러 머신에 컨테이너로 배포되고 시뮬레이션 플러그인이 실제와 같은 요청 메시지에 응답하므로, 가상 대응물을 어느 계산 자원에 두고 실제 시스템과 어떤 통신으로 잇는지가 두 대분류를 잇는 설계 쟁점이 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1129",
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "플랫폼 배치 근거 없음(oq-040). (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f56",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포: MCAP 은 시각이 찍힌 발행·구독 메시지를 담는 컨테이너 형식으로, 메시지마다 기록 시각(log_time)과 발행 시각(publish_time)을 따로 두고 청크 색인에 청크별 최초·최종 기록 시각을 담아 시각·토픽으로 메시지를 찾게 하며, rosbag2 의 기본 저장 형식이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1096",
+        "ref-831"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "MCAP 명세(webfetch): 채널별 메시지 인코딩, zstd·lz4 압축 청크. rosbag2 README: 기본 저장 플러그인 mcap. 두 출처는 서로 다른 내용(형식 정의와 채택).",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f57",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획: Holodeck(CVPR 2024)은 GPT-4 가 장면 구성과 객체 간 공간 관계를 만들고 배치를 최적화해 글 지시로 3D 환경을 생성하며, 생성 장면에서 학습한 에이전트가 처음 보는 환경에서 주행했다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-815"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2312.09067 초록 기준(보류 실행 1차 검증이 열람 확인). (재인용: 2026-10-09-04)",
+      "as_of": "2023-12-14",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f58",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ L. AI·학습 기술의 45. 문서·도면·장면 이해: Sommer 외(2023)는 기존 건물 환경의 스캔과 객체 인식을 입력으로 생산 계획용 디지털 트윈을 자동 생성하는 방법을 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-241"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "34 페이지 6·8절이 인용한 스캔 기반 자동 생성 연구. 이번 실행은 원문을 다시 열지 않음. 로봇 플릿 시뮬레이션에 쓴 사례 미확인.",
+      "as_of": "2023",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f59",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ L. AI·학습 기술의 46. 예측·학습 기반 최적화: Smit 외(2024-04, arXiv)는 작업자와 AMR 이 피킹 위치에서 만나는 창고에서 작업자–AMR 배정을 다목적 심층 강화학습으로 정하고, 이를 학습·평가하려고 이산 사건 시뮬레이션 모델을 만들었으며, 학습 정책이 효율과 작업자 부하 공정성 모두에서 비교 방법을 앞섰다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1245"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 창고를 그래프로 모델링, 크기가 다른 창고로 어느 정도 일반화, 시뮬레이션 구현 공개. 프리프린트, 저자 보고. 25. 작업 배정 — MRTA 의 학습 기반 배정과도 이어짐.",
+      "as_of": "2024-04-09",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f60",
+      "claim": "I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계 ↔ L. AI·학습 기술의 46. 예측·학습 기반 최적화: Howard(2026)는 반개방형 대기행렬 모델로 설계안을 걸러 내고 XGBoost 대리 모델과 등각 예측 구간으로 추가 시뮬레이션 없이 연속 설계 공간의 비용을 예측했으며, 대기행렬 모델은 시뮬레이션 라인당 비용과 약 5%, 대리 모델은 교차 검증에서 3% 안에서 맞았다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-822"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "석사논문 초록, 저자 보고값. 이 모델 계층으로 공개 의사결정 지원 도구를 만들었다고 밝힘.",
+      "as_of": "2026-06",
+      "site_type": "물류창고",
+      "flow_item": null
+    },
+    {
+      "id": "f61",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ L. AI·학습 기술의 47. AI·학습·적응과 모델 운영: 학습 정책이 시뮬레이터의 결함을 악용하는 현실 격차가 보고되므로, 학습 기반 정책의 현실 격차 보정은 47쪽(및 로봇 제조사·시뮬레이션 도구) 일이고 36은 재현 결과와 실제의 차이 지표를 관리하는 쪽을 맡는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-741",
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "현실 격차 보정은 연계 대상. 36 페이지 9절 경계와 같다. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f62",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ M. 안전의 48. 안전·위험 관리: Huck·Ledermann·Kröger(SPCE 2020)는 사람 모델과 최적화 알고리즘으로 시뮬레이션 안에서 고위험 사람 행동을 생성해, 물리 시제품이 없는 초기 설계 단계의 산업용 로봇 셀에서 작업자 위험을 드러내는 방법을 개념 증명으로 보였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1241"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 무작위·몬테카를로 탐색은 큰 탐색 공간에서 비실용적이라 최적화로 위험 행동을 찾는다. 협동 로봇 셀 대상이며 이동로봇 플릿 아님.",
+      "as_of": "2020-11-20",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f63",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ M. 안전의 48. 안전·위험 관리: 위험 상황을 생성·탐색하는 시뮬레이션 시험(사람 행동 최적화, 확률적 시나리오 언어 기반 반증)이 있으므로, 33에서 선언한 장애·사람 흐름 시나리오가 48의 위험 식별 입력이 될 수 있을 것으로 보이나 다중 이동로봇 플릿에 적용한 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1241",
+        "ref-1086"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "안전 인증·설비 안전 제어 판단은 연계 대상이며 시나리오가 위험 식별 입력이 될 수 있다는 범위로만 서술. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f64",
+      "claim": "연계 대상: I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ M. 안전의 50. 안전 표준·인증·사고 조사: Wind River 인터뷰(2014)는 IEC 61508-7 C.5.19 가 시뮬레이션을 시험 목적으로만 피제어 설비(EUC)의 거동을 흉내 내는 시스템으로 정의한다고 인용하고 기능안전 표준들이 안전 확인에 시뮬레이션을 강하게 권고한다고 해석하지만, 이동로봇 안전 표준이 시뮬레이션 결과를 인증 근거로 받아들이는 절차는 이번 조사에서 찾지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1249"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "업체 블로그의 표준 인용·해석이며 표준 원문 미확인. 장애 주입도 강하게 권고되는 확인 기법으로 언급. ISO 3691-4 의 시뮬레이션 관련 조항은 검색에서 확인되지 않음.",
+      "as_of": "2014-11-20",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f65",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ N. 보안·개인정보의 52. 통신 보호·위협 관리·감사: Carr 외(2022)는 ROS 로 구동되는 시스템에서 디지털 트윈에 대한 중간자 공격이 물리 로봇의 실패로 이어질 수 있으며 산업용 로봇팔과 자율이동로봇 모두에 해당한다고 보고하고 완화 방안을 논의했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1242"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2211.09507 초록(webfetch) 확인. 프리프린트.",
+      "as_of": "2022-11-17",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f66",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ N. 보안·개인정보의 51. 인증·권한·격리·52. 통신 보호·위협 관리·감사: 36이 다루는 디지털 트윈 동기화(실시간 상태를 가상 모델에 반영하고 결과를 되돌리는 경로)는 공격 표면이 될 수 있으므로, 시뮬레이션 결과가 실제 계획·설정에 반영되는 경로에 접근통제와 무결성 확인이 필요할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1242"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "로봇 플릿 플랫폼 적용 사례 없음. 34가 현재 상태를 표현한다고 보지 않고 36의 동기화 경로로만 서술.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f67",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: Autoware 재단의 autoware_rosbag2_anonymizer 는 ROS 2 백 파일(sqlite3·mcap)의 이미지에서 사람 얼굴·번호판 같은 대상을 GroundingDINO·OpenCLIP·SegmentAnything2·YOLO 로 찾아 가우시안 블러로 가린 익명화 백 파일을 만든다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1246"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw): 대상은 validation.json 의 프롬프트로 정의(예: 차 안의 번호판, 사람 몸 안의 얼굴). GPU 메모리 요구가 크고 처리가 느릴 수 있다고 적음. 자율주행 생태계 도구.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f68",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터: 운영 기록으로 상황을 재현하거나 기록을 외부와 공유하기 전에 영상 기록의 얼굴 등을 가리는 익명화 단계가 두 영역의 경계가 될 것으로 보이나, 로봇 플릿 재현에서 익명화가 재현 충실도에 주는 영향을 다룬 자료는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1246",
+        "ref-831"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "rosbag2 기록 + 익명화 도구 조합에서 끌어낸 해석. 국내 개인정보 처리 요건과의 관계는 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f69",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크·55. 현장 조사·설치·시운전: Open-RMF 문서는 시뮬레이션 로봇이 배터리 소모·충돌 비용이 없어 시나리오를 반복해 수정을 확인하고 드문 예외를 살필 수 있으며, 장시간 시뮬레이션으로 배치 전에 시설 소유자의 확신을 높일 수 있다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "simulation 장 Motivation(github_raw): 'Robots in simulation neither run out of battery nor incur costs when they happen to unfortunately crash into something.'",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f70",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ O. 검증·도입·수명주기의 55. 현장 조사·설치·시운전: 설비 제어 분야의 가상 시운전 정의(VDI/VDE 3693)와 실제 제어기·가상화 인스턴스를 섞은 분산 가상 시운전 연구가 있어 36의 결과가 55의 현장 시운전 준비로 넘어갈 것으로 보이나, 여러 제조사 로봇 플릿 전체를 대상으로 한 가상 시운전 절차는 확인하지 못했다(oq-255).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1126",
+        "ref-1130",
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "PLC·설비 제어 코드 가상 시운전은 설비 업체·통합자 쪽 연계 대상. 36 페이지 3절 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f71",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: Kadian 외(RA-L 2020)는 시뮬레이션–현실 상관 계수(SRCC)를 제안하고, LoCoBot 의 PointGoal 주행에서 CVPR 2019 챌린지에서 쓰인 Habitat 설정의 성공률 SRCC 가 0.18 이었으나 시뮬레이션 매개변수를 조정해 0.844 로 높였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "1차 검증 지시에 따라 '기본 설정'을 'CVPR 2019 챌린지에서 쓰인 Habitat 설정'으로 고침. 원인으로 벽 미끄러짐 지목. (재인용: 2026-10-09-04)",
+      "as_of": "2020-08",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f72",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: NASA-STD-7009B(2024-03-05)는 모델·시뮬레이션 결과를 의사결정에 쓸 때의 수용과 신뢰도 평가를 다루는 표준이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1133"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "36 페이지 7절 검증된 [사실] 재인용. (재인용: 2026-10-09-04)",
+      "as_of": "2024-03-05",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f73",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ O. 검증·도입·수명주기의 57. 자산·소프트웨어 수명주기 관리: Gazebo Fuel 서버의 모델·월드를 내려받고 올리는 gz-fuel-tools 의 README 로드맵은 원격 모델의 새 버전이 올라왔을 때 이를 감지하는 방법을 아직 정해야 할 과제로 적고 해시 기반 방식을 아이디어로 든다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1250"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw, main). 시뮬레이션 자산의 판 변경 추적이 클라이언트 도구에서 완결되지 않았다는 근거. 모델별 판 목록 형식은 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f74",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스: Gazebo(클래식) 모델 데이터베이스 규칙은 database.config 의 license 요소로 모델 라이선스를 지정하고 CC BY 3.0 Unported 를 권장하며, 각 모델의 model.config 에 작성자 이름·이메일을 필수로 적게 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1231"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보류 실행 1차 검증이 튜토리얼을 열어 확인(권장이며 요구 아님). 이번 실행은 다시 열지 않음. oq-292 관련. (재인용: 2026-10-09-04)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f75",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ P. 거버넌스·법규·사회의 60. 노동·수용성·접근성: Kassem·Michahelles(Mensch und Computer 2022 워크숍)는 협동 로봇이 공장·물류·제조 현장에 들어오면서 사람–기계 상호작용을 빠르게 평가할 필요가 커졌다고 보고, 소비자용 VR·AR 헤드셋으로 로봇을 가상으로 흉내 내 사용자 연구에 쓰는 방법과 방향을 제시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1248"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록 기준. 이동로봇 플릿 도입 전 작업자 수용성을 가상 환경으로 측정한 사례는 이번 조사에서 찾지 못함.",
+      "as_of": "2022-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f76",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·36. 가상 시운전·실제 상황 재현 ↔ P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: IDTA 'Provision of Simulation Models' 서브모델이 제조사·유통사에 시뮬레이션 모델 파일을 요청하는 사용 사례를 두므로, 로봇·설비 제조사가 가상 시운전용 모델을 어떤 형식·충실도로 제공할지가 다사업자 계약·데이터 제공 항목이 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1251"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "서브모델 README 의 사용 사례에서 끌어낸 해석. 로봇 플릿 조달 계약에 넣은 사례 미확인.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f77",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·35. 처리능력·규모·배치 설계 ↔ Q. 현장 유형별 적용의 62. 제조 공장: Stączek 외(Sensors, 2021)는 통로가 좁은 생산 홀의 AMR 운영 환경을 ROS 와 연결한 Gazebo 디지털 트윈으로 만들어 현장 시험 전에 위치 추정·주행·작업 시간을 확인했고, 통로에 회전용 홈을 내는 배치 변경안이 도킹 복귀 시간을 평균 44초에서 22.5~23.3초로 줄였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1244"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "원래 통로는 로봇이 회전하지 못해 후진 복귀(후진 0.3 m/s, 전진 0.7 m/s). 2×0.4 m 홈 두 안 비교. 저자들은 디지털 트윈 표준 설계 패턴·범용 도구 부족을 지적.",
+      "as_of": "2021-11-25",
+      "site_type": "제조 공장",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f78",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ Q. 현장 유형별 적용의 62. 제조 공장: 최성욱·박상철·왕지남(2008)은 자동차 차체 생산라인의 PLC 코드 검증을 위해 실제 PLC 와 3D 가상 공정 시뮬레이터를 양방향 통신으로 잇는 가상 플랜트 구축 절차를 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1131"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "36 페이지 5절 검증된 [사실] 재인용. PLC 코드 가상 시운전은 설비 업체·통합자 쪽 연계 대상이며 ROP 가상 시운전의 방법 근거로만 사용. (재인용: 2026-10-09-04)",
+      "as_of": "2008-11",
+      "site_type": "제조 공장",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f79",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ Q. 현장 유형별 적용의 62. 제조 공장: 2026-08 보도에 따르면 아바코는 산업통상자원부 산업 AI 솔루션 실증확산 지원사업(이차전지 분야, 한국생산기술연구원 주관)에서 AMR 스마트 물류 시스템을 개발·실증하며 실물 설비 구축 전에 디지털 트윈 가상 환경에서 물류 동선과 장비 운용을 검증했고, 공정물류 다운타임 20% 절감과 물류 자동화율 90% 이상을 달성했다고 밝혔다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1252"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 수치는 회사 발표를 옮긴 기사(파이낸스스코프 2026-08-14) 1건 기준이며 기준선·측정 방법 미공개.",
+      "as_of": "2026-08-14",
+      "site_type": "제조 공장",
+      "flow_item": "예외·성과",
+      "vendor_claim": true
+    },
+    {
+      "id": "f80",
+      "claim": "I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈 ↔ Q. 현장 유형별 적용의 61. 물류창고: CJ대한통운은 2021-11 현실 물류센터와 같은 가상 물류센터를 단계적으로 구축해 2023년 디지털 트윈을 완성하겠다는 계획을 발표했고 작업 동선·재고 배치·설비 효율 최적화를 목표로 들었으나, 이후 적용 결과는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-526"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 34 페이지 5절의 [추정] 벤더 주장 재인용. oq-084·oq-117 관련. (재인용: 2026-10-09-04)",
+      "as_of": "2021-11",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f81",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ Q. 현장 유형별 적용의 64. 상업 시설: Open-RMF 예제 호텔 월드는 로비와 객실 2개 층에 승강기 2대·여러 문·로봇 플릿 3개(로봇 4대)를 담고, 공항 터미널 월드는 차선·목적지·로봇이 많은 대형 지도에서 플릿·설비·사람의 상호작용과 청소 작업을 보이는 시뮬레이션 예제다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-104"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw) 확인. 작업은 dispatch_patrol·dispatch_delivery·dispatch_clean 명령으로 따로 넣음. 실제 시설 사례 아님.",
+      "as_of": "2026-10-09",
+      "site_type": "상업 시설",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f82",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ Q. 현장 유형별 적용의 65. 가정·공동주택: BEHAVIOR-1K 는 설문으로 고른 일상 가정 활동 1,000개를 BDDL 로 명세하고 장면 50개와 주석 객체 9,000개 이상을 OmniGibson 시뮬레이터에 구현한 벤치마크다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-971"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "33 페이지 5절 검증된 [사실] 재인용. 벤치마크이며 실제 가정 배치 아님. (재인용: 2026-10-09-04)",
+      "as_of": "2024-03-14",
+      "site_type": "가정",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f83",
+      "claim": "I. 설계·시뮬레이션의 33. 시나리오 모델·편집 ↔ Q. 현장 유형별 적용의 66. 실외: Open-RMF 예제 캠퍼스 월드는 GPS(WGS84) 좌표를 쓰는 넓은 실외 지도에서 여러 배송 로봇이 위치를 플릿 어댑터에 보내는 시뮬레이션 예제다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-104"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(github_raw) 확인. 실제 캠퍼스 배치 사례 아님.",
+      "as_of": "2026-10-09",
+      "site_type": "실외",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f84",
+      "claim": "I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현 ↔ Q. 현장 유형별 적용의 67. 기타 현장: Ortega 외(Frontiers in Robotics and AI, 2024)는 실측 점유 격자로 모델링한 대학 건물 1층을 대상으로 동적 요소와 수용 기준(위치 추정 오차·충돌 회피)을 명시한 실행 가능한 이동로봇 시뮬레이션 시험 시나리오를 구성했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1134"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "36 페이지 5절 검증된 [사실] 재인용. 현장 기록 재생은 다루지 않음.",
+      "as_of": "2024-08-02",
+      "site_type": "기타",
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-833",
+      "org": "Gao, Y., Miao, W., Piccinini, M., Wang, H., Song, Q., & Betz, J.",
+      "title": "Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving",
+      "published": "2026-07-15",
+      "url": "https://arxiv.org/abs/2607.14387",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 챗봇 대화와 검색 증강으로 자율주행 시나리오 DSL 스크립트를 생성하고 컴파일 성공률을 보고한 프리프린트(C. 채팅 기반 구성·운영 자료 목록의 기존 id 재사용).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-832",
+      "org": "Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P.",
+      "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+      "published": "2026-08-22",
+      "url": "https://arxiv.org/abs/2608.23622",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 언어 모델 에이전트가 시뮬레이션 비교 실험을 설계·실행·해석하는 틀을 제약 공정 설계에 적용(ETFA 2026 채택).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1088",
+      "org": "ASAM e.V.",
+      "title": "ASAM OpenSCENARIO® XML",
+      "published": null,
+      "url": "https://www.asam.net/standards/detail/openscenario-xml/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 도로 교통 시나리오의 동적 내용을 기술하는 표준 소개 페이지.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-528",
+      "org": "NIST (usnistgov/ARIAC_docs)",
+      "title": "ARIAC 2025 Documentation — Challenges",
+      "published": null,
+      "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ARIAC 의 장애(컨베이어·전압 시험기·그리퍼)와 긴급 주문을 매개변수로 선언하는 과제 문서.",
+      "source_unopened": false,
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1127",
+      "org": "Kadian, A., Truong, J., Gokaslan, A., Clegg, A., Wijmans, E., Lee, S., Savva, M., Chernova, S., & Batra, D. (arXiv / IEEE RA-L)",
+      "title": "Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?",
+      "published": "2020-08",
+      "url": "https://arxiv.org/abs/1912.06321",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 시뮬레이션–현실 상관 계수(SRCC)를 제안하고 시뮬레이터 매개변수 조정으로 예측력을 높인 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-416",
+      "org": "Rana, K., Haviland, J., Garg, S., Abou-Chakra, J., Reid, I., & Suenderhauf, N. (CoRL 2023, arXiv)",
+      "title": "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning",
+      "published": "2023-07-12",
+      "url": "https://arxiv.org/abs/2307.06135",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "3차원 장면 그래프로 언어 모델 계획을 근거 짓고, 실행 전 장면 그래프 시뮬레이터 피드백으로 계획을 반복 수정하는 방법(CoRL 2023 구두 발표). 초록 기준.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2307.06135",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-406",
+      "org": "Open Robotics",
+      "title": "Simulation - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 시뮬레이션의 동기, slotcar·문·승강기·Teleport 플러그인, building_map_generator, crowdsim 을 설명하는 장.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/simulation.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-079",
+      "org": "Open Robotics",
+      "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 건물 파일에 차선·문·승강기·충전기를 주석하는 traffic-editor 설명.",
+      "source_unopened": false,
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1092",
+      "org": "Open Source Robotics Foundation",
+      "title": "SDFormat (Simulation Description Format)",
+      "published": null,
+      "url": "http://sdformat.org/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇·환경을 시뮬레이터용으로 기술하는 XML 형식.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1251",
+      "org": "IDTA (Industrial Digital Twin Association, admin-shell-io/submodel-templates)",
+      "title": "Provision of Simulation Models (IDTA 02005) 1.0 — README",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision%20of%20Simulation%20Models",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "자산관리셸로 자산의 시뮬레이션 모델 파일을 모델 유형·사용법·적용 분야와 함께 제공하게 하는 IDTA 공식 서브모델 템플릿의 저장소 README(명세 본문 아님).",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Provision%20of%20Simulation%20Models/1/0/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1133",
+      "org": "NASA",
+      "title": "NASA-STD-7009B Standard for Models and Simulations",
+      "published": "2024-03-05",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 모델·시뮬레이션 결과를 의사결정에 쓸 때의 수용과 신뢰도 평가를 다루는 표준.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-815",
+      "org": "Yang, Y., Sun, F.-Y., Weihs, L. 외 (Allen Institute for AI 등)",
+      "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "published": "2023-12-14",
+      "url": "https://arxiv.org/abs/2312.09067",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 언어 지시로 3D 체화 AI 환경을 생성하는 방법(CVPR 2024).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1089",
+      "org": "Shcherbyna, V. 외 (arXiv)",
+      "title": "Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.12471",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 생성 모델 기반 환경 생성을 포함한 ROS 2 사람 중심 주행 벤치마크 플랫폼.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-291",
+      "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
+      "title": "Digital Twin in manufacturing: A categorical literature review and classification",
+      "published": "2018",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896318316021",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 데이터 흐름 자동화 정도로 디지털 모델·디지털 섀도·디지털 트윈을 구분한 제조 분야 문헌 검토.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1128",
+      "org": "Gulino, C., Fu, J., Luo, W. 외 (Waymo, arXiv)",
+      "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
+      "published": "2023-10-12",
+      "url": "https://arxiv.org/abs/2310.08710",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 실제 주행 기록으로 다중 에이전트 시뮬레이션을 초기화·재생하는 데이터 기반 시뮬레이터.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-104",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_demos — Demonstrations of Open-RMF (README)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 예제 월드(호텔·사무실·공항 터미널·클리닉·캠퍼스·제조·물류)와 작업 명령, rmf-web 대시보드 연결, crowdsim, 화재 경보 동작을 설명.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_demos/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1087",
+      "org": "NIST (usnistgov/ARIAC_docs)",
+      "title": "ARIAC Documentation — Scenario",
+      "published": null,
+      "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/scenario.html",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "ARIAC 배터리 생산 시설 시나리오의 셀·결함·키트·모듈·설비와 키트·모듈 제출 검사를 설명.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/scenario.rst",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-516",
+      "org": "한국표준협회 KSSN(국가표준인증종합정보센터)",
+      "title": "KS X ISO 23247-1 자동화 시스템 및 통합 — 제조를 위한 디지털 트윈 프레임워크 — 제1부: 개요 및 일반 원리",
+      "published": null,
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010140724",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 제조용 디지털 트윈 프레임워크 ISO 23247 제1부의 국내 KS 부합 표준.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-518",
+      "org": "ISO",
+      "title": "ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition",
+      "published": "2026",
+      "url": "https://www.iso.org/standard/87426.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 디지털 트윈 결합을 다루는 ISO 23247 제6부.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-521",
+      "org": "Le, T. V., & Fan, R.",
+      "title": "Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges",
+      "published": "2024",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360835223007921",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 물류·공급망 디지털 트윈 문헌 검토와 개념 틀, 실데이터 검증 연구가 소수임을 보고.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-943",
+      "org": "Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03-31",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 병원 약품 배송 로봇 실제 기록과 몬테카를로 재현으로 승강기 가동률과 배송 실패의 관계를 분석.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-103",
+      "org": "PMC 게재 논문(저자 미확인)",
+      "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+      "published": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다층 호텔 배송 로봇 경로 계획에서 승강기를 대기·운행 시간으로 모델링한 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-409",
+      "org": "한국 학술지 게재 논문(지적과 국토정보 53(1), 83-105, 저자 미확인)",
+      "title": "아파트 단지의 로봇 친화형 환경 인증 모델 개발 (지적과 국토정보 53(1), 83-105)",
+      "published": "2023",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002978381",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 친화형 건축물 인증을 아파트 단지로 확장한 4개 분야 28개 항목 인증 모델.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1247",
+      "org": "파이낸스스코프 (윤영훈)",
+      "title": "클로봇, 국책사업으로 피지컬AI 기술 표준 이끈다...산자부 주관사 선정",
+      "published": "2025-07-11",
+      "url": "https://www.finance-scope.com/article/view/scp202507110007",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "클로봇이 산업통상자원부 국가로봇테스트필드 기술개발 과제(54억원) 주관기관으로 KETI 와 디지털 트윈 연동 증강 실험 기술을 2028년까지 개발한다는 보도.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.finance-scope.com/article/view/scp202507110007",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-407",
+      "org": "gpue (GitHub)",
+      "title": "vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS)",
+      "published": null,
+      "url": "https://github.com/gpue/vda5050-sim",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "VDA 5050 3.0.0 로봇 플릿 시뮬레이터 README: 구형 판 흉내, 로봇별 고장 프로필, 공식 JSON 스키마 대조 시험(개인 프로젝트의 자기 기술).",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/gpue/vda5050-sim/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-102",
+      "org": "Springer(FAIM 2025 발표 논문, 저자 미확인)",
+      "title": "Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics",
+      "published": "2025",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 유통사 물류센터 데이터로 AMR 플릿 규모와 충전기 수를 시뮬레이션으로 산정한 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-098",
+      "org": "Zou, B., Gong, Y., de Koster, R., & Xu, X.",
+      "title": "Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system",
+      "published": "2018",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RMFS 의 충전·배터리 교환 전략 비교 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-109",
+      "org": "Stark, H.-G. 외",
+      "title": "A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse",
+      "published": "2024-06",
+      "url": "https://arxiv.org/abs/2406.17003",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 창고 충전소 배치 최적화 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Open-RMF 플릿 어댑터 템플릿 설정: recharge_threshold·recharge_soc·task_capabilities 등.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/fleet_adapter_template/main/fleet_adapter_template/config.yaml",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-381",
+      "org": "Boysen, N., Briskorn, D., & Emde, S.",
+      "title": "Parts-to-picker based order processing in a rack-moving mobile robots environment",
+      "published": "2017",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221717302758",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 랙 이동 로봇 작업대의 주문·랙 순서를 함께 최적화해 필요 로봇 대수를 줄인 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-101",
+      "org": "Merschformann, M. (RAWSim-O GitHub)",
+      "title": "RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)",
+      "published": null,
+      "url": "https://github.com/merschformann/RAWSim-O",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RMFS 결정 문제 연구용 이산 사건 시뮬레이션 프레임워크.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-398",
+      "org": "Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.",
+      "title": "Decision rules for robotic mobile fulfillment systems",
+      "published": "2019",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214716019300946",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RMFS 결정 규칙을 시뮬레이션으로 비교한 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-267",
+      "org": "IEEE 게재 논문 저자(미확인)",
+      "title": "Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))",
+      "published": "2024",
+      "url": "https://ieeexplore.ieee.org/document/10287275/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다중 AGV 경로망을 시뮬레이션으로 자동 설계하는 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1091",
+      "org": "Moving AI Lab (Sturtevant 외)",
+      "title": "MAPF Benchmarks",
+      "published": null,
+      "url": "https://movingai.com/benchmarks/mapf/index.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다중 에이전트 경로 찾기 벤치마크 지도와 지도별 시나리오 파일.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-116",
+      "org": "Filippone, G., Pettinari, S., & Pelliccione, P.",
+      "title": "Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis",
+      "published": "2026-03",
+      "url": "https://arxiv.org/abs/2603.15427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 미션 명세·실행 형식 비교 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1090",
+      "org": "BehaviorTree.CPP 프로젝트 (behaviortree.dev)",
+      "title": "Groot2",
+      "published": null,
+      "url": "https://www.behaviortree.dev/groot/",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 행동 트리 편집·모니터링 도구 소개.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1129",
+      "org": "Drudi, A., Pichierri, L., Testa, A., & Notarstefano, G. (arXiv)",
+      "title": "VirTooS: A ROS 2 - Unity Virtualization Toolkit for Fleet Management of Autonomous Mobile Robots",
+      "published": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26066",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 실제·가상 로봇과 센서를 섞은 혼합 현실 플릿 관리 시험 도구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1243",
+      "org": "Garg, V., Maywald, J. D., & Naman, M. (International Journal of Retail & Distribution Management 53(10-11))",
+      "title": "Optimising human-robot collaboration for efficiency in retail warehousing",
+      "published": "2025-10-14",
+      "url": "https://www.emerald.com/ijrdm/article/53/10-11/1123/1303314/Optimising-human-robot-collaboration-for",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "AMR 와 피킹 작업자 수를 바꾼 창고 구성 48가지 이산 사건 시뮬레이션으로 AMR:작업자 약 2:1 에서 효율이 가장 높다고 보고(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.emerald.com/ijrdm/article/53/10-11/1123/1303314/Optimising-human-robot-collaboration-for",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-822",
+      "org": "Howard, T. L. (California Polytechnic State University, San Luis Obispo, 석사논문)",
+      "title": "A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities",
+      "published": "2026-06",
+      "url": "https://digitalcommons.calpoly.edu/theses/3387",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "RaaS 과금 아래 협업형 AMR 대수 산정을 라인당 비용 최소화로 바꾸고 DES 27,000회·대기행렬 모델·XGBoost 대리 모델로 분석한 석사논문(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://digitalcommons.calpoly.edu/theses/3387",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-831",
+      "org": "ROS 2 (ros2/rosbag2 GitHub)",
+      "title": "rosbag2 — README (Recording and playback of ROS 2 communications)",
+      "published": null,
+      "url": "https://github.com/ros2/rosbag2",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "ROS 2 통신 기록·재생 도구 README: 기본 MCAP 저장, 재생 속도·/clock·토픽 선택·여러 백 파일 시각순 재생.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ros2/rosbag2/rolling/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-106",
+      "org": "한국교통연구원(인증스마트물류센터)",
+      "title": "인증스마트물류센터",
+      "published": null,
+      "url": "https://cslc.koti.re.kr/",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 국내 스마트물류센터 인증 제도 안내 사이트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1096",
+      "org": "MCAP 프로젝트 (Foxglove)",
+      "title": "MCAP Format Specification",
+      "published": null,
+      "url": "https://mcap.dev/spec",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "시각이 찍힌 발행·구독 메시지를 담는 MCAP 컨테이너 형식 명세: 기록·발행 시각, 메시지·청크 색인, 채널별 인코딩.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://mcap.dev/spec",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-741",
+      "org": "Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington)",
+      "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best Practices",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.20808",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 시뮬레이션–현실 격차의 원인과 대응을 정리한 서베이.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1245",
+      "org": "Smit, I. G., Bukhsh, Z., Pechenizkiy, M., Alogariastos, K., Hendriks, K., & Zhang, Y. (arXiv)",
+      "title": "Learning Efficient and Fair Policies for Uncertainty-Aware Collaborative Human-Robot Order Picking",
+      "published": "2024-04-09",
+      "url": "https://arxiv.org/abs/2404.08006",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "작업자–AMR 배정을 다목적 심층 강화학습으로 정하고 이산 사건 시뮬레이션으로 학습·평가한 프리프린트(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2404.08006",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-241",
+      "org": "Sommer, M., Stjepandić, J., Stobrawa, S., & von Soden, M.",
+      "title": "Automated generation of digital twin for a built environment using scan and object detection as input for production planning",
+      "published": "2023",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2452414X23000353",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 스캔과 객체 인식으로 생산 계획용 건물 환경 디지털 트윈을 자동 생성하는 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1241",
+      "org": "Huck, T. P., Ledermann, C., & Kröger, T. (arXiv; SPCE 2020)",
+      "title": "Simulation-based Testing for Early Safety-Validation of Robot Systems",
+      "published": "2020-11-20",
+      "url": "https://arxiv.org/abs/2011.10294",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "사람 모델과 최적화로 시뮬레이션 안에서 고위험 사람 행동을 생성해 초기 설계 단계 로봇 셀의 위험을 찾는 방법(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2011.10294",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1086",
+      "org": "Vin, E., Kashiwa, S., Rhea, M., Fremont, D. J., Kim, E., Dreossi, T., Ghosh, S., Yue, X., Sangiovanni-Vincentelli, A. L., & Seshia, S. A. (CAV 2023, arXiv)",
+      "title": "3D Environment Modeling for Falsification and Beyond with Scenic 3.0",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.03325",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 확률적 시나리오 언어 Scenic 3.0 의 3D 환경 모델링과 반증 기반 시험.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1249",
+      "org": "Wind River (Engblom, J. 인터뷰, Buchwieser, A.)",
+      "title": "Using Simics and Simulation in IEC61508 Safety-Critical Systems – an Interview with Andreas Buchwieser",
+      "published": "2014-11-20",
+      "url": "https://www.windriver.com/blog/using-simics-and-simulation-in-iec61508-safety-critical-systems-an-interview-with-andreas-buchwieser",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "IEC 61508-7 C.5.19 의 시뮬레이션 정의를 인용하고 기능안전 표준이 시뮬레이션·장애 주입을 권고한다고 해석한 업체 블로그 인터뷰.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.windriver.com/blog/using-simics-and-simulation-in-iec61508-safety-critical-systems-an-interview-with-andreas-buchwieser",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1242",
+      "org": "Carr, C., Wang, S., Wang, P., & Han, L. (arXiv)",
+      "title": "Attacking Digital Twins of Robotic Systems to Compromise Security and Safety",
+      "published": "2022-11-17",
+      "url": "https://arxiv.org/abs/2211.09507",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "ROS 구동 로봇의 디지털 트윈에 대한 중간자 공격이 물리 로봇 실패로 이어질 수 있음을 보인 프리프린트(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2211.09507",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1246",
+      "org": "Autoware Foundation (autowarefoundation GitHub)",
+      "title": "autoware_rosbag2_anonymizer — README",
+      "published": null,
+      "url": "https://github.com/autowarefoundation/autoware_rosbag2_anonymizer",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "ROS 2 백 파일 이미지의 얼굴·번호판 등을 탐지·분할 모델로 찾아 블러 처리하는 익명화 도구 README.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/autowarefoundation/autoware_rosbag2_anonymizer/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1126",
+      "org": "VDI/VDE (VDI/VDE-Gesellschaft Mess- und Automatisierungstechnik)",
+      "title": "VDI/VDE 3693 Blatt 1 - Virtual commissioning - Model types, terms, and definitions",
+      "published": "2025-05",
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdivde-3693-blatt-1-virtual-commissioning-model-types-terms-and-definitions",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 가상 시운전의 모델 유형·용어·정의 지침.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1130",
+      "org": "Rosenberger, J., Selig, A., Ristic, M., Bühren, M., & Schramm, D. (Sensors 23(7):3545)",
+      "title": "Virtual Commissioning of Distributed Systems in the Industrial Internet of Things",
+      "published": "2023-03-28",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10099255/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 실제 제어기와 가상화 인스턴스를 섞은 분산 시스템 가상 시운전 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1250",
+      "org": "Open Robotics (gazebosim/gz-fuel-tools GitHub)",
+      "title": "Gazebo Fuel Tools — README",
+      "published": null,
+      "url": "https://github.com/gazebosim/gz-fuel-tools",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "Gazebo Fuel 서버의 모델·월드를 목록·다운로드·업로드하는 클라이언트 라이브러리와 gz fuel 명령 README, 원격 모델 새 버전 감지를 로드맵 과제로 적음.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/gazebosim/gz-fuel-tools/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1231",
+      "org": "Open Robotics (Gazebo Classic)",
+      "title": "Gazebo : Tutorial : Model structure and requirements",
+      "published": null,
+      "url": "https://classic.gazebosim.org/tutorials?tut=model_structure",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Gazebo 클래식 모델 데이터베이스의 폴더 구조·database.config·model.config 요구사항.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1248",
+      "org": "Kassem, K., & Michahelles, F. (Mensch und Computer 2022 Workshop Proceedings, Gesellschaft für Informatik)",
+      "title": "Exploring Human-robot Interaction by Simulating Robots",
+      "published": "2022-09",
+      "url": "https://dl.gi.de/items/1f2227be-b32d-467c-bf94-77d37e5194ce/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "VR·AR 환경에서 로봇을 가상으로 흉내 내 사람–로봇 상호작용 사용자 연구를 하는 방법을 다룬 워크숍 논문(초록 기준).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://dl.gi.de/items/1f2227be-b32d-467c-bf94-77d37e5194ce/full",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1244",
+      "org": "Stączek, P., Pizoń, J., Danilczuk, W., & Gola, A. (Sensors 21(23):7830)",
+      "title": "A Digital Twin Approach for the Improvement of an Autonomous Mobile Robots (AMR's) Operating Environment—A Case Study",
+      "published": "2021-11-25",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8659435/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "생산 홀 AMR 운영 환경을 Gazebo·ROS 디지털 트윈으로 시험해 통로 배치 변경안을 평가한 사례 연구.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8659435/",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1131",
+      "org": "최성욱, 박상철, 왕지남 (아주대학교, 대한산업공학회 추계학술대회)",
+      "title": "자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스",
+      "published": "2008-11",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01943794",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 실제 PLC 와 3D 가상 공정 시뮬레이터를 잇는 가상 플랜트 구축 절차.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1252",
+      "org": "파이낸스스코프",
+      "title": "아바코, AMR 스마트 물류 시스템 개발·실증 완료… 피지컬 AI 사업 가속",
+      "published": "2026-08-14",
+      "url": "https://www.finance-scope.com/article/view/scp202608140009",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "아바코가 이차전지 분야 산업 AI 실증 과제에서 디지털 트윈으로 물류 동선·장비 운용을 사전 검증하고 성과 수치를 발표했다는 보도(회사 발표 수치).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.finance-scope.com/article/view/scp202608140009",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-526",
+      "org": "CJ대한통운",
+      "title": "가상세계 쌍둥이 창고로 물류 예측... CJ대한통운, 디지털 트윈 구축 (보도자료)",
+      "published": "2021-11",
+      "url": "https://www.cjlogistics.com/ko/newsroom/news/NR_00000905",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 가상 물류센터를 단계적으로 구축해 2023년 디지털 트윈을 완성하겠다는 계획 보도자료.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-971",
+      "org": "Li, C., Zhang, R., Wong, J. 외 (arXiv; CoRL 2022 예비판)",
+      "title": "BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation",
+      "published": "2024-03-14",
+      "url": "https://arxiv.org/abs/2403.09227",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 일상 활동 1,000개를 BDDL 로 명세하고 OmniGibson 에 구현한 벤치마크.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1134",
+      "org": "Ortega, A., Parra, S., Schneider, S., & Hochgeschwender, N. (Frontiers in Robotics and AI)",
+      "title": "Composable and executable scenarios for simulation-based testing of mobile robots",
+      "published": "2024-08-02",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1363281/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 도면 DSL·동적 요소·수용 기준을 담은 이동로봇 시뮬레이션 시험 시나리오 구성.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1165",
+      "org": "Rockwell Automation",
+      "title": "Emulation Technology Speeds Up Warehouse Automation",
+      "published": "2024-08-28",
+      "url": "https://www.rockwellautomation.com/en-ca/company/news/case-studies/warehouse-design-digital.html",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 물류센터 구축에서 에뮬레이션으로 제어를 사전 검증한 업체 사례 소개.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-527",
+      "org": "NVIDIA",
+      "title": "NVIDIA Unveils 'Mega' Omniverse Blueprint for Building Industrial Robot Fleet Digital Twins",
+      "published": "2025-01-06",
+      "url": "https://blogs.nvidia.com/blog/mega-omniverse-blueprint",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "산업용 로봇 플릿 디지털 트윈 블루프린트 발표 블로그(2025-01-06). 참고문헌 목록의 발행일 '미확인'을 원문으로 확인해 고쳤다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://blogs.nvidia.com/blog/mega-omniverse-blueprint",
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/design-and-simulation/index.md",
+      "sections": [
+        "5. 다른 대분류와의 연결"
+      ],
+      "rationale": "대분류 연결(category_link): '다른 대분류와의 연결' 절만 patches 로 채운다. 대분류별 finding — A. 기획·사업: f1(3, 35), f2(3, 36, 벤더 주장), f3(1, 34, 벤더 주장) / B. 로봇 온톨로지: f4·f5(4), f6(7, oq-156) / C. 채팅 기반 구성·운영: f7·f8(9·13 ↔ 33), f9·f10(11 ↔ 34·36), f11·f12(12 ↔ 36), f13(8 ↔ 34) — 분류 원문 C 주석(시나리오 구성과 실제 상황 재현은 33·36번)과 짝 / D. 공간·지도 모델: f14, f15 / E. 사물·사람·실시간 상태: f16(18 ↔ 34, 현재 상태 표현 대 가정한 미래 실험 구분), f17·f18(19), f19·f20(17) / F. 연동: f21·f25·f26·f27(22), f22·f28·f29(20), f23(21, oq-085), f24(23, 연계 대상) / G. 계획·최적화: f30~f34(28·25), f35(26), f36·f42·f43(25), f37~f40(27), f41(24) / H. 실행·협업·예외 복구: f44·f45(32·29), f46·f47(30), f48·f49(31) / J. 현장 운영·관제: f50·f51(37·38, oq-131), f52(39) / K. 플랫폼 아키텍처·인프라: f53·f54(41), f55(42), f56(43) / L. AI·학습 기술: f57·f15(44), f58(45), f59·f60(46), f61(47) — 교차 규칙에 따라 적용 대상 33·34·35·36 링크와 함께 / M. 안전: f62·f63(48), f18(49), f64(50, 연계 대상) / N. 보안·개인정보: f65·f66(51·52), f67·f68(53) / O. 검증·도입·수명주기: f69~f72(54·55), f73(57), f28(54) / P. 거버넌스·법규·사회: f76(58), f74(59, oq-292), f75·f49(60) / Q. 현장 유형별 적용: f80·f30·f48·f59(61 물류창고), f77·f78·f79·f19·f44(62 제조 공장), f25·f43(63 병원·의료), f26·f81·f18(64 상업 시설), f27·f82(65 가정·공동주택), f83(66 실외), f84(67 기타 현장). 벤더 주장 f2·f3·f79·f80 은 [추정]과 '벤더 주장' 병기. 연계 대상 f24·f64 와 승강기·문·PLC·센서 시뮬레이션 문장은 '연계 대상'으로 짧게. 보류 실행 1차 검증 수정 지시 반영: ref-833·ref-832 재사용, f33/f34·f37/f38·f39/f40 사실·추정 분리, f71 표현, ref-527 발행일 2025-01-06, ref-943 단독 인용. 아직 다루지 않은 연결: 2. 사용 사례·요구·책임 범위, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 10. 채팅으로 로봇 구성(oq-129 관련 근거만 있음), 40. 운영 절차·요청 창구, 56. 운영 이관·확대·교육. 다음 실행 후보: 34·35 페이지(이전 분류 기준) 10절에 f9·f57·f59·f60·f62·f65·f74·f77 반영."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "슬롯카 모델",
+      "term_en": "Slotcar (Open-RMF simulated robot plugin)",
+      "definition": "Open-RMF 시뮬레이션에서 플릿 어댑터의 경로·모드 요청을 받아 경유점 사이를 레일식 직선으로 움직이고 장애물이 있으면 멈추는 단순화 로봇 모델로, 로봇마다 주행 스택을 돌리지 않고 플릿 조율·설비 상호작용을 시험하게 한다."
+    },
+    {
+      "term_ko": "대리 모델",
+      "term_en": "Surrogate Model",
+      "definition": "시뮬레이션처럼 계산 비용이 큰 모델의 입력–출력 관계를 학습한 근사 모델로, 추가 시뮬레이션 없이 설계 공간의 성능·비용을 빠르게 예측하는 데 쓴다."
+    },
+    {
+      "term_ko": "동기화 손실",
+      "term_en": "Synchronization Loss",
+      "definition": "사람 작업자와 로봇이 함께 일하는 공정에서 한쪽이 다른 쪽을 기다리며 생기는 유휴 시간과 그 비용을 가리킨다."
+    }
+  ],
+  "open_questions_new": [
+    "대화로 생성한 로봇 시나리오가 형식상 실행 가능한지와 사용자 의도에 맞는지를 승인 전에 각각 어떤 검사로 확인하는가? | 관련 영역: 9. 채팅으로 시나리오 구성, 33. 시나리오 모델·편집, 13. 대화형 기능의 신뢰·기반 | 근거: f8 | 종류: 일반",
+    "대화로 만든 다중 로봇 작업 계획을 사람이 승인하기 전에 시뮬레이션으로 실행 가능성을 미리 확인하는 절차를 플릿 오케스트레이션에 적용한 공개 사례가 있는가? | 관련 영역: 12. 채팅으로 업무 지시·오케스트레이션, 36. 가상 시운전·실제 상황 재현, 44. 로봇 기반 모델·언어 모델 계획 | 근거: f12 | 종류: 일반",
+    "실시간 상태를 가상 모델에 반영하고 시뮬레이션 결과를 실제 계획·설정에 되돌리는 디지털 트윈 동기화 경로에 대해 로봇 플릿 플랫폼이 적용한 접근통제·무결성 확인 사례가 있는가? | 관련 영역: 36. 가상 시운전·실제 상황 재현, 52. 통신 보호·위협 관리·감사, 51. 인증·권한·격리 | 근거: f66 | 종류: 일반",
+    "사람 행동 모델로 고위험 상황을 생성하는 시뮬레이션 위험 식별 방법을 다중 이동로봇 플릿과 보행자가 많은 병원·상업 시설 공간에 적용한 사례가 있는가? | 관련 영역: 48. 안전·위험 관리, 34. 시뮬레이션·예측용 디지털 트윈, 19. 사람·보행자 모델 | 근거: f62 | 종류: 일반",
+    "운영 기록으로 상황을 재현하기 전에 영상 기록을 익명화하면 재현 충실도가 얼마나 떨어지며, 국내 개인정보 처리 기준에서 재현용 기록을 어떻게 보관·공유해야 하는가? | 관련 영역: 53. 개인정보·영상 데이터, 36. 가상 시운전·실제 상황 재현 | 근거: f68 | 종류: 일반",
+    "이동로봇 안전 표준(ISO 3691-4 등)이나 국내 인증 기관이 시뮬레이션·가상 시운전 결과를 안전 확인 근거로 인정하는 조건과 절차가 있는가? | 관련 영역: 50. 안전 표준·인증·사고 조사, 36. 가상 시운전·실제 상황 재현, 54. 시험·형식 검증·벤치마크 | 근거: f64 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 63,
+    "cross_checked_count": 0,
+    "unverified": [
+      "f2·f3·f79·f80 벤더 주장 수치·기능은 독립 출처로 확인하지 못함",
+      "f28 클로봇·KETI 과제는 기사 1건 기준이며 과제 공고·성과 미확인",
+      "f64 IEC 61508-7 C.5.19 문구는 업체 블로그 인용이며 표준 원문 미열람, ISO 3691-4 의 시뮬레이션 관련 조항은 확인하지 못함",
+      "f48 Garg 외는 초록만 확인(WSC 2021 PDF 는 본문 추출 실패)",
+      "f1·f49·f60 Howard 수치는 석사논문 초록의 저자 보고값이며 독립 재현 미확인",
+      "f73 gz fuel download 의 -v 옵션이 모델 판 선택인지 출력 상세도인지 확인하지 못해 claim 에서 뺌",
+      "IDTA 02005 1.0 발행일은 검색 결과상 2022-12 로 보이나 열람한 README 에 없어 published 를 null 로 둠",
+      "Valiollahi 외(Scientific Reports 2026, ref-838) 원문은 이번에도 검색에서 찾지 못해 쓰지 않음",
+      "운영자 교육용 다중 로봇 플릿 시뮬레이터(56. 운영 이관·확대·교육 연결) 근거 미확보",
+      "oq-009 는 f49·f48 이 작업자 수와 AMR 비율을 함께 다룬 부분 근거만 제공(교대조 단위 아님), 해결 제안하지 않음",
+      "oq-129 는 f1(비용 최소화 목적)이 부분 근거, 목적 결정 주체는 미확인"
+    ],
+    "scope_violations": [
+      "f24: 수요예측은 원문 19장 상위 업무 시스템 경계의 외부 영역 — claim 을 '연계 대상: '으로 시작",
+      "f64: 안전 인증·기능안전 판정은 안전 인증 기관·제조사 몫 — '연계 대상: '으로 시작",
+      "f21·f25·f26·f27: 승강기·문 제어 자체는 시설·설비 제어 경계의 연계 대상, ROP 는 요청·상태 확인과 제약 입력만",
+      "f2·f70·f78: PLC·컨베이어 제어 코드 가상 시운전은 설비 업체·통합자 몫(연계 대상), ROP 가상 시운전의 방법 근거로만 사용",
+      "f3·f22·f47·f61: 로봇 자체 주행·인식·파지 거동, 센서 시뮬레이션, 현실 격차 보정은 로봇 제조사·시뮬레이터 제공자 쪽 연계 대상",
+      "f62·f63: 안전 인증·설비 안전 제어는 연계 대상, 시나리오가 위험 식별 입력이 될 수 있다는 범위로만 서술",
+      "f67: 익명화 도구는 자율주행 생태계 도구로 ROP 직접 범위 아님, 재현용 기록 처리 경계의 참고로만"
+    ],
+    "budget_used": {
+      "queries": 11,
+      "sources": 14
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 대분류 연결(category_link) 실행. 같은 대상의 실행 2026-10-09-04 는 1차 검증 조건부 승인 뒤 형식 검증 실패로 보류되었으므로, 그 브리프의 finding 을 이번 브리프의 새 finding 으로 다시 적고(evidence_excerpt 끝 '(재인용: 2026-10-09-04)') 1차 검증 수정 지시를 이행했다: Chat2Scenic·Xia 논문은 새 id 대신 기존 ref-833·ref-832 를 재사용, 옛 f15·f18·f19 를 사실·추정으로 분리(f33/f34, f37/f38, f39/f40), SRCC 표현을 'CVPR 2019 챌린지에서 쓰인 Habitat 설정'으로 정정(f71), ref-527 발행일을 원문 열람으로 2025-01-06 확인, 옛 f14 를 출처별로 분리(f30·f31·f32), Lee 외 병원 논문은 ref-943 하나로만 인용, '실행 불가'를 '컴파일 실패'로(f8). 보류 실행이 새로 매겼던 ref-1331(Huck)·ref-1332(Carr)는 게시되지 않아 이번 예약 구간의 ref-1241·ref-1242 로 다시 부여했다(같은 URL 이 이미 등록돼 있으면 퍼블리셔 병합). 검색 11회/30, 신규 출처 14건/15(ref-1241~ref-1252, 예약 구간 안), 재사용 49건. 원문 열람: 신규 14건 모두 열었고(arXiv·학회 초록, 기사, github_raw README), 재사용 가운데 ref-104·ref-105·ref-406·ref-407·ref-831·ref-1087(github_raw), ref-1096·ref-527(webfetch)을 다시 열었다. 나머지 재사용 41건은 열지 않아 fetched false·source_unopened true 이고 그 출처에 기댄 finding 에도 표시했다. 입력 참고문헌 요약에 신뢰도 열이 없어 재사용 출처 reliability 는 researcher.md 5절 유형 기준으로 적었다. 교차 확인 0건(연결 주장이 대부분 단일 출처이거나 서로 다른 내용의 출처 조합). 벤더 주장 4건(f2·f3·f79·f80). 보류 실행의 '아직 다루지 않은 연결' 가운데 29·30·31·41·43·45·46·50·53·57·58·60·12·8·17·66·67 연결을 새로 채웠고, 2. 사용 사례·요구·책임 범위, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 10. 채팅으로 로봇 구성, 40. 운영 절차·요청 창구, 56. 운영 이관·확대·교육은 근거를 찾지 못해 남긴다. 분류 원문 핵심 질문에는 별도 답 finding 을 내지 않고 연결 근거로 f69(배치 전 시뮬레이션 이점)·f71(예측력 한계)·f24(실데이터 검증 부족)·f77(현장 시험 전 배치 변경 검증)을 제시했다. 18. 실시간 세계 상태·데이터 일관성(현재 상태 표현)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)은 f16·f38 에서 구분했고, 디지털 트윈 동기화 보안(f66)은 36. 가상 시운전·실제 상황 재현의 경로로만 서술했다. L. AI·학습 기술 연결(f15·f57~f61)은 적용 대상인 33·34·35·36 과 함께 제안했다. 한국 자료: 신규 ref-1247·ref-1252(기사), 재사용 ref-1131·ref-409·ref-106·ref-516·ref-526. 현장 유형: 물류창고·제조 공장·병원·상업 시설·가정·실외·기타 각 1건 이상. 정정 요청 없음. 우선 지정 질문 없음. 입력 누락 없음. 해결 제안한 열린 질문 없음."
+  }
+}

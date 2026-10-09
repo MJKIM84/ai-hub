@@ -1,0 +1,702 @@
+{
+  "duration_api_ms": 174734,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.2593883999999997,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 214633,
+    "cache_read_input_tokens": 71882,
+    "output_tokens": 26397,
+    "output_tokens_details": {
+      "thinking_tokens": 2067
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 214633,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 26397,
+        "cache_read_input_tokens": 71882,
+        "cache_creation_input_tokens": 214633,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 214633
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 26397,
+      "cacheReadInputTokens": 71882,
+      "cacheCreationInputTokens": 214633,
+      "webSearchRequests": 0,
+      "costUSD": 2.2593883999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2067,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-16\",\"outline\":[{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":1500,\"summary\":\"이종 로봇의 보고 어휘·심각도·시각 형식이 표준마다 달라 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-313][^ref-111] 통신 단절 신호와 사람 개입·대기 표시도 원인 구분의 재료가 될 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-111]\",\"planned_findings\":[\"f9\",\"f13\",\"f14\",\"f15\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":3200,\"summary\":\"물류창고 가상 사례(2026-10-09 원문 재확인)에 병원·상업 시설·실외·기타 현장 사례를 더했다. 병원 의약품 배송 로봇은 승강기 가동률이 높은 구간에 실패가 몰렸다. [추정][^ref-943]\",\"planned_findings\":[\"f7\",\"f8\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":1800,\"summary\":\"VDA 5050 state·connection 스키마, MassRobotics 상태 보고, Open-RMF 작업 상태·경보, OpenTelemetry 가 원인 분석에 쓰는 필드를 2026-10-09 원문으로 정리했고, 2026-09-25 목록으로 가는 링크를 유지했다. [사실][^ref-051][^ref-449][^ref-230][^ref-111][^ref-448][^ref-447]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f11\",\"f12\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"budget_chars\":1300,\"summary\":\"ROS 2 diagnostics 같은 로봇 내부 진단과 문·승강기 제어, 실외 인증 판단은 연계 대상이고, ROP 는 표준 보고를 원인 범주로 구분하고 심각도 대응·작업 식별자 연결을 맡을 후보로 보인다. [추정][^ref-445][^ref-031][^ref-447]\",\"planned_findings\":[\"f10\",\"f9\",\"f12\",\"f16\",\"f19\"]},{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1000,\"summary\":\"2026-09-25 열린 질문 목록 링크를 유지하고, oq-033·oq-073·oq-210 에 부분 근거를 더하며 oq-074·oq-075 는 열린 채로 두고, 심각도 부여 기준과 headerId 결번 판정 기준을 새 질문으로 올렸다. [추정][^ref-031][^ref-448][^ref-230]\",\"planned_findings\":[\"f9\",\"f12\",\"f13\"]}],\"pages\":[{\"path\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"3절 둘째 문단을 현재 원문 질문에 맞추고 심각도·시각 형식·통신 신호·사람 개입 근거 보강, 5절 현장 유형별 사례(병원·상업 시설·실외·기타) 추가와 물류창고 사례 재확인, 7절 표준 필드 표 추가와 2026-09-25 목록 링크 유지, 9절 내부 진단·승강기·실외 인증 경계와 직접 범위 후보 추가, 11절 2026-09-25 목록 링크 유지·부분 근거·새 질문 2건, 13절 각주 접근일·기관 표기 갱신(2차 수정 3건 반영)\",\"patches\":[{\"section\":\"3. 왜 중요한가\",\"action\":\"replace\",\"content\":\"이종 로봇이 섞인 현장에서는 로봇 오류 수준·연결 끊김(VDA 5050), 외부 사건 대기(MassRobotics), 작업 지연·차단과 문 모드(Open-RMF)가 서로 다른 어휘로 보고되므로, 지연 원인을 가리려면 이들을 같은 시간축에 맞추고 ROP 자체 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-313][^ref-111]\\n\\n2절의 질문, 곧 지연의 원인이 로봇인지 설비인지 통신인지 앞 작업인지를 가리는 일은 복구 담당과 조치를 정하는 출발점이다. 그런데 각 표준은 자기 필드만 정의하고 서로 간 대응표는 두지 않으며, 이번 조사에서는 공통 매핑 표준을 찾지 못했다(열린 질문 oq-033). [추정][^ref-051][^ref-230][^ref-111] 심각도 표현만 보아도 VDA 5050 3.0.0 은 네 단계, Open-RMF 경보는 세 등급, MassRobotics 상태 보고는 등급 없는 문자열 목록이어서, 이종 플릿의 이상을 한 경보 체계로 모으려면 ROP 가 심각도 대응 규칙을 따로 정해야 할 것으로 보인다(oq-033·oq-073 부분 근거). [추정][^ref-031][^ref-448][^ref-230]\\n\\n같은 시간축에 맞추는 일도 간단하지 않다. 시각 표현이 VDA 5050 은 밀리초까지의 ISO 8601 문자열, MassRobotics 는 date-time 문자열, Open-RMF 작업 상태는 밀리초 유닉스 시각 정수로 서로 다르다(2026-10-09 확인). [사실][^ref-051][^ref-230][^ref-111]\\n\\n통신 원인을 따로 가리는 신호도 표준 안에 있다. VDA 5050 의 headerId 는 토픽마다 보낸 메시지마다 1씩 늘어나므로 수신 쪽에서 번호가 건너뛰면 메시지 유실을 의심할 수 있고, 연결 상태(CONNECTION_BROKEN·HIBERNATING)와 함께 보면 상태 보고가 끊긴 원인이 통신인지 로봇 쪽의 의도된 통신 감축인지 가르는 근거가 될 것으로 보이나, 결번 판정 기준은 명세에 없다. [추정][^ref-051][^ref-449]\\n\\n사람이 관여한 지연도 따로 볼 만하다. VDA 5050 운용 모드의 INTERVENED·MANUAL, MassRobotics 운용 상태의 manualOverride(수동 조작)와 waitingHumanEvent(사람 사건 대기)가 있고, Open-RMF 작업 기록이 일시정지·재개 요청과 그 요청 출처 라벨을 남기므로, 지연 원인 범주에 로봇·설비·통신·앞 작업 외에 사람 개입·대기를 따로 두는 편이 판정에 유리할 것으로 보인다. [추정][^ref-051][^ref-230][^ref-111]\\n\\n원인 구분은 처리량 관리와도 이어진다. 무인운반차(Automated Guided Vehicle, AGV) 시스템을 다룬 2003년 연구는 기존 두 방법(가동률·대기 시간 기반)에는 이동 병목 탐지와 비교해 여러 한계가 있다고 보고한다. [사실][^ref-451] 어느 설비·로봇이 흐름을 막는지 판정하는 방식에 따라 개선 대상이 달라질 수 있다는 뜻이다.\"},{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"replace\",\"content\":\"이 절은 지연·정지의 원인을 가리는 일이 현장 유형마다 어떻게 드러나는지를 사례로 보인다. 물류창고 사례는 설명용 가상 사례이고, 병원·상업 시설·실외·기타 현장 사례는 공개 연구·보도에 기댄 것이다. 사례마다 이번 근거로 채우지 못한 항목은 '미확인'으로 두었고, 제조 공장의 이상 탐지·원인 분석 사례는 이번 조사에서 찾지 못했다.\\n\\n### 물류창고\\n\\n**현장 유형:** 물류창고\\n\\n**사례:** 보충 단계 — 보충용 박스를 운반하던 AMR 이 문 앞에서 멈춰 보충이 늦어진 원인 가리기\\n\\n이 사례는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 가상 사례이며, 문 모드·문 어댑터·작업 상태·경보 서술은 2026-10-09 원문으로 다시 확인했다.\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 피킹 구역 재고가 보충 기준 아래로 내려가 보충 작업이 생성된다(가상 설정). |\\n| 작업 대상 | 예비 보관 구역에서 피킹 구역으로 옮길 보충용 박스와 이를 실은 자율이동로봇(AMR). |\\n| 수행 자원 | AMR 은 운반, 문 설비는 개폐, ROP 는 상태 수집과 원인 구분, 운영자는 경보 응답을 맡는다. 문 개폐 제어 자체는 연계 대상(시설·설비 제어)이며 ROP 는 문 상태 확인과 문 요청만 다룬다. |\\n| 제약 | 경로가 문을 지나야 한다. Open-RMF 에서 문 노드는 문 상태를 /door_states 로 발행하고 문 모드는 closed·moving·open·offline·unknown 다섯 값이다(2026-10-09 재확인). [사실][^ref-313][^ref-283] 문 어댑터는 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다. [사실][^ref-283] |\\n| 완료·인계 | 작업 상태가 completed 로 바뀌고 보충 위치 도착이 확인되면 보충 완료로 본다. 작업 상태 토큰 completed 는 Open-RMF 작업 상태 스키마에 있다. [사실][^ref-111] |\\n| 예외·성과 | 작업 상태가 delayed 또는 blocked 로 바뀌고 [사실][^ref-111], MassRobotics 운용 상태가 waitingExternalEvent 를 보고하며 [사실][^ref-230], 경보는 심각도 등급(INFO·WARNING·ERROR)·응답 목록·관련 작업 id 를 담아 운영자에게 간다(2026-10-09 재확인). [사실][^ref-448] 이 신호들을 맞춰 원인을 문·로봇·통신 중 하나로 판정하는 절차는 추정이다. [추정][^ref-313][^ref-111][^ref-230] |\\n\\n다음은 설명을 위한 가상의 시나리오이다. 보충 작업을 받은 AMR 이 문 앞에서 멈추고, ROP 에는 작업 지연과 외부 사건 대기가 함께 들어온다. 수치는 쓰지 않는다.\\n\\nROP 는 같은 시각의 문 모드를 확인한다. 문 모드가 offline 이나 unknown 이면 설비 쪽 원인일 가능성을, 문이 open 인데도 로봇이 대기 중이면 로봇 쪽 원인일 가능성을 먼저 살피는 식으로 판정 순서를 세울 수 있어 보인다. [추정][^ref-313][^ref-230] 로봇 연결이 CONNECTION_BROKEN 으로 끊겼다면 통신 원인을 따로 볼 수 있다. [추정][^ref-449]\\n\\n원인 범주가 정해지면 경보의 응답 목록으로 운영자가 조치를 고르고, 복구 방식은 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)으로 넘어간다. 현장 유형 매트릭스 전체는 [현장 유형 매트릭스](../../site-matrix.md)에 있다.\\n\\n### 병원\\n\\n**현장 유형:** 병원\\n\\n**사례:** 의약품 배송 로봇의 승강기 호출·탑승과 승강기 혼잡\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 로봇이 배송하는 의약품. [추정][^ref-943] |\\n| 수행 자원 | 의약품 배송 로봇이 승강기를 호출해 탑승한다. [추정][^ref-943] 승강기 운행 제어 자체는 연계 대상(시설·설비 제어)이다. |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 고려대학교 구로병원 연구(2026-03-31 게재)에서 승강기 가동률 59.01% 미만 구간의 성공률은 95.52%였고 실패는 승강기 가동률이 높은 구간에 몰렸다. [추정][^ref-943] |\\n\\n이 결과를 설비(승강기) 혼잡이 지연·실패의 원인으로 드러난 것으로 읽는 것은 해석이며, 전체 성공률의 분모는 미확인이다. [추정][^ref-943] 승강기 운행 제어는 연계 대상이고, ROP 몫은 승강기 상태를 원인 범주(설비)에 반영하는 데까지로 보인다. [추정][^ref-943]\\n\\n다른 병원 사례로, 한림대학교성심병원은 보도 기준 7종 73대의 서비스 로봇을 커맨드센터의 통합관제 시스템으로 관리한다(2024-04-15 보도). [사실][^ref-944] 한림대학교성심병원 보도에는 이상 탐지·원인 분석 방식이나 원인별 장애 통계가 나오지 않는다. [사실][^ref-944] 이 부재 진술은 보도 한 건에 기댄 것이다.\\n\\n### 상업 시설\\n\\n**현장 유형:** 상업 시설\\n\\n**사례:** 호텔 로봇이 단순 업무를 처리하지 못해 사람 일이 늘어난 사례(일본 헨나 호텔)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 투숙객의 기본 질문, 여권 복사 같은 업무. [사실][^ref-961][^ref-962] |\\n| 수행 자원 | 객실 음성 비서 로봇, 짐 운반 로봇, 프런트 로봇과 호텔 직원. [사실][^ref-961][^ref-962] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 로봇이 이런 업무를 사람 개입 없이는 처리하지 못해 사람의 일을 늘렸고, 호텔은 로봇 일부(보도 기준 절반가량)를 철수했다(2019-01 보도 기준). [사실][^ref-961][^ref-962] |\\n\\n공개 기록은 실패 현상과 철수만 전하며, 시작 조건·제약·완료·인계는 이번 근거로 확인하지 못했다.\\n\\n### 실외\\n\\n**현장 유형:** 실외\\n\\n**사례:** 실외이동로봇 운행안전인증과 관제장치\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | 미확인 |\\n| 제약 | 실외이동로봇 운행안전인증은 로봇과 관제장치의 조합을 대상으로 한다(2026-10-09 확인). [사실][^ref-980] 그래서 실외 현장에서는 관제장치의 감시 기능이 운행 조건의 하나가 될 것으로 보인다. [추정][^ref-980] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n운행 안전 인증 판단은 인증 기관·운영자 쪽 연계 대상이며, ROP 는 이 조건을 실외 현장의 감시·운영 제약으로 반영하는 쪽에 설 것으로 보인다. [추정][^ref-980] 관제장치 항목의 세부 요건은 미확인이다.\\n\\n### 기타\\n\\n**현장 유형:** 기타\\n\\n**사례:** 노르웨이 Northern Lights 시설의 4족 점검 로봇 운영(Equinor)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 현장 운영자가 연구개발 부서 도움 없이 점검 임무를 직접 만든다(2025-11-21 보도). [사실][^ref-995] |\\n| 작업 대상 | 계기 값, 밸브 위치, 가스 누출 같은 설비 상태. [사실][^ref-995] |\\n| 수행 자원 | 4족 점검 로봇과 현장 운영자가 맡는다. [사실][^ref-995] 계기 판독·가스(누출) 탐지는 로봇 인식 기능이라 연계 대상이다. |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\nROP 쪽 몫은 이 점검 결과를 설비 이상 판정의 입력으로 받는 부분으로 보인다. [추정][^ref-995] 점검 결과가 설비 보전 시스템의 작업 지시·점검 기록으로 돌아가는 형식은 열린 질문 oq-194 로 남아 있다.\\n\\n### 제조 공장\\n\\n제조 공장의 이상 탐지·원인 분석 적용 사례는 이번 조사에서 찾지 못했다.\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"replace\",\"content\":\"6절의 접근은 아래 표준·오픈소스가 정의한 필드와 신호를 재료로 쓴다. VDA 5050 은 3.0.0 판(GitHub main 브랜치, 접근일 2026-10-09) 기준이며 main 브랜치는 판이 바뀔 수 있다. [사실][^ref-051]\\n\\n2026-09-25에 정리한 표준·오픈소스 목록은 [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area19-s7.md)에 있다.\\n\\n### 2026-10-09 원문 재확인으로 더한 필드\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| VDA 5050 state 스키마 | 표준 | 로봇의 활성 오류 전체를 담는 errors 배열, 운용 모드(operatingMode), 안전 상태(safetyState)를 필수 항목으로 두고, 운용 모드 값을 STARTUP·AUTOMATIC·SEMIAUTOMATIC·INTERVENED·MANUAL·SERVICE·TEACH_IN 일곱 가지로 정한다. [사실][^ref-051] 로봇이 보내는 부가 정보 배열(information)은 시각화·디버깅에만 쓰고 플릿 관제의 판단 로직에는 쓰지 않도록 정한다. [사실][^ref-051] 그래서 원인 판정 규칙은 errors·operatingMode 같은 정해진 필드에 기대야 할 것으로 보인다. [추정][^ref-051] | [ref-051](../../references/ref-051.md) |\\n| VDA 5050 3.0.0 명세(오류 객체) | 표준 | 오류 수준을 WARNING·URGENT·CRITICAL·FATAL 네 단계로 정하고, 오류마다 사람이 읽는 설명(errorDescription)과 조치 힌트(errorHint)를 언어별 번역과 함께 담을 수 있게 한다. [사실][^ref-031][^ref-051] | [ref-031](../../references/ref-031.md), [ref-051](../../references/ref-051.md) |\\n| VDA 5050 connection 스키마 | 표준 | 연결 상태를 ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 으로 나눈다. 로봇이 질서 있게 끊으면 OFFLINE 을, 예기치 않게 끊기면 브로커가 유언 메시지로 CONNECTION_BROKEN 을 알리며, HIBERNATING 은 연결은 살아 있으나 상태 메시지를 보내지 않는 절전·통신 감축 모드다. [사실][^ref-449] | [ref-449](../../references/ref-449.md) |\\n| MassRobotics AMR 상호운용 표준 statusReport | 표준 | 운용 상태를 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 아홉 값으로 두고, 오류는 심각도 필드 없이 문자열 목록(errorCodes)으로만 보고하며 정상 운용 때는 생략하게 한다. [사실][^ref-230] | [ref-230](../../references/ref-230.md) |\\n| Open-RMF 작업 상태 스키마 | 오픈소스 | 작업 상태 12개(blocked·error·failed·delayed 등)와 별도로 배차 상태(failed_to_assign 포함)와 배차 오류 배열을 두고, 일시정지·재개·취소·강제 종료 요청마다 요청 시각과 라벨을 남긴다. [사실][^ref-111] 이 기록으로 지연이 배정 실패인지, 실행 중 차단인지, 개입 요청(라벨로 출처 표시)인지 나눠 볼 수 있을 것으로 보인다. [추정][^ref-111] | [ref-111](../../references/ref-111.md) |\\n| Open-RMF 경보 메시지(Alert) | 오픈소스 | 심각도를 INFO·WARNING·ERROR 세 등급으로 두고 운영자 응답 목록(responses_available), 관련 작업 id, 화면 표시 여부를 담는다. [사실][^ref-448] | [ref-448](../../references/ref-448.md) |\\n| OpenTelemetry 명세 | 오픈소스 | 분산 추적을 하나의 논리적 동작에서 비롯된 사건들을 프로세스·네트워크 경계를 넘어 모은 것으로 정의하고, 16바이트 TraceId 로 여러 프로세스의 span 을 묶으며, 일괄 처리처럼 여러 요청에서 시작된 작업은 span 간 링크(Links)로 잇게 한다. [사실][^ref-447] | [ref-447](../../references/ref-447.md) |\\n\\nOpen-RMF 작업 예약 id(booking.id)와 VDA 5050 state 의 orderId 가 각각 작업·주문을 식별하므로, ROP 서비스의 추적 TraceId 와 이 식별자들을 대응해 두면 플랫폼 처리와 로봇 상태 보고를 하나의 작업 기준으로 이어 원인 분석에 쓸 수 있을 것으로 보이나, 이를 정한 표준은 확인하지 못했다. [추정][^ref-447][^ref-111][^ref-051] 표준 전체 목록은 [표준·프레임워크](../../standards/index.md)에 있다.\"},{\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"action\":\"replace\",\"content\":\"| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 표준 인터페이스가 보고하는 오류 수준·연결 상태·작업 상태를 모아 원인 범주(로봇·설비·통신·앞 작업)로 구분하고 업무 영향과 연결 [추정][^ref-051][^ref-449][^ref-111] | 연계 대상: 센서·모터·드라이버 수준의 진단(ROS 2 diagnostics 같은 로봇 내부 진단)과 개별 부품 고장 진단 [추정][^ref-445] |\\n| 시설·설비 제어 | 문 상태(DoorMode) 확인과 문 요청, 문 대기와 승강기 상태를 원인 범주에 반영 [추정][^ref-313][^ref-283][^ref-943] | 연계 대상: 문 개폐 제어와 승강기 운행 제어 자체 |\\n| 업종별 조건 | 실외 현장의 인증 조건을 감시·운영 제약으로 반영 [추정][^ref-980] | 연계 대상: 실외이동로봇 운행안전인증 판단(인증 기관·운영자) |\\n\\nROS 2 diagnostics 는 하드웨어 드라이버·로봇 하드웨어의 진단 정보를 /diagnostics 토픽으로 모아 aggregator 로 묶고 원격 기록 도구로 외부 저장소(예: InfluxDB)에 넘긴다(2026-10-09 확인). [사실][^ref-445] 연계 대상: 이 로봇 내부 진단은 로봇·제조사 쪽 몫이며, ROP 는 그 결과를 원인 범주 판정의 입력으로 받는 쪽에 설 것으로 보인다. [추정][^ref-445]\\n\\n센서·모터·드라이버 수준의 진단과 개별 부품 고장 진단은 로봇 제조사 영역이며, 이종 로봇을 연결하는 ROP 는 표준 인터페이스가 보고하는 오류 수준·연결 상태·설비 상태·작업 상태를 모아 원인 범주로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. [추정][^ref-445][^ref-051][^ref-449][^ref-111] 반대로 규약마다 다른 심각도 표현을 한 경보 체계로 맞추는 대응 규칙과, 플랫폼 처리 추적(TraceId)과 로봇 보고의 작업·주문 식별자(booking.id, orderId)를 잇는 대응은 어느 표준도 정하지 않아 ROP 가 직접 맡을 후보로 보인다. [추정][^ref-031][^ref-448][^ref-230][^ref-447][^ref-111][^ref-051] 경계의 원문 정의는 [범위 경계](../../about/scope-boundary.md)에 있다.\\n\\n이 경계는 제품 전략에 따라 이동할 수 있다. 자사 로봇까지 만드는 회사는 로컬 주행을 포함할 수 있지만, **이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다.** [분류원문]\"},{\"section\":\"11. 열린 질문\",\"action\":\"append\",\"content\":\"\\n2026-09-25에 정리한 열린 질문은 [38. 모니터링·이상 탐지·원인 분석 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area19-s11.md)에 있다.\\n\\n### 2026-10-09 갱신(실행 2026-10-09-16)\\n\\n- **oq-033**·**oq-073** (상태: 열림) 공통 상태·오류 어휘와 오류 수준 대응 — 부분 근거: VDA 5050 3.0.0 은 네 단계, Open-RMF 경보는 세 등급, MassRobotics 상태 보고는 등급 없는 문자열 목록으로 심각도를 나타내고 세 규약 어디에도 서로 간 대응표가 없어, ROP 가 심각도 대응 규칙을 따로 정해야 할 것으로 보인다. [추정][^ref-031][^ref-448][^ref-230]\\n- **oq-210** (상태: 열림) 작업 식별자와 분산 추적 연결 — 부분 근거: Open-RMF booking.id 와 VDA 5050 orderId 를 OpenTelemetry TraceId 와 대응해 두면 플랫폼 처리와 로봇 상태 보고를 하나의 작업 기준으로 이을 수 있을 것으로 보이나, 이를 정한 표준은 확인하지 못했다. [추정][^ref-447][^ref-111][^ref-051]\\n- **oq-074**·**oq-075** (상태: 열림) 물류창고 대상 원인 분류 체계와 원인별 발생 비율 자료는 이번 갱신에서도 찾지 못했다. 5절 병원 사례 연구는 원문 기준 재조사를 요청했다.\\n- 새 질문 (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-16) MassRobotics 상태 보고의 오류 코드는 심각도 없는 자유 문자열인데, 이 표준을 쓰는 로봇과 VDA 5050 로봇이 섞인 플릿에서 오류 심각도를 어떤 기준으로 부여해 한 경보 체계에 넣는가? (관련: oq-033, oq-073)\\n- 새 질문 (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-16) VDA 5050 headerId 결번이나 상태 메시지가 오지 않는 구간을 통신 원인으로 판정하는 기준(결번 수, 무응답 시간)을 정한 표준이나 현장 연구가 있는가?\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-051\",\"ref-031\",\"ref-449\",\"ref-230\",\"ref-111\",\"ref-448\",\"ref-313\",\"ref-283\",\"ref-445\",\"ref-447\",\"ref-451\",\"ref-943\",\"ref-944\",\"ref-995\",\"ref-980\",\"ref-961\",\"ref-962\"],\"last_run\":\"2026-10-09\"},\"content\":\"[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-10-09\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\\n[^ref-449]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/connection.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema, 접근일 2026-10-09\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-09\\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\\n[^ref-448]: Open Robotics (open-rmf/rmf_internal_msgs), rmf_task_msgs/msg/Alert.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg, 접근일 2026-10-09\\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-10-09\\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-10-09\\n[^ref-445]: ROS (ros/diagnostics GitHub), diagnostics — README (ros2 branch), 미확인, https://github.com/ros/diagnostics/blob/ros2/README.md, 접근일 2026-10-09\\n[^ref-447]: OpenTelemetry (CNCF), OpenTelemetry Specification — Overview, 미확인, https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md, 접근일 2026-10-09\\n[^ref-451]: Roser, C., Nakano, M., & Tanaka, M., Comparison of bottleneck detection methods for AGV systems (WSC 2003 Proceedings, 1192–1198쪽), 2003, https://keio.elsevierpure.com/en/publications/comparison-of-bottleneck-detection-methods-for-agv-systems/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-943]: Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026-03-31, https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\\n[^ref-995]: Offshore Technology (Eve Thomas), Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones, 2025-11-21, https://www.offshore-technology.com/features/equinor-autonomous-robotics/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-980]: 한국로봇산업진흥원, 실외이동로봇 운행안전인증, 미확인, https://www.kiria.org/portal/cert/portalCertEstiSafe.do, 접근일 2026-10-09 (원문 미열람)\\n[^ref-961]: Responsible AI Collaborative (AI Incident Database), Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks, 미확인, https://incidentdatabase.ai/cite/346/, 접근일 2026-10-09 (원문 미열람)\\n[^ref-962]: Hotel Technology News, Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce, 2019-01, https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/, 접근일 2026-10-09 (원문 미열람)\"}]}],\"changelog_entry\":\"2026-10-09 | 38. 모니터링·이상 탐지·원인 분석 | 3절 심각도·시각 형식·통신 신호·사람 개입 근거 보강과 원문 질문 표현 정정, 5절 병원·상업 시설·실외·기타 사례 추가, 7절 VDA 5050·MassRobotics·Open-RMF·OpenTelemetry 필드 표, 9절 내부 진단·승강기·실외 인증 경계, 11절 부분 근거·새 질문 2건, 각주 갱신(1차 조건부 승인 수정 16건·2차 수정 3건 반영) | run 2026-10-09-16\",\"index_updates\":{\"home_recent\":\"2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 표준별 심각도·시각 형식·연결 상태 차이와 병원·상업 시설·실외·기타 현장 사례를 더하고 책임 경계를 보강했다\",\"category_recent\":\"2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 3·5·7·9·11절 갱신(현장 유형별 사례 4건 추가, VDA 5050·MassRobotics·Open-RMF 필드 정리, 새 열린 질문 2건)\",\"area_recent\":\"2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 3절 원문 질문 표현 정정과 근거 보강, 5절 병원·상업 시설·실외·기타 사례, 7절 표준 필드 표, 9절 경계 보강, 11절 부분 근거·새 질문 2건, 13절 각주 접근일 갱신\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"connection-state\",\"term_ko\":\"연결 상태\",\"term_en\":\"Connection State (VDA 5050 connectionState)\",\"definition\":\"VDA 5050 에서 로봇과 메시지 브로커 사이 연결을 ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 가운데 하나로 알리는 값이며, 예기치 않은 끊김은 유언 메시지로 전달된다.\",\"description\":\"질서 있는 종료 때는 OFFLINE, 예기치 않은 끊김은 브로커가 유언 메시지로 CONNECTION_BROKEN 을 알리고, HIBERNATING 은 연결은 살아 있으나 상태 메시지를 보내지 않는 절전·통신 감축 모드다.\",\"related_areas\":[38,20],\"sources\":[\"ref-449\"]},{\"action\":\"new\",\"slug\":\"alert-tier\",\"term_ko\":\"경보 등급\",\"term_en\":\"Alert Tier (Open-RMF Alert)\",\"definition\":\"Open-RMF 경보 메시지가 운영자에게 보내는 경보의 심각도를 INFO·WARNING·ERROR 세 단계로 나타내는 필드다.\",\"description\":\"경보 메시지는 등급과 함께 운영자 응답 목록, 관련 작업 id, 화면 표시 여부를 담는다.\",\"related_areas\":[38,32],\"sources\":[\"ref-448\"]}],\"reference_updates\":[{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 로봇 상태 메시지 스키마. 필수 항목(errors·operatingMode·safetyState), 운용 모드 값, information 사용 제한, headerId 규칙, 시각 형식을 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세 본문. 오류 수준 네 단계와 오류 설명·조치 힌트 항목(이전 실행 2026-10-09-15 확인 내용 재인용, 검증에서 state.schema 원문으로 확인).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-449\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/connection.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 연결 상태 메시지 스키마. ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 과 유언 메시지 규칙.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"MassRobotics AMR 상호운용 표준 JSON 스키마. identityReport·statusReport, 운용 상태 9값, 문자열 오류 코드 목록.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-111\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 작업 상태 스키마. 작업 상태 12값, 배차 상태·오류, 일시정지·재개·취소 기록, 예약 식별자.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-448\",\"org\":\"Open Robotics (open-rmf/rmf_internal_msgs)\",\"title\":\"rmf_task_msgs/msg/Alert.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 경보 메시지 정의. 심각도 세 등급, 응답 목록, 관련 작업 id.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-313\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 자동문 모드 메시지. closed·moving·open·offline·unknown 다섯 값.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-283\",\"org\":\"Open Robotics\",\"title\":\"Doors (integration_doors) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_doors.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 문 연동 장. 문 노드·문 어댑터(상태 감독자)의 역할과 토픽.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-445\",\"org\":\"ROS (ros/diagnostics GitHub)\",\"title\":\"diagnostics — README (ros2 branch)\",\"published\":null,\"url\":\"https://github.com/ros/diagnostics/blob/ros2/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"ROS 2 진단 시스템 README. /diagnostics 토픽, aggregator, 원격 기록 패키지 구성.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-447\",\"org\":\"OpenTelemetry (CNCF)\",\"title\":\"OpenTelemetry Specification — Overview\",\"published\":null,\"url\":\"https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"OpenTelemetry 명세 개요. 추적·지표·로그 신호, TraceId·SpanId, span 간 링크 정의.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-943\",\"org\":\"Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)\",\"title\":\"Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments\",\"published\":\"2026-03-31\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 병원 의약품 배송 로봇의 승강기 연동과 승강기 가동률 구간별 성공률을 보고한 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-944\",\"org\":\"로봇신문\",\"title\":\"국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'\",\"published\":\"2024-04-15\",\"url\":\"http://www.irobotnews.com/news/articleView.html?idxno=34601\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 한림대학교성심병원의 서비스 로봇 7종 73대와 커맨드센터 통합관제 운영 보도.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-995\",\"org\":\"Offshore Technology (Eve Thomas)\",\"title\":\"Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones\",\"published\":\"2025-11-21\",\"url\":\"https://www.offshore-technology.com/features/equinor-autonomous-robotics/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. Equinor 시설의 4족 점검 로봇 운영(계기 판독·누출 탐지)과 운영자 임무 생성 보도.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-980\",\"org\":\"한국로봇산업진흥원\",\"title\":\"실외이동로봇 운행안전인증\",\"published\":null,\"url\":\"https://www.kiria.org/portal/cert/portalCertEstiSafe.do\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 실외이동로봇 운행안전인증 제도 안내. 인증 대상은 로봇과 관제장치의 조합.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-961\",\"org\":\"Responsible AI Collaborative (AI Incident Database)\",\"title\":\"Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks\",\"published\":null,\"url\":\"https://incidentdatabase.ai/cite/346/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 헨나 호텔 로봇이 단순 업무를 처리하지 못한 사건 기록.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]},{\"id\":\"ref-962\",\"org\":\"Hotel Technology News\",\"title\":\"Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce\",\"published\":\"2019-01\",\"url\":\"https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 헨나 호텔의 로봇 절반 철수와 직원 개입 부담 보도.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"MassRobotics 상태 보고의 오류 코드는 심각도 없는 자유 문자열인데, 이 표준을 쓰는 로봇과 VDA 5050 로봇이 섞인 플릿에서 오류 심각도를 어떤 기준으로 부여해 한 경보 체계에 넣는가? (관련: oq-033, oq-073)\",\"areas\":[38,21],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"VDA 5050 headerId 결번이나 상태 메시지가 오지 않는 구간을 통신 원인으로 판정하는 기준(결번 수, 무응답 시간)을 정한 표준이나 현장 연구가 있는가?\",\"areas\":[38,42],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"물류창고\",\"item\":\"시작 조건\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"물류창고\",\"item\":\"작업 대상\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"물류창고\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"물류창고\",\"item\":\"제약\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"물류창고\",\"item\":\"완료·인계\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"물류창고\",\"item\":\"예외·성과\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"병원\",\"item\":\"작업 대상\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"병원\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"병원\",\"item\":\"예외·성과\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"상업 시설\",\"item\":\"작업 대상\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"상업 시설\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"상업 시설\",\"item\":\"예외·성과\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"실외\",\"item\":\"제약\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"기타\",\"item\":\"시작 조건\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"기타\",\"item\":\"작업 대상\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"},{\"site_type\":\"기타\",\"item\":\"수행 자원\",\"link\":\"docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시\",\"title\":\"38. 모니터링·이상 탐지·원인 분석\"}],\"additional_research_requests\":[\"구로병원 논문(ref-943)의 실패 유형별 분류(복도 자율주행·통신·승강기 막힘)와 전체 성공률·분모를 원문 기준으로 재조사해 38. 모니터링·이상 탐지·원인 분석 5절 병원 사례와 oq-074에 반영\",\"5절 병원·상업 시설·실외·기타 사례의 '미확인' 칸(시작 조건·제약·완료·인계 등)을 채울 근거 — 이번 브리프의 finding 이 한두 항목에만 걸려 있어 여섯 항목을 채우지 못했다\",\"5절 제조 공장 현장의 이상 탐지·원인 분석 적용 사례 — 이번 브리프에 근거가 없어 '이번 조사에서 찾지 못했다'로 두었다\",\"한림대학교성심병원 보도(ref-944)의 세부 분류 합계(8종 76대)와 7종 73대가 맞지 않는 점을 다른 출처로 확인 — 5절 병원 사례의 '보도 기준' 표기를 해소하기 위해\",\"실외이동로봇 운행안전인증 심사 항목 수가 한국로봇산업진흥원 안내 페이지(8개)와 이전 실행 2026-10-09-15 의 기사(16개)에서 다른 점과 관제장치 항목의 세부 요건 — 5절 실외 사례와 9절 업종별 조건 행의 근거 보강 및 출처 충돌 여부 판단을 위해\",\"ref-031 출처 항목의 표기 불일치(summary 는 '원문 미열람.'으로 시작하나 fetched true·source_unopened false) 정리 — 참고문헌 페이지 표기를 바로잡기 위해\",\"10절(분리 주제 페이지)의 '분류 개정 전 원문 8장의 교차 규칙' 표현을 원문 13장(L. AI·학습 기술 주석) 기준으로 다시 확인 — 이번 갱신 절 밖이라 고치지 않았다\",\"파이프라인 담당: 자동 분리가 기존 '자세한 내용은 주제 페이지 …' 줄을 지우는 문제와, 3절 분리 뒤 세부영역 페이지 프런트매터 sources 에 본문 인용이 없는 ref-451 이 남는 문제 확인 — 2차 검증 노트의 지적\"],\"fixes_applied\":[\"f2 분리 — 7절 VDA 5050 state 스키마 행에서 information 배열의 시각화·디버깅 전용 규정만 [사실][^ref-051]로 쓰고, '원인 판정 규칙은 errors·operatingMode 같은 정해진 필드에 기대야 한다'는 별도 문장 [추정][^ref-051]으로 썼다.\",\"f3 각주 — 7절 VDA 5050 3.0.0 명세 행의 오류 수준 4단계와 errorDescription·errorHint(번역 포함) 문장에 [사실][^ref-031][^ref-051] 두 각주를 달았다.\",\"f6 분리·표현 — 7절 Open-RMF 작업 상태 행에서 상태 12값·배차 상태(failed_to_assign)·배차 오류 배열·일시정지/재개/취소/강제 종료 요청의 시각·라벨 기록까지 [사실][^ref-111]로, 지연 구분 가능성은 [추정][^ref-111]으로 쓰고 '사람 개입' 대신 '개입 요청(라벨로 출처 표시)'으로 썼다.\",\"f10 분리 — 9절 본문에서 ROS 2 diagnostics 의 /diagnostics·aggregator·원격 기록(InfluxDB) 설명만 [사실][^ref-445]로, 'ROP 는 결과를 원인 범주 판정의 입력으로 받는다'는 '연계 대상:' 표시와 함께 [추정][^ref-445]로 썼고 표의 연계 대상 칸도 유지했다.\",\"f15 표현 — 3절에서 'Open-RMF 작업 기록이 일시정지·재개 요청과 그 요청 출처 라벨을 남긴다'로 바꾸고 waitingHumanEvent 를 '사람 사건 대기'로 썼으며 [추정] 태그를 유지했다.\",\"f16 강등 — 5절 병원 사례를 [추정][^ref-943]으로 쓰고 '승강기 가동률 59.01% 미만 구간의 성공률은 95.52%였고 실패는 승강기 가동률이 높은 구간에 몰렸다'로 고쳤으며 '90% 초과' 표현을 쓰지 않았다. 설비(승강기) 혼잡 원인은 해석이라고 밝히고, 승강기 운행 제어는 연계 대상이며 ROP 몫은 승강기 상태를 원인 범주에 반영하는 데까지라고 5절 서술과 9절 표에 썼다.\",\"f17 한정 — 5절 병원 사례에서 '7종 73대'를 '보도 기준'으로 쓰고 '이 보도에는 이상 탐지·원인 분석 방식이나 원인별 장애 통계가 나오지 않는다'로 한정했다.\",\"f18 표현 — 5절 기타 사례의 시설을 '노르웨이 Northern Lights 시설'로 쓰고, 계기 판독·가스(누출) 탐지는 로봇 인식 기능인 연계 대상으로 짧게 두었으며 ROP 쪽은 점검 결과를 설비 이상 판정의 입력으로 받는 부분만 [추정]으로 서술했다.\",\"f19 분리 — 5절 실외 사례에서 '운행안전인증은 로봇과 관제장치의 조합을 대상으로 한다'만 [사실][^ref-980]로, '관제장치의 감시 기능이 운행 조건의 하나가 된다'는 [추정][^ref-980]으로 쓰고 인증 판단은 인증 기관·운영자 쪽 연계 대상이라고 5절 서술과 9절 표에 밝혔다.\",\"f20 표현 — 5절 상업 시설 사례에서 '사람 개입 없이는 처리하지 못해 사람의 일을 늘렸고', 철수 규모를 '로봇 일부(보도 기준 절반가량)'로 쓰고 기준일 2019-01 보도를 유지했다.\",\"f21 제외 — 본문에 쓰지 않고 additional_research_requests 에 구로병원 논문의 실패 유형별 분류와 전체 성공률·분모 재조사 요청을 넣었다.\",\"5절 현장 유형별 분리 — 병원(f16·f17)·상업 시설(f20)·실외(f19)·기타(f18) 사례를 현장 유형마다 나누고 finding 이 없는 칸은 '미확인'으로 두었으며, site_matrix_updates 에는 실제로 채운 칸만 넣었다. 제조 공장은 이번 조사에서 찾지 못했다고 두었다.\",\"3절 원문 질문 표현 — 둘째 문단을 '지연의 원인이 로봇인지 설비인지 통신인지 앞 작업인지'로 고쳐 [분류원문] 태그 없이 풀어 썼다.\",\"열린 질문 1번 — 질문 끝에 '(관련: oq-033, oq-073)'를 붙여 open_question_updates 와 11절에 등록했고, 관련 영역 38·21 과 종류 일반(접두어 없음)을 유지했다.\",\"각주 접근일·표기 — ref-051·ref-449·ref-230·ref-111·ref-448·ref-313·ref-283·ref-445·ref-447·ref-031 의 접근일을 2026-10-09 로 갱신하고, ref-111·ref-283·ref-230·ref-313 의 기관·제목을 참고문헌 색인 줄과 같게 고쳤다.\",\"원문 미열람 표시 — ref-943·ref-944·ref-995·ref-980·ref-961·ref-962 각주의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.\",\"2차: 7절·11절 기존 목록 링크 복원 — 7절 replace 본문의 첫 문단 뒤에 '2026-09-25에 정리한 표준·오픈소스 목록은 [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area19-s7.md)에 있다.'를, 11절 append 본문의 '### 2026-10-09 갱신' 소제목 앞에 '2026-09-25에 정리한 열린 질문은 [38. 모니터링·이상 탐지·원인 분석 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area19-s11.md)에 있다.'를 지시된 형식 그대로 넣었다.\",\"2차: 5절 병원 사례 표 정리 — 수행 자원 칸에서 한림대학교성심병원 문장을 빼고 의약품 배송 로봇의 승강기 호출·탑승 문장과 승강기 운행 제어 연계 대상 문장만 남겼으며, 한림대학교성심병원 문장('다른 병원 사례로, … [사실][^ref-944]')은 표 아래 '한림대학교성심병원 보도에는 …' 문장 앞에 별도 언급으로 옮겼다. site_matrix_updates 의 병원 3칸은 그대로 두었다.\",\"2차: 5절 문체 — 도입 문단 끝과 '### 제조 공장' 아래의 '찾지 못함.'을 '…이번 조사에서 찾지 못했다.'로 고쳤고 표 칸의 '미확인'은 그대로 두었다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-09-16",
+    "outline": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 1500,
+        "summary": "이종 로봇의 보고 어휘·심각도·시각 형식이 표준마다 달라 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-313][^ref-111] 통신 단절 신호와 사람 개입·대기 표시도 원인 구분의 재료가 될 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-111]",
+        "planned_findings": [
+          "f9",
+          "f13",
+          "f14",
+          "f15"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 3200,
+        "summary": "물류창고 가상 사례(2026-10-09 원문 재확인)에 병원·상업 시설·실외·기타 현장 사례를 더했다. 병원 의약품 배송 로봇은 승강기 가동률이 높은 구간에 실패가 몰렸다. [추정][^ref-943]",
+        "planned_findings": [
+          "f7",
+          "f8",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 1800,
+        "summary": "VDA 5050 state·connection 스키마, MassRobotics 상태 보고, Open-RMF 작업 상태·경보, OpenTelemetry 가 원인 분석에 쓰는 필드를 2026-10-09 원문으로 정리했고, 2026-09-25 목록으로 가는 링크를 유지했다. [사실][^ref-051][^ref-449][^ref-230][^ref-111][^ref-448][^ref-447]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f11",
+          "f12"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+        "budget_chars": 1300,
+        "summary": "ROS 2 diagnostics 같은 로봇 내부 진단과 문·승강기 제어, 실외 인증 판단은 연계 대상이고, ROP 는 표준 보고를 원인 범주로 구분하고 심각도 대응·작업 식별자 연결을 맡을 후보로 보인다. [추정][^ref-445][^ref-031][^ref-447]",
+        "planned_findings": [
+          "f10",
+          "f9",
+          "f12",
+          "f16",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1000,
+        "summary": "2026-09-25 열린 질문 목록 링크를 유지하고, oq-033·oq-073·oq-210 에 부분 근거를 더하며 oq-074·oq-075 는 열린 채로 두고, 심각도 부여 기준과 headerId 결번 판정 기준을 새 질문으로 올렸다. [추정][^ref-031][^ref-448][^ref-230]",
+        "planned_findings": [
+          "f9",
+          "f12",
+          "f13"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "3절 둘째 문단을 현재 원문 질문에 맞추고 심각도·시각 형식·통신 신호·사람 개입 근거 보강, 5절 현장 유형별 사례(병원·상업 시설·실외·기타) 추가와 물류창고 사례 재확인, 7절 표준 필드 표 추가와 2026-09-25 목록 링크 유지, 9절 내부 진단·승강기·실외 인증 경계와 직접 범위 후보 추가, 11절 2026-09-25 목록 링크 유지·부분 근거·새 질문 2건, 13절 각주 접근일·기관 표기 갱신(2차 수정 3건 반영)",
+        "patches": [
+          {
+            "section": "3. 왜 중요한가",
+            "action": "replace",
+            "content": "이종 로봇이 섞인 현장에서는 로봇 오류 수준·연결 끊김(VDA 5050), 외부 사건 대기(MassRobotics), 작업 지연·차단과 문 모드(Open-RMF)가 서로 다른 어휘로 보고되므로, 지연 원인을 가리려면 이들을 같은 시간축에 맞추고 ROP 자체 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. [추정][^ref-051][^ref-449][^ref-230][^ref-313][^ref-111]\n\n2절의 질문, 곧 지연의 원인이 로봇인지 설비인지 통신인지 앞 작업인지를 가리는 일은 복구 담당과 조치를 정하는 출발점이다. 그런데 각 표준은 자기 필드만 정의하고 서로 간 대응표는 두지 않으며, 이번 조사에서는 공통 매핑 표준을 찾지 못했다(열린 질문 oq-033). [추정][^ref-051][^ref-230][^ref-111] 심각도 표현만 보아도 VDA 5050 3.0.0 은 네 단계, Open-RMF 경보는 세 등급, MassRobotics 상태 보고는 등급 없는 문자열 목록이어서, 이종 플릿의 이상을 한 경보 체계로 모으려면 ROP 가 심각도 대응 규칙을 따로 정해야 할 것으로 보인다(oq-033·oq-073 부분 근거). [추정][^ref-031][^ref-448][^ref-230]\n\n같은 시간축에 맞추는 일도 간단하지 않다. 시각 표현이 VDA 5050 은 밀리초까지의 ISO 8601 문자열, MassRobotics 는 date-time 문자열, Open-RMF 작업 상태는 밀리초 유닉스 시각 정수로 서로 다르다(2026-10-09 확인). [사실][^ref-051][^ref-230][^ref-111]\n\n통신 원인을 따로 가리는 신호도 표준 안에 있다. VDA 5050 의 headerId 는 토픽마다 보낸 메시지마다 1씩 늘어나므로 수신 쪽에서 번호가 건너뛰면 메시지 유실을 의심할 수 있고, 연결 상태(CONNECTION_BROKEN·HIBERNATING)와 함께 보면 상태 보고가 끊긴 원인이 통신인지 로봇 쪽의 의도된 통신 감축인지 가르는 근거가 될 것으로 보이나, 결번 판정 기준은 명세에 없다. [추정][^ref-051][^ref-449]\n\n사람이 관여한 지연도 따로 볼 만하다. VDA 5050 운용 모드의 INTERVENED·MANUAL, MassRobotics 운용 상태의 manualOverride(수동 조작)와 waitingHumanEvent(사람 사건 대기)가 있고, Open-RMF 작업 기록이 일시정지·재개 요청과 그 요청 출처 라벨을 남기므로, 지연 원인 범주에 로봇·설비·통신·앞 작업 외에 사람 개입·대기를 따로 두는 편이 판정에 유리할 것으로 보인다. [추정][^ref-051][^ref-230][^ref-111]\n\n원인 구분은 처리량 관리와도 이어진다. 무인운반차(Automated Guided Vehicle, AGV) 시스템을 다룬 2003년 연구는 기존 두 방법(가동률·대기 시간 기반)에는 이동 병목 탐지와 비교해 여러 한계가 있다고 보고한다. [사실][^ref-451] 어느 설비·로봇이 흐름을 막는지 판정하는 방식에 따라 개선 대상이 달라질 수 있다는 뜻이다."
+          },
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "replace",
+            "content": "이 절은 지연·정지의 원인을 가리는 일이 현장 유형마다 어떻게 드러나는지를 사례로 보인다. 물류창고 사례는 설명용 가상 사례이고, 병원·상업 시설·실외·기타 현장 사례는 공개 연구·보도에 기댄 것이다. 사례마다 이번 근거로 채우지 못한 항목은 '미확인'으로 두었고, 제조 공장의 이상 탐지·원인 분석 사례는 이번 조사에서 찾지 못했다.\n\n### 물류창고\n\n**현장 유형:** 물류창고\n\n**사례:** 보충 단계 — 보충용 박스를 운반하던 AMR 이 문 앞에서 멈춰 보충이 늦어진 원인 가리기\n\n이 사례는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 가상 사례이며, 문 모드·문 어댑터·작업 상태·경보 서술은 2026-10-09 원문으로 다시 확인했다.\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 피킹 구역 재고가 보충 기준 아래로 내려가 보충 작업이 생성된다(가상 설정). |\n| 작업 대상 | 예비 보관 구역에서 피킹 구역으로 옮길 보충용 박스와 이를 실은 자율이동로봇(AMR). |\n| 수행 자원 | AMR 은 운반, 문 설비는 개폐, ROP 는 상태 수집과 원인 구분, 운영자는 경보 응답을 맡는다. 문 개폐 제어 자체는 연계 대상(시설·설비 제어)이며 ROP 는 문 상태 확인과 문 요청만 다룬다. |\n| 제약 | 경로가 문을 지나야 한다. Open-RMF 에서 문 노드는 문 상태를 /door_states 로 발행하고 문 모드는 closed·moving·open·offline·unknown 다섯 값이다(2026-10-09 재확인). [사실][^ref-313][^ref-283] 문 어댑터는 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다. [사실][^ref-283] |\n| 완료·인계 | 작업 상태가 completed 로 바뀌고 보충 위치 도착이 확인되면 보충 완료로 본다. 작업 상태 토큰 completed 는 Open-RMF 작업 상태 스키마에 있다. [사실][^ref-111] |\n| 예외·성과 | 작업 상태가 delayed 또는 blocked 로 바뀌고 [사실][^ref-111], MassRobotics 운용 상태가 waitingExternalEvent 를 보고하며 [사실][^ref-230], 경보는 심각도 등급(INFO·WARNING·ERROR)·응답 목록·관련 작업 id 를 담아 운영자에게 간다(2026-10-09 재확인). [사실][^ref-448] 이 신호들을 맞춰 원인을 문·로봇·통신 중 하나로 판정하는 절차는 추정이다. [추정][^ref-313][^ref-111][^ref-230] |\n\n다음은 설명을 위한 가상의 시나리오이다. 보충 작업을 받은 AMR 이 문 앞에서 멈추고, ROP 에는 작업 지연과 외부 사건 대기가 함께 들어온다. 수치는 쓰지 않는다.\n\nROP 는 같은 시각의 문 모드를 확인한다. 문 모드가 offline 이나 unknown 이면 설비 쪽 원인일 가능성을, 문이 open 인데도 로봇이 대기 중이면 로봇 쪽 원인일 가능성을 먼저 살피는 식으로 판정 순서를 세울 수 있어 보인다. [추정][^ref-313][^ref-230] 로봇 연결이 CONNECTION_BROKEN 으로 끊겼다면 통신 원인을 따로 볼 수 있다. [추정][^ref-449]\n\n원인 범주가 정해지면 경보의 응답 목록으로 운영자가 조치를 고르고, 복구 방식은 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)으로 넘어간다. 현장 유형 매트릭스 전체는 [현장 유형 매트릭스](../../site-matrix.md)에 있다.\n\n### 병원\n\n**현장 유형:** 병원\n\n**사례:** 의약품 배송 로봇의 승강기 호출·탑승과 승강기 혼잡\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 로봇이 배송하는 의약품. [추정][^ref-943] |\n| 수행 자원 | 의약품 배송 로봇이 승강기를 호출해 탑승한다. [추정][^ref-943] 승강기 운행 제어 자체는 연계 대상(시설·설비 제어)이다. |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 고려대학교 구로병원 연구(2026-03-31 게재)에서 승강기 가동률 59.01% 미만 구간의 성공률은 95.52%였고 실패는 승강기 가동률이 높은 구간에 몰렸다. [추정][^ref-943] |\n\n이 결과를 설비(승강기) 혼잡이 지연·실패의 원인으로 드러난 것으로 읽는 것은 해석이며, 전체 성공률의 분모는 미확인이다. [추정][^ref-943] 승강기 운행 제어는 연계 대상이고, ROP 몫은 승강기 상태를 원인 범주(설비)에 반영하는 데까지로 보인다. [추정][^ref-943]\n\n다른 병원 사례로, 한림대학교성심병원은 보도 기준 7종 73대의 서비스 로봇을 커맨드센터의 통합관제 시스템으로 관리한다(2024-04-15 보도). [사실][^ref-944] 한림대학교성심병원 보도에는 이상 탐지·원인 분석 방식이나 원인별 장애 통계가 나오지 않는다. [사실][^ref-944] 이 부재 진술은 보도 한 건에 기댄 것이다.\n\n### 상업 시설\n\n**현장 유형:** 상업 시설\n\n**사례:** 호텔 로봇이 단순 업무를 처리하지 못해 사람 일이 늘어난 사례(일본 헨나 호텔)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 투숙객의 기본 질문, 여권 복사 같은 업무. [사실][^ref-961][^ref-962] |\n| 수행 자원 | 객실 음성 비서 로봇, 짐 운반 로봇, 프런트 로봇과 호텔 직원. [사실][^ref-961][^ref-962] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 로봇이 이런 업무를 사람 개입 없이는 처리하지 못해 사람의 일을 늘렸고, 호텔은 로봇 일부(보도 기준 절반가량)를 철수했다(2019-01 보도 기준). [사실][^ref-961][^ref-962] |\n\n공개 기록은 실패 현상과 철수만 전하며, 시작 조건·제약·완료·인계는 이번 근거로 확인하지 못했다.\n\n### 실외\n\n**현장 유형:** 실외\n\n**사례:** 실외이동로봇 운행안전인증과 관제장치\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 미확인 |\n| 제약 | 실외이동로봇 운행안전인증은 로봇과 관제장치의 조합을 대상으로 한다(2026-10-09 확인). [사실][^ref-980] 그래서 실외 현장에서는 관제장치의 감시 기능이 운행 조건의 하나가 될 것으로 보인다. [추정][^ref-980] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n운행 안전 인증 판단은 인증 기관·운영자 쪽 연계 대상이며, ROP 는 이 조건을 실외 현장의 감시·운영 제약으로 반영하는 쪽에 설 것으로 보인다. [추정][^ref-980] 관제장치 항목의 세부 요건은 미확인이다.\n\n### 기타\n\n**현장 유형:** 기타\n\n**사례:** 노르웨이 Northern Lights 시설의 4족 점검 로봇 운영(Equinor)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 현장 운영자가 연구개발 부서 도움 없이 점검 임무를 직접 만든다(2025-11-21 보도). [사실][^ref-995] |\n| 작업 대상 | 계기 값, 밸브 위치, 가스 누출 같은 설비 상태. [사실][^ref-995] |\n| 수행 자원 | 4족 점검 로봇과 현장 운영자가 맡는다. [사실][^ref-995] 계기 판독·가스(누출) 탐지는 로봇 인식 기능이라 연계 대상이다. |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\nROP 쪽 몫은 이 점검 결과를 설비 이상 판정의 입력으로 받는 부분으로 보인다. [추정][^ref-995] 점검 결과가 설비 보전 시스템의 작업 지시·점검 기록으로 돌아가는 형식은 열린 질문 oq-194 로 남아 있다.\n\n### 제조 공장\n\n제조 공장의 이상 탐지·원인 분석 적용 사례는 이번 조사에서 찾지 못했다."
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "replace",
+            "content": "6절의 접근은 아래 표준·오픈소스가 정의한 필드와 신호를 재료로 쓴다. VDA 5050 은 3.0.0 판(GitHub main 브랜치, 접근일 2026-10-09) 기준이며 main 브랜치는 판이 바뀔 수 있다. [사실][^ref-051]\n\n2026-09-25에 정리한 표준·오픈소스 목록은 [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area19-s7.md)에 있다.\n\n### 2026-10-09 원문 재확인으로 더한 필드\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| VDA 5050 state 스키마 | 표준 | 로봇의 활성 오류 전체를 담는 errors 배열, 운용 모드(operatingMode), 안전 상태(safetyState)를 필수 항목으로 두고, 운용 모드 값을 STARTUP·AUTOMATIC·SEMIAUTOMATIC·INTERVENED·MANUAL·SERVICE·TEACH_IN 일곱 가지로 정한다. [사실][^ref-051] 로봇이 보내는 부가 정보 배열(information)은 시각화·디버깅에만 쓰고 플릿 관제의 판단 로직에는 쓰지 않도록 정한다. [사실][^ref-051] 그래서 원인 판정 규칙은 errors·operatingMode 같은 정해진 필드에 기대야 할 것으로 보인다. [추정][^ref-051] | [ref-051](../../references/ref-051.md) |\n| VDA 5050 3.0.0 명세(오류 객체) | 표준 | 오류 수준을 WARNING·URGENT·CRITICAL·FATAL 네 단계로 정하고, 오류마다 사람이 읽는 설명(errorDescription)과 조치 힌트(errorHint)를 언어별 번역과 함께 담을 수 있게 한다. [사실][^ref-031][^ref-051] | [ref-031](../../references/ref-031.md), [ref-051](../../references/ref-051.md) |\n| VDA 5050 connection 스키마 | 표준 | 연결 상태를 ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 으로 나눈다. 로봇이 질서 있게 끊으면 OFFLINE 을, 예기치 않게 끊기면 브로커가 유언 메시지로 CONNECTION_BROKEN 을 알리며, HIBERNATING 은 연결은 살아 있으나 상태 메시지를 보내지 않는 절전·통신 감축 모드다. [사실][^ref-449] | [ref-449](../../references/ref-449.md) |\n| MassRobotics AMR 상호운용 표준 statusReport | 표준 | 운용 상태를 navigating·idle·disabled·offline·charging·waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 아홉 값으로 두고, 오류는 심각도 필드 없이 문자열 목록(errorCodes)으로만 보고하며 정상 운용 때는 생략하게 한다. [사실][^ref-230] | [ref-230](../../references/ref-230.md) |\n| Open-RMF 작업 상태 스키마 | 오픈소스 | 작업 상태 12개(blocked·error·failed·delayed 등)와 별도로 배차 상태(failed_to_assign 포함)와 배차 오류 배열을 두고, 일시정지·재개·취소·강제 종료 요청마다 요청 시각과 라벨을 남긴다. [사실][^ref-111] 이 기록으로 지연이 배정 실패인지, 실행 중 차단인지, 개입 요청(라벨로 출처 표시)인지 나눠 볼 수 있을 것으로 보인다. [추정][^ref-111] | [ref-111](../../references/ref-111.md) |\n| Open-RMF 경보 메시지(Alert) | 오픈소스 | 심각도를 INFO·WARNING·ERROR 세 등급으로 두고 운영자 응답 목록(responses_available), 관련 작업 id, 화면 표시 여부를 담는다. [사실][^ref-448] | [ref-448](../../references/ref-448.md) |\n| OpenTelemetry 명세 | 오픈소스 | 분산 추적을 하나의 논리적 동작에서 비롯된 사건들을 프로세스·네트워크 경계를 넘어 모은 것으로 정의하고, 16바이트 TraceId 로 여러 프로세스의 span 을 묶으며, 일괄 처리처럼 여러 요청에서 시작된 작업은 span 간 링크(Links)로 잇게 한다. [사실][^ref-447] | [ref-447](../../references/ref-447.md) |\n\nOpen-RMF 작업 예약 id(booking.id)와 VDA 5050 state 의 orderId 가 각각 작업·주문을 식별하므로, ROP 서비스의 추적 TraceId 와 이 식별자들을 대응해 두면 플랫폼 처리와 로봇 상태 보고를 하나의 작업 기준으로 이어 원인 분석에 쓸 수 있을 것으로 보이나, 이를 정한 표준은 확인하지 못했다. [추정][^ref-447][^ref-111][^ref-051] 표준 전체 목록은 [표준·프레임워크](../../standards/index.md)에 있다."
+          },
+          {
+            "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+            "action": "replace",
+            "content": "| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 표준 인터페이스가 보고하는 오류 수준·연결 상태·작업 상태를 모아 원인 범주(로봇·설비·통신·앞 작업)로 구분하고 업무 영향과 연결 [추정][^ref-051][^ref-449][^ref-111] | 연계 대상: 센서·모터·드라이버 수준의 진단(ROS 2 diagnostics 같은 로봇 내부 진단)과 개별 부품 고장 진단 [추정][^ref-445] |\n| 시설·설비 제어 | 문 상태(DoorMode) 확인과 문 요청, 문 대기와 승강기 상태를 원인 범주에 반영 [추정][^ref-313][^ref-283][^ref-943] | 연계 대상: 문 개폐 제어와 승강기 운행 제어 자체 |\n| 업종별 조건 | 실외 현장의 인증 조건을 감시·운영 제약으로 반영 [추정][^ref-980] | 연계 대상: 실외이동로봇 운행안전인증 판단(인증 기관·운영자) |\n\nROS 2 diagnostics 는 하드웨어 드라이버·로봇 하드웨어의 진단 정보를 /diagnostics 토픽으로 모아 aggregator 로 묶고 원격 기록 도구로 외부 저장소(예: InfluxDB)에 넘긴다(2026-10-09 확인). [사실][^ref-445] 연계 대상: 이 로봇 내부 진단은 로봇·제조사 쪽 몫이며, ROP 는 그 결과를 원인 범주 판정의 입력으로 받는 쪽에 설 것으로 보인다. [추정][^ref-445]\n\n센서·모터·드라이버 수준의 진단과 개별 부품 고장 진단은 로봇 제조사 영역이며, 이종 로봇을 연결하는 ROP 는 표준 인터페이스가 보고하는 오류 수준·연결 상태·설비 상태·작업 상태를 모아 원인 범주로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. [추정][^ref-445][^ref-051][^ref-449][^ref-111] 반대로 규약마다 다른 심각도 표현을 한 경보 체계로 맞추는 대응 규칙과, 플랫폼 처리 추적(TraceId)과 로봇 보고의 작업·주문 식별자(booking.id, orderId)를 잇는 대응은 어느 표준도 정하지 않아 ROP 가 직접 맡을 후보로 보인다. [추정][^ref-031][^ref-448][^ref-230][^ref-447][^ref-111][^ref-051] 경계의 원문 정의는 [범위 경계](../../about/scope-boundary.md)에 있다.\n\n이 경계는 제품 전략에 따라 이동할 수 있다. 자사 로봇까지 만드는 회사는 로컬 주행을 포함할 수 있지만, **이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다.** [분류원문]"
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "append",
+            "content": "\n2026-09-25에 정리한 열린 질문은 [38. 모니터링·이상 탐지·원인 분석 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area19-s11.md)에 있다.\n\n### 2026-10-09 갱신(실행 2026-10-09-16)\n\n- **oq-033**·**oq-073** (상태: 열림) 공통 상태·오류 어휘와 오류 수준 대응 — 부분 근거: VDA 5050 3.0.0 은 네 단계, Open-RMF 경보는 세 등급, MassRobotics 상태 보고는 등급 없는 문자열 목록으로 심각도를 나타내고 세 규약 어디에도 서로 간 대응표가 없어, ROP 가 심각도 대응 규칙을 따로 정해야 할 것으로 보인다. [추정][^ref-031][^ref-448][^ref-230]\n- **oq-210** (상태: 열림) 작업 식별자와 분산 추적 연결 — 부분 근거: Open-RMF booking.id 와 VDA 5050 orderId 를 OpenTelemetry TraceId 와 대응해 두면 플랫폼 처리와 로봇 상태 보고를 하나의 작업 기준으로 이을 수 있을 것으로 보이나, 이를 정한 표준은 확인하지 못했다. [추정][^ref-447][^ref-111][^ref-051]\n- **oq-074**·**oq-075** (상태: 열림) 물류창고 대상 원인 분류 체계와 원인별 발생 비율 자료는 이번 갱신에서도 찾지 못했다. 5절 병원 사례 연구는 원문 기준 재조사를 요청했다.\n- 새 질문 (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-16) MassRobotics 상태 보고의 오류 코드는 심각도 없는 자유 문자열인데, 이 표준을 쓰는 로봇과 VDA 5050 로봇이 섞인 플릿에서 오류 심각도를 어떤 기준으로 부여해 한 경보 체계에 넣는가? (관련: oq-033, oq-073)\n- 새 질문 (상태: 열림 · 제기 2026-10-09 · 실행 2026-10-09-16) VDA 5050 headerId 결번이나 상태 메시지가 오지 않는 구간을 통신 원인으로 판정하는 기준(결번 수, 무응답 시간)을 정한 표준이나 현장 연구가 있는가?"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-051",
+                "ref-031",
+                "ref-449",
+                "ref-230",
+                "ref-111",
+                "ref-448",
+                "ref-313",
+                "ref-283",
+                "ref-445",
+                "ref-447",
+                "ref-451",
+                "ref-943",
+                "ref-944",
+                "ref-995",
+                "ref-980",
+                "ref-961",
+                "ref-962"
+              ],
+              "last_run": "2026-10-09"
+            },
+            "content": "[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-10-09\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\n[^ref-449]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/connection.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema, 접근일 2026-10-09\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-09\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-10-09\n[^ref-448]: Open Robotics (open-rmf/rmf_internal_msgs), rmf_task_msgs/msg/Alert.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg, 접근일 2026-10-09\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-10-09\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-10-09\n[^ref-445]: ROS (ros/diagnostics GitHub), diagnostics — README (ros2 branch), 미확인, https://github.com/ros/diagnostics/blob/ros2/README.md, 접근일 2026-10-09\n[^ref-447]: OpenTelemetry (CNCF), OpenTelemetry Specification — Overview, 미확인, https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md, 접근일 2026-10-09\n[^ref-451]: Roser, C., Nakano, M., & Tanaka, M., Comparison of bottleneck detection methods for AGV systems (WSC 2003 Proceedings, 1192–1198쪽), 2003, https://keio.elsevierpure.com/en/publications/comparison-of-bottleneck-detection-methods-for-agv-systems/, 접근일 2026-09-25 (원문 미열람)\n[^ref-943]: Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026-03-31, https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/, 접근일 2026-10-09 (원문 미열람)\n[^ref-944]: 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원', 2024-04-15, http://www.irobotnews.com/news/articleView.html?idxno=34601, 접근일 2026-10-09 (원문 미열람)\n[^ref-995]: Offshore Technology (Eve Thomas), Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones, 2025-11-21, https://www.offshore-technology.com/features/equinor-autonomous-robotics/, 접근일 2026-10-09 (원문 미열람)\n[^ref-980]: 한국로봇산업진흥원, 실외이동로봇 운행안전인증, 미확인, https://www.kiria.org/portal/cert/portalCertEstiSafe.do, 접근일 2026-10-09 (원문 미열람)\n[^ref-961]: Responsible AI Collaborative (AI Incident Database), Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks, 미확인, https://incidentdatabase.ai/cite/346/, 접근일 2026-10-09 (원문 미열람)\n[^ref-962]: Hotel Technology News, Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce, 2019-01, https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/, 접근일 2026-10-09 (원문 미열람)"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-09 | 38. 모니터링·이상 탐지·원인 분석 | 3절 심각도·시각 형식·통신 신호·사람 개입 근거 보강과 원문 질문 표현 정정, 5절 병원·상업 시설·실외·기타 사례 추가, 7절 VDA 5050·MassRobotics·Open-RMF·OpenTelemetry 필드 표, 9절 내부 진단·승강기·실외 인증 경계, 11절 부분 근거·새 질문 2건, 각주 갱신(1차 조건부 승인 수정 16건·2차 수정 3건 반영) | run 2026-10-09-16",
+    "index_updates": {
+      "home_recent": "2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 표준별 심각도·시각 형식·연결 상태 차이와 병원·상업 시설·실외·기타 현장 사례를 더하고 책임 경계를 보강했다",
+      "category_recent": "2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 3·5·7·9·11절 갱신(현장 유형별 사례 4건 추가, VDA 5050·MassRobotics·Open-RMF 필드 정리, 새 열린 질문 2건)",
+      "area_recent": "2026-10-09 — 38. 모니터링·이상 탐지·원인 분석: 3절 원문 질문 표현 정정과 근거 보강, 5절 병원·상업 시설·실외·기타 사례, 7절 표준 필드 표, 9절 경계 보강, 11절 부분 근거·새 질문 2건, 13절 각주 접근일 갱신"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "connection-state",
+        "term_ko": "연결 상태",
+        "term_en": "Connection State (VDA 5050 connectionState)",
+        "definition": "VDA 5050 에서 로봇과 메시지 브로커 사이 연결을 ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 가운데 하나로 알리는 값이며, 예기치 않은 끊김은 유언 메시지로 전달된다.",
+        "description": "질서 있는 종료 때는 OFFLINE, 예기치 않은 끊김은 브로커가 유언 메시지로 CONNECTION_BROKEN 을 알리고, HIBERNATING 은 연결은 살아 있으나 상태 메시지를 보내지 않는 절전·통신 감축 모드다.",
+        "related_areas": [
+          38,
+          20
+        ],
+        "sources": [
+          "ref-449"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "alert-tier",
+        "term_ko": "경보 등급",
+        "term_en": "Alert Tier (Open-RMF Alert)",
+        "definition": "Open-RMF 경보 메시지가 운영자에게 보내는 경보의 심각도를 INFO·WARNING·ERROR 세 단계로 나타내는 필드다.",
+        "description": "경보 메시지는 등급과 함께 운영자 응답 목록, 관련 작업 id, 화면 표시 여부를 담는다.",
+        "related_areas": [
+          38,
+          32
+        ],
+        "sources": [
+          "ref-448"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 로봇 상태 메시지 스키마. 필수 항목(errors·operatingMode·safetyState), 운용 모드 값, information 사용 제한, headerId 규칙, 시각 형식을 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세 본문. 오류 수준 네 단계와 오류 설명·조치 힌트 항목(이전 실행 2026-10-09-15 확인 내용 재인용, 검증에서 state.schema 원문으로 확인).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-449",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/connection.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 연결 상태 메시지 스키마. ONLINE·OFFLINE·HIBERNATING·CONNECTION_BROKEN 과 유언 메시지 규칙.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. identityReport·statusReport, 운용 상태 9값, 문자열 오류 코드 목록.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-111",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 작업 상태 스키마. 작업 상태 12값, 배차 상태·오류, 일시정지·재개·취소 기록, 예약 식별자.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-448",
+        "org": "Open Robotics (open-rmf/rmf_internal_msgs)",
+        "title": "rmf_task_msgs/msg/Alert.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 경보 메시지 정의. 심각도 세 등급, 응답 목록, 관련 작업 id.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-313",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 자동문 모드 메시지. closed·moving·open·offline·unknown 다섯 값.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-283",
+        "org": "Open Robotics",
+        "title": "Doors (integration_doors) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_doors.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 문 연동 장. 문 노드·문 어댑터(상태 감독자)의 역할과 토픽.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-445",
+        "org": "ROS (ros/diagnostics GitHub)",
+        "title": "diagnostics — README (ros2 branch)",
+        "published": null,
+        "url": "https://github.com/ros/diagnostics/blob/ros2/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "ROS 2 진단 시스템 README. /diagnostics 토픽, aggregator, 원격 기록 패키지 구성.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-447",
+        "org": "OpenTelemetry (CNCF)",
+        "title": "OpenTelemetry Specification — Overview",
+        "published": null,
+        "url": "https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "OpenTelemetry 명세 개요. 추적·지표·로그 신호, TraceId·SpanId, span 간 링크 정의.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-943",
+        "org": "Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)",
+        "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+        "published": "2026-03-31",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 병원 의약품 배송 로봇의 승강기 연동과 승강기 가동률 구간별 성공률을 보고한 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-944",
+        "org": "로봇신문",
+        "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'",
+        "published": "2024-04-15",
+        "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 한림대학교성심병원의 서비스 로봇 7종 73대와 커맨드센터 통합관제 운영 보도.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-995",
+        "org": "Offshore Technology (Eve Thomas)",
+        "title": "Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones",
+        "published": "2025-11-21",
+        "url": "https://www.offshore-technology.com/features/equinor-autonomous-robotics/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. Equinor 시설의 4족 점검 로봇 운영(계기 판독·누출 탐지)과 운영자 임무 생성 보도.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-980",
+        "org": "한국로봇산업진흥원",
+        "title": "실외이동로봇 운행안전인증",
+        "published": null,
+        "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 실외이동로봇 운행안전인증 제도 안내. 인증 대상은 로봇과 관제장치의 조합.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-961",
+        "org": "Responsible AI Collaborative (AI Incident Database)",
+        "title": "Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks",
+        "published": null,
+        "url": "https://incidentdatabase.ai/cite/346/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 헨나 호텔 로봇이 단순 업무를 처리하지 못한 사건 기록.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      },
+      {
+        "id": "ref-962",
+        "org": "Hotel Technology News",
+        "title": "Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce",
+        "published": "2019-01",
+        "url": "https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 헨나 호텔의 로봇 절반 철수와 직원 개입 부담 보도.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "MassRobotics 상태 보고의 오류 코드는 심각도 없는 자유 문자열인데, 이 표준을 쓰는 로봇과 VDA 5050 로봇이 섞인 플릿에서 오류 심각도를 어떤 기준으로 부여해 한 경보 체계에 넣는가? (관련: oq-033, oq-073)",
+        "areas": [
+          38,
+          21
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "VDA 5050 headerId 결번이나 상태 메시지가 오지 않는 구간을 통신 원인으로 판정하는 기준(결번 수, 무응답 시간)을 정한 표준이나 현장 연구가 있는가?",
+        "areas": [
+          38,
+          42
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "물류창고",
+        "item": "시작 조건",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "작업 대상",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "제약",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "완료·인계",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "예외·성과",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "병원",
+        "item": "작업 대상",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "병원",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "병원",
+        "item": "예외·성과",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "작업 대상",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "예외·성과",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "실외",
+        "item": "제약",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "기타",
+        "item": "시작 조건",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "기타",
+        "item": "작업 대상",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      },
+      {
+        "site_type": "기타",
+        "item": "수행 자원",
+        "link": "docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md#5-적용-사례-현장-유형-명시",
+        "title": "38. 모니터링·이상 탐지·원인 분석"
+      }
+    ],
+    "additional_research_requests": [
+      "구로병원 논문(ref-943)의 실패 유형별 분류(복도 자율주행·통신·승강기 막힘)와 전체 성공률·분모를 원문 기준으로 재조사해 38. 모니터링·이상 탐지·원인 분석 5절 병원 사례와 oq-074에 반영",
+      "5절 병원·상업 시설·실외·기타 사례의 '미확인' 칸(시작 조건·제약·완료·인계 등)을 채울 근거 — 이번 브리프의 finding 이 한두 항목에만 걸려 있어 여섯 항목을 채우지 못했다",
+      "5절 제조 공장 현장의 이상 탐지·원인 분석 적용 사례 — 이번 브리프에 근거가 없어 '이번 조사에서 찾지 못했다'로 두었다",
+      "한림대학교성심병원 보도(ref-944)의 세부 분류 합계(8종 76대)와 7종 73대가 맞지 않는 점을 다른 출처로 확인 — 5절 병원 사례의 '보도 기준' 표기를 해소하기 위해",
+      "실외이동로봇 운행안전인증 심사 항목 수가 한국로봇산업진흥원 안내 페이지(8개)와 이전 실행 2026-10-09-15 의 기사(16개)에서 다른 점과 관제장치 항목의 세부 요건 — 5절 실외 사례와 9절 업종별 조건 행의 근거 보강 및 출처 충돌 여부 판단을 위해",
+      "ref-031 출처 항목의 표기 불일치(summary 는 '원문 미열람.'으로 시작하나 fetched true·source_unopened false) 정리 — 참고문헌 페이지 표기를 바로잡기 위해",
+      "10절(분리 주제 페이지)의 '분류 개정 전 원문 8장의 교차 규칙' 표현을 원문 13장(L. AI·학습 기술 주석) 기준으로 다시 확인 — 이번 갱신 절 밖이라 고치지 않았다",
+      "파이프라인 담당: 자동 분리가 기존 '자세한 내용은 주제 페이지 …' 줄을 지우는 문제와, 3절 분리 뒤 세부영역 페이지 프런트매터 sources 에 본문 인용이 없는 ref-451 이 남는 문제 확인 — 2차 검증 노트의 지적"
+    ],
+    "fixes_applied": [
+      "f2 분리 — 7절 VDA 5050 state 스키마 행에서 information 배열의 시각화·디버깅 전용 규정만 [사실][^ref-051]로 쓰고, '원인 판정 규칙은 errors·operatingMode 같은 정해진 필드에 기대야 한다'는 별도 문장 [추정][^ref-051]으로 썼다.",
+      "f3 각주 — 7절 VDA 5050 3.0.0 명세 행의 오류 수준 4단계와 errorDescription·errorHint(번역 포함) 문장에 [사실][^ref-031][^ref-051] 두 각주를 달았다.",
+      "f6 분리·표현 — 7절 Open-RMF 작업 상태 행에서 상태 12값·배차 상태(failed_to_assign)·배차 오류 배열·일시정지/재개/취소/강제 종료 요청의 시각·라벨 기록까지 [사실][^ref-111]로, 지연 구분 가능성은 [추정][^ref-111]으로 쓰고 '사람 개입' 대신 '개입 요청(라벨로 출처 표시)'으로 썼다.",
+      "f10 분리 — 9절 본문에서 ROS 2 diagnostics 의 /diagnostics·aggregator·원격 기록(InfluxDB) 설명만 [사실][^ref-445]로, 'ROP 는 결과를 원인 범주 판정의 입력으로 받는다'는 '연계 대상:' 표시와 함께 [추정][^ref-445]로 썼고 표의 연계 대상 칸도 유지했다.",
+      "f15 표현 — 3절에서 'Open-RMF 작업 기록이 일시정지·재개 요청과 그 요청 출처 라벨을 남긴다'로 바꾸고 waitingHumanEvent 를 '사람 사건 대기'로 썼으며 [추정] 태그를 유지했다.",
+      "f16 강등 — 5절 병원 사례를 [추정][^ref-943]으로 쓰고 '승강기 가동률 59.01% 미만 구간의 성공률은 95.52%였고 실패는 승강기 가동률이 높은 구간에 몰렸다'로 고쳤으며 '90% 초과' 표현을 쓰지 않았다. 설비(승강기) 혼잡 원인은 해석이라고 밝히고, 승강기 운행 제어는 연계 대상이며 ROP 몫은 승강기 상태를 원인 범주에 반영하는 데까지라고 5절 서술과 9절 표에 썼다.",
+      "f17 한정 — 5절 병원 사례에서 '7종 73대'를 '보도 기준'으로 쓰고 '이 보도에는 이상 탐지·원인 분석 방식이나 원인별 장애 통계가 나오지 않는다'로 한정했다.",
+      "f18 표현 — 5절 기타 사례의 시설을 '노르웨이 Northern Lights 시설'로 쓰고, 계기 판독·가스(누출) 탐지는 로봇 인식 기능인 연계 대상으로 짧게 두었으며 ROP 쪽은 점검 결과를 설비 이상 판정의 입력으로 받는 부분만 [추정]으로 서술했다.",
+      "f19 분리 — 5절 실외 사례에서 '운행안전인증은 로봇과 관제장치의 조합을 대상으로 한다'만 [사실][^ref-980]로, '관제장치의 감시 기능이 운행 조건의 하나가 된다'는 [추정][^ref-980]으로 쓰고 인증 판단은 인증 기관·운영자 쪽 연계 대상이라고 5절 서술과 9절 표에 밝혔다.",
+      "f20 표현 — 5절 상업 시설 사례에서 '사람 개입 없이는 처리하지 못해 사람의 일을 늘렸고', 철수 규모를 '로봇 일부(보도 기준 절반가량)'로 쓰고 기준일 2019-01 보도를 유지했다.",
+      "f21 제외 — 본문에 쓰지 않고 additional_research_requests 에 구로병원 논문의 실패 유형별 분류와 전체 성공률·분모 재조사 요청을 넣었다.",
+      "5절 현장 유형별 분리 — 병원(f16·f17)·상업 시설(f20)·실외(f19)·기타(f18) 사례를 현장 유형마다 나누고 finding 이 없는 칸은 '미확인'으로 두었으며, site_matrix_updates 에는 실제로 채운 칸만 넣었다. 제조 공장은 이번 조사에서 찾지 못했다고 두었다.",
+      "3절 원문 질문 표현 — 둘째 문단을 '지연의 원인이 로봇인지 설비인지 통신인지 앞 작업인지'로 고쳐 [분류원문] 태그 없이 풀어 썼다.",
+      "열린 질문 1번 — 질문 끝에 '(관련: oq-033, oq-073)'를 붙여 open_question_updates 와 11절에 등록했고, 관련 영역 38·21 과 종류 일반(접두어 없음)을 유지했다.",
+      "각주 접근일·표기 — ref-051·ref-449·ref-230·ref-111·ref-448·ref-313·ref-283·ref-445·ref-447·ref-031 의 접근일을 2026-10-09 로 갱신하고, ref-111·ref-283·ref-230·ref-313 의 기관·제목을 참고문헌 색인 줄과 같게 고쳤다.",
+      "원문 미열람 표시 — ref-943·ref-944·ref-995·ref-980·ref-961·ref-962 각주의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.",
+      "2차: 7절·11절 기존 목록 링크 복원 — 7절 replace 본문의 첫 문단 뒤에 '2026-09-25에 정리한 표준·오픈소스 목록은 [38. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area19-s7.md)에 있다.'를, 11절 append 본문의 '### 2026-10-09 갱신' 소제목 앞에 '2026-09-25에 정리한 열린 질문은 [38. 모니터링·이상 탐지·원인 분석 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area19-s11.md)에 있다.'를 지시된 형식 그대로 넣었다.",
+      "2차: 5절 병원 사례 표 정리 — 수행 자원 칸에서 한림대학교성심병원 문장을 빼고 의약품 배송 로봇의 승강기 호출·탑승 문장과 승강기 운행 제어 연계 대상 문장만 남겼으며, 한림대학교성심병원 문장('다른 병원 사례로, … [사실][^ref-944]')은 표 아래 '한림대학교성심병원 보도에는 …' 문장 앞에 별도 언급으로 옮겼다. site_matrix_updates 의 병원 3칸은 그대로 두었다.",
+      "2차: 5절 문체 — 도입 문단 끝과 '### 제조 공장' 아래의 '찾지 못함.'을 '…이번 조사에서 찾지 못했다.'로 고쳤고 표 칸의 '미확인'은 그대로 두었다."
+    ]
+  },
+  "ttft_ms": 19163,
+  "type": "result",
+  "duration_ms": 174939,
+  "uuid": "f1844c41-668a-4ba3-8dcc-58b04fba0ad6",
+  "ttft_stream_ms": 1231,
+  "time_to_request_ms": 108,
+  "time_to_request_phases_ms": {
+    "other": 30,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 8,
+    "input_attachments": 10,
+    "input_hooks": 3,
+    "tool_pool_refresh": 4,
+    "init_message": 8,
+    "engine_pickup": 2,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 15
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 58,
+  "time_to_request_cpu_ms": 158,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 22,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1231,
+  "time_to_request_from_spawn_ms": 21502751,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791527770037.8835,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 176.7
+}

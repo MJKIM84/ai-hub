@@ -1,0 +1,391 @@
+{
+  "duration_api_ms": 219850,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.3602529999999997,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 106618,
+    "cache_read_input_tokens": 649079,
+    "output_tokens": 16378,
+    "output_tokens_details": {
+      "thinking_tokens": 6741
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 106618,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 13349,
+        "cache_read_input_tokens": 190503,
+        "cache_creation_input_tokens": 4909,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4909
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 214382,
+      "outputTokens": 16926,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 2,
+      "costUSD": 0.0499012,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9518,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 16378,
+      "cacheReadInputTokens": 649079,
+      "cacheCreationInputTokens": 106618,
+      "webSearchRequests": 0,
+      "costUSD": 1.3103517999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6741,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 17,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-19\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 2026-10-09 열람. 추적 API·SDK·프로토콜 안정, 지표 SDK 혼합, 로그 브리지 API 안정, 배기지 프로토콜 N/A, 프로파일 프로토콜 개발 단계로 일치. 페이지에 갱신일 없음(발행일 미확인).\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 제목 'Moved: Generative AI semantic conventions', 이동·관리 중단 안내문 일치. 직접 인용 1회(ref-1374).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw 원문 열람. 카운터 5종·히스토그램 2종 모두 Development, 단위 {token}, 필수 속성 일치. gen_ai.client.token.usage 언급·이름 변경 안내 없음.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 히스토그램은 백분위·이상값용이며 합계·비용 산정에 쓰지 않도록, 캐시·추론 카운터는 입력·출력 카운터의 부분집합이라고 원문이 명시.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f2~f4 에서 도출한 운영 판단이며 두 출처 모두 안정 판 일정을 밝히지 않음. oq-212 는 해결이 아니라 부분 근거.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 바이라인네트워크 2025-10-31(곽중희) 기사 열람. 2025-10-31 시행, 접속기록 대상을 '개인정보처리시스템에 접속한 모든 자(정보주체 제외)'로 확대, 제2조·제6조의2 즉시 시행, 내부 관리계획·접근권한·접근통제·접속기록 보관·점검 조항 1년 유예 일치. 고시 번호 없음. 단일 기사(신뢰도 low)이므로 '보도에 따르면' 귀속 표현을 유지해야 [사실] 유지 가능. 검색 결과(nepla.ai 요약)가 즉시 시행·유예 범위를 같게 전하지만 독립 1차 자료가 아니어서 교차 확인으로 세지 않음.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: ref-766(원문 미열람, 2023-6호)과 ref-1367 비교 추론. 유예 종료일·개정 고시 번호·제8조 현행 문구는 미확인으로 남겨야 함. oq-214 부분 근거.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: AI Act Service Desk 제19조 페이지 열람. 제1항(제12조 제1항 로그, 통제 범위, 적어도 6개월, EU·회원국 법 우선)·제2항(금융기관) 일치. 페이지가 2026-07-27 통합본 기준임을 명시. 직접 인용 1회. '연계 대상' 표기 적절.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 제26조 제5항(사용 설명서 기반 감시, 위험 시 제공자·유통자·시장감시당국 통보와 사용 중단), 제6항(통제 범위 로그 적어도 6개월 보관) 일치.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인: Hunton 글 열람. 규정 2026/1744, 관보 게재 3일 뒤 2026-07-27 발효, 부속서 III 2027-12-02, 부속서 I 2028-08-02 일치. 교차 확인: 검증 검색 결과(White & Case, Cooley, Cloud Security Alliance 등 독립 기관)가 같은 번호·발효일·적용일을 전함(검색 결과 일치, 원문 미열람). 다만 열람한 Hunton 페이지에서 발행일 2026-07-28 을 확인하지 못함 → 발행일 미확인 처리 지시. EUR-Lex 원문 미열람.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f8~f10 에서 도출. 로봇 플랫폼의 고위험 해당 여부·부속서 I/III 귀속은 출처가 다루지 않음. 검색 결과는 부속서 I 에 기계류가 포함된다고 전함. oq-316 부분 근거.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PMC 본문 열람. 요청 135건, 긴급 13건 제외, 적격 122건(평일 80·주말 42), 실패 14건, 3.4절 완료 108건, 87.03% 분모 서술 없음 일치.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 108/122≈88.5% 산술 비교. 87.03% 는 '저자 보고'로 두고 oq-215 는 열린 채로 둔다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: DOGU IROI(Level 3+), 직원 전용·병원 내 물류용 승강기 TK Elevator TK50M, 단일 로봇 운영 일치. 다만 원문은 승강기 대수를 밝히지 않으므로 '승강기 1대'의 대수 표현은 삭제 지시(수정 후 [사실] 유지).\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 2025-06-18~29, B2F 약제부 → 1F 응급실, 승강기 가동률 평일 09~17시 최고·야간·주말 50% 미만 일치. 주의: 원문 다른 곳에 'four-week' 시험 기간 표현이 있어 2주 기간과 원문 내부에서 맞지 않음.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Mender 상태 스크립트 문서 열람. Enter/Leave, 반환값 0 진행·1 중단·롤백·21 나중에 재시도, StateScriptRetryIntervalSeconds·RetryTimeoutSeconds·TimeoutSeconds, Download_Enter 사용자 확인 예시, Sync 후 24시간 만료 일치. '연계 대상' 표기 적절.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 롤백된 배포는 항상 실패 표시, stderr 스크립트당 10 KiB 로그 업로드, 스크립트의 영구 변경은 되돌리지 않음과 백업(ArtifactInstall_Enter)·삭제(ArtifactCommit_Enter)·복원(ArtifactRollback_Enter) 권고, 멱등성 요구 일치.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Farshad Tavakoli 2020-01-28 블로그. Enterprise·Professional 의 단계적 배포, 5%→15%→나머지·24시간 간격 예시, 보통 3~4단계·약 2일 간격, 실패·오류율 증가 시 중단 가능 일치. vendor_claim·[추정]·'벤더 주장' 표시 적절.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 문서에 '장치 유휴 시까지 대기' 예시가 없음을 확인(사용자 확인 대기 예시만 있음). 배포 시점 판단을 ROP 몫으로 한정한 범위 서술 적절. oq-213 부분 근거.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: W3C 권고안 2021-11-23(2020-02-06 권고안의 편집 개정), traceparent 네 필드·tracestate, HTTP 외 프로토콜 직렬화는 확장·외부 명세에 맡김 일치. 직접 인용 1회.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록 열람. 저자·제목, 일대다·다대다 인과, 사용자 주석 기반 간접 인과, 합성·실제 로봇 시스템에서 낮은 실행 부담 일치. 서지 정보는 Robotics and Autonomous Systems 161:104361, 2023-03 으로 표시되어 브리프의 발행일 2023-01 과 다름 → 정정 지시.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f20·f21 과 기존 ref-1038(이번 실행 원문 미열람) 에서 도출. oq-210 부분 근거.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IRIS 서지 페이지 열람. Docker·Kubernetes 컨테이너화·엣지–클라우드 군집 배치, 배포 전 기능·비기능 제약 검증, Robotnik RB-Kairos, 로봇 하드웨어 부하 감소·성능·네트워크 부담 최소 일치. 다만 K3s 는 키워드로만 표시되고 초록 본문에 없으며, 적용 대상은 'industrial agile production chain' 으로 '생산 라인'과 표현이 다름 → 문구 수정 지시. 학술지명·DOI 미확인.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문(data/source_texts/ref-762.txt) 'Database Migration' 절에서 aerich(TortoiseORM 이행 도구), init·init-db, TaskState 필드 추가, aerich migrate·upgrade, api-server 재시작 순서 일치. 원문은 PostgreSQL 기준 개발 예시임.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f1 은 기존 페이지 7절(주제 페이지 2026-09-30-area43-s7)의 OpenTelemetry 상태 서술과 같은 내용의 재확인이다 — 새 각주 없이 ref-1036 을 재사용하고 확인일만 갱신한다\",\"f12·f13 은 기존 5절 병원 사례와 oq-215 의 내용과 겹친다 — 기존 문장(87.03% 저자 보고)을 유지하고 근거만 보강한다\",\"새 열린 질문 2(EU AI Act 로그 보관 책임의 계약 배분)는 oq-316 과, 새 열린 질문 3(추적 문맥의 ROS 2·DDS·MQTT 직렬화)은 oq-210 과 일부 겹치나 묻는 대상(계약 사례, 직렬화 규약)이 달라 중복으로 보지 않는다\",\"f16·f17(Mender 상태 스크립트)은 기존 ref-1040(Mender README) 의 A/B 롤백 서술과 이어지며 57. 자산·소프트웨어 수명주기 관리와 겹칠 수 있다 — 이 영역에서는 연계 대상으로만 둔다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f14: 5절 병원 사례 '수행 자원' 행에서 승강기의 대수 표현('1대')을 빼고 '직원 전용 승강기(TK Elevator TK50M)'로 쓴다 — 원문은 승강기 대수를 밝히지 않는다. 로봇 1대(DOGU IROI, Level 3+로 소개)·단일 로봇 운영은 [사실][^ref-943]로 유지한다.\",\"f21·ref-1375: 발행일을 2023-01 에서 2023-03 으로 고친다(각주와 reference_updates 의 published 모두) — arXiv 서지 정보가 Robotics and Autonomous Systems 161:104361, 2023-03 으로 표시한다.\",\"f10·ref-1370: 각주의 발행일을 '미확인'으로 쓰고(reference_updates 의 published 는 null) 본문 기준일은 접근일 2026-10-09 로 둔다 — 열람한 Hunton 페이지에서 발행일 2026-07-28 이 확인되지 않았다(관보 게재 2026-07-24·발효 2026-07-27 은 확인).\",\"f23: 'Kubernetes(K3s)'를 'Kubernetes'로, '산업용 생산 라인 임무'를 '산업용 애자일 생산 체인(industrial agile production chain) 임무'로 고치고, 이 연구는 5절 적용 사례가 아니라 6절(주제 페이지 요약)·8절에만 쓴다 — K3s 는 서지 페이지 키워드에만 있고 적용 환경이 실제 공장인지 확인되지 않았다.\",\"f6·f7: 9절에서 개정 내용은 '바이라인네트워크 보도(2025-10-31)에 따르면'으로 출처를 밝혀 쓰고, 개정 고시 번호·제8조 현행 문구·유예 종료일은 '미확인'으로 남긴다 — 근거가 기사 1건이고 고시 원문을 열지 못했다. 기존 문장 '2023-09-22 시행 판 고시 기준(현행 조문 미확인)'은 유지하고 f7 은 [추정]으로 둔다.\",\"f8~f11: 9절에서는 '연계 대상'으로 한두 문장만 쓰고(EU AI Act 의 제공자·배포자 로그 보관 의무를 보존 정책의 외부 근거로), 상세는 10절에서 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터, 47. AI·학습·적응과 모델 운영, 37. 관제 화면·실행 기록 으로 연결한다 — 법규 해석은 59. 법·규제·보험·라이선스 의 내용이다.\",\"f16~f18: Mender 상태 스크립트·단계적 배포는 '연계 대상'(로봇·장치 운영체제 업데이트 도구)으로 쓰고 f18 은 [추정]에 '벤더 주장'을 병기한다. ROP 직접 몫은 f19 의 배포 시점·순서 판단으로 한정한다.\",\"ref-766·ref-1038: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 두 항목에 source_unopened: true 를 넣는다 — 이번 실행에서 두 출처 모두 원문을 열지 않았다.\",\"7절(주제 페이지 요약): OpenTelemetry 상태(f1)·생성형 AI 의미 규약(f2~f4) 행은 '2026-10-09 확인 기준'으로 기준일을 갱신하고, 토큰 지표는 개발(Development) 단계이며 gen_ai.client.token.usage 에 대한 이름 변경·폐기 안내가 현재 문서에 없다는 점만 쓴다 — 옛 이름의 존재·폐기 여부는 확인되지 않았다.\",\"열린 질문: oq-210·oq-212·oq-213·oq-214·oq-215·oq-316 은 해결로 바꾸지 않고 부분 근거(f22·f5·f19·f7·f13·f11)만 덧붙인다 — 답이 되는 [사실] finding 이 없다. 5절의 87.03% 는 '저자 보고' 표기를 유지한다.\",\"f15: 5절 '제약' 행에 기간·경로·승강기 가동률 패턴을 [사실][^ref-943]로 쓰되, 로봇·승강기 속도는 '미확인'으로 둔다(원문 보고 없음).\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 1건(f10: AI 디지털 옴니버스 규정 번호·발효일·적용일, 독립 로펌·기관 검색 결과 일치). 강등: 없음. 원문 미열람 출처: ref-766, ref-1038. 주의: 새 [사실] 주장은 모두 단일 출처이며, 국내 개인정보 고시 개정(f6)은 기사 1건 기준이고 개정 고시 번호·제8조 현행 문구·유예 종료일은 미확인이다. EU AI Act 적용일(f10)은 로펌 글과 검색 결과 기준이며 관보 원문은 열지 않았다. 구로병원 실증의 성공률 87.03% 는 분모가 원문에 없어 저자 보고 수치로 남고(oq-215), 원문 안에 2주 실시 기간과 '4주' 표현이 함께 있다. 승강기 대수는 원문에 없어 지웠다. 정정 요청 없음. 열린 질문 해결 인정 없음(oq-210·oq-212·oq-213·oq-214·oq-215·oq-316 부분 근거만). 검증 메모: ref-762 는 fetched_via 가 github_raw 로 적혔으나 자체 점검에는 inbox 원문으로 적혀 있고 입력 원문 텍스트로 확인했다. webfetch 출처들은 fetch_url 이 비어 있으나 검증 에이전트가 각 URL 을 직접 열어 확인했다. 검증 검색 2회(리서치 17회와 합쳐 19/30).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-19",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 2026-10-09 열람. 추적 API·SDK·프로토콜 안정, 지표 SDK 혼합, 로그 브리지 API 안정, 배기지 프로토콜 N/A, 프로파일 프로토콜 개발 단계로 일치. 페이지에 갱신일 없음(발행일 미확인)."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 제목 'Moved: Generative AI semantic conventions', 이동·관리 중단 안내문 일치. 직접 인용 1회(ref-1374)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw 원문 열람. 카운터 5종·히스토그램 2종 모두 Development, 단위 {token}, 필수 속성 일치. gen_ai.client.token.usage 언급·이름 변경 안내 없음."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 히스토그램은 백분위·이상값용이며 합계·비용 산정에 쓰지 않도록, 캐시·추론 카운터는 입력·출력 카운터의 부분집합이라고 원문이 명시."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f2~f4 에서 도출한 운영 판단이며 두 출처 모두 안정 판 일정을 밝히지 않음. oq-212 는 해결이 아니라 부분 근거."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 바이라인네트워크 2025-10-31(곽중희) 기사 열람. 2025-10-31 시행, 접속기록 대상을 '개인정보처리시스템에 접속한 모든 자(정보주체 제외)'로 확대, 제2조·제6조의2 즉시 시행, 내부 관리계획·접근권한·접근통제·접속기록 보관·점검 조항 1년 유예 일치. 고시 번호 없음. 단일 기사(신뢰도 low)이므로 '보도에 따르면' 귀속 표현을 유지해야 [사실] 유지 가능. 검색 결과(nepla.ai 요약)가 즉시 시행·유예 범위를 같게 전하지만 독립 1차 자료가 아니어서 교차 확인으로 세지 않음."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: ref-766(원문 미열람, 2023-6호)과 ref-1367 비교 추론. 유예 종료일·개정 고시 번호·제8조 현행 문구는 미확인으로 남겨야 함. oq-214 부분 근거."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: AI Act Service Desk 제19조 페이지 열람. 제1항(제12조 제1항 로그, 통제 범위, 적어도 6개월, EU·회원국 법 우선)·제2항(금융기관) 일치. 페이지가 2026-07-27 통합본 기준임을 명시. 직접 인용 1회. '연계 대상' 표기 적절."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 제26조 제5항(사용 설명서 기반 감시, 위험 시 제공자·유통자·시장감시당국 통보와 사용 중단), 제6항(통제 범위 로그 적어도 6개월 보관) 일치."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인: Hunton 글 열람. 규정 2026/1744, 관보 게재 3일 뒤 2026-07-27 발효, 부속서 III 2027-12-02, 부속서 I 2028-08-02 일치. 교차 확인: 검증 검색 결과(White & Case, Cooley, Cloud Security Alliance 등 독립 기관)가 같은 번호·발효일·적용일을 전함(검색 결과 일치, 원문 미열람). 다만 열람한 Hunton 페이지에서 발행일 2026-07-28 을 확인하지 못함 → 발행일 미확인 처리 지시. EUR-Lex 원문 미열람."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f8~f10 에서 도출. 로봇 플랫폼의 고위험 해당 여부·부속서 I/III 귀속은 출처가 다루지 않음. 검색 결과는 부속서 I 에 기계류가 포함된다고 전함. oq-316 부분 근거."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PMC 본문 열람. 요청 135건, 긴급 13건 제외, 적격 122건(평일 80·주말 42), 실패 14건, 3.4절 완료 108건, 87.03% 분모 서술 없음 일치."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 108/122≈88.5% 산술 비교. 87.03% 는 '저자 보고'로 두고 oq-215 는 열린 채로 둔다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: DOGU IROI(Level 3+), 직원 전용·병원 내 물류용 승강기 TK Elevator TK50M, 단일 로봇 운영 일치. 다만 원문은 승강기 대수를 밝히지 않으므로 '승강기 1대'의 대수 표현은 삭제 지시(수정 후 [사실] 유지)."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 2025-06-18~29, B2F 약제부 → 1F 응급실, 승강기 가동률 평일 09~17시 최고·야간·주말 50% 미만 일치. 주의: 원문 다른 곳에 'four-week' 시험 기간 표현이 있어 2주 기간과 원문 내부에서 맞지 않음."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Mender 상태 스크립트 문서 열람. Enter/Leave, 반환값 0 진행·1 중단·롤백·21 나중에 재시도, StateScriptRetryIntervalSeconds·RetryTimeoutSeconds·TimeoutSeconds, Download_Enter 사용자 확인 예시, Sync 후 24시간 만료 일치. '연계 대상' 표기 적절."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 롤백된 배포는 항상 실패 표시, stderr 스크립트당 10 KiB 로그 업로드, 스크립트의 영구 변경은 되돌리지 않음과 백업(ArtifactInstall_Enter)·삭제(ArtifactCommit_Enter)·복원(ArtifactRollback_Enter) 권고, 멱등성 요구 일치."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Farshad Tavakoli 2020-01-28 블로그. Enterprise·Professional 의 단계적 배포, 5%→15%→나머지·24시간 간격 예시, 보통 3~4단계·약 2일 간격, 실패·오류율 증가 시 중단 가능 일치. vendor_claim·[추정]·'벤더 주장' 표시 적절."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 문서에 '장치 유휴 시까지 대기' 예시가 없음을 확인(사용자 확인 대기 예시만 있음). 배포 시점 판단을 ROP 몫으로 한정한 범위 서술 적절. oq-213 부분 근거."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: W3C 권고안 2021-11-23(2020-02-06 권고안의 편집 개정), traceparent 네 필드·tracestate, HTTP 외 프로토콜 직렬화는 확장·외부 명세에 맡김 일치. 직접 인용 1회."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록 열람. 저자·제목, 일대다·다대다 인과, 사용자 주석 기반 간접 인과, 합성·실제 로봇 시스템에서 낮은 실행 부담 일치. 서지 정보는 Robotics and Autonomous Systems 161:104361, 2023-03 으로 표시되어 브리프의 발행일 2023-01 과 다름 → 정정 지시."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f20·f21 과 기존 ref-1038(이번 실행 원문 미열람) 에서 도출. oq-210 부분 근거."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IRIS 서지 페이지 열람. Docker·Kubernetes 컨테이너화·엣지–클라우드 군집 배치, 배포 전 기능·비기능 제약 검증, Robotnik RB-Kairos, 로봇 하드웨어 부하 감소·성능·네트워크 부담 최소 일치. 다만 K3s 는 키워드로만 표시되고 초록 본문에 없으며, 적용 대상은 'industrial agile production chain' 으로 '생산 라인'과 표현이 다름 → 문구 수정 지시. 학술지명·DOI 미확인."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문(data/source_texts/ref-762.txt) 'Database Migration' 절에서 aerich(TortoiseORM 이행 도구), init·init-db, TaskState 필드 추가, aerich migrate·upgrade, api-server 재시작 순서 일치. 원문은 PostgreSQL 기준 개발 예시임."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f1 은 기존 페이지 7절(주제 페이지 2026-09-30-area43-s7)의 OpenTelemetry 상태 서술과 같은 내용의 재확인이다 — 새 각주 없이 ref-1036 을 재사용하고 확인일만 갱신한다",
+        "f12·f13 은 기존 5절 병원 사례와 oq-215 의 내용과 겹친다 — 기존 문장(87.03% 저자 보고)을 유지하고 근거만 보강한다",
+        "새 열린 질문 2(EU AI Act 로그 보관 책임의 계약 배분)는 oq-316 과, 새 열린 질문 3(추적 문맥의 ROS 2·DDS·MQTT 직렬화)은 oq-210 과 일부 겹치나 묻는 대상(계약 사례, 직렬화 규약)이 달라 중복으로 보지 않는다",
+        "f16·f17(Mender 상태 스크립트)은 기존 ref-1040(Mender README) 의 A/B 롤백 서술과 이어지며 57. 자산·소프트웨어 수명주기 관리와 겹칠 수 있다 — 이 영역에서는 연계 대상으로만 둔다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f14: 5절 병원 사례 '수행 자원' 행에서 승강기의 대수 표현('1대')을 빼고 '직원 전용 승강기(TK Elevator TK50M)'로 쓴다 — 원문은 승강기 대수를 밝히지 않는다. 로봇 1대(DOGU IROI, Level 3+로 소개)·단일 로봇 운영은 [사실][^ref-943]로 유지한다.",
+      "f21·ref-1375: 발행일을 2023-01 에서 2023-03 으로 고친다(각주와 reference_updates 의 published 모두) — arXiv 서지 정보가 Robotics and Autonomous Systems 161:104361, 2023-03 으로 표시한다.",
+      "f10·ref-1370: 각주의 발행일을 '미확인'으로 쓰고(reference_updates 의 published 는 null) 본문 기준일은 접근일 2026-10-09 로 둔다 — 열람한 Hunton 페이지에서 발행일 2026-07-28 이 확인되지 않았다(관보 게재 2026-07-24·발효 2026-07-27 은 확인).",
+      "f23: 'Kubernetes(K3s)'를 'Kubernetes'로, '산업용 생산 라인 임무'를 '산업용 애자일 생산 체인(industrial agile production chain) 임무'로 고치고, 이 연구는 5절 적용 사례가 아니라 6절(주제 페이지 요약)·8절에만 쓴다 — K3s 는 서지 페이지 키워드에만 있고 적용 환경이 실제 공장인지 확인되지 않았다.",
+      "f6·f7: 9절에서 개정 내용은 '바이라인네트워크 보도(2025-10-31)에 따르면'으로 출처를 밝혀 쓰고, 개정 고시 번호·제8조 현행 문구·유예 종료일은 '미확인'으로 남긴다 — 근거가 기사 1건이고 고시 원문을 열지 못했다. 기존 문장 '2023-09-22 시행 판 고시 기준(현행 조문 미확인)'은 유지하고 f7 은 [추정]으로 둔다.",
+      "f8~f11: 9절에서는 '연계 대상'으로 한두 문장만 쓰고(EU AI Act 의 제공자·배포자 로그 보관 의무를 보존 정책의 외부 근거로), 상세는 10절에서 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터, 47. AI·학습·적응과 모델 운영, 37. 관제 화면·실행 기록 으로 연결한다 — 법규 해석은 59. 법·규제·보험·라이선스 의 내용이다.",
+      "f16~f18: Mender 상태 스크립트·단계적 배포는 '연계 대상'(로봇·장치 운영체제 업데이트 도구)으로 쓰고 f18 은 [추정]에 '벤더 주장'을 병기한다. ROP 직접 몫은 f19 의 배포 시점·순서 판단으로 한정한다.",
+      "ref-766·ref-1038: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 두 항목에 source_unopened: true 를 넣는다 — 이번 실행에서 두 출처 모두 원문을 열지 않았다.",
+      "7절(주제 페이지 요약): OpenTelemetry 상태(f1)·생성형 AI 의미 규약(f2~f4) 행은 '2026-10-09 확인 기준'으로 기준일을 갱신하고, 토큰 지표는 개발(Development) 단계이며 gen_ai.client.token.usage 에 대한 이름 변경·폐기 안내가 현재 문서에 없다는 점만 쓴다 — 옛 이름의 존재·폐기 여부는 확인되지 않았다.",
+      "열린 질문: oq-210·oq-212·oq-213·oq-214·oq-215·oq-316 은 해결로 바꾸지 않고 부분 근거(f22·f5·f19·f7·f13·f11)만 덧붙인다 — 답이 되는 [사실] finding 이 없다. 5절의 87.03% 는 '저자 보고' 표기를 유지한다.",
+      "f15: 5절 '제약' 행에 기간·경로·승강기 가동률 패턴을 [사실][^ref-943]로 쓰되, 로봇·승강기 속도는 '미확인'으로 둔다(원문 보고 없음)."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 1건(f10: AI 디지털 옴니버스 규정 번호·발효일·적용일, 독립 로펌·기관 검색 결과 일치). 강등: 없음. 원문 미열람 출처: ref-766, ref-1038. 주의: 새 [사실] 주장은 모두 단일 출처이며, 국내 개인정보 고시 개정(f6)은 기사 1건 기준이고 개정 고시 번호·제8조 현행 문구·유예 종료일은 미확인이다. EU AI Act 적용일(f10)은 로펌 글과 검색 결과 기준이며 관보 원문은 열지 않았다. 구로병원 실증의 성공률 87.03% 는 분모가 원문에 없어 저자 보고 수치로 남고(oq-215), 원문 안에 2주 실시 기간과 '4주' 표현이 함께 있다. 승강기 대수는 원문에 없어 지웠다. 정정 요청 없음. 열린 질문 해결 인정 없음(oq-210·oq-212·oq-213·oq-214·oq-215·oq-316 부분 근거만). 검증 메모: ref-762 는 fetched_via 가 github_raw 로 적혔으나 자체 점검에는 inbox 원문으로 적혀 있고 입력 원문 텍스트로 확인했다. webfetch 출처들은 fetch_url 이 비어 있으나 검증 에이전트가 각 URL 을 직접 열어 확인했다. 검증 검색 2회(리서치 17회와 합쳐 19/30).",
+    "retry_reason": null
+  },
+  "ttft_ms": 2365,
+  "type": "result",
+  "duration_ms": 170297,
+  "uuid": "ba45815e-ece3-488b-84b7-64a319a1581b",
+  "ttft_stream_ms": 874,
+  "time_to_request_ms": 104,
+  "time_to_request_phases_ms": {
+    "other": 26,
+    "system_prompt": 12,
+    "resume_other": 0,
+    "process_user_input": 4,
+    "input_attachments": 17,
+    "input_hooks": 3,
+    "tool_pool_refresh": 3,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 3,
+    "client_creation": 5,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 54,
+  "time_to_request_cpu_ms": 141,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 21,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 875,
+  "time_to_request_from_spawn_ms": 24519838,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791530787186.1104,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 172.0
+}

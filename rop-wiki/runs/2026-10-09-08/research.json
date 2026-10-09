@@ -1,0 +1,2287 @@
+{
+  "run_id": "2026-10-09-08",
+  "date": "2026-10-09",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "L. AI·학습 기술"
+  },
+  "gaps": [
+    "L. AI·학습 기술 대분류 페이지의 '다른 대분류와의 연결' 절이 '아직 작성되지 않음' 상태다. 44. 로봇 기반 모델·언어 모델 계획, 45. 문서·도면·장면 이해, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영과 다른 16개 대분류의 연결이 정리되지 않았다",
+    "47. AI·학습·적응과 모델 운영 페이지는 이전 분류(2026-09-25) 기준이라 C. 채팅 기반 구성·운영, J. 현장 운영·관제의 37. 관제 화면·실행 기록, M. 안전, N. 보안·개인정보와 잇는 근거가 약하다",
+    "44~47 페이지의 10절(다른 연구영역과의 연결)은 주제 페이지로 분리되어 있고, 대분류 단위로 묶은 연결은 없다",
+    "분류 원문 교차 규칙(매뉴얼 해석은 4·55번, 도면 해석은 14번, 학습 기반 배정은 25번, 장애 분석은 38번) 가운데 38. 모니터링·이상 탐지·원인 분석에 대한 AI 기반 장애 분석 근거가 게시 페이지에 거의 없다(F. 연동 페이지도 '근거 없음'으로 남김)",
+    "M. 안전·N. 보안·개인정보와 L. AI·학습 기술을 잇는 근거(언어 모델 로봇의 탈옥·가드레일, 영상 데이터의 AI 학습 활용)가 게시 페이지에 없다",
+    "P. 거버넌스·법규·사회의 60. 노동·수용성·접근성, J. 현장 운영·관제의 39·40, H. 실행·협업·예외 복구의 30, E. 사물·사람·실시간 상태의 17 과 L. AI·학습 기술을 잇는 근거가 없다"
+  ],
+  "research_questions": [
+    "학습·언어 모델 같은 AI 기술을 어디에 쓰고, 그 결과를 어떤 기준으로 믿을 것인가? [분류원문]",
+    "분류 원문 교차 규칙에 따라 45. 문서·도면·장면 이해·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영의 방법은 B. 로봇 온톨로지(4)·D. 공간·지도 모델(14)·G. 계획·최적화(25)·J. 현장 운영·관제(38)·O. 검증·도입·수명주기(55)에 무엇을 넘기는가?",
+    "44. 로봇 기반 모델·언어 모델 계획과 47. AI·학습·적응과 모델 운영은 C. 채팅 기반 구성·운영(8·11·12·13)의 '사람이 확인·승인한 계획만 실행' 원칙과 F. 연동(20)의 플랫폼 API 에 어떻게 이어지는가? (oq-216, oq-217 관련)",
+    "46. 예측·학습 기반 최적화의 예측·학습 결과는 E. 사물·사람·실시간 상태(18·19)의 현재 상태 표현, I. 설계·시뮬레이션(34·35·36)의 가정한 미래 실험, F. 연동(23)의 수요예측 경계와 어떻게 나뉘는가? (oq-220, oq-222, oq-223 관련)",
+    "언어 모델이 제어하는 로봇의 탈옥·가드레일, AI 장애 진단, 영상 데이터의 AI 학습 활용은 M. 안전(48)·N. 보안·개인정보(51·52·53)·J. 현장 운영·관제(37·38)와 어디서 만나는가? (oq-106, oq-228 관련)",
+    "한국 인공지능 기본법·EU AI Act 같은 규제와 AI 관리 표준은 P. 거버넌스·법규·사회(58·59)·A. 기획·사업(2)·O. 검증·도입·수명주기(56·57)와 어떻게 이어지며, 한국 자료는 무엇이 있는가? (oq-105 관련)",
+    "L. AI·학습 기술의 적용 사례는 Q. 현장 유형별 적용의 일곱 현장 유형 가운데 어디에 근거가 있는가?"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ A. 기획·사업의 1. 기술·시장·업체 동향: BMW 그룹은 2025년 스파턴버그 공장에 Figure AI 의 휴머노이드 Figure 02 를 배치해 용접 공정용 판금 부품 투입을 맡겼고 BMW X3 3만 대 이상 생산을 도왔다고 밝히나, 같은 보도자료 안에서 배치 기간이 10개월과 11개월로 엇갈린다(oq-219).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1051"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 44. 로봇 기반 모델·언어 모델 계획 5절 제조 공장 사례(게시 페이지)에 실린 BMW 그룹 보도자료(2026-06-25) 내용. Figure AI 자체 발표로 교차 확인하지 못함. (재인용: 2026-09-30-07)",
+      "as_of": "2026-06-25",
+      "site_type": "제조 공장",
+      "flow_item": "수행 자원",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f2",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ A. 기획·사업의 1. 기술·시장·업체 동향: 헬로티 보도(2025-11-26)에 따르면 로보티즈는 VLA 모델을 넣은 상체형 휴머노이드 AI 워커로 BGF로지스 물류센터 실증(PoC)을 계획하며, 기사가 전한 핵심 공정 자동화율 80% 이상·작업 성공률 90% 이상은 실측이 아닌 목표치다(oq-218).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1052"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 정부 과제 'AI 파운데이션 모델 기반 유통 공정 특화 휴머노이드 로봇 개발' 실증 계획. 입·출고·오발주·분류·피킹·반품 공정 대상. 공개된 측정 결과 없음. (재인용: 2026-09-30-07)",
+      "as_of": "2025-11-26",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f3",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델·K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: Bruno·Sim·Hagiwara(2026-09, 프리프린트)는 범용 서비스 로봇의 LLM 연쇄 기반 작업 계획에서 로컬 모델과 클라우드 모델을 비교했고, 비교의 동기는 클라우드 API 비용과 지연이었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1043"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "K. 플랫폼 아키텍처·인프라 대분류 연결 실행의 검증된 주장. 로컬 대 클라우드 LLM 비교, 동기는 API 비용·지연. (재인용: 2026-10-09-06)",
+      "as_of": "2026-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ A. 기획·사업의 3. 경제성·조달·사업 모델: Howard(Cal Poly 석사논문, 2026-06)는 처리량 최대화 기준의 AMR 대수 산정이 서비스형 로봇(RaaS) 구독 과금에서 플릿을 과대 산정한다고 보고, 대수 산정을 주문 라인당 비용 최소화 문제로 바꿔 시뮬레이션·대기행렬·기계학습 대리 모델을 함께 썼다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-822"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "석사논문 초록 기준 저자 보고. 이산 사건 시뮬레이션 27,000회, 반개방형 대기행렬 모델로 설계안 선별, XGBoost 대리 모델. (재인용: 2026-10-09-07)",
+      "as_of": "2026-06",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ A. 기획·사업의 2. 사용 사례·요구·책임 범위: 한국 인공지능 기본법의 고영향 인공지능 여부는 사업자가 속한 산업이 아니라 AI 가 쓰이는 영역(교통·보건의료 등)으로 판단한다는 해설이 있어, 병원·교통 현장의 로봇 작업 계획·배정에 AI 를 쓸지 정하는 사용 사례 정의 단계에서 고영향 해당 여부를 함께 판단해야 할 것으로 보인다(oq-105).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1253",
+        "ref-620"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "BKL 해설(2025-09-30, 고시·가이드라인 초안 기준): 사람의 생명·신체 안전·기본권에 중대한 영향을 미치는 AI, 영역 예시에 교통·보건의료 포함, 로봇은 언급 없음. 확정 고시와 같은지 미확인.",
+      "as_of": "2025-09-30",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": false
+    },
+    {
+      "id": "f6",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ B. 로봇 온톨로지의 4. 이기종 로봇 등록: 검색 증강 문맥 학습으로 자산관리셸(AAS)용 정보 추출을 개선하는 AAS-RAIL(2026-09)과 대규모 언어 모델 에이전트로 자산관리셸을 생성하는 Xia 외(2024)가 있어, 분류 원문 교차 규칙의 매뉴얼 해석이 등록 정보 작성으로 이어진다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1071",
+        "ref-1072"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45. 문서·도면·장면 이해 3절·9절(게시)이 인용한 두 연구. 교차 규칙: 매뉴얼 해석은 4·55번. 두 연구는 서로 다른 방법(추출 개선, AAS 생성)이며 같은 내용의 교차 확인은 아님.",
+      "as_of": "2026-09-07",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ B. 로봇 온톨로지의 4. 이기종 로봇 등록·5. 로봇 능력·작업 표현: 로봇 기술 파일(URDF)에서 로봇 온톨로지를 LLM 으로 채우는 연구(Dussard·Sarthou, 2026-06)와 LLM 으로 능력 온톨로지를 생성하는 연구(Vieira da Silva 외, 2024-04)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-239",
+        "ref-238"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "B. 로봇 온톨로지 대분류 페이지 연결 절의 [사실] 주장과 같은 각주. (재인용: 2026-09-25 B 대분류 연결 실행)",
+      "as_of": "2026-06",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ B. 로봇 온톨로지의 7. 온톨로지 검증·변경 관리: 추출 항목마다 원문 위치를 붙이는 출처 근거 연결 도구(LangExtract)를 쓰면 7. 온톨로지 검증·변경 관리의 원문 대조 검증과 사람의 확정·반려가 같은 근거를 공유할 것으로 보이나, 로봇 매뉴얼에 적용한 공개 구현은 확인하지 못했다(oq-147, oq-226).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1074",
+        "ref-1071"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "45. 문서·도면·장면 이해 9절(게시): ROP 직접 범위에 '추출 항목마다 원문 위치를 붙여 사람이 확정·반려하게 하는 검토 흐름' 포함 [추정].",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f9",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동·F. 연동의 21. 상호운용 표준·적합성: Nabizada 외(2026-06, CASE 2026)는 VDI 3682·IEC 61360-1·IDTA 서브모델로 구성한 자산관리셸 능력 모델에서 PDDL 문제를 자동 생성하고, 출력이 표준 PDDL 이라 어떤 계획기든 쓸 수 있다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-201"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 결과 요약 기준(원문 미열람): 능력 모델이 PDDL 요소를 모두 도출할 정보를 담음, 여러 AAS 파일을 공유 객체 저장소로 연결, Festo MPS 500 사례, 구성 요소 AAS 는 수작업 모델링.",
+      "as_of": "2026-06",
+      "site_type": "제조 공장",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동: LLM+P 가 자연어 문제를 PDDL 로 옮겨 고전 계획기로 풀고 능력 모델에서 PDDL 을 자동 생성하는 연구가 있으므로, PDDL 같은 계획 표현이 언어 모델 계획과 온톨로지 기반 연동을 잇는 인터페이스가 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-092",
+        "ref-201"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "44. 로봇 기반 모델·언어 모델 계획 8절(게시) LLM+P [사실]과 f9 를 결합한 해석. 두 방식을 한 플랫폼에서 결합한 사례는 확인하지 못함.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ B. 로봇 온톨로지의 5. 로봇 능력·작업 표현: VLA 같은 로봇 기반 모델은 카메라 영상에서 행동을 직접 생성해 미리 정한 스킬 목록 없이 작업을 다루므로, 이런 로봇의 능력을 능력 모델에 어떻게 등록·기술·검증할지가 두 대분류 사이의 열린 쟁점으로 보인다(oq-216).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1045",
+        "ref-1047"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "44. 로봇 기반 모델·언어 모델 계획 5절·9절·11절(게시): 스킬 목록 없이 작업 대상을 다루는 방식 [추정], 등록·검증 방법은 열린 질문.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f12",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션: 언어 모델로 다중 로봇 작업을 계획하는 SMART-LLM(2023-09)과 언어 모델의 해석을 PDDL 로 옮겨 최적 계획기에 맡기는 LLM+P(2023-04)가 있어, 대화 지시를 계획으로 바꾸는 엔진(25. 작업 배정 — MRTA·26. 작업 순서·스케줄링)과 언어 모델 계획이 만난다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-090",
+        "ref-092"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "44. 로봇 기반 모델·언어 모델 계획 8·9절(게시) 인용 연구. 분류 원문 C 주석: 업무 지시는 25·26번의 기능을 대화로 쓰게 하는 것.",
+      "as_of": "2023-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f13",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·F. 연동의 20. 로봇·제조사 관제 연동: Open Robotics 상호운용 SIG 의 2026-07-02 발표 안내문은 Open-RMF REST API 를 언어 모델이 호출하는 도구로 노출하는 MCP 서버와 평이한 영어 지시를 여러 단계의 RMF 임무로 바꾸는 에이전트로 이루어진 Nayantra 를 소개했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-854"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "E·K 대분류 연결 절의 검증된 주장과 같은 각주. 시연은 Isaac Sim 창고 시뮬레이션, 발표 내용 자체는 미열람. (재인용: 2026-10-09-06)",
+      "as_of": "2026-06-25",
+      "site_type": null,
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f14",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·13. 대화형 기능의 신뢰·기반: 언어 모델 계획을 기호 계획기로 검증하고 불확실할 때 사람에게 묻는 장치가 분류 원문 C 주석의 '사람이 확인·승인한 계획만 실행' 원칙을 구현하는 수단이 될 것으로 보이며, 47. AI·학습·적응과 모델 운영은 그 채택 기준을 정하는 쪽을 맡는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-351",
+        "ref-092"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "44. 로봇 기반 모델·언어 모델 계획 9절(게시) [추정]: 작업 분해·배정 계획을 기호 계획기·제약 검사로 검증하는 계층과 사람 확인 요청 절차는 C 주석 원칙과 같은 방향.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반: KnowNo 는 언어 모델 계획기가 필요할 때 사람에게 도움을 요청하게 하고, 'Learning to Ask'(2024-09)는 불분명한 지시를 받은 LLM 에이전트의 되묻기를, AmbiK 는 주방 환경의 모호한 작업 데이터셋을 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-351",
+        "ref-359",
+        "ref-354"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47. AI·학습·적응과 모델 운영 5·8절(게시) 인용 자료. KnowNo 는 사람 도움을 줄이는 것을 목표(저자 보고). 세 자료는 서로 다른 내용.",
+      "as_of": "2023-07",
+      "site_type": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ C. 채팅 기반 구성·운영의 11. 채팅으로 실제 상황 시뮬레이션 재현·I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: Xia 외(2026-08)는 언어 모델 에이전트가 사용자 질의와 기준 구성을 받아 비교 시뮬레이션을 설계·실행하고 결과를 해석해 공정 매개변수 변경을 권고하는 다중 에이전트 틀을 제약 공정 설계에 적용했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-832"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "I. 설계·시뮬레이션 대분류 연결 실행의 주장. ETFA 2026 채택, 로봇 플릿 적용 사례 아님. (재인용: 2026-10-09-07)",
+      "as_of": "2026-08-22",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성: DeFazio 외(2024-09)는 비전 언어 모델로 평면도 지도를 해석하는 연구를 냈다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-076"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "B. 로봇 온톨로지 대분류 페이지 연결 절 [사실] 주장과 같은 각주: 'Vision Language Models Can Parse Floor Plan Maps'.",
+      "as_of": "2024-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ C. 채팅 기반 구성·운영의 8. 채팅으로 맵 작성: 도면을 올려 대화로 지도를 만드는 기능은 45. 문서·도면·장면 이해의 도면 해석과 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델의 엔진을 함께 부를 것으로 보이며, 건축·공학 도면 이해 벤치마크가 따로 있을 만큼 해석 오류가 남으므로 확인 질문이 필요할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-076",
+        "ref-1073"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "분류 원문 C 주석: 맵 작성은 14·15번. 45 페이지 6절 요약: 어느 갈래도 사람 확인 없이 실행 정보로 쓸 수준은 아닌 것으로 보인다 [추정].",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f19",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ C. 채팅 기반 구성·운영의 12. 채팅으로 업무 지시·오케스트레이션·D. 공간·지도 모델의 15. 지도·공간·위치 모델: SayPlan(CoRL 2023)은 언어 모델이 3차원 장면 그래프로 세운 초기 계획을 실행 전에 장면 그래프 시뮬레이터로 확인하고 그 피드백으로 실행 불가능한 동작을 고치는 반복 재계획을 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-416"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "최대 3개 층·36개 방·140개 자산·물체 환경, 이동 매니퓰레이터로 평가. (재인용: 2026-10-09-07)",
+      "as_of": "2023-07-12",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f20",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기: 평면도 영상 분석 데이터셋 CubiCasa5K, CAD 도면 파놉틱 심볼 스포팅 데이터셋 FloorPlanCAD, 국내 AI Hub 건축 도면 데이터가 분류 원문 교차 규칙의 도면 해석 학습·평가 자료로 쓰인다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-063",
+        "ref-067",
+        "ref-1012"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "교차 규칙: 도면 해석은 14번. AI Hub 라벨(구조 8종·공간 12종·객체 5종)에 로봇 운영 클래스가 있는지는 oq-197.",
+      "as_of": "2023-07-26",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f21",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기·Q. 현장 유형별 적용의 64. 상업 시설: Su 외(Sensors, 2022-03)는 쇼핑몰 평면도 25장의 점포 1,340개를 대상으로 공간 분할 정확도 92.54%, 점포 인식 정확도 90.56%, 전체 검출 정확도 83.81%를 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1066"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45. 문서·도면·장면 이해 5절 상업 시설 사례(게시). 층별 안내판 문자 인식 + 2단계 영역 성장 분할. 로봇 현장 배치가 아닌 논문 평가.",
+      "as_of": "2022-03-25",
+      "site_type": "상업 시설",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f22",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ D. 공간·지도 모델의 14. 도면·BIM에서 지도 만들기: AECV-Bench(2026-01)는 다중 모달 모델의 건축·공학 도면 이해를 평가하는 벤치마크다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1073"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45 페이지 3·6절(게시) 인용. 제목: Benchmarking Multimodal Models on Architectural and Engineering Drawings Understanding.",
+      "as_of": "2026-01-08",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f23",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ D. 공간·지도 모델의 15. 지도·공간·위치 모델·16. 장소 의미·지도 관리·Q. 현장 유형별 적용의 66. 실외: Strader 외(2025-07)는 개방형 객체 지도를 담은 공유 3차원 장면 그래프로 여러 로봇의 장면 그래프를 융합하고, LLM 이 장면 그래프와 로봇 능력에서 문맥을 뽑아 운영자의 자연어 의도를 PDDL 목표로 바꾸게 해 대규모 실외 환경에서 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1070"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45. 문서·도면·장면 이해 5절 실외 사례(게시). 로봇 대수·실험 수치는 초록에 없음.",
+      "as_of": "2025-07-10",
+      "site_type": "실외",
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ D. 공간·지도 모델의 16. 장소 의미·지도 관리: osmAG-LLM(2025-07, RA-L 2026)은 계층적 위상·계량 의미 지도를 문맥으로 쓰고 LLM 이 질의에 맞는 후보 장소를 추론하게 해, 물체가 옮겨졌거나 지도에 없는 경우도 찾게 하는 방법이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1018"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 결과 요약 기준(원문 미열람): 지도 밖 물체도 지도에 있는 물체와 비슷한 성공률로 찾았다고 초록이 보고.",
+      "as_of": "2025-07",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f25",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성·Q. 현장 유형별 적용의 62. 제조 공장: Brorsson 외(2025-12)가 보고한 대형 상용차 공장 사례에서는 약 8 m 높이 카메라 15대가 로봇 ArUco 표식으로 위치를 계산하고 영상 분할로 장애물을 격자 단위로 구분했으며, 카메라 간 하드웨어 동기화가 없어 생기는 시간 차 오류가 제약으로 꼽혔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-308"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45 페이지 5절 제조 공장 사례(게시). 로봇 6대, 머플러 약 150 m 운반, 시야 중첩 시 가장 가까운 카메라 결과만 사용.",
+      "as_of": "2025-12",
+      "site_type": "제조 공장",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f26",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성: 고정 카메라와 여러 로봇의 인식 결과를 시간·좌표를 맞춰 하나의 공간 상태로 합치는 일은 현재 상태를 표현하는 18. 실시간 세계 상태·데이터 일관성의 입력이 될 것으로 보이며, 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈과는 구분되고, 허용 시간 차·정합 기준은 확인하지 못했다(oq-227).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-308",
+        "ref-1070"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "45 페이지 9절(게시) [추정]: 플랫폼 수준 융합이 ROP 직접 범위. 온보드 인식·SLAM 은 연계 대상.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f27",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ E. 사물·사람·실시간 상태의 19. 사람·보행자 모델: Rudenko 외 서베이가 정리한 사람 움직임 궤적 예측은 가까운 미래 사람 위치 추정 방법이므로, 예측 결과를 경로·배정 비용에 넣는 일이 두 영역을 잇는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1172"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "E. 사물·사람·실시간 상태 대분류 연결 절(게시)의 L 연결 [추정]과 같은 각주. (재인용: 2026-10-09-03)",
+      "as_of": "2019-12-17",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f28",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ F. 연동의 22. 설비·건물 시스템 연동·Q. 현장 유형별 적용의 61. 물류창고: Robinson 외(2026-06)는 실제 창고에서 CCTV 카메라 30대만으로 작업용 주행 장비를 싣지 않은 로봇 4대를 영상 공간에서 계획·제어하고, 시야가 겹치는 카메라 구역을 배타적 자원으로 관리해 충돌·교착을 막는 시연을 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1065"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45 페이지 5절 물류창고 사례(게시). 길이 27 m 통로 6개. 저자는 첫 현장 시연이라 밝힘. 9절은 경계가 이동한 사례로 분류.",
+      "as_of": "2026-06-04",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f29",
+      "claim": "연계 대상: L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ F. 연동의 23. 업무 시스템 연동: CJ대한통운은 이커머스 통합 플랫폼 iFlex 가 AI·빅데이터로 주문 유형별 물량을 예측해 물류센터 인력 배치를 최적화한다고 밝혔으며, 이는 상위 업무 시스템 쪽 수요예측이라 로봇 배정용 요청 예측과의 경계가 열린 질문으로 남아 있다(oq-223).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1063"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 46 페이지 5·9절(게시). 로봇 배정에 쓴 근거는 자료에 없음. 2021-07-28 자사 뉴스룸.",
+      "as_of": "2021-07-28",
+      "site_type": "물류창고",
+      "flow_item": "시작 조건",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f30",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ F. 연동의 20. 로봇·제조사 관제 연동: NASA JPL 의 ROSA 는 ROS 용 언어 모델 에이전트로 공개되어 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-171"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "44 페이지 7절(게시): 관련 자원으로 ROS용 언어 모델 에이전트(ROSA) [사실].",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f31",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA: 분류 원문 교차 규칙의 학습 기반 배정에 해당하는 연구로, 어텐션 기반 강화학습으로 창고 다중 로봇 작업 배정을 하는 RTAW(2022-09, ICRA 2023)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-623"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "교차 규칙: 학습 기반 배정은 25번. RTAW 는 시뮬레이션 창고 조건(47 페이지 5절).",
+      "as_of": "2022-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f32",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·Q. 현장 유형별 적용의 63. 병원·의료: Garces 외(2026-08, 프리프린트)는 병원 입원 병동의 실제 간호 업무 요청 데이터로 예측 인지형 모델 기반 강화학습을 평가했고, 요청 분포가 바뀌면 최근 예측 오차로 예측 요청을 다시 가중하고 아직 시작하지 않은 배정만 다시 최적화해 대기 시간을 줄였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1062"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 5절 병원 사례(게시). 즉시 확정은 들어온 요청에만, 표본 미래 요청은 평가에만. 꼬리 지연 지표 개선이 가장 컸다(저자 보고).",
+      "as_of": "2026-08",
+      "site_type": "병원",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f33",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·27. 다중 로봇 경로·교통 관리 — MAPF: 아마존 연구진의 DeepFleet 은 전 세계 아마존 창고 수십만 대 로봇의 이동 데이터로 학습한 다중 로봇 기반 모델 모음이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1053"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 5절(게시) [사실]. 2025-08 공개, 2026-04 개정.",
+      "as_of": "2025-08",
+      "site_type": "물류창고",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    },
+    {
+      "id": "f34",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 25. 작업 배정 — MRTA·27. 다중 로봇 경로·교통 관리 — MAPF: 아마존은 DeepFleet 을 혼잡 예측으로 작업 배정과 경로를 조정하는 데 쓰며 로봇 이동 효율을 10% 높였다고 주장한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1054"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Amazon Science 블로그(2025-08-11). 독립 측정은 확인하지 못함(46 페이지 5절).",
+      "as_of": "2025-08-11",
+      "site_type": "물류창고",
+      "flow_item": "제약",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f35",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 27. 다중 로봇 경로·교통 관리 — MAPF: 같은 조건 비교에서는 탐색 기반 MAPF 방법이 아직 앞서고, 학습은 탐색·최적화와 결합할 때 개선이 보고되는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1056",
+        "ref-199",
+        "ref-1064"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "46 페이지 6절 요약(게시) [추정]. POGEMA 벤치마크, 대규모 모방학습 지속형 MAPF, 안내 그래프 최적화.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f36",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 28. 공용 자원·충전·에너지 최적화: Poskart 외(Sensors, 2022-12)는 다중 로봇 시스템의 지능형 임무 계획을 위해 이동로봇 배터리 방전을 여러 매개변수로 예측하는 모델을 제시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1058"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 3·9절(게시) 인용. 제목: Multi-Parameter Predictive Model of Mobile Robot's Battery Discharge for Intelligent Mission Planning in Multi-Robot Systems.",
+      "as_of": "2022-12-15",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f37",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ G. 계획·최적화의 24. 작업·워크플로 모델링·26. 작업 순서·스케줄링: IMR-LLM(2026-03)은 대규모 언어 모델로 산업용 다중 로봇의 작업 계획과 프로그램 생성을 다루는 연구다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-170"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "44 페이지 9절(게시): 공정 트리를 따라 저수준 로봇 프로그램까지 생성하는 부분은 로봇 자체 제어에 닿아 ROP 에서는 연계 대상 문맥 [추정].",
+      "as_of": "2026-03",
+      "site_type": "제조 공장",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f38",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ G. 계획·최적화의 26. 작업 순서·스케줄링·25. 작업 배정 — MRTA: Elmachtoub·Grigas 의 Smart 'Predict, then Optimize'(2017)는 예측 모델을 예측 오차가 아니라 그 예측으로 내린 최적화 결정의 품질로 학습시키는 틀이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1061"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 4절 '결정 중심 학습' 개념의 근거 자료. 로봇 배정·스케줄링 현장 적용은 확인하지 못함.",
+      "as_of": "2017-10",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f39",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ H. 실행·협업·예외 복구의 29. 명령·작업 실행의 신뢰성: Obi 외(2026-04)는 언어 모델이 제어하는 로봇 시스템에 실행 전 안전 게이트와 작업 안전 계약을 두는 방법을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-417"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 3절(게시)의 '실행 전 안전 판정' 근거. 제목: Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems.",
+      "as_of": "2026-04",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f40",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ H. 실행·협업·예외 복구의 31. 사람–로봇 협업: 해석이 불확실할 때 사람에게 묻는 장치는 사람–로봇 협업의 개입 지점이 되지만, KnowNo 의 등각 예측 보장은 보정 데이터와 운영 분포가 같다는 조건에 기대므로 지시 분포가 바뀌면 재보정 주기가 문제로 남을 것으로 보인다(oq-107).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-351"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "47 페이지 11절(게시) 열린 질문과 5절 피킹 시나리오의 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f41",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ H. 실행·협업·예외 복구의 32. 예외 복구·재계획·업무 연속성·J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석: REFLECT(Liu·Bahety·Song, CoRL 2023)는 다중 감각 관측에서 로봇 경험의 계층적 요약을 만들어 LLM 이 실패 원인을 설명하게 하고, 그 설명을 조건으로 언어 기반 계획기가 실패를 고쳐 작업을 마치는 계획을 만들게 하며, RoboFail 데이터셋으로 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-453"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 초록(v4, 2023-10-16) 기준 요약. 단일 로봇 조작 작업이며 다중 로봇 플릿 적용은 아님.",
+      "as_of": "2023-06-27",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f42",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석: Herrmann 외(2024-10)는 산업용 로봇 시스템 진단 문제 2,500건 이상으로 비공개 벤치마크 SYSDIAGBENCH 를 만들어 언어 모델의 근본 원인 분석을 평가했고, QLoRA 미세조정한 70억 매개변수 모델이 진단 정확도에서 GPT-4 를 앞섰다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1262"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 초록 기준: 'QLoRA finetuning ... 7B-parameter model outperform GPT-4' 취지, 사람 전문가 평가로 LLM 평가자 결과 검증. 구체 정확도 수치는 초록에 없음.",
+      "as_of": "2024-10-06",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f43",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈·Q. 현장 유형별 적용의 61. 물류창고: Smit 외(2024-04)는 작업자와 AMR 이 피킹 위치에서 만나는 창고에서 작업자–AMR 배정을 다목적 심층 강화학습으로 정하고, 학습·평가용 이산 사건 시뮬레이션 모델을 만들어 학습 정책이 효율과 작업자 부하 공정성에서 비교 방법을 앞섰다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1245"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "I. 설계·시뮬레이션 대분류 연결 실행의 주장. (재인용: 2026-10-09-07)",
+      "as_of": "2024-04-09",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f44",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: DeepFleet 같은 운영 중 혼잡 예측은 배정·경로 결정에 바로 쓰이는 예측이고 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래를 실험하는 쪽이므로, 두 기능을 구분해 연결해야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1053",
+        "ref-1054"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "46 페이지 6절 주제 페이지(게시)의 DeepFleet·34 구분 문장 [추정](2차 검증에서 [의견]→[추정]).",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f45",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ I. 설계·시뮬레이션의 35. 처리능력·규모·배치 설계: Howard(2026)는 반개방형 대기행렬 모델로 설계안을 걸러 내고 XGBoost 대리 모델과 등각 예측 구간으로 추가 시뮬레이션 없이 연속 설계 공간의 비용을 예측했으며, 대기행렬 모델은 시뮬레이션 라인당 비용과 약 5%, 대리 모델은 교차 검증에서 3% 안에서 맞았다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-822"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "석사논문 초록의 저자 보고값, 독립 재현 미확인. (재인용: 2026-10-09-07)",
+      "as_of": "2026-06",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f46",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ I. 설계·시뮬레이션의 33. 시나리오 모델·편집: Holodeck(CVPR 2024)은 GPT-4 가 장면 구성과 객체 간 공간 관계를 만들고 배치를 최적화해 글 지시로 3D 환경을 생성한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-815"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "생성 장면에서 학습한 에이전트가 처음 보는 환경에서 주행했다고 보고. 생성 환경은 실제 현장 지도가 아님. (재인용: 2026-10-09-07)",
+      "as_of": "2023-12-14",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f47",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현·O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: Kadian 외(RA-L 2020)는 시뮬레이션–현실 상관 계수(SRCC)를 제안하고, LoCoBot PointGoal 주행에서 CVPR 2019 챌린지에서 쓰인 Habitat 설정의 성공률 SRCC 가 0.18 이었으나 시뮬레이션 매개변수 조정으로 0.844 로 높였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "I. 설계·시뮬레이션 대분류 연결 실행에서 정정된 표현 그대로. (재인용: 2026-10-09-07)",
+      "as_of": "2020-08",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f48",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ I. 설계·시뮬레이션의 36. 가상 시운전·실제 상황 재현: 학습 정책이 시뮬레이터의 결함을 이용하는 현실 격차가 보고되므로, 학습 정책의 현실 격차 보정은 47. AI·학습·적응과 모델 운영(및 로봇 제조사·시뮬레이션 도구) 쪽이고 36. 가상 시운전·실제 상황 재현은 재현과 실제의 차이 지표를 관리하는 쪽을 맡는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-741",
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "I. 설계·시뮬레이션 대분류 연결 실행의 [추정]. (재인용: 2026-10-09-07)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f49",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ I. 설계·시뮬레이션의 34. 시뮬레이션·예측용 디지털 트윈: Sommer 외(2023)는 기존 건물 환경의 스캔과 객체 인식을 입력으로 생산 계획용 디지털 트윈을 자동 생성하는 방법을 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-241"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "I. 설계·시뮬레이션 대분류 연결 실행의 주장. (재인용: 2026-10-09-07)",
+      "as_of": "2023",
+      "site_type": "제조 공장",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f50",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석·Q. 현장 유형별 적용의 67. 기타 현장: Pookkuttath 외(Sensors, 2021-12)는 대학 캠퍼스에서 청소 로봇의 IMU 진동 신호를 1차원 합성곱 신경망으로 정상·지형·충돌·조립 풀림·구조 불균형 5종으로 분류해 SLAM 지도에 겹친 예지 정비 지도를 만들고, 실시간 현장 시험 정확도 91%를 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1057"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 5절 기타 사례(게시). 교차 규칙: 장애 분석은 38번. 정비 팀이 위험 구역 격리·심각도 판단.",
+      "as_of": "2021-12-21",
+      "site_type": "기타",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f51",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석·Q. 현장 유형별 적용의 62. 제조 공장: 파이낸셜뉴스가 전한 현대자동차 발표에 따르면 AI 고장예측 시스템이 산업용 로봇팔의 모터 부하·진동·전류 신호로 고장 약 5일 전에 90% 이상 정확도로 이상을 감지한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1059"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 기사(2026-05-28)가 전한 회사 주장. 정확도 산정 방법·데이터 규모 미공개. 부품 수준 신호 감시는 연계 대상.",
+      "as_of": "2026-05-28",
+      "site_type": "제조 공장",
+      "flow_item": "시작 조건",
+      "source_unopened": true,
+      "vendor_claim": true
+    },
+    {
+      "id": "f52",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ J. 현장 운영·관제의 38. 모니터링·이상 탐지·원인 분석: ISO 13381-1:2025 는 기계 시스템 상태 감시·진단의 예지(prognostics) 일반 지침과 요구사항을 다루는 표준이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1060"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 7절(게시) 관련 표준. 표준 원문 미열람, ISO 공식 소개 페이지 기준.",
+      "as_of": "2025",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f53",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록: EU AI Act 제12조는 고위험 AI 시스템이 수명 기간 동안 사건 기록(로그)을 자동으로 남길 수 있어야 하고, 위험 상황·실질적 변경 식별, 시판 후 감시, 배포자의 운영 감시에 필요한 사건을 기록하게 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-863"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "AI Act Service Desk 원문: \"High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system.\" (2026-07-27 통합본 기준)",
+      "as_of": "2024-06-13",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f54",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ J. 현장 운영·관제의 37. 관제 화면·실행 기록·K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포: ROP 의 AI 구성요소가 EU AI Act 고위험 분류(부속서 I 제품의 안전 구성요소 등)에 들어간다면 37. 관제 화면·실행 기록과 43. 데이터·관측성·배포가 남기는 기록이 제12조 로그 요건을 받쳐야 할 것으로 보이나, 해당 여부 자체가 열린 질문이다(oq-106).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-863",
+        "ref-621"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "제12조 원문 확인 + 47 페이지 3절(게시) 고위험 분류 [사실]의 결합 해석. 적용 시점은 개정 논의로 확정하지 않음.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f55",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조: FogROS2(2022-05)는 ROS 2 로봇의 계산 부담이 큰 작업을 클라우드·포그로 옮겨 실행하는 플랫폼이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-304"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "K. 플랫폼 아키텍처·인프라 대분류 연결 실행의 L 연결 주장. (재인용: 2026-10-09-06)",
+      "as_of": "2022-05",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f56",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포: OpenTelemetry 생성형 AI 의미 규약 저장소는 언어 모델 클라이언트 호출의 토큰 사용량 지표를 정의하며, 이 규약은 아직 개발(Development) 단계다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1037"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "K. 플랫폼 아키텍처·인프라 대분류 연결 실행의 주장. 지표 이름은 안정 판 전이라 고정되지 않음(oq-212). (재인용: 2026-10-09-06)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f57",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ K. 플랫폼 아키텍처·인프라의 43. 데이터·관측성·배포·O. 검증·도입·수명주기의 57. 자산·소프트웨어 수명주기 관리: MLflow 모델 레지스트리는 모델 버전과 별칭으로 운영 모델의 교체·되돌림 경로를 관리하게 하는 오픈소스 도구다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-626"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 5·9절(게시): 모델 레지스트리의 버전·별칭으로 교체·되돌림 경로를 둔다. 로봇 플랫폼 적용 사례는 확인하지 못함.",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f58",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ O. 검증·도입·수명주기의 57. 자산·소프트웨어 수명주기 관리: Sculley 외(2015)는 실제 머신러닝 시스템이 일반 코드의 유지보수 문제에 더해 경계 침식, 얽힘, 숨은 피드백 루프, 선언되지 않은 소비자, 데이터 의존성 같은 고유 위험으로 큰 유지 비용을 낳는다고 지적했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-624"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 3절(게시) [사실]과 같은 각주.",
+      "as_of": "2015",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f59",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: Breck 외(Google Research, 2017)의 ML Test Score 는 머신러닝 시스템의 운영 준비 상태와 기술 부채 감소를 점검하는 평가 기준표다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-625"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 3·5절(게시) 인용: 교체 전 시험·감시 기준의 근거.",
+      "as_of": "2017",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f60",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: LoTa-Bench(ICLR 2024)는 언어 지향 작업 계획기를 체화 에이전트 환경에서 평가하는 벤치마크로 공식 저장소가 공개되어 있으나, 현장 제약이 있는 다중 로봇 계획기의 공통 벤치마크는 확인하지 못했다(oq-217).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-541"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 8절(게시): 공식 저장소 README 로 확인한 자료.",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f61",
+      "claim": "L. AI·학습 기술의 46. 예측·학습 기반 최적화 ↔ O. 검증·도입·수명주기의 54. 시험·형식 검증·벤치마크: POGEMA(ICLR 2025)는 협력 다중 에이전트 경로 찾기의 학습 기반·탐색 기반 방법을 같은 조건에서 비교하는 벤치마크 플랫폼이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1056"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "46 페이지 6·7절(게시) 인용. 격자 조건의 벤치마크 성과가 현장 처리량으로 이어지는지는 미확인(oq-220).",
+      "as_of": "2025-04",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f62",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ O. 검증·도입·수명주기의 55. 현장 조사·설치·시운전: 분류 원문 교차 규칙의 매뉴얼 해석 대상인 55. 현장 조사·설치·시운전에서는 URDF·자산관리셸에서 능력 정의 초안을 LLM 으로 만드는 방법이 새 로봇 온보딩의 반복 작업을 줄이는 데 쓰일 것으로 보이나, 온보딩 현장에 적용해 소요를 측정한 사례는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-239",
+        "ref-1072"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "교차 규칙: 매뉴얼 해석은 4·55번. B 대분류 연결 절(게시) [추정]과 같은 방향.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f63",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ M. 안전의 48. 안전·위험 관리·N. 보안·개인정보의 52. 통신 보호·위협 관리·감사: Robey 외(2024-10)는 언어 모델이 제어하는 로봇에 해로운 물리 행동을 하게 만드는 탈옥 알고리즘 RoboPAIR 를 제시하고, 자율주행 LLM·GPT-4o 계획기를 쓴 Clearpath Jackal·GPT-3.5 를 연동한 Unitree Go2 에서 공격 성공률이 자주 100%에 이르렀다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-857"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 초록(v2, 2024-11-09) 기준 요약. 저자는 Go2 결과를 배치된 상용 로봇 시스템의 첫 탈옥 사례라고 밝힘. 화이트·그레이·블랙박스 세 설정.",
+      "as_of": "2024-10-17",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f64",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ M. 안전의 48. 안전·위험 관리: Ravichandran 외(2025-03, 2026-03 개정)의 RoboGuard 는 악성 프롬프트에서 격리한 신뢰 기점 LLM 이 미리 정한 안전 규칙을 환경에 맞춰 시간 논리 제약으로 바꾸고, 제어 합성으로 계획과의 충돌을 해소해 최악의 탈옥 공격에서 위험 계획 실행을 92% 이상에서 3% 미만으로 줄였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-700"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 초록(v2): \"RoboGuard reduces the execution of unsafe plans from over 92% to below 3% without compromising performance on safe plans.\" v1 수치(92.3%→2.5% 미만)와 표현이 다름.",
+      "as_of": "2026-03-03",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f65",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ M. 안전의 48. 안전·위험 관리: 실행 전 안전 게이트나 가드레일 같은 계획 검사는 ROP 가 AI 계획을 채택하기 전 검증 단계의 후보가 될 것으로 보이며, 로봇 자체의 안전 기능과 인증은 연계 대상으로 남고, 이런 AI 가 제품 안전 구성요소로 분류되는지는 열린 질문이다(oq-106).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-417",
+        "ref-700",
+        "ref-621"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f39·f64 와 47 페이지 3·9절(게시)의 결합 해석. 다중 로봇 플릿 오케스트레이션 계획에 적용한 사례는 확인하지 못함.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f66",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ M. 안전의 48. 안전·위험 관리·O. 검증·도입·수명주기의 56. 운영 이관·확대·교육: 태평양(BKL) 해설에 따르면 과기정통부의 고영향 인공지능사업자 책무 고시·가이드라인 초안은 개발 단계에서 사람이 개입할 기준과 긴급 정지 같은 개입 방법을, 운영 단계에서 성능 저하·오류 정기 점검 계획과 관리자 교육·훈련을 요구한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1253"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "BKL 뉴스레터(2025-09-30): 초안(안) 기준 해설이며 확정 고시와 같은지 미확인. 관리·감독자 성명·연락처 게시 포함.",
+      "as_of": "2025-09-30",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f67",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터·Q. 현장 유형별 적용의 66. 실외: 2026-05-06 ICT 규제샌드박스 심의위원회는 뉴빌리티의 '영상정보 원본 활용 자율주행 배달 로봇 시스템 고도화' 과제에 실증특례를 승인해 배달로봇 카메라 원본 영상을 AI 학습에 쓰게 했고, 연구 목적 내 활용·개인 식별 금지·제3자 제공 금지·전담 조직·보호대책을 조건으로 붙였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1263"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "메트로신문(2026-05-06) 기사 1건 기준. 배경: 이동형 영상정보처리기기 영상은 개인정보라 동의 없이 쓰기 어렵고 연구 예외도 모자이크 처리가 필요. 정부 보도자료 원문 미확인.",
+      "as_of": "2026-05-06",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f68",
+      "claim": "L. AI·학습 기술의 45. 문서·도면·장면 이해 ↔ N. 보안·개인정보의 53. 개인정보·영상 데이터·Q. 현장 유형별 적용의 62. 제조 공장: Brorsson 외(2025-12)는 천장 카메라 기반 운반 로봇 사례의 제약으로 작업자·독점 제품·기밀 공정이 영상에 찍히는 개인정보·기밀 문제를 들었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-308"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "45 페이지 5절 제조 공장 사례 제약 칸(게시). 시설 CCTV 목적 외 이용 쟁점은 oq-228.",
+      "as_of": "2025-12",
+      "site_type": "제조 공장",
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f69",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ N. 보안·개인정보의 51. 인증·권한·격리: 언어 모델 에이전트가 플랫폼 API 를 도구로 호출하는 구조에서는 탈옥된 모델이 해로운 동작을 낼 수 있으므로, 모델에 넘기는 도구·로봇·구역 권한을 최소로 제한하는 접근통제가 두 대분류의 경계가 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-854",
+        "ref-857"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f13(MCP 로 Open-RMF API 노출)과 f63(탈옥) 결합 해석. 로봇 플릿 플랫폼의 권한 설계 사례는 확인하지 못함.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": false
+    },
+    {
+      "id": "f70",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스: 한국 「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」과 시행령은 2026-01-22 시행되었고, 사람의 생명·안전·기본권에 중대한 영향을 미칠 수 있는 영역의 AI 를 고영향 인공지능으로 두어 별도 책무를 부과한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-620"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 3절(게시) [사실], 기준일 2026-01-22. 개정 법률 시행일과 고영향 영역 목록은 미확인.",
+      "as_of": "2026-01-22",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f71",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스·M. 안전의 48. 안전·위험 관리: EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계류 등) 대상 제품의 안전 구성요소이거나 제품 자체이고 제3자 적합성 평가 대상인 AI 시스템을 고위험 AI 로 분류한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-621"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 3절(게시) [사실]. 적용 시점은 개정(AI Omnibus) 논의로 확정하지 않음.",
+      "as_of": "2026-09-25",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f72",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ P. 거버넌스·법규·사회의 59. 법·규제·보험·라이선스: 태평양(BKL) 해설에 따르면 고영향 인공지능사업자 책무 초안은 위험관리방안(수명주기 전반 준수·주기적 점검), 결과 도출 기준과 학습용 데이터 개요의 설명 방안, 이용자 보호방안을 요구하고 홈페이지 게시와 관련 문서 5년 보관을 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1253"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "BKL 뉴스레터(2025-09-30) 초안 해설. 고영향 판단은 '에너지, 보건의료, 원자력, 교통, 교육 등' 영역 기준.",
+      "as_of": "2025-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f73",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: 고영향 인공지능 책무가 '사업자'에게 부과되므로 로봇 작업 계획·배정 AI 를 ROP 사업자·현장 운영사·로봇 제조사 가운데 누가 개발·이용 사업자로서 책임질지가 다사업자 계약 항목이 될 것으로 보이며, 조직 차원의 AI 관리 체계(ISO/IEC 42001)가 그 운영 틀이 될 수 있어 보인다(oq-105).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-620",
+        "ref-618",
+        "ref-1253"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "47 페이지 9·11절(게시) [추정]·열린 질문과 BKL 해설의 결합 해석.",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f74",
+      "claim": "L. AI·학습 기술의 47. AI·학습·적응과 모델 운영 ↔ M. 안전의 48. 안전·위험 관리·P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: AI 위험관리·관리 체계 표준으로 ISO/IEC 42001:2023(AI 관리 시스템), ISO/IEC 23894:2023(AI 위험관리 지침), NIST AI 위험관리 프레임워크(2023-01 발표)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-618",
+        "ref-619",
+        "ref-617"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "47 페이지 7·9절(게시) 인용. 세 자료는 서로 다른 문서이며 같은 내용의 교차 확인은 아님.",
+      "as_of": "2023-02",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f75",
+      "claim": "L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획 ↔ Q. 현장 유형별 적용의 65. 가정·공동주택: Physical Intelligence 의 π0.5(2025-04)는 여러 로봇 데이터·고수준 의미 예측·웹 데이터를 함께 학습해 처음 보는 가정집에서 부엌·침실 정리 같은 장기 작업을 수행했다고 보고했으며, 이는 상용 배치가 아닌 연구 평가다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1047"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "44 페이지 5절 가정 사례(게시) [사실]. 저수준 조작 정책은 연계 대상.",
+      "as_of": "2025-04-22",
+      "site_type": "가정",
+      "flow_item": "작업 대상",
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-857",
+      "org": "Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J. (University of Pennsylvania, arXiv)",
+      "title": "Jailbreaking LLM-Controlled Robots",
+      "published": "2024-10-17",
+      "url": "https://arxiv.org/abs/2410.13691",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "LLM 제어 로봇을 해로운 물리 행동으로 유도하는 탈옥 알고리즘 RoboPAIR 를 제시하고 세 접근 설정(자율주행 LLM, Jackal+GPT-4o, Unitree Go2+GPT-3.5)에서 높은 공격 성공률을 보고한 프리프린트(v2 2024-11-09).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2410.13691",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-700",
+      "org": "Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H. (arXiv)",
+      "title": "Safety Guardrails for LLM-Enabled Robots",
+      "published": "2025-03-10",
+      "url": "https://arxiv.org/abs/2503.07885",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "신뢰 기점 LLM 과 시간 논리 제어 합성으로 LLM 로봇의 위험 계획을 막는 가드레일 RoboGuard 를 제안. v2(2026-03-03)는 위험 계획 실행을 92% 이상에서 3% 미만으로 줄였다고 보고.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2503.07885",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-453",
+      "org": "Liu, Z., Bahety, A., & Song, S. (CoRL 2023, arXiv)",
+      "title": "REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction",
+      "published": "2023-06-27",
+      "url": "https://arxiv.org/abs/2306.15724",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "다중 감각 관측에서 로봇 경험의 계층적 요약을 만들어 LLM 이 실패를 설명하고 그 설명으로 수정 계획을 세우는 틀과 RoboFail 데이터셋. 초록만 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2306.15724",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1262",
+      "org": "Herrmann, J. E., Gopinath, A. M., Norrlöf, M., & Müller, M. N. (arXiv)",
+      "title": "Diagnosing Robotics Systems Issues with Large Language Models",
+      "published": "2024-10-06",
+      "url": "https://arxiv.org/abs/2410.09084",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "산업용 로봇 시스템 진단 문제 2,500건 이상의 비공개 벤치마크 SYSDIAGBENCH 로 LLM 근본 원인 분석을 평가하고, QLoRA 미세조정 7B 모델이 GPT-4 보다 진단 정확도가 높았다고 보고. 초록만 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/abs/2410.09084",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1253",
+      "org": "법무법인 태평양(BKL) AI팀",
+      "title": "AI기본법 가이드라인 해설 시리즈 (4) 고영향 인공지능사업자의 책무 관련 고시 및 가이드라인",
+      "published": "2025-09-30",
+      "url": "https://www.bkl.co.kr/law/insight/newsletter/6248",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "과기정통부가 공개한 고영향 인공지능사업자 책무 고시·가이드라인 초안(위험관리·설명·이용자 보호·사람의 관리감독·문서 5년 보관)을 해설한 법무법인 뉴스레터. 초안 기준이며 확정본과의 일치는 미확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.bkl.co.kr/law/insight/newsletter/6248",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1263",
+      "org": "메트로신문",
+      "title": "AI·커머스·플랫폼 분야 규제 특례 확대…사업화 지원",
+      "published": "2026-05-06",
+      "url": "https://www.metroseoul.co.kr/article/20260506500296",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "2026-05-06 ICT 규제샌드박스 심의위원회가 뉴빌리티의 원본 영상 AI 학습 배달로봇 과제에 조건부 실증특례를 승인했다는 기사. 정부 보도자료 원문은 확인하지 못함.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.metroseoul.co.kr/article/20260506500296",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-863",
+      "org": "European Commission — AI Act Service Desk",
+      "title": "Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act)",
+      "published": "2024-06-13",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "고위험 AI 시스템의 자동 사건 기록(로그) 의무를 정한 EU AI Act 제12조. 2026-07-27 통합본 기준 공식 페이지를 열어 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1051",
+      "org": "BMW Group",
+      "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg",
+      "published": "2026-06-25",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. BMW 그룹 스파턴버그 공장의 Figure 02 배치 성과와 Figure 03 순서 공급 착수 발표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1052",
+      "org": "헬로티",
+      "title": "VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입",
+      "published": "2025-11-26",
+      "url": "https://www.hellot.net/news/article.html?no=107567",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로보티즈 AI 워커의 BGF로지스 물류센터 실증 계획과 목표치를 전한 기사.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1043",
+      "org": "Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv)",
+      "title": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
+      "published": "2026-09",
+      "url": "https://arxiv.org/abs/2609.29043",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 범용 서비스 로봇의 LLM 연쇄 작업 계획에서 로컬·클라우드 모델을 비교한 프리프린트.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-822",
+      "org": "Howard, T. L. (California Polytechnic State University, San Luis Obispo, 석사논문)",
+      "title": "A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities",
+      "published": "2026-06",
+      "url": "https://digitalcommons.calpoly.edu/theses/3387",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. RaaS 과금 조건의 AMR 대수 산정을 시뮬레이션·대기행렬·대리 모델로 분석한 석사논문.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-620",
+      "org": "국가법령정보센터(과학기술정보통신부)",
+      "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+      "published": null,
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 한국 인공지능 기본법. 고영향 인공지능과 사업자 책무를 정한다.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1071",
+      "org": "Groß, J., & Heidrich, J. (arXiv)",
+      "title": "AAS-RAIL: Improving Information Extraction for Asset Administration Shells through Retrieval-Augmented In-Context Learning",
+      "published": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.07334",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 검색 증강 문맥 학습으로 자산관리셸 정보 추출을 개선하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1072",
+      "org": "Xia, Y., Xiao, Z., Jazdi, N., & Weyrich, M. (IEEE Access, arXiv)",
+      "title": "Generation of Asset Administration Shell with Large Language Model Agents: Toward Semantic Interoperability in Digital Twins in the Context of Industry 4.0",
+      "published": "2024-06-24",
+      "url": "https://arxiv.org/abs/2403.17209",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 에이전트로 자산관리셸을 생성하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-239",
+      "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
+      "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.17073",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. URDF 에서 로봇 온톨로지를 LLM 으로 채우는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-238",
+      "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+      "title": "On the Use of Large Language Models to Generate Capability Ontologies",
+      "published": "2024-04",
+      "url": "https://arxiv.org/abs/2404.17524",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 으로 능력 온톨로지를 생성하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1074",
+      "org": "Google (google/langextract)",
+      "title": "LangExtract — README",
+      "published": null,
+      "url": "https://github.com/google/langextract",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 추출 결과를 원문 위치에 연결하는 LLM 정보 추출 라이브러리.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-201",
+      "org": "Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A.",
+      "title": "From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.02167",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 자산관리셸 능력 모델에서 PDDL 문제를 자동 생성하는 연구(CASE 2026). 검색 결과 요약으로 확인.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-092",
+      "org": "Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P.",
+      "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+      "published": "2023-04",
+      "url": "https://arxiv.org/abs/2304.11477",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 자연어 문제를 PDDL 로 옮겨 고전 계획기로 푸는 방법.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1045",
+      "org": "Brohan, A., Brown, N. 외 (Google DeepMind, arXiv)",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "published": "2023-07-28",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 웹 지식을 로봇 제어로 옮기는 시각–언어–행동 모델.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1047",
+      "org": "Physical Intelligence (Black, K., Finn, C., Levine, S. 외, arXiv)",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "published": "2025-04-22",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 이질적 과제 공동 학습으로 처음 보는 가정집에서 장기 작업을 수행한 VLA 모델.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-090",
+      "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+      "published": "2023-09",
+      "url": "https://arxiv.org/abs/2309.10062",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 기반 다중 로봇 작업 계획 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-854",
+      "org": "Open Source Robotics Alliance (OSRA) Interop SIG",
+      "title": "Open Robotics Discourse, Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP)",
+      "published": "2026-06-25",
+      "url": "https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. Open-RMF REST API 를 MCP 도구로 노출하는 Nayantra 발표 안내문.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-351",
+      "org": "Ren, A. Z. 외",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.01928",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 등각 예측으로 불확실할 때 사람에게 도움을 요청하게 하는 KnowNo.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-359",
+      "org": "Wang, W. 외",
+      "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.00557",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 불분명한 지시를 받은 LLM 에이전트의 되묻기 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-354",
+      "org": "cog-model (AmbiK 저자)",
+      "title": "AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment)",
+      "published": null,
+      "url": "https://github.com/cog-model/AmbiK-dataset",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 주방 환경의 모호한 작업 데이터셋.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-832",
+      "org": "Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P.",
+      "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+      "published": "2026-08-22",
+      "url": "https://arxiv.org/abs/2608.23622",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 에이전트가 비교 시뮬레이션을 설계·실행·해석하는 다중 에이전트 틀.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-076",
+      "org": "DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.",
+      "title": "Vision Language Models Can Parse Floor Plan Maps",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.12842",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 비전 언어 모델로 평면도 지도를 해석하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1073",
+      "org": "Kondratenko, A., Birhane, M., Hsain, H. E., & Maciocci, G. (arXiv)",
+      "title": "AECV-Bench: Benchmarking Multimodal Models on Architectural and Engineering Drawings Understanding",
+      "published": "2026-01-08",
+      "url": "https://arxiv.org/abs/2601.04819",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 건축·공학 도면 이해 벤치마크.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-416",
+      "org": "Rana, K., Haviland, J., Garg, S., Abou-Chakra, J., Reid, I., & Suenderhauf, N. (CoRL 2023, arXiv)",
+      "title": "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning",
+      "published": "2023-07-12",
+      "url": "https://arxiv.org/abs/2307.06135",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 3차원 장면 그래프와 시뮬레이터 피드백으로 LLM 계획을 접지·재계획하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-063",
+      "org": "Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.",
+      "title": "CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis",
+      "published": "2019-04",
+      "url": "https://arxiv.org/abs/1904.01920",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 평면도 영상 분석 데이터셋과 다중 작업 모델.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-067",
+      "org": "Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P.",
+      "title": "FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting",
+      "published": "2021-05",
+      "url": "https://arxiv.org/abs/2105.07147",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. CAD 도면 파놉틱 심볼 스포팅 데이터셋.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1012",
+      "org": "AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주)",
+      "title": "건축 도면 데이터",
+      "published": "2023-07-26",
+      "url": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 국내 건축 도면 인공지능 학습용 데이터셋.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1066",
+      "org": "Su, M., Shi, W., Zhao, D., Cheng, D., & Zhang, J. (Sensors 22(7))",
+      "title": "A High-Precision Method for Segmentation and Recognition of Shopping Mall Plans",
+      "published": "2022-03-25",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9003070/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 쇼핑몰 평면도 분할·점포 인식 방법과 정확도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1070",
+      "org": "Strader, J., Ray, A., Arkin, J. 외 (arXiv)",
+      "title": "Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs",
+      "published": "2025-07-10",
+      "url": "https://arxiv.org/abs/2506.07454",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다중 로봇 3차원 장면 그래프 융합과 언어 접지 계획.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1018",
+      "org": "Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv)",
+      "title": "osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning",
+      "published": "2025-07",
+      "url": "https://arxiv.org/abs/2507.12753",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 계층적 의미 지도와 LLM 추론으로 옮겨진·미등록 물체를 찾는 방법. 검색 결과 요약으로 확인.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-308",
+      "org": "Brorsson, E. 외",
+      "title": "Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.15215",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 인프라 장착 센서 기반 사내 물류 이동로봇의 기준 아키텍처와 상용차 공장 실배치.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1172",
+      "org": "Rudenko, A., Palmieri, L., Herman, M., Kitani, K. M., Gavrila, D. M., & Arras, K. O. (arXiv; IJRR 39(8), 2020)",
+      "title": "Human Motion Trajectory Prediction: A Survey",
+      "published": "2019-12-17",
+      "url": "https://arxiv.org/abs/1905.06113",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 사람 움직임 궤적 예측 서베이.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1065",
+      "org": "Robinson, L., Ramtoula, B., Izaaryene, A., Newman, P., & De Martini, D. (arXiv)",
+      "title": "Multi-Robot Planning and Control from CCTV Camera Networks in a Real Warehouse",
+      "published": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06762",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 창고 CCTV 카메라망만으로 여러 로봇을 계획·제어한 시연.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1063",
+      "org": "CJ대한통운",
+      "title": "'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명",
+      "published": "2021-07-28",
+      "url": "https://www.cjlogistics.com/ko/newsroom/latest/LT_00000238",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. iFlex 의 주문 유형별 물량 예측과 인력 배치 최적화 소개.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-171",
+      "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
+      "title": "ROSA — ROS Agent (GitHub README)",
+      "published": null,
+      "url": "https://github.com/nasa-jpl/rosa",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ROS 용 언어 모델 에이전트 저장소.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-623",
+      "org": "Agrawal, A. 외",
+      "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.05738",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 창고 다중 로봇 작업 배정 강화학습.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1062",
+      "org": "Garces, D., Castro, S., Haimovich, A., Crowe, B., & Gil, S. (arXiv)",
+      "title": "Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.21554",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 병원 간호 업무 요청 데이터로 평가한 예측 인지형 이종 다중 로봇 배정.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1053",
+      "org": "Agaskar, A., Siva, S., Pickering, W. 외 (Amazon, arXiv)",
+      "title": "DeepFleet: Multi-Agent Foundation Models for Mobile Robots",
+      "published": "2025-08",
+      "url": "https://arxiv.org/abs/2508.08574",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 아마존 창고 로봇 이동 데이터로 학습한 다중 로봇 기반 모델.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1054",
+      "org": "Amazon Science",
+      "title": "Amazon builds first foundation model for multirobot coordination",
+      "published": "2025-08-11",
+      "url": "https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. DeepFleet 의 운영 활용과 이동 효율 10% 향상 주장.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1056",
+      "org": "Skrynnik, A., Andreychuk, A., Borzilov, A., Chernyavskiy, A., Yakovlev, K., & Panov, A. (ICLR 2025, arXiv)",
+      "title": "POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding",
+      "published": "2025-04",
+      "url": "https://arxiv.org/abs/2407.14931",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 협력 MAPF 의 학습·탐색 기반 방법 비교 벤치마크.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-199",
+      "org": "arXiv 2410.21415 저자(미확인)",
+      "title": "Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21415",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 대규모 모방학습 지속형 MAPF.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1064",
+      "org": "Zhang, Y., Jiang, H., Bhatt, V., Nikolaidis, S., & Li, J. (arXiv, IJCAI 2024)",
+      "title": "Guidance Graph Optimization for Lifelong Multi-Agent Path Finding",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.01446",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 지속형 MAPF 의 안내 그래프 최적화.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1058",
+      "org": "Poskart, B., Iskierka, G., Krot, K., Burduk, R., Gwizdal, P., & Gola, A. (Sensors)",
+      "title": "Multi-Parameter Predictive Model of Mobile Robot's Battery Discharge for Intelligent Mission Planning in Multi-Robot Systems",
+      "published": "2022-12-15",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9786877/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 다중 로봇 임무 계획용 배터리 방전 예측 모델.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-170",
+      "org": "Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R.",
+      "title": "IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models",
+      "published": "2026-03",
+      "url": "https://arxiv.org/abs/2603.02669",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 기반 산업용 다중 로봇 작업 계획과 프로그램 생성.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1061",
+      "org": "Elmachtoub, A. N., & Grigas, P. (arXiv)",
+      "title": "Smart \"Predict, then Optimize\"",
+      "published": "2017-10",
+      "url": "https://arxiv.org/abs/1710.08005",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 결정 품질로 예측 모델을 학습시키는 SPO 틀.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-417",
+      "org": "Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab)",
+      "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
+      "published": "2026-04",
+      "url": "https://arxiv.org/abs/2604.05427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. LLM 제어 로봇 시스템의 실행 전 안전 게이트와 작업 안전 계약.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1245",
+      "org": "Smit, I. G., Bukhsh, Z., Pechenizkiy, M., Alogariastos, K., Hendriks, K., & Zhang, Y. (arXiv)",
+      "title": "Learning Efficient and Fair Policies for Uncertainty-Aware Collaborative Human-Robot Order Picking",
+      "published": "2024-04-09",
+      "url": "https://arxiv.org/abs/2404.08006",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 작업자–AMR 배정을 다목적 심층 강화학습과 이산 사건 시뮬레이션으로 다룬 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-815",
+      "org": "Yang, Y., Sun, F.-Y., Weihs, L. 외 (Allen Institute for AI 등)",
+      "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "published": "2023-12-14",
+      "url": "https://arxiv.org/abs/2312.09067",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 글 지시로 3D 환경을 생성하는 연구.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1127",
+      "org": "Kadian, A., Truong, J., Gokaslan, A., Clegg, A., Wijmans, E., Lee, S., Savva, M., Chernova, S., & Batra, D. (arXiv / IEEE RA-L)",
+      "title": "Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?",
+      "published": "2020-08",
+      "url": "https://arxiv.org/abs/1912.06321",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 시뮬레이션–현실 상관 계수(SRCC) 제안.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-741",
+      "org": "Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington)",
+      "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best Practices",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.20808",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 로봇 공학의 현실 격차 서베이.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-241",
+      "org": "Sommer, M., Stjepandić, J., Stobrawa, S., & von Soden, M.",
+      "title": "Automated generation of digital twin for a built environment using scan and object detection as input for production planning",
+      "published": "2023",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2452414X23000353",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 스캔·객체 인식으로 생산 계획용 디지털 트윈을 자동 생성.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1057",
+      "org": "Pookkuttath, S., Elara, M. R., Sivanantham, V., & Ramalingam, B. (Sensors)",
+      "title": "AI-Enabled Predictive Maintenance Framework for Autonomous Mobile Cleaning Robots",
+      "published": "2021-12-21",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8747287/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 청소 로봇 진동 분류 기반 예지 정비 지도.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1059",
+      "org": "파이낸셜뉴스",
+      "title": "현대차, '로봇 고장' AI로 잡는다…5일전 90%이상 감지",
+      "published": "2026-05-28",
+      "url": "https://www.fnnews.com/news/202605280925297568",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 현대차 산업용 로봇팔 AI 고장예측 시스템 발표를 전한 기사.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1060",
+      "org": "ISO (ISO/TC 108)",
+      "title": "ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements",
+      "published": "2025",
+      "url": "https://www.iso.org/standard/88029.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 기계 시스템 예지 일반 지침 표준.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-621",
+      "org": "European Commission",
+      "title": "AI Act | Shaping Europe's digital future",
+      "published": null,
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. EU AI Act 위험 기반 규제와 고위험 분류 개요.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-304",
+      "org": "Ichnowski, J., Chen, K. 외(UC Berkeley AUTOLAB)",
+      "title": "FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2",
+      "published": "2022-05",
+      "url": "https://arxiv.org/abs/2205.09778",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ROS 2 로봇 계산을 클라우드·포그로 옮기는 플랫폼.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1037",
+      "org": "OpenTelemetry (open-telemetry/semantic-conventions-genai)",
+      "title": "semantic-conventions-genai/docs/gen-ai/gen-ai-token-metrics.md",
+      "published": null,
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 생성형 AI 클라이언트 토큰 사용량 지표 의미 규약(개발 단계).",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-626",
+      "org": "MLflow (Linux Foundation 오픈소스 프로젝트)",
+      "title": "ML Model Registry | MLflow AI Platform",
+      "published": null,
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 모델 버전·별칭 관리 도구 문서.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-624",
+      "org": "Sculley, D. 외",
+      "title": "Hidden Technical Debt in Machine Learning Systems",
+      "published": "2015",
+      "url": "https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 머신러닝 시스템의 숨은 기술 부채.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-625",
+      "org": "Breck, E. 외 (Google Research)",
+      "title": "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction",
+      "published": "2017",
+      "url": "https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. ML 운영 준비 평가 기준표.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-541",
+      "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+      "title": "LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README)",
+      "published": null,
+      "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 언어 지향 작업 계획기 벤치마크 저장소.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-618",
+      "org": "ISO/IEC",
+      "title": "ISO/IEC 42001:2023 - AI management systems",
+      "published": "2023",
+      "url": "https://www.iso.org/standard/42001",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. AI 관리 시스템 표준.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-619",
+      "org": "ISO/IEC",
+      "title": "ISO/IEC 23894:2023 - AI — Guidance on risk management",
+      "published": "2023-02",
+      "url": "https://www.iso.org/standard/77304.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. AI 위험관리 지침 표준.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-617",
+      "org": "NIST",
+      "title": "NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence",
+      "published": "2023-01-26",
+      "url": "https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. NIST AI 위험관리 프레임워크 발표 보도자료.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/ai-and-learning/index.md",
+      "sections": [
+        "5. 다른 대분류와의 연결"
+      ],
+      "rationale": "category_link: '다른 대분류와의 연결' 절만 patches 로 채운다. 대분류별 finding — A. 기획·사업: f1·f2(1, 벤더 주장), f3(3), f4(3), f5(2, oq-105) / B. 로봇 온톨로지: f6·f7(4·5, 교차 규칙 매뉴얼 해석), f8(7, oq-147), f9·f10(6), f11(5, oq-216) / C. 채팅 기반 구성·운영: f12·f13·f14·f19(12), f15(13), f16(11), f17·f18(8) — 분류 원문 C 주석(맵 작성은 14·15번, 업무 지시는 25·26번)과 '사람이 확인·승인한 계획만 실행' 원칙과 함께 / D. 공간·지도 모델: f20·f21·f22(14, 교차 규칙 도면 해석), f23(15·16), f24(16) / E. 사물·사람·실시간 상태: f25·f26(18, oq-227), f27(19) / F. 연동: f28(22), f29(23, 연계 대상·벤더 주장, oq-223), f13·f30(20), f9(21) / G. 계획·최적화: f31·f32·f33·f34(25, 교차 규칙 학습 기반 배정; f34 벤더 주장), f35(27), f36(28), f37(24·26), f38(26) / H. 실행·협업·예외 복구: f39(29), f40(31, oq-107), f41(32) / I. 설계·시뮬레이션: f43·f44(34), f45(35), f46(33), f47·f48(36), f49(34) / J. 현장 운영·관제: f41·f42·f50·f51·f52(38, 교차 규칙 장애 분석; f51 벤더 주장), f53·f54(37, oq-106) / K. 플랫폼 아키텍처·인프라: f3·f55(42), f56·f57(43) / M. 안전: f63·f64·f65·f66·f71·f74(48) / N. 보안·개인정보: f69(51), f63(52), f67·f68(53, oq-228) / O. 검증·도입·수명주기: f47·f59·f60·f61(54), f62(55), f66(56), f57·f58(57) / P. 거버넌스·법규·사회: f73·f74(58), f70·f71·f72(59) / Q. 현장 유형별 적용: f2·f28·f33·f34·f43(61 물류창고), f1·f25·f51·f68(62 제조 공장), f32(63 병원·의료), f21(64 상업 시설), f75(65 가정·공동주택), f23·f67(66 실외), f50(67 기타 현장). 18. 실시간 세계 상태·데이터 일관성(현재 상태, f26)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래, f44)은 구분해 쓴다. 벤더 주장 f1·f2·f29·f34·f51 은 [추정]과 '벤더 주장' 병기. 연계 대상 f29 와 VLA 저수준 정책·로봇 부품 감시·카메라 시스템·안전 인증은 '연계 대상'으로 짧게. 아직 다루지 않은 연결: E. 사물·사람·실시간 상태의 17, H. 실행·협업·예외 복구의 30, J. 현장 운영·관제의 39·40, M. 안전의 49·50, P. 거버넌스·법규·사회의 60. 다음 실행 후보: 47. AI·학습·적응과 모델 운영(이전 분류 기준) 10절에 f39·f42·f53·f63·f64·f66 반영."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "안전 가드레일",
+      "term_en": "Safety Guardrail (for LLM-enabled robots)",
+      "definition": "언어 모델이 만든 로봇 계획이 실행되기 전에 미리 정한 안전 규칙과 대조해 위험한 계획을 막거나 고치는 검사 계층이다."
+    },
+    {
+      "term_ko": "자동 사건 기록",
+      "term_en": "Automatic Recording of Events (Logs, EU AI Act Article 12)",
+      "definition": "EU AI Act 제12조가 고위험 AI 시스템에 요구하는, 수명 기간 동안 위험 상황 식별·시판 후 감시·운영 감시에 필요한 사건을 자동으로 남기는 기록 기능이다."
+    }
+  ],
+  "open_questions_new": [
+    "RoboGuard 같은 언어 모델 로봇용 안전 가드레일을 다중 로봇 플릿의 배정·경로·구역 계획에 적용해 위험 계획 차단율을 측정한 연구나 제품이 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 48. 안전·위험 관리, 13. 대화형 기능의 신뢰·기반 | 근거: f64 | 종류: 일반",
+    "언어 모델 기반 고장 진단(REFLECT, SYSDIAGBENCH)을 제조사가 다른 이동로봇 플릿의 실행 기록·오류 코드에 적용해 원인 분석 정확도를 측정한 사례가 있는가? | 관련 영역: 47. AI·학습·적응과 모델 운영, 38. 모니터링·이상 탐지·원인 분석, 44. 로봇 기반 모델·언어 모델 계획 | 근거: f42 | 종류: 일반",
+    "로봇 플랫폼의 AI 구성요소가 EU AI Act 고위험 AI 로 분류되면 제12조 자동 사건 기록 요건을 플랫폼 실행 기록이 충족해야 하는가, 그 기록의 보관 주체는 플랫폼 사업자와 배포자 가운데 누구인가? | 관련 영역: 47. AI·학습·적응과 모델 운영, 37. 관제 화면·실행 기록, 43. 데이터·관측성·배포 | 근거: f54 | 종류: 일반",
+    "실외 배달로봇에 승인된 원본 영상 AI 학습 실증특례가 병원·물류창고 같은 실내 현장의 로봇 카메라 영상에도 적용될 수 있는가, 적용 조건은 무엇인가? | 관련 영역: 53. 개인정보·영상 데이터, 45. 문서·도면·장면 이해 | 근거: f67 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 69,
+    "cross_checked_count": 0,
+    "unverified": [
+      "f1·f2·f29·f34·f51 벤더 주장 수치·기능은 독립 출처로 확인하지 못함",
+      "f5·f66·f72 의 고영향 인공지능 책무 내용은 법무법인 해설(2025-09 초안 기준)이며 확정 시행령·고시 원문 미확인",
+      "f67 원본 영상 실증특례는 기사 1건 열람 기준이며 과기정통부·개인정보위 보도자료 원문 미확인",
+      "f9 Nabizada 외, f24 osmAG-LLM 은 검색 결과 요약으로만 확인(원문 미열람)",
+      "f42 SYSDIAGBENCH 의 구체 정확도 수치와 저자 소속은 초록에 없어 미확인",
+      "f63·f64 수치는 저자 보고값, 독립 재현 미확인",
+      "OWASP Top 10 for LLM(ref-855)의 과도한 에이전시 항목은 공식 페이지 URL 을 확인하지 못해 쓰지 않음",
+      "60. 노동·수용성·접근성, 39. 운영 성과 측정·개선, 40. 운영 절차·요청 창구, 17. 작업 대상·자산 식별과 인계 추적, 30. 로봇 간 협업·물리적 인계, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사와 L. AI·학습 기술을 잇는 근거는 확보하지 못함"
+    ],
+    "scope_violations": [
+      "f29: 전사 주문 수요예측은 원문 19장 상위 업무 시스템 경계의 연계 대상 — claim 을 '연계 대상: '으로 시작",
+      "f1·f2·f11·f75: VLA 저수준 조작 정책은 로봇 자체 지능·제어 경계의 연계 대상이며, ROP 는 능력·실행 조건 수용과 계획 인터페이스만으로 서술",
+      "f37: IMR-LLM 의 저수준 로봇 프로그램 생성은 로봇 자체 제어에 닿아 연계 대상 문맥",
+      "f25·f28·f68: CCTV·카메라 설치·동기화는 시설·설비 경계의 연계 대상, ROP 몫은 인식 결과 융합으로 한정",
+      "f51·f50: 로봇 부품 수준 진동·전류 감시는 제조사·설비 정비 쪽 연계 대상, ROP 는 예측 결과를 정비·배정에 반영",
+      "f63·f64·f65·f71: 로봇 자체 안전 기능·안전 인증은 연계 대상, ROP 는 계획 채택 전 검사 범위로만 서술",
+      "f67·f70·f72·f73: 법령 해석·적용 판단은 법무·운영 사업자 몫이며 ROP 는 기록·설명 기능 제공 범위로만 연결"
+    ],
+    "budget_used": {
+      "queries": 13,
+      "sources": 6
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 대분류 연결(category_link) 실행. 근거는 먼저 게시된 44·45·46·47 페이지와 A·B·E·F·G 대분류 페이지, 이전 브리프(2026-10-09-06, 2026-10-09-07)의 검증된 주장에서 찾고 재사용 출처의 id 를 썼다(재사용 63건, 이번에 다시 열지 않아 fetched false·source_unopened true, 신뢰도 medium 이하). 새로 연 출처는 신규 6건(ref-857~ref-1263, 예약 구간 안)과 재사용 ref-863(EU AI Act 제12조 공식 페이지) 1건이다. 검색 13회/30, 신규 출처 6건/15. 교차 확인 0건(연결 주장 대부분이 단일 출처 또는 서로 다른 내용의 출처 조합). 벤더 주장 5건(f1·f2·f29·f34·f51). 분류 원문 교차 규칙 네 가지(매뉴얼 해석 4·55번: f6·f7·f62, 도면 해석 14번: f20~f22, 학습 기반 배정 25번: f31~f34, 장애 분석 38번: f41·f42·f50~f52)에 근거를 모두 붙였다. 18. 실시간 세계 상태·데이터 일관성(현재 상태, f26)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래, f44)을 구분했다. 한국 자료: 신규 ref-1253(법무법인 해설)·ref-1263(기사), 재사용 ref-620·ref-1012·ref-1052·ref-1059·ref-1063. 현장 유형: 물류창고·제조 공장·병원·상업 시설·가정·실외·기타 각 1건 이상. 대분류 페이지 절 번호는 제목 순서(핵심 질문·개요·세부 연구영역·핵심 포인트·다른 대분류와의 연결)에 따라 '5'로 매겼다 [가정]. 열린 질문 oq-105·oq-106·oq-107·oq-147·oq-216·oq-217·oq-218·oq-219·oq-223·oq-227·oq-228 은 부분 근거만 더했고 해결 제안은 없다. ref-1018·ref-201·ref-238·ref-076·ref-1037 등 입력 참고문헌 요약에 없던 재사용 출처는 다른 대분류 페이지·이전 브리프의 각주 값을 썼다. 정정 요청 없음. 우선 지정 질문 없음. 입력 누락 없음."
+  }
+}
