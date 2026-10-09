@@ -1,0 +1,847 @@
+{
+  "duration_api_ms": 540963,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.8660669,
+  "usage": {
+    "input_tokens": 38,
+    "cache_creation_input_tokens": 143443,
+    "cache_read_input_tokens": 3839902,
+    "output_tokens": 35323,
+    "output_tokens_details": {
+      "thinking_tokens": 12354
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 143443,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 25646,
+        "cache_read_input_tokens": 226311,
+        "cache_creation_input_tokens": 765,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 765
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 38,
+      "outputTokens": 35323,
+      "cacheReadInputTokens": 3839902,
+      "cacheCreationInputTokens": 143443,
+      "webSearchRequests": 0,
+      "costUSD": 2.6221364,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12354,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 488435,
+      "outputTokens": 50174,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 17,
+      "costUSD": 0.2439305,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 23063,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 33,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-18\",\"date\":\"2026-10-09\",\"run_type\":\"update\",\"target\":{\"area_no\":42,\"area_name\":\"42. 분산 시스템·통신·컴퓨팅 구조\",\"category\":\"K. 플랫폼 아키텍처·인프라\"},\"gaps\":[\"섹션 3. 왜 중요한가 — 근거가 판매사 조사 기사(ref-309)와 CJ대한통운 2023-04 발표(ref-307)뿐이고, 5G 특화망 도입 뒤 결과(후속 보도)가 없음\",\"섹션 5. 적용 사례 (현장 유형 명시) — 개정 전(2026-09-25)에 쓴 물류창고 가상 시나리오 1건뿐이며 병원·제조 공장·실외·기타 현장 사례가 없음. 'VDA 5050이 MQTT 5.0의 세션 만료 같은 장치를 어떻게 쓰는지는 미확인' 문장이 남아 있음\",\"섹션 7. 관련 표준·프레임워크·오픈소스(주제 페이지로 분리) — 바뀐 출처: VDA 5050 3.0.0의 연결 감지·상태 재요청·동면 모드·허가 만료 규정, ROS 2 Kilted의 rmw_zenoh 지원 등급 변경, 3GPP TS 22.104의 이동 로봇 통신 요구치가 반영되지 않음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) — 현장 서버에 둘 관제 구성요소와 재시작 뒤 상태 복원의 근거가 없음\",\"섹션 11. 열린 질문 — oq-038·oq-039·oq-040·oq-083·oq-206·oq-326에 대한 부분 근거 미정리\",\"정정 요청 없음\"],\"research_questions\":[\"인터넷이 끊겨도 현장에서 어디까지 계속 운영할 수 있을까? [분류원문]\",\"바뀐 출처: VDA 5050 3.0.0은 연결 끊김 감지, 재연결 뒤 상태 재요청, 통신 감축(동면 모드), 구역 허가 만료를 어떻게 정하며 MQTT 5.0 세션 만료 기능을 요구하는가? (섹션 5·7 겨냥, 페이지의 '미확인' 해소)\",\"oq-039 이동 로봇 통신의 허용 지연·가용성·메시지 없이 버틸 수 있는 시간(생존 시간)을 정한 표준은 무엇이며 플릿 관제 메시지 수준에도 적용되는가? (섹션 3·7·11 겨냥)\",\"oq-206·oq-326·oq-038 병원·오피스(기타)·물류창고·제조 공장에서 5G 특화망이나 클라우드 제어로 로봇을 연결한 사례는 통신 단절 시 로봇 동작과 작업 처리를 공개했는가? (섹션 5 현장 유형 확장, 섹션 11 겨냥)\",\"oq-040 거점마다 둘 수 있는 관제 구성요소와 중앙 클라우드 사이 역할 분담·데이터 동기화를 공개한 오픈소스 구성이 있는가? (섹션 6·9·11 겨냥)\",\"oq-083 통신이 나빠질 때 중앙 배정과 분산 배정 가운데 무엇을 쓸지 판단할 실측·벤치마크 자료가 있는가? (섹션 11 겨냥)\",\"바뀐 출처: ROS 2 미들웨어 rmw_zenoh의 지원 등급과 라우터 기반 발견 방식은 현장 단절 운영에 무엇을 뜻하는가? (섹션 7 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"VDA 5050 3.0.0은 로봇–관제 통신이 무선망에서 연결 실패와 메시지 손실을 겪는다고 전제하고, MQTT 3.1.1을 호환을 위한 최소 요구 버전으로 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"4장 전송 프로토콜: 무선망 통신, 연결 실패·메시지 손실 고려. 메시지 프로토콜은 MQTT+JSON, MQTT 3.1.1이 최소 요구 버전. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f2\",\"claim\":\"이번에 읽은 VDA 5050 3.0.0 본문 범위(앞 119,109자)는 MQTT 5.0의 세션 만료 같은 기능을 쓰도록 정하지 않으므로, 재연결 뒤 상태 회복은 MQTT 세션 기능이 아니라 VDA 5050 자체의 상태 보고·요청 메시지에 기대는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"최소 요구 버전이 MQTT 3.1.1이고, 4.1절의 연결·QoS 규정은 last will과 QoS 0/1만 다룬다. 본문 뒷부분(119,109자 이후)은 미열람. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f3\",\"claim\":\"VDA 5050 3.0.0에서 로봇은 접속할 때 연결 상태 CONNECTION_BROKEN을 담은 유언(last will)을 설정하고, 예기치 않게 끊기면 브로커가 이를 retained 메시지로 connection 주제에 내보내며, 끊김은 브로커와 클라이언트 사이 하트비트로 감지되지만 connection 주제는 로봇 건강 상태 판정용이 아니다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"6.5절 Connection, 표 2: connection 주제는 \\\"Not to be used by fleet control for checking the mobile robot health\\\". 모든 connection 메시지는 retained, QoS 1. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f4\",\"claim\":\"VDA 5050 3.0.0에서 로봇은 상태 메시지를 관련 사건이 생길 때와 적어도 30초마다 보내고 최소 간격은 팩트시트로 알리며, 관제는 즉시 동작 stateRequest로 새 상태 메시지를 요청할 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"6.6절: 사건 발생 시 또는 최소 30초마다 state 발행, 최소 간격은 factsheet의 minimumStateInterval. 표 4: stateRequest = 새 state 메시지 요청(instant). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f5\",\"claim\":\"VDA 5050 3.0.0의 startHibernation 동작은 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 진행 중 주문을 지우며 연결 상태를 HIBERNATING으로 알리게 하고, 깨우기(stopHibernation)는 평소 통신 클라이언트와 다른 MQTT 클라이언트가 받을 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"표 4 startHibernation: 연결 유지, state 미발행, 활성 주문 삭제, connection 'HIBERNATING', 정지 상태 유지, stopHibernation 외 명령 무응답. wakeUpTime 선택 매개변수. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f6\",\"claim\":\"VDA 5050 3.0.0의 RELEASE 구역에서 로봇은 관제 응답을 제때 받지 못하면 구역에 들어가지 않고, 허가에는 만료 시각(leaseExpiry)을 둘 수 있으며, 구역 안에서 허가가 만료·철회되면 구역 정의의 releaseLossBehavior(STOP·CONTINUE·EVACUATE, 미정의 시 STOP과 오류 보고)에 따라 움직인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"6.4.1·6.4.3절: 응답 미수신 시 진입 금지, leaseExpiry 경과 시 requestStatus 'EXPIRED', 구역 안이면 releaseLossBehavior 적용, STOP이면 'RELEASE_LOST'(CRITICAL). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f7\",\"claim\":\"VDA 5050 3.0.0에서 해제 구간(base)과 구역 허가 만료 시각(leaseExpiry)이 각각 연결이 끊긴 로봇이 더 갈 수 있는 거리와 시간을 묶으므로, 42. 분산 시스템·통신·컴퓨팅 구조의 단절 중 운영 범위는 ROP가 해제 구간 길이와 허가 유효 시간을 정하는 정책으로 조절할 수 있을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"4.1절: 끊겨도 마지막 해제 노드까지 수행. 6.4.3절: 만료 뒤 RELEASE 구역 진입 금지. 두 규정을 대응시킨 추론이며 표준이 이를 단절 대응 수단으로 명시하지는 않는다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f8\",\"claim\":\"3GPP TS 22.104(제3자 미러의 Rel-19 표시 본문) 표 5.2-1은 주기적 결정적 통신의 '이동 로봇' 행에 통신 서비스 가용성 99.9999% 초과, 전송 간격 1~50ms 또는 40~500ms, 생존 시간 = 전송 간격 값, 단말 2,000대 이하, 서비스 영역 1km² 이하, 단말 속도 50km/h 이하를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1339\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Table 5.2-1 Mobile robots (A.2.2.3): availability > 99.999 9 %, latency < transfer interval, transfer interval 1–50 ms / 40–500 ms, survival time = transfer interval. 공식 PDF는 압축되어 읽지 못하고 iTecSpec 미러로 확인.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"3GPP TS 22.104(제3자 미러의 Rel-19 표시 본문) 표 5.3-1은 비주기적 결정적 통신인 '이동 로봇 영상 스트리밍'에 가용성 99.9999% 초과, 최대 종단 간 지연 10ms, 상향 10Mbit/s 초과, 평균 고장 간격 약 1주를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1340\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"5.3절: 정해진 전송 시각은 없지만 적시성·가용성 요구가 엄격한 비주기 결정적 통신. Mobile robots – video streaming: > 99.9999 %, 10 ms, UL > 10 Mbit/s, MTBF ~1 week.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f10\",\"claim\":\"3GPP TS 22.104의 이동 로봇 요구치는 밀리초 단위 전송 간격의 제어·영상 통신을 대상으로 하고 VDA 5050의 상태 보고는 최대 30초 간격이므로, 플릿 관제 수준 명령·상태 메시지의 허용 지연·손실률·로밍 중단 시간을 정한 표준은 이번 조사에서도 확인되지 않아 oq-039는 부분 근거만 얻은 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1339\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"TS 22.104 표 5.2-1 이동 로봇 전송 간격 1~500ms, VDA 5050 6.6절 상태 최소 30초 주기. 와이파이 로밍 실측 자료는 판매사 안내서뿐이라 출처로 쓰지 않았다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f11\",\"claim\":\"KT는 2023-07 분당서울대병원에 이음5G(5G 특화망) 기반 의료 서비스 구축을 마쳤다고 발표했으며, 여기에 의료 재료·약품·린넨을 옮기는 자동이송 로봇(AMR)이 포함된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1337\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"스마트투데이 2023-07-06: 이음 5G 기반 병원 의료 서비스 구축 완료, 자동이송 로봇·원격 3D 의료 교육·자동주행 휠체어 적용. 기지국 수·AMR 대수·관제 방식은 기사에 없음.\",\"as_of\":\"2023-07-06\",\"site_type\":\"병원\",\"flow_item\":\"작업 대상\"},{\"id\":\"f12\",\"claim\":\"KT는 분당서울대병원 5G 특화망이 AI 장애 처리로 긴급 장애 원인을 분석해 자동 조치하는 무중단 서비스를 제공한다고 주장했으나, 이는 통신망 장비에 관한 주장이며 통신 장애 때 이송 로봇이 어떻게 동작하는지는 공개되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1337\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: AI 장애 처리를 통한 무중단 서비스, 장비 증설 시 자동 탐지해 관제. 로봇의 통신 끊김 시 동작 언급 없음.\",\"as_of\":\"2023-07-06\",\"site_type\":\"병원\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f13\",\"claim\":\"네이버클라우드·삼성전자는 2022-06-02 네이버 사옥 1784에서 이음5G로 연결한 클라우드가 로봇의 두뇌 역할을 하며 수십~수백 대 로봇의 자율주행 경로를 제어하는 구조(5G 브레인리스 로봇)를 상용화했다고 발표했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1338\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"네이버 보도자료 2022.06.02: 클라우드가 로봇의 두뇌, 삼성전자 이음5G 전용 기지국 라디오·컴팩트 코어가 로봇–클라우드를 연결, 업로드 주파수 비중을 크게 할당. 지연 수치 없음.\",\"as_of\":\"2022-06-02\",\"site_type\":\"기타\",\"flow_item\":\"수행 자원\"},{\"id\":\"f14\",\"claim\":\"네이버 1784 발표와 분당서울대병원 구축 보도는 모두 통신이 끊길 때 로봇의 현장 동작이나 진행 중 작업의 재배정 기준을 밝히지 않아, oq-206·oq-326은 여전히 열려 있는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1338\",\"ref-1337\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"두 원문 모두 연결 끊김 시 동작·안전 정지·재연결 절차 언급 없음(원문 열람 확인).\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f15\",\"claim\":\"미국 CISA 권고 ICSA-22-102-05는 Aethon TUG Home Base Server를 병원의 자율이동로봇을 제어·통신하는 서버로 설명하고, 인증 없이 웹소켓으로 로봇을 제어할 수 있는 취약점을 알리며 제어 장치를 인터넷에서 접근할 수 없게 두라고 권고한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1346\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"a server used to control and communicate with autonomous mobile robots in hospitals\\\". 영향: 버전 24 이전 전체, 부문: 보건의료, 최종 개정 2022-04-12.\",\"as_of\":\"2022-04-12\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f16\",\"claim\":\"CJ대한통운은 2023-05 이천 2풀필먼트센터의 와이파이 액세스포인트 300대를 5G 특화망 기지국 22개로 바꿔 음영·끊김 문제를 풀고 생산성을 20% 높였으며 구축 비용이 유선 방식보다 약 15% 낮다고 주장했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1341\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 와이파이 AP 300대→기지국 22개, 끊김 해결로 생산성 20% 향상, 초기 구축비 유선 대비 약 15% 낮음(에릭슨 협력). 측정 방법 미공개. 디지털데일리 2023-12-07.\",\"as_of\":\"2023-12-07\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f17\",\"claim\":\"2023-12 보도 시점에 CJ대한통운의 5G 특화망에서 AGV·AMR에 5G를 더 넓게 적용하는 것은 향후 계획으로 제시되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1341\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"디지털데일리 2023-12-07: 단일 5G 특화망으로 AGV·AMR 동시 동작이 가능해졌다고 하면서 AGV·AMR 추가 적용은 향후 계획으로 언급.\",\"as_of\":\"2023-12-07\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f18\",\"claim\":\"현대차그룹 메타플랜트 아메리카(HMGMA)는 삼성전자와 5G 특화망 레드캡을 구축해 약 200대의 자율이동 물류로봇(AMR)을 운용하며 통신 단절이 한 건도 없었다고 보도되었다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1347\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 뉴시스 2025-03-16, AMR 약 200여 대, 자체 기지국·별도 주파수로 외부 간섭 없음, \\\"단 한 건의 통신 단절도 발생하지 않았다\\\". 관제 구조(클라우드·현장 서버) 언급 없음.\",\"as_of\":\"2025-03-16\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f19\",\"claim\":\"ROS 2 Kilted Kaiju(2025-05-23 정식 배포)에서 Zenoh 기반 미들웨어 rmw_zenoh_cpp가 모든 플랫폼·아키텍처에서 Tier 1 지원으로 바뀌었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1343\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Release-Kilted-Kaiju: 'Changes since the Jazzy release'에 rmw_zenoh_cpp는 이제 Tier 1, 미들웨어 표에 All Platforms·All Architectures Tier 1. GA 2025-05-23.\",\"as_of\":\"2025-05-23\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"rmw_zenoh는 기본 설정에서 멀티캐스트 발견을 끄고 Zenoh 라우터를 통해 노드를 발견하며, 다른 호스트와는 라우터 설정의 connect 블록으로 잇고, 라우터가 없으면 정해진 확인 횟수 뒤에도 노드 초기화를 이어 가다가 나중에 뜬 라우터에 자동으로 접속한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1342\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 멀티캐스트 발견 기본 비활성, 라우터 gossip으로 발견. ZENOH_ROUTER_CHECK_ATTEMPTS(미설정 1회, 0 무한, 음수 생략). 무선·인터넷 환경 동작은 README가 다루지 않음.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"rmw_zenoh에서 노드 발견이 라우터에 기대므로, ROS 2 기반 로봇을 쓰는 현장에서는 Zenoh 라우터를 로봇·현장 서버·클라우드 가운데 어디에 두느냐가 외부망 단절 중 현장 안 통신이 유지되는 범위를 정할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1342\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"라우터 없이는 발견이 이루어지지 않는다는 README 서술(f20)에서 끌어낸 배치 추론이며, 단절 운영을 다룬 공식 지침은 확인하지 못했다.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f22\",\"claim\":\"NVIDIA Isaac Mission Dispatch는 VDA 5050(MQTT)로 로봇에 미션을 보내는 오픈소스 서비스로, 일반 컴퓨터·클라우드·온프레미스 엣지(EGX)에 둘 수 있고, Postgres에 객체를 저장해 서비스가 멈췄다 다시 뜨면 마지막으로 알려진 상태로 내부 상태를 다시 세우며, 작업 배정과 충돌 해소는 맡지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1345\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 구성은 mission database(REST·영속화)·mission dispatch(로봇 통신·상태 전이)·MQTT 브로커(Mosquitto 예)·Postgres. VDA5050 외 프로토콜 미지원. 끊김 처리 방식 상세 없음.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f23\",\"claim\":\"InOrbit은 2026-09 Apache 2.0 라이선스의 OpenRobOps를 ISO 21423 참조 구현으로 공개하면서 현장(온프레미스)·에어갭 엣지·기업 클라우드 연결을 모두 지원하는 엣지–클라우드 혼합 구조와 Open-RMF 어댑터를 내세웠다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1344\",\"ref-1349\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: The Robot Report 2026-09-15, 'Edge-to-cloud hybrid architecture', 온프레미스·에어갭 운영 가능. 공식 사이트는 'local and cloud deployments'만 언급하고 다현장·오프라인 동기화 설명 없음.\",\"as_of\":\"2026-09-15\",\"site_type\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f24\",\"claim\":\"이번에 확인한 Isaac Mission Dispatch와 OpenRobOps 문서는 관제 구성요소를 현장이나 클라우드에 둘 수 있다고만 밝히고 거점 서버와 중앙 클라우드 사이 역할 분담·단절 중 기록의 재연결 뒤 동기화 절차는 공개하지 않아, oq-040은 부분 근거만 얻은 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1345\",\"ref-1349\",\"ref-1344\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Mission Dispatch: 배치 위치·DB 기반 재시작 복원만 설명. OpenRobOps 사이트: local·cloud 배치만 언급, 다현장·동기화 미기술.\",\"as_of\":\"2026-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"Lott·Honary의 2026-09 프리프린트는 분산 다중 로봇 작업 배정 방법 6종(CBAA·ACBBA·PI·HIPC·DMCHBA·DGA)을 베르누이·길버트–엘리엇 손실과 레일리 페이딩 통신 열화 아래 비교해, 10개 목표 사전 배정에서 HIPC·DMCHBA만 모든 조건에서 안정적으로 동작하고 ACBBA·PI·DGA는 통신이 나빠질수록 안정성을 잃었다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1348\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2609.13711 초록: 'Collaborative Visit' 시나리오, 격자 크기·로봇 밀도·목표 수 민감도. 이상적 전달에서 계산 중앙값 약 4.88ms(DMCHBA)~1.35s(DGA). 동료심사 전 프리프린트.\",\"as_of\":\"2026-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f26\",\"claim\":\"f25의 벤치마크는 중앙 배정 기준선과 물류창고 환경을 포함하지 않아, 통신이 나빠질 때 중앙 배정을 유지할지 분산 배정으로 바꿀지 정하는 기준(oq-083)에는 분산 방식 쪽의 열화 내성 비교라는 부분 근거만 준다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1348\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"초록에 중앙 배정 기준선·창고 환경 언급 없음(초록만 열람, 본문 미열람).\",\"as_of\":\"2026-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f27\",\"claim\":\"국내 실외이동로봇 운행안전인증은 실외이동로봇과 그 운행에 필요한 관제장치의 조합 일체를 대상으로 하고 심사 항목에 비상정지와 관제장치를 두지만, 인증 안내 페이지는 로봇–관제장치 통신장애 때의 동작 기준을 따로 밝히지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-980\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KIRIA 인증 안내: 근거 지능형로봇법 제40조의2, 최대 15km/h·500kg 이하, 심사 8개 항목(규격·운행속도, 겉모양, 동적 특성, 주변 인식, 비상정지, 방수, 횡단보도 통행, 관제장치). 세부는 가이드북. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-10-09\",\"site_type\":\"실외\",\"flow_item\":\"제약\"}],\"sources\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세 원문(입력 원문 텍스트 앞 119,109자). 전송 프로토콜·연결 처리·QoS, 주문 base/horizon, 동면·상태 요청 동작, 구역 허가 만료, 상태 보고 주기를 확인했다.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-980\",\"org\":\"한국로봇산업진흥원\",\"title\":\"실외이동로봇 운행안전인증\",\"published\":null,\"url\":\"https://www.kiria.org/portal/cert/portalCertEstiSafe.do\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"실외이동로봇 운행안전인증 안내. 대상은 로봇과 관제장치 조합 일체이며 심사 항목 8개(비상정지·관제장치 포함)를 둔다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1337\",\"org\":\"스마트투데이 (최인영 기자)\",\"title\":\"KT, 분당서울대병원에 5G 융합서비스 구축 완료\",\"published\":\"2023-07-06\",\"url\":\"https://www.smarttoday.co.kr/ko-kr/articles/31955\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"KT가 분당서울대병원에 이음5G 기반 병원 의료 서비스(자동이송 로봇·원격 3D 의료 교육·자동주행 휠체어)를 구축했다는 발표 기사. AI 장애 처리 무중단 주장 포함.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1338\",\"org\":\"네이버\",\"title\":\"네이버클라우드-삼성전자, 국내 1호 '이음 5G' 상용화 협력\",\"published\":\"2022-06-02\",\"url\":\"https://navercorp.com/media/pressReleasesDetail?seq=30796\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"네이버 사옥 1784에서 이음5G와 클라우드를 기반으로 한 5G 브레인리스 로봇 서비스를 개시했다는 보도자료. 클라우드가 로봇 두뇌로 경로를 제어하는 구조를 설명하며 연결 끊김 시 동작은 다루지 않는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1339\",\"org\":\"3GPP (iTecSpec 제3자 미러 게재본)\",\"title\":\"3GPP TS 22.104 Service requirements for cyber-physical control applications in vertical domains — 5.2 Periodic deterministic communication\",\"published\":null,\"url\":\"https://www.itecspec.com/3gpp/22.104/s/5.2\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 공식 ETSI TS 122 104 PDF(https://www.etsi.org/deliver/etsi_TS/122100_122199/122104/17.07.00_60/ts_122104v170700p.pdf)는 압축되어 읽지 못했고, 표 5.2-1(이동 로봇 행 포함)은 Rel-19로 표시된 제3자 미러에서 읽었다. 공식 판과의 일치는 미확인.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1340\",\"org\":\"3GPP (iTecSpec 제3자 미러 게재본)\",\"title\":\"3GPP TS 22.104 Service requirements for cyber-physical control applications in vertical domains — 5.3 Aperiodic deterministic communication\",\"published\":null,\"url\":\"https://www.itecspec.com/3gpp/22.104/s/5.3\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"원문 미열람. 표 5.3-1(이동 로봇 영상 스트리밍 행)을 Rel-19로 표시된 제3자 미러에서 읽었다. 공식 3GPP·ETSI 판과의 일치는 미확인.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1341\",\"org\":\"디지털데일리 (백지영 기자)\",\"title\":\"CJ대한통운, '5G특화망'으로 업무생산성·비용절감 두마리 토끼 잡았다\",\"published\":\"2023-12-07\",\"url\":\"https://www.ddaily.co.kr/page/view/2023120717462052170\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"CJ대한통운 이천 2풀필먼트센터 5G 특화망 도입 후 성과(AP 300대→기지국 22개, 생산성 20% 향상 주장)와 AGV·AMR 확대 계획을 전한 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1342\",\"org\":\"ROS 2 (ros2/rmw_zenoh GitHub)\",\"title\":\"rmw_zenoh — README\",\"published\":null,\"url\":\"https://github.com/ros2/rmw_zenoh\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Zenoh 기반 ROS 2 미들웨어 README. 라우터 기반 발견, 호스트 간 라우터 연결, 라우터 확인 횟수 설정과 늦게 뜬 라우터 자동 접속을 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/rmw_zenoh/rolling/README.md\"},{\"id\":\"ref-1343\",\"org\":\"Open Robotics (ROS 2 Documentation)\",\"title\":\"ROS 2 Kilted Kaiju (codename 'kilted'; May, 2025)\",\"published\":\"2025-05-23\",\"url\":\"https://docs.ros.org/en/kilted/Releases/Release-Kilted-Kaiju.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"ROS 2 Kilted 배포 노트. rmw_zenoh_cpp가 Tier 1 미들웨어가 되었음을 적고 정식 배포일(2025-05-23)을 밝힌다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/ros2_documentation/rolling/source/Releases/Release-Kilted-Kaiju.rst\"},{\"id\":\"ref-1344\",\"org\":\"The Robot Report\",\"title\":\"InOrbit.AI releases OpenRobOps ISO 21423 reference implementation\",\"published\":\"2026-09-15\",\"url\":\"https://www.therobotreport.com/inorbit-ai-releases-openrobops-iso-21423-reference-implementation/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"InOrbit의 오픈소스 로봇 운영 플랫폼 OpenRobOps(Apache 2.0, ISO 21423 참조 구현) 공개 기사. 엣지–클라우드 혼합·에어갭 운영은 회사 주장으로 전한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1345\",\"org\":\"NVIDIA (nvidia-isaac GitHub)\",\"title\":\"isaac_mission_dispatch — README\",\"published\":null,\"url\":\"https://github.com/nvidia-isaac/isaac_mission_dispatch\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050(MQTT) 기반 미션 중계 서비스 README. 배치 위치(컴퓨터·클라우드·EGX), 구성요소(DB·디스패치·MQTT 브로커·Postgres), DB 기반 재시작 복원을 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/nvidia-isaac/isaac_mission_dispatch/main/README.md\"},{\"id\":\"ref-1346\",\"org\":\"CISA (Cybersecurity and Infrastructure Security Agency)\",\"title\":\"ICS Advisory ICSA-22-102-05: Aethon TUG Home Base Server\",\"published\":\"2022-04-12\",\"url\":\"https://www.cisa.gov/news-events/ics-advisories/icsa-22-102-05\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"병원 자율이동로봇을 제어·통신하는 TUG Home Base Server의 취약점 권고. 제어 장치를 인터넷에서 접근할 수 없게 두라고 권고한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1347\",\"org\":\"뉴시스 (이창훈 기자)\",\"title\":\"'꿈의 공장'에서 AI와 로봇이 車 만든다[메타플랜트, 미래를 짓다①]\",\"published\":\"2025-03-16\",\"url\":\"https://mobile.newsis.com/view/NISX20250314_0003099529\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"현대차그룹 메타플랜트 아메리카의 5G 특화망 레드캡과 AMR 약 200대 운용, 통신 단절 0건 보도.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1348\",\"org\":\"Lott, J., Honary, V. (arXiv)\",\"title\":\"Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark of Performance, Reliability, and Computation\",\"published\":\"2026-09\",\"url\":\"https://arxiv.org/abs/2609.13711\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"분산 MRTA 6종을 패킷 손실·페이딩 통신 열화 아래 성능·안정성·계산량으로 비교한 프리프린트(초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1349\",\"org\":\"OpenRobOps\",\"title\":\"OpenRobOps — The Open-Source Robot Operations Platform\",\"published\":null,\"url\":\"https://openrobops.org\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"OpenRobOps 공식 사이트. 플릿 관리자·ROS 에이전트, ISO 21423 지원, 로컬·클라우드 배치를 언급하며 다현장·오프라인 동기화는 다루지 않는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md\",\"sections\":[\"3\",\"5\",\"7\",\"9\",\"11\"],\"rationale\":\"갱신(차등): 섹션 3 — 5G 특화망 도입 뒤 보도(f16·f17, 벤더 주장)로 ref-307 서술을 보강 / 섹션 5 — '세션 만료 미확인' 문장을 f1·f2로 대체, 재연결 뒤 상태 재요청(f4)·연결 감지(f3)·허가 만료(f6·f7)를 물류창고 시나리오에 반영, 현장 유형별 사례 추가: 병원 f11·f12·f15, 기타(오피스) f13, 제조 공장 f18, 실외 f27 / 섹션 7(주제 페이지로 분리된 절의 요약) — VDA 5050 동면 모드(f5)·연결 처리(f3), 3GPP TS 22.104 이동 로봇 요구치(f8·f9), rmw_zenoh Tier 1과 라우터 발견(f19·f20) / 섹션 9 — 현장 서버에 둘 미션 중계·영속화와 재시작 복원은 직접 범위 후보(f22), 라우터 배치(f21), 무선망 구축은 연계 대상 성격(f11·f13·f16) / 섹션 11 — oq-039 부분 근거 f8·f9·f10, oq-206·oq-326 미해결 f14, oq-040 부분 근거 f22·f23·f24, oq-083 부분 근거 f25·f26, 새 질문 2건. 다음 실행 후보: 66. 실외(f27), 63. 병원·의료(f11·f15), 25. 작업 배정 — MRTA(f25·f26), 52. 통신 보호·위협 관리·감사(f15).\"}],\"glossary_candidates\":[{\"term_ko\":\"생존 시간\",\"term_en\":\"Survival Time (3GPP TS 22.104)\",\"definition\":\"통신 서비스를 쓰는 응용이 기대한 메시지를 받지 못한 채로도 계속 동작할 수 있는 시간으로, 3GPP TS 22.104가 이동 로봇 등 제어 통신의 요구치로 정한다.\"},{\"term_ko\":\"통신 서비스 가용성\",\"term_en\":\"Communication Service Availability\",\"definition\":\"통신 서비스가 응용이 요구한 서비스 품질(지연·생존 시간 등)을 지키며 제공되는 시간의 비율로, 3GPP TS 22.104가 이동 로봇 통신에 99.9999% 초과를 요구한다.\"},{\"term_ko\":\"동면 모드\",\"term_en\":\"Hibernation (VDA 5050 startHibernation / stopHibernation)\",\"definition\":\"VDA 5050 3.0.0에서 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 연결 상태를 HIBERNATING으로 알리는 통신 감축 상태다.\"}],\"open_questions_new\":[\"실외이동로봇 운행안전인증의 관제장치·비상정지 심사는 로봇과 관제장치 사이 통신장애가 났을 때의 동작(정지·대기·복귀)과 허용 단절 시간을 어떤 기준으로 확인하는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 66. 실외, 50. 안전 표준·인증·사고 조사 | 근거: f27 | 종류: 일반\",\"3GPP TS 22.104의 생존 시간처럼 응용이 메시지 없이 버틸 수 있는 시간을 플릿 관제 수준(VDA 5050 상태 보고 최대 30초 주기, 해제 구간, 구역 허가 만료 시각)에 맞춰 정한 기준이나 현장 사례가 있는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 20. 로봇·제조사 관제 연동, 29. 명령·작업 실행의 신뢰성 | 근거: f10 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":15,\"cross_checked_count\":0,\"unverified\":[\"f8·f9 3GPP TS 22.104 수치는 제3자 미러(Rel-19 표시)에서 읽었고 공식 ETSI PDF는 압축되어 읽지 못함 — 공식 판과 판 번호·값 일치 미확인\",\"생존 시간 정의 문구는 검색 요약에서만 확인(표 5.2-1의 '생존 시간 = 전송 간격 값'은 미러에서 확인)\",\"ref-031 VDA 5050 3.0.0 원문 텍스트 앞 119,109자까지만 읽어 뒷부분(메시지 명세 일부)에 MQTT 5.0 관련 규정이 있는지 미확인(f2)\",\"f16·f18 벤더 주장(생산성 20%, 통신 단절 0건) 독립 출처 교차 확인 실패\",\"f23 OpenRobOps 에어갭·엣지 운영은 기사 전언이며 공식 사이트에서 확인되지 않음\",\"실외이동로봇 통신장애 대응 기준 원문(고시·가이드북) 미확인 — 검색에서 개인 Q&A 위키만 나와 출처로 쓰지 않음\",\"병원 이송 로봇(TUG 등)의 와이파이 단절 시 동작 공식 자료 미확인\",\"f25 arXiv 2609.13711은 초록만 열람(본문 미열람)\",\"VDA 5050 3.0.0 발행일(ref-031 published) 미확인\"],\"scope_violations\":[\"f11·f13·f16·f18: 5G 특화망·기지국 구축과 운영은 ROP가 소유하지 않는 통신 기반(연계 대상 성격)이며, 이 영역에서는 현장 유형 사례와 통신 제약으로만 다뤄야 함\",\"f12: 통신망 장비의 장애 자동 조치는 통신 사업자 몫이므로 ROP 직접 범위로 서술하지 않음\",\"f15: 취약점·접근 통제는 51. 인증·권한·격리와 52. 통신 보호·위협 관리·감사 쪽이며, 이 영역에서는 병원 관제 서버의 현장 배치 사례로만 씀\",\"f19·f20·f21: 로봇 내부 미들웨어 구성은 로봇 자체 지능·제어 쪽 연계 대상에 가까우며, ROP 몫은 라우터 배치와 현장 통신 경계 결정으로 한정\",\"f25·f26: 배정 알고리즘 자체는 25. 작업 배정 — MRTA 소관이며 이 영역에서는 통신 열화와의 관계만 다룸\",\"f27: 인증 판단은 인증 기관 몫이며 실외 현장의 제약으로만 반영\"],\"budget_used\":{\"queries\":15,\"sources\":13},\"limits\":\"갱신(update) 실행이며 정정 요청이 없어 바뀐 출처(VDA 5050 3.0.0 원문 재확인, ROS 2 Kilted의 rmw_zenoh 지원 등급)와 약한 절(3·5·7·9·11절)만 다뤘다. 검색 15회, 신규 출처 13건(ref-1337~ref-1349), 재사용 2건(ref-031은 입력 원문 텍스트로 열람, ref-980은 오늘 WebFetch로 다시 열람). 교차 확인 0건이라 모든 사실 finding 은 단일 출처이며 신뢰도 medium 이하다. 3GPP TS 22.104 공식 PDF는 WebFetch 로 받았으나 본문이 압축되어 읽지 못해, 표 값은 제3자 미러에서 읽고 해당 출처를 원문 미열람(fetched false)으로 표시했다. 열린 질문 해결 제안은 없고 부분 근거만 냈다: oq-039 은 f8·f9·f10, oq-206·oq-326 은 f14(미해결 확인), oq-040 은 f22·f23·f24, oq-083 은 f25·f26. oq-038(국내 물류센터 외부망 단절 운영 기준)과 oq-035·oq-310 은 이번에 새 근거를 찾지 못했다. 현장 유형: 병원(f11·f12·f15), 기타(오피스, f13), 물류창고(f16·f17), 제조 공장(f18), 실외(f27); 상업 시설·가정 사례는 없다. 와이파이 로밍 지연 수치는 판매사 안내서·업체 블로그뿐이라 출처로 쓰지 않았다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았고, L. AI·학습 기술 관련 finding 은 없다. 용어집에 이미 있는 MQTT·MQTT 유언 메시지·5G 특화망·포그 컴퓨팅·CAP 정리·클라우드 로보틱스·허가 만료 시각은 후보로 내지 않았다. 입력 누락 없음, 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-10-09-18",
+    "date": "2026-10-09",
+    "run_type": "update",
+    "target": {
+      "area_no": 42,
+      "area_name": "42. 분산 시스템·통신·컴퓨팅 구조",
+      "category": "K. 플랫폼 아키텍처·인프라"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 — 근거가 판매사 조사 기사(ref-309)와 CJ대한통운 2023-04 발표(ref-307)뿐이고, 5G 특화망 도입 뒤 결과(후속 보도)가 없음",
+      "섹션 5. 적용 사례 (현장 유형 명시) — 개정 전(2026-09-25)에 쓴 물류창고 가상 시나리오 1건뿐이며 병원·제조 공장·실외·기타 현장 사례가 없음. 'VDA 5050이 MQTT 5.0의 세션 만료 같은 장치를 어떻게 쓰는지는 미확인' 문장이 남아 있음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스(주제 페이지로 분리) — 바뀐 출처: VDA 5050 3.0.0의 연결 감지·상태 재요청·동면 모드·허가 만료 규정, ROS 2 Kilted의 rmw_zenoh 지원 등급 변경, 3GPP TS 22.104의 이동 로봇 통신 요구치가 반영되지 않음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) — 현장 서버에 둘 관제 구성요소와 재시작 뒤 상태 복원의 근거가 없음",
+      "섹션 11. 열린 질문 — oq-038·oq-039·oq-040·oq-083·oq-206·oq-326에 대한 부분 근거 미정리",
+      "정정 요청 없음"
+    ],
+    "research_questions": [
+      "인터넷이 끊겨도 현장에서 어디까지 계속 운영할 수 있을까? [분류원문]",
+      "바뀐 출처: VDA 5050 3.0.0은 연결 끊김 감지, 재연결 뒤 상태 재요청, 통신 감축(동면 모드), 구역 허가 만료를 어떻게 정하며 MQTT 5.0 세션 만료 기능을 요구하는가? (섹션 5·7 겨냥, 페이지의 '미확인' 해소)",
+      "oq-039 이동 로봇 통신의 허용 지연·가용성·메시지 없이 버틸 수 있는 시간(생존 시간)을 정한 표준은 무엇이며 플릿 관제 메시지 수준에도 적용되는가? (섹션 3·7·11 겨냥)",
+      "oq-206·oq-326·oq-038 병원·오피스(기타)·물류창고·제조 공장에서 5G 특화망이나 클라우드 제어로 로봇을 연결한 사례는 통신 단절 시 로봇 동작과 작업 처리를 공개했는가? (섹션 5 현장 유형 확장, 섹션 11 겨냥)",
+      "oq-040 거점마다 둘 수 있는 관제 구성요소와 중앙 클라우드 사이 역할 분담·데이터 동기화를 공개한 오픈소스 구성이 있는가? (섹션 6·9·11 겨냥)",
+      "oq-083 통신이 나빠질 때 중앙 배정과 분산 배정 가운데 무엇을 쓸지 판단할 실측·벤치마크 자료가 있는가? (섹션 11 겨냥)",
+      "바뀐 출처: ROS 2 미들웨어 rmw_zenoh의 지원 등급과 라우터 기반 발견 방식은 현장 단절 운영에 무엇을 뜻하는가? (섹션 7 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "VDA 5050 3.0.0은 로봇–관제 통신이 무선망에서 연결 실패와 메시지 손실을 겪는다고 전제하고, MQTT 3.1.1을 호환을 위한 최소 요구 버전으로 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "4장 전송 프로토콜: 무선망 통신, 연결 실패·메시지 손실 고려. 메시지 프로토콜은 MQTT+JSON, MQTT 3.1.1이 최소 요구 버전. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f2",
+        "claim": "이번에 읽은 VDA 5050 3.0.0 본문 범위(앞 119,109자)는 MQTT 5.0의 세션 만료 같은 기능을 쓰도록 정하지 않으므로, 재연결 뒤 상태 회복은 MQTT 세션 기능이 아니라 VDA 5050 자체의 상태 보고·요청 메시지에 기대는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "최소 요구 버전이 MQTT 3.1.1이고, 4.1절의 연결·QoS 규정은 last will과 QoS 0/1만 다룬다. 본문 뒷부분(119,109자 이후)은 미열람. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f3",
+        "claim": "VDA 5050 3.0.0에서 로봇은 접속할 때 연결 상태 CONNECTION_BROKEN을 담은 유언(last will)을 설정하고, 예기치 않게 끊기면 브로커가 이를 retained 메시지로 connection 주제에 내보내며, 끊김은 브로커와 클라이언트 사이 하트비트로 감지되지만 connection 주제는 로봇 건강 상태 판정용이 아니다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "6.5절 Connection, 표 2: connection 주제는 \"Not to be used by fleet control for checking the mobile robot health\". 모든 connection 메시지는 retained, QoS 1. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f4",
+        "claim": "VDA 5050 3.0.0에서 로봇은 상태 메시지를 관련 사건이 생길 때와 적어도 30초마다 보내고 최소 간격은 팩트시트로 알리며, 관제는 즉시 동작 stateRequest로 새 상태 메시지를 요청할 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "6.6절: 사건 발생 시 또는 최소 30초마다 state 발행, 최소 간격은 factsheet의 minimumStateInterval. 표 4: stateRequest = 새 state 메시지 요청(instant). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f5",
+        "claim": "VDA 5050 3.0.0의 startHibernation 동작은 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 진행 중 주문을 지우며 연결 상태를 HIBERNATING으로 알리게 하고, 깨우기(stopHibernation)는 평소 통신 클라이언트와 다른 MQTT 클라이언트가 받을 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "표 4 startHibernation: 연결 유지, state 미발행, 활성 주문 삭제, connection 'HIBERNATING', 정지 상태 유지, stopHibernation 외 명령 무응답. wakeUpTime 선택 매개변수. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f6",
+        "claim": "VDA 5050 3.0.0의 RELEASE 구역에서 로봇은 관제 응답을 제때 받지 못하면 구역에 들어가지 않고, 허가에는 만료 시각(leaseExpiry)을 둘 수 있으며, 구역 안에서 허가가 만료·철회되면 구역 정의의 releaseLossBehavior(STOP·CONTINUE·EVACUATE, 미정의 시 STOP과 오류 보고)에 따라 움직인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "6.4.1·6.4.3절: 응답 미수신 시 진입 금지, leaseExpiry 경과 시 requestStatus 'EXPIRED', 구역 안이면 releaseLossBehavior 적용, STOP이면 'RELEASE_LOST'(CRITICAL). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f7",
+        "claim": "VDA 5050 3.0.0에서 해제 구간(base)과 구역 허가 만료 시각(leaseExpiry)이 각각 연결이 끊긴 로봇이 더 갈 수 있는 거리와 시간을 묶으므로, 42. 분산 시스템·통신·컴퓨팅 구조의 단절 중 운영 범위는 ROP가 해제 구간 길이와 허가 유효 시간을 정하는 정책으로 조절할 수 있을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "4.1절: 끊겨도 마지막 해제 노드까지 수행. 6.4.3절: 만료 뒤 RELEASE 구역 진입 금지. 두 규정을 대응시킨 추론이며 표준이 이를 단절 대응 수단으로 명시하지는 않는다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f8",
+        "claim": "3GPP TS 22.104(제3자 미러의 Rel-19 표시 본문) 표 5.2-1은 주기적 결정적 통신의 '이동 로봇' 행에 통신 서비스 가용성 99.9999% 초과, 전송 간격 1~50ms 또는 40~500ms, 생존 시간 = 전송 간격 값, 단말 2,000대 이하, 서비스 영역 1km² 이하, 단말 속도 50km/h 이하를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1339"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Table 5.2-1 Mobile robots (A.2.2.3): availability > 99.999 9 %, latency < transfer interval, transfer interval 1–50 ms / 40–500 ms, survival time = transfer interval. 공식 PDF는 압축되어 읽지 못하고 iTecSpec 미러로 확인.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "3GPP TS 22.104(제3자 미러의 Rel-19 표시 본문) 표 5.3-1은 비주기적 결정적 통신인 '이동 로봇 영상 스트리밍'에 가용성 99.9999% 초과, 최대 종단 간 지연 10ms, 상향 10Mbit/s 초과, 평균 고장 간격 약 1주를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1340"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "5.3절: 정해진 전송 시각은 없지만 적시성·가용성 요구가 엄격한 비주기 결정적 통신. Mobile robots – video streaming: > 99.9999 %, 10 ms, UL > 10 Mbit/s, MTBF ~1 week.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f10",
+        "claim": "3GPP TS 22.104의 이동 로봇 요구치는 밀리초 단위 전송 간격의 제어·영상 통신을 대상으로 하고 VDA 5050의 상태 보고는 최대 30초 간격이므로, 플릿 관제 수준 명령·상태 메시지의 허용 지연·손실률·로밍 중단 시간을 정한 표준은 이번 조사에서도 확인되지 않아 oq-039는 부분 근거만 얻은 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1339",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "TS 22.104 표 5.2-1 이동 로봇 전송 간격 1~500ms, VDA 5050 6.6절 상태 최소 30초 주기. 와이파이 로밍 실측 자료는 판매사 안내서뿐이라 출처로 쓰지 않았다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f11",
+        "claim": "KT는 2023-07 분당서울대병원에 이음5G(5G 특화망) 기반 의료 서비스 구축을 마쳤다고 발표했으며, 여기에 의료 재료·약품·린넨을 옮기는 자동이송 로봇(AMR)이 포함된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1337"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "스마트투데이 2023-07-06: 이음 5G 기반 병원 의료 서비스 구축 완료, 자동이송 로봇·원격 3D 의료 교육·자동주행 휠체어 적용. 기지국 수·AMR 대수·관제 방식은 기사에 없음.",
+        "as_of": "2023-07-06",
+        "site_type": "병원",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f12",
+        "claim": "KT는 분당서울대병원 5G 특화망이 AI 장애 처리로 긴급 장애 원인을 분석해 자동 조치하는 무중단 서비스를 제공한다고 주장했으나, 이는 통신망 장비에 관한 주장이며 통신 장애 때 이송 로봇이 어떻게 동작하는지는 공개되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1337"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: AI 장애 처리를 통한 무중단 서비스, 장비 증설 시 자동 탐지해 관제. 로봇의 통신 끊김 시 동작 언급 없음.",
+        "as_of": "2023-07-06",
+        "site_type": "병원",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f13",
+        "claim": "네이버클라우드·삼성전자는 2022-06-02 네이버 사옥 1784에서 이음5G로 연결한 클라우드가 로봇의 두뇌 역할을 하며 수십~수백 대 로봇의 자율주행 경로를 제어하는 구조(5G 브레인리스 로봇)를 상용화했다고 발표했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1338"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "네이버 보도자료 2022.06.02: 클라우드가 로봇의 두뇌, 삼성전자 이음5G 전용 기지국 라디오·컴팩트 코어가 로봇–클라우드를 연결, 업로드 주파수 비중을 크게 할당. 지연 수치 없음.",
+        "as_of": "2022-06-02",
+        "site_type": "기타",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f14",
+        "claim": "네이버 1784 발표와 분당서울대병원 구축 보도는 모두 통신이 끊길 때 로봇의 현장 동작이나 진행 중 작업의 재배정 기준을 밝히지 않아, oq-206·oq-326은 여전히 열려 있는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1338",
+          "ref-1337"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "두 원문 모두 연결 끊김 시 동작·안전 정지·재연결 절차 언급 없음(원문 열람 확인).",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f15",
+        "claim": "미국 CISA 권고 ICSA-22-102-05는 Aethon TUG Home Base Server를 병원의 자율이동로봇을 제어·통신하는 서버로 설명하고, 인증 없이 웹소켓으로 로봇을 제어할 수 있는 취약점을 알리며 제어 장치를 인터넷에서 접근할 수 없게 두라고 권고한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1346"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"a server used to control and communicate with autonomous mobile robots in hospitals\". 영향: 버전 24 이전 전체, 부문: 보건의료, 최종 개정 2022-04-12.",
+        "as_of": "2022-04-12",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f16",
+        "claim": "CJ대한통운은 2023-05 이천 2풀필먼트센터의 와이파이 액세스포인트 300대를 5G 특화망 기지국 22개로 바꿔 음영·끊김 문제를 풀고 생산성을 20% 높였으며 구축 비용이 유선 방식보다 약 15% 낮다고 주장했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1341"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 와이파이 AP 300대→기지국 22개, 끊김 해결로 생산성 20% 향상, 초기 구축비 유선 대비 약 15% 낮음(에릭슨 협력). 측정 방법 미공개. 디지털데일리 2023-12-07.",
+        "as_of": "2023-12-07",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f17",
+        "claim": "2023-12 보도 시점에 CJ대한통운의 5G 특화망에서 AGV·AMR에 5G를 더 넓게 적용하는 것은 향후 계획으로 제시되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1341"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "디지털데일리 2023-12-07: 단일 5G 특화망으로 AGV·AMR 동시 동작이 가능해졌다고 하면서 AGV·AMR 추가 적용은 향후 계획으로 언급.",
+        "as_of": "2023-12-07",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f18",
+        "claim": "현대차그룹 메타플랜트 아메리카(HMGMA)는 삼성전자와 5G 특화망 레드캡을 구축해 약 200대의 자율이동 물류로봇(AMR)을 운용하며 통신 단절이 한 건도 없었다고 보도되었다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1347"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 뉴시스 2025-03-16, AMR 약 200여 대, 자체 기지국·별도 주파수로 외부 간섭 없음, \"단 한 건의 통신 단절도 발생하지 않았다\". 관제 구조(클라우드·현장 서버) 언급 없음.",
+        "as_of": "2025-03-16",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f19",
+        "claim": "ROS 2 Kilted Kaiju(2025-05-23 정식 배포)에서 Zenoh 기반 미들웨어 rmw_zenoh_cpp가 모든 플랫폼·아키텍처에서 Tier 1 지원으로 바뀌었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1343"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Release-Kilted-Kaiju: 'Changes since the Jazzy release'에 rmw_zenoh_cpp는 이제 Tier 1, 미들웨어 표에 All Platforms·All Architectures Tier 1. GA 2025-05-23.",
+        "as_of": "2025-05-23",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "rmw_zenoh는 기본 설정에서 멀티캐스트 발견을 끄고 Zenoh 라우터를 통해 노드를 발견하며, 다른 호스트와는 라우터 설정의 connect 블록으로 잇고, 라우터가 없으면 정해진 확인 횟수 뒤에도 노드 초기화를 이어 가다가 나중에 뜬 라우터에 자동으로 접속한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1342"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 멀티캐스트 발견 기본 비활성, 라우터 gossip으로 발견. ZENOH_ROUTER_CHECK_ATTEMPTS(미설정 1회, 0 무한, 음수 생략). 무선·인터넷 환경 동작은 README가 다루지 않음.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "rmw_zenoh에서 노드 발견이 라우터에 기대므로, ROS 2 기반 로봇을 쓰는 현장에서는 Zenoh 라우터를 로봇·현장 서버·클라우드 가운데 어디에 두느냐가 외부망 단절 중 현장 안 통신이 유지되는 범위를 정할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1342"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "라우터 없이는 발견이 이루어지지 않는다는 README 서술(f20)에서 끌어낸 배치 추론이며, 단절 운영을 다룬 공식 지침은 확인하지 못했다.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f22",
+        "claim": "NVIDIA Isaac Mission Dispatch는 VDA 5050(MQTT)로 로봇에 미션을 보내는 오픈소스 서비스로, 일반 컴퓨터·클라우드·온프레미스 엣지(EGX)에 둘 수 있고, Postgres에 객체를 저장해 서비스가 멈췄다 다시 뜨면 마지막으로 알려진 상태로 내부 상태를 다시 세우며, 작업 배정과 충돌 해소는 맡지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1345"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 구성은 mission database(REST·영속화)·mission dispatch(로봇 통신·상태 전이)·MQTT 브로커(Mosquitto 예)·Postgres. VDA5050 외 프로토콜 미지원. 끊김 처리 방식 상세 없음.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f23",
+        "claim": "InOrbit은 2026-09 Apache 2.0 라이선스의 OpenRobOps를 ISO 21423 참조 구현으로 공개하면서 현장(온프레미스)·에어갭 엣지·기업 클라우드 연결을 모두 지원하는 엣지–클라우드 혼합 구조와 Open-RMF 어댑터를 내세웠다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1344",
+          "ref-1349"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: The Robot Report 2026-09-15, 'Edge-to-cloud hybrid architecture', 온프레미스·에어갭 운영 가능. 공식 사이트는 'local and cloud deployments'만 언급하고 다현장·오프라인 동기화 설명 없음.",
+        "as_of": "2026-09-15",
+        "site_type": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f24",
+        "claim": "이번에 확인한 Isaac Mission Dispatch와 OpenRobOps 문서는 관제 구성요소를 현장이나 클라우드에 둘 수 있다고만 밝히고 거점 서버와 중앙 클라우드 사이 역할 분담·단절 중 기록의 재연결 뒤 동기화 절차는 공개하지 않아, oq-040은 부분 근거만 얻은 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1345",
+          "ref-1349",
+          "ref-1344"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Mission Dispatch: 배치 위치·DB 기반 재시작 복원만 설명. OpenRobOps 사이트: local·cloud 배치만 언급, 다현장·동기화 미기술.",
+        "as_of": "2026-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "Lott·Honary의 2026-09 프리프린트는 분산 다중 로봇 작업 배정 방법 6종(CBAA·ACBBA·PI·HIPC·DMCHBA·DGA)을 베르누이·길버트–엘리엇 손실과 레일리 페이딩 통신 열화 아래 비교해, 10개 목표 사전 배정에서 HIPC·DMCHBA만 모든 조건에서 안정적으로 동작하고 ACBBA·PI·DGA는 통신이 나빠질수록 안정성을 잃었다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1348"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2609.13711 초록: 'Collaborative Visit' 시나리오, 격자 크기·로봇 밀도·목표 수 민감도. 이상적 전달에서 계산 중앙값 약 4.88ms(DMCHBA)~1.35s(DGA). 동료심사 전 프리프린트.",
+        "as_of": "2026-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f26",
+        "claim": "f25의 벤치마크는 중앙 배정 기준선과 물류창고 환경을 포함하지 않아, 통신이 나빠질 때 중앙 배정을 유지할지 분산 배정으로 바꿀지 정하는 기준(oq-083)에는 분산 방식 쪽의 열화 내성 비교라는 부분 근거만 준다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1348"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "초록에 중앙 배정 기준선·창고 환경 언급 없음(초록만 열람, 본문 미열람).",
+        "as_of": "2026-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f27",
+        "claim": "국내 실외이동로봇 운행안전인증은 실외이동로봇과 그 운행에 필요한 관제장치의 조합 일체를 대상으로 하고 심사 항목에 비상정지와 관제장치를 두지만, 인증 안내 페이지는 로봇–관제장치 통신장애 때의 동작 기준을 따로 밝히지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-980"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KIRIA 인증 안내: 근거 지능형로봇법 제40조의2, 최대 15km/h·500kg 이하, 심사 8개 항목(규격·운행속도, 겉모양, 동적 특성, 주변 인식, 비상정지, 방수, 횡단보도 통행, 관제장치). 세부는 가이드북. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-10-09",
+        "site_type": "실외",
+        "flow_item": "제약"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세 원문(입력 원문 텍스트 앞 119,109자). 전송 프로토콜·연결 처리·QoS, 주문 base/horizon, 동면·상태 요청 동작, 구역 허가 만료, 상태 보고 주기를 확인했다.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-980",
+        "org": "한국로봇산업진흥원",
+        "title": "실외이동로봇 운행안전인증",
+        "published": null,
+        "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "실외이동로봇 운행안전인증 안내. 대상은 로봇과 관제장치 조합 일체이며 심사 항목 8개(비상정지·관제장치 포함)를 둔다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1337",
+        "org": "스마트투데이 (최인영 기자)",
+        "title": "KT, 분당서울대병원에 5G 융합서비스 구축 완료",
+        "published": "2023-07-06",
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/31955",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "KT가 분당서울대병원에 이음5G 기반 병원 의료 서비스(자동이송 로봇·원격 3D 의료 교육·자동주행 휠체어)를 구축했다는 발표 기사. AI 장애 처리 무중단 주장 포함.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1338",
+        "org": "네이버",
+        "title": "네이버클라우드-삼성전자, 국내 1호 '이음 5G' 상용화 협력",
+        "published": "2022-06-02",
+        "url": "https://navercorp.com/media/pressReleasesDetail?seq=30796",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "네이버 사옥 1784에서 이음5G와 클라우드를 기반으로 한 5G 브레인리스 로봇 서비스를 개시했다는 보도자료. 클라우드가 로봇 두뇌로 경로를 제어하는 구조를 설명하며 연결 끊김 시 동작은 다루지 않는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1339",
+        "org": "3GPP (iTecSpec 제3자 미러 게재본)",
+        "title": "3GPP TS 22.104 Service requirements for cyber-physical control applications in vertical domains — 5.2 Periodic deterministic communication",
+        "published": null,
+        "url": "https://www.itecspec.com/3gpp/22.104/s/5.2",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 공식 ETSI TS 122 104 PDF(https://www.etsi.org/deliver/etsi_TS/122100_122199/122104/17.07.00_60/ts_122104v170700p.pdf)는 압축되어 읽지 못했고, 표 5.2-1(이동 로봇 행 포함)은 Rel-19로 표시된 제3자 미러에서 읽었다. 공식 판과의 일치는 미확인.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1340",
+        "org": "3GPP (iTecSpec 제3자 미러 게재본)",
+        "title": "3GPP TS 22.104 Service requirements for cyber-physical control applications in vertical domains — 5.3 Aperiodic deterministic communication",
+        "published": null,
+        "url": "https://www.itecspec.com/3gpp/22.104/s/5.3",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "원문 미열람. 표 5.3-1(이동 로봇 영상 스트리밍 행)을 Rel-19로 표시된 제3자 미러에서 읽었다. 공식 3GPP·ETSI 판과의 일치는 미확인.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1341",
+        "org": "디지털데일리 (백지영 기자)",
+        "title": "CJ대한통운, '5G특화망'으로 업무생산성·비용절감 두마리 토끼 잡았다",
+        "published": "2023-12-07",
+        "url": "https://www.ddaily.co.kr/page/view/2023120717462052170",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "CJ대한통운 이천 2풀필먼트센터 5G 특화망 도입 후 성과(AP 300대→기지국 22개, 생산성 20% 향상 주장)와 AGV·AMR 확대 계획을 전한 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1342",
+        "org": "ROS 2 (ros2/rmw_zenoh GitHub)",
+        "title": "rmw_zenoh — README",
+        "published": null,
+        "url": "https://github.com/ros2/rmw_zenoh",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Zenoh 기반 ROS 2 미들웨어 README. 라우터 기반 발견, 호스트 간 라우터 연결, 라우터 확인 횟수 설정과 늦게 뜬 라우터 자동 접속을 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/rmw_zenoh/rolling/README.md"
+      },
+      {
+        "id": "ref-1343",
+        "org": "Open Robotics (ROS 2 Documentation)",
+        "title": "ROS 2 Kilted Kaiju (codename 'kilted'; May, 2025)",
+        "published": "2025-05-23",
+        "url": "https://docs.ros.org/en/kilted/Releases/Release-Kilted-Kaiju.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "ROS 2 Kilted 배포 노트. rmw_zenoh_cpp가 Tier 1 미들웨어가 되었음을 적고 정식 배포일(2025-05-23)을 밝힌다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/ros2_documentation/rolling/source/Releases/Release-Kilted-Kaiju.rst"
+      },
+      {
+        "id": "ref-1344",
+        "org": "The Robot Report",
+        "title": "InOrbit.AI releases OpenRobOps ISO 21423 reference implementation",
+        "published": "2026-09-15",
+        "url": "https://www.therobotreport.com/inorbit-ai-releases-openrobops-iso-21423-reference-implementation/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "InOrbit의 오픈소스 로봇 운영 플랫폼 OpenRobOps(Apache 2.0, ISO 21423 참조 구현) 공개 기사. 엣지–클라우드 혼합·에어갭 운영은 회사 주장으로 전한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1345",
+        "org": "NVIDIA (nvidia-isaac GitHub)",
+        "title": "isaac_mission_dispatch — README",
+        "published": null,
+        "url": "https://github.com/nvidia-isaac/isaac_mission_dispatch",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050(MQTT) 기반 미션 중계 서비스 README. 배치 위치(컴퓨터·클라우드·EGX), 구성요소(DB·디스패치·MQTT 브로커·Postgres), DB 기반 재시작 복원을 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/nvidia-isaac/isaac_mission_dispatch/main/README.md"
+      },
+      {
+        "id": "ref-1346",
+        "org": "CISA (Cybersecurity and Infrastructure Security Agency)",
+        "title": "ICS Advisory ICSA-22-102-05: Aethon TUG Home Base Server",
+        "published": "2022-04-12",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-102-05",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "병원 자율이동로봇을 제어·통신하는 TUG Home Base Server의 취약점 권고. 제어 장치를 인터넷에서 접근할 수 없게 두라고 권고한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1347",
+        "org": "뉴시스 (이창훈 기자)",
+        "title": "'꿈의 공장'에서 AI와 로봇이 車 만든다[메타플랜트, 미래를 짓다①]",
+        "published": "2025-03-16",
+        "url": "https://mobile.newsis.com/view/NISX20250314_0003099529",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "현대차그룹 메타플랜트 아메리카의 5G 특화망 레드캡과 AMR 약 200대 운용, 통신 단절 0건 보도.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1348",
+        "org": "Lott, J., Honary, V. (arXiv)",
+        "title": "Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark of Performance, Reliability, and Computation",
+        "published": "2026-09",
+        "url": "https://arxiv.org/abs/2609.13711",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "분산 MRTA 6종을 패킷 손실·페이딩 통신 열화 아래 성능·안정성·계산량으로 비교한 프리프린트(초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1349",
+        "org": "OpenRobOps",
+        "title": "OpenRobOps — The Open-Source Robot Operations Platform",
+        "published": null,
+        "url": "https://openrobops.org",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "OpenRobOps 공식 사이트. 플릿 관리자·ROS 에이전트, ISO 21423 지원, 로컬·클라우드 배치를 언급하며 다현장·오프라인 동기화는 다루지 않는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md",
+        "sections": [
+          "3",
+          "5",
+          "7",
+          "9",
+          "11"
+        ],
+        "rationale": "갱신(차등): 섹션 3 — 5G 특화망 도입 뒤 보도(f16·f17, 벤더 주장)로 ref-307 서술을 보강 / 섹션 5 — '세션 만료 미확인' 문장을 f1·f2로 대체, 재연결 뒤 상태 재요청(f4)·연결 감지(f3)·허가 만료(f6·f7)를 물류창고 시나리오에 반영, 현장 유형별 사례 추가: 병원 f11·f12·f15, 기타(오피스) f13, 제조 공장 f18, 실외 f27 / 섹션 7(주제 페이지로 분리된 절의 요약) — VDA 5050 동면 모드(f5)·연결 처리(f3), 3GPP TS 22.104 이동 로봇 요구치(f8·f9), rmw_zenoh Tier 1과 라우터 발견(f19·f20) / 섹션 9 — 현장 서버에 둘 미션 중계·영속화와 재시작 복원은 직접 범위 후보(f22), 라우터 배치(f21), 무선망 구축은 연계 대상 성격(f11·f13·f16) / 섹션 11 — oq-039 부분 근거 f8·f9·f10, oq-206·oq-326 미해결 f14, oq-040 부분 근거 f22·f23·f24, oq-083 부분 근거 f25·f26, 새 질문 2건. 다음 실행 후보: 66. 실외(f27), 63. 병원·의료(f11·f15), 25. 작업 배정 — MRTA(f25·f26), 52. 통신 보호·위협 관리·감사(f15)."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "생존 시간",
+        "term_en": "Survival Time (3GPP TS 22.104)",
+        "definition": "통신 서비스를 쓰는 응용이 기대한 메시지를 받지 못한 채로도 계속 동작할 수 있는 시간으로, 3GPP TS 22.104가 이동 로봇 등 제어 통신의 요구치로 정한다."
+      },
+      {
+        "term_ko": "통신 서비스 가용성",
+        "term_en": "Communication Service Availability",
+        "definition": "통신 서비스가 응용이 요구한 서비스 품질(지연·생존 시간 등)을 지키며 제공되는 시간의 비율로, 3GPP TS 22.104가 이동 로봇 통신에 99.9999% 초과를 요구한다."
+      },
+      {
+        "term_ko": "동면 모드",
+        "term_en": "Hibernation (VDA 5050 startHibernation / stopHibernation)",
+        "definition": "VDA 5050 3.0.0에서 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 연결 상태를 HIBERNATING으로 알리는 통신 감축 상태다."
+      }
+    ],
+    "open_questions_new": [
+      "실외이동로봇 운행안전인증의 관제장치·비상정지 심사는 로봇과 관제장치 사이 통신장애가 났을 때의 동작(정지·대기·복귀)과 허용 단절 시간을 어떤 기준으로 확인하는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 66. 실외, 50. 안전 표준·인증·사고 조사 | 근거: f27 | 종류: 일반",
+      "3GPP TS 22.104의 생존 시간처럼 응용이 메시지 없이 버틸 수 있는 시간을 플릿 관제 수준(VDA 5050 상태 보고 최대 30초 주기, 해제 구간, 구역 허가 만료 시각)에 맞춰 정한 기준이나 현장 사례가 있는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 20. 로봇·제조사 관제 연동, 29. 명령·작업 실행의 신뢰성 | 근거: f10 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 15,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f8·f9 3GPP TS 22.104 수치는 제3자 미러(Rel-19 표시)에서 읽었고 공식 ETSI PDF는 압축되어 읽지 못함 — 공식 판과 판 번호·값 일치 미확인",
+        "생존 시간 정의 문구는 검색 요약에서만 확인(표 5.2-1의 '생존 시간 = 전송 간격 값'은 미러에서 확인)",
+        "ref-031 VDA 5050 3.0.0 원문 텍스트 앞 119,109자까지만 읽어 뒷부분(메시지 명세 일부)에 MQTT 5.0 관련 규정이 있는지 미확인(f2)",
+        "f16·f18 벤더 주장(생산성 20%, 통신 단절 0건) 독립 출처 교차 확인 실패",
+        "f23 OpenRobOps 에어갭·엣지 운영은 기사 전언이며 공식 사이트에서 확인되지 않음",
+        "실외이동로봇 통신장애 대응 기준 원문(고시·가이드북) 미확인 — 검색에서 개인 Q&A 위키만 나와 출처로 쓰지 않음",
+        "병원 이송 로봇(TUG 등)의 와이파이 단절 시 동작 공식 자료 미확인",
+        "f25 arXiv 2609.13711은 초록만 열람(본문 미열람)",
+        "VDA 5050 3.0.0 발행일(ref-031 published) 미확인"
+      ],
+      "scope_violations": [
+        "f11·f13·f16·f18: 5G 특화망·기지국 구축과 운영은 ROP가 소유하지 않는 통신 기반(연계 대상 성격)이며, 이 영역에서는 현장 유형 사례와 통신 제약으로만 다뤄야 함",
+        "f12: 통신망 장비의 장애 자동 조치는 통신 사업자 몫이므로 ROP 직접 범위로 서술하지 않음",
+        "f15: 취약점·접근 통제는 51. 인증·권한·격리와 52. 통신 보호·위협 관리·감사 쪽이며, 이 영역에서는 병원 관제 서버의 현장 배치 사례로만 씀",
+        "f19·f20·f21: 로봇 내부 미들웨어 구성은 로봇 자체 지능·제어 쪽 연계 대상에 가까우며, ROP 몫은 라우터 배치와 현장 통신 경계 결정으로 한정",
+        "f25·f26: 배정 알고리즘 자체는 25. 작업 배정 — MRTA 소관이며 이 영역에서는 통신 열화와의 관계만 다룸",
+        "f27: 인증 판단은 인증 기관 몫이며 실외 현장의 제약으로만 반영"
+      ],
+      "budget_used": {
+        "queries": 15,
+        "sources": 13
+      },
+      "limits": "갱신(update) 실행이며 정정 요청이 없어 바뀐 출처(VDA 5050 3.0.0 원문 재확인, ROS 2 Kilted의 rmw_zenoh 지원 등급)와 약한 절(3·5·7·9·11절)만 다뤘다. 검색 15회, 신규 출처 13건(ref-1337~ref-1349), 재사용 2건(ref-031은 입력 원문 텍스트로 열람, ref-980은 오늘 WebFetch로 다시 열람). 교차 확인 0건이라 모든 사실 finding 은 단일 출처이며 신뢰도 medium 이하다. 3GPP TS 22.104 공식 PDF는 WebFetch 로 받았으나 본문이 압축되어 읽지 못해, 표 값은 제3자 미러에서 읽고 해당 출처를 원문 미열람(fetched false)으로 표시했다. 열린 질문 해결 제안은 없고 부분 근거만 냈다: oq-039 은 f8·f9·f10, oq-206·oq-326 은 f14(미해결 확인), oq-040 은 f22·f23·f24, oq-083 은 f25·f26. oq-038(국내 물류센터 외부망 단절 운영 기준)과 oq-035·oq-310 은 이번에 새 근거를 찾지 못했다. 현장 유형: 병원(f11·f12·f15), 기타(오피스, f13), 물류창고(f16·f17), 제조 공장(f18), 실외(f27); 상업 시설·가정 사례는 없다. 와이파이 로밍 지연 수치는 판매사 안내서·업체 블로그뿐이라 출처로 쓰지 않았다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았고, L. AI·학습 기술 관련 finding 은 없다. 용어집에 이미 있는 MQTT·MQTT 유언 메시지·5G 특화망·포그 컴퓨팅·CAP 정리·클라우드 로보틱스·허가 만료 시각은 후보로 내지 않았다. 입력 누락 없음, 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 9549,
+  "type": "result",
+  "duration_ms": 463865,
+  "uuid": "c6d8ed48-f66b-4f18-8aea-8bf65541d629",
+  "ttft_stream_ms": 1149,
+  "time_to_request_ms": 142,
+  "time_to_request_phases_ms": {
+    "other": 35,
+    "system_prompt": 17,
+    "resume_other": 0,
+    "process_user_input": 8,
+    "input_attachments": 14,
+    "input_hooks": 5,
+    "tool_pool_refresh": 3,
+    "init_message": 8,
+    "engine_pickup": 2,
+    "message_prep": 2,
+    "model_config_wait": 1,
+    "autocompact": 3,
+    "query_setup": 1,
+    "model_gates": 1,
+    "tool_schema_build": 9,
+    "message_normalization": 4,
+    "client_creation": 7,
+    "request_build": 22
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 92,
+  "time_to_request_cpu_ms": 188,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 7,
+    "cpu_ms": 15,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1150,
+  "time_to_request_from_spawn_ms": 21018421,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791527285608.728,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 465.5
+}

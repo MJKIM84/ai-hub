@@ -1,0 +1,367 @@
+{
+  "run_id": "2026-10-09-18",
+  "date": "2026-10-09",
+  "run_type": "update",
+  "target": {
+    "area_no": 42,
+    "area_name": "42. 분산 시스템·통신·컴퓨팅 구조",
+    "category": "K. 플랫폼 아키텍처·인프라"
+  },
+  "gaps": [
+    "섹션 5. 적용 사례 (현장 유형 명시) — 개정 전에 쓴 물류창고 시나리오 1건뿐이고 병원·상업 시설·제조 공장·실외·기타 현장 사례 없음(이번 재실행에서도 조사하지 못함)",
+    "섹션 5. 적용 사례 — 'VDA 5050이 MQTT 5.0의 세션 만료 같은 장치를 어떻게 쓰는지는 미확인' 문장의 재확인 필요",
+    "섹션 7. 관련 표준·프레임워크·오픈소스 — VDA 5050 3.0.0 의 연결(connection) 토픽 의미, 상태 보고 최소·최대 간격, 절전(HIBERNATING) 모드, 구역 허가 만료, 지도 사전 적재 같은 끊김 대비 장치가 정리되지 않음",
+    "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 — 관제 쪽 통신 오류 탐지·시간 초과 처리 책임과 표준 범위 밖(외부 IT 인터페이스·사이버보안·운영 책임)의 근거가 약함",
+    "섹션 11. 열린 질문 — oq-038·oq-039·oq-206 부분 근거 미반영",
+    "정정 요청 없음"
+  ],
+  "research_questions": [
+    "인터넷이 끊겨도 현장에서 어디까지 계속 운영할 수 있을까? [분류원문]",
+    "oq-038·oq-206 로봇–관제 표준은 로봇과 관제·브로커의 연결이 끊긴 동안 로봇이 어디까지 계속 움직이고, 관제는 무엇을 실행된 것으로 간주해야 한다고 정하는가? (섹션 5·9·11 겨냥)",
+    "VDA 5050 3.0.0 은 연결 끊김을 어떻게 탐지·표시하고(연결 토픽, 유언 메시지, 절전 모드), 재연결 뒤 상태를 다시 세우는 수단을 무엇으로 두는가? (섹션 5·7 겨냥)",
+    "oq-039 VDA 5050 3.0.0 은 명령·상태 메시지의 전달 보장 수준과 보고 간격을 어떻게 정하며, 허용 지연·손실률 수치를 정하는가? (섹션 7·11 겨냥)",
+    "클라우드 브로커와 현장 브로커 배치, 지도·구역 배포 방식은 외부망 단절 중 운영 범위에 어떤 영향을 주는가? (섹션 6·9 겨냥)",
+    "로봇–관제 표준이 범위 밖에 두는 것(외부 IT 인터페이스, 사이버보안, 운영 책임 배분)은 무엇이고, ROP 의 직접 범위와 연계 대상은 어떻게 갈리는가? (섹션 9 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "VDA 5050 3.0.0 은 로봇–관제 통신이 무선망으로 이루어지며 연결 실패와 메시지 손실이 생길 수 있음을 전제로 하고, MQTT 를 JSON 형식과 함께 쓰며 MQTT 3.1.1 을 호환을 위한 최소 버전으로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "4장 전송 규약: 무선망 통신과 연결 실패·메시지 손실의 영향을 고려하며, 메시지 규약은 MQTT+JSON, 최소 호환 버전은 MQTT 3.1.1 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f2",
+      "claim": "VDA 5050 3.0.0 은 통신 부담을 줄이기 위해 order·instantActions·state·factsheet·zoneSet·responses·visualization 토픽에 MQTT QoS 0(최선 노력)을, connection 토픽에 QoS 1(최소 한 번)을 쓰게 하고, 프로토콜 보안은 브로커 설정으로 다루되 이 지침에서는 정하지 않는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "4.1절: 통신 오버헤드를 줄이려고 7개 토픽은 QoS 0, connection 토픽은 QoS 1 을 쓴다. 보안은 브로커 구성에서 고려하되 지침 범위 밖 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f3",
+      "claim": "VDA 5050 3.0.0 에서 로봇은 브로커와 연결이 끊겨도 주문 정보를 유지하고 마지막으로 해제된 노드까지 주문을 수행하며, 관제는 MQTT 가 비동기이고 무선 전송을 믿을 수 없으므로 이미 해제한 베이스(base)를 바꿀 수 없고 실행된 것으로 간주해야 하며 주문 취소(cancelOrder)도 같은 이유로 신뢰할 수 없는 것으로 본다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "4.1절 \"fulfills the order up to the last released node\". 6.1.2절: 베이스는 바꿀 수 없어 관제는 베이스가 이미 실행된 것으로 가정해야 하고, 취소 절차도 통신 한계로 신뢰할 수 없다 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f4",
+      "claim": "VDA 5050 3.0.0 의 connection 토픽은 브로커–클라이언트 사이 하트비트로 끊김을 탐지해 브로커가 유언 메시지로 CONNECTION_BROKEN 을 알리는 MQTT 프로토콜 수준의 연결 확인용이며, 모든 메시지를 retained 플래그로 보내고, 관제가 로봇의 건강 상태 확인에 쓰지 않도록 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "4.3절 표: connection 은 로봇 연결 상실을 알리며 관제가 로봇 건강 확인에 쓰지 않는다. 6.5절: 하트비트로 끊김 탐지, 접속 시 유언을 CONNECTION_BROKEN 으로 설정, 메시지는 retained 로 전송 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f5",
+      "claim": "VDA 5050 3.0.0 에서 로봇 상태 메시지는 정해진 사건(주문 수신, 오류·운용 모드·노드 상태 변화 등)이 생길 때와 적어도 30초마다 보내고, 연속 상태 메시지 사이의 최소 간격은 로봇이 팩트시트의 protocolLimits.timing.minimumStateInterval 로 알리며, 관련 사건은 하나의 상태 갱신으로 묶어 통신량을 줄이도록 권한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.6절: 상태는 관련 사건 발생 시 또는 최소 30초마다 발행, 상관된 사건은 한 번의 갱신으로, 최소 간격은 팩트시트 minimumStateInterval 이 정한다 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f6",
+      "claim": "VDA 5050 3.0.0 의 startHibernation 즉시 동작은 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 연결 상태를 HIBERNATING 으로 알리며 활성 주문을 지우고 움직이지 않게 하고, 배터리가 위급하거나 설정한 기상 시각(wakeUpTime)이 되면 로봇이 스스로 이 상태를 벗어날 수 있게 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.2.3.1절 표 startHibernation: 연결 유지·상태 메시지 중단·HIBERNATING 발행·활성 주문 삭제·정지, stopHibernation 만 응답, 배터리 위급 시나 wakeUpTime 에 자율 해제 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "VDA 5050 3.0.0 의 RELEASE 구역은 관제의 허가를 받아야 들어갈 수 있고, 로봇은 응답을 제때 받지 못하면 들어가지 않으며, 관제는 허가에 만료 시각(leaseExpiry)을 붙일 수 있고, 이미 구역 안에서 허가가 만료·철회되면 로봇은 구역 정의의 releaseLossBehavior(STOP·CONTINUE·EVACUATE)에 따라 움직인다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.4.1.1절 RELEASE·releaseLossBehavior, 6.4.3절: 응답이 제때 오지 않으면 진입하지 않음, leaseExpiry 갱신은 응답 재전송으로, 만료 시 EXPIRED 처리 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f8",
+      "claim": "VDA 5050 3.0.0 은 클라우드 사업자가 강제하는 토픽 구조가 있어 클라우드 기반 MQTT 브로커에서는 토픽 단계 구조를 개별 조정하게 허용하고, 로컬 브로커에는 interfaceName/majorVersion/manufacturer/serialNumber/topic 구조를 제안하되 토픽 이름은 필수로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "4.2절: 클라우드 사업자의 필수 토픽 구조 때문에 구조를 엄격히 정하지 않음, 로컬 브로커용 제안 구조와 예 vda5050/v3/KIT/0001/order (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "VDA 5050 3.0.0 에서 지도는 관제가 즉시 동작(downloadMap)으로 지시하면 로봇이 지도 서버에서 끌어오는(pull) 방식으로 배포되고, 정지 시간을 줄이려 지도를 미리 적재해 두었다가 enableMap 으로 따로 활성화하며, 다운로드가 실패·중단되면 동작 상태를 RETRIABLE 로 두고 관제 개입을 기다린다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.3.1절: 지도 서버의 파일을 로봇이 pull, 사전 적재·버퍼링 후 즉시 동작으로 활성화. 표 5 downloadMap: 실패·중단 시 RETRIABLE (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f10",
+      "claim": "VDA 5050 3.0.0 은 플릿 관제의 최소 기능에 문·게이트·승강기 같은 주변 시스템과의 통신과 통신 오류의 탐지·해소를 넣고, 로봇의 기능으로 위치 추정·경로 실행·동작 실행·상태 연속 전송을 두어 통신 오류 대응을 관제 쪽 책임으로 배치한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "5.3절 관제 기능 목록에 'Detection and resolution of communication errors', 5.4절 로봇 기능 목록 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f11",
+      "claim": "VDA 5050 3.0.0 은 주변 설비·기반 시설·외부 IT 시스템과의 인터페이스, 운영자·통합사·제조사·관제 공급자 사이의 운영 책임 배분, 보안 통신·데이터 보호의 사이버보안 조치를 범위 밖에 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "2장 범위: Other Communication Interfaces·Operational Responsibilities·Cybersecurity Measures 를 다루지 않는다고 명시 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f12",
+      "claim": "VDA 5050 3.0.0 의 waitForTrigger 동작에서 시간 초과 처리는 관제의 책임이며 필요하면 관제가 주문을 취소해야 하고, 로봇은 stateRequest 즉시 동작을 받으면 새 상태 메시지를 보낸다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.2.3.1절 표: waitForTrigger 는 관제가 타임아웃을 처리하고 필요 시 주문 취소, stateRequest 는 로봇에 새 상태 메시지를 요청 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f13",
+      "claim": "이번에 읽은 VDA 5050 3.0.0 명세 앞부분은 MQTT 3.1.1 을 최소 버전으로 두고 연결 확인을 유언 메시지와 하트비트로만 서술하며 MQTT 5.0 의 세션 만료 같은 기능을 쓰는 방법은 다루지 않아, 페이지 5절의 해당 '미확인' 서술은 그대로 남는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "원문 텍스트 207,642자 중 앞 119,109자 범위에서 MQTT 5.0 세션 만료 언급을 찾지 못함. 4장·6.5절은 MQTT 3.1.1 최소 버전, 유언·하트비트만 서술 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f14",
+      "claim": "VDA 5050 3.0.0 에서 주문·상태가 QoS 0 이고 connection 메시지가 retained 로 보내지며 stateRequest 즉시 동작이 있으므로, 재연결 뒤 관제는 connection 토픽의 ONLINE 전환을 받은 다음 stateRequest 나 다음 상태 메시지로 로봇 상태를 다시 세우고 끊긴 동안 해제된 베이스는 실행된 것으로 놓고 주문을 갱신하는 절차를 둘 수 있을 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f2·f3·f4·f12 의 명세 내용을 조합한 추론이며 명세가 재연결 절차를 직접 정한 것은 아니다 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f15",
+      "claim": "VDA 5050 3.0.0 은 상태 보고의 최대 간격(30초)과 팩트시트의 최소 간격만 두고 명령·상태 메시지의 허용 지연·손실률·로밍 중단 시간 수치를 정하지 않으므로, oq-039 는 이 표준만으로 답이 되지 않는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "4장·6.6절에 손실·지연 전제와 보고 간격은 있으나 지연·손실률 허용치 수치는 읽은 범위에서 없음 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f16",
+      "claim": "KubeEdge 는 클라우드–엣지 네트워크가 끊겨도 엣지 노드와 애플리케이션이 자율적으로 계속 동작하는 구조를 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-300"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "KubeEdge README 의 엣지 자율성(edge autonomy) 서술. 이번 실행에서 원문을 다시 열지 않음 (발행일 미확인, 확인일 기준) (재인용: 2026-09-25-27)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "VDA 5050 은 클라우드 브로커 사용을 허용하지만(f8) 브로커와 끊긴 로봇은 해제된 노드까지만 진행하므로(f3), 관제와 브로커를 클라우드에 두면 외부망 단절이 곧 로봇–관제 단절이 되어 해제 구간 뒤에서 로봇이 멈추고, 현장 서버에 두면 엣지 자율 운영 구조(f16)처럼 현장 내 배정을 이어 갈 수 있어, 관제·브로커의 배치가 단절 중 운영 범위를 정하는 핵심 결정인 것으로 보인다(oq-038·oq-206 부분 근거, 41. 플랫폼 아키텍처·외부 API 와 연결).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031",
+        "ref-300"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "VDA 5050 4.1·4.2절과 KubeEdge 엣지 자율성 서술을 대응시킨 추론. 물류센터·병원 등의 공개 운영 기준으로 확인한 것은 아니다 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": false
+    },
+    {
+      "id": "f18",
+      "claim": "VDA 5050 의 구역 허가 만료(leaseExpiry)와 releaseLossBehavior 는 관제가 허가를 갱신하지 못하는 상황, 곧 관제 장애나 통신 단절 때 공용 구역 점유를 시간으로 제한하는 장치로 쓸 수 있을 것으로 보이나, 명세는 이를 통신 단절 대책으로 명시하지 않는다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "6.4.3절의 leaseExpiry 갱신·만료 규칙과 6.4.1.1절 releaseLossBehavior 에서 도출한 추론 (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-09",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-09",
+      "summary": "VDA 5050 3.0.0 명세 원문. 무선망 손실을 전제한 MQTT 전송 규약, QoS, 연결 토픽·유언 메시지, 주문의 베이스/호라이즌, 상태 보고 간격, 절전 모드, 구역 허가 만료, 지도 배포, 범위 제외 항목을 정한다(이번 실행은 앞 119,109자 범위를 읽음).",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-300",
+      "org": "KubeEdge (CNCF, kubeedge GitHub)",
+      "title": "KubeEdge — README",
+      "published": null,
+      "url": "https://github.com/kubeedge/kubeedge",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-09",
+      "summary": "원문 미열람. 클라우드–엣지 연결이 끊겨도 엣지 노드와 애플리케이션이 자율 동작하는 쿠버네티스 기반 엣지 플랫폼 README(이전 실행 2026-09-25-27 확인 내용 재인용).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md",
+      "sections": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "rationale": "갱신(차등): 섹션 5 — 물류창고 시나리오의 제약·예외 행을 오늘 원문으로 재확인(f1·f3·f5), 연결 탐지·재연결 서술 보강(f4·f12·f14), MQTT 5.0 세션 만료 '미확인' 유지 근거(f13) / 섹션 7(주제 페이지로 분리된 절의 요약) — VDA 5050 의 QoS·보안 위임(f2), 연결 토픽 의미(f4), 상태 보고 간격(f5), 절전 모드(f6), 구역 허가 만료(f7), 클라우드 브로커 토픽 조정(f8), 지도 사전 적재(f9), KubeEdge 엣지 자율성 재확인(f16) / 섹션 9 — 통신 오류 탐지·해소와 시간 초과 처리를 관제(ROP) 쪽 책임으로(f10·f12), 외부 IT 인터페이스·사이버보안·운영 책임은 표준 범위 밖(f11) / 섹션 11 — oq-038·oq-206 부분 근거 f17, oq-039 미해결 근거 f15, 새 질문 1건(f18). 다음 실행 후보: 52. 통신 보호·위협 관리·감사(f2·f11), 27. 다중 로봇 경로·교통 관리 — MAPF(f7·f18)."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "절전 모드",
+      "term_en": "Hibernation (VDA 5050 startHibernation / HIBERNATING)",
+      "definition": "VDA 5050 에서 로봇이 브로커 연결은 유지하되 상태 메시지 발행을 멈추고 주문을 지운 채 정지해 있다가 stopHibernation 이나 설정한 기상 시각에 정상 운용으로 돌아오는 통신 감축 상태다."
+    },
+    {
+      "term_ko": "보존 메시지",
+      "term_en": "MQTT Retained Message",
+      "definition": "브로커가 토픽의 마지막 메시지를 보관했다가 나중에 구독한 클라이언트에게 곧바로 전달하게 하는 MQTT 발행 옵션으로, VDA 5050 은 연결 상태 메시지에 이를 쓰게 한다."
+    }
+  ],
+  "open_questions_new": [
+    "VDA 5050 구역 허가 만료 시각(leaseExpiry)과 허가 상실 시 동작(releaseLossBehavior)을 관제 장애·통신 단절 대책으로 쓸 때 만료 시간과 동작 값을 어떤 기준으로 정하는지 공개한 현장 사례나 지침이 있는가? | 관련 영역: 42. 분산 시스템·통신·컴퓨팅 구조, 27. 다중 로봇 경로·교통 관리 — MAPF | 근거: f18 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 2,
+    "cross_checked_count": 0,
+    "unverified": [
+      "oq-038·oq-206 미해결: 외부망 단절 중 운영 범위를 정한 공개 운영 기준·사례 미확인(f17 은 추론)",
+      "oq-039 미해결: 허용 지연·손실률·로밍 중단 시간 수치를 정한 표준·측정 자료 미확인(f15)",
+      "oq-035·oq-040·oq-083·oq-310·oq-326 이번 재실행에서 미조사",
+      "ref-031 원문 텍스트가 앞 119,109자 발췌라 7장 메시지 명세 뒷부분(팩트시트 protocolLimits 세부 등) 미확인",
+      "ref-031 VDA 5050 3.0.0 발행일 미확인",
+      "ref-300 은 이번 실행에서 원문을 다시 열지 않음",
+      "섹션 5 병원·상업 시설·제조 공장·실외·기타 현장 사례 미조사"
+    ],
+    "scope_violations": [
+      "f3·f10: 위치 추정·경로 실행과 끊김 중 로봇 주행은 로봇 자체 지능·제어 쪽 연계 대상이며, ROP 몫은 해제 구간 설정·통신 오류 탐지·상태 재구성으로 한정해 서술해야 함",
+      "f2·f11: 브로커 보안·사이버보안 조치는 52. 통신 보호·위협 관리·감사 쪽이므로 이 영역에서는 '표준 범위 밖'이라는 사실만 씀",
+      "f16·f17: 엣지 플랫폼·클라우드 인프라 자체는 외부 연계 대상이며 배치 결정은 41. 플랫폼 아키텍처·외부 API 와 함께 다뤄야 함"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 0
+    },
+    "limits": "재실행 1회차. 반려 사유 1(스키마 불일치: f13 이 벤더 문서만 근거로 한 [사실] 인데 vendor_claim 표시 없음): 지시에 따라 새 조사 없이 형식만 고치려 했으나 직전 반환값이 입력에 포함되지 않아 그대로 수정할 수 없었다. 그래서 입력으로 받은 원문 텍스트(data/source_texts/ref-031.txt, fetched_via inbox)와 기존 페이지가 인용한 참고문헌(ref-300 재인용)만으로 브리프를 다시 구성했다. 새 f13 은 표준(ref-031)만 근거로 한 [추정]이다. 벤더 문서(CJ대한통운 ref-307, FreightWaves 기사 ref-309 등)를 근거로 한 finding 은 이번 브리프에 하나도 없으므로 vendor_claim 이 필요한 finding 이 없다. 검색 0회, WebFetch 0회, 신규 출처 0건으로 예약 구간 ref-1337~ref-1366 은 쓰지 않았다. 재사용 2건 중 ref-031 은 원문을 열었고(inbox), ref-300 은 원문 미열람으로 표시했다. 교차 확인 0건이며 모든 사실 finding 은 단일 출처라 신뢰도 medium 이하다. 갱신(update) 실행이고 정정 요청이 없어 약한 절(5·7·9·11절)만 다뤘다. 열린 질문은 해결 제안 없이 부분 근거만 냈다: oq-038·oq-206 은 f17, oq-039 는 f15. 현장 유형 사례 finding 은 없다(site_type 모두 null). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았다. L. AI·학습 기술 관련 finding 은 없다. 용어집에 이미 있는 MQTT·MQTT 유언 메시지·허가 만료 시각·CAP 정리·포그 컴퓨팅·5G 특화망은 후보로 내지 않았다. 입력 누락 없음. 우선 지정 질문 없음."
+  }
+}

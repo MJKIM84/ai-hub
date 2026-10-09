@@ -359,8 +359,9 @@ version: 1
 | oq-337 | 2025-10-31 개정으로 접속기록 보관 대상이 개인정보처리시스템에 접속한 모든 자로 넓어졌다면, 로봇·플랫폼 서비스가 쓰는 기계 계정의 개인정보처리시스템 접속도 접속기록 보관·점검 대상에 들어가는가? | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-10-09 | 2026-10-09-19 | 열림 | — |
 | oq-338 | 로봇 플랫폼 사업자와 현장 운영자가 각각 EU AI Act 의 제공자·배포자가 될 때 실행 기록의 통제권과 6개월 이상 보관 책임을 계약으로 나눈 공개 사례나 지침이 있는가? | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md)<br>[58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-09 | 2026-10-09-19 | 열림 | — |
 | oq-339 | W3C Trace Context 의 추적 문맥을 ROS 2·DDS 메시지나 VDA 5050 같은 MQTT 기반 로봇–관제 메시지에 싣는 공식 직렬화 규약이 있는가? | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-09 | 2026-10-09-19 | 열림 | — |
+| oq-340 | VDA 5050 해제 구역(RELEASE 구역)의 허가 만료 시각(leaseExpiry)과 허가 상실 시 동작(releaseLossBehavior)을 관제 장애·통신 단절 대책으로 쓸 때 만료 시간과 동작 값을 어떤 기준으로 정하는지 공개한 현장 사례나 지침이 있는가? | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)<br>[27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 2026-10-09 | 2026-10-09-18 | 열림 | — |
 
-상태별 건수: 열림 337건, 조사 중 1건, 해결 1건
+상태별 건수: 열림 338건, 조사 중 1건, 해결 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

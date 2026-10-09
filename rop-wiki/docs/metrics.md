@@ -32,7 +32,7 @@ version: 1
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
@@ -137,7 +137,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-10-09 | 3 |
-| [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
+| [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-10-09 | 3 |
 | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-10-09 | 3 |
 
 **L. AI·학습 기술**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 146회 중 최종 통과 144회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 144, None 2
-- 2차 검증 판정: 통과 144, None 2
+- 실행 147회 중 최종 통과 145회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 145, None 2
+- 2차 검증 판정: 통과 145, None 2
 
 ### 반려·보류 건수
 
