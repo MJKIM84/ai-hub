@@ -1,0 +1,672 @@
+{
+  "duration_api_ms": 201610,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.2046924,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 196011,
+    "cache_read_input_tokens": 71882,
+    "output_tokens": 31111,
+    "output_tokens_details": {
+      "thinking_tokens": 895
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 196011,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 31111,
+        "cache_read_input_tokens": 71882,
+        "cache_creation_input_tokens": 196011,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 196011
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 31111,
+      "cacheReadInputTokens": 71882,
+      "cacheCreationInputTokens": 196011,
+      "webSearchRequests": 0,
+      "costUSD": 2.2046924,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 895,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-02\",\"outline\":[{\"path\":\"docs/categories/space-and-map-model/index.md\",\"section\":\"다른 대분류와의 연결\",\"budget_chars\":9000,\"summary\":\"D. 공간·지도 모델의 14·15·16 세부영역이 만든 지도·좌표·층·장소 이름이 A·B·C·E·F·G·H·I·J·K·L·M·O·P·Q 대분류의 세부영역으로 어떤 입력이 되어 넘어가는지 대분류별로 정리한다. 예: 위치 보고는 지도 식별자(mapId)에 묶이고 위치추정 품질은 기록·시각화 용도로만 정의된다. [사실][^ref-031] N. 보안·개인정보 등 근거가 없는 연결은 '아직 다루지 않은 연결'로만 적는다. 이 절에서 쓴 각주 35건의 정의는 페이지 끝 '참고 자료' 절에 둔다(본문 글자 수에 넣지 않음).\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\",\"f27\",\"f28\",\"f29\",\"f30\",\"f31\",\"f32\",\"f33\",\"f34\",\"f35\",\"f36\",\"f37\",\"f38\",\"f39\",\"f40\",\"f41\",\"f42\",\"f43\",\"f44\",\"f45\",\"f46\",\"f47\",\"f48\",\"f49\"]},{\"path\":\"docs/categories/space-and-map-model/index.md\",\"section\":\"참고 자료\",\"budget_chars\":0,\"summary\":\"'다른 대분류와의 연결' 절에서 쓴 각주 35건의 정의만 둔다. 핵심 포인트 원문 문단에는 [n] 표기가 없어 원문 대응 각주 문장은 두지 않는다.\"}],\"pages\":[{\"path\":\"docs/categories/space-and-map-model/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"'다른 대분류와의 연결' 절 신규 작성(A~Q 가운데 15개 대분류와의 연결, 연결 도식, 아직 다루지 않은 연결), 페이지 끝 '참고 자료' 절 신설과 각주 정의 35건, 프런트매터 category·sources 추가. 2차 수정: 66. 실외 줄에 추정 태그·각주, f33 의 '벤더 주장'을 태그 앞으로 이동\",\"patches\":[{\"section\":\"다른 대분류와의 연결\",\"action\":\"replace\",\"frontmatter\":{\"category\":\"D. 공간·지도 모델\",\"sources\":[\"ref-031\",\"ref-045\",\"ref-046\",\"ref-063\",\"ref-071\",\"ref-076\",\"ref-079\",\"ref-105\",\"ref-153\",\"ref-154\",\"ref-159\",\"ref-161\",\"ref-162\",\"ref-213\",\"ref-228\",\"ref-286\",\"ref-406\",\"ref-569\",\"ref-817\",\"ref-869\",\"ref-956\",\"ref-992\",\"ref-1011\",\"ref-1013\",\"ref-1015\",\"ref-1016\",\"ref-1018\",\"ref-1019\",\"ref-1021\",\"ref-1171\",\"ref-1214\",\"ref-721\",\"ref-1271\",\"ref-1272\",\"ref-302\"]},\"content\":\"이 절은 D. 공간·지도 모델의 세 세부영역 — [14. 도면·BIM에서 지도 만들기](maps-from-floor-plans-and-bim.md), [15. 지도·공간·위치 모델](map-space-and-location-model.md), [16. 장소 의미·지도 관리](place-semantics-and-map-management.md) — 이 만든 지도·좌표·층·장소 이름이 다른 대분류의 어느 세부영역으로 어떤 입력이 되어 넘어가는지를 대분류별로 정리한다. 근거는 게시된 세부영역 페이지의 검증된 주장과 2026-10-09 실행에서 다시 확인한 출처다. 연결마다 근거 출처가 하나뿐이어서 교차 확인된 주장은 아직 없다. 분류 원문 19장의 경계에 따라 SLAM·위치 추정 같은 로봇 자체 지능·제어와 승강기 운행 같은 시설·설비 제어는 \\\"연계 대상\\\"으로만 적는다. 연결에 걸린 열린 질문은 [열린 질문](../../open-questions.md) 페이지에서 볼 수 있다.\\n\\n```mermaid\\nflowchart LR\\n  catD[\\\"D. 공간·지도 모델\\\"]\\n  catA[\\\"A. 기획·사업\\\"]\\n  catB[\\\"B. 로봇 온톨로지\\\"]\\n  catC[\\\"C. 채팅 기반 구성·운영\\\"]\\n  catE[\\\"E. 사물·사람·실시간 상태\\\"]\\n  catF[\\\"F. 연동\\\"]\\n  catG[\\\"G. 계획·최적화\\\"]\\n  catH[\\\"H. 실행·협업·예외 복구\\\"]\\n  catI[\\\"I. 설계·시뮬레이션\\\"]\\n  catJ[\\\"J. 현장 운영·관제\\\"]\\n  catK[\\\"K. 플랫폼 아키텍처·인프라\\\"]\\n  catL[\\\"L. AI·학습 기술\\\"]\\n  catM[\\\"M. 안전\\\"]\\n  catO[\\\"O. 검증·도입·수명주기\\\"]\\n  catP[\\\"P. 거버넌스·법규·사회\\\"]\\n  catQ[\\\"Q. 현장 유형별 적용\\\"]\\n  catD -->|\\\"좌표 변환 책임 범위·도면 입력 동향\\\"| catA\\n  catD -->|\\\"위치추정 방식 선언·플릿별 차선\\\"| catB\\n  catD -->|\\\"맵 작성 엔진·장소 어휘\\\"| catC\\n  catD -->|\\\"지도 식별자가 붙은 위치·업무 위치 대응\\\"| catE\\n  catD -->|\\\"좌표 변환·층 이름·교환 형식\\\"| catF\\n  catD -->|\\\"주행 그래프·공용 자원 위치\\\"| catG\\n  catD -->|\\\"노드 통과 판정·임시 통제\\\"| catH\\n  catD -->|\\\"시뮬레이션 세계 생성\\\"| catI\\n  catD -->|\\\"관제 화면의 평면도\\\"| catJ\\n  catD -->|\\\"위치 스키마·지도 배포\\\"| catK\\n  catL -->|\\\"도면 해석·의미 지도 추론\\\"| catD\\n  catD -->|\\\"구역 규칙·위치추정 안전성(연계 대상)\\\"| catM\\n  catD -->|\\\"지도 작성 정확도 시험·지도 판 관리\\\"| catO\\n  catD -->|\\\"보도 폭·연석 경사로 속성\\\"| catP\\n  catD -->|\\\"병원·가정·실외·기타 사례\\\"| catQ\\n```\\n\\n### [A. 기획·사업](../planning-and-business/index.md)\\n\\n- **14. 도면·BIM에서 지도 만들기 ↔ [1. 기술·시장·업체 동향](../planning-and-business/technology-market-and-vendor-trends.md)**: 국토교통부가 설계 단계부터 BIM을 도입하는 건설산업 BIM 활성화 로드맵을 공개했다는 2020-12-28 보도(보도 제목 기준)가 있어, 로봇 지도 작성에 쓸 수 있는 도면·BIM 입력이 얼마나 늘어나는지가 동향 추적 대상이 될 것으로 보인다(준공 뒤 IFC 모델을 넘겨받는 절차는 열린 질문 oq-199). [추정][^ref-1013]\\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [2. 사용 사례·요구·책임 범위](../planning-and-business/use-cases-requirements-and-scope.md)**: Open-RMF는 로봇 좌표계와 RMF 좌표계 사이 변환을 대응점으로 추정하고, BIM을 사전 지도로 쓰는 위치 추정은 로봇 쪽 기능(분류 원문 19장 '로봇 자체 지능·제어' 경계의 연계 대상)이므로, ROP가 좌표 변환 등록·관리를 맡고 SLAM·위치 추정은 제조사에 맡기는 책임 범위 정의가 이 영역으로 넘어가는 것으로 보인다. [추정][^ref-153][^ref-1011]\\n\\n### [B. 로봇 온톨로지](../robot-ontology/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [4. 이기종 로봇 등록](../robot-ontology/heterogeneous-robot-registration.md)**: VDA 5050 팩트시트는 위치추정 방식(localizationTypes: NATURAL·REFLECTOR·RFID·DMC·SPOT·GRID), 경로 계획 방식(navigationTypes), 지원 구역 유형(supportedZones)을 기종 선언으로 두며, 지도 자체를 가리키는 전용 필드는 두지 않는다(확인일 2026-10-09). [사실][^ref-228]\\n- **15. 지도·공간·위치 모델 ↔ [5. 로봇 능력·작업 표현](../robot-ontology/robot-capability-and-task-representation.md)**: Open-RMF 교통 편집기에서 차선은 플릿별 주행 그래프(graph_idx) 가운데 하나에 속하고 양방향 여부를 가지므로, 어느 플릿이 어느 통로를 지날 수 있는지가 지도 쪽에 표현된다(확인일 2026-10-09). [사실][^ref-079] 로봇의 외형 다각형(envelopes2d)·크기는 팩트시트에, 지날 수 있는 차선은 지도의 플릿별 그래프에 따로 표현되므로, 5. 로봇 능력·작업 표현이 다루는 환경 조건과 능력의 대조는 두 표현을 잇는 규칙을 ROP 쪽에 두어야 할 것으로 보인다. [추정][^ref-228][^ref-079]\\n\\n### [C. 채팅 기반 구성·운영](../chat-based-configuration-and-operation/index.md)\\n\\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [8. 채팅으로 맵 작성](../chat-based-configuration-and-operation/chat-map-authoring.md)**: 분류 원문 4장의 교차 규칙상 8. 채팅으로 맵 작성은 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델을 엔진으로 쓰는데, Open-RMF 교통 편집기는 측정선을 그리기 전까지 기본 축척(1픽셀 = 5cm)을 쓰고, 층 정렬에 일직선이 아닌 두 점 이상의 기준점을 요구하며, 작업 목적지 경유점·문에 이름을 요구하므로, 대화로 맵을 만들 때도 축척·기준점·이름을 사용자에게 확인받는 단계가 남을 것으로 보인다. [추정][^ref-079]\\n- **16. 장소 의미·지도 관리 ↔ [12. 채팅으로 업무 지시·오케스트레이션](../chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)·[13. 대화형 기능의 신뢰·기반](../chat-based-configuration-and-operation/conversational-trust-and-foundations.md)**: IMDF의 대체 이름(alt_name)과 Open-RMF의 이름 붙은 경유점 같은 장소 이름 목록이 대화 지시 속 장소 표현을 해석하고 그 근거를 보여 주는 어휘가 될 것으로 보이며, 이를 직접 쓴 로봇 관제 제품은 확인하지 못했다(열린 질문 oq-204). [추정][^ref-1015][^ref-079][^ref-1018]\\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [11. 채팅으로 실제 상황 시뮬레이션 재현](../chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md)**: Open-RMF는 주석한 건물 지도에서 시뮬레이션 세계를 만들므로, 대화로 실제 상황을 재현하려면(원문 4장 교차 규칙상 엔진은 33. 시나리오 모델·편집과 36. 가상 시운전·실제 상황 재현) 그 바탕이 되는 층·문·승강기 지도가 D. 공간·지도 모델에서 먼저 확정돼 있어야 할 것으로 보인다. [추정][^ref-406]\\n\\n### [E. 사물·사람·실시간 상태](../objects-people-and-live-state/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)**: GS1 EPCIS 온톨로지(2021-09-30 판)는 이벤트가 일어난 판독 지점(readPoint)과 객체를 찾을 수 있는 업무 위치(bizLocation)를 따로 정의해, 작업 대상의 위치를 로봇 지도 좌표가 아닌 업무 위치 식별자로 기록한다. [사실][^ref-045] 업무 쪽 위치(GLN 하위 위치, EPCIS readPoint·bizLocation)와 로봇 쪽 위치(Open-RMF location_2D의 지도 이름·x·y·yaw)가 서로 다른 체계이므로, 둘을 잇는 대응 표를 ROP가 관리해야 할 것으로 보이며 이 대응 표는 F. 연동의 [23. 업무 시스템 연동](../integration/business-system-integration.md)과도 이어진다(열린 질문 oq-029). [추정][^ref-045][^ref-162][^ref-154]\\n- **15. 지도·공간·위치 모델 ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md)**: VDA 5050 3.0.0은 로봇 위치를 지도 식별자(mapId)에 기대어 보고하고, 로봇에 저장된 지도마다 ENABLED·DISABLED 상태를 두되 같은 mapId에서는 한 판만 ENABLED로 두며, 위치추정 품질(localizationScore, 0.0~1.0)과 편차 범위(deviationRange)는 기록·시각화 용도로만 정의한다(확인일 2026-10-09). [사실][^ref-031] 따라서 18. 실시간 세계 상태·데이터 일관성의 현재 상태에는 위치와 함께 지도 식별자·판을 저장해야 하고 위치 신뢰도의 수용 기준은 ROP가 따로 정해야 할 것으로 보이며(열린 질문 oq-028), 이 연결은 현재 상태를 표현하는 쪽이므로 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈과 구분한다. [추정][^ref-031][^ref-154]\\n- **16. 장소 의미·지도 관리 ↔ [19. 사람·보행자 모델](../objects-people-and-live-state/people-and-pedestrian-model.md)**: Kucner 외(IJRR 42(11), 2023-09)는 환경의 전형적 움직임 패턴을 의미 정보로 담는 움직임 지도(maps of dynamics)를 정리하고, 로봇이 이를 전역 경로 계획·위치 추정 개선·사람 움직임 예측에 쓸 수 있다고 정리했다. [사실][^ref-1171] 움직임 지도는 장소 지도 위에 덧붙는 시간 의존 층이므로, 장소 목록·지도 판과 사람 흐름 층을 함께 관리하는 방법이 두 영역을 잇는 과제가 될 것으로 보인다(공통 형식·현장 사례 유무는 이번 실행에서 새 열린 질문으로 올렸다). [추정][^ref-1171]\\n\\n### [F. 연동](../integration/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md)**: Open-RMF 플릿 어댑터는 로봇 좌표계가 RMF와 다르면 같은 위치를 가리키는 좌표 쌍으로 회전·축척·이동 변환을 추정하고(대응점 4개 이상 권장), 템플릿 설정은 층별 reference_coordinates로 이 좌표 쌍을 둔다. [사실][^ref-153][^ref-105]\\n- **15. 지도·공간·위치 모델 ↔ [21. 상호운용 표준·적합성](../integration/interoperability-standards-and-conformance.md)**: ISO 21423(산업용 이동로봇 통신·상호운용성)은 확인일 2026-10-09 기준으로 2026-07-21부터 단계 60.00(발행 진행 중)이고 발행 예정은 2026-10(1판)이며, 범위는 여러 제조사 AMR·플릿 관리 장비·기업 자원 사이의 통신 프로토콜이고 안전 요구와 공공 도로 이동 기계는 제외한다. [사실][^ref-159] 공통 좌표계 내용은 카탈로그 공개 요약에 없어 미확인이며(열린 질문 oq-027), 곧 발행되면 바뀔 수 있는 정보다.\\n- **16. 장소 의미·지도 관리 ↔ [21. 상호운용 표준·적합성](../integration/interoperability-standards-and-conformance.md)**: VDMA 레이아웃 교환 형식(LIF) 저장소 README는 1.0.0 판(2023-09)을 트랙 레이아웃(에지·노드·스테이션 묶음)을 무인운반차 통합사가 제3자 중앙 관제에 넘기는 형식으로 설명하고, VDA 5050 인터페이스 정의의 영향을 받았다고 적는다. [사실][^ref-046] 이 판·날짜는 README 기준으로만 적으며, VDMA 2024-03으로 인용된 판과의 출처 충돌은 한쪽으로 정하지 않고 열린 질문 oq-025·oq-078·oq-200에 남겨 둔다. 장소·지도 표현을 교환하는 표준으로 OGC 커뮤니티 표준 20-094로 채택된 실내 지도 데이터 형식(IMDF) 1.0.0(2021-02-18)과 로봇 내비게이션용 지도 데이터 표현을 정한 IEEE 1873-2015(2015-10-26)가 있으며, IEEE 1873-2015의 이후 상태는 열린 질문 oq-202에서 확인 중이므로 현행 표준으로 단정하지 않는다. [사실][^ref-1016][^ref-1019]\\n- **15. 지도·공간·위치 모델 ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)**: Open-RMF 승강기 상태는 운행 층을 형식 규칙 없는 문자열(available_floors·current_floor·destination_floor)로 나타내고, 교통 편집기는 승강기를 기준 층·운반실 중심·층별 운반실 문으로 정의하며 층마다 운반실 안 경유점을 차선으로 잇게 한다(확인일 2026-10-09). [사실][^ref-286][^ref-079] 지도의 층 이름과 승강기가 보고하는 층 이름이 각각 자유 문자열이므로 두 이름을 맞추는 대응 규칙을 ROP가 관리해야 할 것으로 보이며, 이를 정한 표준은 확인하지 못했고(열린 질문 oq-045) 승강기 운행 제어 자체는 분류 원문 19장 '시설·설비 제어' 경계의 연계 대상이다. [추정][^ref-286][^ref-079]\\n- **14. 도면·BIM에서 지도 만들기 ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)**: IFC 4.3의 IfcTransportElement는 승강기·에스컬레이터·무빙워크를 표현한다(개발 브랜치 ifc4.3-main 문서 기준이며 게시판 IFC 4.3 ADD2와 문구가 다를 수 있다). [사실][^ref-213] 이 요소가 BIM에서 승강기를 공용 자원 후보로 가져오는 입력이 될 것으로 보인다. [추정][^ref-213]\\n\\n### [G. 계획·최적화](../planning-and-optimization/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)**: Open-RMF 교통 편집기로 주석한 그래프는 building_map_generator로 주행 그래프로 내보내져 플릿 어댑터의 경로 계획에 쓰인다(확인일 2026-10-09). [사실][^ref-079]\\n- **16. 장소 의미·지도 관리 ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)**: Open-RMF 차선 요청 메시지(LaneRequest)는 플릿 이름과 열 차선·닫을 차선 목록만 담고, VDA 5050 3.0.0은 지도 식별자에 묶인 구역 집합(zoneSet)을 관제가 로봇에 보내게 해, 임시 통제가 지도와 따로 교통 계획에 전달된다(확인일 2026-10-09). [사실][^ref-569][^ref-031]\\n- **15. 지도·공간·위치 모델 ↔ [28. 공용 자원·충전·에너지 최적화](../planning-and-optimization/shared-resource-charging-and-energy-optimization.md)**: Open-RMF 교통 편집기는 경유점에 충전소(is_charger), 주차 위치(is_parking_spot), 무기한 대기 가능 지점(is_holding_point), 멈추면 안 되는 통과 지점(is_passthrough_point) 속성을 두어 공용 자원의 위치가 지도에서 나온다(확인일 2026-10-09). [사실][^ref-079] 충전소를 어느 속성으로 지정하는지는 Open-RMF 문서끼리 출처가 충돌해(is_parking_spot 대 is_charger) 열린 질문 oq-069에 올라 있다.\\n- **16. 장소 의미·지도 관리 ↔ [24. 작업·워크플로 모델링](../planning-and-optimization/task-and-workflow-modeling.md)**: Open-RMF에서 어떤 경유점에서 끝나는 작업을 주려면 그 경유점에 이름이 있어야 하므로, 작업 모델의 목적지는 장소 목록의 이름에 기댄다(확인일 2026-10-09). [사실][^ref-079]\\n\\n### [H. 실행·협업·예외 복구](../execution-collaboration-and-recovery/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md)**: VDA 5050 3.0.0에서 노드 통과는 로봇이 스스로 판단하며, 제어점이 노드의 허용 편차(allowedDeviationXY)와 방향 허용 편차(allowedDeviationTheta) 안에 들면 lastNodeId를 갱신해 보고하고, 노드 위치는 지도 식별자(mapId)를 기준으로 한다(확인일 2026-10-09). [사실][^ref-031] 도착·통과 판정이 로봇 자신의 지도 좌표와 허용 편차로 이루어지므로, ROP가 받는 완료 보고의 신뢰성은 제조사 지도와 공통 좌표의 정합, 활성 지도 판의 일치에 기댈 것으로 보인다(합격 기준은 열린 질문 oq-077·oq-198). [추정][^ref-031][^ref-153]\\n- **16. 장소 의미·지도 관리 ↔ [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)**: 차선 폐쇄(LaneRequest)와 구역 집합 교체가 진행 중인 경로를 막을 수 있으므로, 임시 통제의 선언·해제가 재계획을 일으키는 예외 사건이 될 것으로 보이며 재계획 동작을 정한 문서는 이번 자료에 없다(운영 절차는 열린 질문 oq-203). [추정][^ref-569][^ref-031]\\n\\n### [I. 설계·시뮬레이션](../design-and-simulation/index.md)\\n\\n아래 연결은 모두 가정한 미래를 실험하는 쪽이며, E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성(현재 상태 표현)과의 연결과 구분한다.\\n\\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [34. 시뮬레이션·예측용 디지털 트윈](../design-and-simulation/simulation-and-predictive-digital-twin.md)·[36. 가상 시운전·실제 상황 재현](../design-and-simulation/virtual-commissioning-and-real-situation-replay.md)**: Open-RMF의 building_map_generator gazebo는 주석한 건물 지도에서 층별 바닥·벽, 가구, 로봇, 관절·플러그인이 달린 문, 운반실·승강로 문이 있는 승강기, 워크셀(TeleportDispenser·TeleportIngestor)을 담은 Gazebo 세계를 만들고, 문서는 시뮬레이션이 하드웨어 시험보다 시간과 자원을 아낀다고 설명한다(확인일 2026-10-09). [사실][^ref-406]\\n- **14. 도면·BIM에서 지도 만들기 ↔ [34. 시뮬레이션·예측용 디지털 트윈](../design-and-simulation/simulation-and-predictive-digital-twin.md)**: Byers·RazaviAlavi(2022 MOC Summit, 2022-09-14)는 BIM의 형상 데이터를 시뮬레이션 속 가상 로봇에 옮겨 건물에 대한 사전 지식으로 쓰게 했고 사례 연구 1건으로 실용성을 보였으나, 정량 결과는 초록에 없다. [사실][^ref-1272]\\n- **14. 도면·BIM에서 지도 만들기 ↔ [35. 처리능력·규모·배치 설계](../design-and-simulation/capacity-sizing-and-layout-design.md)**: 건물 지도·BIM 형상·트랙 레이아웃을 시뮬레이션 세계로 바꾸는 도구와 연구가 있어, 도면에서 만든 지도가 배치·규모 설계 시뮬레이션의 초기값이 될 것으로 보이나 이를 정량 평가한 자료는 확인하지 못했다. [추정][^ref-406][^ref-1272][^ref-046]\\n\\n### [J. 현장 운영·관제](../field-operations-and-monitoring/index.md)\\n\\n- **16. 장소 의미·지도 관리 ↔ [37. 관제 화면·실행 기록](../field-operations-and-monitoring/control-screen-and-execution-records.md)**: Open-RMF 웹 대시보드(rmf-web)는 Open-RMF 배치를 보고 제어하는 웹 화면으로, 지도 층의 평면도를 그리며 모든 벽 꼭짓점을 감싸는 경계 상자로 화면 범위를 정한다(문·승강기 표시는 README에 없음, 확인일 2026-10-09). [사실][^ref-302]\\n- **14. 도면·BIM에서 지도 만들기 ↔ [37. 관제 화면·실행 기록](../field-operations-and-monitoring/control-screen-and-execution-records.md)**: 국내 업체 모빌리오는 산업용 순찰 로봇의 도면 연동과 센서 관제를 웹 화면 하나로 처리한다고 2026-08-24 발표했으며(벤더 주장), 독립 확인은 없다. [추정][^ref-817]\\n- **15. 지도·공간·위치 모델 ↔ [38. 모니터링·이상 탐지·원인 분석](../field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)**: VDA 5050이 위치추정 품질과 편차 범위를 기록·시각화 용도로 두므로, 이 값은 제어 판단보다 위치추정 저하를 찾는 모니터링·원인 분석의 입력으로 쓰일 것으로 보인다. [추정][^ref-031]\\n\\n### [K. 플랫폼 아키텍처·인프라](../platform-architecture-and-infrastructure/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [41. 플랫폼 아키텍처·외부 API](../platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)**: Open-RMF API의 2D 위치 스키마(location_2D)는 지도 이름(map)·x·y·yaw 네 필드를 모두 필수로 두므로, 이 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다(확인일 2026-10-09). [사실][^ref-154]\\n- **16. 장소 의미·지도 관리 ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md)**: VDA 5050 3.0.0에서 지도는 mapId·mapVersion으로 식별되고, 관제가 downloadMap 즉시 동작(mapId·mapDownloadLink)으로 로봇이 지도 서버에서 받아 가게 하며 enableMap·deleteMap으로 활성화·삭제하고, 올바른 지도를 활성화하는 책임은 관제에 있다(확인일 2026-10-09). [사실][^ref-031]\\n\\n### [L. AI·학습 기술](../ai-and-learning/index.md)\\n\\n- **16. 장소 의미·지도 관리 ↔ [44. 로봇 기반 모델·언어 모델 계획](../ai-and-learning/robot-foundation-models-and-llm-planning.md)**: 텍스트 기반 계층형 위상 의미 지도 osmAG의 위상·계층을 미세조정한 LLaMA2가 ChatGPT-3.5보다 잘 이해했다는 연구(ROBIO 2024, arXiv 2024-03)와, 의미 지도를 환경 근거로 삼아 언어 모델이 물체 위치를 추론하게 하는 osmAG-LLM 연구(arXiv 2025-07)가 있다. [사실][^ref-1271][^ref-1018]\\n- **14. 도면·BIM에서 지도 만들기 ↔ [45. 문서·도면·장면 이해](../ai-and-learning/document-drawing-and-scene-understanding.md)**: 분류 원문 13장의 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용되는 연구 방법)에 해당하는 연구로, DeFazio 외(2024-09)는 비전 언어 모델이 평면도를 읽어 실내 이동 계획을 세우게 해 9단계 이동 작업에서 0.96 성공률을 보고했으나 지도가 크고 개방 구역이 넓을수록 성능이 떨어졌다. [사실][^ref-076] 이 성능 저하가 물류창고·제조 공장처럼 넓은 개방 구역이 많은 비주거 시설 도면에서 어떤 오류로 나타나는지는 이번 실행에서 새 열린 질문으로 올렸으며, 기존 인식 모델의 비주거 도면 성능을 묻는 oq-196과 달리 비전 언어 모델의 오류 양상을 묻는다.\\n- **14. 도면·BIM에서 지도 만들기 ↔ [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md)**: 평면도 인식의 대표 공개 데이터셋(CubiCasa5K, ResPlan)이 주거 평면도 중심이므로, 병원·공장·물류창고 같은 비주거 도면에 쓰려면 모델 적응·재학습이 필요할 것으로 보인다(열린 질문 oq-196). [추정][^ref-063][^ref-071]\\n\\n### [M. 안전](../safety/index.md)\\n\\n- **연계 대상 — 15. 지도·공간·위치 모델 ↔ [48. 안전·위험 관리](../safety/safety-and-risk-management.md)** (SLAM 위치추정 자체는 분류 원문 19장 '로봇 자체 지능·제어' 경계): Abdul Hafez 외(IJRR, 2025-05)는 항공에서 쓰던 무결성 위험 지표로 EKF 기반 SLAM 위치추정의 안전성을 정량화했고, 데이터 연관 오류가 위치를 크게 해칠 수 있으며 랜드마크를 늘리면 안전성이 좋아지다가 서로 구별하기 어려울 만큼 빽빽해지면 떨어진다고 보고했다. [사실][^ref-161]\\n- **16. 장소 의미·지도 관리 ↔ [48. 안전·위험 관리](../safety/safety-and-risk-management.md)**: VDA 5050 3.0.0은 구역을 작업 공간의 교통 관리 규칙(BLOCKED·SPEED_LIMIT·RELEASE 등)으로 정의하면서, 문서가 기능·운영·시스템 안전 요구를 정하지 않는다고 밝힌다(확인일 2026-10-09). [사실][^ref-031]\\n\\n### [O. 검증·도입·수명주기](../verification-deployment-and-lifecycle/index.md)\\n\\n- **15. 지도·공간·위치 모델 ↔ [54. 시험·형식 검증·벤치마크](../verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)**: ISO 18646-2:2024(2판, 2024-01-22)는 이동 서비스 로봇의 항법 성능을 자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로 통과, 지도 작성 정확도로 평가하는 시험 방법을 정하며, 실내 환경 대상이고 안전 요구의 검증에는 쓰지 않는다(시험 절차 세부는 유료 본문이라 미확인, 열린 질문 oq-116). [사실][^ref-721]\\n- **14. 도면·BIM에서 지도 만들기·16. 장소 의미·지도 관리 ↔ [55. 현장 조사·설치·시운전](../verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)**: 에스토니아 타르투 대학병원 현장 시험에서는 Open-RMF 교통 편집기로 평면도에 벽·문·차선·충전소·주요 위치를 주석하고 로봇이 만든 격자 지도를 평면도에 정합했으며, 넓은 구역을 한 번에 매핑하기보다 작은 구역으로 나눠 매핑한 뒤 손으로 합치는 편이 더 정확했다(2022-08-23 발행). [사실][^ref-869]\\n- **16. 장소 의미·지도 관리 ↔ [57. 자산·소프트웨어 수명주기 관리](../verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)**: VDA 5050의 지도가 판(mapVersion)을 가지고 관제가 내려받기·활성화·삭제를 지시하므로, 지도 판은 로봇별로 배포 상태를 추적해야 하는 운영 자산으로 관리될 것으로 보인다(열린 질문 oq-201). [추정][^ref-031] 로봇마다 활성화된 지도 판과 Open-RMF 빌딩 맵·LIF 레이아웃의 판을 ROP 한 곳에서 대응시켜 관리하는 공개 구현이 있는지는 이번 실행에서 새 열린 질문으로 올렸으며, 지도 판이 바뀔 때 장소 이름·좌표 대응을 옮기는 방법을 묻는 oq-201의 배포 관리 쪽 질문이다.\\n\\n### [P. 거버넌스·법규·사회](../governance-law-and-society/index.md)\\n\\n- **16. 장소 의미·지도 관리 ↔ [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md)**: 2023-07 입법예고된 한국 실외이동로봇 운행 안전기준 개정안은 로봇 폭을 80cm 이하로 하되 운행하려는 보도의 최소 폭이 250cm 이상이면 120cm까지 허용한다고 2023-07-28 보도됐으며, 입법예고안 기준이라 현행·확정 기준과 다를 수 있다. [사실][^ref-992]\\n- **16. 장소 의미·지도 관리 ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md)**: Han 외(CHI 2024, 2024-04-07)는 이동장애인 15명과 로봇 실무자 8명 면담·공동설계 워크숍에서 이동장애인이 보도 로봇과 보도 공간을 두고 경쟁한다고 느끼고 부족한 연석 경사로 같은 기존 장벽을 겪으며, 두 집단 모두 처음부터 접근성을 반영해야 한다고 보았음을 보고했다. [사실][^ref-1214]\\n- **16. 장소 의미·지도 관리 ↔ 59. 법·규제·보험·라이선스·60. 노동·수용성·접근성**: 보도 폭에 따른 로봇 폭 제한과 연석 경사로 같은 접근성 지점이 운행 조건을 바꾸므로, 실외 장소 목록에 보도 폭·연석 경사로·대기 금지 지점 같은 속성을 두어 경로·대기 위치 제약으로 쓰는 일이 16. 장소 의미·지도 관리로 넘어올 것으로 보이며, 법 적합성 판단 자체는 운영자·법무 쪽 연계 대상이다(열린 질문 oq-188). [추정][^ref-992][^ref-1214]\\n\\n### [Q. 현장 유형별 적용](../site-type-applications/index.md)\\n\\n현장마다 다른 요구는 Q. 현장 유형별 적용에 모으고 모든 현장에 공통인 기능은 A~P에 둔다는 원문 취지에 따라, 여기에는 D. 공간·지도 모델과 이어지는 현장 사례만 적는다.\\n\\n- **[63. 병원·의료](../site-type-applications/hospital-and-healthcare.md) (현장 유형: 병원)**: 위 O. 검증·도입·수명주기의 타르투 대학병원 시험은 평면도 주석과 격자 지도 정합을 거쳐 중환자실에서 검사실로 혈액 검체를 운반한 현장 연구다(2022-08-23 발행). [사실][^ref-869]\\n- **[65. 가정·공동주택](../site-type-applications/home-and-apartment.md) (현장 유형: 가정)**: Narayana 외(IROS 2020)는 실제 가정의 바닥 청소 로봇 수천 대에 배포한 평생 의미 지도에서 주행마다 달라지는 원시 지도로 공간 의미를 옮기고 의미 충돌을 해소하는 방법을 제시했으며, 이는 청소 로봇 제품 쪽 기능이라 ROP에는 연계 대상(로봇 자체 지능·제어)이다. [사실][^ref-1021]\\n- **[66. 실외](../site-type-applications/outdoor.md) (현장 유형: 실외)**: 위 P. 거버넌스·법규·사회의 보도 폭·연석 경사로 연결이 실외 현장에서 장소 목록에 들어갈 속성 요구가 될 것으로 보인다. [추정][^ref-992][^ref-1214]\\n- **[67. 기타 현장](../site-type-applications/other-sites.md) (현장 유형: 기타)**: 네이버 제2사옥 1784는 스마트도시협회의 첫 로봇 친화형 건축물 인증을 받았고, 평가위원은 이 건물이 로봇이 인식하는 정밀지도와 측위 인프라를 제공한다고 평가했다고 2022-04-11 보도됐다(인증 원자료와 평가 항목은 미확인). [사실][^ref-956]\\n\\n### 아직 다루지 않은 연결\\n\\n다음 연결은 이번 브리프에 근거가 없어 내용을 채우지 않았다. 근거가 생기면 다음 대분류 연결 실행에서 다룬다.\\n\\n- [N. 보안·개인정보](../security-and-privacy/index.md)의 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터: 건물 지도·장소 목록의 접근 통제나 지도에 담기는 개인정보를 다룬 학술·기관 근거를 찾지 못했다.\\n- J. 현장 운영·관제의 40. 운영 절차·요청 창구: 임시 통제 구역을 누가 선언·승인·해제하는지 정한 근거가 없다(열린 질문 oq-203).\\n- P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: 여러 사업자가 함께 만드는 지도 데이터를 다룬 근거가 없다(열린 질문 oq-281).\\n- B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동·7. 온톨로지 검증·변경 관리, C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성·10. 채팅으로 로봇 구성, H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계·31. 사람–로봇 협업, I. 설계·시뮬레이션의 33. 시나리오 모델·편집, J. 현장 운영·관제의 39. 운영 성과 측정·개선, K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조, L. AI·학습 기술의 46. 예측·학습 기반 최적화, M. 안전의 50. 안전 표준·인증·사고 조사, O. 검증·도입·수명주기의 56. 운영 이관·확대·교육.\\n- Q. 현장 유형별 적용의 61. 물류창고, 62. 제조 공장, 64. 상업 시설: 이번 브리프에 현장 유형을 밝힌 사례가 없다(LIF는 현장 유형을 밝히지 않아 사례로 쓰지 않았다).\\n\\n이 절에서 쓴 각주의 정의는 페이지 끝 '참고 자료' 절에 있다.\"},{\"section\":\"최근 업데이트\",\"action\":\"append\",\"content\":\"## 참고 자료\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\\n[^ref-045]: GS1, gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl, 접근일 2026-10-09\\n[^ref-046]: VDMA (Intralogistics-2X-LIF GitHub), Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA), 2023-09, https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format, 접근일 2026-10-09\\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25 (원문 미열람)\\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-10-09\\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-10-09\\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\\n[^ref-154]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/location_2D.json, 접근일 2026-10-09\\n[^ref-159]: ISO, ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability, 미확인, https://www.iso.org/standard/86749.html, 접근일 2026-10-09\\n[^ref-161]: Abdul Hafez, O., Joerger, M., & Spenko, M., Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach, 2025-05, https://journals.sagepub.com/doi/10.1177/02783649241287797, 접근일 2026-10-09\\n[^ref-162]: GS1, Identifying a physical location - GLN, 미확인, https://www.gs1.org/standards/id-keys/gln/physical-location, 접근일 2026-09-25 (원문 미열람)\\n[^ref-213]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-10-09\\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-09\\n[^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-10-09\\n[^ref-569]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-10-09\\n[^ref-817]: 모빌리오(Mobilio), [최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 관제를 웹 화면 하나로 끝내는 방법, 2026-08-24, https://www.mobilio.io/ko/%eb%aa%a8%eb%b9%8c%eb%a6%ac%ec%98%a4-%ed%86%b5%ed%95%a9-%eb%8c%80%ec%8b%9c%eb%b3%b4%eb%93%9c-%ec%86%94%eb%a3%a8%ec%85%98/, 접근일 2026-09-29\\n[^ref-869]: Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI, Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test, 2022-08-23, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full, 접근일 2026-09-29\\n[^ref-956]: 지디넷코리아 (김성현), 네이버 제2사옥, 로봇 친화형 건축물 인증 획득, 2022-04-11, https://zdnet.co.kr/view/?no=20220411142336, 접근일 2026-09-29\\n[^ref-992]: 지디넷코리아, 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인), 2023-07-28, https://zdnet.co.kr/view/?no=20230728173101, 접근일 2026-10-09\\n[^ref-1011]: Hendrikx, R. W. M., Pauwels, P., Torta, E., Bruyninckx, H. P. J., & van de Molengraft, M. J. G. (ICRA 2021), Connecting Semantic Building Information Models and Robotics: An application to 2D LiDAR-based localization, 2021, https://research.tue.nl/en/publications/connecting-semantic-building-information-models-and-robotics-an-a/, 접근일 2026-09-30\\n[^ref-1013]: 엔지니어링데일리, \\\"설계부터 100% 도입\\\" 건설산업 BIM 활성화 로드맵 공개, 2020-12-28, https://www.engdaily.com/news/articleView.html?idxno=12613, 접근일 2026-09-30\\n[^ref-1015]: Apple (Apple Business Register), Glossary - Indoor Mapping Data Format, 미확인, https://register.apple.com/resources/imdf/glossary, 접근일 2026-09-30\\n[^ref-1016]: Open Geospatial Consortium (OGC), Indoor Mapping Data Format (1.0.0) — OGC Community Standard 20-094, 2021-02-18, https://docs.ogc.org/cs/20-094/index.html, 접근일 2026-09-30\\n[^ref-1018]: Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv), osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning, 2025-07, https://arxiv.org/abs/2507.12753, 접근일 2026-10-09\\n[^ref-1019]: IEEE Standards Association (IEEE RAS), IEEE 1873-2015 — IEEE Standard for Robot Map Data Representation for Navigation, 2015-10-26, https://standards.ieee.org/standard/1873-2015.html, 접근일 2026-09-30\\n[^ref-1021]: Narayana, M., Kolling, A., Nardelli, L., & Fong, P. (IROS 2020), Lifelong update of semantic maps in dynamic environments, 2020-10, https://arxiv.org/abs/2010.08846, 접근일 2026-09-30\\n[^ref-1171]: Kucner, T. P., Magnusson, M., Mghames, S., Palmieri, L., Verdoja, F., Swaminathan, C. S., Krajník, T., Schaffernicht, E., Bellotto, N., Hanheide, M., & Lilienthal, A. J. (The International Journal of Robotics Research 42(11)), Survey of maps of dynamics for mobile robots, 2023-09, https://research.aalto.fi/en/publications/survey-of-maps-of-dynamics-for-mobile-robots/, 접근일 2026-10-09\\n[^ref-1214]: Han, H. Z. 외 (Carnegie Mellon University) — CHI '24, Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations, 2024-04-07, https://arxiv.org/abs/2404.05050, 접근일 2026-10-09\\n[^ref-721]: ISO, ISO 18646-2:2024 Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation, 2024-01-22, https://www.iso.org/standard/82643.html, 접근일 2026-10-09\\n[^ref-1271]: Xie, F., & Schwertfeger, S. (ROBIO 2024, arXiv), Empowering Robot Path Planning with Large Language Models: osmAG Map Topology & Hierarchy Comprehension with LLMs, 2024-03, https://arxiv.org/abs/2403.08228, 접근일 2026-10-09\\n[^ref-1272]: Byers, G., & RazaviAlavi, S. (Northumbria University), 2022 Modular and Offsite Construction Summit, Layout Modelling of the Built Environment for Autonomous Mobile Robots Using Building Information Modelling (BIM) and Simulation, 2022-09-14, https://researchportal.northumbria.ac.uk/en/publications/layout-modelling-of-the-built-environment-for-autonomous-mobile-r/, 접근일 2026-10-09\\n[^ref-302]: Open Robotics (open-rmf), rmf-web — README (web-based interface to visualize and control Open-RMF deployments), 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09\"}]}],\"changelog_entry\":\"2026-10-09 | D. 공간·지도 모델 | 다른 대분류와의 연결 절 신규 작성(A·B·C·E·F·G·H·I·J·K·L·M·O·P·Q 대분류와의 연결, 아직 다루지 않은 연결 명시), 참고 자료 절 신설과 각주 정의 | run 2026-10-09-02\",\"index_updates\":{\"home_recent\":\"2026-10-09 — D. 공간·지도 모델: 다른 대분류와의 연결 절 신규 작성(14·15·16 세부영역의 지도·좌표·장소 이름이 15개 대분류로 이어지는 연결, N. 보안·개인정보 등은 근거 없음으로 표시)\",\"category_recent\":\"2026-10-09 — D. 공간·지도 모델: 다른 대분류와의 연결 절 신규 작성(연결마다 단일 출처, 교차 확인 0건)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"localization-score\",\"term_ko\":\"위치추정 품질 점수\",\"term_en\":\"Localization Score (VDA 5050 localizationScore)\",\"definition\":\"로봇이 보고하는 0.0(최저)~1.0(최고)의 위치추정 신뢰 값으로, VDA 5050 3.0.0 은 이를 편차 범위(deviationRange)와 함께 기록·시각화 용도로만 둔다.\",\"related_areas\":[15,18,38],\"sources\":[\"ref-031\"]},{\"action\":\"new\",\"slug\":\"map-distribution\",\"term_ko\":\"지도 배포\",\"term_en\":\"Map Distribution (VDA 5050 downloadMap / enableMap / deleteMap)\",\"definition\":\"관제가 즉시 동작으로 로봇에게 지도 서버에서 특정 판의 지도를 내려받게 하고, 활성화·삭제를 지시해 로봇마다 올바른 지도 판이 쓰이게 하는 절차다.\",\"related_areas\":[16,43,57],\"sources\":[\"ref-031\"]},{\"action\":\"new\",\"slug\":\"integrity-risk\",\"term_ko\":\"무결성 위험\",\"term_en\":\"Integrity Risk\",\"definition\":\"항공 항법에서 위치 추정 결과를 얼마나 믿을 수 있는지 정량화하는 데 쓰던 성능 지표로, 이동로봇의 SLAM 기반 위치추정 안전성을 평가하는 데도 적용된다.\",\"related_areas\":[15,48],\"sources\":[\"ref-161\"]}],\"reference_updates\":[{\"id\":\"ref-1214\",\"org\":\"Han, H. Z. 외 (Carnegie Mellon University) — CHI '24\",\"title\":\"Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations\",\"published\":\"2024-04-07\",\"url\":\"https://arxiv.org/abs/2404.05050\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"이동장애인 15명·로봇 실무자 8명 면담과 공동설계 워크숍으로 보도 로봇의 접근성 문제를 다룬 CHI 2024 논문(초록 확인).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-721\",\"org\":\"ISO\",\"title\":\"ISO 18646-2:2024 Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation\",\"published\":\"2024-01-22\",\"url\":\"https://www.iso.org/standard/82643.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"ISO 카탈로그 공개 요약 확인. 이동 서비스 로봇의 항법 성능(자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로, 지도 작성 정확도) 시험 방법. 실내 대상, 안전 검증용 아님. 본문은 유료라 열지 못했다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-1271\",\"org\":\"Xie, F., & Schwertfeger, S. (ROBIO 2024, arXiv)\",\"title\":\"Empowering Robot Path Planning with Large Language Models: osmAG Map Topology & Hierarchy Comprehension with LLMs\",\"published\":\"2024-03\",\"url\":\"https://arxiv.org/abs/2403.08228\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"텍스트 기반 계층형 위상 의미 지도 osmAG 의 위상·계층을 언어 모델이 이해하는지 시험하고, 미세조정한 LLaMA2 가 ChatGPT-3.5 보다 낫다고 보고한 연구(초록 확인).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-1272\",\"org\":\"Byers, G., & RazaviAlavi, S. (Northumbria University), 2022 Modular and Offsite Construction Summit\",\"title\":\"Layout Modelling of the Built Environment for Autonomous Mobile Robots Using Building Information Modelling (BIM) and Simulation\",\"published\":\"2022-09-14\",\"url\":\"https://researchportal.northumbria.ac.uk/en/publications/layout-modelling-of-the-built-environment-for-autonomous-mobile-r/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"BIM 형상 데이터를 시뮬레이션 속 가상 로봇의 사전 지식으로 옮긴 방법과 사례 연구 1건(초록 확인, DOI 10.29173/mocs283).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-302\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf-web — README (web-based interface to visualize and control Open-RMF deployments)\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf-web\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF 웹 대시보드·API 서버 저장소 README. 대시보드가 지도 층 평면도를 그리고 벽 꼭짓점 경계 상자로 화면 범위를 정한다고 적는다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 지도 식별·배포(downloadMap·enableMap·deleteMap)와 관제의 지도 활성화 책임, 구역 집합, 노드 통과 허용 편차, 기록용 위치추정 품질 값을 정의한다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"VDA 5050 팩트시트 스키마. 위치추정 방식·경로 계획 방식·지원 구역 유형·외형·물리 제원을 기종 선언으로 둔다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-406\",\"org\":\"Open Robotics\",\"title\":\"Simulation - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/simulation.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"building_map_generator 로 건물 지도에서 문·승강기·워크셀을 포함한 Gazebo 시뮬레이션 세계를 만드는 흐름을 설명한다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-569\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"플릿 이름과 열 차선·닫을 차선 목록을 담는 차선 요청 메시지 정의.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-286\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"승강기 상태 메시지. 층 이름 문자열, 문·운행 상태, 운영 모드, 세션 id 를 담는다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-079\",\"org\":\"Open Robotics\",\"title\":\"Traffic Editor - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"평면도 위 경유점·차선·문·승강기 주석, 축척·기준점 정렬, 주행 그래프와 시뮬레이션 세계 내보내기를 설명하는 Open-RMF 교통 편집기 문서.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-154\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/location_2D.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"Open-RMF API 의 2D 위치 스키마. map·x·y·yaw 를 모두 필수로 둔다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-046\",\"org\":\"VDMA (Intralogistics-2X-LIF GitHub)\",\"title\":\"Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA)\",\"published\":\"2023-09\",\"url\":\"https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"LIF 1.0.0(2023-09) 저장소 README. 무인운반차 통합사가 트랙 레이아웃(에지·노드·스테이션)을 제3자 중앙 관제에 넘기는 형식으로 설명한다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-045\",\"org\":\"GS1\",\"title\":\"gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0)\",\"published\":\"2021-09-30\",\"url\":\"https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-09\",\"summary\":\"EPCIS 2.0 온톨로지 원본. readPoint·bizLocation·source/destination 등 이벤트의 위치·이전 어휘를 정의한다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-1018\",\"org\":\"Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv)\",\"title\":\"osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning\",\"published\":\"2025-07\",\"url\":\"https://arxiv.org/abs/2507.12753\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"의미 지도를 환경 근거로 삼아 언어 모델이 물체 위치를 추론하는 제로샷 물체 탐색 연구(초록 확인).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-076\",\"org\":\"DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.\",\"title\":\"Vision Language Models Can Parse Floor Plan Maps\",\"published\":\"2024-09\",\"url\":\"https://arxiv.org/abs/2409.12842\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"비전 언어 모델로 평면도를 해석해 실내 이동 계획을 세우는 연구. 9단계 작업 성공률 0.96, 큰 개방 구역에서 저하(초록 확인).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-161\",\"org\":\"Abdul Hafez, O., Joerger, M., & Spenko, M.\",\"title\":\"Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach\",\"published\":\"2025-05\",\"url\":\"https://journals.sagepub.com/doi/10.1177/02783649241287797\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"항공의 무결성 위험 지표로 EKF 기반 SLAM 위치추정 안전성을 정량화한 IJRR 논문(초록 확인).\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-992\",\"org\":\"지디넷코리아\",\"title\":\"실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인)\",\"published\":\"2023-07-28\",\"url\":\"https://zdnet.co.kr/view/?no=20230728173101\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-09\",\"summary\":\"2023-07 입법예고된 실외이동로봇 운행 안전기준(폭·경사로·속도·횡단보도·알림음 등)을 전한 기사.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false},{\"id\":\"ref-159\",\"org\":\"ISO\",\"title\":\"ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability\",\"published\":null,\"url\":\"https://www.iso.org/standard/86749.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-09\",\"summary\":\"ISO 카탈로그 페이지. 2026-07-21 단계 60.00(발행 진행 중), 발행 예정 2026-10(1판), 여러 제조사 AMR 상호운용 통신 프로토콜 범위. 표준 본문은 유료라 열지 못했다.\",\"cited_by\":[\"docs/categories/space-and-map-model/index.md\"],\"source_unopened\":false}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"VDA 5050 의 지도 배포(downloadMap·enableMap·deleteMap)로 로봇마다 활성화된 지도 판과 Open-RMF 빌딩 맵·LIF 레이아웃의 판을 ROP 한 곳에서 대응시켜 관리하는 공개 구현이나 운영 절차가 있는가?\",\"areas\":[16,43,57],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"시간대별 사람 흐름을 담은 움직임 지도(maps of dynamics)를 ROP 의 장소 목록·지도 판과 함께 관리하고 경로·작업 시간 계획에 넘기는 공통 형식이나 현장 사례가 있는가?\",\"areas\":[16,19,27],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"비전 언어 모델의 평면도 해석이 큰 개방 구역에서 성능이 떨어진다는 보고가 물류창고·제조 공장처럼 넓은 개방 구역이 많은 비주거 시설 도면에서 어떤 오류로 나타나는가?\",\"areas\":[14,45,61],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[],\"additional_research_requests\":[\"ref-1171 각주: 참고문헌 페이지 docs/references/ref-1171.md 의 '각주 형식' 줄이 입력에 없어 브리프의 ref-1270 서지(Aalto 연구 포털 URL)로 각주 정의를 만들었다. 퍼블리셔가 ref-1171 페이지의 줄과 다르면 그 줄로 바꾸도록 확인이 필요하다.\",\"D. 공간·지도 모델 대분류 시드 페이지에 '참고 자료' 절이 없어, 이번에는 '최근 업데이트' 절 끝(auto 마커 밖)에 append 패치로 '## 참고 자료' 절을 새로 만들었다. 패치 적용기가 없는 절을 새로 만드는 방식(section 미존재 시 끝에 추가)을 지원하도록, 그리고 다른 대분류 시드에도 '참고 자료' 절이 있는지 pipeline·시드 담당의 확인이 필요하다.\",\"N. 보안·개인정보(51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터)와 D. 공간·지도 모델을 잇는 근거: 건물 지도·장소 목록의 접근 통제, 로봇 지도에 담기는 개인정보를 다룬 학술·기관 자료가 '다른 대분류와의 연결' 절에 필요하다(RO-MAN 2023 로봇 지도 개인정보 논문 본문 확인 포함).\",\"Q. 현장 유형별 적용의 61. 물류창고, 62. 제조 공장, 64. 상업 시설에서 도면·지도 정합이나 장소 목록·지도 판 관리를 다룬 현장 사례가 연결 절의 Q 항목에 필요하다(현장 유형을 밝힌 출처).\",\"B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동·7. 온톨로지 검증·변경 관리와 장소·지도 표현(IndoorGML·BOT 등)을 잇는 근거, 40. 운영 절차·요청 창구의 임시 통제 구역 운영 절차(oq-203), 58. 다사업자 책임·계약·데이터의 지도 데이터 권리(oq-281)가 연결 절에 필요하다.\",\"ISO 21423 은 2026-10 발행 예정이므로 다음 월간 재검증에서 발행 여부와 공통 좌표계 내용(oq-027)을 다시 확인해야 한다.\",\"ref-1214·ref-721·ref-1271·ref-1272·ref-302 의 id 가 보류된 실행 2026-09-30-24 의 번호와 겹친다는 1·2차 검증 지적이 있으므로 퍼블리셔의 번호·URL 병합 확인이 필요하다(특히 ref-302·ref-721 은 기존 번호 범위 안).\"],\"fixes_applied\":[\"page_proposals 절 제목 — patches 의 section 을 번호 없는 '다른 대분류와의 연결'로 썼다.\",\"참고 자료 — 페이지 끝(최근 업데이트 절 뒤)에 '## 참고 자료' 절을 새로 만들어 각주 정의 35건을 그 절로 옮겼다. 현재 페이지에 없는 절이라 '최근 업데이트' 절에 append 패치(auto 마커 끝 뒤에 덧붙임)로 넣었고, 마커 사이 내용과 그 밖의 절은 바꾸지 않았다. 연결 절 끝에는 각주가 참고 자료 절에 있다는 한 줄만 남겼다.\",\"대분류 표기 — 연결 절의 소제목·링크 텍스트·도식을 새 17개 대분류의 문자와 이름, 세부영역 번호+이름으로 썼고 옛 대분류 이름은 쓰지 않았다.\",\"f13·f14 — E. 사물·사람·실시간 상태 항목의 두 문장 각주를 ref-1171 로 썼고 reference_updates 에 ref-1270 을 넣지 않았다(ref-1171 페이지의 각주 줄이 입력에 없어 브리프 서지로 정의를 만들고 추가 조사 요청에 적었다).\",\"ref-1214 — reference_updates 에 기관·제목·발행일 2024-04-07·URL·접근일 2026-10-09 를 모두 채운 새 항목으로 냈고 각주 정의도 두었다.\",\"f21 — F. 연동 항목에서 IfcTransportElement 정의를 [사실] 문장(개발 브랜치 ifc4.3-main·ADD2 문구 차이 단서 유지)으로, 공용 자원 후보 입력이라는 활용을 별도 [추정] 문장으로 나눴다.\",\"f35 — K. 플랫폼 아키텍처·인프라 항목을 'location_2D 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다'로 좁혔다.\",\"f18 — IEEE 1873-2015 를 현행 표준으로 단정하지 않고 이후 상태를 열린 질문 oq-202 로 연결해 같은 문장에 적었으며, ref-1016·ref-1019 각주는 참고문헌 목록의 서지와 이전 접근일(2026-09-30)로 썼다.\",\"f16 — ISO 21423 의 단계 60.00(2026-07-21)·발행 예정 2026-10 을 '확인일 2026-10-09 기준'과 함께 쓰고 공통 좌표계 내용은 미확인(oq-027)으로 두었다.\",\"f17 — LIF 판·날짜를 README 기준 1.0.0(2023-09)으로만 쓰고 VDMA 2024-03 인용과의 출처 충돌(oq-025·oq-078·oq-200)을 한쪽으로 정하지 않고 함께 밝혔다.\",\"f24 — G. 계획·최적화 항목의 충전소 속성 문장 뒤에 출처 충돌 oq-069(is_parking_spot 대 is_charger)를 함께 적었다.\",\"f45 — '2023-07 입법예고안 기준 보도'임과 2023-07-28 기준일을 문장에 유지하고 현행·확정 기준과 다를 수 있다고 적었다.\",\"f33 — J. 현장 운영·관제 항목을 '[추정] 벤더 주장' 으로 표기하고 독립 확인이 없음을 문장에 남겼다.\",\"f40·f48·f2 — SLAM 위치추정 안전성(M. 안전 항목의 '연계 대상' 표시), 청소 로봇의 의미 지도 갱신(Q 항목에서 연계 대상 명시), BIM 기반 위치 추정(A 항목에서 '로봇 자체 지능·제어' 경계의 연계 대상 명시)을 ROP 직접 범위로 쓰지 않았다.\",\"f12·f29~f31 — 18. 실시간 세계 상태·데이터 일관성 연결은 E 항목에 현재 상태 표현으로, 34·35·36 연결은 I 항목 머리에 가정한 미래를 실험하는 쪽이라고 밝혀 나눠 썼다.\",\"f38·f37 — f38 은 L 항목에 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기를 함께 적었고(원문 13장 교차 규칙 명시), f37 은 44. 로봇 기반 모델·언어 모델 계획과 16. 장소 의미·지도 관리 양쪽을 한 줄에 연결했다.\",\"각주 — fetched: false 인 출처는 참고문헌 목록의 서지와 이전 접근일로 각주를 썼고, 원문을 연 적 없는 ref-162·ref-063·ref-071 에는 접근일 뒤 ' (원문 미열람)'을 붙였으며 이 출처들은 reference_updates 에 넣지 않았다.\",\"open_questions_new — 세 질문을 형식대로 open_question_updates 에 new 로 등록하고, 연결 절의 O 항목에서 첫 질문과 oq-201 의 관계를, L 항목에서 셋째 질문과 oq-196 의 관계를 밝혔다.\",\"아직 다루지 않은 연결 — N. 보안·개인정보(51·52·53), 40. 운영 절차·요청 창구(oq-203), 58. 다사업자 책임·계약·데이터(oq-281) 등을 근거 없음으로만 적고 내용을 추정해 채우지 않았다.\",\"형식 검증 재작성 — H2 순서를 템플릿(핵심 질문 … 최근 업데이트, 참고 자료)과 맞추기 위해 '## 참고 자료' 절을 페이지 끝에 두고 각주 정의를 연결 절에서 그 절로 옮겼다. 주장·태그·각주 참조는 바꾸지 않았다.\",\"2차: Q. 현장 유형별 적용의 66. 실외 줄 — 방법 (가)를 택해 '…장소 목록에 들어갈 속성 요구가 될 것으로 보인다. [추정][^ref-992][^ref-1214]'로 고쳐 f47 과 같은 태그·각주를 붙였다.\",\"2차: J. 현장 운영·관제의 f33 문장 — '벤더 주장'을 태그 앞 문장 안으로 옮겨 '…2026-08-24 발표했으며(벤더 주장), 독립 확인은 없다. [추정][^ref-817]'로 고쳤다. 태그·각주·벤더 주장 병기는 유지했다.\",\"2차: 위 두 줄 말고는 patches 본문·참고 자료 절·reference_updates·glossary_updates·open_question_updates 를 바꾸지 않았다(diff_summary 에 2차 수정 2건만 덧붙였다).\"]}",
+  "structured_output": {
+    "run_id": "2026-10-09-02",
+    "outline": [
+      {
+        "path": "docs/categories/space-and-map-model/index.md",
+        "section": "다른 대분류와의 연결",
+        "budget_chars": 9000,
+        "summary": "D. 공간·지도 모델의 14·15·16 세부영역이 만든 지도·좌표·층·장소 이름이 A·B·C·E·F·G·H·I·J·K·L·M·O·P·Q 대분류의 세부영역으로 어떤 입력이 되어 넘어가는지 대분류별로 정리한다. 예: 위치 보고는 지도 식별자(mapId)에 묶이고 위치추정 품질은 기록·시각화 용도로만 정의된다. [사실][^ref-031] N. 보안·개인정보 등 근거가 없는 연결은 '아직 다루지 않은 연결'로만 적는다. 이 절에서 쓴 각주 35건의 정의는 페이지 끝 '참고 자료' 절에 둔다(본문 글자 수에 넣지 않음).",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f27",
+          "f28",
+          "f29",
+          "f30",
+          "f31",
+          "f32",
+          "f33",
+          "f34",
+          "f35",
+          "f36",
+          "f37",
+          "f38",
+          "f39",
+          "f40",
+          "f41",
+          "f42",
+          "f43",
+          "f44",
+          "f45",
+          "f46",
+          "f47",
+          "f48",
+          "f49"
+        ]
+      },
+      {
+        "path": "docs/categories/space-and-map-model/index.md",
+        "section": "참고 자료",
+        "budget_chars": 0,
+        "summary": "'다른 대분류와의 연결' 절에서 쓴 각주 35건의 정의만 둔다. 핵심 포인트 원문 문단에는 [n] 표기가 없어 원문 대응 각주 문장은 두지 않는다."
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/space-and-map-model/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "'다른 대분류와의 연결' 절 신규 작성(A~Q 가운데 15개 대분류와의 연결, 연결 도식, 아직 다루지 않은 연결), 페이지 끝 '참고 자료' 절 신설과 각주 정의 35건, 프런트매터 category·sources 추가. 2차 수정: 66. 실외 줄에 추정 태그·각주, f33 의 '벤더 주장'을 태그 앞으로 이동",
+        "patches": [
+          {
+            "section": "다른 대분류와의 연결",
+            "action": "replace",
+            "frontmatter": {
+              "category": "D. 공간·지도 모델",
+              "sources": [
+                "ref-031",
+                "ref-045",
+                "ref-046",
+                "ref-063",
+                "ref-071",
+                "ref-076",
+                "ref-079",
+                "ref-105",
+                "ref-153",
+                "ref-154",
+                "ref-159",
+                "ref-161",
+                "ref-162",
+                "ref-213",
+                "ref-228",
+                "ref-286",
+                "ref-406",
+                "ref-569",
+                "ref-817",
+                "ref-869",
+                "ref-956",
+                "ref-992",
+                "ref-1011",
+                "ref-1013",
+                "ref-1015",
+                "ref-1016",
+                "ref-1018",
+                "ref-1019",
+                "ref-1021",
+                "ref-1171",
+                "ref-1214",
+                "ref-721",
+                "ref-1271",
+                "ref-1272",
+                "ref-302"
+              ]
+            },
+            "content": "이 절은 D. 공간·지도 모델의 세 세부영역 — [14. 도면·BIM에서 지도 만들기](maps-from-floor-plans-and-bim.md), [15. 지도·공간·위치 모델](map-space-and-location-model.md), [16. 장소 의미·지도 관리](place-semantics-and-map-management.md) — 이 만든 지도·좌표·층·장소 이름이 다른 대분류의 어느 세부영역으로 어떤 입력이 되어 넘어가는지를 대분류별로 정리한다. 근거는 게시된 세부영역 페이지의 검증된 주장과 2026-10-09 실행에서 다시 확인한 출처다. 연결마다 근거 출처가 하나뿐이어서 교차 확인된 주장은 아직 없다. 분류 원문 19장의 경계에 따라 SLAM·위치 추정 같은 로봇 자체 지능·제어와 승강기 운행 같은 시설·설비 제어는 \"연계 대상\"으로만 적는다. 연결에 걸린 열린 질문은 [열린 질문](../../open-questions.md) 페이지에서 볼 수 있다.\n\n```mermaid\nflowchart LR\n  catD[\"D. 공간·지도 모델\"]\n  catA[\"A. 기획·사업\"]\n  catB[\"B. 로봇 온톨로지\"]\n  catC[\"C. 채팅 기반 구성·운영\"]\n  catE[\"E. 사물·사람·실시간 상태\"]\n  catF[\"F. 연동\"]\n  catG[\"G. 계획·최적화\"]\n  catH[\"H. 실행·협업·예외 복구\"]\n  catI[\"I. 설계·시뮬레이션\"]\n  catJ[\"J. 현장 운영·관제\"]\n  catK[\"K. 플랫폼 아키텍처·인프라\"]\n  catL[\"L. AI·학습 기술\"]\n  catM[\"M. 안전\"]\n  catO[\"O. 검증·도입·수명주기\"]\n  catP[\"P. 거버넌스·법규·사회\"]\n  catQ[\"Q. 현장 유형별 적용\"]\n  catD -->|\"좌표 변환 책임 범위·도면 입력 동향\"| catA\n  catD -->|\"위치추정 방식 선언·플릿별 차선\"| catB\n  catD -->|\"맵 작성 엔진·장소 어휘\"| catC\n  catD -->|\"지도 식별자가 붙은 위치·업무 위치 대응\"| catE\n  catD -->|\"좌표 변환·층 이름·교환 형식\"| catF\n  catD -->|\"주행 그래프·공용 자원 위치\"| catG\n  catD -->|\"노드 통과 판정·임시 통제\"| catH\n  catD -->|\"시뮬레이션 세계 생성\"| catI\n  catD -->|\"관제 화면의 평면도\"| catJ\n  catD -->|\"위치 스키마·지도 배포\"| catK\n  catL -->|\"도면 해석·의미 지도 추론\"| catD\n  catD -->|\"구역 규칙·위치추정 안전성(연계 대상)\"| catM\n  catD -->|\"지도 작성 정확도 시험·지도 판 관리\"| catO\n  catD -->|\"보도 폭·연석 경사로 속성\"| catP\n  catD -->|\"병원·가정·실외·기타 사례\"| catQ\n```\n\n### [A. 기획·사업](../planning-and-business/index.md)\n\n- **14. 도면·BIM에서 지도 만들기 ↔ [1. 기술·시장·업체 동향](../planning-and-business/technology-market-and-vendor-trends.md)**: 국토교통부가 설계 단계부터 BIM을 도입하는 건설산업 BIM 활성화 로드맵을 공개했다는 2020-12-28 보도(보도 제목 기준)가 있어, 로봇 지도 작성에 쓸 수 있는 도면·BIM 입력이 얼마나 늘어나는지가 동향 추적 대상이 될 것으로 보인다(준공 뒤 IFC 모델을 넘겨받는 절차는 열린 질문 oq-199). [추정][^ref-1013]\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [2. 사용 사례·요구·책임 범위](../planning-and-business/use-cases-requirements-and-scope.md)**: Open-RMF는 로봇 좌표계와 RMF 좌표계 사이 변환을 대응점으로 추정하고, BIM을 사전 지도로 쓰는 위치 추정은 로봇 쪽 기능(분류 원문 19장 '로봇 자체 지능·제어' 경계의 연계 대상)이므로, ROP가 좌표 변환 등록·관리를 맡고 SLAM·위치 추정은 제조사에 맡기는 책임 범위 정의가 이 영역으로 넘어가는 것으로 보인다. [추정][^ref-153][^ref-1011]\n\n### [B. 로봇 온톨로지](../robot-ontology/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [4. 이기종 로봇 등록](../robot-ontology/heterogeneous-robot-registration.md)**: VDA 5050 팩트시트는 위치추정 방식(localizationTypes: NATURAL·REFLECTOR·RFID·DMC·SPOT·GRID), 경로 계획 방식(navigationTypes), 지원 구역 유형(supportedZones)을 기종 선언으로 두며, 지도 자체를 가리키는 전용 필드는 두지 않는다(확인일 2026-10-09). [사실][^ref-228]\n- **15. 지도·공간·위치 모델 ↔ [5. 로봇 능력·작업 표현](../robot-ontology/robot-capability-and-task-representation.md)**: Open-RMF 교통 편집기에서 차선은 플릿별 주행 그래프(graph_idx) 가운데 하나에 속하고 양방향 여부를 가지므로, 어느 플릿이 어느 통로를 지날 수 있는지가 지도 쪽에 표현된다(확인일 2026-10-09). [사실][^ref-079] 로봇의 외형 다각형(envelopes2d)·크기는 팩트시트에, 지날 수 있는 차선은 지도의 플릿별 그래프에 따로 표현되므로, 5. 로봇 능력·작업 표현이 다루는 환경 조건과 능력의 대조는 두 표현을 잇는 규칙을 ROP 쪽에 두어야 할 것으로 보인다. [추정][^ref-228][^ref-079]\n\n### [C. 채팅 기반 구성·운영](../chat-based-configuration-and-operation/index.md)\n\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [8. 채팅으로 맵 작성](../chat-based-configuration-and-operation/chat-map-authoring.md)**: 분류 원문 4장의 교차 규칙상 8. 채팅으로 맵 작성은 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델을 엔진으로 쓰는데, Open-RMF 교통 편집기는 측정선을 그리기 전까지 기본 축척(1픽셀 = 5cm)을 쓰고, 층 정렬에 일직선이 아닌 두 점 이상의 기준점을 요구하며, 작업 목적지 경유점·문에 이름을 요구하므로, 대화로 맵을 만들 때도 축척·기준점·이름을 사용자에게 확인받는 단계가 남을 것으로 보인다. [추정][^ref-079]\n- **16. 장소 의미·지도 관리 ↔ [12. 채팅으로 업무 지시·오케스트레이션](../chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)·[13. 대화형 기능의 신뢰·기반](../chat-based-configuration-and-operation/conversational-trust-and-foundations.md)**: IMDF의 대체 이름(alt_name)과 Open-RMF의 이름 붙은 경유점 같은 장소 이름 목록이 대화 지시 속 장소 표현을 해석하고 그 근거를 보여 주는 어휘가 될 것으로 보이며, 이를 직접 쓴 로봇 관제 제품은 확인하지 못했다(열린 질문 oq-204). [추정][^ref-1015][^ref-079][^ref-1018]\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [11. 채팅으로 실제 상황 시뮬레이션 재현](../chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md)**: Open-RMF는 주석한 건물 지도에서 시뮬레이션 세계를 만들므로, 대화로 실제 상황을 재현하려면(원문 4장 교차 규칙상 엔진은 33. 시나리오 모델·편집과 36. 가상 시운전·실제 상황 재현) 그 바탕이 되는 층·문·승강기 지도가 D. 공간·지도 모델에서 먼저 확정돼 있어야 할 것으로 보인다. [추정][^ref-406]\n\n### [E. 사물·사람·실시간 상태](../objects-people-and-live-state/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)**: GS1 EPCIS 온톨로지(2021-09-30 판)는 이벤트가 일어난 판독 지점(readPoint)과 객체를 찾을 수 있는 업무 위치(bizLocation)를 따로 정의해, 작업 대상의 위치를 로봇 지도 좌표가 아닌 업무 위치 식별자로 기록한다. [사실][^ref-045] 업무 쪽 위치(GLN 하위 위치, EPCIS readPoint·bizLocation)와 로봇 쪽 위치(Open-RMF location_2D의 지도 이름·x·y·yaw)가 서로 다른 체계이므로, 둘을 잇는 대응 표를 ROP가 관리해야 할 것으로 보이며 이 대응 표는 F. 연동의 [23. 업무 시스템 연동](../integration/business-system-integration.md)과도 이어진다(열린 질문 oq-029). [추정][^ref-045][^ref-162][^ref-154]\n- **15. 지도·공간·위치 모델 ↔ [18. 실시간 세계 상태·데이터 일관성](../objects-people-and-live-state/real-time-world-state-and-data-consistency.md)**: VDA 5050 3.0.0은 로봇 위치를 지도 식별자(mapId)에 기대어 보고하고, 로봇에 저장된 지도마다 ENABLED·DISABLED 상태를 두되 같은 mapId에서는 한 판만 ENABLED로 두며, 위치추정 품질(localizationScore, 0.0~1.0)과 편차 범위(deviationRange)는 기록·시각화 용도로만 정의한다(확인일 2026-10-09). [사실][^ref-031] 따라서 18. 실시간 세계 상태·데이터 일관성의 현재 상태에는 위치와 함께 지도 식별자·판을 저장해야 하고 위치 신뢰도의 수용 기준은 ROP가 따로 정해야 할 것으로 보이며(열린 질문 oq-028), 이 연결은 현재 상태를 표현하는 쪽이므로 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈과 구분한다. [추정][^ref-031][^ref-154]\n- **16. 장소 의미·지도 관리 ↔ [19. 사람·보행자 모델](../objects-people-and-live-state/people-and-pedestrian-model.md)**: Kucner 외(IJRR 42(11), 2023-09)는 환경의 전형적 움직임 패턴을 의미 정보로 담는 움직임 지도(maps of dynamics)를 정리하고, 로봇이 이를 전역 경로 계획·위치 추정 개선·사람 움직임 예측에 쓸 수 있다고 정리했다. [사실][^ref-1171] 움직임 지도는 장소 지도 위에 덧붙는 시간 의존 층이므로, 장소 목록·지도 판과 사람 흐름 층을 함께 관리하는 방법이 두 영역을 잇는 과제가 될 것으로 보인다(공통 형식·현장 사례 유무는 이번 실행에서 새 열린 질문으로 올렸다). [추정][^ref-1171]\n\n### [F. 연동](../integration/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md)**: Open-RMF 플릿 어댑터는 로봇 좌표계가 RMF와 다르면 같은 위치를 가리키는 좌표 쌍으로 회전·축척·이동 변환을 추정하고(대응점 4개 이상 권장), 템플릿 설정은 층별 reference_coordinates로 이 좌표 쌍을 둔다. [사실][^ref-153][^ref-105]\n- **15. 지도·공간·위치 모델 ↔ [21. 상호운용 표준·적합성](../integration/interoperability-standards-and-conformance.md)**: ISO 21423(산업용 이동로봇 통신·상호운용성)은 확인일 2026-10-09 기준으로 2026-07-21부터 단계 60.00(발행 진행 중)이고 발행 예정은 2026-10(1판)이며, 범위는 여러 제조사 AMR·플릿 관리 장비·기업 자원 사이의 통신 프로토콜이고 안전 요구와 공공 도로 이동 기계는 제외한다. [사실][^ref-159] 공통 좌표계 내용은 카탈로그 공개 요약에 없어 미확인이며(열린 질문 oq-027), 곧 발행되면 바뀔 수 있는 정보다.\n- **16. 장소 의미·지도 관리 ↔ [21. 상호운용 표준·적합성](../integration/interoperability-standards-and-conformance.md)**: VDMA 레이아웃 교환 형식(LIF) 저장소 README는 1.0.0 판(2023-09)을 트랙 레이아웃(에지·노드·스테이션 묶음)을 무인운반차 통합사가 제3자 중앙 관제에 넘기는 형식으로 설명하고, VDA 5050 인터페이스 정의의 영향을 받았다고 적는다. [사실][^ref-046] 이 판·날짜는 README 기준으로만 적으며, VDMA 2024-03으로 인용된 판과의 출처 충돌은 한쪽으로 정하지 않고 열린 질문 oq-025·oq-078·oq-200에 남겨 둔다. 장소·지도 표현을 교환하는 표준으로 OGC 커뮤니티 표준 20-094로 채택된 실내 지도 데이터 형식(IMDF) 1.0.0(2021-02-18)과 로봇 내비게이션용 지도 데이터 표현을 정한 IEEE 1873-2015(2015-10-26)가 있으며, IEEE 1873-2015의 이후 상태는 열린 질문 oq-202에서 확인 중이므로 현행 표준으로 단정하지 않는다. [사실][^ref-1016][^ref-1019]\n- **15. 지도·공간·위치 모델 ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)**: Open-RMF 승강기 상태는 운행 층을 형식 규칙 없는 문자열(available_floors·current_floor·destination_floor)로 나타내고, 교통 편집기는 승강기를 기준 층·운반실 중심·층별 운반실 문으로 정의하며 층마다 운반실 안 경유점을 차선으로 잇게 한다(확인일 2026-10-09). [사실][^ref-286][^ref-079] 지도의 층 이름과 승강기가 보고하는 층 이름이 각각 자유 문자열이므로 두 이름을 맞추는 대응 규칙을 ROP가 관리해야 할 것으로 보이며, 이를 정한 표준은 확인하지 못했고(열린 질문 oq-045) 승강기 운행 제어 자체는 분류 원문 19장 '시설·설비 제어' 경계의 연계 대상이다. [추정][^ref-286][^ref-079]\n- **14. 도면·BIM에서 지도 만들기 ↔ [22. 설비·건물 시스템 연동](../integration/facility-and-building-system-integration.md)**: IFC 4.3의 IfcTransportElement는 승강기·에스컬레이터·무빙워크를 표현한다(개발 브랜치 ifc4.3-main 문서 기준이며 게시판 IFC 4.3 ADD2와 문구가 다를 수 있다). [사실][^ref-213] 이 요소가 BIM에서 승강기를 공용 자원 후보로 가져오는 입력이 될 것으로 보인다. [추정][^ref-213]\n\n### [G. 계획·최적화](../planning-and-optimization/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)**: Open-RMF 교통 편집기로 주석한 그래프는 building_map_generator로 주행 그래프로 내보내져 플릿 어댑터의 경로 계획에 쓰인다(확인일 2026-10-09). [사실][^ref-079]\n- **16. 장소 의미·지도 관리 ↔ [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)**: Open-RMF 차선 요청 메시지(LaneRequest)는 플릿 이름과 열 차선·닫을 차선 목록만 담고, VDA 5050 3.0.0은 지도 식별자에 묶인 구역 집합(zoneSet)을 관제가 로봇에 보내게 해, 임시 통제가 지도와 따로 교통 계획에 전달된다(확인일 2026-10-09). [사실][^ref-569][^ref-031]\n- **15. 지도·공간·위치 모델 ↔ [28. 공용 자원·충전·에너지 최적화](../planning-and-optimization/shared-resource-charging-and-energy-optimization.md)**: Open-RMF 교통 편집기는 경유점에 충전소(is_charger), 주차 위치(is_parking_spot), 무기한 대기 가능 지점(is_holding_point), 멈추면 안 되는 통과 지점(is_passthrough_point) 속성을 두어 공용 자원의 위치가 지도에서 나온다(확인일 2026-10-09). [사실][^ref-079] 충전소를 어느 속성으로 지정하는지는 Open-RMF 문서끼리 출처가 충돌해(is_parking_spot 대 is_charger) 열린 질문 oq-069에 올라 있다.\n- **16. 장소 의미·지도 관리 ↔ [24. 작업·워크플로 모델링](../planning-and-optimization/task-and-workflow-modeling.md)**: Open-RMF에서 어떤 경유점에서 끝나는 작업을 주려면 그 경유점에 이름이 있어야 하므로, 작업 모델의 목적지는 장소 목록의 이름에 기댄다(확인일 2026-10-09). [사실][^ref-079]\n\n### [H. 실행·협업·예외 복구](../execution-collaboration-and-recovery/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [29. 명령·작업 실행의 신뢰성](../execution-collaboration-and-recovery/command-and-task-execution-reliability.md)**: VDA 5050 3.0.0에서 노드 통과는 로봇이 스스로 판단하며, 제어점이 노드의 허용 편차(allowedDeviationXY)와 방향 허용 편차(allowedDeviationTheta) 안에 들면 lastNodeId를 갱신해 보고하고, 노드 위치는 지도 식별자(mapId)를 기준으로 한다(확인일 2026-10-09). [사실][^ref-031] 도착·통과 판정이 로봇 자신의 지도 좌표와 허용 편차로 이루어지므로, ROP가 받는 완료 보고의 신뢰성은 제조사 지도와 공통 좌표의 정합, 활성 지도 판의 일치에 기댈 것으로 보인다(합격 기준은 열린 질문 oq-077·oq-198). [추정][^ref-031][^ref-153]\n- **16. 장소 의미·지도 관리 ↔ [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)**: 차선 폐쇄(LaneRequest)와 구역 집합 교체가 진행 중인 경로를 막을 수 있으므로, 임시 통제의 선언·해제가 재계획을 일으키는 예외 사건이 될 것으로 보이며 재계획 동작을 정한 문서는 이번 자료에 없다(운영 절차는 열린 질문 oq-203). [추정][^ref-569][^ref-031]\n\n### [I. 설계·시뮬레이션](../design-and-simulation/index.md)\n\n아래 연결은 모두 가정한 미래를 실험하는 쪽이며, E. 사물·사람·실시간 상태의 18. 실시간 세계 상태·데이터 일관성(현재 상태 표현)과의 연결과 구분한다.\n\n- **14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델 ↔ [34. 시뮬레이션·예측용 디지털 트윈](../design-and-simulation/simulation-and-predictive-digital-twin.md)·[36. 가상 시운전·실제 상황 재현](../design-and-simulation/virtual-commissioning-and-real-situation-replay.md)**: Open-RMF의 building_map_generator gazebo는 주석한 건물 지도에서 층별 바닥·벽, 가구, 로봇, 관절·플러그인이 달린 문, 운반실·승강로 문이 있는 승강기, 워크셀(TeleportDispenser·TeleportIngestor)을 담은 Gazebo 세계를 만들고, 문서는 시뮬레이션이 하드웨어 시험보다 시간과 자원을 아낀다고 설명한다(확인일 2026-10-09). [사실][^ref-406]\n- **14. 도면·BIM에서 지도 만들기 ↔ [34. 시뮬레이션·예측용 디지털 트윈](../design-and-simulation/simulation-and-predictive-digital-twin.md)**: Byers·RazaviAlavi(2022 MOC Summit, 2022-09-14)는 BIM의 형상 데이터를 시뮬레이션 속 가상 로봇에 옮겨 건물에 대한 사전 지식으로 쓰게 했고 사례 연구 1건으로 실용성을 보였으나, 정량 결과는 초록에 없다. [사실][^ref-1272]\n- **14. 도면·BIM에서 지도 만들기 ↔ [35. 처리능력·규모·배치 설계](../design-and-simulation/capacity-sizing-and-layout-design.md)**: 건물 지도·BIM 형상·트랙 레이아웃을 시뮬레이션 세계로 바꾸는 도구와 연구가 있어, 도면에서 만든 지도가 배치·규모 설계 시뮬레이션의 초기값이 될 것으로 보이나 이를 정량 평가한 자료는 확인하지 못했다. [추정][^ref-406][^ref-1272][^ref-046]\n\n### [J. 현장 운영·관제](../field-operations-and-monitoring/index.md)\n\n- **16. 장소 의미·지도 관리 ↔ [37. 관제 화면·실행 기록](../field-operations-and-monitoring/control-screen-and-execution-records.md)**: Open-RMF 웹 대시보드(rmf-web)는 Open-RMF 배치를 보고 제어하는 웹 화면으로, 지도 층의 평면도를 그리며 모든 벽 꼭짓점을 감싸는 경계 상자로 화면 범위를 정한다(문·승강기 표시는 README에 없음, 확인일 2026-10-09). [사실][^ref-302]\n- **14. 도면·BIM에서 지도 만들기 ↔ [37. 관제 화면·실행 기록](../field-operations-and-monitoring/control-screen-and-execution-records.md)**: 국내 업체 모빌리오는 산업용 순찰 로봇의 도면 연동과 센서 관제를 웹 화면 하나로 처리한다고 2026-08-24 발표했으며(벤더 주장), 독립 확인은 없다. [추정][^ref-817]\n- **15. 지도·공간·위치 모델 ↔ [38. 모니터링·이상 탐지·원인 분석](../field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)**: VDA 5050이 위치추정 품질과 편차 범위를 기록·시각화 용도로 두므로, 이 값은 제어 판단보다 위치추정 저하를 찾는 모니터링·원인 분석의 입력으로 쓰일 것으로 보인다. [추정][^ref-031]\n\n### [K. 플랫폼 아키텍처·인프라](../platform-architecture-and-infrastructure/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [41. 플랫폼 아키텍처·외부 API](../platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)**: Open-RMF API의 2D 위치 스키마(location_2D)는 지도 이름(map)·x·y·yaw 네 필드를 모두 필수로 두므로, 이 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다(확인일 2026-10-09). [사실][^ref-154]\n- **16. 장소 의미·지도 관리 ↔ [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md)**: VDA 5050 3.0.0에서 지도는 mapId·mapVersion으로 식별되고, 관제가 downloadMap 즉시 동작(mapId·mapDownloadLink)으로 로봇이 지도 서버에서 받아 가게 하며 enableMap·deleteMap으로 활성화·삭제하고, 올바른 지도를 활성화하는 책임은 관제에 있다(확인일 2026-10-09). [사실][^ref-031]\n\n### [L. AI·학습 기술](../ai-and-learning/index.md)\n\n- **16. 장소 의미·지도 관리 ↔ [44. 로봇 기반 모델·언어 모델 계획](../ai-and-learning/robot-foundation-models-and-llm-planning.md)**: 텍스트 기반 계층형 위상 의미 지도 osmAG의 위상·계층을 미세조정한 LLaMA2가 ChatGPT-3.5보다 잘 이해했다는 연구(ROBIO 2024, arXiv 2024-03)와, 의미 지도를 환경 근거로 삼아 언어 모델이 물체 위치를 추론하게 하는 osmAG-LLM 연구(arXiv 2025-07)가 있다. [사실][^ref-1271][^ref-1018]\n- **14. 도면·BIM에서 지도 만들기 ↔ [45. 문서·도면·장면 이해](../ai-and-learning/document-drawing-and-scene-understanding.md)**: 분류 원문 13장의 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용되는 연구 방법)에 해당하는 연구로, DeFazio 외(2024-09)는 비전 언어 모델이 평면도를 읽어 실내 이동 계획을 세우게 해 9단계 이동 작업에서 0.96 성공률을 보고했으나 지도가 크고 개방 구역이 넓을수록 성능이 떨어졌다. [사실][^ref-076] 이 성능 저하가 물류창고·제조 공장처럼 넓은 개방 구역이 많은 비주거 시설 도면에서 어떤 오류로 나타나는지는 이번 실행에서 새 열린 질문으로 올렸으며, 기존 인식 모델의 비주거 도면 성능을 묻는 oq-196과 달리 비전 언어 모델의 오류 양상을 묻는다.\n- **14. 도면·BIM에서 지도 만들기 ↔ [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md)**: 평면도 인식의 대표 공개 데이터셋(CubiCasa5K, ResPlan)이 주거 평면도 중심이므로, 병원·공장·물류창고 같은 비주거 도면에 쓰려면 모델 적응·재학습이 필요할 것으로 보인다(열린 질문 oq-196). [추정][^ref-063][^ref-071]\n\n### [M. 안전](../safety/index.md)\n\n- **연계 대상 — 15. 지도·공간·위치 모델 ↔ [48. 안전·위험 관리](../safety/safety-and-risk-management.md)** (SLAM 위치추정 자체는 분류 원문 19장 '로봇 자체 지능·제어' 경계): Abdul Hafez 외(IJRR, 2025-05)는 항공에서 쓰던 무결성 위험 지표로 EKF 기반 SLAM 위치추정의 안전성을 정량화했고, 데이터 연관 오류가 위치를 크게 해칠 수 있으며 랜드마크를 늘리면 안전성이 좋아지다가 서로 구별하기 어려울 만큼 빽빽해지면 떨어진다고 보고했다. [사실][^ref-161]\n- **16. 장소 의미·지도 관리 ↔ [48. 안전·위험 관리](../safety/safety-and-risk-management.md)**: VDA 5050 3.0.0은 구역을 작업 공간의 교통 관리 규칙(BLOCKED·SPEED_LIMIT·RELEASE 등)으로 정의하면서, 문서가 기능·운영·시스템 안전 요구를 정하지 않는다고 밝힌다(확인일 2026-10-09). [사실][^ref-031]\n\n### [O. 검증·도입·수명주기](../verification-deployment-and-lifecycle/index.md)\n\n- **15. 지도·공간·위치 모델 ↔ [54. 시험·형식 검증·벤치마크](../verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)**: ISO 18646-2:2024(2판, 2024-01-22)는 이동 서비스 로봇의 항법 성능을 자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로 통과, 지도 작성 정확도로 평가하는 시험 방법을 정하며, 실내 환경 대상이고 안전 요구의 검증에는 쓰지 않는다(시험 절차 세부는 유료 본문이라 미확인, 열린 질문 oq-116). [사실][^ref-721]\n- **14. 도면·BIM에서 지도 만들기·16. 장소 의미·지도 관리 ↔ [55. 현장 조사·설치·시운전](../verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)**: 에스토니아 타르투 대학병원 현장 시험에서는 Open-RMF 교통 편집기로 평면도에 벽·문·차선·충전소·주요 위치를 주석하고 로봇이 만든 격자 지도를 평면도에 정합했으며, 넓은 구역을 한 번에 매핑하기보다 작은 구역으로 나눠 매핑한 뒤 손으로 합치는 편이 더 정확했다(2022-08-23 발행). [사실][^ref-869]\n- **16. 장소 의미·지도 관리 ↔ [57. 자산·소프트웨어 수명주기 관리](../verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)**: VDA 5050의 지도가 판(mapVersion)을 가지고 관제가 내려받기·활성화·삭제를 지시하므로, 지도 판은 로봇별로 배포 상태를 추적해야 하는 운영 자산으로 관리될 것으로 보인다(열린 질문 oq-201). [추정][^ref-031] 로봇마다 활성화된 지도 판과 Open-RMF 빌딩 맵·LIF 레이아웃의 판을 ROP 한 곳에서 대응시켜 관리하는 공개 구현이 있는지는 이번 실행에서 새 열린 질문으로 올렸으며, 지도 판이 바뀔 때 장소 이름·좌표 대응을 옮기는 방법을 묻는 oq-201의 배포 관리 쪽 질문이다.\n\n### [P. 거버넌스·법규·사회](../governance-law-and-society/index.md)\n\n- **16. 장소 의미·지도 관리 ↔ [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md)**: 2023-07 입법예고된 한국 실외이동로봇 운행 안전기준 개정안은 로봇 폭을 80cm 이하로 하되 운행하려는 보도의 최소 폭이 250cm 이상이면 120cm까지 허용한다고 2023-07-28 보도됐으며, 입법예고안 기준이라 현행·확정 기준과 다를 수 있다. [사실][^ref-992]\n- **16. 장소 의미·지도 관리 ↔ [60. 노동·수용성·접근성](../governance-law-and-society/labor-acceptance-and-accessibility.md)**: Han 외(CHI 2024, 2024-04-07)는 이동장애인 15명과 로봇 실무자 8명 면담·공동설계 워크숍에서 이동장애인이 보도 로봇과 보도 공간을 두고 경쟁한다고 느끼고 부족한 연석 경사로 같은 기존 장벽을 겪으며, 두 집단 모두 처음부터 접근성을 반영해야 한다고 보았음을 보고했다. [사실][^ref-1214]\n- **16. 장소 의미·지도 관리 ↔ 59. 법·규제·보험·라이선스·60. 노동·수용성·접근성**: 보도 폭에 따른 로봇 폭 제한과 연석 경사로 같은 접근성 지점이 운행 조건을 바꾸므로, 실외 장소 목록에 보도 폭·연석 경사로·대기 금지 지점 같은 속성을 두어 경로·대기 위치 제약으로 쓰는 일이 16. 장소 의미·지도 관리로 넘어올 것으로 보이며, 법 적합성 판단 자체는 운영자·법무 쪽 연계 대상이다(열린 질문 oq-188). [추정][^ref-992][^ref-1214]\n\n### [Q. 현장 유형별 적용](../site-type-applications/index.md)\n\n현장마다 다른 요구는 Q. 현장 유형별 적용에 모으고 모든 현장에 공통인 기능은 A~P에 둔다는 원문 취지에 따라, 여기에는 D. 공간·지도 모델과 이어지는 현장 사례만 적는다.\n\n- **[63. 병원·의료](../site-type-applications/hospital-and-healthcare.md) (현장 유형: 병원)**: 위 O. 검증·도입·수명주기의 타르투 대학병원 시험은 평면도 주석과 격자 지도 정합을 거쳐 중환자실에서 검사실로 혈액 검체를 운반한 현장 연구다(2022-08-23 발행). [사실][^ref-869]\n- **[65. 가정·공동주택](../site-type-applications/home-and-apartment.md) (현장 유형: 가정)**: Narayana 외(IROS 2020)는 실제 가정의 바닥 청소 로봇 수천 대에 배포한 평생 의미 지도에서 주행마다 달라지는 원시 지도로 공간 의미를 옮기고 의미 충돌을 해소하는 방법을 제시했으며, 이는 청소 로봇 제품 쪽 기능이라 ROP에는 연계 대상(로봇 자체 지능·제어)이다. [사실][^ref-1021]\n- **[66. 실외](../site-type-applications/outdoor.md) (현장 유형: 실외)**: 위 P. 거버넌스·법규·사회의 보도 폭·연석 경사로 연결이 실외 현장에서 장소 목록에 들어갈 속성 요구가 될 것으로 보인다. [추정][^ref-992][^ref-1214]\n- **[67. 기타 현장](../site-type-applications/other-sites.md) (현장 유형: 기타)**: 네이버 제2사옥 1784는 스마트도시협회의 첫 로봇 친화형 건축물 인증을 받았고, 평가위원은 이 건물이 로봇이 인식하는 정밀지도와 측위 인프라를 제공한다고 평가했다고 2022-04-11 보도됐다(인증 원자료와 평가 항목은 미확인). [사실][^ref-956]\n\n### 아직 다루지 않은 연결\n\n다음 연결은 이번 브리프에 근거가 없어 내용을 채우지 않았다. 근거가 생기면 다음 대분류 연결 실행에서 다룬다.\n\n- [N. 보안·개인정보](../security-and-privacy/index.md)의 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터: 건물 지도·장소 목록의 접근 통제나 지도에 담기는 개인정보를 다룬 학술·기관 근거를 찾지 못했다.\n- J. 현장 운영·관제의 40. 운영 절차·요청 창구: 임시 통제 구역을 누가 선언·승인·해제하는지 정한 근거가 없다(열린 질문 oq-203).\n- P. 거버넌스·법규·사회의 58. 다사업자 책임·계약·데이터: 여러 사업자가 함께 만드는 지도 데이터를 다룬 근거가 없다(열린 질문 oq-281).\n- B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동·7. 온톨로지 검증·변경 관리, C. 채팅 기반 구성·운영의 9. 채팅으로 시나리오 구성·10. 채팅으로 로봇 구성, H. 실행·협업·예외 복구의 30. 로봇 간 협업·물리적 인계·31. 사람–로봇 협업, I. 설계·시뮬레이션의 33. 시나리오 모델·편집, J. 현장 운영·관제의 39. 운영 성과 측정·개선, K. 플랫폼 아키텍처·인프라의 42. 분산 시스템·통신·컴퓨팅 구조, L. AI·학습 기술의 46. 예측·학습 기반 최적화, M. 안전의 50. 안전 표준·인증·사고 조사, O. 검증·도입·수명주기의 56. 운영 이관·확대·교육.\n- Q. 현장 유형별 적용의 61. 물류창고, 62. 제조 공장, 64. 상업 시설: 이번 브리프에 현장 유형을 밝힌 사례가 없다(LIF는 현장 유형을 밝히지 않아 사례로 쓰지 않았다).\n\n이 절에서 쓴 각주의 정의는 페이지 끝 '참고 자료' 절에 있다."
+          },
+          {
+            "section": "최근 업데이트",
+            "action": "append",
+            "content": "## 참고 자료\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-09\n[^ref-045]: GS1, gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl, 접근일 2026-10-09\n[^ref-046]: VDMA (Intralogistics-2X-LIF GitHub), Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA), 2023-09, https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format, 접근일 2026-10-09\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-10-09\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-10-09\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\n[^ref-154]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/location_2D.json, 접근일 2026-10-09\n[^ref-159]: ISO, ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability, 미확인, https://www.iso.org/standard/86749.html, 접근일 2026-10-09\n[^ref-161]: Abdul Hafez, O., Joerger, M., & Spenko, M., Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach, 2025-05, https://journals.sagepub.com/doi/10.1177/02783649241287797, 접근일 2026-10-09\n[^ref-162]: GS1, Identifying a physical location - GLN, 미확인, https://www.gs1.org/standards/id-keys/gln/physical-location, 접근일 2026-09-25 (원문 미열람)\n[^ref-213]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-10-09\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-09\n[^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-10-09\n[^ref-569]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-10-09\n[^ref-817]: 모빌리오(Mobilio), [최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 관제를 웹 화면 하나로 끝내는 방법, 2026-08-24, https://www.mobilio.io/ko/%eb%aa%a8%eb%b9%8c%eb%a6%ac%ec%98%a4-%ed%86%b5%ed%95%a9-%eb%8c%80%ec%8b%9c%eb%b3%b4%eb%93%9c-%ec%86%94%eb%a3%a8%ec%85%98/, 접근일 2026-09-29\n[^ref-869]: Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI, Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test, 2022-08-23, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full, 접근일 2026-09-29\n[^ref-956]: 지디넷코리아 (김성현), 네이버 제2사옥, 로봇 친화형 건축물 인증 획득, 2022-04-11, https://zdnet.co.kr/view/?no=20220411142336, 접근일 2026-09-29\n[^ref-992]: 지디넷코리아, 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인), 2023-07-28, https://zdnet.co.kr/view/?no=20230728173101, 접근일 2026-10-09\n[^ref-1011]: Hendrikx, R. W. M., Pauwels, P., Torta, E., Bruyninckx, H. P. J., & van de Molengraft, M. J. G. (ICRA 2021), Connecting Semantic Building Information Models and Robotics: An application to 2D LiDAR-based localization, 2021, https://research.tue.nl/en/publications/connecting-semantic-building-information-models-and-robotics-an-a/, 접근일 2026-09-30\n[^ref-1013]: 엔지니어링데일리, \"설계부터 100% 도입\" 건설산업 BIM 활성화 로드맵 공개, 2020-12-28, https://www.engdaily.com/news/articleView.html?idxno=12613, 접근일 2026-09-30\n[^ref-1015]: Apple (Apple Business Register), Glossary - Indoor Mapping Data Format, 미확인, https://register.apple.com/resources/imdf/glossary, 접근일 2026-09-30\n[^ref-1016]: Open Geospatial Consortium (OGC), Indoor Mapping Data Format (1.0.0) — OGC Community Standard 20-094, 2021-02-18, https://docs.ogc.org/cs/20-094/index.html, 접근일 2026-09-30\n[^ref-1018]: Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv), osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning, 2025-07, https://arxiv.org/abs/2507.12753, 접근일 2026-10-09\n[^ref-1019]: IEEE Standards Association (IEEE RAS), IEEE 1873-2015 — IEEE Standard for Robot Map Data Representation for Navigation, 2015-10-26, https://standards.ieee.org/standard/1873-2015.html, 접근일 2026-09-30\n[^ref-1021]: Narayana, M., Kolling, A., Nardelli, L., & Fong, P. (IROS 2020), Lifelong update of semantic maps in dynamic environments, 2020-10, https://arxiv.org/abs/2010.08846, 접근일 2026-09-30\n[^ref-1171]: Kucner, T. P., Magnusson, M., Mghames, S., Palmieri, L., Verdoja, F., Swaminathan, C. S., Krajník, T., Schaffernicht, E., Bellotto, N., Hanheide, M., & Lilienthal, A. J. (The International Journal of Robotics Research 42(11)), Survey of maps of dynamics for mobile robots, 2023-09, https://research.aalto.fi/en/publications/survey-of-maps-of-dynamics-for-mobile-robots/, 접근일 2026-10-09\n[^ref-1214]: Han, H. Z. 외 (Carnegie Mellon University) — CHI '24, Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations, 2024-04-07, https://arxiv.org/abs/2404.05050, 접근일 2026-10-09\n[^ref-721]: ISO, ISO 18646-2:2024 Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation, 2024-01-22, https://www.iso.org/standard/82643.html, 접근일 2026-10-09\n[^ref-1271]: Xie, F., & Schwertfeger, S. (ROBIO 2024, arXiv), Empowering Robot Path Planning with Large Language Models: osmAG Map Topology & Hierarchy Comprehension with LLMs, 2024-03, https://arxiv.org/abs/2403.08228, 접근일 2026-10-09\n[^ref-1272]: Byers, G., & RazaviAlavi, S. (Northumbria University), 2022 Modular and Offsite Construction Summit, Layout Modelling of the Built Environment for Autonomous Mobile Robots Using Building Information Modelling (BIM) and Simulation, 2022-09-14, https://researchportal.northumbria.ac.uk/en/publications/layout-modelling-of-the-built-environment-for-autonomous-mobile-r/, 접근일 2026-10-09\n[^ref-302]: Open Robotics (open-rmf), rmf-web — README (web-based interface to visualize and control Open-RMF deployments), 미확인, https://github.com/open-rmf/rmf-web, 접근일 2026-10-09"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-09 | D. 공간·지도 모델 | 다른 대분류와의 연결 절 신규 작성(A·B·C·E·F·G·H·I·J·K·L·M·O·P·Q 대분류와의 연결, 아직 다루지 않은 연결 명시), 참고 자료 절 신설과 각주 정의 | run 2026-10-09-02",
+    "index_updates": {
+      "home_recent": "2026-10-09 — D. 공간·지도 모델: 다른 대분류와의 연결 절 신규 작성(14·15·16 세부영역의 지도·좌표·장소 이름이 15개 대분류로 이어지는 연결, N. 보안·개인정보 등은 근거 없음으로 표시)",
+      "category_recent": "2026-10-09 — D. 공간·지도 모델: 다른 대분류와의 연결 절 신규 작성(연결마다 단일 출처, 교차 확인 0건)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "localization-score",
+        "term_ko": "위치추정 품질 점수",
+        "term_en": "Localization Score (VDA 5050 localizationScore)",
+        "definition": "로봇이 보고하는 0.0(최저)~1.0(최고)의 위치추정 신뢰 값으로, VDA 5050 3.0.0 은 이를 편차 범위(deviationRange)와 함께 기록·시각화 용도로만 둔다.",
+        "related_areas": [
+          15,
+          18,
+          38
+        ],
+        "sources": [
+          "ref-031"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "map-distribution",
+        "term_ko": "지도 배포",
+        "term_en": "Map Distribution (VDA 5050 downloadMap / enableMap / deleteMap)",
+        "definition": "관제가 즉시 동작으로 로봇에게 지도 서버에서 특정 판의 지도를 내려받게 하고, 활성화·삭제를 지시해 로봇마다 올바른 지도 판이 쓰이게 하는 절차다.",
+        "related_areas": [
+          16,
+          43,
+          57
+        ],
+        "sources": [
+          "ref-031"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "integrity-risk",
+        "term_ko": "무결성 위험",
+        "term_en": "Integrity Risk",
+        "definition": "항공 항법에서 위치 추정 결과를 얼마나 믿을 수 있는지 정량화하는 데 쓰던 성능 지표로, 이동로봇의 SLAM 기반 위치추정 안전성을 평가하는 데도 적용된다.",
+        "related_areas": [
+          15,
+          48
+        ],
+        "sources": [
+          "ref-161"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-1214",
+        "org": "Han, H. Z. 외 (Carnegie Mellon University) — CHI '24",
+        "title": "Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations",
+        "published": "2024-04-07",
+        "url": "https://arxiv.org/abs/2404.05050",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "이동장애인 15명·로봇 실무자 8명 면담과 공동설계 워크숍으로 보도 로봇의 접근성 문제를 다룬 CHI 2024 논문(초록 확인).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-721",
+        "org": "ISO",
+        "title": "ISO 18646-2:2024 Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation",
+        "published": "2024-01-22",
+        "url": "https://www.iso.org/standard/82643.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "ISO 카탈로그 공개 요약 확인. 이동 서비스 로봇의 항법 성능(자세 정확도·반복성, 장애물 탐지·회피, 경로 편차, 좁은 통로, 지도 작성 정확도) 시험 방법. 실내 대상, 안전 검증용 아님. 본문은 유료라 열지 못했다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1271",
+        "org": "Xie, F., & Schwertfeger, S. (ROBIO 2024, arXiv)",
+        "title": "Empowering Robot Path Planning with Large Language Models: osmAG Map Topology & Hierarchy Comprehension with LLMs",
+        "published": "2024-03",
+        "url": "https://arxiv.org/abs/2403.08228",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "텍스트 기반 계층형 위상 의미 지도 osmAG 의 위상·계층을 언어 모델이 이해하는지 시험하고, 미세조정한 LLaMA2 가 ChatGPT-3.5 보다 낫다고 보고한 연구(초록 확인).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1272",
+        "org": "Byers, G., & RazaviAlavi, S. (Northumbria University), 2022 Modular and Offsite Construction Summit",
+        "title": "Layout Modelling of the Built Environment for Autonomous Mobile Robots Using Building Information Modelling (BIM) and Simulation",
+        "published": "2022-09-14",
+        "url": "https://researchportal.northumbria.ac.uk/en/publications/layout-modelling-of-the-built-environment-for-autonomous-mobile-r/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "BIM 형상 데이터를 시뮬레이션 속 가상 로봇의 사전 지식으로 옮긴 방법과 사례 연구 1건(초록 확인, DOI 10.29173/mocs283).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-302",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf-web — README (web-based interface to visualize and control Open-RMF deployments)",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf-web",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF 웹 대시보드·API 서버 저장소 README. 대시보드가 지도 층 평면도를 그리고 벽 꼭짓점 경계 상자로 화면 범위를 정한다고 적는다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 3.0.0 명세 원문. 지도 식별·배포(downloadMap·enableMap·deleteMap)와 관제의 지도 활성화 책임, 구역 집합, 노드 통과 허용 편차, 기록용 위치추정 품질 값을 정의한다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "VDA 5050 팩트시트 스키마. 위치추정 방식·경로 계획 방식·지원 구역 유형·외형·물리 제원을 기종 선언으로 둔다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-406",
+        "org": "Open Robotics",
+        "title": "Simulation - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "building_map_generator 로 건물 지도에서 문·승강기·워크셀을 포함한 Gazebo 시뮬레이션 세계를 만드는 흐름을 설명한다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-569",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "플릿 이름과 열 차선·닫을 차선 목록을 담는 차선 요청 메시지 정의.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-286",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "승강기 상태 메시지. 층 이름 문자열, 문·운행 상태, 운영 모드, 세션 id 를 담는다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-079",
+        "org": "Open Robotics",
+        "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "평면도 위 경유점·차선·문·승강기 주석, 축척·기준점 정렬, 주행 그래프와 시뮬레이션 세계 내보내기를 설명하는 Open-RMF 교통 편집기 문서.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-154",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/location_2D.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "Open-RMF API 의 2D 위치 스키마. map·x·y·yaw 를 모두 필수로 둔다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-046",
+        "org": "VDMA (Intralogistics-2X-LIF GitHub)",
+        "title": "Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA)",
+        "published": "2023-09",
+        "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "LIF 1.0.0(2023-09) 저장소 README. 무인운반차 통합사가 트랙 레이아웃(에지·노드·스테이션)을 제3자 중앙 관제에 넘기는 형식으로 설명한다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-045",
+        "org": "GS1",
+        "title": "gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0)",
+        "published": "2021-09-30",
+        "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-09",
+        "summary": "EPCIS 2.0 온톨로지 원본. readPoint·bizLocation·source/destination 등 이벤트의 위치·이전 어휘를 정의한다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1018",
+        "org": "Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv)",
+        "title": "osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning",
+        "published": "2025-07",
+        "url": "https://arxiv.org/abs/2507.12753",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "의미 지도를 환경 근거로 삼아 언어 모델이 물체 위치를 추론하는 제로샷 물체 탐색 연구(초록 확인).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-076",
+        "org": "DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.",
+        "title": "Vision Language Models Can Parse Floor Plan Maps",
+        "published": "2024-09",
+        "url": "https://arxiv.org/abs/2409.12842",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "비전 언어 모델로 평면도를 해석해 실내 이동 계획을 세우는 연구. 9단계 작업 성공률 0.96, 큰 개방 구역에서 저하(초록 확인).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-161",
+        "org": "Abdul Hafez, O., Joerger, M., & Spenko, M.",
+        "title": "Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach",
+        "published": "2025-05",
+        "url": "https://journals.sagepub.com/doi/10.1177/02783649241287797",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "항공의 무결성 위험 지표로 EKF 기반 SLAM 위치추정 안전성을 정량화한 IJRR 논문(초록 확인).",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-992",
+        "org": "지디넷코리아",
+        "title": "실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인)",
+        "published": "2023-07-28",
+        "url": "https://zdnet.co.kr/view/?no=20230728173101",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-09",
+        "summary": "2023-07 입법예고된 실외이동로봇 운행 안전기준(폭·경사로·속도·횡단보도·알림음 등)을 전한 기사.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-159",
+        "org": "ISO",
+        "title": "ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability",
+        "published": null,
+        "url": "https://www.iso.org/standard/86749.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-09",
+        "summary": "ISO 카탈로그 페이지. 2026-07-21 단계 60.00(발행 진행 중), 발행 예정 2026-10(1판), 여러 제조사 AMR 상호운용 통신 프로토콜 범위. 표준 본문은 유료라 열지 못했다.",
+        "cited_by": [
+          "docs/categories/space-and-map-model/index.md"
+        ],
+        "source_unopened": false
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "VDA 5050 의 지도 배포(downloadMap·enableMap·deleteMap)로 로봇마다 활성화된 지도 판과 Open-RMF 빌딩 맵·LIF 레이아웃의 판을 ROP 한 곳에서 대응시켜 관리하는 공개 구현이나 운영 절차가 있는가?",
+        "areas": [
+          16,
+          43,
+          57
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "시간대별 사람 흐름을 담은 움직임 지도(maps of dynamics)를 ROP 의 장소 목록·지도 판과 함께 관리하고 경로·작업 시간 계획에 넘기는 공통 형식이나 현장 사례가 있는가?",
+        "areas": [
+          16,
+          19,
+          27
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "비전 언어 모델의 평면도 해석이 큰 개방 구역에서 성능이 떨어진다는 보고가 물류창고·제조 공장처럼 넓은 개방 구역이 많은 비주거 시설 도면에서 어떤 오류로 나타나는가?",
+        "areas": [
+          14,
+          45,
+          61
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [],
+    "additional_research_requests": [
+      "ref-1171 각주: 참고문헌 페이지 docs/references/ref-1171.md 의 '각주 형식' 줄이 입력에 없어 브리프의 ref-1270 서지(Aalto 연구 포털 URL)로 각주 정의를 만들었다. 퍼블리셔가 ref-1171 페이지의 줄과 다르면 그 줄로 바꾸도록 확인이 필요하다.",
+      "D. 공간·지도 모델 대분류 시드 페이지에 '참고 자료' 절이 없어, 이번에는 '최근 업데이트' 절 끝(auto 마커 밖)에 append 패치로 '## 참고 자료' 절을 새로 만들었다. 패치 적용기가 없는 절을 새로 만드는 방식(section 미존재 시 끝에 추가)을 지원하도록, 그리고 다른 대분류 시드에도 '참고 자료' 절이 있는지 pipeline·시드 담당의 확인이 필요하다.",
+      "N. 보안·개인정보(51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터)와 D. 공간·지도 모델을 잇는 근거: 건물 지도·장소 목록의 접근 통제, 로봇 지도에 담기는 개인정보를 다룬 학술·기관 자료가 '다른 대분류와의 연결' 절에 필요하다(RO-MAN 2023 로봇 지도 개인정보 논문 본문 확인 포함).",
+      "Q. 현장 유형별 적용의 61. 물류창고, 62. 제조 공장, 64. 상업 시설에서 도면·지도 정합이나 장소 목록·지도 판 관리를 다룬 현장 사례가 연결 절의 Q 항목에 필요하다(현장 유형을 밝힌 출처).",
+      "B. 로봇 온톨로지의 6. 온톨로지 기반 시스템·로봇 연동·7. 온톨로지 검증·변경 관리와 장소·지도 표현(IndoorGML·BOT 등)을 잇는 근거, 40. 운영 절차·요청 창구의 임시 통제 구역 운영 절차(oq-203), 58. 다사업자 책임·계약·데이터의 지도 데이터 권리(oq-281)가 연결 절에 필요하다.",
+      "ISO 21423 은 2026-10 발행 예정이므로 다음 월간 재검증에서 발행 여부와 공통 좌표계 내용(oq-027)을 다시 확인해야 한다.",
+      "ref-1214·ref-721·ref-1271·ref-1272·ref-302 의 id 가 보류된 실행 2026-09-30-24 의 번호와 겹친다는 1·2차 검증 지적이 있으므로 퍼블리셔의 번호·URL 병합 확인이 필요하다(특히 ref-302·ref-721 은 기존 번호 범위 안)."
+    ],
+    "fixes_applied": [
+      "page_proposals 절 제목 — patches 의 section 을 번호 없는 '다른 대분류와의 연결'로 썼다.",
+      "참고 자료 — 페이지 끝(최근 업데이트 절 뒤)에 '## 참고 자료' 절을 새로 만들어 각주 정의 35건을 그 절로 옮겼다. 현재 페이지에 없는 절이라 '최근 업데이트' 절에 append 패치(auto 마커 끝 뒤에 덧붙임)로 넣었고, 마커 사이 내용과 그 밖의 절은 바꾸지 않았다. 연결 절 끝에는 각주가 참고 자료 절에 있다는 한 줄만 남겼다.",
+      "대분류 표기 — 연결 절의 소제목·링크 텍스트·도식을 새 17개 대분류의 문자와 이름, 세부영역 번호+이름으로 썼고 옛 대분류 이름은 쓰지 않았다.",
+      "f13·f14 — E. 사물·사람·실시간 상태 항목의 두 문장 각주를 ref-1171 로 썼고 reference_updates 에 ref-1270 을 넣지 않았다(ref-1171 페이지의 각주 줄이 입력에 없어 브리프 서지로 정의를 만들고 추가 조사 요청에 적었다).",
+      "ref-1214 — reference_updates 에 기관·제목·발행일 2024-04-07·URL·접근일 2026-10-09 를 모두 채운 새 항목으로 냈고 각주 정의도 두었다.",
+      "f21 — F. 연동 항목에서 IfcTransportElement 정의를 [사실] 문장(개발 브랜치 ifc4.3-main·ADD2 문구 차이 단서 유지)으로, 공용 자원 후보 입력이라는 활용을 별도 [추정] 문장으로 나눴다.",
+      "f35 — K. 플랫폼 아키텍처·인프라 항목을 'location_2D 스키마를 쓰는 위치에는 지도 이름이 필수로 붙는다'로 좁혔다.",
+      "f18 — IEEE 1873-2015 를 현행 표준으로 단정하지 않고 이후 상태를 열린 질문 oq-202 로 연결해 같은 문장에 적었으며, ref-1016·ref-1019 각주는 참고문헌 목록의 서지와 이전 접근일(2026-09-30)로 썼다.",
+      "f16 — ISO 21423 의 단계 60.00(2026-07-21)·발행 예정 2026-10 을 '확인일 2026-10-09 기준'과 함께 쓰고 공통 좌표계 내용은 미확인(oq-027)으로 두었다.",
+      "f17 — LIF 판·날짜를 README 기준 1.0.0(2023-09)으로만 쓰고 VDMA 2024-03 인용과의 출처 충돌(oq-025·oq-078·oq-200)을 한쪽으로 정하지 않고 함께 밝혔다.",
+      "f24 — G. 계획·최적화 항목의 충전소 속성 문장 뒤에 출처 충돌 oq-069(is_parking_spot 대 is_charger)를 함께 적었다.",
+      "f45 — '2023-07 입법예고안 기준 보도'임과 2023-07-28 기준일을 문장에 유지하고 현행·확정 기준과 다를 수 있다고 적었다.",
+      "f33 — J. 현장 운영·관제 항목을 '[추정] 벤더 주장' 으로 표기하고 독립 확인이 없음을 문장에 남겼다.",
+      "f40·f48·f2 — SLAM 위치추정 안전성(M. 안전 항목의 '연계 대상' 표시), 청소 로봇의 의미 지도 갱신(Q 항목에서 연계 대상 명시), BIM 기반 위치 추정(A 항목에서 '로봇 자체 지능·제어' 경계의 연계 대상 명시)을 ROP 직접 범위로 쓰지 않았다.",
+      "f12·f29~f31 — 18. 실시간 세계 상태·데이터 일관성 연결은 E 항목에 현재 상태 표현으로, 34·35·36 연결은 I 항목 머리에 가정한 미래를 실험하는 쪽이라고 밝혀 나눠 썼다.",
+      "f38·f37 — f38 은 L 항목에 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기를 함께 적었고(원문 13장 교차 규칙 명시), f37 은 44. 로봇 기반 모델·언어 모델 계획과 16. 장소 의미·지도 관리 양쪽을 한 줄에 연결했다.",
+      "각주 — fetched: false 인 출처는 참고문헌 목록의 서지와 이전 접근일로 각주를 썼고, 원문을 연 적 없는 ref-162·ref-063·ref-071 에는 접근일 뒤 ' (원문 미열람)'을 붙였으며 이 출처들은 reference_updates 에 넣지 않았다.",
+      "open_questions_new — 세 질문을 형식대로 open_question_updates 에 new 로 등록하고, 연결 절의 O 항목에서 첫 질문과 oq-201 의 관계를, L 항목에서 셋째 질문과 oq-196 의 관계를 밝혔다.",
+      "아직 다루지 않은 연결 — N. 보안·개인정보(51·52·53), 40. 운영 절차·요청 창구(oq-203), 58. 다사업자 책임·계약·데이터(oq-281) 등을 근거 없음으로만 적고 내용을 추정해 채우지 않았다.",
+      "형식 검증 재작성 — H2 순서를 템플릿(핵심 질문 … 최근 업데이트, 참고 자료)과 맞추기 위해 '## 참고 자료' 절을 페이지 끝에 두고 각주 정의를 연결 절에서 그 절로 옮겼다. 주장·태그·각주 참조는 바꾸지 않았다.",
+      "2차: Q. 현장 유형별 적용의 66. 실외 줄 — 방법 (가)를 택해 '…장소 목록에 들어갈 속성 요구가 될 것으로 보인다. [추정][^ref-992][^ref-1214]'로 고쳐 f47 과 같은 태그·각주를 붙였다.",
+      "2차: J. 현장 운영·관제의 f33 문장 — '벤더 주장'을 태그 앞 문장 안으로 옮겨 '…2026-08-24 발표했으며(벤더 주장), 독립 확인은 없다. [추정][^ref-817]'로 고쳤다. 태그·각주·벤더 주장 병기는 유지했다.",
+      "2차: 위 두 줄 말고는 patches 본문·참고 자료 절·reference_updates·glossary_updates·open_question_updates 를 바꾸지 않았다(diff_summary 에 2차 수정 2건만 덧붙였다)."
+    ]
+  },
+  "ttft_ms": 9185,
+  "type": "result",
+  "duration_ms": 201796,
+  "uuid": "f0fa87a6-49d6-45a6-9016-20860a878ee3",
+  "ttft_stream_ms": 878,
+  "time_to_request_ms": 87,
+  "time_to_request_phases_ms": {
+    "other": 22,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 7,
+    "input_attachments": 9,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 3,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 13
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 37,
+  "time_to_request_cpu_ms": 125,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 17,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 879,
+  "time_to_request_from_spawn_ms": 3545631,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791509813080.0803,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 203.2
+}

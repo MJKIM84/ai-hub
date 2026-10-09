@@ -35,6 +35,13 @@ version: 1
 | 2026-10-09-03 | 생성 | [docs/references/ref-1300.md](references/ref-1300.md) | 참고문헌 ref-1300 등록: 엘리베이터 타는 배달로봇과의 조우 |
 | 2026-10-09-03 | 생성 | [docs/references/ref-1301.md](references/ref-1301.md) | 참고문헌 ref-1301 등록: 내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다 |
 | 2026-10-09-03 | 생성 | [docs/references/ref-1302.md](references/ref-1302.md) | 참고문헌 ref-1302 등록: Supporting a Human-Aware World Model through Sensor Fusion |
+| 2026-10-09-02 | 갱신 | [docs/categories/space-and-map-model/index.md](categories/space-and-map-model/index.md) | '다른 대분류와의 연결' 절 신규 작성(A~Q 가운데 15개 대분류와의 연결, 연결 도식, 아직 다루지 않은 연결), 페이지 끝 '참고 자료' 절 신설과 각주 정의 35건, 프런트매터 category·sources 추가. 2차 수정: 66. 실외 줄에 추정 태그·각주, f33 의 '벤더 주장'을 태그 앞으로 이동 |
+| 2026-10-09-02 | 요약 | [docs/categories/space-and-map-model/index.md](categories/space-and-map-model/index.md) | D. 공간·지도 모델: 다른 대분류와의 연결 절 신규 작성(A·B·C·E·F·G·H·I·J·K·L·M·O·P·Q 대분류와의 연결, 아직 다루지 않은 연결 명시), 참고 자료 절 신설과 각주 정의 |
+| 2026-10-09-02 | 생성 | [docs/references/ref-1270.md](references/ref-1270.md) | 참고문헌 ref-1270 등록: Empowering Robot Path Planning with Large Language Models: o… |
+| 2026-10-09-02 | 생성 | [docs/references/ref-1271.md](references/ref-1271.md) | 참고문헌 ref-1271 등록: Layout Modelling of the Built Environment for Autonomous Mob… |
+| 2026-10-09-02 | 생성 | [docs/glossary/localization-score.md](glossary/localization-score.md) | 용어집 항목 위치추정 품질 점수 |
+| 2026-10-09-02 | 생성 | [docs/glossary/map-distribution.md](glossary/map-distribution.md) | 용어집 항목 지도 배포 |
+| 2026-10-09-02 | 생성 | [docs/glossary/integrity-risk.md](glossary/integrity-risk.md) | 용어집 항목 무결성 위험 |
 
 ### 2026-09-30
 
