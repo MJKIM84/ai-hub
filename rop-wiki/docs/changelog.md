@@ -20,6 +20,18 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-10-05 | 갱신 | [docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 3절 충전 값 의미·단위 구분과 호텔 연구 수치(Han 외 2025) 보강, 5절 제약 행 권고 표현 정정·상업 시설(호텔 수치 실험) 사례 추가, 6·7·8·11절 갱신 요약과 새 주제 페이지·2026-09-25 분리 페이지 링크(문단 안 문장으로 둠), 13절 각주 갱신(ref-031·ref-103 등) |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md](topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md) | 신규 작성: 충전 하한 값 구분, 충전소 is_charger 지정(oq-069 해결), 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료(2차 수정: 세 줄 요약 둘째 줄 범위 조정, 연계 범위 의견 주체 명시) |
+| 2026-10-10-05 | 갱신 | [docs/topics/2026/2026-09-25-area16-s6.md](topics/2026/2026-09-25-area16-s6.md) | 3. 본문 끝에 충전소 속성 충돌 문장 정정 소제목 추가(문서 is_parking_spot·구현 is_charger 병기, 구현 기준 판단은 의견), 8. 출처에 ref-1410 정의 추가, 10. 이력에 2026-10-10 행 추가, 프런트매터 sources·last_run 갱신 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s11.md](topics/2026/2026-10-10-area28-s11.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "11. 열린 질문" 절(1,185자)을 옮겼다 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s3.md](topics/2026/2026-10-10-area28-s3.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "3. 왜 중요한가" 절(770자)을 옮겼다 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s10.md](topics/2026/2026-10-10-area28-s10.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(637자)을 옮겼다 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s7.md](topics/2026/2026-10-10-area28-s7.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절(633자)을 옮겼다 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s6.md](topics/2026/2026-10-10-area28-s6.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "6. 대표 접근법과 기술" 절(607자)을 옮겼다 |
+| 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-area28-s8.md](topics/2026/2026-10-10-area28-s8.md) | 자동 분리: 28. 공용 자원·충전·에너지 최적화 의 "8. 대표 연구와 자료" 절(534자)을 옮겼다 |
+| 2026-10-10-05 | 요약 | [docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 28. 공용 자원·충전·에너지 최적화: 5절 제약 행을 VDA 5050 권고 표현으로 정정하고 상업 시설(호텔 수치 실험) 사례 추가, 3절 충전 값 구분·호텔 수치 보강, 충전소 is_charger 정리(oq-069 해결), 공용 충전기·승강기 메시지 확인 주제 페이지 신설, 6·7·8·11절에 기존 분리 페이지 링크 유지 |
+| 2026-10-10-05 | 생성 | [docs/references/ref-1410.md](references/ref-1410.md) | 참고문헌 ref-1410 등록: rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse… |
+| 2026-10-10-05 | 생성 | [docs/references/ref-1411.md](references/ref-1411.md) | 참고문헌 ref-1411 등록: A Two-Stage Logistics–Energy Coordinated Optimization Framew… |
 | 2026-10-10-04 | 갱신 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 5절 제조 공장 사례 추가, 6절 첫 문장 정정(SIPP를 단일 로봇 저수준 계획으로 분리)·PIBT 보장 범위·교착 모듈·MAPF-DL 보강, 7절 VDA 5050 3.0.0 예정 경로·구역 요청과 Open-RMF 2.14.0, 8절 Bonetti 외 게재·SILLM 정정·LSMART 추가(6·7·8절에 2026-09-25 기준 주제 페이지 링크 유지), 10절 54·62 연결, 11절 oq id 표기·부분 근거·새 질문 2건, 13절 각주 갱신, 프런트매터 last_run 2026-10-10 |
 | 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s6.md](topics/2026/2026-10-10-area27-s6.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "6. 대표 접근법과 기술" 절(1,965자)을 옮겼다 |
 | 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s8.md](topics/2026/2026-10-10-area27-s8.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "8. 대표 연구와 자료" 절(1,918자)을 옮겼다 |

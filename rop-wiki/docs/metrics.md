@@ -28,7 +28,7 @@ version: 1
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 31 | 0 | 0 | 31 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
-| [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 52 | 0 | 0 | 52 |
+| [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 59 | 0 | 0 | 59 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
@@ -103,7 +103,7 @@ version: 1
 | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | 2026-10-10 | 3 |
 | [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | 2026-10-10 | 3 |
 | [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | 2026-10-10 | 3 |
-| [28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | 2026-09-25 | 2 |
+| [28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | 2026-10-10 | 3 |
 
 **H. 실행·협업·예외 복구**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 157회 중 최종 통과 155회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 155, None 2
-- 2차 검증 판정: 통과 155, None 2
+- 실행 158회 중 최종 통과 156회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 156, None 2
+- 2차 검증 판정: 통과 156, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 591 |
-| 오픈소스 문서 | 241 |
+| 논문 | 592 |
+| 오픈소스 문서 | 242 |
 | 표준 | 207 |
 | 기사 | 129 |
 | 정부·연구기관 | 120 |
 | 벤더 문서 | 95 |
 | 업계 보고서 | 28 |
 
-신뢰도: medium 995건, high 284건, low 132건
+신뢰도: medium 996건, high 285건, low 132건
 
 ### 현장 유형 매트릭스 채움률
 
-- 85/119 칸 (71%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 86/119 칸 (72%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

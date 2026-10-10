@@ -1,0 +1,70 @@
+# 1차 검증(브리프) 2026-10-10-05
+
+**판정: 조건부 승인** · 신뢰도: medium
+
+## 주장별 검증
+
+| finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
+|---|---|---|---|---|---|
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: VDA5050 3.0.0 태그 원문(raw) factsheet 표에서 criticalLowChargingLevel float64, 'critical charging level in percent' 문구 확인. main 판 factsheet.schema(ref-228)도 percent·0~100 범위로 같으나 같은 발행 주체라 독립 교차 확인 아님. 발행일 미확인(원문에 날짜 없음). |
+| f2 | 예 | 예 | 아니오 | 유지 | 확인: 3.0.0 명세 표와 factsheet.schema(ref-228) 설명 모두 'fleet control should only send orders' 로 권고 표현이며 batteryCharging 안에 shall·must 없음. 기존 5절 제약 행이 ref-228 을 근거로 '보내야 한다'고 쓴 것은 ref-228 자체와도 어긋나므로 정정 근거로 인정. 같은 발행 주체 자료라 교차 확인으로 세지 않음. |
+| f3 | 예 | 예 | 아니오 | 유지 | 의견 유지: should 표현과 팩트시트(로봇 유형 단위 선언)에 값이 실린다는 점에서 도출. 페이지에서는 '이 위키는 본다'처럼 의견 주체를 밝힌다. |
+| f4 | 예 | 예 | 아니오 | 유지 | 확인: 3.0.0 명세 표에 네 필드(최대·최소 희망 충전 수준 percent, minimumChargingTime uint32 seconds)가 있고 schema 도 같은 네 필드. |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: config.yaml 원문(data/source_texts/ref-105) recharge_threshold: 0.10('will not operate'), recharge_soc: 1.0('charged up to during recharging tasks'). 템플릿 예시값이라는 한정 적절. |
+| f6 | 예 | 예 | 아니오 | 유지 | 의견 유지: VDA 는 percent 의 주문 제한 기준, Open-RMF 는 0~1 비율의 운행 하한으로 의미·단위가 다름이 두 원문에서 확인됨. 의견 주체 명시 필요. |
+| f7 | 예 | 예 | 아니오 | 유지 | 추정 유지: 두 원문 범위 안의 부재 확인이며 다른 Open-RMF 구성요소·VDA 다른 절은 조사하지 않았다는 한정을 본문에 함께 적어야 함. |
+| f8 | 예 | 예 | 아니오 | 유지 | 확인: Graph.hpp 원문(data/source_texts/ref-536)에서 is_parking_spot(비상 경보 때 주차)과 is_charger('Robots are routed to these spots when their batteries charge levels drop below the threshold value')가 별도 속성, set_charger 위 주석이 'parking spot' 문구로 잘못 복사된 것도 확인. 발행일 미확인. |
+| f9 | 예 | 예 | 아니오 | 유지 | 확인: rmf_ros2 2.14.0 태그 parse_graph.cpp 원문에서 is_parking_spot→set_parking_spot(true), is_charger→set_charger(true)가 독립 if 블록. 행 번호는 대조하지 않음. Graph.hpp 와 같은 프로젝트라 독립 교차 확인 아님. |
+| f10 | 예 | 예 | 아니오 | 유지 | 의견 유지(구현 기준 판단). 검증 중 ros2multirobotbook task_types.md(ref-039) ChargingTask 절이 실제로 'is_parking_spot 을 true 로' 충전소를 지정한다고 적고 is_charger 는 나오지 않음을 확인 — 문서 쪽 서술은 여전히 존재하므로 페이지에서 문서 서술을 지우지 말고 '문서(ref-039)는 is_parking_spot, 현재 구현(ref-536·ref-1543)은 is_charger' 로 둘 다 제시하고 구현 기준 판단임을 밝혀야 함. 참고로 입력의 RobotUpdateHandle.hpp(ref-537) 주석도 is_charger() 속성 경유점을 충전기로 본다고 적지만 브리프 finding 이 아니므로 이번 페이지에 새로 인용하지 않는다. |
+| f11 | 예 | 예 | 아니오 | 유지 | 확인: LiftRequest.msg·LiftState.msg 원문(data/source_texts/ref-312·ref-286) 필드와 주석('unique at least between different requesters', 'granted control of the lift until ... REQUEST_END_SESSION') 일치. 같은 프로젝트 자료. |
+| f12 | 예 | 예 | 아니오 | 유지 | 확인: 두 메시지 전체 필드 대조 결과 최대 점유 시간·예약 시간창·다중 목적층 필드 없음(destination_floor 는 단일 문자열). 메시지 정의 범위의 사실로만 쓴다. |
+| f13 | 예 | 예 | 아니오 | 유지 | 의견 유지: 메시지 정의만 본 결론이라는 한정이 적절함. 승강기 어댑터(ref-284)가 요청을 중계·차단한다는 기존 내용과 모순 없음. 의견 주체 명시 필요. |
+| f14 | 예 | 예 | 아니오 | 유지 | 확인: PMC 판(PMC11946681)과 출판 PDF 메타데이터에서 Han·Ding·Liu·Meng, Sensors 25(6) 1783, doi 10.3390/s25061783, 2025-03-13, 승강기 노드 암묵적 경유점·MTVRP·ALNS 확인. 이번 검증에서 PMC 페이지도 열림. 용어는 용어집의 '다중 운행 차량 경로 문제'로 맞춰야 함. |
+| f15 | 예 | 예 | 아니오 | 유지 | 확인: PMC 원문 Discussion 의 '60 customer nodes ... 40 s to 100 s nearly doubles the total travel time (from 225 s to 500 s)'. 원문 자체가 'nearly doubles' 라고 쓰므로 기존 3절 '거의 두 배'는 원문 표현과 어긋나지 않음 — 수치 병기로 고치되 '틀린 요약'으로 기록하지 않는다. 호텔 수치 실험이며 기존 3절 문장과 같은 주장(ref-103 재사용). |
+| f16 | 예 | 예 | 아니오 | 유지 | 의견 유지: 가정한 승강기 운행 시간을 바꾼 수치 실험이라는 점은 원문과 맞음. 의견 주체 명시 필요. |
+| f17 | 예 | 예 | 아니오 | 유지 | 확인: PMC 원문 결론의 후속 연구(무작위·동적 승강기 운행 시간, 동적 수요, 다중 로봇 협업·충돌 회피, 지능형 승강기 스케줄링) 확인. |
+| f18 | 예 | 예 | 아니오 | 유지 | 확인: arXiv 2603.22731 v1(2026-03-24) 초록에서 task assignment·service sequencing·optional charging decisions·charging mode selection·charger access 공동 최적화 확인. 저자 5명 모두 UT Austin. 프리프린트(동료심사 미확인)임을 본문에 밝힌다. MILP 한글 표기는 용어집 '혼합 정수 계획'으로. |
+| f19 | 예 | 예 | 아니오 | 유지 | 확인: arXiv HTML v1 §2.2 'minimizes total degradation, charger waiting, tardiness, and degradation imbalance'. |
+| f20 | 예 | 예 | 아니오 | 유지 | 확인: §2.6 세션 집합 Ωm 이 모든 로봇의 세션으로 정의되고 'each unordered pair of distinct sessions' 마다 순서 변수로 비중첩(33)–(34)을 둠. 다만 '같은 로봇의 세션 쌍 포함'은 논문이 명시한 문장이 아니라 집합 정의에서 따라 나오는 것이므로 본문에서는 '세션 집합이 모든 로봇의 세션을 포함하도록 정의돼 있어' 처럼 정의에 근거해 적는다. |
+| f21 | 예 | 예 | 아니오 | 유지 | 확인: §4.1 100×50 m 창고·동종 로봇·standard/fast 두 방식, §4.4 'illustrative expected averages'·\|R\|=4,\|K\|=40,\|M\|=2, 표 2 열화 0.214→0.098, §1 기여 'up to 54% over rule-based dispatch'. 단일 대표 사례의 예시값이며 핵심 수치이나 단일 출처. |
+| f22 | 예 | 예 | 아니오 | 유지 | 의견 유지: 초록의 'reduced-form degradation proxies' 와 §4.4 'illustrative expected averages' 로 뒷받침됨. 의견 주체 명시 필요. |
+| f23 | 예 | 예 | 아니오 | 유지 | 원문 미열람(MDPI 403). Crossref 메타데이터(doi 10.3390/pr14152424, Processes 14(15) 2424, 2026-07-27, 저자 6명) 확인, 초록에서 냉동 컨테이너 온도 제약·태양광·풍력·ESS 항만 마이크로그리드·2단계(1단계 작업·야드 배정, 2단계 에너지 스케줄링)·운영비 최소화 확인. 시간대별 요금·충전소 용량은 초록에 없음. 추정 유지, 신뢰도 low 유지. |
+| f24 | 예 | 예 | 아니오 | 유지 | 의견 유지(원문 미열람 근거). 후보 자료로만 쓰고 수치·국내 적용 근거로 채택하지 않는다는 한정이 적절. 항만 마이크로그리드 운영은 ROP 직접 범위 밖 연계 대상. |
+| f25 | 예 | 예 | 아니오 | 유지 | 확인: rmf_fleet_adapter CHANGELOG.rst(2.14.0 태그) 2.12.0 (2026-02-23) 'Publish WaitForCharge phase completed (#502)', 'Retreat to charger if there will not be enough charge for the next task (#423)'. |
+| f26 | 예 | 예 | 아니오 | 유지 | 확인: 2.13.0 (2026-06-15) 'Fix potential deadlocks from execution of mutex lock and release (#490)', 최신 2.14.0 은 2026-09-26. |
+| f27 | 예 | 예 | 아니오 | 유지 | 의견 유지: f25·f26 수정 이력에서 도출. 의견 주체 명시 필요. 변경 이력은 수정의 존재만 보여 주며 이전 판의 결함 범위를 정량화하지 않는다는 한정과 함께 쓴다. |
+
+## 항목별 결과
+
+| 항목 | 결과 | 내용 |
+|---|---|---|
+| 분류 적합성 | 예 | — |
+| 범위 경계 | 예 | — |
+| 중복·모순 | 아니오 | ref-1398(rmf_ros2 2.14.0 rmf_fleet_adapter/CHANGELOG.rst)는 같은 날 실행 2026-10-10-03 의 ref-1487, 2026-10-10-04 의 ref-1513 과 URL 이 같다 — 새 참고문헌으로 중복 등록하지 않는다, f15 는 기존 3절 둘째 단락의 호텔 연구 문장(ref-103, 225→500 s)과 같은 주장이다 — 새 문장을 더하지 말고 기존 문장을 고친다, f8·f9·f10 은 6절 분리 페이지(2026-09-25-area16-s6) 53행의 is_parking_spot/is_charger 충돌 문장과 겹친다 — 교체 대상, f1·f2·f6 은 기존 3절 첫 문장이 criticalLowChargingLevel 과 recharge_threshold 를 같은 '충전 임계값'으로 묶은 표현과 어긋난다(f6: 둘은 단위·의미가 다름), f2 는 기존 5절 제약 행 '보내야 한다'(ref-228)와 충돌하나 ref-228 원문도 should 이므로 정정으로 처리한다, ref-403 은 24. 작업·워크플로 모델링 등에서 쓰인 기존 id 재사용(정상) |
+| 용어 일관성 | 아니오 | f14: '다회 운행 차량 경로 문제' — 용어집 multi-trip-vehicle-routing-problem 의 한글 표기는 '다중 운행 차량 경로 문제 (Multi-Trip Vehicle Routing Problem (MTVRP))', f18: '혼합 정수 선형 계획' — 용어집 milp 의 한글 표기는 '혼합 정수 계획 (Mixed Integer Linear Programming (MILP))' |
+| 인용 길이·저작권 | 예 | — |
+| 정정 요청 반영 | — | — |
+
+## 수정 지시(required_fixes)
+
+- 5절 제약 행: '팩트시트의 임계 저충전 수준 이하에서는 관제가 충전소로 가는 주문만 보내야 한다. [사실][^ref-228]' 을 f1·f2 에 따라 '팩트시트의 임계 충전 수준(백분율, 로봇 유형별 선언값) 이하에서는 관제가 충전소로 가는 주문만 보내는 것이 좋다고 권고(should)한다' 로 고치고 각주는 [^ref-031][^ref-228] 로 둔다 — ref-031 3.0.0 명세 표와 ref-228 스키마 설명이 모두 should 이다(외부 메모 기반 정정이며 corr id 는 없음).
+- 3절 첫 문장: criticalLowChargingLevel 과 recharge_threshold 를 같은 '충전 임계값'으로 묶은 괄호 표현을 f1·f5·f6 에 맞게 'VDA 5050 의 임계 충전 수준(관제의 주문 제한 기준, 백분율)과 Open-RMF 의 recharge_threshold(운행 하한, 0~1 비율)' 처럼 둘의 의미·단위를 구분해 고친다 — f6 과 기존 문장이 어긋난다. 태그는 기존 [추정] 유지.
+- 3절 호텔 연구 문장: 새 문장을 더하지 말고 기존 문장을 f15·f16 기준으로 고친다(저자 Han 외 2025, 고객 노드 60개·승강기 운행 시간 40→100 s·총 이동 시간 약 225→500 s, 가정한 운행 시간을 바꾼 모델 수치 실험이며 실측 대기열 손실이 아님을 [의견]으로 덧붙임). '거의 두 배'는 원문(nearly doubles) 표현이므로 지워도 되지만 틀린 요약이라고 서술하지 않는다.
+- [^ref-103] 각주를 'Han, L., Ding, J., Liu, S., & Meng, M.(Sensors 25(6) 1783, doi:10.3390/s25061783), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 2025-03-13, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-10-10' 으로 고치고 ' (원문 미열람)' 표시를 뺀다 — 이번 실행과 검증에서 원문을 열었다. reference_updates 에도 저자·발행일을 반영한다.
+- f14 의 MTVRP 한글 표기를 용어집대로 '다중 운행 차량 경로 문제(Multi-Trip Vehicle Routing Problem, MTVRP)'로, f18 의 MILP 한글 표기를 용어집대로 '혼합 정수 계획(Mixed Integer Linear Programming, MILP)'으로 쓴다 — 용어집과 충돌.
+- 5절 상업 시설 사례(f14~f17): 블록 머리에 '현장 유형: 상업 시설'과 '다층 호텔 배송을 모델링한 수치 실험(실제 배치 아님)'을 밝히고, 여섯 항목 가운데 f14~f17 로 채울 수 없는 칸(예: 완료·인계, 수행 자원의 설비 쪽 분담)은 '미확인'으로 두며 새 사실을 지어 넣지 않는다. 물류창고 사례 머리의 '다른 현장 유형의 적용 사례는 이어지는 조사에서 더한다' 문장은 상업 시설 사례 추가에 맞게 고친다. site_matrix_updates 는 site_type '상업 시설' 한 칸만 낸다.
+- f23·f24(Yang 외, ref-1544)는 5절 적용 사례로 쓰지 않고 8절 분리 페이지의 '원문 미열람 후보 자료'로만 [추정]·[의견]으로 둔다. 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-1544 에 source_unopened: true 를 둔다. 항만 마이크로그리드(태양광·풍력·ESS) 운영은 ROP 직접 범위가 아니라 연계 대상으로 짧게 적는다(원문 19장 시설·설비 제어·업종별 조건 경계).
+- 6절 분리 페이지 53행 충돌 문장 교체(f8·f9·f10): 문서 서술을 지우지 말고 'Open-RMF 지원 작업 문서(ref-039)는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API(ref-536)와 rmf_fleet_adapter 2.14.0 파서(ref-1543)는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다' 처럼 둘 다 제시한 뒤, 구현 기준으로 충전소 지정은 is_charger 로 보는 것이 이 위키의 판단임을 [의견]으로 적는다 — 검증에서 ref-039 ChargingTask 절이 실제로 is_parking_spot 을 쓰는 것을 확인했다. Graph.hpp 주석 복사 오류는 필요하면 한 문장으로만 언급한다.
+- 6·7절 분리 페이지: VDA 백분율 선언과 Open-RMF 비율 설정의 단위·의미 구분(f4·f5·f6)과 두 값의 우선순위 규칙이 확인한 두 원문에 없다는 점(f7, [추정], 조사 범위 한정 문구 포함)을 넣는다. f5 의 0.10·1.0 은 템플릿 예시값이지 권장값이 아님을 밝힌다.
+- 7절 분리 페이지: 승강기 메시지의 필드(f11)와 점유 시간·시간창·다중 목적층 필드 부재(f12)를 사실로, 배분 정책 부재로 넓히지 않는다는 한정(f13)을 [의견]으로 적는다. Open-RMF 충전 작업 삽입·뮤텍스 그룹 서술에는 rmf_fleet_adapter 2.12.0(2026-02-23)·2.13.0(2026-06-15)의 수정 이력(f25·f26)과 판 기록 권고(f27, [의견])를 붙인다.
+- ref-1398 는 rmf_ros2 2.14.0 rmf_fleet_adapter/CHANGELOG.rst 로, 같은 날 실행 2026-10-10-03(ref-1487)·2026-10-10-04(ref-1513)와 URL 이 같다 — docs/references/index.md 에 이 URL 이 이미 등록돼 있으면 그 id 를 각주와 프런트매터에 쓰고 ref-1398 를 새로 등록하지 않으며, 등록돼 있지 않으면 reference_updates 의 URL 을 그대로 두어 퍼블리셔가 기존 id 로 합치게 한다.
+- 8절 분리 페이지(Li 외, ref-403): 프리프린트(arXiv v1, 2026-03-24, 동료심사 미확인)임을 밝히고, f20 의 '같은 로봇의 세션 쌍 포함'은 논문의 명시 문장이 아니라 세션 집합 Ωm 이 모든 로봇의 세션을 포함하도록 정의된 데서 따라 나온다고 적는다. 최대 54% 열화 감소(f21)는 대표 사례 하나의 예시적 기대 평균임을 같은 문장에 붙이고, 현장 배터리 수명 개선값으로 쓰지 않는다는 f22 를 [의견]으로 둔다.
+- f3·f6·f10·f13·f16·f22·f24·f27 의 [의견] 문장은 '이 위키는 본다'처럼 의견 주체를 밝힌다 — 의견 표기 규칙.
+- [^ref-031] 각주의 접근일을 2026-10-10 으로 갱신하고, 본문에서 batteryCharging 을 인용할 때 '3.0.0 판 기준(발행일 미확인)'을 밝힌다 — 이번 열람은 3.0.0 태그판이다.
+- 11절(분리 페이지)과 열린 질문 갱신: oq-069 는 해결로 바꾸되 해결 근거를 f8·f9 와 문서 서술(ref-039)이 다르다는 점으로 적는다. oq-066(f23·f24 후보 자료만)·oq-067(f11~f13)·oq-068(f4~f7)은 부분 근거만 적고 열림 상태를 유지한다. 새 질문 4건은 브리프 형식대로 등록한다.
+- 트랙 반영 제안 4건(IDTA 02047 충전 요소 2건·IDTA 디지털 배터리 여권 1건·rmf_traffic 문·승강기·VDA 해제 구역 1건)은 이번 브리프의 finding 이 다루지 않았으므로 7절·6절에 반영하지 않고 제안 상태로 둔다 — 근거 finding 없이 반영하면 드리프트다. oq-060(IDTA 02047 출처 충돌)도 그대로 둔다.
+- 원문의 직접 인용은 출처당 1회 이하로 하고 나머지는 재서술한다 — ref-031·ref-403·ref-103 은 브리프 발췌에 여러 구절이 있어 페이지에서 반복 인용하기 쉽다.
+
+## 검증 노트
+
+판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1544(Yang 외, Crossref 초록만 확인). 주의: 이번 브리프는 외부 AI 조사 메모를 바꾼 것이라 이 실행 안의 검색 기록이 없고, 한국 자료는 없다. VDA 5050·Open-RMF 출처는 모두 같은 발행 주체나 같은 프로젝트의 자료라 독립 교차 확인으로 세지 않았다. VDA 5050 3.0.0 명세와 factsheet.schema(ref-228)는 모두 임계 충전 수준 이하 주문 제한을 권고(should)로 적으므로, 5절 제약 행의 '보내야 한다'는 권고 표현으로 정정한다. 호텔 연구(ref-103)는 이번 실행에서 원문을 처음 열었고, 원문 자체가 'nearly doubles'(225→500 s)라고 쓴다. Li 외(ref-403)의 최대 54% 열화 감소는 프리프린트 속 대표 사례 하나의 예시값이다. oq-069 해결 인정(f8·f9): 현재 구현은 충전소를 is_charger 로 지정하고, 지원 작업 문서(ref-039)는 아직 is_parking_spot 으로 적고 있어 두 서술을 함께 싣는다. oq-066·oq-067·oq-068 은 부분 근거만 있어 열린 질문으로 남긴다. 트랙 반영 제안 4건(IDTA 02047·배터리 여권·rmf_traffic 문·승강기 표현)은 이번 브리프가 조사하지 않아 반영하지 않았다. ref-1398 는 같은 날 실행 2026-10-10-03·04 에 등록된 변경 이력 출처(ref-1487·ref-1513)와 URL 이 같아 기존 id 로 합친다. 정정 요청(corr) 없음.
