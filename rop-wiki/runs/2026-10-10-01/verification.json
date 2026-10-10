@@ -1,0 +1,279 @@
+{
+  "run_id": "2026-10-10-01",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문(data/source_texts/ref-044)과 raw CBV.ttl 재열람에서 arriving·accepting·receiving 의 rdfs:comment 와 receiving 상호 배타 문장 일치. dct:modified 2021-09-30, versionInfo 2.0. 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: VDA 5050 3.0.0 태그 명세 §6.2.3.2 Action states 표 5의 drop 행 FINISHED 문구 일치. 발표일 미확인 유지."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: IngestorResult.msg 원문의 기본 필드(time·request_guid·source_guid·status ACKNOWLEDGED/SUCCESS/FAILED)와 끝의 custom workcell 필드 주석 일치. 범위를 기본 정의 필드로 한정한 표현이 적절하다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: f1~f3 정의 대조에서 나온 이 위키의 판단이다. 누구의 의견인지('이 위키의 판단') 밝혀야 한다. 기존 3절 첫 문단 [추정] 문장('arriving 수준')과 5절 시나리오 1의 'arriving에 가깝다' 문장의 근거 범위를 좁히는 내용이라 해당 문장 수정이 필요하다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(일부 간접): OMG 사양 페이지에서 BPMN 2.0.2, formal/13-12-09, 2014년 1월 발행을 확인했다. 검증자 WebFetch 로는 PDF 본문 텍스트를 추출하지 못했고, 수신 작업 정의 문장은 BPMN 2.0.2 §10.3.3 을 인용한 2차 자료(Flowable 문서) 검색 결과로 대조했다. CorrelationKey(§8.4.2)·Timer(§10.5.4)의 절 번호는 검증자가 원문으로 확인하지 못했다. 리서치는 fetched true 로 기록했다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: FaMe 모델링 지침 G4·G5 와 구성 절(신호 이벤트 type 속성에 ROS 메시지 형)은 공식 페이지에서 확인했다. Camunda 고유 동작을 표준 보장으로 넓히지 않는 한정과 '로봇 인수 확인 적용 사례 미확인'을 본문에 남겨야 한다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: FaMe 공식 페이지 'Reproducing the simulation'에 ground vehicle cooperation·agriculture scenario 패키지, 엔진 패키지, colcon build·launch·splitter 절차가 있다. 요구사항 Ubuntu 20.04+, ROS2 Foxy+, Gazebo(실제 로봇에는 불필요), NodeJS. 게시일 2022-05-03. 브리프 출처 항목의 fetch_url 이 null 이다(R-1, 아래 노트 참조)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: G1 Robots as pools, G2 Mission as a process, G2.1 Actions as activities, G2.3 AND gateways, G2.4 XOR gateways, G4 error events, G5 timer events 의 제목이 페이지와 같다. 같은 연구팀 자료(ref-503·ref-114)라 독립 교차 확인이 아니라는 브리프 판단도 맞다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: 시뮬레이션 재현 절차만 공개돼 있다는 점과 맞는다. '이 위키의 판단'임을 밝히고 현장 성능 근거로 쓰지 않는다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Task.hpp 원문(입력 source_texts)의 cancel() 주석(취소 뒤 일부 단계 계속, pending_phases 가 로봇을 짐 없는 상태로 되돌리는 단계로 바뀔 수 있음, finished 콜백으로 취소 종료), kill() 이 cancel() 에 우선함이 일치. 발행일 미확인."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(일부 간접): 보상 정의 문장은 검증자가 PDF 텍스트로 대조하지 못했다. BPMN 보상 개념을 같은 취지로 옮긴 2차 자료(Camunda·No Magic 문서) 검색 결과와는 일치한다. §10.7 절 번호는 검증자가 확인하지 못했다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: f10·f11 과 rmf_task README('단계마다 취소·중단 시 반응을 지정할 수 있다')로 뒷받침된다. 두 체계가 같은 상태 체계라는 뜻이 아니라는 한정을 유지하고 '이 위키의 판단'임을 밝힌다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf_task README 원문에 단계의 순서 실행, 단계의 이벤트 구성, 모델 구현은 rmf_task_sequence·Active 구현은 rmf_fleet_adapter, fleet adapter 는 현재 rmf_task_sequence 단계 연쇄 작업만 지원한다는 문장이 있다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README 이벤트 목록이 Bundle·DropOff·GoToPlace·PerformAction·PickUp·Placeholder·WaitFor 일곱 가지로 일치한다('presently available' — 현재 기준)."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지(low): Bundle 의 병렬·합류 의미는 원문 미확인이므로 본문에 '미확인'을 남긴다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 3.0.0 태그 명세 §6.2.2 'four distinct blocking types'·표 3(병렬 실행·자동 주행 허용 여부)과 §7.3 action 표 blockingType 설명(SINGLE: allows driving but no other actions; HARD: is the only allowed action at that time) 일치."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 2.1.0 태그 명세 blockingType Enum {'NONE','SOFT','HARD'}와 'three distinct blocking types' 일치, SINGLE 없음. 같은 발행 계열 두 판의 대조이므로 독립 교차 확인이 아니다. 2.1.0 과 3.0.0 사이 다른 판을 확인하지 않았으므로 '3.0.0 에서 추가'가 아니라 '2.1.0 명세에는 없고 3.0.0 명세에는 있다'로 적어야 한다(수정 지시)."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: f16 정의에서 끌어낸 이 위키의 모델링 권고다. 출처를 밝힌다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf_ros2 2.14.0 태그 rmf_fleet_adapter/CHANGELOG.rst 첫 절 '2.14.0 (2026-09-26)'에 'Fix phase key for skip requests (#543)' 항목 있음. 고친 키 이름은 미확인, 개별 패키지 버전이라는 한정 유지."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지(low): f19 와 Task.hpp skip(phase_id, value)(운영자 수동 개입용) 근거의 운영 권고다. '이 위키의 판단'임을 밝힌다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv abs 페이지에서 제목·저자, v1 2026-03-16·v2 2026-08-17, Journal ref IEEE Transactions on Software Engineering (2026), 네 형식(BT·SM·HTN·BPMN)을 제어 구조·표현력·도구 지원으로 비교한다는 초록을 확인했다. 기존 페이지 각주 ref-116(2026-03, 원문 미열람)은 고쳐야 한다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: v2 HTML §III-C 에서 '2026년 1월 4주', '83 invitations 중 29 complete responses, 34.94%', 실시간 인터뷰 3명·서면 응답 1명을 확인했다. 로봇 처리량 측정 서술은 없다. 같은 논문이라 독립 교차 확인이 아니다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: 연구 방법(분석 비교 + 전문가 검증)으로 뒷받침된다. §VII 이 Threats to Validity 임은 확인했으나 그 내용은 검증자가 읽지 않았다. '이 위키의 판단'임을 밝힌다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: FaMe 페이지의 BPMN 협업으로 MRS 임무 정의·ROS2 실행, modeling·configuration·enactment 세 단계, 각 로봇에서 협업 직접 실행, 신호 이벤트 type 속성에 ROS 메시지 형(예 std_msgs/msg/Bool) 지정 일치. oq-014 부분 근거로만 쓴다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: 세 원문에 상호 상태 매핑 절이 없다는 판단이며 oq-014 는 열린 상태로 둔다. '이 위키의 판단'임을 밝힌다."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: 공개 구현 사례는 검색하지 않았으므로 '없음'이 아니라 '확인 못 함'으로 쓴다. oq-001 해결로 바꾸지 않는다."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: f1·f2 와 receiving 상호 배타 규정에 근거한다. 기존 5절 시나리오 1 문장('이 시점은 CBV로 보면 arriving에 가깝다')과 어긋나지 않도록 그 문장을 고쳐야 한다(수정 지시)."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "f4·f27 이 기존 3절 첫 문단 [추정] 문장('완료 신호는 GS1 CBV의 arriving 수준의 물리적 인도만 나타내고', ref-031·ref-049·ref-044)과 5절 시나리오 1 문장('이 시점은 CBV로 보면 arriving에 가깝다')의 근거 범위를 좁힌다 — 기존 문장 수정 대상",
+      "f5·f6 이 6절 분리 주제 페이지의 기존 BPMN 메시지 대기 근거(ref-112 원문 미열람, ref-113 Camunda 벤더 문서)와 같은 주장을 다룬다 — 기존 각주는 유지하고 ref-502 를 더한다",
+      "f7·f8·f24(ref-1400 FaMe 공식 페이지)는 기존 ref-503(FaMe GitHub README)·ref-114(Corradini 외 논문)와 같은 연구팀 자료다 — 독립 교차 확인으로 세지 않는다",
+      "f21~f23 은 기존 8절 분리 주제 페이지의 ref-116 항목(2026-03, 원문 미열람)을 보강한다 — 같은 ref-116 을 재사용한다",
+      "트랙 반영 제안(실행 2026-09-25-51)의 FaMe(f10)·임무 기술 형식 비교 연구(f16) 항목이 이번 f24·f21~f23 과 겹친다",
+      "ref-1400·ref-1398·ref-1401 는 실행 2026-10-09-26 브리프가 다른 출처(CubiCasa5k house.py, 공공데이터포털 고양시 페이지, IFC IfcBuildingElementProxy)에 준 id 와 같다 — 그 실행이 게시됐으면 참고문헌 id 충돌"
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "용어 후보 '보상 (Compensation (BPMN))'이 기존 용어 compensating-transaction '보상 트랜잭션 (Compensating Transaction)'과 한글 표기가 겹친다 — 같은 개념이 아니므로 구분되는 표기로 등록하고 서로 연결해야 한다"
+    ]
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": [
+      "evidence_excerpt 에 같은 출처의 원문 구절이 여러 개 들어 있다(ref-044 는 f1 에 세 구절, ref-031 은 f2·f16 에, ref-502 는 f5·f11 에). 페이지 본문에서는 출처당 직접 인용 1회 이하로 제한하고 나머지는 재서술해야 한다"
+    ]
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "3절 첫 문단: 기존 [추정] 문장('…GS1 CBV의 arriving 수준의 물리적 인도만 나타내고…')을 고친다. 하역 완료 신호를 특정 CBV 단계와 같다고 보는 표현을 빼고, f1 [사실][^ref-044](arriving·accepting·receiving 정의와 receiving 의 상호 배타), f2 [사실][^ref-031](3.0.0 §6.2.3.2 표 5 drop FINISHED), f3 [사실][^ref-049](기본 정의 필드 한정)로 나눠 적는다. 그 뒤에 f4 를 [의견](이 위키의 판단)으로 덧붙이고 '이 구성을 적용한 표준·사례는 확인하지 못했다' 한정을 유지한다 — f4 가 기존 문장의 근거 범위를 좁힌다.",
+    "5절 시나리오 1: '이 시점은 CBV로 보면 arriving에 가깝다' 문장을 f27 [의견]과 맞게 바꾼다. 로봇 drop 완료를 곧바로 arriving 이나 receiving 으로 단정하지 않고, 어느 업무 단계인지는 업무 측 확인으로 정한다고 쓴다 — 기존 [추정]과 f27 의 판단이 어긋난다.",
+    "5절: 창고 밖 사례를 새 소절로 추가한다. 현장 유형 '기타'(농업·지상 로봇 협업 시뮬레이션, 67. 기타 현장)를 밝히고 f7·f8 을 여섯 항목에 놓는다. 근거가 없는 항목(시작 조건·제약·완료·인계·예외·성과 등)은 '미확인'으로 두고, f9 는 [의견](이 위키의 판단)으로 '시뮬레이션 재현 자료이며 현장 운영 성능 근거가 아니다'를 적는다. site_matrix_updates 의 site_type 은 '기타'로 한다.",
+    "f17: '3.0.0 에서 추가된 값'을 '2.1.0 명세에는 없고 3.0.0 명세에는 있다'로 고친다 — 두 판 사이 다른 판을 확인하지 않았다. 같은 발행 계열 두 판의 대조이므로 교차 확인으로 표시하지 않는다.",
+    "f4·f9·f12·f18·f20·f23·f25·f27 의 [의견] 문장마다 '이 위키의 판단'임을 밝힌다 — 공통 규칙 5항은 의견의 주체를 밝히게 한다.",
+    "8절 분리 주제 페이지와 13절 각주의 ref-116: 발행일을 2026-03-16 으로, 접근일을 2026-10-10 으로 고치고 '(원문 미열람)'을 뺀다(이번에 v2 본문 열람 확인). 본문에는 v2(2026-08-17)·IEEE Transactions on Software Engineering (2026) 게재 정보와 f22 의 연구 방법(설문 83명 요청·29개 응답, 인터뷰 3명·서면 1명, 로봇 처리량 측정 아님)을 적는다.",
+    "ref-031 을 인용하는 새 문장(f2·f16): 3.0.0 태그판 기준임을 본문에 밝히고(main 브랜치 판과 다를 수 있음) 발표일은 쓰지 않는다. 각주 접근일은 2026-10-10 으로 고친다.",
+    "f19·f20: '개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)'으로 적고 Open-RMF 배포판 버전으로 쓰지 않는다. 고친 키의 이름은 '미확인'으로 둔다.",
+    "f15·f26: 각각 'Bundle 의 병렬·합류 의미 원문 미확인', '공개 구현 사례는 검색하지 않아 확인 못 함' 한정을 본문에 남긴다. '없다'로 단정하지 않는다.",
+    "범위 경계: f1~f4·f26·f27 에서 수령자 재고 편입(CBV receiving)과 EPCIS 이벤트 생성·재고 확정은 '연계 대상: 상위 업무 시스템(WMS 등)'으로 표시한다. ROP 몫은 완료 조건 구분과 대기·분기로 한정한다(분류 원문 19장 상위 업무 시스템 경계).",
+    "연결: f16~f18 은 20. 로봇·제조사 관제 연동, f10~f12 는 32. 예외 복구·재계획·업무 연속성, f1~f4 는 17. 작업 대상·자산 식별과 인계 추적과 연결한다. 이 영역 본문에서는 공정 모델의 병행 제약과 완료·취소 상태 구분으로만 쓴다 — 세부영역 번호와 이름을 함께 적는다.",
+    "6절 분리 주제 페이지(2026-09-25-area02-s6): 기존 Camunda 문장(ref-113)과 ref-112 각주는 지우지 않는다. BPMN 2.0.2 규범 근거 f5(ref-502)·f6 을 더하고, Camunda 고유의 TTL·중복 거부 동작을 BPMN 표준의 보장으로 넓히지 않는다.",
+    "7절 분리 주제 페이지(2026-09-25-area02-s7): 표의 BPMN 행에 ref-502(OMG, BPMN 2.0.2, formal/13-12-09, 2014-01)를 더한다. VDA 5050 blockingType(f16·f17)과 rmf_fleet_adapter 2.14.0(f19)을 기준일과 함께 적는다.",
+    "트랙 반영 제안 2건: 이번 브리프 finding 으로 뒷받침되는 FaMe(f7·f8·f24)와 임무 기술 형식 비교 연구(f21~f23)만 반영한다. 나머지 항목(OPC UA for ISA-95 작업 응답, BPMN 2.0.2 사람 수행자·자원 배정, Serverless Workflow DSL, Isaac Mission Dispatch, PlanSys2, DART-LLM, LTLf→행동 트리, Open-RMF 워크플로 다이어그램, crossflow)은 이번 실행에서 검증하지 않았으므로 본문에 넣지 않고 '제안' 상태로 남긴다.",
+    "11절 분리 주제 페이지(2026-09-25-area02-s11)와 open_question_updates: oq-001(f26·f27)·oq-014(f24·f25)는 '열림'을 유지하고 부분 근거만 단다. open_questions_new 3건은 관련 영역(24. 작업·워크플로 모델링, 32. 예외 복구·재계획·업무 연속성 / 54. 시험·형식 검증·벤치마크 / 57. 자산·소프트웨어 수명주기 관리)을 번호와 이름으로 옮겨 등록한다.",
+    "glossary_updates: '수신 작업 (Receive Task (BPMN))'은 신규 등록한다. '보상' 후보는 기존 '보상 트랜잭션 (Compensating Transaction)'과 구분되도록 'BPMN 보상 (Compensation (BPMN))'처럼 표기하고, 정의에 보상 트랜잭션과의 관계를 연결로 적는다.",
+    "인용: 페이지 본문의 직접 인용은 출처당 1회 이하로 한다(ref-044·ref-031·ref-502 는 여러 구절이 브리프에 있음). 나머지는 재서술한다.",
+    "reference_updates 의 ref-1400·ref-1398·ref-1401: 브리프 id 를 그대로 쓴다. 다만 이 셋은 실행 2026-10-09-26 브리프가 다른 출처에 준 id 와 같으므로, changelog_entry 비고에 'id 충돌 여부 퍼블리셔 확인 필요'를 남긴다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 0건. 강등: 없음(f17 은 표현 정정 지시). 원문 미열람 출처: 없음. 다만 BPMN 2.0.2 PDF(ref-502)는 검증자 도구로 본문 텍스트를 추출하지 못했다. OMG 사양 페이지(formal/13-12-09, 2014-01)와 §10.3.3 을 인용한 2차 자료로 대조했고, f5·f11 의 절 번호는 검증자가 원문으로 확인하지 못했다. 브리프 ref-1400 은 fetched true 인데 fetch_url 이 null 이다(검증자가 https://pros.unicam.it/fame/ 를 열어 확인). 주의: 사실 주장은 모두 단일 출처(표준·오픈소스 원문)다. 이번 리서치는 외부 조사 메모를 변환한 것이라 검색 0회이고 한국어 검색과 국내 자료가 없다(공통 규칙 8 미충족, 다음 갱신에서 보강 필요). 창고 밖 사례는 FaMe 농업·지상 로봇 협업 시뮬레이션(현장 유형 기타) 하나뿐이며 현장 운영 성능 근거가 아니다. oq-001·oq-014 는 부분 근거만 있어 열림을 유지한다(해결 인정 없음). 트랙 반영 제안 2건 가운데 FaMe·임무 기술 형식 비교 연구만 반영하고, 나머지는 검증되지 않아 제안으로 남긴다. ref-1400~ref-1401 는 실행 2026-10-09-26 브리프의 다른 출처 id 와 겹쳐 퍼블리셔 확인이 필요하다. 정정 요청 없음.",
+  "retry_reason": null
+}

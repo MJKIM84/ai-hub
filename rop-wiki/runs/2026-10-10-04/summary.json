@@ -1,0 +1,145 @@
+{
+  "run_id": "2026-10-10-04",
+  "date": "2026-10-10",
+  "run_type": "update",
+  "target": {
+    "area_no": 27,
+    "area_name": "27. 다중 로봇 경로·교통 관리 — MAPF",
+    "category": "G. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 2,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "3e86522",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 2
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1497.4,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-10 | 27. 다중 로봇 경로·교통 관리 — MAPF | 갱신: 5절 제조 공장 사례 추가, 6절 SIPP·CBS 묶음 서술 정정과 PIBT 보장 범위·교착 모듈·MAPF-DL 보강, 7절 VDA 5050 3.0.0 예정 경로 공유·구역 요청과 Open-RMF rmf_fleet_adapter 2.14.0, 8절 Bonetti 외 IJRR 게재·SILLM 정정·LSMART 추가(6·7·8절에 2026-09-25 기준 주제 페이지 링크 유지), 11절 oq-057~059 id 표기와 새 질문 2건; 트랙 반영 제안(2026-09-25-58, 건축 도면 자동 인식)은 근거 없음으로 미반영; 정정 요청 없음(처리할 corr id 없음) | run 2026-10-10-04",
+  "notes": [
+    "참고문헌 생성: references/ref-1398.md",
+    "참고문헌 생성: references/ref-1399.md",
+    "세부영역 반영 제안 1건을 반영으로 표시했다(27. 다중 로봇 경로·교통 관리 — MAPF, 실행 2026-10-10-04)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 2,
+    "standards": 0,
+    "open_questions": 2,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-10 15:30:56 KST",
+  "usage": {
+    "input_tokens": 32,
+    "cache_creation_input_tokens": 750020,
+    "cache_read_input_tokens": 1994331,
+    "output_tokens": 102435,
+    "cost_usd": 8.5591,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.0608,
+        "output_tokens": 21749,
+        "cache_read_input_tokens": 1664616,
+        "cache_creation_input_tokens": 149217
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.3948,
+        "output_tokens": 65049,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 383124
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.0061,
+        "output_tokens": 15166,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 208406
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md (7개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-10-area27-s6.md",
+        "chars": 1965
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-10-area27-s8.md",
+        "chars": 1918
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-10-area27-s11.md",
+        "chars": 1370
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-10-area27-s7.md",
+        "chars": 1119
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-10-area27-s10.md",
+        "chars": 848
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 8,
+  "cross_checked_findings": 0
+}

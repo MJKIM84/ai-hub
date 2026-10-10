@@ -1,0 +1,290 @@
+{
+  "run_id": "2026-10-10-03",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: data/source_texts/ref-125.txt 의 task_request.json 원문에서 최상위 properties 8개, required [category, description], 마감·선행 작업 필드 없음을 확인했다. 발행일 미확인, 확인일 2026-10-10. 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: description·priority 설명문(플릿이 지원하는 스키마를 따라야 함)과 최상위 additionalProperties 키가 없음을 ref-125 원문에서 확인했다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. f2 의 위임 구조에서 끌어낸 추론이며, 확장 필드를 실제로 집행하는 구현은 확인되지 않았다는 한계를 본문에 함께 적는다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 의견의 주체(외부 조사 메모를 변환한 리서치 판단)를 밝혀야 한다(required_fixes)."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: BinaryPriorityScheme.cpp(raw)를 열어 make_low_priority 가 nullptr, make_high_priority 가 BinaryPriority(1), make_cost_calculator 가 BinaryPriorityCostCalculator 를 돌려주는 것을 확인했다. 기존 ref-390(헤더)과 같은 프로젝트 자료라 독립 교차 확인은 아니다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: BinaryPriorityCostCalculator.cpp(raw)의 valid_assignment_priority 에서 STEP 1(로봇 사이: 최대 높은 작업 수가 1을 넘는데 0개인 로봇이 있으면 위반)과 STEP 2(같은 로봇 안: ChargeBattery 는 건너뛰고, 낮은 작업 뒤에 높은 작업이 오면 위반)를 확인했다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: compute_cost 는 check_priority 가 켜져 있고 배정이 위반이면 _priority_penalty * (g + h), 그 밖에는 g + h 를 돌려준다. 벌점 계수의 기본값은 이 파일에 없다(헤더 미대조)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 근거 코드(cost.cpp 에 마감 검사가 없음)와 스키마(마감 필드가 없음)를 확인했다. 의견의 주체를 밝혀야 한다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: compute_g_assignment 는 finish_state 시각에서 booking 의 earliest_start_time 을 뺀 초 단위 값을 쓰고, compute_g 는 모든 로봇·모든 배정에 걸쳐 합산한다. 이 계산기에는 TaskAssignmentStrategy 가중치를 참조하는 코드가 없다. ref-377 은 비용 계산기를 지정하지 않으면(nullptr) 이 계산기를 쓴다고 적지만, 같은 헤더의 TaskAssignmentStrategy(완료 시각·배터리·바쁨 가중치)와 이 계산기의 관계는 확인하지 못했다. 그래서 서술은 이 계산기에 한정해야 한다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ChargeBattery::Description 분기의 'return 0.0; // Ignore charging tasks in cost'."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. f9·f10 의 정의에서 끌어낸 추론이며 실행 결과로 확인하지 않았다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. rmf_task 쪽 합산 정의는 코드로 확인했다. Dai 외가 메이크스팬 최소화를 목표로 한다는 점은 OpenAlex 의 초록 요약으로 확인했다. 다만 Dai 외 PDF 는 이번 검증에서 텍스트를 뽑지 못해(이진 PDF) '차고지(depot) 복귀를 포함한 총 작업 시간 최댓값'이라는 정의는 원문으로 대조하지 못했다. 이 괄호 정의는 빼거나 '미확인'으로 표시한다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-379 원문에서 'Cumulative constraint with min and max capacity profile' 절을 확인했다(어느 시점이든 진행 중인 작업 수요의 합이 용량 이하). 구간·선택 구간·시간 관계·NoOverlap 은 기존 7절과 같은 내용이다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 문서의 예제는 일반 스케줄링 예제이고 로봇·도크 사례가 아니라는 한계를 함께 적는다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2403.11737v1 HTML 을 열어 Definition 6(완료된 작업: drop 이 마감 전, pickup 은 도착 시각 이후)과 초록의 작업 마감·용량 있는 에이전트 설정을 확인했다. 2024-03-18 v1."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. CP-SAT 이 제약과 목적을 따로 두는 구조(ref-379)와 마감을 필수 조건으로 둔 Tuck 외 정의(ref-1403)를 확인했다. 의견의 주체를 밝혀야 한다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Definition 9 갱신 계획에서 과거 동작과 현재 동작은 바뀌지 않고, 계획은 시스템 위치에서만 갱신할 수 있다. §4.3 에서 과거 action point 를 고정한다. 같은 논문을 실행 2026-10-10-02 가 ref-1454 로 이미 등록했으므로 id 중복에 유의한다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: §4.3 push·pop 증분 풀이를 확인했다. §6.2 의 200 작업·20 에이전트·배치 1·10 설정과, Z3-BV 는 작은 배치의 증분 풀이에서·Bitwuzla-BV 는 큰 배치의 비증분 풀이에서 우세하다는 결론을 확인했다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. Definition 9 에서 도출했다. 이동 시간이 불확실한 조건의 실행 성능 보장으로 넓히지 않는다는 한계를 유지한다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실에서 부분 강등. 출처 실재는 OpenAlex(DOI 10.1109/LRA.2025.3534682, IEEE RA-L 10(3):2654–2661, 2025-01-27, 저자 5명 일치)로 확인했다. marmotlab PDF 는 이번 검증에서 텍스트 추출에 실패했다(원문 미대조). 초록 요약으로 확인되는 부분은 '필요한 로봇이 모두 와야 작업을 시작하며, 대기(idle waiting)를 줄이는 것이 목표'라는 데까지다. 연합 능력 벡터 합 조건, 실행 기간 내내 함께 있어야 한다는 조건, '탐색·구조 모사 계산 실험'이라는 틀은 확인하지 못했다(SADCHER 논문의 인용 설명에도 없다). 확인된 부분은 [사실], 나머지는 [추정]으로 나눈다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 초록의 '모든 필요 로봇이 모여야 시작' 조건에서 끌어낸 추론이다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 실제 창고의 피킹–포장 인계와 같다고 주장하지 않는 한계를 유지하고, 의견의 주체를 밝힌다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실에서 추정으로 강등. 분산 강화학습 일정 정책과, 휴리스틱·MIP 기준선과 비슷하거나 낫고 두 자릿수 이상 빠르다는 저자 보고는 OpenAlex 의 초록 요약으로 확인했다. 그러나 '최대 150 에이전트·500 작업·5종 능력'이라는 규모 수치는 PDF 텍스트 추출 실패와 검색 2회로도 확인하지 못했다. 저자 보고이며 검증 단계에서 원문을 대조하지 못했다는 점을 병기한다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: data/source_texts/ref-377.txt 의 Options 주석(greedy 는 최적성 미보장·더 빠를 수 있음, A* 는 최적성 보장·더 오래 걸릴 수 있음). 기존 6절 분리 페이지와 같은 내용이므로 기존 각주를 재사용한다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 근거 메모의 'rmf_task 기본 계산기'는 비용 계산기를 지정하지 않았을 때 쓰는 BinaryPriorityCostCalculator(ref-377 주석)로 한정해야 한다. Dai 외의 목적(메이크스팬)은 초록 요약 수준에서 확인했다."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf_ros2 2.14.0 태그의 CHANGELOG.rst(raw)에서 '2.14.0 (2026-09-26)'과 #543 'Fix phase key for skip requests', #524 'Fix cumulative delay calculation in EasyTrafficLight'를 확인했다. 같은 URL 이 실행 2026-10-10-01(ref-1424)·2026-10-10-02(ref-1458)에서 이미 등록됐다."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 근거(f26)를 확인했다. 의견의 주체를 밝힌다."
+    },
+    {
+      "finding_id": "f28",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. oq-019 부분 근거일 뿐이며 해결로 바꾸지 않는다(해결 제안 없음과 일치)."
+    },
+    {
+      "finding_id": "f29",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. task_request.json 한 파일 범위의 판단이고 다른 작업 유형 스키마는 대조하지 않았다. oq-049 는 열린 상태로 둔다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-1403(Tuck 외, https://arxiv.org/html/2403.11737v1)는 실행 2026-10-10-02 의 ref-1454 와 URL 이 같다 — 같은 출처를 새 id 로 중복 등록할 위험이 있다",
+      "ref-1398(rmf_fleet_adapter 2.14.0 CHANGELOG.rst)은 실행 2026-10-10-01 의 ref-1424, 실행 2026-10-10-02 의 ref-1458 과 URL 이 같다",
+      "f5 는 기존 7절 BinaryPriorityScheme 행(ref-390, 헤더)의 '낮음은 nullptr' 내용과 겹친다 — 행을 고쳐 쓰고 새 행을 만들지 않는다",
+      "f24 는 기존 6절 주제 페이지(2026-09-25-area14-s6)의 탐욕·A* 문장과 같은 내용이다 — 기존 각주 ref-377 재사용",
+      "f13 의 구간·선택 구간·시간 관계·겹침 금지는 기존 7절 OR-Tools 행과 같다 — 누적 용량 제약만 새로 더한다",
+      "새 열린 질문 3번(작업 완료 시각 합·납기 지연 합·계획 변경량의 가중치 검증)은 oq-054(출하 마감과 배정 목적함수 결합), oq-051(순서 결정 목적함수 지표)과 일부 겹친다",
+      "용어 후보 '이론 모듈로 만족 가능성(SMT)'은 실행 2026-10-10-02 브리프의 용어 후보와 같다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": []
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f20: 문장을 둘로 나눈다. (가) '필요한 로봇이 모두 작업 위치에 와야 작업을 시작하고, 먼저 온 로봇의 대기를 줄이는 것이 목표다'는 [사실]로 둔다. (나) '연합 능력 벡터 합이 요구를 충족해야 시작한다, 실행 기간 내내 함께 있어야 한다, 탐색·구조를 모사한 계산 실험이다'는 [추정]으로 강등하고 '검증 단계 원문 미대조'를 병기한다 — 검증에서 PDF 텍스트를 뽑지 못했고 초록 요약으로는 (가)까지만 확인됐다.",
+    "5절에 '현장 유형: 기타' 사례(f20~f22)를 둘 때 제목·설명을 '현장을 특정하지 않은 계산 실험이며 현장 적용 사례가 아니다'로 밝힌다. '탐색·구조'는 f20 (나)의 [추정] 범위로만 언급한다. site_matrix_updates 의 기타 칸 제목에도 '계산 실험'을 넣는다 — 현장 실증으로 읽히지 않게 하기 위해서다.",
+    "f23: [사실] → [추정]으로 강등한다. '최대 150 에이전트·500 작업·5종 능력'은 '저자 보고, 검증 단계 원문 미대조'로 병기하고, 휴리스틱·MIP 대비 결과는 '저자 실험, 독립 재현 미확인'을 유지한다 — 검증에서는 규모 수치를 확인하지 못했다.",
+    "f12: 메이크스팬 설명의 괄호 정의 '차고지 복귀를 포함한 모든 로봇의 총 작업 시간 중 최댓값'은 빼거나 '정의 세부 미확인'으로 표시한다. 'Dai 외는 메이크스팬 최소화를 목표로 한다'까지만 쓴다 — 검증에서 원문 정의를 대조하지 못했다.",
+    "f9·f11·f12·f25: 비용 정의 문장의 주어를 'BinaryPriorityCostCalculator(계획기에 비용 계산기를 지정하지 않으면 쓰는 계산기, ref-377 주석)'로 한정한다. 'Open-RMF 계획기가 최소화하는 목적 전체' 또는 'Open-RMF 기본 비용'으로 일반화하지 않는다 — 같은 헤더(ref-377)에 완료 시각·배터리·바쁨 가중치를 갖는 TaskAssignmentStrategy 가 있으나, 그 가중치와 이 계산기의 관계는 확인되지 않았다. 이 관계의 확인은 additional_research_requests 로 넘긴다.",
+    "f4·f8·f16·f22·f25·f27·f28: [의견] 문장마다 의견의 주체를 '이 위키의 판단(외부 조사 메모 기반)'처럼 밝힌다 — 공통 규칙 2절과 검증 항목 5에 따라 의견의 주체를 표시해야 한다.",
+    "7절 BinaryPriorityScheme 행: '비용 반영 방식은 미확인'을 f5~f7 의 내용(높음은 BinaryPriority(1)·낮음은 nullptr, 로봇 사이 배분·로봇 안 순서 위반 시 비용에 벌점 계수를 곱함)으로 바꾼다. 각주는 ref-390 을 유지하고 ref-1408·ref-1407 을 더한다. 태그는 [사실]을 유지하고 f8 은 [의견]으로 덧붙인다 — 새 행을 만들지 않는다.",
+    "7절 Open-RMF 작업 요청 스키마 행과 5절 시작 조건 칸: '마감·선후 필드 없음'을 '공통 최상위 스키마(8개 필드)에 마감·선후 필드 없음, description·priority 는 플릿 지원 스키마에 위임'(f1·f2)으로 범위를 한정한다. 접근일은 2026-10-10 으로 고친다.",
+    "8절(주제 페이지 2026-09-25-area14-s8) 머리 문장 '성능 수치는 모두 저자 실험 결과이며 이 위키가 원문을 열지 못했다'를 고친다. 기존 항목에만 적용되도록 한정하고, Tuck 외는 원문을 열어 확인했다(ref-1403)는 점과 Dai 외는 검증 단계에서 원문을 대조하지 못했다는 점을 구분해 적는다.",
+    "참고문헌: ref-1409 의 published 를 '2025' 대신 '2025-01-27'로 고친다. 게재지를 IEEE Robotics and Automation Letters, 10(3), 2654–2661, DOI 10.1109/LRA.2025.3534682 로 적고 '게재지 미확인' 문구를 지운다 — OpenAlex 서지 기록으로 확인했다.",
+    "참고문헌 중복: ref-1403 는 실행 2026-10-10-02 의 ref-1454 와 URL 이 같고, ref-1398 은 ref-1424·ref-1458 과 URL 이 같다. 그 id 가 이미 게시돼 있으면 각주와 reference_updates 에 기존 id 를 쓰고 새 id 를 등록하지 않는다. 게시 전이면 reference_updates 에 같은 URL 을 다른 id 로 두 번 넣지 않는다 — 공통 규칙 10(같은 주장에는 기존 각주 재사용).",
+    "새 열린 질문 3번('작업 완료 시각 합, 납기 지연 합, 계획 변경량을 함께 최적화할 때…'): 질문 끝에 '(관련 기존 질문: oq-054, oq-051)'을 붙인다 — 기존 질문과 일부 겹친다.",
+    "용어집: '이론 모듈로 만족 가능성(SMT)'이 실행 2026-10-10-02 에서 이미 등록됐으면 신규 등록하지 않고 기존 항목을 쓴다. '메이크스팬' 정의는 ref-379(메이크스팬 목적 예제)와 f12 범위 안에서 쓰고, 차고지 복귀 같은 세부는 넣지 않는다.",
+    "열린 질문 oq-019·oq-049: 부분 근거(f28·f29)만 덧붙이고 상태는 [열림]으로 둔다 — 해결 제안이 없고 답이 되는 finding 도 없다.",
+    "트랙 반영 제안 4건(2026-09-25-51·66·77·98): 이번 브리프에 그 내용(HDDL, VDA 5050 waitForTrigger, LLM 스케줄 벤치마크, 재스케줄링 분류·안정성 지표)을 조사·검증한 finding 이 없으므로 이번 실행에서는 6·7절에 반영하지 않는다. 다음 26. 작업 순서·스케줄링 실행으로 넘긴다(본문에 넣으면 드리프트). 제안 요약의 '27. AI·학습·적응과 모델 운영'은 개정 분류의 '47. AI·학습·적응과 모델 운영'이다.",
+    "직접 인용: 페이지에서 ref-1407(BinaryPriorityCostCalculator.cpp)의 코드나 주석을 직접 인용할 때는 한 번(예: 'Ignore charging tasks in cost')만 쓰고, 나머지 비용식·검사 조건은 재서술한다 — 출처당 직접 인용 1회 규칙(5.3)."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 27건, 미확인 2건, 교차 확인 0건(rmf_task 헤더·구현·스키마는 같은 프로젝트 자료라 독립 교차 확인으로 세지 않았다). 강등: f20 사실 → 일부 추정(연합 능력 조건·탐색·구조 모사 틀을 원문으로 대조하지 못함), f23 사실 → 추정(150 에이전트·500 작업·5종 능력 규모 수치 미확인). 원문 미열람 출처: ref-1409(Dai 외) — 검증 단계에서 PDF 텍스트를 뽑지 못했다. 실재와 서지(IEEE RA-L 10(3), 2025-01-27, DOI 10.1109/LRA.2025.3534682, 저자 5명)는 OpenAlex 로, 핵심 설정(필요한 로봇이 모두 모여야 시작, 메이크스팬 최소화, 휴리스틱·MIP 대비 두 자릿수 이상 빠름)은 초록 요약으로만 확인했다. ref-125·ref-377·ref-379 는 입력 원문 텍스트로, ref-1407·ref-1408·ref-1398 은 GitHub raw 로, ref-1403 는 arXiv HTML 로 원문을 대조했다. 브리프의 ref-1403·ref-1409 은 fetched: true 인데 fetch_url 이 null 이다(리서치 기록 누락). 주의: Open-RMF 비용 설명은 비용 계산기를 지정하지 않았을 때 쓰는 BinaryPriorityCostCalculator 에 한정된다. 같은 헤더의 TaskAssignmentStrategy(완료 시각·배터리·바쁨 가중치)와의 관계는 미확인이다. 이진 우선순위는 비용 벌점이며 마감 보장이 아니다. Tuck 외와 Dai 외는 계산 실험이고, 5절 '기타' 사례는 현장 실증이 아니다. 같은 URL 의 출처가 이전 실행(ref-1454, ref-1424·ref-1458)과 겹쳐 id 통일이 필요하다. 트랙 반영 제안 4건은 이번 브리프가 다루지 않아 반영하지 않고 다음 실행으로 넘긴다. 정정 요청 없음. 열린 질문 oq-019·oq-049 는 부분 근거만 추가하고 해결로 인정하지 않는다. 검증 검색 6회를 썼다.",
+  "retry_reason": null
+}

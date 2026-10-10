@@ -1,0 +1,155 @@
+{
+  "run_id": "2026-10-10-06",
+  "date": "2026-10-10",
+  "run_type": "update",
+  "target": {
+    "area_no": 20,
+    "area_name": "20. 로봇·제조사 관제 연동",
+    "category": "F. 연동"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 7,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "bd74709",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 6
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2501.4,
+  "first_retries": 0,
+  "second_retries": 2,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-10 | 20. 로봇·제조사 관제 연동 | 차등 갱신: VDA 5050 3.0.0 공식 자료 날짜 차이 병기, 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 상업 시설·기타 사례 추가, Lopes·Franke(ref-1419)·IO-AMRs 서지·범위 보강, 새 열린 질문 5건 | run 2026-10-10-06",
+  "notes": [
+    "참고문헌 생성: references/ref-1412.md",
+    "참고문헌 생성: references/ref-1413.md",
+    "참고문헌 생성: references/ref-1419.md",
+    "참고문헌 생성: references/ref-1415.md",
+    "참고문헌 생성: references/ref-1416.md",
+    "참고문헌 생성: references/ref-1417.md",
+    "세부영역 반영 제안 2건을 반영으로 표시했다(20. 로봇·제조사 관제 연동, 실행 2026-10-10-06)"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 6,
+    "standards": 0,
+    "open_questions": 5,
+    "flow_cells": 2,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-10 17:34:56 KST",
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 1268926,
+    "cache_read_input_tokens": 2128640,
+    "output_tokens": 179235,
+    "cost_usd": 14.2851,
+    "calls": 9,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.2701,
+        "output_tokens": 28360,
+        "cache_read_input_tokens": 1710045,
+        "cache_creation_input_tokens": 156231
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 8.1311,
+        "output_tokens": 112177,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 732341
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 3.7865,
+        "output_tokens": 38227,
+        "cache_read_input_tokens": 266640,
+        "cache_creation_input_tokens": 371081
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md (8개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-10-area20-s7.md",
+        "chars": 1938
+      },
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-10-area20-s6.md",
+        "chars": 1684
+      },
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-10-area20-s11.md",
+        "chars": 1604
+      },
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-10-area20-s8.md",
+        "chars": 1251
+      },
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-10-area20-s10.md",
+        "chars": 1088
+      },
+      {
+        "from": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-10-area20-s3.md",
+        "chars": 915
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 19,
+  "cross_checked_findings": 0
+}

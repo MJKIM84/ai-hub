@@ -1,0 +1,626 @@
+{
+  "run_id": "2026-10-10-06",
+  "outline": [
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 1100,
+      "summary": "기존 3단락을 유지하고 IO-AMRs 과제의 주관·협력 기관과 계획 단계라는 범위 한정 단락만 더한다. [사실][^ref-258]",
+      "planned_findings": [
+        "f21",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1900,
+      "summary": "연동 위치와 제어 수준을 나눠 기록하자는 위키 의견을 더하고, 전시 시연(기타)과 호텔 배송(상업 시설) 사례를 벤더 주장으로 추가한다. [의견][^ref-251][^ref-1029]",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f34",
+        "f35",
+        "f36",
+        "f37"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "VDA 5050 단절 시 연결 상태와 동작 실패를 나눠 보존하는 관점, 신호등 연동의 정지 시간 전제와 교착 시 사람 개입, ROS→MassRobotics 상태·오류 매핑 사례를 더한다. [의견][^ref-031]",
+      "planned_findings": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f27",
+        "f29"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 1600,
+      "summary": "VDA 5050 3.0.0 공식 자료의 날짜가 서로 다름(카탈로그 2026-03-17, 보도자료 2026-04-20)을 병기하고 공개 구현의 판 정보를 더한다. [사실][^ref-1423][^ref-032]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f12",
+        "f25",
+        "f26",
+        "f28",
+        "f30",
+        "f31",
+        "f32",
+        "f33"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1300,
+      "summary": "Lopes 외 논문의 초록·본문 표현 차이를 병기하고 실험실 감시 결과로 한정하며, Franke 외 연구의 서지와 워크숍 구성을 보강한다. [사실][^ref-136][^ref-1429]",
+      "planned_findings": [
+        "f15",
+        "f16",
+        "f17",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 900,
+      "summary": "21. 상호운용 표준·적합성(ISO 21423 단계, 추정), 47. AI·학습·적응과 모델 운영·12. 채팅으로 업무 지시·오케스트레이션(MCP 시연), 2·64·67번 사례 연결을 더한다. [사실][^ref-854]",
+      "planned_findings": [
+        "f38",
+        "f39",
+        "f40"
+      ]
+    },
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 1000,
+      "summary": "oq-005·oq-031·oq-032·oq-033 에 부분 근거만 달고 열림을 유지하며 새 질문 5건을 적는다.",
+      "planned_findings": [
+        "f5",
+        "f11",
+        "f14",
+        "f29"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "차등 갱신: 3절 IO-AMRs 범위 한정 추가, 5절 연동 위치·제어 수준 기록 기준과 상업 시설·기타 사례 추가, 6절 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 7절 VDA 5050 3.0.0 날짜 병기·공개 구현 판 정보, 8절 Lopes·Franke 서지·범위 보강, 10절 21·47·12·2·64·67번 연결, 11절 부분 근거와 새 질문 5건, 13절 각주 갱신(ref-258·ref-1429 열람 반영, 신규 각주)",
+      "patches": [
+        {
+          "section": "3. 왜 중요한가",
+          "action": "replace",
+          "frontmatter": {
+            "related_areas": [
+              2,
+              5,
+              12,
+              15,
+              21,
+              22,
+              25,
+              27,
+              29,
+              32,
+              42,
+              47,
+              64,
+              67
+            ],
+            "sources": [
+              "ref-004",
+              "ref-031",
+              "ref-032",
+              "ref-105",
+              "ref-136",
+              "ref-148",
+              "ref-153",
+              "ref-159",
+              "ref-230",
+              "ref-251",
+              "ref-252",
+              "ref-254",
+              "ref-255",
+              "ref-256",
+              "ref-257",
+              "ref-258",
+              "ref-1429",
+              "ref-742",
+              "ref-854",
+              "ref-1029",
+              "ref-1398",
+              "ref-1423",
+              "ref-1424",
+              "ref-1426",
+              "ref-1427",
+              "ref-1428"
+            ],
+            "last_run": "2026-10-10"
+          },
+          "content": "AMR(Autonomous Mobile Robot, 자율이동로봇) 제조사마다 자체 플릿 관리 소프트웨어를 쓰기 때문에 여러 브랜드를 섞은 플릿을 한 현장에서 운영하기 어렵다는 문제가 연구 과제로 다뤄지고 있다. [사실][^ref-258] 미국 ARM Institute의 IO-AMRs 과제는 이 문제를 풀려고 다중 지도 관리자·연결 계층·전역 플릿 관리자를 만드는 것을 목표로 한다. [사실][^ref-258]\n\n과제 소개 페이지는 주관 기관을 Siemens Technology로, 협력 기관을 FedEx·Yaskawa Motoman·Waypoint Robotics·University of Memphis로 적는다(발행일 미확인, 2026-10-10 확인). [사실][^ref-258] 같은 페이지는 위 세 구성요소를 이전 ARM Institute 지원 과제의 산출물을 활용해 만들 계획으로 서술하므로, 소개 시점의 과제는 계획 단계였다. [사실][^ref-258] 완료일·공개 코드·실물 결과가 소개 페이지에 없으므로, 이 위키는 이 소개를 과제 목표의 근거로만 쓰고 달성한 운영 성과의 근거로는 쓰지 않는다. [의견][^ref-258]\n\n표준 쪽에서도 같은 문제를 다룬다. VDA 5050은 서로 다른 제조사의 AGV(Automated Guided Vehicle, 무인운반차)·AMR을 하나의 관제(fleet control)로 운용하기 위한 제조사 중립 통신 인터페이스이다. [사실][^ref-031][^ref-1429]\n\n이 영역의 옛 분류의 질문은 개별 로봇을 직접 제어할지, 제조사 관제에 작업을 맡길지이다. Interact Analysis는 자사 분석(의견)에서 제3자 관제가 로봇에 직접 접속하는 저수준 제어가 현재 가장 흔하고 제조사 관제에 작업을 넘기는 고수준 제어가 늘고 있으나, 장기적으로 어느 쪽이 쓰일지는 아직 정해지지 않았다고 본다. [의견][^ref-257] 어느 쪽을 고르느냐에 따라 ROP가 공용 통로·승강기·문에서 다른 플릿과 교통을 조정할 수 있는 정도와 제조사에 요구해야 할 API가 달라질 것으로 보인다. [추정][^ref-004][^ref-251]"
+        },
+        {
+          "section": "5. 적용 사례 (현장 유형 명시)",
+          "action": "append",
+          "content": "### 연동 위치와 제어 수준을 나눠 기록하기\n\n위 물류창고 사례의 '수행 자원'과 '제약' 행은 연동 위치와 제어 수준을 한데 다룬다. 이 위키는 연동 위치(제조사 관제 API를 거치는지, 로봇에 직접 붙는지)와 [제어 수준](../../glossary/fleet-control-level.md)(전체 제어인지)을 따로 판단해 별도 항목으로 기록하고, 제어 권한은 경로 지정·교체, 정지, 진행 상태 반환으로 나눠 적는 것이 좋다고 본다. [의견][^ref-251][^ref-1029]\n\nInOrbit 개발자 문서는 자사 플랫폼이 제어하는 로봇 플릿을 RMF core에 잇는 오픈소스 전체 제어 플릿 어댑터를 제공해 여러 제조사 로봇의 중앙 교통 조정을 가능하게 한다고 밝힌다(벤더 주장, 발행일 미확인, 2026-10-10 확인). [추정][^ref-1029] 관제 플랫폼을 거치는 연동도 전체 제어로 붙을 수 있다는 예이므로, 위치와 수준을 한 항목으로 묶으면 이런 구성이 구분되지 않는다고 이 위키는 본다. [의견][^ref-251][^ref-1029] 직접 제어와 제조사 관제 위임의 처리량·비용을 같은 조건에서 비교한 자료는 이번 갱신(2026-10-10)에서도 찾지 못했다([열린 질문](../../open-questions.md) oq-031).\n\n**현장 유형:** 기타\n\n**사례:** 전시회 공유 공간에서 여러 제조사 로봇이 함께 임무를 수행하는 시연(Automate 2026)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | Ati Robotics·Kärcher·Neura Robotics·Omron·Peer Robotics·Quasi Robotics·Unitree 7개사 로봇이 공유 공간에서 함께 임무를 수행하고, Slamcore·Guide Robotics의 실시간 위치 추적(Real-Time Locating System, RTLS)으로 수동 차량까지 묶었다고 InOrbit이 밝힌다(벤더 주장, 로봇 대수 미확인). [추정][^ref-1427] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\nInOrbit은 이 시연에 자사를 포함해 모두 10개사가 협업했다고 밝힌다(벤더 주장, 발행일 미확인, 2026-10-10 확인). [추정][^ref-1427] 이 위키는 '10개사'를 로봇 7개사·위치 추적 2개사·InOrbit을 합친 참여 기업 수로 읽으며, 로봇 대수나 AMR 제조사 수가 아니므로 상용 운영 사례가 아닌 전시 시연으로 분류한다. [의견][^ref-1427] 발표 페이지에는 로봇 대수·성능·임무 실패 기록이 없어, 이 사례를 연동 방식의 효과를 판단하는 근거로 쓰지 않는다.\n\n**현장 유형:** 상업 시설\n\n**사례:** 호텔 로봇 배송에서 플랫폼과 로봇 제조사의 연동(카카오모빌리티–로보티즈)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 카카오모빌리티(플랫폼)가 2024년 로보티즈(로봇 제조사)와 업무협약을 맺고 호텔에 상용 로봇 배송 서비스를 적용해 왔다고 발표했다(벤더 주장). [추정][^ref-1428] 제어 위임 방식·연동 API·로봇 대수는 미확인이다. |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인(회사가 밝힌 가동률·성공률 수치는 분모·기간이 확인되지 않아 싣지 않는다) |\n\n카카오모빌리티는 2026-03-16 보도자료에서 신라스테이 서초·반얀트리 클럽 앤 스파 서울 등 호텔에 이 서비스를 적용했다고 밝혔다(벤더 주장, 독립 확인 없음). [추정][^ref-1428] 같은 사례가 [2. 사용 사례·요구·책임 범위](../planning-and-business/use-cases-requirements-and-scope.md)에도 있다. 이 위키는 이 사례를 국내 플랫폼–로봇 제조사 연동 사례로 분류하되, 제어 위임 방식·API·로봇 대수가 공개되지 않았으므로 한 현장에서 여러 제조사 플릿을 함께 운영한 증거나 직접 제어·위임 비교 근거(oq-031)로는 쓰지 않는다. [의견][^ref-1428]"
+        },
+        {
+          "section": "6. 대표 접근법과 기술",
+          "action": "append",
+          "content": "### 연결 단절 시 실행 의미와 상태 분리\n\n[F. 연동](index.md) 대분류 페이지에 적었듯이 VDA 5050 3.0.0에서 로봇은 브로커와 연결이 끊겨도 받은 주문 정보를 유지하고 마지막으로 해제된 노드까지 주문을 수행한다. [사실][^ref-031] 같은 판은 주문에 딸린 동작·즉시 동작·구역 동작의 [동작 상태](../../glossary/action-status.md)를 상태 메시지의 actionStates·instantActionStates·zoneActionStates 세 배열로 나눠 보고하게 하며, 구역 동작의 예정 상태 보고는 선택 사항이다. [사실][^ref-031]\n\n이 위키는 로봇이 단절 중에도 해제된 노드까지 주행을 이어 가므로, ROP 어댑터가 [연결 상태](../../glossary/connection-state.md)의 단절을 곧 정지로 해석하지 말고 연결 상태와 동작 실패(동작 상태 배열의 FAILED)를 별도 상태로 보존해야 한다고 본다. [의견][^ref-031] 단절 뒤 복구 절차는 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)에서 다룬다.\n\n### 신호등 수준 연동의 전제\n\nOpen-RMF의 신호등 수준 연동 API(EasyTrafficLight, rmf_fleet_adapter 2.14.0, 2026-09-26)는 로봇이 다음 체크포인트에서 멈출 시간이 있을 때만, 곧 정지 명령의 통신 지연과 로봇의 최대 감속을 감안해 이동 시작을 알리라고 경고한다. 이를 어기면 이동·대기 오류(MovingError·WaitingError)가 나고 교통 흐름이 끊기거나 교착될 수 있다고 적는다. [사실][^ref-1424] 이는 API 계약의 전제이며 실험 수치가 아니다.\n\n같은 헤더는 해결할 수 없는 충돌로 [교착](../../glossary/deadlock.md)이 생기면 RMF 교통 협상 시스템이 충돌 참여자를 충분히 제어하지 못하므로 사람 개입이 필요할 수 있다고 적는다. [사실][^ref-1424] 이 위키는 신호등 수준으로 붙는 제조사 플릿의 연동 계약에 정지 명령의 유무만이 아니라 정지 가능 시간(통신 지연·최대 감속), 정지 확인 응답, 교착 시 사람 개입 경로를 함께 적는 것이 좋다고 본다. [의견][^ref-1424] 제어 수준별 교통 성능을 같은 조건에서 비교한 자료는 여전히 찾지 못했다(oq-032). 교착 해소 방법 자체는 [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)에서 다룬다.\n\n### 상태·오류 변환 사례\n\nros_amr_interop 1.1.1 태그의 MassRobotics 송신 예제 설정은 ROS 토픽 /we_b_robots/mode를 [운용 상태](../../glossary/operational-state.md)(operationalState)에, /troubleshooting/errorcodes를 오류 코드(errorCodes)에 잇고, 쉼표로 구분한 오류 코드 문자열을 MassRobotics 표준이 요구하는 배열로 바꾼다고 주석에 적는다(발행일 미확인, 2026-10-10 확인). [사실][^ref-255] MassRobotics 상태 보고의 필수 필드는 7절에 적었다.\n\n이 위키는 이 예제를 ROS에서 MassRobotics로 가는 한 방향의 운용 상태·오류 매핑 사례로만 보고, Open-RMF·VDA 5050·MassRobotics 세 체계의 공통 상태·오류 어휘로 일반화하지 않는다. [의견][^ref-255][^ref-230] 세 체계를 함께 다루는 표준 매핑은 이번에도 확인하지 못했다(oq-033)."
+        },
+        {
+          "section": "7. 관련 표준·프레임워크·오픈소스",
+          "action": "append",
+          "content": "### VDA 5050 3.0.0의 날짜 표시\n\nVDA 발행물 카탈로그의 [VDA 5050](../../glossary/vda-5050.md) Version 3.0.0 항목은 날짜를 2026-03-17로 표시하고, VDA 보도자료 'Version 3.0 of VDA 5050 released'의 본문 날짜는 2026-04-20(베를린)이어서 두 공식 자료의 날짜가 서로 다르다. [사실][^ref-1423][^ref-032] 카탈로그 표시일이 문서 발행일인지는 그 페이지에 설명이 없다. [사실][^ref-1423]\n\n카탈로그에서 내려받는 VDA 배포 PDF의 표지는 판 표기를 2026년 3월로 적는 것으로 보고됐으나, 검증 단계에서 표지 문구를 대조하지 못했다. [추정][^ref-1423] 이 자료들은 모두 VDA 계열이라 독립 교차 확인이 아니며, 날짜 차이의 원인은 어느 자료에도 설명이 없다.\n\n이 위키는 VDA 5050 3.0.0의 발행일을 하나로 확정하지 않고, 카탈로그 표시일(2026-03-17)과 보도자료 날짜(2026-04-20)를 함께 남기는 것이 맞다고 본다. [의견][^ref-1423][^ref-032] 명세 원문 각주의 발행일은 '미확인'으로 두며, [열린 질문](../../open-questions.md) oq-005는 열린 채로 남는다.\n\n### 공개 구현과 판 정보\n\n- **MassRobotics AMR 상호운용 표준**: 1.0 태그의 JSON 스키마는 상태 보고(statusReport)의 필수 필드를 uuid·timestamp·operationalState·location 넷으로 두며, 오류 코드(errorCodes)는 필수가 아니다(발행일 미확인, 2026-10-10 확인). [사실][^ref-230]\n- **Open-RMF 신호등 연동**: 이 위키는 신호등 연동을 평가·재현할 때 쓰는 rmf_fleet_adapter 패키지 판을 함께 기록하는 것이 좋다고 본다. 2.14.0(2026-09-26) 변경 이력에 EasyTrafficLight 관련 수정이 들어 있기 때문이며, 수정 내용은 [27. 다중 로봇 경로·교통 관리 — MAPF](../planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)에서 다룬다. [의견][^ref-1398]\n- **Open-RMF 구역 기능**: Open Robotics Discourse의 상호운용 관심 그룹(Interop SIG) 공지(2026-05-04 게시)는 CHART가 RMF-2.0 프로젝트로 개발한 새 기능을 단계적으로 공개하며, 첫 단계인 시설 구역(zones) 관리 기능이 공지 시점에 검토 중이라고 밝힌다. 병합 여부는 이 공지로 알 수 없다. [사실][^ref-1426] 이 위키는 어댑터 기능 목록을 정리할 때 배포판(태그)에 든 기능과 이런 검토 중 기능을 구분해 적는 것이 좋다고 본다. [의견][^ref-1426]\n- **free_fleet**: 1.3.0 태그의 README는 메시지를 CycloneDDS의 dds_idlc로 FleetMessages.idl에서 생성하고, ROS 1·ROS 2 양쪽의 cyclonedds 판을 같게 맞추라고 권고하며, DDS를 쓰지 않는 새 판을 준비 중이라고 적는다(태그 날짜 미확인, 2026-10-10 확인). [사실][^ref-256] 이 위키는 현재 기본 브랜치의 zenoh 기반 어댑터 설명과 과거 1.3.0 태그의 CycloneDDS 기반 설치 절차를 섞지 않고 판을 밝혀 적는 것이 좋다고 본다. [의견][^ref-256]\n- **vda-5050-lib.js**: v1.7.0(2026-04-29) 변경 이력은 VDA 5050 3.0 지원을 추가하며 [구역 집합](../../glossary/zone-set.md)(ZoneSet)·응답(Responses) 토픽, 판 값 3.0.0, 3.0용 사전 컴파일 검증기를 넣었다고 적는다. [사실][^ref-742] 이 위키는 어댑터에 VDA 5050 라이브러리를 쓸 때 라이브러리 판과 지원 규격 판을 함께 고정하고, 라이브러리가 선언한 3.0 지원을 제조사 로봇과의 적합성·실물 호환성 검증으로 세지 않는 것이 좋다고 본다. [의견][^ref-742]"
+        },
+        {
+          "section": "8. 대표 연구와 자료",
+          "action": "append",
+          "content": "### 서지와 결과 범위 보강(2026-10-10)\n\n- Lopes, D., Pereira, T., Gonçalves, A. 외 14명(저자 17명), Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency(Applied Sciences 15(13) 7235, 2025-06-27) — 초록은 작업 상태 갱신(task status updates)의 평균 지연을 120 ms, 화면 갱신을 1초 미만으로 보고한다. [사실][^ref-136] 반면 본문 §6.2는 같은 값을 로봇 상태의 평균 갱신 간격(약 120 ms)으로 적는 것으로 보고됐으나 검증 단계에서 대조하지 못했다. [추정][^ref-136] 두 표현이 같은 측정인지는 열린 질문으로 남긴다.\n- 같은 논문 본문 §6.2는 AMR·AGV를 포함해 최대 20대를 화면·서버 성능의 큰 저하 없이 동시에 감시했고 시험 기간 서버 가동률이 99.5% 이상이었다고 보고한다(검증 단계 미대조). [추정][^ref-136] 본문 §5.3의 지도 작성·연결 시험은 약 500 m² 실험실에서 이뤄졌고, 120 ms·20대 결과의 측정 장소는 논문에 명시되지 않은 것으로 보고됐다(검증 단계 미대조). [추정][^ref-136] 이 위키는 이 결과를 실험실 감시 성능으로 한정하고, 자동차 공장의 장기 운영 지연이나 20대 동시 주행 제어 성능으로 인용하지 않는다. [의견][^ref-136]\n- Franke, S., Lünsch, D., Jost, J., & Roidl, M.(Logistics Journal: Proceedings Nr. 19, 2023-10-11, DOI 10.2195/lj_proc_franke_en_202310_01) — 소프트웨어 업체·하드웨어 제조사·최종 사용자와의 워크숍으로 VDA 5050 개념에 기반한 새 표준 인터페이스 요구를 정리한 연구다. [사실][^ref-1429] 본문 p.5는 참여사를 소프트웨어 기업 2곳·하드웨어 제조사 3곳·창고 사용자 1곳의 여섯 회사로, 시기를 2023년 봄으로 적는 것으로 보고됐다(검증 단계 미대조). [추정][^ref-1429] 이 위키는 이 연구를 연동 요구 분석 자료로 분류하며, 실물 플릿을 비교한 실험이 아니므로 직접 제어와 제조사 관제 위임의 처리량 비교 근거로 쓰지 않는다. [의견][^ref-1429]"
+        },
+        {
+          "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+          "action": "append",
+          "content": "### 이번 갱신에서 더한 연결(2026-10-10)\n\n- [21. 상호운용 표준·적합성](interoperability-standards-and-conformance.md) — 연계 대상: ISO 21423(산업용 이동로봇의 통신·상호운용)의 공식 카탈로그가 2026-10-10 기준 60.00(발행 중) 단계를 표시한다는 외부 메모 기록이 있으나, 리서치 단계에서는 원문을 열지 못했다. [추정][^ref-159] 규격 내용과 공통 좌표계 문제는 21. 상호운용 표준·적합성 페이지와 oq-027에서 다룬다.\n- [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md), [12. 채팅으로 업무 지시·오케스트레이션](../chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) — Open Robotics Discourse의 상호운용 관심 그룹 2026-07-02 세션 공지(2026-06-25 게시)는 Open-RMF REST API를 언어 모델이 호출할 수 있는 [모델 컨텍스트 프로토콜](../../glossary/model-context-protocol.md)(MCP) 도구로 노출하는 서버와, 영어 명령을 다단계 RMF 임무로 바꿔 NVIDIA Isaac Sim 창고의 로봇이 Nav2로 실행하게 하는 에이전트(Nayantra)를 발표한다고 알린다. [사실][^ref-854] 이 위키는 이를 관제 연동과 언어 모델 연동이 만나는 지점으로 보되, 시뮬레이션 창고 시연이므로 실물 다사업자 플릿의 안정성 근거로 쓰지 않는다. [의견][^ref-854] 실행 전 승인 관문을 어디에 둘지는 [열린 질문](../../open-questions.md) oq-141에서 다룬다.\n- [2. 사용 사례·요구·책임 범위](../planning-and-business/use-cases-requirements-and-scope.md) — 5절의 호텔 배송 사례가 업무 범위 쪽에서 실려 있다.\n- [64. 상업 시설](../site-type-applications/commercial-facilities.md) — 5절의 호텔 배송 사례가 놓이는 현장 유형이다.\n- [67. 기타 현장](../site-type-applications/other-sites.md) — 5절의 전시 시연 사례가 놓이는 현장 유형이다."
+        },
+        {
+          "section": "11. 열린 질문",
+          "action": "append",
+          "content": "### 이번 갱신에서 덧붙인 근거와 새 질문(2026-10-10)\n\n분리 페이지의 '신규' 세 질문은 각각 oq-031·oq-032·oq-033이다. 아래 기존 질문은 모두 열림을 유지하며, 이번 갱신은 부분 근거만 더했다.\n\n- **oq-005** (상태: 열림) VDA 5050 3.0.0의 발행일 — 카탈로그 2026-03-17과 보도자료 2026-04-20이 서로 다르고, PDF 표지의 월 표기는 검증 단계에서 대조하지 못했다(7절).\n- **oq-031** (상태: 열림) 직접 제어와 제조사 관제 위임의 선택 — 판단 기준(연동 위치와 제어 수준을 나눠 기록)만 보탰고, Franke 외 연구와 호텔 사례는 비교 근거가 아니다(5절·8절).\n- **oq-032** (상태: 열림) 신호등 수준 연동의 교착 — 정지 가능 시간 전제와 교착 시 사람 개입 가능성을 API 문서에서 확인했으나 성능 비교 자료는 없다(6절).\n- **oq-033** (상태: 열림) 공통 상태·오류 어휘 — ROS에서 MassRobotics로 가는 한 방향 매핑 예제만 확인했다(6절).\n\n이번 실행에서 새로 올린 질문(id는 등록 때 부여된다):\n\n- **신규** (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-06) Lopes 외 논문 초록의 작업 상태 갱신 평균 지연 120 ms와 본문 §6.2의 로봇 상태 평균 갱신 간격 약 120 ms는 같은 측정인가, 그리고 이 값과 최대 20대 동시 감시는 어디서 어떤 로봇 구성·시험 기간·측정 지점으로 측정했는가?\n- **신규** (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-06) ARM Institute IO-AMRs 과제의 완료 보고서·공개 코드·실물 로봇 대수와 정량 결과는 공개됐는가?\n- **신규** (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-06) zenoh 기반 free_fleet 어댑터에 대응하는 배포 태그와 지원 조합(ROS 2 배포판·Nav2·zenoh 판) 시험표는 무엇인가?\n- **신규** (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-06) InOrbit의 Automate 2026 다중 제조사 시연에서 실제 투입된 로봇 대수와 임무 실패·재시도 기록이 공개됐는가?\n- **신규** (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-06) 카카오모빌리티–로보티즈 호텔 배송 서비스에서 플랫폼은 로봇을 직접 제어하는가, 로보티즈 관제에 임무 단위로 맡기는가, 그 연동 API와 로봇 대수·운영 기간은 공개됐는가?"
+        },
+        {
+          "section": "13. 참고 자료 (각주)",
+          "action": "replace",
+          "content": "[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-032]: VDA(Verband der Automobilindustrie), Version 3.0 of VDA 5050 released, 2026-04-20, https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN, 접근일 2026-10-10\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-09-25\n[^ref-251]: Open Robotics, Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets.html, 접근일 2026-09-25\n[^ref-252]: Open Robotics, Integration (integration) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration.html, 접근일 2026-09-25\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\n[^ref-254]: Open Robotics (open-rmf), awesome_adapters — A curated list of adapters from the community which can be used with Open-RMF (README), 미확인, https://github.com/open-rmf/awesome_adapters, 접근일 2026-09-25\n[^ref-256]: Open Robotics (open-rmf), free_fleet — README (A free fleet management system), 미확인, https://github.com/open-rmf/free_fleet, 접근일 2026-09-25\n[^ref-257]: Interact Analysis, AMR Multi-Fleet Orchestration Software Explained, 미확인, https://interactanalysis.com/insight/amr-multi-fleet-orchestration-software/, 접근일 2026-09-25 (원문 미열람)\n[^ref-258]: ARM Institute, Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs), 미확인, https://arminstitute.org/projects/interoperability-and-orchestration-of-autonomous-mobile-robots-io-amrs/, 접근일 2026-10-10\n[^ref-1429]: Franke, S., Lünsch, D., Jost, J., & Roidl, M., Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept, 2023-10-11, https://proc.logistics-journal.de/article/download/1067/1036/8465, 접근일 2026-10-10\n[^ref-136]: Lopes, D., Pereira, T., Gonçalves, A. 외 14명(저자 17명) (Polytechnic University of Coimbra 등; Applied Sciences, MDPI), Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector, 2025-06-27, https://www.mdpi.com/2076-3417/15/13/7235, 접근일 2026-10-10\n[^ref-159]: ISO, ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability, 미확인, https://www.iso.org/standard/86749.html, 접근일 2026-10-10 (원문 미열람)\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-10-10\n[^ref-255]: InOrbit (inorbit-ai GitHub), ros_amr_interop — README (ROS packages for AMR interoperability: VDA5050 connector, MassRobotics AMR sender), 미확인, https://github.com/inorbit-ai/ros_amr_interop, 접근일 2026-10-10\n[^ref-742]: coatyio (vda-5050-lib.js GitHub), vda-5050-lib.js — Universal VDA 5050 library for Node.js and browsers (README), 미확인, https://github.com/coatyio/vda-5050-lib.js, 접근일 2026-10-10\n[^ref-854]: Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse, Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP), 2026-06-25, https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687, 접근일 2026-10-10\n[^ref-1029]: InOrbit, Contents — InOrbit Developer Portal, 미확인, https://developer.inorbit.ai/docs, 접근일 2026-10-10\n[^ref-1398]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\n[^ref-1423]: VDA(Verband der Automobilindustrie), VDA 5050, 2026-03-17, https://www.vda.de/en/news/publications/publication/vda-5050, 접근일 2026-10-10\n[^ref-1424]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/EasyTrafficLight.hpp (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/EasyTrafficLight.hpp, 접근일 2026-10-10\n[^ref-1426]: Open Robotics Discourse (OSRA Interop SIG), Interop SIG, 7 May 2026: Open-RMF Upcoming Zone Feature, 2026-05-04, https://discourse.openrobotics.org/t/interop-sig-7-may-2026-open-rmf-upcoming-zone-feature/54490, 접근일 2026-10-10\n[^ref-1427]: InOrbit.AI, 10 Companies around the World Collaborate to Showcase Robot Orchestration at Automate 2026, 미확인, https://www.inorbit.ai/automate-2026, 접근일 2026-10-10\n[^ref-1428]: 카카오모빌리티, 카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속, 2026-03-16, https://www.kakaomobility.com/newsroom/detail/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0-%EA%B5%AD%EB%82%B4-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%ED%98%91%EB%A0%A5%ED%95%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EB%A1%9C%EB%B4%87-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%99%95%EC%9E%A5-%EC%A7%80%EC%86%8D-361, 접근일 2026-10-10"
+        }
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,846자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"6. 대표 접근법과 기술\" 절(1,564자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"11. 열린 질문\" 절(1,353자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"8. 대표 연구와 자료\" 절(1,168자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"3. 왜 중요한가\" 절(915자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-10-10-area20-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 20. 로봇·제조사 관제 연동 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(879자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-10-10 | 20. 로봇·제조사 관제 연동 | 차등 갱신: VDA 5050 3.0.0 공식 자료 날짜 차이 병기, 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 상업 시설·기타 사례 추가, Lopes·Franke·IO-AMRs 서지·범위 보강, 새 열린 질문 5건 | run 2026-10-10-06",
+  "index_updates": {
+    "home_recent": "2026-10-10 — 20. 로봇·제조사 관제 연동: VDA 5050 3.0.0 공식 자료의 날짜 차이(카탈로그 2026-03-17·보도자료 2026-04-20) 병기, 신호등 연동 전제와 단절 시 상태 분리, 상업 시설·기타 현장 사례 추가",
+    "category_recent": "2026-10-10 — 20. 로봇·제조사 관제 연동: 3·5·6·7·8·10·11절 차등 갱신(VDA 5050 3.0.0 날짜 병기, Open-RMF 신호등 연동 전제, ros_amr_interop 상태 매핑, Lopes·Franke 서지 보강)",
+    "area_recent": "2026-10-10 — 20. 로봇·제조사 관제 연동: 연동 위치·제어 수준 기록 기준과 호텔(상업 시설)·전시 시연(기타) 사례, 단절 시 상태 분리, 공개 구현 판 정보, 21·47·12번 연결과 새 열린 질문 5건 추가"
+  },
+  "glossary_updates": [],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "VDA 5050 3.0.0 명세 원문. 3.0.0 태그판의 §4.1(단절 시 마지막으로 해제된 노드까지 수행)·§6.6.9·§7.8(세 동작 상태 배열)을 대조했다. 이 마크다운 본문에는 판의 월 표기가 없어 발행일은 미확인으로 둔다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-032",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "Version 3.0 of VDA 5050 released",
+      "published": "2026-04-20",
+      "url": "https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "VDA 5050 3.0 판 공개를 알리는 VDA 보도자료. 본문 날짜는 2026-04-20(베를린)이며 URL 은 260421 계열이다. 카탈로그 표시일(2026-03-17)과 다르다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1423",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "VDA 5050",
+      "published": "2026-03-17",
+      "url": "https://www.vda.de/en/news/publications/publication/vda-5050",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "VDA 발행물 카탈로그의 VDA 5050 Version 3.0.0 항목. 표시 날짜 2026-03-17, PDF(3.38 MB) 내려받기 제공. 표시일이 문서 발행일인지는 설명이 없고, 배포 PDF 표지의 판 표기(2026년 3월)는 검증 단계에서 대조하지 못했다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-251",
+      "org": "Open Robotics",
+      "title": "Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "Open-RMF 책의 플릿 통합 장. 전체 제어·신호등·읽기 전용 수준과, 전체 제어에 필요한 조건(제조사 관제가 명시 경로를 지정·중단·교체)을 설명한다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1029",
+      "org": "InOrbit",
+      "title": "Contents — InOrbit Developer Portal",
+      "published": null,
+      "url": "https://developer.inorbit.ai/docs",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "로봇 운영 플랫폼의 API·SDK·커넥터를 설명하는 개발자 문서. Open-RMF 절에서 InOrbit 이 제어하는 플릿을 RMF core 에 잇는 오픈소스 전체 제어 플릿 어댑터를 밝힌다(벤더 주장).",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1424",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/EasyTrafficLight.hpp (2.14.0)",
+      "published": "2026-09-26",
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/EasyTrafficLight.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "Open-RMF 신호등 수준 연동 API 헤더(2.14.0 태그). 이동 시작 통지의 전제(정지 시간·통신 지연·최대 감속)와 교착 시 사람 개입 가능성(Blocker)을 적는다. 발행일은 2.14.0 패키지판 날짜다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1398",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0)",
+      "published": "2026-09-26",
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "rmf_fleet_adapter 패키지 변경 이력(2.14.0 태그). 2.14.0(2026-09-26)에 EasyTrafficLight 플릿 상태 발행 수정(#525)과 누적 지연 계산 수정(#524)이 기록돼 있다. 같은 URL 에 ref-1513 이 붙어 있어 병합이 필요하다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-136",
+      "org": "Lopes, D., Pereira, T., Gonçalves, A. 외 14명(저자 17명) (Polytechnic University of Coimbra 등; Applied Sciences, MDPI)",
+      "title": "Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector",
+      "published": "2025-06-27",
+      "url": "https://www.mdpi.com/2076-3417/15/13/7235",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "Applied Sciences 15(13) 7235, DOI 10.3390/app15137235. 자동차 공장 적용을 목표로 여러 제조사 AGV·AMR 을 하나의 웹 플랫폼으로 감시하는 플릿 관리 소프트웨어를 실험실에서 시험했다. 초록은 작업 상태 갱신 평균 지연 120 ms 를, 본문 §6.2 는 로봇 상태 평균 갱신 간격 약 120 ms 를 적는 것으로 보고됐다(본문은 검증 단계 미대조). 저자 '미확인'을 17명으로 정정.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1429",
+      "org": "Franke, S., Lünsch, D., Jost, J., & Roidl, M.",
+      "title": "Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept",
+      "published": "2023-10-11",
+      "url": "https://proc.logistics-journal.de/article/download/1067/1036/8465",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "Logistics Journal: Proceedings Nr. 19, DOI 10.2195/lj_proc_franke_en_202310_01. 소프트웨어 업체·하드웨어 제조사·최종 사용자와의 워크숍으로 VDA 5050 개념 기반 새 표준 인터페이스 요구를 정리했다. 학술지 원문 PDF 로 URL 을 바꿨다(원 페이지 제목은 독일어, 여기 제목은 영문판).",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-258",
+      "org": "ARM Institute",
+      "title": "Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs)",
+      "published": null,
+      "url": "https://arminstitute.org/projects/interoperability-and-orchestration-of-autonomous-mobile-robots-io-amrs/",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "ARM Institute 과제 소개. 주관 기관 Siemens Technology, 협력 기관 FedEx·Yaskawa Motoman·Waypoint Robotics·University of Memphis 이며 다중 지도 관리자·연결 계층·전역 플릿 관리자를 만들 계획을 적는다. 완료일·결과는 페이지에 없다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1426",
+      "org": "Open Robotics Discourse (OSRA Interop SIG)",
+      "title": "Interop SIG, 7 May 2026: Open-RMF Upcoming Zone Feature",
+      "published": "2026-05-04",
+      "url": "https://discourse.openrobotics.org/t/interop-sig-7-may-2026-open-rmf-upcoming-zone-feature/54490",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "CHART 가 RMF-2.0 프로젝트로 개발한 Open-RMF 구역(zones) 기능을 소개하는 2026-05-07 SIG 세션 공지. 공지 시점에 기능이 검토 중이라고 밝히며 병합 여부는 알 수 없다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-255",
+      "org": "InOrbit (inorbit-ai GitHub)",
+      "title": "ros_amr_interop — README (ROS packages for AMR interoperability: VDA5050 connector, MassRobotics AMR sender)",
+      "published": null,
+      "url": "https://github.com/inorbit-ai/ros_amr_interop",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "InOrbit 의 AMR 상호운용 ROS 패키지 저장소. 1.1.1 태그의 MassRobotics 송신 예제 설정에서 운용 상태·오류 코드 토픽 매핑과 쉼표 구분 문자열의 배열 변환을 확인했다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-230",
+      "org": "MassRobotics",
+      "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+      "published": null,
+      "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. 1.0 태그에서 statusReport 필수 필드(uuid·timestamp·operationalState·location)와 errorCodes 가 선택임을 확인했다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-256",
+      "org": "Open Robotics (open-rmf)",
+      "title": "free_fleet — README (A free fleet management system)",
+      "published": null,
+      "url": "https://github.com/open-rmf/free_fleet",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-10",
+      "summary": "Open-RMF free_fleet README. 과거 태그 1.3.0 의 README(CycloneDDS dds_idlc 메시지 생성, ROS 1·2 cyclonedds 판 일치 권고, DDS 를 쓰지 않는 새 판 준비)를 확인했다. 태그 날짜는 미확인.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-742",
+      "org": "coatyio (vda-5050-lib.js GitHub)",
+      "title": "vda-5050-lib.js — Universal VDA 5050 library for Node.js and browsers (README)",
+      "published": null,
+      "url": "https://github.com/coatyio/vda-5050-lib.js",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "Node.js·브라우저용 VDA 5050 라이브러리. v1.7.0(2026-04-29) 변경 이력의 VDA 5050 3.0 지원(ZoneSet·Responses 토픽, 판 값 3.0.0, 3.0 검증기)을 확인했다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1427",
+      "org": "InOrbit.AI",
+      "title": "10 Companies around the World Collaborate to Showcase Robot Orchestration at Automate 2026",
+      "published": null,
+      "url": "https://www.inorbit.ai/automate-2026",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-10",
+      "summary": "InOrbit 의 Automate 2026 다중 제조사 로봇 오케스트레이션 시연 페이지. 로봇 7개사·위치 추적 2개사·InOrbit 을 합쳐 10개사 협업이라고 밝힌다(벤더 주장). 로봇 대수·행사 날짜는 없다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1428",
+      "org": "카카오모빌리티",
+      "title": "카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속",
+      "published": "2026-03-16",
+      "url": "https://www.kakaomobility.com/newsroom/detail/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0-%EA%B5%AD%EB%82%B4-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%ED%98%91%EB%A0%A5%ED%95%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EB%A1%9C%EB%B4%87-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%99%95%EC%9E%A5-%EC%A7%80%EC%86%8D-361",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-10",
+      "summary": "카카오모빌리티 보도자료. 2024년 로보티즈와 업무협약을 맺고 신라스테이 서초·반얀트리 클럽 앤 스파 서울 등 호텔에 상용 로봇 배송 서비스를 적용했다고 밝힌다(벤더 주장). 제어 위임 방식·API·로봇 대수는 공개되지 않았다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-159",
+      "org": "ISO",
+      "title": "ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability",
+      "published": null,
+      "url": "https://www.iso.org/standard/86749.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "원문 미열람. 서로 다른 공급사의 산업용 이동로봇·플릿 관리자 사이 통신·상호운용을 다루는 ISO 규격 페이지. 외부 메모는 2026-10-10 단계 60.00(발행 중)을 기록했으나 리서치 단계에서 iso.org 가 막혀 확인하지 못했다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-854",
+      "org": "Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse",
+      "title": "Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP)",
+      "published": "2026-06-25",
+      "url": "https://discourse.openrobotics.org/t/interop-sig-02-july-2026-natural-language-control-of-open-rmf-fleets-via-the-model-context-protocol-mcp/55687",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-10",
+      "summary": "OSRA 상호운용 SIG 2026-07-02 세션 공지(2026-06-25 게시). Open-RMF REST API 를 MCP 도구로 노출하는 서버와 NVIDIA Isaac Sim 창고 로봇을 움직이는 에이전트(Nayantra)를 다룬다.",
+      "cited_by": [
+        "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "Lopes 외 논문 초록의 작업 상태 갱신 평균 지연 120 ms 와 본문 §6.2 의 로봇 상태 평균 갱신 간격 약 120 ms 는 같은 측정인가, 그리고 이 값과 최대 20대 동시 감시는 어디서 어떤 로봇 구성·시험 기간·측정 지점(타임스탬프 정의)으로 측정했는가?",
+      "areas": [
+        20,
+        37
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "ARM Institute IO-AMRs 과제의 완료 보고서·공개 코드·실물 로봇 대수와 정량 결과는 공개됐는가?",
+      "areas": [
+        20
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "zenoh 기반 free_fleet 어댑터에 대응하는 배포 태그와 지원 조합(ROS 2 배포판·Nav2·zenoh 판) 시험표는 무엇인가?",
+      "areas": [
+        20,
+        42
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "InOrbit 의 Automate 2026 다중 제조사 시연에서 실제 투입된 로봇 대수와 임무 실패·재시도 기록이 공개됐는가?",
+      "areas": [
+        20
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "카카오모빌리티–로보티즈 호텔 배송 서비스에서 플랫폼은 로봇을 직접 제어하는가, 로보티즈 관제에 임무 단위로 맡기는가, 그 연동 API 와 로봇 대수·운영 기간은 공개됐는가?",
+      "areas": [
+        20,
+        64
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md#5-적용-사례-현장-유형-명시",
+      "title": "20. 로봇·제조사 관제 연동"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "수행 자원",
+      "link": "docs/categories/integration/robot-and-vendor-fleet-manager-integration.md#5-적용-사례-현장-유형-명시",
+      "title": "20. 로봇·제조사 관제 연동"
+    }
+  ],
+  "additional_research_requests": [
+    "분리 주제 페이지 topics/2026/2026-09-25-area09-s7.md·s8.md·s11.md 의 본문이 이번 입력에 없어 직접 고치지 못했다. 다음 갱신에서 그 페이지들을 입력으로 넣어 (1) s7 표 VDA 5050 3.0.0 행의 '정확한 발행일 미확인'을 카탈로그 2026-03-17·보도자료 2026-04-20 병기로, (2) s8 의 ref-136 저자 '미확인'을 'Lopes, D., Pereira, T., Gonçalves, A. 외 14명(저자 17명)'으로, (3) s11 의 '신규' 세 질문을 oq-031·oq-032·oq-033 으로 바꾸도록 요청한다(이번에는 세부영역 페이지 7·8·11절과 reference_updates 로만 반영).",
+    "트랙 반영 제안(실행 2026-09-25-23): VDA 5050 팩트시트 2.1.0 태그와 3.0.0 의 필드 이름 변화(agvGeometry→mobileRobotGeometry 등)와 추가 필드를 7절에 넣으려면 이번 브리프에 없는 원문 대조 finding 이 필요하다.",
+    "트랙 반영 제안(실행 2026-09-25-35): MassRobotics 운용 상태 9종·적재 여유 비율·화물 최대 중량·부피의 형식·단위 정규화를 7절에 넣으려면 ref-230 원문 대조 finding 이 필요하다.",
+    "3절·8절: IO-AMRs 과제의 완료 여부·결과 보고서, Lopes 외 논문 본문 §6.2·§5.3 수치(PDF 판독)와 Franke 외 p.5 워크숍 구성의 원문 대조가 필요하다(현재 [추정]).",
+    "7절·10절: VDA 5050 3.0.0 GitHub 릴리스 설명의 날짜와 ISO 21423 카탈로그 단계(60.00)를 원문으로 확인해 oq-005·21. 상호운용 표준·적합성 쪽에 반영할 근거가 필요하다.",
+    "7절: Open-RMF 구역(zones) 기능이 배포판(태그)에 병합됐는지 확인할 원문 근거가 필요하다(rmf_ros2 PR #516 은 실재 미확인으로 제외)."
+  ],
+  "fixes_applied": [
+    "f3 강등 — 7절에서 PDF 표지의 판 표기(2026년 3월)를 '보고됐으나 검증 단계에서 대조하지 못했다' [추정]으로 쓰고 각주를 ref-1423 으로 달았다.",
+    "f4 분리 — 7절에서 카탈로그 2026-03-17 과 보도자료 2026-04-20 의 날짜 차이는 [사실](ref-1423·ref-032)로, PDF 표지의 월은 별도 [추정] 문장으로 나눠 썼다.",
+    "f5 — 7절에 '이 위키는 … 맞다고 본다' 형식의 [의견]으로 썼고, 13절 ref-031 각주 발행일은 '미확인' 그대로 두었다.",
+    "oq-005 — 7절과 11절에 부분 근거(f1·f2·f4 분리형, f5 의견)만 덧붙이고 상태는 열림으로 유지했다(open_question_updates 에 해결 변경 없음).",
+    "f15 — 8절에서 초록의 작업 상태 갱신(task status updates) 평균 지연 120 ms·화면 갱신 1초 미만은 [사실], 본문 §6.2 의 로봇 상태 평균 갱신 간격은 [추정](검증 단계 미대조)으로 병기했다.",
+    "f18 — 기존 '작업 상태 갱신 평균 지연 120 ms' 표현을 교체하지 않고 8절에 두 표현을 병기했으며, 실험실 감시 결과라는 한정만 [의견]으로 남기고 표현 차이는 Lopes 새 열린 질문 문장에 합쳤다.",
+    "f16·f17 — 8절에서 20대·99.5%·약 500 m²·측정 장소 미명시를 '논문 본문 §6.2·§5.3 은 … 보고한다(검증 단계 미대조)' [추정]으로 썼다.",
+    "ref-136 기관 — reference_updates 와 13절 각주의 기관을 'Lopes, D., Pereira, T., Gonçalves, A. 외 14명(저자 17명)'으로 고쳤다. 분리 페이지(2026-09-25-area09-s8)의 본문은 입력에 없어 직접 패치하지 못했고, 참고문헌 갱신으로 반영되도록 하고 additional_research_requests 에 후속 갱신을 요청했다.",
+    "f19 — 8절에서 저자 4명·2023-10-11·DOI·Proceedings Nr. 19·워크숍 참여 주체는 [사실](ref-1429), 2·3·1 여섯 회사·2023년 봄은 [추정](본문 p.5, 검증 단계 미대조)으로 썼다.",
+    "ref-1429 각주 — 13절에서 URL 을 학술지 PDF 로, 발행일 2023-10-11, 접근일 2026-10-10 으로 바꾸고 '(원문 미열람)'을 뗐으며, 분리 페이지의 주변 설비 인터페이스 문장은 건드리지 않았다.",
+    "ref-258 각주 — 13절에서 접근일을 2026-10-10 으로 바꾸고 '(원문 미열람)'을 뗐으며, 3절에 f21·f22 와 성과 근거로 쓰지 않는다는 f23 범위 한정만 덧붙였다.",
+    "f24 — 본문·표·열린 질문 어디에도 넣지 않았고 ref-1425 를 reference_updates 에서 뺐으며, 7절 구역 기능의 의견(f26)은 ref-1426 하나만 각주로 달았다.",
+    "f12 — 참고문헌 색인에 있는 ref-1398 하나만 각주로 쓰고(ref-1513 미사용), 7절에 패키지 판을 기록한다는 평가 관점만 [의견]으로 쓰며 수정 내용은 27. 다중 로봇 경로·교통 관리 — MAPF 로 넘겼다.",
+    "f6 — 6절에서 새 사실 문장을 만들지 않고 F. 연동 대분류 페이지를 가리키며 같은 번역어 '마지막으로 해제된 노드'와 같은 각주 ref-031 을 썼고, 중심은 f8 의 상태 분리 [의견]으로 두었다.",
+    "f13·f34·f36 — 5절의 해당 문장 모두 [추정]에 '벤더 주장'을 병기했고, ref-1200 은 인용·교차 확인에 쓰지 않았다.",
+    "5절 새 사례 — 기타(전시 시연)와 상업 시설(호텔) 사례의 근거 없는 칸은 '미확인'으로 두고 로봇 대수·위임 방식·성과 수치를 채우지 않았으며, site_matrix_updates 에는 근거로 채운 '수행 자원' 칸 두 개만 냈다.",
+    "f38 — 10절에서 '연계 대상: ' 서술과 [추정]을 유지해 21. 상호운용 표준·적합성으로 연결만 했고, 13절 ref-159 각주에 '(원문 미열람)'을 두었다.",
+    "f39·f40 — 10절에서 47. AI·학습·적응과 모델 운영, 12. 채팅으로 업무 지시·오케스트레이션과 잇는 연결 문장으로만 쓰고 시뮬레이션 시연임을 밝혔으며 승인 관문 문제는 oq-141 로 넘겼다.",
+    "직접 인용 — 출처 원문 인용은 ref-136 의 'task status updates' 한 구절뿐이며, ref-031·ref-1424·ref-1427·ref-258 은 모두 재서술했다('muti-map' 오탈자는 쓰지 않음).",
+    "트랙 반영 제안 — 실행 2026-09-25-23 제안(팩트시트 필드 이름 변화)은 반영하지 않고 제안 상태로 두었고, 실행 2026-09-25-35 제안은 7절에 f28(statusReport 필수 필드) 범위만 반영했다.",
+    "open_questions_new — 다섯 질문을 open_question_updates 에 new 로 냈고 Lopes 질문에 초록·본문 표현 차이를 묻는 문장을 합쳤으며, oq-005·oq-031·oq-032·oq-033 은 상태 변경 없이 11절에 부분 근거(oq-032 f9~f11, oq-033 f27~f29, oq-031 f14·f20·f37)만 달았다.",
+    "분량 초과 자동 분리: 20. 로봇·제조사 관제 연동 본문 11,882자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 5,097자"
+  ]
+}
