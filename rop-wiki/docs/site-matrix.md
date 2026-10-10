@@ -21,14 +21,14 @@ version: 1
 | 현장 유형 / 대분류 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | **물류창고** | 3 | 9 | 12 | 1 | 5 | 4 | 5 | 4 | 5 | 3 | 4 | 4 | 4 | 1 | 4 | 1 | 1 |
-| **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 비어 있음 | 2 | 3 | 2 | 2 | 1 | 비어 있음 | 1 |
+| **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 3 | 비어 있음 | 2 | 3 | 2 | 2 | 1 | 비어 있음 | 1 |
 | **병원** | 2 | 3 | 5 | 2 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 3 | 3 | 3 | 1 | 2 | 3 | 1 | 2 | 1 |
 | **상업 시설** | 2 | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 비어 있음 | 1 |
 | **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 1 | 비어 있음 | 1 | 2 | 3 | 비어 있음 | 1 | 1 |
 | **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 비어 있음 | 1 | 3 | 2 | 비어 있음 | 2 | 1 |
 | **기타** | 1 | 2 | 비어 있음 | 2 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 2 | 1 | 1 | 비어 있음 | 1 |
 
-열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 82/119 칸.
+열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 83/119 칸.
 
 ### 물류창고
 
@@ -55,6 +55,7 @@ version: 1
 - **A. 기획·사업**: [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md#5-적용-사례-현장-유형-명시), [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시), [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시)
 - **E. 사물·사람·실시간 상태**: [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md#5-적용-사례-현장-유형-명시)
+- **G. 계획·최적화**: [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시), [I. 설계·시뮬레이션](categories/design-and-simulation/index.md#다른-대분류와의-연결)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md#다른-대분류와의-연결)
 - **L. AI·학습 기술**: [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시), [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시), [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)

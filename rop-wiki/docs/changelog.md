@@ -16,6 +16,20 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-10
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-10-04 | 갱신 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 5절 제조 공장 사례 추가, 6절 첫 문장 정정(SIPP를 단일 로봇 저수준 계획으로 분리)·PIBT 보장 범위·교착 모듈·MAPF-DL 보강, 7절 VDA 5050 3.0.0 예정 경로·구역 요청과 Open-RMF 2.14.0, 8절 Bonetti 외 게재·SILLM 정정·LSMART 추가(6·7·8절에 2026-09-25 기준 주제 페이지 링크 유지), 10절 54·62 연결, 11절 oq id 표기·부분 근거·새 질문 2건, 13절 각주 갱신, 프런트매터 last_run 2026-10-10 |
+| 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s6.md](topics/2026/2026-10-10-area27-s6.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "6. 대표 접근법과 기술" 절(1,965자)을 옮겼다 |
+| 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s8.md](topics/2026/2026-10-10-area27-s8.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "8. 대표 연구와 자료" 절(1,918자)을 옮겼다 |
+| 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s11.md](topics/2026/2026-10-10-area27-s11.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "11. 열린 질문" 절(1,370자)을 옮겼다 |
+| 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s7.md](topics/2026/2026-10-10-area27-s7.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,119자)을 옮겼다 |
+| 2026-10-10-04 | 생성 | [docs/topics/2026/2026-10-10-area27-s10.md](topics/2026/2026-10-10-area27-s10.md) | 자동 분리: 27. 다중 로봇 경로·교통 관리 — MAPF 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(848자)을 옮겼다 |
+| 2026-10-10-04 | 요약 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 27. 다중 로봇 경로·교통 관리 — MAPF: 갱신: 5절 제조 공장 사례 추가, 6절 SIPP·CBS 묶음 서술 정정과 PIBT 보장 범위·교착 모듈·MAPF-DL 보강, 7절 VDA 5050 3.0.0 예정 경로 공유·구역 요청과 Open-RMF rmf_fleet_adapter 2.14.0, 8절 Bonetti 외 IJRR 게재·SILLM 정정·LSMART 추가(6·7·8절에 2026-09-25 기준 주제 페이지 링크 유지), 11절 oq-057~059 id 표기와 새 질문 2건; 트랙 반영 제안(2026-09-25-58, 건축 도면 자동 인식)은 근거 없음으로 미반영; 정정 요청 없음(처리할 corr id 없음) |
+| 2026-10-10-04 | 생성 | [docs/references/ref-1398.md](references/ref-1398.md) | 참고문헌 ref-1398 등록: Changelog for package rmf_fleet_adapter |
+| 2026-10-10-04 | 생성 | [docs/references/ref-1399.md](references/ref-1399.md) | 참고문헌 ref-1399 등록: Multi-Agent Path Finding with Deadlines |
+
 ### 2026-10-09
 
 | 실행 id | 동작 | 페이지 | 요약 |
