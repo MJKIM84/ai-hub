@@ -20,6 +20,20 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-10-06 | 갱신 | [docs/categories/integration/robot-and-vendor-fleet-manager-integration.md](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 차등 갱신: 3절 IO-AMRs 범위 한정 추가, 5절 연동 위치·제어 수준 기록 기준과 상업 시설·기타 사례 추가, 6절 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 7절 VDA 5050 3.0.0 날짜 병기·공개 구현 판 정보, 8절 Lopes·Franke 서지·범위 보강, 10절 21·47·12·2·64·67번 연결, 11절 부분 근거와 새 질문 5건, 6·7·8·10·11절에 2026-09-25 분리 페이지 링크 유지, 13절 각주 갱신(Franke 외 기존 id ref-1419 의 URL·발행일·열람 반영, ref-258 열람 반영, ref-031·ref-251·ref-256 접근일, 신규 각주) |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s7.md](topics/2026/2026-10-10-area20-s7.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,938자)을 옮겼다 |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s6.md](topics/2026/2026-10-10-area20-s6.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,684자)을 옮겼다 |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s11.md](topics/2026/2026-10-10-area20-s11.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,604자)을 옮겼다 |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s8.md](topics/2026/2026-10-10-area20-s8.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,251자)을 옮겼다 |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s10.md](topics/2026/2026-10-10-area20-s10.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,088자)을 옮겼다 |
+| 2026-10-10-06 | 생성 | [docs/topics/2026/2026-10-10-area20-s3.md](topics/2026/2026-10-10-area20-s3.md) | 자동 분리: 20. 로봇·제조사 관제 연동 의 "3. 왜 중요한가" 절(915자)을 옮겼다 |
+| 2026-10-10-06 | 요약 | [docs/categories/integration/robot-and-vendor-fleet-manager-integration.md](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 20. 로봇·제조사 관제 연동: 차등 갱신: VDA 5050 3.0.0 공식 자료 날짜 차이 병기, 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 상업 시설·기타 사례 추가, Lopes·Franke(ref-1419)·IO-AMRs 서지·범위 보강, 새 열린 질문 5건 |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1412.md](references/ref-1412.md) | 참고문헌 ref-1412 등록: VDA 5050 |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1413.md](references/ref-1413.md) | 참고문헌 ref-1413 등록: rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/E… |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1419.md](references/ref-1419.md) | 참고문헌 ref-1419 등록: Identification of requirements and opportunities for new typ… |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1415.md](references/ref-1415.md) | 참고문헌 ref-1415 등록: Interop SIG, 7 May 2026: Open-RMF Upcoming Zone Feature |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1416.md](references/ref-1416.md) | 참고문헌 ref-1416 등록: 10 Companies around the World Collaborate to Showcase Robot… |
+| 2026-10-10-06 | 생성 | [docs/references/ref-1417.md](references/ref-1417.md) | 참고문헌 ref-1417 등록: 카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속 |
 | 2026-10-10-05 | 갱신 | [docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 3절 충전 값 의미·단위 구분과 호텔 연구 수치(Han 외 2025) 보강, 5절 제약 행 권고 표현 정정·상업 시설(호텔 수치 실험) 사례 추가, 6·7·8·11절 갱신 요약과 새 주제 페이지·2026-09-25 분리 페이지 링크(문단 안 문장으로 둠), 13절 각주 갱신(ref-031·ref-103 등) |
 | 2026-10-10-05 | 생성 | [docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md](topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md) | 신규 작성: 충전 하한 값 구분, 충전소 is_charger 지정(oq-069 해결), 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료(2차 수정: 세 줄 요약 둘째 줄 범위 조정, 연계 범위 의견 주체 명시) |
 | 2026-10-10-05 | 갱신 | [docs/topics/2026/2026-09-25-area16-s6.md](topics/2026/2026-09-25-area16-s6.md) | 3. 본문 끝에 충전소 속성 충돌 문장 정정 소제목 추가(문서 is_parking_spot·구현 is_charger 병기, 구현 기준 판단은 의견), 8. 출처에 ref-1410 정의 추가, 10. 이력에 2026-10-10 행 추가, 프런트매터 sources·last_run 갱신 |
