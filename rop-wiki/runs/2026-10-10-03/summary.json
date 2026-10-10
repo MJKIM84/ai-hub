@@ -1,0 +1,148 @@
+{
+  "run_id": "2026-10-10-03",
+  "date": "2026-10-10",
+  "run_type": "update",
+  "target": {
+    "area_no": 26,
+    "area_name": "26. 작업 순서·스케줄링",
+    "category": "G. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 3,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 5
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2793.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-10 | 26. 작업 순서·스케줄링 | 5·6·7·8·11·13절 차등 갱신(이진 우선순위 비용 벌점 확인, 작업 요청 스키마 범위 한정, 계산 실험 사례 ‘기타’ 추가, rmf_fleet_adapter 2.14.0, Tuck 외·Dai 외 추가, 기존 주제 페이지 링크 유지), 주제 페이지 1건 신규 | run 2026-10-10-03",
+  "notes": [
+    "참고문헌 생성: references/ref-1407.md",
+    "참고문헌 생성: references/ref-1408.md",
+    "참고문헌 생성: references/ref-1409.md",
+    "용어집 생성: glossary/makespan.md",
+    "용어집 갱신: glossary/satisfiability-modulo-theories.md",
+    "세부영역 반영 제안 4건을 반영으로 표시했다(26. 작업 순서·스케줄링, 실행 2026-10-10-03)"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 3,
+    "standards": 0,
+    "open_questions": 5,
+    "flow_cells": 10,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-10 16:29:49 KST",
+  "usage": {
+    "input_tokens": 34,
+    "cache_creation_input_tokens": 752053,
+    "cache_read_input_tokens": 2206933,
+    "output_tokens": 132027,
+    "cost_usd": 9.1934,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.0196,
+        "output_tokens": 20705,
+        "cache_read_input_tokens": 1877218,
+        "cache_creation_input_tokens": 143412
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.8516,
+        "output_tokens": 87570,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 383917
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.2248,
+        "output_tokens": 23281,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 215451
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md (6개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-10-area26-s7.md",
+        "chars": 1369
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-10-area26-s8.md",
+        "chars": 1194
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-10-area26-s11.md",
+        "chars": 931
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-10-area26-s3.md",
+        "chars": 722
+      },
+      {
+        "from": "docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-10-area26-s10.md",
+        "chars": 616
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 8,
+  "cross_checked_findings": 0
+}

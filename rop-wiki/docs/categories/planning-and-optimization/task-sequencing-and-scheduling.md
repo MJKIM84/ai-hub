@@ -8,10 +8,10 @@ tags: [작업 순서, 스케줄링, 주문 배치, 선후 제약, 시간창, Ope
 status: published
 confidence: medium
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-006, ref-110, ref-117, ref-125, ref-133, ref-134, ref-376, ref-377, ref-378, ref-379, ref-380, ref-381, ref-382, ref-383, ref-384, ref-385, ref-386, ref-387, ref-388, ref-389, ref-390]
-last_run: 2026-09-25
-version: 2
+updated: 2026-10-10
+sources: [ref-006, ref-110, ref-117, ref-125, ref-133, ref-134, ref-376, ref-377, ref-378, ref-379, ref-380, ref-381, ref-382, ref-383, ref-384, ref-385, ref-386, ref-387, ref-388, ref-389, ref-390, ref-1407, ref-1408, ref-1403, ref-1409, ref-1398]
+last_run: 2026-10-10
+version: 3
 ---
 
 [홈](../../index.md) › [G. 계획·최적화](index.md) › 26. 작업 순서·스케줄링
@@ -30,7 +30,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 3 · 마지막 갱신: 2026-10-10 · 마지막 실행: 2026-10-10
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -58,11 +58,7 @@ version: 2
 
 주문 피킹은 대부분 창고에서 가장 노동집약적이고 비용이 큰 활동으로 알려져 있으며, 2007년 문헌 검토는 그 비용을 창고 운영비의 최대 55%로 추정했다(그 문헌 검토가 제시한 단일 출처 추정치이며 독립 교차 확인은 없다). [사실][^ref-380] 같은 검토는 배치·구역화·경로·보관 배정을 피킹의 주요 설계·통제 결정 문제로 다룬다. [사실][^ref-380]
 
-이커머스 창고는 주문 줄이 몇 개뿐인 시간 임박 주문을 대량으로 처리해야 하며, 로봇·자동 피킹 작업대 같은 자동화와 함께 동적 주문 처리·배치·구역화·분류 같은 운영 적응이 쓰인다고 2019년 조사 논문이 정리한다. [사실][^ref-382]
-
-순서 결정만으로 필요한 자원이 달라질 수 있다는 보고도 있다. 랙 이동 로봇 창고에서 작업대의 주문 배치·순서와 랙 도착 순서를 함께 정한 2017년 연구는, 저자 계산 실험(원문 미열람, 독립 재현 미확인)에서 최적화된 주문 처리가 현장에서 흔한 단순 규칙보다 필요한 로봇 대수를 절반 넘게 줄였다고 보고했다. [사실][^ref-381]
-
-분류 원문의 질문에 비추어 보면, 연구들은 피킹 작업대의 순서를 정할 때 뒤 공정(통합·포장)의 주문 완료 시간과 작업자 대기를 목적에 넣는 방식으로 대기를 줄이려 하므로, ROP 의 순서 결정도 포장대 도착 순서를 기준 제약으로 삼는 형태가 될 것으로 보인다. 다만 국내 연구는 총 주문 처리 시간을 피킹 시간이 결정했다고 보고하므로 포장 쪽 동기화만으로 전체 시간이 줄어든다고 볼 수는 없고, 로봇 운반을 포함한 국내 현장 검증도 없다. [추정][^ref-385][^ref-381][^ref-387]
+자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 왜 중요한가](../../topics/2026/2026-10-10-area26-s3.md)에 있다.
 
 ## 4. 핵심 개념과 용어
 
@@ -72,7 +68,7 @@ version: 2
 
 ## 5. 적용 사례 (현장 유형 명시)
 
-> **현장 유형: 물류창고.** 아래 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 다른 현장 유형의 적용 사례는 이어지는 조사에서 더한다.
+> **현장 유형: 물류창고.** 아래 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 2026-10-10 에는 현장을 특정하지 않은 계산 실험을 현장 유형 ‘기타’로 따로 더했으며, 다른 현장 유형의 적용 사례는 이어지는 조사에서 더한다.
 
 **물류 흐름 단계:** 피킹 → 포장 → 출하
 
@@ -80,10 +76,10 @@ version: 2
 
 | 항목 | 내용 |
 |---|---|
-| 시작 조건 | 상위 시스템이 주문 줄이 적은 시간 임박 주문을 연속으로 내린다. [사실][^ref-382] 긴급 주문을 Open-RMF 요청으로 보낼 때 시각·순서 관련 필드로는 가장 이른 시작 시각과 우선순위를 두고, 마감 시각이나 다른 작업과의 선후 필드는 없다. [사실][^ref-125] |
+| 시작 조건 | 상위 시스템이 주문 줄이 적은 시간 임박 주문을 연속으로 내린다. [사실][^ref-382] 긴급 주문을 Open-RMF 요청으로 보낼 때 공통 최상위 스키마(8개 필드, 필수는 category·description)에서 시각 관련 필드는 가장 이른 시작 시각과 요청 시각뿐이고, 마감 시각이나 다른 작업과의 선후 필드는 없다(2026-10-10 확인). [사실][^ref-125] 작업 내용(description)과 우선순위(priority)는 플릿이 지원하는 스키마를 따르도록 위임되어 있다. [사실][^ref-125] |
 | 작업 대상 | 로봇이 작업대로 옮기는 랙과 주문별 빈, 풋월의 주문 칸 [사실][^ref-381][^ref-385] |
 | 수행 자원 | 랙 이동 로봇, 작업대 피커, 포장 작업자. 복수 포장대와 피킹-패킹 전환 정책(작업자가 피킹과 포장 사이를 옮겨 감)의 작업자 스케줄링을 다룬 국내 연구가 있다(2025, 결과 수치 미확인). [사실][^ref-388] |
-| 제약 | 랙 도착 → 피킹 → 주문별 통합 → 포장의 선후가 있고, 배치·구역 피킹 뒤에는 주문별 통합이 필요하다. [사실][^ref-381][^ref-385] 마감 필드가 없으므로 긴급 작업을 끼워 넣고 대기 작업을 재정렬하는 규칙은 ROP 쪽에서 따로 정해야 할 것으로 보인다. [추정][^ref-125][^ref-390] |
+| 제약 | 랙 도착 → 피킹 → 주문별 통합 → 포장의 선후가 있고, 배치·구역 피킹 뒤에는 주문별 통합이 필요하다. [사실][^ref-381][^ref-385] 공통 최상위 스키마에 마감 필드가 없으므로 긴급 작업을 끼워 넣고 대기 작업을 재정렬하는 규칙은 ROP 쪽에서 따로 정해야 할 것으로 보인다. [추정][^ref-125][^ref-390] 다만 이 부재가 유형별 description 확장이나 플릿별 우선순위 스키마로 그런 조건을 구현하는 것이 불가능하다는 뜻은 아닐 것으로 보이며, 확장 필드를 실제로 집행하는 계획기 구현은 확인하지 못했다. [추정][^ref-125] 이 위키의 판단(외부 조사 메모 기반)으로는 문법상 추가 필드를 넣을 수 있다는 것과 계획기가 그 필드를 집행한다는 것을 구분해, 확장 계약과 집행 주체를 따로 명시해야 한다. [의견][^ref-125] |
 | 완료·인계 | 한 주문의 물품이 풋월 칸에 모두 모여야 포장으로 넘어간다. [사실][^ref-385] 피킹 로봇 완료 뒤 운반 로봇 출발처럼 제조사가 다른 플릿 사이 인계는 ROP 가 작업 흐름 수준에서 관리해야 할 것으로 보인다. [추정][^ref-376][^ref-125] |
 | 예외·성과 | 빈 방출 순서가 맞지 않으면 포장 작업자가 유휴 대기한다. [사실][^ref-385] 편의점 물류센터 레이아웃 기준 국내 연구는 배치 피킹이 분배·포장 시간을 줄였지만 총 주문 처리 시간은 피킹 시간이 결정했다고 보고했다(2024). [사실][^ref-387] |
 
@@ -91,31 +87,42 @@ version: 2
 
 출하 단계까지 넓히면 피킹과 분류를 배송 요구에 맞춰 동기화하는 문제가 된다. 피킹·분류가 어긋나면 긴급 품목이 빠져 추가 피킹이 생긴다는 문제 제기가 있다. [사실][^ref-386]
 
+**현장 유형:** 기타
+
+**사례:** 현장을 특정하지 않은 협업 작업 일정 계산 실험(Dai 외, 2025) — 현장 적용 사례가 아니다
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 필요한 로봇이 모두 작업 위치에 와야 작업을 시작하며, 먼저 온 로봇의 대기를 줄이는 것이 목표다. [사실][^ref-1409] 배정된 로봇 연합의 능력 벡터 합이 작업 요구를 충족해야 시작한다는 조건은 검증 단계에서 원문을 대조하지 못했다. [추정][^ref-1409] |
+| 작업 대상 | 해당 없음 |
+| 수행 자원 | 능력이 다른 이종 로봇이 다음 작업을 분산적으로 고르며, 그 협업 일정 정책을 강화학습(Reinforcement Learning, RL)으로 학습한다. [추정][^ref-1409] |
+| 제약 | 모든 배정 로봇이 실행 기간 내내 작업 위치에 함께 있어야 한다는 조건은 검증 단계에서 원문을 대조하지 못했다. [추정][^ref-1409] 개별 로봇이 빨리 도착해도 다른 팀원이 늦으면 작업 시작이 늦어지므로, 개별 로봇의 빠른 도착만으로 전체 종료 시간이 줄지는 않을 것으로 보인다. [추정][^ref-1409] |
+| 완료·인계 | 해당 없음 |
+| 예외·성과 | 저자는 휴리스틱과 혼합 정수 계획(Mixed Integer Programming, MIP) 기준선보다 비슷하거나 나은 결과를 두 자릿수 이상 빠르게 얻었다고 보고한다(저자 실험, 독립 재현 미확인). [추정][^ref-1409] |
+
+이 사례는 계산 실험이며 특정 현장의 적용 사례가 아니다. 실험이 탐색·구조 같은 협업 과제를 모사한 것이라는 설명은 검증 단계에서 원문을 대조하지 못했다. [추정][^ref-1409] 이 위키의 판단(외부 조사 메모 기반)으로는 이 사례를 이용하면 일정 설명에서 도착 동기화, 공동 작업 시간, 다음 작업으로의 이동을 구분해 적을 수 있으나, 물류창고의 피킹–포장 인계 구현과 같다고 보지는 않는다. [의견][^ref-1409]
+
 ## 6. 대표 접근법과 기술
 
 앞의 시나리오에서 순서를 정하는 방법은 크게 여섯 갈래로 연구되어 있다.
 
 자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area14-s6.md)에 있다.
 
+### 2026-10-10 갱신: 우선순위 비용·제약 표현·재계획
+
+Open-RMF rmf_task 의 이진 우선순위 비용 계산기는 마감을 검사하지 않고, 우선순위 검사가 켜져 있으면 우선순위 배분을 어긴 배정의 비용에 벌점 계수를 곱한다. [사실][^ref-1407] 이 계산기의 실비용 정의, 제약 프로그래밍의 누적 용량 제약과 마감을 필수 조건으로 둔 정식화, 진행 중 동작을 고정하는 온라인 재계획은 주제 페이지 [Open-RMF 이진 우선순위 비용과 마감·재계획 표현](../../topics/2026/2026-10-10-binary-priority-cost-deadline-and-replanning.md)에 정리했다.
+
 ## 7. 관련 표준·프레임워크·오픈소스
 
 위 접근법을 현장 시스템에 옮길 때 참조하는 표현 형식과 도구는 다음과 같다. 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
 
-| 이름 | 유형 | 이 영역과의 관계 | 출처 |
-|---|---|---|---|
-| B2MML 공통 스키마 Dependency1Type | 표준 | 두 요소 사이 실행 의존(선후·병행 금지·시작 후 간격 등) 표현. 창고 물류 적용 사례는 미확인 [사실] | [^ref-117] |
-| Open-RMF 작업 요청 스키마(task_request.json) | 오픈소스 | 가장 이른 시작 시각·우선순위 필드, 마감·선후 필드 없음 [사실] | [^ref-125] |
-| Open-RMF 작업 V2 | 오픈소스 | 작업을 단계의 연쇄·조합으로 구성 [사실] | [^ref-110] |
-| Open-RMF 디스패처 | 오픈소스 | 입찰로 플릿 선정, 평가기 설정 가능 [사실] | [^ref-376][^ref-378] |
-| Open-RMF rmf_task TaskPlanner | 오픈소스 | 플릿 안 일정 계획, 충전 작업 삽입, 탐욕·A* 선택 [사실] | [^ref-377] |
-| Open-RMF BinaryPriorityScheme | 오픈소스 | 높음·낮음 두 단계 우선순위, 낮음은 현재 nullptr 반환. 비용 반영 방식은 미확인 [사실] | [^ref-390] |
-| OR-Tools CP-SAT | 오픈소스 | 구간 변수·겹침 금지·선택 구간·선후 부등식으로 스케줄링 표현 [사실] | [^ref-379] |
+자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area26-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-6절의 접근법을 뒷받침하는 연구다. 성능 수치는 모두 저자 실험 결과이며 이 위키가 원문을 열지 못했다.
+6절의 접근법을 뒷받침하는 연구다. [2026-09-25 에 정리한 기존 항목](../../topics/2026/2026-09-25-area14-s8.md)은 성능 수치가 모두 저자 실험 결과이며 이 위키가 원문을 열지 못했다.
 
-자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 대표 연구와 자료](../../topics/2026/2026-09-25-area14-s8.md)에 있다.
+자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 대표 연구와 자료](../../topics/2026/2026-10-10-area26-s8.md)에 있다.
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)
 
@@ -133,49 +140,36 @@ Open-RMF 의 배정은 플릿 단위 입찰과 플릿 안 일정 계획으로 �
 
 작업 순서는 배정·경로·자원 계획과 얽혀 있어 다음 영역과 함께 읽어야 한다.
 
-- [25. 작업 배정 — MRTA](task-allocation-mrta.md) — 시간·순서 제약이 있는 배정 분류와 Open-RMF 입찰 기반 배정을 다룬다. [사실][^ref-383][^ref-376]
-- [27. 다중 로봇 경로·교통 관리 — MAPF](multi-robot-path-and-traffic-management-mapf.md) — 선후 제약 MAPF 와 온라인 픽업·배송처럼 순서와 경로가 함께 풀린다. [사실][^ref-389][^ref-006]
-- [28. 공용 자원·충전·에너지 최적화](shared-resource-charging-and-energy-optimization.md) — 플릿 일정에 충전 작업을 끼워 넣는 결정이 순서에 영향을 준다. [사실][^ref-377]
-- [23. 업무 시스템 연동](../integration/business-system-integration.md) — 출고 우선순위·시작 시각을 상위 시스템에서 받는 쪽에 가까울 것으로 보인다(oq-019). [추정][^ref-125][^ref-386]
-- [24. 작업·워크플로 모델링](task-and-workflow-modeling.md) — B2MML 의존 유형으로 공정 선후를 표현한다(oq-013). [사실][^ref-117]
-- [35. 처리능력·규모·배치 설계](../design-and-simulation/capacity-sizing-and-layout-design.md) — 순서 최적화가 필요한 로봇 대수를 바꾼다는 저자 실험이 있다. [사실][^ref-381]
-- [39. 운영 성과 측정·개선](../field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) — 포장 작업자 대기·주문 완료 시간을 성과 지표로 쓰는 문제와 이어진다. [사실][^ref-385]
-- [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md) — 제조사가 다른 플릿 사이 선후를 요청 수준에서 표현할 수단이 필요하다. [추정][^ref-125]
-- [31. 사람–로봇 협업](../execution-collaboration-and-recovery/human-robot-collaboration.md) — 피킹·포장 작업자 배치와 대기가 순서 결정과 맞물린다. [사실][^ref-388]
+자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 다른 연구영역과의 연결](../../topics/2026/2026-10-10-area26-s10.md)에 있다.
 
 ## 11. 열린 질문
 
-아래 질문은 이번 조사로 근거가 늘었지만 답을 확인하지 못한 것이다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
+아래 질문은 이번 조사로 근거가 늘었지만 답을 확인하지 못한 것이다. 2026-09-25 까지의 질문은 [기존 열린 질문 정리](../../topics/2026/2026-09-25-area14-s11.md)에 있고, 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
 
-자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 열린 질문](../../topics/2026/2026-09-25-area14-s11.md)에 있다.
+자세한 내용은 주제 페이지 [26. 작업 순서·스케줄링 — 열린 질문](../../topics/2026/2026-10-10-area26-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-25 · 갱신 · [26. 작업 순서·스케줄링](task-sequencing-and-scheduling.md) — 영역 심화: 섹션 3~11 신규 작성(4·6·8·11절은 주제 페이지로 분리), 2차 수정 지시 4건 반영(9절 경계 칸, 10절 태그, 5절 시작 조건·제약 칸) (실행 2026-09-25-34)
-- 2026-09-25 · 생성 · [26. 작업 순서·스케줄링 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area14-s6.md) — 자동 분리: 14. 작업 순서·스케줄링 의 "6. 대표 접근법과 기술" 절(1,504자)을 옮겼다 (실행 2026-09-25-34)
-- 2026-09-25 · 생성 · [26. 작업 순서·스케줄링 — 핵심 개념과 용어](../../topics/2026/2026-09-25-area14-s4.md) — 자동 분리: 14. 작업 순서·스케줄링 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 (실행 2026-09-25-34)
-- 2026-09-25 · 생성 · [26. 작업 순서·스케줄링 — 대표 연구와 자료](../../topics/2026/2026-09-25-area14-s8.md) — 자동 분리: 14. 작업 순서·스케줄링 의 "8. 대표 연구와 자료" 절(904자)을 옮겼다 (실행 2026-09-25-34)
-- 2026-09-25 · 생성 · [26. 작업 순서·스케줄링 — 열린 질문](../../topics/2026/2026-09-25-area14-s11.md) — 자동 분리: 14. 작업 순서·스케줄링 의 "11. 열린 질문" 절(865자)을 옮겼다 (실행 2026-09-25-34)
+- 2026-10-10 · 갱신 · [26. 작업 순서·스케줄링](task-sequencing-and-scheduling.md) — 5절 시작 조건·제약 칸을 공통 최상위 스키마 범위로 한정하고 ‘기타’(계산 실험) 사례 추가, 6절에 이진 우선순위 비용 요약(우선순위 검사 조건 명시)과 새 주제 페이지 링크, 7절 작업 요청 스키마·BinaryPriorityScheme·OR-Tools 행 갱신과 rmf_fleet_adapter 2.14.0 행 추가, 8절 머리 문장에 기존 주제 페이지 링크를 넣어 한정하고 Tuck 외·Dai 외 추가, 11절 머리 문장에 기존 열린 질문 페이지 링크를 넣고 oq-019·oq-049 부분 근거와 새 질문 3건, 13절 각주 갱신 (실행 2026-10-10-03)
+- 2026-10-10 · 생성 · [Open-RMF 이진 우선순위 비용과 마감·재계획 표현](../../topics/2026/2026-10-10-binary-priority-cost-deadline-and-replanning.md) — 신규 작성: Open-RMF 이진 우선순위 비용 벌점(우선순위 검사가 켜져 있을 때)과 비용 계산기 정의, 마감·누적 용량 제약 표현, 진행 중 동작을 고정하는 재계획(26. 작업 순서·스케줄링 6절 보강) (실행 2026-10-10-03)
+- 2026-10-10 · 생성 · [26. 작업 순서·스케줄링 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area26-s7.md) — 자동 분리: 26. 작업 순서·스케줄링 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,369자)을 옮겼다 (실행 2026-10-10-03)
+- 2026-10-10 · 생성 · [26. 작업 순서·스케줄링 — 대표 연구와 자료](../../topics/2026/2026-10-10-area26-s8.md) — 자동 분리: 26. 작업 순서·스케줄링 의 "8. 대표 연구와 자료" 절(1,194자)을 옮겼다 (실행 2026-10-10-03)
+- 2026-10-10 · 생성 · [26. 작업 순서·스케줄링 — 열린 질문](../../topics/2026/2026-10-10-area26-s11.md) — 자동 분리: 26. 작업 순서·스케줄링 의 "11. 열린 질문" 절(931자)을 옮겼다 (실행 2026-10-10-03)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
-[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)
-[^ref-110]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25
 [^ref-117]: MESA International, B2MML-BatchML — Schema/B2MML-Common.xsd, 2023, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd, 접근일 2026-09-25
-[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25
+[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-10-10
 [^ref-376]: Open Robotics, Tasks in RMF (task) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task.html, 접근일 2026-09-25
-[^ref-377]: Open Robotics (open-rmf), rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp, 접근일 2026-09-25
-[^ref-378]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp, 접근일 2026-09-25
-[^ref-379]: Google (google/or-tools GitHub), OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver), 미확인, https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md, 접근일 2026-09-25
 [^ref-380]: de Koster, R., Le-Duc, T., & Roodbergen, K. J., Design and control of warehouse order picking: A literature review, 2007, https://pure.eur.nl/en/publications/design-and-control-of-warehouse-order-picking-a-literature-review/, 접근일 2026-09-25 (원문 미열람)
 [^ref-381]: Boysen, N., Briskorn, D., & Emde, S., Parts-to-picker based order processing in a rack-moving mobile robots environment, 2017, https://www.sciencedirect.com/science/article/abs/pii/S0377221717302758, 접근일 2026-09-25 (원문 미열람)
 [^ref-382]: Boysen, N., de Koster, R., & Weidinger, F., Warehousing in the e-commerce era: A survey, 2019, https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/, 접근일 2026-09-25 (원문 미열람)
-[^ref-383]: Nunes, E., Manner, M., Mitiche, H., & Gini, M., A taxonomy for task allocation problems with temporal and ordering constraints, 2017, https://www.sciencedirect.com/science/article/abs/pii/S0921889016306157, 접근일 2026-09-25 (원문 미열람)
 [^ref-385]: Boysen, N., Stephan, K., & Weidinger, F., Manual order consolidation with put walls: the batched order bin sequencing problem, 2019, https://www.sciencedirect.com/science/article/pii/S2192437620300315, 접근일 2026-09-25 (원문 미열람)
 [^ref-386]: Jiang, M., & Huang, G. Q., Intralogistics synchronization in robotic forward-reserve warehouses for e-commerce last-mile delivery, 2022, https://www.sciencedirect.com/science/article/abs/pii/S1366554522000175, 접근일 2026-09-25 (원문 미열람)
 [^ref-387]: 신희철, 이강현, 방선호, 신광섭(한국빅데이터학회 학회지), 물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구, 2024, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003163116, 접근일 2026-09-25 (원문 미열람)
 [^ref-388]: Tran Bo Tao Huong, 이광헌, 홍순도(대한산업공학회지), 복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링, 2025, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003194570, 접근일 2026-09-25 (원문 미열람)
-[^ref-389]: Kedia, K., Jenamani, R. K., Hazra, A., & Chakrabarti, P. P., Optimal Multi-Agent Path Finding for Precedence Constrained Planning Tasks, 2022-02, https://arxiv.org/abs/2202.10449, 접근일 2026-09-25 (원문 미열람)
 [^ref-390]: Open Robotics (open-rmf), rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/BinaryPriorityScheme.hpp, 접근일 2026-09-25
+[^ref-1407]: Open Robotics (open-rmf), rmf_task — rmf_task/src/rmf_task/BinaryPriorityCostCalculator.cpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/src/rmf_task/BinaryPriorityCostCalculator.cpp, 접근일 2026-10-10
+[^ref-1409]: Dai, W., Rai, U., Chiun, J., Cao, Y., & Sartoretti, G. (IEEE Robotics and Automation Letters 10(3), 2654–2661, DOI 10.1109/LRA.2025.3534682), Heterogeneous Multi-robot Task Allocation and Scheduling via Reinforcement Learning, 2025-01-27, https://marmotlab.org/publications/73-RAL2025-HetMRTA.pdf, 접근일 2026-10-10 (원문 미열람)

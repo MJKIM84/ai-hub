@@ -1,0 +1,160 @@
+# 리서치 브리프 2026-10-10-03
+
+| 항목 | 값 |
+|---|---|
+| 실행 id | 2026-10-10-03 |
+| 날짜 | 2026-10-10 |
+| 실행 유형 | update (갱신) |
+| 대상 영역 | 26. 작업 순서·스케줄링 |
+| 대분류 | G. 계획·최적화 |
+
+## 갭(비어 있거나 약한 섹션)
+
+- 섹션 5. 적용 사례 (현장 유형 명시) — 시작 조건 칸의 'Open-RMF 요청에 마감·선후 필드는 없다'가 공통 최상위 스키마 범위인지 밝혀져 있지 않고, 유형별 description 확장 경로를 다루지 않음. 물류창고 외 현장 유형 사례 없음
+- 섹션 6. 대표 접근법과 기술(주제 페이지로 분리) — Open-RMF 기본 비용이 무엇을 최소화하는지(완료 시각 합 vs 메이크스팬), 누적 용량 제약, 진행 중 동작을 고정하는 재계획 방식이 비어 있음
+- 섹션 7. 관련 표준·프레임워크·오픈소스 — BinaryPriorityScheme 행이 '비용 반영 방식은 미확인'으로 남아 있고, 2026-09-25 이후 rmf_fleet_adapter 변경(2.14.0) 미반영
+- 섹션 8. 대표 연구와 자료(주제 페이지로 분리) — 성능 수치가 모두 원문 미열람이며 2024~2025년 동적·협업 일정 연구가 없음
+- 섹션 11. 열린 질문(주제 페이지로 분리) — oq-019·oq-049 부분 근거 미반영
+- 정정 요청 없음
+
+## 조사 질문
+
+1. 일이 계속 새로 들어올 때 무엇을 먼저, 언제 할지 어떻게 정할 것인가? [분류원문]
+2. Open-RMF task_request 스키마의 마감·선후 필드 부재는 공통 최상위 스키마에 한정되는가, 유형별 확장 경로는 무엇인가? (섹션 5·7 겨냥)
+3. Open-RMF 이진 우선순위는 비용 계산에 어떻게 반영되며, 기본 비용은 어떤 지표를 최소화하는가? (섹션 6·7 겨냥)
+4. 마감·공용 자원 용량·선택 작업을 제약으로 표현하는 공개 도구와, 진행 중 동작을 보존하며 재계획하는 연구는 무엇인가? (섹션 6·8 겨냥)
+5. oq-019 상위 시스템의 출고 우선순위(납기·운송 마감)를 Open-RMF 우선순위 스키마나 ROP 작업 대기열 규칙으로 옮겨 진행 중 작업을 재정렬하는 공개 설계나 사례가 있는가? (섹션 11 겨냥)
+6. oq-049 제조사가 다른 로봇 플릿 사이의 작업 선후(예: 피킹 로봇 완료 뒤 운반 로봇 출발)를 작업 요청 수준에서 표현·집행하는 표준 필드나 공개 구현이 있는가? (섹션 11 겨냥)
+
+## 발견 사항
+
+| id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
+|---|---|---|---|---|---|---|---|---|
+| f1 | [사실] | Open-RMF task_request.json 의 공통 최상위 필드는 unix_millis_earliest_start_time·unix_millis_request_time·priority·category·description·labels·requester·fleet_name 의 8개이고 필수는 category·description 뿐이며, 마감 시각이나 다른 작업 ID 를 가리키는 선후 필드는 공통 최상위 스키마에 정의되어 있지 않다. | ref-125 | 아니오 | medium | 2026-10-10 | 시작 조건 | — |
+| f2 | [사실] | 같은 스키마에서 description 은 그 작업 유형(category)에 대해 플릿이 지원하는 스키마를, priority 는 플릿이 지원하는 우선순위 스키마를 따라야 한다고 설명하며, 최상위에 additionalProperties 제한은 두지 않는다. | ref-125 | 아니오 | medium | 2026-10-10 | 시작 조건 | — |
+| f3 | [추정] | 공통 최상위 스키마에 마감·선후 필드가 없다는 것이 유형별 description 확장이나 플릿별 우선순위 스키마로 그런 조건을 구현하는 것이 불가능하다는 뜻은 아닐 것으로 보인다. | ref-125 | 아니오 | low | 2026-10-10 | 제약 | — |
+| f4 | [의견] | 출하 마감이나 다른 작업 완료를 시작 조건으로 쓰려면, 문법상 추가 필드를 넣을 수 있다는 것과 계획기가 그 필드를 집행한다는 것을 구분해 그 확장 계약과 집행 주체를 별도로 명시해야 한다. | ref-125 | 아니오 | low | 2026-10-10 | 제약 | — |
+| f5 | [사실] | rmf_task 의 BinaryPriorityScheme.cpp 는 make_low_priority() 에서 nullptr 를, make_high_priority() 에서 BinaryPriority(1) 객체를 돌려주고, make_cost_calculator() 로 BinaryPriorityCostCalculator 를 만든다. | ref-1484 | 아니오 | medium | 2026-10-10 | — | — |
+| f6 | [사실] | BinaryPriorityCostCalculator 의 valid_assignment_priority() 는 같은 계획 노드 안의 로봇(에이전트) 사이에서 한 로봇이 높은 우선순위 작업을 2개 이상 받았는데 높은 작업을 하나도 받지 않은 로봇이 있으면 위반으로 보고, 같은 로봇의 배정 순서 안에서는 충전 작업을 건너뛴 뒤 낮은 작업 다음에 높은 작업이 오면 위반으로 본다. | ref-1483 | 아니오 | medium | 2026-10-10 | 제약 | — |
+| f7 | [사실] | compute_cost(Node, time_now, check_priority) 는 우선순위 검사가 켜져 있고 배정이 위반이면 비용을 _priority_penalty × (g + h) 로, 그렇지 않으면 g + h 로 계산한다. | ref-1483 | 아니오 | medium | 2026-10-10 | — | — |
+| f8 | [의견] | 이 우선순위 처리는 납기 제약을 직접 검사하는 코드가 아니라 배정 비용에 벌점을 곱하는 방식이므로, 높은 우선순위를 마감 보장으로 해석해서는 안 되며 로봇 사이 배분 조건이 있어 단순한 선입선출 정렬로 설명해서도 안 된다. | ref-1483, ref-125 | 아니오 | low | 2026-10-10 | 제약 | — |
+| f9 | [사실] | BinaryPriorityCostCalculator 의 기본 실비용(g)은 각 일반 작업의 완료 시각(finish_state 시각)에서 그 요청의 가장 이른 시작 시각을 뺀 값을 모든 로봇·모든 배정에 걸쳐 합산한 값이다. | ref-1483 | 아니오 | medium | 2026-10-10 | — | — |
+| f10 | [사실] | 같은 계산기는 충전 작업(ChargeBattery) 배정 자체의 비용을 0 으로 계산한다. | ref-1483 | 아니오 | medium | 2026-10-10 | — | — |
+| f11 | [추정] | 충전 작업 자체의 비용은 0 이지만, 충전 때문에 같은 로봇의 뒤 작업 완료가 늦어지면 그 작업의 비용(완료 시각 − 가장 이른 시작 시각)은 커질 수 있을 것으로 보인다. | ref-1483 | 아니오 | low | 2026-10-10 | — | — |
+| f12 | [의견] | 이 비용은 작업별 (완료 시각 − 가장 이른 시작 시각)의 합이므로, Dai 외가 정의한 메이크스팬(Makespan, 차고지 복귀를 포함한 모든 로봇의 총 작업 시간 중 최댓값)이나 납기 지연 합과 같은 지표라고 부르면 안 된다. | ref-1483, ref-1486 | 아니오 | low | 2026-10-10 | — | — |
+| f13 | [사실] | OR-Tools CP-SAT 스케줄링 문서는 구간 변수, 실행 여부를 리터럴로 정하는 선택 구간, 구간 사이 시간 관계, 겹침 금지(NoOverlap)에 더해, 구간별 수요의 합이 용량 프로필을 넘지 않게 하는 누적 용량(Cumulative) 제약을 다룬다. | ref-379 | 아니오 | medium | 2026-10-10 | 제약 | — |
+| f14 | [추정] | 이 표현으로 '이전 작업 종료 뒤 시작'(시간 관계), '도크는 한 번에 한 작업'(겹침 금지), '작업대 동시 사용량은 용량 이하'(누적 용량)를 서로 다른 제약으로 작성할 수 있을 것으로 보인다. | ref-379 | 아니오 | low | 2026-10-10 | 제약 | — |
+| f15 | [사실] | Tuck 외(2024)의 동적 다중 로봇 작업 배정 정식화는 Definition 6(완료된 작업)에서 내려놓기 동작이 마감 전에 일어나야 작업을 완료한 것으로 보아, 마감을 필수 완료 조건으로 둔다. | ref-1485 | 아니오 | medium | 2024-03-18 | 제약 | — |
+| f16 | [의견] | 마감을 반드시 지킬 조건으로 둘지, 어겼을 때 비용을 주는 조건으로 둘지는 목적함수와 제약식을 나눠 설계해야 한다. | ref-379, ref-1485 | 아니오 | low | 2026-10-10 | 제약 | — |
+| f17 | [사실] | Tuck 외(2024)는 마감이 있는 작업이 온라인으로 들어오고 로봇이 여러 작업을 동시에 실을 수 있는 동적 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA)을 다루며, Definition 9 의 갱신 계획(Updated plan)은 각 로봇의 과거 동작과 현재 동작을 바꾸지 않은 채 새 작업을 반영하도록 정의한다. | ref-1485 | 아니오 | medium | 2024-03-18 | — | — |
+| f18 | [사실] | 같은 연구는 이론 모듈로 만족 가능성(Satisfiability Modulo Theories, SMT) 해법기의 push·pop 기능으로 앞선 풀이 정보를 유지하는 증분 풀이를 쓰지만, 증분·비증분 풀이의 시간 성능은 해법기와 배치 크기에 따라 크게 달랐다(Z3-BV 와 Bitwuzla-BV 비교). | ref-1485 | 아니오 | medium | 2024-03-18 | — | — |
+| f19 | [추정] | 이를 참고하면 긴급 작업 삽입 정책을 '현재 동작 고정'과 '아직 실행하지 않은 구간의 재배열'로 나눠 기술할 수 있을 것으로 보인다. | ref-1485 | 아니오 | low | 2024-03-18 | 예외·성과 | — |
+| f20 | [사실] | Dai 외(2025)는 탐색·구조 같은 협업 과제를 모사한 계산 실험에서, 배정된 로봇 연합의 능력 벡터 합이 작업 요구를 충족해야 작업을 시작할 수 있고 모든 배정 로봇이 실행 기간 내내 작업 위치에 함께 있어야 하며 먼저 도착한 로봇은 나머지가 올 때까지 기다리는 작업을 모델링한다. | ref-1486 | 아니오 | medium | 2025 | 기타 / 시작 조건 | — |
+| f21 | [추정] | 이런 협업 작업에서는 개별 로봇이 빨리 도착해도 다른 팀원이 늦으면 작업 시작이 늦어지므로, 개별 로봇의 빠른 도착만으로 전체 종료 시간이 줄지는 않을 것으로 보인다. | ref-1486 | 아니오 | low | 2025 | 기타 / 제약 | — |
+| f22 | [의견] | 이 사례를 이용하면 일정 설명에서 도착 동기화, 공동 작업 시간, 다음 작업으로의 이동을 구분해 적을 수 있다. | ref-1486 | 아니오 | low | 2025 | 기타 | — |
+| f23 | [사실] | Dai 외(2025)는 강화학습(Reinforcement Learning, RL)으로 이종 로봇이 다음 작업을 분산적으로 고르는 협업 일정 정책을 학습하고, 계산 실험에서 최대 150 에이전트·500 작업·5종 능력 조건까지 다뤘다고 보고한다. | ref-1486 | 아니오 | medium | 2025 | — | — |
+| f24 | [사실] | Open-RMF TaskPlanner.hpp 의 Options 주석은 탐욕 방식은 최적성을 보장하지 않지만 더 빨리 풀 수 있고, A* 기반 방식은 최적성을 보장하지만 풀이에 더 오래 걸릴 수 있다고 설명한다. | ref-377 | 아니오 | medium | 2026-10-10 | — | — |
+| f25 | [의견] | Dai 외의 강화학습 방식과 Open-RMF 계획기는 목적·모델·평가 환경이 달라, 규모나 풀이 시간만으로 우열을 정하기보다 실행 가능한 일정 비율과 목적값을 같은 조건에서 비교하는 편이 좋다. | ref-1486, ref-377 | 아니오 | low | 2026-10-10 | — | — |
+| f26 | [사실] | rmf_fleet_adapter 2.14.0(2026-09-26) 변경 이력은 단계 건너뛰기 요청의 단계 키 수정(#543)과 EasyTrafficLight 의 누적 지연 계산 수정(#524)을 포함한다. | ref-1398 | 아니오 | medium | 2026-09-26 | 예외·성과 | — |
+| f27 | [의견] | 일정의 예외 조정과 지연 기반 추정에 의존하는 구현은 사용하는 Open-RMF 패키지 버전을 함께 기록하는 편이 좋다. | ref-1398 | 아니오 | low | 2026-09-26 | — | — |
+| f28 | [의견] | oq-019 부분 답변: 이진 우선순위의 표현과 비용 벌점 구현은 공개되어 있지만, 납기·운송 마감을 이진 값으로 바꾸고 진행 중 작업을 재정렬하는 현장 설계는 확인하지 못해 질문을 닫을 수 없다. | ref-125, ref-1483, ref-1484 | 아니오 | low | 2026-10-10 | — | — |
+| f29 | [추정] | oq-049 부분 답변: 공통 task_request 스키마에는 선행 작업 ID 가 없고 유형별 description 확장 경로만 있어, 이 경로만으로 제조사 간 선후 집행이 구현되었다고 볼 수 없으며 범용 표준 필드나 완성된 공개 구현은 확인하지 못했다. | ref-125 | 아니오 | low | 2026-10-10 | 완료·인계 | — |
+
+### 근거 발췌
+
+- **f1**: task_request.json properties 8개와 "required": ["category", "description"]. 시각 관련은 earliest_start_time("The earliest time that this task may start")·request_time 뿐이고 deadline·선행 작업 필드 없음 (발행일 미확인, 확인일 기준)
+- **f2**: description: "This must match a schema supported by a fleet for the category of this task request." priority: "must match a priority schema supported by a fleet". 최상위 additionalProperties 키 없음 (발행일 미확인, 확인일 기준)
+- **f3**: f2 의 유형별 description·플릿별 priority 스키마 위임에서 도출한 추론. 검증에서 '사실'을 '추정'으로 강등했다. 확장 필드를 실제로 집행하는 계획기 구현은 확인하지 못했다 (발행일 미확인, 확인일 기준)
+- **f4**: 외부 조사 메모의 의견. 근거: 스키마는 description 구조를 플릿에 위임할 뿐 집행 주체를 정하지 않는다(ref-125) (발행일 미확인, 확인일 기준)
+- **f5**: make_low_priority(){ return nullptr; } / make_high_priority(){ return std::make_shared<BinaryPriority>(1); } / make_cost_calculator(){ return std::make_shared<BinaryPriorityCostCalculator>(); } (발행일 미확인, 확인일 기준)
+- **f6**: STEP 1 "Checking for validity across agents": max_priority_count > 1 이고 priority_count 0 인 에이전트가 있으면 false. STEP 2 "within assignments of an agent": ChargeBattery 는 continue, prev_priority == nullptr && curr_priority != nullptr 이면 false (발행일 미확인, 확인일 기준)
+- **f7**: if (check_priority) { if (!valid_assignment_priority(n)) return _priority_penalty * (g + h); } return g + h; 벌점 계수는 생성자 인자 priority_penalty (발행일 미확인, 확인일 기준)
+- **f8**: 외부 조사 메모의 의견. 근거: cost.cpp 에 deadline 관련 검사 없음, 공통 요청 스키마에도 마감 필드 없음(ref-125). 같은 프로젝트 자료라 독립 교차 확인 아님 (발행일 미확인, 확인일 기준)
+- **f9**: compute_g_assignment: finish_state().time() - booking()->earliest_start_time() 를 초 단위로; compute_g: for agent / for assignment 로 cost += 합산 (발행일 미확인, 확인일 기준)
+- **f10**: compute_g_assignment 의 ChargeBattery::Description 분기: "return 0.0; // Ignore charging tasks in cost" (발행일 미확인, 확인일 기준)
+- **f11**: f9·f10 의 비용 정의에서 도출한 추론. 코드에 이 효과를 직접 설명한 주석은 없다 (발행일 미확인, 확인일 기준)
+- **f12**: Dai 외 §III: "minimize the makespan, which is the maximum total working time among all agents", 각 로봇은 작업 후 차고지(depot)로 복귀. rmf_task 비용은 compute_g 합산. 사용자 지정 계산기를 쓴 경우로 일반화하지 않는다 (발행일 미확인, 확인일 기준)
+- **f13**: scheduling.md 절: Interval variables / Optional intervals / Time relations between intervals / NoOverlap constraint / "Cumulative constraint with min and max capacity profile". 구간·선택 구간·선후·겹침 금지는 기존 6절에 있음(기존 내용 확인), 누적 용량이 새 내용 (발행일 미확인, 확인일 기준)
+- **f14**: f13 의 제약 종류를 창고 시나리오에 대응시킨 추론. 문서의 예제는 일반 스케줄링 예제이며 로봇·도크 사례가 아니다 (발행일 미확인, 확인일 기준)
+- **f15**: §3 Definition 6 Completed task: "the drop action must be before the deadline", 픽업 이동 전 시각은 시작 시각 이상. 초록: 작업은 "a strict deadline" 을 가진다(arXiv v1, 2024-03-18)
+- **f16**: 외부 조사 메모의 의견. 근거: CP-SAT 은 제약과 목적을 따로 둘 수 있고(ref-379), Tuck 외는 마감을 필수 조건으로 둔 예(ref-1485). OR-Tools 가 바로 쓸 수 있는 로봇 스케줄러라는 뜻은 아니다 (발행일 미확인, 확인일 기준)
+- **f17**: §3 Definition 9 Updated plan: 이전 계획과 같은 접두부를 유지하며 "past actions and the current action are unchanged". §4.3 SavePastState() 로 과거 action point 를 상수로 고정
+- **f18**: §4.3: push·pop 으로 "retain information about previous solves". §6.2 RQ2(200 작업·20 에이전트, 배치 1·10): "depend greatly on the solver and batch size" — Z3-BV 는 작은 배치의 증분 풀이에서, Bitwuzla-BV 는 큰 배치의 비증분 풀이에서 우세. 검증에서 '인코딩'을 '배치 크기'로 정정
+- **f19**: f17 의 갱신 계획 정의에서 도출. 논문은 새 작업마다 진행 중 물리 동작을 중단하지 않으며, 불확실한 이동 시간을 포함한 실행 성능 보장으로 넓히지 않는다
+- **f20**: §III: 시작 조건 c_L ⪰ q_mj, "all assigned agents must be present at the task location for the entire execution duration ... they must wait until all collaborating agents are present." 정규화된 2D 영역의 계산 실험이며 실제 현장 검증 아님. 협업 조립은 동기 예시로만 등장
+- **f21**: f20 의 시작·대기 조건에서 도출한 추론. 검증에서 '사실'을 '추정'으로 강등했다(원문은 도착 동기화로 대기 시간을 줄여야 한다고만 서술)
+- **f22**: 외부 조사 메모의 의견. 실제 창고의 피킹–포장 인계 구현과 같다고 주장하지 않는다
+- **f23**: 초록: "scale up to 150 agents and 500 tasks, with up to 5 skills". 표 IV 대규모 실험(km=500, kn=150). 저자는 MIP 정확 해법기·휴리스틱과 비슷하거나 낫고 두 자릿수 이상 빠르다고 보고(저자 실험, 독립 재현 미확인)
+- **f24**: Options(greedy, interrupter, finishing_request) 주석: "Optimality is not guaranteed but the solution time may be faster. If false, an A* based approach ... which guarantees optimality but may take longer to solve." 기존 6절 분리 페이지에 같은 내용 있음(기존 내용 확인) (발행일 미확인, 확인일 기준)
+- **f25**: 외부 조사 메모의 의견. Dai 외는 메이크스팬 최소화, rmf_task 기본 계산기는 (완료 − 가장 이른 시작) 합. 두 접근을 직접 비교한 실험은 확인하지 못했다 (발행일 미확인, 확인일 기준)
+- **f26**: CHANGELOG.rst 2.14.0 (2026-09-26): "Fix phase key for skip requests (#543)", "Fix cumulative delay calculation in EasyTrafficLight (#524)". 새 납기 최적화나 진행 중 작업 선점 기능을 뜻하지는 않는다
+- **f27**: 외부 조사 메모의 의견. 근거: 2.14.0 에서 건너뛰기 요청 키와 누적 지연 계산이 수정됨(f26)
+- **f28**: 근거: f5~f7(이진 우선순위 표현·벌점), f1(마감 필드 없음). 재정렬 현장 설계·사례는 이번 자료에서 찾지 못함 (발행일 미확인, 확인일 기준)
+- **f29**: 근거: f1·f2. 확인한 자료 범위(task_request.json) 안의 판단이며 다른 Open-RMF 작업 유형 스키마 전체는 이번에 대조하지 않았다 (발행일 미확인, 확인일 기준)
+
+## 출처
+
+| id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
+|---|---|---|---|---|---|---|---|---|
+| ref-125 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_request.json | 미확인 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json | 아니오 |
+| ref-377 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp | 미확인 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp | 아니오 |
+| ref-379 | Google (google/or-tools GitHub) | OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver) | 미확인 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md | 아니오 |
+| ref-1483 | Open Robotics (open-rmf) | rmf_task — rmf_task/src/rmf_task/BinaryPriorityCostCalculator.cpp | 미확인 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/src/rmf_task/BinaryPriorityCostCalculator.cpp | 아니오 |
+| ref-1484 | Open Robotics (open-rmf) | rmf_task — rmf_task/src/rmf_task/BinaryPriorityScheme.cpp | 미확인 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/src/rmf_task/BinaryPriorityScheme.cpp | 아니오 |
+| ref-1485 | Tuck, V. M., Chen, P.-W., Fainekos, G., Hoxha, B., Okamoto, H., Sastry, S. S., & Seshia, S. A. (UC Berkeley, Toyota Motor North America) | SMT-Based Dynamic Multi-Robot Task Allocation | 2024-03-18 | 논문 | medium | 2026-10-10 | https://arxiv.org/html/2403.11737v1 | 아니오 |
+| ref-1486 | Dai, W., Rai, U., Chiun, J., Cao, Y., & Sartoretti, G. | Heterogeneous Multi-robot Task Allocation and Scheduling via Reinforcement Learning | 2025 | 논문 | medium | 2026-10-10 | https://marmotlab.org/publications/73-RAL2025-HetMRTA.pdf | 아니오 |
+| ref-1398 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0) | 2026-09-26 | 오픈소스 문서 | high | 2026-10-10 | https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst | 아니오 |
+
+### 출처 요약
+
+- **ref-125**: Open-RMF 작업 요청 JSON 스키마. 최상위 필드 8개(가장 이른 시작 시각·요청 시각·우선순위·category·description·라벨·요청자·플릿 이름) 중 category·description 이 필수이며 마감·선후 필드는 없다.
+- **ref-377**: Open-RMF 작업 계획기 헤더. 탐욕 방식(최적성 미보장, 더 빠를 수 있음)과 A* 방식(최적성 보장, 더 오래 걸릴 수 있음) 선택 옵션, 배정별 가장 이른 시작 시각을 주석으로 정한다.
+- **ref-379**: CP-SAT 스케줄링 문서 원본. 구간 변수, 선택 구간, 구간 사이 시간 관계, 겹침 금지, 최소·최대 용량 프로필의 누적 제약을 다룬다.
+- **ref-1483**: Open-RMF 이진 우선순위 비용 계산기 구현. 작업별 (완료 시각 − 가장 이른 시작 시각) 합을 비용으로 쓰고 충전 작업은 0 으로 두며, 우선순위 배분 위반이면 비용에 벌점 계수를 곱한다.
+- **ref-1484**: Open-RMF 이진 우선순위 체계 구현. 낮은 우선순위는 nullptr, 높은 우선순위는 BinaryPriority(1) 로 만들고 BinaryPriorityCostCalculator 를 비용 계산기로 돌려준다.
+- **ref-1485**: 마감이 있는 작업이 온라인으로 들어오는 용량 있는 로봇의 동적 작업 배정을 SMT 증분 풀이로 다룬 arXiv 프리프린트(v1). 과거·현재 동작을 보존하는 갱신 계획을 정의하고, 증분 풀이 이득이 해법기·배치 크기에 따라 다름을 실험으로 보였다.
+- **ref-1486**: 모든 배정 로봇이 모여야 시작하는 협업 작업에서 이종 로봇의 배정·일정을 강화학습으로 정하고 메이크스팬을 최소화하는 연구(저자 5명). 게재지(IEEE RA-L 2025)는 파일명 기준이며 PDF 본문에서는 확인하지 못했다.
+- **ref-1398**: rmf_fleet_adapter 태그 2.14.0 변경 이력. 2026-09-26 판에 단계 건너뛰기 요청 키 수정(#543)과 EasyTrafficLight 누적 지연 계산 수정(#524)이 들어 있다.
+
+## 페이지 제안
+
+| 동작 | 경로 | 섹션 | 이유 |
+|---|---|---|---|
+| update | docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md | 5, 6, 7, 8, 11 | 갱신(차등): 섹션 5 — 시작 조건 칸 문장을 공통 최상위 스키마 범위로 한정(f1)하고 description·priority 의 플릿 스키마 위임(f2), 확장 가능성(f3, 추정), 확장 계약·집행 주체 명시 필요(f4, 의견)를 제약 칸에 반영; 물류창고 표와 별도로 '현장 유형: 기타(탐색·구조 모사 계산 실험)' 협업 사례를 추가(f20 사실, f21 추정, f22 의견) / 섹션 6(주제 페이지 2026-09-25-area14-s6 요약) — 플릿 안 일정 계획에 기본 비용 정의(f9·f10, f11 추정)와 메이크스팬과의 구분(f12, 의견), 제약 프로그래밍에 누적 용량 제약(f13; 구간·선택 구간·선후·겹침 금지는 기존 내용 확인)과 창고 제약 대응(f14 추정)·마감의 필수/비용 설계 구분(f15·f16), 온라인 재계획에 Tuck 외 갱신 계획·증분 풀이(f17·f18, f19 추정) / 섹션 7 — BinaryPriorityScheme 행의 '비용 반영 방식은 미확인'을 f5~f7 로 교체하고 마감 보장 해석 금지(f8, 의견), Open-RMF 작업 요청 스키마 행 문구를 공통 최상위 필드 기준으로(f1·f2), rmf_fleet_adapter 2.14.0 변경 이력 행 추가(f26, f27 의견) / 섹션 8(주제 페이지 2026-09-25-area14-s8 요약) — Tuck 외(f17·f18), Dai 외(f23) 추가와 접근법 비교 방식(f24·f25; f24 의 탐욕·A* 설명은 기존 6절 분리 페이지 내용 확인) / 섹션 11(주제 페이지 2026-09-25-area14-s11) — oq-019 부분 근거(f28), oq-049 부분 근거(f29), 새 질문 3건. 두 열린 질문 모두 해결 제안 없음. |
+
+## 용어 후보
+
+| 용어(한글) | 용어(영문) | 한 줄 정의 |
+|---|---|---|
+| 메이크스팬 | Makespan | 작업 집합 전체를 끝내는 데 걸린 시간으로, 다중 로봇 일정에서는 보통 모든 로봇 가운데 가장 늦게 일을 마친 로봇의 종료 시각(또는 총 작업 시간)을 뜻한다. |
+| 이론 모듈로 만족 가능성 | Satisfiability Modulo Theories (SMT) | 정수·비트벡터 산술 같은 배경 이론 위에서 논리식을 만족하는 값의 존재를 판정하는 문제와 그 해법기로, 일정·배정 제약을 논리식으로 풀 때 쓴다. |
+
+## 열린 질문
+
+새로 생긴 질문:
+
+- 이진 우선순위에서 높은 작업이 계속 들어올 때 낮은 작업의 무한 대기를 막는 공개 정책이 있는가? | 관련 영역: 26. 작업 순서·스케줄링, 25. 작업 배정 — MRTA | 근거: f6 | 종류: 일반
+- 제조사별 예상 완료 시간의 오차를 고려해 출하 마감 대비 여유 시간을 얼마나 두는가? | 관련 영역: 26. 작업 순서·스케줄링, 20. 로봇·제조사 관제 연동 | 근거: f16 | 종류: 일반
+- 작업 완료 시각 합, 납기 지연 합, 계획 변경량을 함께 최적화할 때 현장별 가중치를 어떻게 검증하는가? | 관련 영역: 26. 작업 순서·스케줄링, 39. 운영 성과 측정·개선 | 근거: f12 | 종류: 일반
+
+해결 제안(판정은 검증 에이전트):
+
+- 없음
+
+## 자체 점검
+
+- 출처 수: 8 · 교차 확인: 0
+- 예산 사용량: 검색 0회 · 신규 출처 5건
+- 미확인 항목:
+    - 리서치 단계 산출물 출처: 외부 AI(ChatGPT) 조사 메모(runs/2026-10-10-03/external_research.md)를 변환했다. 2026-10-10 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정)을 반영했다.
+    - ref-1486(Dai 외): 게재지 IEEE Robotics and Automation Letters 2025 는 PDF 파일명(73-RAL2025-HetMRTA) 기준이며 본문에서 확인하지 못함 — published 는 '2025'로만 둠, 동료심사 여부 미확인이라 신뢰도 medium
+    - f3·f29: 유형별 description 확장으로 마감·선후 조건을 실제 집행하는 Open-RMF 구현은 확인하지 못함(다른 작업 유형 스키마 전체는 대조하지 않음)
+    - f11: 충전 작업이 뒤 작업 비용을 늘리는 효과는 코드 정의에서 도출한 추론이며 실행 결과로 확인하지 않음
+    - f21: '개별 로봇의 빠른 도착만으로 전체 종료 시간이 줄지 않는다'는 원문 직접 진술이 아니라 추론(검증에서 사실→추정 강등)
+    - f23: Dai 외 성능 비교(MIP·휴리스틱 대비)는 저자 실험이며 독립 재현 미확인
+    - oq-019·oq-049: 부분 근거만 확보, 재정렬 현장 설계와 제조사 간 선후 집행의 공개 구현은 미확인
+    - 교차 확인 0건: rmf_task 헤더·구현·스키마는 같은 프로젝트 자료라 독립 교차 확인으로 세지 않음
+- 범위 경계 위반 의심:
+    - f20~f23: Dai 외는 탐색·구조를 모사한 계산 실험이라 물류창고 사례가 아님 — 5절에는 현장 유형 '기타'로 따로 두고 창고 피킹–포장 인계와 같다고 쓰지 않는다
+    - f13·f14·f16: OR-Tools 는 일반 스케줄링 도구이며 로봇 관제용 스케줄러가 아님 — 제약 표현 근거로만 쓴다
+- 한계: 외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 5건(ref-1483~ref-1398, 예약 구간 ref-1483~ref-1512 안), 재사용 3건(ref-125 task_request.json, ref-377 TaskPlanner.hpp, ref-379 OR-Tools scheduling.md). 메모의 n3(BinaryPriorityScheme.cpp)은 기존 ref-390(BinaryPriorityScheme.hpp)과 다른 파일이라 새 id 로 등록. 8개 출처 모두 원문 대조 확인(GitHub 파일은 github_raw, 논문 2건은 webfetch). 검증 수정 반영: (1) Tuck 외 증분 풀이 이득의 조건을 '해법기와 배치 크기'로 정정(f18), (2) '공통 필드의 부재가 확장 구현의 불가능을 뜻하지 않는다'를 추정으로 분리(f3), (3) Dai 외 '빠른 도착만으로 전체 종료 시간이 줄지 않는다'를 추정으로 분리(f21), 앞부분은 §III 사실(f20), (4) 이진 우선순위 배분 조건을 같은 계획기 안 로봇 사이 조건과 같은 로봇 안 순서 조건으로 정정하고 벌점식 _priority_penalty × (g + h) 명시(f6·f7), (5) TaskPlanner 의 A* 최적성 보장 명시(f24), (6) 메이크스팬을 Dai 외 정의(차고지 복귀 포함 모든 로봇의 최대 총 작업 시간)로 맞춤(f12), (7) task_request.json 최상위 필드 8개·필수 2개·additionalProperties 없음 명시(f1·f2), (8) Dai 외 게재지 미확인·published 2025·저자 5명(ref-1486), (9) 기존 id 연결. 열린 질문은 해결 제안 없이 oq-019(f28)·oq-049(f29) 부분 근거만 냈다. 메모의 출처 집계 문장('원문 열람 8/8')은 검증 결과와 일치. 정정 요청 없음. 우선 지정 질문 없음.

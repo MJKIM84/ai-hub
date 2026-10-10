@@ -377,8 +377,11 @@ version: 1
 | oq-355 | 플릿이 입찰에서 밝힌 예상 수행 로봇과 실제 수행 로봇이 달라질 때 비용·완료 시각을 언제 다시 평가해야 하는가? | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
 | oq-356 | LTAA 의 결정적 비교군(brute force·greedy·DP)과 확률적 비교군(LTAA·Q-learning·DQN)을 같은 성공 확률 모델과 작업 집합으로 재평가한 공개 재현 자료가 있는가? (관련 기존 질문: oq-030) | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
 | oq-357 | 최소 비용 흐름 기반 배정에 이종 로봇의 능력·적재량·충전 제약을 더해도 대규모 계산 성능이 유지되는가? | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
+| oq-358 | 이진 우선순위에서 높은 작업이 계속 들어올 때 낮은 작업의 무한 대기를 막는 공개 정책이 있는가? | [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | 2026-10-10 | 2026-10-10-03 | 열림 | — |
+| oq-359 | 제조사별 예상 완료 시간의 오차를 고려해 출하 마감 대비 여유 시간을 얼마나 두는가? | [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-10 | 2026-10-10-03 | 열림 | — |
+| oq-360 | 작업 완료 시각 합, 납기 지연 합, 계획 변경량을 함께 최적화할 때 현장별 가중치를 어떻게 검증하는가? (관련 기존 질문: oq-054, oq-051) | [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 2026-10-10 | 2026-10-10-03 | 열림 | — |
 
-상태별 건수: 열림 354건, 조사 중 1건, 해결 2건
+상태별 건수: 열림 357건, 조사 중 1건, 해결 2건
 
 **트랙 전용 질문(트랙 백로그)**
 
