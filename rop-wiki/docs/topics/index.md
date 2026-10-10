@@ -21,6 +21,41 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결](2026/2026-10-10-area20-s10.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 열린 질문](2026/2026-10-10-area20-s11.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 왜 중요한가](2026/2026-10-10-area20-s3.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](2026/2026-10-10-area20-s6.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area20-s7.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](2026/2026-10-10-area20-s8.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 열린 질문](2026/2026-10-10-area24-s11.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 왜 중요한가](2026/2026-10-10-area24-s3.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 대표 접근법과 기술](2026/2026-10-10-area24-s6.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area24-s7.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 대표 연구와 자료](2026/2026-10-10-area24-s8.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 다른 연구영역과의 연결](2026/2026-10-10-area25-s10.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 열린 질문](2026/2026-10-10-area25-s11.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 왜 중요한가](2026/2026-10-10-area25-s3.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 대표 접근법과 기술](2026/2026-10-10-area25-s6.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area25-s7.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [25. 작업 배정 — MRTA — 대표 연구와 자료](2026/2026-10-10-area25-s8.md) | [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | — |
+| 2026-10-10 | [26. 작업 순서·스케줄링 — 다른 연구영역과의 연결](2026/2026-10-10-area26-s10.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [26. 작업 순서·스케줄링 — 열린 질문](2026/2026-10-10-area26-s11.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [26. 작업 순서·스케줄링 — 왜 중요한가](2026/2026-10-10-area26-s3.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [26. 작업 순서·스케줄링 — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area26-s7.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [26. 작업 순서·스케줄링 — 대표 연구와 자료](2026/2026-10-10-area26-s8.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 다른 연구영역과의 연결](2026/2026-10-10-area27-s10.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
+| 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 열린 질문](2026/2026-10-10-area27-s11.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
+| 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술](2026/2026-10-10-area27-s6.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
+| 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area27-s7.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
+| 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료](2026/2026-10-10-area27-s8.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 다른 연구영역과의 연결](2026/2026-10-10-area28-s10.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 열린 질문](2026/2026-10-10-area28-s11.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 왜 중요한가](2026/2026-10-10-area28-s3.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 대표 접근법과 기술](2026/2026-10-10-area28-s6.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area28-s7.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [28. 공용 자원·충전·에너지 최적화 — 대표 연구와 자료](2026/2026-10-10-area28-s8.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
+| 2026-10-10 | [Open-RMF 이진 우선순위 비용과 마감·재계획 표현](2026/2026-10-10-binary-priority-cost-deadline-and-replanning.md) | [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | — |
+| 2026-10-10 | [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](2026/2026-10-10-charging-threshold-charger-lift-evidence.md) | [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | — |
 | 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결](2026/2026-10-09-area18-s10.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
 | 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 열린 질문](2026/2026-10-09-area18-s11.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |
 | 2026-10-09 | [18. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술](2026/2026-10-09-area18-s6.md) | [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | — |

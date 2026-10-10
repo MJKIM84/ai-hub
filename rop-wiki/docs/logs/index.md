@@ -19,6 +19,7 @@ version: 1
 <!-- auto:logs-index:start -->
 **일일 로그**
 
+- [logs/daily/2026-10-10.md](../changelog.md)
 - [logs/daily/2026-10-09.md](../changelog.md)
 - [logs/daily/2026-09-30.md](../changelog.md)
 - [logs/daily/2026-09-29.md](../changelog.md)

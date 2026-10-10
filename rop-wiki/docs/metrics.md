@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-10-09
+기준일: 2026-10-10
 
 ### 영역별 페이지 상태 분포
 
@@ -27,8 +27,8 @@ version: 1
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 31 | 0 | 0 | 31 |
-| [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
-| [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
+| [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 32 | 0 | 0 | 32 |
+| [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 59 | 0 | 0 | 59 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
@@ -90,7 +90,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | 2026-09-25 | 2 |
+| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | 2026-10-10 | 3 |
 | [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | published | medium | 2026-09-25 | 2 |
 | [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | published | medium | 2026-09-25 | 2 |
 | [23. 업무 시스템 연동](categories/integration/business-system-integration.md) | published | medium | 2026-09-25 | 2 |
@@ -99,11 +99,11 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | 2026-09-25 | 2 |
-| [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | 2026-09-25 | 2 |
-| [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | 2026-09-25 | 2 |
-| [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | 2026-09-25 | 2 |
-| [28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | 2026-09-25 | 2 |
+| [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | 2026-10-10 | 3 |
+| [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | published | medium | 2026-10-10 | 3 |
+| [26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | published | medium | 2026-10-10 | 3 |
+| [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | 2026-10-10 | 3 |
+| [28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | published | medium | 2026-10-10 | 3 |
 
 **H. 실행·협업·예외 복구**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 153회 중 최종 통과 151회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 151, None 2
-- 2차 검증 판정: 통과 151, None 2
+- 실행 159회 중 최종 통과 157회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 157, None 2
+- 2차 검증 판정: 통과 157, None 2
 
 ### 반려·보류 건수
 
@@ -209,27 +209,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 586 |
-| 오픈소스 문서 | 236 |
-| 표준 | 206 |
+| 논문 | 593 |
+| 오픈소스 문서 | 244 |
+| 표준 | 208 |
 | 기사 | 129 |
-| 정부·연구기관 | 119 |
-| 벤더 문서 | 95 |
+| 정부·연구기관 | 120 |
+| 벤더 문서 | 97 |
 | 업계 보고서 | 28 |
 
-신뢰도: medium 990건, high 277건, low 132건
+신뢰도: medium 999건, high 286건, low 134건
 
 ### 현장 유형 매트릭스 채움률
 
-- 82/119 칸 (69%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 88/119 칸 (74%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 14 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 14 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 14 | published |
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 14 | published |
-| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 14 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 15 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 15 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 15 | published |
+| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 15 | published |
+| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-25 | 15 | published |
 <!-- auto:metrics:end -->

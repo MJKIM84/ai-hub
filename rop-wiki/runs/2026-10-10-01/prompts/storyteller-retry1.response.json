@@ -1,0 +1,602 @@
+{
+  "duration_api_ms": 185091,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.2689524,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 214537,
+    "cache_read_input_tokens": 72042,
+    "output_tokens": 26912,
+    "output_tokens_details": {
+      "thinking_tokens": 3236
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 214537,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 26912,
+        "cache_read_input_tokens": 72042,
+        "cache_creation_input_tokens": 214537,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 214537
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 26912,
+      "cacheReadInputTokens": 72042,
+      "cacheCreationInputTokens": 214537,
+      "webSearchRequests": 0,
+      "costUSD": 2.2689524,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3236,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-10-01\",\"outline\":[{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":1400,\"summary\":\"로봇 관제 규격의 하역 완료와 업무 어휘의 인수·재고 반영은 서로 다른 원문이 각각 정의한다(2026-10-10 확인). [사실][^ref-044][^ref-031][^ref-049] 하역 완료를 특정 CBV 단계와 자동으로 같다고 보지 않고 인수·재고 확정을 별도 완료 조건으로 두는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031][^ref-049]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":3300,\"summary\":\"물류창고 가상 시나리오 2건(입고 → 적치, 출하)은 유지하되 drop 완료를 CBV 단계로 단정하지 않도록 고치고, 현장 유형 기타(농업·지상 로봇 협업 시뮬레이션, FaMe) 사례를 더한다. [사실][^ref-1423]\",\"planned_findings\":[\"f3\",\"f7\",\"f8\",\"f9\",\"f24\",\"f27\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":1600,\"summary\":\"BPMN 2.0.2 규범 문서는 수신 작업·상관 키·타이머 이벤트와 보상을 정의한다. [사실][^ref-502] Open-RMF rmf_task_sequence 작업은 단계의 연쇄이고 단계는 이벤트로 구성된다. [사실][^ref-404]\",\"planned_findings\":[\"f5\",\"f6\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":1400,\"summary\":\"VDA 5050 3.0.0 태그판은 blockingType 을 NONE·SINGLE·SOFT·HARD 네 값으로 둔다. [사실][^ref-031] 개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)에 단계 건너뛰기 요청 키 수정이 있다. [사실][^ref-1424]\",\"planned_findings\":[\"f16\",\"f17\",\"f18\",\"f19\",\"f20\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":900,\"summary\":\"Filippone 외 비교 연구(v2 2026-08-17, IEEE TSE 2026)는 네 임무 기술 형식을 분석 비교하고 전문가 설문으로 검증했다. [사실][^ref-116] FaMe 는 BPMN 협업을 ROS 2 위에서 직접 실행한다. [사실][^ref-1423]\",\"planned_findings\":[\"f21\",\"f22\",\"f23\",\"f24\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":450,\"summary\":\"32. 예외 복구·재계획·업무 연속성과 67. 기타 현장을 연결에 더하고 17·20번 연결 근거를 짚는다.\",\"planned_findings\":[\"f10\",\"f12\",\"f7\",\"f16\"]},{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1100,\"summary\":\"oq-001·oq-014 는 부분 근거만 더하고 열림을 유지한다. [추정][^ref-044][^ref-031][^ref-049] 새 질문 3건을 올린다.\",\"planned_findings\":[\"f24\",\"f25\",\"f26\",\"f27\"]}],\"pages\":[{\"path\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"3절 첫 문단을 원문 정의(CBV 세 단계·VDA 5050 3.0.0 drop FINISHED·IngestorResult 기본 필드)와 [의견]으로 나눠 다시 씀, 5절 시나리오 1 문장 수정·IngestorResult 범위 한정과 사례 3(현장 유형 기타, FaMe, 작업 대상 미확인) 추가, 6·7·8·11절 보강(각 보강 소절 첫 줄에 2026-09-25 분리 주제 페이지 링크 유지)과 10절 연결 덧붙임, 13절 각주 갱신(ref-031·ref-044·ref-049 접근일, ref-116 발행일·접근일·열람)과 새 각주 1건(ref-1423). ref-366·ref-404·ref-502·ref-1424·ref-1425 는 자동 분리 뒤 분리 주제 페이지의 출처 절에만 남는다\",\"patches\":[{\"section\":\"3. 왜 중요한가\",\"action\":\"replace\",\"frontmatter\":{\"related_areas\":[17,20,23,26,29,32,38,39,54,67],\"sources\":[\"ref-023\",\"ref-031\",\"ref-044\",\"ref-049\",\"ref-110\",\"ref-111\",\"ref-112\",\"ref-113\",\"ref-116\",\"ref-117\",\"ref-118\",\"ref-119\",\"ref-121\",\"ref-123\",\"ref-124\",\"ref-366\",\"ref-404\",\"ref-502\",\"ref-1423\",\"ref-1424\",\"ref-1425\"],\"last_run\":\"2026-10-10\"},\"content\":\"로봇 관제 규격의 하역 완료와 업무 어휘의 인수·재고 반영은 서로 다른 원문이 각각 정의한다(2026-10-10 확인). [사실][^ref-044][^ref-031][^ref-049]\\n\\n- GS1 핵심 업무 어휘(Core Business Vocabulary, CBV) 2.0 온톨로지(2021-09-30 판)는 arriving을 물체가 어떤 위치에 도착하는 활동, accepting을 점유나 소유가 바뀌는 활동, receiving을 위치에서 수령되어 수령자 재고에 더해지는 활동으로 구분하고, receiving을 쓰는 것은 arriving·accepting을 쓰는 것과 상호 배타적이라고 적는다. [사실][^ref-044]\\n- VDA 5050 명세의 3.0.0 태그판(main 브랜치 판과 다를 수 있다)은 미리 정의된 drop 동작의 완료(FINISHED) 상태를, 하역이 끝나 적재물이 이동로봇을 떠나고 로봇이 새 적재 상태를 보고한 때로 정의한다(§6.2.3.2 표 5). [사실][^ref-031]\\n- Open-RMF의 하역 워크셀 결과 메시지 IngestorResult는 기본 정의 필드로 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED·SUCCESS·FAILED)를 두며, 이 기본 필드에는 수령자 재고 편입 여부를 나타내는 항목이 없다(워크셀별 추가 필드 자리는 열려 있다). [사실][^ref-049]\\n\\n세 정의를 대조하면, 로봇의 하역 완료(drop 완료, IngestorResult SUCCESS)를 특정 CBV 업무 단계와 자동으로 같다고 보지 말고 해당 업무의 인수·재고 확정 조건을 별도 완료 조건으로 모델링하는 편이 타당하다는 것이 이 위키의 판단이다(이 구성을 적용한 표준·사례는 확인하지 못했다). [의견][^ref-044][^ref-031][^ref-049] 수령자 재고 편입(CBV receiving)과 재고 확정은 연계 대상: 상위 업무 시스템(창고 관리 시스템(Warehouse Management System, WMS) 등)이고, ROP 몫은 두 완료 조건의 구분과 인수 확인 대기·분기로 한정된다는 것도 이 위키의 판단이다. [의견][^ref-044] 작업 대상의 인계 기록은 [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)과 이어진다.\\n\\n공급망 참조 모델도 업무 완료를 로봇 동작이 아니라 인수 시점에 둔다. ASCM SCOR 모델의 B2C 이행(F1)은 F1.3 Pick Product 같은 단계를 거쳐 마지막 단계인 F1.11 Obtain Proof of Delivery or Customer Acceptance(배송 증빙 또는 고객 인수 확보)로 끝난다(2026-09-25 확인). [사실][^ref-123]\\n\\n국내 제도도 물류센터를 처리 과정 단위로 나누어 본다. 국토교통부 스마트물류센터 인증은 입고·보관·피킹·출고 등 물류처리 과정별 첨단·자동화 정도를 보는 기능영역과, 시설의 구조적 성능·정보시스템 도입 수준 등을 보는 기반영역으로 평가해 1~5등급을 부여한다(2026-09-25 확인). [사실][^ref-124]\"},{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"replace\",\"content\":\"> **현장 유형: 물류창고.** 아래 시나리오 1·2는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 물류창고 밖의 사례는 아래 사례 3(현장 유형: 기타)에 있다.\\n\\n다음은 설명을 위한 가상의 시나리오이며, 로봇의 완료 신호와 업무상 완료가 어디서 갈리는지를 보인다.\\n\\n### 시나리오 1\\n\\n**물류 흐름 단계:** 입고 → 적치\\n\\n**시나리오:** 도크에서 하역된 입고 팔레트를 로봇이 하역 지점(워크셀)으로 운반해 인계하고, 입고 확정 뒤 보관 구역에 적치\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 입고 예정 화물이 도크에 도착해 상위 업무 시스템(WMS)이 입고 운반 작업을 요청한다. |\\n| 작업 대상 | 입고 팔레트와 그 화물 식별자. 이 식별자나 작업 id가 로봇 작업과 업무 확인을 잇는 키가 된다. |\\n| 수행 자원 | 로봇은 운반·하역을, 하역 지점 워크셀은 하역 결과 보고를, WMS는 인수 확인과 재고 반영을 맡는다. Open-RMF 배송 작업에서 로봇은 하역 지점에서 IngestorResult를 받을 때까지 IngestorRequest를 보낸다. [사실][^ref-023][^ref-049] |\\n| 제약 | 검수 종료 후 적치 시작, 같은 도크의 상차·하차 병행 금지, 하역 종료 후 일정 시간 안의 입고 확정 같은 선후·병행·시간 제약. ISA-95 세그먼트 의존 유형(AfterEnd, NotInParallel, NoLaterAfterEnd)으로 이런 제약을 단순 순서보다 세밀하게 표현할 수 있을 것으로 보이지만, ISA-95는 제조 운영 관리 표준이며 창고 작업에 적용한 사례는 확인하지 못했다. [추정][^ref-117][^ref-118] |\\n| 완료·인계 | VDA 5050 3.0.0은 drop 동작 완료를 적재물이 이동로봇을 떠나고 로봇이 새 적재 상태를 보고한 때로 정의한다. [사실][^ref-031] IngestorResult의 기본 정의 필드는 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED, SUCCESS, FAILED)이며, 이 기본 필드에는 수령자 재고 편입 여부가 없다. [사실][^ref-049] 따라서 입고 완료와 재고 변경은 CBV receiving에 해당하는 WMS 인수 확인이 따로 있어야 인정할 수 있을 것으로 보인다(적용 표준·사례 미확인). [추정][^ref-031][^ref-049][^ref-044] |\\n| 예외·성과 | 인수 확인이 오지 않거나 하역이 실패하면 공정은 대기하거나 예외로 분기해야 한다. [추정][^ref-044][^ref-119] Open-RMF 작업 상태 스키마는 failed·canceled·delayed 등 작업 상태와 단계별 이벤트·소요 시간 추정값을 보고한다. [사실][^ref-111] 처리량·시간·비용 영향은 미확인이다. |\\n\\n로봇이 팔레트를 내려놓으면 로봇 쪽 작업은 끝나지만, 이 시점을 곧바로 CBV arriving이나 receiving으로 단정하지 않고 어느 업무 단계에 해당하는지는 WMS 같은 업무 측 확인으로 정하는 것이 적절하다는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031] BPMN 모델에서 로봇 운반을 하나의 작업 단계로 두고 그 뒤에 WMS 인수 확인 메시지를 기다리는 수신 단계를 두어 작업 id나 화물 식별자로 상관시키면, 두 완료를 서로 다른 완료 조건을 가진 연속 단계로 표현할 수 있을 것으로 보인다(이 구성을 물류 로봇에 적용한 표준·사례는 확인하지 못했다). [추정][^ref-112][^ref-113][^ref-044]\\n\\n입고 확정이 나야 적치 작업이 시작되므로, 적치 단계의 선후 제약은 입고 단계의 완료 조건에 기대게 된다. [추정][^ref-117][^ref-118]\\n\\n### 시나리오 2\\n\\n**물류 흐름 단계:** 출하\\n\\n**시나리오:** 출하 대기 화물을 로봇이 출하 도크로 운반해 인도\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 해당 없음 |\\n| 작업 대상 | 포장을 마친 출하 화물 |\\n| 수행 자원 | 해당 없음 |\\n| 제약 | 해당 없음 |\\n| 완료·인계 | 로봇의 drop 완료는 화물의 물리적 인도까지만 가리킨다. [사실][^ref-031] 업무상 이행의 끝은 SCOR B2C 이행의 마지막 단계 F1.11 배송 증빙 또는 고객 인수 확보이다. [사실][^ref-123] |\\n| 예외·성과 | 해당 없음 |\\n\\n출하에서도 로봇 작업 완료와 고객 인수 사이에 업무 단계가 남는다. [추정][^ref-031][^ref-123]\\n\\n### 사례 3 — 물류창고 밖: 농업·지상 로봇 협업 시뮬레이션\\n\\n**현장 유형:** 기타\\n\\n**사례:** 농업·지상 로봇 협업 시뮬레이션에서 BPMN 협업 모델로 다중 로봇 임무를 실행하는 공개 예제(FaMe, [67. 기타 현장](../site-type-applications/other-sites.md))\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | 모델링 지침은 로봇을 풀(Pool), 임무를 프로세스(Process), 동작을 활동(Activity)으로 나타낸다. [사실][^ref-1423] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n이 사례는 물류창고 밖의 공개 작업 모델링 예제다. FaMe 연구팀(University of Camerino PROS Lab)은 공식 페이지(2022-05-03 게시)에서 지상 로봇 협업과 농업 두 시나리오의 시뮬레이션 패키지와 엔진 패키지의 빌드·실행 절차(colcon build, ros2 launch)를 공개한다. [사실][^ref-1423] FaMe는 BPMN 협업 다이어그램으로 다중 로봇 임무를 정의하고 모델링·구성·실행 단계를 거쳐 각 로봇에서 ROS 2 위에 그 협업을 직접 실행하는 공개 프레임워크다. [사실][^ref-1423] 같은 지침은 병렬 동작을 AND 게이트웨이, 내부 선택을 XOR 게이트웨이, 시간 대기를 타이머 이벤트, 실행 오류를 오류 이벤트로 표현하게 한다. [사실][^ref-1423] 이 예제가 다루는 작업 대상(물건·공간·정보·사람)과 시작 조건·제약·완료 조건·예외 처리의 구체 내용, 시나리오가 실외 현장인지는 공식 페이지에서 확인하지 못해 현장 유형을 기타로 둔다.\\n\\n이 예제는 시뮬레이션 재현 자료이며 현장 운영 성능 근거가 아니므로, 국내 상용 운영 실적이나 현장 성능 근거로 분류하지 않는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-1423]\"},{\"section\":\"6. 대표 접근법과 기술\",\"action\":\"replace\",\"content\":\"이 위키는 이 영역의 관련 접근법을 업무 프로세스 표기(BPMN), 제조 운영 표준의 세그먼트 의존(ISA-95·B2MML), 로봇 오케스트레이션의 작업 단계 구성(Open-RMF), 형식적 설계 점검(워크플로 넷)의 네 갈래로 정리한다. [의견][^ref-112][^ref-117][^ref-110][^ref-121]\\n\\n### 2026-10-10 보강: BPMN 규범 근거, 취소 후 정리, Open-RMF 단계 구성\\n\\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area02-s6.md)에 있다.\\n\\nBPMN 2.0.2 규범 문서(OMG formal/13-12-09, 2014-01 발행)는 외부 참여자의 메시지가 도착하면 완료되는 수신 작업(Receive Task), 메시지를 프로세스 인스턴스에 연결하는 상관 키(CorrelationKey), 지연·시간 조건을 표현하는 타이머 이벤트(Timer Event)를 정의한다. [사실][^ref-502] 따라서 운반 뒤 인수 확인 메시지를 기다리고 시간 초과 시 분기하는 구조는 특정 벤더 엔진에 한정되지 않고 BPMN 규범 요소로 표현할 수 있지만, 로봇 작업 식별자나 화물 식별자를 어떤 상관 키로 쓸지는 구현에서 정해야 하는 것으로 보인다. [추정][^ref-502][^ref-1423] 이전 정리의 기존 Camunda 근거 문장이 서술한 엔진 고유 동작은 BPMN 표준이 보장하는 것으로 넓히지 않으며, 이 구조를 로봇 인수 확인에 적용한 사례는 확인하지 못했다.\\n\\n#### 취소와 보상의 구분\\n\\nOpen-RMF rmf_task의 작업 인터페이스(Task.hpp) 주석은 취소 뒤에도 작업이 로봇을 짐 없는 상태로 되돌리기 위한 단계를 계속 수행할 수 있고(남은 대기 단계가 그런 단계로 바뀔 수 있다), 완료 콜백이 호출되어야 취소가 끝난다고 설명한다(2026-10-10 확인). [사실][^ref-366] BPMN 2.0.2는 이미 성공적으로 끝난 단계의 효과를 되돌리는 보상(Compensation)을 별도 개념으로 정의한다. [사실][^ref-502] 두 자료가 같은 상태 체계를 공유한다는 뜻은 아니지만, 워크플로에서 취소 요청과 취소 후 정리 완료를 서로 다른 상태로 나누고 실제 물건의 이동을 되돌릴 수 있는지에 따라 보상 단계를 따로 정의하는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-502][^ref-366] 복구 절차 자체는 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)에서 다루고, 이 영역은 워크플로의 취소·완료 상태 구분으로 한정한다.\\n\\n#### Open-RMF rmf_task_sequence의 단계·이벤트\\n\\nrmf_task README에 따르면 rmf_task_sequence의 작업은 순서대로 실행할 단계(Phase)의 연쇄이고 각 단계는 이벤트(Event)들로 구성되며, 작업 모델은 rmf_task_sequence에, 실제 로봇 명령 구현은 rmf_fleet_adapter에 둔다. [사실][^ref-404] 같은 README는 현재 기본 제공 이벤트로 Bundle, DropOff, GoToPlace, PerformAction, PickUp, Placeholder, WaitFor 일곱 가지를 든다(2026-10-10 확인). [사실][^ref-404] 이 기본 이벤트 목록과 단계 연쇄 구조만으로는 rmf_task_sequence를 임의의 업무 병렬 분기·합류를 실행하는 범용 BPMN 엔진으로 보기 어려워 보인다(Bundle 이벤트의 병렬·합류 의미는 원문 미확인). [추정][^ref-502][^ref-404]\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"replace\",\"content\":\"이 영역과 관련된 표준·오픈소스는 다음과 같다. 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n\\n### 2026-10-10 보강: 규범판·판 차이·패키지 변경\\n\\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area02-s7.md)에 있다.\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| BPMN 2.0.2 (OMG formal/13-12-09, 2014-01) | 표준 | 수신 작업·상관 키·타이머 이벤트·보상을 규범으로 정의해 인수 확인 대기와 취소 후 처리 표현의 근거가 된다 | [사실][^ref-502] |\\n| VDA 5050 3.0.0 태그판 | 표준 | 동작의 blockingType으로 주행과 다른 동작의 병행 가능 여부를 정한다 | [사실][^ref-031] |\\n| Open-RMF rmf_task (rmf_task_sequence) | 오픈소스 | 작업을 단계·이벤트의 연쇄로 구성한다 | [사실][^ref-404] |\\n| Open-RMF rmf_fleet_adapter (rmf_ros2, 패키지 2.14.0) | 오픈소스 | rmf_task_sequence 작업의 실제 로봇 명령 구현을 맡는다 | [사실][^ref-404][^ref-1424] |\\n| FaMe | 프레임워크 | BPMN 협업 다이어그램을 각 로봇에서 ROS 2 위에 실행한다 | [사실][^ref-1423] |\\n\\nVDA 5050 명세 3.0.0 태그판(main 브랜치 판과 다를 수 있음, 2026-10-10 확인)은 동작의 blockingType을 NONE·SINGLE·SOFT·HARD 네 값으로 두며, SINGLE은 주행은 허용하되 다른 동작의 병렬 실행은 허용하지 않고 HARD는 그 시점에 허용되는 유일한 동작이다. [사실][^ref-031] 2.1.0 태그판 명세의 blockingType은 NONE·SOFT·HARD 세 값이어서, SINGLE은 2.1.0 명세에는 없고 3.0.0 명세에는 있다(두 판 사이의 다른 판은 확인하지 않았고, 같은 발행 계열 두 판의 대조라 교차 확인이 아니다). [사실][^ref-031][^ref-1425] 공정 모델에서 주행과 작업 활동의 동시 수행 가능성을 제약으로 표현할 때는 SINGLE과 HARD를 구별해 다루는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-031] blockingType은 [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md) 쪽 인터페이스 정의이며, 이 영역에서는 공정 모델의 병행 제약 근거로만 쓴다.\\n\\n개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)의 변경 이력에는 단계 건너뛰기 요청의 키를 고친 항목(#543)이 있다. 이 버전은 Open-RMF 배포판 버전이 아니며, 고친 키의 이름은 미확인이다. [사실][^ref-1424] 단계 건너뛰기를 운영 정책에 넣는 구현은 rmf_fleet_adapter 패키지 버전과 건너뛰기 요청 스키마를 함께 기록해 두는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-1424][^ref-366]\"},{\"section\":\"8. 대표 연구와 자료\",\"action\":\"replace\",\"content\":\"로봇 작업을 업무 프로세스 형식으로 기술·실행하고 그 실행 기록을 분석하는 연구가 대표 자료다.\\n\\n### 2026-10-10 보강\\n\\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 연구와 자료](../../topics/2026/2026-09-25-area02-s8.md)에 있다.\\n\\n- Filippone·Pettinari·Pelliccione, Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis(arXiv 2603.15427, v1 2026-03-16, v2 2026-08-17, IEEE Transactions on Software Engineering (2026) 게재 정보) — 행동 트리·상태 기계·계층적 작업 네트워크(Hierarchical Task Network, HTN)·BPMN을 제어 구조, 임무 개념 표현(표현력), 도구 지원 기준으로 비교한다. [사실][^ref-116] 2026년 1월 4주 동안 83명에게 설문을 요청해 29개 완성 응답(응답률 34.94%)을 받고 일부 참여자와 후속 인터뷰(실시간 3명, 서면 1명)를 했으며, 같은 로봇 현장에서 형식별 처리량을 측정한 성능 비교가 아니라 분석 비교를 전문가 설문으로 검증한 연구다. [사실][^ref-116] 따라서 임무 기술 형식 선택의 검토 자료로 쓰되, 특정 형식이 항상 우수하다는 결론으로 옮기지 않는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-116]\\n- University of Camerino PROS Lab, FaMe 공식 페이지·사용 지침(2022-05-03 게시) — BPMN 협업 다이어그램으로 다중 로봇 임무를 정의하고 모델링·구성·실행 단계를 거쳐 각 로봇에서 ROS 2 위에 그 협업을 직접 실행하는 공개 프레임워크이며, 구성 단계에서 신호 이벤트의 type 속성에 ROS 메시지 형을 지정해 BPMN 이벤트와 ROS 메시지를 잇는다. [사실][^ref-1423]\"},{\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"action\":\"append\",\"content\":\"2026-10-10 보강으로 더한 연결:\\n\\n- [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) — 취소 요청과 취소 후 정리 완료, 보상 단계의 구분(6절 보강)이 예외 복구 절차와 이어진다.\\n- [67. 기타 현장](../site-type-applications/other-sites.md) — 농업·지상 로봇 협업 시뮬레이션 사례(5절 사례 3)의 현장 유형이다.\\n- 기존 연결 가운데 [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)은 하역 완료와 인수·재고 반영의 구분(3절)으로, [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md)은 VDA 5050 blockingType의 병행 제약(7절 보강)으로 이어진다.\"},{\"section\":\"11. 열린 질문\",\"action\":\"replace\",\"content\":\"이 영역에서 아직 답하지 못한 질문이다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n### 2026-10-10 보강\\n\\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 열린 질문](../../topics/2026/2026-09-25-area02-s11.md)에 있다.\\n\\n- **oq-001** (상태: 열림 · 부분 근거 2026-10-10 · 실행 2026-10-10-01) 로봇의 적재·하역 완료 신호(VDA 5050 drop 동작 완료, Open-RMF IngestorResult)를 EPCIS 인계 이벤트로 옮기는 표준 매핑이나 공개 구현 사례가 있는가? 확인한 원문(CBV.ttl, VDA 5050 3.0.0 태그판, IngestorResult.msg)은 로봇 동작 완료와 업무 단계 각각의 정의까지만 제공하며, 로봇 하역 완료를 EPCIS 인계 이벤트로 옮기는 표준 변환은 확인되지 않는다(공개 구현 사례는 검색하지 않아 확인 못 함). [추정][^ref-044][^ref-031][^ref-049] drop 완료를 곧바로 CBV arriving이나 receiving으로 단정하지 않고 업무 측 확인으로 어느 단계인지 정하는 수준까지만 답을 보강하는 것이 적절하다는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031] EPCIS 이벤트 생성과 재고 확정은 연계 대상: 상위 업무 시스템(WMS 등)이다.\\n- **oq-014** (상태: 열림 · 부분 근거 2026-10-10 · 실행 2026-10-10-01) 업무 프로세스 모델(BPMN 등)의 단계 상태와 로봇 작업 상태(Open-RMF 작업 상태, VDA 5050 동작 상태)를 동기화하는 표준 매핑이나 공개 구현이 있는가? FaMe는 BPMN 협업 다이어그램을 각 로봇에서 ROS 2 위에 실행하는 공개 구현으로, 신호 이벤트의 type 속성에 ROS 메시지 형을 지정해 BPMN 이벤트와 ROS 메시지를 잇는다. [사실][^ref-1423] 그러나 Open-RMF 작업 상태나 VDA 5050 동작 상태와 BPMN 단계 상태 사이의 표준 매핑으로 볼 근거는 확인하지 못했으므로 이 질문은 열린 상태로 두는 것이 맞다는 것이 이 위키의 판단이다. [의견][^ref-1423][^ref-031][^ref-404]\\n\\n새로 올린 질문(번호는 [열린 질문](../../open-questions.md) 목록에서 부여한다):\\n\\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) 로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가? (24. 작업·워크플로 모델링, 32. 예외 복구·재계획·업무 연속성과 관련)\\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) Open-RMF rmf_task_sequence의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가? (24. 작업·워크플로 모델링, 54. 시험·형식 검증·벤치마크와 관련)\\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) 운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가? (24. 작업·워크플로 모델링, 57. 자산·소프트웨어 수명주기 관리와 관련)\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"content\":\"[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-10-10\\n[^ref-049]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg, 접근일 2026-10-10\\n[^ref-110]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25\\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-09-25\\n[^ref-112]: OMG(Object Management Group), About the Business Process Model And Notation Specification Version 2.0, 미확인, https://www.omg.org/spec/BPMN/2.0/About-BPMN, 접근일 2026-09-25 (원문 미열람)\\n[^ref-113]: Camunda, Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md), 미확인, https://docs.camunda.io/docs/components/concepts/messages/, 접근일 2026-09-25\\n[^ref-116]: Filippone, G., Pettinari, S., & Pelliccione, P., Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis, 2026-03-16, https://arxiv.org/abs/2603.15427, 접근일 2026-10-10\\n[^ref-117]: MESA International, B2MML-BatchML — Schema/B2MML-Common.xsd, 2023, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd, 접근일 2026-09-25\\n[^ref-118]: MESA International, B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd, 미확인, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-OperationsDefinition.xsd, 접근일 2026-09-25\\n[^ref-119]: IEC / ISO, IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management, 2016, https://www.iso.org/standard/67480.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-121]: Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022), The complexity of soundness in workflow nets, 2022, https://arxiv.org/abs/2201.05588, 접근일 2026-09-25 (원문 미열람)\\n[^ref-123]: ASCM, SCOR Model — Fulfill F1.3 Pick Product, 미확인, https://scor.ascm.org/processes/fulfill/F1.3, 접근일 2026-09-25 (원문 미열람)\\n[^ref-124]: 국가물류통합정보센터(국토교통부), 스마트물류센터 인증제 안내, 미확인, https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW, 접근일 2026-09-25 (원문 미열람)\\n[^ref-366]: Open Robotics (open-rmf), rmf_task — rmf_task/include/rmf_task/Task.hpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp, 접근일 2026-10-10\\n[^ref-404]: Open Robotics (open-rmf), rmf_task — README, 미확인, https://github.com/open-rmf/rmf_task, 접근일 2026-10-10\\n[^ref-502]: OMG(Object Management Group), Business Process Model and Notation (BPMN), Version 2.0.2, 2014-01, https://www.omg.org/spec/BPMN/2.0.2/, 접근일 2026-10-10\\n[^ref-1423]: University of Camerino PROS Lab, FaMe — A BPMN-driven Framework for Multi-Robot System Development (공식 페이지·사용 지침), 2022-05-03, https://pros.unicam.it/fame/, 접근일 2026-10-10\\n[^ref-1424]: Open Robotics (open-rmf), rmf_ros2 (tag 2.14.0) — rmf_fleet_adapter/CHANGELOG.rst, 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\\n[^ref-1425]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 (tag 2.1.0) — VDA5050_EN.md, 미확인, https://github.com/VDA5050/VDA5050/blob/2.1.0/VDA5050_EN.md, 접근일 2026-10-10\"}]}],\"changelog_entry\":\"2026-10-10 | 24. 작업·워크플로 모델링 | 3절 하역 완료와 인수·재고 반영을 원문 정의별로 분리, 5절 시나리오 1 문장 수정과 사례 3(현장 유형 기타) 추가, 6·7·8·10·11절 보강(BPMN 2.0.2·취소 후 정리·rmf_task_sequence·VDA 5050 blockingType·rmf_fleet_adapter 2.14.0·Filippone 외 v2·FaMe, 2026-09-25 분리 주제 페이지 링크 유지), 13절 각주 갱신. 비고: ref-1423~ref-1425 는 실행 2026-10-09-26 브리프의 다른 출처 id 와 같아 id 충돌 여부 퍼블리셔 확인 필요 | run 2026-10-10-01\",\"index_updates\":{\"home_recent\":\"2026-10-10 — 24. 작업·워크플로 모델링: 로봇 하역 완료와 업무상 인수·재고 반영의 원문 정의를 나누고, 기타 현장(농업·지상 로봇 협업 시뮬레이션) 사례와 BPMN 2.0.2·rmf_task_sequence·VDA 5050 3.0.0 blockingType 근거를 보강\",\"category_recent\":\"2026-10-10 — 24. 작업·워크플로 모델링: 3절 완료 신호 정의 분리, 5절 기타 현장 사례 추가, 6·7·8·10·11절 보강과 각주 갱신\",\"area_recent\":\"2026-10-10 — 24. 작업·워크플로 모델링: 3절 첫 문단을 CBV·VDA 5050 3.0.0·IngestorResult 원문 정의와 [의견]으로 다시 쓰고, 5절 사례 3(현장 유형 기타, FaMe)과 6·7·8·10·11절 보강을 더함(2026-09-25 분리 주제 페이지 링크 유지)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"receive-task-bpmn\",\"term_ko\":\"수신 작업\",\"term_en\":\"Receive Task (BPMN)\",\"definition\":\"외부 참여자가 보낸 메시지가 도착할 때까지 기다리다가 메시지를 받으면 완료되는 BPMN 작업 유형이다.\",\"description\":\"BPMN 2.0.2 규범 문서가 정의한다. 메시지를 프로세스 인스턴스에 연결하는 상관 키(CorrelationKey), 시간 조건을 표현하는 타이머 이벤트와 함께 쓰면 운반 뒤 인수 확인을 기다리고 시간 초과 시 분기하는 구조를 표현할 수 있다.\",\"related_areas\":[24],\"sources\":[\"ref-502\"]},{\"action\":\"new\",\"slug\":\"bpmn-compensation\",\"term_ko\":\"BPMN 보상\",\"term_en\":\"Compensation (BPMN)\",\"definition\":\"이미 성공적으로 끝난 단계의 결과가 더는 필요 없을 때 그 효과를 되돌리는 처리를 별도 활동으로 표현하는 BPMN 개념이다.\",\"description\":\"BPMN 2.0.2 규범 문서가 정의하는 프로세스 모델 요소다. 한글 표기가 비슷한 용어집 항목 '보상 트랜잭션 (Compensating Transaction)'(compensating-transaction)과 같은 개념이 아니므로 구분해 쓰고, 두 항목을 서로 연결해 참고한다.\",\"related_areas\":[24,32],\"sources\":[\"ref-502\"]}],\"reference_updates\":[{\"id\":\"ref-044\",\"org\":\"GS1\",\"title\":\"gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)\",\"published\":\"2021-09-30\",\"url\":\"https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"GS1 CBV 2.0 온톨로지. arriving·accepting·receiving 등 업무 단계(BizStep)의 정의와 receiving 의 상호 배타 규정을 담는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"VDA 5050 공식 명세 본문. 이번에는 3.0.0 태그 고정판을 열어 §6.2.2 표 3(blockingType 네 값, SINGLE)과 §6.2.3.2 표 5(drop FINISHED 정의)를 확인했다. 발표일은 근거 미확인.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-049\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 하역 워크셀 결과 메시지 정의. 기본 필드는 time·request_guid·source_guid·status(ACKNOWLEDGED·SUCCESS·FAILED)이고 워크셀별 추가 필드 주석이 있다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-502\",\"org\":\"OMG(Object Management Group)\",\"title\":\"Business Process Model and Notation (BPMN), Version 2.0.2\",\"published\":\"2014-01\",\"url\":\"https://www.omg.org/spec/BPMN/2.0.2/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"BPMN 2.0.2 규범 문서(formal/2013-12-09). 수신 작업·상관 키·타이머 등 중간 이벤트·보상을 정의한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-1423\",\"org\":\"University of Camerino PROS Lab\",\"title\":\"FaMe — A BPMN-driven Framework for Multi-Robot System Development (공식 페이지·사용 지침)\",\"published\":\"2022-05-03\",\"url\":\"https://pros.unicam.it/fame/\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-10\",\"summary\":\"FaMe 연구팀의 공식 페이지. 지상 로봇 협업·농업 시뮬레이션 재현 절차, BPMN 모델링 지침 G1~G7, 구성 절차(신호 이벤트와 ROS 메시지 형 연결)를 제시한다. 기존 ref-503(GitHub README)·ref-114(논문)와 같은 연구팀 자료다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-366\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_task — rmf_task/include/rmf_task/Task.hpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 작업 인터페이스 헤더. Task::Active 의 cancel()·kill()·skip() 의 의미(취소 후 정리 단계, 완료 콜백으로 취소 종료)를 주석으로 설명한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-404\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_task — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_task\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"rmf_task 저장소 README. rmf_task_sequence 의 단계·이벤트 구조와 기본 이벤트 7종(Bundle·DropOff·GoToPlace·PerformAction·PickUp·Placeholder·WaitFor), 모델과 실행 구현의 위치를 설명한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-116\",\"org\":\"Filippone, G., Pettinari, S., & Pelliccione, P.\",\"title\":\"Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis\",\"published\":\"2026-03-16\",\"url\":\"https://arxiv.org/abs/2603.15427\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-10\",\"summary\":\"행동 트리·상태 기계·HTN·BPMN 을 제어 구조·표현력·도구 지원으로 비교하고 전문가 설문(83명 요청, 29개 응답)과 후속 인터뷰로 검증한 연구. v1 2026-03-16, v2 2026-08-17, Journal ref IEEE Transactions on Software Engineering (2026). 이번에 v2 본문을 열람했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-1424\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 (tag 2.14.0) — rmf_fleet_adapter/CHANGELOG.rst\",\"published\":\"2026-09-26\",\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"rmf_fleet_adapter 패키지 변경 이력. 2.14.0(2026-09-26) 절에 단계 건너뛰기 요청 키 수정(#543) 항목이 있다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]},{\"id\":\"ref-1425\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 (tag 2.1.0) — VDA5050_EN.md\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/2.1.0/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"VDA 5050 2.1.0 명세 본문. blockingType 을 NONE·SOFT·HARD 세 값으로 정의해 3.0.0 의 SINGLE 과 대조하는 근거가 된다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가?\",\"areas\":[24,32],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"Open-RMF rmf_task_sequence 의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가?\",\"areas\":[24,54],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가?\",\"areas\":[24,57],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"기타\",\"item\":\"수행 자원\",\"link\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md#5-적용-사례-현장-유형-명시\",\"title\":\"24. 작업·워크플로 모델링\"},{\"site_type\":\"물류창고\",\"item\":\"완료·인계\",\"link\":\"docs/categories/planning-and-optimization/task-and-workflow-modeling.md#5-적용-사례-현장-유형-명시\",\"title\":\"24. 작업·워크플로 모델링\"}],\"standards_updates\":[{\"name\":\"BPMN 2.0.2 (OMG formal/13-12-09)\",\"kind\":\"표준\",\"org\":\"OMG(Object Management Group)\",\"url\":\"https://www.omg.org/spec/BPMN/2.0.2/\",\"related_areas\":[24],\"summary\":\"2014-01 발행 BPMN 규범 문서. 수신 작업·상관 키·타이머 이벤트·보상을 정의해 인수 확인 대기와 취소 후 처리를 프로세스 모델로 표현하는 근거가 된다.\",\"ref_id\":\"ref-502\"}],\"additional_research_requests\":[\"분리 주제 페이지(2026-09-25-area02-s6·s7·s8·s11) 본문이 입력에 없고 하루 갱신 상한(2)도 있어 직접 고치지 못했다(예산으로 미룸). 다음 갱신 실행에서 이 페이지들을 입력으로 넣어 s8 의 ref-116 각주(발행일 2026-03 → 2026-03-16, 접근일 2026-10-10, '원문 미열람' 삭제)와 s7 표의 BPMN 행(ref-502 추가)을 고쳐야 한다. 이번 보강은 세부영역 6·7·8·11절에 더했고, 각 보강 소절 첫 줄에 이 페이지들로 가는 링크를 두었다.\",\"3·5절: 한국어 검색과 국내 자료(국내 물류센터·제조 현장의 운반 완료와 인수 확정 분리, 작업 모델링 사례)가 없다. 공통 규칙 8 충족을 위해 다음 갱신에서 보강이 필요하다.\",\"5절: 병원·제조 공장·상업 시설 등 다른 현장 유형의 실제 작업 모델링 사례가 없다. 시작 조건·제약·완료·인계·예외·성과를 채울 공개 사례가 필요하다.\",\"5절 사례 3: FaMe 농업·지상 로봇 협업 시나리오의 작업 대상(물건·공간·정보·사람), 시작 조건·제약·완료 조건·예외 처리, 실외 현장 여부, 실물 로봇 실험 규모를 확인할 원문(시나리오 패키지·논문)이 필요하다.\",\"6절: rmf_task_sequence Bundle 이벤트의 병렬·합류 의미를 API 문서 원문으로 확인해야 한다(f15 한정 해소).\",\"7절: rmf_fleet_adapter #543 에서 고친 단계 건너뛰기 요청 키의 실제 이름을 풀 리퀘스트 원문으로 확인해야 한다.\",\"11절 oq-001: 로봇 하역 완료를 EPCIS 인계 이벤트로 옮기는 공개 구현 사례를 실제로 검색해야 한다(이번 브리프는 검색하지 않아 '확인 못 함').\",\"트랙 반영 제안 2건 가운데 이번 브리프로 뒷받침되지 않은 항목(OPC UA for ISA-95 작업 응답, BPMN 2.0.2 사람 수행자·자원 배정, Serverless Workflow DSL, Isaac Mission Dispatch, PlanSys2, DART-LLM, LTLf→행동 트리, Open-RMF 워크플로 다이어그램, crossflow)은 다음 실행에서 검증한 뒤 반영해야 한다.\"],\"fixes_applied\":[\"3절 첫 문단 — 기존 [추정] 문장('arriving 수준의 물리적 인도')을 지우고 f1 [사실][^ref-044]·f2 [사실][^ref-031](3.0.0 §6.2.3.2 표 5)·f3 [사실][^ref-049](기본 정의 필드 한정)로 나눠 적은 뒤 f4 를 [의견](이 위키의 판단)으로 덧붙이고 '이 구성을 적용한 표준·사례는 확인하지 못했다' 한정을 유지했다.\",\"5절 시나리오 1 — 'CBV로 보면 arriving에 가깝다' 문장을 f27 [의견]으로 바꿔 drop 완료를 arriving·receiving 으로 단정하지 않고 업무 측(WMS) 확인으로 단계를 정한다고 썼다(완료·인계 칸의 IngestorResult 문장도 f3 대로 기본 정의 필드로 한정했다).\",\"5절 — 사례 3(현장 유형 기타, 농업·지상 로봇 협업 시뮬레이션, 67. 기타 현장 링크)을 새로 두고 f7·f8·f24 를 작업 대상·수행 자원·서술에 놓았으며, 시작 조건·제약·완료·인계·예외·성과는 '미확인'으로 두고 f9 를 [의견](이 위키의 판단)으로 적었다. site_matrix_updates 의 site_type 은 '기타'로 냈다.\",\"f17 — 7절 보강에서 'SINGLE 은 2.1.0 명세에는 없고 3.0.0 명세에는 있다'로 쓰고, 두 판 사이 다른 판 미확인과 같은 발행 계열 두 판의 대조라 교차 확인이 아님을 밝혔다.\",\"의견 주체 — f4·f9·f12·f18·f20·f23·f25·f27 을 쓴 [의견] 문장마다 '이 위키의 판단이다'를 넣었다(3·5·6·7·8·11절).\",\"ref-116 — 세부영역 13절 각주를 발행일 2026-03-16·접근일 2026-10-10 으로 고치고 '(원문 미열람)'을 뺐으며, 8절 보강에 v2(2026-08-17)·IEEE Transactions on Software Engineering (2026) 게재 정보와 f22 연구 방법(83명 요청·29개 응답, 인터뷰 3명·서면 1명, 처리량 측정 아님)을 적었다. 8절 분리 주제 페이지(2026-09-25-area02-s8)는 본문이 입력에 없고 갱신 상한이 있어 직접 고치지 못해 reference_updates 로 참고문헌 ref-116 을 갱신하고 additional_research_requests 에 남겼다.\",\"ref-031 — 새 문장(3절 f2, 7절 f16)에 '3.0.0 태그판(main 브랜치 판과 다를 수 있다)'을 밝히고 발표일은 쓰지 않았으며, 13절 각주 접근일을 2026-10-10 으로 고쳤다.\",\"f19·f20 — 7절 보강에 '개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)'으로 적고 Open-RMF 배포판 버전이 아니라고 밝혔으며, 고친 키의 이름은 '미확인'으로 두었다.\",\"f15·f26 — 6절에 'Bundle 이벤트의 병렬·합류 의미는 원문 미확인', 11절 oq-001 에 '공개 구현 사례는 검색하지 않아 확인 못 함' 한정을 남기고 '없다'로 단정하지 않았다.\",\"범위 경계 — 3절과 11절에 수령자 재고 편입(CBV receiving)·EPCIS 이벤트 생성·재고 확정을 '연계 대상: 상위 업무 시스템(WMS 등)'으로 표시하고 ROP 몫을 완료 조건 구분과 대기·분기로 한정했다.\",\"연결 — f16~f18 은 7절에서 20. 로봇·제조사 관제 연동, f10~f12 는 6절에서 32. 예외 복구·재계획·업무 연속성, f1~f4 는 3절에서 17. 작업 대상·자산 식별과 인계 추적과 번호·이름으로 연결하고 10절에 덧붙였으며 프런트매터 related_areas 에 32·67 을 더했다.\",\"6절 분리 주제 페이지 — 본문이 입력에 없어 해당 페이지는 고치지 않고(기존 Camunda 문장 ref-113 과 ref-112 각주는 그 페이지와 5절에 그대로 남음) 세부영역 6절에 f5(ref-502)·f6 을 덧붙였으며, Camunda 고유의 메시지 보존 시간·중복 거부 동작을 BPMN 표준 보장으로 넓히지 않는다고 적었다.\",\"7절 분리 주제 페이지 — 그 페이지 표는 입력에 없어 고치지 못하고, 세부영역 7절에 BPMN 2.0.2(ref-502, formal/13-12-09, 2014-01) 행을 포함한 보강 표를 더했으며 VDA 5050 blockingType(f16·f17)과 rmf_fleet_adapter 2.14.0(f19)을 기준일과 함께 적었다.\",\"트랙 반영 제안 2건 — 이번 브리프로 뒷받침되는 FaMe(f7·f8·f24, 5·8·11절)와 임무 기술 형식 비교 연구(f21~f23, 8절)만 반영하고, 나머지 항목은 본문에 넣지 않고 '제안'으로 남겼다(additional_research_requests 에 기록).\",\"11절과 open_question_updates — oq-001(f26·f27)·oq-014(f24·f25)는 '열림'을 유지한 채 11절에 부분 근거만 달았고(상태가 바뀌지 않아 update 는 내지 않음), 새 질문 3건을 관련 영역 24·32 / 24·54 / 24·57 로 등록했다.\",\"glossary_updates — '수신 작업 (Receive Task (BPMN))'을 신규로, 보상 후보는 'BPMN 보상 (Compensation (BPMN))'으로 표기하고 설명에 기존 '보상 트랜잭션 (Compensating Transaction)'과 다른 개념임과 연결을 적었다.\",\"인용 — 페이지 본문에 출처 원문의 직접 인용을 넣지 않고 모두 재서술했다(ref-044·ref-031·ref-502 포함).\",\"reference_updates 의 ref-1423·ref-1424·ref-1425 — 브리프 id 를 그대로 쓰고 changelog_entry 비고에 'id 충돌 여부 퍼블리셔 확인 필요'를 남겼다.\",\"2차: 기존 분리 주제 페이지 링크 복원 — 6·7·8·11절 패치를 append 에서 replace 로 바꿔 각 절의 기존 첫 문장을 유지하고, '### 2026-10-10 보강' 소절 첫 줄에 '이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 접근법과 기술 / 관련 표준·프레임워크·오픈소스 / 대표 연구와 자료 / 열린 질문](../../topics/2026/2026-09-25-area02-s6·s7·s8·s11.md)에 있다.' 줄을 두어 자동 분리 뒤에도 링크가 남게 했다.\",\"2차: 5절 사례 3 작업 대상 칸 — '미확인'으로 바꾸고 f24 문장(FaMe 의 모델링·구성·실행과 ROS 2 위 직접 실행, [사실][^ref-1423])을 표 아래 서술 문단으로 옮겼으며, 서술의 미확인 목록에 작업 대상을 더했다. site_matrix_updates 에서 {기타, 작업 대상}을 빼고 {기타, 수행 자원}은 유지했다.\",\"2차: 6절 보강 첫 문단의 Camunda 구절 — 구체 동작 이름(메시지 보존 시간·중복 거부)을 빼고 '이전 정리의 기존 Camunda 근거 문장이 서술한 엔진 고유 동작'으로만 가리켰다.\",\"2차: pages[0].diff_summary — '새 각주 6건'을 '새 각주 1건(ref-1423)'으로 고치고 ref-366·ref-404·ref-502·ref-1424·ref-1425 는 자동 분리 뒤 분리 주제 페이지의 출처 절에만 남는다고 적었다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-10-01",
+    "outline": [
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 1400,
+        "summary": "로봇 관제 규격의 하역 완료와 업무 어휘의 인수·재고 반영은 서로 다른 원문이 각각 정의한다(2026-10-10 확인). [사실][^ref-044][^ref-031][^ref-049] 하역 완료를 특정 CBV 단계와 자동으로 같다고 보지 않고 인수·재고 확정을 별도 완료 조건으로 두는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031][^ref-049]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 3300,
+        "summary": "물류창고 가상 시나리오 2건(입고 → 적치, 출하)은 유지하되 drop 완료를 CBV 단계로 단정하지 않도록 고치고, 현장 유형 기타(농업·지상 로봇 협업 시뮬레이션, FaMe) 사례를 더한다. [사실][^ref-1423]",
+        "planned_findings": [
+          "f3",
+          "f7",
+          "f8",
+          "f9",
+          "f24",
+          "f27"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 1600,
+        "summary": "BPMN 2.0.2 규범 문서는 수신 작업·상관 키·타이머 이벤트와 보상을 정의한다. [사실][^ref-502] Open-RMF rmf_task_sequence 작업은 단계의 연쇄이고 단계는 이벤트로 구성된다. [사실][^ref-404]",
+        "planned_findings": [
+          "f5",
+          "f6",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 1400,
+        "summary": "VDA 5050 3.0.0 태그판은 blockingType 을 NONE·SINGLE·SOFT·HARD 네 값으로 둔다. [사실][^ref-031] 개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)에 단계 건너뛰기 요청 키 수정이 있다. [사실][^ref-1424]",
+        "planned_findings": [
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 900,
+        "summary": "Filippone 외 비교 연구(v2 2026-08-17, IEEE TSE 2026)는 네 임무 기술 형식을 분석 비교하고 전문가 설문으로 검증했다. [사실][^ref-116] FaMe 는 BPMN 협업을 ROS 2 위에서 직접 실행한다. [사실][^ref-1423]",
+        "planned_findings": [
+          "f21",
+          "f22",
+          "f23",
+          "f24"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 450,
+        "summary": "32. 예외 복구·재계획·업무 연속성과 67. 기타 현장을 연결에 더하고 17·20번 연결 근거를 짚는다.",
+        "planned_findings": [
+          "f10",
+          "f12",
+          "f7",
+          "f16"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1100,
+        "summary": "oq-001·oq-014 는 부분 근거만 더하고 열림을 유지한다. [추정][^ref-044][^ref-031][^ref-049] 새 질문 3건을 올린다.",
+        "planned_findings": [
+          "f24",
+          "f25",
+          "f26",
+          "f27"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "3절 첫 문단을 원문 정의(CBV 세 단계·VDA 5050 3.0.0 drop FINISHED·IngestorResult 기본 필드)와 [의견]으로 나눠 다시 씀, 5절 시나리오 1 문장 수정·IngestorResult 범위 한정과 사례 3(현장 유형 기타, FaMe, 작업 대상 미확인) 추가, 6·7·8·11절 보강(각 보강 소절 첫 줄에 2026-09-25 분리 주제 페이지 링크 유지)과 10절 연결 덧붙임, 13절 각주 갱신(ref-031·ref-044·ref-049 접근일, ref-116 발행일·접근일·열람)과 새 각주 1건(ref-1423). ref-366·ref-404·ref-502·ref-1424·ref-1425 는 자동 분리 뒤 분리 주제 페이지의 출처 절에만 남는다",
+        "patches": [
+          {
+            "section": "3. 왜 중요한가",
+            "action": "replace",
+            "frontmatter": {
+              "related_areas": [
+                17,
+                20,
+                23,
+                26,
+                29,
+                32,
+                38,
+                39,
+                54,
+                67
+              ],
+              "sources": [
+                "ref-023",
+                "ref-031",
+                "ref-044",
+                "ref-049",
+                "ref-110",
+                "ref-111",
+                "ref-112",
+                "ref-113",
+                "ref-116",
+                "ref-117",
+                "ref-118",
+                "ref-119",
+                "ref-121",
+                "ref-123",
+                "ref-124",
+                "ref-366",
+                "ref-404",
+                "ref-502",
+                "ref-1423",
+                "ref-1424",
+                "ref-1425"
+              ],
+              "last_run": "2026-10-10"
+            },
+            "content": "로봇 관제 규격의 하역 완료와 업무 어휘의 인수·재고 반영은 서로 다른 원문이 각각 정의한다(2026-10-10 확인). [사실][^ref-044][^ref-031][^ref-049]\n\n- GS1 핵심 업무 어휘(Core Business Vocabulary, CBV) 2.0 온톨로지(2021-09-30 판)는 arriving을 물체가 어떤 위치에 도착하는 활동, accepting을 점유나 소유가 바뀌는 활동, receiving을 위치에서 수령되어 수령자 재고에 더해지는 활동으로 구분하고, receiving을 쓰는 것은 arriving·accepting을 쓰는 것과 상호 배타적이라고 적는다. [사실][^ref-044]\n- VDA 5050 명세의 3.0.0 태그판(main 브랜치 판과 다를 수 있다)은 미리 정의된 drop 동작의 완료(FINISHED) 상태를, 하역이 끝나 적재물이 이동로봇을 떠나고 로봇이 새 적재 상태를 보고한 때로 정의한다(§6.2.3.2 표 5). [사실][^ref-031]\n- Open-RMF의 하역 워크셀 결과 메시지 IngestorResult는 기본 정의 필드로 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED·SUCCESS·FAILED)를 두며, 이 기본 필드에는 수령자 재고 편입 여부를 나타내는 항목이 없다(워크셀별 추가 필드 자리는 열려 있다). [사실][^ref-049]\n\n세 정의를 대조하면, 로봇의 하역 완료(drop 완료, IngestorResult SUCCESS)를 특정 CBV 업무 단계와 자동으로 같다고 보지 말고 해당 업무의 인수·재고 확정 조건을 별도 완료 조건으로 모델링하는 편이 타당하다는 것이 이 위키의 판단이다(이 구성을 적용한 표준·사례는 확인하지 못했다). [의견][^ref-044][^ref-031][^ref-049] 수령자 재고 편입(CBV receiving)과 재고 확정은 연계 대상: 상위 업무 시스템(창고 관리 시스템(Warehouse Management System, WMS) 등)이고, ROP 몫은 두 완료 조건의 구분과 인수 확인 대기·분기로 한정된다는 것도 이 위키의 판단이다. [의견][^ref-044] 작업 대상의 인계 기록은 [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)과 이어진다.\n\n공급망 참조 모델도 업무 완료를 로봇 동작이 아니라 인수 시점에 둔다. ASCM SCOR 모델의 B2C 이행(F1)은 F1.3 Pick Product 같은 단계를 거쳐 마지막 단계인 F1.11 Obtain Proof of Delivery or Customer Acceptance(배송 증빙 또는 고객 인수 확보)로 끝난다(2026-09-25 확인). [사실][^ref-123]\n\n국내 제도도 물류센터를 처리 과정 단위로 나누어 본다. 국토교통부 스마트물류센터 인증은 입고·보관·피킹·출고 등 물류처리 과정별 첨단·자동화 정도를 보는 기능영역과, 시설의 구조적 성능·정보시스템 도입 수준 등을 보는 기반영역으로 평가해 1~5등급을 부여한다(2026-09-25 확인). [사실][^ref-124]"
+          },
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "replace",
+            "content": "> **현장 유형: 물류창고.** 아래 시나리오 1·2는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 물류창고 밖의 사례는 아래 사례 3(현장 유형: 기타)에 있다.\n\n다음은 설명을 위한 가상의 시나리오이며, 로봇의 완료 신호와 업무상 완료가 어디서 갈리는지를 보인다.\n\n### 시나리오 1\n\n**물류 흐름 단계:** 입고 → 적치\n\n**시나리오:** 도크에서 하역된 입고 팔레트를 로봇이 하역 지점(워크셀)으로 운반해 인계하고, 입고 확정 뒤 보관 구역에 적치\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 입고 예정 화물이 도크에 도착해 상위 업무 시스템(WMS)이 입고 운반 작업을 요청한다. |\n| 작업 대상 | 입고 팔레트와 그 화물 식별자. 이 식별자나 작업 id가 로봇 작업과 업무 확인을 잇는 키가 된다. |\n| 수행 자원 | 로봇은 운반·하역을, 하역 지점 워크셀은 하역 결과 보고를, WMS는 인수 확인과 재고 반영을 맡는다. Open-RMF 배송 작업에서 로봇은 하역 지점에서 IngestorResult를 받을 때까지 IngestorRequest를 보낸다. [사실][^ref-023][^ref-049] |\n| 제약 | 검수 종료 후 적치 시작, 같은 도크의 상차·하차 병행 금지, 하역 종료 후 일정 시간 안의 입고 확정 같은 선후·병행·시간 제약. ISA-95 세그먼트 의존 유형(AfterEnd, NotInParallel, NoLaterAfterEnd)으로 이런 제약을 단순 순서보다 세밀하게 표현할 수 있을 것으로 보이지만, ISA-95는 제조 운영 관리 표준이며 창고 작업에 적용한 사례는 확인하지 못했다. [추정][^ref-117][^ref-118] |\n| 완료·인계 | VDA 5050 3.0.0은 drop 동작 완료를 적재물이 이동로봇을 떠나고 로봇이 새 적재 상태를 보고한 때로 정의한다. [사실][^ref-031] IngestorResult의 기본 정의 필드는 시각·요청 id·워크셀 id·상태(ACKNOWLEDGED, SUCCESS, FAILED)이며, 이 기본 필드에는 수령자 재고 편입 여부가 없다. [사실][^ref-049] 따라서 입고 완료와 재고 변경은 CBV receiving에 해당하는 WMS 인수 확인이 따로 있어야 인정할 수 있을 것으로 보인다(적용 표준·사례 미확인). [추정][^ref-031][^ref-049][^ref-044] |\n| 예외·성과 | 인수 확인이 오지 않거나 하역이 실패하면 공정은 대기하거나 예외로 분기해야 한다. [추정][^ref-044][^ref-119] Open-RMF 작업 상태 스키마는 failed·canceled·delayed 등 작업 상태와 단계별 이벤트·소요 시간 추정값을 보고한다. [사실][^ref-111] 처리량·시간·비용 영향은 미확인이다. |\n\n로봇이 팔레트를 내려놓으면 로봇 쪽 작업은 끝나지만, 이 시점을 곧바로 CBV arriving이나 receiving으로 단정하지 않고 어느 업무 단계에 해당하는지는 WMS 같은 업무 측 확인으로 정하는 것이 적절하다는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031] BPMN 모델에서 로봇 운반을 하나의 작업 단계로 두고 그 뒤에 WMS 인수 확인 메시지를 기다리는 수신 단계를 두어 작업 id나 화물 식별자로 상관시키면, 두 완료를 서로 다른 완료 조건을 가진 연속 단계로 표현할 수 있을 것으로 보인다(이 구성을 물류 로봇에 적용한 표준·사례는 확인하지 못했다). [추정][^ref-112][^ref-113][^ref-044]\n\n입고 확정이 나야 적치 작업이 시작되므로, 적치 단계의 선후 제약은 입고 단계의 완료 조건에 기대게 된다. [추정][^ref-117][^ref-118]\n\n### 시나리오 2\n\n**물류 흐름 단계:** 출하\n\n**시나리오:** 출하 대기 화물을 로봇이 출하 도크로 운반해 인도\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 해당 없음 |\n| 작업 대상 | 포장을 마친 출하 화물 |\n| 수행 자원 | 해당 없음 |\n| 제약 | 해당 없음 |\n| 완료·인계 | 로봇의 drop 완료는 화물의 물리적 인도까지만 가리킨다. [사실][^ref-031] 업무상 이행의 끝은 SCOR B2C 이행의 마지막 단계 F1.11 배송 증빙 또는 고객 인수 확보이다. [사실][^ref-123] |\n| 예외·성과 | 해당 없음 |\n\n출하에서도 로봇 작업 완료와 고객 인수 사이에 업무 단계가 남는다. [추정][^ref-031][^ref-123]\n\n### 사례 3 — 물류창고 밖: 농업·지상 로봇 협업 시뮬레이션\n\n**현장 유형:** 기타\n\n**사례:** 농업·지상 로봇 협업 시뮬레이션에서 BPMN 협업 모델로 다중 로봇 임무를 실행하는 공개 예제(FaMe, [67. 기타 현장](../site-type-applications/other-sites.md))\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 모델링 지침은 로봇을 풀(Pool), 임무를 프로세스(Process), 동작을 활동(Activity)으로 나타낸다. [사실][^ref-1423] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n이 사례는 물류창고 밖의 공개 작업 모델링 예제다. FaMe 연구팀(University of Camerino PROS Lab)은 공식 페이지(2022-05-03 게시)에서 지상 로봇 협업과 농업 두 시나리오의 시뮬레이션 패키지와 엔진 패키지의 빌드·실행 절차(colcon build, ros2 launch)를 공개한다. [사실][^ref-1423] FaMe는 BPMN 협업 다이어그램으로 다중 로봇 임무를 정의하고 모델링·구성·실행 단계를 거쳐 각 로봇에서 ROS 2 위에 그 협업을 직접 실행하는 공개 프레임워크다. [사실][^ref-1423] 같은 지침은 병렬 동작을 AND 게이트웨이, 내부 선택을 XOR 게이트웨이, 시간 대기를 타이머 이벤트, 실행 오류를 오류 이벤트로 표현하게 한다. [사실][^ref-1423] 이 예제가 다루는 작업 대상(물건·공간·정보·사람)과 시작 조건·제약·완료 조건·예외 처리의 구체 내용, 시나리오가 실외 현장인지는 공식 페이지에서 확인하지 못해 현장 유형을 기타로 둔다.\n\n이 예제는 시뮬레이션 재현 자료이며 현장 운영 성능 근거가 아니므로, 국내 상용 운영 실적이나 현장 성능 근거로 분류하지 않는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-1423]"
+          },
+          {
+            "section": "6. 대표 접근법과 기술",
+            "action": "replace",
+            "content": "이 위키는 이 영역의 관련 접근법을 업무 프로세스 표기(BPMN), 제조 운영 표준의 세그먼트 의존(ISA-95·B2MML), 로봇 오케스트레이션의 작업 단계 구성(Open-RMF), 형식적 설계 점검(워크플로 넷)의 네 갈래로 정리한다. [의견][^ref-112][^ref-117][^ref-110][^ref-121]\n\n### 2026-10-10 보강: BPMN 규범 근거, 취소 후 정리, Open-RMF 단계 구성\n\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area02-s6.md)에 있다.\n\nBPMN 2.0.2 규범 문서(OMG formal/13-12-09, 2014-01 발행)는 외부 참여자의 메시지가 도착하면 완료되는 수신 작업(Receive Task), 메시지를 프로세스 인스턴스에 연결하는 상관 키(CorrelationKey), 지연·시간 조건을 표현하는 타이머 이벤트(Timer Event)를 정의한다. [사실][^ref-502] 따라서 운반 뒤 인수 확인 메시지를 기다리고 시간 초과 시 분기하는 구조는 특정 벤더 엔진에 한정되지 않고 BPMN 규범 요소로 표현할 수 있지만, 로봇 작업 식별자나 화물 식별자를 어떤 상관 키로 쓸지는 구현에서 정해야 하는 것으로 보인다. [추정][^ref-502][^ref-1423] 이전 정리의 기존 Camunda 근거 문장이 서술한 엔진 고유 동작은 BPMN 표준이 보장하는 것으로 넓히지 않으며, 이 구조를 로봇 인수 확인에 적용한 사례는 확인하지 못했다.\n\n#### 취소와 보상의 구분\n\nOpen-RMF rmf_task의 작업 인터페이스(Task.hpp) 주석은 취소 뒤에도 작업이 로봇을 짐 없는 상태로 되돌리기 위한 단계를 계속 수행할 수 있고(남은 대기 단계가 그런 단계로 바뀔 수 있다), 완료 콜백이 호출되어야 취소가 끝난다고 설명한다(2026-10-10 확인). [사실][^ref-366] BPMN 2.0.2는 이미 성공적으로 끝난 단계의 효과를 되돌리는 보상(Compensation)을 별도 개념으로 정의한다. [사실][^ref-502] 두 자료가 같은 상태 체계를 공유한다는 뜻은 아니지만, 워크플로에서 취소 요청과 취소 후 정리 완료를 서로 다른 상태로 나누고 실제 물건의 이동을 되돌릴 수 있는지에 따라 보상 단계를 따로 정의하는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-502][^ref-366] 복구 절차 자체는 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)에서 다루고, 이 영역은 워크플로의 취소·완료 상태 구분으로 한정한다.\n\n#### Open-RMF rmf_task_sequence의 단계·이벤트\n\nrmf_task README에 따르면 rmf_task_sequence의 작업은 순서대로 실행할 단계(Phase)의 연쇄이고 각 단계는 이벤트(Event)들로 구성되며, 작업 모델은 rmf_task_sequence에, 실제 로봇 명령 구현은 rmf_fleet_adapter에 둔다. [사실][^ref-404] 같은 README는 현재 기본 제공 이벤트로 Bundle, DropOff, GoToPlace, PerformAction, PickUp, Placeholder, WaitFor 일곱 가지를 든다(2026-10-10 확인). [사실][^ref-404] 이 기본 이벤트 목록과 단계 연쇄 구조만으로는 rmf_task_sequence를 임의의 업무 병렬 분기·합류를 실행하는 범용 BPMN 엔진으로 보기 어려워 보인다(Bundle 이벤트의 병렬·합류 의미는 원문 미확인). [추정][^ref-502][^ref-404]"
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "replace",
+            "content": "이 영역과 관련된 표준·오픈소스는 다음과 같다. 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n\n### 2026-10-10 보강: 규범판·판 차이·패키지 변경\n\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area02-s7.md)에 있다.\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| BPMN 2.0.2 (OMG formal/13-12-09, 2014-01) | 표준 | 수신 작업·상관 키·타이머 이벤트·보상을 규범으로 정의해 인수 확인 대기와 취소 후 처리 표현의 근거가 된다 | [사실][^ref-502] |\n| VDA 5050 3.0.0 태그판 | 표준 | 동작의 blockingType으로 주행과 다른 동작의 병행 가능 여부를 정한다 | [사실][^ref-031] |\n| Open-RMF rmf_task (rmf_task_sequence) | 오픈소스 | 작업을 단계·이벤트의 연쇄로 구성한다 | [사실][^ref-404] |\n| Open-RMF rmf_fleet_adapter (rmf_ros2, 패키지 2.14.0) | 오픈소스 | rmf_task_sequence 작업의 실제 로봇 명령 구현을 맡는다 | [사실][^ref-404][^ref-1424] |\n| FaMe | 프레임워크 | BPMN 협업 다이어그램을 각 로봇에서 ROS 2 위에 실행한다 | [사실][^ref-1423] |\n\nVDA 5050 명세 3.0.0 태그판(main 브랜치 판과 다를 수 있음, 2026-10-10 확인)은 동작의 blockingType을 NONE·SINGLE·SOFT·HARD 네 값으로 두며, SINGLE은 주행은 허용하되 다른 동작의 병렬 실행은 허용하지 않고 HARD는 그 시점에 허용되는 유일한 동작이다. [사실][^ref-031] 2.1.0 태그판 명세의 blockingType은 NONE·SOFT·HARD 세 값이어서, SINGLE은 2.1.0 명세에는 없고 3.0.0 명세에는 있다(두 판 사이의 다른 판은 확인하지 않았고, 같은 발행 계열 두 판의 대조라 교차 확인이 아니다). [사실][^ref-031][^ref-1425] 공정 모델에서 주행과 작업 활동의 동시 수행 가능성을 제약으로 표현할 때는 SINGLE과 HARD를 구별해 다루는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-031] blockingType은 [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md) 쪽 인터페이스 정의이며, 이 영역에서는 공정 모델의 병행 제약 근거로만 쓴다.\n\n개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)의 변경 이력에는 단계 건너뛰기 요청의 키를 고친 항목(#543)이 있다. 이 버전은 Open-RMF 배포판 버전이 아니며, 고친 키의 이름은 미확인이다. [사실][^ref-1424] 단계 건너뛰기를 운영 정책에 넣는 구현은 rmf_fleet_adapter 패키지 버전과 건너뛰기 요청 스키마를 함께 기록해 두는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-1424][^ref-366]"
+          },
+          {
+            "section": "8. 대표 연구와 자료",
+            "action": "replace",
+            "content": "로봇 작업을 업무 프로세스 형식으로 기술·실행하고 그 실행 기록을 분석하는 연구가 대표 자료다.\n\n### 2026-10-10 보강\n\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 연구와 자료](../../topics/2026/2026-09-25-area02-s8.md)에 있다.\n\n- Filippone·Pettinari·Pelliccione, Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis(arXiv 2603.15427, v1 2026-03-16, v2 2026-08-17, IEEE Transactions on Software Engineering (2026) 게재 정보) — 행동 트리·상태 기계·계층적 작업 네트워크(Hierarchical Task Network, HTN)·BPMN을 제어 구조, 임무 개념 표현(표현력), 도구 지원 기준으로 비교한다. [사실][^ref-116] 2026년 1월 4주 동안 83명에게 설문을 요청해 29개 완성 응답(응답률 34.94%)을 받고 일부 참여자와 후속 인터뷰(실시간 3명, 서면 1명)를 했으며, 같은 로봇 현장에서 형식별 처리량을 측정한 성능 비교가 아니라 분석 비교를 전문가 설문으로 검증한 연구다. [사실][^ref-116] 따라서 임무 기술 형식 선택의 검토 자료로 쓰되, 특정 형식이 항상 우수하다는 결론으로 옮기지 않는 편이 좋다는 것이 이 위키의 판단이다. [의견][^ref-116]\n- University of Camerino PROS Lab, FaMe 공식 페이지·사용 지침(2022-05-03 게시) — BPMN 협업 다이어그램으로 다중 로봇 임무를 정의하고 모델링·구성·실행 단계를 거쳐 각 로봇에서 ROS 2 위에 그 협업을 직접 실행하는 공개 프레임워크이며, 구성 단계에서 신호 이벤트의 type 속성에 ROS 메시지 형을 지정해 BPMN 이벤트와 ROS 메시지를 잇는다. [사실][^ref-1423]"
+          },
+          {
+            "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+            "action": "append",
+            "content": "2026-10-10 보강으로 더한 연결:\n\n- [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) — 취소 요청과 취소 후 정리 완료, 보상 단계의 구분(6절 보강)이 예외 복구 절차와 이어진다.\n- [67. 기타 현장](../site-type-applications/other-sites.md) — 농업·지상 로봇 협업 시뮬레이션 사례(5절 사례 3)의 현장 유형이다.\n- 기존 연결 가운데 [17. 작업 대상·자산 식별과 인계 추적](../objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)은 하역 완료와 인수·재고 반영의 구분(3절)으로, [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md)은 VDA 5050 blockingType의 병행 제약(7절 보강)으로 이어진다."
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "replace",
+            "content": "이 영역에서 아직 답하지 못한 질문이다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n### 2026-10-10 보강\n\n이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 열린 질문](../../topics/2026/2026-09-25-area02-s11.md)에 있다.\n\n- **oq-001** (상태: 열림 · 부분 근거 2026-10-10 · 실행 2026-10-10-01) 로봇의 적재·하역 완료 신호(VDA 5050 drop 동작 완료, Open-RMF IngestorResult)를 EPCIS 인계 이벤트로 옮기는 표준 매핑이나 공개 구현 사례가 있는가? 확인한 원문(CBV.ttl, VDA 5050 3.0.0 태그판, IngestorResult.msg)은 로봇 동작 완료와 업무 단계 각각의 정의까지만 제공하며, 로봇 하역 완료를 EPCIS 인계 이벤트로 옮기는 표준 변환은 확인되지 않는다(공개 구현 사례는 검색하지 않아 확인 못 함). [추정][^ref-044][^ref-031][^ref-049] drop 완료를 곧바로 CBV arriving이나 receiving으로 단정하지 않고 업무 측 확인으로 어느 단계인지 정하는 수준까지만 답을 보강하는 것이 적절하다는 것이 이 위키의 판단이다. [의견][^ref-044][^ref-031] EPCIS 이벤트 생성과 재고 확정은 연계 대상: 상위 업무 시스템(WMS 등)이다.\n- **oq-014** (상태: 열림 · 부분 근거 2026-10-10 · 실행 2026-10-10-01) 업무 프로세스 모델(BPMN 등)의 단계 상태와 로봇 작업 상태(Open-RMF 작업 상태, VDA 5050 동작 상태)를 동기화하는 표준 매핑이나 공개 구현이 있는가? FaMe는 BPMN 협업 다이어그램을 각 로봇에서 ROS 2 위에 실행하는 공개 구현으로, 신호 이벤트의 type 속성에 ROS 메시지 형을 지정해 BPMN 이벤트와 ROS 메시지를 잇는다. [사실][^ref-1423] 그러나 Open-RMF 작업 상태나 VDA 5050 동작 상태와 BPMN 단계 상태 사이의 표준 매핑으로 볼 근거는 확인하지 못했으므로 이 질문은 열린 상태로 두는 것이 맞다는 것이 이 위키의 판단이다. [의견][^ref-1423][^ref-031][^ref-404]\n\n새로 올린 질문(번호는 [열린 질문](../../open-questions.md) 목록에서 부여한다):\n\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) 로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가? (24. 작업·워크플로 모델링, 32. 예외 복구·재계획·업무 연속성과 관련)\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) Open-RMF rmf_task_sequence의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가? (24. 작업·워크플로 모델링, 54. 시험·형식 검증·벤치마크와 관련)\n- (상태: 열림 · 제기 2026-10-10 · 실행 2026-10-10-01) 운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가? (24. 작업·워크플로 모델링, 57. 자산·소프트웨어 수명주기 관리와 관련)"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "content": "[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-10-10\n[^ref-049]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg, 접근일 2026-10-10\n[^ref-110]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-09-25\n[^ref-112]: OMG(Object Management Group), About the Business Process Model And Notation Specification Version 2.0, 미확인, https://www.omg.org/spec/BPMN/2.0/About-BPMN, 접근일 2026-09-25 (원문 미열람)\n[^ref-113]: Camunda, Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md), 미확인, https://docs.camunda.io/docs/components/concepts/messages/, 접근일 2026-09-25\n[^ref-116]: Filippone, G., Pettinari, S., & Pelliccione, P., Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis, 2026-03-16, https://arxiv.org/abs/2603.15427, 접근일 2026-10-10\n[^ref-117]: MESA International, B2MML-BatchML — Schema/B2MML-Common.xsd, 2023, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd, 접근일 2026-09-25\n[^ref-118]: MESA International, B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd, 미확인, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-OperationsDefinition.xsd, 접근일 2026-09-25\n[^ref-119]: IEC / ISO, IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management, 2016, https://www.iso.org/standard/67480.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-121]: Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022), The complexity of soundness in workflow nets, 2022, https://arxiv.org/abs/2201.05588, 접근일 2026-09-25 (원문 미열람)\n[^ref-123]: ASCM, SCOR Model — Fulfill F1.3 Pick Product, 미확인, https://scor.ascm.org/processes/fulfill/F1.3, 접근일 2026-09-25 (원문 미열람)\n[^ref-124]: 국가물류통합정보센터(국토교통부), 스마트물류센터 인증제 안내, 미확인, https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW, 접근일 2026-09-25 (원문 미열람)\n[^ref-366]: Open Robotics (open-rmf), rmf_task — rmf_task/include/rmf_task/Task.hpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp, 접근일 2026-10-10\n[^ref-404]: Open Robotics (open-rmf), rmf_task — README, 미확인, https://github.com/open-rmf/rmf_task, 접근일 2026-10-10\n[^ref-502]: OMG(Object Management Group), Business Process Model and Notation (BPMN), Version 2.0.2, 2014-01, https://www.omg.org/spec/BPMN/2.0.2/, 접근일 2026-10-10\n[^ref-1423]: University of Camerino PROS Lab, FaMe — A BPMN-driven Framework for Multi-Robot System Development (공식 페이지·사용 지침), 2022-05-03, https://pros.unicam.it/fame/, 접근일 2026-10-10\n[^ref-1424]: Open Robotics (open-rmf), rmf_ros2 (tag 2.14.0) — rmf_fleet_adapter/CHANGELOG.rst, 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\n[^ref-1425]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 (tag 2.1.0) — VDA5050_EN.md, 미확인, https://github.com/VDA5050/VDA5050/blob/2.1.0/VDA5050_EN.md, 접근일 2026-10-10"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-10 | 24. 작업·워크플로 모델링 | 3절 하역 완료와 인수·재고 반영을 원문 정의별로 분리, 5절 시나리오 1 문장 수정과 사례 3(현장 유형 기타) 추가, 6·7·8·10·11절 보강(BPMN 2.0.2·취소 후 정리·rmf_task_sequence·VDA 5050 blockingType·rmf_fleet_adapter 2.14.0·Filippone 외 v2·FaMe, 2026-09-25 분리 주제 페이지 링크 유지), 13절 각주 갱신. 비고: ref-1423~ref-1425 는 실행 2026-10-09-26 브리프의 다른 출처 id 와 같아 id 충돌 여부 퍼블리셔 확인 필요 | run 2026-10-10-01",
+    "index_updates": {
+      "home_recent": "2026-10-10 — 24. 작업·워크플로 모델링: 로봇 하역 완료와 업무상 인수·재고 반영의 원문 정의를 나누고, 기타 현장(농업·지상 로봇 협업 시뮬레이션) 사례와 BPMN 2.0.2·rmf_task_sequence·VDA 5050 3.0.0 blockingType 근거를 보강",
+      "category_recent": "2026-10-10 — 24. 작업·워크플로 모델링: 3절 완료 신호 정의 분리, 5절 기타 현장 사례 추가, 6·7·8·10·11절 보강과 각주 갱신",
+      "area_recent": "2026-10-10 — 24. 작업·워크플로 모델링: 3절 첫 문단을 CBV·VDA 5050 3.0.0·IngestorResult 원문 정의와 [의견]으로 다시 쓰고, 5절 사례 3(현장 유형 기타, FaMe)과 6·7·8·10·11절 보강을 더함(2026-09-25 분리 주제 페이지 링크 유지)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "receive-task-bpmn",
+        "term_ko": "수신 작업",
+        "term_en": "Receive Task (BPMN)",
+        "definition": "외부 참여자가 보낸 메시지가 도착할 때까지 기다리다가 메시지를 받으면 완료되는 BPMN 작업 유형이다.",
+        "description": "BPMN 2.0.2 규범 문서가 정의한다. 메시지를 프로세스 인스턴스에 연결하는 상관 키(CorrelationKey), 시간 조건을 표현하는 타이머 이벤트와 함께 쓰면 운반 뒤 인수 확인을 기다리고 시간 초과 시 분기하는 구조를 표현할 수 있다.",
+        "related_areas": [
+          24
+        ],
+        "sources": [
+          "ref-502"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "bpmn-compensation",
+        "term_ko": "BPMN 보상",
+        "term_en": "Compensation (BPMN)",
+        "definition": "이미 성공적으로 끝난 단계의 결과가 더는 필요 없을 때 그 효과를 되돌리는 처리를 별도 활동으로 표현하는 BPMN 개념이다.",
+        "description": "BPMN 2.0.2 규범 문서가 정의하는 프로세스 모델 요소다. 한글 표기가 비슷한 용어집 항목 '보상 트랜잭션 (Compensating Transaction)'(compensating-transaction)과 같은 개념이 아니므로 구분해 쓰고, 두 항목을 서로 연결해 참고한다.",
+        "related_areas": [
+          24,
+          32
+        ],
+        "sources": [
+          "ref-502"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-044",
+        "org": "GS1",
+        "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+        "published": "2021-09-30",
+        "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "GS1 CBV 2.0 온톨로지. arriving·accepting·receiving 등 업무 단계(BizStep)의 정의와 receiving 의 상호 배타 규정을 담는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "VDA 5050 공식 명세 본문. 이번에는 3.0.0 태그 고정판을 열어 §6.2.2 표 3(blockingType 네 값, SINGLE)과 §6.2.3.2 표 5(drop FINISHED 정의)를 확인했다. 발표일은 근거 미확인.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-049",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 하역 워크셀 결과 메시지 정의. 기본 필드는 time·request_guid·source_guid·status(ACKNOWLEDGED·SUCCESS·FAILED)이고 워크셀별 추가 필드 주석이 있다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-502",
+        "org": "OMG(Object Management Group)",
+        "title": "Business Process Model and Notation (BPMN), Version 2.0.2",
+        "published": "2014-01",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "BPMN 2.0.2 규범 문서(formal/2013-12-09). 수신 작업·상관 키·타이머 등 중간 이벤트·보상을 정의한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-1423",
+        "org": "University of Camerino PROS Lab",
+        "title": "FaMe — A BPMN-driven Framework for Multi-Robot System Development (공식 페이지·사용 지침)",
+        "published": "2022-05-03",
+        "url": "https://pros.unicam.it/fame/",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-10",
+        "summary": "FaMe 연구팀의 공식 페이지. 지상 로봇 협업·농업 시뮬레이션 재현 절차, BPMN 모델링 지침 G1~G7, 구성 절차(신호 이벤트와 ROS 메시지 형 연결)를 제시한다. 기존 ref-503(GitHub README)·ref-114(논문)와 같은 연구팀 자료다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-366",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_task — rmf_task/include/rmf_task/Task.hpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 작업 인터페이스 헤더. Task::Active 의 cancel()·kill()·skip() 의 의미(취소 후 정리 단계, 완료 콜백으로 취소 종료)를 주석으로 설명한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-404",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_task — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_task",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "rmf_task 저장소 README. rmf_task_sequence 의 단계·이벤트 구조와 기본 이벤트 7종(Bundle·DropOff·GoToPlace·PerformAction·PickUp·Placeholder·WaitFor), 모델과 실행 구현의 위치를 설명한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-116",
+        "org": "Filippone, G., Pettinari, S., & Pelliccione, P.",
+        "title": "Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis",
+        "published": "2026-03-16",
+        "url": "https://arxiv.org/abs/2603.15427",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-10",
+        "summary": "행동 트리·상태 기계·HTN·BPMN 을 제어 구조·표현력·도구 지원으로 비교하고 전문가 설문(83명 요청, 29개 응답)과 후속 인터뷰로 검증한 연구. v1 2026-03-16, v2 2026-08-17, Journal ref IEEE Transactions on Software Engineering (2026). 이번에 v2 본문을 열람했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-1424",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 (tag 2.14.0) — rmf_fleet_adapter/CHANGELOG.rst",
+        "published": "2026-09-26",
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "rmf_fleet_adapter 패키지 변경 이력. 2.14.0(2026-09-26) 절에 단계 건너뛰기 요청 키 수정(#543) 항목이 있다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      },
+      {
+        "id": "ref-1425",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 (tag 2.1.0) — VDA5050_EN.md",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/2.1.0/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "VDA 5050 2.1.0 명세 본문. blockingType 을 NONE·SOFT·HARD 세 값으로 정의해 3.0.0 의 SINGLE 과 대조하는 근거가 된다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/planning-and-optimization/task-and-workflow-modeling.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가?",
+        "areas": [
+          24,
+          32
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "Open-RMF rmf_task_sequence 의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가?",
+        "areas": [
+          24,
+          54
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가?",
+        "areas": [
+          24,
+          57
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "기타",
+        "item": "수행 자원",
+        "link": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md#5-적용-사례-현장-유형-명시",
+        "title": "24. 작업·워크플로 모델링"
+      },
+      {
+        "site_type": "물류창고",
+        "item": "완료·인계",
+        "link": "docs/categories/planning-and-optimization/task-and-workflow-modeling.md#5-적용-사례-현장-유형-명시",
+        "title": "24. 작업·워크플로 모델링"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "BPMN 2.0.2 (OMG formal/13-12-09)",
+        "kind": "표준",
+        "org": "OMG(Object Management Group)",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/",
+        "related_areas": [
+          24
+        ],
+        "summary": "2014-01 발행 BPMN 규범 문서. 수신 작업·상관 키·타이머 이벤트·보상을 정의해 인수 확인 대기와 취소 후 처리를 프로세스 모델로 표현하는 근거가 된다.",
+        "ref_id": "ref-502"
+      }
+    ],
+    "additional_research_requests": [
+      "분리 주제 페이지(2026-09-25-area02-s6·s7·s8·s11) 본문이 입력에 없고 하루 갱신 상한(2)도 있어 직접 고치지 못했다(예산으로 미룸). 다음 갱신 실행에서 이 페이지들을 입력으로 넣어 s8 의 ref-116 각주(발행일 2026-03 → 2026-03-16, 접근일 2026-10-10, '원문 미열람' 삭제)와 s7 표의 BPMN 행(ref-502 추가)을 고쳐야 한다. 이번 보강은 세부영역 6·7·8·11절에 더했고, 각 보강 소절 첫 줄에 이 페이지들로 가는 링크를 두었다.",
+      "3·5절: 한국어 검색과 국내 자료(국내 물류센터·제조 현장의 운반 완료와 인수 확정 분리, 작업 모델링 사례)가 없다. 공통 규칙 8 충족을 위해 다음 갱신에서 보강이 필요하다.",
+      "5절: 병원·제조 공장·상업 시설 등 다른 현장 유형의 실제 작업 모델링 사례가 없다. 시작 조건·제약·완료·인계·예외·성과를 채울 공개 사례가 필요하다.",
+      "5절 사례 3: FaMe 농업·지상 로봇 협업 시나리오의 작업 대상(물건·공간·정보·사람), 시작 조건·제약·완료 조건·예외 처리, 실외 현장 여부, 실물 로봇 실험 규모를 확인할 원문(시나리오 패키지·논문)이 필요하다.",
+      "6절: rmf_task_sequence Bundle 이벤트의 병렬·합류 의미를 API 문서 원문으로 확인해야 한다(f15 한정 해소).",
+      "7절: rmf_fleet_adapter #543 에서 고친 단계 건너뛰기 요청 키의 실제 이름을 풀 리퀘스트 원문으로 확인해야 한다.",
+      "11절 oq-001: 로봇 하역 완료를 EPCIS 인계 이벤트로 옮기는 공개 구현 사례를 실제로 검색해야 한다(이번 브리프는 검색하지 않아 '확인 못 함').",
+      "트랙 반영 제안 2건 가운데 이번 브리프로 뒷받침되지 않은 항목(OPC UA for ISA-95 작업 응답, BPMN 2.0.2 사람 수행자·자원 배정, Serverless Workflow DSL, Isaac Mission Dispatch, PlanSys2, DART-LLM, LTLf→행동 트리, Open-RMF 워크플로 다이어그램, crossflow)은 다음 실행에서 검증한 뒤 반영해야 한다."
+    ],
+    "fixes_applied": [
+      "3절 첫 문단 — 기존 [추정] 문장('arriving 수준의 물리적 인도')을 지우고 f1 [사실][^ref-044]·f2 [사실][^ref-031](3.0.0 §6.2.3.2 표 5)·f3 [사실][^ref-049](기본 정의 필드 한정)로 나눠 적은 뒤 f4 를 [의견](이 위키의 판단)으로 덧붙이고 '이 구성을 적용한 표준·사례는 확인하지 못했다' 한정을 유지했다.",
+      "5절 시나리오 1 — 'CBV로 보면 arriving에 가깝다' 문장을 f27 [의견]으로 바꿔 drop 완료를 arriving·receiving 으로 단정하지 않고 업무 측(WMS) 확인으로 단계를 정한다고 썼다(완료·인계 칸의 IngestorResult 문장도 f3 대로 기본 정의 필드로 한정했다).",
+      "5절 — 사례 3(현장 유형 기타, 농업·지상 로봇 협업 시뮬레이션, 67. 기타 현장 링크)을 새로 두고 f7·f8·f24 를 작업 대상·수행 자원·서술에 놓았으며, 시작 조건·제약·완료·인계·예외·성과는 '미확인'으로 두고 f9 를 [의견](이 위키의 판단)으로 적었다. site_matrix_updates 의 site_type 은 '기타'로 냈다.",
+      "f17 — 7절 보강에서 'SINGLE 은 2.1.0 명세에는 없고 3.0.0 명세에는 있다'로 쓰고, 두 판 사이 다른 판 미확인과 같은 발행 계열 두 판의 대조라 교차 확인이 아님을 밝혔다.",
+      "의견 주체 — f4·f9·f12·f18·f20·f23·f25·f27 을 쓴 [의견] 문장마다 '이 위키의 판단이다'를 넣었다(3·5·6·7·8·11절).",
+      "ref-116 — 세부영역 13절 각주를 발행일 2026-03-16·접근일 2026-10-10 으로 고치고 '(원문 미열람)'을 뺐으며, 8절 보강에 v2(2026-08-17)·IEEE Transactions on Software Engineering (2026) 게재 정보와 f22 연구 방법(83명 요청·29개 응답, 인터뷰 3명·서면 1명, 처리량 측정 아님)을 적었다. 8절 분리 주제 페이지(2026-09-25-area02-s8)는 본문이 입력에 없고 갱신 상한이 있어 직접 고치지 못해 reference_updates 로 참고문헌 ref-116 을 갱신하고 additional_research_requests 에 남겼다.",
+      "ref-031 — 새 문장(3절 f2, 7절 f16)에 '3.0.0 태그판(main 브랜치 판과 다를 수 있다)'을 밝히고 발표일은 쓰지 않았으며, 13절 각주 접근일을 2026-10-10 으로 고쳤다.",
+      "f19·f20 — 7절 보강에 '개별 패키지 rmf_fleet_adapter 2.14.0(2026-09-26)'으로 적고 Open-RMF 배포판 버전이 아니라고 밝혔으며, 고친 키의 이름은 '미확인'으로 두었다.",
+      "f15·f26 — 6절에 'Bundle 이벤트의 병렬·합류 의미는 원문 미확인', 11절 oq-001 에 '공개 구현 사례는 검색하지 않아 확인 못 함' 한정을 남기고 '없다'로 단정하지 않았다.",
+      "범위 경계 — 3절과 11절에 수령자 재고 편입(CBV receiving)·EPCIS 이벤트 생성·재고 확정을 '연계 대상: 상위 업무 시스템(WMS 등)'으로 표시하고 ROP 몫을 완료 조건 구분과 대기·분기로 한정했다.",
+      "연결 — f16~f18 은 7절에서 20. 로봇·제조사 관제 연동, f10~f12 는 6절에서 32. 예외 복구·재계획·업무 연속성, f1~f4 는 3절에서 17. 작업 대상·자산 식별과 인계 추적과 번호·이름으로 연결하고 10절에 덧붙였으며 프런트매터 related_areas 에 32·67 을 더했다.",
+      "6절 분리 주제 페이지 — 본문이 입력에 없어 해당 페이지는 고치지 않고(기존 Camunda 문장 ref-113 과 ref-112 각주는 그 페이지와 5절에 그대로 남음) 세부영역 6절에 f5(ref-502)·f6 을 덧붙였으며, Camunda 고유의 메시지 보존 시간·중복 거부 동작을 BPMN 표준 보장으로 넓히지 않는다고 적었다.",
+      "7절 분리 주제 페이지 — 그 페이지 표는 입력에 없어 고치지 못하고, 세부영역 7절에 BPMN 2.0.2(ref-502, formal/13-12-09, 2014-01) 행을 포함한 보강 표를 더했으며 VDA 5050 blockingType(f16·f17)과 rmf_fleet_adapter 2.14.0(f19)을 기준일과 함께 적었다.",
+      "트랙 반영 제안 2건 — 이번 브리프로 뒷받침되는 FaMe(f7·f8·f24, 5·8·11절)와 임무 기술 형식 비교 연구(f21~f23, 8절)만 반영하고, 나머지 항목은 본문에 넣지 않고 '제안'으로 남겼다(additional_research_requests 에 기록).",
+      "11절과 open_question_updates — oq-001(f26·f27)·oq-014(f24·f25)는 '열림'을 유지한 채 11절에 부분 근거만 달았고(상태가 바뀌지 않아 update 는 내지 않음), 새 질문 3건을 관련 영역 24·32 / 24·54 / 24·57 로 등록했다.",
+      "glossary_updates — '수신 작업 (Receive Task (BPMN))'을 신규로, 보상 후보는 'BPMN 보상 (Compensation (BPMN))'으로 표기하고 설명에 기존 '보상 트랜잭션 (Compensating Transaction)'과 다른 개념임과 연결을 적었다.",
+      "인용 — 페이지 본문에 출처 원문의 직접 인용을 넣지 않고 모두 재서술했다(ref-044·ref-031·ref-502 포함).",
+      "reference_updates 의 ref-1423·ref-1424·ref-1425 — 브리프 id 를 그대로 쓰고 changelog_entry 비고에 'id 충돌 여부 퍼블리셔 확인 필요'를 남겼다.",
+      "2차: 기존 분리 주제 페이지 링크 복원 — 6·7·8·11절 패치를 append 에서 replace 로 바꿔 각 절의 기존 첫 문장을 유지하고, '### 2026-10-10 보강' 소절 첫 줄에 '이전 정리(2026-09-25)는 [24. 작업·워크플로 모델링 — 대표 접근법과 기술 / 관련 표준·프레임워크·오픈소스 / 대표 연구와 자료 / 열린 질문](../../topics/2026/2026-09-25-area02-s6·s7·s8·s11.md)에 있다.' 줄을 두어 자동 분리 뒤에도 링크가 남게 했다.",
+      "2차: 5절 사례 3 작업 대상 칸 — '미확인'으로 바꾸고 f24 문장(FaMe 의 모델링·구성·실행과 ROS 2 위 직접 실행, [사실][^ref-1423])을 표 아래 서술 문단으로 옮겼으며, 서술의 미확인 목록에 작업 대상을 더했다. site_matrix_updates 에서 {기타, 작업 대상}을 빼고 {기타, 수행 자원}은 유지했다.",
+      "2차: 6절 보강 첫 문단의 Camunda 구절 — 구체 동작 이름(메시지 보존 시간·중복 거부)을 빼고 '이전 정리의 기존 Camunda 근거 문장이 서술한 엔진 고유 동작'으로만 가리켰다.",
+      "2차: pages[0].diff_summary — '새 각주 6건'을 '새 각주 1건(ref-1423)'으로 고치고 ref-366·ref-404·ref-502·ref-1424·ref-1425 는 자동 분리 뒤 분리 주제 페이지의 출처 절에만 남는다고 적었다."
+    ]
+  },
+  "ttft_ms": 32631,
+  "type": "result",
+  "duration_ms": 185295,
+  "uuid": "62b671cb-2a7b-4626-8e20-7e06ba6fc430",
+  "ttft_stream_ms": 1050,
+  "time_to_request_ms": 88,
+  "time_to_request_phases_ms": {
+    "other": 23,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 7,
+    "input_attachments": 9,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 4,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 11
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 38,
+  "time_to_request_cpu_ms": 130,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 4,
+    "cpu_ms": 18,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1051,
+  "time_to_request_from_spawn_ms": 2000922,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791613056258.0996,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 186.9
+}

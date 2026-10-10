@@ -8,10 +8,10 @@ tags: [MRTA, 작업 배정, 시장 기반 배정, 최근접 배정, Open-RMF, LL
 status: published
 confidence: medium
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-006, ref-031, ref-059, ref-089, ref-090, ref-101, ref-105, ref-132, ref-152, ref-166, ref-167, ref-168, ref-181, ref-236, ref-237, ref-242, ref-393, ref-394, ref-395, ref-396, ref-397, ref-398, ref-399, ref-400, ref-376, ref-401, ref-402, ref-403, ref-404]
-last_run: 2026-09-25
-version: 2
+updated: 2026-10-10
+sources: [ref-006, ref-031, ref-090, ref-105, ref-132, ref-152, ref-168, ref-236, ref-237, ref-376, ref-393, ref-394, ref-398, ref-399, ref-400, ref-402, ref-403, ref-404, ref-1402, ref-1403, ref-1404, ref-1405, ref-1406, ref-1398]
+last_run: 2026-10-10
+version: 3
 ---
 
 [홈](../../index.md) › [G. 계획·최적화](index.md) › 25. 작업 배정 — MRTA
@@ -31,7 +31,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 3 · 마지막 갱신: 2026-10-10 · 마지막 실행: 2026-10-10
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -63,9 +63,7 @@ version: 2
 
 [로봇 이동형 풀필먼트 시스템(RMFS)](../../glossary/robotic-mobile-fulfillment-system.md)의 이산 사건 시뮬레이션에서 피킹 주문을 작업대에 배정하는 규칙은 단위 처리량을 크게 바꾸었다고 보고됐다. [사실][^ref-398] 배정은 개별 로봇의 문제가 아니라 창고 전체 처리량의 문제가 될 수 있다. [추정][^ref-398]
 
-2절의 질문처럼 가장 가까운 로봇에 맡기는 최근접 배정은 단순해서 다중 에이전트 픽업·배송 알고리즘과 국내 자동물류센터 시뮬레이션에서 기본 규칙으로 쓰였다. [사실][^ref-006][^ref-402] 그러나 작업장(shop floor) 사례 연구에서 앞으로의 운반 요청을 고려한 조합 최적화 배차가 무작위·최근접 규칙보다 작업 대기 시간을 더 잘 통제했다고 저자가 보고했다(2019). [사실][^ref-400]
-
-두 결과를 함께 보면 최근접 배정이 전체 최적이라는 보장은 없다. 다만 근거는 작업장 사례 연구(지표: 작업 대기 시간)와 시뮬레이션뿐이며, 창고 현장에서 둘을 직접 비교한 실측 자료는 이번 조사에서 찾지 못했다. [추정][^ref-006][^ref-400][^ref-402][^ref-398]
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 왜 중요한가](../../topics/2026/2026-10-10-area25-s3.md)에 있다.
 
 ## 4. 핵심 개념과 용어
 
@@ -76,7 +74,7 @@ version: 2
 
 ## 5. 적용 사례 (현장 유형 명시)
 
-> **현장 유형: 물류창고.** 아래 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 다른 현장 유형의 적용 사례는 이어지는 조사에서 더한다.
+> **현장 유형: 물류창고.** 아래 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 2026-10-10 갱신에서 병원 모사 환경의 계산 실험 사례를 그 아래에 더했고, 다른 현장 유형의 적용 사례는 이어지는 조사에서 더한다.
 
 **물류 흐름 단계:** 피킹
 
@@ -87,7 +85,7 @@ version: 2
 | 시작 조건 | 상위 업무 시스템(WMS 등)이 피킹 주문을 내려 운반 작업이 생긴다. 주문·납기·재고 정책 자체는 ROP 밖의 연계 대상이다. [추정][^ref-031] |
 | 작업 대상 | 피킹한 상품을 담은 토트(설명용 가정) |
 | 수행 자원 | 작업자가 피킹하고 AMR(Autonomous Mobile Robot, 자율이동로봇)이 운반하는 협업 설정이 연구되어 있다. [사실][^ref-132] ROP 는 플릿별 입찰을 비교해 작업을 줄 플릿을 고르는 역할을 맡을 수 있다. [추정][^ref-376][^ref-031] |
-| 제약 | 배터리가 설정 임계값(Open-RMF 템플릿 예시값 0.10) 아래인 로봇은 작업하지 않도록 해 배정 후보에서 빠진다. [사실][^ref-105] 출하 마감을 배정 목적함수에 넣는 방법은 미확인이다. |
+| 제약 | 배터리가 설정 임계값(Open-RMF 템플릿 예시값 0.10) 아래인 로봇은 작업하지 않도록 해 배정 후보에서 빠진다. [사실][^ref-105] 출하 마감을 배정 목적함수에 넣는 방법은 미확인이다. 병원 모사 환경 연구(2024-03 프리프린트)에는 온라인으로 도착하는 픽업·배송 작업의 배정, 로봇의 동시 적재 용량, 엄격한 마감 준수를 함께 제약식으로 두는 정식화가 있다. [사실][^ref-1403] 이 위키의 의견으로는 마감 준수가 필수인 작업은 우선순위 점수만 높이는 방식과 별도로 마감을 필수 제약으로 두는 정식화를 검토할 만하지만, 출하 마감을 배정에 연동한 창고 현장 사례는 확인하지 못했다(oq-054). [의견][^ref-1403] |
 | 완료·인계 | 해당 없음 |
 | 예외·성과 | RMFS 이산 사건 시뮬레이션에서 피킹 주문 배정 규칙이 단위 처리량을 크게 바꾸었다. [사실][^ref-398] 최근접 배정이 전체 최적이라는 보장은 없다. [추정][^ref-400] |
 
@@ -95,23 +93,40 @@ version: 2
 
 Open-RMF 방식이라면 디스패처가 각 플릿 어댑터에 입찰 공고를 보내고, 처리할 수 있는 플릿이 비용을 담아 입찰하면 가장 빨리 끝나는 것 같은 설정 기준으로 비교해 작업을 준다. [사실][^ref-376] 가장 가까운 로봇을 고르는 규칙은 계산이 가볍지만 뒤이어 들어올 요청을 고려하지 않으므로 전체 이동이나 대기가 늘 수 있다. [추정][^ref-400]
 
+**현장 유형:** 병원
+
+**사례:** 병원과 비슷한 실내 공간에서 계속 들어오는 배송 요청을 적재 용량이 정해진 로봇들에 배정하기 — 병원 모사 환경의 계산 실험(그래프 추상화 벤치마크)
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 배송 요청마다 출발·도착 위치와 발생·마감 시각이 있고, 새 요청이 들어오면 이미 실행한 동작과 현재 동작은 그대로 둔 채 계획을 갱신한다(병원 모사 환경의 계산 실험, 2024-03 프리프린트). [사실][^ref-1403] |
+| 작업 대상 | 미확인 |
+| 수행 자원 | 병원과 비슷한 실내 공간을 그래프(노드는 구역, 가중치는 최악 이동 시간)로 추상화한 다중 로봇 배송 벤치마크 200개에서 로봇 5~20대, 작업 10~30개, 로봇 최대 적재 용량 2 또는 3, 균등 분포의 마감으로 평가했다. [사실][^ref-1403] |
+| 제약 | 작업은 엄격한 마감을 지켜야 하고, 로봇마다 동시에 맡을 수 있는 작업 수가 적재 용량으로 제한된다. [사실][^ref-1403] |
+| 완료·인계 | 미확인 |
+| 예외·성과 | 원문은 그래프 추상화 벤치마크에서의 솔버 성능만 보고하고 실제 병원·로봇 운행 결과는 없으므로, 이 위키의 의견으로는 병원 현장 실증이 아니라 병원 모사 환경의 계산 실험 사례로 분류해야 한다. [의견][^ref-1403] |
+
+이 사례는 실제 병원 도입·운영 사례가 아니라, 병원과 비슷한 공간을 그래프로 추상화한 벤치마크에서 배정 알고리즘을 평가한 계산 실험이다. 이 영역이 관여하는 칸은 시작 조건(요청이 계속 도착할 때의 계획 갱신), 수행 자원(몇 대의 로봇에 어떤 용량으로 맡길지), 제약(마감·용량)이다.
+
+이 연구는 제약을 모두 만족하는 배정 계획을 찾는 것을 목표로 하며 최소 이동 비용의 최적해를 보장하지 않고, 국소 경로 계획·충돌 회피는 하위 계획기(연계 대상)에 맡긴다. [사실][^ref-1403] 작업 대상(물품 종류)과 완료·인계(수령 확인) 조건은 원문에서 확인하지 못해 미확인으로 둔다.
+
 ## 6. 대표 접근법과 기술
 
-이동로봇 플릿 작업 배정 연구를 알고리즘 계열별로 정리한 문헌 검토가 있으나(2025-01), 검토 편수·계열 구분·실험 플릿 규모에 관한 수치는 이 위키에서 확인하지 못했다(미확인). [추정][^ref-152] 주제 페이지에 여섯 갈래(중앙 최적화, 시장 기반 경매·분산 합의, 최근접 규칙, 학습 기반 배차, LLM 기반 배정, 배터리·충전 결합)로 정리했다.
+이동로봇 플릿의 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA) 방법은 2025-01 문헌 검토에서 휴리스틱, 메타휴리스틱, 정확·수리 휴리스틱(matheuristic), 시장 기반, 인공지능 기반의 다섯 계열로 정리된다. [사실][^ref-152]
 
-자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 대표 접근법과 기술](../../topics/2026/2026-09-25-area13-s6.md)에 있다.
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 대표 접근법과 기술](../../topics/2026/2026-10-10-area25-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-표준과 오픈소스는 배정을 어느 구성요소의 책임으로 두는지 보여 주며, Open-RMF 는 입찰 기반 배정을 구현하고 VDA 5050 은 배정을 관제의 기능으로만 규정한다. [사실][^ref-376][^ref-031]
+표준과 오픈소스는 배정을 어느 구성요소의 책임으로 두는지 보여 주며, Open-RMF 는 입찰 기반 배정을 구현하고 VDA 5050 은 배정을 관제의 기능으로만 규정한다. [사실][^ref-376][^ref-031] 2026-09-25 까지 정리한 Open-RMF·VDA 5050 의 세부는 주제 페이지 [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스 (2026-09-25)](../../topics/2026/2026-09-25-area13-s7.md)에 있다.
 
-자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area13-s7.md)에 있다.
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area25-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-분류 체계와 시장 기반 방법의 고전 연구, 창고 결정 규칙의 시뮬레이션 연구, 국내 자료를 이 영역의 대표 자료로 골랐다(이 위키의 선정).
+이 영역의 대표 자료로 이 위키는 2026-09-25 에 분류 체계와 시장 기반 방법의 고전 연구, 창고 결정 규칙의 시뮬레이션 연구, 국내 자료를 골랐고(이 위키의 선정), 2026-10-10 갱신에서 2024~2026 배정 연구 3건을 더했다. 2026-09-25 에 고른 자료 목록은 주제 페이지 [25. 작업 배정 — MRTA — 대표 연구와 자료 (2026-09-25)](../../topics/2026/2026-09-25-area13-s8.md)에 있다.
 
-자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 대표 연구와 자료](../../topics/2026/2026-09-25-area13-s8.md)에 있다.
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 대표 연구와 자료](../../topics/2026/2026-10-10-area25-s8.md)에 있다.
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)
 
@@ -126,52 +141,45 @@ VDA 5050 은 주문 배정을 관제의 기능으로 두지만 배정 알고리�
 
 연계 대상: VDA 5050 은 관제–이동로봇 통신과 무관한 외부 IT 시스템 인터페이스를 범위에서 제외하므로, 배정 입력이 되는 주문·납기·재고 제약은 WMS 등 상위 업무 시스템에서 오고 그 정책은 ROP 밖에 있다. [추정][^ref-031] 이 경계는 제품 전략에 따라 이동할 수 있다([범위 경계](../../about/scope-boundary.md)).
 
+### 두 수준 배정에서 플릿이 내는 정보 (2026-10-10 갱신)
+
+ROP 가 플릿 단위로 배정하고 제조사 관제가 플릿 안에서 로봇을 고르는 두 수준 배정에서, 플릿이 낼 수 있는 비용·상태 정보의 예로 Open-RMF 입찰 제안은 플릿 이름, 예상 수행 로봇, 새 작업 수용 전·후의 전체 배정 비용, 예상 완료 시각 다섯 필드를 담는다(2026-10-10 확인). [사실][^ref-1402] 플릿 안의 배정을 맡는 Open-RMF 작업 계획기의 최적 배정은 물리·운동 특성을 공유하는 한 플릿의 주어진 작업 집합에 한정된다(2026-10-10 확인). [사실][^ref-404]
+
+이 위키의 종합으로는 입찰이 각 플릿이 자기 안에서 계산한 비용만 전하므로 이것만으로 모든 플릿을 합친 최적 배정이 보장되지는 않을 것으로 보이며, 이종 플릿의 최적성 손실을 수치로 제한하는 근거는 확인하지 못했다(oq-053 부분 근거. 근거 두 건은 같은 Open-RMF 프로젝트 자료라 서로의 독립 교차 확인이 아니다). [추정][^ref-1402][^ref-404] 이 위키의 의견으로는 작업 계획기의 최적 배정을 앞으로 들어올 작업, 다른 제조사 관제의 내부 결정, 실제 혼잡까지 포함한 운영 전체의 최적성으로 넓혀 해석해서는 안 된다. [의견][^ref-404][^ref-1406]
+
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
 배정은 로봇 능력 정보를 입력으로 받고 순서·경로·충전 결정과 맞물린다. 교차 규칙(분류 개정 전 원문 8장)에 따라 학습·LLM 기반 배차는 47. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결한다.
 
-- [5. 로봇 능력·작업 표현](../robot-ontology/robot-capability-and-task-representation.md) — 능력 온톨로지로 이종 로봇·자원의 작업 수행 가능성을 추론해 배정 후보를 정하는 연구가 있다(2022, 2026). [사실][^ref-236][^ref-237]
-- [20. 로봇·제조사 관제 연동](../integration/robot-and-vendor-fleet-manager-integration.md) — Open-RMF 플릿 어댑터 입찰과 VDA 5050 관제 기능이 배정의 인터페이스가 된다. [사실][^ref-376][^ref-031]
-- [26. 작업 순서·스케줄링](task-sequencing-and-scheduling.md) — 작업 간 의존(ID·XD)과 rmf_task 의 배정·순서 동시 결정이 두 영역을 잇는다. [사실][^ref-394][^ref-404]
-- [27. 다중 로봇 경로·교통 관리 — MAPF](multi-robot-path-and-traffic-management-mapf.md) — MAPD 토큰 패싱은 작업 선택과 충돌 없는 경로 계획을 함께 다룬다. [사실][^ref-006]
-- [28. 공용 자원·충전·에너지 최적화](shared-resource-charging-and-energy-optimization.md) — 배터리 임계값·충전 작업 삽입·충전기 조율이 배정 후보와 일정에 들어간다. [사실][^ref-105][^ref-404][^ref-403]
-- [34. 시뮬레이션·예측용 디지털 트윈](../design-and-simulation/simulation-and-predictive-digital-twin.md) — RMFS·자동물류센터 시뮬레이션은 배정 규칙을 가정한 미래에서 실험하는 도구다. [사실][^ref-398][^ref-402]
-- [47. AI·학습·적응과 모델 운영](../ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 학습 기반 배차(ScheduleNet)와 LLM 기반 배정은 47. AI·학습·적응과 모델 운영의 연구 방법이 이 영역에 적용된 것이다. [사실][^ref-399][^ref-090][^ref-168]
-- [23. 업무 시스템 연동](../integration/business-system-integration.md) — 배정 입력인 주문·납기 제약이 상위 업무 시스템에서 온다. [추정][^ref-031]
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 다른 연구영역과의 연결](../../topics/2026/2026-10-10-area25-s10.md)에 있다.
 
 ## 11. 열린 질문
 
-이 위키의 열린 질문 현황이다. LLM 배정 결과의 출처 충돌과 선언·관측 능력 차이가 아직 풀리지 않았고, 창고 비교 실측·두 수준 배정·납기 결합에 관한 질문을 새로 올렸다.
+이 위키의 열린 질문 현황이며, 2026-09-25 까지 올린 질문(oq-024·oq-052 등)의 서술은 주제 페이지 [25. 작업 배정 — MRTA — 열린 질문 (2026-09-25)](../../topics/2026/2026-09-25-area13-s11.md)에 있다. LLM 배정 결과의 출처 충돌과 선언·관측 능력 차이는 아직 풀리지 않았고, 2026-10-10 갱신에서 창고 비교 실측·두 수준 배정·납기 결합 질문 가운데 oq-030·oq-053·oq-054 에 부분 근거를 더하고 새 질문 4건을 올렸다.
 
-자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 열린 질문](../../topics/2026/2026-09-25-area13-s11.md)에 있다.
+자세한 내용은 주제 페이지 [25. 작업 배정 — MRTA — 열린 질문](../../topics/2026/2026-10-10-area25-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-25 · 갱신 · [25. 작업 배정 — MRTA](task-allocation-mrta.md) — 섹션 3~11 신규 작성(분류 체계·배정 방식·Open-RMF 입찰·LLM 기반 배정·열린 질문), 트랙 반영 제안 반영, 페이지 상태 마커 추가. 2차 수정: 6·8·10·11절 첫 문장의 표기·태그 정리 (실행 2026-09-25-33)
-- 2026-09-25 · 생성 · [25. 작업 배정 — MRTA — 대표 접근법과 기술](../../topics/2026/2026-09-25-area13-s6.md) — 자동 분리: 13. 작업 배정 — MRTA 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 내부 용어 '브리프' 삭제, 원 페이지 3절 참조를 링크로 명시 (실행 2026-09-25-33)
-- 2026-09-25 · 생성 · [25. 작업 배정 — MRTA — 대표 연구와 자료](../../topics/2026/2026-09-25-area13-s8.md) — 자동 분리: 13. 작업 배정 — MRTA 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: '대표 자료' 선정 문장을 이 위키의 선정으로 밝힌 안내 문장으로 고침 (실행 2026-09-25-33)
-- 2026-09-25 · 생성 · [25. 작업 배정 — MRTA — 열린 질문](../../topics/2026/2026-09-25-area13-s11.md) — 자동 분리: 13. 작업 배정 — MRTA 의 "11. 열린 질문" 절을 옮겼다. 2차 수정: 안내 문장의 태그·각주 제거, oq-024 항목의 단정을 [추정] 문장으로 고침 (실행 2026-09-25-33)
-- 2026-09-25 · 생성 · [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area13-s7.md) — 자동 분리: 13. 작업 배정 — MRTA 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 대상 아님, 변경 없음) (실행 2026-09-25-33)
+- 2026-10-10 · 갱신 · [25. 작업 배정 — MRTA](task-allocation-mrta.md) — 5·6·7·8·9·11·13절 차등 갱신(병원 모사 계산 실험 사례, 문헌 검토 다섯 계열, LTAA 원문 수치, BidProposal 다섯 필드·rmf_fleet_adapter 2.14.0, 2024~2026 연구 3건, 새 열린 질문 4건, 각주 정정). 2차 수정: 6·7·8·11절을 replace 로 바꿔 첫 문단에 2026-09-25 주제 페이지 링크를 넣고 8절 첫 문단을 링크 대상과 맞췄으며, 분리 뒤 오해되는 'n절' 참조를 세부영역 페이지 절 이름 참조로 바꿈 (실행 2026-10-10-02)
+- 2026-10-10 · 생성 · [25. 작업 배정 — MRTA — 대표 접근법과 기술](../../topics/2026/2026-10-10-area25-s6.md) — 자동 분리: 25. 작업 배정 — MRTA 의 "6. 대표 접근법과 기술" 절(2,917자)을 옮겼다 (실행 2026-10-10-02)
+- 2026-10-10 · 생성 · [25. 작업 배정 — MRTA — 열린 질문](../../topics/2026/2026-10-10-area25-s11.md) — 자동 분리: 25. 작업 배정 — MRTA 의 "11. 열린 질문" 절(1,653자)을 옮겼다 (실행 2026-10-10-02)
+- 2026-10-10 · 생성 · [25. 작업 배정 — MRTA — 대표 연구와 자료](../../topics/2026/2026-10-10-area25-s8.md) — 자동 분리: 25. 작업 배정 — MRTA 의 "8. 대표 연구와 자료" 절(1,232자)을 옮겼다 (실행 2026-10-10-02)
+- 2026-10-10 · 생성 · [25. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area25-s7.md) — 자동 분리: 25. 작업 배정 — MRTA 의 "7. 관련 표준·프레임워크·오픈소스" 절(814자)을 옮겼다 (실행 2026-10-10-02)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
-[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-24 (원문 미열람)
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
-[^ref-090]: Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C., SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models, 2023-09, https://arxiv.org/abs/2309.10062, 접근일 2026-09-25 (원문 미열람)
 [^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25 (원문 미열람)
 [^ref-132]: Yu, S., & Srinivas, S., Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations, 2025, https://www.sciencedirect.com/science/article/abs/pii/S1366554525001231, 접근일 2026-09-25 (원문 미열람)
-[^ref-152]: Meseguer Valenzuela, A., & Blanes Noguera, F., Task Allocation in Mobile Robot Fleets: A review, 2025-01, https://arxiv.org/abs/2501.08726, 접근일 2026-09-25 (원문 미열람)
-[^ref-168]: Kaitha, S., & Yu, S. 외(arXiv 2512.02810), Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms, 2025-12, https://arxiv.org/abs/2512.02810, 접근일 2026-09-25 (원문 미열람)
-[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)
-[^ref-237]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)
+[^ref-152]: Meseguer Valenzuela, A., & Blanes Noguera, F., Task Allocation in Mobile Robot Fleets: A review, 2025-01, https://arxiv.org/abs/2501.08726, 접근일 2026-10-10
 [^ref-393]: Gerkey, B. P., & Matarić, M. J., A Formal Analysis and Taxonomy of Task Allocation in Multi-Robot Systems, 2004-09, https://journals.sagepub.com/doi/10.1177/0278364904045564, 접근일 2026-09-25 (원문 미열람)
-[^ref-394]: Korsah, G. A., Stentz, A., & Dias, M. B., A comprehensive taxonomy for multi-robot task allocation, 2013, https://journals.sagepub.com/doi/10.1177/0278364913496484, 접근일 2026-09-25 (원문 미열람)
 [^ref-398]: Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L., Decision rules for robotic mobile fulfillment systems (arXiv 2018-01 공개, Operations Research Perspectives 2019 게재, 이산 사건 시뮬레이션 조건), 2019, https://www.sciencedirect.com/science/article/pii/S2214716019300946, 접근일 2026-09-25 (원문 미열람)
-[^ref-399]: Wang, Z., & Gombolay, M., Heterogeneous graph attention networks for scalable multi-robot scheduling with temporospatial constraints, 미확인, https://link.springer.com/article/10.1007/s10514-021-09997-2, 접근일 2026-09-25 (원문 미열람)
 [^ref-400]: International Journal of Planning and Scheduling 게재 논문(저자 미확인), Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors, 2019, https://www.inderscience.com/info/inarticle.php?artid=103016, 접근일 2026-09-25 (원문 미열람)
 [^ref-376]: Open Robotics, Tasks in RMF (task) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task.html, 접근일 2026-09-25
-[^ref-402]: KISTI ScienceON 수록 논문(저자 미확인), 시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화, 미확인, https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO200634515151716, 접근일 2026-09-25 (원문 미열람)
-[^ref-403]: Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)
-[^ref-404]: Open Robotics (open-rmf), rmf_task — README, 미확인, https://github.com/open-rmf/rmf_task, 접근일 2026-09-25
+[^ref-404]: Open Robotics (open-rmf), rmf_task — README, 미확인, https://github.com/open-rmf/rmf_task, 접근일 2026-10-10
+[^ref-1402]: Open Robotics (open-rmf/rmf_internal_msgs), rmf_internal_msgs — rmf_task_msgs/msg/BidProposal.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/BidProposal.msg, 접근일 2026-10-10
+[^ref-1403]: Tuck, V. M., Chen, P.-W., Fainekos, G., Hoxha, B., Okamoto, H., Sastry, S. S., & Seshia, S. A. (arXiv 2403.11737, NFM 2024 게재 예정), SMT-Based Dynamic Multi-Robot Task Allocation, 2024-03-18, https://arxiv.org/html/2403.11737v1, 접근일 2026-10-10
+[^ref-1406]: Zhang, Y., Chen, Z., Harabor, D., Le Bodic, P., & Stuckey, P. J. (AAMAS 2026, IFAAMAS), Flow-Based Task Assignment for Large-Scale Online Multi-Agent Pickup and Delivery, 2026-05, https://www.ifaamas.org/Proceedings/aamas2026/pdfs/MQIK8423.pdf, 접근일 2026-10-10

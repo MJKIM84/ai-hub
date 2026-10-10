@@ -1,0 +1,426 @@
+{
+  "duration_api_ms": 342249,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.1344478000000002,
+  "usage": {
+    "input_tokens": 20,
+    "cache_creation_input_tokens": 136506,
+    "cache_read_input_tokens": 2021124,
+    "output_tokens": 26822,
+    "output_tokens_details": {
+      "thinking_tokens": 12933
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 136506,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 17813,
+        "cache_read_input_tokens": 224130,
+        "cache_creation_input_tokens": 1256,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1256
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 509480,
+      "outputTokens": 21414,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 4,
+      "costUSD": 0.10165500000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12551,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 20,
+      "outputTokens": 26822,
+      "cacheReadInputTokens": 2021124,
+      "cacheCreationInputTokens": 136506,
+      "webSearchRequests": 0,
+      "costUSD": 2.0327928,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12933,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 27,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-10-02\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2501.08726(2025-01-15, Meseguer Valenzuela·Blanes Noguera)의 §II 소절이 A. Heuristics, B. Meta-heuristics, C. Exact and matheuristic Methods, D. Market-based Approach, E. Artificial Intelligence 이다. PDF 는 텍스트 추출 서비스를 거쳐 열었다. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 표 I~V 의 열이 Method / Centralized·Decentralized / Framework / Fleet Size / Remarkable results 이다. 단, 브리프 한계 기술의 '선정·제외 절차가 원문에 없어 총 검토 편수 미확인'은 원문과 다르다. 원문은 Google Scholar 1440건에서 가장 관련 있는 52편을 골랐다고 적는다. finding 밖이므로 수치를 페이지에 넣지 않는다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"근거를 확인했다: 본문의 'up to 25 robots'(예외 Shi 외 2024 의 1923 이동 랙), 표 I L. Li 외 최대 45 AMR, 표 IV Teck 외 2023 3~48 AMR. 의견 태그를 유지하고 주체를 '이 위키의 의견'으로 밝힌다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PDF v1 결과 절 'overall success rate of 75.97%, positioning it between Q-learning (73%) and DQN (77%)'. PDF v1 초록에 76% 가 있다. 다만 arXiv 초록 페이지(메타데이터)의 초록에는 76% 가 없어서, 기준을 'PDF v1 초록'으로 밝혀야 한다. 저자 보고(TEACh 건설 작업 실험).\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PDF v1 후반부에 brute force·greedy·DP 성공률 0.77·0.81·0.95 와, 결정적 알고리즘이라 불확실성 모델이 없어 비교 그림에서 뺐다는 설명이 있다(텍스트 추출로 열람, 쪽 번호는 검증자가 확인하지 못함). 저자 보고.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PDF v1 초록 'reaches 77% completion with superior workload balance, exceeding all traditional methods', 결론 'Heavy Excels setting (77.1% success with balanced workloads)'. arXiv 초록 페이지는 같은 뜻을 'outperforming all traditional methods' 로 적어 판마다 표현이 다르다. 기준 판을 밝힌다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f4~f6 은 원문으로 확인했다. 이 finding 은 이 위키의 의견이다. 출처 충돌(oq-030)은 한쪽을 고르지 않고 초록의 표현과 본문의 DP 0.95 를 둘 다 제시하는 설명으로만 쓴다. oq-030 은 해결하지 않는다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw BidProposal.msg 의 주석('published by a Fleet Adapter in response to a BidNotice')과 다섯 필드 fleet_name·expected_robot_name·prev_cost·new_cost·finish_time 이 일치한다. 발행일 미확인, 확인일 2026-10-10. evidence 의 BidResponse 관련 내용은 검증자가 확인하지 않았으므로 본문에 쓰지 않는다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 근거 두 건(ref-1453·ref-404)은 같은 Open-RMF 프로젝트 자료라 독립 교차 확인이 아니다. 최적성 손실 수치 근거가 없다는 점을 남긴다. oq-053 은 부분 근거일 뿐이다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw README 'For a given collection of tasks and robots belonging to a fleet (ie, they share physical and kinematic traits)…', 요청된 시작 시각, 배터리 제약과 충전 작업 자동 삽입. 발행일 미확인, 확인일 2026-10-10.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. Zhang 외 arXiv 판(2508.05890v1)에서 선형 배정이 'optimal one-shot assignments' 를 준다는 서술을 확인했다. 선형 배정에 대한 진술을 TaskPlanner 의 성질로 옮기지 않도록 범위를 한정하는 의견으로만 쓴다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2403.11737v1(2024-03-18). comment 는 'to be published in NASA Formal Methods Symposium 2024'. 과업 튜플(id·출발·도착 위치·도착 시각·마감), 용량, 점진 풀이가 원문과 일치한다. 게재본(쪽·DOI)은 확인하지 않았다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 'even satisfying solutions without guaranteed optimality are relevant', 국소 운동 계획·충돌 회피는 downstream planners 몫, 정리 5.1(건전)·5.2(완전). 완전성에는 솔버의 건전·완전성과 D=D_max 조건이 필요하고, 일부 증명은 부록에 '(Sketch)'로 되어 있다. 조건부 결과임을 밝힌다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. 근거를 확인했다: §2 는 휴리스틱 방법이 엄격한 마감에서 완전성 보장을 못 한다고 적는다. 창고 출하 마감 사례가 없다는 한계를 그대로 남긴다. oq-054 는 해결하지 않는다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 벤치마크 200개(작업 10~30 × 에이전트 5~20 × 각 10개), 용량 2·3, 마감 균등 분포, 최악 이동 시간 가중치. 초록은 'hospital-like environment', §6 은 복도와 방 20개의 실내 공간으로 적는다. 병원 '모사' 환경 계산 실험이다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 과업 튜플과 갱신 계획 정의('past actions and the current action are unchanged').\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. 원문은 솔버 성능만 보고하고 실제 병원·로봇 운행 결과가 없다. 매트릭스와 사례 표에 '모사 환경 계산 실험'을 밝히게 한다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2506.07293v1(2025-06-08) 초록. GVD 로드맵, 구역 분할, push-pop(FIFO) 재분배, makespan 최소화가 원문과 일치한다. 용어는 용어집의 '경로망 (Roadmap)'으로 맞춘다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 본문 'exceeding 96% in the random scenario', 분리 시나리오 58~100%, 결론의 제어기 구현과 이종 로봇 확장 계획. README 는 Python 3.9+, MIT, RAS 2025-12 를 표기한다. 논문과 코드는 같은 팀 산출물이라 독립 재현이 아니다. README 는 로드맵을 가시성 기반 로드맵(VBRM)으로 설명해 논문의 GVD 설명과 다르므로, 공개 구현을 'GVD 구현'으로 쓰지 않는다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. 근거를 확인했다: 'our method cannot achieve deadlock-free'.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IFAAMAS AAMAS 2026 목록(Paphos, 2026-05-25~29, Monash 저자 5인)을 검색 결과로 확인했다. 초록에 쌍별 거리 계산 회피가 있다. IFAAMAS PDF 는 검증자가 텍스트를 추출하지 못해, 같은 논문의 arXiv 판(2508.05890v1)으로 내용을 대조했다. 단일 출처(같은 저자의 두 판).\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록 '20,000 agents and 30,000 tasks within 1-second planning time'. arXiv v1 은 에이전트 4000~20000, 표 1 에 Sortation Large 20000 행이 있다. 저자 보고, 격자 계산 실험이다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv v1): 'The default edge cost for our flow model is the edge cost from the map, i.e., unit cost for grid maps' 와 대체 비용 모델 두 가지(계획기 혼잡 추정, 과거 실행 평균 대기 시간). 게재본의 절 번호는 검증자가 대조하지 못했으므로 페이지에 절 번호를 쓰지 않는다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 두 연구의 환경·지표가 다르다는 점은 원문으로 확인했다. 공통 벤치마크 비교는 없다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw CHANGELOG 2.14.0 태그 '2.14.0 (2026-09-26)' 에 'Submit bid as long as fleet name exists (in string or array) (#534)' 항목이 있다. FleetUpdateHandle.cpp 코드 대조는 검증자가 하지 않았다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. ROS 배포판별 반영 시점은 확인하지 않았다는 한계를 병기한다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f8 은 기존 7절(주제 페이지 s7)·5절의 'Open-RMF 입찰이 비용을 담는다' 문장(ref-376)과 겹친다. 기존 문장과 각주를 유지하고 필드 세부만 더한다.\",\"f10 은 기존 6절·10절의 rmf_task 배정·충전 삽입 문장(ref-404)과 겹친다. ref-404 각주를 재사용하고 범위(한 플릿)만 더한다.\",\"f4~f7 은 기존 oq-030(출처 충돌)과 연결된다. 해결이 아니라 근거 보강이다.\",\"f8·f9·f11 은 oq-053, f12·f14 는 oq-054 와 연결된다. 둘 다 부분 근거이고 해결이 아니다.\",\"트랙 반영 제안 2026-09-25-66(TaskPlanner 탐욕·A*)·2026-09-25-74(평가기 기본값 충돌)·2026-09-25-77(재배정은 같은 플릿 안)·2026-10-09-25(Choe 외 최근접 대비 26%)는 f9~f11 과 주제가 겹치지만 이번 브리프의 finding 이 아니다.\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"f18 의 '로드맵'은 용어집 'roadmap: 경로망 (Roadmap)'과 다르다. 본문에서는 '경로망(roadmap)'으로 쓴다.\",\"f18 의 '일반화 보로노이 다이어그램(GVD)'은 용어집 'generalized-voronoi-graph: 일반화 보로노이 그래프 (GVG)'와 다른 용어다. 같은 개념으로 링크하지 말고 첫 등장 시 영문을 풀어 쓴다.\"]},\"quotation_check\":{\"ok\":true,\"issues\":[\"ref-168 은 f4·f5·f6 세 finding 의 evidence 에 직접 인용 구절이 있다. 페이지에서는 이 출처의 직접 인용을 1회 이하로 줄이고 나머지는 재서술해야 한다.\"]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f4·f6: 초록 인용(76%, Heavy Excels 77%·전통 기법 모두 우위)은 'arXiv PDF v1 초록 기준'이라고 밝힌다 — arXiv 초록 페이지 메타데이터에는 76% 가 없고 표현도 'outperforming' 이라 달라서, 판을 밝히지 않으면 독자 대조 때 어긋난다.\",\"f4~f6: 6절·11절에 쓰는 LTAA 수치(75.97%·73%·77%·77.1%·0.77·0.81·0.95)에는 '저자 보고, TEACh 데이터셋 건설 작업 실험 조건, 현장 실측 아님'을 병기한다 — 논문의 실험 보고값이다.\",\"f4~f7(11절 oq-030): oq-030 을 해결로 바꾸지 않는다. 초록의 Heavy Excels '전통 기법 모두 우위' 표현(f6)과 본문의 DP 0.95 비교 제외 설명(f5)을 둘 다 [사실]로 제시하고, f7 은 '[의견](이 위키의 의견)'으로 충돌 원인 설명으로만 적는다 — 결정적·확률적 비교군을 같은 조건으로 비교한 자료가 원문에 없다.\",\"f3·f7·f11·f14·f17·f20·f26([의견])과 f9·f24([추정]): 문장에 '이 위키의 의견' 또는 '이 위키의 종합'을 밝힌다 — 의견의 주체를 표시해야 한다.\",\"6절(문헌 검토 문장): 기존의 '검토 편수·계열 구분·실험 플릿 규모 미확인' 문장을 f1·f2(다섯 계열, 표 I~V 의 열)로 바꾸고, 플릿 규모는 f3 의견대로 한 수치로 요약하지 않는다. 근거를 쓰려면 f3 evidence 의 세 값(본문 25대, 표 I 45대, 표 IV 3~48대)만 쓴다. 검토 편수는 '원문에 없다'고 쓰지 말고 언급하지 않는다 — 원문에 선정 서술이 있지만 이번 브리프 finding 이 아니므로 additional_research_requests 로 넘긴다.\",\"f8·f9(7절·9절): BidProposal(ref-1453)과 rmf_task README(ref-404)를 서로의 독립 교차 확인으로 쓰지 않는다. f9 는 [추정]으로 두고 oq-053 은 해결로 바꾸지 않고 부분 근거로만 연결한다 — 두 출처 모두 Open-RMF 프로젝트 자료다.\",\"f10·f11(6절·9절): TaskPlanner 의 최적 배정은 '한 플릿의 주어진 작업 집합'에 한정된다고 적고, Zhang 외의 '최적 단발 배정' 서술(f11 근거)을 TaskPlanner 의 성질로 옮기지 않는다.\",\"f12·f14(5절 물류창고 표 제약 행): '출하 마감을 배정 목적함수에 넣는 방법은 미확인이다'를 지우지 않는다. 마감을 필수 제약으로 두는 정식화가 병원 모사 연구에 있다는 점(f12, [사실])과 창고 출하 마감 연동 사례 미확인(f14, [의견])을 덧붙인다. oq-054 는 해결로 바꾸지 않는다.\",\"f15~f17(5절 신규 사례): 현장 유형을 '병원'으로 밝히되 '병원 모사 환경의 계산 실험(그래프 추상화 벤치마크)'이라고 함께 적는다. 여섯 항목은 finding 이 있는 시작 조건(f16)·수행 자원(f15)·제약(f12 마감·용량)·예외·성과(f17)만 채우고, 작업 대상·완료·인계는 '미확인'으로 둔다. 병원 현장 실증·운영 사례로 쓰지 않는다 — 원문에 실제 병원·로봇 운행 결과가 없다.\",\"site_matrix_updates: 병원 칸을 넣는다면 title 에 '모사 환경 계산 실험'을 병기하고 site_type 은 '병원', link 는 대상 세부영역 페이지로 한다 — f17 의 분류 한계를 매트릭스에도 반영한다.\",\"f13(6절·8절): '건전·완전'은 '논문의 모델·인코딩 가정(솔버의 건전·완전성, D=D_max) 아래의 결과'로 적고, 최소 이동 비용의 최적해를 보장한다고 쓰지 않는다. 국소 경로 계획·충돌 회피는 하위 계획기(연계 대상) 몫이라고 밝힌다.\",\"f18~f24(6절·8절): 경로·충돌·교착 처리 자체는 27. 다중 로봇 경로·교통 관리 — MAPF 로 연결만 하고, 이 영역 본문에는 배정 비용에 환경 구조·혼잡을 반영하는 부분만 쓴다. MRTA-RM 을 교착 없음 보장으로 쓰지 않는다(f20). MRTA-RM 과 Zhang 외의 수치를 순위로 비교하지 않는다(f24).\",\"f19·ref-1456(8절): 공개 구현은 '저자 공개 Python 구현(MIT, 같은 팀 산출물이라 독립 재현 아님)'까지만 쓰고 'GVD 로드맵 구현'이라고 쓰지 않는다 — 검증자가 연 README 는 로드맵을 다른 방식(가시성 기반)으로 설명해 논문 설명과 다르다.\",\"f21~f23(6절·8절): 20,000 에이전트·30,000 작업·1초 수치에 '저자 보고, 격자 지도 계산 실험(실제 로봇 배치 아님)'을 병기하고, 논문 내부 절 번호(§5·§6·§7)는 본문에 쓰지 않는다 — 게재본 절 번호를 검증자가 대조하지 못했다.\",\"f25·f26(7절): rmf_fleet_adapter 2.14.0(2026-09-26) #534 는 '패키지 태그 기준, ROS 배포판 반영 시점 미확인'을 병기한다.\",\"용어(f18): 'roadmap'은 용어집 표기 '경로망(roadmap)'으로 쓴다. GVD 는 첫 등장 시 '일반화 보로노이 다이어그램(Generalized Voronoi Diagram, GVD)'으로 풀어 쓰고, 용어집 '일반화 보로노이 그래프(GVG)'에 같은 개념으로 링크하지 않는다. makespan 은 첫 등장 시 '전체 완료 시간(makespan)'으로 쓴다.\",\"용어집 후보 '최소 비용 흐름(Minimum-Cost Flow)'·'이론 모듈로 만족 가능성(SMT)' 2건은 기존 용어와 겹치지 않으므로 신규 등록(action: add)한다.\",\"인용: ref-168 의 직접 인용은 페이지 전체에서 1회 이하로 하고, 나머지는 재서술한다 — 출처당 직접 인용 1회 규칙.\",\"참고문헌 ref-168: 각주와 reference_updates 를 '저자 Kaitha, S. p. r., & Yu, H., 발행일 2025-12-02, 접근일 2026-10-10'으로 고치고 '(원문 미열람)'을 뗀다 — 검증자가 arXiv 에서 저자 Hongrui Yu 와 v1 제출일 2025-12-02 를 확인했고, 이번에 원문을 열었다.\",\"참고문헌 ref-152·ref-404: 각주 접근일을 2026-10-10 으로 고치고, ref-152 는 '(원문 미열람)'을 뗀다 — 이번 실행에서 원문을 열었다.\",\"신규 참고문헌 ref-1453~ref-1458: 각주를 '기관, 제목, 발행일(모르면 미확인), URL, 접근일 2026-10-10' 형식으로 등록한다. ref-1453·ref-1456 은 발행일 '미확인', ref-1457 은 '2026-05'(AAMAS 2026)로 쓴다.\",\"open_questions_new 4건: 등록한다. 1번(입찰 비용 정규화)은 관련 기존 질문 oq-053·oq-082, 3번(LTAA 비교군 재평가)은 oq-030 을 관련 질문으로 표시하고, 기존 질문을 해결로 바꾸지 않는다.\",\"트랙 반영 제안 16건(data/area_reflection_proposals.json): 이번 브리프의 finding 이 다루지 않았으므로 본문에 반영하지 않고 상태 '제안'을 유지한다 — 브리프 밖 내용을 넣으면 드리프트다. 다음 25. 작업 배정 — MRTA 실행에서 처리한다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 26건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: 없음(검증자는 arXiv PDF 2건을 텍스트 추출 서비스로 열었다. AAMAS 2026 PDF(ref-1457)는 텍스트를 추출하지 못해 같은 논문의 arXiv 판 2508.05890v1 과 IFAAMAS 목록 검색 결과로 대조했다). 주의: 모든 [사실] 주장이 단일 출처이고, LTAA·MRTA-RM·Zhang 외·Tuck 외의 수치는 저자가 보고한 시뮬레이션·계산 실험 값이라 현장 실측이 아니다. 병원 사례(Tuck 외)는 병원 모사 그래프 벤치마크다. BidProposal 과 rmf_task README 는 같은 Open-RMF 프로젝트 자료라 서로 독립 확인이 아니다. LTAA 초록은 판에 따라 표현이 다르다(PDF v1 초록: 76%·'exceeding', arXiv 초록 페이지: 76% 없음·'outperforming'). 열린 질문 oq-030·oq-053·oq-054 는 부분 근거만 더했고 해결 인정 없음. 브리프 기록 메모: ref-1454·ref-1455·ref-1457 은 fetched true 인데 fetch_url 이 비어 있다(앞의 두 건은 기록된 URL 이 원문 페이지라 열람을 확인했다). 브리프 한계 기술의 '문헌 검토의 선정 절차가 원문에 없다'는 원문과 다르다(원문은 1440건에서 52편을 골랐다고 적는다). 브리프는 한국어 검색과 국내 자료가 없고(외부 조사 변환, 검색 0회 미집계), 실행 컨텍스트의 트랙 반영 제안 16건(최근접 대 MILP 비교 Choe 외 포함)을 검토하지 않아 이번 페이지에 반영하지 않는다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-10-02",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2501.08726(2025-01-15, Meseguer Valenzuela·Blanes Noguera)의 §II 소절이 A. Heuristics, B. Meta-heuristics, C. Exact and matheuristic Methods, D. Market-based Approach, E. Artificial Intelligence 이다. PDF 는 텍스트 추출 서비스를 거쳐 열었다. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 표 I~V 의 열이 Method / Centralized·Decentralized / Framework / Fleet Size / Remarkable results 이다. 단, 브리프 한계 기술의 '선정·제외 절차가 원문에 없어 총 검토 편수 미확인'은 원문과 다르다. 원문은 Google Scholar 1440건에서 가장 관련 있는 52편을 골랐다고 적는다. finding 밖이므로 수치를 페이지에 넣지 않는다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "근거를 확인했다: 본문의 'up to 25 robots'(예외 Shi 외 2024 의 1923 이동 랙), 표 I L. Li 외 최대 45 AMR, 표 IV Teck 외 2023 3~48 AMR. 의견 태그를 유지하고 주체를 '이 위키의 의견'으로 밝힌다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PDF v1 결과 절 'overall success rate of 75.97%, positioning it between Q-learning (73%) and DQN (77%)'. PDF v1 초록에 76% 가 있다. 다만 arXiv 초록 페이지(메타데이터)의 초록에는 76% 가 없어서, 기준을 'PDF v1 초록'으로 밝혀야 한다. 저자 보고(TEACh 건설 작업 실험)."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PDF v1 후반부에 brute force·greedy·DP 성공률 0.77·0.81·0.95 와, 결정적 알고리즘이라 불확실성 모델이 없어 비교 그림에서 뺐다는 설명이 있다(텍스트 추출로 열람, 쪽 번호는 검증자가 확인하지 못함). 저자 보고."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PDF v1 초록 'reaches 77% completion with superior workload balance, exceeding all traditional methods', 결론 'Heavy Excels setting (77.1% success with balanced workloads)'. arXiv 초록 페이지는 같은 뜻을 'outperforming all traditional methods' 로 적어 판마다 표현이 다르다. 기준 판을 밝힌다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f4~f6 은 원문으로 확인했다. 이 finding 은 이 위키의 의견이다. 출처 충돌(oq-030)은 한쪽을 고르지 않고 초록의 표현과 본문의 DP 0.95 를 둘 다 제시하는 설명으로만 쓴다. oq-030 은 해결하지 않는다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw BidProposal.msg 의 주석('published by a Fleet Adapter in response to a BidNotice')과 다섯 필드 fleet_name·expected_robot_name·prev_cost·new_cost·finish_time 이 일치한다. 발행일 미확인, 확인일 2026-10-10. evidence 의 BidResponse 관련 내용은 검증자가 확인하지 않았으므로 본문에 쓰지 않는다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 근거 두 건(ref-1453·ref-404)은 같은 Open-RMF 프로젝트 자료라 독립 교차 확인이 아니다. 최적성 손실 수치 근거가 없다는 점을 남긴다. oq-053 은 부분 근거일 뿐이다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw README 'For a given collection of tasks and robots belonging to a fleet (ie, they share physical and kinematic traits)…', 요청된 시작 시각, 배터리 제약과 충전 작업 자동 삽입. 발행일 미확인, 확인일 2026-10-10."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. Zhang 외 arXiv 판(2508.05890v1)에서 선형 배정이 'optimal one-shot assignments' 를 준다는 서술을 확인했다. 선형 배정에 대한 진술을 TaskPlanner 의 성질로 옮기지 않도록 범위를 한정하는 의견으로만 쓴다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2403.11737v1(2024-03-18). comment 는 'to be published in NASA Formal Methods Symposium 2024'. 과업 튜플(id·출발·도착 위치·도착 시각·마감), 용량, 점진 풀이가 원문과 일치한다. 게재본(쪽·DOI)은 확인하지 않았다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 'even satisfying solutions without guaranteed optimality are relevant', 국소 운동 계획·충돌 회피는 downstream planners 몫, 정리 5.1(건전)·5.2(완전). 완전성에는 솔버의 건전·완전성과 D=D_max 조건이 필요하고, 일부 증명은 부록에 '(Sketch)'로 되어 있다. 조건부 결과임을 밝힌다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. 근거를 확인했다: §2 는 휴리스틱 방법이 엄격한 마감에서 완전성 보장을 못 한다고 적는다. 창고 출하 마감 사례가 없다는 한계를 그대로 남긴다. oq-054 는 해결하지 않는다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 벤치마크 200개(작업 10~30 × 에이전트 5~20 × 각 10개), 용량 2·3, 마감 균등 분포, 최악 이동 시간 가중치. 초록은 'hospital-like environment', §6 은 복도와 방 20개의 실내 공간으로 적는다. 병원 '모사' 환경 계산 실험이다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 과업 튜플과 갱신 계획 정의('past actions and the current action are unchanged')."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. 원문은 솔버 성능만 보고하고 실제 병원·로봇 운행 결과가 없다. 매트릭스와 사례 표에 '모사 환경 계산 실험'을 밝히게 한다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2506.07293v1(2025-06-08) 초록. GVD 로드맵, 구역 분할, push-pop(FIFO) 재분배, makespan 최소화가 원문과 일치한다. 용어는 용어집의 '경로망 (Roadmap)'으로 맞춘다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 본문 'exceeding 96% in the random scenario', 분리 시나리오 58~100%, 결론의 제어기 구현과 이종 로봇 확장 계획. README 는 Python 3.9+, MIT, RAS 2025-12 를 표기한다. 논문과 코드는 같은 팀 산출물이라 독립 재현이 아니다. README 는 로드맵을 가시성 기반 로드맵(VBRM)으로 설명해 논문의 GVD 설명과 다르므로, 공개 구현을 'GVD 구현'으로 쓰지 않는다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. 근거를 확인했다: 'our method cannot achieve deadlock-free'."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IFAAMAS AAMAS 2026 목록(Paphos, 2026-05-25~29, Monash 저자 5인)을 검색 결과로 확인했다. 초록에 쌍별 거리 계산 회피가 있다. IFAAMAS PDF 는 검증자가 텍스트를 추출하지 못해, 같은 논문의 arXiv 판(2508.05890v1)으로 내용을 대조했다. 단일 출처(같은 저자의 두 판)."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록 '20,000 agents and 30,000 tasks within 1-second planning time'. arXiv v1 은 에이전트 4000~20000, 표 1 에 Sortation Large 20000 행이 있다. 저자 보고, 격자 계산 실험이다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv v1): 'The default edge cost for our flow model is the edge cost from the map, i.e., unit cost for grid maps' 와 대체 비용 모델 두 가지(계획기 혼잡 추정, 과거 실행 평균 대기 시간). 게재본의 절 번호는 검증자가 대조하지 못했으므로 페이지에 절 번호를 쓰지 않는다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 두 연구의 환경·지표가 다르다는 점은 원문으로 확인했다. 공통 벤치마크 비교는 없다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw CHANGELOG 2.14.0 태그 '2.14.0 (2026-09-26)' 에 'Submit bid as long as fleet name exists (in string or array) (#534)' 항목이 있다. FleetUpdateHandle.cpp 코드 대조는 검증자가 하지 않았다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. ROS 배포판별 반영 시점은 확인하지 않았다는 한계를 병기한다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f8 은 기존 7절(주제 페이지 s7)·5절의 'Open-RMF 입찰이 비용을 담는다' 문장(ref-376)과 겹친다. 기존 문장과 각주를 유지하고 필드 세부만 더한다.",
+        "f10 은 기존 6절·10절의 rmf_task 배정·충전 삽입 문장(ref-404)과 겹친다. ref-404 각주를 재사용하고 범위(한 플릿)만 더한다.",
+        "f4~f7 은 기존 oq-030(출처 충돌)과 연결된다. 해결이 아니라 근거 보강이다.",
+        "f8·f9·f11 은 oq-053, f12·f14 는 oq-054 와 연결된다. 둘 다 부분 근거이고 해결이 아니다.",
+        "트랙 반영 제안 2026-09-25-66(TaskPlanner 탐욕·A*)·2026-09-25-74(평가기 기본값 충돌)·2026-09-25-77(재배정은 같은 플릿 안)·2026-10-09-25(Choe 외 최근접 대비 26%)는 f9~f11 과 주제가 겹치지만 이번 브리프의 finding 이 아니다."
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "f18 의 '로드맵'은 용어집 'roadmap: 경로망 (Roadmap)'과 다르다. 본문에서는 '경로망(roadmap)'으로 쓴다.",
+        "f18 의 '일반화 보로노이 다이어그램(GVD)'은 용어집 'generalized-voronoi-graph: 일반화 보로노이 그래프 (GVG)'와 다른 용어다. 같은 개념으로 링크하지 말고 첫 등장 시 영문을 풀어 쓴다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": [
+        "ref-168 은 f4·f5·f6 세 finding 의 evidence 에 직접 인용 구절이 있다. 페이지에서는 이 출처의 직접 인용을 1회 이하로 줄이고 나머지는 재서술해야 한다."
+      ]
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f4·f6: 초록 인용(76%, Heavy Excels 77%·전통 기법 모두 우위)은 'arXiv PDF v1 초록 기준'이라고 밝힌다 — arXiv 초록 페이지 메타데이터에는 76% 가 없고 표현도 'outperforming' 이라 달라서, 판을 밝히지 않으면 독자 대조 때 어긋난다.",
+      "f4~f6: 6절·11절에 쓰는 LTAA 수치(75.97%·73%·77%·77.1%·0.77·0.81·0.95)에는 '저자 보고, TEACh 데이터셋 건설 작업 실험 조건, 현장 실측 아님'을 병기한다 — 논문의 실험 보고값이다.",
+      "f4~f7(11절 oq-030): oq-030 을 해결로 바꾸지 않는다. 초록의 Heavy Excels '전통 기법 모두 우위' 표현(f6)과 본문의 DP 0.95 비교 제외 설명(f5)을 둘 다 [사실]로 제시하고, f7 은 '[의견](이 위키의 의견)'으로 충돌 원인 설명으로만 적는다 — 결정적·확률적 비교군을 같은 조건으로 비교한 자료가 원문에 없다.",
+      "f3·f7·f11·f14·f17·f20·f26([의견])과 f9·f24([추정]): 문장에 '이 위키의 의견' 또는 '이 위키의 종합'을 밝힌다 — 의견의 주체를 표시해야 한다.",
+      "6절(문헌 검토 문장): 기존의 '검토 편수·계열 구분·실험 플릿 규모 미확인' 문장을 f1·f2(다섯 계열, 표 I~V 의 열)로 바꾸고, 플릿 규모는 f3 의견대로 한 수치로 요약하지 않는다. 근거를 쓰려면 f3 evidence 의 세 값(본문 25대, 표 I 45대, 표 IV 3~48대)만 쓴다. 검토 편수는 '원문에 없다'고 쓰지 말고 언급하지 않는다 — 원문에 선정 서술이 있지만 이번 브리프 finding 이 아니므로 additional_research_requests 로 넘긴다.",
+      "f8·f9(7절·9절): BidProposal(ref-1453)과 rmf_task README(ref-404)를 서로의 독립 교차 확인으로 쓰지 않는다. f9 는 [추정]으로 두고 oq-053 은 해결로 바꾸지 않고 부분 근거로만 연결한다 — 두 출처 모두 Open-RMF 프로젝트 자료다.",
+      "f10·f11(6절·9절): TaskPlanner 의 최적 배정은 '한 플릿의 주어진 작업 집합'에 한정된다고 적고, Zhang 외의 '최적 단발 배정' 서술(f11 근거)을 TaskPlanner 의 성질로 옮기지 않는다.",
+      "f12·f14(5절 물류창고 표 제약 행): '출하 마감을 배정 목적함수에 넣는 방법은 미확인이다'를 지우지 않는다. 마감을 필수 제약으로 두는 정식화가 병원 모사 연구에 있다는 점(f12, [사실])과 창고 출하 마감 연동 사례 미확인(f14, [의견])을 덧붙인다. oq-054 는 해결로 바꾸지 않는다.",
+      "f15~f17(5절 신규 사례): 현장 유형을 '병원'으로 밝히되 '병원 모사 환경의 계산 실험(그래프 추상화 벤치마크)'이라고 함께 적는다. 여섯 항목은 finding 이 있는 시작 조건(f16)·수행 자원(f15)·제약(f12 마감·용량)·예외·성과(f17)만 채우고, 작업 대상·완료·인계는 '미확인'으로 둔다. 병원 현장 실증·운영 사례로 쓰지 않는다 — 원문에 실제 병원·로봇 운행 결과가 없다.",
+      "site_matrix_updates: 병원 칸을 넣는다면 title 에 '모사 환경 계산 실험'을 병기하고 site_type 은 '병원', link 는 대상 세부영역 페이지로 한다 — f17 의 분류 한계를 매트릭스에도 반영한다.",
+      "f13(6절·8절): '건전·완전'은 '논문의 모델·인코딩 가정(솔버의 건전·완전성, D=D_max) 아래의 결과'로 적고, 최소 이동 비용의 최적해를 보장한다고 쓰지 않는다. 국소 경로 계획·충돌 회피는 하위 계획기(연계 대상) 몫이라고 밝힌다.",
+      "f18~f24(6절·8절): 경로·충돌·교착 처리 자체는 27. 다중 로봇 경로·교통 관리 — MAPF 로 연결만 하고, 이 영역 본문에는 배정 비용에 환경 구조·혼잡을 반영하는 부분만 쓴다. MRTA-RM 을 교착 없음 보장으로 쓰지 않는다(f20). MRTA-RM 과 Zhang 외의 수치를 순위로 비교하지 않는다(f24).",
+      "f19·ref-1456(8절): 공개 구현은 '저자 공개 Python 구현(MIT, 같은 팀 산출물이라 독립 재현 아님)'까지만 쓰고 'GVD 로드맵 구현'이라고 쓰지 않는다 — 검증자가 연 README 는 로드맵을 다른 방식(가시성 기반)으로 설명해 논문 설명과 다르다.",
+      "f21~f23(6절·8절): 20,000 에이전트·30,000 작업·1초 수치에 '저자 보고, 격자 지도 계산 실험(실제 로봇 배치 아님)'을 병기하고, 논문 내부 절 번호(§5·§6·§7)는 본문에 쓰지 않는다 — 게재본 절 번호를 검증자가 대조하지 못했다.",
+      "f25·f26(7절): rmf_fleet_adapter 2.14.0(2026-09-26) #534 는 '패키지 태그 기준, ROS 배포판 반영 시점 미확인'을 병기한다.",
+      "용어(f18): 'roadmap'은 용어집 표기 '경로망(roadmap)'으로 쓴다. GVD 는 첫 등장 시 '일반화 보로노이 다이어그램(Generalized Voronoi Diagram, GVD)'으로 풀어 쓰고, 용어집 '일반화 보로노이 그래프(GVG)'에 같은 개념으로 링크하지 않는다. makespan 은 첫 등장 시 '전체 완료 시간(makespan)'으로 쓴다.",
+      "용어집 후보 '최소 비용 흐름(Minimum-Cost Flow)'·'이론 모듈로 만족 가능성(SMT)' 2건은 기존 용어와 겹치지 않으므로 신규 등록(action: add)한다.",
+      "인용: ref-168 의 직접 인용은 페이지 전체에서 1회 이하로 하고, 나머지는 재서술한다 — 출처당 직접 인용 1회 규칙.",
+      "참고문헌 ref-168: 각주와 reference_updates 를 '저자 Kaitha, S. p. r., & Yu, H., 발행일 2025-12-02, 접근일 2026-10-10'으로 고치고 '(원문 미열람)'을 뗀다 — 검증자가 arXiv 에서 저자 Hongrui Yu 와 v1 제출일 2025-12-02 를 확인했고, 이번에 원문을 열었다.",
+      "참고문헌 ref-152·ref-404: 각주 접근일을 2026-10-10 으로 고치고, ref-152 는 '(원문 미열람)'을 뗀다 — 이번 실행에서 원문을 열었다.",
+      "신규 참고문헌 ref-1453~ref-1458: 각주를 '기관, 제목, 발행일(모르면 미확인), URL, 접근일 2026-10-10' 형식으로 등록한다. ref-1453·ref-1456 은 발행일 '미확인', ref-1457 은 '2026-05'(AAMAS 2026)로 쓴다.",
+      "open_questions_new 4건: 등록한다. 1번(입찰 비용 정규화)은 관련 기존 질문 oq-053·oq-082, 3번(LTAA 비교군 재평가)은 oq-030 을 관련 질문으로 표시하고, 기존 질문을 해결로 바꾸지 않는다.",
+      "트랙 반영 제안 16건(data/area_reflection_proposals.json): 이번 브리프의 finding 이 다루지 않았으므로 본문에 반영하지 않고 상태 '제안'을 유지한다 — 브리프 밖 내용을 넣으면 드리프트다. 다음 25. 작업 배정 — MRTA 실행에서 처리한다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 26건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: 없음(검증자는 arXiv PDF 2건을 텍스트 추출 서비스로 열었다. AAMAS 2026 PDF(ref-1457)는 텍스트를 추출하지 못해 같은 논문의 arXiv 판 2508.05890v1 과 IFAAMAS 목록 검색 결과로 대조했다). 주의: 모든 [사실] 주장이 단일 출처이고, LTAA·MRTA-RM·Zhang 외·Tuck 외의 수치는 저자가 보고한 시뮬레이션·계산 실험 값이라 현장 실측이 아니다. 병원 사례(Tuck 외)는 병원 모사 그래프 벤치마크다. BidProposal 과 rmf_task README 는 같은 Open-RMF 프로젝트 자료라 서로 독립 확인이 아니다. LTAA 초록은 판에 따라 표현이 다르다(PDF v1 초록: 76%·'exceeding', arXiv 초록 페이지: 76% 없음·'outperforming'). 열린 질문 oq-030·oq-053·oq-054 는 부분 근거만 더했고 해결 인정 없음. 브리프 기록 메모: ref-1454·ref-1455·ref-1457 은 fetched true 인데 fetch_url 이 비어 있다(앞의 두 건은 기록된 URL 이 원문 페이지라 열람을 확인했다). 브리프 한계 기술의 '문헌 검토의 선정 절차가 원문에 없다'는 원문과 다르다(원문은 1440건에서 52편을 골랐다고 적는다). 브리프는 한국어 검색과 국내 자료가 없고(외부 조사 변환, 검색 0회 미집계), 실행 컨텍스트의 트랙 반영 제안 16건(최근접 대 MILP 비교 Choe 외 포함)을 검토하지 않아 이번 페이지에 반영하지 않는다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 2771,
+  "type": "result",
+  "duration_ms": 292356,
+  "uuid": "d24c7707-fc1f-413e-a5e8-c783f2f159de",
+  "ttft_stream_ms": 829,
+  "time_to_request_ms": 86,
+  "time_to_request_phases_ms": {
+    "other": 21,
+    "system_prompt": 11,
+    "resume_other": 1,
+    "process_user_input": 4,
+    "input_attachments": 9,
+    "input_hooks": 2,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 13
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 36,
+  "time_to_request_cpu_ms": 134,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "environment",
+    "slowest_producer_ms": 4,
+    "cpu_ms": 19,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 829,
+  "time_to_request_from_spawn_ms": 1253874,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791612308972.0469,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 294.0
+}

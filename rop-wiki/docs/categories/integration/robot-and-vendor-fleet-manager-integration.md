@@ -3,15 +3,15 @@ title: "20. 로봇·제조사 관제 연동"
 type: area
 category: "F. 연동"
 area_no: 20
-related_areas: [5, 15, 22, 25, 27, 29, 32, 42]
+related_areas: [2, 5, 12, 15, 21, 22, 25, 27, 29, 32, 42, 47, 64, 67]
 tags: [플릿 어댑터, VDA 5050, Open-RMF, MassRobotics, 제조사 관제, 명령·상태 변환]
 status: published
 confidence: medium
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-004, ref-031, ref-105, ref-148, ref-251, ref-252, ref-153, ref-254, ref-256, ref-257, ref-258, ref-259]
-last_run: 2026-09-25
-version: 2
+updated: 2026-10-10
+sources: [ref-004, ref-031, ref-032, ref-105, ref-136, ref-148, ref-153, ref-159, ref-230, ref-251, ref-252, ref-254, ref-255, ref-256, ref-257, ref-258, ref-1419, ref-742, ref-854, ref-1029, ref-1398, ref-1412, ref-1413, ref-1415, ref-1416, ref-1417]
+last_run: 2026-10-10
+version: 3
 ---
 
 [홈](../../index.md) › [F. 연동](index.md) › 20. 로봇·제조사 관제 연동
@@ -30,7 +30,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 3 · 마지막 갱신: 2026-10-10 · 마지막 실행: 2026-10-10
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -58,9 +58,7 @@ version: 2
 
 AMR(Autonomous Mobile Robot, 자율이동로봇) 제조사마다 자체 플릿 관리 소프트웨어를 쓰기 때문에 여러 브랜드를 섞은 플릿을 한 현장에서 운영하기 어렵다는 문제가 연구 과제로 다뤄지고 있다. [사실][^ref-258] 미국 ARM Institute의 IO-AMRs 과제는 이 문제를 풀려고 다중 지도 관리자·연결 계층·전역 플릿 관리자를 만드는 것을 목표로 한다. [사실][^ref-258]
 
-표준 쪽에서도 같은 문제를 다룬다. VDA 5050은 서로 다른 제조사의 AGV(Automated Guided Vehicle, 무인운반차)·AMR을 하나의 관제(fleet control)로 운용하기 위한 제조사 중립 통신 인터페이스이다. [사실][^ref-031][^ref-259]
-
-이 영역의 옛 분류의 질문은 개별 로봇을 직접 제어할지, 제조사 관제에 작업을 맡길지이다. Interact Analysis는 자사 분석(의견)에서 제3자 관제가 로봇에 직접 접속하는 저수준 제어가 현재 가장 흔하고 제조사 관제에 작업을 넘기는 고수준 제어가 늘고 있으나, 장기적으로 어느 쪽이 쓰일지는 아직 정해지지 않았다고 본다. [의견][^ref-257] 어느 쪽을 고르느냐에 따라 ROP가 공용 통로·승강기·문에서 다른 플릿과 교통을 조정할 수 있는 정도와 제조사에 요구해야 할 API가 달라질 것으로 보인다. [추정][^ref-004][^ref-251]
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 왜 중요한가](../../topics/2026/2026-10-10-area20-s3.md)에 있다.
 
 ## 4. 핵심 개념과 용어
 
@@ -89,30 +87,66 @@ AMR(Autonomous Mobile Robot, 자율이동로봇) 제조사마다 자체 플릿 �
 
 A사 플릿에는 ROP가 주문을 직접 보내고 pick·drop action 완료로 적재·하역을 확인한다. B사 플릿은 제조사 관제가 경로 교체를 허용하지 않으면 신호등이나 읽기 전용 수준으로만 붙으므로, 공용 통로에서 ROP가 할 수 있는 일이 일시정지·재개나 관측으로 좁아진다. 오류가 나면 두 플릿의 서로 다른 오류 어휘를 공통 예외로 옮긴 뒤 복구를 [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)의 규칙에 넘긴다.
 
+### 연동 위치와 제어 수준을 나눠 기록하기
+
+위 물류창고 사례의 '수행 자원'과 '제약' 행은 연동 위치와 제어 수준을 한데 다룬다. 이 위키는 연동 위치(제조사 관제 API를 거치는지, 로봇에 직접 붙는지)와 [제어 수준](../../glossary/fleet-control-level.md)(전체 제어인지)을 따로 판단해 별도 항목으로 기록하고, 제어 권한은 경로 지정·교체, 정지, 진행 상태 반환으로 나눠 적는 것이 좋다고 본다. [의견][^ref-251][^ref-1029]
+
+InOrbit 개발자 문서는 자사 플랫폼이 제어하는 로봇 플릿을 RMF core에 잇는 오픈소스 전체 제어 플릿 어댑터를 제공해 여러 제조사 로봇의 중앙 교통 조정을 가능하게 한다고 밝힌다(벤더 주장, 발행일 미확인, 2026-10-10 확인). [추정][^ref-1029] 관제 플랫폼을 거치는 연동도 전체 제어로 붙을 수 있다는 예이므로, 위치와 수준을 한 항목으로 묶으면 이런 구성이 구분되지 않는다고 이 위키는 본다. [의견][^ref-251][^ref-1029] 직접 제어와 제조사 관제 위임의 처리량·비용을 같은 조건에서 비교한 자료는 이번 갱신(2026-10-10)에서도 찾지 못했다([열린 질문](../../open-questions.md) oq-031).
+
+**현장 유형:** 기타
+
+**사례:** 전시회 공유 공간에서 여러 제조사 로봇이 함께 임무를 수행하는 시연(Automate 2026)
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 미확인 |
+| 작업 대상 | 미확인 |
+| 수행 자원 | Ati Robotics·Kärcher·Neura Robotics·Omron·Peer Robotics·Quasi Robotics·Unitree 7개사 로봇이 공유 공간에서 함께 임무를 수행하고, Slamcore·Guide Robotics의 실시간 위치 추적(Real-Time Locating System, RTLS)으로 수동 차량까지 묶었다고 InOrbit이 밝힌다(벤더 주장, 로봇 대수 미확인). [추정][^ref-1416] |
+| 제약 | 미확인 |
+| 완료·인계 | 미확인 |
+| 예외·성과 | 미확인 |
+
+InOrbit은 이 시연에 자사를 포함해 모두 10개사가 협업했다고 밝힌다(벤더 주장, 발행일 미확인, 2026-10-10 확인). [추정][^ref-1416] 이 위키는 '10개사'를 로봇 7개사·위치 추적 2개사·InOrbit을 합친 참여 기업 수로 읽으며, 로봇 대수나 AMR 제조사 수가 아니므로 상용 운영 사례가 아닌 전시 시연으로 분류한다. [의견][^ref-1416] 발표 페이지에는 로봇 대수·성능·임무 실패 기록이 없어, 이 사례를 연동 방식의 효과를 판단하는 근거로 쓰지 않는다.
+
+**현장 유형:** 상업 시설
+
+**사례:** 호텔 로봇 배송에서 플랫폼과 로봇 제조사의 연동(카카오모빌리티–로보티즈)
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 미확인 |
+| 작업 대상 | 미확인 |
+| 수행 자원 | 카카오모빌리티(플랫폼)가 2024년 로보티즈(로봇 제조사)와 업무협약을 맺고 호텔에 상용 로봇 배송 서비스를 적용해 왔다고 발표했다(벤더 주장). [추정][^ref-1417] 제어 위임 방식·연동 API·로봇 대수는 미확인이다. |
+| 제약 | 미확인 |
+| 완료·인계 | 미확인 |
+| 예외·성과 | 미확인(회사가 밝힌 가동률·성공률 수치는 분모·기간이 확인되지 않아 싣지 않는다) |
+
+카카오모빌리티는 2026-03-16 보도자료에서 신라스테이 서초·반얀트리 클럽 앤 스파 서울 등 호텔에 이 서비스를 적용했다고 밝혔다(벤더 주장, 독립 확인 없음). [추정][^ref-1417] 같은 사례가 [2. 사용 사례·요구·책임 범위](../planning-and-business/use-cases-requirements-and-scope.md)에도 있다. 이 위키는 이 사례를 국내 플랫폼–로봇 제조사 연동 사례로 분류하되, 제어 위임 방식·API·로봇 대수가 공개되지 않았으므로 한 현장에서 여러 제조사 플릿을 함께 운영한 증거나 직접 제어·위임 비교 근거(oq-031)로는 쓰지 않는다. [의견][^ref-1417]
+
 ## 6. 대표 접근법과 기술
 
 Open-RMF 플릿 어댑터는 제조사 관제나 로봇 API가 허용하는 제어 수준에 따라 전체 제어·신호등·읽기 전용 가운데 하나로 RMF에 붙는다. [사실][^ref-004][^ref-251] 아래는 이번 조사에서 확인한 연동 방식이다.
 
-자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area09-s6.md)에 있다.
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](../../topics/2026/2026-10-10-area20-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
 VDA 5050 3.0.0은 제조사 중립 관제–로봇 인터페이스로서 팩트시트, 주문 거절 오류, action 진행 상태 보고를 둔다. [사실][^ref-031] 아래 표는 이 영역이 참조하는 표준과 공개 구현이다.
 
-자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area09-s7.md)에 있다.
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area20-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-VDA 5050이 주변 설비 인터페이스를 다루지 않는다는 한계를 지적한 연구가 있다. [사실][^ref-259] 이번 조사에서 찾은 국내 자료는 기사·벤더 발표뿐이다.
+VDA 5050이 주변 설비 인터페이스를 다루지 않는다는 한계를 지적한 연구가 있다. [사실][^ref-1419] 이번 조사에서 찾은 국내 자료는 기사·벤더 발표뿐이다.
 
-자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](../../topics/2026/2026-09-25-area09-s8.md)에 있다.
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](../../topics/2026/2026-10-10-area20-s8.md)에 있다.
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)
 
 | 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |
 |---|---|---|
 | 로봇 자체 지능·제어 | 이종 제조사를 잇는 어댑터의 명령·상태·오류 변환, 지도 좌표 변환, 완료 확인, 교통·설비 조정 인터페이스 [추정][^ref-031][^ref-251][^ref-105][^ref-153] | 연계 대상: 로컬 경로 계획·장애물 회피·위치추정 같은 로봇 자체 주행 기능은 로봇·제조사 쪽에 남는 것으로 보인다. [추정][^ref-031][^ref-251][^ref-105][^ref-153] |
-| 시설·설비 제어 | 로봇 작업과 설비를 잇는 별도 인터페이스. [추정][^ref-031][^ref-251][^ref-105][^ref-153] VDA 5050은 AGV·관제와 주변 설비 사이 인터페이스를 다루지 않는다. [사실][^ref-259] | 연계 대상: 승강기·문 제어 자체. Open-RMF 커뮤니티는 승강기·문 어댑터를 플릿 어댑터와 따로 둔다. [사실][^ref-254] |
+| 시설·설비 제어 | 로봇 작업과 설비를 잇는 별도 인터페이스. [추정][^ref-031][^ref-251][^ref-105][^ref-153] VDA 5050은 AGV·관제와 주변 설비 사이 인터페이스를 다루지 않는다. [사실][^ref-1419] | 연계 대상: 승강기·문 제어 자체. Open-RMF 커뮤니티는 승강기·문 어댑터를 플릿 어댑터와 따로 둔다. [사실][^ref-254] |
 
 이종 제조사를 잇는 ROP의 어댑터는 명령·상태·오류 변환, 지도 좌표 변환, 완료 확인, 교통·설비 조정 인터페이스를 맡는 것으로 보인다. [추정][^ref-031][^ref-251][^ref-105][^ref-153] 교통 조정은 VDA 5050 명세 범위 밖이어서 관제 구현의 몫으로 남는다. [사실][^ref-031]
 
@@ -122,35 +156,38 @@ VDA 5050이 주변 설비 인터페이스를 다루지 않는다는 한계를 �
 
 [5. 로봇 능력·작업 표현](../robot-ontology/robot-capability-and-task-representation.md) — VDA 5050 팩트시트와 Open-RMF task_capabilities 선언은 능력 모델과 맞춰야 할 입력으로 보인다. [추정][^ref-031][^ref-105]
 
-자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결](../../topics/2026/2026-09-25-area09-s10.md)에 있다.
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결](../../topics/2026/2026-10-10-area20-s10.md)에 있다.
 
 ## 11. 열린 질문
 
 이 영역에 걸린 기존 질문과 이번 실행에서 새로 올린 질문이다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
 
-자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 열린 질문](../../topics/2026/2026-09-25-area09-s11.md)에 있다.
+자세한 내용은 주제 페이지 [20. 로봇·제조사 관제 연동 — 열린 질문](../../topics/2026/2026-10-10-area20-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-25 · 갱신 · [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안 7절 반영, 페이지 상태 표식 추가. 2차 수정: 9절 설비 행 태그 분리·free_fleet 문장 태그와 ref-256 각주 추가, 8절 요약 문장 교체 (실행 2026-09-25-20)
-- 2026-09-25 · 생성 · [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area09-s7.md) — 자동 분리: 9. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,784자)을 옮겼다 (실행 2026-09-25-20)
-- 2026-09-25 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](../../topics/2026/2026-09-25-area09-s8.md) — 자동 분리: 9. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,706자)을 옮겼다. 2차 수정: 1절·3절 첫 요약 문장을 ref-259 범위 문장과 조사 범위 설명 두 문장으로 교체 (실행 2026-09-25-20)
-- 2026-09-25 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area09-s6.md) — 자동 분리: 9. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,498자)을 옮겼다 (실행 2026-09-25-20)
-- 2026-09-25 · 생성 · [20. 로봇·제조사 관제 연동 — 열린 질문](../../topics/2026/2026-09-25-area09-s11.md) — 자동 분리: 9. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,297자)을 옮겼다 (실행 2026-09-25-20)
+- 2026-10-10 · 갱신 · [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 차등 갱신: 3절 IO-AMRs 범위 한정 추가, 5절 연동 위치·제어 수준 기록 기준과 상업 시설·기타 사례 추가, 6절 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 7절 VDA 5050 3.0.0 날짜 병기·공개 구현 판 정보, 8절 Lopes·Franke 서지·범위 보강, 10절 21·47·12·2·64·67번 연결, 11절 부분 근거와 새 질문 5건, 6·7·8·10·11절에 2026-09-25 분리 페이지 링크 유지, 13절 각주 갱신(Franke 외 기존 id ref-1419 의 URL·발행일·열람 반영, ref-258 열람 반영, ref-031·ref-251·ref-256 접근일, 신규 각주) (실행 2026-10-10-06)
+- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area20-s7.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,938자)을 옮겼다 (실행 2026-10-10-06)
+- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](../../topics/2026/2026-10-10-area20-s6.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,684자)을 옮겼다 (실행 2026-10-10-06)
+- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 열린 질문](../../topics/2026/2026-10-10-area20-s11.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,604자)을 옮겼다 (실행 2026-10-10-06)
+- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](../../topics/2026/2026-10-10-area20-s8.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,251자)을 옮겼다 (실행 2026-10-10-06)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
 [^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25
-[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
+[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10
 [^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25
 [^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-09-25
-[^ref-251]: Open Robotics, Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets.html, 접근일 2026-09-25
+[^ref-251]: Open Robotics, Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets.html, 접근일 2026-10-10
 [^ref-252]: Open Robotics, Integration (integration) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration.html, 접근일 2026-09-25
 [^ref-153]: Open Robotics, Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25
 [^ref-254]: Open Robotics (open-rmf), awesome_adapters — A curated list of adapters from the community which can be used with Open-RMF (README), 미확인, https://github.com/open-rmf/awesome_adapters, 접근일 2026-09-25
-[^ref-256]: Open Robotics (open-rmf), free_fleet — README (A free fleet management system), 미확인, https://github.com/open-rmf/free_fleet, 접근일 2026-09-25
+[^ref-256]: Open Robotics (open-rmf), free_fleet — README (A free fleet management system), 미확인, https://github.com/open-rmf/free_fleet, 접근일 2026-10-10
 [^ref-257]: Interact Analysis, AMR Multi-Fleet Orchestration Software Explained, 미확인, https://interactanalysis.com/insight/amr-multi-fleet-orchestration-software/, 접근일 2026-09-25 (원문 미열람)
-[^ref-258]: ARM Institute, Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs), 미확인, https://arminstitute.org/projects/interoperability-and-orchestration-of-autonomous-mobile-robots-io-amrs/, 접근일 2026-09-25 (원문 미열람)
-[^ref-259]: Franke, S., Lünsch, D., Jost, J., & Roidl, M., Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept, 2023, https://www.researchgate.net/publication/374741902_Identification_of_requirements_and_opportunities_for_new_types_of_standardized_interfaces_for_AGV_systems_based_on_the_VDA_5050_concept, 접근일 2026-09-25 (원문 미열람)
+[^ref-258]: ARM Institute, Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs), 미확인, https://arminstitute.org/projects/interoperability-and-orchestration-of-autonomous-mobile-robots-io-amrs/, 접근일 2026-10-10
+[^ref-1419]: Franke, S., Lünsch, D., Jost, J., & Roidl, M., Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept, 2023-10-11, https://proc.logistics-journal.de/article/download/1067/1036/8465, 접근일 2026-10-10
+[^ref-1029]: InOrbit, Contents — InOrbit Developer Portal, 미확인, https://developer.inorbit.ai/docs, 접근일 2026-10-10
+[^ref-1416]: InOrbit.AI, 10 Companies around the World Collaborate to Showcase Robot Orchestration at Automate 2026, 미확인, https://www.inorbit.ai/automate-2026, 접근일 2026-10-10
+[^ref-1417]: 카카오모빌리티, 카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속, 2026-03-16, https://www.kakaomobility.com/newsroom/detail/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0-%EA%B5%AD%EB%82%B4-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%ED%98%91%EB%A0%A5%ED%95%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EB%A1%9C%EB%B4%87-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%99%95%EC%9E%A5-%EC%A7%80%EC%86%8D-361, 접근일 2026-10-10

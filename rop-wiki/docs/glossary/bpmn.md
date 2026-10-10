@@ -3,15 +3,15 @@ title: "비즈니스 프로세스 모델 및 표기법 (Business Process Model a
 type: glossary
 term_ko: 비즈니스 프로세스 모델 및 표기법
 term_en: Business Process Model and Notation (BPMN)
-definition: OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPMN 2.0.1을 PAS 절차로 국제표준화한 것이다.
-related_areas: [24, 29]
+definition: 이미 성공적으로 끝난 단계의 결과가 더는 필요 없을 때 그 효과를 되돌리는 처리를 별도 활동으로 표현하는 BPMN 개념이다.
+related_areas: [24, 29, 32]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-25
-updated: 2026-09-25
-sources: [ref-112]
-version: 1
+updated: 2026-10-10
+sources: [ref-112, ref-502]
+version: 3
 ---
 
 [홈](../index.md) › [용어집](index.md) › 비즈니스 프로세스 모델 및 표기법
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPMN 2.0.1을 PAS 절차로 국제표준화한 것이다. [추정][^ref-112]
+이미 성공적으로 끝난 단계의 결과가 더는 필요 없을 때 그 효과를 되돌리는 처리를 별도 활동으로 표현하는 BPMN 개념이다. [추정][^ref-502]
 
 ## 설명
 
-업무 분석가부터 구현 개발자·운영 관리자까지 이해할 수 있는 표기를 목표로 한다. 이 위키에서는 로봇 운반 단계와 인수 확인 대기 단계를 나눠 표현하는 후보 표기법으로 다룬다.
+BPMN 2.0.2 규범 문서가 정의하는 프로세스 모델 요소다. 한글 표기가 비슷한 용어집 항목 '보상 트랜잭션 (Compensating Transaction)'(compensating-transaction)과 같은 개념이 아니므로 구분해 쓰고, 두 항목을 서로 연결해 참고한다.
 
 ## 관련 영역
 
@@ -39,6 +39,5 @@ OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPM
 
 ## 출처
 
-[^ref-112]: OMG(Object Management Group), About the Business Process Model And Notation Specification Version 2.0, 미확인, https://www.omg.org/spec/BPMN/2.0/About-BPMN, 접근일 2026-09-25 (원문 미열람)
-
 - 참고문헌 페이지: [ref-112](../references/ref-112.md)
+[^ref-502]: OMG(Object Management Group), Business Process Model and Notation (BPMN), Version 2.0.2, 2014-01, https://www.omg.org/spec/BPMN/2.0.2/, 접근일 2026-10-10

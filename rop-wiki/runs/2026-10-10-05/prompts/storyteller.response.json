@@ -1,0 +1,646 @@
+{
+  "duration_api_ms": 518950,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.6207404,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 161353,
+    "cache_read_input_tokens": 72042,
+    "output_tokens": 65775,
+    "output_tokens_details": {
+      "thinking_tokens": 36493
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 161353,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 65775,
+        "cache_read_input_tokens": 72042,
+        "cache_creation_input_tokens": 161353,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 161353
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 65775,
+      "cacheReadInputTokens": 72042,
+      "cacheCreationInputTokens": 161353,
+      "webSearchRequests": 0,
+      "costUSD": 2.6207404,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 36493,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-10-05\",\"outline\":[{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":900,\"summary\":\"로봇마다 정한 충전 하한(VDA 5050 임계 충전 수준은 백분율 선언값, Open-RMF recharge_threshold 는 0~1 비율 운행 하한)에만 맞춰 충전하면 수요가 겹칠 수 있어 조율 계층이 충전·승강기 점유를 함께 맡아야 할 것으로 보인다. [추정][^ref-031][^ref-105]\",\"planned_findings\":[\"f1\",\"f5\",\"f6\",\"f15\",\"f16\"]},{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":2600,\"summary\":\"물류창고 가상 시나리오(제약 행을 VDA 5050 권고 표현으로 정정)와 다층 호텔 배송 수치 실험을 옮긴 상업 시설 사례를 둔다. [사실][^ref-031][^ref-103]\",\"planned_findings\":[\"f1\",\"f2\",\"f14\",\"f15\",\"f16\",\"f17\"]},{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":650,\"summary\":\"현재 Open-RMF 구현은 충전소를 is_charger 로 지정하고(지원 작업 문서는 is_parking_spot), VDA 백분율 선언과 Open-RMF 비율 설정은 단위·의미가 다르다. [사실][^ref-536][^ref-1543]\",\"planned_findings\":[\"f1\",\"f5\",\"f8\",\"f9\",\"f10\"]},{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":650,\"summary\":\"Open-RMF 승강기 메시지에는 점유 시간·시간창·다중 목적층 필드가 없고, rmf_fleet_adapter 는 2026년 충전·뮤텍스 관련 수정을 거쳤다. [사실][^ref-312][^ref-1545]\",\"planned_findings\":[\"f11\",\"f12\",\"f13\",\"f25\",\"f26\",\"f27\"]},{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":450,\"summary\":\"Li 외(2026, 프리프린트)의 공용 충전기·열화 MILP 를 더하고, 54% 열화 감소는 대표 사례 하나의 예시값임을 밝힌다. [사실][^ref-403]\",\"planned_findings\":[\"f18\",\"f21\",\"f24\"]},{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1100,\"summary\":\"oq-069 해결(구현은 is_charger), oq-066·oq-067·oq-068 부분 근거, 새 질문 4건. [사실][^ref-536][^ref-1543]\",\"planned_findings\":[\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f23\",\"f24\"]},{\"path\":\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\",\"section\":\"1~7절 (주제 페이지 본문)\",\"budget_chars\":3200,\"summary\":\"충전 하한 값의 단위·의미 구분, 충전소 is_charger 지정, 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료를 정리한다. [사실][^ref-031][^ref-1543][^ref-403]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\",\"f27\"]},{\"path\":\"docs/topics/2026/2026-09-25-area16-s6.md\",\"section\":\"3. 본문\",\"budget_chars\":550,\"summary\":\"충전소 속성 충돌 문장을 정정하는 소제목을 덧붙여 문서(is_parking_spot)와 구현(is_charger)을 함께 제시한다. [사실][^ref-039][^ref-536][^ref-1543]\",\"planned_findings\":[\"f8\",\"f9\",\"f10\"]}],\"pages\":[{\"path\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"3절 충전 값 의미·단위 구분과 호텔 연구 수치(Han 외 2025) 보강, 5절 제약 행 권고 표현 정정·상업 시설(호텔 수치 실험) 사례 추가, 6·7·8·11절 갱신 요약과 새 주제 페이지 링크, 13절 각주 갱신(ref-031·ref-103 등)\",\"patches\":[{\"section\":\"3. 왜 중요한가\",\"action\":\"replace\",\"content\":\"로봇마다 정해 둔 충전 하한 — VDA 5050 의 임계 충전 수준(criticalLowChargingLevel, 관제의 주문 제한 기준, 백분율)이나 Open-RMF 의 recharge_threshold(운행 하한, 0~1 비율) — 에만 맞춰 충전을 시작하면 충전 수요가 겹칠 수 있으므로, 충전소 대기를 반영한 충전 시점·충전기 선택, 공유 충전기의 우선 충전 정책, 충전기·승강기 점유의 예약·세션 관리를 조율 계층이 함께 맡아야 할 것으로 보인다. [추정][^ref-228][^ref-031][^ref-105][^ref-530][^ref-531][^ref-533][^ref-312]\\n\\n공용 자원의 대기는 곧 처리 시간 손실로 나타난다. 고밀도 병원 환경의 약품 배송 로봇 연구는 승강기 가동률이 높을수록 배송 실패가 많고 배송 시간이 길었다고 보고했다(병원 사례이며 물류센터 적용은 미확인). [사실][^ref-060] Han 외(2025)의 다층 호텔 배송 경로 계획 연구는 고객 노드 60개 시나리오에서 승강기 운행 시간을 40초에서 100초로 늘리면 총 이동 시간이 약 225초에서 500초로 늘었다고 보고했다(호텔 사례이며 물류센터 적용은 미확인). [사실][^ref-103] 이 위키는 이 수치를 가정한 승강기 운행 시간을 바꾼 모델 수치 실험의 결과로 보며, 실제로 측정한 승강기 대기열 손실로 읽지 않는다. [의견][^ref-103]\\n\\n충전 방식과 정책도 처리량과 비용을 바꾼다. Zou 외(2018)는 로봇 이동형 풀필먼트 시스템에서 유도 충전이 회수 처리 시간에서 가장 좋았고, 배터리 비용이 낮으면 배터리 교환이 플러그인 충전보다 싸다고 보고했다. [사실][^ref-098] Chen 외(2024)는 자가 등반 로봇 창고에서 우선 충전 정책이 전용 충전 정책보다 비용 효율적이라고 보고했다. [사실][^ref-533]\"},{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"replace\",\"content\":\"> **현장 유형: 물류창고.** 아래 첫 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 2026-10-10 갱신에서 상업 시설 사례(다층 호텔 배송을 모델링한 수치 실험)를 더했고, 그 밖의 현장 유형 사례는 이어지는 조사에서 더한다.\\n\\n**물류 흐름 단계:** 피킹 → 출하\\n\\n**시나리오:** 피킹 성수기에 충전 요청과 층간 출하 운반이 겹칠 때\\n\\n다음은 설명을 위한 가상의 시나리오이다. 여러 제조사 로봇이 한 다층 물류센터에서 피킹 화물을 다른 층 출하 구역으로 옮기는 중에 충전 수요와 승강기 호출이 몰리는 상황을 가정한다.\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 로봇이 일련의 작업을 마칠 충전량이 부족하면 Open-RMF 작업 계획기가 충전 작업을 일정에 끼워 넣는다. [사실][^ref-104] 같은 시간대에 피킹을 마친 화물의 층간 운반 요청이 이어진다(가정). |\\n| 작업 대상 | 피킹을 마친 출하 대상 화물과 이를 실은 로봇이며, 충전기·승강기·대기 위치는 여러 로봇이 나눠 쓰는 공용 자원이다(가정). |\\n| 수행 자원 | 과충전 보호, 충전기와의 통신·정밀 도킹, 승강기 운행·설비 안전 제어는 로봇·충전 설비·승강기 쪽이 맡고, ROP 는 충전 시작·중지 요청, 상태 확인, 승강기 세션 요청과 모드 확인을 담당하는 것으로 보인다. [추정][^ref-031][^ref-216][^ref-284] |\\n| 제약 | VDA 5050 은 팩트시트의 임계 충전 수준(백분율, 로봇 유형별 선언값) 이하에서는 관제가 충전소로 가는 주문만 보내는 것이 좋다고 권고(should)한다(3.0.0 판 기준, 발행일 미확인). [사실][^ref-031][^ref-228] 승강기가 세션 단위로 한 요청자에게 점유되므로, 여러 제조사 로봇의 호출을 세션 순서·목적층 묶음으로 배분하지 않으면 층간 대기가 출하 마감을 위협할 수 있을 것으로 보인다. [추정][^ref-312][^ref-286][^ref-103] |\\n| 완료·인계 | 로봇 쪽 도킹 프레임워크(연계 대상)는 도킹 뒤 충전 시작 여부(isCharging)를 확인하는 함수를 둔다. [사실][^ref-216] 승강기 이용이 끝나면 세션 종료 요청을 보낼 때까지 제어권이 그 세션에 남는다. [사실][^ref-286] |\\n| 예외·성과 | VDA 5050 은 충전 주문이 운반 주문을 중단시킬 수 있다고 적는다. [사실][^ref-031] 여러 로봇이 비슷한 시각에 충전 하한에 닿아 충전기 대기열이 생기면 가용 로봇 수가 줄 수 있으므로, 주문이 적은 시간대의 기회 충전이나 충전 요청을 작업 배정과 함께 계획하는 방식이 처리량 손실을 줄이는 수단이 될 것으로 보인다. [추정][^ref-534][^ref-531][^ref-031] |\\n\\n이 시나리오에서 이 영역이 관여하는 곳은 시작 조건(충전 작업을 언제 넣을지), 제약(충전 하한과 승강기 점유), 예외·성과(충전으로 빠지는 가용 로봇과 층간 대기)다. 화물의 인계 확인 자체는 다른 영역이 다룬다(가정).\\n\\n실제 물류센터에서 충전 대기와 승강기 대기가 처리량을 얼마나 줄이는지는 이번 조사에서 확인되지 않았으며, [열린 질문](../../open-questions.md)의 oq-010 으로 남겨 둔다.\\n\\n**현장 유형:** 상업 시설\\n\\n**사례:** 다층 호텔에서 승강기를 거쳐 여러 층의 고객에게 배송(다층 호텔 배송을 모델링한 수치 실험이며 실제 배치 아님)\\n\\n다음은 Han 외(2025)가 다층 호텔 배송을 모델링한 수치 실험을 여섯 항목으로 옮긴 것이며, 실제 현장 배치 사례가 아니다.\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 여러 층에 흩어진 고객 노드로 가는 배송 로봇의 경로 계획 문제가 주어지며, 논문은 이를 [다중 운행 차량 경로 문제](../../glossary/multi-trip-vehicle-routing-problem.md)(Multi-Trip Vehicle Routing Problem, MTVRP)로 정식화하고 적응형 대규모 이웃 탐색으로 푼다. [사실][^ref-103] |\\n| 작업 대상 | 층마다 흩어진 고객 노드와, 경로 안에서 암묵적 경유점으로 모델링한 승강기 노드다. [사실][^ref-103] |\\n| 수행 자원 | 배송 로봇이 승강기 노드를 거쳐 층을 옮기는 것으로 모델링된다. [사실][^ref-103] 승강기 설비 쪽의 호출·배분 분담은 미확인이다. |\\n| 제약 | 승강기 운행 시간이 모델의 입력이며, 고객 노드 60개 사례에서 승강기 운행 시간을 40초에서 100초로 늘리면 총 이동 시간이 약 225초에서 500초로 늘었다. [사실][^ref-103] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 논문은 무작위·동적 승강기 운행 시간, 동적 수요 변동, 다중 로봇 협업·충돌 회피, 지능형 승강기 스케줄링을 후속 연구 과제로 남긴다. [사실][^ref-103] 실패 시 누가 복구하는지는 미확인이다. |\\n\\n이 사례에서 이 영역이 관여하는 곳은 제약(승강기라는 공용 자원의 운행 시간)과 예외·성과(그에 따른 총 이동 시간)다. 이 위키는 위 수치를 가정한 승강기 운행 시간을 바꾼 모델 민감도로 보며, 실제 승강기 대기열 손실값이나 여러 로봇이 승강기를 나눠 쓰는 배분 규칙의 근거로 쓰지 않는다. [의견][^ref-103]\"},{\"section\":\"6. 대표 접근법과 기술\",\"action\":\"append\",\"content\":\"2026-10-10 갱신에서 충전소 경유점 지정과 충전 하한 값을 다시 확인했다. Open-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 본다. [의견][^ref-536][^ref-1543] VDA 5050 3.0.0 판(발행일 미확인)의 임계 충전 수준은 백분율 선언값이고, Open-RMF 템플릿의 recharge_threshold 는 0~1 비율로 적힌 운행 하한 예시값이다. [사실][^ref-031][^ref-105]\\n\\n자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"append\",\"content\":\"Open-RMF 승강기 요청·상태 메시지는 세션 id 로 점유와 종료를 표현하지만, 최대 점유 시간·예약 시간창·여러 요청의 목적층 묶음을 지정하는 필드는 두지 않는다. [사실][^ref-312][^ref-286] 이 위키는 이를 메시지 정의 범위의 사실로만 보며, 배분 정책이나 다른 구성요소의 대기열 구현이 없다는 뜻으로 넓히지 않는다. [의견][^ref-312][^ref-286] rmf_fleet_adapter 변경 이력에는 2.12.0(2026-02-23)의 충전기 복귀 변경과 2.13.0(2026-06-15)의 뮤텍스 잠금·해제 교착 수정이 기록돼 있다. [사실][^ref-1545] 이 위키는 충전 작업 삽입·뮤텍스 그룹을 인용할 때 적용 판을 함께 적어야 한다고 본다. [의견][^ref-1545]\\n\\n자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\"},{\"section\":\"8. 대표 연구와 자료\",\"action\":\"append\",\"content\":\"2026-10-10 갱신에서 공용 충전기 비중첩 제약과 배터리 열화를 함께 푸는 연구로 Li 외(2026-03-24, arXiv 프리프린트, 동료심사 미확인)를 더했으며, 이 연구가 보고한 최대 54% 열화 감소는 가상 창고 대표 사례 하나의 예시적 기대 평균이다. [사실][^ref-403] 물류 작업과 에너지 공급을 함께 계획하는 항만 연구(Yang 외 2026)는 원문을 열지 못해, 이 위키는 후보 자료로만 둔다. [의견][^ref-1544] 자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\"},{\"section\":\"11. 열린 질문\",\"action\":\"append\",\"content\":\"2026-10-10 갱신(실행 2026-10-10-05)에서 바뀐 열린 질문은 다음과 같다.\\n\\n- **oq-069** (상태: 해결 · 실행 2026-10-10-05) 출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가? — 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 충전소를 is_charger 로 지정하고, 지원 작업 문서는 여전히 is_parking_spot 으로 적는다. [사실][^ref-536][^ref-1543][^ref-039] 답은 [주제 페이지](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\\n- **oq-068** (상태: 열림) 부분 근거: 제조사 선언값은 백분율, Open-RMF 템플릿 값은 0~1 비율이며, 두 값의 우선순위 규칙은 확인한 두 원문 범위에서 찾지 못했다. [추정][^ref-031][^ref-105]\\n- **oq-067** (상태: 열림) 부분 근거: Open-RMF 승강기 메시지에는 최대 점유 시간·예약 시간창·다중 목적층 필드가 없으며, 다른 구성요소는 조사하지 않았다. [사실][^ref-312][^ref-286]\\n- **oq-066** (상태: 열림) 부분 근거: 항만 AGV 작업·충전과 마이크로그리드 운영을 결합한 연구 한 건(원문 미열람)만 후보로 찾았고, 물류센터 연구와 국내 사례는 찾지 못했다. [추정][^ref-1544]\\n- 새 질문(2026-10-10 등록, 번호는 열린 질문 목록에서 부여한다):\\n    - 공용 충전기 예약 시간이 끝났는데 로봇이 충전기 앞을 떠나지 못할 때 다음 예약의 시작을 어떻게 조정하는가?\\n    - 충전 상태(SOC) 추정 오차와 충전소까지의 이동·대기 에너지를 반영해 운영 하한에 더할 여유를 어떻게 검증하는가?\\n    - 배터리 열화 최적화 모델의 예시 결과를 실제 셀·충전기·장기 운용 데이터로 검증한 공개 재현 자료가 있는가?\\n    - 승강기 운행 시간 민감도와 실제 승강기 대기열·최대 점유 시간의 관계를 같은 실험에서 측정한 자료가 있는가?\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"content\":\"[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\\n[^ref-039]: Open Robotics, Currently supported Tasks - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\\n[^ref-060]: Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026, https://doi.org/10.1177/20552076261437181, 접근일 2026-09-25 (원문 미열람)\\n[^ref-098]: Zou, B., Gong, Y., de Koster, R., & Xu, X., Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system, 2018, https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901, 접근일 2026-09-25 (원문 미열람)\\n[^ref-103]: Han, L., Ding, J., Liu, S., & Meng, M.(Sensors 25(6) 1783, doi:10.3390/s25061783), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 2025-03-13, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-10-10\\n[^ref-104]: Open Robotics (open-rmf), rmf_demos — Demonstrations of Open-RMF (README), 미확인, https://github.com/open-rmf/rmf_demos, 접근일 2026-09-25\\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-10-10\\n[^ref-109]: Stark, H.-G. 외, A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse, 2024-06, https://arxiv.org/abs/2406.17003, 접근일 2026-09-25 (원문 미열람)\\n[^ref-216]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_docking — README (Open Navigation's Nav2 Docking Framework), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-10\\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-10-10\\n[^ref-403]: Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03-24, https://arxiv.org/abs/2603.22731, 접근일 2026-10-10\\n[^ref-530]: Computers & Industrial Engineering 게재 논문(저자 미확인), Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach, 2024-08, https://www.sciencedirect.com/science/article/pii/S0360835224006314, 접근일 2026-09-25 (원문 미열람)\\n[^ref-531]: arXiv 2607.05683 저자(미확인), Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers, 2026-07, https://arxiv.org/abs/2607.05683, 접근일 2026-09-25 (원문 미열람)\\n[^ref-532]: Ma, N., Zhou, C., & Stephen, A., Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals, 2020, https://www.sciencedirect.com/science/article/abs/pii/S1569190X2030085X, 접근일 2026-09-25 (원문 미열람)\\n[^ref-533]: Chen, W., Gong, Y., Chen, Q., & Wang, H., Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse, 2024-01, https://www.sciencedirect.com/science/article/abs/pii/S0377221723004770, 접근일 2026-09-25 (원문 미열람)\\n[^ref-534]: Dang, Q.-V., Singh, N., Adan, I., Martagan, T., & van de Sande, D., Scheduling heterogeneous multi-load AGVs with battery constraints, 2021-12, https://www.sciencedirect.com/science/article/pii/S0305054821002586, 접근일 2026-09-25 (원문 미열람)\\n[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-10-10\\n[^ref-1543]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp, 접근일 2026-10-10\\n[^ref-1544]: Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI), A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints, 2026-07-27, https://www.mdpi.com/2227-9717/14/15/2424, 접근일 2026-10-10 (원문 미열람)\\n[^ref-1545]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\",\"frontmatter\":{\"sources\":[\"ref-031\",\"ref-039\",\"ref-051\",\"ref-060\",\"ref-079\",\"ref-098\",\"ref-103\",\"ref-104\",\"ref-105\",\"ref-109\",\"ref-146\",\"ref-216\",\"ref-219\",\"ref-228\",\"ref-284\",\"ref-286\",\"ref-312\",\"ref-321\",\"ref-377\",\"ref-403\",\"ref-530\",\"ref-531\",\"ref-532\",\"ref-533\",\"ref-534\",\"ref-535\",\"ref-536\",\"ref-537\",\"ref-538\",\"ref-1543\",\"ref-1544\",\"ref-1545\"],\"last_run\":\"2026-10-10\"}}]},{\"path\":\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"신규 작성: 충전 하한 값 구분, 충전소 is_charger 지정(oq-069 해결), 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료\",\"content\":\"---\\ntitle: \\\"충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\\\"\\ntype: topic\\ncategory: \\\"G. 계획·최적화\\\"\\nprimary_area_no: 28\\nrelated_areas: [5, 15, 22, 27, 57]\\ntags: [충전 하한, is_charger, 승강기 세션, 공용 충전기, 배터리 열화, Open-RMF]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-10-10\\nupdated: 2026-10-10\\nsources: [ref-031, ref-039, ref-105, ref-286, ref-312, ref-403, ref-536, ref-1543, ref-1544, ref-1545]\\nlast_run: 2026-10-10\\nversion: 1\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\\n\\n# 충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\\n\\n**주 연구영역:** [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) · **관련 영역:** [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md), [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md), [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md), [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) · **실행:** 2026-10-10-05\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- VDA 5050 팩트시트의 충전 수준은 백분율 선언값이고 Open-RMF 설정의 recharge_threshold 는 0~1 비율의 운행 하한이며, 현재 Open-RMF 구현은 충전소 경유점을 is_charger 로 지정한다. [사실][^ref-031][^ref-105][^ref-1543]\\n- 이 위키는 ROP 가 충전 하한·충전 목표·충전소 지정을 제조사 선언과 별도의 운영 정책 항목으로 기록하고, 기대는 Open-RMF 기능의 적용 판을 함께 남기는 편이 좋다고 본다. [의견][^ref-031][^ref-105][^ref-1545]\\n- 두 충전 값의 우선순위 규칙은 확인한 원문 범위에서 찾지 못했고, 여러 플릿의 승강기 배분 규칙과 공용 충전기 열화 최적화의 현장 검증도 아직 확인되지 않았다. [추정][^ref-031][^ref-105][^ref-403]\\n\\n## 2. 배경\\n\\n로봇들이 동시에 충전하거나 승강기를 기다리는 상황을 어떻게 줄일까? [분류원문]\\n\\n이 글은 [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)의 위 핵심 질문 아래 남아 있던 열린 질문 oq-066·oq-067·oq-068·oq-069 와, 세부영역 페이지의 두 문장(충전 하한 아래 주문 제한을 의무로 적은 문장, 충전소 속성을 두고 문서가 어긋난다고 적은 문장)을 갱신 실행 2026-10-10-05 에서 다시 확인한 결과다. 조사는 외부 조사 메모를 공식 저장소·논문 원문과 대조한 것이며 한국 자료는 포함되지 않았다.\\n\\n## 3. 본문\\n\\n### 충전 하한: 제조사 선언값과 운영 설정\\n\\nVDA 5050 3.0.0 판(발행일 미확인)의 팩트시트 batteryCharging 객체는 임계 충전 수준(criticalLowChargingLevel)·최대 희망 충전 수준·최소 희망 충전 수준을 백분율로, 최소 충전 시간을 초로 선언하는 네 필드로 이루어진다. [사실][^ref-031] 명세는 임계 충전 수준 이하에서 관제가 충전소로 가는 주문만 보내는 것을 의무가 아닌 권고 표현으로 적는다. [사실][^ref-031] 이 위키는 이 값을 의무 문구나 모든 로봇에 공통인 충전 시작 비율로 옮기지 않고, 제조사가 로봇별로 선언하는 값으로 다뤄야 한다고 본다. [의견][^ref-031]\\n\\nOpen-RMF fleet_adapter_template 의 설정 예시는 recharge_threshold 0.10 을 그 아래로는 로봇이 운행하지 않는 수준으로, recharge_soc 1.0 을 충전 작업에서 채울 목표 수준으로 두며, 두 값은 권장값이 아닌 템플릿 예시값이다. [사실][^ref-105] 이 위키는 두 체계를 대조할 때 단위를 먼저 맞추고, 관제의 주문 제한 기준인 VDA 의 임계 수준과 운행 하한인 Open-RMF 값을 구분해 운행 하한·충전 시작 판단·충전 목표를 별도 정책 항목으로 기록하는 편이 좋다고 본다. [의견][^ref-031][^ref-105] 두 값 가운데 무엇을 자동으로 우선하는지에 관한 공통 조정 규칙은 확인한 두 원문에 없었으며, Open-RMF 의 다른 구성요소와 VDA 5050 의 다른 절은 조사하지 않았다. [추정][^ref-031][^ref-105]\\n\\n### 충전소 경유점 지정: 문서와 구현\\n\\nOpen-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 그래프 API 는 충전 지점을 배터리 충전 수준이 임계값 아래로 떨어진 로봇이 보내지는 곳으로, 주차 지점을 비상 경보 때 로봇이 스스로 주차하는 곳으로 설명한다. [사실][^ref-536] 두 구현 자료는 같은 프로젝트의 것이라 독립 교차 확인은 아니다. 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 보며, is_parking_spot 만 지정한 경유점을 충전소와 같은 뜻으로 취급하지 않는 것이 맞다고 본다. [의견][^ref-536][^ref-1543]\\n\\n### 승강기 세션 메시지의 범위\\n\\nOpen-RMF 의 승강기 요청 메시지는 승강기 이름·요청 시각·세션 id·요청 유형(세션 종료·AGV 모드·사람 모드)·목적층·문 상태 필드로 이루어지고, 상태 메시지는 세션 종료 요청 때까지 제어권을 받은 세션 id 를 보고한다. [사실][^ref-312][^ref-286] 두 메시지에는 최대 점유 시간, 예약 시간창, 여러 요청의 목적층 묶음을 지정하는 필드가 없다. [사실][^ref-312][^ref-286] 이 위키는 세션 점유·종료 인터페이스가 공개돼 있다는 사실과 공정한 대기열·묶음 운행 같은 배분 정책이 정의돼 있다는 주장을 구별해야 한다고 보며, 메시지 정의만 본 결론이므로 승강기 감독 등 다른 구성요소에 타임아웃이나 대기열 구현이 없다는 뜻으로 넓히지 않는다. [의견][^ref-312][^ref-286]\\n\\n### Open-RMF 충전·뮤텍스 기능의 판 기록\\n\\nrmf_fleet_adapter 변경 이력에는 2.12.0(2026-02-23)에 충전 대기 단계 완료 발행과 다음 작업에 충전량이 모자라면 충전기로 복귀하는 변경이, 2.13.0(2026-06-15)에 뮤텍스 잠금·해제 실행에서 생길 수 있는 교착 수정이 기록돼 있다(최신 판 2.14.0 은 2026-09-26). [사실][^ref-1545] 이 위키는 충전 작업 삽입·뮤텍스 그룹을 인용할 때 적용 판과 이 수정의 포함 여부를 함께 적고, 이전 판이 모든 조건에서 교착 없이 동작했다는 근거로 쓰지 않아야 한다고 본다. 변경 이력은 수정이 있었다는 것만 보여 줄 뿐 이전 판 결함의 범위를 정량화하지 않는다. [의견][^ref-1545]\\n\\n### 공용 충전기와 배터리 열화를 함께 푸는 연구\\n\\nLi 외(2026-03-24, arXiv v1 프리프린트, 동료심사 미확인)는 작업 배정·서비스 순서·선택적 충전 결정·충전 방식 선택·공용 충전기 접근을 하나의 혼합 정수 계획(Mixed Integer Linear Programming, MILP)으로 함께 표현하고, 총 배터리 열화·충전기 대기·납기 지연·로봇 사이 열화 불균형을 함께 줄이는 목적함수를 둔다. [사실][^ref-403] 공용 충전기 제약은 같은 충전기의 서로 다른 충전 세션 쌍마다 순서 변수를 두어 충전 구간이 겹치지 않게 하며, 세션 집합이 모든 로봇의 세션을 포함하도록 정의돼 있어 같은 로봇의 세션 쌍도 여기에 든다(논문이 따로 명시한 문장은 아니다). [사실][^ref-403] 결과 수치는 4절 사례에 적는다.\\n\\n### 물류 작업과 에너지 공급을 함께 계획하는 후보 자료\\n\\nYang 외(2026-07-27, Processes)는 냉동 컨테이너 온도 제약 아래 항만 무인운반차(Automated Guided Vehicle, AGV)의 작업 스케줄링·충전을 태양광·풍력·에너지 저장 장치(Energy Storage System, ESS)를 갖춘 항만 마이크로그리드 운영과 결합해 운영비를 최소화하는 2단계 프레임워크를 제시한 것으로 초록에 소개된다(원문 미열람). [추정][^ref-1544] 이 위키는 이 자료를 물류 작업과 에너지 공급을 함께 계획하는 충전 연구의 후보로만 두며, 원문을 열지 못했으므로 비용 절감 수치나 국내 물류센터 적용 근거로 쓰지 않는다. [의견][^ref-1544]\\n\\n## 4. 현장 시나리오\\n\\n**현장 유형:** 물류창고\\n\\n**사례:** 가상 창고에서 로봇 4대가 공용 충전기 2대를 나눠 쓰며 작업 40건을 처리(수치 실험이며 실제 배치 아님)\\n\\n다음은 Li 외(2026, 프리프린트)의 대표 수치 실험을 여섯 항목으로 옮긴 것이며, 실제 현장 사례가 아니다.\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 작업 40건의 배정·서비스 순서와 선택적 충전 결정을 함께 정하는 계획 문제가 주어진다. [사실][^ref-403] |\\n| 작업 대상 | 100×50 m 가상 창고의 작업 40건과 공용 충전기 2대다. [사실][^ref-403] |\\n| 수행 자원 | 동종 로봇 4대가 표준·고속 두 충전 방식 가운데 하나를 골라 충전한다. [사실][^ref-403] |\\n| 제약 | 같은 충전기에서 충전 세션이 서로 겹치지 않아야 한다. [사실][^ref-403] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 기여 요약의 규칙 기반 대비 최대 54% 열화 감소는 대표 사례 하나(로봇 4·작업 40·충전기 2)의 예시적 기대 평균(총 열화 0.214→0.098)으로 보고된 값이다. [사실][^ref-403] 실패 시 누가 복구하는지는 미확인이다. |\\n\\n이 사례에서 이 영역이 관여하는 곳은 제약(공용 충전기 비중첩)과 예외·성과(열화·충전기 대기)다. 이 위키는 열화를 축약 대리 모형으로 표현한 이 예시값을 현장 배터리 수명 개선의 검증값으로 인용하지 않는다. [의견][^ref-403]\\n\\n## 5. ROP 관점의 시사점\\n\\n**직접 범위:**\\n\\n- 이 위키는 ROP 가 제조사 선언(임계 충전 수준)과 자체 운영 설정(운행 하한·충전 목표)을 단위를 맞춰 따로 기록하고, 충전소 지정은 구현 기준(is_charger)으로 확인하는 편이 좋다고 본다. [의견][^ref-031][^ref-105][^ref-1543]\\n- 승강기 세션 순서·점유 한도 같은 배분 규칙은 메시지 정의에 없으므로, 이 위키는 그 규칙을 어디서 정할지가 확인할 과제로 남는다고 본다. [의견][^ref-312][^ref-286]\\n\\n**연계 범위:**\\n\\n- 승강기 운행과 설비 안전 제어는 분류 원문 19장의 시설·설비 제어 경계에 속하는 연계 대상이며, 이 위키는 ROP 가 세션 요청과 상태 확인까지만 맡는다고 본다. [의견][^ref-312]\\n- 항만 마이크로그리드(태양광·풍력·ESS) 운영은 ROP 직접 범위가 아닌 에너지 설비 쪽 연계 대상이다. [의견][^ref-1544]\\n\\n## 6. 연결되는 연구영역\\n\\n- [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) — 주 연구영역. 충전 하한·충전소·승강기 점유·공용 충전기 계획을 다룬다.\\n- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 팩트시트의 batteryCharging 객체가 충전 수준을 로봇 선언으로 담는다. [사실][^ref-031]\\n- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 충전 지점·주차 지점이 교통 그래프 경유점 속성으로 정의된다. [사실][^ref-536]\\n- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — 승강기 요청·상태 메시지가 설비 연동 인터페이스다. [사실][^ref-312][^ref-286]\\n- [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — 뮤텍스 잠금·해제 교착 수정이 통로 구간 점유 조율과 이어질 것으로 보인다. [추정][^ref-1545]\\n- [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 배터리 열화 관리와 플릿 소프트웨어 판 기록이 수명주기 관리와 이어질 것으로 보인다. [추정][^ref-403][^ref-1545]\\n\\n## 7. 열린 질문\\n\\n- **oq-069** (상태: 해결 · 실행 2026-10-10-05) 출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가? — 답은 3절 \\\"충전소 경유점 지정: 문서와 구현\\\"에 있다.\\n- **oq-066**·**oq-067**·**oq-068** (상태: 열림) — 3절에 부분 근거만 있다.\\n- 새 질문 4건(공용 충전기 예약 초과 조정, SOC 추정 오차를 반영한 운영 하한 여유 검증, 열화 최적화 결과의 실물 재현 자료, 승강기 운행 시간 민감도와 실제 대기열의 관계)은 [열린 질문](../../open-questions.md)에 등록한다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\\n[^ref-039]: Open Robotics, Currently supported Tasks - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-10-10\\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-10\\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-10-10\\n[^ref-403]: Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03-24, https://arxiv.org/abs/2603.22731, 접근일 2026-10-10\\n[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-10-10\\n[^ref-1543]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp, 접근일 2026-10-10\\n[^ref-1544]: Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI), A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints, 2026-07-27, https://www.mdpi.com/2227-9717/14/15/2424, 접근일 2026-10-10 (원문 미열람)\\n[^ref-1545]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\\n\\n## 9. 검증 노트\\n\\n- 판정: 1차 조건부 승인 / 2차 대기\\n- 확인·미확인: 확인 27건 · 미확인 0건 · 교차 확인 0건\\n- 강등된 주장: 없음\\n- 검증자 주의: 판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1544(Yang 외, Crossref 초록만 확인). 주의: 이번 브리프는 외부 AI 조사 메모를 바꾼 것이라 이 실행 안의 검색 기록이 없고, 한국 자료는 없다. VDA 5050·Open-RMF 출처는 모두 같은 발행 주체나 같은 프로젝트의 자료라 독립 교차 확인으로 세지 않았다. VDA 5050 3.0.0 명세와 factsheet.schema(ref-228)는 모두 임계 충전 수준 이하 주문 제한을 권고(should)로 적으므로, 5절 제약 행의 '보내야 한다'는 권고 표현으로 정정한다. 호텔 연구(ref-103)는 이번 실행에서 원문을 처음 열었고, 원문 자체가 'nearly doubles'(225→500 s)라고 쓴다. Li 외(ref-403)의 최대 54% 열화 감소는 프리프린트 속 대표 사례 하나의 예시값이다. oq-069 해결 인정(f8·f9): 현재 구현은 충전소를 is_charger 로 지정하고, 지원 작업 문서(ref-039)는 아직 is_parking_spot 으로 적고 있어 두 서술을 함께 싣는다. oq-066·oq-067·oq-068 은 부분 근거만 있어 열린 질문으로 남긴다. 트랙 반영 제안 4건(IDTA 02047·배터리 여권·rmf_traffic 문·승강기 표현)은 이번 브리프가 조사하지 않아 반영하지 않았다. ref-1545 는 같은 날 실행 2026-10-10-03·04 에 등록된 변경 이력 출처(ref-1487·ref-1513)와 URL 이 같아 기존 id 로 합친다. 정정 요청(corr) 없음.\\n- 신뢰도: medium\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 | 버전 |\\n|---|---|---|---|\\n| 2026-10-10 | 2026-10-10-05 | 신규 작성 | 1 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area16-s6.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"3. 본문 끝에 충전소 속성 충돌 문장 정정 소제목 추가(문서 is_parking_spot·구현 is_charger 병기, 구현 기준 판단은 의견)\",\"patches\":[{\"section\":\"3. 본문\",\"action\":\"append\",\"content\":\"### 2026-10-10 정정: 충전소 경유점 속성\\n\\n이 절 앞부분에서 Open-RMF 지원 작업 문서가 충전소를 is_parking_spot 으로 설정한다고 적어 is_charger 로 적는 문서와 어긋난다고 쓴 문장은 다음과 같이 정리한다(실행 2026-10-10-05). Open-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 두 구현 자료는 같은 프로젝트의 것이라 독립 교차 확인은 아니다. 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 보며, is_parking_spot 만 지정한 경유점을 충전소로 취급하지 않는 것이 맞다고 본다. [의견][^ref-536][^ref-1543] 충전 하한 값의 단위·의미 구분과 Open-RMF 기능의 판 기록은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\"}]}],\"changelog_entry\":\"2026-10-10 | 28. 공용 자원·충전·에너지 최적화 | 5절 제약 행을 VDA 5050 권고 표현으로 정정하고 상업 시설(호텔 수치 실험) 사례 추가, 3절 충전 값 구분·호텔 수치 보강, 충전소 is_charger 정리(oq-069 해결), 공용 충전기·승강기 메시지 확인 주제 페이지 신설 | run 2026-10-10-05\",\"index_updates\":{\"home_recent\":\"2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 충전 하한 권고 표현 정정, 충전소 is_charger 정리(oq-069 해결), 상업 시설 사례와 공용 충전기·열화 연구 추가\",\"category_recent\":\"2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 5절 제약 행 정정·상업 시설 사례 추가, 6·7·8·11절 갱신과 주제 페이지 '충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가' 신설\",\"area_recent\":\"2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 3·5절 정정·보강, 6·7·8·11절에 갱신 요약과 새 주제 페이지 링크, 6절 분리 페이지에 충전소 속성 정정 추가\"},\"glossary_updates\":[],\"reference_updates\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 이번에는 3.0.0 태그판의 팩트시트 batteryCharging 표(임계·최대·최소 희망 충전 수준 백분율, 최소 충전 시간)를 대조했다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"]},{\"id\":\"ref-105\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"fleet_adapter_template — fleet_adapter_template/config.yaml\",\"published\":null,\"url\":\"https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 플릿 어댑터 설정 템플릿. recharge_threshold(운행 하한 비율 0.10)와 recharge_soc(충전 목표 비율 1.0) 등 배터리·충전 설정 예시값을 담는다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"]},{\"id\":\"ref-536\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 교통 그래프 API 헤더. 경유점의 주차 지점·충전 지점·대기 지점 속성과 뮤텍스 그룹 등을 정의한다(set_charger 위 주석은 주차 지점 문구가 잘못 복사돼 있음).\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\",\"docs/topics/2026/2026-09-25-area16-s6.md\"]},{\"id\":\"ref-1543\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0)\",\"published\":\"2026-09-26\",\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"rmf_fleet_adapter 2.14.0 태그의 탐색 그래프 YAML 파서. 경유점 옵션 is_parking_spot·is_holding_point·is_passthrough_point·is_charger 를 각각 별도 속성으로 변환한다(발행일은 2.14.0 패키지판 날짜).\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\",\"docs/topics/2026/2026-09-25-area16-s6.md\"]},{\"id\":\"ref-312\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 승강기 요청 메시지. 승강기 이름·요청 시각·세션 id·요청 유형(세션 종료·AGV 모드·사람 모드)·목적층·문 상태 필드를 정의한다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"]},{\"id\":\"ref-286\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"Open-RMF 승강기 상태 메시지. 층·문·운행·모드 상태와 세션 종료 요청 때까지 제어권을 가진 session_id 를 보고한다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"]},{\"id\":\"ref-103\",\"org\":\"Han, L., Ding, J., Liu, S., & Meng, M.(Sensors 25(6) 1783, doi:10.3390/s25061783)\",\"title\":\"The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments\",\"published\":\"2025-03-13\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-10\",\"summary\":\"Sensors 25(6) 1783, doi:10.3390/s25061783. 다층 호텔 배송 로봇 경로 계획을 승강기 노드를 암묵적 경유점으로 둔 MTVRP 로 정식화하고 승강기 운행 시간 민감도를 수치 실험한다. 2026-10-10 실행에서 원문을 처음 열어 저자·발행일을 보강했다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\"],\"source_unopened\":false},{\"id\":\"ref-403\",\"org\":\"Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin)\",\"title\":\"Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots\",\"published\":\"2026-03-24\",\"url\":\"https://arxiv.org/abs/2603.22731\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-10\",\"summary\":\"arXiv 프리프린트 v1. 작업 배정·순서·충전 방식·공용 충전기 비중첩 제약을 MILP 로 함께 풀어 열화·충전기 대기·납기 지연·열화 불균형을 줄이는 계층형 해법을 제시한다(가상 창고 수치 실험).\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"],\"source_unopened\":false},{\"id\":\"ref-1544\",\"org\":\"Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI)\",\"title\":\"A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints\",\"published\":\"2026-07-27\",\"url\":\"https://www.mdpi.com/2227-9717/14/15/2424\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-10\",\"summary\":\"원문 미열람. Crossref 초록 기준으로 냉동 컨테이너 온도 제약 아래 항만 AGV 작업·충전을 태양광·풍력·ESS 를 갖춘 항만 마이크로그리드와 결합해 운영비를 최소화하는 2단계 프레임워크다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"],\"source_unopened\":true},{\"id\":\"ref-1545\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0)\",\"published\":\"2026-09-26\",\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-10\",\"summary\":\"rmf_fleet_adapter 패키지 변경 이력(2.14.0 태그). 2.12.0(2026-02-23)의 충전 대기 단계 완료 발행·충전기 복귀 변경과 2.13.0(2026-06-15)의 뮤텍스 잠금·해제 교착 수정을 기록한다. 같은 날 실행 2026-10-10-03·04 의 출처와 URL 이 같아 퍼블리셔가 기존 id 로 합친다.\",\"cited_by\":[\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md\",\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"],\"source_unopened\":false}],\"open_question_updates\":[{\"action\":\"update\",\"id\":\"oq-069\",\"question\":\"출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가?\",\"areas\":[15,28],\"status\":\"해결\",\"link\":\"docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md\"},{\"action\":\"new\",\"question\":\"공용 충전기 예약 시간이 끝났는데 로봇이 충전기 앞을 떠나지 못할 때 다음 예약의 시작을 어떻게 조정하는가?\",\"areas\":[28,27],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"충전 상태(SOC) 추정 오차와 충전소까지의 이동·대기 에너지를 반영해 운영 하한에 더할 여유를 어떻게 검증하는가?\",\"areas\":[28,5],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"배터리 열화 최적화 모델의 예시 결과를 실제 셀·충전기·장기 운용 데이터로 검증한 공개 재현 자료가 있는가?\",\"areas\":[28,57],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"승강기 운행 시간 민감도와 실제 승강기 대기열·최대 점유 시간의 관계를 같은 실험에서 측정한 자료가 있는가?\",\"areas\":[28,22],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"상업 시설\",\"item\":\"시작 조건\",\"link\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시\",\"title\":\"28. 공용 자원·충전·에너지 최적화\"},{\"site_type\":\"상업 시설\",\"item\":\"작업 대상\",\"link\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시\",\"title\":\"28. 공용 자원·충전·에너지 최적화\"},{\"site_type\":\"상업 시설\",\"item\":\"수행 자원\",\"link\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시\",\"title\":\"28. 공용 자원·충전·에너지 최적화\"},{\"site_type\":\"상업 시설\",\"item\":\"제약\",\"link\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시\",\"title\":\"28. 공용 자원·충전·에너지 최적화\"},{\"site_type\":\"상업 시설\",\"item\":\"예외·성과\",\"link\":\"docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시\",\"title\":\"28. 공용 자원·충전·에너지 최적화\"}],\"additional_research_requests\":[\"6절 분리 페이지(docs/topics/2026/2026-09-25-area16-s6.md) 53행의 is_parking_spot/is_charger 충돌 문장 자체는 페이지 본문이 이번 입력에 없어 교체하지 못하고 3. 본문 끝에 정정 소제목만 덧붙였다 — 다음 갱신 실행에서 이 페이지를 입력으로 넣어 해당 문장을 정정 문장으로 바꿔야 한다\",\"7·8·11절 분리 페이지(2026-09-25-area16-s7·s8·s11)는 입력에 없고 하루 갱신 상한(2)도 찼으므로 고치지 않았다. 승강기 메시지 필드 범위·rmf_fleet_adapter 판 기록(7절), Li 외·Yang 외(8절), oq 상태(11절)는 새 주제 페이지와 세부영역 6·7·8·11절 요약에 실었다 — 다음 갱신에서 분리 페이지에도 반영할지 정해야 한다\",\"트랙 반영 제안 4건(IDTA 02047 충전 요소 2건, IDTA 디지털 배터리 여권 1건, rmf_traffic 문·승강기·VDA 해제 구역 1건)은 이번 브리프가 다루지 않아 반영하지 않았다 — 7·6절 반영을 위해 IDTA 02047 템플릿 원문(oq-060)과 배터리 여권 템플릿 본문, rmf_traffic 문·승강기 표현 원문 조사가 필요하다\",\"11절 oq-066: 물류센터 로봇의 시간대별 전기 요금·최대 수요 전력 기준 충전 계획 연구와 국내 사례(한국어 자료)가 필요하다. Yang 외(ref-1544)는 원문 미열람이라 수치를 쓸 수 없다\",\"11절 oq-067: Open-RMF 승강기 감독(lift supervisor) 등 메시지 밖 구성요소의 타임아웃·대기열 구현 조사가 필요하다\",\"5절: 물류창고·상업 시설 밖 현장 유형(병원·제조 공장 등)의 충전·승강기 공용 자원 사례와 상업 시설 사례의 완료·인계 항목 근거가 필요하다\"],\"fixes_applied\":[\"5절 제약 행 정정 — '보내야 한다' 문장을 'VDA 5050 은 팩트시트의 임계 충전 수준(백분율, 로봇 유형별 선언값) 이하에서는 관제가 충전소로 가는 주문만 보내는 것이 좋다고 권고(should)한다(3.0.0 판 기준, 발행일 미확인)'로 바꾸고 각주를 [^ref-031][^ref-228]로 두었다(corr id 없음).\",\"3절 첫 문장 — 같은 '충전 임계값'으로 묶던 괄호를 'VDA 5050 의 임계 충전 수준(관제의 주문 제한 기준, 백분율)이나 Open-RMF 의 recharge_threshold(운행 하한, 0~1 비율)'로 의미·단위를 구분해 고쳤고 태그는 [추정] 그대로 두었다.\",\"3절 호텔 연구 문장 — 새 문장을 더하지 않고 기존 문장을 Han 외(2025), 고객 노드 60개·40→100초·약 225→500초로 고쳤으며 '거의 두 배'는 틀렸다는 서술 없이 뺐고, 모델 수치 실험이라는 [의견](이 위키는 본다)을 덧붙였다.\",\"[^ref-103] 각주 — 세부영역 13절에서 지시된 저자·Sensors 서지·doi·발행일 2025-03-13·접근일 2026-10-10 형식으로 바꾸고 '(원문 미열람)'을 뺐으며, reference_updates 의 ref-103 에도 저자·발행일을 반영했다.\",\"용어 표기 — MTVRP 는 5절 상업 시설 사례에서 '다중 운행 차량 경로 문제(Multi-Trip Vehicle Routing Problem, MTVRP)'(용어집 링크)로, MILP 는 주제 페이지 3절에서 '혼합 정수 계획(Mixed Integer Linear Programming, MILP)'으로 썼다.\",\"5절 상업 시설 사례 — '현장 유형: 상업 시설'과 '다층 호텔 배송을 모델링한 수치 실험(실제 배치 아님)'을 사례 머리에 밝히고, 완료·인계와 수행 자원의 설비 쪽 분담·복구 주체는 '미확인'으로 두었으며, 물류창고 머리 문장을 상업 시설 사례 추가에 맞게 고쳤다. site_matrix_updates 는 상업 시설(상업 시설|G 한 칸)에 해당하는 항목만 냈고 물류창고·실외는 내지 않았다(주제 페이지 4절의 가상 창고 수치 실험도 이 지시에 따라 매트릭스에 내지 않음).\",\"Yang 외(ref-1544) — 5절 적용 사례에 쓰지 않고 8절 성격의 원문 미열람 후보 자료로만 주제 페이지 3절과 세부영역 8절 요약에 [추정]·[의견]으로 두었으며, 각주 접근일 뒤에 '(원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. 항만 마이크로그리드 운영은 주제 페이지 5절 연계 범위에 연계 대상으로 짧게 적었다.\",\"6절 분리 페이지 충돌 문장 — 해당 페이지 본문이 입력에 없어 53행을 직접 바꾸지 못했으므로, 그 페이지 '3. 본문' 끝에 '2026-10-10 정정' 소제목을 덧붙여 정정 대상 문장을 밝히고 '지원 작업 문서(ref-039)는 is_parking_spot, 현재 구현 그래프 API(ref-536)·rmf_fleet_adapter 2.14.0 파서(ref-1543)는 별도 속성·is_charger' 를 둘 다 제시한 뒤 구현 기준 판단을 [의견]으로 적었다. 같은 내용을 세부영역 6절과 주제 페이지 3절에도 실었고, 원 문장 교체는 additional_research_requests 에 올렸다. Graph.hpp 주석 복사 오류는 언급하지 않았다.\",\"6·7절 분리 페이지 내용(VDA 백분율 선언과 Open-RMF 비율 설정의 단위·의미 구분, f7 우선순위 규칙 부재와 조사 범위 한정, 0.10·1.0 이 템플릿 예시값임) — 분리 페이지가 입력에 없고 하루 갱신 상한이 차서, 새 주제 페이지 3절 '충전 하한' 소제목과 세부영역 6절 요약에 넣었다.\",\"7절 분리 페이지 내용(승강기 메시지 필드와 점유 시간·시간창·다중 목적층 필드 부재를 [사실], 배분 정책 부재로 넓히지 않는다는 [의견], rmf_fleet_adapter 2.12.0·2.13.0 수정 이력 [사실]과 판 기록 권고 [의견]) — 같은 이유로 주제 페이지 3절과 세부영역 7절 요약에 넣었다.\",\"ref-1545 — 입력의 참고문헌 색인에 같은 URL(ref-1487·ref-1513)이 아직 등록돼 있지 않아 각주·프런트매터에 ref-1545 를 쓰고 reference_updates 에 URL 을 그대로 두어 퍼블리셔가 기존 id 로 합치게 했다.\",\"Li 외(ref-403) — 주제 페이지 3절에 프리프린트(arXiv v1, 2026-03-24, 동료심사 미확인)를 밝히고 같은 로봇의 세션 쌍은 세션 집합이 모든 로봇의 세션을 포함하도록 정의된 데서 따라 나온다(논문이 따로 명시하지 않음)고 적었으며, 최대 54% 열화 감소는 대표 사례 하나의 예시적 기대 평균임을 같은 문장(주제 4절 예외·성과, 세부영역 8절)에 붙이고 f22 를 [의견]으로 두었다.\",\"[의견] 주체 명시 — f3·f6·f10·f13·f16·f22·f24·f27 의 의견 문장을 모두 '이 위키는 … 본다/쓰지 않는다' 형식으로 썼다.\",\"[^ref-031] — 세부영역·주제 페이지 각주 접근일을 2026-10-10 으로 갱신하고, batteryCharging·임계 충전 수준을 인용한 곳(세부영역 5·6절, 주제 3절)에 '3.0.0 판 기준(발행일 미확인)'을 밝혔다.\",\"11절·열린 질문 — oq-069 를 해결(link: 새 주제 페이지)로 open_question_updates 에 내고 해결 근거를 f8·f9 와 문서(ref-039) 서술 차이로 적었으며, oq-066·oq-067·oq-068 은 세부영역 11절에 부분 근거만 적고 열림을 유지했다. 새 질문 4건은 브리프 형식대로 new 로 등록했다.\",\"트랙 반영 제안 4건 — 근거 finding 이 없어 6·7절에 반영하지 않고 제안 상태로 두었으며 oq-060 도 건드리지 않았다(추가 조사 요청에 기록).\",\"직접 인용 — ref-031 은 세부영역 5절의 '(should)' 한 단어만 인용하고 주제 페이지에서는 재서술했으며, ref-403·ref-103 은 원문 구절을 인용하지 않고 모두 재서술했다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-10-05",
+    "outline": [
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 900,
+        "summary": "로봇마다 정한 충전 하한(VDA 5050 임계 충전 수준은 백분율 선언값, Open-RMF recharge_threshold 는 0~1 비율 운행 하한)에만 맞춰 충전하면 수요가 겹칠 수 있어 조율 계층이 충전·승강기 점유를 함께 맡아야 할 것으로 보인다. [추정][^ref-031][^ref-105]",
+        "planned_findings": [
+          "f1",
+          "f5",
+          "f6",
+          "f15",
+          "f16"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 2600,
+        "summary": "물류창고 가상 시나리오(제약 행을 VDA 5050 권고 표현으로 정정)와 다층 호텔 배송 수치 실험을 옮긴 상업 시설 사례를 둔다. [사실][^ref-031][^ref-103]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f14",
+          "f15",
+          "f16",
+          "f17"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 650,
+        "summary": "현재 Open-RMF 구현은 충전소를 is_charger 로 지정하고(지원 작업 문서는 is_parking_spot), VDA 백분율 선언과 Open-RMF 비율 설정은 단위·의미가 다르다. [사실][^ref-536][^ref-1543]",
+        "planned_findings": [
+          "f1",
+          "f5",
+          "f8",
+          "f9",
+          "f10"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 650,
+        "summary": "Open-RMF 승강기 메시지에는 점유 시간·시간창·다중 목적층 필드가 없고, rmf_fleet_adapter 는 2026년 충전·뮤텍스 관련 수정을 거쳤다. [사실][^ref-312][^ref-1545]",
+        "planned_findings": [
+          "f11",
+          "f12",
+          "f13",
+          "f25",
+          "f26",
+          "f27"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 450,
+        "summary": "Li 외(2026, 프리프린트)의 공용 충전기·열화 MILP 를 더하고, 54% 열화 감소는 대표 사례 하나의 예시값임을 밝힌다. [사실][^ref-403]",
+        "planned_findings": [
+          "f18",
+          "f21",
+          "f24"
+        ]
+      },
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1100,
+        "summary": "oq-069 해결(구현은 is_charger), oq-066·oq-067·oq-068 부분 근거, 새 질문 4건. [사실][^ref-536][^ref-1543]",
+        "planned_findings": [
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f23",
+          "f24"
+        ]
+      },
+      {
+        "path": "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md",
+        "section": "1~7절 (주제 페이지 본문)",
+        "budget_chars": 3200,
+        "summary": "충전 하한 값의 단위·의미 구분, 충전소 is_charger 지정, 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료를 정리한다. [사실][^ref-031][^ref-1543][^ref-403]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f27"
+        ]
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area16-s6.md",
+        "section": "3. 본문",
+        "budget_chars": 550,
+        "summary": "충전소 속성 충돌 문장을 정정하는 소제목을 덧붙여 문서(is_parking_spot)와 구현(is_charger)을 함께 제시한다. [사실][^ref-039][^ref-536][^ref-1543]",
+        "planned_findings": [
+          "f8",
+          "f9",
+          "f10"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "3절 충전 값 의미·단위 구분과 호텔 연구 수치(Han 외 2025) 보강, 5절 제약 행 권고 표현 정정·상업 시설(호텔 수치 실험) 사례 추가, 6·7·8·11절 갱신 요약과 새 주제 페이지 링크, 13절 각주 갱신(ref-031·ref-103 등)",
+        "patches": [
+          {
+            "section": "3. 왜 중요한가",
+            "action": "replace",
+            "content": "로봇마다 정해 둔 충전 하한 — VDA 5050 의 임계 충전 수준(criticalLowChargingLevel, 관제의 주문 제한 기준, 백분율)이나 Open-RMF 의 recharge_threshold(운행 하한, 0~1 비율) — 에만 맞춰 충전을 시작하면 충전 수요가 겹칠 수 있으므로, 충전소 대기를 반영한 충전 시점·충전기 선택, 공유 충전기의 우선 충전 정책, 충전기·승강기 점유의 예약·세션 관리를 조율 계층이 함께 맡아야 할 것으로 보인다. [추정][^ref-228][^ref-031][^ref-105][^ref-530][^ref-531][^ref-533][^ref-312]\n\n공용 자원의 대기는 곧 처리 시간 손실로 나타난다. 고밀도 병원 환경의 약품 배송 로봇 연구는 승강기 가동률이 높을수록 배송 실패가 많고 배송 시간이 길었다고 보고했다(병원 사례이며 물류센터 적용은 미확인). [사실][^ref-060] Han 외(2025)의 다층 호텔 배송 경로 계획 연구는 고객 노드 60개 시나리오에서 승강기 운행 시간을 40초에서 100초로 늘리면 총 이동 시간이 약 225초에서 500초로 늘었다고 보고했다(호텔 사례이며 물류센터 적용은 미확인). [사실][^ref-103] 이 위키는 이 수치를 가정한 승강기 운행 시간을 바꾼 모델 수치 실험의 결과로 보며, 실제로 측정한 승강기 대기열 손실로 읽지 않는다. [의견][^ref-103]\n\n충전 방식과 정책도 처리량과 비용을 바꾼다. Zou 외(2018)는 로봇 이동형 풀필먼트 시스템에서 유도 충전이 회수 처리 시간에서 가장 좋았고, 배터리 비용이 낮으면 배터리 교환이 플러그인 충전보다 싸다고 보고했다. [사실][^ref-098] Chen 외(2024)는 자가 등반 로봇 창고에서 우선 충전 정책이 전용 충전 정책보다 비용 효율적이라고 보고했다. [사실][^ref-533]"
+          },
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "replace",
+            "content": "> **현장 유형: 물류창고.** 아래 첫 시나리오는 이전 분류가 모든 영역에 물류 흐름 7단계를 적용하던 때(2026-09-25) 쓴 물류창고 사례다. 2026-10-10 갱신에서 상업 시설 사례(다층 호텔 배송을 모델링한 수치 실험)를 더했고, 그 밖의 현장 유형 사례는 이어지는 조사에서 더한다.\n\n**물류 흐름 단계:** 피킹 → 출하\n\n**시나리오:** 피킹 성수기에 충전 요청과 층간 출하 운반이 겹칠 때\n\n다음은 설명을 위한 가상의 시나리오이다. 여러 제조사 로봇이 한 다층 물류센터에서 피킹 화물을 다른 층 출하 구역으로 옮기는 중에 충전 수요와 승강기 호출이 몰리는 상황을 가정한다.\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 로봇이 일련의 작업을 마칠 충전량이 부족하면 Open-RMF 작업 계획기가 충전 작업을 일정에 끼워 넣는다. [사실][^ref-104] 같은 시간대에 피킹을 마친 화물의 층간 운반 요청이 이어진다(가정). |\n| 작업 대상 | 피킹을 마친 출하 대상 화물과 이를 실은 로봇이며, 충전기·승강기·대기 위치는 여러 로봇이 나눠 쓰는 공용 자원이다(가정). |\n| 수행 자원 | 과충전 보호, 충전기와의 통신·정밀 도킹, 승강기 운행·설비 안전 제어는 로봇·충전 설비·승강기 쪽이 맡고, ROP 는 충전 시작·중지 요청, 상태 확인, 승강기 세션 요청과 모드 확인을 담당하는 것으로 보인다. [추정][^ref-031][^ref-216][^ref-284] |\n| 제약 | VDA 5050 은 팩트시트의 임계 충전 수준(백분율, 로봇 유형별 선언값) 이하에서는 관제가 충전소로 가는 주문만 보내는 것이 좋다고 권고(should)한다(3.0.0 판 기준, 발행일 미확인). [사실][^ref-031][^ref-228] 승강기가 세션 단위로 한 요청자에게 점유되므로, 여러 제조사 로봇의 호출을 세션 순서·목적층 묶음으로 배분하지 않으면 층간 대기가 출하 마감을 위협할 수 있을 것으로 보인다. [추정][^ref-312][^ref-286][^ref-103] |\n| 완료·인계 | 로봇 쪽 도킹 프레임워크(연계 대상)는 도킹 뒤 충전 시작 여부(isCharging)를 확인하는 함수를 둔다. [사실][^ref-216] 승강기 이용이 끝나면 세션 종료 요청을 보낼 때까지 제어권이 그 세션에 남는다. [사실][^ref-286] |\n| 예외·성과 | VDA 5050 은 충전 주문이 운반 주문을 중단시킬 수 있다고 적는다. [사실][^ref-031] 여러 로봇이 비슷한 시각에 충전 하한에 닿아 충전기 대기열이 생기면 가용 로봇 수가 줄 수 있으므로, 주문이 적은 시간대의 기회 충전이나 충전 요청을 작업 배정과 함께 계획하는 방식이 처리량 손실을 줄이는 수단이 될 것으로 보인다. [추정][^ref-534][^ref-531][^ref-031] |\n\n이 시나리오에서 이 영역이 관여하는 곳은 시작 조건(충전 작업을 언제 넣을지), 제약(충전 하한과 승강기 점유), 예외·성과(충전으로 빠지는 가용 로봇과 층간 대기)다. 화물의 인계 확인 자체는 다른 영역이 다룬다(가정).\n\n실제 물류센터에서 충전 대기와 승강기 대기가 처리량을 얼마나 줄이는지는 이번 조사에서 확인되지 않았으며, [열린 질문](../../open-questions.md)의 oq-010 으로 남겨 둔다.\n\n**현장 유형:** 상업 시설\n\n**사례:** 다층 호텔에서 승강기를 거쳐 여러 층의 고객에게 배송(다층 호텔 배송을 모델링한 수치 실험이며 실제 배치 아님)\n\n다음은 Han 외(2025)가 다층 호텔 배송을 모델링한 수치 실험을 여섯 항목으로 옮긴 것이며, 실제 현장 배치 사례가 아니다.\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 여러 층에 흩어진 고객 노드로 가는 배송 로봇의 경로 계획 문제가 주어지며, 논문은 이를 [다중 운행 차량 경로 문제](../../glossary/multi-trip-vehicle-routing-problem.md)(Multi-Trip Vehicle Routing Problem, MTVRP)로 정식화하고 적응형 대규모 이웃 탐색으로 푼다. [사실][^ref-103] |\n| 작업 대상 | 층마다 흩어진 고객 노드와, 경로 안에서 암묵적 경유점으로 모델링한 승강기 노드다. [사실][^ref-103] |\n| 수행 자원 | 배송 로봇이 승강기 노드를 거쳐 층을 옮기는 것으로 모델링된다. [사실][^ref-103] 승강기 설비 쪽의 호출·배분 분담은 미확인이다. |\n| 제약 | 승강기 운행 시간이 모델의 입력이며, 고객 노드 60개 사례에서 승강기 운행 시간을 40초에서 100초로 늘리면 총 이동 시간이 약 225초에서 500초로 늘었다. [사실][^ref-103] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 논문은 무작위·동적 승강기 운행 시간, 동적 수요 변동, 다중 로봇 협업·충돌 회피, 지능형 승강기 스케줄링을 후속 연구 과제로 남긴다. [사실][^ref-103] 실패 시 누가 복구하는지는 미확인이다. |\n\n이 사례에서 이 영역이 관여하는 곳은 제약(승강기라는 공용 자원의 운행 시간)과 예외·성과(그에 따른 총 이동 시간)다. 이 위키는 위 수치를 가정한 승강기 운행 시간을 바꾼 모델 민감도로 보며, 실제 승강기 대기열 손실값이나 여러 로봇이 승강기를 나눠 쓰는 배분 규칙의 근거로 쓰지 않는다. [의견][^ref-103]"
+          },
+          {
+            "section": "6. 대표 접근법과 기술",
+            "action": "append",
+            "content": "2026-10-10 갱신에서 충전소 경유점 지정과 충전 하한 값을 다시 확인했다. Open-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 본다. [의견][^ref-536][^ref-1543] VDA 5050 3.0.0 판(발행일 미확인)의 임계 충전 수준은 백분율 선언값이고, Open-RMF 템플릿의 recharge_threshold 는 0~1 비율로 적힌 운행 하한 예시값이다. [사실][^ref-031][^ref-105]\n\n자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다."
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "append",
+            "content": "Open-RMF 승강기 요청·상태 메시지는 세션 id 로 점유와 종료를 표현하지만, 최대 점유 시간·예약 시간창·여러 요청의 목적층 묶음을 지정하는 필드는 두지 않는다. [사실][^ref-312][^ref-286] 이 위키는 이를 메시지 정의 범위의 사실로만 보며, 배분 정책이나 다른 구성요소의 대기열 구현이 없다는 뜻으로 넓히지 않는다. [의견][^ref-312][^ref-286] rmf_fleet_adapter 변경 이력에는 2.12.0(2026-02-23)의 충전기 복귀 변경과 2.13.0(2026-06-15)의 뮤텍스 잠금·해제 교착 수정이 기록돼 있다. [사실][^ref-1545] 이 위키는 충전 작업 삽입·뮤텍스 그룹을 인용할 때 적용 판을 함께 적어야 한다고 본다. [의견][^ref-1545]\n\n자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다."
+          },
+          {
+            "section": "8. 대표 연구와 자료",
+            "action": "append",
+            "content": "2026-10-10 갱신에서 공용 충전기 비중첩 제약과 배터리 열화를 함께 푸는 연구로 Li 외(2026-03-24, arXiv 프리프린트, 동료심사 미확인)를 더했으며, 이 연구가 보고한 최대 54% 열화 감소는 가상 창고 대표 사례 하나의 예시적 기대 평균이다. [사실][^ref-403] 물류 작업과 에너지 공급을 함께 계획하는 항만 연구(Yang 외 2026)는 원문을 열지 못해, 이 위키는 후보 자료로만 둔다. [의견][^ref-1544] 자세한 내용은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다."
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "append",
+            "content": "2026-10-10 갱신(실행 2026-10-10-05)에서 바뀐 열린 질문은 다음과 같다.\n\n- **oq-069** (상태: 해결 · 실행 2026-10-10-05) 출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가? — 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 충전소를 is_charger 로 지정하고, 지원 작업 문서는 여전히 is_parking_spot 으로 적는다. [사실][^ref-536][^ref-1543][^ref-039] 답은 [주제 페이지](../../topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다.\n- **oq-068** (상태: 열림) 부분 근거: 제조사 선언값은 백분율, Open-RMF 템플릿 값은 0~1 비율이며, 두 값의 우선순위 규칙은 확인한 두 원문 범위에서 찾지 못했다. [추정][^ref-031][^ref-105]\n- **oq-067** (상태: 열림) 부분 근거: Open-RMF 승강기 메시지에는 최대 점유 시간·예약 시간창·다중 목적층 필드가 없으며, 다른 구성요소는 조사하지 않았다. [사실][^ref-312][^ref-286]\n- **oq-066** (상태: 열림) 부분 근거: 항만 AGV 작업·충전과 마이크로그리드 운영을 결합한 연구 한 건(원문 미열람)만 후보로 찾았고, 물류센터 연구와 국내 사례는 찾지 못했다. [추정][^ref-1544]\n- 새 질문(2026-10-10 등록, 번호는 열린 질문 목록에서 부여한다):\n    - 공용 충전기 예약 시간이 끝났는데 로봇이 충전기 앞을 떠나지 못할 때 다음 예약의 시작을 어떻게 조정하는가?\n    - 충전 상태(SOC) 추정 오차와 충전소까지의 이동·대기 에너지를 반영해 운영 하한에 더할 여유를 어떻게 검증하는가?\n    - 배터리 열화 최적화 모델의 예시 결과를 실제 셀·충전기·장기 운용 데이터로 검증한 공개 재현 자료가 있는가?\n    - 승강기 운행 시간 민감도와 실제 승강기 대기열·최대 점유 시간의 관계를 같은 실험에서 측정한 자료가 있는가?"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "content": "[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\n[^ref-039]: Open Robotics, Currently supported Tasks - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-060]: Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026, https://doi.org/10.1177/20552076261437181, 접근일 2026-09-25 (원문 미열람)\n[^ref-098]: Zou, B., Gong, Y., de Koster, R., & Xu, X., Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system, 2018, https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901, 접근일 2026-09-25 (원문 미열람)\n[^ref-103]: Han, L., Ding, J., Liu, S., & Meng, M.(Sensors 25(6) 1783, doi:10.3390/s25061783), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 2025-03-13, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-10-10\n[^ref-104]: Open Robotics (open-rmf), rmf_demos — Demonstrations of Open-RMF (README), 미확인, https://github.com/open-rmf/rmf_demos, 접근일 2026-09-25\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-10-10\n[^ref-109]: Stark, H.-G. 외, A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse, 2024-06, https://arxiv.org/abs/2406.17003, 접근일 2026-09-25 (원문 미열람)\n[^ref-216]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_docking — README (Open Navigation's Nav2 Docking Framework), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-10\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-10-10\n[^ref-403]: Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03-24, https://arxiv.org/abs/2603.22731, 접근일 2026-10-10\n[^ref-530]: Computers & Industrial Engineering 게재 논문(저자 미확인), Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach, 2024-08, https://www.sciencedirect.com/science/article/pii/S0360835224006314, 접근일 2026-09-25 (원문 미열람)\n[^ref-531]: arXiv 2607.05683 저자(미확인), Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers, 2026-07, https://arxiv.org/abs/2607.05683, 접근일 2026-09-25 (원문 미열람)\n[^ref-532]: Ma, N., Zhou, C., & Stephen, A., Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals, 2020, https://www.sciencedirect.com/science/article/abs/pii/S1569190X2030085X, 접근일 2026-09-25 (원문 미열람)\n[^ref-533]: Chen, W., Gong, Y., Chen, Q., & Wang, H., Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse, 2024-01, https://www.sciencedirect.com/science/article/abs/pii/S0377221723004770, 접근일 2026-09-25 (원문 미열람)\n[^ref-534]: Dang, Q.-V., Singh, N., Adan, I., Martagan, T., & van de Sande, D., Scheduling heterogeneous multi-load AGVs with battery constraints, 2021-12, https://www.sciencedirect.com/science/article/pii/S0305054821002586, 접근일 2026-09-25 (원문 미열람)\n[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-10-10\n[^ref-1543]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp, 접근일 2026-10-10\n[^ref-1544]: Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI), A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints, 2026-07-27, https://www.mdpi.com/2227-9717/14/15/2424, 접근일 2026-10-10 (원문 미열람)\n[^ref-1545]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10",
+            "frontmatter": {
+              "sources": [
+                "ref-031",
+                "ref-039",
+                "ref-051",
+                "ref-060",
+                "ref-079",
+                "ref-098",
+                "ref-103",
+                "ref-104",
+                "ref-105",
+                "ref-109",
+                "ref-146",
+                "ref-216",
+                "ref-219",
+                "ref-228",
+                "ref-284",
+                "ref-286",
+                "ref-312",
+                "ref-321",
+                "ref-377",
+                "ref-403",
+                "ref-530",
+                "ref-531",
+                "ref-532",
+                "ref-533",
+                "ref-534",
+                "ref-535",
+                "ref-536",
+                "ref-537",
+                "ref-538",
+                "ref-1543",
+                "ref-1544",
+                "ref-1545"
+              ],
+              "last_run": "2026-10-10"
+            }
+          }
+        ]
+      },
+      {
+        "path": "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "신규 작성: 충전 하한 값 구분, 충전소 is_charger 지정(oq-069 해결), 승강기 메시지 범위, Open-RMF 판 기록, 공용 충전기·열화 MILP, 항만 물류–에너지 후보 자료",
+        "content": "---\ntitle: \"충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\"\ntype: topic\ncategory: \"G. 계획·최적화\"\nprimary_area_no: 28\nrelated_areas: [5, 15, 22, 27, 57]\ntags: [충전 하한, is_charger, 승강기 세션, 공용 충전기, 배터리 열화, Open-RMF]\nstatus: draft\nconfidence: medium\ncreated: 2026-10-10\nupdated: 2026-10-10\nsources: [ref-031, ref-039, ref-105, ref-286, ref-312, ref-403, ref-536, ref-1543, ref-1544, ref-1545]\nlast_run: 2026-10-10\nversion: 1\n---\n\n[홈](../../index.md) › [주제](../index.md) › 충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\n\n# 충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가\n\n**주 연구영역:** [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) · **관련 영역:** [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md), [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md), [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md), [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) · **실행:** 2026-10-10-05\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- VDA 5050 팩트시트의 충전 수준은 백분율 선언값이고 Open-RMF 설정의 recharge_threshold 는 0~1 비율의 운행 하한이며, 현재 Open-RMF 구현은 충전소 경유점을 is_charger 로 지정한다. [사실][^ref-031][^ref-105][^ref-1543]\n- 이 위키는 ROP 가 충전 하한·충전 목표·충전소 지정을 제조사 선언과 별도의 운영 정책 항목으로 기록하고, 기대는 Open-RMF 기능의 적용 판을 함께 남기는 편이 좋다고 본다. [의견][^ref-031][^ref-105][^ref-1545]\n- 두 충전 값의 우선순위 규칙은 확인한 원문 범위에서 찾지 못했고, 여러 플릿의 승강기 배분 규칙과 공용 충전기 열화 최적화의 현장 검증도 아직 확인되지 않았다. [추정][^ref-031][^ref-105][^ref-403]\n\n## 2. 배경\n\n로봇들이 동시에 충전하거나 승강기를 기다리는 상황을 어떻게 줄일까? [분류원문]\n\n이 글은 [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)의 위 핵심 질문 아래 남아 있던 열린 질문 oq-066·oq-067·oq-068·oq-069 와, 세부영역 페이지의 두 문장(충전 하한 아래 주문 제한을 의무로 적은 문장, 충전소 속성을 두고 문서가 어긋난다고 적은 문장)을 갱신 실행 2026-10-10-05 에서 다시 확인한 결과다. 조사는 외부 조사 메모를 공식 저장소·논문 원문과 대조한 것이며 한국 자료는 포함되지 않았다.\n\n## 3. 본문\n\n### 충전 하한: 제조사 선언값과 운영 설정\n\nVDA 5050 3.0.0 판(발행일 미확인)의 팩트시트 batteryCharging 객체는 임계 충전 수준(criticalLowChargingLevel)·최대 희망 충전 수준·최소 희망 충전 수준을 백분율로, 최소 충전 시간을 초로 선언하는 네 필드로 이루어진다. [사실][^ref-031] 명세는 임계 충전 수준 이하에서 관제가 충전소로 가는 주문만 보내는 것을 의무가 아닌 권고 표현으로 적는다. [사실][^ref-031] 이 위키는 이 값을 의무 문구나 모든 로봇에 공통인 충전 시작 비율로 옮기지 않고, 제조사가 로봇별로 선언하는 값으로 다뤄야 한다고 본다. [의견][^ref-031]\n\nOpen-RMF fleet_adapter_template 의 설정 예시는 recharge_threshold 0.10 을 그 아래로는 로봇이 운행하지 않는 수준으로, recharge_soc 1.0 을 충전 작업에서 채울 목표 수준으로 두며, 두 값은 권장값이 아닌 템플릿 예시값이다. [사실][^ref-105] 이 위키는 두 체계를 대조할 때 단위를 먼저 맞추고, 관제의 주문 제한 기준인 VDA 의 임계 수준과 운행 하한인 Open-RMF 값을 구분해 운행 하한·충전 시작 판단·충전 목표를 별도 정책 항목으로 기록하는 편이 좋다고 본다. [의견][^ref-031][^ref-105] 두 값 가운데 무엇을 자동으로 우선하는지에 관한 공통 조정 규칙은 확인한 두 원문에 없었으며, Open-RMF 의 다른 구성요소와 VDA 5050 의 다른 절은 조사하지 않았다. [추정][^ref-031][^ref-105]\n\n### 충전소 경유점 지정: 문서와 구현\n\nOpen-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 그래프 API 는 충전 지점을 배터리 충전 수준이 임계값 아래로 떨어진 로봇이 보내지는 곳으로, 주차 지점을 비상 경보 때 로봇이 스스로 주차하는 곳으로 설명한다. [사실][^ref-536] 두 구현 자료는 같은 프로젝트의 것이라 독립 교차 확인은 아니다. 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 보며, is_parking_spot 만 지정한 경유점을 충전소와 같은 뜻으로 취급하지 않는 것이 맞다고 본다. [의견][^ref-536][^ref-1543]\n\n### 승강기 세션 메시지의 범위\n\nOpen-RMF 의 승강기 요청 메시지는 승강기 이름·요청 시각·세션 id·요청 유형(세션 종료·AGV 모드·사람 모드)·목적층·문 상태 필드로 이루어지고, 상태 메시지는 세션 종료 요청 때까지 제어권을 받은 세션 id 를 보고한다. [사실][^ref-312][^ref-286] 두 메시지에는 최대 점유 시간, 예약 시간창, 여러 요청의 목적층 묶음을 지정하는 필드가 없다. [사실][^ref-312][^ref-286] 이 위키는 세션 점유·종료 인터페이스가 공개돼 있다는 사실과 공정한 대기열·묶음 운행 같은 배분 정책이 정의돼 있다는 주장을 구별해야 한다고 보며, 메시지 정의만 본 결론이므로 승강기 감독 등 다른 구성요소에 타임아웃이나 대기열 구현이 없다는 뜻으로 넓히지 않는다. [의견][^ref-312][^ref-286]\n\n### Open-RMF 충전·뮤텍스 기능의 판 기록\n\nrmf_fleet_adapter 변경 이력에는 2.12.0(2026-02-23)에 충전 대기 단계 완료 발행과 다음 작업에 충전량이 모자라면 충전기로 복귀하는 변경이, 2.13.0(2026-06-15)에 뮤텍스 잠금·해제 실행에서 생길 수 있는 교착 수정이 기록돼 있다(최신 판 2.14.0 은 2026-09-26). [사실][^ref-1545] 이 위키는 충전 작업 삽입·뮤텍스 그룹을 인용할 때 적용 판과 이 수정의 포함 여부를 함께 적고, 이전 판이 모든 조건에서 교착 없이 동작했다는 근거로 쓰지 않아야 한다고 본다. 변경 이력은 수정이 있었다는 것만 보여 줄 뿐 이전 판 결함의 범위를 정량화하지 않는다. [의견][^ref-1545]\n\n### 공용 충전기와 배터리 열화를 함께 푸는 연구\n\nLi 외(2026-03-24, arXiv v1 프리프린트, 동료심사 미확인)는 작업 배정·서비스 순서·선택적 충전 결정·충전 방식 선택·공용 충전기 접근을 하나의 혼합 정수 계획(Mixed Integer Linear Programming, MILP)으로 함께 표현하고, 총 배터리 열화·충전기 대기·납기 지연·로봇 사이 열화 불균형을 함께 줄이는 목적함수를 둔다. [사실][^ref-403] 공용 충전기 제약은 같은 충전기의 서로 다른 충전 세션 쌍마다 순서 변수를 두어 충전 구간이 겹치지 않게 하며, 세션 집합이 모든 로봇의 세션을 포함하도록 정의돼 있어 같은 로봇의 세션 쌍도 여기에 든다(논문이 따로 명시한 문장은 아니다). [사실][^ref-403] 결과 수치는 4절 사례에 적는다.\n\n### 물류 작업과 에너지 공급을 함께 계획하는 후보 자료\n\nYang 외(2026-07-27, Processes)는 냉동 컨테이너 온도 제약 아래 항만 무인운반차(Automated Guided Vehicle, AGV)의 작업 스케줄링·충전을 태양광·풍력·에너지 저장 장치(Energy Storage System, ESS)를 갖춘 항만 마이크로그리드 운영과 결합해 운영비를 최소화하는 2단계 프레임워크를 제시한 것으로 초록에 소개된다(원문 미열람). [추정][^ref-1544] 이 위키는 이 자료를 물류 작업과 에너지 공급을 함께 계획하는 충전 연구의 후보로만 두며, 원문을 열지 못했으므로 비용 절감 수치나 국내 물류센터 적용 근거로 쓰지 않는다. [의견][^ref-1544]\n\n## 4. 현장 시나리오\n\n**현장 유형:** 물류창고\n\n**사례:** 가상 창고에서 로봇 4대가 공용 충전기 2대를 나눠 쓰며 작업 40건을 처리(수치 실험이며 실제 배치 아님)\n\n다음은 Li 외(2026, 프리프린트)의 대표 수치 실험을 여섯 항목으로 옮긴 것이며, 실제 현장 사례가 아니다.\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 작업 40건의 배정·서비스 순서와 선택적 충전 결정을 함께 정하는 계획 문제가 주어진다. [사실][^ref-403] |\n| 작업 대상 | 100×50 m 가상 창고의 작업 40건과 공용 충전기 2대다. [사실][^ref-403] |\n| 수행 자원 | 동종 로봇 4대가 표준·고속 두 충전 방식 가운데 하나를 골라 충전한다. [사실][^ref-403] |\n| 제약 | 같은 충전기에서 충전 세션이 서로 겹치지 않아야 한다. [사실][^ref-403] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 기여 요약의 규칙 기반 대비 최대 54% 열화 감소는 대표 사례 하나(로봇 4·작업 40·충전기 2)의 예시적 기대 평균(총 열화 0.214→0.098)으로 보고된 값이다. [사실][^ref-403] 실패 시 누가 복구하는지는 미확인이다. |\n\n이 사례에서 이 영역이 관여하는 곳은 제약(공용 충전기 비중첩)과 예외·성과(열화·충전기 대기)다. 이 위키는 열화를 축약 대리 모형으로 표현한 이 예시값을 현장 배터리 수명 개선의 검증값으로 인용하지 않는다. [의견][^ref-403]\n\n## 5. ROP 관점의 시사점\n\n**직접 범위:**\n\n- 이 위키는 ROP 가 제조사 선언(임계 충전 수준)과 자체 운영 설정(운행 하한·충전 목표)을 단위를 맞춰 따로 기록하고, 충전소 지정은 구현 기준(is_charger)으로 확인하는 편이 좋다고 본다. [의견][^ref-031][^ref-105][^ref-1543]\n- 승강기 세션 순서·점유 한도 같은 배분 규칙은 메시지 정의에 없으므로, 이 위키는 그 규칙을 어디서 정할지가 확인할 과제로 남는다고 본다. [의견][^ref-312][^ref-286]\n\n**연계 범위:**\n\n- 승강기 운행과 설비 안전 제어는 분류 원문 19장의 시설·설비 제어 경계에 속하는 연계 대상이며, 이 위키는 ROP 가 세션 요청과 상태 확인까지만 맡는다고 본다. [의견][^ref-312]\n- 항만 마이크로그리드(태양광·풍력·ESS) 운영은 ROP 직접 범위가 아닌 에너지 설비 쪽 연계 대상이다. [의견][^ref-1544]\n\n## 6. 연결되는 연구영역\n\n- [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) — 주 연구영역. 충전 하한·충전소·승강기 점유·공용 충전기 계획을 다룬다.\n- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 팩트시트의 batteryCharging 객체가 충전 수준을 로봇 선언으로 담는다. [사실][^ref-031]\n- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 충전 지점·주차 지점이 교통 그래프 경유점 속성으로 정의된다. [사실][^ref-536]\n- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — 승강기 요청·상태 메시지가 설비 연동 인터페이스다. [사실][^ref-312][^ref-286]\n- [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — 뮤텍스 잠금·해제 교착 수정이 통로 구간 점유 조율과 이어질 것으로 보인다. [추정][^ref-1545]\n- [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 배터리 열화 관리와 플릿 소프트웨어 판 기록이 수명주기 관리와 이어질 것으로 보인다. [추정][^ref-403][^ref-1545]\n\n## 7. 열린 질문\n\n- **oq-069** (상태: 해결 · 실행 2026-10-10-05) 출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가? — 답은 3절 \"충전소 경유점 지정: 문서와 구현\"에 있다.\n- **oq-066**·**oq-067**·**oq-068** (상태: 열림) — 3절에 부분 근거만 있다.\n- 새 질문 4건(공용 충전기 예약 초과 조정, SOC 추정 오차를 반영한 운영 하한 여유 검증, 열화 최적화 결과의 실물 재현 자료, 승강기 운행 시간 민감도와 실제 대기열의 관계)은 [열린 질문](../../open-questions.md)에 등록한다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-10\n[^ref-039]: Open Robotics, Currently supported Tasks - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-10-10\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-10-10\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-10-10\n[^ref-403]: Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03-24, https://arxiv.org/abs/2603.22731, 접근일 2026-10-10\n[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-10-10\n[^ref-1543]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp, 접근일 2026-10-10\n[^ref-1544]: Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI), A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints, 2026-07-27, https://www.mdpi.com/2227-9717/14/15/2424, 접근일 2026-10-10 (원문 미열람)\n[^ref-1545]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0), 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-10\n\n## 9. 검증 노트\n\n- 판정: 1차 조건부 승인 / 2차 대기\n- 확인·미확인: 확인 27건 · 미확인 0건 · 교차 확인 0건\n- 강등된 주장: 없음\n- 검증자 주의: 판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-1544(Yang 외, Crossref 초록만 확인). 주의: 이번 브리프는 외부 AI 조사 메모를 바꾼 것이라 이 실행 안의 검색 기록이 없고, 한국 자료는 없다. VDA 5050·Open-RMF 출처는 모두 같은 발행 주체나 같은 프로젝트의 자료라 독립 교차 확인으로 세지 않았다. VDA 5050 3.0.0 명세와 factsheet.schema(ref-228)는 모두 임계 충전 수준 이하 주문 제한을 권고(should)로 적으므로, 5절 제약 행의 '보내야 한다'는 권고 표현으로 정정한다. 호텔 연구(ref-103)는 이번 실행에서 원문을 처음 열었고, 원문 자체가 'nearly doubles'(225→500 s)라고 쓴다. Li 외(ref-403)의 최대 54% 열화 감소는 프리프린트 속 대표 사례 하나의 예시값이다. oq-069 해결 인정(f8·f9): 현재 구현은 충전소를 is_charger 로 지정하고, 지원 작업 문서(ref-039)는 아직 is_parking_spot 으로 적고 있어 두 서술을 함께 싣는다. oq-066·oq-067·oq-068 은 부분 근거만 있어 열린 질문으로 남긴다. 트랙 반영 제안 4건(IDTA 02047·배터리 여권·rmf_traffic 문·승강기 표현)은 이번 브리프가 조사하지 않아 반영하지 않았다. ref-1545 는 같은 날 실행 2026-10-10-03·04 에 등록된 변경 이력 출처(ref-1487·ref-1513)와 URL 이 같아 기존 id 로 합친다. 정정 요청(corr) 없음.\n- 신뢰도: medium\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 | 버전 |\n|---|---|---|---|\n| 2026-10-10 | 2026-10-10-05 | 신규 작성 | 1 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area16-s6.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "3. 본문 끝에 충전소 속성 충돌 문장 정정 소제목 추가(문서 is_parking_spot·구현 is_charger 병기, 구현 기준 판단은 의견)",
+        "patches": [
+          {
+            "section": "3. 본문",
+            "action": "append",
+            "content": "### 2026-10-10 정정: 충전소 경유점 속성\n\n이 절 앞부분에서 Open-RMF 지원 작업 문서가 충전소를 is_parking_spot 으로 설정한다고 적어 is_charger 로 적는 문서와 어긋난다고 쓴 문장은 다음과 같이 정리한다(실행 2026-10-10-05). Open-RMF 지원 작업 문서는 충전소를 is_parking_spot 으로 설정한다고 적지만, 현재 구현의 그래프 API 와 rmf_fleet_adapter 2.14.0 파서는 주차 지점과 충전 지점을 별도 속성으로 두고 충전소를 is_charger 로 지정한다. [사실][^ref-039][^ref-536][^ref-1543] 두 구현 자료는 같은 프로젝트의 것이라 독립 교차 확인은 아니다. 이 위키는 구현 기준으로 충전소 지정을 is_charger 로 보며, is_parking_spot 만 지정한 경유점을 충전소로 취급하지 않는 것이 맞다고 본다. [의견][^ref-536][^ref-1543] 충전 하한 값의 단위·의미 구분과 Open-RMF 기능의 판 기록은 주제 페이지 [충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가](2026-10-10-charging-threshold-charger-lift-evidence.md)에 있다."
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-10 | 28. 공용 자원·충전·에너지 최적화 | 5절 제약 행을 VDA 5050 권고 표현으로 정정하고 상업 시설(호텔 수치 실험) 사례 추가, 3절 충전 값 구분·호텔 수치 보강, 충전소 is_charger 정리(oq-069 해결), 공용 충전기·승강기 메시지 확인 주제 페이지 신설 | run 2026-10-10-05",
+    "index_updates": {
+      "home_recent": "2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 충전 하한 권고 표현 정정, 충전소 is_charger 정리(oq-069 해결), 상업 시설 사례와 공용 충전기·열화 연구 추가",
+      "category_recent": "2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 5절 제약 행 정정·상업 시설 사례 추가, 6·7·8·11절 갱신과 주제 페이지 '충전 하한과 충전소 지정, 승강기 세션 점유는 무엇이 확인됐는가' 신설",
+      "area_recent": "2026-10-10 — 28. 공용 자원·충전·에너지 최적화: 3·5절 정정·보강, 6·7·8·11절에 갱신 요약과 새 주제 페이지 링크, 6절 분리 페이지에 충전소 속성 정정 추가"
+    },
+    "glossary_updates": [],
+    "reference_updates": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "VDA 5050 3.0.0 명세 원문. 이번에는 3.0.0 태그판의 팩트시트 batteryCharging 표(임계·최대·최소 희망 충전 수준 백분율, 최소 충전 시간)를 대조했다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ]
+      },
+      {
+        "id": "ref-105",
+        "org": "Open Robotics (open-rmf)",
+        "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+        "published": null,
+        "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 플릿 어댑터 설정 템플릿. recharge_threshold(운행 하한 비율 0.10)와 recharge_soc(충전 목표 비율 1.0) 등 배터리·충전 설정 예시값을 담는다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ]
+      },
+      {
+        "id": "ref-536",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 교통 그래프 API 헤더. 경유점의 주차 지점·충전 지점·대기 지점 속성과 뮤텍스 그룹 등을 정의한다(set_charger 위 주석은 주차 지점 문구가 잘못 복사돼 있음).",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md",
+          "docs/topics/2026/2026-09-25-area16-s6.md"
+        ]
+      },
+      {
+        "id": "ref-1543",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp (2.14.0)",
+        "published": "2026-09-26",
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/parse_graph.cpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "rmf_fleet_adapter 2.14.0 태그의 탐색 그래프 YAML 파서. 경유점 옵션 is_parking_spot·is_holding_point·is_passthrough_point·is_charger 를 각각 별도 속성으로 변환한다(발행일은 2.14.0 패키지판 날짜).",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md",
+          "docs/topics/2026/2026-09-25-area16-s6.md"
+        ]
+      },
+      {
+        "id": "ref-312",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 승강기 요청 메시지. 승강기 이름·요청 시각·세션 id·요청 유형(세션 종료·AGV 모드·사람 모드)·목적층·문 상태 필드를 정의한다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ]
+      },
+      {
+        "id": "ref-286",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "Open-RMF 승강기 상태 메시지. 층·문·운행·모드 상태와 세션 종료 요청 때까지 제어권을 가진 session_id 를 보고한다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ]
+      },
+      {
+        "id": "ref-103",
+        "org": "Han, L., Ding, J., Liu, S., & Meng, M.(Sensors 25(6) 1783, doi:10.3390/s25061783)",
+        "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+        "published": "2025-03-13",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-10",
+        "summary": "Sensors 25(6) 1783, doi:10.3390/s25061783. 다층 호텔 배송 로봇 경로 계획을 승강기 노드를 암묵적 경유점으로 둔 MTVRP 로 정식화하고 승강기 운행 시간 민감도를 수치 실험한다. 2026-10-10 실행에서 원문을 처음 열어 저자·발행일을 보강했다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-403",
+        "org": "Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin)",
+        "title": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots",
+        "published": "2026-03-24",
+        "url": "https://arxiv.org/abs/2603.22731",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-10",
+        "summary": "arXiv 프리프린트 v1. 작업 배정·순서·충전 방식·공용 충전기 비중첩 제약을 MILP 로 함께 풀어 열화·충전기 대기·납기 지연·열화 불균형을 줄이는 계층형 해법을 제시한다(가상 창고 수치 실험).",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1544",
+        "org": "Song Yang, Sichen Yue, Xiao Wang, Kaiyu Wang, Xin Tian, Xiao Wang (Processes, MDPI)",
+        "title": "A Two-Stage Logistics–Energy Coordinated Optimization Framework for AGV Scheduling and Charging Under Reefer Container Temperature Constraints",
+        "published": "2026-07-27",
+        "url": "https://www.mdpi.com/2227-9717/14/15/2424",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-10",
+        "summary": "원문 미열람. Crossref 초록 기준으로 냉동 컨테이너 온도 제약 아래 항만 AGV 작업·충전을 태양광·풍력·ESS 를 갖춘 항만 마이크로그리드와 결합해 운영비를 최소화하는 2단계 프레임워크다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1545",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_fleet_adapter/CHANGELOG.rst (2.14.0)",
+        "published": "2026-09-26",
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-10",
+        "summary": "rmf_fleet_adapter 패키지 변경 이력(2.14.0 태그). 2.12.0(2026-02-23)의 충전 대기 단계 완료 발행·충전기 복귀 변경과 2.13.0(2026-06-15)의 뮤텍스 잠금·해제 교착 수정을 기록한다. 같은 날 실행 2026-10-10-03·04 의 출처와 URL 이 같아 퍼블리셔가 기존 id 로 합친다.",
+        "cited_by": [
+          "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md",
+          "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+        ],
+        "source_unopened": false
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "update",
+        "id": "oq-069",
+        "question": "출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가?",
+        "areas": [
+          15,
+          28
+        ],
+        "status": "해결",
+        "link": "docs/topics/2026/2026-10-10-charging-threshold-charger-lift-evidence.md"
+      },
+      {
+        "action": "new",
+        "question": "공용 충전기 예약 시간이 끝났는데 로봇이 충전기 앞을 떠나지 못할 때 다음 예약의 시작을 어떻게 조정하는가?",
+        "areas": [
+          28,
+          27
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "충전 상태(SOC) 추정 오차와 충전소까지의 이동·대기 에너지를 반영해 운영 하한에 더할 여유를 어떻게 검증하는가?",
+        "areas": [
+          28,
+          5
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "배터리 열화 최적화 모델의 예시 결과를 실제 셀·충전기·장기 운용 데이터로 검증한 공개 재현 자료가 있는가?",
+        "areas": [
+          28,
+          57
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "승강기 운행 시간 민감도와 실제 승강기 대기열·최대 점유 시간의 관계를 같은 실험에서 측정한 자료가 있는가?",
+        "areas": [
+          28,
+          22
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "상업 시설",
+        "item": "시작 조건",
+        "link": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시",
+        "title": "28. 공용 자원·충전·에너지 최적화"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "작업 대상",
+        "link": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시",
+        "title": "28. 공용 자원·충전·에너지 최적화"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "수행 자원",
+        "link": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시",
+        "title": "28. 공용 자원·충전·에너지 최적화"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "제약",
+        "link": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시",
+        "title": "28. 공용 자원·충전·에너지 최적화"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "예외·성과",
+        "link": "docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md#5-적용-사례-현장-유형-명시",
+        "title": "28. 공용 자원·충전·에너지 최적화"
+      }
+    ],
+    "additional_research_requests": [
+      "6절 분리 페이지(docs/topics/2026/2026-09-25-area16-s6.md) 53행의 is_parking_spot/is_charger 충돌 문장 자체는 페이지 본문이 이번 입력에 없어 교체하지 못하고 3. 본문 끝에 정정 소제목만 덧붙였다 — 다음 갱신 실행에서 이 페이지를 입력으로 넣어 해당 문장을 정정 문장으로 바꿔야 한다",
+      "7·8·11절 분리 페이지(2026-09-25-area16-s7·s8·s11)는 입력에 없고 하루 갱신 상한(2)도 찼으므로 고치지 않았다. 승강기 메시지 필드 범위·rmf_fleet_adapter 판 기록(7절), Li 외·Yang 외(8절), oq 상태(11절)는 새 주제 페이지와 세부영역 6·7·8·11절 요약에 실었다 — 다음 갱신에서 분리 페이지에도 반영할지 정해야 한다",
+      "트랙 반영 제안 4건(IDTA 02047 충전 요소 2건, IDTA 디지털 배터리 여권 1건, rmf_traffic 문·승강기·VDA 해제 구역 1건)은 이번 브리프가 다루지 않아 반영하지 않았다 — 7·6절 반영을 위해 IDTA 02047 템플릿 원문(oq-060)과 배터리 여권 템플릿 본문, rmf_traffic 문·승강기 표현 원문 조사가 필요하다",
+      "11절 oq-066: 물류센터 로봇의 시간대별 전기 요금·최대 수요 전력 기준 충전 계획 연구와 국내 사례(한국어 자료)가 필요하다. Yang 외(ref-1544)는 원문 미열람이라 수치를 쓸 수 없다",
+      "11절 oq-067: Open-RMF 승강기 감독(lift supervisor) 등 메시지 밖 구성요소의 타임아웃·대기열 구현 조사가 필요하다",
+      "5절: 물류창고·상업 시설 밖 현장 유형(병원·제조 공장 등)의 충전·승강기 공용 자원 사례와 상업 시설 사례의 완료·인계 항목 근거가 필요하다"
+    ],
+    "fixes_applied": [
+      "5절 제약 행 정정 — '보내야 한다' 문장을 'VDA 5050 은 팩트시트의 임계 충전 수준(백분율, 로봇 유형별 선언값) 이하에서는 관제가 충전소로 가는 주문만 보내는 것이 좋다고 권고(should)한다(3.0.0 판 기준, 발행일 미확인)'로 바꾸고 각주를 [^ref-031][^ref-228]로 두었다(corr id 없음).",
+      "3절 첫 문장 — 같은 '충전 임계값'으로 묶던 괄호를 'VDA 5050 의 임계 충전 수준(관제의 주문 제한 기준, 백분율)이나 Open-RMF 의 recharge_threshold(운행 하한, 0~1 비율)'로 의미·단위를 구분해 고쳤고 태그는 [추정] 그대로 두었다.",
+      "3절 호텔 연구 문장 — 새 문장을 더하지 않고 기존 문장을 Han 외(2025), 고객 노드 60개·40→100초·약 225→500초로 고쳤으며 '거의 두 배'는 틀렸다는 서술 없이 뺐고, 모델 수치 실험이라는 [의견](이 위키는 본다)을 덧붙였다.",
+      "[^ref-103] 각주 — 세부영역 13절에서 지시된 저자·Sensors 서지·doi·발행일 2025-03-13·접근일 2026-10-10 형식으로 바꾸고 '(원문 미열람)'을 뺐으며, reference_updates 의 ref-103 에도 저자·발행일을 반영했다.",
+      "용어 표기 — MTVRP 는 5절 상업 시설 사례에서 '다중 운행 차량 경로 문제(Multi-Trip Vehicle Routing Problem, MTVRP)'(용어집 링크)로, MILP 는 주제 페이지 3절에서 '혼합 정수 계획(Mixed Integer Linear Programming, MILP)'으로 썼다.",
+      "5절 상업 시설 사례 — '현장 유형: 상업 시설'과 '다층 호텔 배송을 모델링한 수치 실험(실제 배치 아님)'을 사례 머리에 밝히고, 완료·인계와 수행 자원의 설비 쪽 분담·복구 주체는 '미확인'으로 두었으며, 물류창고 머리 문장을 상업 시설 사례 추가에 맞게 고쳤다. site_matrix_updates 는 상업 시설(상업 시설|G 한 칸)에 해당하는 항목만 냈고 물류창고·실외는 내지 않았다(주제 페이지 4절의 가상 창고 수치 실험도 이 지시에 따라 매트릭스에 내지 않음).",
+      "Yang 외(ref-1544) — 5절 적용 사례에 쓰지 않고 8절 성격의 원문 미열람 후보 자료로만 주제 페이지 3절과 세부영역 8절 요약에 [추정]·[의견]으로 두었으며, 각주 접근일 뒤에 '(원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. 항만 마이크로그리드 운영은 주제 페이지 5절 연계 범위에 연계 대상으로 짧게 적었다.",
+      "6절 분리 페이지 충돌 문장 — 해당 페이지 본문이 입력에 없어 53행을 직접 바꾸지 못했으므로, 그 페이지 '3. 본문' 끝에 '2026-10-10 정정' 소제목을 덧붙여 정정 대상 문장을 밝히고 '지원 작업 문서(ref-039)는 is_parking_spot, 현재 구현 그래프 API(ref-536)·rmf_fleet_adapter 2.14.0 파서(ref-1543)는 별도 속성·is_charger' 를 둘 다 제시한 뒤 구현 기준 판단을 [의견]으로 적었다. 같은 내용을 세부영역 6절과 주제 페이지 3절에도 실었고, 원 문장 교체는 additional_research_requests 에 올렸다. Graph.hpp 주석 복사 오류는 언급하지 않았다.",
+      "6·7절 분리 페이지 내용(VDA 백분율 선언과 Open-RMF 비율 설정의 단위·의미 구분, f7 우선순위 규칙 부재와 조사 범위 한정, 0.10·1.0 이 템플릿 예시값임) — 분리 페이지가 입력에 없고 하루 갱신 상한이 차서, 새 주제 페이지 3절 '충전 하한' 소제목과 세부영역 6절 요약에 넣었다.",
+      "7절 분리 페이지 내용(승강기 메시지 필드와 점유 시간·시간창·다중 목적층 필드 부재를 [사실], 배분 정책 부재로 넓히지 않는다는 [의견], rmf_fleet_adapter 2.12.0·2.13.0 수정 이력 [사실]과 판 기록 권고 [의견]) — 같은 이유로 주제 페이지 3절과 세부영역 7절 요약에 넣었다.",
+      "ref-1545 — 입력의 참고문헌 색인에 같은 URL(ref-1487·ref-1513)이 아직 등록돼 있지 않아 각주·프런트매터에 ref-1545 를 쓰고 reference_updates 에 URL 을 그대로 두어 퍼블리셔가 기존 id 로 합치게 했다.",
+      "Li 외(ref-403) — 주제 페이지 3절에 프리프린트(arXiv v1, 2026-03-24, 동료심사 미확인)를 밝히고 같은 로봇의 세션 쌍은 세션 집합이 모든 로봇의 세션을 포함하도록 정의된 데서 따라 나온다(논문이 따로 명시하지 않음)고 적었으며, 최대 54% 열화 감소는 대표 사례 하나의 예시적 기대 평균임을 같은 문장(주제 4절 예외·성과, 세부영역 8절)에 붙이고 f22 를 [의견]으로 두었다.",
+      "[의견] 주체 명시 — f3·f6·f10·f13·f16·f22·f24·f27 의 의견 문장을 모두 '이 위키는 … 본다/쓰지 않는다' 형식으로 썼다.",
+      "[^ref-031] — 세부영역·주제 페이지 각주 접근일을 2026-10-10 으로 갱신하고, batteryCharging·임계 충전 수준을 인용한 곳(세부영역 5·6절, 주제 3절)에 '3.0.0 판 기준(발행일 미확인)'을 밝혔다.",
+      "11절·열린 질문 — oq-069 를 해결(link: 새 주제 페이지)로 open_question_updates 에 내고 해결 근거를 f8·f9 와 문서(ref-039) 서술 차이로 적었으며, oq-066·oq-067·oq-068 은 세부영역 11절에 부분 근거만 적고 열림을 유지했다. 새 질문 4건은 브리프 형식대로 new 로 등록했다.",
+      "트랙 반영 제안 4건 — 근거 finding 이 없어 6·7절에 반영하지 않고 제안 상태로 두었으며 oq-060 도 건드리지 않았다(추가 조사 요청에 기록).",
+      "직접 인용 — ref-031 은 세부영역 5절의 '(should)' 한 단어만 인용하고 주제 페이지에서는 재서술했으며, ref-403·ref-103 은 원문 구절을 인용하지 않고 모두 재서술했다."
+    ]
+  },
+  "ttft_ms": 322482,
+  "type": "result",
+  "duration_ms": 519137,
+  "uuid": "a385f8bd-0eae-412a-8145-045fbf8fc955",
+  "ttft_stream_ms": 895,
+  "time_to_request_ms": 80,
+  "time_to_request_phases_ms": {
+    "other": 21,
+    "system_prompt": 10,
+    "resume_other": 0,
+    "process_user_input": 5,
+    "input_attachments": 8,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 0,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 3,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 11
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 26,
+  "time_to_request_cpu_ms": 127,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 4,
+    "cpu_ms": 15,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 895,
+  "time_to_request_from_spawn_ms": 1556072,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791612611495.0703,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 520.5
+}
