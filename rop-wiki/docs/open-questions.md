@@ -373,8 +373,12 @@ version: 1
 | oq-351 | 로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
 | oq-352 | Open-RMF rmf_task_sequence 의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
 | oq-353 | 운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
+| oq-354 | 서로 다른 제조사 관제가 낸 입찰 비용이 같은 시간·금액 단위와 같은 계산 범위를 뜻하도록 정규화하는 공개 규칙이 있는가? (관련 기존 질문: oq-053, oq-082) | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
+| oq-355 | 플릿이 입찰에서 밝힌 예상 수행 로봇과 실제 수행 로봇이 달라질 때 비용·완료 시각을 언제 다시 평가해야 하는가? | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
+| oq-356 | LTAA 의 결정적 비교군(brute force·greedy·DP)과 확률적 비교군(LTAA·Q-learning·DQN)을 같은 성공 확률 모델과 작업 집합으로 재평가한 공개 재현 자료가 있는가? (관련 기존 질문: oq-030) | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
+| oq-357 | 최소 비용 흐름 기반 배정에 이종 로봇의 능력·적재량·충전 제약을 더해도 대규모 계산 성능이 유지되는가? | [25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 2026-10-10 | 2026-10-10-02 | 열림 | — |
 
-상태별 건수: 열림 350건, 조사 중 1건, 해결 2건
+상태별 건수: 열림 354건, 조사 중 1건, 해결 2건
 
 **트랙 전용 질문(트랙 백로그)**
 
