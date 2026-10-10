@@ -25,6 +25,7 @@ export async function request<T>(
   path: string,
   method = "GET",
   body?: unknown,
+  extraHeaders?: Record<string,string>,
 ): Promise<T> {
   const abort = new AbortController();
   const timeout = setTimeout(
@@ -41,8 +42,7 @@ export async function request<T>(
     const response = await fetch(`/api${path}`, {
       method,
       signal: abort.signal,
-      headers:
-        body === undefined ? { "X-Robot-Request": "1" } : { "Content-Type": "application/json", "X-Robot-Request": "1" },
+      headers: {...(body === undefined ? { "X-Robot-Request": "1" } : { "Content-Type": "application/json", "X-Robot-Request": "1" }), ...extraHeaders},
       body: body === undefined ? undefined : JSON.stringify(body),
     });
     if (!response.ok) {

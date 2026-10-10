@@ -1048,7 +1048,7 @@ def install_plan_routes(app,host,folder, *, provider_factory=None):
             context_project['scenario_designer']={
                 'state':scenario_state,'selection':input_selection,
                 'map_changed':previous_environment is not None and digest(previous_environment)!=environment_hash,
-                'runtime':{key:snapshot[key] for key in ('run_id','sim_time','status','tasks','robots','people','items','metrics')} if snapshot else None,
+                'runtime':{key:snapshot[key] for key in ('run_id','sim_time','status','tasks','robots','people','items','metrics','incidents')} if snapshot else None,
                 'answers':body.answers,
                 'static_execution_check':{
                     'basis':'existing deterministic compiler; not physical execution success',
@@ -1188,7 +1188,7 @@ def install_plan_routes(app,host,folder, *, provider_factory=None):
 
     @app.post('/api/plans/{plan_id}/scenario')
     def scenario_edit(plan_id:str,body:dict):
-        if set(body)-{'version','project','selection','task_id','destination_id'}:
+        if set(body)-{'version','project','selection','task_id','destination_id','faults'}:
             raise HTTPException(422,'지원하지 않는 시나리오 수정입니다')
         with host.lock:
             old=service.load(plan_id)
@@ -1196,6 +1196,14 @@ def install_plan_routes(app,host,folder, *, provider_factory=None):
             project=Project.model_validate(body['project'])
             intent=copy.deepcopy(old['intent'])
             conversation=old.get('conversation',[])
+            if 'faults' in body:
+                from .domain import FaultInjection
+                if not isinstance(body['faults'],list) or len(body['faults'])>100:
+                    raise HTTPException(422,'돌발 상황은 최대 100개입니다')
+                intent['faults']=[FaultInjection.model_validate(row).model_dump() for row in body['faults']]
+                note='돌발 상황의 실제 발생 조건·대상·해제 방식을 변경했습니다. 이전 승인으로 실행하지 않습니다.'
+                intent.setdefault('scenario',{})['changes']=[note]
+                conversation=[*conversation,{'role':'user','content':'[돌발 상황 편집] '+note}]
             if body.get('task_id'):
                 task=next((t for t in intent.get('tasks',[]) if t.get('id')==body['task_id']),None)
                 destination=next((e for e in project.environment.elements if e.id==body.get('destination_id')),None)

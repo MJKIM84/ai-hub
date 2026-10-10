@@ -12,6 +12,7 @@ import numpy as np
 
 from .catalog import model_by_id
 from .domain import Project, FaultInjection
+from .incidents import IncidentScheduler
 from .physics import PhysicsWorld
 from .sensing import ObservationBus
 from .orchestration import Orchestrator
@@ -62,8 +63,9 @@ class Session:
         self.frames=[]
         self.transit=deque()
         self.last_delivery={r.id:0. for r in project.robots}
-        self.injections=sorted([f.model_copy(deep=True) for f in project.faults],key=lambda x:x.time)
-        self.applied_faults=set()
+        self.injections=[f.model_copy(deep=True) for f in project.faults]
+        self.replan_watch=None
+        self.incident_scheduler=IncidentScheduler()
         self.pushes=[]
         self.pedestrians=PedestrianController(project.people,self.world.floor_heights,project.physics.seed,floor_bounds={f.id:[0,0,f.width,f.depth] for f in project.environment.floors},environment=project.environment,
             desired_robot_clearance_m=(project.policy.pedestrian_avoidance.desired_clearance_m
@@ -113,14 +115,19 @@ class Session:
 
     def inject(self,fault: FaultInjection):
         if fault.target_id not in self.world.entity_types:raise ValueError("없는 장애 주입 대상")
+        validation=self.project.model_dump();validation['faults']=[fault.model_dump()]
+        Project.model_validate(validation)
         fault=fault.model_copy(deep=True);fault.time=max(fault.time,self.time)
         self.injections.append(fault)
         self.emit("fault_scheduled",fault.target_id,"장애 주입 예약",fault.model_dump())
 
     def _faults(self):
-        for i,f in enumerate(self.injections):
-            if i in self.applied_faults or self.time<f.time:continue
-            self.applied_faults.add(i)
+        active={**{rid:'facility' if fault else 'none' for rid,fault in self.facility_faults.items()},**self.robot_faults}
+        actions=self.incident_scheduler.tick(self.time,self.injections,self.orchestrator.tasks,self.events,active)
+        for f,incident in actions:
+            if incident['phase']=='blocked':
+                self.emit('incident_blocked',f.target_id,'기존 장애를 덮어쓰지 않습니다. 기존 장애를 먼저 복구하세요',incident)
+                continue
             if f.kind=="push":
                 if f.target_id in self.world.robot_bodies:self.pushes.append((self.world.robot_bodies[f.target_id],self.time+f.duration,f.magnitude))
             elif f.target_id in self.robot_faults:
@@ -134,6 +141,8 @@ class Session:
                 if f.kind=='recover' and f.target_id in self.orchestrator.charging.manager.elements:
                     self.orchestrator.charging.manager.recover(f.target_id)
             self.emit("fault",f.target_id,f"{f.kind} 장애 조건 적용",f.model_dump())
+            self.emit('incident_'+incident['phase'],f.target_id,
+                      '돌발 상황 자동 해제' if incident['phase']=='released' else '돌발 상황 발생',incident)
         self.world.data.xfrc_applied[:]=0
         self.pushes=[x for x in self.pushes if self.time<x[1]]
         for body,until,magnitude in self.pushes:self.world.data.xfrc_applied[body,0]=magnitude
@@ -595,6 +604,16 @@ class Session:
                         reasons.append(f"{row['name']}: {current or row.get('reason') or row['status']}")
                     self.emit('sample_stopped',None,f"{self.project.auto_stop_after_seconds:g}초 제한 도달 · {'; '.join(reasons)}",dict(result=self.status,limit_s=self.project.auto_stop_after_seconds))
                     break
+            if self.replan_watch:
+                watched=self.orchestrator.tasks.get(self.replan_watch['task_id'])
+                if watched and watched['status'] in ('completed','cancelled','failed','skipped'):
+                    self.replan_watch=None
+                elif self.time>=self.replan_watch['until']:
+                    self.status='paused'
+                    self.emit('replan_attention_required',self.replan_watch['task_id'],
+                              '승인한 관측 시간 상한 도달 · 다음 조치가 필요합니다',dict(self.replan_watch))
+                    self.replan_watch=None
+                    break
         self.compute_seconds+=time.perf_counter()-start
 
     def _feedback(self):
@@ -748,7 +767,7 @@ class Session:
             items.append(dict(id=item.id,name=item.name,position=self.world.data.xpos[body].tolist(),
                 owner=self.item_custody[item.id],custody=self.item_custody_status[item.id],
                 damaged=item.id in self.damaged,sampled_at=self.time,basis='simulation_physics_state'))
-        return dict(run_id=self.run_id,status=self.status,speed=self.speed,sim_time=self.time,wall_time=time.monotonic()-self.started_wall,project_revision=self.project.revision,robots=robots,tasks=self.orchestrator.task_rows(),cooperation=self.cooperative.snapshot(),items=items,people=people,facilities=deepcopy(list(self.facility_states.values())),events=deepcopy(self.events[-250:]),metrics=self.metrics(),geoms=self.world.geometries() if include_geometry else [],warnings=self.warnings.copy(),fidelity=self.project.physics.fidelity,render_hz=self.project.physics.render_hz)
+        return dict(run_id=self.run_id,status=self.status,speed=self.speed,sim_time=self.time,wall_time=time.monotonic()-self.started_wall,project_revision=self.project.revision,incidents=self.incident_scheduler.snapshot(self.injections),robots=robots,tasks=self.orchestrator.task_rows(),cooperation=self.cooperative.snapshot(),items=items,people=people,facilities=deepcopy(list(self.facility_states.values())),events=deepcopy(self.events[-250:]),metrics=self.metrics(),geoms=self.world.geometries() if include_geometry else [],warnings=self.warnings.copy(),fidelity=self.project.physics.fidelity,render_hz=self.project.physics.render_hz)
 
     def recording(self):
         return dict(run_id=self.run_id,project=self.project.model_dump(),frames=self.frames,events=self.events,metrics=self.metrics(),semantics="recorded-state playback; not physics recomputation")
