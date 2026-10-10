@@ -1,0 +1,79 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_ test_autonomous_low_battery_contact_charge_undock_idle_and_work_again[amr-1] _
+
+kind = 'amr', seed = 1
+
+    @pytest.mark.parametrize('kind,seed',[('amr',1),('delivery',2)])
+    def test_autonomous_low_battery_contact_charge_undock_idle_and_work_again(kind,seed):
+        result=PROBE['run_case'](kind,seed)
+>       assert result['passed'],result['transitions']
+E       AssertionError: [{'time': 0.002, 'phase': 'idle', 'robot_status': 'disconnected', 'battery': 18.99972222222222, ...}, {'time': 0.20200....}, {'time': 28.92199999999485, 'phase': 'undock', 'robot_status': 'charging', 'battery': 40.20912164698937, ...}, ...]
+E       assert False
+
+tests/test_runtime_charging.py:23: AssertionError
+_ test_autonomous_low_battery_contact_charge_undock_idle_and_work_again[delivery-2] _
+
+kind = 'delivery', seed = 2
+
+    @pytest.mark.parametrize('kind,seed',[('amr',1),('delivery',2)])
+    def test_autonomous_low_battery_contact_charge_undock_idle_and_work_again(kind,seed):
+        result=PROBE['run_case'](kind,seed)
+>       assert result['passed'],result['transitions']
+E       AssertionError: [{'time': 0.002, 'phase': 'idle', 'robot_status': 'disconnected', 'battery': 18.99972222222222, ...}, {'time': 0.20200..., {'time': 29.021999999994794, 'phase': 'undock', 'robot_status': 'charging', 'battery': 40.198337634160524, ...}, ...]
+E       assert False
+
+tests/test_runtime_charging.py:23: AssertionError
+____ test_fifo_charging_clears_both_robots_with_per_physics_step_interlocks ____
+
+    def test_fifo_charging_clears_both_robots_with_per_physics_step_interlocks():
+        result=PROBE['queue_case'](seconds=180.)
+>       assert result['passed'],result['last_20_seconds']
+E       AssertionError: [{'time': 160.00000000003587, 'robots': {'robot': {'pose': {'x': 2.4813022388299264, 'y': 1.3511555818843783, 'z': 0.2...02187508e-10}, 'battery': 0, 'reason': '장애 격리', 'delivered_command': {'v': 0.0, 'w': 0.0, 'mode': 'stop'}, ...}}}, ...]
+E       assert False
+
+tests/test_runtime_charging.py:50: AssertionError
+____ test_actual_fifo_wait_is_robot_time_and_snapshot_does_not_double_count ____
+
+    def test_actual_fifo_wait_is_robot_time_and_snapshot_does_not_double_count():
+        session=queue_session()
+        assert session.metrics()['facility_queue_wait_seconds']==0
+        first_queued=None
+        first_reserved=None
+        for _ in range(1000):
+            before=session.time
+            session.step(1)
+            if 'second' in session.facility_states['charge']['queue'] and first_queued is None:
+                first_queued=before
+            if 'first' in session.facility_states['charge'].get('reserved_by',[]) and first_reserved is None:
+                first_reserved=before
+>       assert first_queued is not None
+E       assert None is not None
+
+tests/test_runtime_facility_metrics.py:32: AssertionError
+__________ test_facility_fault_accumulates_separately_from_queue_wait __________
+
+    def test_facility_fault_accumulates_separately_from_queue_wait():
+        session=queue_session()
+        session.step(1000)
+        before=session.metrics()['charging_queue_wait_seconds']
+        session.inject(FaultInjection(target_id='charge',kind='facility'))
+        session.step(500)
+        metrics=session.metrics()
+        assert metrics['facility_fault_seconds']==pytest.approx(1.,abs=1e-8)
+        assert metrics['facilities']['charge']['fault_seconds']==pytest.approx(1.,abs=1e-8)
+>       assert metrics['charging_queue_wait_seconds']==pytest.approx(before+1.,abs=1e-8)
+E       assert 0 == 1.0 ± 1.0e-08
+E
+E         comparison failed
+E         Obtained: 0
+E         Expected: 1.0 ± 1.0e-08
+
+tests/test_runtime_facility_metrics.py:58: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_runtime_charging.py::test_autonomous_low_battery_contact_charge_undock_idle_and_work_again[amr-1]
+FAILED tests/test_runtime_charging.py::test_autonomous_low_battery_contact_charge_undock_idle_and_work_again[delivery-2]
+FAILED tests/test_runtime_charging.py::test_fifo_charging_clears_both_robots_with_per_physics_step_interlocks
+FAILED tests/test_runtime_facility_metrics.py::test_actual_fifo_wait_is_robot_time_and_snapshot_does_not_double_count
+FAILED tests/test_runtime_facility_metrics.py::test_facility_fault_accumulates_separately_from_queue_wait
+5 failed in 111.96s (0:01:51)

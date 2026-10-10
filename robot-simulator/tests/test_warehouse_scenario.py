@@ -131,3 +131,51 @@ def test_close_handoff_departure_keeps_heading_until_rotation_envelope_is_clear(
     # Facing into the peer cannot be made safe by a center-only radial escape.
     obs['pose'] = dict(pose,yaw=math.pi/2)
     assert owner._peer_detour(robot,obs,target,'floor-1',{'cart':obs,'receiver':peer},1.) is None
+
+
+def test_return_route_avoids_receiver_before_entering_its_rotation_envelope():
+    """Reproduce the post-handoff route decision, not cargo completion.
+
+    The original full run entered the receiver's clearance at 95 s, then
+    exhausted all three retries facing into the arm and timed out at 211 s.
+    """
+    from robot_platform.domain import Pose
+    from robot_platform.navigation import path_clear_of_disks, radius
+    from robot_platform.runtime import Session
+    sample = example('warehouse-cooperation')
+    task = next(t for t in sample.tasks if t.id == 'inbound-clear').model_copy(deep=True)
+    task.predecessor_ids = []
+    sample.tasks = [task]
+    cart = next(r for r in sample.robots if r.id == 'cart')
+    cart.pose = Pose(x=11.3178,y=3.,z=0.,yaw=0.)
+    session = Session(sample)
+    session.step(200)
+    events = [e for e in session.events if e['kind']=='peer_detour' and e['entity_id']=='cart']
+    assert events, 'A geometry-only route must not drive toward the occupied arm'
+    assert events[0]['time'] <= .4
+    state = session.orchestrator.robot_states['cart']
+    assert state['peer_route']
+    receiver = session.observations['receiver']['pose']
+    clearance = radius(cart)+radius(session.orchestrator.robots['receiver'])+sample.policy.safety_distance
+    assert path_clear_of_disks(session.observations['cart']['pose'],state['path'],
+        [(receiver['x'],receiver['y'],clearance)])
+    assert state['path'][-1]['x'] == task.destination.x
+    assert state['path'][-1]['y'] == task.destination.y
+
+
+def test_peer_detour_can_leave_tracking_buffer_without_reducing_required_clearance():
+    from robot_platform.domain import Environment, Floor, Pose, RobotInstance
+    from robot_platform.navigation import path_clear_of_disks, radius
+    from robot_platform.orchestration import Orchestrator
+    project = Project(id='buffer-boundary',environment=Environment(id='floor',
+        floors=[Floor(id='f',width=12,depth=13)]),robots=[
+        RobotInstance(id='a',model_id='amr',floor_id='f',pose=Pose(x=6.3,y=6.1834)),
+        RobotInstance(id='b',model_id='amr',floor_id='f',pose=Pose(x=7,y=5))])
+    owner = Orchestrator(project,lambda *args:None)
+    observations = {r.id:dict(pose=r.pose.model_dump(),sampled_at=1.) for r in project.robots}
+    target = dict(x=8.63,y=5.,z=0.,yaw=0.)
+    route = owner._peer_detour(project.robots[0],observations['a'],target,'f',observations,1.)
+    assert route and route[-1] == target
+    required = sum(radius(r) for r in project.robots)+project.policy.safety_distance
+    assert path_clear_of_disks(observations['a']['pose'],route,[(7,5,required)])
+    assert route[0]['y'] > observations['a']['pose']['y']
