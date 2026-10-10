@@ -370,8 +370,11 @@ version: 1
 | oq-348 | 국내 공공건축 BIM 납품 기준(건설산업 BIM 시행지침 등)이나 로봇 친화형 건축물 인증이 로봇 충전 공간·작업 스테이션을 BIM 객체·속성으로 납품하도록 요구하거나 그 IDS·속성 세트를 정한 사례가 있는가? (관련 기존 질문: oq-199) | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-09 | 2026-10-09-26 | 열림 | — |
 | oq-349 | 막다른 통로·승강기 입구를 포함한 비격자 경로망에서 PIBT 같은 반복형 해법과 별도 교착 탐지·해소 장치 사이의 전환 기준은 무엇인가? | [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 2026-10-10 | 2026-10-10-04 | 열림 | — |
 | oq-350 | 실행 지연이 큰 환경에서 계획 호출 주기와 미리 확정하는 경로 길이를 함께 조절하는 공개 운영 기준이 있는가? | [27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-10-10 | 2026-10-10-04 | 열림 | — |
+| oq-351 | 로봇이 이미 하역한 뒤 작업이 취소되면, 로봇 쪽 정리 단계 완료와 업무상 인수 취소(재고 반영 취소)를 어떤 완료 조건으로 나눠야 하는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
+| oq-352 | Open-RMF rmf_task_sequence 의 Bundle 이벤트와 BPMN 병렬 게이트웨이 합류의 의미 차이를 자동으로 검사하거나 변환하는 공개 도구가 있는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
+| oq-353 | 운영 정책 버전이 바뀔 때 이미 시작한 워크플로 인스턴스가 이전 정책을 유지하는지 새 정책으로 옮기는지에 대한 공개 운영 기준이 있는가? | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-10-10 | 2026-10-10-01 | 열림 | — |
 
-상태별 건수: 열림 347건, 조사 중 1건, 해결 2건
+상태별 건수: 열림 350건, 조사 중 1건, 해결 2건
 
 **트랙 전용 질문(트랙 백로그)**
 

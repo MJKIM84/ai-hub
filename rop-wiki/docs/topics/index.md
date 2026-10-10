@@ -21,6 +21,11 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 열린 질문](2026/2026-10-10-area24-s11.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 왜 중요한가](2026/2026-10-10-area24-s3.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 대표 접근법과 기술](2026/2026-10-10-area24-s6.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 관련 표준·프레임워크·오픈소스](2026/2026-10-10-area24-s7.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
+| 2026-10-10 | [24. 작업·워크플로 모델링 — 대표 연구와 자료](2026/2026-10-10-area24-s8.md) | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | published | medium | — |
 | 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 다른 연구영역과의 연결](2026/2026-10-10-area27-s10.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
 | 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 열린 질문](2026/2026-10-10-area27-s11.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |
 | 2026-10-10 | [27. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술](2026/2026-10-10-area27-s6.md) | [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | published | medium | — |

@@ -371,6 +371,7 @@ version: 3
 | crossflow | Open Robotics (open-rmf) | 오픈소스 | [12. 채팅으로 업무 지시·오케스트레이션](../categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)<br>[24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | [ref-1351](../references/ref-1351.md) | <https://github.com/open-rmf/crossflow> |
 | Open BIM Object standard (OBOS) V1.0 | Construction Information Limited (Masterspec, 뉴질랜드) | 표준 | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md) | [ref-1366](../references/ref-1366.md) | <https://masterspec.co.nz/43-IFC-Properties/7266/> |
 | W3C SKOS (Simple Knowledge Organization System) Reference | W3C | 표준 | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md)<br>[12. 채팅으로 업무 지시·오케스트레이션](../categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)<br>[15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md) | [ref-1393](../references/ref-1393.md) | <https://www.w3.org/TR/skos-reference/> |
+| BPMN 2.0.2 (OMG formal/13-12-09) | OMG(Object Management Group) | 표준 | [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) | [ref-502](../references/ref-502.md) | <https://www.omg.org/spec/BPMN/2.0.2/> |
 <!-- auto:standards-table:end -->
 
 ## 읽는 법

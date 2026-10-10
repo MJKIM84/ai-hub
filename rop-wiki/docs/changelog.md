@@ -29,6 +29,18 @@ version: 1
 | 2026-10-10-04 | 요약 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 27. 다중 로봇 경로·교통 관리 — MAPF: 갱신: 5절 제조 공장 사례 추가, 6절 SIPP·CBS 묶음 서술 정정과 PIBT 보장 범위·교착 모듈·MAPF-DL 보강, 7절 VDA 5050 3.0.0 예정 경로 공유·구역 요청과 Open-RMF rmf_fleet_adapter 2.14.0, 8절 Bonetti 외 IJRR 게재·SILLM 정정·LSMART 추가(6·7·8절에 2026-09-25 기준 주제 페이지 링크 유지), 11절 oq-057~059 id 표기와 새 질문 2건; 트랙 반영 제안(2026-09-25-58, 건축 도면 자동 인식)은 근거 없음으로 미반영; 정정 요청 없음(처리할 corr id 없음) |
 | 2026-10-10-04 | 생성 | [docs/references/ref-1398.md](references/ref-1398.md) | 참고문헌 ref-1398 등록: Changelog for package rmf_fleet_adapter |
 | 2026-10-10-04 | 생성 | [docs/references/ref-1399.md](references/ref-1399.md) | 참고문헌 ref-1399 등록: Multi-Agent Path Finding with Deadlines |
+| 2026-10-10-01 | 갱신 | [docs/categories/planning-and-optimization/task-and-workflow-modeling.md](categories/planning-and-optimization/task-and-workflow-modeling.md) | 3절 첫 문단을 원문 정의(CBV 세 단계·VDA 5050 3.0.0 drop FINISHED·IngestorResult 기본 필드)와 [의견]으로 나눠 다시 씀, 5절 시나리오 1 문장 수정·IngestorResult 범위 한정과 사례 3(현장 유형 기타, FaMe, 작업 대상 미확인) 추가, 6·7·8·11절 보강(각 보강 소절 첫 줄에 2026-09-25 분리 주제 페이지 링크 유지)과 10절 연결 덧붙임, 13절 각주 갱신(ref-031·ref-044·ref-049 접근일, ref-116 발행일·접근일·열람)과 새 각주 1건(ref-1400). ref-366·ref-404·ref-502·ref-1398·ref-1401 는 자동 분리 뒤 분리 주제 페이지의 출처 절에만 남는다 |
+| 2026-10-10-01 | 생성 | [docs/topics/2026/2026-10-10-area24-s11.md](topics/2026/2026-10-10-area24-s11.md) | 자동 분리: 24. 작업·워크플로 모델링 의 "11. 열린 질문" 절(1,498자)을 옮겼다 |
+| 2026-10-10-01 | 생성 | [docs/topics/2026/2026-10-10-area24-s6.md](topics/2026/2026-10-10-area24-s6.md) | 자동 분리: 24. 작업·워크플로 모델링 의 "6. 대표 접근법과 기술" 절(1,442자)을 옮겼다 |
+| 2026-10-10-01 | 생성 | [docs/topics/2026/2026-10-10-area24-s3.md](topics/2026/2026-10-10-area24-s3.md) | 자동 분리: 24. 작업·워크플로 모델링 의 "3. 왜 중요한가" 절(1,339자)을 옮겼다 |
+| 2026-10-10-01 | 생성 | [docs/topics/2026/2026-10-10-area24-s7.md](topics/2026/2026-10-10-area24-s7.md) | 자동 분리: 24. 작업·워크플로 모델링 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,291자)을 옮겼다 |
+| 2026-10-10-01 | 생성 | [docs/topics/2026/2026-10-10-area24-s8.md](topics/2026/2026-10-10-area24-s8.md) | 자동 분리: 24. 작업·워크플로 모델링 의 "8. 대표 연구와 자료" 절(886자)을 옮겼다 |
+| 2026-10-10-01 | 요약 | [docs/categories/planning-and-optimization/task-and-workflow-modeling.md](categories/planning-and-optimization/task-and-workflow-modeling.md) | 24. 작업·워크플로 모델링: 3절 하역 완료와 인수·재고 반영을 원문 정의별로 분리, 5절 시나리오 1 문장 수정과 사례 3(현장 유형 기타) 추가, 6·7·8·10·11절 보강(BPMN 2.0.2·취소 후 정리·rmf_task_sequence·VDA 5050 blockingType·rmf_fleet_adapter 2.14.0·Filippone 외 v2·FaMe, 2026-09-25 분리 주제 페이지 링크 유지), 13절 각주 갱신. 비고: ref-1400~ref-1401 는 실행 2026-10-09-26 브리프의 다른 출처 id 와 같아 id 충돌 여부 퍼블리셔 확인 필요 |
+| 2026-10-10-01 | 생성 | [docs/references/ref-1400.md](references/ref-1400.md) | 참고문헌 ref-1400 등록: FaMe — A BPMN-driven Framework for Multi-Robot System Develo… |
+| 2026-10-10-01 | 생성 | [docs/references/ref-1401.md](references/ref-1401.md) | 참고문헌 ref-1401 등록: VDA5050/VDA5050 (tag 2.1.0) — VDA5050_EN.md |
+| 2026-10-10-01 | 갱신 | [docs/glossary/bpmn.md](glossary/bpmn.md) | 용어집 항목 수신 작업 |
+| 2026-10-10-01 | 갱신 | [docs/glossary/bpmn.md](glossary/bpmn.md) | 용어집 항목 BPMN 보상 |
+| 2026-10-10-01 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 
 ### 2026-10-09
 
