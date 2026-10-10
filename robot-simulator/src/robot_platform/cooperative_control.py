@@ -588,7 +588,32 @@ class CooperativeControl:
                 return stopped
             if command is not None:return command
             target = trip['staging']
-        path = e['loading_route'] if approaching else e['route']
+        # The observed heading after loading can differ from the authored
+        # rendezvous heading. Do not demand a corrective rotation while still
+        # inside the donor envelope. Travel along the observed heading with
+        # zero angular command, then recalculate the unchanged handoff target.
+        departing=False
+        if not approaching and not trip and donor_id and e.get('loading_committed'):
+            donor=observations[donor_id]
+            separation=math.hypot(obs['pose']['x']-donor['pose']['x'],obs['pose']['y']-donor['pose']['y'])
+            envelope=radius(self.o.robots[rid])+radius(self.o.robots[donor_id])+self.o.policy.safety_distance
+            if separation<envelope+.2:
+                hx,hy=math.cos(obs['pose']['yaw']),math.sin(obs['pose']['yaw'])
+                away=(obs['pose']['x']-donor['pose']['x'])*hx+(obs['pose']['y']-donor['pose']['y'])*hy
+                feedback=donor.get('sensors',{}).get('manipulation',{}).get(self.o.tasks[state['task_id']]['spec'].item_id,{})
+                escape=dict(obs['pose'],x=obs['pose']['x']+.3*hx,y=obs['pose']['y']+.3*hy)
+                if (away<=0 or feedback.get('finger_contacts')!=[] or feedback.get('bilateral_contact') is not False
+                        or not self.o.planner.path_clear(obs['pose'],[escape],self.o._floor(obs['pose']['z']),self.o.robots[rid])):
+                    state['reason']='상차 팔에서 현재 방향으로 안전하게 이탈할 수 없음'
+                    return stopped
+                departing=True;e['observed_departure']=True
+            elif e.pop('observed_departure',False):
+                route=self._handoff_route(self.o.robots[rid],obs,target,self.o._floor(obs['pose']['z']))
+                if route is None:
+                    state['reason']='상차 팔 이탈 후 원래 인계 목적지 경로 없음'
+                    return stopped
+                e['route']=route
+        path = [escape] if departing else e['loading_route'] if approaching else e['route']
         while path and math.hypot(path[0]['x']-obs['pose']['x'],path[0]['y']-obs['pose']['y']) < .10:
             if path[0].get('align') and abs(angle(path[0]['yaw']-obs['pose']['yaw']))>.1:break
             path.pop(0)
@@ -597,6 +622,7 @@ class CooperativeControl:
         distance = math.hypot(dx,dy)
         aligning=bool(waypoint.get('align') and distance<.10)
         yaw = angle(waypoint['yaw']-obs['pose']['yaw']) if aligning else angle(math.atan2(dy,dx)-obs['pose']['yaw']) if distance > .07 else angle(target['yaw']-obs['pose']['yaw'])
+        if departing:yaw=0.
         if trip and not path and distance <= .07 and abs(yaw) <= .1:
             trip['phase'] = 'ride'
             state['reason'] = '적재 상태 승강기 탑승 허가 대기'

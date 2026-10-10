@@ -1,3 +1,5 @@
+import { IncidentEditor } from './IncidentEditor';
+import { ScenarioGraph } from './ScenarioGraph';
 import { ScenarioSampleForm } from "./ScenarioSampleForm";
 import { ScenarioDraftPanel, ConfirmationControl, type ScenarioDraft, type ScenarioTask } from "./ScenarioDraftPanel";
 import { workspaceStorage } from "./visitorSession";
@@ -91,7 +93,7 @@ type Plan = {
   origin: string;
   input_receipt?:{map_version:number;map_id:string;project_hash:string;ontology_hash:string;model_execution?:{provider?:string;model?:string}};
   selection: Selection;
-  intent: { goal: string; scenario?: ScenarioDraft; tasks?:ScenarioTask[] };
+  intent: { goal: string; scenario?: ScenarioDraft; tasks?:ScenarioTask[]; faults?:Project["faults"] };
   conversation: { role: string; content: string; references?: string[];
     runtime_basis?:{run_id:string;sim_time:number;status:string};
     related_documents?: { id: string; title: string; version: string }[] }[];
@@ -246,6 +248,7 @@ export default function PlanningWorkbench({
   onUseScenarioProject: (p:Project)=>Promise<void>;
   focusPlan?: {id:string; version:number; sequence:number} | null;
 }) {
+  const [graphTask,setGraphTask]=useState('');
   const [settings, setSettings] = useState<AssistantSettings | null>(null),
     [settingsOpen, setSettingsOpen] = useState(false),
     [ontologyOpen, setOntologyOpen] = useState(false),
@@ -895,6 +898,7 @@ export default function PlanningWorkbench({
                   ["robots", "로봇 구성"],
                   ["people", "보행자와 회피"],
                   ["steps", "작업 단계"],
+                  ["incidents", "돌발 상황"],
                   ["evidence", "기능 근거"],
                   ["results", "실행 결과"],
                 ].map(([id, label]) => (
@@ -1381,6 +1385,8 @@ export default function PlanningWorkbench({
                   )}
                 </div>
               )}
+              {tab === "incidents" && <fieldset disabled={!!busy || historicalPlan || planMapChanged} style={{border:0,padding:0,minWidth:0}}><IncidentEditor project={{...preview,faults:plan.intent.faults??preview.faults}} run={livePlan?state:null} onChange={faults=>void act('돌발 상황 변경·재검증',async()=>accept(await request<Plan>(`/plans/${plan.id}/scenario`,'POST',{version:plan.version,project,selection,faults})))}/></fieldset>}
+              {tab === "steps" && <ScenarioGraph project={preview} run={livePlan?state:null} selected={graphTask} onSelect={setGraphTask} onLocate={focus}/>}
               {tab === "steps" && (
                 <div className="planner-options">
                   {plan.compiled.execution_policy && <p>{plan.compiled.execution_policy.basis}</p>}

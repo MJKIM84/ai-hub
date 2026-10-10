@@ -239,7 +239,16 @@ export interface PhysicsSettings {
   fidelity: "detailed" | "operational";
   seed: number;
 }
+export interface FaultTrigger {
+  kind: 'task_status' | 'event'; task_id?: string | null;
+  status?: 'completed' | 'failed' | 'cancelled';
+  event_kind?: 'cooperation_loaded' | 'task_completed' | 'task_failed' | 'pedestrian_avoidance';
+  entity_id?: string | null;
+}
 export interface FaultInjection {
+  trigger?: FaultTrigger | null;
+  max_occurrences?: number;
+  auto_recover?: boolean;
   time: number;
   target_id: string;
   kind:
@@ -422,6 +431,7 @@ export interface RobotState {
   operator_hold?: boolean;
 }
 export interface TaskState {
+  evidence?: Record<string,unknown>;
   confirmation_requested_at?:number;
   confirmation_receipt?:{note:string;sim_time:number};
   id: string;
@@ -492,6 +502,7 @@ export interface MeshData {
   faces: number[];
 }
 export interface RunState {
+  incidents?: {index:number;phase:string;count:number;triggered_at:number|null;release_at?:number;configuration:FaultInjection}[];
   items?:{id:string;name:string;position:number[];owner:string|null;custody:string;damaged:boolean;sampled_at:number}[];
   people?: Record<string, PedestrianRuntime>;
   run_id: string;

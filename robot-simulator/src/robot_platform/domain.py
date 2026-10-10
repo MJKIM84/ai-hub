@@ -343,12 +343,31 @@ class PhysicsSettings(Record):
         return self
 
 
+class FaultTrigger(Record):
+    kind: Literal['task_status', 'event']
+    task_id: str | None = None
+    status: Literal['completed', 'failed', 'cancelled'] = 'completed'
+    event_kind: Literal['cooperation_loaded', 'task_completed', 'task_failed', 'pedestrian_avoidance'] = 'cooperation_loaded'
+    entity_id: str | None = None
+
+
 class FaultInjection(Record):
     time: float = Field(default=0,ge=0)
     target_id: str
     kind: Literal["motor", "sensor", "communication", "battery", "facility", "recover", "push"]
     magnitude: float = 100
     duration: float = Field(default=1, gt=0)
+    trigger: FaultTrigger | None = None
+    max_occurrences: int = Field(default=1, ge=1, le=10)
+    auto_recover: bool = False
+
+    @model_validator(mode='after')
+    def recovery_contract(self):
+        if self.auto_recover and self.kind not in ('motor', 'sensor', 'communication', 'facility'):
+            raise ValueError('자동 해제는 모터·센서·통신·시설 장애만 지원합니다')
+        if (self.trigger is None or self.trigger.kind == 'task_status') and self.max_occurrences != 1:
+            raise ValueError('시각·작업 상태 조건은 한 번만 발생합니다. 반복은 사건 조건을 사용하세요')
+        return self
 
 
 class Project(Record):
@@ -375,6 +394,21 @@ class Project(Record):
             raise ValueError("개체 식별자는 비어 있거나 경로 구분자를 포함할 수 없습니다")
         if len(entity_ids) != len(set(entity_ids)):
             raise ValueError("개체 식별자가 중복되었습니다")
+        for fault in self.faults:
+            if fault.target_id not in entity_ids:
+                raise ValueError('돌발 상황 대상이 존재하지 않습니다')
+            robot_target=any(r.id==fault.target_id for r in self.robots)
+            facility_target=any(e.id==fault.target_id and e.kind in ('door','elevator','charger','dock') for e in self.environment.elements)
+            if not ((robot_target and fault.kind!='facility') or (facility_target and fault.kind in ('facility','recover'))):
+                raise ValueError('대상에 적용할 수 없는 돌발 상황입니다. 로봇 장애와 시설 장애를 구분하세요')
+            if fault.trigger:
+                trigger = fault.trigger
+                if trigger.kind == 'task_status' and not trigger.task_id:
+                    raise ValueError('작업 상태 조건에는 작업이 필요합니다')
+                if trigger.task_id and trigger.task_id not in {t.id for t in self.tasks}:
+                    raise ValueError('돌발 상황의 조건 작업이 존재하지 않습니다')
+                if trigger.entity_id and trigger.entity_id not in entity_ids:
+                    raise ValueError('돌발 상황의 조건 객체가 존재하지 않습니다')
         for x in self.robots + self.people + self.items + self.tasks:
             if x.floor_id not in floors:
                 raise ValueError(f"존재하지 않는 층: {x.floor_id}")

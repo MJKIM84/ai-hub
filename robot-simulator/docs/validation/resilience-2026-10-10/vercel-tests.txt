@@ -1,0 +1,99 @@
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: password verifier fails closed, supports no default, and rejects incorrect/malformed values
+ok 1 - password verifier fails closed, supports no default, and rejects incorrect/malformed values
+  ---
+  duration_ms: 40.555625
+  ...
+# Subtest: signed access expires, binds to the anonymous identity, and is invalidated by password rotation
+ok 2 - signed access expires, binds to the anonymous identity, and is invalidated by password rotation
+  ---
+  duration_ms: 0.547875
+  ...
+# Subtest: runtime tickets expire quickly, are unique, and are scoped to the runtime and browser
+ok 3 - runtime tickets expire quickly, are unique, and are scoped to the runtime and browser
+  ---
+  duration_ms: 0.234333
+  ...
+# Subtest: HTTP access verifies before setting a session; locked session API never allocates or exposes runtime URLs
+ok 4 - HTTP access verifies before setting a session; locked session API never allocates or exposes runtime URLs
+  ---
+  duration_ms: 39.33575
+  ...
+# Subtest: only a full random browser credential is accepted; owner tags do not reveal it
+ok 5 - only a full random browser credential is accepted; owner tags do not reveal it
+  ---
+  duration_ms: 0.564334
+  ...
+# Subtest: creation policy rejects unlimited or malformed environment values
+ok 6 - creation policy rejects unlimited or malformed environment values
+  ---
+  duration_ms: 0.350541
+  ...
+# Subtest: mutations require exact HTTPS same origin
+ok 7 - mutations require exact HTTPS same origin
+  ---
+  duration_ms: 0.193458
+  ...
+# Subtest: unique slots roll over on UTC day and stay bounded
+ok 8 - unique slots roll over on UTC day and stay bounded
+  ---
+  duration_ms: 0.859875
+  ...
+# Subtest: an existing session is reused without creating or rebooting it
+ok 9 - an existing session is reused without creating or rebooting it
+  ---
+  duration_ms: 0.31675
+  ...
+# Subtest: active capacity does not allocate another machine
+ok 10 - active capacity does not allocate another machine
+  ---
+  duration_ms: 0.065208
+  ...
+# Subtest: stopped slots still count toward the daily ceiling and are never resumed
+ok 11 - stopped slots still count toward the daily ceiling and are never resumed
+  ---
+  duration_ms: 0.067667
+  ...
+# Subtest: concurrent creation conflicts cannot allocate beyond named daily slots
+ok 12 - concurrent creation conflicts cannot allocate beyond named daily slots
+  ---
+  duration_ms: 0.153042
+  ...
+# Subtest: failed readiness stops the newly created machine
+ok 13 - failed readiness stops the newly created machine
+  ---
+  duration_ms: 0.253
+  ...
+# Subtest: no public snapshot means no allocation
+ok 14 - no public snapshot means no allocation
+  ---
+  duration_ms: 0.199167
+  ...
+# Subtest: first status request only sets a secure cookie; it never allocates
+ok 15 - first status request only sets a secure cookie; it never allocates
+  ---
+  duration_ms: 0.224417
+  ...
+# Subtest: cross origin start is rejected before any cloud call
+ok 16 - cross origin start is rejected before any cloud call
+  ---
+  duration_ms: 0.035083
+  ...
+# Subtest: legacy runtimes require explicit user termination; never silently discard or claim protected access
+ok 17 - legacy runtimes require explicit user termination; never silently discard or claim protected access
+  ---
+  duration_ms: 0.042834
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 280.031333

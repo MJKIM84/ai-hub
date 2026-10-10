@@ -31,6 +31,21 @@ def small_project():
                 pose=Pose(x=4,y=4),size=Size(x=3,y=3,z=.01))]})
 
 
+def test_incident_target_excluded_from_fleet_prevents_approval(tmp_path):
+    project=small_project()
+    project.robots.append(RobotInstance(id='other',model_id='amr',pose=Pose(x=10,y=10)))
+    host=SimpleNamespace(lock=threading.RLock(),session=Session(project))
+    service=PlanService(host,tmp_path/'plans')
+    intent=dict(kind='plan',goal='돌발 상황을 포함한 순찰',
+        tasks=[dict(id='patrol',kind='patrol',robot_id='amr',destination_id='destination')],
+        faults=[dict(time=0,target_id='other',kind='communication',duration=2,
+            auto_recover=True,trigger=dict(kind='task_status',task_id='patrol',status='completed'))])
+    plan=service.draft(project,intent,{'robot_ids':['amr']})
+    assert not plan['compiled']['can_approve']
+    assert any(row['code']=='incident_target_excluded' for row in plan['compiled']['blockers'])
+    assert plan['intent']['faults']==intent['faults']
+
+
 def test_plan_revisions_remain_in_history_after_revision(tmp_path):
     project=small_project()
     host=SimpleNamespace(lock=threading.RLock(),session=Session(project))

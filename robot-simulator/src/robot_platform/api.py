@@ -87,6 +87,19 @@ class RecoveryCancelRequest(BaseModel):
     recovery_id: str = Field(min_length=1,pattern=r'\S')
 
 
+class RuntimeReviewRequest(BaseModel):
+    model_config={'extra':'forbid'}
+    task_id: str
+    wait_seconds: float = Field(default=15,gt=0,le=300)
+
+
+class RuntimeReviewApproval(BaseModel):
+    model_config={'extra':'forbid'}
+    proposal_id: str
+    option_id: str
+    request_id: str = Field(min_length=8,max_length=100)
+
+
 class EngineHost:
     def __init__(self,data_dir, *, initial_template="hotel"):
         self.lock=threading.RLock()
@@ -117,6 +130,8 @@ class EngineHost:
 def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_template="hotel"):
     root=Path(__file__).resolve().parents[2]
     host=EngineHost(data_dir or root/"data", initial_template=initial_template)
+    from .runtime_replanning import RuntimeReplanning
+    runtime_reviews=RuntimeReplanning()
 
     @asynccontextmanager
     async def lifespan(app):
@@ -147,6 +162,20 @@ def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_templa
 
     @app.get("/api/health")
     def health():return {"status":"ok","physics":"MuJoCo","hardware_validation":False}
+
+    @app.post('/api/runtime-replans')
+    def prepare_runtime_review(body:RuntimeReviewRequest):
+        with host.lock:
+            proposal=runtime_reviews.prepare(host.session,body.task_id,body.wait_seconds)
+            if host.plan_service:host.plan_service.checkpoint(force=True)
+            return proposal
+
+    @app.post('/api/runtime-replans/approve')
+    def approve_runtime_review(body:RuntimeReviewApproval):
+        with host.lock:
+            result=runtime_reviews.approve(host.session,body.proposal_id,body.option_id,body.request_id)
+            if host.plan_service:host.plan_service.checkpoint(force=True)
+            return result
 
     @app.head("/api/exports/json")
     def json_export_available():
@@ -349,6 +378,8 @@ def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_templa
     from .plan_service import install_plan_routes
     install_plan_routes(app,host,(data_dir or root/"data")/"plans", provider_factory=provider_factory)
 
+    from .vault_routes import install_vault_routes
+    install_vault_routes(app,host,data_dir or root/"data")
     dist=root/"web/dist"
     if dist.exists():
         if (dist/"assets").exists():app.mount("/assets",StaticFiles(directory=dist/"assets"),name="assets")

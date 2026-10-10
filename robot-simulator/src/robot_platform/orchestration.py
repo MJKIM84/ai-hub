@@ -203,6 +203,22 @@ class Orchestrator:
         if robot.model_id=="agv":
             plan=self._guided_plan(robot,obs,target,floor_id)
             return plan['points'] if plan else None
+        # A geometry-only return route can lead a freshly released carrier
+        # back into a stationary arm's rotation envelope before the reactive
+        # peer gate stops it. Include observed fixed peers while still outside
+        # their envelope; close handoff departures retain _peer_detour's
+        # straight, monotonically separating escape contract.
+        disks=[]
+        for rid,peer in self.last_observations.items():
+            if (rid==robot.id or rid not in self.robots
+                    or model_by_id(self.robots[rid].model_id)['locomotion']!='fixed'
+                    or obs.get('sampled_at') is None
+                    or abs(obs['sampled_at']-peer['sampled_at'])>self.policy.stale_after
+                    or self._floor(peer['pose']['z'])!=floor_id):continue
+            disks.append((peer['pose']['x'],peer['pose']['y'],
+                          radius(robot)+radius(self.robots[rid])+self.policy.safety_distance))
+        if disks and all(math.hypot(obs['pose']['x']-x,obs['pose']['y']-y)>r for x,y,r in disks):
+            return self.planner.path(obs['pose'],target,floor_id,robot,peer_disks=disks)
         return self.planner.path(obs["pose"],target,floor_id,robot)
 
     def _task_route(self,robot,obs,task):

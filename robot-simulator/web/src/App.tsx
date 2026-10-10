@@ -1,3 +1,6 @@
+import { WorkspaceVaultPanel } from './WorkspaceVaultPanel';
+import { ScenarioGraph } from './ScenarioGraph';
+import { IncidentEditor } from './IncidentEditor';
 import { workspaceStorage } from "./visitorSession";
 import { CargoProgress } from "./CargoProgress";
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
@@ -4529,6 +4532,7 @@ function App() {
               />
             </div>
           )}
+          {page === "history" && <WorkspaceVaultPanel beforeRestore={preserveCurrentDraft} onRestored={async(p,runId)=>{adopt(p,false);setRuntimeProject({runId,project:p});await refresh();await refreshSaved();}}/>}
           {page === "history" && <HistoryLibrary
             catalog={catalog} saved={saved} currentProjectId={project?.id}
             currentProjectRevision={project?.revision} currentProjectName={project?.name}
@@ -4925,6 +4929,7 @@ function App() {
                 <div className="segmented">
                   {[
                     ["tasks", "작업 흐름"],
+                    ["incidents", "돌발 상황"],
                     ["people", "사람"],
                     ["items", "물품"],
                   ].map(([id, n]) => (
@@ -4944,7 +4949,8 @@ function App() {
                   </button>
                 )}
               </div>
-              {scenarioTab === "tasks" ? (
+              {scenarioTab === "tasks" && project && <ScenarioGraph project={project} run={!dirty && inspectorProject ? state : null} selected={selectedTask} onSelect={setSelectedTask} onLocate={id=>{setSelected(id);navigate("monitor");}}/>}
+              {scenarioTab === "incidents" && project ? <IncidentEditor project={project} run={!dirty && inspectorProject ? state : null} onChange={faults=>edit(p=>{p.faults=faults;})}/> : scenarioTab === "tasks" ? (
                 <div className="split">
                   <div className="table-wrap">
                     <p className="muted">

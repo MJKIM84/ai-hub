@@ -10,6 +10,7 @@ from robot_platform.templates import example
 
 def main():
     project = example("warehouse-cooperation")
+    input_manifest = manifest(project)
     session = Session(project)
     session.status = "running"
     start = time.monotonic()
@@ -23,7 +24,9 @@ def main():
             tasks=[dict(id=t["id"], status=t["status"]) for t in state["tasks"]]))
         if len(trace) % 20 == 0:
             print(round(session.time, 2), [(t["id"], t["status"]) for t in state["tasks"]], flush=True)
-    result = dict(manifest=manifest(project), wall_seconds=time.monotonic()-start,
+    result = dict(manifest=input_manifest,
+        source_changed_during_run=manifest(project)['source_sha256'] != input_manifest['source_sha256'],
+        wall_seconds=time.monotonic()-start,
         final=session.snapshot(False), events=session.events, trace=trace)
     folder = Path("docs/validation/warehouse-zone-relay")
     folder.mkdir(parents=True, exist_ok=True)

@@ -439,7 +439,7 @@ def _compile_plan(project: Project, intent: dict, selection: dict | None = None,
     if not isinstance(intent, dict) or intent.get('kind') not in ('question', 'plan'):
         blockers.append(issue('invalid_intent', '요청 종류 question/plan을 지정하세요'))
         return result
-    if set(intent)-{'kind', 'goal', 'tasks', 'assumptions', 'constraints', 'clarifications'}:
+    if set(intent)-{'kind', 'goal', 'tasks', 'assumptions', 'constraints', 'clarifications', 'faults'}:
         blockers.append(issue('unknown_intent_fields', '지원하지 않는 요청 필드가 있습니다'))
     if not isinstance(intent.get('goal', ''), str):
         blockers.append(issue('invalid_goal', '이해한 목표는 문자열이어야 합니다'))
@@ -492,6 +492,8 @@ def _compile_plan(project: Project, intent: dict, selection: dict | None = None,
             expanded.append(copy)
     tasks = expanded
     raw = project.model_dump(); raw['tasks'] = [t.model_dump() for t in tasks]
+    if 'faults' in intent:
+        raw['faults'] = intent['faults']
     try:
         project = Project.model_validate(raw)
     except (ValueError, TypeError) as error:
@@ -577,6 +579,11 @@ def _compile_plan(project: Project, intent: dict, selection: dict | None = None,
                             '위 로봇별 제외 이유를 확인하고 장비·위치·목적지·도면 연결을 수정한 뒤 다시 계산하세요')))
     # Revalidate from the execution copy: excluded robots cannot be needed by
     # charging forecasts, collaboration, faults, assignments or task sources.
+    for fault in project.faults:
+        if fault.target_id in by_id and fault.target_id not in selected:
+            blockers.append(issue('incident_target_excluded',
+                '돌발 상황의 대상 로봇이 구성에서 제외되었습니다: '+fault.target_id,
+                suggestion='해당 로봇을 선택하거나 돌발 상황을 명시적으로 수정한 뒤 다시 검토하세요'))
     raw = project.model_dump(); raw['robots'] = [by_id[r].model_dump() for r in selected]
     raw['faults'] = [f.model_dump() for f in project.faults if f.target_id not in by_id or f.target_id in selected]
     executable_tasks = [t for t in tasks if not t.cooperation or all(r in selected for r in (t.cooperation.carrier_id,t.cooperation.receiver_id,*([t.cooperation.donor_id] if t.cooperation.donor_id else [])))]

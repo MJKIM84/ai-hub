@@ -290,7 +290,8 @@ const projectShape = record({
       kind: string,
       magnitude: number,
       duration: number,
-    }),
+    }, {trigger: nullable(record({kind:string}, {task_id:nullable(string), status:string, event_kind:string, entity_id:nullable(string)})),
+        max_occurrences:number, auto_recover:boolean}),
   ),
 }, { auto_stop_after_seconds: nullable(number) });
 
@@ -818,6 +819,20 @@ function validateProjectContent(value: unknown): string[] {
     const label = `고장 주입 ${i + 1}`;
     if (!allIds.has(fault.target_id))
       errors.push(`${label}: 대상 객체가 존재하지 않습니다.`);
+    if (fault.trigger) {
+      const trigger=fault.trigger;
+      choice(trigger.kind,['task_status','event'],`${label} 발생 조건`);
+      if ((trigger.kind==='task_status' && !trigger.task_id) || (trigger.task_id && !p.tasks.some(t=>t.id===trigger.task_id)))
+        errors.push(`${label}: 조건 작업이 존재하지 않습니다.`);
+      if(trigger.entity_id && !allIds.has(trigger.entity_id)) errors.push(`${label}: 조건 객체가 존재하지 않습니다.`);
+      if(trigger.status) choice(trigger.status,['completed','failed','cancelled'],`${label} 결과`);
+      if(trigger.event_kind) choice(trigger.event_kind,['cooperation_loaded','task_completed','task_failed','pedestrian_avoidance'],`${label} 사건`);
+    }
+    const occurrences=fault.max_occurrences??1;
+    range(occurrences,`${label} 발생 횟수`,1,10);
+    if(!Number.isInteger(occurrences)) errors.push(`${label}: 발생 횟수는 정수여야 합니다.`);
+    if(fault.trigger?.kind!=='event' && occurrences!==1) errors.push(`${label}: 반복은 사건 조건에서만 지원합니다.`);
+    if(fault.auto_recover && !['motor','sensor','communication','facility'].includes(fault.kind)) errors.push(`${label}: 이 장애는 자동 해제할 수 없습니다.`);
     range(fault.time, `${label} 발생 시각`, 0);
     range(fault.duration, `${label} 지속 시간`, 0, Infinity, true);
     finite(fault.magnitude, `${label} 크기`);
