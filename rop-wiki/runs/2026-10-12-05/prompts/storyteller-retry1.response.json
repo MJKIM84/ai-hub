@@ -1,0 +1,756 @@
+{
+  "duration_api_ms": 257100,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.9178083999999997,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 267964,
+    "cache_read_input_tokens": 72042,
+    "output_tokens": 37984,
+    "output_tokens_details": {
+      "thinking_tokens": 3331
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 267964,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 37984,
+        "cache_read_input_tokens": 72042,
+        "cache_creation_input_tokens": 267964,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 267964
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 37984,
+      "cacheReadInputTokens": 72042,
+      "cacheCreationInputTokens": 267964,
+      "webSearchRequests": 0,
+      "costUSD": 2.9178083999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3331,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-12-05\",\"outline\":[{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":3600,\"summary\":\"가정 연구 평가, BMW–Figure 제조 공장 발표(10/11개월 출처 위치·목표치 구분·Figure 자체 발표는 당사자 자료), IMR-LLM 로봇 팔 3대 연구 평가, 물류창고 실증 계획과 산업부 M.AX 과제를 현장 유형별로 정리한다. [추정] 벤더 주장[^ref-1051][^ref-1619]\",\"planned_findings\":[\"f5\",\"f34\",\"f35\",\"f36\",\"f37\",\"f38\",\"f41\",\"f46\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":1900,\"summary\":\"SMART-LLM·IMR-LLM·S-ATLAS 의 평가 규모와 실패 양상, LLM+P·S-ATLAS 보장이 기대는 입력 전제(사람이 준 도메인, i.i.d., 무오류 실행)를 더한다. [사실][^ref-090][^ref-170][^ref-1607]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f39\",\"f40\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":2600,\"summary\":\"OpenVLA·GR00T N1.7 의 코드·가중치 사용 조건 문서 충돌을 병기하고, OpenVLA·openpi 의 입출력 계약과 ROSA 의 물리 실행 조건을 더한다. [사실][^ref-1608][^ref-1609][^ref-1611][^ref-1612]\",\"planned_findings\":[\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f28\",\"f29\",\"f42\",\"f43\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":1500,\"summary\":\"π0.7 기술 보고서(벤더 주장), LIBERO-Plus 의 7개 교란 축과 평가 설정이 다른 두 표, 산업부 M.AX 휴머노이드 과제를 더한다. [추정] 벤더 주장[^ref-1613]\",\"planned_findings\":[\"f23\",\"f24\",\"f25\",\"f26\",\"f27\",\"f38\",\"f44\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"budget_chars\":2000,\"summary\":\"도구 호출(MCP)로 로봇을 움직일 때 ROP 는 권한·승인된 계획 대조·완료 판정·세션 종료와 정지 절차 연결을 맡고, 물리 비상정지와 런타임 정지는 이 위키의 경계 판단으로 연계 대상이다. [의견][^ref-1617][^ref-1618]\",\"planned_findings\":[\"f28\",\"f29\",\"f30\",\"f31\",\"f32\",\"f33\",\"f45\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1500,\"summary\":\"oq-216·oq-217·oq-219 에 부분 근거를 연결하고(열림 유지) 새 질문 4건(가정 감시, 행동 청크와 정지 계약, OpenVLA·GR00T N1.7 라이선스 출처 충돌)을 올린다.\",\"planned_findings\":[\"f9\",\"f14\",\"f16\",\"f22\",\"f24\",\"f32\",\"f34\",\"f38\"]},{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"section\":\"13. 참고 자료 (각주)\",\"budget_chars\":0,\"summary\":\"새 출처 15건 각주 정의 추가, 다시 연 기존 출처 4건 접근일 갱신.\"}],\"pages\":[{\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신\",\"patches\":[{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"replace\",\"content\":\"이번 조사에서 확인한 가정 사례는 처음 보는 가정집에서의 연구 평가다. [사실][^ref-1047] 제조 공장 사례는 도입 기업의 발표이고, 물류창고 사례는 국내 실증 계획이다. [추정] 벤더 주장[^ref-1051][^ref-1052] 제조 공장에는 언어 모델 다중 로봇 계획기를 로봇 팔 3대 장면에서 실물로 시험한 연구 평가 사례도 있다. [사실][^ref-170] 병원·상업 시설·실외 현장의 로봇 기반 모델·언어 모델 계획 적용 사례는 이번 조사에서 찾지 못했다.\\n\\n**현장 유형:** 가정\\n\\n**사례:** 처음 보는 가정집에서 부엌·침실 정리(연구 평가)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인(초록에 작업을 일으키는 요청 방식이 없다) |\\n| 작업 대상 | 처음 보는 가정집의 부엌·침실 공간과 그 안의 물건 [사실][^ref-1047] |\\n| 수행 자원 | 미확인(초록에 로봇 기종과 사람의 역할이 없다) |\\n| 제약 | 학습 때 보지 못한 가정집에서 장기·정교한 조작 작업을 해야 한다 [사실][^ref-1047] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\nPhysical Intelligence의 π0.5는 여러 로봇의 데이터, 고수준 의미 예측, 웹 데이터 같은 이질적 과제를 함께 학습(co-training)해 “cleaning a kitchen or bedroom, in entirely new homes” 같은 장기 작업을 수행했다고 보고했다(2025-04). [사실][^ref-1047] 이것은 연구 평가(처음 보는 가정집에서의 실험)이며 상용 배치가 아니다. [사실][^ref-1047] 이 사례에서 로봇 기반 모델이 관여하는 부분은 작업 대상을 미리 정한 스킬 목록 없이 다루는 방식이다. [추정][^ref-1045][^ref-1047]\\n\\n**현장 유형:** 제조 공장\\n\\n**사례:** 자동차 공장에서 휴머노이드의 부품 투입과 순서 공급(BMW 그룹 스파턴버그 공장)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인(자료에 작업을 일으키는 요청 방식이 없다) |\\n| 작업 대상 | 용접 공정용 판금 부품(Figure 02), 대용량 용기에 섞여 들어온 부품(Figure 03, 착수 발표) [추정] 벤더 주장[^ref-1051] |\\n| 수행 자원 | Figure AI의 휴머노이드 Figure 02·Figure 03, 순서 대차를 조립 공정으로 옮기는 자동화 시스템 [추정] 벤더 주장[^ref-1051] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 계획 내용(착수 발표): Figure 03이 부품을 순서 대차(sequencing trolley)에 정리하면 대차가 자동화 시스템으로 조립 공정에 운반된다. 수행 결과가 아니다 [추정] 벤더 주장[^ref-1051] |\\n| 예외·성과 | Figure 02가 BMW X3 3만 대 이상의 생산을 도왔다고 밝히나, 기간은 BMW 보도자료 본문의 10개월과 보도자료에 실린 Figure AI 최고경영자 인용문의 11개월로 엇갈린다. 교대당 99% 초과 성공률·교대당 개입 0회는 Figure AI가 밝힌 목표치(실측 아님)다. 복구 주체는 미확인 [추정] 벤더 주장[^ref-1051][^ref-1619] |\\n\\nBMW 그룹은 2025년 스파턴버그 공장에 Figure AI의 휴머노이드 Figure 02를 배치해 용접 공정용 판금 부품 투입을 맡겼고, 이 로봇이 BMW X3 3만 대 이상의 생산을 도왔다고 밝힌다. [추정] 벤더 주장[^ref-1051] 같은 보도자료(2026-06-25) 안에는 10개월 동안 3만 대 이상 생산을 지원했다는 문장과 11개월 배치라는 문장이 함께 있어 기간을 하나로 정하지 않는다(11절 열린 질문). [추정] 벤더 주장[^ref-1051] 2026-10-12 재열람 기준으로 10개월은 보도자료 본문에, 11개월은 보도자료에 실린 Figure AI 최고경영자(Chief Executive Officer, CEO) 인용문에 있다. [추정] 벤더 주장[^ref-1051]\\n\\nFigure AI의 2025-11-19 발표는 이 배치를 '11개월 배치'라 부르면서, 개발 착수 뒤 6개월 안에 공장에 납품·시험을 시작하고 10개월 안에 생산 라인 전면 배치를 시작했으며, 6개월 동안 매일 가동해 1,250시간 이상 가동했다고 적는다. [추정] 벤더 주장[^ref-1619] 이 세 기간은 기점·종점이 서로 달라 BMW 보도자료의 10개월·11개월 차이를 해소하지 못한다. [추정] 벤더 주장[^ref-1619][^ref-1051] 따라서 이 페이지는 기간을 하나로 정하지 않는다. 같은 Figure AI 발표에서 교대당 99% 초과 성공률과 교대당 개입 0회는 목표로 제시됐을 뿐 달성한 실측치로 보고되지 않았다. [추정] 벤더 주장[^ref-1619]\\n\\nBMW 그룹은 또 후속 Figure 03이 스파턴버그에서 순서 공급(just in sequence) 물류 작업을 시작한다고 밝혔고(착수 발표), 이 로봇이 음성 대화 기능과 무선 충전을 갖췄다고 설명한다. [추정] 벤더 주장[^ref-1051] Figure AI 자체 발표(2025-11-19 F.02 회고, 2026-06-30 F.03 첫 시연)가 같은 배치·착수를 설명하나, 같은 프로젝트 당사자 자료라 독립 확인은 아니다. [추정] 벤더 주장[^ref-1619][^ref-1620][^ref-1051] Figure AI는 2026-06-30 발표에서 Figure 03이 스파턴버그 공장에서 물류 작업 흐름을 수행한 것을 첫 시연으로 설명하고, 자사 VLA인 Helix 02가 손·팔·몸통·발을 함께 제어해 무거운 대차를 끌었다고 적는다. [추정] 벤더 주장[^ref-1620] 이것은 첫 시연이며 지속 배치의 성과(가동률·인계 기록)가 아니다. [추정] 벤더 주장[^ref-1620]\\n\\n**현장 유형:** 제조 공장\\n\\n**사례:** 컨베이어에 공작물을 옮기는 로봇 팔 3대의 언어 모델 작업 계획(IMR-LLM 연구 평가)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 컨베이어에 옮기는 공작물 [사실][^ref-170] |\\n| 수행 자원 | 로봇 팔 3대(단일 장면), 장면 설명을 약 15분 걸려 손으로 작성해 입력한 전문가 [사실][^ref-170] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 반복 횟수는 보고되지 않았다. 복구 주체와 처리량·시간 영향은 미확인 [사실][^ref-170] |\\n\\nIMR-LLM(2026-03)의 실물 시험은 컨베이어에 공작물을 옮기는 로봇 팔 3대의 단일 장면이었고, 전문가가 약 15분 걸려 장면 설명을 손으로 작성해 입력했으며, 반복 횟수는 보고되지 않았다. [사실][^ref-170] 이것은 연구 평가(로봇 팔 3대 단일 장면, 전문가 약 15분 수동 장면 작성, 반복 횟수 미보고)이며 장기 운영 실적이 아니다. [사실][^ref-170] 이 위키의 의견으로는, 연구 논문의 실물 시험은 사례 표에 장면 작성자·시뮬레이션 확인·복구 책임을 함께 적고 장기 운영 실적으로 표시하지 않아야 한다. [의견][^ref-170]\\n\\n**현장 유형:** 물류창고\\n\\n**사례:** 물류센터에서 시각–언어–행동(Vision-Language-Action, VLA) 모델([비전 언어 행동 모델](../../glossary/vision-language-action-model.md))을 넣은 휴머노이드의 실증(개념 검증, Proof of Concept, PoC) 계획 — 입고·출고·피킹·반품 단계\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 입·출고·오발주 등 고난도 작업과 분류·피킹·반품 등 수작업 공정(비정형 작업) [추정] 벤더 주장[^ref-1052] |\\n| 수행 자원 | VLA 모델을 넣은 로보티즈의 상체형 휴머노이드 AI 워커, 협력사 BGF로지스 [추정] 벤더 주장[^ref-1052] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 목표치(실측 아님): 핵심 공정 자동화율 80% 이상, 오발주 재분류·피킹 작업 성공률 90% 이상 [추정] 벤더 주장[^ref-1052] |\\n\\n헬로티 보도(2025-11-26)에 따르면 로보티즈는 정부 과제 'AI 파운데이션 모델 기반 유통 공정 특화 휴머노이드 로봇 개발'(정부 출연금 약 60억 원)로, VLA 모델을 넣은 상체형 휴머노이드 AI 워커가 BGF로지스 물류센터 실증(PoC)을 수행할 계획이다. [추정] 벤더 주장[^ref-1052] 기사가 전한 성과 수치는 목표치(실측 아님)이며, 공개된 측정 결과는 확인하지 못했다(11절 열린 질문). [추정] 벤더 주장[^ref-1052]\\n\\n이와 별도로 산업통상부 보도자료(2025-11-24 등록)에 따르면 산업부와 서울대가 M.AX 얼라이언스 협력 업무협약(Memorandum of Understanding, MOU)을 맺었고, 지원 과제 표의 휴머노이드 분과 과제는 '휴머노이드 AI 파운데이션 모델 개발'(2025~2028년, 484억 원, 핵심 연구진 장병탁·박재흥 서울대 교수)이다. [사실][^ref-1621] 이 과제가 위 로보티즈–BGF로지스 과제와 같은 사업인지는 확인되지 않았고, 이 보도자료에도 자동화율 80%·성공률 90%의 실측 결과는 없다(11절 열린 질문). [사실][^ref-1621]\\n\\n이 위키의 의견으로는, 벤더·도입 기업 발표는 목표·기간·첫 시연과 실측 성과를 다른 열로 나누고, 운영 기간의 기점·종점, 성공률의 분모, 개입·실패 기록, 인계 신호가 공개될 때까지 도입 성과 지표(Key Performance Indicator, KPI) 비교에 쓰지 않아야 하며, 국내 실증 목표(자동화율 80%·성공률 90%)도 같다. [의견][^ref-1619][^ref-1620][^ref-1051][^ref-1621]\"},{\"section\":\"6. 대표 접근법과 기술\",\"action\":\"append\",\"content\":\"\\n### 2026-10-12 갱신: 다중 로봇 언어 모델 계획의 평가 조건과 보장의 전제\\n\\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술 (2026-09-30)](../../topics/2026/2026-09-30-area44-s6.md)에 있다.\\n\\n이 소절은 세 다중 로봇 계획 연구의 평가 규모·실패 양상과, 계획 검증이 기대는 입력 전제를 2026-10-12에 원문에서 확인한 것이다.\\n\\n**SMART-LLM.** SMART-LLM의 평가 데이터셋은 AI2-THOR 가정 시뮬레이션의 고수준 지시 36개로 구성되며, 과제마다 로봇 1~4대를 쓴다. [사실][^ref-090] 어떤 로봇도 필요한 스킬을 갖지 않은 불가능 과제 시험에서 GPT-4·Claude-3 기반 구성은 배정 계획을 만들지 않았고, GPT-3.5·Llama2 기반 구성은 과제에 맞지 않는 로봇이 들어간 배정 계획을 만들었다. [사실][^ref-090] 이 시험은 표 I 집계에 들어 있지 않고 과제 수도 보고되지 않았다. [사실][^ref-090]\\n\\n**IMR-LLM.** IMR-Bench는 생산 라인 설계 전문가가 실제 산업 현장에서 수집·각색한 장면 23개(장면당 로봇 1~7대)를 바탕으로 제조 작업 50개를 구성한 벤치마크이며, KunWu 플랫폼 위에 만들어졌다. [사실][^ref-170] IMR-LLM 구현은 언어 모델이 구성을 도운 이접 그래프(disjunctive graph)의 일정을 휴리스틱 선입선출(First-In-First-Out, FIFO) 알고리즘으로 푼다. [사실][^ref-170] 저자는 복잡한 다중 로봇 작업에서 성공률이 떨어진 주된 이유로 언어 모델의 잘못된 분해·배정(예: 팔이 닿지 않는 로봇에 작업 배정)을 들었으나, 그 빈도는 정량화하지 않았다. [사실][^ref-170] [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술 (2026-09-30)](../../topics/2026/2026-09-30-area44-s6.md)의 '선택 그래프(disjunctive graph)'는 같은 용어이며, 이 위키는 이번 갱신부터 '이접 그래프'로 쓴다.\\n\\n**기호 계획기 결합의 입력 전제.** LLM+P는 행동의 전제·효과를 담은 계획 도메인 정의 언어(Planning Domain Definition Language, PDDL) 도메인 파일을 사람 전문가가 제공한다는 것을 입력 전제로 두며, 언어 모델은 문제(problem) 파일만 만든다. [사실][^ref-092]\\n\\n**등각 예측 기반 다중 로봇 계획.** [등각 예측](../../glossary/conformal-prediction.md)(conformal prediction) 기반 다중 로봇 언어 계획기 S-ATLAS(IEEE RA-L, 2025-01)의 임무 성공률 보장은 보정(calibration) 시나리오와 시험 시나리오가 독립·동일분포(independent and identically distributed, i.i.d.)라는 조건 아래에서만 성립한다. [사실][^ref-1607] 임무 완료율 정리는 계획 실행에 오류가 없다는 전제를 두며, 증명은 예측 집합이 단일 원소가 아닐 때 사람이 정확한 도움을 준다는 것도 전제한다. [사실][^ref-1607] S-ATLAS는 AI2-THOR 시뮬레이션의 검증 시나리오 110개로 평가했고 로봇 수는 1·3·10·15대였으며, 열람한 본문에서 실물 로봇 실험은 확인되지 않았다. [사실][^ref-1607]\\n\\n**이 위키의 의견.** 이 위키의 의견으로는, 스킬 목록이 없거나 로봇 능력 밖인 요청을 계획기가 거절하는지(또는 닿지 않는 로봇에 배정하지 않는지)를 일반 성공률과 별도의 수용 시험 항목으로 두어야 한다. [의견][^ref-090][^ref-170] 또한 이 위키의 의견으로는, 언어 모델 다중 로봇 계획의 검증 결과에는 일정 풀이 통과와 분해·배정의 정확성을 따로 적고, 계획 검증이 기대는 전제(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행, 정확한 사람 도움)를 함께 기록해 전제가 깨질 때 보장 상태를 다시 평가해야 하며, 이 보장을 플릿의 물리적 안전 보장과 섞지 않아야 한다. [의견][^ref-170][^ref-092][^ref-1607]\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"append\",\"content\":\"\\n### 2026-10-12 갱신: 공개 VLA 배포물의 입출력과 사용 조건\\n\\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md)에 있다.\\n\\n아래는 공개 문서의 문구를 대조한 것이며 상용 사용 가능 여부에 대한 법적 판단이 아니다. 사용 조건의 적용 판단은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md) 쪽 연계 대상이다.\\n\\n**OpenVLA 사용 조건(정정).** [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md) 표 아래의 'OpenVLA의 라이선스는 확인하지 못했다'는 다음 문서 대조로 바로잡는다. OpenVLA 공식 저장소(고정 커밋 c8f03f4)의 코드 라이선스는 MIT다. [사실][^ref-1608] 같은 저장소 README는 사전학습 모델이 기반 모델의 제약을 물려받을 수 있다고 적는다. [사실][^ref-1608]\\n\\n이어서 README는 두 사전학습 모델이 Llama 2에서 파생돼 Llama Community License를 따른다고 단정형으로 적는다. [사실][^ref-1608] 반면 Hugging Face 모델 카드는 모든 OpenVLA 체크포인트와 학습 코드가 MIT 라이선스로 공개된다고 적고, 현재 main 판(커밋 47a0ec7)도 같은 문구다. [사실][^ref-1609] 두 문서는 같은 개발팀 자료라 어느 쪽이 맞는지 문서만으로 정할 수 없으며, 이 페이지는 어느 쪽도 고르지 않는다(11절 열린 질문). [사실][^ref-1608][^ref-1609]\\n\\n**GR00T N1.7(GR00T N1과 다른 판).** NVIDIA Isaac GR00T 저장소의 n1.7-release 브랜치 README(접근일 2026-10-12 기준)는 GR00T N1.7을 얼리 액세스(Early Access, EA) 릴리스로 명시하고, 정식(General Availability, GA) 릴리스 전까지 지원·안정성 보장이 제한되며 상용 지원을 포함한 운영 배치는 GA 대상이라고 적는다. [사실][^ref-1611] 같은 README의 License 절은 코드는 Apache 2.0, 모델 가중치는 NVIDIA Open Model License로 구분한다. [사실][^ref-1611] 그런데 같은 README의 소개 문단은 GR00T N1.7이 Apache 2.0으로 'fully commercially licensable'하다고 적어, License 절과 가중치 저장소 LICENSE와 맞지 않는다. [추정] 벤더 주장[^ref-1611][^ref-1612]\\n\\nHugging Face nvidia/GR00T-N1.7-3B 저장소의 LICENSE 파일(커밋 6949d5d)은 NVIDIA License 표제 아래 3.3절에서 저작물과 파생물을 연구·평가 목적의 비상업 용도로만 쓸 수 있게 하고, NVIDIA와 그 계열사의 상업적 사용은 예외로 둔다. [사실][^ref-1612] 같은 저장소의 모델 카드는 NVIDIA Open Model License와 상업·비상업 사용 준비를 적으며, 어느 문서가 우선하는지는 문서에 적혀 있지 않다. [사실][^ref-1611][^ref-1612] 정리하면 GR00T N1.7은 EA 릴리스이고 코드는 Apache 2.0이며, 가중치 사용 조건은 문서마다 다르다(README 소개·License 절·3B 카드·3B LICENSE 3.3절). [사실][^ref-1611][^ref-1612] [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md) 표의 GR00T N1 행은 이 근거로 고치지 않는다.\\n\\n**입출력 계약.** OpenVLA 모델 카드에 따르면 OpenVLA는 언어 지시와 카메라 영상 한 장을 입력받아 정규화된 7자유도 엔드이펙터 변위(x, y, z, roll, pitch, yaw, gripper)를 출력하며, 실제 로봇에서 실행하려면 로봇·데이터셋별로 계산한 통계로 역정규화해야 한다. [사실][^ref-1609] π0 계열 공개 구현 openpi의 원격 추론 예시(커밋 215abfb)는 정책 서버가 (action_horizon, action_dim) 형태의 행동 청크(action chunk)를 돌려준다고 설명한다. [사실][^ref-1610] 같은 예시는 다음 추론 호출 전까지 예측된 행동 청크의 나머지 행동을 개방 루프(open-loop)로 실행하도록 안내하며, 이는 예시 동작 설명이지 명령 수락·작업 완료 상태나 안전 정지 기능의 근거가 아니다. [사실][^ref-1610] openpi README가 제공하는 기반 체크포인트는 π0, π0-FAST, π0.5뿐이며 π0.7 가중치는 목록에 없다. [사실][^ref-1610]\\n\\n**ROSA의 물리 실행 조건.** ROSA 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준)는 핵심 ROSA 에이전트가 텍스트 상호작용에 한정되어 물리 세계와 상호작용할 수 없으며, 물리적 상호작용에는 사용자가 맞춤 도구와 프롬프트를 만들어야 한다고 설명한다. [사실][^ref-1616] 같은 FAQ는 로봇 능력을 넘는 행동을 막으려면 맞춤 도구 안에 실행 전 로봇 상태·능력 확인 제약과 매개변수 검증·행동 제한 같은 안전 검사를 직접 넣으라고 권고하며, 이는 자동으로 제공되는 기능이 아니라 권고다. [사실][^ref-1616]\\n\\n**이 위키의 의견.** 이 위키의 의견으로는, VLA 탑재 로봇의 능력 등록에는 모델·가중치 리비전(해시), 로봇 기종·카메라, 좌표계·행동 단위·제어 모드, 정규화 통계, 행동 청크의 형태·관측 시각·유효기간·중단 조건, 허용 과제와 완료 판정을 두고, 명령 완료는 로봇 외부 상태로 확인하는 것이 필요해 보인다. 이는 ROP 설계 제안이며 표준이 아니다. [의견][^ref-1609][^ref-1610][^ref-1613] 또한 이 위키의 의견으로는, 공개 VLA를 도입할 때 코드 라이선스와 가중치 사용 조건을 따로 확인하고, README 소개 문구만으로 상용 허용을 확정하지 않으며, 문서끼리 충돌하는 조건은 배포자에게 서면으로 확인할 항목으로 남겨야 한다(법률 판단이 아니다). [의견][^ref-1608][^ref-1609][^ref-1611][^ref-1612]\"},{\"section\":\"8. 대표 연구와 자료\",\"action\":\"append\",\"content\":\"\\n### 2026-10-12 갱신: 최근 로봇 기반 모델, VLA 견고성 평가, 국내 과제\\n\\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료 (2026-09-30)](../../topics/2026/2026-09-30-area44-s8.md)에 있다.\\n\\n- Physical Intelligence, π0.7 기술 보고서(2026-04, arXiv v2) — 관절(joint)·엔드이펙터(ee) 행동을 함께 학습하고, 프롬프트의 텍스트 식별자로 실행 제어 모드를 지정해 실행 시 과제에 따라 고른다고 설명한다. [추정] 벤더 주장[^ref-1613] 추론 지연에 대비해 학습 중 0~12 타임스텝의 지연을 모사했고 이는 50 Hz 로봇에서 최대 240 ms에 해당한다고 적지만, 이는 학습 조건이며 측정된 추론 지연이 아니고 보고서의 UR5e 로봇은 20 Hz로 동작한다. [추정] 벤더 주장[^ref-1613] 저자들은 학습 데이터가 매우 커서 평가 과제가 학습 때 본 과제인지 처음 보는 과제인지 확정하기 어렵다고 스스로 밝힌다. [추정][^ref-1613] 공개 구현 openpi의 기반 체크포인트 목록에는 π0.7이 없다(7절). [사실][^ref-1610]\\n- Fei, S. 외, LIBERO-Plus(arXiv 2025-10; CVPR 2026 게재본 제목은 'LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models') — LIBERO 시뮬레이션 조작 과제에서 물체 배치, 카메라 시점, 로봇 초기 상태, 언어 지시, 조명, 배경 질감, 센서 잡음의 7개 축으로 입력을 하나씩 교란해 VLA 모델의 견고성을 평가한다. [사실][^ref-1614][^ref-1615] arXiv v3 안의 표 1(원래 LIBERO 설정의 단일 축 교란 분석: OpenVLA-OFT 성공률 원본 97.1, 카메라 시점 59.7, 로봇 초기 상태 37.2)과 표 2(LIBERO-Plus 벤치마크 견고성 평가: 카메라 56.4, 로봇 31.9, 전체 69.6)는 평가 설정이 다른 두 표다. [추정][^ref-1614] 이 벤치마크는 단일 팔 조작 시뮬레이션이며 현장 플릿 평가가 아니다. [사실][^ref-1614] 이 위키의 의견으로는, 카메라 교체·로봇 초기 자세 변경 같은 교란을 로봇별 수용 시험에 넣고, 벤치마크 수치는 표·평가 설정(단일 축 교란 분석인지 벤치마크 평가인지)과 판을 밝혀 인용하며, 단일 팔 시뮬레이션 벤치마크 순위를 제조사 혼합 플릿 순위로 환산하지 않아야 한다. [의견][^ref-1614][^ref-1615]\\n- 산업통상부, M.AX 얼라이언스 협력 보도자료(2025-11-24) — 휴머노이드 분과 과제 '휴머노이드 AI 파운데이션 모델 개발'(2025~2028년, 484억 원)은 기업이 데이터·플랫폼을 제공하고 서울대가 모델을 개발해 기업에 다시 제공하는 구조다. [사실][^ref-1621]\"},{\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"action\":\"replace\",\"content\":\"ROP는 언어 모델 계획을 검증하고 사람 확인을 거쳐 이종 로봇에 내리는 계층을 맡고, VLA의 저수준 조작 정책은 로봇 제조사·모델 제공자에게 연계하는 것으로 보인다. [추정][^ref-092][^ref-351][^ref-1045]\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 로봇 기반 모델을 탑재한 로봇을 포함한 이종 로봇의 가능한 기능·실행 조건·완료·실패 확인을 받고, 검증된 계획을 내리는 인터페이스 [추정][^ref-088][^ref-090][^ref-171] | 연계 대상: VLA·로봇 기반 모델이 카메라 영상에서 관절·그리퍼 행동을 직접 생성하는 저수준 조작 정책(로봇 제조사·모델 제공자) [추정][^ref-1045][^ref-1046][^ref-1047][^ref-1049] |\\n| 로봇 자체 지능·제어(언어 모델 도구 호출 실행) | 이 위키의 의견으로는 도구 호출의 읽기·실행 권한 구분, 실행 대상과 승인된 계획의 대조, 물리적 완료 판정, 세션 종료와 정지 절차의 연결 [의견][^ref-1617][^ref-1618] | 연계 대상(이 위키의 경계 판단): 물리적 비상 정지와 로봇 런타임의 소프트웨어 정지(로봇 자체 제어·설비 안전 제어 쪽) [의견][^ref-1618]. 벤더 문서가 밝히는 것은 MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다는 점이다 [추정] 벤더 주장[^ref-1618] |\\n\\nROP가 직접 맡을 범위는 언어 모델이 만든 작업 분해·배정 계획을 기호 계획기·제약 검사로 검증하는 계층, 불확실할 때 사람에게 확인을 요청하는 절차, 이종 로봇에 계획을 내리는 인터페이스이며, 이는 분류 원문 C. 채팅 기반 구성·운영 주석의 '사람이 확인·승인한 계획만 실행' 원칙과 같은 방향이다. [추정][^ref-092][^ref-586][^ref-351]\\n\\nIMR-LLM처럼 공정 트리를 따라 실행 가능한 저수준 로봇 프로그램까지 생성하는 연구도 있으나, 그 부분은 로봇 자체 제어에 닿으므로 ROP에서는 연계 대상 문맥으로 본다. [추정][^ref-170] 이 경계는 제품 전략에 따라 이동할 수 있으며, 분류 원문은 '이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다'고 적는다([범위 경계](../../about/scope-boundary.md)).\\n\\n### 도구 호출로 로봇을 움직일 때의 경계(2026-10-12 갱신)\\n\\n언어 모델이 모델 컨텍스트 프로토콜([Model Context Protocol, MCP](../../glossary/model-context-protocol.md)) 같은 도구 호출로 로봇을 움직이는 구성에서도 위 경계가 적용된다. MCP 공식 블로그(2026-03-16)는 도구 어노테이션(readOnlyHint·destructiveHint 등)이 위험을 알리는 힌트일 뿐 실행 강제 수단이 아니며, 확실한 보장이 필요하면 네트워크 통제나 샌드박스로 해야 한다고 설명한다. 이 글은 규범 명세가 아니라 프로젝트의 해설이며, 위키가 앞서 정리한 MCP 명세 서술([13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술](../../topics/2026/2026-09-29-area13-s6.md))을 보완한다. [사실][^ref-1617]\\n\\nPickNik의 MoveIt Pro MCP 서버 문서(Version 10)는 공유되는 배포(deployment) MCP 키는 읽기 전용이고, 로봇 동작은 호스트 사용자 세션에서 기존 Objective를 시작·취소하는 것으로만 한정된다고 설명한다. [추정] 벤더 주장[^ref-1618] 같은 문서는 서버가 별도의 실행 확인 프롬프트를 추가하지 않고, 도구 승인은 MCP 클라이언트 설정에 달려 있으며 클라이언트가 자동 승인할 수도 있다고 적는다. [추정] 벤더 주장[^ref-1618] 또 run_objective로 시작한 로봇은 세션이 끝나도 계속 움직일 수 있고, cancel_objective는 'best effort'일 뿐 비상 정지가 아니며, MCP 취소·소프트웨어 정지는 물리적 비상 정지를 대체하지 않는다고 적는다. [추정] 벤더 주장[^ref-1618] ROSA FAQ도 물리적 상호작용을 하려면 사용자가 맞춤 도구와 프롬프트를 만들어야 하고, 상태·능력 확인과 안전 검사를 그 도구 안에 넣으라고 권고한다(7절). [사실][^ref-1616]\\n\\n연계 대상: 이 위키의 경계 판단으로는, 물리적 비상 정지와 로봇 런타임의 소프트웨어 정지는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 경계에 따라 로봇 제조사·설비 공급자 쪽 연계 대상으로 둔다. [의견][^ref-1618] MoveIt Pro 문서가 밝히는 것은 MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다는 점까지이며, 정지 책임을 누가 지는지는 적지 않는다. [추정] 벤더 주장[^ref-1618] 이 위키의 의견으로는, ROP가 직접 맡는 것은 언어 모델 도구 호출에 대한 읽기·실행 권한 구분, 실행 대상이 승인된 계획 리비전·목표 식별자(goal id)와 맞는지의 확인, 물리적 완료 판정, 세션 종료를 별도 정지 절차에 연결하는 일로 한정하며, 어노테이션 힌트나 클라이언트 자동 승인에 기대지 않아야 한다. [의견][^ref-1617][^ref-1618][^ref-1616]\"},{\"section\":\"11. 열린 질문\",\"action\":\"append\",\"content\":\"\\n### 2026-10-12 갱신: 부분 근거와 새 질문\\n\\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 열린 질문 (2026-09-30)](../../topics/2026/2026-09-30-area44-s11.md)에 있다.\\n\\n아래 기존 질문에는 부분 근거만 더했으며, 모두 열림 상태를 유지한다.\\n\\n- **oq-216** (상태: 열림) 부분 근거: 배포물마다 입출력이 다르다. OpenVLA는 정규화된 7자유도 엔드이펙터 변위를 내고 로봇·데이터셋별 역정규화가 필요하며, openpi 원격 추론은 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내한다(7절). [사실][^ref-1609][^ref-1610] π0.7 보고서는 프롬프트로 관절·엔드이펙터 제어 모드를 고른다고 설명한다(8절). [추정] 벤더 주장[^ref-1613] 공통 능력 등록 표준과 적합성 시험은 확인하지 못했다.\\n- **oq-217** (상태: 열림) 부분 근거: 확인한 공개 평가는 SMART-LLM(AI2-THOR 지시 36개, 로봇 1~4대), IMR-Bench(장면 23개·제조 작업 50개, 장면당 로봇 1~7대), S-ATLAS(AI2-THOR 검증 시나리오 110개, 로봇 1·3·10·15대)이고, 실물 시험으로는 IMR-LLM의 로봇 팔 3대 단일 장면을 확인했다(5절·6절). [사실][^ref-090][^ref-170][^ref-1607] VLA 쪽에는 입력 교란 견고성 벤치마크 LIBERO-Plus가 있다(8절). [사실][^ref-1614] 설비·안전·시간창을 함께 다루는 공통 기준은 확인하지 못했다.\\n- **oq-218** (상태: 열림) 관련 근거: 산업부 M.AX 휴머노이드 AI 파운데이션 모델 과제 보도자료(2025-11-24)에도 실측 결과는 없다(5절). [사실][^ref-1621]\\n- **oq-219** (상태: 열림) 부분 근거: 10개월은 BMW 보도자료 본문, 11개월은 Figure AI 최고경영자 인용문에 있고, Figure AI 발표는 6·10·11개월의 다른 기간 축을 적는다. 기점·종점이 없어 충돌은 해소되지 않았다(5절). [추정] 벤더 주장[^ref-1051][^ref-1619]\\n- **oq-104** 관련 근거: π0.7 보고서의 240 ms(50 Hz 기준)는 학습 중 모사한 지연이며 측정된 추론 지연이 아니다(8절). [추정] 벤더 주장[^ref-1613]\\n- **oq-141**([13. 대화형 기능의 신뢰·기반](../chat-based-configuration-and-operation/conversational-trust-and-foundations.md) 쪽 승인 관문 위치 질문) 관련 근거: MoveIt Pro MCP 서버는 확인 프롬프트를 두지 않고 도구 승인을 MCP 클라이언트 설정에 맡긴다(9절). 이 페이지에서 상태를 바꾸지 않는다. [추정] 벤더 주장[^ref-1618]\\n\\n이번에 새로 올린 질문(전체 목록은 [열린 질문](../../open-questions.md)):\\n\\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 언어 모델 다중 로봇 계획의 검증이 기대는 가정(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행)을 런타임에서 누가 감시하고, 가정이 깨졌을 때 어떤 계획을 중단·재검증할 것인가?\\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가?\\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가?\\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가?\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-1045\",\"ref-1046\",\"ref-1047\",\"ref-1048\",\"ref-088\",\"ref-092\",\"ref-586\",\"ref-090\",\"ref-351\",\"ref-1049\",\"ref-170\",\"ref-171\",\"ref-1050\",\"ref-1051\",\"ref-1052\",\"ref-1607\",\"ref-1608\",\"ref-1609\",\"ref-1610\",\"ref-1611\",\"ref-1612\",\"ref-1613\",\"ref-1614\",\"ref-1615\",\"ref-1616\",\"ref-1617\",\"ref-1618\",\"ref-1619\",\"ref-1620\",\"ref-1621\"],\"last_run\":\"2026-10-12\"},\"content\":\"[^ref-1045]: Brohan, A., Brown, N. 외 (Google DeepMind, arXiv), RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control, 2023-07-28, https://arxiv.org/abs/2307.15818, 접근일 2026-09-30\\n[^ref-1046]: Kim, M. J., Pertsch, K., Karamcheti, S. 외 (arXiv), OpenVLA: An Open-Source Vision-Language-Action Model, 2024-06-13, https://arxiv.org/abs/2406.09246, 접근일 2026-09-30\\n[^ref-1047]: Physical Intelligence (Black, K., Finn, C., Levine, S. 외, arXiv), π0.5: a Vision-Language-Action Model with Open-World Generalization, 2025-04-22, https://arxiv.org/abs/2504.16054, 접근일 2026-09-30\\n[^ref-1048]: Open X-Embodiment Collaboration (arXiv), Open X-Embodiment: Robotic Learning Datasets and RT-X Models, 2023-10-13, https://arxiv.org/abs/2310.08864, 접근일 2026-09-30\\n[^ref-088]: Ahn, M., Brohan, A., Brown, N. 외 (arXiv), Do As I Can, Not As I Say: Grounding Language in Robotic Affordances, 2022-04-04, https://arxiv.org/abs/2204.01691, 접근일 2026-09-30\\n[^ref-092]: Liu, B., Jiang, Y., Zhang, X. 외 (arXiv), LLM+P: Empowering Large Language Models with Optimal Planning Proficiency, 2023-04-22, https://arxiv.org/abs/2304.11477, 접근일 2026-10-12\\n[^ref-586]: Kambhampati, S., Valmeekam, K., Guan, L. 외 (ICML 2024, arXiv), LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks, 2024-02-02, https://arxiv.org/abs/2402.01817, 접근일 2026-09-30\\n[^ref-090]: Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C. (arXiv), SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models, 2023-09-18, https://arxiv.org/abs/2309.10062, 접근일 2026-10-12\\n[^ref-351]: Ren, A. Z., Dixit, A., Bodrova, A. 외 (CoRL 2023, arXiv), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners, 2023-07-04, https://arxiv.org/abs/2307.01928, 접근일 2026-09-30\\n[^ref-1049]: NVIDIA (Bjorck, J., Castañeda, F. 외, arXiv), GR00T N1: An Open Foundation Model for Generalist Humanoid Robots, 2025-03-18, https://arxiv.org/abs/2503.14734, 접근일 2026-09-30\\n[^ref-170]: Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R. (arXiv), IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models, 2026-03-03, https://arxiv.org/abs/2603.02669, 접근일 2026-10-12\\n[^ref-171]: NASA Jet Propulsion Laboratory (nasa-jpl), ROSA — README, 미확인, https://github.com/nasa-jpl/rosa, 접근일 2026-09-30\\n[^ref-1050]: 지디넷코리아, K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과, 2025-05-01, https://zdnet.co.kr/view/?no=20250501140356, 접근일 2026-09-30\\n[^ref-1051]: BMW Group, BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg, 2026-06-25, https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en, 접근일 2026-10-12\\n[^ref-1052]: 헬로티, VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입, 2025-11-26, https://www.hellot.net/news/article.html?no=107567, 접근일 2026-09-30\\n[^ref-1607]: Wang, J., He, G., & Kantaros, Y. (IEEE Robotics and Automation Letters 10(1)), Probabilistically Correct Language-based Multi-Robot Planning using Conformal Prediction, 2025-01, https://arxiv.org/abs/2402.15368, 접근일 2026-10-12\\n[^ref-1608]: OpenVLA 개발팀 (openvla/openvla GitHub), OpenVLA — README 및 LICENSE (커밋 c8f03f4), 미확인, https://github.com/openvla/openvla/blob/c8f03f48af692657d3060c19588038c7220e9af9/README.md, 접근일 2026-10-12\\n[^ref-1609]: OpenVLA 개발팀 (Hugging Face openvla/openvla-7b), openvla/openvla-7b — Model Card, 미확인, https://huggingface.co/openvla/openvla-7b, 접근일 2026-10-12\\n[^ref-1610]: Physical Intelligence (Physical-Intelligence/openpi GitHub), openpi — README, docs/remote_inference.md, LICENSE (커밋 215abfb), 미확인, https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md, 접근일 2026-10-12\\n[^ref-1611]: NVIDIA (NVIDIA/Isaac-GR00T GitHub), Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치), 미확인, https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md, 접근일 2026-10-12\\n[^ref-1612]: NVIDIA (Hugging Face nvidia/GR00T-N1.7-3B), GR00T-N1.7-3B — LICENSE 및 모델 카드, 미확인, https://huggingface.co/nvidia/GR00T-N1.7-3B/blob/6949d5dfab2e872283e8cca8106ac3af8adcf39b/LICENSE, 접근일 2026-10-12\\n[^ref-1613]: Physical Intelligence (Ai, B. 외, arXiv), π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities, 2026-04-16, https://arxiv.org/abs/2604.15483, 접근일 2026-10-12\\n[^ref-1614]: Fei, S., Wang, S., Shi, J. 외 (arXiv), LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models, 2025-10-15, https://arxiv.org/abs/2510.13626, 접근일 2026-10-12\\n[^ref-1615]: Fei, S., Wang, S., Shi, J. 외 (CVPR 2026, Computer Vision Foundation Open Access), LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models, 2026, https://openaccess.thecvf.com/content/CVPR2026/html/Fei_LIBERO-Plus_A_Progressive_Robustness_Benchmark_for_Visual-Language-Action_Models_CVPR_2026_paper.html, 접근일 2026-10-12\\n[^ref-1616]: NASA Jet Propulsion Laboratory (nasa-jpl), FAQ · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/FAQ, 접근일 2026-10-12\\n[^ref-1617]: Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.), Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do, 2026-03-16, https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/, 접근일 2026-10-12\\n[^ref-1618]: PickNik Robotics, Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10), 미확인, https://docs.picknik.ai/how_to/programmatic_sdks/mcp_server/, 접근일 2026-10-12\\n[^ref-1619]: Figure AI, F.02 Contributed to the Production of 30,000 Cars at BMW, 2025-11-19, https://www.figure.ai/news/production-at-bmw, 접근일 2026-10-12\\n[^ref-1620]: Figure AI, F.03 Arrives at BMW, 2026-06-30, https://www.figure.ai/news/f-03-at-bmw, 접근일 2026-10-12\\n[^ref-1621]: 산업통상부, 서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다., 2025-11-24, https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171238/view, 접근일 2026-10-12\"}]}],\"changelog_entry\":\"2026-10-12 | 44. 로봇 기반 모델·언어 모델 계획 | 갱신: 5절 Figure AI 자체 발표 문장 정정·10/11개월 출처 위치·99% 목표치 구분·IMR-LLM 실물 연구 평가 사례·산업부 M.AX 과제, 6~8절 다중 로봇 계획 평가 조건·보장 전제·공개 VLA 입출력·라이선스 문서 충돌·π0.7·LIBERO-Plus(2026-09-30 분리 페이지 링크 유지), 9절 도구 호출 실행 경계, 새 열린 질문 4건 | run 2026-10-12-05\",\"index_updates\":{\"home_recent\":\"2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 제조 공장 사례의 Figure AI 자체 발표 정정과 목표치·기간 구분, 다중 로봇 언어 계획의 평가 조건·보장 전제, 공개 VLA 입출력과 라이선스 문서 충돌, 도구 호출 실행 경계를 더했다\",\"category_recent\":\"2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 5·9절 고침, 6·7·8·11절 갱신 소절 추가(SMART-LLM·IMR-LLM·S-ATLAS 평가 조건, OpenVLA·GR00T N1.7 라이선스 충돌, openpi 행동 청크, π0.7·LIBERO-Plus, MCP 도구 호출 경계), 새 출처 15건\",\"area_recent\":\"2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 갱신(5·9절 고침, 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 새 열린 질문 4건, 새 출처 15건)\"},\"glossary_updates\":[],\"reference_updates\":[{\"id\":\"ref-090\",\"org\":\"Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.\",\"title\":\"SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models\",\"published\":\"2023-09\",\"url\":\"https://arxiv.org/abs/2309.10062\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"SMART-LLM 논문(기존 출처). 이번에 arXiv v2 HTML 본문에서 36개 고수준 지시 데이터셋(§V-A)과 불가능 과제 시험(§VI-A)을 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-170\",\"org\":\"Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R.\",\"title\":\"IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models\",\"published\":\"2026-03\",\"url\":\"https://arxiv.org/abs/2603.02669\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"IMR-LLM 논문(기존 출처, ICRA 2026 채택). 이번에 arXiv v1 HTML 본문에서 IMR-Bench 23장면·50작업, FIFO 휴리스틱, 로봇 팔 3대 실물 시험, 도달 불가 배정 오류를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-092\",\"org\":\"Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P.\",\"title\":\"LLM+P: Empowering Large Language Models with Optimal Planning Proficiency\",\"published\":\"2023-04\",\"url\":\"https://arxiv.org/abs/2304.11477\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"LLM+P 프리프린트(기존 출처). 이번에 arXiv v3 HTML §III-C 에서 사람 전문가가 PDDL 도메인을 제공한다는 입력 전제를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1051\",\"org\":\"BMW Group\",\"title\":\"BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg\",\"published\":\"2026-06-25\",\"url\":\"https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"BMW 그룹 보도자료(기존 출처). 이번 재열람에서 '11-month deployment'는 Figure CEO 인용문, 'over ten months'는 본문에 있음을 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1607\",\"org\":\"Wang, J., He, G., & Kantaros, Y. (IEEE Robotics and Automation Letters 10(1))\",\"title\":\"Probabilistically Correct Language-based Multi-Robot Planning using Conformal Prediction\",\"published\":\"2025-01\",\"url\":\"https://arxiv.org/abs/2402.15368\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"등각 예측으로 사용자 지정 임무 성공률을 노리는 분산 다중 로봇 언어 계획기 S-ATLAS 논문(RA-L 10(1), DOI 10.1109/LRA.2024.3504233). arXiv v4 HTML 로 i.i.d. 조건(Remark III.6), 무오류 실행 전제(Theorem IV.2), 110개 AI2-THOR 검증 시나리오를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1608\",\"org\":\"OpenVLA 개발팀 (openvla/openvla GitHub)\",\"title\":\"OpenVLA — README 및 LICENSE (커밋 c8f03f4)\",\"published\":null,\"url\":\"https://github.com/openvla/openvla/blob/c8f03f48af692657d3060c19588038c7220e9af9/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"OpenVLA 공식 저장소 README·LICENSE. 코드 MIT, 사전학습 모델은 기반 모델의 제약을 물려받을 수 있고 Llama 2 파생이라 Llama Community License 를 따른다는 문구(99–101행)를 확인했다. 커밋 날짜는 확인하지 못했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1609\",\"org\":\"OpenVLA 개발팀 (Hugging Face openvla/openvla-7b)\",\"title\":\"openvla/openvla-7b — Model Card\",\"published\":null,\"url\":\"https://huggingface.co/openvla/openvla-7b\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"OpenVLA 7B 가중치 모델 카드. 입출력(언어+영상 → 정규화 7자유도 엔드이펙터 변위, 로봇·데이터셋별 역정규화)과 '모든 체크포인트 MIT' 문구를 현재 main(커밋 47a0ec7)에서 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1610\",\"org\":\"Physical Intelligence (Physical-Intelligence/openpi GitHub)\",\"title\":\"openpi — README, docs/remote_inference.md, LICENSE (커밋 215abfb)\",\"published\":null,\"url\":\"https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"π0 계열 공개 구현 openpi. 원격 추론의 행동 청크 형태(action_horizon, action_dim)와 개방 루프 실행 주석, 제공 기반 체크포인트(π0·π0-FAST·π0.5), LICENSE(Apache 2.0)를 확인했다. 커밋 날짜는 확인하지 못했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1611\",\"org\":\"NVIDIA (NVIDIA/Isaac-GR00T GitHub)\",\"title\":\"Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치)\",\"published\":null,\"url\":\"https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"GR00T N1.7 공식 저장소 README. Early Access 릴리스 표기, 소개 문단의 'Apache 2.0 으로 상용 라이선스 가능' 문구, License 절의 코드 Apache 2.0·가중치 NVIDIA Open Model License 구분을 확인했다. 브랜치 이름 기준(접근일 2026-10-12)이며 커밋 sha 로 고정하지 못했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1612\",\"org\":\"NVIDIA (Hugging Face nvidia/GR00T-N1.7-3B)\",\"title\":\"GR00T-N1.7-3B — LICENSE 및 모델 카드\",\"published\":null,\"url\":\"https://huggingface.co/nvidia/GR00T-N1.7-3B/blob/6949d5dfab2e872283e8cca8106ac3af8adcf39b/LICENSE\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"GR00T N1.7 3B 가중치 저장소. LICENSE(커밋 6949d5d, 현재 main 과 같음)의 'NVIDIA License' 3.3절 비상업 한정·NVIDIA 계열사 예외와, 모델 카드(main)의 'NVIDIA Open Model License'·'commercial/non-commercial use' 문구를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1613\",\"org\":\"Physical Intelligence (Ai, B. 외, arXiv)\",\"title\":\"π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities\",\"published\":\"2026-04-16\",\"url\":\"https://arxiv.org/abs/2604.15483\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"Physical Intelligence 의 π0.7 기술 보고서(v1 2026-04-16, v2 2026-04-24). v2 HTML 에서 제어 모드 프롬프트(joint/ee), 학습 중 0~12 타임스텝 지연 모사(50 Hz 에서 240 ms), UR5e 20 Hz, seen/unseen 구분의 어려움을 확인했다. 회사 자체 보고서다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1614\",\"org\":\"Fei, S., Wang, S., Shi, J. 외 (arXiv)\",\"title\":\"LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models\",\"published\":\"2025-10-15\",\"url\":\"https://arxiv.org/abs/2510.13626\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"VLA 모델의 7개 축 입력 교란 견고성 평가 프리프린트(v1 2025-10-15, v3 2025-12-26). v3 HTML 의 §2.1 과, 평가 설정이 다른 표 1(원래 LIBERO 설정의 단일 축 교란 분석)·표 2(LIBERO-Plus 벤치마크 견고성 평가)를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1615\",\"org\":\"Fei, S., Wang, S., Shi, J. 외 (CVPR 2026, Computer Vision Foundation Open Access)\",\"title\":\"LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models\",\"published\":\"2026\",\"url\":\"https://openaccess.thecvf.com/content/CVPR2026/html/Fei_LIBERO-Plus_A_Progressive_Robustness_Benchmark_for_Visual-Language-Action_Models_CVPR_2026_paper.html\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"LIBERO-Plus 의 CVPR 2026 게재본(arXiv 판과 제목이 다름). 위키에서는 게재 사실과 일곱 교란 축의 근거로만 쓴다. 검증 단계에서는 게재본 PDF 를 열지 못하고 HTML·포스터 페이지로 실재를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1616\",\"org\":\"NASA Jet Propulsion Laboratory (nasa-jpl)\",\"title\":\"FAQ · nasa-jpl/rosa Wiki\",\"published\":null,\"url\":\"https://github.com/nasa-jpl/rosa/wiki/FAQ\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-12\",\"summary\":\"ROSA 공식 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준). 핵심 에이전트는 물리 세계와 상호작용할 수 없고 맞춤 도구·프롬프트가 필요하다는 한계와, 맞춤 도구에 상태·능력 확인과 안전 검사를 넣으라는 권고를 확인했다. README(ref-171)와 다른 페이지다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1617\",\"org\":\"Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.)\",\"title\":\"Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do\",\"published\":\"2026-03-16\",\"url\":\"https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"MCP 프로젝트 공식 블로그 해설. 도구 어노테이션은 위험 힌트이며 실행 강제 수단이 아니라는 설명을 확인했다. 규범 명세 자체는 아니다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1618\",\"org\":\"PickNik Robotics\",\"title\":\"Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10)\",\"published\":null,\"url\":\"https://docs.picknik.ai/how_to/programmatic_sdks/mcp_server/\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"MoveIt Pro 제품 문서의 MCP 서버 연결 안내. 배포 키 읽기 전용, 서버의 확인 프롬프트 없음, 세션 종료 뒤 로봇 계속 이동, cancel_objective 는 비상 정지가 아님 등 권한·실행 설명을 확인했다. 세부 제품 빌드와 발행일은 확인하지 못했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1619\",\"org\":\"Figure AI\",\"title\":\"F.02 Contributed to the Production of 30,000 Cars at BMW\",\"published\":\"2025-11-19\",\"url\":\"https://www.figure.ai/news/production-at-bmw\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"Figure 02 의 BMW 스파턴버그 배치를 회고한 Figure AI 발표. 11개월 배치, 6개월·10개월 이정표, 6개월 일일 가동·1,250시간 이상, 교대당 99% 초과 성공률·개입 0회 목표를 확인했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1620\",\"org\":\"Figure AI\",\"title\":\"F.03 Arrives at BMW\",\"published\":\"2026-06-30\",\"url\":\"https://www.figure.ai/news/f-03-at-bmw\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"Figure 03 이 BMW 스파턴버그에서 물류 작업 흐름을 수행한 '첫 시연'과 Helix 02 전신 제어를 설명한 Figure AI 발표. BMW 보도자료(ref-1051)와 같은 프로젝트의 당사자 자료다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false},{\"id\":\"ref-1621\",\"org\":\"산업통상부\",\"title\":\"서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다.\",\"published\":\"2025-11-24\",\"url\":\"https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171238/view\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-12\",\"summary\":\"산업부–서울대 M.AX 얼라이언스 협력 MOU 보도자료(2025-11-24 등록). 휴머노이드 분과 'AI 파운데이션 모델 개발'(2025~2028년, 484억 원, 장병탁·박재흥) 과제 표를 확인했다. 검증 단계에서는 접속 실패로 재열람하지 못했고 같은 발표의 보도와 내용이 일치했다.\",\"cited_by\":[\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\"],\"source_unopened\":false}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"언어 모델 다중 로봇 계획의 검증이 기대는 가정(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행)을 런타임에서 누가 감시하고, 가정이 깨졌을 때 어떤 계획을 중단·재검증할 것인가?\",\"areas\":[44,54],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가?\",\"areas\":[44,29],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가?\",\"areas\":[44,59],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가?\",\"areas\":[44,59],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"제조 공장\",\"item\":\"작업 대상\",\"link\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시\",\"title\":\"44. 로봇 기반 모델·언어 모델 계획\"},{\"site_type\":\"제조 공장\",\"item\":\"수행 자원\",\"link\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시\",\"title\":\"44. 로봇 기반 모델·언어 모델 계획\"},{\"site_type\":\"제조 공장\",\"item\":\"완료·인계\",\"link\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시\",\"title\":\"44. 로봇 기반 모델·언어 모델 계획\"},{\"site_type\":\"제조 공장\",\"item\":\"예외·성과\",\"link\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시\",\"title\":\"44. 로봇 기반 모델·언어 모델 계획\"}],\"additional_research_requests\":[\"후속 갱신(입력 누락): 분리 주제 페이지 docs/topics/2026/2026-09-30-area44-s7.md 의 표 아래 문장 'OpenVLA의 라이선스는 확인하지 못했다'를 지우고, docs/topics/2026/2026-09-30-area44-s6.md 57행 '선택 그래프(disjunctive graph)'를 '이접 그래프(disjunctive graph)'로 바꾸는 차등 갱신이 필요하다. 두 페이지의 본문이 이번 스토리텔러 입력에 없어 직접 고치지 못했고, 대상 세부영역 페이지 6·7절 갱신 소절에 두 페이지로 가는 링크와 정정·용어 통일 문장만 두었다. 다음 44. 로봇 기반 모델·언어 모델 계획 갱신 실행에서 두 주제 페이지를 입력으로 넣어 달라(하루 갱신 상한 2 안에서).\",\"사용자 결정 항목(pipeline 담당): 자동 분리 코드가 기존 분리 주제 페이지(예: 2026-09-30-area44-s6)가 있는 절을 다시 분리할 때 이전 분리 페이지 링크를 원 절 요약에 남기도록 고칠지 정해 달라. 이번 실행에서는 각 갱신 소절 첫 줄에 이전 분리 페이지 링크를 손으로 두어 대응했다.\",\"후속 정리(이번 갱신 범위 밖): docs/standards/index.md 의 OpenVLA·GR00T N1 '오픈소스' 항목에 코드·가중치 라이선스 구분이 없다. OpenVLA 는 ref-1608·ref-1609 의 문서 충돌을, GR00T 는 N1 과 N1.7 을 구분해 ref-1611·ref-1612 기준으로 반영할 수 있는지 59. 법·규제·보험·라이선스 실행에서 검토가 필요하다.\",\"후속 정리(트랙 페이지): chat-based-configuration-and-operation 트랙 stage-1-prior-work-and-products.md 의 ROSA '확인·권한 장치 설명이 없다' [추정]을 ROSA FAQ(ref-1616)로 정리, 같은 파일의 disjunctive graph 번역어('선언 그래프'·'이접 그래프') 통일과 'IMR-Bench 규모 미확인'에 ref-170 연결, stage-2-data-and-standards.md 의 SMART-LLM '원문 미열람' 수치에 ref-090 원문 확인 연결, task-model-draft.md 의 LLM+P 부분에 ref-092 연결.\",\"용어집: '이접 그래프(disjunctive graph)' 항목이 없다. 위키 안에서 번역어가 셋으로 갈렸으므로 정의 출처(작업장 스케줄링 문헌)를 찾아 용어 후보로 올려 달라.\",\"9절: 물리 비상 정지·런타임 소프트웨어 정지의 책임 배분은 현재 이 위키의 경계 판단([의견])이다. 로봇 제조사·설비 공급자 쪽 책임을 명시한 표준·규격·제품 문서가 있으면 근거로 찾아 달라.\",\"5절 제조 공장(BMW–Figure): 배치 기간 10/11개월의 기점·종점과 집계 관계, 교대별 실측 성공률·개입의 분모, Figure 03 첫 시연 이후 가동률을 확인할 독립 자료가 필요하다(oq-219).\",\"5절 물류창고: 산업부 M.AX 휴머노이드 과제와 로보티즈–BGF로지스 물류 과제의 동일성, 자동화율 80%·성공률 90% 실측 결과(oq-218).\",\"5·6절: SMART-LLM 실물 시험의 로봇 대수·반복 수, IMR-LLM 의 장기 운영 근거, 병원·상업 시설·실외에서 로봇 기반 모델·언어 모델 계획을 쓴 이기종 플릿 현장 실증이 필요하다.\",\"7절·11절: VLA 공통 능력 등록 표준·적합성 시험(oq-216), π0.7 보고서와 공개 배포물의 대응, 네트워크 포함 실측 최대 추론 지연(oq-104 관련).\"],\"fixes_applied\":[\"f27 강등 — 8절 LIBERO-Plus 항목에서 [추정]으로 쓰고 'arXiv v3 안의 표 1(원래 LIBERO 설정의 단일 축 교란 분석: 97.1·59.7·37.2)과 표 2(LIBERO-Plus 벤치마크 견고성 평가: 56.4·31.9·69.6)는 평가 설정이 다른 두 표'로 썼으며, '판마다 다르다'·판 차이 표현은 넣지 않았다(각주 ref-1614).\",\"f44 — 8절의 의견 문장을 '벤치마크 수치는 표·평가 설정(단일 축 교란 분석인지 벤치마크 평가인지)과 판을 밝혀 인용하며'로 고쳐 썼다.\",\"8절 LIBERO-Plus — 수치 병기는 1번 수정 문구로 하고, ref-1615 는 게재본 제목과 일곱 교란 축 문장에만 각주로 달았다.\",\"f13 — 7절에서 'README 는 사전학습 모델이 기반 모델의 제약을 물려받을 수 있다고 적는다'와 'README 는 두 사전학습 모델이 Llama 2 에서 파생돼 Llama Community License 를 따른다고 단정형으로 적는다'를 두 문장으로 나눠 쓰고, 소절 머리에 법적 판단이 아님을 밝혔다.\",\"GR00T — 7절에 'GR00T N1.7(GR00T N1과 다른 판)' 별도 문단을 두어 EA 릴리스·코드 Apache 2.0·가중치는 문서마다 조건이 다름(README 소개·License 절·3B 카드·3B LICENSE 3.3절)으로 적었고, 주제 페이지 표의 GR00T N1 행은 이 근거로 고치지 않는다고 명시했다.\",\"OpenVLA 라이선스 — 대상 세부영역 페이지 7절에 정정 문단을 두어 코드 MIT(f12)·README 의 Llama 2 파생 문구(f13)·HF 카드 '모든 체크포인트 MIT'(f14)를 충돌 그대로 병기하고 어느 쪽도 고르지 않았으며 출처 충돌 열린 질문에 연결했다. 다만 분리 주제 페이지 2026-09-30-area44-s7.md 본문은 이번 입력에 없어 그 문장을 직접 지우지 못했고, 7절에 '주제 페이지 문장은 이 대조로 바로잡는다'고 적은 뒤 후속 갱신을 additional_research_requests 에 요청했다(부분 이행).\",\"5절 제조 공장 — 'Figure AI 자체 발표로는 교차 확인하지 못했다'를 지우고 'Figure AI 자체 발표(2025-11-19 F.02 회고, 2026-06-30 F.03 첫 시연)가 같은 배치·착수를 설명하나, 같은 프로젝트 당사자 자료라 독립 확인은 아니다'로 바꿔 [추정] 벤더 주장과 각주 ref-1619·ref-1620·ref-1051 을 달았다.\",\"5절 제조 공장 예외·성과 — 표 칸과 서술에서 교대당 99% 초과 성공률·개입 0회를 '목표치(실측 아님)'로만 적고, 10/11개월 문장 뒤에 10개월은 BMW 보도자료 본문·11개월은 Figure CEO 인용문이라는 위치와 Figure 쪽 6·10·11개월 이정표를 덧붙였으며 기간을 하나로 정하지 않았다. oq-219 는 11절에서 열림 유지.\",\"5절 IMR-LLM — 제조 공장 사례를 별도로 추가하고 '연구 평가(로봇 팔 3대 단일 장면, 전문가 약 15분 수동 장면 작성, 반복 횟수 미보고)'이며 장기 운영 실적이 아니라고 밝혔고, 근거 없는 시작 조건·제약·완료·인계 칸은 '미확인'으로 두었다.\",\"5절 물류창고 — 산업부 M.AX 휴머노이드 과제(f38)를 로보티즈–BGF로지스 과제와 별도 문단으로 쓰고 같은 사업인지 미확인임을 밝혔으며, 기준일 '2025-11-24 등록'을 본문과 각주에 남겼다.\",\"9절 — 표에 도구 호출 실행 행을 더하고 '도구 호출로 로봇을 움직일 때의 경계' 소절을 두어 물리 비상정지·런타임 소프트웨어 정지는 연계 대상(로봇 자체 제어·설비 안전 제어)으로 짧게 적고, ROP 직접 범위는 읽기·실행 권한, 승인된 계획 대상 확인, 완료 판정, 세션 종료와 정지 절차 연결로 한정했다. MoveIt Pro 서술(f31~f33)은 모두 [추정] 벤더 주장, MCP 블로그(f30)는 '규범 명세가 아니라 프로젝트의 해설'로 밝혔다.\",\"f39~f46 — [의견] 문장 8건(5절 f41·f46, 6절 f39·f40, 7절 f42·f43, 8절 f44, 9절 f45) 모두 '이 위키의 의견으로는'으로 시작해 누구의 의견인지 밝혔다.\",\"이접 그래프 — 대상 세부영역 페이지 6절의 새 서술은 '이접 그래프(disjunctive graph)'로 쓰고 주제 페이지의 '선택 그래프'와 같은 용어임을 밝혔다. 분리 주제 페이지 2026-09-30-area44-s6.md 57행은 본문이 입력에 없어 직접 바꾸지 못했고 후속 갱신을 요청했다(부분 이행). 트랙 페이지 번역어는 고치지 않았다.\",\"쪽수 — IMR-LLM 의 ICRA 2026 쪽수와 SMART-LLM 의 IROS 2024 쪽수를 본문·각주에 쓰지 않았고, reference_updates 의 ref-090·ref-170 요약에서도 쪽수를 뺐다.\",\"판 미고정 출처 — 7절 본문에 ref-1611 은 'n1.7-release 브랜치 README(접근일 2026-10-12 기준)', ref-1616 은 'ROSA 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준)'로 밝혔다.\",\"11절 — oq-216·oq-217·oq-219 는 '부분 근거'로만 연결하고 열림 유지, oq-218·oq-104 는 관련 근거만, oq-141 은 13. 대화형 기능의 신뢰·기반 쪽 질문으로 연결만 하고 상태를 바꾸지 않았다. 새 질문 4건은 브리프 문구대로 11절과 open_question_updates 에 등록했다.\",\"각주 — 13절을 다시 써서 다시 연 기존 출처 ref-090·ref-170·ref-092·ref-1051 의 접근일을 2026-10-12 로 고치고, 새 출처 ref-1607~ref-1621 은 브리프의 기관·제목·발행일(없으면 '미확인')·URL 그대로 정의했으며 프런트매터 sources 에 더했다.\",\"2차: 6·7·8·11절 append 패치의 각 '### 2026-10-12 갱신' 소절 첫 줄에 '이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — … (2026-09-30)](../../topics/2026/2026-09-30-area44-sN.md)에 있다.' 링크를 두었다(s6·s7·s8·s11 각각).\",\"2차: 7절 소절의 'OpenVLA 사용 조건(정정)' 첫 문장과 GR00T 문단 끝 문장의 '연결된 주제 페이지'를 2026-09-30-area44-s7.md 로 가는 마크다운 링크로 바꿨다.\",\"2차: 6절 소절 IMR-LLM 문단 끝의 '연결된 주제 페이지의 선택 그래프(disjunctive graph)'를 2026-09-30-area44-s6.md 로 가는 마크다운 링크로 바꿨다.\",\"2차: 9절 표의 '로봇 자체 지능·제어(언어 모델 도구 호출 실행)' 행 외부 연계 칸을 '연계 대상(이 위키의 경계 판단): … [의견]'으로 고치고 ref-1618 에는 'MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다'만 [추정] 벤더 주장으로 귀속했다. 아래 '연계 대상:' 문단 첫 문장도 '이 위키의 경계 판단으로는 … 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 경계에 따라 … 연계 대상으로 둔다. [의견]'으로 바꾸고, 벤더 문서가 정지 책임을 적지 않는다는 문장을 [추정] 벤더 주장으로 덧붙였다.\",\"2차: 9절 MoveIt Pro 문단 마지막 문장을 'ROSA FAQ도 물리적 상호작용을 하려면 사용자가 맞춤 도구와 프롬프트를 만들어야 하고, …'로 고쳐 '로만'이라는 배타 표현을 뺐다.\",\"2차: 7절 소절의 OpenVLA 사용 조건 문단(6문장)을 3문장·3문장, GR00T N1.7 문단(7문장)을 3문장·4문장의 두 단락으로 나눴다. 문장과 태그·각주는 바꾸지 않았다.\"],\"standards_updates\":[{\"name\":\"openpi (π0 계열 공개 구현)\",\"kind\":\"오픈소스\",\"org\":\"Physical Intelligence\",\"url\":\"https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md\",\"related_areas\":[44],\"summary\":\"π0 계열 로봇 기반 모델의 공개 구현. 원격 추론 예시는 (action_horizon, action_dim) 형태의 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내하며, 기반 체크포인트는 π0·π0-FAST·π0.5다(커밋 215abfb 기준, π0.7 없음).\",\"ref_id\":\"ref-1610\"},{\"name\":\"GR00T N1.7 (Isaac GR00T, Early Access)\",\"kind\":\"오픈소스\",\"org\":\"NVIDIA\",\"url\":\"https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md\",\"related_areas\":[44,59],\"summary\":\"NVIDIA 휴머노이드 로봇 기반 모델 GR00T N1.7 의 저장소(n1.7-release 브랜치, 접근일 2026-10-12 기준 EA 릴리스). 코드는 Apache 2.0 이고 가중치 사용 조건은 README 소개·License 절·3B 모델 카드·3B LICENSE 3.3절이 서로 다르게 적는다(GR00T N1 과 다른 판).\",\"ref_id\":\"ref-1611\"}]}",
+  "structured_output": {
+    "run_id": "2026-10-12-05",
+    "outline": [
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 3600,
+        "summary": "가정 연구 평가, BMW–Figure 제조 공장 발표(10/11개월 출처 위치·목표치 구분·Figure 자체 발표는 당사자 자료), IMR-LLM 로봇 팔 3대 연구 평가, 물류창고 실증 계획과 산업부 M.AX 과제를 현장 유형별로 정리한다. [추정] 벤더 주장[^ref-1051][^ref-1619]",
+        "planned_findings": [
+          "f5",
+          "f34",
+          "f35",
+          "f36",
+          "f37",
+          "f38",
+          "f41",
+          "f46"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 1900,
+        "summary": "SMART-LLM·IMR-LLM·S-ATLAS 의 평가 규모와 실패 양상, LLM+P·S-ATLAS 보장이 기대는 입력 전제(사람이 준 도메인, i.i.d., 무오류 실행)를 더한다. [사실][^ref-090][^ref-170][^ref-1607]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f39",
+          "f40"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 2600,
+        "summary": "OpenVLA·GR00T N1.7 의 코드·가중치 사용 조건 문서 충돌을 병기하고, OpenVLA·openpi 의 입출력 계약과 ROSA 의 물리 실행 조건을 더한다. [사실][^ref-1608][^ref-1609][^ref-1611][^ref-1612]",
+        "planned_findings": [
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f28",
+          "f29",
+          "f42",
+          "f43"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 1500,
+        "summary": "π0.7 기술 보고서(벤더 주장), LIBERO-Plus 의 7개 교란 축과 평가 설정이 다른 두 표, 산업부 M.AX 휴머노이드 과제를 더한다. [추정] 벤더 주장[^ref-1613]",
+        "planned_findings": [
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f27",
+          "f38",
+          "f44"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+        "budget_chars": 2000,
+        "summary": "도구 호출(MCP)로 로봇을 움직일 때 ROP 는 권한·승인된 계획 대조·완료 판정·세션 종료와 정지 절차 연결을 맡고, 물리 비상정지와 런타임 정지는 이 위키의 경계 판단으로 연계 대상이다. [의견][^ref-1617][^ref-1618]",
+        "planned_findings": [
+          "f28",
+          "f29",
+          "f30",
+          "f31",
+          "f32",
+          "f33",
+          "f45"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1500,
+        "summary": "oq-216·oq-217·oq-219 에 부분 근거를 연결하고(열림 유지) 새 질문 4건(가정 감시, 행동 청크와 정지 계약, OpenVLA·GR00T N1.7 라이선스 출처 충돌)을 올린다.",
+        "planned_findings": [
+          "f9",
+          "f14",
+          "f16",
+          "f22",
+          "f24",
+          "f32",
+          "f34",
+          "f38"
+        ]
+      },
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "section": "13. 참고 자료 (각주)",
+        "budget_chars": 0,
+        "summary": "새 출처 15건 각주 정의 추가, 다시 연 기존 출처 4건 접근일 갱신."
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신",
+        "patches": [
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "replace",
+            "content": "이번 조사에서 확인한 가정 사례는 처음 보는 가정집에서의 연구 평가다. [사실][^ref-1047] 제조 공장 사례는 도입 기업의 발표이고, 물류창고 사례는 국내 실증 계획이다. [추정] 벤더 주장[^ref-1051][^ref-1052] 제조 공장에는 언어 모델 다중 로봇 계획기를 로봇 팔 3대 장면에서 실물로 시험한 연구 평가 사례도 있다. [사실][^ref-170] 병원·상업 시설·실외 현장의 로봇 기반 모델·언어 모델 계획 적용 사례는 이번 조사에서 찾지 못했다.\n\n**현장 유형:** 가정\n\n**사례:** 처음 보는 가정집에서 부엌·침실 정리(연구 평가)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인(초록에 작업을 일으키는 요청 방식이 없다) |\n| 작업 대상 | 처음 보는 가정집의 부엌·침실 공간과 그 안의 물건 [사실][^ref-1047] |\n| 수행 자원 | 미확인(초록에 로봇 기종과 사람의 역할이 없다) |\n| 제약 | 학습 때 보지 못한 가정집에서 장기·정교한 조작 작업을 해야 한다 [사실][^ref-1047] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\nPhysical Intelligence의 π0.5는 여러 로봇의 데이터, 고수준 의미 예측, 웹 데이터 같은 이질적 과제를 함께 학습(co-training)해 “cleaning a kitchen or bedroom, in entirely new homes” 같은 장기 작업을 수행했다고 보고했다(2025-04). [사실][^ref-1047] 이것은 연구 평가(처음 보는 가정집에서의 실험)이며 상용 배치가 아니다. [사실][^ref-1047] 이 사례에서 로봇 기반 모델이 관여하는 부분은 작업 대상을 미리 정한 스킬 목록 없이 다루는 방식이다. [추정][^ref-1045][^ref-1047]\n\n**현장 유형:** 제조 공장\n\n**사례:** 자동차 공장에서 휴머노이드의 부품 투입과 순서 공급(BMW 그룹 스파턴버그 공장)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인(자료에 작업을 일으키는 요청 방식이 없다) |\n| 작업 대상 | 용접 공정용 판금 부품(Figure 02), 대용량 용기에 섞여 들어온 부품(Figure 03, 착수 발표) [추정] 벤더 주장[^ref-1051] |\n| 수행 자원 | Figure AI의 휴머노이드 Figure 02·Figure 03, 순서 대차를 조립 공정으로 옮기는 자동화 시스템 [추정] 벤더 주장[^ref-1051] |\n| 제약 | 미확인 |\n| 완료·인계 | 계획 내용(착수 발표): Figure 03이 부품을 순서 대차(sequencing trolley)에 정리하면 대차가 자동화 시스템으로 조립 공정에 운반된다. 수행 결과가 아니다 [추정] 벤더 주장[^ref-1051] |\n| 예외·성과 | Figure 02가 BMW X3 3만 대 이상의 생산을 도왔다고 밝히나, 기간은 BMW 보도자료 본문의 10개월과 보도자료에 실린 Figure AI 최고경영자 인용문의 11개월로 엇갈린다. 교대당 99% 초과 성공률·교대당 개입 0회는 Figure AI가 밝힌 목표치(실측 아님)다. 복구 주체는 미확인 [추정] 벤더 주장[^ref-1051][^ref-1619] |\n\nBMW 그룹은 2025년 스파턴버그 공장에 Figure AI의 휴머노이드 Figure 02를 배치해 용접 공정용 판금 부품 투입을 맡겼고, 이 로봇이 BMW X3 3만 대 이상의 생산을 도왔다고 밝힌다. [추정] 벤더 주장[^ref-1051] 같은 보도자료(2026-06-25) 안에는 10개월 동안 3만 대 이상 생산을 지원했다는 문장과 11개월 배치라는 문장이 함께 있어 기간을 하나로 정하지 않는다(11절 열린 질문). [추정] 벤더 주장[^ref-1051] 2026-10-12 재열람 기준으로 10개월은 보도자료 본문에, 11개월은 보도자료에 실린 Figure AI 최고경영자(Chief Executive Officer, CEO) 인용문에 있다. [추정] 벤더 주장[^ref-1051]\n\nFigure AI의 2025-11-19 발표는 이 배치를 '11개월 배치'라 부르면서, 개발 착수 뒤 6개월 안에 공장에 납품·시험을 시작하고 10개월 안에 생산 라인 전면 배치를 시작했으며, 6개월 동안 매일 가동해 1,250시간 이상 가동했다고 적는다. [추정] 벤더 주장[^ref-1619] 이 세 기간은 기점·종점이 서로 달라 BMW 보도자료의 10개월·11개월 차이를 해소하지 못한다. [추정] 벤더 주장[^ref-1619][^ref-1051] 따라서 이 페이지는 기간을 하나로 정하지 않는다. 같은 Figure AI 발표에서 교대당 99% 초과 성공률과 교대당 개입 0회는 목표로 제시됐을 뿐 달성한 실측치로 보고되지 않았다. [추정] 벤더 주장[^ref-1619]\n\nBMW 그룹은 또 후속 Figure 03이 스파턴버그에서 순서 공급(just in sequence) 물류 작업을 시작한다고 밝혔고(착수 발표), 이 로봇이 음성 대화 기능과 무선 충전을 갖췄다고 설명한다. [추정] 벤더 주장[^ref-1051] Figure AI 자체 발표(2025-11-19 F.02 회고, 2026-06-30 F.03 첫 시연)가 같은 배치·착수를 설명하나, 같은 프로젝트 당사자 자료라 독립 확인은 아니다. [추정] 벤더 주장[^ref-1619][^ref-1620][^ref-1051] Figure AI는 2026-06-30 발표에서 Figure 03이 스파턴버그 공장에서 물류 작업 흐름을 수행한 것을 첫 시연으로 설명하고, 자사 VLA인 Helix 02가 손·팔·몸통·발을 함께 제어해 무거운 대차를 끌었다고 적는다. [추정] 벤더 주장[^ref-1620] 이것은 첫 시연이며 지속 배치의 성과(가동률·인계 기록)가 아니다. [추정] 벤더 주장[^ref-1620]\n\n**현장 유형:** 제조 공장\n\n**사례:** 컨베이어에 공작물을 옮기는 로봇 팔 3대의 언어 모델 작업 계획(IMR-LLM 연구 평가)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 컨베이어에 옮기는 공작물 [사실][^ref-170] |\n| 수행 자원 | 로봇 팔 3대(단일 장면), 장면 설명을 약 15분 걸려 손으로 작성해 입력한 전문가 [사실][^ref-170] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 반복 횟수는 보고되지 않았다. 복구 주체와 처리량·시간 영향은 미확인 [사실][^ref-170] |\n\nIMR-LLM(2026-03)의 실물 시험은 컨베이어에 공작물을 옮기는 로봇 팔 3대의 단일 장면이었고, 전문가가 약 15분 걸려 장면 설명을 손으로 작성해 입력했으며, 반복 횟수는 보고되지 않았다. [사실][^ref-170] 이것은 연구 평가(로봇 팔 3대 단일 장면, 전문가 약 15분 수동 장면 작성, 반복 횟수 미보고)이며 장기 운영 실적이 아니다. [사실][^ref-170] 이 위키의 의견으로는, 연구 논문의 실물 시험은 사례 표에 장면 작성자·시뮬레이션 확인·복구 책임을 함께 적고 장기 운영 실적으로 표시하지 않아야 한다. [의견][^ref-170]\n\n**현장 유형:** 물류창고\n\n**사례:** 물류센터에서 시각–언어–행동(Vision-Language-Action, VLA) 모델([비전 언어 행동 모델](../../glossary/vision-language-action-model.md))을 넣은 휴머노이드의 실증(개념 검증, Proof of Concept, PoC) 계획 — 입고·출고·피킹·반품 단계\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 입·출고·오발주 등 고난도 작업과 분류·피킹·반품 등 수작업 공정(비정형 작업) [추정] 벤더 주장[^ref-1052] |\n| 수행 자원 | VLA 모델을 넣은 로보티즈의 상체형 휴머노이드 AI 워커, 협력사 BGF로지스 [추정] 벤더 주장[^ref-1052] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 목표치(실측 아님): 핵심 공정 자동화율 80% 이상, 오발주 재분류·피킹 작업 성공률 90% 이상 [추정] 벤더 주장[^ref-1052] |\n\n헬로티 보도(2025-11-26)에 따르면 로보티즈는 정부 과제 'AI 파운데이션 모델 기반 유통 공정 특화 휴머노이드 로봇 개발'(정부 출연금 약 60억 원)로, VLA 모델을 넣은 상체형 휴머노이드 AI 워커가 BGF로지스 물류센터 실증(PoC)을 수행할 계획이다. [추정] 벤더 주장[^ref-1052] 기사가 전한 성과 수치는 목표치(실측 아님)이며, 공개된 측정 결과는 확인하지 못했다(11절 열린 질문). [추정] 벤더 주장[^ref-1052]\n\n이와 별도로 산업통상부 보도자료(2025-11-24 등록)에 따르면 산업부와 서울대가 M.AX 얼라이언스 협력 업무협약(Memorandum of Understanding, MOU)을 맺었고, 지원 과제 표의 휴머노이드 분과 과제는 '휴머노이드 AI 파운데이션 모델 개발'(2025~2028년, 484억 원, 핵심 연구진 장병탁·박재흥 서울대 교수)이다. [사실][^ref-1621] 이 과제가 위 로보티즈–BGF로지스 과제와 같은 사업인지는 확인되지 않았고, 이 보도자료에도 자동화율 80%·성공률 90%의 실측 결과는 없다(11절 열린 질문). [사실][^ref-1621]\n\n이 위키의 의견으로는, 벤더·도입 기업 발표는 목표·기간·첫 시연과 실측 성과를 다른 열로 나누고, 운영 기간의 기점·종점, 성공률의 분모, 개입·실패 기록, 인계 신호가 공개될 때까지 도입 성과 지표(Key Performance Indicator, KPI) 비교에 쓰지 않아야 하며, 국내 실증 목표(자동화율 80%·성공률 90%)도 같다. [의견][^ref-1619][^ref-1620][^ref-1051][^ref-1621]"
+          },
+          {
+            "section": "6. 대표 접근법과 기술",
+            "action": "append",
+            "content": "\n### 2026-10-12 갱신: 다중 로봇 언어 모델 계획의 평가 조건과 보장의 전제\n\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술 (2026-09-30)](../../topics/2026/2026-09-30-area44-s6.md)에 있다.\n\n이 소절은 세 다중 로봇 계획 연구의 평가 규모·실패 양상과, 계획 검증이 기대는 입력 전제를 2026-10-12에 원문에서 확인한 것이다.\n\n**SMART-LLM.** SMART-LLM의 평가 데이터셋은 AI2-THOR 가정 시뮬레이션의 고수준 지시 36개로 구성되며, 과제마다 로봇 1~4대를 쓴다. [사실][^ref-090] 어떤 로봇도 필요한 스킬을 갖지 않은 불가능 과제 시험에서 GPT-4·Claude-3 기반 구성은 배정 계획을 만들지 않았고, GPT-3.5·Llama2 기반 구성은 과제에 맞지 않는 로봇이 들어간 배정 계획을 만들었다. [사실][^ref-090] 이 시험은 표 I 집계에 들어 있지 않고 과제 수도 보고되지 않았다. [사실][^ref-090]\n\n**IMR-LLM.** IMR-Bench는 생산 라인 설계 전문가가 실제 산업 현장에서 수집·각색한 장면 23개(장면당 로봇 1~7대)를 바탕으로 제조 작업 50개를 구성한 벤치마크이며, KunWu 플랫폼 위에 만들어졌다. [사실][^ref-170] IMR-LLM 구현은 언어 모델이 구성을 도운 이접 그래프(disjunctive graph)의 일정을 휴리스틱 선입선출(First-In-First-Out, FIFO) 알고리즘으로 푼다. [사실][^ref-170] 저자는 복잡한 다중 로봇 작업에서 성공률이 떨어진 주된 이유로 언어 모델의 잘못된 분해·배정(예: 팔이 닿지 않는 로봇에 작업 배정)을 들었으나, 그 빈도는 정량화하지 않았다. [사실][^ref-170] [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술 (2026-09-30)](../../topics/2026/2026-09-30-area44-s6.md)의 '선택 그래프(disjunctive graph)'는 같은 용어이며, 이 위키는 이번 갱신부터 '이접 그래프'로 쓴다.\n\n**기호 계획기 결합의 입력 전제.** LLM+P는 행동의 전제·효과를 담은 계획 도메인 정의 언어(Planning Domain Definition Language, PDDL) 도메인 파일을 사람 전문가가 제공한다는 것을 입력 전제로 두며, 언어 모델은 문제(problem) 파일만 만든다. [사실][^ref-092]\n\n**등각 예측 기반 다중 로봇 계획.** [등각 예측](../../glossary/conformal-prediction.md)(conformal prediction) 기반 다중 로봇 언어 계획기 S-ATLAS(IEEE RA-L, 2025-01)의 임무 성공률 보장은 보정(calibration) 시나리오와 시험 시나리오가 독립·동일분포(independent and identically distributed, i.i.d.)라는 조건 아래에서만 성립한다. [사실][^ref-1607] 임무 완료율 정리는 계획 실행에 오류가 없다는 전제를 두며, 증명은 예측 집합이 단일 원소가 아닐 때 사람이 정확한 도움을 준다는 것도 전제한다. [사실][^ref-1607] S-ATLAS는 AI2-THOR 시뮬레이션의 검증 시나리오 110개로 평가했고 로봇 수는 1·3·10·15대였으며, 열람한 본문에서 실물 로봇 실험은 확인되지 않았다. [사실][^ref-1607]\n\n**이 위키의 의견.** 이 위키의 의견으로는, 스킬 목록이 없거나 로봇 능력 밖인 요청을 계획기가 거절하는지(또는 닿지 않는 로봇에 배정하지 않는지)를 일반 성공률과 별도의 수용 시험 항목으로 두어야 한다. [의견][^ref-090][^ref-170] 또한 이 위키의 의견으로는, 언어 모델 다중 로봇 계획의 검증 결과에는 일정 풀이 통과와 분해·배정의 정확성을 따로 적고, 계획 검증이 기대는 전제(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행, 정확한 사람 도움)를 함께 기록해 전제가 깨질 때 보장 상태를 다시 평가해야 하며, 이 보장을 플릿의 물리적 안전 보장과 섞지 않아야 한다. [의견][^ref-170][^ref-092][^ref-1607]"
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "append",
+            "content": "\n### 2026-10-12 갱신: 공개 VLA 배포물의 입출력과 사용 조건\n\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md)에 있다.\n\n아래는 공개 문서의 문구를 대조한 것이며 상용 사용 가능 여부에 대한 법적 판단이 아니다. 사용 조건의 적용 판단은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md) 쪽 연계 대상이다.\n\n**OpenVLA 사용 조건(정정).** [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md) 표 아래의 'OpenVLA의 라이선스는 확인하지 못했다'는 다음 문서 대조로 바로잡는다. OpenVLA 공식 저장소(고정 커밋 c8f03f4)의 코드 라이선스는 MIT다. [사실][^ref-1608] 같은 저장소 README는 사전학습 모델이 기반 모델의 제약을 물려받을 수 있다고 적는다. [사실][^ref-1608]\n\n이어서 README는 두 사전학습 모델이 Llama 2에서 파생돼 Llama Community License를 따른다고 단정형으로 적는다. [사실][^ref-1608] 반면 Hugging Face 모델 카드는 모든 OpenVLA 체크포인트와 학습 코드가 MIT 라이선스로 공개된다고 적고, 현재 main 판(커밋 47a0ec7)도 같은 문구다. [사실][^ref-1609] 두 문서는 같은 개발팀 자료라 어느 쪽이 맞는지 문서만으로 정할 수 없으며, 이 페이지는 어느 쪽도 고르지 않는다(11절 열린 질문). [사실][^ref-1608][^ref-1609]\n\n**GR00T N1.7(GR00T N1과 다른 판).** NVIDIA Isaac GR00T 저장소의 n1.7-release 브랜치 README(접근일 2026-10-12 기준)는 GR00T N1.7을 얼리 액세스(Early Access, EA) 릴리스로 명시하고, 정식(General Availability, GA) 릴리스 전까지 지원·안정성 보장이 제한되며 상용 지원을 포함한 운영 배치는 GA 대상이라고 적는다. [사실][^ref-1611] 같은 README의 License 절은 코드는 Apache 2.0, 모델 가중치는 NVIDIA Open Model License로 구분한다. [사실][^ref-1611] 그런데 같은 README의 소개 문단은 GR00T N1.7이 Apache 2.0으로 'fully commercially licensable'하다고 적어, License 절과 가중치 저장소 LICENSE와 맞지 않는다. [추정] 벤더 주장[^ref-1611][^ref-1612]\n\nHugging Face nvidia/GR00T-N1.7-3B 저장소의 LICENSE 파일(커밋 6949d5d)은 NVIDIA License 표제 아래 3.3절에서 저작물과 파생물을 연구·평가 목적의 비상업 용도로만 쓸 수 있게 하고, NVIDIA와 그 계열사의 상업적 사용은 예외로 둔다. [사실][^ref-1612] 같은 저장소의 모델 카드는 NVIDIA Open Model License와 상업·비상업 사용 준비를 적으며, 어느 문서가 우선하는지는 문서에 적혀 있지 않다. [사실][^ref-1611][^ref-1612] 정리하면 GR00T N1.7은 EA 릴리스이고 코드는 Apache 2.0이며, 가중치 사용 조건은 문서마다 다르다(README 소개·License 절·3B 카드·3B LICENSE 3.3절). [사실][^ref-1611][^ref-1612] [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스 (2026-09-30)](../../topics/2026/2026-09-30-area44-s7.md) 표의 GR00T N1 행은 이 근거로 고치지 않는다.\n\n**입출력 계약.** OpenVLA 모델 카드에 따르면 OpenVLA는 언어 지시와 카메라 영상 한 장을 입력받아 정규화된 7자유도 엔드이펙터 변위(x, y, z, roll, pitch, yaw, gripper)를 출력하며, 실제 로봇에서 실행하려면 로봇·데이터셋별로 계산한 통계로 역정규화해야 한다. [사실][^ref-1609] π0 계열 공개 구현 openpi의 원격 추론 예시(커밋 215abfb)는 정책 서버가 (action_horizon, action_dim) 형태의 행동 청크(action chunk)를 돌려준다고 설명한다. [사실][^ref-1610] 같은 예시는 다음 추론 호출 전까지 예측된 행동 청크의 나머지 행동을 개방 루프(open-loop)로 실행하도록 안내하며, 이는 예시 동작 설명이지 명령 수락·작업 완료 상태나 안전 정지 기능의 근거가 아니다. [사실][^ref-1610] openpi README가 제공하는 기반 체크포인트는 π0, π0-FAST, π0.5뿐이며 π0.7 가중치는 목록에 없다. [사실][^ref-1610]\n\n**ROSA의 물리 실행 조건.** ROSA 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준)는 핵심 ROSA 에이전트가 텍스트 상호작용에 한정되어 물리 세계와 상호작용할 수 없으며, 물리적 상호작용에는 사용자가 맞춤 도구와 프롬프트를 만들어야 한다고 설명한다. [사실][^ref-1616] 같은 FAQ는 로봇 능력을 넘는 행동을 막으려면 맞춤 도구 안에 실행 전 로봇 상태·능력 확인 제약과 매개변수 검증·행동 제한 같은 안전 검사를 직접 넣으라고 권고하며, 이는 자동으로 제공되는 기능이 아니라 권고다. [사실][^ref-1616]\n\n**이 위키의 의견.** 이 위키의 의견으로는, VLA 탑재 로봇의 능력 등록에는 모델·가중치 리비전(해시), 로봇 기종·카메라, 좌표계·행동 단위·제어 모드, 정규화 통계, 행동 청크의 형태·관측 시각·유효기간·중단 조건, 허용 과제와 완료 판정을 두고, 명령 완료는 로봇 외부 상태로 확인하는 것이 필요해 보인다. 이는 ROP 설계 제안이며 표준이 아니다. [의견][^ref-1609][^ref-1610][^ref-1613] 또한 이 위키의 의견으로는, 공개 VLA를 도입할 때 코드 라이선스와 가중치 사용 조건을 따로 확인하고, README 소개 문구만으로 상용 허용을 확정하지 않으며, 문서끼리 충돌하는 조건은 배포자에게 서면으로 확인할 항목으로 남겨야 한다(법률 판단이 아니다). [의견][^ref-1608][^ref-1609][^ref-1611][^ref-1612]"
+          },
+          {
+            "section": "8. 대표 연구와 자료",
+            "action": "append",
+            "content": "\n### 2026-10-12 갱신: 최근 로봇 기반 모델, VLA 견고성 평가, 국내 과제\n\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료 (2026-09-30)](../../topics/2026/2026-09-30-area44-s8.md)에 있다.\n\n- Physical Intelligence, π0.7 기술 보고서(2026-04, arXiv v2) — 관절(joint)·엔드이펙터(ee) 행동을 함께 학습하고, 프롬프트의 텍스트 식별자로 실행 제어 모드를 지정해 실행 시 과제에 따라 고른다고 설명한다. [추정] 벤더 주장[^ref-1613] 추론 지연에 대비해 학습 중 0~12 타임스텝의 지연을 모사했고 이는 50 Hz 로봇에서 최대 240 ms에 해당한다고 적지만, 이는 학습 조건이며 측정된 추론 지연이 아니고 보고서의 UR5e 로봇은 20 Hz로 동작한다. [추정] 벤더 주장[^ref-1613] 저자들은 학습 데이터가 매우 커서 평가 과제가 학습 때 본 과제인지 처음 보는 과제인지 확정하기 어렵다고 스스로 밝힌다. [추정][^ref-1613] 공개 구현 openpi의 기반 체크포인트 목록에는 π0.7이 없다(7절). [사실][^ref-1610]\n- Fei, S. 외, LIBERO-Plus(arXiv 2025-10; CVPR 2026 게재본 제목은 'LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models') — LIBERO 시뮬레이션 조작 과제에서 물체 배치, 카메라 시점, 로봇 초기 상태, 언어 지시, 조명, 배경 질감, 센서 잡음의 7개 축으로 입력을 하나씩 교란해 VLA 모델의 견고성을 평가한다. [사실][^ref-1614][^ref-1615] arXiv v3 안의 표 1(원래 LIBERO 설정의 단일 축 교란 분석: OpenVLA-OFT 성공률 원본 97.1, 카메라 시점 59.7, 로봇 초기 상태 37.2)과 표 2(LIBERO-Plus 벤치마크 견고성 평가: 카메라 56.4, 로봇 31.9, 전체 69.6)는 평가 설정이 다른 두 표다. [추정][^ref-1614] 이 벤치마크는 단일 팔 조작 시뮬레이션이며 현장 플릿 평가가 아니다. [사실][^ref-1614] 이 위키의 의견으로는, 카메라 교체·로봇 초기 자세 변경 같은 교란을 로봇별 수용 시험에 넣고, 벤치마크 수치는 표·평가 설정(단일 축 교란 분석인지 벤치마크 평가인지)과 판을 밝혀 인용하며, 단일 팔 시뮬레이션 벤치마크 순위를 제조사 혼합 플릿 순위로 환산하지 않아야 한다. [의견][^ref-1614][^ref-1615]\n- 산업통상부, M.AX 얼라이언스 협력 보도자료(2025-11-24) — 휴머노이드 분과 과제 '휴머노이드 AI 파운데이션 모델 개발'(2025~2028년, 484억 원)은 기업이 데이터·플랫폼을 제공하고 서울대가 모델을 개발해 기업에 다시 제공하는 구조다. [사실][^ref-1621]"
+          },
+          {
+            "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+            "action": "replace",
+            "content": "ROP는 언어 모델 계획을 검증하고 사람 확인을 거쳐 이종 로봇에 내리는 계층을 맡고, VLA의 저수준 조작 정책은 로봇 제조사·모델 제공자에게 연계하는 것으로 보인다. [추정][^ref-092][^ref-351][^ref-1045]\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 로봇 기반 모델을 탑재한 로봇을 포함한 이종 로봇의 가능한 기능·실행 조건·완료·실패 확인을 받고, 검증된 계획을 내리는 인터페이스 [추정][^ref-088][^ref-090][^ref-171] | 연계 대상: VLA·로봇 기반 모델이 카메라 영상에서 관절·그리퍼 행동을 직접 생성하는 저수준 조작 정책(로봇 제조사·모델 제공자) [추정][^ref-1045][^ref-1046][^ref-1047][^ref-1049] |\n| 로봇 자체 지능·제어(언어 모델 도구 호출 실행) | 이 위키의 의견으로는 도구 호출의 읽기·실행 권한 구분, 실행 대상과 승인된 계획의 대조, 물리적 완료 판정, 세션 종료와 정지 절차의 연결 [의견][^ref-1617][^ref-1618] | 연계 대상(이 위키의 경계 판단): 물리적 비상 정지와 로봇 런타임의 소프트웨어 정지(로봇 자체 제어·설비 안전 제어 쪽) [의견][^ref-1618]. 벤더 문서가 밝히는 것은 MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다는 점이다 [추정] 벤더 주장[^ref-1618] |\n\nROP가 직접 맡을 범위는 언어 모델이 만든 작업 분해·배정 계획을 기호 계획기·제약 검사로 검증하는 계층, 불확실할 때 사람에게 확인을 요청하는 절차, 이종 로봇에 계획을 내리는 인터페이스이며, 이는 분류 원문 C. 채팅 기반 구성·운영 주석의 '사람이 확인·승인한 계획만 실행' 원칙과 같은 방향이다. [추정][^ref-092][^ref-586][^ref-351]\n\nIMR-LLM처럼 공정 트리를 따라 실행 가능한 저수준 로봇 프로그램까지 생성하는 연구도 있으나, 그 부분은 로봇 자체 제어에 닿으므로 ROP에서는 연계 대상 문맥으로 본다. [추정][^ref-170] 이 경계는 제품 전략에 따라 이동할 수 있으며, 분류 원문은 '이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다'고 적는다([범위 경계](../../about/scope-boundary.md)).\n\n### 도구 호출로 로봇을 움직일 때의 경계(2026-10-12 갱신)\n\n언어 모델이 모델 컨텍스트 프로토콜([Model Context Protocol, MCP](../../glossary/model-context-protocol.md)) 같은 도구 호출로 로봇을 움직이는 구성에서도 위 경계가 적용된다. MCP 공식 블로그(2026-03-16)는 도구 어노테이션(readOnlyHint·destructiveHint 등)이 위험을 알리는 힌트일 뿐 실행 강제 수단이 아니며, 확실한 보장이 필요하면 네트워크 통제나 샌드박스로 해야 한다고 설명한다. 이 글은 규범 명세가 아니라 프로젝트의 해설이며, 위키가 앞서 정리한 MCP 명세 서술([13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술](../../topics/2026/2026-09-29-area13-s6.md))을 보완한다. [사실][^ref-1617]\n\nPickNik의 MoveIt Pro MCP 서버 문서(Version 10)는 공유되는 배포(deployment) MCP 키는 읽기 전용이고, 로봇 동작은 호스트 사용자 세션에서 기존 Objective를 시작·취소하는 것으로만 한정된다고 설명한다. [추정] 벤더 주장[^ref-1618] 같은 문서는 서버가 별도의 실행 확인 프롬프트를 추가하지 않고, 도구 승인은 MCP 클라이언트 설정에 달려 있으며 클라이언트가 자동 승인할 수도 있다고 적는다. [추정] 벤더 주장[^ref-1618] 또 run_objective로 시작한 로봇은 세션이 끝나도 계속 움직일 수 있고, cancel_objective는 'best effort'일 뿐 비상 정지가 아니며, MCP 취소·소프트웨어 정지는 물리적 비상 정지를 대체하지 않는다고 적는다. [추정] 벤더 주장[^ref-1618] ROSA FAQ도 물리적 상호작용을 하려면 사용자가 맞춤 도구와 프롬프트를 만들어야 하고, 상태·능력 확인과 안전 검사를 그 도구 안에 넣으라고 권고한다(7절). [사실][^ref-1616]\n\n연계 대상: 이 위키의 경계 판단으로는, 물리적 비상 정지와 로봇 런타임의 소프트웨어 정지는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 경계에 따라 로봇 제조사·설비 공급자 쪽 연계 대상으로 둔다. [의견][^ref-1618] MoveIt Pro 문서가 밝히는 것은 MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다는 점까지이며, 정지 책임을 누가 지는지는 적지 않는다. [추정] 벤더 주장[^ref-1618] 이 위키의 의견으로는, ROP가 직접 맡는 것은 언어 모델 도구 호출에 대한 읽기·실행 권한 구분, 실행 대상이 승인된 계획 리비전·목표 식별자(goal id)와 맞는지의 확인, 물리적 완료 판정, 세션 종료를 별도 정지 절차에 연결하는 일로 한정하며, 어노테이션 힌트나 클라이언트 자동 승인에 기대지 않아야 한다. [의견][^ref-1617][^ref-1618][^ref-1616]"
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "append",
+            "content": "\n### 2026-10-12 갱신: 부분 근거와 새 질문\n\n이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — 열린 질문 (2026-09-30)](../../topics/2026/2026-09-30-area44-s11.md)에 있다.\n\n아래 기존 질문에는 부분 근거만 더했으며, 모두 열림 상태를 유지한다.\n\n- **oq-216** (상태: 열림) 부분 근거: 배포물마다 입출력이 다르다. OpenVLA는 정규화된 7자유도 엔드이펙터 변위를 내고 로봇·데이터셋별 역정규화가 필요하며, openpi 원격 추론은 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내한다(7절). [사실][^ref-1609][^ref-1610] π0.7 보고서는 프롬프트로 관절·엔드이펙터 제어 모드를 고른다고 설명한다(8절). [추정] 벤더 주장[^ref-1613] 공통 능력 등록 표준과 적합성 시험은 확인하지 못했다.\n- **oq-217** (상태: 열림) 부분 근거: 확인한 공개 평가는 SMART-LLM(AI2-THOR 지시 36개, 로봇 1~4대), IMR-Bench(장면 23개·제조 작업 50개, 장면당 로봇 1~7대), S-ATLAS(AI2-THOR 검증 시나리오 110개, 로봇 1·3·10·15대)이고, 실물 시험으로는 IMR-LLM의 로봇 팔 3대 단일 장면을 확인했다(5절·6절). [사실][^ref-090][^ref-170][^ref-1607] VLA 쪽에는 입력 교란 견고성 벤치마크 LIBERO-Plus가 있다(8절). [사실][^ref-1614] 설비·안전·시간창을 함께 다루는 공통 기준은 확인하지 못했다.\n- **oq-218** (상태: 열림) 관련 근거: 산업부 M.AX 휴머노이드 AI 파운데이션 모델 과제 보도자료(2025-11-24)에도 실측 결과는 없다(5절). [사실][^ref-1621]\n- **oq-219** (상태: 열림) 부분 근거: 10개월은 BMW 보도자료 본문, 11개월은 Figure AI 최고경영자 인용문에 있고, Figure AI 발표는 6·10·11개월의 다른 기간 축을 적는다. 기점·종점이 없어 충돌은 해소되지 않았다(5절). [추정] 벤더 주장[^ref-1051][^ref-1619]\n- **oq-104** 관련 근거: π0.7 보고서의 240 ms(50 Hz 기준)는 학습 중 모사한 지연이며 측정된 추론 지연이 아니다(8절). [추정] 벤더 주장[^ref-1613]\n- **oq-141**([13. 대화형 기능의 신뢰·기반](../chat-based-configuration-and-operation/conversational-trust-and-foundations.md) 쪽 승인 관문 위치 질문) 관련 근거: MoveIt Pro MCP 서버는 확인 프롬프트를 두지 않고 도구 승인을 MCP 클라이언트 설정에 맡긴다(9절). 이 페이지에서 상태를 바꾸지 않는다. [추정] 벤더 주장[^ref-1618]\n\n이번에 새로 올린 질문(전체 목록은 [열린 질문](../../open-questions.md)):\n\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 언어 모델 다중 로봇 계획의 검증이 기대는 가정(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행)을 런타임에서 누가 감시하고, 가정이 깨졌을 때 어떤 계획을 중단·재검증할 것인가?\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가?\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가?\n- (상태: 열림 · 제기 2026-10-12 · 실행 2026-10-12-05) 출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가?"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-1045",
+                "ref-1046",
+                "ref-1047",
+                "ref-1048",
+                "ref-088",
+                "ref-092",
+                "ref-586",
+                "ref-090",
+                "ref-351",
+                "ref-1049",
+                "ref-170",
+                "ref-171",
+                "ref-1050",
+                "ref-1051",
+                "ref-1052",
+                "ref-1607",
+                "ref-1608",
+                "ref-1609",
+                "ref-1610",
+                "ref-1611",
+                "ref-1612",
+                "ref-1613",
+                "ref-1614",
+                "ref-1615",
+                "ref-1616",
+                "ref-1617",
+                "ref-1618",
+                "ref-1619",
+                "ref-1620",
+                "ref-1621"
+              ],
+              "last_run": "2026-10-12"
+            },
+            "content": "[^ref-1045]: Brohan, A., Brown, N. 외 (Google DeepMind, arXiv), RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control, 2023-07-28, https://arxiv.org/abs/2307.15818, 접근일 2026-09-30\n[^ref-1046]: Kim, M. J., Pertsch, K., Karamcheti, S. 외 (arXiv), OpenVLA: An Open-Source Vision-Language-Action Model, 2024-06-13, https://arxiv.org/abs/2406.09246, 접근일 2026-09-30\n[^ref-1047]: Physical Intelligence (Black, K., Finn, C., Levine, S. 외, arXiv), π0.5: a Vision-Language-Action Model with Open-World Generalization, 2025-04-22, https://arxiv.org/abs/2504.16054, 접근일 2026-09-30\n[^ref-1048]: Open X-Embodiment Collaboration (arXiv), Open X-Embodiment: Robotic Learning Datasets and RT-X Models, 2023-10-13, https://arxiv.org/abs/2310.08864, 접근일 2026-09-30\n[^ref-088]: Ahn, M., Brohan, A., Brown, N. 외 (arXiv), Do As I Can, Not As I Say: Grounding Language in Robotic Affordances, 2022-04-04, https://arxiv.org/abs/2204.01691, 접근일 2026-09-30\n[^ref-092]: Liu, B., Jiang, Y., Zhang, X. 외 (arXiv), LLM+P: Empowering Large Language Models with Optimal Planning Proficiency, 2023-04-22, https://arxiv.org/abs/2304.11477, 접근일 2026-10-12\n[^ref-586]: Kambhampati, S., Valmeekam, K., Guan, L. 외 (ICML 2024, arXiv), LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks, 2024-02-02, https://arxiv.org/abs/2402.01817, 접근일 2026-09-30\n[^ref-090]: Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C. (arXiv), SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models, 2023-09-18, https://arxiv.org/abs/2309.10062, 접근일 2026-10-12\n[^ref-351]: Ren, A. Z., Dixit, A., Bodrova, A. 외 (CoRL 2023, arXiv), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners, 2023-07-04, https://arxiv.org/abs/2307.01928, 접근일 2026-09-30\n[^ref-1049]: NVIDIA (Bjorck, J., Castañeda, F. 외, arXiv), GR00T N1: An Open Foundation Model for Generalist Humanoid Robots, 2025-03-18, https://arxiv.org/abs/2503.14734, 접근일 2026-09-30\n[^ref-170]: Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R. (arXiv), IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models, 2026-03-03, https://arxiv.org/abs/2603.02669, 접근일 2026-10-12\n[^ref-171]: NASA Jet Propulsion Laboratory (nasa-jpl), ROSA — README, 미확인, https://github.com/nasa-jpl/rosa, 접근일 2026-09-30\n[^ref-1050]: 지디넷코리아, K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과, 2025-05-01, https://zdnet.co.kr/view/?no=20250501140356, 접근일 2026-09-30\n[^ref-1051]: BMW Group, BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg, 2026-06-25, https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en, 접근일 2026-10-12\n[^ref-1052]: 헬로티, VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입, 2025-11-26, https://www.hellot.net/news/article.html?no=107567, 접근일 2026-09-30\n[^ref-1607]: Wang, J., He, G., & Kantaros, Y. (IEEE Robotics and Automation Letters 10(1)), Probabilistically Correct Language-based Multi-Robot Planning using Conformal Prediction, 2025-01, https://arxiv.org/abs/2402.15368, 접근일 2026-10-12\n[^ref-1608]: OpenVLA 개발팀 (openvla/openvla GitHub), OpenVLA — README 및 LICENSE (커밋 c8f03f4), 미확인, https://github.com/openvla/openvla/blob/c8f03f48af692657d3060c19588038c7220e9af9/README.md, 접근일 2026-10-12\n[^ref-1609]: OpenVLA 개발팀 (Hugging Face openvla/openvla-7b), openvla/openvla-7b — Model Card, 미확인, https://huggingface.co/openvla/openvla-7b, 접근일 2026-10-12\n[^ref-1610]: Physical Intelligence (Physical-Intelligence/openpi GitHub), openpi — README, docs/remote_inference.md, LICENSE (커밋 215abfb), 미확인, https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md, 접근일 2026-10-12\n[^ref-1611]: NVIDIA (NVIDIA/Isaac-GR00T GitHub), Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치), 미확인, https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md, 접근일 2026-10-12\n[^ref-1612]: NVIDIA (Hugging Face nvidia/GR00T-N1.7-3B), GR00T-N1.7-3B — LICENSE 및 모델 카드, 미확인, https://huggingface.co/nvidia/GR00T-N1.7-3B/blob/6949d5dfab2e872283e8cca8106ac3af8adcf39b/LICENSE, 접근일 2026-10-12\n[^ref-1613]: Physical Intelligence (Ai, B. 외, arXiv), π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities, 2026-04-16, https://arxiv.org/abs/2604.15483, 접근일 2026-10-12\n[^ref-1614]: Fei, S., Wang, S., Shi, J. 외 (arXiv), LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models, 2025-10-15, https://arxiv.org/abs/2510.13626, 접근일 2026-10-12\n[^ref-1615]: Fei, S., Wang, S., Shi, J. 외 (CVPR 2026, Computer Vision Foundation Open Access), LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models, 2026, https://openaccess.thecvf.com/content/CVPR2026/html/Fei_LIBERO-Plus_A_Progressive_Robustness_Benchmark_for_Visual-Language-Action_Models_CVPR_2026_paper.html, 접근일 2026-10-12\n[^ref-1616]: NASA Jet Propulsion Laboratory (nasa-jpl), FAQ · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/FAQ, 접근일 2026-10-12\n[^ref-1617]: Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.), Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do, 2026-03-16, https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/, 접근일 2026-10-12\n[^ref-1618]: PickNik Robotics, Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10), 미확인, https://docs.picknik.ai/how_to/programmatic_sdks/mcp_server/, 접근일 2026-10-12\n[^ref-1619]: Figure AI, F.02 Contributed to the Production of 30,000 Cars at BMW, 2025-11-19, https://www.figure.ai/news/production-at-bmw, 접근일 2026-10-12\n[^ref-1620]: Figure AI, F.03 Arrives at BMW, 2026-06-30, https://www.figure.ai/news/f-03-at-bmw, 접근일 2026-10-12\n[^ref-1621]: 산업통상부, 서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다., 2025-11-24, https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171238/view, 접근일 2026-10-12"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-12 | 44. 로봇 기반 모델·언어 모델 계획 | 갱신: 5절 Figure AI 자체 발표 문장 정정·10/11개월 출처 위치·99% 목표치 구분·IMR-LLM 실물 연구 평가 사례·산업부 M.AX 과제, 6~8절 다중 로봇 계획 평가 조건·보장 전제·공개 VLA 입출력·라이선스 문서 충돌·π0.7·LIBERO-Plus(2026-09-30 분리 페이지 링크 유지), 9절 도구 호출 실행 경계, 새 열린 질문 4건 | run 2026-10-12-05",
+    "index_updates": {
+      "home_recent": "2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 제조 공장 사례의 Figure AI 자체 발표 정정과 목표치·기간 구분, 다중 로봇 언어 계획의 평가 조건·보장 전제, 공개 VLA 입출력과 라이선스 문서 충돌, 도구 호출 실행 경계를 더했다",
+      "category_recent": "2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 5·9절 고침, 6·7·8·11절 갱신 소절 추가(SMART-LLM·IMR-LLM·S-ATLAS 평가 조건, OpenVLA·GR00T N1.7 라이선스 충돌, openpi 행동 청크, π0.7·LIBERO-Plus, MCP 도구 호출 경계), 새 출처 15건",
+      "area_recent": "2026-10-12 — 44. 로봇 기반 모델·언어 모델 계획: 갱신(5·9절 고침, 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 새 열린 질문 4건, 새 출처 15건)"
+    },
+    "glossary_updates": [],
+    "reference_updates": [
+      {
+        "id": "ref-090",
+        "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+        "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+        "published": "2023-09",
+        "url": "https://arxiv.org/abs/2309.10062",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "SMART-LLM 논문(기존 출처). 이번에 arXiv v2 HTML 본문에서 36개 고수준 지시 데이터셋(§V-A)과 불가능 과제 시험(§VI-A)을 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-170",
+        "org": "Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R.",
+        "title": "IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.02669",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "IMR-LLM 논문(기존 출처, ICRA 2026 채택). 이번에 arXiv v1 HTML 본문에서 IMR-Bench 23장면·50작업, FIFO 휴리스틱, 로봇 팔 3대 실물 시험, 도달 불가 배정 오류를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-092",
+        "org": "Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P.",
+        "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+        "published": "2023-04",
+        "url": "https://arxiv.org/abs/2304.11477",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "LLM+P 프리프린트(기존 출처). 이번에 arXiv v3 HTML §III-C 에서 사람 전문가가 PDDL 도메인을 제공한다는 입력 전제를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1051",
+        "org": "BMW Group",
+        "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg",
+        "published": "2026-06-25",
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "BMW 그룹 보도자료(기존 출처). 이번 재열람에서 '11-month deployment'는 Figure CEO 인용문, 'over ten months'는 본문에 있음을 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1607",
+        "org": "Wang, J., He, G., & Kantaros, Y. (IEEE Robotics and Automation Letters 10(1))",
+        "title": "Probabilistically Correct Language-based Multi-Robot Planning using Conformal Prediction",
+        "published": "2025-01",
+        "url": "https://arxiv.org/abs/2402.15368",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "등각 예측으로 사용자 지정 임무 성공률을 노리는 분산 다중 로봇 언어 계획기 S-ATLAS 논문(RA-L 10(1), DOI 10.1109/LRA.2024.3504233). arXiv v4 HTML 로 i.i.d. 조건(Remark III.6), 무오류 실행 전제(Theorem IV.2), 110개 AI2-THOR 검증 시나리오를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1608",
+        "org": "OpenVLA 개발팀 (openvla/openvla GitHub)",
+        "title": "OpenVLA — README 및 LICENSE (커밋 c8f03f4)",
+        "published": null,
+        "url": "https://github.com/openvla/openvla/blob/c8f03f48af692657d3060c19588038c7220e9af9/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "OpenVLA 공식 저장소 README·LICENSE. 코드 MIT, 사전학습 모델은 기반 모델의 제약을 물려받을 수 있고 Llama 2 파생이라 Llama Community License 를 따른다는 문구(99–101행)를 확인했다. 커밋 날짜는 확인하지 못했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1609",
+        "org": "OpenVLA 개발팀 (Hugging Face openvla/openvla-7b)",
+        "title": "openvla/openvla-7b — Model Card",
+        "published": null,
+        "url": "https://huggingface.co/openvla/openvla-7b",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "OpenVLA 7B 가중치 모델 카드. 입출력(언어+영상 → 정규화 7자유도 엔드이펙터 변위, 로봇·데이터셋별 역정규화)과 '모든 체크포인트 MIT' 문구를 현재 main(커밋 47a0ec7)에서 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1610",
+        "org": "Physical Intelligence (Physical-Intelligence/openpi GitHub)",
+        "title": "openpi — README, docs/remote_inference.md, LICENSE (커밋 215abfb)",
+        "published": null,
+        "url": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "π0 계열 공개 구현 openpi. 원격 추론의 행동 청크 형태(action_horizon, action_dim)와 개방 루프 실행 주석, 제공 기반 체크포인트(π0·π0-FAST·π0.5), LICENSE(Apache 2.0)를 확인했다. 커밋 날짜는 확인하지 못했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1611",
+        "org": "NVIDIA (NVIDIA/Isaac-GR00T GitHub)",
+        "title": "Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치)",
+        "published": null,
+        "url": "https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "GR00T N1.7 공식 저장소 README. Early Access 릴리스 표기, 소개 문단의 'Apache 2.0 으로 상용 라이선스 가능' 문구, License 절의 코드 Apache 2.0·가중치 NVIDIA Open Model License 구분을 확인했다. 브랜치 이름 기준(접근일 2026-10-12)이며 커밋 sha 로 고정하지 못했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1612",
+        "org": "NVIDIA (Hugging Face nvidia/GR00T-N1.7-3B)",
+        "title": "GR00T-N1.7-3B — LICENSE 및 모델 카드",
+        "published": null,
+        "url": "https://huggingface.co/nvidia/GR00T-N1.7-3B/blob/6949d5dfab2e872283e8cca8106ac3af8adcf39b/LICENSE",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "GR00T N1.7 3B 가중치 저장소. LICENSE(커밋 6949d5d, 현재 main 과 같음)의 'NVIDIA License' 3.3절 비상업 한정·NVIDIA 계열사 예외와, 모델 카드(main)의 'NVIDIA Open Model License'·'commercial/non-commercial use' 문구를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1613",
+        "org": "Physical Intelligence (Ai, B. 외, arXiv)",
+        "title": "π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+        "published": "2026-04-16",
+        "url": "https://arxiv.org/abs/2604.15483",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "Physical Intelligence 의 π0.7 기술 보고서(v1 2026-04-16, v2 2026-04-24). v2 HTML 에서 제어 모드 프롬프트(joint/ee), 학습 중 0~12 타임스텝 지연 모사(50 Hz 에서 240 ms), UR5e 20 Hz, seen/unseen 구분의 어려움을 확인했다. 회사 자체 보고서다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1614",
+        "org": "Fei, S., Wang, S., Shi, J. 외 (arXiv)",
+        "title": "LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models",
+        "published": "2025-10-15",
+        "url": "https://arxiv.org/abs/2510.13626",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "VLA 모델의 7개 축 입력 교란 견고성 평가 프리프린트(v1 2025-10-15, v3 2025-12-26). v3 HTML 의 §2.1 과, 평가 설정이 다른 표 1(원래 LIBERO 설정의 단일 축 교란 분석)·표 2(LIBERO-Plus 벤치마크 견고성 평가)를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1615",
+        "org": "Fei, S., Wang, S., Shi, J. 외 (CVPR 2026, Computer Vision Foundation Open Access)",
+        "title": "LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models",
+        "published": "2026",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Fei_LIBERO-Plus_A_Progressive_Robustness_Benchmark_for_Visual-Language-Action_Models_CVPR_2026_paper.html",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "LIBERO-Plus 의 CVPR 2026 게재본(arXiv 판과 제목이 다름). 위키에서는 게재 사실과 일곱 교란 축의 근거로만 쓴다. 검증 단계에서는 게재본 PDF 를 열지 못하고 HTML·포스터 페이지로 실재를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1616",
+        "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
+        "title": "FAQ · nasa-jpl/rosa Wiki",
+        "published": null,
+        "url": "https://github.com/nasa-jpl/rosa/wiki/FAQ",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-12",
+        "summary": "ROSA 공식 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준). 핵심 에이전트는 물리 세계와 상호작용할 수 없고 맞춤 도구·프롬프트가 필요하다는 한계와, 맞춤 도구에 상태·능력 확인과 안전 검사를 넣으라는 권고를 확인했다. README(ref-171)와 다른 페이지다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1617",
+        "org": "Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.)",
+        "title": "Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do",
+        "published": "2026-03-16",
+        "url": "https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "MCP 프로젝트 공식 블로그 해설. 도구 어노테이션은 위험 힌트이며 실행 강제 수단이 아니라는 설명을 확인했다. 규범 명세 자체는 아니다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1618",
+        "org": "PickNik Robotics",
+        "title": "Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10)",
+        "published": null,
+        "url": "https://docs.picknik.ai/how_to/programmatic_sdks/mcp_server/",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "MoveIt Pro 제품 문서의 MCP 서버 연결 안내. 배포 키 읽기 전용, 서버의 확인 프롬프트 없음, 세션 종료 뒤 로봇 계속 이동, cancel_objective 는 비상 정지가 아님 등 권한·실행 설명을 확인했다. 세부 제품 빌드와 발행일은 확인하지 못했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1619",
+        "org": "Figure AI",
+        "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+        "published": "2025-11-19",
+        "url": "https://www.figure.ai/news/production-at-bmw",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "Figure 02 의 BMW 스파턴버그 배치를 회고한 Figure AI 발표. 11개월 배치, 6개월·10개월 이정표, 6개월 일일 가동·1,250시간 이상, 교대당 99% 초과 성공률·개입 0회 목표를 확인했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1620",
+        "org": "Figure AI",
+        "title": "F.03 Arrives at BMW",
+        "published": "2026-06-30",
+        "url": "https://www.figure.ai/news/f-03-at-bmw",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "Figure 03 이 BMW 스파턴버그에서 물류 작업 흐름을 수행한 '첫 시연'과 Helix 02 전신 제어를 설명한 Figure AI 발표. BMW 보도자료(ref-1051)와 같은 프로젝트의 당사자 자료다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-1621",
+        "org": "산업통상부",
+        "title": "서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다.",
+        "published": "2025-11-24",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171238/view",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-12",
+        "summary": "산업부–서울대 M.AX 얼라이언스 협력 MOU 보도자료(2025-11-24 등록). 휴머노이드 분과 'AI 파운데이션 모델 개발'(2025~2028년, 484억 원, 장병탁·박재흥) 과제 표를 확인했다. 검증 단계에서는 접속 실패로 재열람하지 못했고 같은 발표의 보도와 내용이 일치했다.",
+        "cited_by": [
+          "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md"
+        ],
+        "source_unopened": false
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "언어 모델 다중 로봇 계획의 검증이 기대는 가정(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행)을 런타임에서 누가 감시하고, 가정이 깨졌을 때 어떤 계획을 중단·재검증할 것인가?",
+        "areas": [
+          44,
+          54
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가?",
+        "areas": [
+          44,
+          29
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가?",
+        "areas": [
+          44,
+          59
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가?",
+        "areas": [
+          44,
+          59
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "제조 공장",
+        "item": "작업 대상",
+        "link": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시",
+        "title": "44. 로봇 기반 모델·언어 모델 계획"
+      },
+      {
+        "site_type": "제조 공장",
+        "item": "수행 자원",
+        "link": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시",
+        "title": "44. 로봇 기반 모델·언어 모델 계획"
+      },
+      {
+        "site_type": "제조 공장",
+        "item": "완료·인계",
+        "link": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시",
+        "title": "44. 로봇 기반 모델·언어 모델 계획"
+      },
+      {
+        "site_type": "제조 공장",
+        "item": "예외·성과",
+        "link": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md#5-적용-사례-현장-유형-명시",
+        "title": "44. 로봇 기반 모델·언어 모델 계획"
+      }
+    ],
+    "additional_research_requests": [
+      "후속 갱신(입력 누락): 분리 주제 페이지 docs/topics/2026/2026-09-30-area44-s7.md 의 표 아래 문장 'OpenVLA의 라이선스는 확인하지 못했다'를 지우고, docs/topics/2026/2026-09-30-area44-s6.md 57행 '선택 그래프(disjunctive graph)'를 '이접 그래프(disjunctive graph)'로 바꾸는 차등 갱신이 필요하다. 두 페이지의 본문이 이번 스토리텔러 입력에 없어 직접 고치지 못했고, 대상 세부영역 페이지 6·7절 갱신 소절에 두 페이지로 가는 링크와 정정·용어 통일 문장만 두었다. 다음 44. 로봇 기반 모델·언어 모델 계획 갱신 실행에서 두 주제 페이지를 입력으로 넣어 달라(하루 갱신 상한 2 안에서).",
+      "사용자 결정 항목(pipeline 담당): 자동 분리 코드가 기존 분리 주제 페이지(예: 2026-09-30-area44-s6)가 있는 절을 다시 분리할 때 이전 분리 페이지 링크를 원 절 요약에 남기도록 고칠지 정해 달라. 이번 실행에서는 각 갱신 소절 첫 줄에 이전 분리 페이지 링크를 손으로 두어 대응했다.",
+      "후속 정리(이번 갱신 범위 밖): docs/standards/index.md 의 OpenVLA·GR00T N1 '오픈소스' 항목에 코드·가중치 라이선스 구분이 없다. OpenVLA 는 ref-1608·ref-1609 의 문서 충돌을, GR00T 는 N1 과 N1.7 을 구분해 ref-1611·ref-1612 기준으로 반영할 수 있는지 59. 법·규제·보험·라이선스 실행에서 검토가 필요하다.",
+      "후속 정리(트랙 페이지): chat-based-configuration-and-operation 트랙 stage-1-prior-work-and-products.md 의 ROSA '확인·권한 장치 설명이 없다' [추정]을 ROSA FAQ(ref-1616)로 정리, 같은 파일의 disjunctive graph 번역어('선언 그래프'·'이접 그래프') 통일과 'IMR-Bench 규모 미확인'에 ref-170 연결, stage-2-data-and-standards.md 의 SMART-LLM '원문 미열람' 수치에 ref-090 원문 확인 연결, task-model-draft.md 의 LLM+P 부분에 ref-092 연결.",
+      "용어집: '이접 그래프(disjunctive graph)' 항목이 없다. 위키 안에서 번역어가 셋으로 갈렸으므로 정의 출처(작업장 스케줄링 문헌)를 찾아 용어 후보로 올려 달라.",
+      "9절: 물리 비상 정지·런타임 소프트웨어 정지의 책임 배분은 현재 이 위키의 경계 판단([의견])이다. 로봇 제조사·설비 공급자 쪽 책임을 명시한 표준·규격·제품 문서가 있으면 근거로 찾아 달라.",
+      "5절 제조 공장(BMW–Figure): 배치 기간 10/11개월의 기점·종점과 집계 관계, 교대별 실측 성공률·개입의 분모, Figure 03 첫 시연 이후 가동률을 확인할 독립 자료가 필요하다(oq-219).",
+      "5절 물류창고: 산업부 M.AX 휴머노이드 과제와 로보티즈–BGF로지스 물류 과제의 동일성, 자동화율 80%·성공률 90% 실측 결과(oq-218).",
+      "5·6절: SMART-LLM 실물 시험의 로봇 대수·반복 수, IMR-LLM 의 장기 운영 근거, 병원·상업 시설·실외에서 로봇 기반 모델·언어 모델 계획을 쓴 이기종 플릿 현장 실증이 필요하다.",
+      "7절·11절: VLA 공통 능력 등록 표준·적합성 시험(oq-216), π0.7 보고서와 공개 배포물의 대응, 네트워크 포함 실측 최대 추론 지연(oq-104 관련)."
+    ],
+    "fixes_applied": [
+      "f27 강등 — 8절 LIBERO-Plus 항목에서 [추정]으로 쓰고 'arXiv v3 안의 표 1(원래 LIBERO 설정의 단일 축 교란 분석: 97.1·59.7·37.2)과 표 2(LIBERO-Plus 벤치마크 견고성 평가: 56.4·31.9·69.6)는 평가 설정이 다른 두 표'로 썼으며, '판마다 다르다'·판 차이 표현은 넣지 않았다(각주 ref-1614).",
+      "f44 — 8절의 의견 문장을 '벤치마크 수치는 표·평가 설정(단일 축 교란 분석인지 벤치마크 평가인지)과 판을 밝혀 인용하며'로 고쳐 썼다.",
+      "8절 LIBERO-Plus — 수치 병기는 1번 수정 문구로 하고, ref-1615 는 게재본 제목과 일곱 교란 축 문장에만 각주로 달았다.",
+      "f13 — 7절에서 'README 는 사전학습 모델이 기반 모델의 제약을 물려받을 수 있다고 적는다'와 'README 는 두 사전학습 모델이 Llama 2 에서 파생돼 Llama Community License 를 따른다고 단정형으로 적는다'를 두 문장으로 나눠 쓰고, 소절 머리에 법적 판단이 아님을 밝혔다.",
+      "GR00T — 7절에 'GR00T N1.7(GR00T N1과 다른 판)' 별도 문단을 두어 EA 릴리스·코드 Apache 2.0·가중치는 문서마다 조건이 다름(README 소개·License 절·3B 카드·3B LICENSE 3.3절)으로 적었고, 주제 페이지 표의 GR00T N1 행은 이 근거로 고치지 않는다고 명시했다.",
+      "OpenVLA 라이선스 — 대상 세부영역 페이지 7절에 정정 문단을 두어 코드 MIT(f12)·README 의 Llama 2 파생 문구(f13)·HF 카드 '모든 체크포인트 MIT'(f14)를 충돌 그대로 병기하고 어느 쪽도 고르지 않았으며 출처 충돌 열린 질문에 연결했다. 다만 분리 주제 페이지 2026-09-30-area44-s7.md 본문은 이번 입력에 없어 그 문장을 직접 지우지 못했고, 7절에 '주제 페이지 문장은 이 대조로 바로잡는다'고 적은 뒤 후속 갱신을 additional_research_requests 에 요청했다(부분 이행).",
+      "5절 제조 공장 — 'Figure AI 자체 발표로는 교차 확인하지 못했다'를 지우고 'Figure AI 자체 발표(2025-11-19 F.02 회고, 2026-06-30 F.03 첫 시연)가 같은 배치·착수를 설명하나, 같은 프로젝트 당사자 자료라 독립 확인은 아니다'로 바꿔 [추정] 벤더 주장과 각주 ref-1619·ref-1620·ref-1051 을 달았다.",
+      "5절 제조 공장 예외·성과 — 표 칸과 서술에서 교대당 99% 초과 성공률·개입 0회를 '목표치(실측 아님)'로만 적고, 10/11개월 문장 뒤에 10개월은 BMW 보도자료 본문·11개월은 Figure CEO 인용문이라는 위치와 Figure 쪽 6·10·11개월 이정표를 덧붙였으며 기간을 하나로 정하지 않았다. oq-219 는 11절에서 열림 유지.",
+      "5절 IMR-LLM — 제조 공장 사례를 별도로 추가하고 '연구 평가(로봇 팔 3대 단일 장면, 전문가 약 15분 수동 장면 작성, 반복 횟수 미보고)'이며 장기 운영 실적이 아니라고 밝혔고, 근거 없는 시작 조건·제약·완료·인계 칸은 '미확인'으로 두었다.",
+      "5절 물류창고 — 산업부 M.AX 휴머노이드 과제(f38)를 로보티즈–BGF로지스 과제와 별도 문단으로 쓰고 같은 사업인지 미확인임을 밝혔으며, 기준일 '2025-11-24 등록'을 본문과 각주에 남겼다.",
+      "9절 — 표에 도구 호출 실행 행을 더하고 '도구 호출로 로봇을 움직일 때의 경계' 소절을 두어 물리 비상정지·런타임 소프트웨어 정지는 연계 대상(로봇 자체 제어·설비 안전 제어)으로 짧게 적고, ROP 직접 범위는 읽기·실행 권한, 승인된 계획 대상 확인, 완료 판정, 세션 종료와 정지 절차 연결로 한정했다. MoveIt Pro 서술(f31~f33)은 모두 [추정] 벤더 주장, MCP 블로그(f30)는 '규범 명세가 아니라 프로젝트의 해설'로 밝혔다.",
+      "f39~f46 — [의견] 문장 8건(5절 f41·f46, 6절 f39·f40, 7절 f42·f43, 8절 f44, 9절 f45) 모두 '이 위키의 의견으로는'으로 시작해 누구의 의견인지 밝혔다.",
+      "이접 그래프 — 대상 세부영역 페이지 6절의 새 서술은 '이접 그래프(disjunctive graph)'로 쓰고 주제 페이지의 '선택 그래프'와 같은 용어임을 밝혔다. 분리 주제 페이지 2026-09-30-area44-s6.md 57행은 본문이 입력에 없어 직접 바꾸지 못했고 후속 갱신을 요청했다(부분 이행). 트랙 페이지 번역어는 고치지 않았다.",
+      "쪽수 — IMR-LLM 의 ICRA 2026 쪽수와 SMART-LLM 의 IROS 2024 쪽수를 본문·각주에 쓰지 않았고, reference_updates 의 ref-090·ref-170 요약에서도 쪽수를 뺐다.",
+      "판 미고정 출처 — 7절 본문에 ref-1611 은 'n1.7-release 브랜치 README(접근일 2026-10-12 기준)', ref-1616 은 'ROSA 위키 FAQ(릴리스에 고정되지 않은 문서, 접근일 2026-10-12 기준)'로 밝혔다.",
+      "11절 — oq-216·oq-217·oq-219 는 '부분 근거'로만 연결하고 열림 유지, oq-218·oq-104 는 관련 근거만, oq-141 은 13. 대화형 기능의 신뢰·기반 쪽 질문으로 연결만 하고 상태를 바꾸지 않았다. 새 질문 4건은 브리프 문구대로 11절과 open_question_updates 에 등록했다.",
+      "각주 — 13절을 다시 써서 다시 연 기존 출처 ref-090·ref-170·ref-092·ref-1051 의 접근일을 2026-10-12 로 고치고, 새 출처 ref-1607~ref-1621 은 브리프의 기관·제목·발행일(없으면 '미확인')·URL 그대로 정의했으며 프런트매터 sources 에 더했다.",
+      "2차: 6·7·8·11절 append 패치의 각 '### 2026-10-12 갱신' 소절 첫 줄에 '이 절의 2026-09-30 본문은 [44. 로봇 기반 모델·언어 모델 계획 — … (2026-09-30)](../../topics/2026/2026-09-30-area44-sN.md)에 있다.' 링크를 두었다(s6·s7·s8·s11 각각).",
+      "2차: 7절 소절의 'OpenVLA 사용 조건(정정)' 첫 문장과 GR00T 문단 끝 문장의 '연결된 주제 페이지'를 2026-09-30-area44-s7.md 로 가는 마크다운 링크로 바꿨다.",
+      "2차: 6절 소절 IMR-LLM 문단 끝의 '연결된 주제 페이지의 선택 그래프(disjunctive graph)'를 2026-09-30-area44-s6.md 로 가는 마크다운 링크로 바꿨다.",
+      "2차: 9절 표의 '로봇 자체 지능·제어(언어 모델 도구 호출 실행)' 행 외부 연계 칸을 '연계 대상(이 위키의 경계 판단): … [의견]'으로 고치고 ref-1618 에는 'MCP 취소·소프트웨어 정지가 물리적 비상 정지를 대체하지 않는다'만 [추정] 벤더 주장으로 귀속했다. 아래 '연계 대상:' 문단 첫 문장도 '이 위키의 경계 판단으로는 … 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 경계에 따라 … 연계 대상으로 둔다. [의견]'으로 바꾸고, 벤더 문서가 정지 책임을 적지 않는다는 문장을 [추정] 벤더 주장으로 덧붙였다.",
+      "2차: 9절 MoveIt Pro 문단 마지막 문장을 'ROSA FAQ도 물리적 상호작용을 하려면 사용자가 맞춤 도구와 프롬프트를 만들어야 하고, …'로 고쳐 '로만'이라는 배타 표현을 뺐다.",
+      "2차: 7절 소절의 OpenVLA 사용 조건 문단(6문장)을 3문장·3문장, GR00T N1.7 문단(7문장)을 3문장·4문장의 두 단락으로 나눴다. 문장과 태그·각주는 바꾸지 않았다."
+    ],
+    "standards_updates": [
+      {
+        "name": "openpi (π0 계열 공개 구현)",
+        "kind": "오픈소스",
+        "org": "Physical Intelligence",
+        "url": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md",
+        "related_areas": [
+          44
+        ],
+        "summary": "π0 계열 로봇 기반 모델의 공개 구현. 원격 추론 예시는 (action_horizon, action_dim) 형태의 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내하며, 기반 체크포인트는 π0·π0-FAST·π0.5다(커밋 215abfb 기준, π0.7 없음).",
+        "ref_id": "ref-1610"
+      },
+      {
+        "name": "GR00T N1.7 (Isaac GR00T, Early Access)",
+        "kind": "오픈소스",
+        "org": "NVIDIA",
+        "url": "https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md",
+        "related_areas": [
+          44,
+          59
+        ],
+        "summary": "NVIDIA 휴머노이드 로봇 기반 모델 GR00T N1.7 의 저장소(n1.7-release 브랜치, 접근일 2026-10-12 기준 EA 릴리스). 코드는 Apache 2.0 이고 가중치 사용 조건은 README 소개·License 절·3B 모델 카드·3B LICENSE 3.3절이 서로 다르게 적는다(GR00T N1 과 다른 판).",
+        "ref_id": "ref-1611"
+      }
+    ]
+  },
+  "ttft_ms": 31580,
+  "type": "result",
+  "duration_ms": 257350,
+  "uuid": "b7e37cb5-a8dc-495a-a92a-1ea6af75a3b5",
+  "ttft_stream_ms": 1101,
+  "time_to_request_ms": 90,
+  "time_to_request_phases_ms": {
+    "other": 24,
+    "system_prompt": 9,
+    "resume_other": 0,
+    "process_user_input": 9,
+    "input_attachments": 10,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 2,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 14
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 40,
+  "time_to_request_cpu_ms": 124,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 19,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1102,
+  "time_to_request_from_spawn_ms": 9718582,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791752657336.7751,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 259.0
+}
