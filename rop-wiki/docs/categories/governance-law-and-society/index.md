@@ -188,7 +188,7 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 140건이다(논문 31건 · 기사·보고서 12건 · 업체 발표 8건 · 표준·오픈소스·기관 자료 89건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 156건이다(논문 32건 · 기사·보고서 12건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 103건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -202,7 +202,7 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 - [ref-1508](../../references/ref-1508.md) — Choo, H.-J., Lee, S.-M. (Healthcare Informatics Research 32(1):59–68), Nurses' Perceptions and Utilization Plans for Applying Companion Robots to Acute Stroke Patient Care: A Delphi Study (발행 2026-01)
 - [ref-1226](../../references/ref-1226.md) — Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety (발행 2026)
 - [ref-168](../../references/ref-168.md) — Kaitha, S., & Yu, S. 외(arXiv 2512.02810), Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms (발행 2025-12)
-- 그 밖에 21건
+- 그 밖에 22건
 
 **기사·보고서**
 
@@ -223,6 +223,7 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 - [ref-1496](../../references/ref-1496.md) — Formant, General Terms (발행 2026-04-16)
 - [ref-608](../../references/ref-608.md) — OTTO by Rockwell Automation, OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments (발행 2026-04)
 - [ref-1499](../../references/ref-1499.md) — Amazon (Sarah Rhoads, VP Global Workplace Health & Safety), Amazon invests $2.5 billion in workplace safety, reduces workplace injury rates (발행 2026-03-12)
+- [ref-1528](../../references/ref-1528.md) — NVIDIA (Hugging Face 모델 저장소), GR00T-N1.6-3B / LICENSE (NVIDIA License) (발행 2025-12-15)
 - [ref-1493](../../references/ref-1493.md) — 1X Technologies, Inc., Pre-Order Terms (발행 2025-10-28)
 - [ref-1491](../../references/ref-1491.md) — Relay Robotics, Terms of Service (Exhibit A: Service Level Agreement) (발행 2023-03-01)
 - [ref-1492](../../references/ref-1492.md) — Amazon Web Services, AWS IoT RoboRunner Service Level Agreement (발행 2022-11-28)
@@ -232,16 +233,16 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 **표준·오픈소스·기관 자료**
 
 - [ref-1507](../../references/ref-1507.md) — Deque Systems / axe-core contributors, axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGELOG) (발행 2026-10-05)
+- [ref-1523](../../references/ref-1523.md) — European Union Agency for Cybersecurity (ENISA), The CRA Single Reporting Platform is launched (발행 2026-09-11)
 - [ref-1228](../../references/ref-1228.md) — European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations (발행 2026-09-11)
 - [ref-1505](../../references/ref-1505.md) — ETSI / CEN / CENELEC, EN 301 549 V4.1.1 (2026-09) Accessibility requirements for ICT products and services (발행 2026-09)
+- [ref-1517](../../references/ref-1517.md) — European Parliament and Council of the European Union (Official Journal of the European Union), Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (발행 2026-07-24)
+- [ref-1521](../../references/ref-1521.md) — Hong Kong SAR Government (Innovation, Technology and Industry Bureau), LCQ20: Regulating operation of intelligent robots (발행 2026-05-20)
+- [ref-1530](../../references/ref-1530.md) — European Parliament and Council of the European Union (Official Journal of the European Union), Corrigendum to Directive (EU) 2024/2853 of the European Parliament and of the Council of 23 October 2024 on liability for defective products and repealing Council Directive 85/374/EEC (발행 2026-05-07)
 - [ref-1495](../../references/ref-1495.md) — SingHealth / Changi General Hospital CHART, RoMi-H Empanelment Programme 2026 (발행 2026-05-06)
 - [ref-1217](../../references/ref-1217.md) — 대한민국 정책브리핑 (보건복지부), 장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행 (발행 2026-01-28)
 - [ref-1235](../../references/ref-1235.md) — 대한민국 정책브리핑 (과학기술정보통신부), '인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무 (발행 2026-01-21)
-- [ref-518](../../references/ref-518.md) — ISO, ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition (발행 2026)
-- [ref-1191](../../references/ref-1191.md) — European Commission (Shaping Europe's digital future), Data Act explained (발행 2025-12-15)
-- [ref-1506](../../references/ref-1506.md) — W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force), Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), W3C Group Note 11 December 2025 (발행 2025-12-11)
-- [ref-1489](../../references/ref-1489.md) — European Commission, ANNEX to the Communication to the Commission — Approval of the draft Commission Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts (with Annexes), C(2025) 7750 final (발행 2025-11-19)
-- 그 밖에 79건
+- 그 밖에 93건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트

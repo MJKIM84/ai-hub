@@ -64,6 +64,31 @@ version: 1
 | 2026-10-12-03 | 생성 | [docs/references/ref-1510.md](references/ref-1510.md) | 참고문헌 ref-1510 등록: Robots and Jobs: Evidence from US Labor Markets (JPE 게재판) |
 | 2026-10-12-03 | 생성 | [docs/references/ref-1511.md](references/ref-1511.md) | 참고문헌 ref-1511 등록: The Adjustment of Labor Markets to Robots |
 | 2026-10-12-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-10-12-02 | 갱신 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 차등 갱신(2차 수정 반영): 5절 교체(책임보험 법령 기준 금액, 16개→8개 근거 고시 정정·병기, 버지니아 합산 운행 보험 단위, 홍콩 비교), 3·4·6·7·8·10·11절을 요약 문장+이전(2026-09-30) 상세 페이지 링크+2026-10-12 보강 소절로 교체, 9절 보강 소절 추가, 13절 각주 갱신(ref-1238 접근일 2026-10-12), 프런트매터 sources·related_areas 갱신 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s7.md](topics/2026/2026-10-12-area59-s7.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "7. 관련 표준·프레임워크·오픈소스" 절(3,488자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s11.md](topics/2026/2026-10-12-area59-s11.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "11. 열린 질문" 절(1,910자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s4.md](topics/2026/2026-10-12-area59-s4.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "4. 핵심 개념과 용어" 절(1,699자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s6.md](topics/2026/2026-10-12-area59-s6.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "6. 대표 접근법과 기술" 절(1,591자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s8.md](topics/2026/2026-10-12-area59-s8.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "8. 대표 연구와 자료" 절(629자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s3.md](topics/2026/2026-10-12-area59-s3.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "3. 왜 중요한가" 절(622자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s10.md](topics/2026/2026-10-12-area59-s10.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(415자)을 옮겼다 |
+| 2026-10-12-02 | 요약 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 59. 법·규제·보험·라이선스: 차등 갱신: AI Act 디지털 옴니버스·기계규정 위임법령 경로, 제조물책임지침 정오표 기준 적용 시점, 인공지능 기본법 제33·35조, CRA 보고 기산점·스튜어드, 실외이동로봇 책임보험 법령 기준 금액(oq-288 해결), 16개→8개 근거 고시 정정, 라이선스 검사 근거 보강, 2026-09-30 상세 페이지 연결 복구. 트랙 반영 제안(2026-10-09-26 건축 도면 자동 인식 단계 2, 학습 데이터 라이선스 사례)은 이번 브리프에 근거 finding 이 없어 7절에 반영하지 않고 제안 상태 유지 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1517.md](references/ref-1517.md) | 참고문헌 ref-1517 등록: Regulation (EU) 2026/1744 of the European Parliament and of… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1518.md](references/ref-1518.md) | 참고문헌 ref-1518 등록: 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 [시행 2026. 7. 21.] [법률 제21311호, 2… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1519.md](references/ref-1519.md) | 참고문헌 ref-1519 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시 일부개정(안) 행정예고 (산업통상부 공고 제2025-… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1520.md](references/ref-1520.md) | 참고문헌 ref-1520 등록: 지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의10(책임… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1521.md](references/ref-1521.md) | 참고문헌 ref-1521 등록: LCQ20: Regulating operation of intelligent robots |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1522.md](references/ref-1522.md) | 참고문헌 ref-1522 등록: Regulation (EU) 2024/2847 of the European Parliament and of… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1523.md](references/ref-1523.md) | 참고문헌 ref-1523 등록: The CRA Single Reporting Platform is launched |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1524.md](references/ref-1524.md) | 참고문헌 ref-1524 등록: Apache License, Version 2.0 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1525.md](references/ref-1525.md) | 참고문헌 ref-1525 등록: REUSE Specification – Version 3.3 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1526.md](references/ref-1526.md) | 참고문헌 ref-1526 등록: reuse-tool CHANGELOG.md (v6.1.0 태그) |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1527.md](references/ref-1527.md) | 참고문헌 ref-1527 등록: Annex D: SPDX License Expressions - specification v2.2.2 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1528.md](references/ref-1528.md) | 참고문헌 ref-1528 등록: GR00T-N1.6-3B / LICENSE (NVIDIA License) |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1529.md](references/ref-1529.md) | 참고문헌 ref-1529 등록: Directive (EU) 2024/2853 of the European Parliament and of t… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1530.md](references/ref-1530.md) | 참고문헌 ref-1530 등록: Corrigendum to Directive (EU) 2024/2853 of the European Parl… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1531.md](references/ref-1531.md) | 참고문헌 ref-1531 등록: 한·싱가포르 규제샌드박스 비교를 통한 AI 샌드박스 효율화 방안 제언 |
+| 2026-10-12-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-10-12-01 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) |
 | 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s6.md](topics/2026/2026-10-12-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 |
 | 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s11.md](topics/2026/2026-10-12-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 |
