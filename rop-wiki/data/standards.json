@@ -5171,6 +5171,33 @@
       "ref_id": "ref-1526",
       "run_id": "2026-10-12-02",
       "date": "2026-10-12"
+    },
+    {
+      "name": "openpi (π0 계열 공개 구현)",
+      "org": "Physical Intelligence",
+      "kind": "오픈소스",
+      "related_areas": [
+        44
+      ],
+      "url": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md",
+      "summary": "π0 계열 로봇 기반 모델의 공개 구현. 원격 추론 예시는 (action_horizon, action_dim) 형태의 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내하며, 기반 체크포인트는 π0·π0-FAST·π0.5다(커밋 215abfb 기준, π0.7 없음).",
+      "ref_id": "ref-1535",
+      "run_id": "2026-10-12-05",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "GR00T N1.7 (Isaac GR00T, Early Access)",
+      "org": "NVIDIA",
+      "kind": "오픈소스",
+      "related_areas": [
+        44,
+        59
+      ],
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md",
+      "summary": "NVIDIA 휴머노이드 로봇 기반 모델 GR00T N1.7 의 저장소(n1.7-release 브랜치, 접근일 2026-10-12 기준 EA 릴리스). 코드는 Apache 2.0 이고 가중치 사용 조건은 README 소개·License 절·3B 모델 카드·3B LICENSE 3.3절이 서로 다르게 적는다(GR00T N1 과 다른 판).",
+      "ref_id": "ref-1536",
+      "run_id": "2026-10-12-05",
+      "date": "2026-10-12"
     }
   ]
 }

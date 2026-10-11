@@ -20,6 +20,28 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-12-05 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s7.md](topics/2026/2026-10-12-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,877자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s11.md](topics/2026/2026-10-12-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(2,055자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s6.md](topics/2026/2026-10-12-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,877자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s8.md](topics/2026/2026-10-12-area44-s8.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "8. 대표 연구와 자료" 절(1,341자)을 옮겼다 |
+| 2026-10-12-05 | 요약 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 44. 로봇 기반 모델·언어 모델 계획: 갱신: 5절 Figure AI 자체 발표 문장 정정·10/11개월 출처 위치·99% 목표치 구분·IMR-LLM 실물 연구 평가 사례·산업부 M.AX 과제, 6~8절 다중 로봇 계획 평가 조건·보장 전제·공개 VLA 입출력·라이선스 문서 충돌·π0.7·LIBERO-Plus(2026-09-30 분리 페이지 링크 유지), 9절 도구 호출 실행 경계, 새 열린 질문 4건 |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1532.md](references/ref-1532.md) | 참고문헌 ref-1532 등록: Probabilistically Correct Language-based Multi-Robot Plannin… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1533.md](references/ref-1533.md) | 참고문헌 ref-1533 등록: OpenVLA — README 및 LICENSE (커밋 c8f03f4) |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1534.md](references/ref-1534.md) | 참고문헌 ref-1534 등록: openvla/openvla-7b — Model Card |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1535.md](references/ref-1535.md) | 참고문헌 ref-1535 등록: openpi — README, docs/remote_inference.md, LICENSE (커밋 215ab… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1536.md](references/ref-1536.md) | 참고문헌 ref-1536 등록: Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치) |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1537.md](references/ref-1537.md) | 참고문헌 ref-1537 등록: GR00T-N1.7-3B — LICENSE 및 모델 카드 |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1538.md](references/ref-1538.md) | 참고문헌 ref-1538 등록: π0.7: a Steerable Generalist Robotic Foundation Model with E… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1539.md](references/ref-1539.md) | 참고문헌 ref-1539 등록: LIBERO-Plus: In-depth Robustness Analysis of Vision-Language… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1540.md](references/ref-1540.md) | 참고문헌 ref-1540 등록: LIBERO-Plus: A Progressive Robustness Benchmark for Visual-L… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1541.md](references/ref-1541.md) | 참고문헌 ref-1541 등록: FAQ · nasa-jpl/rosa Wiki |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1542.md](references/ref-1542.md) | 참고문헌 ref-1542 등록: Tool Annotations as Risk Vocabulary: What Hints Can and Can'… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1543.md](references/ref-1543.md) | 참고문헌 ref-1543 등록: Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 V… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1544.md](references/ref-1544.md) | 참고문헌 ref-1544 등록: F.02 Contributed to the Production of 30,000 Cars at BMW |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1545.md](references/ref-1545.md) | 참고문헌 ref-1545 등록: F.03 Arrives at BMW |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1546.md](references/ref-1546.md) | 참고문헌 ref-1546 등록: 서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다. |
+| 2026-10-12-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-12-04 | 갱신 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 차등 갱신: 3절 법·규제 문단 정정(인공지능기본법 개정 법률 2026-07-21 시행·제34조, EU AI Act 2026/1744 개정의 기계류 Section B 이동·제2조 2항), 4·6·7·8절에 기존 분리 주제 페이지(2026-09-25-area27-s4·s6·s7·s8) 링크를 단 갱신 소절 추가(별칭 반영 시점, 배포 묶음 호환성, ML Test Score Infra4·6·7, 배포 중단·롤백 상태, KnowNo·ACI 보장 조건, LWD, AI-Hub 71825, NIST MANAGE 4.1, 제43·72조 조문 소개), 5절 출하 예외·성과 보강과 기타 현장 사례 추가, 9절 배포 후 감시 책임 경계, 10절 연결 3건, 11절 oq id 부여·부분 근거·새 질문 4건, 13절 각주 갱신(신규 12건). 2차: 기존 주제 페이지 링크 복구, oq-213 항목 삭제, 7절 법 문단 첫 문장 태그·각주 추가 |
 | 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s6.md](topics/2026/2026-10-12-area47-s6.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(3,448자)을 옮겼다 |
 | 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s7.md](topics/2026/2026-10-12-area47-s7.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,884자)을 옮겼다 |

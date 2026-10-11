@@ -431,8 +431,12 @@ version: 1
 | oq-409 | 모델 공급자와 ROP 가 함께 확인할 수 있는 모델 변경·배포·복구 증거(판 식별, 승인 기록, 장치별 적용·롤백 결과)의 최소 항목은 무엇인가? | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-04 | 열림 | — |
 | oq-410 | (EU) 2026/1744 로 기계규정 제8조에 근거가 생긴, 고위험 AI 의 보건·안전 요구를 기계규정 부속서 III 에 추가하는 위원회 위임법령은 채택됐는가, 채택됐다면 번호와 반영한 AI Act 요구(제III장 제2절, 제17·19·72·73조)의 범위는 무엇이며 여러 로봇을 지시하는 오케스트레이션 소프트웨어의 AI 도 그 대상에 드는가? | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | 2026-10-12 | 2026-10-12-02 | 열림 | — |
 | oq-411 | 국내 실외이동로봇 책임보험·공제의 실제 보험사 약관은 시행규칙 제7조의10 기준 금액 외에 관제 장애·통신 단절·사이버 사고로 생긴 손해와 제조사·관제 사업자에 대한 구상을 어떻게 다루는가? | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[66. 실외](categories/site-type-applications/outdoor.md) | 2026-10-12 | 2026-10-12-02 | 열림 | — |
+| oq-412 | 언어 모델 다중 로봇 계획의 검증이 기대는 가정(사람이 준 도메인 판, i.i.d. 시나리오, 무오류 스킬 실행)을 런타임에서 누가 감시하고, 가정이 깨졌을 때 어떤 계획을 중단·재검증할 것인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
+| oq-413 | 원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
+| oq-414 | 출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
+| oq-415 | 출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
 
-상태별 건수: 열림 404건, 해결 6건, 조사 중 1건
+상태별 건수: 열림 408건, 해결 6건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

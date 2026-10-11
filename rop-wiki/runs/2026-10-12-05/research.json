@@ -129,7 +129,7 @@
       "claim": "S-ATLAS(등각 예측 기반 다중 로봇 언어 계획기)의 임무 성공률 보장은 보정(calibration) 시나리오와 시험 시나리오가 독립·동일분포(i.i.d.)라는 조건 아래에서만 성립한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1607"
+        "ref-1532"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -143,7 +143,7 @@
       "claim": "S-ATLAS 의 임무 완료율 정리(Theorem IV.2(a))는 계획 실행에 오류가 없다는 전제를 두며, 증명은 예측 집합이 단일 원소가 아닐 때 사람이 정확한 도움을 준다는 것도 전제한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1607"
+        "ref-1532"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -157,7 +157,7 @@
       "claim": "S-ATLAS 는 AI2-THOR 시뮬레이션의 검증 시나리오 110개로 평가했고 로봇 수는 1·3·10·15대였다. 열람한 본문에서 실물 로봇 실험은 확인되지 않았다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1607"
+        "ref-1532"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -171,7 +171,7 @@
       "claim": "OpenVLA 모델 카드에 따르면 OpenVLA 는 언어 지시와 카메라 영상 한 장을 입력받아 정규화된 7자유도 엔드이펙터 변위(x, y, z, roll, pitch, yaw, gripper)를 출력하며, 실제 로봇에서 실행하려면 로봇·데이터셋별로 계산한 통계로 역정규화해야 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1609"
+        "ref-1534"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -185,7 +185,7 @@
       "claim": "OpenVLA 공식 저장소(고정 커밋 c8f03f4)의 코드 라이선스는 MIT 다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1608"
+        "ref-1533"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -199,7 +199,7 @@
       "claim": "같은 OpenVLA README 는 사전학습 모델이 기반 모델의 제약을 물려받을 수 있으며, 두 모델이 Llama 2 에서 파생됐으므로 Llama Community License 가 적용될 수 있다고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1608"
+        "ref-1533"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -213,8 +213,8 @@
       "claim": "OpenVLA 의 Hugging Face 모델 카드는 \"모든 OpenVLA 체크포인트와 학습 코드가 MIT 라이선스로 공개된다\"고 적어, 저장소 README 의 Llama Community License 적용 가능 문구와 충돌한다. 현재 main 판(커밋 47a0ec7, 2026-02-17)도 같은 문구이며, 두 문서는 같은 개발팀 자료라 어느 쪽이 맞는지는 문서만으로 정할 수 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1609",
-        "ref-1608"
+        "ref-1534",
+        "ref-1533"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -228,7 +228,7 @@
       "claim": "openpi 원격 추론 예시는 정책 서버가 (action_horizon, action_dim) 형태의 행동 청크(action chunk)를 돌려준다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1610"
+        "ref-1535"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -242,7 +242,7 @@
       "claim": "같은 openpi 예시는 다음 추론 호출 전까지 예측된 행동 청크의 나머지 행동을 개방 루프(open-loop)로 실행하도록 안내한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1610"
+        "ref-1535"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -256,11 +256,11 @@
       "claim": "openpi README(커밋 215abfb)가 제공하는 기반 체크포인트는 π0, π0-FAST, π0.5 뿐이며, π0.7 가중치는 목록에 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1610"
+        "ref-1535"
       ],
       "cross_checked": false,
       "confidence": "medium",
-      "evidence_excerpt": "README 'Model Checkpoints' 표 66–68행: pi0_base, pi0_fast_base, pi05_base. π0.7 기술 보고서(ref-1613)와 공개 배포물의 대응이 없음을 뜻하며, π0.7 의 결과를 openpi 로 재현할 수 있다고 보지 않음",
+      "evidence_excerpt": "README 'Model Checkpoints' 표 66–68행: pi0_base, pi0_fast_base, pi05_base. π0.7 기술 보고서(ref-1538)와 공개 배포물의 대응이 없음을 뜻하며, π0.7 의 결과를 openpi 로 재현할 수 있다고 보지 않음",
       "as_of": "2026-10-12",
       "site_type": null,
       "flow_item": null
@@ -270,7 +270,7 @@
       "claim": "NVIDIA Isaac GR00T 저장소의 n1.7-release README 는 GR00T N1.7 을 Early Access(EA) 릴리스로 명시하고, GA(정식) 릴리스 전까지 지원·안정성 보장이 제한되며 상용 지원을 포함한 운영 배치는 GA 대상이라고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1611"
+        "ref-1536"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -284,7 +284,7 @@
       "claim": "같은 GR00T README 의 License 절은 코드는 Apache 2.0, 모델 가중치는 NVIDIA Open Model License 로 구분한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1611"
+        "ref-1536"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -298,8 +298,8 @@
       "claim": "GR00T README 소개 문단은 \"GR00T N1.7 은 Apache 2.0 으로 완전히 상용 라이선스가 가능하다\"고 적지만, 이는 같은 README 의 License 절(가중치는 별도 라이선스)·가중치 저장소 LICENSE(3.3절 비상업 한정)와 맞지 않는 벤더 소개 문구다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1611",
-        "ref-1612"
+        "ref-1536",
+        "ref-1537"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -313,7 +313,7 @@
       "claim": "Hugging Face nvidia/GR00T-N1.7-3B 저장소의 LICENSE 파일(커밋 6949d5d, 현재 main 과 같음)은 'NVIDIA License' 표제 아래 3.3절에서 저작물과 파생물을 연구·평가 목적의 비상업 용도로만 쓸 수 있게 하고, NVIDIA 와 그 계열사는 상업적으로 쓸 수 있다는 예외를 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1612"
+        "ref-1537"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -327,8 +327,8 @@
       "claim": "GR00T N1.7 가중치의 사용 조건은 세 문서가 서로 다르게 적는다: README 소개(Apache 2.0 으로 상용 가능), README License 절과 3B 모델 카드(NVIDIA Open Model License, 카드는 '상업·비상업 사용 준비'), 3B 저장소 LICENSE 파일(NVIDIA License 3.3절 비상업 한정). 어느 문서가 우선하는지는 문서에 적혀 있지 않다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1611",
-        "ref-1612"
+        "ref-1536",
+        "ref-1537"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -342,7 +342,7 @@
       "claim": "Physical Intelligence 의 π0.7 기술 보고서는 관절(joint)·엔드이펙터(ee) 행동을 함께 학습하고 프롬프트의 텍스트 식별자 c∈{joint, ee} 로 실행 제어 모드를 지정해 실행 시 과제에 따라 고른다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1613"
+        "ref-1538"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -356,7 +356,7 @@
       "claim": "π0.7 보고서는 추론 지연에 대비해 학습 중 0~12 타임스텝의 지연을 모사했고, 이는 50 Hz 로봇에서 최대 240 ms 에 해당한다고 적는다. 이는 학습 조건이며 측정된 추론 지연이 아니고, 보고서의 UR5e 로봇은 20 Hz 로 동작한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1613"
+        "ref-1538"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -370,7 +370,7 @@
       "claim": "π0.7 저자들은 학습 데이터가 매우 커서 평가 과제가 학습 때 본(seen) 과제인지 처음 보는(unseen) 과제인지 확정하기 어렵다고 스스로 밝힌다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1613"
+        "ref-1538"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -384,8 +384,8 @@
       "claim": "LIBERO-Plus 는 LIBERO 시뮬레이션 조작 과제에서 물체 배치, 카메라 시점, 로봇 초기 상태, 언어 지시, 조명, 배경 질감, 센서 잡음의 7개 축으로 입력을 하나씩 교란해 VLA 모델의 견고성을 평가한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1614",
-        "ref-1615"
+        "ref-1539",
+        "ref-1540"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -399,8 +399,8 @@
       "claim": "LIBERO-Plus 에서 OpenVLA-OFT 의 성공률은 교란 없는 원본 97.1% 에서 로봇 초기 상태 교란 시 크게 떨어진다. 수치는 판마다 다르다: arXiv v3 표 1 은 로봇 초기 상태 37.2%·카메라 시점 59.7%, CVPR 2026 게재본(제목 'LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models') 표 2 는 로봇 초기 상태 31.9%·카메라 시점 56.4% 다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1614",
-        "ref-1615"
+        "ref-1539",
+        "ref-1540"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -414,7 +414,7 @@
       "claim": "ROSA FAQ 는 핵심 ROSA 에이전트가 텍스트 상호작용에 한정되어 물리 세계와 상호작용할 수 없으며, 물리적 상호작용에는 사용자가 맞춤 도구와 프롬프트를 만들어야 한다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1616"
+        "ref-1541"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -428,7 +428,7 @@
       "claim": "같은 ROSA FAQ 는 로봇 능력을 넘는 행동을 막으려면 맞춤 도구 안에 실행 전 로봇 상태·능력 확인 제약과 매개변수 검증·행동 제한 같은 안전 검사를 직접 넣으라고 권고한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1616"
+        "ref-1541"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -442,7 +442,7 @@
       "claim": "MCP 공식 블로그(2026-03-16)는 도구 어노테이션(readOnlyHint·destructiveHint 등)이 위험을 알리는 힌트일 뿐 실행 강제 수단이 아니며, 확실한 보장이 필요하면 네트워크 통제나 샌드박스로 해야 한다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1617"
+        "ref-1542"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -456,7 +456,7 @@
       "claim": "PickNik 의 MoveIt Pro MCP 서버 문서는 공유되는 배포(deployment) MCP 키는 읽기 전용이고, 로봇 동작은 호스트 사용자 세션에서 기존 Objective 를 시작·취소하는 것으로만 한정된다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1618"
+        "ref-1543"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -470,7 +470,7 @@
       "claim": "같은 문서는 MCP 서버가 별도의 실행 확인 프롬프트를 추가하지 않으며, 도구 승인은 MCP 클라이언트 설정에 달려 있고 클라이언트가 자동 승인할 수도 있다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1618"
+        "ref-1543"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -484,7 +484,7 @@
       "claim": "같은 문서는 run_objective 로 시작한 로봇이 세션이 끝나도 계속 움직일 수 있고, cancel_objective 는 최선 노력(best effort)일 뿐 비상 정지가 아니며 MCP 취소·소프트웨어 정지는 물리적 비상 정지를 대체하지 않는다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1618"
+        "ref-1543"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -498,7 +498,7 @@
       "claim": "Figure AI 의 2025-11-19 발표는 BMW 스파턴버그의 Figure 02 를 '11개월 배치'라고 부르면서, 개발 착수 뒤 6개월 안에 공장에 납품·시험을 시작하고 10개월 안에 생산 라인 전면 배치를 시작했으며 '6개월의 일일 가동'과 1,250시간 이상 가동을 적는다. 세 기간의 기점·종점이 달라 BMW 보도자료의 10개월·11개월 차이를 해소하지 못한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1619",
+        "ref-1544",
         "ref-1051"
       ],
       "cross_checked": false,
@@ -513,7 +513,7 @@
       "claim": "같은 Figure 발표에서 '교대당 99% 초과 성공률'과 '교대당 개입 0회'는 목표(target·goal)로 제시되며, 달성한 실측치로 보고되지 않았다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1619"
+        "ref-1544"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -527,7 +527,7 @@
       "claim": "Figure AI 는 2026-06-30 발표에서 BMW 스파턴버그 공장에서 Figure 03 이 물류 작업 흐름을 수행한 것을 '첫 시연'으로 설명하고, 자사 VLA 인 Helix 02 가 손·팔·몸통·발을 함께 제어해 무거운 대차를 끌었다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1620"
+        "ref-1545"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -541,13 +541,13 @@
       "claim": "기존 위키 5절의 'Figure AI 자체 발표로는 교차 확인하지 못했다'(Figure 03 착수 문단)는 고쳐야 한다. Figure AI 자체 발표(2026-06-30, 2025-11-19)가 있으나, BMW 와 같은 프로젝트의 당사자 자료라 독립 교차 확인으로는 세지 않는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1620",
-        "ref-1619",
+        "ref-1545",
+        "ref-1544",
         "ref-1051"
       ],
       "cross_checked": false,
       "confidence": "low",
-      "evidence_excerpt": "벤더 주장: 대상 문장은 docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md 93행. Figure 발표 2건(ref-1619·ref-1620)이 BMW 보도자료(ref-1051)와 같은 배치·착수를 설명함. 세 출처 모두 벤더 문서라 '확인됨'이 아니라 '당사자 발표가 일치함'으로 적는 것이 맞음",
+      "evidence_excerpt": "벤더 주장: 대상 문장은 docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md 93행. Figure 발표 2건(ref-1544·ref-1545)이 BMW 보도자료(ref-1051)와 같은 배치·착수를 설명함. 세 출처 모두 벤더 문서라 '확인됨'이 아니라 '당사자 발표가 일치함'으로 적는 것이 맞음",
       "as_of": "2026-10-12",
       "site_type": null,
       "flow_item": null
@@ -557,7 +557,7 @@
       "claim": "산업통상부 2025-11-24 보도자료에 따르면 산업부와 서울대가 M.AX 얼라이언스 협력 MOU 를 맺었고, 지원 과제 표의 휴머노이드 분과 과제는 '휴머노이드 AI 파운데이션 모델 개발'(2025~2028년, 484억 원, 핵심 연구진 장병탁·박재흥 서울대 교수)이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1621"
+        "ref-1546"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -588,7 +588,7 @@
       "source_ids": [
         "ref-170",
         "ref-092",
-        "ref-1607"
+        "ref-1532"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -616,9 +616,9 @@
       "claim": "VLA 탑재 로봇의 능력 등록에는 모델·가중치 revision(해시), 로봇 기종·카메라, 좌표계·행동 단위·제어 모드, 정규화 통계, 행동 청크의 형태·관측 시각·유효기간·중단 조건, 허용 과제와 완료 판정을 두고, 명령 완료는 로봇 외부 상태로 확인하는 것이 필요해 보인다. 이는 ROP 설계 제안이며 표준이 아니다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1609",
-        "ref-1610",
-        "ref-1613"
+        "ref-1534",
+        "ref-1535",
+        "ref-1538"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -632,10 +632,10 @@
       "claim": "공개 VLA 를 도입할 때 코드 라이선스와 가중치 사용 조건을 따로 확인하고, README 소개 문구만으로 상용 허용을 확정하지 않으며, 문서끼리 충돌하는 조건은 배포자에게 서면으로 확인할 항목으로 남겨야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1608",
-        "ref-1609",
-        "ref-1611",
-        "ref-1612"
+        "ref-1533",
+        "ref-1534",
+        "ref-1536",
+        "ref-1537"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -649,8 +649,8 @@
       "claim": "카메라 교체·로봇 초기 자세 변경 같은 교란을 로봇별 수용 시험에 넣고, 벤치마크 수치는 판(arXiv 판·게재본)을 밝혀 인용하며, 단일 팔 시뮬레이션 벤치마크 순위를 제조사 혼합 플릿 순위로 환산하지 않아야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1614",
-        "ref-1615"
+        "ref-1539",
+        "ref-1540"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -664,9 +664,9 @@
       "claim": "언어 모델이 도구 호출로 로봇을 움직이는 구성에서는 어노테이션 힌트나 클라이언트 자동 승인에 기대지 말고, ROP 쪽 런타임에서 읽기/실행 권한·실행 대상·승인된 계획 revision·goal id 와 물리적 완료 판정을 검사하며, 세션 종료를 별도의 정지 절차에 연결해야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1617",
-        "ref-1618",
-        "ref-1616"
+        "ref-1542",
+        "ref-1543",
+        "ref-1541"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -680,10 +680,10 @@
       "claim": "벤더·도입 기업 발표는 목표·기간·첫 시연과 실측 성과를 다른 열로 나누고, 운영 기간의 기점·종점, 성공률의 분모, 개입·실패 로그, 인계 신호가 공개될 때까지 도입 KPI 비교에 쓰지 않아야 한다. 국내 실증 목표(자동화율 80%·성공률 90%)도 같다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1619",
-        "ref-1620",
+        "ref-1544",
+        "ref-1545",
         "ref-1051",
-        "ref-1621"
+        "ref-1546"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -755,7 +755,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1607",
+      "id": "ref-1532",
       "org": "Wang, J., He, G., & Kantaros, Y. (IEEE Robotics and Automation Letters 10(1))",
       "title": "Probabilistically Correct Language-based Multi-Robot Planning using Conformal Prediction",
       "published": "2025-01",
@@ -770,7 +770,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1608",
+      "id": "ref-1533",
       "org": "OpenVLA 개발팀 (openvla/openvla GitHub)",
       "title": "OpenVLA — README 및 LICENSE (커밋 c8f03f4)",
       "published": null,
@@ -785,7 +785,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1609",
+      "id": "ref-1534",
       "org": "OpenVLA 개발팀 (Hugging Face openvla/openvla-7b)",
       "title": "openvla/openvla-7b — Model Card",
       "published": null,
@@ -800,7 +800,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1610",
+      "id": "ref-1535",
       "org": "Physical Intelligence (Physical-Intelligence/openpi GitHub)",
       "title": "openpi — README, docs/remote_inference.md, LICENSE (커밋 215abfb)",
       "published": null,
@@ -815,7 +815,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1611",
+      "id": "ref-1536",
       "org": "NVIDIA (NVIDIA/Isaac-GR00T GitHub)",
       "title": "Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치)",
       "published": null,
@@ -830,7 +830,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1612",
+      "id": "ref-1537",
       "org": "NVIDIA (Hugging Face nvidia/GR00T-N1.7-3B)",
       "title": "GR00T-N1.7-3B — LICENSE 및 모델 카드",
       "published": null,
@@ -845,7 +845,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1613",
+      "id": "ref-1538",
       "org": "Physical Intelligence (Ai, B. 외, arXiv)",
       "title": "π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
       "published": "2026-04-16",
@@ -860,7 +860,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1614",
+      "id": "ref-1539",
       "org": "Fei, S., Wang, S., Shi, J. 외 (arXiv)",
       "title": "LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models",
       "published": "2025-10-15",
@@ -868,14 +868,14 @@
       "type": "논문",
       "reliability": "medium",
       "accessed": "2026-10-12",
-      "summary": "VLA 모델의 7개 축 입력 교란 견고성 평가 프리프린트(v1 2025-10-15, v3 2025-12-26). v3 HTML 의 §2.1 과 표 1(OpenVLA-OFT 원본 97.1·카메라 59.7·로봇 초기 상태 37.2)을 확인했다. 학회 게재본(ref-1615)과 수치가 다르다.",
+      "summary": "VLA 모델의 7개 축 입력 교란 견고성 평가 프리프린트(v1 2025-10-15, v3 2025-12-26). v3 HTML 의 §2.1 과 표 1(OpenVLA-OFT 원본 97.1·카메라 59.7·로봇 초기 상태 37.2)을 확인했다. 학회 게재본(ref-1540)과 수치가 다르다.",
       "fetched": true,
       "fetched_via": "webfetch",
       "fetch_url": "https://arxiv.org/html/2510.13626v3",
       "source_unopened": false
     },
     {
-      "id": "ref-1615",
+      "id": "ref-1540",
       "org": "Fei, S., Wang, S., Shi, J. 외 (CVPR 2026, Computer Vision Foundation Open Access)",
       "title": "LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models",
       "published": "2026",
@@ -890,7 +890,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1616",
+      "id": "ref-1541",
       "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
       "title": "FAQ · nasa-jpl/rosa Wiki",
       "published": null,
@@ -905,7 +905,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1617",
+      "id": "ref-1542",
       "org": "Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.)",
       "title": "Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do",
       "published": "2026-03-16",
@@ -920,7 +920,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1618",
+      "id": "ref-1543",
       "org": "PickNik Robotics",
       "title": "Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10)",
       "published": null,
@@ -935,7 +935,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1619",
+      "id": "ref-1544",
       "org": "Figure AI",
       "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
       "published": "2025-11-19",
@@ -950,7 +950,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1620",
+      "id": "ref-1545",
       "org": "Figure AI",
       "title": "F.03 Arrives at BMW",
       "published": "2026-06-30",
@@ -965,7 +965,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1621",
+      "id": "ref-1546",
       "org": "산업통상부",
       "title": "서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다.",
       "published": "2025-11-24",
@@ -1009,7 +1009,7 @@
     "unverified": [
       "리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-12-05/external_research.md)를 변환했다. 2026-10-12 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.",
       "f14·f22: OpenVLA·GR00T N1.7 의 라이선스 문서 충돌은 문서끼리 대조한 것이며 배포자의 정정·법적 우선순위는 확인하지 못함. OpenVLA 카드는 메모의 고정 리비전 258bd1d 가 현재 main 이력에 없어 main(47a0ec7) 기준",
-      "ref-1608·ref-1610: OpenVLA 커밋 c8f03f4, openpi 커밋 215abfb 의 커밋 날짜 미확인. ref-1611: GR00T n1.7-release 는 브랜치 이름으로만 열어 커밋 sha 고정 못 함. ref-1618: MoveIt Pro 문서 세부 빌드·발행일 미확인",
+      "ref-1533·ref-1535: OpenVLA 커밋 c8f03f4, openpi 커밋 215abfb 의 커밋 날짜 미확인. ref-1536: GR00T n1.7-release 는 브랜치 이름으로만 열어 커밋 sha 고정 못 함. ref-1543: MoveIt Pro 문서 세부 빌드·발행일 미확인",
       "f17: openpi 에 π0.7 가중치가 없음을 README 목록으로 확인했을 뿐, π0.7 보고서와 공개 배포물의 대응(U10)·실제 네트워크 포함 최대 지연(U11)은 미확인",
       "f10: S-ATLAS 실물 실험이 없다는 것은 열람 본문 검색 기준이며 보충 자료는 보지 않음. SMART-LLM 실물 시험 대수·반복 수(U03), IMR-LLM 장기 운영(U04) 미확인",
       "f34: BMW–Figure 10/11개월의 기점·종점과 집계 관계, 교대별 실측 성공률·개입 분모(U13·U14), Figure 03 첫 시연 이후 가동률(U15) 미확인",
@@ -1027,6 +1027,6 @@
       "queries": 0,
       "sources": 15
     },
-    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 15건/15(ref-1607~ref-1621, 예약 구간 ref-1607~ref-1636 안), 재사용 4건(ref-090·ref-170·ref-092·ref-1051). 출처 매핑(검증 결과 기준): 메모 n1→ref-090, n2→ref-170, n3→ref-092, n4→ref-1607, n5→ref-1608, n6→ref-1609(main 47a0ec7 기준), n7→ref-1610, n8(ApplePnP 카드)→예산 초과로 제외, n9→ref-1611, n10→ref-1613, n11→ref-1612(같은 저장소 모델 카드 포함), n12→ref-1617, n13→ref-1616(ref-171·172 와 다른 페이지), n14→ref-1618, n15→ref-1051(글로벌 URL, 캐나다판 대신), n16→ref-1619, n17→ref-1620, n18→ref-1621, n19(BGF 매거진)→예산 초과로 제외, n20→ref-1614, 추가: CVPR 2026 게재본→ref-1615. 모든 출처 원문 열람(fetched true). 출처 type: OpenVLA·openpi·GR00T 저장소와 Hugging Face 모델 저장소 파일은 프로젝트가 관리하는 저장소라 '오픈소스 문서'로 두어 인터페이스·라이선스 원문 옮김(f11~f19, f21·f22)은 [사실]; MoveIt Pro·Figure·BMW 는 '벤더 문서'라 해당 finding 은 모두 [추정]·vendor_claim. 교차 확인 0건(SMART-LLM/IMR-LLM/S-ATLAS 는 조건이 달라 같은 주장 아님, OpenVLA 문서쌍·GR00T 문서셋·openpi/π0.7·LIBERO-Plus 두 판·BMW/Figure 는 같은 팀·기관·프로젝트). 검증 반영: F21 은 arXiv v3 값(37.2)에 판을 명시하고 CVPR 2026 게재본 값(로봇 31.9·카메라 56.4) 병기(f27); F13 '적용된다'→'적용될 수 있다'(f13); F14 현재 main 도 같은 문구라 충돌 지속(f14); F18/README 71행 '상용 가능'은 벤더 주장으로 분리(f20)하고 README·LICENSE·카드 3자 충돌 기록(f22); F06 은 성공률 하락의 예시이며 정량화 없음; F02 에 GPT-4·Claude-3 거절과 표 I 밖 명시; F05 에 15분 수동 장면 작성·반복 미보고; U10 을 f17 로; U13 Figure 세 기간을 f34 로; 위키 5절 93행 정정 제안(f37). 중복 제거: F01 은 C 트랙 stage-2 166행 기존 수치의 원문 확인 보강으로만(f1), F07 은 기존 [추정] 보강, F23 은 기존 MCP 명세 서술과 보완 관계로 서술, V08(BMW 10/11개월 충돌)은 기존 5절·oq-219 에 있어 새 finding 으로 넣지 않고 f34 근거 메모와 rationale 에 위치만 적음. 열린 질문: 부분 답 oq-216·oq-217·oq-219·oq-141, 관련 근거 oq-104·oq-218, 해결 제안 없음(open_questions_resolved 비움). 메모 새 질문 1번은 oq-216 과 같아 만들지 않고, 2·3번과 출처 충돌 2건을 새로 올림. 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·표·행(저장 원문 기준)과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 15건/15(ref-1532~ref-1546, 예약 구간 ref-1532~ref-1636 안), 재사용 4건(ref-090·ref-170·ref-092·ref-1051). 출처 매핑(검증 결과 기준): 메모 n1→ref-090, n2→ref-170, n3→ref-092, n4→ref-1532, n5→ref-1533, n6→ref-1534(main 47a0ec7 기준), n7→ref-1535, n8(ApplePnP 카드)→예산 초과로 제외, n9→ref-1536, n10→ref-1538, n11→ref-1537(같은 저장소 모델 카드 포함), n12→ref-1542, n13→ref-1541(ref-171·172 와 다른 페이지), n14→ref-1543, n15→ref-1051(글로벌 URL, 캐나다판 대신), n16→ref-1544, n17→ref-1545, n18→ref-1546, n19(BGF 매거진)→예산 초과로 제외, n20→ref-1539, 추가: CVPR 2026 게재본→ref-1540. 모든 출처 원문 열람(fetched true). 출처 type: OpenVLA·openpi·GR00T 저장소와 Hugging Face 모델 저장소 파일은 프로젝트가 관리하는 저장소라 '오픈소스 문서'로 두어 인터페이스·라이선스 원문 옮김(f11~f19, f21·f22)은 [사실]; MoveIt Pro·Figure·BMW 는 '벤더 문서'라 해당 finding 은 모두 [추정]·vendor_claim. 교차 확인 0건(SMART-LLM/IMR-LLM/S-ATLAS 는 조건이 달라 같은 주장 아님, OpenVLA 문서쌍·GR00T 문서셋·openpi/π0.7·LIBERO-Plus 두 판·BMW/Figure 는 같은 팀·기관·프로젝트). 검증 반영: F21 은 arXiv v3 값(37.2)에 판을 명시하고 CVPR 2026 게재본 값(로봇 31.9·카메라 56.4) 병기(f27); F13 '적용된다'→'적용될 수 있다'(f13); F14 현재 main 도 같은 문구라 충돌 지속(f14); F18/README 71행 '상용 가능'은 벤더 주장으로 분리(f20)하고 README·LICENSE·카드 3자 충돌 기록(f22); F06 은 성공률 하락의 예시이며 정량화 없음; F02 에 GPT-4·Claude-3 거절과 표 I 밖 명시; F05 에 15분 수동 장면 작성·반복 미보고; U10 을 f17 로; U13 Figure 세 기간을 f34 로; 위키 5절 93행 정정 제안(f37). 중복 제거: F01 은 C 트랙 stage-2 166행 기존 수치의 원문 확인 보강으로만(f1), F07 은 기존 [추정] 보강, F23 은 기존 MCP 명세 서술과 보완 관계로 서술, V08(BMW 10/11개월 충돌)은 기존 5절·oq-219 에 있어 새 finding 으로 넣지 않고 f34 근거 메모와 rationale 에 위치만 적음. 열린 질문: 부분 답 oq-216·oq-217·oq-219·oq-141, 관련 근거 oq-104·oq-218, 해결 제안 없음(open_questions_resolved 비움). 메모 새 질문 1번은 oq-216 과 같아 만들지 않고, 2·3번과 출처 충돌 2건을 새로 올림. 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·표·행(저장 원문 기준)과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
   }
 }
