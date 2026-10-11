@@ -20,6 +20,27 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-12-04 | 갱신 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 차등 갱신: 3절 법·규제 문단 정정(인공지능기본법 개정 법률 2026-07-21 시행·제34조, EU AI Act 2026/1744 개정의 기계류 Section B 이동·제2조 2항), 4·6·7·8절에 기존 분리 주제 페이지(2026-09-25-area27-s4·s6·s7·s8) 링크를 단 갱신 소절 추가(별칭 반영 시점, 배포 묶음 호환성, ML Test Score Infra4·6·7, 배포 중단·롤백 상태, KnowNo·ACI 보장 조건, LWD, AI-Hub 71825, NIST MANAGE 4.1, 제43·72조 조문 소개), 5절 출하 예외·성과 보강과 기타 현장 사례 추가, 9절 배포 후 감시 책임 경계, 10절 연결 3건, 11절 oq id 부여·부분 근거·새 질문 4건, 13절 각주 갱신(신규 12건). 2차: 기존 주제 페이지 링크 복구, oq-213 항목 삭제, 7절 법 문단 첫 문장 태그·각주 추가 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s6.md](topics/2026/2026-10-12-area47-s6.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(3,448자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s7.md](topics/2026/2026-10-12-area47-s7.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,884자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s11.md](topics/2026/2026-10-12-area47-s11.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "11. 열린 질문" 절(1,912자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s3.md](topics/2026/2026-10-12-area47-s3.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "3. 왜 중요한가" 절(1,551자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s4.md](topics/2026/2026-10-12-area47-s4.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "4. 핵심 개념과 용어" 절(1,219자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s8.md](topics/2026/2026-10-12-area47-s8.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "8. 대표 연구와 자료" 절(849자)을 옮겼다 |
+| 2026-10-12-04 | 요약 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 47. AI·학습·적응과 모델 운영: 갱신: 인공지능기본법 개정 법률(2026-07-21 시행)·제34조와 EU AI Act 2026/1744 개정(기계류 부속서 I Section B 이동·제2조 2항) 반영, 모델 별칭 반영 시점·배포 묶음 호환성·ML Test Score Infra4·6·7·배포 중단·롤백 상태(벤더 주장)·KnowNo와 적응형 등각 추론의 보장 조건·LWD·AI-Hub 71825 분할 표기 불일치 추가, 기타 현장 사례(LG CNS, 벤더 주장), 열린 질문 id 부여와 새 질문 4건. 2차: 기존 분리 주제 페이지 링크 복구, oq-213 항목 삭제. 후속 정리 대상(이번 범위 밖): L. AI·학습 기술·M. 안전 대분류 페이지의 EU AI Act·인공지능기본법 시행일 서술, ref-168 저자 표기, 43. 데이터·관측성·배포 주제 페이지의 Mender 태그, 분리 주제 페이지(2026-09-25-area27-s4·s6·s7·s8)의 기존 문장 |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1512.md](references/ref-1512.md) | 참고문헌 ref-1512 등록: Model Registry Workflows (docs/docs/classic-ml/model-registr… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1513.md](references/ref-1513.md) | 참고문헌 ref-1513 등록: Backward compatibility (docs/source/backwardcomp.mdx, LeRobo… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1514.md](references/ref-1514.md) | 참고문헌 ref-1514 등록: Create a custom Update Module |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1515.md](references/ref-1515.md) | 참고문헌 ref-1515 등록: Check deployment status |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1516.md](references/ref-1516.md) | 참고문헌 ref-1516 등록: How job configurations work |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1547.md](references/ref-1547.md) | 참고문헌 ref-1547 등록: Roll out a new model to a fleet |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1548.md](references/ref-1548.md) | 참고문헌 ref-1548 등록: Adaptive Conformal Inference Under Distribution Shift |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1549.md](references/ref-1549.md) | 참고문헌 ref-1549 등록: LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개 |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1550.md](references/ref-1550.md) | 참고문헌 ref-1550 등록: Learning While Deploying: Fleet-Scale Reinforcement Learning… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1551.md](references/ref-1551.md) | 참고문헌 ref-1551 등록: Artificial Intelligence Risk Management Framework (AI RMF 1.… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1552.md](references/ref-1552.md) | 참고문헌 ref-1552 등록: Regulation (EU) 2024/1689 (Artificial Intelligence Act) — co… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1553.md](references/ref-1553.md) | 참고문헌 ref-1553 등록: 대규모 물리환경 로봇조작 데이터 |
+| 2026-10-12-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-12-03 | 갱신 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 차등 갱신: 4절(근로자참여법 제20조 2022판·공개 작업자 설문 표본 조건), 5절(물류창고 이해당사자 부상 자료·병원 Delphi·실외 물품 인수 사례), 6절(FSQ-IC·노사 AI 윤리위원회), 7절(근거 판 갱신·디지털 접근성 기준), 8절(JPE 게재판·독일 비교), 9절(책임 경계 보강), 11절(부분 근거·새 질문 9건), 13절 각주 15건 추가. 2차 수정: 4·6·7·8·11절에 2026-09-30 분리 주제 페이지 링크 복원, 8절 범위값 출처 링크, 5절 실외 끝 문장 정정 |
 | 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s7.md](topics/2026/2026-10-12-area60-s7.md) | 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,519자)을 옮겼다 |
 | 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s11.md](topics/2026/2026-10-12-area60-s11.md) | 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(2,273자)을 옮겼다 |

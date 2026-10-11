@@ -33,7 +33,7 @@
       "claim": "MLflow v3.1.0 모델 레지스트리 문서는 별칭(alias)을 새 모델 버전으로 재지정하면 같은 별칭 기반 모델 로딩 코드가 다음에 실행될 때 새 버전을 자동으로 가져온다고 설명한다. 이미 실행 중인 프로세스나 연결이 끊긴 장치의 모델이 바로 바뀐다는 뜻은 아니다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1577"
+        "ref-1512"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -47,7 +47,7 @@
       "claim": "ROP 는 레지스트리의 목표 모델 버전과 각 로봇이 실제로 실행 중인 버전을 따로 기록하고, 별칭 변경 뒤 장치별 로딩·검증 응답을 받아야 교체가 끝났다고 볼 수 있다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1577"
+        "ref-1512"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -61,7 +61,7 @@
       "claim": "LeRobot v0.6.0 하위 호환성 문서는 PR #1452 이후 정책 가중치에 내장되던 정규화 계층을 없애고 외부 PolicyProcessorPipeline 구성요소가 정규화를 맡도록 바꾼 변경을 '호환성 깨짐(Breaking Change)'으로 명시하고, 이전 모델은 이전(migration)이 필요하다고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1578"
+        "ref-1513"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -75,7 +75,7 @@
       "claim": "같은 문서는 하드웨어 API 재설계(PR #777) 이전의 보정 방식으로 기록한 궤적을 그대로 불러오면 잘못 재생된다고 경고한다(SO100/SO101 예시의 관절 보정·입출력 변환).",
       "tag": "사실",
       "source_ids": [
-        "ref-1578"
+        "ref-1513"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -89,7 +89,7 @@
       "claim": "LeRobotDataset v3.0 형식은 여러 에피소드의 표 행과 영상 프레임을 큰 파일로 이어 붙이고, 에피소드별 구간은 파일 경계가 아니라 메타데이터로 복원한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1578"
+        "ref-1513"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -103,7 +103,7 @@
       "claim": "학습 정책을 로봇에 배포할 때는 가중치 해시, 전·후처리기와 정규화 통계, 학습 데이터 커밋과 데이터 형식 판, 카메라·관절 스키마, 하드웨어 보정판, 런타임 판을 하나의 배포 묶음으로 기록하고 이전 묶음을 보존해야 되돌림이 가능하다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1578"
+        "ref-1513"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -117,7 +117,7 @@
       "claim": "Mender 문서는 사용자 정의 업데이트 모듈(Update Module)이 롤백을 지원하려면 SupportsRollback 질의에 Yes 로 답하고, 설치 전에 '알려진 정상 상태(known good state)'를 저장했다가 롤백 때 복원하는 구현을 모듈 작성자가 넣어야 한다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1579"
+        "ref-1514"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -132,7 +132,7 @@
       "claim": "Mender 문서는 전원 상실 뒤 업데이트 상태가 다시 실행될 수 있으므로 업데이트 모듈을 멱등(idempotent)하게 만들어야 한다고 권고한다(should).",
       "tag": "추정",
       "source_ids": [
-        "ref-1579"
+        "ref-1514"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -147,7 +147,7 @@
       "claim": "AWS IoT Jobs 문서는 작업 배포 속도(rollout)와 중단(abort) 설정을 두고, 실패한 장치 수 등이 지정한 기준에 도달하면 작업 배포를 취소할 수 있다고 설명한다. 이는 새 배포를 멈추는 것이며 이미 설치된 장치의 원복과는 별개다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1581"
+        "ref-1516"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -162,11 +162,11 @@
       "claim": "AWS IoT Greengrass v2 문서는 장치별 배포 실패 상태를 롤백 미요청(FAILED_ROLLBACK_NOT_REQUESTED), 이전 정상 구성으로 롤백 완료(FAILED_ROLLBACK_COMPLETE), 롤백 실패(FAILED_UNABLE_TO_ROLLBACK)로 나누고, 롤백하지 않았거나 롤백에 실패한 장치는 정상 동작하지 않을 수 있다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1580"
+        "ref-1515"
       ],
       "cross_checked": false,
       "confidence": "low",
-      "evidence_excerpt": "벤더 주장: 'Check deployment status': FAILED_ROLLBACK_COMPLETE \"successfully rolled back to a previous working configuration\" / FAILED_UNABLE_TO_ROLLBACK \"failed to roll back … might not be functioning correctly\". 부트스트랩 배포는 실패 시 항상 롤백 시도. ref-1581 과 같은 AWS 자료라 독립 교차 확인 아님",
+      "evidence_excerpt": "벤더 주장: 'Check deployment status': FAILED_ROLLBACK_COMPLETE \"successfully rolled back to a previous working configuration\" / FAILED_UNABLE_TO_ROLLBACK \"failed to roll back … might not be functioning correctly\". 부트스트랩 배포는 실패 시 항상 롤백 시도. ref-1516 과 같은 AWS 자료라 독립 교차 확인 아님",
       "as_of": "2026-10-12",
       "site_type": null,
       "flow_item": null,
@@ -177,9 +177,9 @@
       "claim": "모델 배포는 배포 중단, 이전 모델 복원 시도, 복원 확인을 서로 다른 상태로 기록하고, 확대 배포 여부는 집단 성공률만이 아니라 장치별 현재 버전·실패 사유·복구 결과로 판단하며, 복구하지 못한 로봇은 새 작업 배정에서 빼는 운영 정책을 두는 것이 맞다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1579",
-        "ref-1580",
-        "ref-1581"
+        "ref-1514",
+        "ref-1515",
+        "ref-1516"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -193,7 +193,7 @@
       "claim": "Viam 문서는 새 모델을 플릿에 내보낼 때 갱신한 구성 조각(fragment)을 먼저 첫 집단(예: 카나리 위치)에만 적용해 관찰한 뒤 나머지 집단으로 넓히는 절차를 제시한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1582"
+        "ref-1547"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -208,7 +208,7 @@
       "claim": "같은 Viam 문서는 새 모델이 잘못 보이면 구성 조각에서 이전 판을 고정해 되돌리며, 장치들은 다음 구성 동기화 때(정상 운영에서는 수 초 안에) 이전 판으로 수렴한다고 설명한다. 연결이 끊긴 장치의 즉시 변경은 아니다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1582"
+        "ref-1547"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -321,7 +321,7 @@
       "claim": "적응형 등각 추론(Adaptive Conformal Inference, Gibbs·Candès, NeurIPS 2021)의 명제 4.1 은 분포가 시간에 따라 바뀌어도 장기간의 경험적 포함 빈도가 목표값에 맞는다는 장기 평균 보장을 준다. 논문 실험은 주가 변동성·선거 데이터이며 로봇 실험은 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1583"
+        "ref-1548"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -335,7 +335,7 @@
       "claim": "같은 방법의 온라인 갱신은 직전 예측 집합들이 정답을 놓친 경험적 빈도(empirical miscoverage)를 보고 임계값을 조정하므로, 운영 중 정답(Y_t)을 관측할 수 있어야 쓸 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1583"
+        "ref-1548"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -350,7 +350,7 @@
       "tag": "의견",
       "source_ids": [
         "ref-351",
-        "ref-1583"
+        "ref-1548"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -364,7 +364,7 @@
       "claim": "제조사 연구(저자 전원 AGIBOT 소속, 저자 보고)인 Learning While Deploying(LWD, arXiv v4)은 자사 Agibot G1 양팔 로봇 16대 플릿(식료품 보충 작업 4대, 장기 작업마다 3대)으로 8개 실물 조작 작업에서 온라인 학습을 했고, 방법마다 실험당 4시간 벽시계 예산(플릿 합계 약 60시간)을 줬다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1585"
+        "ref-1550"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -378,7 +378,7 @@
       "claim": "LWD 의 학습기는 50 학습 단계마다 갱신 정책을 플릿에 내보내고, 로봇 액터는 에피소드 경계에서 새 정책을 다시 불러온다(제조사 연구, 저자 보고).",
       "tag": "사실",
       "source_ids": [
-        "ref-1585"
+        "ref-1550"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -392,7 +392,7 @@
       "claim": "LWD 저자는 한계 절에서 현재 정책 학습 틀이 실행 안전을 명시적으로 모델링하지 않으며, 단순한 실시간 갱신 일정이 대규모·장기 배포에 최적이 아닐 수 있다고 밝힌다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1585"
+        "ref-1550"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -406,7 +406,7 @@
       "claim": "운영 중 학습하는 정책을 쓰는 플릿에서는 작업 이력마다 실행한 정책 판을 붙이고, 새 정책을 적용하는 경계(예: 에피소드·임무 단위)와 승인 주체를 명시해야 임무 도중 모델이 바뀌는 문제를 관리할 수 있다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1585"
+        "ref-1550"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -420,7 +420,7 @@
       "claim": "LG CNS 는 2026-05-07 발표에서 로봇 학습·운영 플랫폼 '피지컬웍스'의 포지(Forge)에서 학습·검증한 로봇을 바통(Baton)으로 운영·관제하고, 이 과정에서 축적한 데이터를 다시 학습에 쓰는 선순환 체계를 구축했다고 밝혔다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1584"
+        "ref-1549"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -435,7 +435,7 @@
       "claim": "같은 발표는 AMR·AGV 등 100대 규모 운영 환경에 바통을 적용하면 생산성이 약 15% 이상 오르고 운영비가 최대 18% 줄 것으로 '기대된다'고 적으며, 이는 실측 비교 결과가 아니라 회사의 기대치다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1584"
+        "ref-1549"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -450,7 +450,7 @@
       "claim": "같은 발표는 포지가 20곳 이상 고객사와 로봇 개념검증(PoC)을 진행 중이고, 바통이 부산 스마트시티 국가 시범도시 사업에서 순찰·바리스타·짐캐리·청소 4종 로봇의 통합 관제에 쓰이고 있다고 주장한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1584"
+        "ref-1549"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -465,7 +465,7 @@
       "claim": "학습·운영 연계 플랫폼을 도입 검토할 때는 시연, PoC, 상시 운영을 서로 다른 수준의 증거로 받고, 모델 갱신 이력·고객 검수·장애 복구 기록을 따로 요청해야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1584"
+        "ref-1549"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -479,7 +479,7 @@
       "claim": "AI-Hub '대규모 물리환경 로봇조작 데이터'(dataSetSn 71825)의 변경이력은 v1.0 을 2025-04-16 데이터 개방(Beta), v1.1 을 2025-06-30 데이터 최종 개방으로 표시한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -493,7 +493,7 @@
       "claim": "같은 페이지의 데이터 히스토리에서 2026-05-06 항목은 '기타 – 태그 추가'로만 표시돼 새 데이터 판 발행으로 볼 근거가 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -507,7 +507,7 @@
       "claim": "같은 데이터의 학습용 구성표(라벨링 JSON 기준)는 총 262,166 건 중 학습 238,266 건, 테스트 23,900 건을 적으면서 표제는 '학습 데이터 (80%)', '테스트 데이터 (10%)'로 달아, 실제 비율(약 90.9%·9.1%)과 맞지 않고 검증 분할은 표기하지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -521,7 +521,7 @@
       "claim": "같은 데이터의 원천 데이터는 실제환경 77,984 장, 가상환경 184,182 장(RGB 기준, Depth 같은 수)으로, 전체 262,166 장 가운데 약 70% 가 가상환경에서 취득됐다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -535,7 +535,7 @@
       "claim": "같은 페이지의 분포 표는 원천 데이터 분포 비율을 실제 14.29%·가상 85.71% 로 적어 수량(약 29.7%·70.3%)과 맞지 않고, 라벨링 JSON 수량(77,984 + 184,182 = 262,166)의 합계를 524,332 로 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -549,7 +549,7 @@
       "claim": "공개 데이터의 분할비·합계가 서로 맞지 않으면 제공자 확인 전에는 표제 분할비를 모델 승인 근거로 쓰지 말고, 실물·가상 구분, 중복, 평가용 누출을 실제 파일로 따로 검사해야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1588"
+        "ref-1553"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -563,7 +563,7 @@
       "claim": "NIST AI RMF 1.0(NIST AI 100-1)의 MANAGE 4.1 은 배포 후 AI 시스템 감시 계획에 사용자·관련 AI 행위자 의견 수집·평가, 이의 제기와 무효화(override), 폐기, 사고 대응, 복구, 변경관리 장치를 넣어 실행하도록 한다(자율 적용 프레임워크).",
       "tag": "사실",
       "source_ids": [
-        "ref-1586"
+        "ref-1551"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -577,7 +577,7 @@
       "claim": "모델 공급자의 학습·검증 책임, ROP 의 배포·실행 판 기록, 현장 운영자의 개입·사고 통보 역할은 계약과 운영 절차에서 따로 정해야 하며, 조직 단위 관리 체계 인증만으로 특정 로봇 모델의 안전 성능을 승인해서는 안 된다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1586"
+        "ref-1551"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -591,7 +591,7 @@
       "claim": "EUR-Lex 의 AI Act(Regulation (EU) 2024/1689) 2026-07-27 통합판은 Regulation (EU) 2026/1744(2026-07-08 채택, 관보 2026-07-24 게재) 개정을 반영하며, 이 개정으로 부속서 I Section A 에서 기계류(1번 항목)가 삭제되고 Section B 21번에 기계류 규정 (EU) 2023/1230 이 추가됐다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -605,7 +605,7 @@
       "claim": "개정된 AI Act 제2조 2항은 부속서 I Section B 의 조화 법령 대상 제품과 관련해 제6조 1항으로 고위험이 되는 AI 시스템에는 제6조 1항, 제60a조, 제102~112조만 적용하고, 제57~59조는 해당 법령에 고위험 요구사항이 통합된 범위에서만 적용한다고 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -619,7 +619,7 @@
       "claim": "AI Act 제43조 4항은 적합성 평가를 거친 고위험 AI 시스템이 중대한 변경(substantial modification)을 겪으면, 변경된 시스템을 다시 유통하든 같은 배포자가 계속 쓰든 새 적합성 평가 절차를 거치도록 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -633,7 +633,7 @@
       "claim": "같은 항은 출시·사용 개시 뒤에도 계속 학습하는 고위험 AI 시스템에서, 제공자가 최초 적합성 평가 때 미리 정하고 부속서 IV 2(f) 기술문서에 담은 시스템·성능 변경은 중대한 변경으로 보지 않는다고 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -647,7 +647,7 @@
       "claim": "AI Act 제72조 2항은 제공자의 시판 후 감시 체계가 배포자 제공 등으로 얻은 고위험 AI 시스템의 성능 관련 데이터를 수명 전반에 걸쳐 능동적·체계적으로 수집·문서화·분석하고, 관련되는 경우 다른 AI 시스템과의 상호작용 분석을 포함하도록 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -661,7 +661,7 @@
       "claim": "제2조 2항 개정에 따라 기계류 규정 대상 로봇의 안전 구성요소로서 부속서 I 경로로 고위험이 되는 AI 에는 제43조(중대한 변경 시 재평가)와 제72조(시판 후 감시)가 AI Act 조문으로 바로 적용된다고 볼 수 없으며, 이 두 조문은 Section A 법령·부속서 III 경로의 고위험 AI 에 해당하는 내용으로만 소개해야 한다. 위키의 '부속서 I(기계류 등) 고위험' 서술도 이 이동을 반영해야 한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -675,7 +675,7 @@
       "claim": "EU 시장을 대상으로 할 때는 적용 관할·시스템 분류·공급자 지위를 먼저 정하고, 그 뒤 최초 평가에서 허용한 변경 범위와 실제 모델 변경 내역을 대조할 수 있도록 변경 기록을 보존하는 것이 맞다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1587"
+        "ref-1552"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -743,7 +743,7 @@
   ],
   "sources": [
     {
-      "id": "ref-1577",
+      "id": "ref-1512",
       "org": "MLflow 프로젝트 (Linux Foundation 오픈소스 프로젝트)",
       "title": "Model Registry Workflows (docs/docs/classic-ml/model-registry/workflow.mdx, MLflow v3.1.0)",
       "published": "2025-06-10",
@@ -758,7 +758,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1578",
+      "id": "ref-1513",
       "org": "Hugging Face LeRobot 기여자 (huggingface/lerobot)",
       "title": "Backward compatibility (docs/source/backwardcomp.mdx, LeRobot v0.6.0)",
       "published": "2026-07-06",
@@ -773,7 +773,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1579",
+      "id": "ref-1514",
       "org": "Northern.tech (Mender documentation)",
       "title": "Create a custom Update Module",
       "published": null,
@@ -788,7 +788,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1580",
+      "id": "ref-1515",
       "org": "Amazon Web Services (AWS IoT Greengrass V2 Developer Guide)",
       "title": "Check deployment status",
       "published": null,
@@ -803,7 +803,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1581",
+      "id": "ref-1516",
       "org": "Amazon Web Services (AWS IoT Core Developer Guide)",
       "title": "How job configurations work",
       "published": null,
@@ -818,7 +818,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1582",
+      "id": "ref-1547",
       "org": "Viam",
       "title": "Roll out a new model to a fleet",
       "published": null,
@@ -833,7 +833,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1583",
+      "id": "ref-1548",
       "org": "Gibbs, I., & Candès, E. J. (NeurIPS 2021)",
       "title": "Adaptive Conformal Inference Under Distribution Shift",
       "published": "2021-12-06",
@@ -848,7 +848,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1584",
+      "id": "ref-1549",
       "org": "LG CNS",
       "title": "LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개",
       "published": "2026-05-07",
@@ -863,7 +863,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1585",
+      "id": "ref-1550",
       "org": "Wang, Y. 외 (AGIBOT)",
       "title": "Learning While Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
       "published": "2026-09-16",
@@ -878,7 +878,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1586",
+      "id": "ref-1551",
       "org": "NIST",
       "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1",
       "published": "2023-01",
@@ -893,7 +893,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1587",
+      "id": "ref-1552",
       "org": "European Union (EUR-Lex)",
       "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — consolidated text 02024R1689-20260727 (incl. M1 Regulation (EU) 2026/1744)",
       "published": "2026-07-27",
@@ -908,7 +908,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1588",
+      "id": "ref-1553",
       "org": "AI-Hub (한국지능정보사회진흥원)",
       "title": "대규모 물리환경 로봇조작 데이터",
       "published": "2025-06-30",
@@ -982,7 +982,7 @@
         "9",
         "11"
       ],
-      "rationale": "갱신(차등): 섹션 3 — 67행 법·규제 문단 정정: 한국 인공지능기본법은 '2026-01-22 시행(최초 법률·시행령)'에 개정 법률 제21311호(2026-01-20 공포, 2026-07-21 시행, f48)를 더해 '개정 법률의 시행일 … 미확인'을 지움, 제34조 1항 5호 문서 작성·보관(f47, 해당성은 f49 [추정]). EU AI Act '부속서 I(기계류 등) … 고위험' 문장은 2026-07-27 통합판 기준으로 기계류 규정 (EU) 2023/1230 이 Section B(21번)로 옮겨졌고(f40) 제2조 2항이 Section B 관련 고위험 AI 에는 제6조 1항·제60a조·제102~112조만 적용한다(f41)는 점을 덧붙이고, 제43·72조를 로봇(기계류) AI 에 바로 연결하지 않음(f45 [추정]) / 섹션 4(분리 2026-09-25-area27-s4) — '등각 예측' 항목(41행)에 i.i.d. 보정 조건(f18)과 사람 도움 정확성 가정(f19) 추가, '모델 레지스트리' 항목(44행)에 별칭 반영 시점이 다음 로딩(f1)임을 보충, 배포 묶음 호환성(정규화 외부화 f3, 보정 방식 변경 f4, 메타데이터 기반 에피소드 f5) 항목 추가 / 섹션 5 — 출하 시나리오 '예외·성과' 칸(105행)에 별칭 반영 시점(f1)·오프라인 시험 한계와 카나리(f15)·롤백 연습(f16) 보강; 사례 추가: Viam 단계 배포·이전 판 고정(f12·f13, 벤더 주장 [추정]), LWD 플릿 온라인 학습(f24·f25·f26, '제조사 연구·저자 보고' 표기, 이종 플릿 아님), LG CNS 피지컬웍스 학습–운영 연계(f28~f30, 벤더 주장 [추정], 15%·18% 는 회사 기대치); 의견 f27·f31 / 섹션 6(분리 2026-09-25-area27-s6) — '모델 운영 관리' 소절(69행): MLflow 별칭 문장에 반영 시점 범위(f1, 기존 문장은 틀리지 않음 — 범위 보충), ML Test Score 28개 항목 문장 뒤에 Infra4 승인·거부(f14), Infra6 오프라인 시험 한계(f15), Infra7 롤백 연습(f16); 롤백 구현 책임·배포 중단 상태(Mender f7·f8, AWS IoT Jobs f9, Greengrass f10 — 모두 벤더 주장 [추정]) 새 소절; '필요할 때 되묻기' 소절(57행) KnowNo 문장에 보장 조건(f18·f19·f20); 의견 f2·f11·f17·f23. 기존 내용 확인(새로 넣지 않음): Mender 상태 스크립트·롤백 표시·A/B 원자 배포·단계적 배포(2026-10-09-area43-s6.md 48~50행, 2026-09-30-area43-s6.md 57행; ref-1323·ref-1324·ref-1040), aws-samples ROS 2 OTA 자동 롤백(ref-556) / 섹션 7(분리 2026-09-25-area27-s7) — 표: MLflow 행(44행)에 v3.1.0 고정 문서 근거(f1, ref-1577, ref-626 은 latest 판), LeRobot v0.6.0 호환성·LeRobotDataset v3.0 행 추가(f3~f5), NIST AI RMF 행에 MANAGE 4.1(f38, 본문 PDF ref-1586), AI-Hub 71825 행 추가(f32~f36: v1.1 2025-06-30, 2026-05-06 은 태그만, 표제 80%/10% 와 실제 약 90.9%/9.1% 불일치·검증 분할 없음, 가상환경 약 70%, 분포 비율·JSON 합계 불일치; 의견 f37). 48행 관련 법 문단: 한국 법 시행일·제34조(f47·f48·f49, 의견 f50), EU AI Act 문장에 Section B 이동·제2조 2항(f40·f41)과 제43조 4항 재평가·사전 정한 지속학습 변경 예외(f42·f43)·제72조 2항(f44)을 '조문 내용 소개'로만 넣고 기계류 연계 로봇 AI 에 바로 적용되지 않음을 명시(f45 [추정]); 의견 f46. ISO/IEC 42001 행은 그대로(이번 원문 미확인) / 섹션 8(분리 2026-09-25-area27-s8) — KnowNo 항목(41행)에 PMLR 229 학회판과 가정(f18·f19·f20), ML Test Score 항목(50행)에 Infra4·6·7(f14~f16), ACI 항목 추가(f21·f22, 로봇 실험 없음), LWD 항목 추가(f24~f26, 제조사 연구·프리프린트) / 섹션 9 — 책임 경계: 배포 후 감시·변경관리(f38)와 공급자·ROP·현장 운영자 역할 분리(의견 f39), 배포 중단·복원 상태 기록과 복구 실패 로봇의 배정 제외(의견 f11) / 섹션 11 — oq-030: '이번 실행에서는 조사하지 않았다'를 기존 내용 확인으로 갱신(2026-10-10-area25-s6.md 59~63행, 2026-10-10-area25-s11.md 41행, 후속 질문 oq-356; LTAA 75.97%·77.1%·DP 0.95 는 새 finding 으로 넣지 않음), 상태 열림 유지. id 없이 '(신규 …)'로 적힌 세 질문은 docs/open-questions.md 문구 대조로 oq-105·oq-106·oq-107 과 같으므로 id 를 붙임. 부분 답(열림 유지): oq-105(f47·f48·f49), oq-106(f40~f45: 제품 안전 구성요소 해당성은 판단하지 않고, 기계류는 Section B·제2조 2항 경로임만 확인), oq-107(f18~f23: 가정 확인, 재보정 주기 미해결), oq-213(f12·f13 Viam 단계 배포·되돌림, 벤더 주장), oq-222(f21·f22 분포 이동 아래 온라인 재보정의 조건, 배정 정책 되돌림 기준은 아님). 새 질문 4건 / 후속 정리(이번 갱신 범위 밖, 다른 페이지): docs/categories/ai-and-learning/index.md 131행·160행과 docs/categories/safety/index.md 149행의 'EU AI Act 부속서 I(기계류 등) 고위험' 서술에 Section B 이동·제2조 2항(f40·f41) 반영, index.md 160행 '2026-01-22 시행'에 개정 법률 2026-07-21 시행(f48) 반영, ref-168 저자 표기('Kaitha, S., & Yu, S. 외' → Shyam prasad reddy Kaitha·Hongrui Yu 2명), ref-626 은 latest 판이라 고정 판 ref-1577 과 구분. 다음 실행 후보: 43. 데이터·관측성·배포(f7~f13), 57. 자산·소프트웨어 수명주기 관리(f3~f6), 59. 법·규제·보험·라이선스(f40~f49)"
+      "rationale": "갱신(차등): 섹션 3 — 67행 법·규제 문단 정정: 한국 인공지능기본법은 '2026-01-22 시행(최초 법률·시행령)'에 개정 법률 제21311호(2026-01-20 공포, 2026-07-21 시행, f48)를 더해 '개정 법률의 시행일 … 미확인'을 지움, 제34조 1항 5호 문서 작성·보관(f47, 해당성은 f49 [추정]). EU AI Act '부속서 I(기계류 등) … 고위험' 문장은 2026-07-27 통합판 기준으로 기계류 규정 (EU) 2023/1230 이 Section B(21번)로 옮겨졌고(f40) 제2조 2항이 Section B 관련 고위험 AI 에는 제6조 1항·제60a조·제102~112조만 적용한다(f41)는 점을 덧붙이고, 제43·72조를 로봇(기계류) AI 에 바로 연결하지 않음(f45 [추정]) / 섹션 4(분리 2026-09-25-area27-s4) — '등각 예측' 항목(41행)에 i.i.d. 보정 조건(f18)과 사람 도움 정확성 가정(f19) 추가, '모델 레지스트리' 항목(44행)에 별칭 반영 시점이 다음 로딩(f1)임을 보충, 배포 묶음 호환성(정규화 외부화 f3, 보정 방식 변경 f4, 메타데이터 기반 에피소드 f5) 항목 추가 / 섹션 5 — 출하 시나리오 '예외·성과' 칸(105행)에 별칭 반영 시점(f1)·오프라인 시험 한계와 카나리(f15)·롤백 연습(f16) 보강; 사례 추가: Viam 단계 배포·이전 판 고정(f12·f13, 벤더 주장 [추정]), LWD 플릿 온라인 학습(f24·f25·f26, '제조사 연구·저자 보고' 표기, 이종 플릿 아님), LG CNS 피지컬웍스 학습–운영 연계(f28~f30, 벤더 주장 [추정], 15%·18% 는 회사 기대치); 의견 f27·f31 / 섹션 6(분리 2026-09-25-area27-s6) — '모델 운영 관리' 소절(69행): MLflow 별칭 문장에 반영 시점 범위(f1, 기존 문장은 틀리지 않음 — 범위 보충), ML Test Score 28개 항목 문장 뒤에 Infra4 승인·거부(f14), Infra6 오프라인 시험 한계(f15), Infra7 롤백 연습(f16); 롤백 구현 책임·배포 중단 상태(Mender f7·f8, AWS IoT Jobs f9, Greengrass f10 — 모두 벤더 주장 [추정]) 새 소절; '필요할 때 되묻기' 소절(57행) KnowNo 문장에 보장 조건(f18·f19·f20); 의견 f2·f11·f17·f23. 기존 내용 확인(새로 넣지 않음): Mender 상태 스크립트·롤백 표시·A/B 원자 배포·단계적 배포(2026-10-09-area43-s6.md 48~50행, 2026-09-30-area43-s6.md 57행; ref-1323·ref-1324·ref-1040), aws-samples ROS 2 OTA 자동 롤백(ref-556) / 섹션 7(분리 2026-09-25-area27-s7) — 표: MLflow 행(44행)에 v3.1.0 고정 문서 근거(f1, ref-1512, ref-626 은 latest 판), LeRobot v0.6.0 호환성·LeRobotDataset v3.0 행 추가(f3~f5), NIST AI RMF 행에 MANAGE 4.1(f38, 본문 PDF ref-1551), AI-Hub 71825 행 추가(f32~f36: v1.1 2025-06-30, 2026-05-06 은 태그만, 표제 80%/10% 와 실제 약 90.9%/9.1% 불일치·검증 분할 없음, 가상환경 약 70%, 분포 비율·JSON 합계 불일치; 의견 f37). 48행 관련 법 문단: 한국 법 시행일·제34조(f47·f48·f49, 의견 f50), EU AI Act 문장에 Section B 이동·제2조 2항(f40·f41)과 제43조 4항 재평가·사전 정한 지속학습 변경 예외(f42·f43)·제72조 2항(f44)을 '조문 내용 소개'로만 넣고 기계류 연계 로봇 AI 에 바로 적용되지 않음을 명시(f45 [추정]); 의견 f46. ISO/IEC 42001 행은 그대로(이번 원문 미확인) / 섹션 8(분리 2026-09-25-area27-s8) — KnowNo 항목(41행)에 PMLR 229 학회판과 가정(f18·f19·f20), ML Test Score 항목(50행)에 Infra4·6·7(f14~f16), ACI 항목 추가(f21·f22, 로봇 실험 없음), LWD 항목 추가(f24~f26, 제조사 연구·프리프린트) / 섹션 9 — 책임 경계: 배포 후 감시·변경관리(f38)와 공급자·ROP·현장 운영자 역할 분리(의견 f39), 배포 중단·복원 상태 기록과 복구 실패 로봇의 배정 제외(의견 f11) / 섹션 11 — oq-030: '이번 실행에서는 조사하지 않았다'를 기존 내용 확인으로 갱신(2026-10-10-area25-s6.md 59~63행, 2026-10-10-area25-s11.md 41행, 후속 질문 oq-356; LTAA 75.97%·77.1%·DP 0.95 는 새 finding 으로 넣지 않음), 상태 열림 유지. id 없이 '(신규 …)'로 적힌 세 질문은 docs/open-questions.md 문구 대조로 oq-105·oq-106·oq-107 과 같으므로 id 를 붙임. 부분 답(열림 유지): oq-105(f47·f48·f49), oq-106(f40~f45: 제품 안전 구성요소 해당성은 판단하지 않고, 기계류는 Section B·제2조 2항 경로임만 확인), oq-107(f18~f23: 가정 확인, 재보정 주기 미해결), oq-213(f12·f13 Viam 단계 배포·되돌림, 벤더 주장), oq-222(f21·f22 분포 이동 아래 온라인 재보정의 조건, 배정 정책 되돌림 기준은 아님). 새 질문 4건 / 후속 정리(이번 갱신 범위 밖, 다른 페이지): docs/categories/ai-and-learning/index.md 131행·160행과 docs/categories/safety/index.md 149행의 'EU AI Act 부속서 I(기계류 등) 고위험' 서술에 Section B 이동·제2조 2항(f40·f41) 반영, index.md 160행 '2026-01-22 시행'에 개정 법률 2026-07-21 시행(f48) 반영, ref-168 저자 표기('Kaitha, S., & Yu, S. 외' → Shyam prasad reddy Kaitha·Hongrui Yu 2명), ref-626 은 latest 판이라 고정 판 ref-1512 과 구분. 다음 실행 후보: 43. 데이터·관측성·배포(f7~f13), 57. 자산·소프트웨어 수명주기 관리(f3~f6), 59. 법·규제·보험·라이선스(f40~f49)"
     }
   ],
   "glossary_candidates": [],
@@ -1018,6 +1018,6 @@
       "queries": 0,
       "sources": 12
     },
-    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 12건/15(ref-1577~ref-1588, 예약 구간 ref-1577~ref-1606 안), 재사용 3건(ref-625·ref-351·ref-620). 출처 매핑(검증 결과 기준): 메모 n1→ref-1577(MLflow v3.1.0 고정 문서; ref-626 은 latest 판이라 새 id), n2→ref-1578, n3→ref-1579, n4→ref-1580, n5→ref-1581(URL 을 /iot/latest/developerguide/ 표준 경로로), n6→ref-1582, n7→ref-351(PMLR 229 학회판으로 열람), n8→ref-1583, n9→ref-1584(뉴스와이어 재게시는 같은 출처), n10→ref-1585, n11→ref-625(DOI 10.1109/BigData.2017.8258038), n12→ref-1586(본문 PDF; 기존 ref-617 은 보도자료), n13→ref-1587(M1 Regulation (EU) 2026/1744 명시), n14→ref-620(법률 제21311호 조문), n15(ISO/IEC 42001)·n17(LTAA, ref-168)은 finding 이 없어 출처에서 뺌. 교차 확인 0건(모든 사실 finding 이 단일 출처, AWS 두 문서는 같은 기관). 검증 반영: (a) A13 에 옴니버스 2026/1744 의 Section B 이동·제2조 2항(f40·f41)을 넣고 제43·72조(f42~f44)는 조문 내용 소개로 한정, 로봇(기계류) AI 에 바로 연결하지 않는다는 점을 f45 [추정]으로 명시, oq-106 부분 답; (b) A15 LTAA 수치는 완전 중복이라 제외하고 11절 oq-030 문장 갱신만 제안; A11 의 '학습 80%' 표제를 사실로 옮기지 않고 불일치(f34·f36)와 가상환경 약 70%(f35)를 추가; LWD 는 '제조사 연구·저자 보고' 표기(f24~f26); 한국 법 시행일 2026-07-21·법률 제21311호(f48); 벤더 문서(Mender·AWS·Viam·LG CNS) 단독 finding 은 추정+벤더 주장(f7~f10, f12·f13, f28~f30); Mender 상태 스크립트·단계 배포·A/B 원자 배포, AWS ROS 2 OTA 샘플, ISO 42001 정의는 기존 내용 확인으로만 rationale 에 적음. 열린 질문: 해결 없음. 부분 답 oq-105·oq-106·oq-107·oq-213·oq-222, oq-030 은 기존 내용 확인(열림 유지). 메모 '답한 열린 질문'의 new-1~new-3 은 docs/open-questions.md 문구 대조로 oq-105·oq-106·oq-107 과 같아 새로 만들지 않음. 메모의 '새로 생긴 열린 질문' 4건은 기존 질문과 문구가 겹치지 않아 새로 올림. 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·쪽·조와 위키 실제 위치를 적었다. 2026-10-10-area27-* 는 다른 영역이라 쓰지 않음. 정정 요청 없음. 용어 후보 없음."
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 12건/15(ref-1512~ref-1553, 예약 구간 ref-1512~ref-1606 안), 재사용 3건(ref-625·ref-351·ref-620). 출처 매핑(검증 결과 기준): 메모 n1→ref-1512(MLflow v3.1.0 고정 문서; ref-626 은 latest 판이라 새 id), n2→ref-1513, n3→ref-1514, n4→ref-1515, n5→ref-1516(URL 을 /iot/latest/developerguide/ 표준 경로로), n6→ref-1547, n7→ref-351(PMLR 229 학회판으로 열람), n8→ref-1548, n9→ref-1549(뉴스와이어 재게시는 같은 출처), n10→ref-1550, n11→ref-625(DOI 10.1109/BigData.2017.8258038), n12→ref-1551(본문 PDF; 기존 ref-617 은 보도자료), n13→ref-1552(M1 Regulation (EU) 2026/1744 명시), n14→ref-620(법률 제21311호 조문), n15(ISO/IEC 42001)·n17(LTAA, ref-168)은 finding 이 없어 출처에서 뺌. 교차 확인 0건(모든 사실 finding 이 단일 출처, AWS 두 문서는 같은 기관). 검증 반영: (a) A13 에 옴니버스 2026/1744 의 Section B 이동·제2조 2항(f40·f41)을 넣고 제43·72조(f42~f44)는 조문 내용 소개로 한정, 로봇(기계류) AI 에 바로 연결하지 않는다는 점을 f45 [추정]으로 명시, oq-106 부분 답; (b) A15 LTAA 수치는 완전 중복이라 제외하고 11절 oq-030 문장 갱신만 제안; A11 의 '학습 80%' 표제를 사실로 옮기지 않고 불일치(f34·f36)와 가상환경 약 70%(f35)를 추가; LWD 는 '제조사 연구·저자 보고' 표기(f24~f26); 한국 법 시행일 2026-07-21·법률 제21311호(f48); 벤더 문서(Mender·AWS·Viam·LG CNS) 단독 finding 은 추정+벤더 주장(f7~f10, f12·f13, f28~f30); Mender 상태 스크립트·단계 배포·A/B 원자 배포, AWS ROS 2 OTA 샘플, ISO 42001 정의는 기존 내용 확인으로만 rationale 에 적음. 열린 질문: 해결 없음. 부분 답 oq-105·oq-106·oq-107·oq-213·oq-222, oq-030 은 기존 내용 확인(열림 유지). 메모 '답한 열린 질문'의 new-1~new-3 은 docs/open-questions.md 문구 대조로 oq-105·oq-106·oq-107 과 같아 새로 만들지 않음. 메모의 '새로 생긴 열린 질문' 4건은 기존 질문과 문구가 겹치지 않아 새로 올림. 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·쪽·조와 위키 실제 위치를 적었다. 2026-10-10-area27-* 는 다른 영역이라 쓰지 않음. 정정 요청 없음. 용어 후보 없음."
   }
 }

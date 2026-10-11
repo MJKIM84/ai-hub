@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-10-12
-sources: [ref-617, ref-618, ref-619, ref-620, ref-621, ref-088, ref-092, ref-351, ref-622, ref-623, ref-624, ref-625, ref-626, ref-627, ref-354, ref-359, ref-056, ref-541, ref-417, ref-1577, ref-1578, ref-1579, ref-1580, ref-1581, ref-1582, ref-1583, ref-1584, ref-1585, ref-1586, ref-1587, ref-1588]
+sources: [ref-617, ref-618, ref-619, ref-620, ref-621, ref-088, ref-092, ref-351, ref-622, ref-623, ref-624, ref-625, ref-626, ref-627, ref-354, ref-359, ref-056, ref-541, ref-417, ref-1512, ref-1513, ref-1514, ref-1515, ref-1516, ref-1547, ref-1548, ref-1549, ref-1550, ref-1551, ref-1552, ref-1553]
 last_run: 2026-10-12
 version: 3
 ---
@@ -100,7 +100,7 @@ AI가 만든 계획·해석을 실행에 쓰는 기준은 한 가지 장치가 �
 | 수행 자원 | 창고 다중 로봇 작업 배정을 강화학습 정책으로 수행하는 방법이 연구되어 있다(RTAW, 시뮬레이션 창고 조건). [사실][^ref-623] |
 | 제약 | 해당 없음 |
 | 완료·인계 | 해당 없음 |
-| 예외·성과 | 모델 레지스트리의 버전·별칭으로 교체·되돌림 경로를 두고 교체 전 시험·감시 기준을 통과시켜야, 데이터 의존성·숨은 피드백 루프 같은 ML 고유 위험에서 오는 배정 품질 저하가 출하 지연으로 번지는 것을 막을 수 있을 것으로 보인다. [추정][^ref-626][^ref-625][^ref-623][^ref-624] MLflow v3.1.0 문서 기준으로 별칭 재지정은 같은 별칭으로 모델을 불러오는 코드가 다음에 실행될 때 반영된다. [사실][^ref-1577] ML Test Score는 오프라인 시험만으로는 운영 성능을 보장할 수 없다며 소수 트래픽에 먼저 내보내는 카나리를 완화책으로 들고, 롤백을 비상 절차로 두되 평상시에 연습하라고 권고한다(일반 ML 서비스 지침). [사실][^ref-625] |
+| 예외·성과 | 모델 레지스트리의 버전·별칭으로 교체·되돌림 경로를 두고 교체 전 시험·감시 기준을 통과시켜야, 데이터 의존성·숨은 피드백 루프 같은 ML 고유 위험에서 오는 배정 품질 저하가 출하 지연으로 번지는 것을 막을 수 있을 것으로 보인다. [추정][^ref-626][^ref-625][^ref-623][^ref-624] MLflow v3.1.0 문서 기준으로 별칭 재지정은 같은 별칭으로 모델을 불러오는 코드가 다음에 실행될 때 반영된다. [사실][^ref-1512] ML Test Score는 오프라인 시험만으로는 운영 성능을 보장할 수 없다며 소수 트래픽에 먼저 내보내는 카나리를 완화책으로 들고, 롤백을 비상 절차로 두되 평상시에 연습하라고 권고한다(일반 ML 서비스 지침). [사실][^ref-625] |
 
 피킹 시나리오에서 이 영역이 관여하는 칸은 시작 조건(지시가 작업으로 바뀌는 순간)과 예외·성과(되묻기)다. 출하 시나리오에서는 모델 교체가 예외·성과 칸의 위험이 된다.
 
@@ -114,14 +114,14 @@ AI가 만든 계획·해석을 실행에 쓰는 기준은 한 가지 장치가 �
 |---|---|
 | 시작 조건 | 미확인 |
 | 작업 대상 | 미확인 |
-| 수행 자원 | LG CNS 발표에 따르면 로봇 학습·운영 플랫폼 ‘피지컬웍스’의 운영·관제 도구 바통(Baton)이 부산 스마트시티 국가 시범도시 사업에서 순찰·바리스타·짐캐리·청소 4종 로봇의 통합 관제에 쓰이고 있다. [추정] 벤더 주장[^ref-1584] |
+| 수행 자원 | LG CNS 발표에 따르면 로봇 학습·운영 플랫폼 ‘피지컬웍스’의 운영·관제 도구 바통(Baton)이 부산 스마트시티 국가 시범도시 사업에서 순찰·바리스타·짐캐리·청소 4종 로봇의 통합 관제에 쓰이고 있다. [추정] 벤더 주장[^ref-1549] |
 | 제약 | 미확인 |
 | 완료·인계 | 미확인 |
 | 예외·성과 | 미확인 |
 
-LG CNS 발표(2026-05-07)에 따르면 피지컬웍스의 포지(Forge)에서 학습·검증한 로봇을 바통으로 운영·관제하고, 이 과정에서 쌓인 데이터를 다시 학습에 쓰는 선순환 체계를 구축했다고 한다. [추정] 벤더 주장[^ref-1584] 같은 발표에 따르면 AMR·AGV 등 100대 규모 운영 환경에 바통을 적용하면 생산성이 약 15% 이상 오르고 운영비가 최대 18% 줄 것으로 기대된다고 하나, 이는 회사가 기대치로 제시한 값(실측 아님)이다. [추정] 벤더 주장[^ref-1584] 같은 발표에 따르면 포지는 20곳 이상 고객사와 개념검증(Proof of Concept, PoC)을 진행 중이며, 이 주장은 독립적으로 확인되지 않았다. [추정] 벤더 주장[^ref-1584]
+LG CNS 발표(2026-05-07)에 따르면 피지컬웍스의 포지(Forge)에서 학습·검증한 로봇을 바통으로 운영·관제하고, 이 과정에서 쌓인 데이터를 다시 학습에 쓰는 선순환 체계를 구축했다고 한다. [추정] 벤더 주장[^ref-1549] 같은 발표에 따르면 AMR·AGV 등 100대 규모 운영 환경에 바통을 적용하면 생산성이 약 15% 이상 오르고 운영비가 최대 18% 줄 것으로 기대된다고 하나, 이는 회사가 기대치로 제시한 값(실측 아님)이다. [추정] 벤더 주장[^ref-1549] 같은 발표에 따르면 포지는 20곳 이상 고객사와 개념검증(Proof of Concept, PoC)을 진행 중이며, 이 주장은 독립적으로 확인되지 않았다. [추정] 벤더 주장[^ref-1549]
 
-이 사례에서 이 영역이 관여하는 부분은 학습과 운영 사이의 모델 갱신이지만, 공개 자료로 채울 수 있는 칸은 수행 자원뿐이었다. 이 위키는 학습·운영 연계 플랫폼을 도입 검토할 때 시연, PoC, 상시 운영을 서로 다른 수준의 증거로 받고, 모델 갱신 이력·고객 검수·장애 복구 기록을 따로 요청하는 편이 좋다고 본다. [의견][^ref-1584]
+이 사례에서 이 영역이 관여하는 부분은 학습과 운영 사이의 모델 갱신이지만, 공개 자료로 채울 수 있는 칸은 수행 자원뿐이었다. 이 위키는 학습·운영 연계 플랫폼을 도입 검토할 때 시연, PoC, 상시 운영을 서로 다른 수준의 증거로 받고, 모델 갱신 이력·고객 검수·장애 복구 기록을 따로 요청하는 편이 좋다고 본다. [의견][^ref-1549]
 
 ## 6. 대표 접근법과 기술
 
@@ -155,7 +155,7 @@ ROP가 직접 맡을 AI 관련 몫은 LLM·학습 모델이 낸 계획·배정·
 
 ### 배포 후 감시·변경관리·복구 실패 처리
 
-NIST AI RMF 1.0의 MANAGE 4.1은 배포 후 AI 시스템 감시 계획에 사용자·관련 AI 행위자 의견 수집·평가, 이의 제기와 무효화, 폐기, 사고 대응, 복구, 변경관리 장치를 넣어 실행하도록 하는 항목이며, 법적 의무가 아닌 자율 적용 프레임워크다. [사실][^ref-1586] 이 위키는 모델 공급자의 학습·검증 책임, ROP의 배포·실행 판 기록, 현장 운영자의 개입·사고 통보 역할을 계약과 운영 절차에서 따로 정해야 하며, 조직 단위 관리 체계 인증만으로 특정 로봇 모델의 안전 성능을 승인해서는 안 된다고 본다. [의견][^ref-1586] 같은 맥락에서 이 위키는 ROP가 배포 중단·이전 모델 복원 시도·복원 확인을 서로 다른 상태로 기록하고, 복구하지 못한 로봇을 새 작업 배정에서 빼는 정책을 맡는 편이 맞다고 본다. [의견][^ref-1579][^ref-1580][^ref-1581] 장치 업데이트 실행 수단은 [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md), 법 해석과 의무 발생 판단은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md)와 법무·운영 사업자 쪽 연계 대상이며, 이 페이지는 개별 ROP의 의무 발생 여부를 판단하지 않는다.
+NIST AI RMF 1.0의 MANAGE 4.1은 배포 후 AI 시스템 감시 계획에 사용자·관련 AI 행위자 의견 수집·평가, 이의 제기와 무효화, 폐기, 사고 대응, 복구, 변경관리 장치를 넣어 실행하도록 하는 항목이며, 법적 의무가 아닌 자율 적용 프레임워크다. [사실][^ref-1551] 이 위키는 모델 공급자의 학습·검증 책임, ROP의 배포·실행 판 기록, 현장 운영자의 개입·사고 통보 역할을 계약과 운영 절차에서 따로 정해야 하며, 조직 단위 관리 체계 인증만으로 특정 로봇 모델의 안전 성능을 승인해서는 안 된다고 본다. [의견][^ref-1551] 같은 맥락에서 이 위키는 ROP가 배포 중단·이전 모델 복원 시도·복원 확인을 서로 다른 상태로 기록하고, 복구하지 못한 로봇을 새 작업 배정에서 빼는 정책을 맡는 편이 맞다고 본다. [의견][^ref-1514][^ref-1515][^ref-1516] 장치 업데이트 실행 수단은 [43. 데이터·관측성·배포](../platform-architecture-and-infrastructure/data-observability-and-deployment.md), 법 해석과 의무 발생 판단은 [59. 법·규제·보험·라이선스](../governance-law-and-society/law-regulation-insurance-and-licensing.md)와 법무·운영 사업자 쪽 연계 대상이며, 이 페이지는 개별 ROP의 의무 발생 여부를 판단하지 않는다.
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
@@ -203,9 +203,9 @@ NIST AI RMF 1.0의 MANAGE 4.1은 배포 후 AI 시스템 감시 계획에 사용
 [^ref-359]: Wang, W. 외, Learning to Ask: When LLM Agents Meet Unclear Instruction, 2024-09, https://arxiv.org/abs/2409.00557, 접근일 2026-09-25 (원문 미열람)
 [^ref-056]: Liu, J. X. 외, Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments, 2023-02, https://arxiv.org/abs/2302.11649, 접근일 2026-09-25 (원문 미열람)
 [^ref-417]: arXiv (SafeGate 저자, 저자명 미확인), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems, 2026-04, https://arxiv.org/abs/2604.05427, 접근일 2026-09-25 (원문 미열람)
-[^ref-1577]: MLflow 프로젝트 (Linux Foundation 오픈소스 프로젝트), Model Registry Workflows (docs/docs/classic-ml/model-registry/workflow.mdx, MLflow v3.1.0), 2025-06-10, https://github.com/mlflow/mlflow/blob/v3.1.0/docs/docs/classic-ml/model-registry/workflow.mdx, 접근일 2026-10-12
-[^ref-1579]: Northern.tech (Mender documentation), Create a custom Update Module, 미확인, https://docs.mender.io/artifact-creation/create-a-custom-update-module, 접근일 2026-10-12
-[^ref-1580]: Amazon Web Services (AWS IoT Greengrass V2 Developer Guide), Check deployment status, 미확인, https://docs.aws.amazon.com/greengrass/v2/developerguide/check-deployment-status.html, 접근일 2026-10-12
-[^ref-1581]: Amazon Web Services (AWS IoT Core Developer Guide), How job configurations work, 미확인, https://docs.aws.amazon.com/iot/latest/developerguide/jobs-configurations-details.html, 접근일 2026-10-12
-[^ref-1584]: LG CNS, LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개, 2026-05-07, https://www.lgcns.com/kr/newsroom/press/detail.rx-2605-1, 접근일 2026-10-12
-[^ref-1586]: NIST, Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, 2023-01, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf, 접근일 2026-10-12
+[^ref-1512]: MLflow 프로젝트 (Linux Foundation 오픈소스 프로젝트), Model Registry Workflows (docs/docs/classic-ml/model-registry/workflow.mdx, MLflow v3.1.0), 2025-06-10, https://github.com/mlflow/mlflow/blob/v3.1.0/docs/docs/classic-ml/model-registry/workflow.mdx, 접근일 2026-10-12
+[^ref-1514]: Northern.tech (Mender documentation), Create a custom Update Module, 미확인, https://docs.mender.io/artifact-creation/create-a-custom-update-module, 접근일 2026-10-12
+[^ref-1515]: Amazon Web Services (AWS IoT Greengrass V2 Developer Guide), Check deployment status, 미확인, https://docs.aws.amazon.com/greengrass/v2/developerguide/check-deployment-status.html, 접근일 2026-10-12
+[^ref-1516]: Amazon Web Services (AWS IoT Core Developer Guide), How job configurations work, 미확인, https://docs.aws.amazon.com/iot/latest/developerguide/jobs-configurations-details.html, 접근일 2026-10-12
+[^ref-1549]: LG CNS, LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개, 2026-05-07, https://www.lgcns.com/kr/newsroom/press/detail.rx-2605-1, 접근일 2026-10-12
+[^ref-1551]: NIST, Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, 2023-01, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf, 접근일 2026-10-12

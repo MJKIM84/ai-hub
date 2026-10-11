@@ -21,6 +21,12 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 열린 질문](2026/2026-10-12-area47-s11.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 왜 중요한가](2026/2026-10-12-area47-s3.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 핵심 개념과 용어](2026/2026-10-12-area47-s4.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 대표 접근법과 기술](2026/2026-10-12-area47-s6.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 관련 표준·프레임워크·오픈소스](2026/2026-10-12-area47-s7.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
+| 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 대표 연구와 자료](2026/2026-10-12-area47-s8.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 열린 질문](2026/2026-10-12-area58-s11.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](2026/2026-10-12-area58-s4.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](2026/2026-10-12-area58-s6.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |

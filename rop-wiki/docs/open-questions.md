@@ -425,8 +425,12 @@ version: 1
 | oq-403 | Han 외(CHI 2024) 공동설계 연구 참여자의 거주 국가와 지역은 본문 어디에 명시돼 있는가? | [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md)<br>[66. 실외](categories/site-type-applications/outdoor.md) | 2026-10-12 | 2026-10-12-03 | 열림 | — |
 | oq-404 | 접근성 요구가 서로 다른 이기종 로봇(배송·안내·병원 물류)의 작업 배정과 물품 인수 완료를 실제 이용자와 현장에서 검증하는 공개 시험 세트나 시나리오가 있는가? | [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-12 | 2026-10-12-03 | 열림 | — |
 | oq-405 | 이용자의 장애 관련 접근 요구(인수 높이·근접 허용·입력 수단)를 플릿에 전달할 때 필요한 최소 정보 항목과 동의·보존·삭제 절차를 정한 운영 규약이나 검증 사례가 있는가? | [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-10-12 | 2026-10-12-03 | 열림 | — |
+| oq-406 | 학습 모델·전처리기(정규화 통계)·하드웨어 보정판이 함께 바뀌는 변경을 로봇 플릿에서 어느 시험 단위로 승인하고, 실패 시 어느 묶음 단위로 복구할 것인가? | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-10-12 | 2026-10-12-04 | 열림 | — |
+| oq-407 | 운영 중 학습 정책을 에피소드 경계에서 갱신하는 방식이 제조사가 다른 이기종 로봇과 중간에 끊을 수 없는 장기 임무에서도 적절한가, 임무 도중 정책 판이 바뀌지 않게 하는 경계를 어떻게 정할 것인가? | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)<br>[43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 2026-10-12 | 2026-10-12-04 | 열림 | — |
+| oq-408 | 출처 충돌: AI-Hub 대규모 물리환경 로봇조작 데이터(71825) 설명 페이지 한 곳 안에서 분할 표제(학습 80%·테스트 10%)와 건수(238,266·23,900), 원천 분포 비율(14.29%·85.71%)과 수량(77,984·184,182), 라벨링 JSON 합계(524,332)와 건수 합(262,166)이 서로 맞지 않는데, 어느 값이 맞으며 실제 배포 파일과 일치하는가? | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-10-12 | 2026-10-12-04 | 열림 | — |
+| oq-409 | 모델 공급자와 ROP 가 함께 확인할 수 있는 모델 변경·배포·복구 증거(판 식별, 승인 기록, 장치별 적용·롤백 결과)의 최소 항목은 무엇인가? | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-04 | 열림 | — |
 
-상태별 건수: 열림 399건, 해결 5건, 조사 중 1건
+상태별 건수: 열림 403건, 해결 5건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
