@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-28
 updated: 2026-10-12
-sources: [ref-1213, ref-1214, ref-1215, ref-1216, ref-1217, ref-1218, ref-1151, ref-1219, ref-1220, ref-1221, ref-1222, ref-1223, ref-1224, ref-1225, ref-1226, ref-1547, ref-1548, ref-1549, ref-1550, ref-1551, ref-1552, ref-1553, ref-1554, ref-1555, ref-1556, ref-1557, ref-1558, ref-1559, ref-1560, ref-1561]
+sources: [ref-1213, ref-1214, ref-1215, ref-1216, ref-1217, ref-1218, ref-1151, ref-1219, ref-1220, ref-1221, ref-1222, ref-1223, ref-1224, ref-1225, ref-1226, ref-1497, ref-1498, ref-1499, ref-1500, ref-1501, ref-1502, ref-1503, ref-1504, ref-1505, ref-1506, ref-1507, ref-1508, ref-1509, ref-1510, ref-1511]
 last_run: 2026-10-12
 version: 3
 ---
@@ -73,11 +73,11 @@ version: 3
 
 이 사례는 서로 다른 두 연구를 묶었다. Burtch·Greenwood·Ravindran 연구진의 해석으로는 자동화가 위험 작업을 없애는 대신 남은 작업의 다양성을 줄이고 작업 속도를 높여 반복성 긴장 손상 같은 비중대 부상을 늘리므로, 위험이 사라지기보다 재분배되며 직무 설계로 대응해야 한다. [의견][^ref-1213] 창고 작업자 12명 반구조화 면담 연구는 수동 무시(override)·개인정보 통제·감시 활동 알림 같은 작업자 중심 요구를 제시했다(2026). [사실][^ref-1226] 이 면담 참여자의 국가·역할 구성과 로봇 사용 경험은 2026-10-12 재확인에서 원문을 열지 못해 확인하지 못했다. [추정][^ref-1226]
 
-예외·성과 칸의 부상 수치는 GMU 발표 하나에 기대며, 같은 주제를 다룬 다른 이해당사자 자료는 지표와 분모가 다르다. Amazon 자사 발표(2026-03-12 게시, 2026-03-27 수정)에 따르면 전 세계 운영의 기록대상 사고율(Recordable Incident Rate, RIR)은 2019년 대비 6년간 43%, 휴업 사고율(Lost Time Incident Rate, LTIR)은 70% 개선됐으며, 이 수치는 로봇 도입 효과를 분리한 것이 아니다. [추정] 벤더 주장[^ref-1549]
+예외·성과 칸의 부상 수치는 GMU 발표 하나에 기대며, 같은 주제를 다룬 다른 이해당사자 자료는 지표와 분모가 다르다. Amazon 자사 발표(2026-03-12 게시, 2026-03-27 수정)에 따르면 전 세계 운영의 기록대상 사고율(Recordable Incident Rate, RIR)은 2019년 대비 6년간 43%, 휴업 사고율(Lost Time Incident Rate, LTIR)은 70% 개선됐으며, 이 수치는 로봇 도입 효과를 분리한 것이 아니다. [추정] 벤더 주장[^ref-1499]
 
-노동조합 쪽 자료로는 Strategic Organizing Center(SOC)의 2025-05 보고서가 있다. SOC는 보고서에서 스스로 SEIU(서비스노조)·CWA(미국통신노조)·UFW(농장노동자연합)와 협력하는 노동 조직이라고 밝히므로, 이 보고서는 노동조합 쪽 이해당사자 자료다. [사실][^ref-1550] 보고서는 Amazon과 다른 사업주가 2020~2024년 매년 미국 산업안전보건청(Occupational Safety and Health Administration, OSHA)에 제출한 부상·질병 자료를 분석했고, 경작업 전환(light duty) 또는 휴업(lost time)을 초래한 부상을 중대 부상으로 분류한다. [사실][^ref-1550] 이 정의가 GMU 발표의 중대·비중대 구분과 같은지는 확인하지 못했다. SOC의 창고 비교는 Amazon이 2024년 OSHA 보고에서 일반 창고·보관업(북미산업분류체계 NAICS 493110)으로 분류한 Amazon 자체 시설 456곳의 부상률을 비Amazon 창고 전체와 비교한 것이며(456곳은 비교 대상 창고 수가 아니다), 2024년 중대 부상률은 100명당 5.9 대 3.0이었다. [사실][^ref-1550]
+노동조합 쪽 자료로는 Strategic Organizing Center(SOC)의 2025-05 보고서가 있다. SOC는 보고서에서 스스로 SEIU(서비스노조)·CWA(미국통신노조)·UFW(농장노동자연합)와 협력하는 노동 조직이라고 밝히므로, 이 보고서는 노동조합 쪽 이해당사자 자료다. [사실][^ref-1500] 보고서는 Amazon과 다른 사업주가 2020~2024년 매년 미국 산업안전보건청(Occupational Safety and Health Administration, OSHA)에 제출한 부상·질병 자료를 분석했고, 경작업 전환(light duty) 또는 휴업(lost time)을 초래한 부상을 중대 부상으로 분류한다. [사실][^ref-1500] 이 정의가 GMU 발표의 중대·비중대 구분과 같은지는 확인하지 못했다. SOC의 창고 비교는 Amazon이 2024년 OSHA 보고에서 일반 창고·보관업(북미산업분류체계 NAICS 493110)으로 분류한 Amazon 자체 시설 456곳의 부상률을 비Amazon 창고 전체와 비교한 것이며(456곳은 비교 대상 창고 수가 아니다), 2024년 중대 부상률은 100명당 5.9 대 3.0이었다. [사실][^ref-1500]
 
-이 위키가 인용한 Amazon의 전 세계 수치(2019년 대비 개선율)와 SOC 보고서(미국·2024년·비Amazon 창고 대비 수준)는 범위·기간·지표·분모가 다르고, 같은 OSHA 신고 자료에 일부 기초하며, 양쪽 모두 이해당사자 자료다. 그래서 둘을 서로 독립된 교차 확인이나 단순 모순으로 셀 수 없고, 로봇 센터만의 부상 효과는 어느 쪽에서도 분리되지 않는다. [추정][^ref-1549][^ref-1550] 이 위키 구축자의 의견으로는, 플릿 도입 효과를 평가할 때 사고 분류 정의(경작업 전환·휴업 포함 여부), 노출 시간 분모, 직군, 로봇 공정 여부, 전환 작업을 함께 기록하고 회사 발표·노조 보고서 같은 이해당사자 자료의 출처를 표시해야 하며, 처리량 증가나 안전감 설문을 실제 부상 감소의 대리값으로 쓰지 않아야 한다. [의견][^ref-1549][^ref-1550]
+이 위키가 인용한 Amazon의 전 세계 수치(2019년 대비 개선율)와 SOC 보고서(미국·2024년·비Amazon 창고 대비 수준)는 범위·기간·지표·분모가 다르고, 같은 OSHA 신고 자료에 일부 기초하며, 양쪽 모두 이해당사자 자료다. 그래서 둘을 서로 독립된 교차 확인이나 단순 모순으로 셀 수 없고, 로봇 센터만의 부상 효과는 어느 쪽에서도 분리되지 않는다. [추정][^ref-1499][^ref-1500] 이 위키 구축자의 의견으로는, 플릿 도입 효과를 평가할 때 사고 분류 정의(경작업 전환·휴업 포함 여부), 노출 시간 분모, 직군, 로봇 공정 여부, 전환 작업을 함께 기록하고 회사 발표·노조 보고서 같은 이해당사자 자료의 출처를 표시해야 하며, 처리량 증가나 안전감 설문을 실제 부상 감소의 대리값으로 쓰지 않아야 한다. [의견][^ref-1499][^ref-1500]
 
 **현장 유형:** 병원
 
@@ -109,7 +109,7 @@ version: 3
 
 이 수치는 병원 자체 만족도 조사이며 의협신문 보도(2025-01-21) 기준이다. 조사 방법은 공개되지 않았고, 다른 보도는 표본을 병동 간호사 99명(91.9%)으로 적어 간호사 109명 표본과 다르다. [추정][^ref-1222]
 
-병원 현장 유형의 국내 학술 근거로는 서울의 한 상급종합병원 신경과 병동 6명과 뇌졸중 집중치료실 8명, 경력 7년을 넘는 간호사 14명을 전문가 패널로 3라운드 합의를 구한 Delphi 연구(Healthcare Informatics Research 32(1), 2026-01)가 있다. [사실][^ref-1558] 이 Delphi 설문은 2022-11-07부터 2023-04-12까지 실시됐다. [사실][^ref-1558] 이 연구는 급성 뇌졸중 환자 돌봄에 동반 로봇을 쓰는 미래 시나리오에 대한 단일 기관 간호사 14명의 전문가 합의이며 로봇 도입 뒤 수용률이나 간호 업무 변화를 측정한 연구가 아니므로, 한국 병원 간호사 일반이나 위 한림대성심병원 자체 설문의 독립 재현으로 볼 수 없다. [추정][^ref-1558]
+병원 현장 유형의 국내 학술 근거로는 서울의 한 상급종합병원 신경과 병동 6명과 뇌졸중 집중치료실 8명, 경력 7년을 넘는 간호사 14명을 전문가 패널로 3라운드 합의를 구한 Delphi 연구(Healthcare Informatics Research 32(1), 2026-01)가 있다. [사실][^ref-1508] 이 Delphi 설문은 2022-11-07부터 2023-04-12까지 실시됐다. [사실][^ref-1508] 이 연구는 급성 뇌졸중 환자 돌봄에 동반 로봇을 쓰는 미래 시나리오에 대한 단일 기관 간호사 14명의 전문가 합의이며 로봇 도입 뒤 수용률이나 간호 업무 변화를 측정한 연구가 아니므로, 한국 병원 간호사 일반이나 위 한림대성심병원 자체 설문의 독립 재현으로 볼 수 없다. [추정][^ref-1508]
 
 **현장 유형:** 실외
 
@@ -133,15 +133,15 @@ version: 3
 | 항목 | 내용 |
 |---|---|
 | 시작 조건 | 해당 없음 |
-| 작업 대상 | 배송 로봇이 이용자에게 넘기는 물품 [사실][^ref-1559] |
-| 수행 자원 | 배송 로봇과 물품을 받는 장애 이용자 [사실][^ref-1559] |
+| 작업 대상 | 배송 로봇이 이용자에게 넘기는 물품 [사실][^ref-1509] |
+| 수행 자원 | 배송 로봇과 물품을 받는 장애 이용자 [사실][^ref-1509] |
 | 제약 | 해당 없음 |
-| 완료·인계 | 손을 뻗기 어려운 이동장애인이 물품을 인수할 때는 로봇과 가까이 상호작용하는 것이 중요하다고 참여자들이 보았다. [사실][^ref-1559] |
+| 완료·인계 | 손을 뻗기 어려운 이동장애인이 물품을 인수할 때는 로봇과 가까이 상호작용하는 것이 중요하다고 참여자들이 보았다. [사실][^ref-1509] |
 | 예외·성과 | 해당 없음 |
 
-이 사례는 CMU 박사논문(CMU-RI-TR-26-106, 2026-06) 4장의 배송 로봇 공동설계이며, 2025년 미국 Pittsburgh에서 2개월간 지역 모집한 장애 성인 14명(여성 9·남성 5, 31~75세, 시각·청각·이동 장애 중심)과 진행했다. [사실][^ref-1559] 참여자들은 이 근접 요구를 보행 중 로봇과의 통행 우선권과 별개의 문제로 보았다. [사실][^ref-1559]
+이 사례는 CMU 박사논문(CMU-RI-TR-26-106, 2026-06) 4장의 배송 로봇 공동설계이며, 2025년 미국 Pittsburgh에서 2개월간 지역 모집한 장애 성인 14명(여성 9·남성 5, 31~75세, 시각·청각·이동 장애 중심)과 진행했다. [사실][^ref-1509] 참여자들은 이 근접 요구를 보행 중 로봇과의 통행 우선권과 별개의 문제로 보았다. [사실][^ref-1509]
 
-통행 중 충분한 간격(연석 경사로 비우기)과 물품 인수 때의 근접은 같은 이용자 집단 안에서도 상황별로 다른 요구다. 두 실외 연구는 모두 미국 소수 참여자의 요구·설계 연구이고 실제 배송의 접근 성공률을 측정하지 않았으며, 같은 CMU 계열이라 독립 교차 확인으로 세지 않는다. [추정][^ref-1214][^ref-1559] 그래서 물품 인수 사례의 예외·성과 칸은 해당 없음으로 두었다.
+통행 중 충분한 간격(연석 경사로 비우기)과 물품 인수 때의 근접은 같은 이용자 집단 안에서도 상황별로 다른 요구다. 두 실외 연구는 모두 미국 소수 참여자의 요구·설계 연구이고 실제 배송의 접근 성공률을 측정하지 않았으며, 같은 CMU 계열이라 독립 교차 확인으로 세지 않는다. [추정][^ref-1214][^ref-1509] 그래서 물품 인수 사례의 예외·성과 칸은 해당 없음으로 두었다.
 
 ## 6. 대표 접근법과 기술
 
@@ -151,7 +151,7 @@ version: 3
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-이 영역과 관련된 규정으로 접근성 지침 ISO/IEC Guide 71:2014, 장애인차별금지법에 따른 무인정보단말기 접근성 의무, 노사협의회 협의 사항을 정한 근로자참여 및 협력증진에 관한 법률 제20조, 감시 장치 공동결정을 정한 독일 사업장조직법 제87조의 네 가지를 확인했다. [사실][^ref-1224][^ref-1217][^ref-1551][^ref-1219] 이 가운데 ISO/IEC Guide 71:2014는 원문을 열지 못하고 검색 결과로만 확인했다.
+이 영역과 관련된 규정으로 접근성 지침 ISO/IEC Guide 71:2014, 장애인차별금지법에 따른 무인정보단말기 접근성 의무, 노사협의회 협의 사항을 정한 근로자참여 및 협력증진에 관한 법률 제20조, 감시 장치 공동결정을 정한 독일 사업장조직법 제87조의 네 가지를 확인했다. [사실][^ref-1224][^ref-1217][^ref-1501][^ref-1219] 이 가운데 ISO/IEC Guide 71:2014는 원문을 열지 못하고 검색 결과로만 확인했다.
 
 자세한 내용은 주제 페이지 [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area60-s7.md)에 있다.
 
@@ -165,19 +165,19 @@ EU-OSHA(유럽 산업안전보건청), Advanced robotics and automation: implica
 
 | 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |
 |---|---|---|
-| 상위 업무 시스템 | 로봇과 사람의 작업 분담과 작업 속도(목표량) 설정을 드러내고 조정할 수 있게 하고, 작업자 데이터 수집 범위 표시·감시 알림·수동 무시 같은 작업자 통제 수단을 제공하는 것으로 보인다. [추정][^ref-1213][^ref-1226] 휴게 반영·작업 순환·직무 전환 정책의 변경 이력을 노사협의 기록과 연결해 남기는 것은 이 위키 구축자의 의견이다. [의견][^ref-1551][^ref-1552] | 고용·임금·재교육 정책, 노사협의·공동결정 절차와 근로자 감시 설비의 적법성 판단(사업주·노동자 대표·법무)이 연계 대상으로 보인다. [추정][^ref-1551][^ref-1219][^ref-1215] 작업과 휴게 시간의 운용과 고용조정의 일반원칙도 노사협의회 협의 사항이다(2022-12-11 시행판 제20조 제1항 제6·7호). [사실][^ref-1551] |
-| 업종별 조건 | 연석 경사로·통로에서 보행 약자에게 양보하고 멈추지 않는 대기 위치 규칙을 경로·작업 제약으로 반영하고, 운영자·이용자 화면의 접근성을 갖추는 것으로 보인다. [추정][^ref-1214][^ref-1217] 화면 접근성 시험 범위를 웹 관제 화면·비웹 작업자 프로그램·로봇 단말의 닫힌 기능·로봇 본체 물리 접근으로 나누고, 보도 통행·대기·물품 인수 모드를 구분하는 것은 이 위키 구축자의 의견이다. [의견][^ref-1553][^ref-1555][^ref-1559] | 장애인차별금지법 등 접근성 법적 적합성 판단(운영자·법무)이 연계 대상으로 보인다. [추정][^ref-1217] WCAG 2.2·EN 301 549·지침 (EU) 2019/882가 로봇 단말·관제 화면에 적용되는지에 대한 판단도 조문만으로 정해지지 않아 같은 연계 대상으로 보인다. [추정][^ref-1554] |
+| 상위 업무 시스템 | 로봇과 사람의 작업 분담과 작업 속도(목표량) 설정을 드러내고 조정할 수 있게 하고, 작업자 데이터 수집 범위 표시·감시 알림·수동 무시 같은 작업자 통제 수단을 제공하는 것으로 보인다. [추정][^ref-1213][^ref-1226] 휴게 반영·작업 순환·직무 전환 정책의 변경 이력을 노사협의 기록과 연결해 남기는 것은 이 위키 구축자의 의견이다. [의견][^ref-1501][^ref-1502] | 고용·임금·재교육 정책, 노사협의·공동결정 절차와 근로자 감시 설비의 적법성 판단(사업주·노동자 대표·법무)이 연계 대상으로 보인다. [추정][^ref-1501][^ref-1219][^ref-1215] 작업과 휴게 시간의 운용과 고용조정의 일반원칙도 노사협의회 협의 사항이다(2022-12-11 시행판 제20조 제1항 제6·7호). [사실][^ref-1501] |
+| 업종별 조건 | 연석 경사로·통로에서 보행 약자에게 양보하고 멈추지 않는 대기 위치 규칙을 경로·작업 제약으로 반영하고, 운영자·이용자 화면의 접근성을 갖추는 것으로 보인다. [추정][^ref-1214][^ref-1217] 화면 접근성 시험 범위를 웹 관제 화면·비웹 작업자 프로그램·로봇 단말의 닫힌 기능·로봇 본체 물리 접근으로 나누고, 보도 통행·대기·물품 인수 모드를 구분하는 것은 이 위키 구축자의 의견이다. [의견][^ref-1503][^ref-1505][^ref-1509] | 장애인차별금지법 등 접근성 법적 적합성 판단(운영자·법무)이 연계 대상으로 보인다. [추정][^ref-1217] WCAG 2.2·EN 301 549·지침 (EU) 2019/882가 로봇 단말·관제 화면에 적용되는지에 대한 판단도 조문만으로 정해지지 않아 같은 연계 대상으로 보인다. [추정][^ref-1504] |
 | 로봇 자체 지능·제어 | 제조사 설계를 전제로 대기·양보 조건을 작업·경로 제약으로 로봇에 전달하는 것으로 보인다. [추정][^ref-1214] | 로봇 본체의 물리적 접근성 설계(높이·음성 조작 등)는 제조사의 몫으로 보인다. [추정][^ref-1214] |
 
 이 경계는 제품 전략에 따라 이동할 수 있다. 자사 로봇까지 만드는 회사는 로컬 주행을 포함할 수 있지만, **이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다.** [분류원문]
 
-이 영역에서 ROP는 법적 판단을 하지 않고, 외부에서 정한 결정을 작업·경로·권한 제약과 화면 설계로 받아 반영하며 그 근거 기록을 제공하는 쪽으로 보인다. [추정][^ref-1551][^ref-1219][^ref-1217][^ref-1214][^ref-1215] 경계 전체는 [범위 경계](../../about/scope-boundary.md)에 있다.
+이 영역에서 ROP는 법적 판단을 하지 않고, 외부에서 정한 결정을 작업·경로·권한 제약과 화면 설계로 받아 반영하며 그 근거 기록을 제공하는 쪽으로 보인다. [추정][^ref-1501][^ref-1219][^ref-1217][^ref-1214][^ref-1215] 경계 전체는 [범위 경계](../../about/scope-boundary.md)에 있다.
 
-이 위키 구축자의 의견으로는, ROP 스케줄러의 휴게 반영·작업 순환·직무 전환 정책 변경은 노사협의 기록(근로자참여법 제20조 제6·7호 협의 여부)과 연결해 이력으로 남기고, 작업자 데이터·자동 배정에 대한 이의 제기와 처리 결과를 변경 관리에 묶어야 한다. 법적 해당성 판단은 ROP가 하지 않고 외부 결정을 제약으로 받는다. [의견][^ref-1551][^ref-1552]
+이 위키 구축자의 의견으로는, ROP 스케줄러의 휴게 반영·작업 순환·직무 전환 정책 변경은 노사협의 기록(근로자참여법 제20조 제6·7호 협의 여부)과 연결해 이력으로 남기고, 작업자 데이터·자동 배정에 대한 이의 제기와 처리 결과를 변경 관리에 묶어야 한다. 법적 해당성 판단은 ROP가 하지 않고 외부 결정을 제약으로 받는다. [의견][^ref-1501][^ref-1502]
 
-이 위키 구축자의 의견으로는, 접근성 시험은 브라우저 관제 화면(WCAG 2.2의 드래그 대체 조작과 24×24 CSS 픽셀 대상), 비웹 작업자 프로그램(WCAG2ICT는 안내일 뿐이다), 로봇 단말의 닫힌 기능(EN 301 549 제5.1.5·5.1.7절의 시각 경보 동등성과 음성 외 입력), 로봇 본체 물리 접근으로 범위를 나누어야 한다. 자동 검사 보고서에는 도구 버전·규칙 ID·활성화 설정을 남긴 뒤 키보드·스크린리더·실사용자 수동 검사를 더하고, 기술 시험 통과와 법적 적용 판단은 별도 기록으로 둔다. 예를 들어 다중 로봇 지도에서 드래그로 작업을 배정하는 기능에는 버튼·목록형 대체 조작이 필요하다. [의견][^ref-1553][^ref-1556][^ref-1555][^ref-1554][^ref-1557]
+이 위키 구축자의 의견으로는, 접근성 시험은 브라우저 관제 화면(WCAG 2.2의 드래그 대체 조작과 24×24 CSS 픽셀 대상), 비웹 작업자 프로그램(WCAG2ICT는 안내일 뿐이다), 로봇 단말의 닫힌 기능(EN 301 549 제5.1.5·5.1.7절의 시각 경보 동등성과 음성 외 입력), 로봇 본체 물리 접근으로 범위를 나누어야 한다. 자동 검사 보고서에는 도구 버전·규칙 ID·활성화 설정을 남긴 뒤 키보드·스크린리더·실사용자 수동 검사를 더하고, 기술 시험 통과와 법적 적용 판단은 별도 기록으로 둔다. 예를 들어 다중 로봇 지도에서 드래그로 작업을 배정하는 기능에는 버튼·목록형 대체 조작이 필요하다. [의견][^ref-1503][^ref-1506][^ref-1505][^ref-1504][^ref-1507]
 
-이 위키 구축자의 의견으로는, 플릿 경로·작업 모델은 보도 통행, 대기, 물품 인수 모드를 나누어 통행·대기 중에는 연석 경사로를 비우고 간격을 두되, 인수 때는 접근 가능한 위치·높이·입력 수단과 근접 허용을 작업 배정 조건으로 다뤄야 한다. 근접 허용은 이용자 요청과 현장 안전 평가를 전제로 시험한다. [의견][^ref-1214][^ref-1559]
+이 위키 구축자의 의견으로는, 플릿 경로·작업 모델은 보도 통행, 대기, 물품 인수 모드를 나누어 통행·대기 중에는 연석 경사로를 비우고 간격을 두되, 인수 때는 접근 가능한 위치·높이·입력 수단과 근접 허용을 작업 배정 조건으로 다뤄야 한다. 근접 허용은 이용자 요청과 현장 안전 평가를 전제로 시험한다. [의견][^ref-1214][^ref-1509]
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
@@ -217,14 +217,14 @@ EU-OSHA(유럽 산업안전보건청), Advanced robotics and automation: implica
 [^ref-1224]: ISO/IEC, ISO/IEC Guide 71:2014 Guide for addressing accessibility in standards, 2014-12, https://www.iso.org/standard/57385.html, 접근일 2026-09-30 (원문 미열람)
 [^ref-1225]: European Agency for Safety and Health at Work (EU-OSHA), Advanced robotics and automation: implications for occupational safety and health, 2022-06-16, https://osha.europa.eu/en/publications/advanced-robotics-and-automation-implications-occupational-safety-and-health, 접근일 2026-09-30
 [^ref-1226]: Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety, 2026, https://doi.org/10.1007/s12369-026-01359-1, 접근일 2026-09-30
-[^ref-1549]: Amazon (Sarah Rhoads, VP Global Workplace Health & Safety), Amazon invests $2.5 billion in workplace safety, reduces workplace injury rates, 2026-03-12, https://www.aboutamazon.com/news/workplace/amazon-workplace-safety-2025-injury-reduction, 접근일 2026-10-12
-[^ref-1550]: Strategic Organizing Center (SOC; SEIU·CWA·UFW 연계 노동 조직), Failure to Deliver: Amazon Falls Short on Safety, 2025-05, https://thesoc.org/wp-content/uploads/2025/05/May-2025_Strategic-Organizing-Center_Report-x-Failure-To-Deliver.pdf, 접근일 2026-10-12
-[^ref-1551]: 법제처 국가법령정보센터 (대한민국, 법률 제18927호), 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) 시행 2022-12-11 법률 제18927호(2022-06-10 일부개정), 2022-06-10, https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017145541, 접근일 2026-10-12
-[^ref-1552]: Doellgast, V., Appalla, S., Ginzburg, D., Kim, J., Thian, W. L. (Cornell University ILR School) — ILO Working Paper 144, Global case studies of social dialogue on AI and algorithmic management, 2025-07-10, https://doi.org/10.54394/VOQE4924, 접근일 2026-10-12
-[^ref-1553]: W3C Accessibility Guidelines Working Group, Web Content Accessibility Guidelines (WCAG) 2.2 (W3C Recommendation 12 December 2024), 2024-12-12, https://www.w3.org/TR/2024/REC-WCAG22-20241212/, 접근일 2026-10-12
-[^ref-1554]: European Parliament and Council of the European Union (Official Journal L 151), Directive (EU) 2019/882 of 17 April 2019 on the accessibility requirements for products and services, 2019-06-07, https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng, 접근일 2026-10-12
-[^ref-1555]: ETSI / CEN / CENELEC, EN 301 549 V4.1.1 (2026-09) Accessibility requirements for ICT products and services, 2026-09, https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf, 접근일 2026-10-12
-[^ref-1556]: W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force), Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), W3C Group Note 11 December 2025, 2025-12-11, https://www.w3.org/TR/2025/NOTE-wcag2ict-22-20251211/, 접근일 2026-10-12
-[^ref-1557]: Deque Systems / axe-core contributors, axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGELOG), 2026-10-05, https://github.com/dequelabs/axe-core/tree/v4.14.0, 접근일 2026-10-12
-[^ref-1558]: Choo, H.-J., Lee, S.-M. (Healthcare Informatics Research 32(1):59–68), Nurses' Perceptions and Utilization Plans for Applying Companion Robots to Acute Stroke Patient Care: A Delphi Study, 2026-01, https://doi.org/10.4258/hir.2026.32.1.59, 접근일 2026-10-12
-[^ref-1559]: Boadi-Agyemang, A. (Carnegie Mellon University Robotics Institute, CMU-RI-TR-26-106), From Margin to Center: Designing Inclusive and Equitable Service Robots with Disabled Adults (PhD thesis), 2026-06, https://publications.ri.cmu.edu/storage/publications/2026/09/aboadiag-dissertation2026-manual-tagged-v2_20260902085808.pdf, 접근일 2026-10-12
+[^ref-1499]: Amazon (Sarah Rhoads, VP Global Workplace Health & Safety), Amazon invests $2.5 billion in workplace safety, reduces workplace injury rates, 2026-03-12, https://www.aboutamazon.com/news/workplace/amazon-workplace-safety-2025-injury-reduction, 접근일 2026-10-12
+[^ref-1500]: Strategic Organizing Center (SOC; SEIU·CWA·UFW 연계 노동 조직), Failure to Deliver: Amazon Falls Short on Safety, 2025-05, https://thesoc.org/wp-content/uploads/2025/05/May-2025_Strategic-Organizing-Center_Report-x-Failure-To-Deliver.pdf, 접근일 2026-10-12
+[^ref-1501]: 법제처 국가법령정보센터 (대한민국, 법률 제18927호), 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) 시행 2022-12-11 법률 제18927호(2022-06-10 일부개정), 2022-06-10, https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017145541, 접근일 2026-10-12
+[^ref-1502]: Doellgast, V., Appalla, S., Ginzburg, D., Kim, J., Thian, W. L. (Cornell University ILR School) — ILO Working Paper 144, Global case studies of social dialogue on AI and algorithmic management, 2025-07-10, https://doi.org/10.54394/VOQE4924, 접근일 2026-10-12
+[^ref-1503]: W3C Accessibility Guidelines Working Group, Web Content Accessibility Guidelines (WCAG) 2.2 (W3C Recommendation 12 December 2024), 2024-12-12, https://www.w3.org/TR/2024/REC-WCAG22-20241212/, 접근일 2026-10-12
+[^ref-1504]: European Parliament and Council of the European Union (Official Journal L 151), Directive (EU) 2019/882 of 17 April 2019 on the accessibility requirements for products and services, 2019-06-07, https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng, 접근일 2026-10-12
+[^ref-1505]: ETSI / CEN / CENELEC, EN 301 549 V4.1.1 (2026-09) Accessibility requirements for ICT products and services, 2026-09, https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf, 접근일 2026-10-12
+[^ref-1506]: W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force), Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), W3C Group Note 11 December 2025, 2025-12-11, https://www.w3.org/TR/2025/NOTE-wcag2ict-22-20251211/, 접근일 2026-10-12
+[^ref-1507]: Deque Systems / axe-core contributors, axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGELOG), 2026-10-05, https://github.com/dequelabs/axe-core/tree/v4.14.0, 접근일 2026-10-12
+[^ref-1508]: Choo, H.-J., Lee, S.-M. (Healthcare Informatics Research 32(1):59–68), Nurses' Perceptions and Utilization Plans for Applying Companion Robots to Acute Stroke Patient Care: A Delphi Study, 2026-01, https://doi.org/10.4258/hir.2026.32.1.59, 접근일 2026-10-12
+[^ref-1509]: Boadi-Agyemang, A. (Carnegie Mellon University Robotics Institute, CMU-RI-TR-26-106), From Margin to Center: Designing Inclusive and Equitable Service Robots with Disabled Adults (PhD thesis), 2026-06, https://publications.ri.cmu.edu/storage/publications/2026/09/aboadiag-dissertation2026-manual-tagged-v2_20260902085808.pdf, 접근일 2026-10-12

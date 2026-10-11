@@ -20,6 +20,29 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-12-03 | 갱신 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 차등 갱신: 4절(근로자참여법 제20조 2022판·공개 작업자 설문 표본 조건), 5절(물류창고 이해당사자 부상 자료·병원 Delphi·실외 물품 인수 사례), 6절(FSQ-IC·노사 AI 윤리위원회), 7절(근거 판 갱신·디지털 접근성 기준), 8절(JPE 게재판·독일 비교), 9절(책임 경계 보강), 11절(부분 근거·새 질문 9건), 13절 각주 15건 추가. 2차 수정: 4·6·7·8·11절에 2026-09-30 분리 주제 페이지 링크 복원, 8절 범위값 출처 링크, 5절 실외 끝 문장 정정 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s7.md](topics/2026/2026-10-12-area60-s7.md) | 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,519자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s11.md](topics/2026/2026-10-12-area60-s11.md) | 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(2,273자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s6.md](topics/2026/2026-10-12-area60-s6.md) | 자동 분리: 60. 노동·수용성·접근성 의 "6. 대표 접근법과 기술" 절(1,757자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s8.md](topics/2026/2026-10-12-area60-s8.md) | 자동 분리: 60. 노동·수용성·접근성 의 "8. 대표 연구와 자료" 절(1,580자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s4.md](topics/2026/2026-10-12-area60-s4.md) | 자동 분리: 60. 노동·수용성·접근성 의 "4. 핵심 개념과 용어" 절(1,187자)을 옮겼다 |
+| 2026-10-12-03 | 요약 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 60. 노동·수용성·접근성: 갱신: 근로자참여법 제20조 근거를 2022-12-11 시행판으로 바꾸고 수용성 연구 표본 조건, 물류창고 이해당사자 부상 자료, 병원·실외 사례, 디지털 접근성 기준, 고용 효과 게재판·독일 비교, 새 열린 질문 9건 추가 |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1497.md](references/ref-1497.md) | 참고문헌 ref-1497 등록: Dataset of worker perceptions of workforce robotics regardin… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1498.md](references/ref-1498.md) | 참고문헌 ref-1498 등록: Translation, Adaptation, and Validation in Portuguese of an… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1499.md](references/ref-1499.md) | 참고문헌 ref-1499 등록: Amazon invests $2.5 billion in workplace safety, reduces wor… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1500.md](references/ref-1500.md) | 참고문헌 ref-1500 등록: Failure to Deliver: Amazon Falls Short on Safety |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1501.md](references/ref-1501.md) | 참고문헌 ref-1501 등록: 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) 시행 2022-12-11 법률 제18927호(202… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1502.md](references/ref-1502.md) | 참고문헌 ref-1502 등록: Global case studies of social dialogue on AI and algorithmic… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1503.md](references/ref-1503.md) | 참고문헌 ref-1503 등록: Web Content Accessibility Guidelines (WCAG) 2.2 (W3C Recomme… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1504.md](references/ref-1504.md) | 참고문헌 ref-1504 등록: Directive (EU) 2019/882 of 17 April 2019 on the accessibilit… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1505.md](references/ref-1505.md) | 참고문헌 ref-1505 등록: EN 301 549 V4.1.1 (2026-09) Accessibility requirements for I… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1506.md](references/ref-1506.md) | 참고문헌 ref-1506 등록: Guidance on Applying WCAG 2 to Non-Web Information and Commu… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1507.md](references/ref-1507.md) | 참고문헌 ref-1507 등록: axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGE… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1508.md](references/ref-1508.md) | 참고문헌 ref-1508 등록: Nurses' Perceptions and Utilization Plans for Applying Compa… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1509.md](references/ref-1509.md) | 참고문헌 ref-1509 등록: From Margin to Center: Designing Inclusive and Equitable Ser… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1510.md](references/ref-1510.md) | 참고문헌 ref-1510 등록: Robots and Jobs: Evidence from US Labor Markets (JPE 게재판) |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1511.md](references/ref-1511.md) | 참고문헌 ref-1511 등록: The Adjustment of Labor Markets to Robots |
+| 2026-10-12-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-10-12-01 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) |
 | 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s6.md](topics/2026/2026-10-12-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 |
 | 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s11.md](topics/2026/2026-10-12-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 |

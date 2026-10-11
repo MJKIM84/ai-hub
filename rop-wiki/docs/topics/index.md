@@ -26,6 +26,11 @@ version: 1
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](2026/2026-10-12-area58-s6.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](2026/2026-10-12-area58-s7.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-10-12 | [58. 다사업자 책임·계약·데이터 — 대표 연구와 자료](2026/2026-10-12-area58-s8.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-10-12 | [60. 노동·수용성·접근성 — 열린 질문](2026/2026-10-12-area60-s11.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-10-12 | [60. 노동·수용성·접근성 — 핵심 개념과 용어](2026/2026-10-12-area60-s4.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-10-12 | [60. 노동·수용성·접근성 — 대표 접근법과 기술](2026/2026-10-12-area60-s6.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-10-12 | [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](2026/2026-10-12-area60-s7.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-10-12 | [60. 노동·수용성·접근성 — 대표 연구와 자료](2026/2026-10-12-area60-s8.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
 | 2026-10-11 | [21. 상호운용 표준·적합성 — 다른 연구영역과의 연결](2026/2026-10-11-area21-s10.md) | [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md) | published | medium | — |
 | 2026-10-11 | [21. 상호운용 표준·적합성 — 열린 질문](2026/2026-10-11-area21-s11.md) | [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md) | published | medium | — |
 | 2026-10-11 | [21. 상호운용 표준·적합성 — 대표 접근법과 기술](2026/2026-10-11-area21-s6.md) | [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md) | published | medium | — |

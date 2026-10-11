@@ -188,7 +188,7 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 125건이다(논문 25건 · 기사·보고서 11건 · 업체 발표 7건 · 표준·오픈소스·기관 자료 82건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 140건이다(논문 31건 · 기사·보고서 12건 · 업체 발표 8건 · 표준·오픈소스·기관 자료 89건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -196,32 +196,33 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 - [ref-531](../../references/ref-531.md) — arXiv 2607.05683 저자(미확인), Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers (발행 2026-07)
 - [ref-711](../../references/ref-711.md) — Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems (발행 2026-06)
 - [ref-239](../../references/ref-239.md) — Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF (발행 2026-06)
+- [ref-1509](../../references/ref-1509.md) — Boadi-Agyemang, A. (Carnegie Mellon University Robotics Institute, CMU-RI-TR-26-106), From Margin to Center: Designing Inclusive and Equitable Service Robots with Disabled Adults (PhD thesis) (발행 2026-06)
 - [ref-1208](../../references/ref-1208.md) — Shaik, A. S. (SSRN), Liability Allocation in Autonomous Industrial Systems: Who Pays when the AI is Wrong? (발행 2026-05-01)
 - [ref-417](../../references/ref-417.md) — Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems (발행 2026-04)
+- [ref-1508](../../references/ref-1508.md) — Choo, H.-J., Lee, S.-M. (Healthcare Informatics Research 32(1):59–68), Nurses' Perceptions and Utilization Plans for Applying Companion Robots to Acute Stroke Patient Care: A Delphi Study (발행 2026-01)
 - [ref-1226](../../references/ref-1226.md) — Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety (발행 2026)
 - [ref-168](../../references/ref-168.md) — Kaitha, S., & Yu, S. 외(arXiv 2512.02810), Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms (발행 2025-12)
-- [ref-1488](../../references/ref-1488.md) — De Noyette, E., Ståhler, L., Margoni, T. (IIC 56(5)), Data Secrets: The Data Act's New Trade Secrets Framework (발행 2025-04-24)
-- [ref-199](../../references/ref-199.md) — arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding (발행 2024-10)
-- 그 밖에 15건
+- 그 밖에 21건
 
 **기사·보고서**
 
 - [ref-1211](../../references/ref-1211.md) — 한국아파트신문 (사설), 공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까 (발행 2026-09-14)
 - [ref-466](../../references/ref-466.md) — 부산일보, KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’ (발행 2026-07-24)
 - [ref-1227](../../references/ref-1227.md) — Gibson Dunn, EU Product Liability Directive: Responding to Software, AI and Complex Supply Chains (발행 2026-03-23)
+- [ref-1500](../../references/ref-1500.md) — Strategic Organizing Center (SOC; SEIU·CWA·UFW 연계 노동 조직), Failure to Deliver: Amazon Falls Short on Safety (발행 2025-05)
 - [ref-1215](../../references/ref-1215.md) — 한국경제, 로봇이 제조업 일자리 뺏는다? 청년·고숙련 … (제목 일부만 확인) (발행 2025-04-01)
 - [ref-1222](../../references/ref-1222.md) — 의협신문, "로봇이 병원을 돌아다닌다"…의료서비스로봇 5만건 돌파 (발행 2025-01-21)
 - [ref-1233](../../references/ref-1233.md) — 김·장 법률사무소, 인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점 (발행 2024-07-05)
 - [ref-1232](../../references/ref-1232.md) — 지디넷코리아, "실외 이동로봇 필수보험 94% 저렴하게" (발행 2024-02-08)
 - [ref-992](../../references/ref-992.md) — 지디넷코리아, 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (발행 2023-07-28)
 - [ref-1193](../../references/ref-1193.md) — 지디넷코리아, 산업데이터 만든 자에게 사용·수익권 부여 (발행 2022-03-15)
-- [ref-317](../../references/ref-317.md) — 전기신문, 승강기협회 '로봇-승강기 연동 표준개발'로 승강기 4차산업 견인 (발행 미확인)
-- 그 밖에 1건
+- 그 밖에 2건
 
 **업체 발표**
 
 - [ref-1496](../../references/ref-1496.md) — Formant, General Terms (발행 2026-04-16)
 - [ref-608](../../references/ref-608.md) — OTTO by Rockwell Automation, OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments (발행 2026-04)
+- [ref-1499](../../references/ref-1499.md) — Amazon (Sarah Rhoads, VP Global Workplace Health & Safety), Amazon invests $2.5 billion in workplace safety, reduces workplace injury rates (발행 2026-03-12)
 - [ref-1493](../../references/ref-1493.md) — 1X Technologies, Inc., Pre-Order Terms (발행 2025-10-28)
 - [ref-1491](../../references/ref-1491.md) — Relay Robotics, Terms of Service (Exhibit A: Service Level Agreement) (발행 2023-03-01)
 - [ref-1492](../../references/ref-1492.md) — Amazon Web Services, AWS IoT RoboRunner Service Level Agreement (발행 2022-11-28)
@@ -230,27 +231,27 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 
 **표준·오픈소스·기관 자료**
 
+- [ref-1507](../../references/ref-1507.md) — Deque Systems / axe-core contributors, axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGELOG) (발행 2026-10-05)
 - [ref-1228](../../references/ref-1228.md) — European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations (발행 2026-09-11)
+- [ref-1505](../../references/ref-1505.md) — ETSI / CEN / CENELEC, EN 301 549 V4.1.1 (2026-09) Accessibility requirements for ICT products and services (발행 2026-09)
 - [ref-1495](../../references/ref-1495.md) — SingHealth / Changi General Hospital CHART, RoMi-H Empanelment Programme 2026 (발행 2026-05-06)
 - [ref-1217](../../references/ref-1217.md) — 대한민국 정책브리핑 (보건복지부), 장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행 (발행 2026-01-28)
 - [ref-1235](../../references/ref-1235.md) — 대한민국 정책브리핑 (과학기술정보통신부), '인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무 (발행 2026-01-21)
 - [ref-518](../../references/ref-518.md) — ISO, ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition (발행 2026)
 - [ref-1191](../../references/ref-1191.md) — European Commission (Shaping Europe's digital future), Data Act explained (발행 2025-12-15)
+- [ref-1506](../../references/ref-1506.md) — W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force), Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), W3C Group Note 11 December 2025 (발행 2025-12-11)
 - [ref-1489](../../references/ref-1489.md) — European Commission, ANNEX to the Communication to the Commission — Approval of the draft Commission Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts (with Annexes), C(2025) 7750 final (발행 2025-11-19)
-- [ref-1192](../../references/ref-1192.md) — European Commission (Shaping Europe's digital future), Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts (발행 2025-11-19)
-- [ref-1213](../../references/ref-1213.md) — George Mason University Costello College of Business, Warehouse automation hasn't made workers safer — it's just reshuffled risk (발행 2025-08-26)
-- [ref-710](../../references/ref-710.md) — 한국지능형로봇표준포럼(KOROS), KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차 (발행 2025-06-04)
-- 그 밖에 72건
+- 그 밖에 79건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-12 · 갱신 · [58. 다사업자 책임·계약·데이터](multi-party-responsibility-contracts-and-data.md) — 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) (실행 2026-10-12-01)
-- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area58-s6.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 (실행 2026-10-12-01)
-- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 열린 질문](../../topics/2026/2026-10-12-area58-s11.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 (실행 2026-10-12-01)
-- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area58-s7.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,029자)을 옮겼다 (실행 2026-10-12-01)
-- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 대표 연구와 자료](../../topics/2026/2026-10-12-area58-s8.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "8. 대표 연구와 자료" 절(774자)을 옮겼다 (실행 2026-10-12-01)
+- 2026-10-12 · 갱신 · [60. 노동·수용성·접근성](labor-acceptance-and-accessibility.md) — 차등 갱신: 4절(근로자참여법 제20조 2022판·공개 작업자 설문 표본 조건), 5절(물류창고 이해당사자 부상 자료·병원 Delphi·실외 물품 인수 사례), 6절(FSQ-IC·노사 AI 윤리위원회), 7절(근거 판 갱신·디지털 접근성 기준), 8절(JPE 게재판·독일 비교), 9절(책임 경계 보강), 11절(부분 근거·새 질문 9건), 13절 각주 15건 추가. 2차 수정: 4·6·7·8·11절에 2026-09-30 분리 주제 페이지 링크 복원, 8절 범위값 출처 링크, 5절 실외 끝 문장 정정 (실행 2026-10-12-03)
+- 2026-10-12 · 생성 · [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area60-s7.md) — 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,519자)을 옮겼다 (실행 2026-10-12-03)
+- 2026-10-12 · 생성 · [60. 노동·수용성·접근성 — 열린 질문](../../topics/2026/2026-10-12-area60-s11.md) — 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(2,273자)을 옮겼다 (실행 2026-10-12-03)
+- 2026-10-12 · 생성 · [60. 노동·수용성·접근성 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area60-s6.md) — 자동 분리: 60. 노동·수용성·접근성 의 "6. 대표 접근법과 기술" 절(1,757자)을 옮겼다 (실행 2026-10-12-03)
+- 2026-10-12 · 생성 · [60. 노동·수용성·접근성 — 대표 연구와 자료](../../topics/2026/2026-10-12-area60-s8.md) — 자동 분리: 60. 노동·수용성·접근성 의 "8. 대표 연구와 자료" 절(1,580자)을 옮겼다 (실행 2026-10-12-03)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

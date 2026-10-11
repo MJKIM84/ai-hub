@@ -37,7 +37,7 @@ version: 1
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 41 | 0 | 0 | 41 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 28 | 0 | 0 | 28 |
+| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -180,7 +180,7 @@ version: 1
 |---|---|---|---|---|
 | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-10-12 | 3 |
 | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | 2026-09-30 | 2 |
-| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-09-30 | 2 |
+| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-10-12 | 3 |
 
 **Q. 현장 유형별 적용**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 166회 중 최종 통과 164회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 164, None 2
-- 2차 검증 판정: 통과 164, None 2
+- 실행 167회 중 최종 통과 165회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 165, None 2
+- 2차 검증 판정: 통과 165, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 601 |
-| 오픈소스 문서 | 257 |
-| 표준 | 225 |
-| 정부·연구기관 | 139 |
+| 논문 | 607 |
+| 오픈소스 문서 | 258 |
+| 표준 | 228 |
+| 정부·연구기관 | 142 |
 | 기사 | 130 |
-| 벤더 문서 | 115 |
-| 업계 보고서 | 29 |
+| 벤더 문서 | 116 |
+| 업계 보고서 | 30 |
 
-신뢰도: medium 1041건, high 318건, low 137건
+신뢰도: medium 1051건, high 323건, low 137건
 
 ### 현장 유형 매트릭스 채움률
 
