@@ -42,6 +42,27 @@ version: 1
 | 2026-10-11-03 | 생성 | [docs/references/ref-1443.md](references/ref-1443.md) | 참고문헌 ref-1443 등록: Physical Access Control with BACnet (BAC-09-08 White Paper) |
 | 2026-10-11-03 | 생성 | [docs/references/ref-1444.md](references/ref-1444.md) | 참고문헌 ref-1444 등록: NAVER’s ARC Goes to Japan |
 | 2026-10-11-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-10-11-02 | 갱신 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 차등 갱신: 3·8절 GreenAuto(Lopes 외) REST·MQTT·VDA 5050 연동을 계획(미가동)으로 정정·ref-136 서지 정정; 4절 OPC Job Control 2.00.0 갱신·취소·정지·Completed/Closed 조건(원문 확인, 트랙 반영 제안 3 일부); 5절 국내 문단 1차 출처 병기와 병원·제조 공장·물류창고 사례 추가; 6절 응답·취소 결과 분리, SAP 폐기 FMS API, WMS 우선순위 규칙(연계 대상), 업무 객체 해석, MCP 접점 범위; 7절 표 추가; 9절 경계 행 추가·MCP 첫 등장 풀어쓰기; 10절 연결 8건 추가; 11절 부분 근거·새 질문 3건; 3·4·6·7·8·11절에 2026-09-25 주제 페이지 링크 복원(2차 수정); 13절 각주 갱신 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s6.md](topics/2026/2026-10-11-area23-s6.md) | 자동 분리: 23. 업무 시스템 연동 의 "6. 대표 접근법과 기술" 절(3,712자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s11.md](topics/2026/2026-10-11-area23-s11.md) | 자동 분리: 23. 업무 시스템 연동 의 "11. 열린 질문" 절(2,250자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s7.md](topics/2026/2026-10-11-area23-s7.md) | 자동 분리: 23. 업무 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,793자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s8.md](topics/2026/2026-10-11-area23-s8.md) | 자동 분리: 23. 업무 시스템 연동 의 "8. 대표 연구와 자료" 절(1,623자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s10.md](topics/2026/2026-10-11-area23-s10.md) | 자동 분리: 23. 업무 시스템 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,310자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s4.md](topics/2026/2026-10-11-area23-s4.md) | 자동 분리: 23. 업무 시스템 연동 의 "4. 핵심 개념과 용어" 절(1,034자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s3.md](topics/2026/2026-10-11-area23-s3.md) | 자동 분리: 23. 업무 시스템 연동 의 "3. 왜 중요한가" 절(675자)을 옮겼다 |
+| 2026-10-11-02 | 요약 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 23. 업무 시스템 연동: 차등 갱신: 3·8절 GreenAuto REST·MQTT·VDA 5050 연동을 계획(미가동)으로 정정·ref-136 서지 정정, 4·6·7절 OPC Job Control 상태 조건·응답과 취소 결과 분리·WMS 우선순위 규칙(연계 대상, 벤더 주장)·MCP 접점 범위, 5절 병원·제조 공장·물류창고 사례, 9·10·11절 보강, 2026-09-25 주제 페이지 링크 복원 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1441.md](references/ref-1441.md) | 참고문헌 ref-1441 등록: rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_response.j… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1445.md](references/ref-1445.md) | 참고문헌 ref-1445 등록: rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_response.jso… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1446.md](references/ref-1446.md) | 참고문헌 ref-1446 등록: rmf_api_msgs — rmf_api_msgs/schemas/simple_response.json |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1447.md](references/ref-1447.md) | 참고문헌 ref-1447 등록: APIs for Integration via Fleet Management Systems (API for I… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1448.md](references/ref-1448.md) | 참고문헌 ref-1448 등록: WMS REST API Guide — Change Priority (Oracle Warehouse Manag… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1449.md](references/ref-1449.md) | 참고문헌 ref-1449 등록: End-User Information for Integration via Integration Service… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1450.md](references/ref-1450.md) | 참고문헌 ref-1450 등록: 아르고, 플로틱과 로봇 기반 물류 생산성 향상 실증 본격 실시 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1451.md](references/ref-1451.md) | 참고문헌 ref-1451 등록: 로봇 기반 물류 자동화와 통합 관제로 HD현대일렉트릭 신공장의 새로운 운영 체계를 구축하다 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1452.md](references/ref-1452.md) | 참고문헌 ref-1452 등록: Warehouse Pick & Place with Embodied AI Robotics |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1453.md](references/ref-1453.md) | 참고문헌 ref-1453 등록: How SAP Brings Business AI into the Physical World: New Robo… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1454.md](references/ref-1454.md) | 참고문헌 ref-1454 등록: demos-ros-mcp-server — Example 1: Tugbot Warehouse Simulatio… |
+| 2026-10-11-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-10-11-01 | 갱신 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 차등 갱신: 5절 수행 자원 칸 경로 계산을 선 유도 로봇으로 정정·자유 주행 로봇 경로 공유 병기, 제조 공장 전시 시연 사례(Mesh-Up 2025, 실제 공장 배치 아님) 추가; 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준 표·VDA 5050 동작 시험표; 7절 VDA 5050 3.0.0 날짜(출처 충돌)·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영); 8절 vda5050-lab 자기 기술 반영·vda5050-sim 분리·Wagner 외 추가; 10절 14·42번 연결; 11절 부분 근거와 새 질문 2건; 6·7·11절 첫 단락에 2026-09-25 분리 페이지(area28-s6·s7·s11) 링크 유지; 프런트매터 sources 에 기존 ref-636·ref-637·ref-708·ref-710 유지; 13절 각주 갱신(ref-408·ref-705 원문 열람 반영, 신규 각주) |
 | 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s7.md](topics/2026/2026-10-11-area21-s7.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,916자)을 옮겼다 |
 | 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s6.md](topics/2026/2026-10-11-area21-s6.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "6. 대표 접근법과 기술" 절(2,060자)을 옮겼다 |

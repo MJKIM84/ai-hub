@@ -397,8 +397,11 @@ version: 1
 | oq-375 | SEMI Doc 7442(E84 를 출발점으로 한 새 인계 인터페이스와 TCP/IP 하위 규격) 개발 제안은 승인 뒤 표준으로 발행됐는가, 반도체 밖 이동로봇–설비 인계에도 쓸 수 있는 범위인가? (관련 기존 질문: oq-042, oq-062) | [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-10-11 | 2026-10-11-03 | 열림 | — |
 | oq-376 | HopeTechnik 승강기·문 연동 문서가 승강기 상태 전송 주기를 1 Hz 와 2초마다로 다르게 적은 것은 어느 쪽이 실제 구현·설정이며, 이런 주기 차이가 설비 상태를 믿을 수 있는 경과 시간 판단에 어떤 영향을 주는가? (관련 기존 질문: oq-034) | [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-10-11 | 2026-10-11-03 | 열림 | — |
 | oq-377 | NAVER ARC 의 Tokyo Midtown Yaesu 도입에서 기존 화물 승강기·자동문 연동이 실제로 운영 중인 층·로봇 종류·제조사 범위는 어디까지이며, 공급자 밖의 독립 운영 평가가 있는가? | [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[64. 상업 시설](categories/site-type-applications/commercial-facilities.md) | 2026-10-11 | 2026-10-11-03 | 열림 | — |
+| oq-378 | 아르고(테크타카)–플로틱 남이천 물류센터 협력(오더 피킹 로봇 30대 지원 발표) 이후 실증의 시험 기간·성공 기준·완료 결과가 공개됐는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
+| oq-379 | Yu·Srinivas(2025) 동적 주문 피킹 논문 원문의 실험 조건과 서지(권·호·쪽)로 기존 위키의 AOCT·ATT·AWTD 결과 서술을 재검증하면 그대로 맞는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
+| oq-380 | ISA-95 Part 1(ANSI/ISA-95.00.01-2025) 규격 본문에서 바뀐 조항은 무엇이며, OPC UA for ISA-95 Job Control 2.0·B2MML 과의 관계를 바꾸는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
 
-상태별 건수: 열림 373건, 해결 3건, 조사 중 1건
+상태별 건수: 열림 376건, 해결 3건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

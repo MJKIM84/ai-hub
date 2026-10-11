@@ -4799,6 +4799,20 @@
       "ref_id": "ref-1439",
       "run_id": "2026-10-11-03",
       "date": "2026-10-11"
+    },
+    {
+      "name": "Open-RMF 작업 배정·취소 응답 스키마(rmf_api_msgs dispatch_task_response·cancel_task_response·simple_response)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        29
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/e9b7630c73a6fb41448ac143c0d7061f2b4389a2/rmf_api_msgs/schemas/dispatch_task_response.json",
+      "summary": "배정 응답은 성공 시 success·state(task_state) 필수, 실패 시 errors 배열을 두고, 취소 응답은 simple_response 를 참조해 성패와 오류만 알린다(커밋 e9b7630 고정본, 2026-10-11 확인).",
+      "ref_id": "ref-1441",
+      "run_id": "2026-10-11-02",
+      "date": "2026-10-11"
     }
   ]
 }

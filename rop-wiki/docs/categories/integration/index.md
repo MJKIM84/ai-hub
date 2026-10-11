@@ -130,7 +130,7 @@ flowchart LR
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 132건이다(논문 16건 · 기사·보고서 12건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 95건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 145건이다(논문 17건 · 기사·보고서 12건 · 업체 발표 16건 · 표준·오픈소스·기관 자료 100건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -144,7 +144,7 @@ flowchart LR
 - [ref-136](../../references/ref-136.md) — Applied Sciences(MDPI) 게재 논문 저자(미확인), Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector (발행 2025)
 - [ref-133](../../references/ref-133.md) — Lorenz, Otto, & Gendreau (Networks, Wiley), Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization? (발행 2025)
 - [ref-132](../../references/ref-132.md) — Yu, S., & Srinivas, S., Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations (발행 2025)
-- 그 밖에 6건
+- 그 밖에 7건
 
 **기사·보고서**
 
@@ -162,15 +162,17 @@ flowchart LR
 
 **업체 발표**
 
+- [ref-1448](../../references/ref-1448.md) — Oracle, WMS REST API Guide — Change Priority (Oracle Warehouse Management Cloud 26c) (발행 2026-08-14)
 - [ref-1444](../../references/ref-1444.md) — NAVER LABS, NAVER’s ARC Goes to Japan (발행 2026-07-23)
+- [ref-1451](../../references/ref-1451.md) — LG CNS, 로봇 기반 물류 자동화와 통합 관제로 HD현대일렉트릭 신공장의 새로운 운영 체계를 구축하다 (발행 2026-07-16)
 - [ref-608](../../references/ref-608.md) — OTTO by Rockwell Automation, OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments (발행 2026-04)
 - [ref-1417](../../references/ref-1417.md) — 카카오모빌리티, 카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속 (발행 2026-03-16)
 - [ref-1429](../../references/ref-1429.md) — idealworks, VDA 5050 3.0.0 release (March 2026) (발행 2026-03)
-- [ref-318](../../references/ref-318.md) — KONE, KONE Service Robot API (발행 미확인)
-- [ref-262](../../references/ref-262.md) — 클로봇(Clobot), 통합 로봇 관제 플랫폼 크롬스[CROMS] (발행 미확인)
-- [ref-1440](../../references/ref-1440.md) — HopeTechnik (RMF Systems Engineering Handbook), Lift and Doors Integration (발행 미확인)
-- [ref-1416](../../references/ref-1416.md) — InOrbit.AI, 10 Companies around the World Collaborate to Showcase Robot Orchestration at Automate 2026 (발행 미확인)
-- [ref-1029](../../references/ref-1029.md) — InOrbit, Contents — InOrbit Developer Portal (발행 미확인)
+- [ref-1453](../../references/ref-1453.md) — SAP (Lukasz Ostrowski, SAP News Center), How SAP Brings Business AI into the Physical World: New Robotics Pilots Across Warehouse, Manufacturing, and Inspection Use Cases (발행 2025-11-05)
+- [ref-1450](../../references/ref-1450.md) — 아르고 풀필먼트(테크타카), 아르고, 플로틱과 로봇 기반 물류 생산성 향상 실증 본격 실시 (발행 2025-01-21)
+- [ref-1447](../../references/ref-1447.md) — SAP, APIs for Integration via Fleet Management Systems (API for Integration with Fleet Management Systems (Deprecated)) (발행 2024-07-10)
+- [ref-1449](../../references/ref-1449.md) — SAP, End-User Information for Integration via Integration Services (SAP Warehouse Robotics, Document Version 2308) (발행 2023-08-19)
+- 그 밖에 6건
 
 **표준·오픈소스·기관 자료**
 
@@ -184,7 +186,7 @@ flowchart LR
 - [ref-1412](../../references/ref-1412.md) — VDA(Verband der Automobilindustrie), VDA 5050 (발행 2026-03-17)
 - [ref-710](../../references/ref-710.md) — 한국지능형로봇표준포럼(KOROS), KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차 (발행 2025-06-04)
 - [ref-560](../../references/ref-560.md) — ISO, ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells (발행 2025-02)
-- 그 밖에 85건
+- 그 밖에 90건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
