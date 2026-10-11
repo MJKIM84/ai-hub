@@ -30,6 +30,12 @@ version: 1
 | 2026-10-12 | [45. 문서·도면·장면 이해 — 대표 접근법과 기술](2026/2026-10-12-area45-s6.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
 | 2026-10-12 | [45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스](2026/2026-10-12-area45-s7.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
 | 2026-10-12 | [45. 문서·도면·장면 이해 — 대표 연구와 자료](2026/2026-10-12-area45-s8.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 다른 연구영역과의 연결](2026/2026-10-12-area46-s10.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 열린 질문](2026/2026-10-12-area46-s11.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 핵심 개념과 용어](2026/2026-10-12-area46-s4.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 대표 접근법과 기술](2026/2026-10-12-area46-s6.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 관련 표준·프레임워크·오픈소스](2026/2026-10-12-area46-s7.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-10-12 | [46. 예측·학습 기반 최적화 — 대표 연구와 자료](2026/2026-10-12-area46-s8.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 열린 질문](2026/2026-10-12-area47-s11.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
 | 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 왜 중요한가](2026/2026-10-12-area47-s3.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |
 | 2026-10-12 | [47. AI·학습·적응과 모델 운영 — 핵심 개념과 용어](2026/2026-10-12-area47-s4.md) | [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | — |

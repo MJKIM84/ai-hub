@@ -38,6 +38,23 @@ version: 1
 | 2026-10-12-07 | 생성 | [docs/references/ref-1562.md](references/ref-1562.md) | 참고문헌 ref-1562 등록: Spark-DSG — examples/python_api.py (commit 3c40997) |
 | 2026-10-12-07 | 생성 | [docs/references/ref-1563.md](references/ref-1563.md) | 참고문헌 ref-1563 등록: Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — RE… |
 | 2026-10-12-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-10-12-06 | 갱신 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 차등 갱신: 4절 예측 출력 종류 소절 추가(ISO 13381-1 서지, SOC 물리 모델 구분), 5절 물류창고 10% 표현 정정·DeepFleet 평가 조건·CDE, 병원 BIDMC 평가 조건·대기 시간 수치, 제조 공장 국내 시뮬레이션 연구 사례 추가, 기타 91% 표본 수, 6·7·8절 갱신 소절 추가(SILLM 지도별 우열·훈련 비용, RL-RH-PP, SJRL, LSMART 대체 정책, PUSH 대조, POGEMA·LoRR·SILLM 구현·ISO 행, Garces·SPO 정정), 9절 확정 요청 인계·SOC·오르카 경계, 10절 연결 4건, 11절 oq id 부여·부분 근거·새 질문 3건, 13절 각주 갱신(신규 8건). 2차: 4·6·7·8·10절 갱신 소절 앞에 2026-09-30 분리 페이지 링크 줄 추가, 6절 우열 문장을 두 연구로 한정, SOC·Lifelong MAPF 첫 등장 풀이, last_run 2026-10-12 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s8.md](topics/2026/2026-10-12-area46-s8.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(2,207자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s6.md](topics/2026/2026-10-12-area46-s6.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(2,118자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s7.md](topics/2026/2026-10-12-area46-s7.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,696자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s11.md](topics/2026/2026-10-12-area46-s11.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "11. 열린 질문" 절(1,664자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s10.md](topics/2026/2026-10-12-area46-s10.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(684자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s4.md](topics/2026/2026-10-12-area46-s4.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "4. 핵심 개념과 용어" 절(677자)을 옮겼다 |
+| 2026-10-12-06 | 요약 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 46. 예측·학습 기반 최적화: 차등 갱신: DeepFleet 10% 표현 정정(미래형·이동 시간·배치 효율, 벤더 주장), 병원 사례 BIDMC 평가 조건·대기 시간 수치, 국내 제조 물류 시뮬레이션 연구, SILLM 지도별 우열·훈련 비용, RL-RH-PP·SJRL·LSMART·PUSH 조건, LoRR 2026 요약, ISO 13381-1·SPO 서지 보정, 확정 요청·SOC·오르카 경계, oq-220~oq-224 부분 근거와 새 질문 3건 |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1564.md](references/ref-1564.md) | 참고문헌 ref-1564 등록: League of Robot Runners 2026 — Evaluation Process(evaluation… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1565.md](references/ref-1565.md) | 참고문헌 ref-1565 등록: Deploying Ten Thousand Robots: Scalable Imitaion Learning fo… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1566.md](references/ref-1566.md) | 참고문헌 ref-1566 등록: Learning-guided Prioritized Planning for Lifelong Multi-Agen… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1567.md](references/ref-1567.md) | 참고문헌 ref-1567 등록: Scalable Long-Horizon Planning with Staggered Updates for Li… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1568.md](references/ref-1568.md) | 참고문헌 ref-1568 등록: Search-Aided Joint Agent-Environment Reinforcement Learning… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1569.md](references/ref-1569.md) | 참고문헌 ref-1569 등록: rmf_battery — README |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1570.md](references/ref-1570.md) | 참고문헌 ref-1570 등록: 다중 로봇 제조 물류 작업을 위한 안전성과 효율성 학습 (Safety and Efficiency Learni… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1571.md](references/ref-1571.md) | 참고문헌 ref-1571 등록: 현대글로비스가 그리는 자동화를 넘어선 물류의 미래 |
+| 2026-10-12-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-10-12-05 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신 |
 | 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s7.md](topics/2026/2026-10-12-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,877자)을 옮겼다 |
 | 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s11.md](topics/2026/2026-10-12-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(2,055자)을 옮겼다 |

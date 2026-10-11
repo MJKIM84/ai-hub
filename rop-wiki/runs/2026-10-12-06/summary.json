@@ -1,0 +1,156 @@
+{
+  "run_id": "2026-10-12-06",
+  "date": "2026-10-12",
+  "run_type": "update",
+  "target": {
+    "area_no": 46,
+    "area_name": "46. 예측·학습 기반 최적화",
+    "category": "L. AI·학습 기술"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 8,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 8
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 5373.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-12 | 46. 예측·학습 기반 최적화 | 차등 갱신: DeepFleet 10% 표현 정정(미래형·이동 시간·배치 효율, 벤더 주장), 병원 사례 BIDMC 평가 조건·대기 시간 수치, 국내 제조 물류 시뮬레이션 연구, SILLM 지도별 우열·훈련 비용, RL-RH-PP·SJRL·LSMART·PUSH 조건, LoRR 2026 요약, ISO 13381-1·SPO 서지 보정, 확정 요청·SOC·오르카 경계, oq-220~oq-224 부분 근거와 새 질문 3건 | run 2026-10-12-06",
+  "notes": [
+    "참고문헌 생성: references/ref-1564.md",
+    "참고문헌 생성: references/ref-1565.md",
+    "참고문헌 생성: references/ref-1566.md",
+    "참고문헌 생성: references/ref-1567.md",
+    "참고문헌 생성: references/ref-1568.md",
+    "참고문헌 생성: references/ref-1569.md",
+    "참고문헌 생성: references/ref-1570.md",
+    "참고문헌 생성: references/ref-1571.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 8,
+    "standards": 1,
+    "open_questions": 3,
+    "flow_cells": 17,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-12 07:17:29 KST",
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 885043,
+    "cache_read_input_tokens": 2434391,
+    "output_tokens": 148648,
+    "cost_usd": 10.645,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1194,
+        "output_tokens": 22725,
+        "cache_read_input_tokens": 2104676,
+        "cache_creation_input_tokens": 143934
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.8229,
+        "output_tokens": 102488,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 468039
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.6053,
+        "output_tokens": 22964,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 263797
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md (9개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-12-area46-s8.md",
+        "chars": 2207
+      },
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-12-area46-s6.md",
+        "chars": 2118
+      },
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-12-area46-s7.md",
+        "chars": 1696
+      },
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-12-area46-s11.md",
+        "chars": 1664
+      },
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-12-area46-s10.md",
+        "chars": 684
+      },
+      {
+        "from": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-10-12-area46-s4.md",
+        "chars": 677
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 20,
+  "cross_checked_findings": 0
+}

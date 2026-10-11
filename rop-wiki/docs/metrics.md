@@ -33,7 +33,7 @@ version: 1
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
-| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 45 | 0 | 0 | 45 |
+| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 51 | 0 | 0 | 51 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 41 | 0 | 0 | 41 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
@@ -146,7 +146,7 @@ version: 1
 |---|---|---|---|---|
 | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | 2026-10-12 | 3 |
 | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | 2026-10-12 | 3 |
-| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | 2026-09-30 | 2 |
+| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | 2026-10-12 | 3 |
 | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-10-12 | 3 |
 
 **M. 안전**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 171회 중 최종 통과 169회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 169, None 2
-- 2차 검증 판정: 통과 169, None 2
+- 실행 172회 중 최종 통과 170회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 170, None 2
+- 2차 검증 판정: 통과 170, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 618 |
-| 오픈소스 문서 | 273 |
+| 논문 | 622 |
+| 오픈소스 문서 | 276 |
 | 표준 | 230 |
 | 정부·연구기관 | 155 |
 | 기사 | 130 |
-| 벤더 문서 | 127 |
+| 벤더 문서 | 128 |
 | 업계 보고서 | 30 |
 
-신뢰도: medium 1075건, high 350건, low 138건
+신뢰도: medium 1082건, high 351건, low 138건
 
 ### 현장 유형 매트릭스 채움률
 

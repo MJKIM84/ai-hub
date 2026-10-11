@@ -179,7 +179,7 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 121건이다(논문 69건 · 기사·보고서 6건 · 업체 발표 13건 · 표준·오픈소스·기관 자료 33건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 132건이다(논문 74건 · 기사·보고서 6건 · 업체 발표 15건 · 표준·오픈소스·기관 자료 37건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -187,13 +187,13 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1071](../../references/ref-1071.md) — Groß, J., & Heidrich, J. (arXiv), AAS-RAIL: Improving Information Extraction for Asset Administration Shells through Retrieval-Augmented In-Context Learning (발행 2026-09-07)
 - [ref-1043](../../references/ref-1043.md) — Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv), Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots (발행 2026-09)
 - [ref-832](../../references/ref-832.md) — Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P., LLM Agents Perform Controlled Experiments Using Simulation Models (발행 2026-08-22)
+- [ref-1567](../../references/ref-1567.md) — Sanjay, V., & Li, J. (arXiv), Scalable Long-Horizon Planning with Staggered Updates for Lifelong MAPF (발행 2026-08-07)
 - [ref-1554](../../references/ref-1554.md) — Phung, H., & Averbuch-Elor, H. (Cornell University, arXiv; SIGGRAPH 2026), Raster2Seq: Polygon Sequence Generation for Floorplan Reconstruction (발행 2026-08-07)
+- [ref-1568](../../references/ref-1568.md) — Jiang, H., Yan, J., Zhang, Y., Tang, Y., Duhan, T., Veerapaneni, R., Sartoretti, G., & Li, J. (arXiv), Search-Aided Joint Agent-Environment Reinforcement Learning for Robust Lifelong Multi-Agent Path Finding with Rotations (발행 2026-08-06)
 - [ref-1555](../../references/ref-1555.md) — Aliyev, N., & Barsi, Á. (Periodica Polytechnica Civil Engineering), Evaluating Vision-language Models for Zero-shot Room Area Estimation in Floor Plan Images (발행 2026-08-05)
 - [ref-1062](../../references/ref-1062.md) — Garces, D., Castro, S., Haimovich, A., Crowe, B., & Gil, S. (arXiv), Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts (발행 2026-08)
 - [ref-1557](../../references/ref-1557.md) — Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research), BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization (발행 2026-06-12)
-- [ref-1065](../../references/ref-1065.md) — Robinson, L., Ramtoula, B., Izaaryene, A., Newman, P., & De Martini, D. (arXiv), Multi-Robot Planning and Control from CCTV Camera Networks in a Real Warehouse (발행 2026-06-04)
-- [ref-822](../../references/ref-822.md) — Howard, T. L. (California Polytechnic State University, 석사논문), A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities (발행 2026-06)
-- 그 밖에 59건
+- 그 밖에 64건
 
 **기사·보고서**
 
@@ -209,14 +209,14 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1545](../../references/ref-1545.md) — Figure AI, F.03 Arrives at BMW (발행 2026-06-30)
 - [ref-1051](../../references/ref-1051.md) — BMW Group, BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg (발행 2026-06-25)
 - [ref-1549](../../references/ref-1549.md) — LG CNS, LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개 (발행 2026-05-07)
+- [ref-1571](../../references/ref-1571.md) — 현대자동차그룹 (현대글로비스), 현대글로비스가 그리는 자동화를 넘어선 물류의 미래 (발행 2026-04-16)
 - [ref-1544](../../references/ref-1544.md) — Figure AI, F.02 Contributed to the Production of 30,000 Cars at BMW (발행 2025-11-19)
 - [ref-1054](../../references/ref-1054.md) — Amazon Science, Amazon builds first foundation model for multirobot coordination (발행 2025-08-11)
+- [ref-916](../../references/ref-916.md) — Amazon, Amazon launches a new AI foundation model to power its robotic fleet and deploys its 1 millionth robot (발행 2025-07)
 - [ref-1063](../../references/ref-1063.md) — CJ대한통운, 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명 (발행 2021-07-28)
 - [ref-1563](../../references/ref-1563.md) — Hilti Research · Trimble · Oxford DRS (Hilti-Research/hilti-trimble-slam-challenge-2026), Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — README (commit e0c9277) (발행 미확인)
 - [ref-1560](../../references/ref-1560.md) — ONTHEIT (ONTHEIT-AI/BizOnAI-OCR), KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README (commit cdfc6d0) (발행 미확인)
-- [ref-1547](../../references/ref-1547.md) — Viam, Roll out a new model to a fleet (발행 미확인)
-- [ref-1543](../../references/ref-1543.md) — PickNik Robotics, Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10) (발행 미확인)
-- 그 밖에 3건
+- 그 밖에 5건
 
 **표준·오픈소스·기관 자료**
 
@@ -230,7 +230,7 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1060](../../references/ref-1060.md) — ISO (ISO/TC 108), ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements (발행 2025)
 - [ref-863](../../references/ref-863.md) — European Commission — AI Act Service Desk, Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act) (발행 2024-06-13)
 - [ref-1012](../../references/ref-1012.md) — AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주), 건축 도면 데이터 (발행 2023-07-26)
-- 그 밖에 23건
+- 그 밖에 27건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
