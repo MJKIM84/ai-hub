@@ -2,12 +2,12 @@
 
 - 판정: 통과
 - 차등 갱신 패치 적용:
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md (9개 절)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md (10개 절)
 - 분량 초과 자동 분리:
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-10-12-area59-s7.md (3,306자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "11. 열린 질문" → docs/topics/2026/2026-10-12-area59-s11.md (1,771자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "4. 핵심 개념과 용어" → docs/topics/2026/2026-10-12-area59-s4.md (1,656자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "6. 대표 접근법과 기술" → docs/topics/2026/2026-10-12-area59-s6.md (1,484자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "3. 왜 중요한가" → docs/topics/2026/2026-10-12-area59-s3.md (586자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "8. 대표 연구와 자료" → docs/topics/2026/2026-10-12-area59-s8.md (579자)
-    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-10-12-area59-s10.md (408자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-10-12-area59-s7.md (3,488자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "11. 열린 질문" → docs/topics/2026/2026-10-12-area59-s11.md (1,910자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "4. 핵심 개념과 용어" → docs/topics/2026/2026-10-12-area59-s4.md (1,699자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "6. 대표 접근법과 기술" → docs/topics/2026/2026-10-12-area59-s6.md (1,591자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "8. 대표 연구와 자료" → docs/topics/2026/2026-10-12-area59-s8.md (629자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "3. 왜 중요한가" → docs/topics/2026/2026-10-12-area59-s3.md (622자)
+    - docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-10-12-area59-s10.md (415자)
