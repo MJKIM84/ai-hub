@@ -20,6 +20,27 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-11-04 | 갱신 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 3·5·6·7·8·9·11·13절 차등 갱신: 국내 위험성평가 지침(실시 주체·근로자 참여·수시평가), Open-RMF 대상 비상 신호로 화재경보 사례 제약 칸 정정, STPA 산출물·참여 기록·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호·KS B 7327 정정·보강, Bensaci 2020·Belzile 사례 조건·SafeGate 분모, 책임 경계(벤더 주장·사업주 의무·EU 실질적 변경 조건), 열린 질문 부분 근거와 새 질문 4건. 2차: 3·6·7·8·11절에 이전 판 주제 페이지 링크 복원, 7절 정정 대상 페이지 명시. 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s11.md](topics/2026/2026-10-11-area48-s11.md) | 자동 분리: 48. 안전·위험 관리 의 "11. 열린 질문" 절(1,898자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s7.md](topics/2026/2026-10-11-area48-s7.md) | 자동 분리: 48. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,778자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s8.md](topics/2026/2026-10-11-area48-s8.md) | 자동 분리: 48. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(1,356자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s6.md](topics/2026/2026-10-11-area48-s6.md) | 자동 분리: 48. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절(1,151자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s3.md](topics/2026/2026-10-11-area48-s3.md) | 자동 분리: 48. 안전·위험 관리 의 "3. 왜 중요한가" 절(1,002자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s4.md](topics/2026/2026-10-11-area48-s4.md) | 자동 분리: 48. 안전·위험 관리 의 "4. 핵심 개념과 용어" 절(691자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s10.md](topics/2026/2026-10-11-area48-s10.md) | 자동 분리: 48. 안전·위험 관리 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(462자)을 옮겼다 |
+| 2026-10-11-04 | 요약 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 48. 안전·위험 관리: 3·5·6·7·8·9·11절 차등 갱신(국내 위험성평가 지침, Open-RMF 대상 비상 신호로 화재경보 사례 정정, STPA 산출물·근로자 참여·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호 정정과 KS B 7327, SafeGate 평가 분모, 제조사 매뉴얼 책임 구분·EU 실질적 변경 조건), 이전 판 주제 페이지 링크 유지, 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1455.md](references/ref-1455.md) | 참고문헌 ref-1455 등록: STPA Handbook |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1456.md](references/ref-1456.md) | 참고문헌 ref-1456 등록: STPA and Bowtie risk analysis study for centralized and hier… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1457.md](references/ref-1457.md) | 참고문헌 ref-1457 등록: ISO/DIS 12100.3 - Safety of machinery — General principles f… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1458.md](references/ref-1458.md) | 참고문헌 ref-1458 등록: KS B 7327 산업용 이동 머니퓰레이터의 응용을 위한 안전 요구사항 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1459.md](references/ref-1459.md) | 참고문헌 ref-1459 등록: KS B ISO 3691-4 산업용 트럭 — 안전 요구사항과 검증 — 제4부: 무인 산업용 트럭과 시스템 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1460.md](references/ref-1460.md) | 참고문헌 ref-1460 등록: 사업장 위험성평가에 관한 지침(고용노동부고시 제2024-76호) |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1461.md](references/ref-1461.md) | 참고문헌 ref-1461 등록: 사업장 위험성평가에 관한 지침 전부개정고시(안) 행정예고 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1462.md](references/ref-1462.md) | 참고문헌 ref-1462 등록: 위험성평가 근로자 참여 가이드 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1463.md](references/ref-1463.md) | 참고문헌 ref-1463 등록: Mobile Robot LD Safety Guide (I616-E-06 / 18393-000 Rev H) |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1464.md](references/ref-1464.md) | 참고문헌 ref-1464 등록: rmf_fleet_adapter 2.14.0 소스 — FleetUpdateHandle.cpp(handle_t… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1465.md](references/ref-1465.md) | 참고문헌 ref-1465 등록: Monitoring ROS2: from Requirements to Autonomous Robots |
+| 2026-10-11-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-10-11-03 | 갱신 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치 |
 | 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s6.md](topics/2026/2026-10-11-area22-s6.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "6. 대표 접근법과 기술" 절(2,450자)을 옮겼다 |
 | 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s11.md](topics/2026/2026-10-11-area22-s11.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "11. 열린 질문" 절(2,065자)을 옮겼다 |

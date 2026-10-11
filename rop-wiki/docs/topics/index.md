@@ -39,6 +39,13 @@ version: 1
 | 2026-10-11 | [23. 업무 시스템 연동 — 대표 접근법과 기술](2026/2026-10-11-area23-s6.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |
 | 2026-10-11 | [23. 업무 시스템 연동 — 관련 표준·프레임워크·오픈소스](2026/2026-10-11-area23-s7.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |
 | 2026-10-11 | [23. 업무 시스템 연동 — 대표 연구와 자료](2026/2026-10-11-area23-s8.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 다른 연구영역과의 연결](2026/2026-10-11-area48-s10.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 열린 질문](2026/2026-10-11-area48-s11.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 왜 중요한가](2026/2026-10-11-area48-s3.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 핵심 개념과 용어](2026/2026-10-11-area48-s4.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 대표 접근법과 기술](2026/2026-10-11-area48-s6.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-10-11-area48-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
+| 2026-10-11 | [48. 안전·위험 관리 — 대표 연구와 자료](2026/2026-10-11-area48-s8.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-10-10 | [20. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결](2026/2026-10-10-area20-s10.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
 | 2026-10-10 | [20. 로봇·제조사 관제 연동 — 열린 질문](2026/2026-10-10-area20-s11.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |
 | 2026-10-10 | [20. 로봇·제조사 관제 연동 — 왜 중요한가](2026/2026-10-10-area20-s3.md) | [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | — |

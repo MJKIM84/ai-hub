@@ -34,7 +34,7 @@ version: 1
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
-| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
@@ -153,7 +153,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
+| [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-10-11 | 4 |
 | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-09-30 | 2 |
 | [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | 2026-09-30 | 2 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 162회 중 최종 통과 160회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 160, None 2
-- 2차 검증 판정: 통과 160, None 2
+- 실행 163회 중 최종 통과 161회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 161, None 2
+- 2차 검증 판정: 통과 161, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 595 |
-| 오픈소스 문서 | 253 |
-| 표준 | 217 |
+| 논문 | 597 |
+| 오픈소스 문서 | 254 |
+| 표준 | 220 |
 | 기사 | 130 |
-| 정부·연구기관 | 123 |
-| 벤더 문서 | 107 |
+| 정부·연구기관 | 127 |
+| 벤더 문서 | 108 |
 | 업계 보고서 | 29 |
 
-신뢰도: medium 1019건, high 298건, low 137건
+신뢰도: medium 1023건, high 305건, low 137건
 
 ### 현장 유형 매트릭스 채움률
 

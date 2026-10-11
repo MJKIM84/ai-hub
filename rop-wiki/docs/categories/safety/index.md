@@ -246,7 +246,7 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 72건이다(논문 22건 · 기사·보고서 14건 · 업체 발표 3건 · 표준·오픈소스·기관 자료 33건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 84건이다(논문 24건 · 기사·보고서 14건 · 업체 발표 4건 · 표준·오픈소스·기관 자료 42건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -260,7 +260,7 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 - [ref-563](../../references/ref-563.md) — Belzile, B. 외, From Safety Standards to Safe Operation with Mobile Robotic Systems Deployment (발행 2025-02)
 - [ref-857](../../references/ref-857.md) — Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J., Jailbreaking LLM-Controlled Robots (발행 2024-11-09)
 - [ref-1081](../../references/ref-1081.md) — Rondoni 외 (Scientific Reports), Navigation benchmarking for autonomous mobile robots in hospital environments (발행 2024-08-07)
-- 그 밖에 12건
+- 그 밖에 14건
 
 **기사·보고서**
 
@@ -279,30 +279,31 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 **업체 발표**
 
 - [ref-1257](../../references/ref-1257.md) — FORT Robotics (A3 Case Studies 게재), Case Study: Wireless E-Stopping Improves Safety Around Warehouse AMRs (발행 2023-05-18)
+- [ref-1463](../../references/ref-1463.md) — OMRON (Omron Adept Technologies), Mobile Robot LD Safety Guide (I616-E-06 / 18393-000 Rev H) (발행 2019-10)
 - [ref-1249](../../references/ref-1249.md) — Wind River (Engblom, J. 인터뷰, Buchwieser, A.), Using Simics and Simulation in IEC61508 Safety-Critical Systems – an Interview with Andreas Buchwieser (발행 2014-11-20)
 - [ref-1080](../../references/ref-1080.md) — Amazon, Ever wonder how people and robots team up on your Amazon order? (발행 미확인)
 
 **표준·오픈소스·기관 자료**
 
+- [ref-1398](../../references/ref-1398.md) — Open-RMF (open-rmf/rmf_ros2 저장소), Changelog for package rmf_fleet_adapter (발행 2026-09-26)
+- [ref-1461](../../references/ref-1461.md) — 고용노동부(산재예방지원과), 사업장 위험성평가에 관한 지침 전부개정고시(안) 행정예고 (발행 2026-09-23)
 - [ref-1254](../../references/ref-1254.md) — ANSI (American National Standards Institute) Blog, ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications (발행 2026-09-17)
+- [ref-1459](../../references/ref-1459.md) — 한국표준협회 KSSN(국가기술표준원 고시), KS B ISO 3691-4 산업용 트럭 — 안전 요구사항과 검증 — 제4부: 무인 산업용 트럭과 시스템 (발행 2026-09-14)
 - [ref-1255](../../references/ref-1255.md) — A3(Association for Advancing Automation), ANSI/A3 R15.08-3-2026, American National Standard for Industrial Mobile Robots – Safety Requirements – Part 3: Use of IMR Applications (발행 2026-04-23)
 - [ref-567](../../references/ref-567.md) — Open-RMF (open-rmf/rmf GitHub), [Feature request]: Fire alarm separation for different fleets · Issue #658 · open-rmf/rmf (발행 2025-04-04)
 - [ref-560](../../references/ref-560.md) — ISO, ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells (발행 2025-02)
 - [ref-790](../../references/ref-790.md) — DIN Media, DIN EN ISO 12100 - 2025-01 (Draft standard) (발행 2025-01)
-- [ref-561](../../references/ref-561.md) — 대한민국 정책브리핑(중소벤처기업부), 이동식 협동로봇 ‘안전기준 산업표준’ 제정…상용화 길 열어 (발행 2024-11-03)
-- [ref-1260](../../references/ref-1260.md) — DIN Media, DIN EN ISO 13482 - 2024-10 (Draft standard) Robotik - Sicherheitsanforderungen für Serviceroboter (ISO/DIS 13482:2024) (발행 2024-10)
-- [ref-1258](../../references/ref-1258.md) — 법제처 (네플라 위키 게재본, 법제처 원문 미열람), [법제처 유권해석] 유해하거나 위험한 작업에 필요한 안전보건교육을 추가로 해야 하는 '로봇작업'이 '산업용 로봇을 사용하는 작업'으로 한정되는지 여부(산업안전보건법 시행규칙 별표 5 제1호라목 등 관련) (발행 2023-11-21)
-- [ref-1118](../../references/ref-1118.md) — 산업통상자원부, 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시 (발행 2023-11-17)
-- [ref-991](../../references/ref-991.md) — 대한민국 정책브리핑 (산업통상자원부·경찰청), ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 (발행 2023-11-16)
-- 그 밖에 23건
+- [ref-1460](../../references/ref-1460.md) — 고용노동부(국가법령정보센터), 사업장 위험성평가에 관한 지침(고용노동부고시 제2024-76호) (발행 2024-12-18)
+- [ref-1462](../../references/ref-1462.md) — 고용노동부, 위험성평가 근로자 참여 가이드 (발행 2024-12)
+- 그 밖에 32건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [M. 안전](index.md) — '다른 대분류와의 연결' 절 첫 작성: 16개 대분류와의 연결(주장 70건 근거), Q. 현장 유형별 적용 현장별 정리, 아직 다루지 않은 연결 7건, 각주 정의 48건 (실행 2026-10-09-09)
-- 2026-10-09 · 요약 · [M. 안전](index.md) — M. 안전: 다른 대분류와의 연결 절 첫 작성(16개 대분류와의 연결, 현장 유형별 근거, 아직 다루지 않은 연결 7건) (실행 2026-10-09-09)
-- 2026-09-30 · 갱신 · [50. 안전 표준·인증·사고 조사](safety-standards-certification-and-incident-investigation.md) — seed → draft: 3~11절 첫 작성(표준·인증 개정 현황, 제조 공장·물류창고·실외·가정·기타 사례, 사고 기록·조사 방법, 책임 경계, 연결 17건, 열린 질문 7건). 2차 수정: 7절 머리 문장을 f1·f3 의 구체 사실로 교체, 프런트매터 sources 를 각주 정의와 일치 (실행 2026-09-30-15)
-- 2026-09-30 · 생성 · [50. 안전 표준·인증·사고 조사 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area50-s7.md) — 자동 분리: 50. 안전 표준·인증·사고 조사 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 머리 문장을 f1·f3 의 구체 사실로 교체 (실행 2026-09-30-15)
-- 2026-09-30 · 생성 · [50. 안전 표준·인증·사고 조사 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area50-s4.md) — 자동 분리: 50. 안전 표준·인증·사고 조사 의 "4. 핵심 개념과 용어" 절(1,007자)을 옮겼다 (실행 2026-09-30-15)
+- 2026-10-11 · 갱신 · [48. 안전·위험 관리](safety-and-risk-management.md) — 3·5·6·7·8·9·11·13절 차등 갱신: 국내 위험성평가 지침(실시 주체·근로자 참여·수시평가), Open-RMF 대상 비상 신호로 화재경보 사례 제약 칸 정정, STPA 산출물·참여 기록·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호·KS B 7327 정정·보강, Bensaci 2020·Belzile 사례 조건·SafeGate 분모, 책임 경계(벤더 주장·사업주 의무·EU 실질적 변경 조건), 열린 질문 부분 근거와 새 질문 4건. 2차: 3·6·7·8·11절에 이전 판 주제 페이지 링크 복원, 7절 정정 대상 페이지 명시. 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 (실행 2026-10-11-04)
+- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 열린 질문](../../topics/2026/2026-10-11-area48-s11.md) — 자동 분리: 48. 안전·위험 관리 의 "11. 열린 질문" 절(1,898자)을 옮겼다 (실행 2026-10-11-04)
+- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area48-s7.md) — 자동 분리: 48. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,778자)을 옮겼다 (실행 2026-10-11-04)
+- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 대표 연구와 자료](../../topics/2026/2026-10-11-area48-s8.md) — 자동 분리: 48. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(1,356자)을 옮겼다 (실행 2026-10-11-04)
+- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area48-s6.md) — 자동 분리: 48. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절(1,151자)을 옮겼다 (실행 2026-10-11-04)
 <!-- auto:category-recent:end -->

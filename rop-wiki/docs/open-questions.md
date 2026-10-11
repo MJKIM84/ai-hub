@@ -400,8 +400,12 @@ version: 1
 | oq-378 | 아르고(테크타카)–플로틱 남이천 물류센터 협력(오더 피킹 로봇 30대 지원 발표) 이후 실증의 시험 기간·성공 기준·완료 결과가 공개됐는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
 | oq-379 | Yu·Srinivas(2025) 동적 주문 피킹 논문 원문의 실험 조건과 서지(권·호·쪽)로 기존 위키의 AOCT·ATT·AWTD 결과 서술을 재검증하면 그대로 맞는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
 | oq-380 | ISA-95 Part 1(ANSI/ISA-95.00.01-2025) 규격 본문에서 바뀐 조항은 무엇이며, OPC UA for ISA-95 Job Control 2.0·B2MML 과의 관계를 바꾸는가? | [23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-11 | 2026-10-11-02 | 열림 | — |
+| oq-381 | SafeGate 논문의 충돌률(CR)은 실행된 작업이 0건일 때 어떻게 산정되며, 표 II 의 183건과 전체 230건 사이에서 빠진 47건은 어떤 범주(판단 보류 등)인지 저자 코드·원자료로 재현할 수 있는가? | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
+| oq-382 | Open-RMF 의 플릿 이름 기반 비상 신호(fleet_names)를 건물·구역 단위 대피 계획에 연결할 때, 여러 건물에 걸친 플릿 공유·재개 승인·네트워크 단절·기존 불리언 신호와의 충돌을 어떻게 시험·검증하는가? | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
+| oq-383 | 여러 제조사 로봇이 섞인 현장에서 STPA 제어 구조 분석, 변경 이력(수시 위험성평가), 근로자 아차사고 제보를 하나의 위험등록부로 연결해 운영한 공개 실증 사례가 있는가? | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
+| oq-384 | 출처 충돌: ISO 3691-4 차기판 프로젝트의 현재 단계는 위키 기록(2026-09-26, ISO/CD 3691-4)과 외부 조사 메모(ISO/DIS 3691-4 제3판, 2026-09-10 단계 40.60) 가운데 어느 쪽인가? (관련 기존 질문 oq-170) | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
 
-상태별 건수: 열림 376건, 해결 3건, 조사 중 1건
+상태별 건수: 열림 380건, 해결 3건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
