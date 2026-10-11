@@ -1,7 +1,7 @@
 {
   "batch_id": "pl6-external",
   "date": "2026-10-12",
-  "updated": "2026-10-11 18:54:05",
+  "updated": "2026-10-11 19:38:43",
   "concurrency": 3,
   "items": [
     {
@@ -13,14 +13,19 @@
         "label": "외부 조사 반영 58. 다사업자 책임·계약·데이터",
         "continue": "2026-10-12-01"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-10-12-01",
           "started": "2026-10-11 18:53:25",
-          "agents_exit": null,
-          "publish_exit": null,
-          "continued": true
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": true,
+          "agents_done": "2026-10-11 19:12:12",
+          "published_at": "2026-10-11 19:38:41",
+          "cost_usd": 11.1703,
+          "duration_sec": 1948.2,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-10-12-01"
@@ -76,9 +81,17 @@
         "label": "외부 조사 반영 44. 로봇 기반 모델·언어 모델 계획",
         "continue": "2026-10-12-05"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-10-12-05",
+          "started": "2026-10-11 19:38:43",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": true
+        }
+      ],
+      "run_id": "2026-10-12-05"
     },
     {
       "index": 4,
