@@ -58,7 +58,7 @@
       "claim": "Raster2Seq 는 선행 연구(Stekovic 외 2021, MonteFloor)의 평가 프로토콜을 따라 정답 방마다 IoU 가 가장 큰 예측 방을 짝지어 Room·Corner·Angle 을 정밀도·재현율·F1 으로 평가하며, 방 단위 짝은 IoU 가 0.5 를 넘을 때 유효로 본다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1667"
+        "ref-1554"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -72,7 +72,7 @@
       "claim": "Raster2Seq 의 모서리 판정(예측과 정답 모서리 거리 10픽셀 이내, 각도 차 5도 미만)은 이 논문 고유 기준이 아니라 Stekovic 외(2021)의 프로토콜을 따른 것이며, 256×256 영상 기준의 픽셀 허용 오차다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1667"
+        "ref-1554"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -86,7 +86,7 @@
       "claim": "Raster2Seq 는 한계로, 문·창처럼 드문 의미 구조의 위치를 가끔(occasionally) 잘못 잡아 방 내부에 문·창을 생성하는 실패 예를 제시하며, 이 실패의 발생률은 보고하지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1667"
+        "ref-1554"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -100,7 +100,7 @@
       "claim": "Aliyev·Barsi 의 실험에서 BakLLaVA 는 색상으로 방 유형을 구분한 주거 평면도 100장 모두에서 실제 예측 대신 템플릿 자리표시자를 출력해(검증 실패 시 1회 재시도 후 사용 불가 처리) 정량 평가에서 제외됐고, LLaVA-LLaMA 3 와 MiniCPM-V 2.6 만 평가됐다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1668"
+        "ref-1555"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -114,7 +114,7 @@
       "claim": "이 연구는 방을 개체 단위가 아니라 방 유형 단위로 맞춘다. 한 도면 안 같은 유형의 정답 면적을 합쳐 비교점 하나로 만들어, 정답 방 다각형 894개에서 비교 쌍 472개를 만든다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1668"
+        "ref-1555"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -128,7 +128,7 @@
       "claim": "같은 논문 안에서 픽셀 세기 기준선의 평가 단위 서술이 어긋난다. 초록은 MAPE 5.68%를 방 개체 단위, 1.58%를 도면 단위라고 적지만, §4.1·표 2 는 5.68%를 방 유형별 도면 단위 비교 472쌍 전체의 값으로 보고한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1668"
+        "ref-1555"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -143,8 +143,8 @@
       "tag": "의견",
       "source_ids": [
         "ref-1073",
-        "ref-1667",
-        "ref-1668"
+        "ref-1554",
+        "ref-1555"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -158,7 +158,7 @@
       "claim": "IFC 4.3 의 IfcMapConversion 은 국지 공학 좌표계를 지도 좌표계로 옮기는 변환(세 축 공통 축척 하나로 단위 변환, z축 기준 반시계 회전, Eastings·Northings·OrthogonalHeight 이동)을 기술하며, 지리 좌표계에서 지도로의 투영 자체는 다루지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1669"
+        "ref-1556"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -172,7 +172,7 @@
       "claim": "BIM-Loc 의 실제 공사장 데이터(홍콩시립대 공사 현장)는 손에 든 센서로 Ouster OS0-128 7개·Livox Mid-360 2개, 모두 9개 시퀀스(누적 3.5 km 초과)로 구성되며, 운용 중인 로봇 대수와는 무관하다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1670"
+        "ref-1557"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -186,7 +186,7 @@
       "claim": "BIM-Loc 의 공사장 실험에는 정답 궤적이 없어, 사무실 실험의 절대 궤적 오차(ATE) 대신 MME·scan-to-BIM·Wasserstein 같은 대리 지표로 평가한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1670"
+        "ref-1557"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -200,7 +200,7 @@
       "claim": "Hilti × Trimble 2026 SLAM 챌린지 데이터 설명은 평면도가 공사 종료 시점의 의도된(완공) 상태를 보여 주며, 공사 중 벽·기둥이 차례로 지어지므로 이른 시기 기록에는 평면도 요소가 모두 있지는 않다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1676"
+        "ref-1563"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -215,7 +215,7 @@
       "claim": "같은 저장소는 2026-09-21 에 정답 수집 장치의 센서 동기화 설명을 추가했다고 기록하며, 그 설명은 정답 LiDAR·IMU 는 PPS 신호로 하드웨어 동기화하고 독립 동작하는 Insta360 은 두 IMU 신호의 자이로 크기를 맞춰 시간 오프셋과 시계 배율을 추정해 맞춘다고 적는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1676"
+        "ref-1563"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -230,9 +230,9 @@
       "claim": "BIM·도면 좌표와 현장 정합에 관해 이 영역에는 요약·연결만 두는 것이 맞다. ROP 지도 인계 기록에는 좌표 변환 메타데이터 검사·실측 정합 검사·주행 가능성 검사 결과를 따로 두고, 도면 판(완공 의도 상태인지)·촬영일·센서 시간 보정 방식과 정합에 쓴 정답 종류를 함께 남겨야 한다. 주 서술 위치는 14. 도면·BIM에서 지도 만들기와 건축 도면 자동 인식 트랙이다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1669",
-        "ref-1670",
-        "ref-1676"
+        "ref-1556",
+        "ref-1557",
+        "ref-1563"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -302,7 +302,7 @@
       "claim": "LangExtract 의 Extraction 자료형은 추출 텍스트를 원문에서 찾지 못하면 원문 문자 구간(char_interval)을 None 으로 둔다. 즉 항목마다 원문 위치가 항상 붙는 것은 아니다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1671"
+        "ref-1558"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -316,7 +316,7 @@
       "claim": "Docling Core 의 ProvenanceItem(PDF·HTML·docx·pptx 에서 추출한 요소가 원문을 가리키는 근거 항목)은 쪽 번호(page_no)·영역 상자(bbox)·문자 구간(charspan) 세 필드를 모두 필수로 가진다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1672"
+        "ref-1559"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -330,8 +330,8 @@
       "claim": "추출값과 근거 위치는 따로 저장하고, char_interval 이 None 이거나 근거 항목(ProvenanceItem) 자체가 없는 추출은 검토 대기로 두어야 한다. Docling 자료형에서는 세 필드가 필수라 '쪽·상자가 빈 근거 항목'은 생기지 않으므로 메모의 그 표현은 맞지 않다. 위치가 있다는 사실만으로 로봇 능력을 실행 가능으로 확정하지도 않는다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1671",
-        "ref-1672"
+        "ref-1558",
+        "ref-1559"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -359,7 +359,7 @@
       "claim": "ONTHEIT 는 KDoc-OCRBench-V2 를 한국 공공부문 단일 쪽 PDF 849개와 검증된 시험 56,197건(문장 존재 6,290·표 셀 49,115·머리말/꼬리말 792, 표가 약 87%)으로 구성하고, 실버 라벨 뒤 수동 검토했다고 설명한다. 문서 유형에 공공 매뉴얼(216개)은 있으나 로봇 매뉴얼은 따로 없다.",
       "tag": "추정",
       "source_ids": [
-        "ref-1673"
+        "ref-1560"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -374,7 +374,7 @@
       "claim": "Hydra-Multi 는 각 로봇의 장면 그래프 전체를 제어 스테이션으로 주기적으로 전송하고, 로봇 쪽에서 삭제된 노드·엣지는 중앙 그래프에서도 지운다. 변경분만 보내거나 통신 단절 복구를 보장하는 방식의 근거가 아니다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1674"
+        "ref-1561"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -388,7 +388,7 @@
       "claim": "Hydra-Multi 의 평가는 uHumans2 시뮬레이션, 손에 든 장치로 따로 기록한 두 시퀀스를 서로 다른 두 로봇으로 취급한 SidPac, 실물 Jackal 2대로 기록한 Simmons 데이터로 이뤄진다. 재생 시퀀스 수를 동시에 운용한 로봇 대수로 세면 안 된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1674"
+        "ref-1561"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -444,7 +444,7 @@
       "claim": "MIT-SPARK 의 Spark-DSG 는 Python 예제에서 JSON 장면 그래프 파일을 DynamicSceneGraph.load 로 불러와 객체·장소·방 등 층과 노드에 접근하는 API 를 보여 준다.",
       "tag": "사실",
       "source_ids": [
-        "ref-1675"
+        "ref-1562"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -458,8 +458,8 @@
       "claim": "Spark-DSG 의 그래프 파일 API 는 교환 어댑터의 출발점으로는 쓸 수 있지만, 다른 제조사 장면 그래프와의 단위·좌표계·객체 식별자·삭제 표시 의미는 별도 계약으로 정해야 하며, Hydra-Multi 의 주기적 전체 전송을 플릿 통신 설계의 근거로 그대로 옮기지 말고 전송량·삭제 전파·초기 좌표 정합을 인수 시험에서 따로 재야 한다.",
       "tag": "의견",
       "source_ids": [
-        "ref-1674",
-        "ref-1675"
+        "ref-1561",
+        "ref-1562"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -559,7 +559,7 @@
       "source_ids": [
         "ref-308",
         "ref-1069",
-        "ref-1676"
+        "ref-1563"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -706,7 +706,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1667",
+      "id": "ref-1554",
       "org": "Phung, H., & Averbuch-Elor, H. (Cornell University, arXiv; SIGGRAPH 2026)",
       "title": "Raster2Seq: Polygon Sequence Generation for Floorplan Reconstruction",
       "published": "2026-08-07",
@@ -721,7 +721,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1668",
+      "id": "ref-1555",
       "org": "Aliyev, N., & Barsi, Á. (Periodica Polytechnica Civil Engineering)",
       "title": "Evaluating Vision-language Models for Zero-shot Room Area Estimation in Floor Plan Images",
       "published": "2026-08-05",
@@ -736,7 +736,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1669",
+      "id": "ref-1556",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcMapConversion (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 HTML과 문구가 다를 수 있음)",
       "published": null,
@@ -751,7 +751,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1670",
+      "id": "ref-1557",
       "org": "Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research)",
       "title": "BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization",
       "published": "2026-06-12",
@@ -766,7 +766,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1671",
+      "id": "ref-1558",
       "org": "Google (google/langextract)",
       "title": "LangExtract — langextract/core/data.py (Extraction 자료형, commit 74df59f)",
       "published": null,
@@ -781,7 +781,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1672",
+      "id": "ref-1559",
       "org": "Docling Project (docling-project/docling-core)",
       "title": "docling-core — docling_core/types/doc/common/reference.py (ProvenanceItem, commit 0d5a7bd)",
       "published": null,
@@ -796,7 +796,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1673",
+      "id": "ref-1560",
       "org": "ONTHEIT (ONTHEIT-AI/BizOnAI-OCR)",
       "title": "KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README (commit cdfc6d0)",
       "published": null,
@@ -811,7 +811,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1674",
+      "id": "ref-1561",
       "org": "Chang, Y., Hughes, N., Ray, A., & Carlone, L. (MIT SPARK, arXiv; IROS 2023)",
       "title": "Hydra-Multi: Collaborative Online Construction of 3D Scene Graphs with Multi-Robot Teams",
       "published": "2023-04-26",
@@ -826,7 +826,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1675",
+      "id": "ref-1562",
       "org": "MIT-SPARK (MIT-SPARK/Spark-DSG)",
       "title": "Spark-DSG — examples/python_api.py (commit 3c40997)",
       "published": null,
@@ -841,7 +841,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-1676",
+      "id": "ref-1563",
       "org": "Hilti Research · Trimble · Oxford DRS (Hilti-Research/hilti-trimble-slam-challenge-2026)",
       "title": "Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — README (commit e0c9277)",
       "published": null,
@@ -905,6 +905,6 @@
       "queries": 0,
       "sources": 10
     },
-    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 10건/15(ref-1667~ref-1676, 예약 구간 ref-1667~ref-1696 안), 재사용 8건(ref-1073·ref-1071·ref-239·ref-1012·ref-1070·ref-1065·ref-308·ref-1069). 출처 매핑(검증 결과 기준): 메모 n1→ref-1073, n2→ref-1667, n3→ref-1668, n4→ref-1669(공식 HTML 대신 ifc4.3-main 원본, ref-213 과 같은 형식), n5→ref-1670, n6→ref-1071, n7→ref-239, n8→ref-1671(ref-1074 는 README 라 별도), n9→ref-1672, n10→ref-1012, n11→ref-1673(벤더 문서), n12→ref-1674, n13→ref-1070, n14→ref-1675, n15→ref-1065, n16→ref-308, n17→ref-1069, n18(IDS UserManual)→기존 ref-1362 이나 F09 를 중복으로 빼서 sources 에 넣지 않음, n19→ref-1676(벤더 문서). 교차 확인 0건(모든 사실 finding 이 단일 출처이거나 같은 연구 계열: Hydra-Multi·Strader·Spark-DSG 는 MIT SPARK 계열, Robinson·Modi 는 De Martini 공동저자) — 신뢰도 medium 이하. 검증 반영: F09(IDS)·V02(Brorsson 하드웨어 미동기)·U02(AI Hub 구조 8종)는 중복·대상 외로 넣지 않음; oq-197 은 이미 해결이라 부분 답 안 씀; F02 미평가 객체에 구조 부재·내화 구성 추가; F04 를 Stekovic 외 2021 선행 프로토콜 기준으로 정정(f3·f4); F06 재시도 1회·모델명 확인; F08 출처를 공식 HTML 에서 ifc4.3-main 원본으로 바꾸고 판·절 번호 삭제; F11 '공사장' 명시(사무실 벤치마크와 구별); F12·F13 [추정]·벤더 주장; F18 Docling 세 필드 필수를 반영해 메모 시사점 표현 정정(f22); F22 Strader 실물 2대·절제 데이터셋 3대 구분과 재위치 64%·65% 추가(f27·f28), 임무 시험 횟수(f29); A14 '창고 CCTV 카메라 30대'를 연구팀 설치 카메라로 정정하고 작업 대상을 무작위 목표 이동으로(f32·f33); V01 [추정]·벤더 주장 유지; V03 은 원문 IV-B1 직접 서술이라 [사실](f35); 서지 DOI 보완 — Raster2Seq SIGGRAPH 2026 DOI 10.1145/3799902.3811124, BIM-Loc IJRR DOI 10.1177/02783649261462593, Aliyev·Barsi 70(3) pp.891–901 DOI 10.3311/PPci.44138, Hydra-Multi IROS 2023 DOI 10.1109/IROS55552.2023.10341838(모두 Crossref 로 확인, 메모 U16 해소). A04~A06(f10~f15)은 45 에는 요약·연결 수준으로 제안하고 주 위치는 14영역·도면 트랙으로 둠. 열린 질문: 해결 제안 없음, 부분 근거 oq-147·oq-196·oq-225·oq-226·oq-227. 메모의 '새 질문' 4건은 기존 oq-225~oq-228 과 같아 새로 만들지 않음. 메모 U01~U17 가운데 U01→oq-196, U03→oq-225·oq-226, U04→oq-147, U12→oq-227(oq-035 관련), U15→oq-228 로 기존 질문에 붙이고, U02 는 폐기, U16 은 Crossref 확인으로 해소, U06·U05·U11·U13 만 새 질문 4건으로 올림(나머지 U07~U10·U14·U17 은 unverified 에 남김). 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·쪽과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 10건/15(ref-1554~ref-1563, 예약 구간 ref-1554~ref-1696 안), 재사용 8건(ref-1073·ref-1071·ref-239·ref-1012·ref-1070·ref-1065·ref-308·ref-1069). 출처 매핑(검증 결과 기준): 메모 n1→ref-1073, n2→ref-1554, n3→ref-1555, n4→ref-1556(공식 HTML 대신 ifc4.3-main 원본, ref-213 과 같은 형식), n5→ref-1557, n6→ref-1071, n7→ref-239, n8→ref-1558(ref-1074 는 README 라 별도), n9→ref-1559, n10→ref-1012, n11→ref-1560(벤더 문서), n12→ref-1561, n13→ref-1070, n14→ref-1562, n15→ref-1065, n16→ref-308, n17→ref-1069, n18(IDS UserManual)→기존 ref-1362 이나 F09 를 중복으로 빼서 sources 에 넣지 않음, n19→ref-1563(벤더 문서). 교차 확인 0건(모든 사실 finding 이 단일 출처이거나 같은 연구 계열: Hydra-Multi·Strader·Spark-DSG 는 MIT SPARK 계열, Robinson·Modi 는 De Martini 공동저자) — 신뢰도 medium 이하. 검증 반영: F09(IDS)·V02(Brorsson 하드웨어 미동기)·U02(AI Hub 구조 8종)는 중복·대상 외로 넣지 않음; oq-197 은 이미 해결이라 부분 답 안 씀; F02 미평가 객체에 구조 부재·내화 구성 추가; F04 를 Stekovic 외 2021 선행 프로토콜 기준으로 정정(f3·f4); F06 재시도 1회·모델명 확인; F08 출처를 공식 HTML 에서 ifc4.3-main 원본으로 바꾸고 판·절 번호 삭제; F11 '공사장' 명시(사무실 벤치마크와 구별); F12·F13 [추정]·벤더 주장; F18 Docling 세 필드 필수를 반영해 메모 시사점 표현 정정(f22); F22 Strader 실물 2대·절제 데이터셋 3대 구분과 재위치 64%·65% 추가(f27·f28), 임무 시험 횟수(f29); A14 '창고 CCTV 카메라 30대'를 연구팀 설치 카메라로 정정하고 작업 대상을 무작위 목표 이동으로(f32·f33); V01 [추정]·벤더 주장 유지; V03 은 원문 IV-B1 직접 서술이라 [사실](f35); 서지 DOI 보완 — Raster2Seq SIGGRAPH 2026 DOI 10.1145/3799902.3811124, BIM-Loc IJRR DOI 10.1177/02783649261462593, Aliyev·Barsi 70(3) pp.891–901 DOI 10.3311/PPci.44138, Hydra-Multi IROS 2023 DOI 10.1109/IROS55552.2023.10341838(모두 Crossref 로 확인, 메모 U16 해소). A04~A06(f10~f15)은 45 에는 요약·연결 수준으로 제안하고 주 위치는 14영역·도면 트랙으로 둠. 열린 질문: 해결 제안 없음, 부분 근거 oq-147·oq-196·oq-225·oq-226·oq-227. 메모의 '새 질문' 4건은 기존 oq-225~oq-228 과 같아 새로 만들지 않음. 메모 U01~U17 가운데 U01→oq-196, U03→oq-225·oq-226, U04→oq-147, U12→oq-227(oq-035 관련), U15→oq-228 로 기존 질문에 붙이고, U02 는 폐기, U16 은 Crossref 확인으로 해소, U06·U05·U11·U13 만 새 질문 4건으로 올림(나머지 U07~U10·U14·U17 은 unverified 에 남김). 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·쪽과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
   }
 }

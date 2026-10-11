@@ -20,6 +20,24 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-12-07 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s6.md](topics/2026/2026-10-12-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s8.md](topics/2026/2026-10-12-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s11.md](topics/2026/2026-10-12-area45-s11.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,701자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s7.md](topics/2026/2026-10-12-area45-s7.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,522자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s10.md](topics/2026/2026-10-12-area45-s10.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,167자)을 옮겼다 |
+| 2026-10-12-07 | 요약 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 45. 문서·도면·장면 이해: 차등 갱신: 5절 물류창고 사례의 카메라 설치 주체 정정(연구팀 설치 카메라 30대, 45분·임무 76건·개입 4회)과 실외 사례 로봇 대수·재위치·임무 성공률 보강, 6~8절에 도면 인식 점수 조건·AAS-RAIL 산출 조건·근거 위치 자료형·BIM 정합 요약·새 연구 4건, 9절 카메라 주체 문장 정정, 10절 연결 추가(기존 분리 페이지 연결 유지), 11절 부분 근거와 새 질문 4건, 각주 신규 10건 |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1554.md](references/ref-1554.md) | 참고문헌 ref-1554 등록: Raster2Seq: Polygon Sequence Generation for Floorplan Recons… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1555.md](references/ref-1555.md) | 참고문헌 ref-1555 등록: Evaluating Vision-language Models for Zero-shot Room Area Es… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1556.md](references/ref-1556.md) | 참고문헌 ref-1556 등록: IFC 4.3 — IfcMapConversion (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1557.md](references/ref-1557.md) | 참고문헌 ref-1557 등록: BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1558.md](references/ref-1558.md) | 참고문헌 ref-1558 등록: LangExtract — langextract/core/data.py (Extraction 자료형, comm… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1559.md](references/ref-1559.md) | 참고문헌 ref-1559 등록: docling-core — docling_core/types/doc/common/reference.py (P… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1560.md](references/ref-1560.md) | 참고문헌 ref-1560 등록: KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1561.md](references/ref-1561.md) | 참고문헌 ref-1561 등록: Hydra-Multi: Collaborative Online Construction of 3D Scene G… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1562.md](references/ref-1562.md) | 참고문헌 ref-1562 등록: Spark-DSG — examples/python_api.py (commit 3c40997) |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1563.md](references/ref-1563.md) | 참고문헌 ref-1563 등록: Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — RE… |
+| 2026-10-12-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-10-12-05 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신 |
 | 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s7.md](topics/2026/2026-10-12-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,877자)을 옮겼다 |
 | 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s11.md](topics/2026/2026-10-12-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(2,055자)을 옮겼다 |

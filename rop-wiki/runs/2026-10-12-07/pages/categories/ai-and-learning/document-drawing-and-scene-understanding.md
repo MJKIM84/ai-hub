@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-28
 updated: 2026-10-12
-sources: [ref-308, ref-1065, ref-063, ref-1012, ref-1066, ref-239, ref-1067, ref-513, ref-1068, ref-1069, ref-1070, ref-067, ref-1071, ref-1072, ref-1073, ref-1074, ref-1667, ref-1668, ref-1669, ref-1670, ref-1671, ref-1672, ref-1673, ref-1674, ref-1675, ref-1676]
+sources: [ref-308, ref-1065, ref-063, ref-1012, ref-1066, ref-239, ref-1067, ref-513, ref-1068, ref-1069, ref-1070, ref-067, ref-1071, ref-1072, ref-1073, ref-1074, ref-1554, ref-1555, ref-1556, ref-1557, ref-1558, ref-1559, ref-1560, ref-1561, ref-1562, ref-1563]
 last_run: 2026-10-12
 version: 3
 ---
@@ -151,7 +151,7 @@ ROP가 이 영역에서 직접 맡을 범위는 매뉴얼·데이터시트·도�
 
 5절 물류창고 사례처럼 로봇에 작업용 주행 장비를 두지 않고 외부 카메라와 외부 계산으로 주행을 제어하는 방식은 ROP의 기본 범위가 아니라, [범위 경계](../../about/scope-boundary.md)의 원문 19장이 말하는 "이 경계는 제품 전략에 따라 이동할 수 있다"에 해당하는 사례로 본다. [추정][^ref-1065]
 
-6절의 BIM 기반 LiDAR 위치 추정(BIM-Loc)과 5절 실외 사례의 두 로봇 사이 재위치는 연계 대상: 로봇 자체 위치 추정에 속한다. 구축자 의견으로는, ROP는 그 결과를 받을 때 정답 종류(실측 정답·의사 정답·대리 지표)와 판정 기준(예: 5 m·10도) 같은 조건만 함께 받아 평가 기준으로 쓰고, 위치 추정 기능 자체는 맡지 않는다. [의견][^ref-1670][^ref-1070]
+6절의 BIM 기반 LiDAR 위치 추정(BIM-Loc)과 5절 실외 사례의 두 로봇 사이 재위치는 연계 대상: 로봇 자체 위치 추정에 속한다. 구축자 의견으로는, ROP는 그 결과를 받을 때 정답 종류(실측 정답·의사 정답·대리 지표)와 판정 기준(예: 5 m·10도) 같은 조건만 함께 받아 평가 기준으로 쓰고, 위치 추정 기능 자체는 맡지 않는다. [의견][^ref-1557][^ref-1070]
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
@@ -191,4 +191,4 @@ ROP가 이 영역에서 직접 맡을 범위는 매뉴얼·데이터시트·도�
 [^ref-1072]: Xia, Y., Xiao, Z., Jazdi, N., & Weyrich, M. (IEEE Access, arXiv), Generation of Asset Administration Shell with Large Language Model Agents: Toward Semantic Interoperability in Digital Twins in the Context of Industry 4.0, 2024-06-24(arXiv v4, IEEE Access 게재일 미확인), https://arxiv.org/abs/2403.17209, 접근일 2026-09-30
 [^ref-1073]: Kondratenko, A., Birhane, M., Hsain, H. E., & Maciocci, G. (arXiv), AECV-Bench: Benchmarking Multimodal Models on Architectural and Engineering Drawings Understanding, 2026-01-08, https://arxiv.org/abs/2601.04819, 접근일 2026-10-12
 [^ref-1074]: Google (google/langextract), LangExtract — README, 미확인, https://github.com/google/langextract, 접근일 2026-09-30
-[^ref-1670]: Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research), BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization, 2026-06-12, https://arxiv.org/abs/2606.14237v1, 접근일 2026-10-12
+[^ref-1557]: Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research), BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization, 2026-06-12, https://arxiv.org/abs/2606.14237v1, 접근일 2026-10-12

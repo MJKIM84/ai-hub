@@ -179,7 +179,7 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 111건이다(논문 65건 · 기사·보고서 6건 · 업체 발표 11건 · 표준·오픈소스·기관 자료 29건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 121건이다(논문 69건 · 기사·보고서 6건 · 업체 발표 13건 · 표준·오픈소스·기관 자료 33건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -187,13 +187,13 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1071](../../references/ref-1071.md) — Groß, J., & Heidrich, J. (arXiv), AAS-RAIL: Improving Information Extraction for Asset Administration Shells through Retrieval-Augmented In-Context Learning (발행 2026-09-07)
 - [ref-1043](../../references/ref-1043.md) — Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv), Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots (발행 2026-09)
 - [ref-832](../../references/ref-832.md) — Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P., LLM Agents Perform Controlled Experiments Using Simulation Models (발행 2026-08-22)
+- [ref-1554](../../references/ref-1554.md) — Phung, H., & Averbuch-Elor, H. (Cornell University, arXiv; SIGGRAPH 2026), Raster2Seq: Polygon Sequence Generation for Floorplan Reconstruction (발행 2026-08-07)
+- [ref-1555](../../references/ref-1555.md) — Aliyev, N., & Barsi, Á. (Periodica Polytechnica Civil Engineering), Evaluating Vision-language Models for Zero-shot Room Area Estimation in Floor Plan Images (발행 2026-08-05)
 - [ref-1062](../../references/ref-1062.md) — Garces, D., Castro, S., Haimovich, A., Crowe, B., & Gil, S. (arXiv), Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts (발행 2026-08)
+- [ref-1557](../../references/ref-1557.md) — Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research), BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization (발행 2026-06-12)
 - [ref-1065](../../references/ref-1065.md) — Robinson, L., Ramtoula, B., Izaaryene, A., Newman, P., & De Martini, D. (arXiv), Multi-Robot Planning and Control from CCTV Camera Networks in a Real Warehouse (발행 2026-06-04)
 - [ref-822](../../references/ref-822.md) — Howard, T. L. (California Polytechnic State University, 석사논문), A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities (발행 2026-06)
-- [ref-239](../../references/ref-239.md) — Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF (발행 2026-06)
-- [ref-201](../../references/ref-201.md) — Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A., From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation (발행 2026-06)
-- [ref-1069](../../references/ref-1069.md) — Modi, G., Buoso, D., Averta, G., & De Martini, D. (arXiv), RGB-only Active 3D Scene Graph Generation for Indoor Mobile Robots (발행 2026-05-18)
-- 그 밖에 55건
+- 그 밖에 59건
 
 **기사·보고서**
 
@@ -212,11 +212,11 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1544](../../references/ref-1544.md) — Figure AI, F.02 Contributed to the Production of 30,000 Cars at BMW (발행 2025-11-19)
 - [ref-1054](../../references/ref-1054.md) — Amazon Science, Amazon builds first foundation model for multirobot coordination (발행 2025-08-11)
 - [ref-1063](../../references/ref-1063.md) — CJ대한통운, 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명 (발행 2021-07-28)
+- [ref-1563](../../references/ref-1563.md) — Hilti Research · Trimble · Oxford DRS (Hilti-Research/hilti-trimble-slam-challenge-2026), Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — README (commit e0c9277) (발행 미확인)
+- [ref-1560](../../references/ref-1560.md) — ONTHEIT (ONTHEIT-AI/BizOnAI-OCR), KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README (commit cdfc6d0) (발행 미확인)
 - [ref-1547](../../references/ref-1547.md) — Viam, Roll out a new model to a fleet (발행 미확인)
 - [ref-1543](../../references/ref-1543.md) — PickNik Robotics, Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 Version 10) (발행 미확인)
-- [ref-1516](../../references/ref-1516.md) — Amazon Web Services (AWS IoT Core Developer Guide), How job configurations work (발행 미확인)
-- [ref-1515](../../references/ref-1515.md) — Amazon Web Services (AWS IoT Greengrass V2 Developer Guide), Check deployment status (발행 미확인)
-- 그 밖에 1건
+- 그 밖에 3건
 
 **표준·오픈소스·기관 자료**
 
@@ -230,17 +230,17 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 - [ref-1060](../../references/ref-1060.md) — ISO (ISO/TC 108), ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements (발행 2025)
 - [ref-863](../../references/ref-863.md) — European Commission — AI Act Service Desk, Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act) (발행 2024-06-13)
 - [ref-1012](../../references/ref-1012.md) — AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주), 건축 도면 데이터 (발행 2023-07-26)
-- 그 밖에 19건
+- 그 밖에 23건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-12 · 갱신 · [44. 로봇 기반 모델·언어 모델 계획](robot-foundation-models-and-llm-planning.md) — 5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신 (실행 2026-10-12-05)
-- 2026-10-12 · 생성 · [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area44-s7.md) — 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,877자)을 옮겼다 (실행 2026-10-12-05)
-- 2026-10-12 · 생성 · [44. 로봇 기반 모델·언어 모델 계획 — 열린 질문](../../topics/2026/2026-10-12-area44-s11.md) — 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(2,055자)을 옮겼다 (실행 2026-10-12-05)
-- 2026-10-12 · 생성 · [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area44-s6.md) — 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,877자)을 옮겼다 (실행 2026-10-12-05)
-- 2026-10-12 · 생성 · [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료](../../topics/2026/2026-10-12-area44-s8.md) — 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "8. 대표 연구와 자료" 절(1,341자)을 옮겼다 (실행 2026-10-12-05)
+- 2026-10-12 · 갱신 · [45. 문서·도면·장면 이해](document-drawing-and-scene-understanding.md) — 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area45-s6.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 대표 연구와 자료](../../topics/2026/2026-10-12-area45-s8.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 열린 질문](../../topics/2026/2026-10-12-area45-s11.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,701자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area45-s7.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,522자)을 옮겼다 (실행 2026-10-12-07)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

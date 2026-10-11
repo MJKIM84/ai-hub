@@ -435,8 +435,12 @@ version: 1
 | oq-413 | 원격 VLA 정책의 행동 청크(개방 루프 실행) 유효기간과, 도구 세션이 끝난 뒤에도 로봇이 움직일 수 있는 MCP 실행의 안전한 정지 계약을 어떻게 결합할 것인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
 | oq-414 | 출처 충돌: OpenVLA 공개 가중치의 사용 조건은 저장소 README(Llama 2 파생이라 Llama Community License 가 적용될 수 있음)와 Hugging Face 모델 카드(모든 체크포인트 MIT) 가운데 어느 쪽인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
 | oq-415 | 출처 충돌: GR00T N1.7 가중치의 상업적 사용 가능 여부는 README 소개(Apache 2.0 으로 상용 가능), README License 절·3B 모델 카드(NVIDIA Open Model License, 상업·비상업 사용 준비), 3B 가중치 저장소 LICENSE 3.3절(NVIDIA·계열사 외 비상업 한정) 가운데 어느 문서가 정하는가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-12 | 2026-10-12-05 | 열림 | — |
+| oq-416 | 출처 충돌: Aliyev·Barsi(2026)의 픽셀 세기 기준선 MAPE 5.68%·1.58%는 초록(방 개체 단위·도면 단위)과 §4.1·표 2(방 유형별 도면 단위 비교 472쌍)가 평가 단위를 다르게 적는데, 어느 쪽이 맞으며 재현 가능한 출력이 공개됐는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 2026-10-12 | 2026-10-12-07 | 열림 | — |
+| oq-417 | 도면 인식 벤치마크의 픽셀 기준 점수(방 IoU 0.5, 모서리 10픽셀·5도)를 실제 문 통과 폭·충전기 접근 가능성 같은 미터 단위 주행 조건으로 검증한 평가나 사례가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 2026-10-12 | 2026-10-12-07 | 열림 | — |
+| oq-418 | 여러 제조사 로봇이 장면 그래프를 공유할 때 주기적 전체 전송 대신 변경분 전송, 통신 단절 뒤 재접속, 삭제 충돌 처리를 시험해 허용 기준을 보고한 사례나 공개 구현이 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-10-12 | 2026-10-12-07 | 열림 | — |
+| oq-419 | 시설 카메라망 기반 다중 로봇 제어를 사람이 함께 다니는 구역이나 장시간 운용에서 시험해 시간당 사람 개입 수와 인식 원인 정지를 보고한 사례가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-10-12 | 2026-10-12-07 | 열림 | — |
 
-상태별 건수: 열림 408건, 해결 6건, 조사 중 1건
+상태별 건수: 열림 412건, 해결 6건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
