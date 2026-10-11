@@ -20,6 +20,24 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-11-05 | 갱신 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | 4·5·6·7·8·9·11·13절 차등 갱신: NIST 논문 서지 정정(2017년 4월호, 온라인 2016-08-27), 병원 사례 '시뮬레이션 평가'를 모의 병원 공간의 실물 실험으로 정정, 창고 연구 실험 조건·Table IV 조건 보강, 아마존 글 발행일(메타데이터, 벤더 주장), 실외 사례를 현행 시행규칙·고시 제2025-21호 별표 3 근거로 보강(별표 세부 문구는 [추정]), supportedZones·외곽 기준 구역, Nav2·Open-RMF '0' 값 의미 차이, HATA·Jafari 평가 조건, NavWareSet, ISO 13482·ISO 10218-1·KS B 8252 행, 사람 위치 발행 공개 구현과 한계, 열린 질문 부분 근거와 새 질문 4건, 각주 26건. 2차 재작업: 9절 human_detection_fusion 문장을 위치 발행 범위로 한정([추정]), 태그 없던 범위 문장 2건을 구축자 의견([의견])으로, 4·6·7·8·11절에 이전 분리 페이지(2026-09-30) 명시 링크, 분리될 절의 절 번호 참조를 원 페이지 링크로, 5절 실외 제약 칸에 ref-992 각주 복원 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s6.md](topics/2026/2026-10-11-area49-s6.md) | 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(2,648자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s7.md](topics/2026/2026-10-11-area49-s7.md) | 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,225자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s11.md](topics/2026/2026-10-11-area49-s11.md) | 자동 분리: 49. 사람 근접 안전 의 "11. 열린 질문" 절(1,847자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s8.md](topics/2026/2026-10-11-area49-s8.md) | 자동 분리: 49. 사람 근접 안전 의 "8. 대표 연구와 자료" 절(1,791자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s4.md](topics/2026/2026-10-11-area49-s4.md) | 자동 분리: 49. 사람 근접 안전 의 "4. 핵심 개념과 용어" 절(680자)을 옮겼다 |
+| 2026-10-11-05 | 요약 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | 49. 사람 근접 안전: 4·5·6·7·8·9·11·13절 차등 갱신: NIST 논문 서지 정정, 병원 사례를 모의 병원 공간의 실물 실험으로 정정, 창고·HATA·편안함 연구 평가 조건 보강, 실외 사례를 현행 시행규칙·고시 제2025-21호 별표 3 근거로 보강(별표 세부 문구 4건 추정), supportedZones·외곽 기준 구역과 Nav2·Open-RMF 0 값 의미 차이, ISO 13482·ISO 10218-1·KS B 8252, 사람 위치 발행 공개 구현과 한계, 이전 분리 페이지(2026-09-30) 링크 유지, 열린 질문 부분 근거와 새 질문 4건. 후속 정리 필요: docs/categories/safety/index.md 125·187행의 병원 시뮬레이션 평가 표현, 분리 주제 페이지 2026-09-30-area49-s4·s6·s8 의 옛 서지·미확인 표기 |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1466.md](references/ref-1466.md) | 참고문헌 ref-1466 등록: The perfect size of the protective field on an industrial au… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1467.md](references/ref-1467.md) | 참고문헌 ref-1467 등록: Collision Monitor Node — Nav2 Docs (Jazzy) |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1468.md](references/ref-1468.md) | 참고문헌 ref-1468 등록: Speed Filter Parameters — Nav2 Docs (Jazzy) |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1469.md](references/ref-1469.md) | 참고문헌 ref-1469 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 및 별표 3 실외이… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1470.md](references/ref-1470.md) | 참고문헌 ref-1470 등록: 지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의4·제7조… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1471.md](references/ref-1471.md) | 참고문헌 ref-1471 등록: ISO 13482:2014 Robots and robotic devices — Safety requireme… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1472.md](references/ref-1472.md) | 참고문헌 ref-1472 등록: ISO 10218-1:2025 Robotics — Safety requirements — Part 1: In… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1473.md](references/ref-1473.md) | 참고문헌 ref-1473 등록: KS B 8252 실내 이동로봇의 보호정지 시험방법 |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1474.md](references/ref-1474.md) | 참고문헌 ref-1474 등록: human_detection_fusion — src/yolo_uwb_fusion_node.cpp 및 READ… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1475.md](references/ref-1475.md) | 참고문헌 ref-1475 등록: NavWareSet: A Dataset of Socially Compliant and Non-Complian… |
+| 2026-10-11-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-10-11-04 | 갱신 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 3·5·6·7·8·9·11·13절 차등 갱신: 국내 위험성평가 지침(실시 주체·근로자 참여·수시평가), Open-RMF 대상 비상 신호로 화재경보 사례 제약 칸 정정, STPA 산출물·참여 기록·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호·KS B 7327 정정·보강, Bensaci 2020·Belzile 사례 조건·SafeGate 분모, 책임 경계(벤더 주장·사업주 의무·EU 실질적 변경 조건), 열린 질문 부분 근거와 새 질문 4건. 2차: 3·6·7·8·11절에 이전 판 주제 페이지 링크 복원, 7절 정정 대상 페이지 명시. 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 |
 | 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s11.md](topics/2026/2026-10-11-area48-s11.md) | 자동 분리: 48. 안전·위험 관리 의 "11. 열린 질문" 절(1,898자)을 옮겼다 |
 | 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s7.md](topics/2026/2026-10-11-area48-s7.md) | 자동 분리: 48. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,778자)을 옮겼다 |

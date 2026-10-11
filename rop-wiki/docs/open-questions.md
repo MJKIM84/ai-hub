@@ -404,8 +404,12 @@ version: 1
 | oq-382 | Open-RMF 의 플릿 이름 기반 비상 신호(fleet_names)를 건물·구역 단위 대피 계획에 연결할 때, 여러 건물에 걸친 플릿 공유·재개 승인·네트워크 단절·기존 불리언 신호와의 충돌을 어떻게 시험·검증하는가? | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
 | oq-383 | 여러 제조사 로봇이 섞인 현장에서 STPA 제어 구조 분석, 변경 이력(수시 위험성평가), 근로자 아차사고 제보를 하나의 위험등록부로 연결해 운영한 공개 실증 사례가 있는가? | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
 | oq-384 | 출처 충돌: ISO 3691-4 차기판 프로젝트의 현재 단계는 위키 기록(2026-09-26, ISO/CD 3691-4)과 외부 조사 메모(ISO/DIS 3691-4 제3판, 2026-09-10 단계 40.60) 가운데 어느 쪽인가? (관련 기존 질문 oq-170) | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-10-11 | 2026-10-11-04 | 열림 | — |
+| oq-385 | 로봇별 반응 시간·제동 거리·적재 하중·센서 오차가 펌웨어 변경이나 운용 조건 변화로 바뀌었을 때, 로봇 측 보호 필드와 ROP 의 구역 속도 제한·감속 시작 지점을 함께 다시 검증하는 절차나 공개 사례가 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-10-11 | 2026-10-11-05 | 열림 | — |
+| oq-386 | Nav2 의 speed_limit 0(제한 없음)·source_timeout 0.0(차단 해제)과 Open-RMF 의 0 이하 속도 제한(무시) 같은 서로 다른 '0' 의미를 이종 플릿 어댑터가 올바르게 변환하는지 실행 시험으로 확인한 공개 자료나 적합성 시험 항목이 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-11 | 2026-10-11-05 | 열림 | — |
+| oq-387 | HATA 의 임무 완료 시간 최대 26%·19% 단축을 다시 계산할 수 있도록 실험별 분모, 교착·타임아웃 실패 시행의 처리 방식, 고정된 실행 코드가 공개돼 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | 2026-10-11 | 2026-10-11-05 | 열림 | — |
+| oq-388 | 아동·휠체어 사용자·보행 보조기 사용자·시각장애인이 가려진 모퉁이나 통로 점유 상황에서 로봇을 만날 때의 감지 누락·양보 결과를 독립적으로 측정한 데이터셋이나 시험 결과가 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 2026-10-11 | 2026-10-11-05 | 열림 | — |
 
-상태별 건수: 열림 380건, 해결 3건, 조사 중 1건
+상태별 건수: 열림 384건, 해결 3건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

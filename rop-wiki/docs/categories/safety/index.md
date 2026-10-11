@@ -246,10 +246,11 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 84건이다(논문 24건 · 기사·보고서 14건 · 업체 발표 4건 · 표준·오픈소스·기관 자료 42건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 95건이다(논문 26건 · 기사·보고서 14건 · 업체 발표 5건 · 표준·오픈소스·기관 자료 50건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
+- [ref-1475](../../references/ref-1475.md) — Brayan, J., Deng, S., Alves Neto, A., Okunevich, I., Krajnik, T., Bremond, F., & Yan, Z. (NavWare 프로젝트), NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation (프로젝트 사이트) (발행 2026-05-24)
 - [ref-1085](../../references/ref-1085.md) — Jafari, A., Nguyen, H.-S., & Liu, Y.-C. (arXiv), Empirical Prediction of Pedestrian Comfort in Mobile Robot Pedestrian Encounters (발행 2026-04-15)
 - [ref-417](../../references/ref-417.md) — Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems (발행 2026-04)
 - [ref-1076](../../references/ref-1076.md) — Hartmann, D., Hamříková, K., Vysocký, A., Laciok, V., & Bernatík, A. (arXiv), Evolution of Safety Requirements in Industrial Robotics: Comparative Analysis of ISO 10218-1/2 (2011 vs. 2025) and Integration of ISO/TS 15066 (발행 2026-02-19)
@@ -259,8 +260,7 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 - [ref-700](../../references/ref-700.md) — Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H.(IEEE RA-L 2026 채택 표기), Safety Guardrails for LLM-Enabled Robots (발행 2025-03)
 - [ref-563](../../references/ref-563.md) — Belzile, B. 외, From Safety Standards to Safe Operation with Mobile Robotic Systems Deployment (발행 2025-02)
 - [ref-857](../../references/ref-857.md) — Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J., Jailbreaking LLM-Controlled Robots (발행 2024-11-09)
-- [ref-1081](../../references/ref-1081.md) — Rondoni 외 (Scientific Reports), Navigation benchmarking for autonomous mobile robots in hospital environments (발행 2024-08-07)
-- 그 밖에 14건
+- 그 밖에 16건
 
 **기사·보고서**
 
@@ -279,6 +279,7 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 **업체 발표**
 
 - [ref-1257](../../references/ref-1257.md) — FORT Robotics (A3 Case Studies 게재), Case Study: Wireless E-Stopping Improves Safety Around Warehouse AMRs (발행 2023-05-18)
+- [ref-1466](../../references/ref-1466.md) — SICK (Martin Kidman), The perfect size of the protective field on an industrial autonomous vehicle (발행 2021-02-09)
 - [ref-1463](../../references/ref-1463.md) — OMRON (Omron Adept Technologies), Mobile Robot LD Safety Guide (I616-E-06 / 18393-000 Rev H) (발행 2019-10)
 - [ref-1249](../../references/ref-1249.md) — Wind River (Engblom, J. 인터뷰, Buchwieser, A.), Using Simics and Simulation in IEC61508 Safety-Critical Systems – an Interview with Andreas Buchwieser (발행 2014-11-20)
 - [ref-1080](../../references/ref-1080.md) — Amazon, Ever wonder how people and robots team up on your Amazon order? (발행 미확인)
@@ -289,21 +290,21 @@ EU AI Act(Regulation (EU) 2024/1689)는 부속서 I 의 EU 조화 법령(기계�
 - [ref-1461](../../references/ref-1461.md) — 고용노동부(산재예방지원과), 사업장 위험성평가에 관한 지침 전부개정고시(안) 행정예고 (발행 2026-09-23)
 - [ref-1254](../../references/ref-1254.md) — ANSI (American National Standards Institute) Blog, ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications (발행 2026-09-17)
 - [ref-1459](../../references/ref-1459.md) — 한국표준협회 KSSN(국가기술표준원 고시), KS B ISO 3691-4 산업용 트럭 — 안전 요구사항과 검증 — 제4부: 무인 산업용 트럭과 시스템 (발행 2026-09-14)
+- [ref-1474](../../references/ref-1474.md) — ATHENA RC (유지관리 Andreas Vatistas, Nikolaos Lappas) — EU ARISE 'KIRO' 실험, human_detection_fusion — src/yolo_uwb_fusion_node.cpp 및 README (커밋 934ca8387a205aaac894da22451970a203777e18) (발행 2026-06-29)
 - [ref-1255](../../references/ref-1255.md) — A3(Association for Advancing Automation), ANSI/A3 R15.08-3-2026, American National Standard for Industrial Mobile Robots – Safety Requirements – Part 3: Use of IMR Applications (발행 2026-04-23)
+- [ref-1469](../../references/ref-1469.md) — 산업통상부 (국가법령정보센터 행정규칙), 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 및 별표 3 실외이동로봇 운행안전인증 기준 (발행 2025-11-24)
+- [ref-1470](../../references/ref-1470.md) — 법제처 국가법령정보센터, 지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의4·제7조의5 (발행 2025-10-01)
 - [ref-567](../../references/ref-567.md) — Open-RMF (open-rmf/rmf GitHub), [Feature request]: Fire alarm separation for different fleets · Issue #658 · open-rmf/rmf (발행 2025-04-04)
-- [ref-560](../../references/ref-560.md) — ISO, ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells (발행 2025-02)
-- [ref-790](../../references/ref-790.md) — DIN Media, DIN EN ISO 12100 - 2025-01 (Draft standard) (발행 2025-01)
-- [ref-1460](../../references/ref-1460.md) — 고용노동부(국가법령정보센터), 사업장 위험성평가에 관한 지침(고용노동부고시 제2024-76호) (발행 2024-12-18)
-- [ref-1462](../../references/ref-1462.md) — 고용노동부, 위험성평가 근로자 참여 가이드 (발행 2024-12)
-- 그 밖에 32건
+- [ref-1472](../../references/ref-1472.md) — Institute for Standardization of Serbia (ISS) — ISO 프로젝트 정보, ISO 10218-1:2025 Robotics — Safety requirements — Part 1: Industrial robots (발행 2025-02-05)
+- 그 밖에 40건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-11 · 갱신 · [48. 안전·위험 관리](safety-and-risk-management.md) — 3·5·6·7·8·9·11·13절 차등 갱신: 국내 위험성평가 지침(실시 주체·근로자 참여·수시평가), Open-RMF 대상 비상 신호로 화재경보 사례 제약 칸 정정, STPA 산출물·참여 기록·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호·KS B 7327 정정·보강, Bensaci 2020·Belzile 사례 조건·SafeGate 분모, 책임 경계(벤더 주장·사업주 의무·EU 실질적 변경 조건), 열린 질문 부분 근거와 새 질문 4건. 2차: 3·6·7·8·11절에 이전 판 주제 페이지 링크 복원, 7절 정정 대상 페이지 명시. 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 (실행 2026-10-11-04)
-- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 열린 질문](../../topics/2026/2026-10-11-area48-s11.md) — 자동 분리: 48. 안전·위험 관리 의 "11. 열린 질문" 절(1,898자)을 옮겼다 (실행 2026-10-11-04)
-- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area48-s7.md) — 자동 분리: 48. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,778자)을 옮겼다 (실행 2026-10-11-04)
-- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 대표 연구와 자료](../../topics/2026/2026-10-11-area48-s8.md) — 자동 분리: 48. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(1,356자)을 옮겼다 (실행 2026-10-11-04)
-- 2026-10-11 · 생성 · [48. 안전·위험 관리 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area48-s6.md) — 자동 분리: 48. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절(1,151자)을 옮겼다 (실행 2026-10-11-04)
+- 2026-10-11 · 갱신 · [49. 사람 근접 안전](human-proximity-safety.md) — 4·5·6·7·8·9·11·13절 차등 갱신: NIST 논문 서지 정정(2017년 4월호, 온라인 2016-08-27), 병원 사례 '시뮬레이션 평가'를 모의 병원 공간의 실물 실험으로 정정, 창고 연구 실험 조건·Table IV 조건 보강, 아마존 글 발행일(메타데이터, 벤더 주장), 실외 사례를 현행 시행규칙·고시 제2025-21호 별표 3 근거로 보강(별표 세부 문구는 [추정]), supportedZones·외곽 기준 구역, Nav2·Open-RMF '0' 값 의미 차이, HATA·Jafari 평가 조건, NavWareSet, ISO 13482·ISO 10218-1·KS B 8252 행, 사람 위치 발행 공개 구현과 한계, 열린 질문 부분 근거와 새 질문 4건, 각주 26건. 2차 재작업: 9절 human_detection_fusion 문장을 위치 발행 범위로 한정([추정]), 태그 없던 범위 문장 2건을 구축자 의견([의견])으로, 4·6·7·8·11절에 이전 분리 페이지(2026-09-30) 명시 링크, 분리될 절의 절 번호 참조를 원 페이지 링크로, 5절 실외 제약 칸에 ref-992 각주 복원 (실행 2026-10-11-05)
+- 2026-10-11 · 생성 · [49. 사람 근접 안전 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area49-s6.md) — 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(2,648자)을 옮겼다 (실행 2026-10-11-05)
+- 2026-10-11 · 생성 · [49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area49-s7.md) — 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,225자)을 옮겼다 (실행 2026-10-11-05)
+- 2026-10-11 · 생성 · [49. 사람 근접 안전 — 열린 질문](../../topics/2026/2026-10-11-area49-s11.md) — 자동 분리: 49. 사람 근접 안전 의 "11. 열린 질문" 절(1,847자)을 옮겼다 (실행 2026-10-11-05)
+- 2026-10-11 · 생성 · [49. 사람 근접 안전 — 대표 연구와 자료](../../topics/2026/2026-10-11-area49-s8.md) — 자동 분리: 49. 사람 근접 안전 의 "8. 대표 연구와 자료" 절(1,791자)을 옮겼다 (실행 2026-10-11-05)
 <!-- auto:category-recent:end -->

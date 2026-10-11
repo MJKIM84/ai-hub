@@ -4870,6 +4870,51 @@
       "ref_id": "ref-1455",
       "run_id": "2026-10-11-04",
       "date": "2026-10-11"
+    },
+    {
+      "name": "KS B 8252 실내 이동로봇의 보호정지 시험방법",
+      "org": "국가기술표준원 (e-나라표준인증)",
+      "kind": "표준",
+      "related_areas": [
+        49,
+        50,
+        54
+      ],
+      "url": "https://www.standard.go.kr/KSCI/standardIntro/getStandardSearchView.do?ksNo=KSB8252&menuId=919&reformNo=&tmprKsNo=KSB8252&topMenuId=502&upperMenuId=503",
+      "summary": "안전한 실내 공간에서 자율 주행 중 정적 장애물에 대한 보호정지를 평가하는 시험방법 국가표준(ISO 13482 기반). 2020-02-26 제정, 2025-09-05 확인.",
+      "ref_id": "ref-1473",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 별표 3",
+      "org": "산업통상부",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        49,
+        50,
+        59,
+        66
+      ],
+      "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000269426",
+      "summary": "2025-11-24 일부개정·시행된 현행 고시. 별표 3 은 규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치 8개 항목의 운행안전인증 기준과 질량별 최대 운행 속도를 정한다.",
+      "ref_id": "ref-1469",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "human_detection_fusion (YOLO·UWB 사람 위치 융합 ROS 2 패키지)",
+      "org": "ATHENA RC (EU ARISE 'KIRO' 실험)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        49
+      ],
+      "url": "https://github.com/nikolaslps/human_detection_fusion/blob/934ca8387a205aaac894da22451970a203777e18/src/yolo_uwb_fusion_node.cpp",
+      "summary": "YOLO 검출과 UWB 위치를 합쳐 사람 식별자별 위치를 ROS4HRI 의 hri_msgs 형식으로 발행하는 ROS 2 패키지(AGPL-3.0). 위치 발행까지만 다루며, 좌표 변환 실패 시 입력 좌표를 그대로 돌려주는 코드 경로가 있다.",
+      "ref_id": "ref-1474",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
     }
   ]
 }

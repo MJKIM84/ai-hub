@@ -1,0 +1,454 @@
+{
+  "run_id": "2026-10-11-05",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "PMC 판에서 RCIM 44권 144–155쪽, 2017-04 호, 온라인 게재 2016-08-27 확인. NIST PDF 는 검증 열람에서 텍스트를 추출하지 못해 접수(2015-03-04)·승인(2016-08-01) 날짜는 검증자가 확인하지 못함. '2016' 표기는 승인 연도가 아니라 온라인 게재 연도로도 설명되므로 해석 문구를 고치게 함(수정 지시)."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "벤더 주장 [추정] 유지. SICK 블로그 실재·발행일 2021-02-09 는 검색 결과로 확인. 검증 열람은 ECONNRESET 로 2회 실패했고, 스니펫으로는 안전 장치·제어계 응답시간이 보호 필드 크기를 좌우한다는 일반 내용까지만 확인. 케이스 전환·다중 샘플링 문장은 검증자가 대조하지 못함(원문 미열람(검증)). 저자명은 검색 결과에서 확인 안 됨."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "입력 원문(data/source_texts/ref-031.txt, 3.0.0) §6.4 의 supportedZones 보고 의무(shall) 문장과 일치. 확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "같은 원문 §6.4.1.1 Contour-based zones 의 적재물 포함 외곽 진입·이탈 문장과 일치. 확인."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. f3·f4 에서 도출한 운영 시사점이며 감속 거리 수치를 넣지 않았음. 누구의 의견인지(구축자 의견) 밝히게 함."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "Nav2 Jazzy Collision Monitor 문서에서 source_timeout(double, 기본 2.0, 미수신 시 정지, 0.0 이면 차단 해제) 확인. 로봇 측 로컬 회피 계층이라 연계 대상으로 서술해야 함."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "Nav2 Jazzy Speed Filter 문서에서 'Zero value means no speed restriction (independently on percentage)' 확인."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "rmf_ros2 2.14.0 FleetUpdateHandle.cpp(raw) 에서 lane_index 범위 밖 또는 speed_limit <= 0.0 이면 경고 후 건너뛰고 close_lanes API 를 안내함을 확인. 경고문은 0 이하 경우만 언급함(범위 밖은 경고문에 없음)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "같은 함수에서 properties.speed_limit 설정 → 새 Planner → task_parameters 갱신 → publish_lane_states 확인, 실제 감속 확인 경로 없음 확인."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. f6~f8 을 나란히 놓은 추론이며 실사례·시험 자료 없음을 밝힘."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지(구축자 의견으로 표기)."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "arXiv 2503.21141v1 에서 Freight·Jackal·Megarover 실물 실험, OptiTrack, 설정마다 10회 확인."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "Table IV 의 보행자 0·1·2명 행, 'Four Robot Controls (1.0m/s)'·'Two Robot Controls (1.5m/s)' 열, 정지 구간 제외 확인. 다만 본문이 로봇 대수를 명시하지 않고 열 이름에서 추론한 것이므로 표현을 고치게 함."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 정정 제안 유지. UC eScholarship 기록(CASE 2025, 2025-08-17, DOI 10.1109/CASE58245.2025.11164151)은 검색 결과로 확인. 쪽수 pp.548–555 는 검증자가 확인하지 못함."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "arXiv 2508.19731v1 에서 시뮬레이션 환경·사람 궤적 재생·5·10·15대 확인. IROS 쪽수는 검증자가 확인하지 못함."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "실패율 = 교착 또는 시간 초과로 완료하지 못한 과제 비율, 10분 제한 확인(HTML 에 '1010 minutes' 렌더링 오류가 있으나 다음 문장이 10분을 확인)."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "Frontiers 원문에서 시험 환경 검증·병원 내 복수 배송 로봇 미적용 문장 확인."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "PMC 판에서 실제 병원 배치를 재현한 모의 병원 공간, Vicon 8대 확인. 원제목은 단수 'hospital environment'."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이동 장애물은 고정 선속도·각속도로 원격조종한 두 번째 이동 베이스임을 확인."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 정정 제안 유지(f18·f19 근거). docs/categories/safety/index.md 의 같은 표현은 이번 페이지 제안 범위 밖이므로 본문에 넣지 않음."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "arXiv 2604.13677v1 에서 32명(남 22·여 10), 23~41세, 3.2 m 복도, 원격조종, 1.4·2.8 m/s, 160회 중 2회 제외·측면 거리 분석 13회 추가 제외, IRB, ICRA 2026 채택 표기 확인."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "분석에 쓴 데이터로 예측기를 평가했고 엄밀한 평가에는 분할이 필요하다고 저자가 적은 것 확인."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "오즈비 3.67 이 분할표의 오즈비임을 확인. 초록의 '거의 4배 더 가능성' 표현은 확률로 읽으면 안 됨."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 정정 제안 유지. ICRA 쪽수·DOI 미확인 표기 유지."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "국가법령정보센터 시행규칙(시행 2025-10-01, 산업통상부령 제1호) 제7조의4①1·2호와 ② 고시 위임, 본조신설 2023-11-17 확인. 수치 자체는 기존 내용(ref-980)과 같음."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "같은 시행규칙 제7조의5①4호 운행계획서(횡단보도 통행방식·통신장애·사고발생·혼잡상황 대응 시나리오) 문구 확인, ① 개정 2025-10-01."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "고시 제목·산업통상부고시 제2025-21호·2025-11-24 일부개정·시행 2025-11-24 확인. 제4조·부칙 본문은 검증 열람에서 표시되지 않아 검증자가 문구를 대조하지 못함."
+    },
+    {
+      "finding_id": "f28",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "한국로봇산업진흥원 페이지의 '총 8개 심사항목'과 8개 항목명 확인. 별표 3 PDF(flSeq=158938063)는 실재하나(작성 2025-12-09, 한글 PDF) 검증 열람에서 텍스트를 추출하지 못해 별표 쪽 항목명은 검증자가 대조하지 못함. 인증기관은 같은 제도 안의 기관이라 독립 교차 확인 아님."
+    },
+    {
+      "finding_id": "f29",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "별표 3 원문 텍스트는 검증자가 추출하지 못함. 다만 검색 결과에 '로봇의 자체 질량과 적재물의 질량을 합하여 500 kg을 초과하지 않아야 한다'는 별표 문구와 폭 800 mm(보도 2,500 mm 이상이면 1,200 mm)가 나타나고, 230·100 kg 경계와 5·10·15 km/h 는 2023년 보도(ref-992 등)와 일치. 현행 별표 3 기준으로 단정하는 근거가 검증자 대조로는 간접적이므로 기준일·고시 번호를 함께 쓰게 함."
+    },
+    {
+      "finding_id": "f30",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 별표 3 PDF 텍스트 추출 실패로 1.라(보호구역 5 km/h) 문구를 검증자가 대조하지 못했고, 검색(확장 포함)에서도 보호구역 5 km/h 규정은 나타나지 않음. 리서치 대조 기록만 근거이므로 '현행 별표 3 원문 기준(검증 재확인 못 함)'으로 표기."
+    },
+    {
+      "finding_id": "f31",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 별표 3 4.가·4.다와 KS B 7320 5.6절 인용을 검증자가 원문에서 대조하지 못함(PDF 텍스트 추출 실패). 검색 결과로도 확인 못 함."
+    },
+    {
+      "finding_id": "f32",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 7.가 3) 횡단 대기 규칙은 2023년 보도(ref-992)와 내용이 같으나 현행 별표 3 문구와 7.나 통신 단절 시 횡단 완료 후 정차는 검증자가 대조하지 못함."
+    },
+    {
+      "finding_id": "f33",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 8.다 보행자 밀집 알림·관리자 조치 문구를 검증자가 원문에서 대조하지 못했고 검색에서도 나타나지 않음."
+    },
+    {
+      "finding_id": "f34",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. ref-992 는 이번에 다시 열지 않았고(원문 미열람), 비교 대상 f32 가 강등됐으므로 '현행 고시와 같다'는 표현을 추정 수준으로 유지. 2023 개정안과 현행 고시 사이 중간 개정 이력 미확인을 함께 적게 함."
+    },
+    {
+      "finding_id": "f35",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지. 근거 f30·f33 이 [추정]으로 강등됐으므로 의견 문장에서 이를 확정 요구처럼 쓰지 않게 함. ROP 사업자가 인증 신청 주체라는 서술은 없음."
+    },
+    {
+      "finding_id": "f36",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ISS 목록에서 ISO 13482:2014 발행 2014-02-03, 단계 90.92, Published 확인. 표준 본문 미열람."
+    },
+    {
+      "finding_id": "f37",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ISS 목록에서 ISO 10218-1:2025 발행 2025-02-05, 단계 60.60, 범위의 무인 산업용 트럭·이동 플랫폼 이동성 위험 제외 문구 확인."
+    },
+    {
+      "finding_id": "f38",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "e-나라표준인증 상세에서 표제·적용범위(정지 장애물 보호정지, ISO 13482 기반)·제정 2020-02-26(2020-0026)·확인 2025-09-05(2025-0241, 5년 도래 확인) 확인. 표준 본문 미열람."
+    },
+    {
+      "finding_id": "f39",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. KS·ISO 본문 미열람이라 확정하지 못한다는 한계를 함께 적음."
+    },
+    {
+      "finding_id": "f40",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "고정 커밋 코드에서 /humans/persons/<id>/position, hri_msgs PointOfInterest3DStamped 발행 확인. README 에 'Standard ROS4HRI output' 이라는 문구는 없고 ROS4HRI(hri_msgs) 형식으로 사람별 3차원 위치를 낸다는 자기 서술만 있음."
+    },
+    {
+      "finding_id": "f41",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "transformUWBPosition 의 catch 블록이 경고 후 입력 좌표(pt)를 그대로 반환함을 확인."
+    },
+    {
+      "finding_id": "f42",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. UWB 단독 작업자 처리에서 header.frame_id = TARGET_FRAME 설정 확인. 코드 경로 해석이며 운용 오류 실증 아님을 밝힘."
+    },
+    {
+      "finding_id": "f43",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "README 에서 KIRO 실험(ARISE 1st Open Call)의 모듈, 저작권자 ATHENA RC, AGPL-3.0 확인."
+    },
+    {
+      "finding_id": "f44",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지(구축자 의견으로 표기)."
+    },
+    {
+      "finding_id": "f45",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. '확인한 자료 범위에서'라는 한정을 유지하고, 아마존 사례는 벤더 주장임을 병기."
+    },
+    {
+      "finding_id": "f46",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "프로젝트 사이트에서 참가자 17명, 5명 2개 그룹과 5개 쌍 확인. 연결 논문 IJRR 2026, DOI 10.1177/02783649261447305 확인(권호는 임시)."
+    },
+    {
+      "finding_id": "f47",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "Scenarios 표의 BLIND CORNER 설명 확인. 시나리오 존재만 말함."
+    },
+    {
+      "finding_id": "f48",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[의견] 유지(구축자 의견으로 표기). 취약 보행자 측정 자료가 없다는 한계에서 나온 의견임을 밝힘."
+    },
+    {
+      "finding_id": "f49",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정]·벤더 주장 유지. 검증 열람 도구는 페이지 메타데이터를 보여 주지 않아 2019-04-06 을 검증자가 재확인하지 못함. 2019년 보도(VOA 등)가 같은 조끼를 다뤄 2019년 무렵 글이라는 점과는 어긋나지 않음."
+    },
+    {
+      "finding_id": "f50",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 확인한 명세·코드 범위에 한정한 부분 근거(oq-229)."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-1464 와 같은 날 실행 2026-10-11-04 브리프의 ref-1529 가 같은 URL(rmf_ros2 2.14.0 FleetUpdateHandle.cpp)을 가리킨다. 퍼블리셔가 같은 URL 을 합치므로 이 실행의 각주 id 와 제목이 합쳐진 id 와 어긋날 수 있다.",
+      "ref-1464 의 기존 제목은 handle_target_emergency·Node.cpp 를 가리키는데 이번 인용 부분은 같은 파일의 limit_lane_speeds 다.",
+      "f20 이 지적한 '시뮬레이션 평가' 표현이 docs/categories/safety/index.md 125·187행에도 있어 이번 갱신 뒤 49영역 본문과 대분류 페이지가 서로 다르게 된다(후속 정리 대상).",
+      "f25·f29 의 질량·속도 수치는 기존 5절 실외 제약 칸(ref-980·ref-992)과 같은 주장이다. 새 각주를 추가하되 기존 각주를 지우지 않는다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": []
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f30·f31·f32·f33: [사실] → [추정]으로 강등하고 문장에 '현행 고시 별표 3 원문 기준(검증 재확인 못 함, 기준일 2026-10-11)'을 밝힌다 — 검증 열람에서 별표 3 PDF 텍스트를 추출하지 못해 문구를 대조하지 못했다.",
+    "f35(의견)·f34(추정)가 f30·f32·f33 에 기대는 부분은 확정된 규정처럼 쓰지 않고 '별표 3 원문 기준으로 알려진' 수준으로 쓴다 — 근거 finding 이 [추정]으로 강등됐다.",
+    "f1: 4절·8절과 분리 주제 페이지의 NIST 논문 연도는 'Robotics and Computer-Integrated Manufacturing 44권(2017년 4월호), 144–155쪽, 온라인 게재 2016-08-27'로 쓰고, '2016 표기는 승인 연도 기준'이라는 해석과 접수일(2015-03-04)·승인일(2016-08-01)은 넣지 않는다 — PMC 판으로는 온라인 게재일만 확인됐고 접수·승인일은 검증에서 확인하지 못했다. ref-1075 의 reference_updates 발행일은 '2017'로 둔다.",
+    "f13: 'Open-RMF 플릿 실험은 로봇 4대·2대 설정' 대신 'Table IV 의 열 이름(Four Robot Controls 1.0 m/s, Two Robot Controls 1.5 m/s) 기준'으로 쓴다 — 논문 본문은 로봇 대수를 명시하지 않는다.",
+    "f14: Farrell 서지는 '2025 IEEE CASE(2025-08-17, DOI 10.1109/CASE58245.2025.11164151)'로 쓰고 쪽수 pp.548–555 는 쓰지 않거나 '쪽수 미확인'으로 둔다 — 검증에서 쪽수를 확인하지 못했다. f15 의 IROS 2025 쪽수(pp.12697–12703)도 같은 이유로 쓰지 않는다.",
+    "f2·f49: [추정]에 '벤더 주장'을 병기한다. f49 의 아마존 글 발행일 2019-04-06 은 '페이지 메타데이터 기준(벤더 문서, 독립 확인 없음)'으로 밝히고 [사실]로 쓰지 않는다 — 검증 열람에서 메타데이터 날짜를 재확인하지 못했다.",
+    "f2·f6·f7·f40~f43: 안전 레이저 스캐너 응답시간, Nav2 Collision Monitor·Speed Filter, 사람 검출·추적 모듈은 9절과 6절에서 '연계 대상'(로봇 자체 지능·제어, 19. 사람·보행자 모델 쪽 기술)으로 서술하고 ROP 몫은 어댑터 계약·인터페이스 반영으로 한정한다 — 분류 원문 19장 경계.",
+    "f40: README 의 'Standard ROS4HRI output' 을 인용하지 않는다 — 고정 커밋 README 에 그 문구가 없고 ROS4HRI(hri_msgs) 형식 발행이라는 서술만 있다.",
+    "f5·f11·f44·f48 및 f35: [의견] 문장에 '구축자 의견'을 밝힌다.",
+    "f20: docs/categories/safety/index.md 125·187행의 같은 표현은 이번 페이지에서 고치지 않고 변경 이력·후속 정리 항목으로만 남긴다 — 이번 페이지 제안 범위 밖이다.",
+    "각주: 49영역 페이지와 분리 주제 페이지의 ref-1081 제목을 단수 'Navigation benchmarking for autonomous mobile robots in hospital environment'로, ref-1075·ref-1080·ref-1082·ref-1083·ref-1085 의 접근일을 2026-10-11 로 갱신하고, 새로 인용하는 ref-1466~ref-1475·ref-869·ref-1464 를 프런트매터 sources 와 13절 각주 정의에 더한다. ref-992 각주는 '(원문 미열람)'을 접근일 뒤에 붙이고 reference_updates 에 source_unopened: true 로 둔다.",
+    "ref-1464: 같은 URL 을 실행 2026-10-11-04 가 ref-1529 로 등록했으므로 reference_updates 의 제목을 'rmf_fleet_adapter 2.14.0 소스 — FleetUpdateHandle.cpp'처럼 파일 전체를 가리키는 이름으로 두고 limit_lane_speeds 는 본문에서 함수 이름으로만 밝힌다 — 퍼블리셔의 같은 URL 병합 뒤 제목이 인용 내용과 어긋나지 않게 한다.",
+    "인용: 출처마다 직접 인용은 1회 짧은 구절로 제한하고(특히 ref-1469·ref-031·ref-1464 는 여러 finding 에 원문 구절이 있으므로 페이지에서는 재서술), 별표 3 의 표는 복제하지 않는다.",
+    "11절: oq-229·oq-230·oq-231·oq-232 는 열림을 유지하고 부분 근거만 덧붙인다(oq-229 f50, oq-230 f28, oq-231 f38·f39, oq-232 f40·f45). 새 열린 질문 4건은 브리프 문구대로 등록하되 '|' 필드 문자열을 question 에 남기지 않는다.",
+    "5절 실외 사례: 제약 칸의 근거를 현행 고시(ref-1469)·시행규칙(ref-1470)으로 바꾸더라도 기존 2023-07-28 기사(ref-992) 문장은 '당시 개정안' 기준으로 남겨 두고, 심사 항목 수 충돌(8개 대 16가지)은 해결로 쓰지 않는다 — 기사 16가지와의 대응은 이번에도 확인되지 않았다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 46건, 미확인 4건, 교차 확인 0건. 강등: f30·f31·f32·f33 사실 → 추정(현행 실외이동로봇 운행안전인증 고시 별표 3 의 보호구역 5 km/h, 주변 인식 감속·정지·회피, 횡단보도 통신 단절 처리, 보행자 밀집 알림 — 별표 PDF 텍스트를 검증에서 추출하지 못해 문구를 대조하지 못함). 원문 미열람 출처: ref-992(이번 미열람). 검증 열람 일부 실패: ref-1466(SICK 블로그, 검색 결과로 실재만 확인), ref-1469(별표 3 본문 미대조, 고시 번호·개정일·시행일만 확인), ref-1075(NIST PDF 텍스트 미추출, PMC 판으로 서지 확인), ref-1080(메타데이터 발행일 재확인 못 함). 주의: 모든 [사실] 주장이 단일 출처이거나 같은 제도·저장소 계열이라 독립 교차 확인이 없다. 고시·시행규칙·인증기관은 같은 운행안전인증 체계이고, VDA 5050·Nav2·Open-RMF 의 구역·속도 제한은 안전 기능이 아니라 계획·로컬 회피 계층이다. Farrell 표 IV 의 로봇 대수는 열 이름에서 읽은 것이며, HATA 실패율은 사고율이 아니고 Jafari 의 오즈비 3.67 은 같은 데이터로 평가한 값이다. 열린 질문 oq-229~oq-232 는 부분 근거만 있어 열림을 유지한다. 정정 요청 없음. 같은 URL 이 ref-1464(이번)와 ref-1529(실행 2026-10-11-04)로 등록돼 퍼블리셔 병합이 필요하다. 검증 검색 6회 사용.",
+  "retry_reason": null
+}
