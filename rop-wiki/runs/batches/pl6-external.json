@@ -1,7 +1,7 @@
 {
   "batch_id": "pl6-external",
   "date": "2026-10-12",
-  "updated": "2026-10-11 19:38:43",
+  "updated": "2026-10-11 19:40:18",
   "concurrency": 3,
   "items": [
     {
@@ -39,14 +39,15 @@
         "label": "외부 조사 반영 60. 노동·수용성·접근성",
         "continue": "2026-10-12-03"
       },
-      "status": "에이전트 단계 진행",
+      "status": "퍼블리셔 진행",
       "attempts": [
         {
           "run_id": "2026-10-12-03",
           "started": "2026-10-11 18:53:45",
-          "agents_exit": null,
+          "agents_exit": 0,
           "publish_exit": null,
-          "continued": true
+          "continued": true,
+          "agents_done": "2026-10-11 19:40:09"
         }
       ],
       "run_id": "2026-10-12-03"
@@ -60,14 +61,15 @@
         "label": "외부 조사 반영 47. AI·학습·적응과 모델 운영",
         "continue": "2026-10-12-04"
       },
-      "status": "에이전트 단계 진행",
+      "status": "퍼블리셔 대기",
       "attempts": [
         {
           "run_id": "2026-10-12-04",
           "started": "2026-10-11 18:54:05",
-          "agents_exit": null,
+          "agents_exit": 0,
           "publish_exit": null,
-          "continued": true
+          "continued": true,
+          "agents_done": "2026-10-11 19:40:18"
         }
       ],
       "run_id": "2026-10-12-04"
