@@ -4757,6 +4757,48 @@
       "ref_id": "ref-1424",
       "run_id": "2026-10-11-01",
       "date": "2026-10-11"
+    },
+    {
+      "name": "엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준)",
+      "org": "대한승강기협회(KOLA)",
+      "kind": "표준",
+      "related_areas": [
+        22,
+        21
+      ],
+      "url": "https://kola.or.kr/pages/61/68/bbs/5705",
+      "summary": "엘리베이터와 로봇 상호 연동의 일반사항·시험 설비·시험 절차를 제시하는 단체표준으로, 협회가 2026-03-27 제정을 발표했다. 표준 번호(B-KOLA-0001-7700)는 검증에서 재현하지 못했고 메시지 정의는 미확인이다.",
+      "ref_id": "ref-1433",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KONE RMF Lift Adapter (kone-ros-api)",
+      "org": "CHART (KABAM-Robotics 보존 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        20
+      ],
+      "url": "https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596",
+      "summary": "Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터(2023년 고정판). 실제 승강기 제어 자격증명은 KONE 담당자에게 받는다.",
+      "ref_id": "ref-1438",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "door_adapter_dormakaba (Open-RMF Dormakaba 문 어댑터)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        51
+      ],
+      "url": "https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668",
+      "summary": "Dormakaba EL301·ED250 문 구동기용 Open-RMF 문 어댑터. IoT connector 장착이 필요하고 문 클라우드 API 자격증명은 Dormakaba 가 제공한다.",
+      "ref_id": "ref-1439",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
     }
   ]
 }

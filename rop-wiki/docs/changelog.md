@@ -20,6 +20,28 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-11-03 | 갱신 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s6.md](topics/2026/2026-10-11-area22-s6.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "6. 대표 접근법과 기술" 절(2,450자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s11.md](topics/2026/2026-10-11-area22-s11.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "11. 열린 질문" 절(2,065자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s7.md](topics/2026/2026-10-11-area22-s7.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,902자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s3.md](topics/2026/2026-10-11-area22-s3.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "3. 왜 중요한가" 절(1,323자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s8.md](topics/2026/2026-10-11-area22-s8.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "8. 대표 연구와 자료" 절(1,268자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s10.md](topics/2026/2026-10-11-area22-s10.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,080자)을 옮겼다 |
+| 2026-10-11-03 | 요약 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 22. 설비·건물 시스템 연동: 차등 갱신: KS B 7317 개정 이력·대한승강기협회 단체표준·Open-RMF 승강기 감독과 작업대 완료 판정·KONE·Dormakaba 어댑터·SEMI E84·BACnet 출입통제 백서 보강, 기타(도서관)·병원·상업 시설 적용 사례 추가, 대표 연구의 실험 조건 갱신, 새 열린 질문 6건, 2차 수정(구축자 의견 태그 분리·2026-09-25 주제 페이지 링크 복원); 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1432.md](references/ref-1432.md) | 참고문헌 ref-1432 등록: "사람과 로봇이 공존하는 스마트 빌딩 앞당긴다"...국토부 산학협력단과 기술개발 착수 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1431.md](references/ref-1431.md) | 참고문헌 ref-1431 등록: Development of Human-Centered, Robot-Adaptive Building Desig… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1433.md](references/ref-1433.md) | 참고문헌 ref-1433 등록: 대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1434.md](references/ref-1434.md) | 참고문헌 ref-1434 등록: 단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1435.md](references/ref-1435.md) | 참고문헌 ref-1435 등록: Lift session issues - Robot enter lift while lift is still i… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1436.md](references/ref-1436.md) | 참고문헌 ref-1436 등록: rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1437.md](references/ref-1437.md) | 참고문헌 ref-1437 등록: rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1438.md](references/ref-1438.md) | 참고문헌 ref-1438 등록: KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a8… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1439.md](references/ref-1439.md) | 참고문헌 ref-1439 등록: door_adapter_dormakaba — README (commit 2cf76a6) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1440.md](references/ref-1440.md) | 참고문헌 ref-1440 등록: Lift and Doors Integration |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1442.md](references/ref-1442.md) | 참고문헌 ref-1442 등록: SNARF for Doc 7442: Specification for Enhanced Handoff Inter… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1443.md](references/ref-1443.md) | 참고문헌 ref-1443 등록: Physical Access Control with BACnet (BAC-09-08 White Paper) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1444.md](references/ref-1444.md) | 참고문헌 ref-1444 등록: NAVER’s ARC Goes to Japan |
+| 2026-10-11-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-10-11-01 | 갱신 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 차등 갱신: 5절 수행 자원 칸 경로 계산을 선 유도 로봇으로 정정·자유 주행 로봇 경로 공유 병기, 제조 공장 전시 시연 사례(Mesh-Up 2025, 실제 공장 배치 아님) 추가; 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준 표·VDA 5050 동작 시험표; 7절 VDA 5050 3.0.0 날짜(출처 충돌)·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영); 8절 vda5050-lab 자기 기술 반영·vda5050-sim 분리·Wagner 외 추가; 10절 14·42번 연결; 11절 부분 근거와 새 질문 2건; 6·7·11절 첫 단락에 2026-09-25 분리 페이지(area28-s6·s7·s11) 링크 유지; 프런트매터 sources 에 기존 ref-636·ref-637·ref-708·ref-710 유지; 13절 각주 갱신(ref-408·ref-705 원문 열람 반영, 신규 각주) |
 | 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s7.md](topics/2026/2026-10-11-area21-s7.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,916자)을 옮겼다 |
 | 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s6.md](topics/2026/2026-10-11-area21-s6.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "6. 대표 접근법과 기술" 절(2,060자)을 옮겼다 |
