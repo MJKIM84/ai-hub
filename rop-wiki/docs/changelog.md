@@ -16,6 +16,28 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-12
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-12-01 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s6.md](topics/2026/2026-10-12-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s11.md](topics/2026/2026-10-12-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s7.md](topics/2026/2026-10-12-area58-s7.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,029자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s8.md](topics/2026/2026-10-12-area58-s8.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "8. 대표 연구와 자료" 절(774자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s4.md](topics/2026/2026-10-12-area58-s4.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "4. 핵심 개념과 용어" 절(699자)을 옮겼다 |
+| 2026-10-12-01 | 요약 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 58. 다사업자 책임·계약·데이터: 데이터 보유자 정의를 데이터법 원문으로 바로잡고 RoMi-H 등재 주기 표현('연 2회')을 원어·두 해석으로 정정, 데이터법 적용 시점·제조물책임지침 조문·공개 약관 비교(벤더 주장)·RFC 9745 보강, 2026-09-30 분리 페이지 연결 유지, 새 열린 질문 3건 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1487.md](references/ref-1487.md) | 참고문헌 ref-1487 등록: EU DATA ACT Notice |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1488.md](references/ref-1488.md) | 참고문헌 ref-1488 등록: Data Secrets: The Data Act's New Trade Secrets Framework |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1489.md](references/ref-1489.md) | 참고문헌 ref-1489 등록: ANNEX to the Communication to the Commission — Approval of t… |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1490.md](references/ref-1490.md) | 참고문헌 ref-1490 등록: Directive (EU) 2024/2853 of the European Parliament and of t… |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1491.md](references/ref-1491.md) | 참고문헌 ref-1491 등록: Terms of Service (Exhibit A: Service Level Agreement) |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1492.md](references/ref-1492.md) | 참고문헌 ref-1492 등록: AWS IoT RoboRunner Service Level Agreement |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1493.md](references/ref-1493.md) | 참고문헌 ref-1493 등록: Pre-Order Terms |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1494.md](references/ref-1494.md) | 참고문헌 ref-1494 등록: 자율주행 인공지능(AI) 발전을 위한 개인영상정보 보호ㆍ활용 기준 나왔다 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1495.md](references/ref-1495.md) | 참고문헌 ref-1495 등록: RoMi-H Empanelment Programme 2026 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1496.md](references/ref-1496.md) | 참고문헌 ref-1496 등록: General Terms |
+
 ### 2026-10-11
 
 | 실행 id | 동작 | 페이지 | 요약 |

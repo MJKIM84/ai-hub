@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-10-11
+기준일: 2026-10-12
 
 ### 영역별 페이지 상태 분포
 
@@ -37,7 +37,7 @@ version: 1
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 41 | 0 | 0 | 41 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 28 | 0 | 0 | 28 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -178,7 +178,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-09-30 | 2 |
+| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-10-12 | 3 |
 | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | 2026-09-30 | 2 |
 | [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-09-30 | 2 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 165회 중 최종 통과 163회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 163, None 2
-- 2차 검증 판정: 통과 163, None 2
+- 실행 166회 중 최종 통과 164회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 164, None 2
+- 2차 검증 판정: 통과 164, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 600 |
+| 논문 | 601 |
 | 오픈소스 문서 | 257 |
 | 표준 | 225 |
-| 정부·연구기관 | 135 |
+| 정부·연구기관 | 139 |
 | 기사 | 130 |
-| 벤더 문서 | 110 |
+| 벤더 문서 | 115 |
 | 업계 보고서 | 29 |
 
-신뢰도: medium 1034건, high 315건, low 137건
+신뢰도: medium 1041건, high 318건, low 137건
 
 ### 현장 유형 매트릭스 채움률
 
@@ -227,9 +227,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 16 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 16 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 16 | published |
-| [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-25 | 16 | published |
-| [30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-25 | 16 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 17 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 17 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 17 | published |
+| [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-25 | 17 | published |
+| [30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-25 | 17 | published |
 <!-- auto:metrics:end -->

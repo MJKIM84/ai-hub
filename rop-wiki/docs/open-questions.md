@@ -413,8 +413,11 @@ version: 1
 | oq-391 | MCAP 의 publish_time 이 log_time 으로 대체된 경우와 원본 추출·해시·서명 이력을 사고 증거 묶음에 어떻게 표시하고 검증할 것인가? | [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-10-11 | 2026-10-11-06 | 열림 | — |
 | oq-392 | 출처 충돌: 실외이동로봇 운행안전인증 고시 제2023-211호의 시행일은 원 고시 첨부 부칙(2023-11-17)과 제2025-21호 첨부 본문에 실린 구 부칙(2023-11-21) 가운데 어느 쪽인가? | [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md)<br>[66. 실외](categories/site-type-applications/outdoor.md) | 2026-10-11 | 2026-10-11-06 | 열림 | — |
 | oq-393 | EN ISO 10218-1/-2:2025 참조는 기계 규정 (EU) 2023/1230 의 조화 표준으로 언제 게재되며, 지침 2006/42/EC 기반 목록(시행결정 2023/1586)이 2027-01-20 폐지된 뒤 적합성 추정은 어떻게 이어지는가? | [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-10-11 | 2026-10-11-06 | 열림 | — |
+| oq-394 | 여러 사업자가 얽힌 장애·사고에서 서비스 수준 협약의 지원 기한을 멈추는 사유(시설 장애 등)와 재개 시점을 누가 확인·승인하며, 각 계약의 로그를 어떤 공통 식별자로 연결하는가? (관련: oq-112) | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-10-12 | 2026-10-12-01 | 열림 | — |
+| oq-395 | 제조사의 데이터법 고지가 안내하는 제3자 지속 공유 경로(승인 QR 코드·외부 플랫폼 등록 등)는 실제로 어떤 필드를 어떤 지연으로 제공하며, 사용자가 승인을 철회하면 언제 공유가 끊기는가? (관련: oq-110, oq-279) | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-10-12 | 2026-10-12-01 | 열림 | — |
+| oq-396 | RoMi-H 통합자 등재 프로그램의 실제 운영 주기는 무엇인가(2025 공고 'bi-annual', 2026 공고 'annual', 등재 유효 2년), 그리고 유효기간이 끝난 등재 통합자가 맡은 연동의 유지·장애 복구 책임은 어떻게 이어지는가? (관련: oq-149) | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-10-12 | 2026-10-12-01 | 열림 | — |
 
-상태별 건수: 열림 387건, 해결 5건, 조사 중 1건
+상태별 건수: 열림 390건, 해결 5건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
