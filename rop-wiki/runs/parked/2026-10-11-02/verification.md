@@ -1,0 +1,83 @@
+# 1차 검증(브리프) 2026-10-11-02
+
+**판정: 조건부 승인** · 신뢰도: medium
+
+## 주장별 검증
+
+| finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
+|---|---|---|---|---|---|
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: reference.opcfoundation.org OPC-10031-4 v2.00.0 §6.2.1.9 Update 문구(시작 전 작업 지시 갱신, 이전 정보 전부 교체)를 원문 열람으로 대조. 단일 표준 기관 출처. |
+| f2 | 예 | 예 | 아니오 | 유지 | 확인: §6.2.1.12 Cancel 은 AllowedToStart·NotAllowedToStart 작업 지시를 취소하고 저장 정보를 지우며, 성공 후 JobOrderList 에 해당 JobOrderID 가 없어야 함(shall). 원문 열람. |
+| f3 | 예 | 예 | 아니오 | 유지 | 확인: §6.2.1.11 Stop 성공 후 Ended, §6.2.1.10 Abort 성공 후 Aborted. 원문 열람. Abort 는 실행 중·중단·미시작 모두에서 호출 가능(§6.2.1.1). |
+| f4 | 예 | 예 | 아니오 | 유지 | 확인: 표 45 Completed 'completed and is no longer in execution', Closed 'no further post processing is performed'. 원문 열람. |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: §1 Scope 에 2.0 은 1.0 과 호환되지 않고 새 namespace 를 정의해 이전 응용이 두 모델을 함께 지원할 수 있다고 적음. 원문 열람(OPC-10031-4/1). |
+| f6 | 예 | 예 | 아니오 | 유지 | 의견: f1~f4 에서 도출한 판단으로 근거와 맞음. 페이지에서는 '구축자 의견'임을 밝혀야 함(required_fixes). |
+| f7 | 예 | 예 | 아니오 | 유지 | 확인: 커밋 e9b7630 dispatch_task_response.json raw 열람. 성공 분기 required [success, state], state→task_state.json, 실패 분기는 errors(error.json 배열)이며 required 없음. 발행일 미확인. |
+| f8 | 예 | 예 | 아니오 | 유지 | 확인: cancel_task_response.json 은 $ref simple_response.json 뿐, simple_response 는 성공 success=true, 실패 success=false·errors 필수. raw 열람. ref-1454·ref-1455 는 같은 프로젝트라 교차 확인 아님. |
+| f9 | 예 | 예 | 아니오 | 유지 | 추정 유지: f8 스키마 구조와 ref-111 task_state 의 canceled 상태에서 도출한 추론. 응답과 실제 정지의 시간 관계는 미확인. |
+| f10 | 예 | 예 | 아니오 | 유지 | 확인: ref-1456 PDF 텍스트 변환 열람으로 제목 'APIs for Integration via Fleet Management Systems', 문서일 2024-07-10, 'This API is deprecated.' 확인. ref-1458 PDF(판 2308, 2023-08-19)에서 SAP BTP 기반·SAP EWM 사용자의 로봇 통합 제품 설명 확인. 같은 회사 문서라 교차 확인 아님. 인터페이스 문서 내용에 관한 진술이라 사실 유지. |
+| f11 | 예 | 예 | 아니오 | 유지 | 확인: 'requires the response to be returned before calling the relevant API method for callback message' 문구 대조. 다만 claim 의 '시스템 설계를 단순하게 하려고'라는 목적 문구는 검증 열람에서 확인하지 못해 수정 지시함. |
+| f12 | 예 | 예 | 아니오 | 유지 | 확인: Cancel Robot Tasks 에서 취소 성공 시 Update Robot Task Status(taskStatus CANCELLED), 취소 불가 시 Update Robot Task Cancelation Status 호출. |
+| f13 | 예 | 예 | 아니오 | 유지 | 확인: messageId 필수·'Message ID in UUID format', 예시 본문에 robotTaskId 사용(한 예시는 'task-uuid' 자리표시자). 중복 제거·재시도 보장은 문서에 없음. |
+| f14 | 예 | 예 | 아니오 | 유지 | 의견: f7·f8·f11·f12 에서 도출한 비교 기준. '구축자 의견' 명시 필요. SAP 현재 권장 경로의 계약은 미확인. |
+| f15 | 예 | 예 | 아니오 | 유지 | 확인: Oracle WMS 26c Change Priority 도입 문단 'Ready, Held or Created s status' 원문 열람. 문서 ID G55063-04·발행일 2026-08-14(메타데이터)는 이번 열람 화면에서 확인하지 못함(URL 의 26c 만 확인). |
+| f16 | 예 | 예 | 아니오 | 유지 | 확인: 외부 시스템도 긴급도에 따라 하나 이상 작업 우선순위 변경 가능, 'Task/ Change task priority Permission' 활성 시에만. priority 예 3·20. |
+| f17 | 예 | 예 | 아니오 | 유지 | 확인: ref-1458(판 2308, 2023-08-19) 텍스트 변환 열람. 최적화 미사용 시 자원 그룹 큐 순서, 첫 큐 완료 후 다음 큐, 큐 안 LSD 정렬·없으면 생성 시각. 최적화 사용 시에도 LSD 로 먼저 정렬. |
+| f18 | 예 | 예 | 아니오 | 유지 | 의견: f15~f17 에서 도출. '구축자 의견' 명시 필요. 업체 간 우선순위 숫자 대응은 미확인. |
+| f19 | 예 | 예 | 아니오 | 유지 | 확인: mdpi.com 직접 열람은 403, 텍스트 변환 경로로 §5.2 'the communication with IIoT systems is not yet active in the current implementation' 대조. Crossref 로 저자 17명·2025-06-27·15(13) 확인. |
+| f20 | 예 | 예 | 아니오 | 유지 | 확인: MES·ERP 용 REST API, 'MQTT broker, intended to enable real-time event publishing from the AMRs', 'future integration with the VDA 5050 protocol' 이 모두 미래 기능으로 서술됨. |
+| f21 | 예 | 예 | 아니오 | 유지 | 확인: §4 'two AMRs and one AGV, from different brands', AGV 는 ABB 가 개발한 ASTI TriBot(AMR 은 Aiten MP10·SEER AMB-1000JS). §6.2 최대 20대와의 관계는 미확인(oq-365). |
+| f22 | 예 | 예 | 아니오 | 유지 | 확인: f19·f20 원문 대조로 기존 s3 39행 '자체 REST·MQTT 인터페이스를 썼다'와 s8 42행 GreenAuto 문장이 원문(미래 확장·미가동)과 다름을 확인. 기존 위키의 오류 정정이므로 한쪽을 고르는 충돌이 아니라 원문 기준 정정으로 처리. |
+| f23 | 예 | 예 | 아니오 | 유지 | 확인: mediaTUM PDF 는 봇 차단으로 검증 열람 실패, 같은 논문의 arXiv 판(2409.12619v1) §2 'OOBSRP considers one picking zone of a single picker' 대조. 학술지판 쪽수(p160)는 미확인. |
+| f24 | 예 | 예 | 아니오 | 유지 | 확인: arXiv 판 §2 'an empty robot is immediately available for the picker after she has completed a batch'. 학술지판 쪽수 미확인. |
+| f25 | 예 | 예 | 아니오 | 유지 | 확인: arXiv 판 §4 'create 2600 OBSRP∗ instances and solve more than 2380 of those to optimality', 개입형 Pcart·Robot 으로 한정, §4.1 Data sets·§4.2 결과. 학술지판과의 동일성은 arXiv 판 기준(학술지판 원문은 검증에서 못 엶). |
+| f26 | 예 | 예 | 아니오 | 유지 | 의견: f23~f25 적용 조건에서 도출, 기존 점근적 최적성 서술을 부정하지 않음. '구축자 의견' 명시 필요. |
+| f27 | 예 | 예 | 아니오 | 유지 | 확인(추정 유지): 아르고 공식 블로그 2025-01-21 원문 열람. WMS–플로틱 자율주행로봇 연동, 남이천 실증 계획, 오더 피킹 로봇 30대 지원 문구 확인. 회사 발표이며 실증 결과 미확인. 기존 ref-137 보도의 1차 출처. |
+| f28 | 예 | 예 | 아니오 | 유지 | 확인(추정·벤더 주장 유지): '수작업으로 20분 이상 소요되는 오더 피킹 작업을 10분 이내로 단축' 문구 확인. 앞선 실증의 성과이며 측정 조건 미공개. |
+| f29 | 예 | 예 | 아니오 | 유지 | 확인(추정·벤더 주장 유지): LG CNS 2026-07-16 고객 사례, WCS 로 자재 입고~출하 조율, SCADA 기반 관제, AMR·ACR 구성 확인. 공급자 단독 설명이며 WCS·SCADA 는 22. 설비·건물 시스템 연동 쪽 내용. |
+| f30 | 예 | 예 | 아니오 | 유지 | 확인: SAP Architecture Center 'Last updated May 12, 2026', 디지털 warehouse AI agents 는 이송 오더를 만들고 관리하지만 집지 못함, Embodied AI agents 의 세 skill 중 'Semantic Understanding of Business Objects'. 참조구조 문서 내용에 관한 진술이라 사실 유지. 최초 발행일 미확인. |
+| f31 | 예 | 예 | 아니오 | 유지 | 확인(추정·벤더 주장 유지): 2025-11-05 게시, Lukasz Ostrowski, 'a single Anigon unit', EWM 의 delivery data·order priorities·storage locations, 'exploration phase ... validated in dedicated beta and test system environments'. 수정일 2026-06-18 은 이번 열람 화면에 표시되지 않아 확인 못함. |
+| f32 | 예 | 예 | 아니오 | 유지 | 확인: 커밋 56455eb README raw 열람, Latest Update '2026-08 \| VDA5050 3.0 support, add generic action node.', '2026-03 \| Mission Dispatch MCP, ...'. 커밋일 미확인. |
+| f33 | 예 | 예 | 아니오 | 유지 | 확인: packages/agentic-utilities/mission-dispatch-mcp/src/server.py raw 열람, list_tools 11개(get_robot_status … create_robot, dispatch_mission), 취소 도구 없음. |
+| f34 | 예 | 예 | 아니오 | 유지 | 확인: _handle_dispatch_mission → dispatch_move_mission, queries.py 는 경유점 1개 route 미션 트리·timeout(기본 300)·deadline·needs_canceled=False 를 {base_url}/mission 으로 POST. |
+| f35 | 예 | 예 | 아니오 | 유지 | 확인: 커밋 edbc642 README raw 열람, Ubuntu 22.04·ROS 2 Humble·Ignition Gazebo Fortress, Tugbot 1대 시뮬레이션, 이동·정지·토픽·/scan·odometry 예시 프롬프트. |
+| f36 | 예 | 예 | 아니오 | 유지 | 의견: f33~f35 에서 도출. '구축자 의견' 명시 필요. 승인 관문 위치는 미확인(oq-141). |
+| f37 | 예 | 예 | 아니오 | 유지 | 확인: Frontiers 2022-08-23 원문 열람, 표 1 step 9 화면 버튼으로 시료 제거 확인, ingestor 가 RMF 에 완료 통지, step 11 ICU 복귀 요청. |
+| f38 | 예 | 예 | 아니오 | 유지 | 확인: §4 에서 TIAGo·Clearpath Jackal 은 시험 환경에서만 검증, 'yet to apply multiple delivery robots inside the Hospital'. |
+
+## 항목별 결과
+
+| 항목 | 결과 | 내용 |
+|---|---|---|
+| 분류 적합성 | 예 | — |
+| 범위 경계 | 예 | — |
+| 중복·모순 | 예 | f22 는 기존 주제 페이지 2026-09-25-area01-s3 39행 '확인한 연동 사례는 자체 REST·MQTT 인터페이스를 썼다 [추정][^ref-136]'과 s8 42행 GreenAuto 문장과 모순된다 — 원문 대조로 기존 문장이 틀렸음이 확인됐으므로 원문 기준으로 정정한다(출처 충돌이 아님), f1~f5 는 기존 s4 40행·s7 44행의 Job Control 메서드 목록·Abort→Aborted·2.00.0 서술과 겹치는 부분이 있다 — 기존 각주를 재사용하고 새 내용(Update 전부 교체, Cancel 조건, Stop→Ended, Completed·Closed, 1.0 비호환)만 더한다, f27·f28 은 기존 5절 국내 문단·s8 43행의 ref-137(머니투데이) 보도와 같은 사건이다 — 새 문단을 만들지 않고 1차 출처 ref-1459 를 병기한다, 트랙 반영 제안 3번(2026-09-25-77, Update 는 실행 전만·Abort→Aborted)은 f1·f3 과 기존 s4 내용과 겹친다 |
+| 용어 일관성 | 예 | — |
+| 인용 길이·저작권 | 예 | — |
+| 정정 요청 반영 | — | — |
+
+## 수정 지시(required_fixes)
+
+- f6·f14·f18·f26·f36: 페이지에 [의견]으로 실을 때 '구축자 의견'임과 근거 finding 의 출처 각주를 함께 밝힌다 — [의견]은 누구의 의견인지 밝혀야 한다.
+- f22: 주제 페이지 2026-09-25-area01-s3 39행과 s8 42행의 GreenAuto 서술을 'MES·ERP 용 REST API, AMR 실시간 이벤트·IIoT 용 MQTT broker, VDA 5050 연동은 미래 확장 계획(당시 미가동)'으로 고치고 [사실][^ref-136]을 붙인다 — 원문 §5.2 와 기존 문장이 다르다.
+- ref-136: reference_updates 에서 기관을 'Lopes, D., Pereira, T., Gonçalves, A. 외(저자 17명; Applied Sciences, MDPI)'로, 발행일을 2025-06-27 로 고치고 각주 정의의 '(원문 미열람)'을 뗀다 — Crossref·원문 열람으로 확인됐다.
+- ref-131: 각주 정의의 발행일을 2024-01-31 로, 원문 열람 표시를 해제하고 sources 프런트매터에 다시 넣는다 — 이번에 원문을 대조했다.
+- f11: '시스템 설계를 단순하게 하려고'라는 목적 문구는 빼고 '요청→응답→콜백 순서로 응답을 콜백보다 먼저 돌려주도록 요구한다'만 쓴다 — 목적 문구는 검증 열람에서 확인되지 않았다.
+- f10·f17: 제품명은 'SAP Warehouse Robotics(SAP BTP 기반)'로 쓰고 SAP EWM 과 구별하며, FMS 연동 API(ref-1456)는 폐기(Deprecated) 문서이고 integration services 경로(ref-1458)와 다른 연동 경로임을 본문에 밝힌다 — 두 문서를 현재 권장 계약으로 섞지 않기 위해서다.
+- f15·f16: ref-1457 각주에는 확인된 제목·URL(26c)만 쓰고, 문서 ID G55063-04 는 넣지 않는다 — 검증 열람 화면에서 확인되지 않았다(발행일 2026-08-14 는 페이지 메타데이터 기준이라고 각주에 병기).
+- f23~f25: Lorenz 외 서술에는 학술지판 쪽수(p160·p168)를 쓰지 않고 절 번호(§2·§4·§4.1·§4.2)만 쓴다 — 검증은 같은 논문의 arXiv 판(2409.12619v1)으로 했고 학술지판 쪽수는 확인하지 못했다. 기존 8절의 점근적 최적성 서술은 유지하고 적용 조건만 덧붙인다.
+- f27·f28: 기존 5절 국내 문단과 s8 43행에 1차 출처 [^ref-1459] 를 병기하고, f28 의 '20분 이상→10분 이내'는 [추정] '벤더 주장'과 '앞선 실증의 성과이며 남이천 30대 사업 결과가 아님'을 함께 쓴다.
+- f29: 5절 제조 공장 사례는 [추정] '벤더 주장'으로 쓰고, WCS·SCADA 통합 관제는 연계 대상으로 짧게 다뤄 22. 설비·건물 시스템 연동·38. 모니터링·이상 탐지·원인 분석과 10절에서 연결한다 — 설비 제어는 분류 원문 19장의 외부 연계 영역이다.
+- f30·f31: Embodied AI 휴머노이드 작업 수행은 본문에서 업무 객체 해석 계층의 예로만 쓰고 10절에 44. 로봇 기반 모델·언어 모델 계획 연결을 더한다. f31 은 [추정] '벤더 주장'·'탐색 단계, beta·test 환경 검증, 로봇 1대'를 병기하고, 각주 발행일은 2025-11-05 만 쓴다(수정일 2026-06-18 은 검증 열람에서 확인 못함).
+- f33~f36: MCP 도구 범위는 업무 요청 접점 판단으로 한정하고 10절에서 12. 채팅으로 업무 지시·오케스트레이션과 연결하며, 공개 코드를 다사업자 WMS 운영 검증으로 쓰지 않는다 — 대화 결과는 승인된 계획만 실행된다는 C. 채팅 기반 구성·운영 원칙과 범위를 섞지 않기 위해서다.
+- f37: 병원 사례(현장 유형 '병원')에서 'ingestor' 는 용어집 표기 '인제스터(디스펜서·인제스터)'로 쓰고 용어집 링크를 단다; 도착과 인수 확인 분리를 5절 '완료·인계' 항목에, f38 의 'TIAGo 1대 실증·이기종 2종은 별도 시험 환경'을 '수행 자원' 항목에 둔다.
+- 5절 적용 사례: 새 사례마다 현장 유형(물류창고·제조 공장·병원)을 밝히고 여섯 항목 가운데 근거가 있는 칸만 채우며, site_matrix_updates 를 실제로 채운 칸(물류창고: 수행 자원·예외·성과, 제조 공장: 해당 칸, 병원: 수행 자원·완료·인계)과 일치시킨다.
+- 직접 인용: ref-131·ref-1456 등 한 출처에서 여러 finding 의 evidence_excerpt 를 쓰더라도 페이지 직접 인용은 출처당 1회 짧은 구절만 두고 나머지는 재서술한다.
+- open_questions_new 2번(Yu·Srinivas 재검증, 근거 ref-132)과 3번(ISA-95 Part 1 2025 조항, 근거 ref-002)은 이번 브리프의 sources·findings 에 근거가 없으므로 등록하지 않고 다음 해당 실행으로 넘긴다; 1번(아르고–플로틱 실증 결과, 근거 f27)만 등록한다.
+- open_questions_resolved 는 비어 있으므로 oq-019·oq-020·oq-021·oq-351·oq-012·oq-365·oq-046·oq-141 은 모두 열림으로 두고 11절에는 부분 근거(finding 의 각주)만 적는다; oq-002 는 이번 근거 없음으로 둔다.
+- 트랙 반영 제안(data/area_reflection_proposals.json): 2026-09-25-77 제안은 f1·f3 과 기존 s4 Abort 서술 범위에서만 7절에 반영하고 그 제안의 ref-681·'원문 미열람' 표기는 쓰지 않는다; 2026-09-25-37 의 두 제안(Job Control 선택 필드·기한, Mecalux Easy WMS 대화형 비서)은 이번 브리프에 근거 finding 이 없으므로 반영하지 않고 제안 상태로 둔다.
+- reference_updates: 신규 출처 ref-1453~ref-1463 11건은 모두 사용됐으므로 등록하고, 원문 열람한 출처에 source_unopened: false 를 유지한다; 각주 발행일을 모르는 GitHub 고정 커밋 출처(ref-1453·ref-1454·ref-1455·ref-1463·ref-1341)와 ref-1461 은 발행일 자리에 '미확인'을 쓴다.
+
+## 검증 노트
+
+판정: 조건부 승인. 확인 38건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: 없음(단 ref-133 은 학술지 저장소 PDF 가 봇 차단으로 열리지 않아 같은 논문의 arXiv 판 2409.12619v1 로 대조했고, ref-136 은 mdpi.com 이 403 이라 텍스트 변환 경로와 Crossref 로 대조했으며, SAP PDF 두 건 ref-1456·ref-1458 도 텍스트 변환 경로로 대조했다). 주의: 핵심 주장은 모두 단일 출처다(OPC 명세, Open-RMF 스키마 세 파일은 같은 프로젝트, SAP 문서는 같은 회사). SAP Warehouse Robotics FMS 연동 API 는 2024-07-10 판에서 이미 폐기(Deprecated)로 표시된 문서이며 현재 권장 계약이 아니다. 아르고–플로틱 '20분 이상→10분 이내', LG CNS WCS·SCADA, Bosch·Aimbo 개념검증은 벤더 주장이다. Mission Dispatch MCP 와 ROS-MCP 데모는 공개 코드·시뮬레이션 범위이며 운영 검증이 아니다. GreenAuto 논문의 MES·ERP 용 REST API·MQTT broker·VDA 5050 연동은 미래 확장(미가동)으로 확인돼 기존 서술을 정정한다. 열린 질문 해결 인정: 없음(부분 근거만). 정정 요청 없음. 새 열린 질문 3건 가운데 근거가 브리프에 있는 1건만 등록한다. 트랙 반영 제안 3건 가운데 2026-09-25-77 은 기존 Abort 서술과 f1·f3 범위에서 반영하고, 2026-09-25-37 의 두 건은 근거 finding 이 없어 반영하지 않는다. 검증 검색 6회 사용.

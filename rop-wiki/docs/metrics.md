@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-10-10
+기준일: 2026-10-11
 
 ### 영역별 페이지 상태 분포
 
@@ -203,7 +203,7 @@ version: 1
 ### 반려·보류 건수
 
 - 1차 반려 0건, 2차 불통과·재검증 0건
-- 보류(runs/parked) 7건
+- 보류(runs/parked) 8건
 
 ### 출처 유형 분포
 
@@ -227,9 +227,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 15 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 15 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 15 | published |
-| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 15 | published |
-| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-25 | 15 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 16 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 16 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 16 | published |
+| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 16 | published |
+| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-25 | 16 | published |
 <!-- auto:metrics:end -->

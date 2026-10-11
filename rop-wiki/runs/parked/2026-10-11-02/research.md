@@ -1,0 +1,202 @@
+# 리서치 브리프 2026-10-11-02
+
+| 항목 | 값 |
+|---|---|
+| 실행 id | 2026-10-11-02 |
+| 날짜 | 2026-10-11 |
+| 실행 유형 | update (갱신) |
+| 대상 영역 | 23. 업무 시스템 연동 |
+| 대분류 | F. 연동 |
+
+## 갭(비어 있거나 약한 섹션)
+
+- 섹션 3. 왜 중요한가(주제 페이지 2026-09-25-area01-s3) — 39행 '확인한 연동 사례는 자체 REST·MQTT 인터페이스를 썼다'가 근거(ref-136) 원문과 다름: REST·MQTT 는 미래 확장 계획(미가동)
+- 섹션 4. 핵심 개념과 용어(2026-09-25-area01-s4) — OPC Job Control 은 메서드 이름 나열뿐이고 Update 의 전부 교체, Cancel 의 시작 전 조건, Stop→Ended, Completed·Closed 구분, 2.0 비호환이 없음(ref-131 원문 미열람)
+- 섹션 5. 적용 사례 (현장 유형 명시) — 물류창고 시나리오 하나와 국내 협력 보도(ref-137, 2차 보도·원문 미열람)뿐이고 1차 출처·제조 공장·병원 인계 확인 사례가 없음
+- 섹션 6. 대표 접근법과 기술(2026-09-25-area01-s6) — 요청 응답과 상태 통지·취소 결과의 구분, WMS 쪽 우선순위 변경 허용 범위, MCP 같은 새 접점의 실제 범위 근거가 없음
+- 섹션 7. 관련 표준·프레임워크·오픈소스(2026-09-25-area01-s7) — OPC Job Control 2.0 의 1.0 비호환, Open-RMF 응답 스키마, 업무 시스템–로봇 연동 제품 API(SAP Warehouse Robotics·Oracle WMS)와 Mission Dispatch MCP 미반영
+- 섹션 8. 대표 연구와 자료(2026-09-25-area01-s8) — GreenAuto(ref-136) 저자 미확인·REST·MQTT 가동 여부 오기, Lorenz 외(ref-133) 적용 조건 미기재, 국내 발표의 1차 출처 없음
+- 섹션 11. 열린 질문 — oq-019·oq-020·oq-021·oq-002·oq-012 와 연관 oq-046·oq-141·oq-351·oq-365 의 부분 근거 미반영
+- 정정 요청 없음(외부 조사 검증에서 나온 정정만 반영)
+
+## 조사 질문
+
+1. 업무 시스템의 요청이 바뀌거나 취소되면 진행 중인 로봇 작업을 어떻게 바꿀 것인가? [분류원문]
+2. oq-020 ISA-95 작업 지시 표준(OPC UA for ISA-95 Job Control)은 갱신·취소·중단·완료를 어떤 상태 조건으로 구별하는가? (섹션 4·6·7 겨냥)
+3. oq-021·oq-351 업무 시스템–관제 연동 계약은 취소 요청의 응답과 실제 취소 결과·취소 불가를 어떻게 나눠 알리는가? (섹션 6·9 겨냥)
+4. oq-019 WMS 는 우선순위 변경을 어떤 작업 상태·권한에서 허용하고, 대기열 정렬 기준은 무엇인가? (섹션 5·6 겨냥)
+5. 기존 8절 자료(GreenAuto, Lorenz 외, 국내 협력 발표)의 구현 범위·적용 조건·1차 출처는 원문에서 무엇으로 확인되는가? (섹션 3·5·8 겨냥)
+6. oq-141 MCP·업무 객체 해석 같은 최근 접점은 공개 코드·문서에서 실제로 무엇을 제공하는가? (섹션 6·7 겨냥)
+7. oq-012 로봇 도착과 업무상 인수 확인을 별도 단계로 둔 현장 사례가 있는가? (섹션 5·9 겨냥)
+
+## 발견 사항
+
+| id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
+|---|---|---|---|---|---|---|---|---|
+| f1 | [사실] | OPC 10031-4(OPC UA for ISA-95 Part 4: Job Control) 2.00.0 의 Update 메서드는 아직 시작하지 않은 작업 지시를 새 지시 정보로 갱신하며, 이전에 저장된 정보를 모두 교체한다. | ref-131 | 아니오 | medium | 2026-10-11 | — | — |
+| f2 | [사실] | 같은 명세의 Cancel 메서드는 시작하지 않은(AllowedToStart 또는 NotAllowedToStart) 작업 지시를 취소하고 저장된 정보를 지우며, 성공하면 JobOrderList 에 그 JobOrderID 의 작업 지시가 남지 않아야 한다. | ref-131 | 아니오 | medium | 2026-10-11 | 예외·성과 | — |
+| f3 | [사실] | 같은 명세의 Stop 메서드는 시작된 작업 지시를 멈추며, 성공하면 작업 지시는 Ended 상태여야 한다(Abort 가 Aborted 로 바꾸는 것과 구별된다). | ref-131 | 아니오 | medium | 2026-10-11 | 예외·성과 | — |
+| f4 | [사실] | 같은 명세에서 Ended 의 하위 상태 Completed 는 작업 지시의 실행이 끝난 상태이고, Closed 는 완료 뒤 더 이상 후처리도 하지 않는 상태로 구분된다. | ref-131 | 아니오 | medium | 2026-10-11 | 완료·인계 | — |
+| f5 | [사실] | Job Control 2.0 은 1.0 과 호환되지 않는 변경(breaking changes)을 담고 새 namespace 를 정의해, 이전 응용이 필요하면 두 모델을 함께 지원할 수 있게 한다. | ref-131 | 아니오 | medium | 2026-10-11 | — | — |
+| f6 | [의견] | 업무 쪽 '취소'를 로봇 명령 하나로 옮기기 전에 작업의 현재 상태(시작 전·실행 중·종료 후), 지울 기록과 남길 이력, 실행 종료 뒤 후처리 여부를 먼저 정해야 할 것으로 보인다. | ref-131 | 아니오 | low | 2026-10-11 | — | — |
+| f7 | [사실] | Open-RMF rmf_api_msgs 의 dispatch_task_response 스키마는 성공 분기(success=true)에서 success 와 작업 상태(task_state 를 따르는 state)를 필수로 요구하고, 실패 분기(success=false)에는 실패 이유를 담는 errors 배열을 둔다. | ref-1453 | 아니오 | medium | 2026-10-11 | — | — |
+| f8 | [사실] | 같은 저장소의 cancel_task_response 스키마는 자체 필드 없이 simple_response 를 참조하며, simple_response 는 성공이면 success=true 만, 실패면 success=false 와 errors 를 필수로 요구한다. | ref-1454, ref-1455 | 아니오 | medium | 2026-10-11 | — | — |
+| f9 | [추정] | 따라서 Open-RMF 의 취소 응답은 요청 처리의 성패만 알리고, 작업이 실제로 멈춰 canceled 상태가 됐는지는 작업 상태(task_state)를 따로 관측해 확인해야 할 것으로 보인다. | ref-1454, ref-1455 | 아니오 | low | 2026-10-11 | 예외·성과 | — |
+| f10 | [사실] | SAP Warehouse Robotics(SAP BTP 기반 제품, SAP EWM 과 다른 제품)의 2024-07-10 자 'APIs for Integration via Fleet Management Systems' 문서는 제조사 관제(FMS) 연동 API 를 Deprecated 로 표시한다. | ref-1456, ref-1458 | 아니오 | medium | 2026-10-11 | — | — |
+| f11 | [사실] | 같은 SAP Warehouse Robotics FMS 연동 문서는 시스템 설계를 단순하게 하려고 FMS 가 요청에 대한 응답을 관련 콜백 메서드 호출보다 먼저 돌려주도록 요구한다(요청→응답→콜백 순서). | ref-1456 | 아니오 | medium | 2026-10-11 | — | — |
+| f12 | [사실] | 같은 문서의 취소 절차에서 FMS 는 로봇 작업 취소에 성공하면 Update Robot Task Status 로 taskStatus 를 CANCELLED 로 알리고, 취소할 수 없으면 별도 메서드 Update Robot Task Cancelation Status 로 알린다. | ref-1456 | 아니오 | medium | 2026-10-11 | 예외·성과 | — |
+| f13 | [사실] | 같은 문서의 공통 메시지는 UUID 형식의 messageId 를 필수로 두고, 작업 처리 예시는 이와 별도인 robotTaskId 로 로봇 작업을 가리켜 메시지 식별과 작업 식별을 나눈다. | ref-1456 | 아니오 | medium | 2026-10-11 | — | — |
+| f14 | [의견] | 업무 시스템–관제 인터페이스를 비교할 때 '접수 응답', '진행 통지(콜백·상태)', '취소 결과', '업무 확정'을 따로 보는 것이 좋아 보인다. | ref-1456, ref-1453, ref-1454 | 아니오 | low | 2026-10-11 | — | — |
+| f15 | [사실] | Oracle WMS Cloud 26c REST API 의 Change Task Priority API 는 Ready·Held·Created 상태인 작업의 우선순위만 바꿀 수 있다고 명시한다. | ref-1457 | 아니오 | medium | 2026-10-11 | 제약 | — |
+| f16 | [사실] | 같은 API 는 외부 시스템이 다른 작업의 긴급도에 따라 작업 우선순위를 바꿀 수 있게 하되, Task/Change task priority 권한이 켜져 있을 때만 쓸 수 있다. | ref-1457 | 아니오 | medium | 2026-10-11 | 제약 | — |
+| f17 | [사실] | SAP Warehouse Robotics 의 integration services 경로 문서(판 2308)는 로봇 배정 최적화를 켜지 않으면 로봇이 속한 자원 그룹의 큐 순서를 따르고(첫 큐를 끝내야 다음 큐), 큐 안의 창고 오더를 latest starting date(LSD) 순으로, LSD 가 없으면 생성 시각 순으로 정렬한다고 설명한다. | ref-1458 | 아니오 | medium | 2026-10-11 | 제약 | — |
+| f18 | [의견] | 우선순위 변경 가능 여부는 업무 작업의 상태와 로봇 실행 단계에 대해 따로 검사하고, 대기열 재정렬과 진행 중 작업 선점은 별도 정책으로 두는 것이 좋아 보인다. | ref-1457, ref-1458 | 아니오 | low | 2026-10-11 | — | — |
+| f19 | [사실] | Lopes 외(Applied Sciences 2025, GreenAuto)는 플릿 관리 시스템과 IIoT 시스템의 통신이 당시 구현에서 아직 활성화되지 않았다고 명시한다. | ref-136 | 아니오 | medium | 2026-10-11 | — | — |
+| f20 | [사실] | 같은 문단은 MES·ERP 에 로봇 위치·상태·이벤트 같은 정형 데이터를 내주는 REST API, AMR 의 실시간 이벤트 발행을 위한 MQTT broker, VDA 5050 연동을 모두 미래 확장으로 설계했다고 적는다. | ref-136 | 아니오 | medium | 2026-10-11 | — | — |
+| f21 | [사실] | 같은 논문 §4 에서 플릿 관리 시스템 개발에 쓴 로봇은 서로 다른 제조사의 AMR 2대와 AGV 1대(ABB ASTI TriBot)였다. | ref-136 | 아니오 | medium | 2026-10-11 | 수행 자원 | — |
+| f22 | [사실] | 정정: Lopes 외 논문은 REST·MQTT 연동을 사용했다고 하지 않고 MES·ERP용 REST API 와 AMR 실시간 이벤트·IIoT용 MQTT broker 를 미래 확장 계획(당시 미가동)으로 두므로, 2026-09-25-area01-s3.md 39행 '확인한 연동 사례는 자체 REST·MQTT 인터페이스를 썼다'와 s8 42행 GreenAuto 문장은 '계획(미가동)'으로 고쳐야 한다. | ref-136 | 아니오 | medium | 2026-10-11 | — | — |
+| f23 | [사실] | Lorenz·Otto·Gendreau(Networks 2025)의 온라인 주문 묶음·순서·경로 문제(OOBSRP) 모델은 피커 한 명이 맡는 피킹 구역 하나를 다룬다. | ref-133 | 아니오 | medium | 2026-10-11 | — | — |
+| f24 | [사실] | 같은 연구의 로봇 카트(Robot) 조건은 피커가 배치를 마치면 빈 로봇을 바로 쓸 수 있다고 가정한다. | ref-133 | 아니오 | medium | 2026-10-11 | — | — |
+| f25 | [사실] | 같은 연구의 계산실험(§4·§4.2)은 개입형 재최적화인 Pcart·Robot 두 시스템만 대상으로 OBSRP* 인스턴스 2,600개를 만들어 그중 2,380개 이상을 최적으로 풀고 Reopt 결과와 비교했으며, §4.1 은 데이터 생성 절이다. | ref-133 | 아니오 | medium | 2026-10-11 | — | — |
+| f26 | [의견] | Lorenz 외 결과는 상위 계획 갱신 정책을 비교하는 참고로 두되, 다수 피커·로봇 대기·메시지 멱등성·재고 확정 같은 연동 조건의 검증 근거로 쓰지 않는 것이 맞아 보인다. | ref-133 | 아니오 | low | 2026-10-11 | — | — |
+| f27 | [추정] | 아르고(테크타카)는 2025-01-21 발표에서 자사 WMS 와 플로틱 자율주행로봇을 연동한 자동화 모델을 설계해 남이천 물류센터에서 실증하고, 플로틱이 오더 피킹 특화 로봇 30대를 지원한다고 밝혔다. | ref-1459 | 아니오 | low | 2026-10-11 | 물류창고 / 수행 자원 | — |
+| f28 | [추정] | 같은 발표에서 플로틱 대표는 앞선 실증사업에서 수작업으로 20분 이상 걸리던 오더 피킹을 10분 이내로 줄였다고 말했으나, 이는 남이천 30대 사업의 성과가 아니다. | ref-1459 | 아니오 | low | 2026-10-11 | 물류창고 / 예외·성과 | 벤더 주장 |
+| f29 | [추정] | LG CNS 는 2026-07-16 고객 사례에서 HD현대일렉트릭 청주 배전캠퍼스 신공장에 자재 입고·보관·생산라인 공급·완제품 이송·출하를 조율하는 창고 제어 시스템(WCS)과 SCADA 기반 통합 관제를 구축했다고 설명한다. | ref-1460 | 아니오 | low | 2026-10-11 | 제조 공장 | 벤더 주장 |
+| f30 | [사실] | SAP Architecture Center 의 참조구조 'Warehouse Pick & Place with Embodied AI Robotics'(2026-05-12 갱신)는 이송 오더를 만들고 관리하지만 물건을 집지는 못하는 디지털 warehouse AI agents 와 구별되는 Embodied AI agents 의 세 가지 주요 skill 중 하나로 업무 객체의 의미 이해(WMS 데이터 속성이 물리 작업 실행에 뜻하는 바, 예: 주문 우선순위·취급 요건)를 든다. | ref-1461 | 아니오 | medium | 2026-10-11 | — | — |
+| f31 | [추정] | SAP 뉴스(2025-11-05 게시, 2026-06-18 수정)는 Bosch·Aimbo 공동 개념검증에서 Aimbo 의 휴머노이드 Anigon 1대가 SAP EWM 의 배송 정보·주문 우선순위·보관 위치를 실시간 업무 문맥으로 받아 창고 작업을 수행했고, 이 사업은 탐색 단계로 전용 beta·test 시스템 환경에서 검증됐다고 밝힌다. | ref-1462 | 아니오 | low | 2026-10-11 | 물류창고 | 벤더 주장 |
+| f32 | [사실] | NVIDIA Isaac Mission Dispatch README(커밋 56455eb 고정본)의 Latest Update 표는 2026-03 에 Mission Dispatch MCP 추가를, 2026-08 에 VDA5050 3.0 지원과 generic action node 추가를 기록한다. | ref-1341 | 아니오 | medium | 2026-10-11 | — | — |
+| f33 | [사실] | 같은 커밋의 Mission Dispatch MCP 서버는 도구 11개(로봇 상태·미션 상태·미션 중 로봇·유휴 로봇·플릿 요약·로봇 건강 점검·미션 큐·최근 실패 조회, 연결 시험, 로봇 등록, 좌표 이동 미션 전송)를 등록하며, 미션 취소 도구는 없다. | ref-1341 | 아니오 | medium | 2026-10-11 | — | — |
+| f34 | [사실] | 같은 MCP 서버의 이동 미션 핸들러(_handle_dispatch_mission)는 queries.py 의 dispatch_move_mission 을 호출하고, 이 함수는 경유점 하나짜리 route 미션 트리와 timeout·deadline 을 담아 Mission Dispatch REST API 의 mission 경로로 POST 한다. | ref-1341 | 아니오 | medium | 2026-10-11 | — | — |
+| f35 | [사실] | robotmcp 의 demos-ros-mcp-server 예제 1 README 는 Ubuntu 22.04·ROS 2 Humble·Ignition Gazebo Fortress 에서 ROS-MCP 서버로 창고 시뮬레이션 속 Tugbot 1대를 자연어로 이동시키고 라이다·주행거리 센서와 위치를 조회하는 예시를 설명한다. | ref-1463 | 아니오 | medium | 2026-10-11 | — | — |
+| f36 | [의견] | MCP 를 업무 요청의 접점으로 평가할 때는 공개 코드가 주는 도구 범위(조회·등록·좌표 이동, 취소 없음)와 업무 요구(주문 ID 대응·허용 상태 검사·실행 전 승인·결과 대조·취소)를 따로 확인해야 하며, 공개 코드의 존재를 다사업자 WMS 주문·재고 처리의 운영 검증으로 볼 수 없다. | ref-1341, ref-1463 | 아니오 | low | 2026-10-11 | — | — |
+| f37 | [사실] | Tartu 대학병원 실증의 시료 운반 절차에서는 로봇이 실험실에 도착하면 직원이 화면 버튼으로 시료를 모두 꺼냈음을 확인하고 ingestor 가 RMF 에 인수 완료를 알린 뒤에야 로봇을 ICU 로 되돌리는 요청이 나간다. | ref-869 | 아니오 | medium | 2026-10-11 | 병원 / 완료·인계 | — |
+| f38 | [사실] | 같은 논문은 병원 안 운반 실증을 PAL Robotics TIAGo 1대로 했고, TIAGo·Clearpath Jackal 두 이기종 로봇을 RMF 로 관리하는 능력은 별도 시험 환경에서 검증했으며, 병원 안에는 여러 배송 로봇을 아직 적용하지 않았다고 밝힌다. | ref-869 | 아니오 | medium | 2026-10-11 | 병원 / 수행 자원 | — |
+
+### 근거 발췌
+
+- **f1**: §6.2.1.9 Update Method: "This Method updates an existing job order that has not yet been started, with the new order information. All previously stored information is replaced." 기존 위키(2026-09-25-area01-s4 40행)는 메서드 이름만 나열
+- **f2**: §6.2.1.12 Cancel Method: 시작 전(AllowedToStart·NotAllowedToStart) 작업 지시를 취소하고 "removes the stored information". 성공 후 JobOrderList 에 해당 JobOrderID 가 없어야 함(shall)
+- **f3**: §6.2.1.11 Stop Method: "After successful execution of the method, job order in the JobOrderList shall be in state Ended." Abort→Aborted(§6.2.1.10)는 기존 위키 s4 40행에 있어 새로 넣지 않음
+- **f4**: §6.2.4 표 45: Completed "has been completed and is no longer in execution", Closed "completed and no further post processing is performed". §6.2.1: Ended 하위 상태는 결과 수신 전 후처리 필요 여부를 드러낼 수 있음
+- **f5**: §1 Scope: "Version 2.0 ... is not compatible with version 1.0 ... defines a new namespace". OPC 공식 판 목록의 현행 2.00.0·2024-01-31 표시는 기존 위키 s4·s7 에 있어 새로 넣지 않음
+- **f6**: f1~f4 에서 도출: OPC Job Control 은 시작 전 취소(Cancel, 기록 제거)·실행 중 종료(Stop→Ended, Abort→Aborted)·완료와 후처리 종료(Completed·Closed)를 서로 다른 메서드·상태로 둔다. 이 상태와 VDA 5050·Open-RMF 상태의 표준 매핑은 확인 못 함(oq-020)
+- **f7**: 커밋 e9b7630 고정본 dispatch_task_response.json: oneOf[0].required = ["success","state"], state 는 $ref task_state.json; oneOf[1] 은 success=false 와 errors(error.json 배열). 실패 분기에는 required 없음 (발행일 미확인, 확인일 기준)
+- **f8**: cancel_task_response.json: "$ref": "simple_response.json". simple_response.json 설명 'only indicates success and describes any errors', 실패 분기 required [success, errors]. 취소 요청의 type·task_id 필수는 기존 위키 s6 에 있음 (발행일 미확인, 확인일 기준)
+- **f9**: f8 에서 도출. 작업 상태의 canceled·completed 값은 기존 위키 s4 42행(ref-111). 스키마만으로 응답과 실제 정지의 시간 관계·중복 요청 효과는 확인 못 함
+- **f10**: ref-1456 §1 제목 '(Deprecated)'와 주석 "This API is deprecated."; 문서일 2024-07-10. ref-1458 §1: SAP Warehouse Robotics 는 SAP BTP 위에 만든 제품이며 SAP EWM 사용자가 로봇을 통합하는 데 쓴다
+- **f11**: §1.5 p7: "SAP Warehouse Robotics requires the response to be returned before calling the relevant API method for callback message." 이후 1 요청, 2 응답, 3 콜백 순서를 그림으로 설명
+- **f12**: §1.6.2 Cancel Robot Tasks p12: 취소되면 Update Robot Task Status("taskStatus"="CANCELLED"), 취소 불가면 Update Robot Task Cancelation Status 호출. CANCELLED 일 때 작업 phase·상태는 null(§1.6.1)
+- **f13**: §1.3 Common Messages: messageId 필수, 'Message ID in UUID format'. §1.6.1 예시 본문에 robotTaskId. 실제 운영의 중복 제거·재시도 보장(exactly-once)은 문서에 없음(oq-046 관련)
+- **f14**: f7·f8·f11·f12 에서 도출: SAP 의 폐기된 FMS 계약과 Open-RMF 응답 스키마 모두 요청 응답과 이후 상태 통지를 나눈다. SAP 현재 권장 연동 경로의 계약은 확인 못 함
+- **f15**: Change Priority 문서 도입 문단: "change the priority of a task which is in Ready, Held or Created s status". 작업 ID 또는 작업 번호로 POST 호출. 문서 ID G55063-04, Release 26C
+- **f16**: 도입 문단: 외부 시스템도 긴급도에 따라 하나 이상의 작업 우선순위 변경 가능, 단 'Task/Change task priority Permission' 활성 시에만. 요청 본문 priority 는 정수 코드(예 3, 20)
+- **f17**: §2 Warehouse Order Processing p4: 최적화 미사용 시 queue sequence 확인, "sorts the warehouse orders in a queue by the latest starting dates (LSDs). If there are no LSDs, ... by the creation time". 최적화 사용 시에도 LSD 로 먼저 정렬. FMS API(ref-1456)와 다른 연동 경로
+- **f18**: f15~f17 에서 도출: Oracle 은 시작 전 상태(Ready·Held·Created)만 변경을 허용하고, SAP 통합 서비스는 대기 큐 안 정렬 규칙만 밝힌다. 진행 중 Open-RMF 작업의 재정렬 방법과 업체 간 우선순위 숫자의 대응은 확인 못 함(oq-019)
+- **f19**: §5.2 그림 10 설명(p11): "the communication with IIoT systems is not yet active in the current implementation"
+- **f20**: p11: 그림 하단 층은 "this future capability"로 REST API(MES·ERP 용)와 MQTT broker("intended to enable real-time event publishing from the AMRs")를 포함; VDA 5050 도 "future integration"
+- **f21**: §4 Robot System Description p6: "Three mobile robots ... consisting of two AMRs and one AGV, from different brands". §6.2 의 최대 20대 동시 감시와의 관계는 확인 못 함(oq-365)
+- **f22**: f19·f20 근거. s3 39행 [추정][^ref-136], s8 42행 '로봇 이벤트는 MQTT 로 발행하며 ... 설계했다고 기술한다' [사실][^ref-136]. 원문 p11 'not yet active', 'future capability'. 저자 '미확인'도 17명으로 정정
+- **f23**: §2 p160: "OOBSRP considers one picking zone of a single picker." 복수 피커·주문 납기 확장은 §5 향후 연구로 둠
+- **f24**: §2 p160: "assume that an empty robot is immediately available for the picker after she has completed a batch". 근거로 피커당 로봇 2대면 대개 대기가 없다는 선행 연구를 듦
+- **f25**: §4 서두 p168: "we create 2600 OBSRP* instances and solve more than 2380 of those to optimality", 개입형 Pcart·Robot 으로 한정. §4.1: 2 시스템 × 10 설정 × 13 주문 크기 × 10 = 2,600. 결과는 §4.2
+- **f26**: f23~f25 에서 도출: 단일 피커·단일 구역, 빈 로봇 즉시 가용 가정, 생성 인스턴스 계산실험. 기존 위키 s8 40행의 점근적 최적성 서술에 조건을 덧붙이는 것이며 결과를 부정하지 않음
+- **f27**: 아르고 공식 블로그 발표(Jan 21, 2025) 본문: '남이천 물류센터에서 실증한다. 이를 위해 플로틱은 오더 피킹 작업에 특화된 로봇 30대를 지원한다'. 기존 ref-137 보도와 같은 사건의 1차 출처이며 실증 결과는 미확인
+- **f28**: 벤더 주장: '앞서 실증사업에서도 수작업으로 20분 이상 소요되는 오더 피킹 작업을 10분 이내로 단축'. 측정 조건·현장·기간 미공개, 남이천 사업의 완료 결과로 합치지 않음
+- **f29**: 벤더 주장: Solution 2 'WCS와 SCADA 기반 통합 제어·관제 체계 구축'. AMR·ACR·디팔레타이징 로봇 구성 설명은 있으나 다제조사 수, API, 주문 상관키, 생산계획 변경 승인 규칙은 공개되지 않음
+- **f30**: 'Last updated on May 12, 2026'. Key Components: "Embodied AI agents for warehouse operations have three main skills" 중 'Semantic Understanding of Business Objects'. 최초 발행일 미확인
+- **f31**: 벤더 주장: 'Enabling autonomous warehouse execution at Bosch' 절, "a single Anigon unit", "validated in dedicated beta and test system environments". 사례 실시일 미확인, 생산 운영·다제조사 WMS 확정의 근거 아님
+- **f32**: Latest Update 표: '2026-08 | VDA5050 3.0 support, add generic action node.', '2026-03 | Mission Dispatch MCP, VDA5050 2.2 map distribution updates, ARM64 support'. 연월 표기까지만 사용 (발행일 미확인, 확인일 기준)
+- **f33**: mission-dispatch-mcp server.py list_tools: GET_ROBOT_STATUS·GET_MISSION_STATUS·GET_ROBOTS_ON_MISSIONS·GET_IDLE_ROBOTS·GET_FLEET_SUMMARY·CHECK_ROBOT_HEALTH·GET_MISSION_QUEUE·GET_RECENT_FAILURES·TEST_CONNECTION·CREATE_ROBOT·DISPATCH_MISSION. cancel 도구 없음. 코드 실행은 안 함
+- **f34**: server.py _handle_dispatch_mission → md_client.dispatch_move_mission(robot, x, y, theta, name); queries.py: data 에 mission_tree(route waypoints 1개)·timeout·deadline·needs_canceled=False, `return self._post_request("mission", data)`
+- **f35**: 커밋 edbc642 고정본 1_Gazebo_Tugbot/README.md 'Tested On': ROS 2 Humble, Ignition Gazebo Fortress. 'Sample Prompts': 이동·정지, 토픽 조회, /scan·odometry 조회. 단일 로봇 시뮬레이션이며 업무 시스템 연동은 없음 (발행일 미확인, 확인일 기준)
+- **f36**: f33~f35 에서 도출. Mission Dispatch 의 일반 REST 미션 서비스와 MCP 가 노출하는 도구 범위는 다르다. 실행 전 승인 관문 위치는 확인 못 함(oq-141)
+- **f37**: §3.1 그림 8·표 1 step 8~13: 9 'User presses a button ... confirming that all items are removed from the bin', 10 ingestor 가 RMF 에 완료 통지, 11 ICU 복귀 요청, 13 ICU 도착. ICU→검사실 운반 자체는 기존 위키에 있음
+- **f38**: §4 'Increasing the number and diversity of robots': 시험 환경에서 TIAGo·Jackal 검증, "we are yet to apply multiple delivery robots inside the Hospital". 병원 내 이기종 플릿 상시 운영 사례가 아님
+
+## 출처
+
+| id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
+|---|---|---|---|---|---|---|---|---|
+| ref-131 | OPC Foundation / ISA | OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (OPC 10031-4) | 2024-01-31 | 표준 | high | 2026-10-11 | https://reference.opcfoundation.org/specs/OPC-10031-4/6.2 | 아니오 |
+| ref-1453 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_response.json | 미확인 | 오픈소스 문서 | high | 2026-10-11 | https://github.com/open-rmf/rmf_api_msgs/blob/e9b7630c73a6fb41448ac143c0d7061f2b4389a2/rmf_api_msgs/schemas/dispatch_task_response.json | 아니오 |
+| ref-1454 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_response.json | 미확인 | 오픈소스 문서 | high | 2026-10-11 | https://github.com/open-rmf/rmf_api_msgs/blob/e9b7630c73a6fb41448ac143c0d7061f2b4389a2/rmf_api_msgs/schemas/cancel_task_response.json | 아니오 |
+| ref-1455 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/simple_response.json | 미확인 | 오픈소스 문서 | high | 2026-10-11 | https://github.com/open-rmf/rmf_api_msgs/blob/e9b7630c73a6fb41448ac143c0d7061f2b4389a2/rmf_api_msgs/schemas/simple_response.json | 아니오 |
+| ref-1456 | SAP | APIs for Integration via Fleet Management Systems (API for Integration with Fleet Management Systems (Deprecated)) | 2024-07-10 | 벤더 문서 | medium | 2026-10-11 | https://help.sap.com/doc/a02ad3695d5845fca1678810cb83562b/LATEST/en-US/379d6d880e5d4007b3751618080da80f_1.pdf | 아니오 |
+| ref-1457 | Oracle | WMS REST API Guide — Change Priority (Oracle Warehouse Management Cloud 26c) | 2026-08-14 | 벤더 문서 | medium | 2026-10-11 | https://docs.oracle.com/en/cloud/saas/warehouse-management/26c/owmre/change-priority.html | 아니오 |
+| ref-1458 | SAP | End-User Information for Integration via Integration Services (SAP Warehouse Robotics, Document Version 2308) | 2023-08-19 | 벤더 문서 | medium | 2026-10-11 | https://help.sap.com/doc/f08ea8f8686c46e89f1d7ed121f19d68/LATEST/en-US/b82aa9c86bd74777b86ec7f5766252d0.pdf | 아니오 |
+| ref-1459 | 아르고 풀필먼트(테크타카) | 아르고, 플로틱과 로봇 기반 물류 생산성 향상 실증 본격 실시 | 2025-01-21 | 벤더 문서 | medium | 2026-10-11 | https://blog.argoport.com/pr-robotcooperation250121 | 아니오 |
+| ref-1460 | LG CNS | 로봇 기반 물류 자동화와 통합 관제로 HD현대일렉트릭 신공장의 새로운 운영 체계를 구축하다 | 2026-07-16 | 벤더 문서 | medium | 2026-10-11 | https://www.lgcns.com/kr/moa/customer-story/detail.smartlogistics-robotic-logistics-2607-1 | 아니오 |
+| ref-1461 | SAP Architecture Center | Warehouse Pick & Place with Embodied AI Robotics | 미확인 | 벤더 문서 | medium | 2026-10-11 | https://architecture.learning.sap.com/docs/ref-arch/7e4168 | 아니오 |
+| ref-1462 | SAP (Lukasz Ostrowski, SAP News Center) | How SAP Brings Business AI into the Physical World: New Robotics Pilots Across Warehouse, Manufacturing, and Inspection Use Cases | 2025-11-05 | 벤더 문서 | medium | 2026-10-11 | https://news.sap.com/2025/11/sap-physical-ai-partnerships-new-robotics-pilots/ | 아니오 |
+| ref-1463 | robotmcp | demos-ros-mcp-server — Example 1: Tugbot Warehouse Simulation (Ignition Gazebo) README | 미확인 | 오픈소스 문서 | high | 2026-10-11 | https://github.com/robotmcp/demos-ros-mcp-server/blob/edbc642849bdde1187771a15e557ec9e219184a5/1_Gazebo_Tugbot/README.md | 아니오 |
+| ref-136 | Lopes, D., Pereira, T., Gonçalves, A. 외 (저자 17명; Applied Sciences, MDPI) | Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector | 2025-06-27 | 논문 | high | 2026-10-11 | https://www.mdpi.com/2076-3417/15/13/7235 | 아니오 |
+| ref-133 | Lorenz, Otto, & Gendreau (Networks, Wiley) | Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization? | 2025-05 | 논문 | high | 2026-10-11 | https://onlinelibrary.wiley.com/doi/full/10.1002/net.22281 | 아니오 |
+| ref-1341 | NVIDIA (nvidia-isaac GitHub) | isaac_mission_dispatch — README | 미확인 | 오픈소스 문서 | high | 2026-10-11 | https://github.com/nvidia-isaac/isaac_mission_dispatch | 아니오 |
+| ref-869 | Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI | Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test | 2022-08-23 | 논문 | high | 2026-10-11 | https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full | 아니오 |
+
+### 출처 요약
+
+- **ref-131**: OPC 10031-4 Job Control 2.00.0 명세. 이번에 전체 판(§1 Scope, §6.2.1.9~12 Update·Abort·Stop·Cancel, §6.2.4 표 45)을 원문 대조했고, 공식 판 목록의 현행 2.00.0·2024-01-31 표시를 확인했다.
+- **ref-1453**: Open-RMF 작업 배정 요청 응답 스키마(커밋 e9b7630 고정본). 성공 분기는 success·state(task_state) 필수, 실패 분기는 errors 배열을 둔다.
+- **ref-1454**: Open-RMF 작업 취소 요청 응답 스키마(커밋 e9b7630 고정본). 자체 필드 없이 simple_response.json 을 참조한다.
+- **ref-1455**: 성공 여부와 오류만 알리는 Open-RMF 응답 틀 스키마(커밋 e9b7630 고정본). 성공이면 success=true, 실패면 success=false 와 errors 가 필수다.
+- **ref-1456**: SAP Warehouse Robotics(SAP BTP 기반)와 제조사 관제(FMS)를 잇는 폐기(Deprecated) API 문서. 요청→응답→콜백 순서, messageId, 취소 성공(CANCELLED)·취소 불가 통지 메서드를 정의한다. LATEST URL 이라 확보본(2024-07-10) 기준.
+- **ref-1457**: Oracle WMS Cloud 26c 의 작업 우선순위 변경 API 문서(문서 ID G55063-04, Release 26C; 날짜는 페이지 메타데이터 dcterms.created). Ready·Held·Created 상태 작업만 변경할 수 있고 Task/Change task priority 권한이 필요하다.
+- **ref-1458**: SAP Warehouse Robotics(SAP BTP 기반, SAP EWM 사용자의 로봇 통합 제품)의 integration services 경로 사용자 문서. 최적화 미사용 시 큐 순서와 LSD·생성 시각 정렬 규칙을 설명한다. LATEST URL 이라 확보본(판 2308) 기준.
+- **ref-1459**: 테크타카(아르고)의 공식 발표. 자사 WMS 와 플로틱 로봇 연동 자동화 모델을 남이천 물류센터에서 실증하고 플로틱이 오더 피킹 로봇 30대를 지원한다고 밝힌다. 기존 ref-137 보도의 1차 출처다.
+- **ref-1460**: LG CNS 고객 사례. HD현대일렉트릭 청주 배전캠퍼스 신공장에 AMR·ACR 기반 물류 자동화와 WCS·SCADA 통합 제어·관제를 구축했다고 설명한다(공급자 단독 설명).
+- **ref-1461**: SAP 참조구조(2026-05-12 갱신, 최초 발행일 미확인). 디지털 warehouse AI agents 와 구별되는 Embodied AI agents 의 세 가지 주요 skill(업무 객체의 의미 이해 포함)을 설명한다.
+- **ref-1462**: SAP 로봇 파일럿 소개 뉴스(게시 2025-11-05, 수정 2026-06-18 article:modified_time). Bosch·Aimbo 단일 Anigon 개념검증 등 파트너 사례를 공급자 관점에서 소개한다.
+- **ref-1463**: ROS-MCP 서버로 Gazebo 창고 시뮬레이션의 Tugbot 1대를 자연어로 이동·센서 조회하는 데모 README(커밋 edbc642 고정본, 커밋일 미확인).
+- **ref-136**: Applied Sciences 15(13) 7235, DOI 10.3390/app15137235, 저자 17명(David Lopes 외). 자동차 부문 GreenAuto 다제조사 플릿 감시 시스템으로, IIoT·MES·ERP 연동은 미래 확장(미가동)이다. 기존 ref-136 저자 '미확인' 정정.
+- **ref-133**: Networks 86(2):157–173, 저자 3명(Catherine Lorenz, Alena Otto, Michel Gendreau), 심사 승인 2025-04-07, 온라인 발행 2025-05(일자 미확인). 이번에 대학 저장소(mediaTUM) PDF 로 §2·§4 를 원문 대조했다.
+- **ref-1341**: VDA 5050 기반 미션 배포 서비스 README. 이번에 커밋 56455eb 고정본의 Latest Update 표와 Mission Dispatch MCP 코드(server.py·queries.py)·MCP 튜토리얼을 확인했다(커밋일 미확인).
+- **ref-869**: Tartu 대학병원에서 Open-RMF 로 TIAGo 가 ICU 혈액 시료를 검사실로 운반한 현장 시험. 이번에 표 1 의 인수 확인 후 ICU 복귀 절차와 §4 의 TIAGo·Jackal 별도 시험 환경 검증을 확인했다.
+
+## 페이지 제안
+
+| 동작 | 경로 | 섹션 | 이유 |
+|---|---|---|---|
+| update | docs/categories/integration/business-system-integration.md | 3, 4, 5, 6, 7, 8, 9, 10, 11 | 갱신(차등). 대상 문장은 실제 위키 위치로 적는다(메모가 가리킨 로컬 보존본은 저장소에 없음). 섹션 3(주제 페이지 2026-09-25-area01-s3) — 39행 '확인한 연동 사례는 자체 REST·MQTT 인터페이스를 썼다 [추정][^ref-136]'를 'MES·ERP용 REST API, AMR 실시간 이벤트·IIoT용 MQTT broker 는 계획(미가동)'으로 정정(f22, 근거 f19·f20). / 섹션 4(2026-09-25-area01-s4 40행 작업 지시 항목) — Update 전부 교체(f1), Cancel 시작 전 조건·기록 제거(f2), Stop→Ended(f3), Completed·Closed 구분(f4); ref-131 원문 열람으로 '(원문 미열람)' 해제. Abort→Aborted·메서드 목록·2.00.0 2024-01-31 은 기존 내용 확인(s4 40행·s7 44행)으로 중복 추가 안 함. / 섹션 5 — 국내 문단(본문 88행·s8 43행)에 1차 출처 ref-1459 병기와 '30대 지원 발표, 20분 이상→10분 이내는 앞선 실증 성과'(f27·f28, 벤더 주장), 제조 공장 사례 LG CNS WCS·SCADA(f29, 벤더 주장), 병원 인계 확인 후 ICU 복귀·TIAGo 1대/Jackal 별도 시험(f37·f38; ICU→검사실 운반은 ref-869 기존 내용 확인), Bosch·Aimbo 단일 Anigon 개념검증(f31, 벤더 주장·beta/test 환경). / 섹션 6(2026-09-25-area01-s6) — 취소 번역 전 상태 확인(f6), Open-RMF 배정 응답 success·state 필수(f7)와 취소 응답 simple_response 참조(f8)·관측 분리(f9), SAP Warehouse Robotics FMS API(폐기)의 응답-콜백 순서·취소 결과 통지·messageId/robotTaskId(f10~f13, 제품명은 SAP Warehouse Robotics(SAP BTP 기반)로 쓰고 EWM 과 구별), 인터페이스 비교 열(f14), 우선순위 변경 허용 상태·권한·LSD 정렬(f15~f18), Mission Dispatch MCP 도구 범위·이동 경로·Tugbot 시뮬레이션(f33~f36). priority 의 fleet 스키마 일치·cancel 요청 type·task_id 필수·task_state 상태 열거는 기존 내용 확인(s6 43행·s4 42행), phase별 취소 반응(rmf_task README ref-404·Task.hpp ref-366)은 2026-10-10 area24-s6·채팅 트랙 stage-3 에 있어 넣지 않음. / 섹션 7(2026-09-25-area01-s7 표) — OPC Job Control 행에 2.0 의 1.0 비호환·새 namespace(f5)와 '상태 전이는 원문 미열람' 해제, Open-RMF 행에 dispatch·cancel 응답 스키마(f7·f8), 새 행: SAP Warehouse Robotics FMS API(폐기, f10), Oracle WMS Change Priority API(f15·f16), Mission Dispatch MCP(2026-03)·VDA5050 3.0 지원(2026-08) 기록(f32), SAP Embodied AI 참조구조(f30). ISA-95 Part 1 2025 발행 발표(ref-002)는 기존 내용 확인으로 넣지 않음. GS1 CBV 2.0 receiving·arriving·accepting·unloading 은 area02·17·24 와 EPCIS 인계 페이지(ref-044)에 있어 넣지 않음. / 섹션 8(2026-09-25-area01-s8) — 42행 GreenAuto 항목 저자 17명·발행일로 서지 정정, 'REST·MQTT·VDA 5050 은 미래 확장(미가동), 개발 대상 AMR 2·AGV 1'(f19~f22; 최대 20대·120 ms 는 2026-10-10 area20-s8 기존 내용 확인), 40행 Lorenz 항목에 단일 피커·단일 구역, 빈 로봇 즉시 가용 가정, §4·§4.2 의 Pcart·Robot 2,600개 중 2,380개 이상 최적 풀이 범위 추가(f23~f26, 기존 결과는 유지), 43행 머니투데이 항목에 1차 출처(f27·f28). / 섹션 9 — 접수 응답·진행 통지·취소 결과·업무 확정 분리(f9·f14), 도착과 인수 확인 분리(f37), MCP 도구 범위와 업무 요구 분리(f36)를 책임 경계 근거로. / 섹션 10 — 12. 채팅으로 업무 지시·오케스트레이션(f33~f36, oq-141), 63. 병원·의료(f37·f38), 62. 제조 공장(f29), 26. 작업 순서·스케줄링(f17·f23~f26) 연결 보강. / 섹션 11(2026-09-25-area01-s11) — '새 질문' 세 개를 실제 id 로 표기(39행 oq-019, 40행 oq-020, 41행 oq-021). 부분 근거(해결 아님): oq-019 ← f15~f18, oq-020 ← f1~f6·f7, oq-021(·oq-351) ← f8·f9·f12, oq-012 ← f37(해외 사례, 국내 기준 미확인), oq-365 ← f21, oq-046 ← f11·f13, oq-141 ← f33·f36. oq-002 는 이번 근거 없음(미해결). 새 질문 3건. 다음 실행 후보: 12. 채팅으로 업무 지시·오케스트레이션(MCP 도구 범위 f33~f36), 26. 작업 순서·스케줄링(Lorenz 적용 조건 f23~f25). |
+
+## 용어 후보
+
+- 없음
+
+## 열린 질문
+
+새로 생긴 질문:
+
+- 아르고(테크타카)–플로틱 남이천 물류센터 협력(오더 피킹 로봇 30대 지원 발표) 이후 실증의 시험 기간·성공 기준·완료 결과가 공개됐는가? | 관련 영역: 23. 업무 시스템 연동, 61. 물류창고 | 근거: f27 | 종류: 일반
+- Yu·Srinivas(2025) 동적 주문 피킹 논문 원문의 실험 조건과 서지(권·호·쪽)로 기존 위키의 AOCT·ATT·AWTD 결과 서술을 재검증하면 그대로 맞는가? | 관련 영역: 23. 업무 시스템 연동, 26. 작업 순서·스케줄링 | 근거: ref-132 | 종류: 일반
+- ISA-95 Part 1(ANSI/ISA-95.00.01-2025) 규격 본문에서 바뀐 조항은 무엇이며, OPC UA for ISA-95 Job Control 2.0·B2MML 과의 관계를 바꾸는가? | 관련 영역: 23. 업무 시스템 연동, 21. 상호운용 표준·적합성 | 근거: ref-002 | 종류: 일반
+
+해결 제안(판정은 검증 에이전트):
+
+- 없음
+
+## 자체 점검
+
+- 출처 수: 16 · 교차 확인: 0
+- 예산 사용량: 검색 0회 · 신규 출처 11건
+- 미확인 항목:
+    - 리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-11-02/external_research.md)를 변환했다. 2026-10-11 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.
+    - GitHub 고정 커밋의 커밋일(rmf_api_msgs e9b7630 2026-09-19, rmf_task 3a6af29 2026-09-25, demos-ros-mcp-server edbc642 2026-07-09, isaac_mission_dispatch 56455eb 2026-09-15)은 확인 불가(403)라 published null
+    - ref-1461(SAP 참조구조)의 최초 발행일 미확인(갱신 2026-05-12 만 확인), ref-133 온라인 발행 일자 미확인(2025-05 까지만)
+    - f31: Bosch·Aimbo 개념검증의 실시일과 생산 운영 여부 미확인(뉴스 게시 2025-11-05, 수정 2026-06-18)
+    - f27·f28: 남이천 30대 실증의 시험 기간·결과 미확인, '20분 이상→10분 이내'의 측정 조건 미공개
+    - f29: LG CNS 사례의 다제조사 수·API·주문 상관키·생산계획 변경 승인 규칙 미공개, 성과 수치는 채택하지 않음
+    - f21: GreenAuto 개발 3대와 §6.2 최대 20대 동시 감시의 실물/가상 구성·기간 미확인(oq-365). F20b(주된 역할은 통합 감시, 수집 데이터에 task progress 포함)는 기존 area20 서술과 겹쳐 finding 으로 넣지 않음
+    - f9·f13: 취소 응답과 실제 정지의 시간 관계, 중복 요청 효과, SAP 현재 권장 연동 경로의 API 계약과 폐기 API 의 대체 관계는 확인 못 함(oq-046 관련)
+    - oq-020: ISA-95 JobOrderID·JobResponse 와 VDA 5050 orderId·Open-RMF booking.id 의 공개 매핑 명세는 찾지 못함
+    - oq-002: 국내 로봇 적재·하역 결과에 SSCC·EPCIS 를 연결한 운영 사례 없음. GS1 Korea SSCC 설명 페이지(메모 n16)는 물류 단위 식별 정의뿐이고 기존 ref-017 과 겹쳐 출처로 넣지 않음
+    - oq-012·oq-021: 국내 WMS 입고·인수 확정의 상관키·시간 초과 기준과 적재 후 취소의 반송·재고 반제 결정권자는 확인 못 함
+    - oq-141: MCP 경유 다사업자 WMS 주문·재고 처리의 운영 결과·권한·실패 복구 시험은 찾지 못함
+    - ISA-95 Part 1 2025 규격 본문은 유료라 미열람(ISA 발표 ref-002 는 원문 확인됐으나 내용이 기존 s7 과 같아 finding 없음)
+- 범위 경계 위반 의심:
+    - f29: WCS·SCADA 통합 관제는 22. 설비·건물 시스템 연동·38. 모니터링과 겹치므로 이 영역에는 생산계획→실행 작업 조율 역할의 예로만 씀
+    - f30·f31: Embodied AI 휴머노이드 작업 수행은 44. 로봇 기반 모델·언어 모델 계획 쪽 내용이라 업무 객체 해석 계층의 근거로만 씀
+    - f33~f36: MCP 도구 노출은 12. 채팅으로 업무 지시·오케스트레이션과 겹치므로 업무 요청 접점 범위 판단으로 한정
+    - f23~f26: 재최적화 알고리즘의 최적성은 26. 작업 순서·스케줄링 쪽 내용이라 적용 조건만 씀
+    - f37·f38: 병원 인계 절차는 63. 병원·의료·30. 로봇 간 협업·물리적 인계와 겹치므로 도착과 인수 확인 분리 근거로만 씀
+- 한계: 외부 조사 변환이라 검색·열람 횟수 집계 없음(queries 0 은 집계 없음을 뜻함). 신규 출처 11건(ref-1453, ref-1454, ref-1455, ref-1456, ref-1457, ref-1458, ref-1459, ref-1460, ref-1461, ref-1462, ref-1463, 예약 구간 ref-1453~ref-1482 안, 한도 15 이내), 재사용 5건. 메모 출처 매핑(검증 결과 E절): n1→ref-131, n2→ref-1453(dispatch_task_response)·ref-1454(cancel_task_response)·ref-1455(simple_response) 신규(task_request ref-125·cancel_task_request ref-126·task_state ref-111·README ref-1028 은 해당 내용이 기존 위키에 있어 이번 finding 에 쓰지 않음), n3→ref-404(K03 중복이라 미사용), n4→ref-1456, n5→ref-1457, n6→ref-014(K06 중복이라 미사용), n7→ref-1459(기존 2차 보도 ref-137 과 같은 사건), n8→ref-1460, n9→ref-136, n10→ref-133, n11→ref-1461, n12→ref-1462, n13→ref-1463, n14→ref-1341, n15→ref-869, n16 미사용, n17→ref-002(중복이라 미사용), n18→ref-1458. 검증 수정 반영: 위키 중복(K03 전체, K06 전체, F04, F06, F08 task_id, F09 상태 열거, F29, F31)은 finding 으로 넣지 않고 rationale 에 '기존 내용 확인'으로만; GreenAuto 는 'MES·ERP용 REST API, AMR 실시간 이벤트·IIoT용 MQTT broker 는 계획(미가동)'으로(메모 요약의 'MES·ERP용 REST/MQTT' 바로잡음) 하고 s3 39행·s8 42행 정정 finding(f22) 추가; F23 은 §4·§4.2 와 Pcart·Robot 2,600개 중 2,380개 이상 최적 풀이 범위로; K09 는 '20분 이상→10분 이내'(메모의 '10분 미만' 정정); F24 는 디지털 warehouse AI agents 와 구별되는 Embodied AI agents 의 세 skill 중 하나로; SAP 제품명은 SAP Warehouse Robotics(SAP BTP 기반)로 쓰고 EWM 과 구별; n12 수정일 2026-06-18; ref-136 저자 17명·2025-06-27·Appl. Sci. 15(13) 7235 로 정정; ref-133 published 2025-05; 메모의 출처 집계(기존 5·새 13)는 틀려 기존 9·새 9(메모 단위)로 바로잡음. 교차 확인 0건: Open-RMF 스키마 세 파일은 같은 프로젝트, SAP 문서 셋은 같은 회사, Oracle·SAP 은 서로 다른 기능이라 같은 주장의 교차 확인이 아니다. 벤더 주장(f28·f29·f31)은 vendor_claim·추정·'벤더 주장: ' 표시, 아르고 협력 발표(f27)는 추정. 열린 질문은 해결 제안 없이 부분 근거만 냈다: oq-019 근거 f15~f18, oq-020 근거 f1~f7, oq-021·oq-351 근거 f8·f9·f12, oq-012 근거 f37, oq-365 근거 f21, oq-046 근거 f11·f13, oq-141 근거 f33·f36, oq-002 근거 없음. 메모 새 질문 U01~U11 가운데 기존 질문과 겹치는 U01(oq-020)·U02(oq-019)·U03(oq-021·oq-351)·U04(oq-002)·U05(oq-012)·U07(oq-365)·U09(oq-046)·U10(oq-141)은 새로 만들지 않고 U06·U08·U11 만 올렸다. 현장 유형 사례 finding: 물류창고(f27·f28·f31), 제조 공장(f29), 병원(f37·f38). 국내 자료는 아르고 발표(ref-1459)와 LG CNS 사례(ref-1460). 용어 후보 없음. 입력 누락 없음. 우선 지정 질문 없음.
