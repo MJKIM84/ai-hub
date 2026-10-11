@@ -1,0 +1,43 @@
+{
+  "calls": [
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 22,
+      "cache_creation_input_tokens": 147527,
+      "cache_read_input_tokens": 2368646,
+      "output_tokens": 24933,
+      "cost_usd": 2.2325,
+      "seconds": 276.5,
+      "num_turns": 30,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 192760,
+      "cache_read_input_tokens": 72042,
+      "output_tokens": 60885,
+      "cost_usd": 2.7742,
+      "seconds": 466.4,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 24,
+    "cache_creation_input_tokens": 340287,
+    "cache_read_input_tokens": 2440688,
+    "output_tokens": 85818,
+    "cost_usd": 5.0067,
+    "calls": 2
+  }
+}
