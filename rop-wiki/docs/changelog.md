@@ -16,6 +16,30 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-11
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-11-01 | 갱신 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 차등 갱신: 5절 수행 자원 칸 경로 계산을 선 유도 로봇으로 정정·자유 주행 로봇 경로 공유 병기, 제조 공장 전시 시연 사례(Mesh-Up 2025, 실제 공장 배치 아님) 추가; 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준 표·VDA 5050 동작 시험표; 7절 VDA 5050 3.0.0 날짜(출처 충돌)·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영); 8절 vda5050-lab 자기 기술 반영·vda5050-sim 분리·Wagner 외 추가; 10절 14·42번 연결; 11절 부분 근거와 새 질문 2건; 6·7·11절 첫 단락에 2026-09-25 분리 페이지(area28-s6·s7·s11) 링크 유지; 프런트매터 sources 에 기존 ref-636·ref-637·ref-708·ref-710 유지; 13절 각주 갱신(ref-408·ref-705 원문 열람 반영, 신규 각주) |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s7.md](topics/2026/2026-10-11-area21-s7.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,916자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s6.md](topics/2026/2026-10-11-area21-s6.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "6. 대표 접근법과 기술" 절(2,060자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s8.md](topics/2026/2026-10-11-area21-s8.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "8. 대표 연구와 자료" 절(1,461자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s11.md](topics/2026/2026-10-11-area21-s11.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "11. 열린 질문" 절(1,079자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s10.md](topics/2026/2026-10-11-area21-s10.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(630자)을 옮겼다 |
+| 2026-10-11-01 | 요약 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 21. 상호운용 표준·적합성: 5절 경로 계산 책임을 선 유도 로봇으로 정정하고 제조 공장 전시 시연 사례 추가, 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준·VDA 5050 동작 시험표, 7절 VDA 5050 날짜 출처 충돌·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영), 8절 vda5050-lab 자기 기술·Wagner 외, 10절 14·42번 연결, 11절 부분 근거와 새 질문 2건, 2026-09-25 분리 페이지 링크 유지 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1414.md](references/ref-1414.md) | 참고문헌 ref-1414 등록: VDA5050/VDA5050 — json_schemas/order.schema (tag 3.0.0) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1418.md](references/ref-1418.md) | 참고문헌 ref-1418 등록: VDA5050/VDA5050 — json_schemas/factsheet.schema (tag 3.0.0) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1420.md](references/ref-1420.md) | 참고문헌 ref-1420 등록: VDA5050/VDA5050 — json_schemas/visualization.schema (tag 3.0… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1423.md](references/ref-1423.md) | 참고문헌 ref-1423 등록: Overview & Benefits — OPC Foundation Certification |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1424.md](references/ref-1424.md) | 참고문헌 ref-1424 등록: KS B ISO 22166-202 로봇 — 서비스 로봇의 모듈화 — 제202부: 소프트웨어 모듈용 정보 모델 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1425.md](references/ref-1425.md) | 참고문헌 ref-1425 등록: Mobile Robots in Production: Mesh-Up 2025 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1426.md](references/ref-1426.md) | 참고문헌 ref-1426 등록: Teleoperating Mobile Robots via VDA 5050 – A First Middlewar… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1427.md](references/ref-1427.md) | 참고문헌 ref-1427 등록: Interoperable Teleoperation of Mobile Robots in Intralogisti… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1428.md](references/ref-1428.md) | 참고문헌 ref-1428 등록: Information Delivery Specification (IDS) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1430.md](references/ref-1430.md) | 참고문헌 ref-1430 등록: IDS — Documentation/README.md |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1429.md](references/ref-1429.md) | 참고문헌 ref-1429 등록: VDA 5050 3.0.0 release (March 2026) |
+| 2026-10-11-01 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+
 ### 2026-10-10
 
 | 실행 id | 동작 | 페이지 | 요약 |

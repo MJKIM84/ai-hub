@@ -1,0 +1,506 @@
+{
+  "duration_api_ms": 367007,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.9112045000000015,
+  "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 238181,
+    "cache_read_input_tokens": 1816226,
+    "output_tokens": 26965,
+    "output_tokens_details": {
+      "thinking_tokens": 11836
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 238181,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 20035,
+        "cache_read_input_tokens": 235202,
+        "cache_creation_input_tokens": 2979,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2979
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 18,
+      "outputTokens": 26965,
+      "cacheReadInputTokens": 1816226,
+      "cacheCreationInputTokens": 238181,
+      "webSearchRequests": 0,
+      "costUSD": 2.8080652000000006,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11836,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-5-5": {
+      "inputTokens": 410688,
+      "outputTokens": 24141,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 5,
+      "costUSD": 0.10313930000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 15603,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 30,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-11-01\",\"stage\":\"first\",\"verdict\":\"반려\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. ref-1423 PDF(3.4MB, A4)는 내려받혔지만 검증에서 텍스트를 추출하지 못해 표지 문구 'Version 3.0.0, March 2026'을 대조하지 못했다. 같은 판의 3.0.0 태그 마크다운 표지에는 날짜 없이 'Version 3.0.0'만 있다. 리서치 출처 항목도 fetched: true 인데 fetch_url 이 null 이다. 20번 주제 페이지가 같은 문구를 [추정]으로 둔 상태도 그대로다.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 카탈로그 표시일 2026-03-17(ref-1412 재열람)과 보도자료 머리 'Berlin, April 20, 2026'(ref-032 재열람)이 일치한다. 다만 근거인 f1 이 추정으로 강등됐으므로 '표지 판 표기(2026년 3월)'를 확인된 사실처럼 쓰는 부분은 다시 써야 한다. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 공식 저장소 3.0.0 태그와 main 의 VDA5050_EN.md §5.3 에 'Route calculation and guidance of line-guided mobile robots'가, §5.4 에 'line-guided or freely navigating'이 있다(입력 원문 ref-031 과 같은 문구). PDF 쪽 번호(p.11)는 대조하지 못했다. 각주에 ref-031 을 함께 다는 것을 권한다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-032 재열람. 'robots independently plan their own routes', 'detailed route planning takes place on the vehicle itself', 'path sharing' 문구가 있다. 보도자료이고 대상은 자율도가 높은 로봇이다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f3·f4 가 뒷받침한다. 정정 대상 문장(본문 5절 수행 자원 칸)이 입력 페이지에 있다. 누구의 의견인지(구축자 의견) 밝혀야 한다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 3.0.0 태그 VDA5050_EN.md §7.1.1. 로봇 쪽 'shall not ignore the field', 관제 쪽 'Fleet control shall only send optional fields that the mobile robot supports'가 있다. PDF 쪽 번호(p.67)는 대조하지 못했다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 3.0.0 태그 마크다운에서 §6.1.4.2(UNSUPPORTED_PARAMETER·CRITICAL), §6.1.4.5(같은 내용은 무시, 다른 내용은 SAME_ORDER_UPDATE_ID·WARNING), §6.1.3.1(ORDER_UPDATE_FOLLOWING_CANCEL·WARNING)을 확인했다. 재전송 규칙은 기존 페이지(2026-10-09-area41-s6, 29. 명령·작업 실행의 신뢰성)와 겹치므로 연결로 처리한다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f6·f7 조항을 시험 행으로 옮긴 제안이다. 공식 인증 항목이 아님을 본문에 밝히고, 누구의 의견인지 적어야 한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw 3.0.0 태그 파일을 직접 열었다. order.schema 는 trajectory.controlPoints.weight 의 description 뒤에, factsheet.schema 는 physicalParameters 안 네 곳에, visualization.schema 는 최상위 properties 의 velocity 뒤와 weight 에 끝 쉼표가 있다. main 의 order.schema 에는 끝 쉼표가 없다. 다만 각주 ref-051 의 서지(제목 'json_schemas/state.schema', main URL)가 실제 확인 대상(3.0.0 태그의 세 파일)과 다르다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 끝 쉼표가 있다는 것은 확인했으나, 파서별 행·열 번호(315/174/55, 314/173/54)는 이번 검증에서 재현하지 못했다. 재현 환경이 리서치 측 실행이라 출처로 확인할 수 없다. 본문에 행·열 번호를 싣지 않기를 권한다.\"},{\"finding_id\":\"f11\",\"source_exists\":false,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"이슈 #660(ref-1424)은 검증에서도 403 이 나서 실재·제목·날짜·제보자를 확인하지 못했다. 근거는 외부 메모의 전언뿐이다. 존재를 확인하지 않은 출처이므로 본문과 참고문헌에서 뺀다. f9 는 이것 없이도 성립한다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f9 에서 나온 운영 제안. 누구의 의견인지 밝혀야 한다. ref-1423 인용은 PDF 대조가 되지 않았으므로 '공식 PDF 고정' 부분은 일반 권고로만 쓴다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 커밋 4a1a812 README Status 절. v0.2.0 을 'Developer Preview'(오프라인 진단 구현과 범위가 제한된 합성 데모)로 설명하고, 'not a public-alpha or certification claim'이라 적는다. 실제 고객 기록·외부 DUT·하드웨어 실행 검증은 없다. evidence 의 'Synthetic Demo Preview'는 원문 문구가 아니므로 직접 인용하지 않는다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f13 에서 나온 제안. 기존 8절 항목의 '[추정] … 개인 프로젝트이며 VDA·VDMA 공식 시험이 아닌 것으로 보인다'와 어긋나지 않는다. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: How to Certify 재열람. 제조사에게 'compliance test tools'로 시험을 미리 해 보라고 권고하고(suggested), 'The tools are used by the lab'이라 적는다. 페이지에는 CTT 라는 약어가 없으므로 '적합성 시험 도구(compliance test tools)'로 쓴다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Overview & Benefits 재열람. 'Certified products have been tested in an OPC Foundation accredited Certification Lab', SDK 기반 응용은 'require their own certification testing'. ref-705 와 같은 기관이라 교차 확인은 아니다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 두 페이지 어디에도 self-certification 이 없다. 정정 대상인 분리 6·7절 문장은 입력에 없어(주제 페이지) 직접 대조하지 못했다. 입력 페이지 참고문헌의 ref-705 요약도 정정 대상이다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f15~f17 에서 나온 정정 제안. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-230.txt. 최상위 oneOf 가 '#/identityReport'·'#/statusReport'를 참조하고, definitions.location.required 가 [x, y, angle, planarDatum]이다. statusReport 필수 필드는 20번 분리 7절에 이미 있으므로 연결로 처리한다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 스키마에 명령·작업 배정 메시지가 없다(ref-230 원문). 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OPC-40010-1/full 재열람. 1.02판, 2025-09-08. §11.2.2 에 Robotics Base·MDS Operation·AM Extended·CM Extended Server Facet 이 있고, 각 표(124~127)에 Mandatory/Optional 열이 있다. evidence 의 '표 123~127'은 확인한 Facet 표 번호(124~127)와 다르다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f21 에서 나온 제안. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"ref-159 는 기존 참고문헌이지만 이번에도 원문을 열지 못했다. 주장 내용(단계 60.00·제외 범위)은 외부 메모의 전언일 뿐 출처가 아니다. 21번 본문에 단계·범위를 새로 쓰지 않는다. 같은 내용은 다른 페이지에 이미 [추정]으로 있으므로 연결만 한다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. KSSN 상세 페이지를 재열람했으나 표준 번호와 제목만 보였다. 제정일(2024-01-05), 부합화 칸 공란, 고시사유, 쪽수는 대조하지 못했다. 리서치 출처도 fetch_url 이 null 이다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. KSSN 상세 페이지를 재열람했으나 번호와 제목만 보였다. 제정일(2026-09-11), IDT, 고시 제2026-0279호, 쪽수는 대조하지 못했다. 웹 검색에서도 KS 제정 기록은 나오지 않았다. ISO 22166-202:2025 발행(2025-03)은 검색 결과로 확인된다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"열린 질문 이동\",\"note\":\"근거인 f24·f25 가 미대조(추정)라서, 'KS B ISO 22166-202 가 있다는 사실을 더한다'를 본문 사실로 반영하지 않는다. 기존 oq-026 은 열림을 유지하고, 확인할 거리로만 남긴다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"ref-710 은 기존 참고문헌이지만 이번에도 봇 차단으로 원문을 열지 못했다. 제정일(2025-05-28)과 'TTA 표준의 기반' 관계는 외부 메모의 전언이다. 본문에 새로 쓰지 않는다.\"},{\"finding_id\":\"f28\",\"source_exists\":false,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"열린 질문 이동\",\"note\":\"검증에서 ref-1425 URL(committee.tta.or.kr …?commit_code=TC4)이 HTTP 400 을 냈다. 웹 검색에서도 TTAK.KO-10.1295-Part8 이 나오지 않아 목록 행과 날짜(2026-06-26)를 확인하지 못했다. 리서치 출처도 fetch_url 이 null 이다. 본문 사실로 쓰지 않는다.\"},{\"finding_id\":\"f29\",\"source_exists\":false,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"열린 질문 이동\",\"note\":\"근거 출처 둘이 모두 미확인이다(ref-710 원문 미열람, ref-1425 실재 미확인). 그런데 브리프는 source_unopened: false 로 적었다. oq-111 은 열림을 유지한다.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 2026-04-09(Kitchener), OTTO 100·600·1200·1500, Idealworks·NAiSE·SYNAOS(VDA 5050-compliant intralogistics software providers). 프로토콜 판·시험 항목·시험 기관은 없다. 벤더 주장이며 [추정]을 유지한다. 참고문헌 목록의 발행일 '2026-04'는 '2026-04-09'로 고칠 수 있다.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: VDMA Mesh-Up 페이지 재열람. 2025-06-24~27, 'a total of nine companies', MHP 가 마스터 관제를 맡는다. 전시 시연이다.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 관제 소프트웨어 공급자를 바꿔 고를 수 있는 VDA 5050 의 유연성은 'is not demonstrated live at automatica by the Mesh-Up'이라고 적혀 있다.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f31·f32 에서 나온 제안. 사례를 현장 유형 '제조 공장'으로 두려면 전시 시연임을 표 안에 밝혀야 한다. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: TUHH 저장소의 서지·초록(Wagner, Toenning, Lünsch, Jost, Wietfeld, Detzner, WFCS 2026, DOI 10.1109/WFCS67029.2026.11511549). 원격 조작 확장 제안과 트래픽 생성기가 초록에 있다. 쪽수(pp.1–8)는 대조하지 못했다.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 저자 공개본 PDF 를 내려받았지만 검증에서 텍스트를 추출하지 못했다. 단일 로봇·60초·20~40초 원격 조작 구간은 대조하지 못했고, 초록에는 이 수치가 없다.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. PDF 텍스트 추출에 실패해 virtual-radio / real-world 구분과 향후 과제 문구를 대조하지 못했다. 초록에는 Open RAN 무선 링크를 쓴 지연·오버헤드 평가만 있다.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 초록 범위(통신 지연·오버헤드 평가)에서 성립하는 분류 제안이다. 누구의 의견인지 밝혀야 한다.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f13·f30·f32·f15~f17 이 뒷받침한다. oq-055 는 부분 근거로만 쓴다. 누구의 의견인지 밝혀야 한다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"참고문헌 id 충돌: 직전 실행 2026-10-10-06 브리프(게시됨, 20. 로봇·제조사 관제 연동 버전 3)가 같은 예약 구간 ref-1423~ref-1452 를 썼다. 그때 신규 출처는 ref-1424 EasyTrafficLight.hpp, ref-1425 GoToZone PR #516, ref-1426 Interop SIG 구역 기능 공지, ref-1427 InOrbit Automate 2026, ref-1428 카카오모빌리티 보도자료였고, ref-1429 는 기존 출처 Franke 외(2023)였다. 이번 브리프는 같은 id 를 다른 문서에 붙였다(ref-1424 이슈 #660, ref-1425 TTA 목록, ref-1426 KSSN KS B ISO 22166-202, ref-1427 OPC Overview, ref-1428 VDMA Mesh-Up, ref-1429 Wagner 외). URL 이 달라 퍼블리셔의 같은 URL 병합으로도 해소되지 않는다.\",\"ref-1423 도 직전 실행에서 VDA 카탈로그(https://www.vda.de/en/news/publications/publication/vda-5050)에 쓰인 id 다. 이번 브리프는 카탈로그를 ref-1412 로, ref-1423 을 PDF 로 바꿔 붙였다.\",\"f3(선 유도 경로 계산 직역)은 2026-10-09-area41-s6 과 겹친다. f7 재전송 규칙은 2026-10-09-area41-s6·29. 명령·작업 실행의 신뢰성 페이지와, f4 경로 공유는 2026-10-10-area27-s7 과, f19 statusReport 는 2026-10-10-area20-s7 과, f21 판·범위는 2026-09-29-area04-s7 과, f23 ISO 21423 은 공간·지도 모델·안전 대분류 페이지와 겹친다. 모두 새로 쓰지 않고 연결해야 한다.\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"f34·f37 의 '원격조작'은 용어집 '원격 조작 (Teleoperation)'과 표기가 다르다. 용어집 표기로 맞춘다.\",\"f15 의 'CTT' 약어는 출처 페이지에 없다. 첫 등장에서 '적합성 시험 도구(compliance test tools)'로 풀어 쓴다. 용어집 '적합성 시험 (Conformance Test)'과 같은 개념으로 등록하지 않는다.\"]},\"quotation_check\":{\"ok\":true,\"issues\":[\"evidence_excerpt 의 직접 인용은 짧다. 다만 ref-1423(f3·f6), ref-1428(f31·f32), ref-032(f4)는 여러 finding 에 걸쳐 인용이 있다. 페이지에서는 출처당 직접 인용 1회 이하로 줄이고 나머지는 재서술해야 한다.\",\"f13 evidence 의 'Synthetic Demo Preview'는 원문 문구가 아니다(원문은 'Developer Preview'). 직접 인용으로 쓰지 않는다.\"]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"재조사 브리프에서 지킬 사항 — f2·f5·f8·f12·f14·f18·f20·f22·f33·f37·f38: [의견]마다 누구의 의견인지(구축자 의견 등) 밝힌다 — 공통 규칙 2절·검증 항목 5.\",\"f9: 각주 ref-051 의 서지('json_schemas/state.schema', main URL)는 확인 대상(3.0.0 태그의 order·factsheet·visualization.schema)과 다르다. 본문에 확인한 파일 경로·태그·확인일을 밝히거나, 태그 파일을 가리키는 출처 항목을 따로 둔다.\",\"f13: README 문구는 'Developer Preview'(합성 데모 포함, 인증 주장 아님)로 재서술하고 'Synthetic Demo Preview'를 인용하지 않는다 — 원문 문구가 아니다.\",\"f21: Facet 표 번호를 124~127 로 적는다(검증에서 확인한 Server Facet 표 번호).\",\"f30: ref-608 발행일을 참고문헌 목록의 '2026-04'에서 '2026-04-09'로 고친다 — 원문 확인.\",\"f31~f33: Mesh-Up 사례를 5절 '제조 공장'에 둘 때는 표 머리와 각 칸에 'automatica 2025 전시 시연, 실제 공장 배치 아님'을 밝히고, site_matrix_updates 를 도입 사례로 세지 않는다.\",\"트랙 반영 제안(2026-10-09-26, 건축 도면 자동 인식 단계 2, IDS 1.0 → 7절)은 이번 브리프에 근거 finding 이 없다. 7절에 반영하지 않고 다음 21. 상호운용 표준·적합성 실행으로 넘기거나, 재조사에서 근거 finding 을 낸다.\",\"open_questions_new 둘째(TTAK.KO-10.1295-Part8 대 KOROS 1148-8)는 근거 f28 의 출처 실재를 확인하지 못했으므로 등록하지 않는다. 셋째(2.x·3.x 혼합 플릿 전환 기록)의 근거 f32 는 관제 공급자 교체 시연이 없었다는 내용이라 판 전환과 직접 관계가 약하다. 근거를 f9·f12 또는 oq-091 로 고친다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 반려. 확인 26건, 미확인 12건, 교차 확인 0건. 강등: f1·f10·f24·f25·f35·f36 사실 → 추정. 삭제: f11·f23·f27. 열린 질문 이동: f26·f28·f29. 원문 미열람 출처: ref-1424(검증에서도 403, 실재 미확인), ref-159, ref-710. 출처 문제: ref-1425(TTA 목록)는 검증 재열람이 HTTP 400 이었고, ref-1423(VDA 5050 3.0.0 PDF)과 Wagner 외 저자 공개본은 텍스트 추출에 실패해 표지·본문 수치를 대조하지 못했다. KSSN 두 상세 페이지는 번호·제목만 보였다. 조항 내용(§5.3·§5.4·§6.1.3.1·§6.1.4.2·§6.1.4.5·§7.1.1)은 공식 저장소 3.0.0 태그 마크다운으로 확인했다. 3.0.0 태그 스키마 세 파일의 끝 쉼표와 main 의 수정 상태는 raw 파일을 직접 열어 확인했다. OPC Foundation 인증 안내 두 페이지에 제조사 자체 인증 경로가 없음도 확인했다. 주의: 이 브리프의 신규 참고문헌 id(ref-1423~ref-1429)는 게시된 직전 실행 2026-10-10-06 의 id 와 겹치며 문서가 서로 다르다. 그대로 게시하면 각주가 다른 문서를 가리키게 되어 반려했다. VDA 5050 3.0.0 날짜는 VDA 계열 자료끼리도 표시가 다르므로 단일 발행일을 확정하지 않는 현재 방침이 맞다. 트랙 반영 제안(IDS 1.0)은 이번 브리프에서 다루지 않았다. 브리프는 외부 조사 메모를 변환한 것이라 검색 0회로 기록됐다. 정정 요청 없음.\",\"retry_reason\":\"(a) 재조사 사유: ① 신규 참고문헌 id 가 이미 게시된 출처와 충돌한다. 직전 실행 2026-10-10-06 이 같은 예약 구간(ref-1423~ref-1452)을 써서 ref-1424 EasyTrafficLight.hpp, ref-1425 GoToZone PR #516, ref-1426 Interop SIG 구역 기능 공지, ref-1427 InOrbit Automate 2026, ref-1428 카카오모빌리티 보도자료를 등록했고, ref-1429 는 기존 출처 Franke 외(2023)다. 이번 브리프는 같은 id 를 다른 문서(PDF·이슈 #660·TTA 목록·KSSN·OPC Overview·Mesh-Up·Wagner 외)에 붙였고 URL 이 달라 퍼블리셔 병합으로 풀리지 않는다. 스토리텔러는 브리프 id 를 바꿀 수 없으므로 리서치 단계에서 고쳐야 한다. 실행 컨텍스트의 next_ref_id(없으면 pipeline/agent_runner.py 담당에게 기존 최대 id 이후의 예약 구간을 요청)로 신규 출처 id 를 다시 매긴다. ② 원문을 열었다고 적은 출처 가운데 검증에서 재현되지 않은 것이 있다. 근거(fetch_url 또는 data/source_texts 원문)를 대거나 fetched: false 와 태그 강등으로 고친다. ref-1423 PDF 표지(f1), ref-138·ref-1426 KSSN 세부 칸(f24·f25), ref-1425 TTA 목록(f28, HTTP 400), Wagner 외 저자 공개본 본문 수치(f35·f36)가 해당한다. ③ ref-1424(이슈 #660)는 실재를 확인하지 못했으므로 출처에서 빼고, f11·f23·f27 같은 '외부 메모가 전한다'식 전언 finding 은 넣지 않는다. f29 의 source_unopened 표시는 근거 출처 상태와 맞춘다. ④ 트랙 반영 제안 2026-10-09-26(IDS 1.0 을 7절 BIM 데이터 교환 요구·적합성 검사 수단으로)을 다루지 않았다. (b) 보강할 질문: VDA 5050 3.0.0 공식 PDF 표지의 판 표기는 무엇인가? PDF 텍스트를 data/source_texts 로 넣거나 쪽 이미지를 확인한 경로를 남긴다. KS B 7321-2 와 KS B ISO 22166-202 의 제정일·부합화 표시·고시번호를 KSSN 이나 국가기술표준원 고시로 확인할 수 있는가? TTAK.KO-10.1295-Part8 은 TTA 정보통신표준(standard.tta.or.kr)에 실재하며 제정일은 언제인가? Wagner 외(WFCS 2026)의 평가 시나리오(로봇 수·주문 시간·원격 조작 구간)와 virtual-radio / real-world 구분은 본문 어디에 있는가? IDS 1.0(buildingSMART)의 적용 대상·요구 구조·패싯은 발행 기관 자료로 무엇이며, 21. 상호운용 표준·적합성의 적합성 검사 수단으로 볼 수 있는가? 우선 출처는 VDA·KIT IFL 공식 PDF, KSSN·국가기술표준원 고시, TTA 표준 검색, IEEE Xplore 또는 저자 공개본, buildingSMART IDS 공식 문서다. (c) 살려도 되는 finding: f2(f1 처분에 맞춰 문구 수정), f3·f4·f5·f6·f7·f8·f9(출처 서지 보완)·f12·f13·f14·f15·f16·f17·f18·f19·f20·f21·f22·f30·f31·f32·f33·f34·f37·f38. 이 finding 들은 이번 검증에서 원문과 대조됐다.\"}",
+  "structured_output": {
+    "run_id": "2026-10-11-01",
+    "stage": "first",
+    "verdict": "반려",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. ref-1423 PDF(3.4MB, A4)는 내려받혔지만 검증에서 텍스트를 추출하지 못해 표지 문구 'Version 3.0.0, March 2026'을 대조하지 못했다. 같은 판의 3.0.0 태그 마크다운 표지에는 날짜 없이 'Version 3.0.0'만 있다. 리서치 출처 항목도 fetched: true 인데 fetch_url 이 null 이다. 20번 주제 페이지가 같은 문구를 [추정]으로 둔 상태도 그대로다."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 카탈로그 표시일 2026-03-17(ref-1412 재열람)과 보도자료 머리 'Berlin, April 20, 2026'(ref-032 재열람)이 일치한다. 다만 근거인 f1 이 추정으로 강등됐으므로 '표지 판 표기(2026년 3월)'를 확인된 사실처럼 쓰는 부분은 다시 써야 한다. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 공식 저장소 3.0.0 태그와 main 의 VDA5050_EN.md §5.3 에 'Route calculation and guidance of line-guided mobile robots'가, §5.4 에 'line-guided or freely navigating'이 있다(입력 원문 ref-031 과 같은 문구). PDF 쪽 번호(p.11)는 대조하지 못했다. 각주에 ref-031 을 함께 다는 것을 권한다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-032 재열람. 'robots independently plan their own routes', 'detailed route planning takes place on the vehicle itself', 'path sharing' 문구가 있다. 보도자료이고 대상은 자율도가 높은 로봇이다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f3·f4 가 뒷받침한다. 정정 대상 문장(본문 5절 수행 자원 칸)이 입력 페이지에 있다. 누구의 의견인지(구축자 의견) 밝혀야 한다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 3.0.0 태그 VDA5050_EN.md §7.1.1. 로봇 쪽 'shall not ignore the field', 관제 쪽 'Fleet control shall only send optional fields that the mobile robot supports'가 있다. PDF 쪽 번호(p.67)는 대조하지 못했다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 3.0.0 태그 마크다운에서 §6.1.4.2(UNSUPPORTED_PARAMETER·CRITICAL), §6.1.4.5(같은 내용은 무시, 다른 내용은 SAME_ORDER_UPDATE_ID·WARNING), §6.1.3.1(ORDER_UPDATE_FOLLOWING_CANCEL·WARNING)을 확인했다. 재전송 규칙은 기존 페이지(2026-10-09-area41-s6, 29. 명령·작업 실행의 신뢰성)와 겹치므로 연결로 처리한다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f6·f7 조항을 시험 행으로 옮긴 제안이다. 공식 인증 항목이 아님을 본문에 밝히고, 누구의 의견인지 적어야 한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw 3.0.0 태그 파일을 직접 열었다. order.schema 는 trajectory.controlPoints.weight 의 description 뒤에, factsheet.schema 는 physicalParameters 안 네 곳에, visualization.schema 는 최상위 properties 의 velocity 뒤와 weight 에 끝 쉼표가 있다. main 의 order.schema 에는 끝 쉼표가 없다. 다만 각주 ref-051 의 서지(제목 'json_schemas/state.schema', main URL)가 실제 확인 대상(3.0.0 태그의 세 파일)과 다르다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 끝 쉼표가 있다는 것은 확인했으나, 파서별 행·열 번호(315/174/55, 314/173/54)는 이번 검증에서 재현하지 못했다. 재현 환경이 리서치 측 실행이라 출처로 확인할 수 없다. 본문에 행·열 번호를 싣지 않기를 권한다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": false,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "이슈 #660(ref-1424)은 검증에서도 403 이 나서 실재·제목·날짜·제보자를 확인하지 못했다. 근거는 외부 메모의 전언뿐이다. 존재를 확인하지 않은 출처이므로 본문과 참고문헌에서 뺀다. f9 는 이것 없이도 성립한다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f9 에서 나온 운영 제안. 누구의 의견인지 밝혀야 한다. ref-1423 인용은 PDF 대조가 되지 않았으므로 '공식 PDF 고정' 부분은 일반 권고로만 쓴다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 커밋 4a1a812 README Status 절. v0.2.0 을 'Developer Preview'(오프라인 진단 구현과 범위가 제한된 합성 데모)로 설명하고, 'not a public-alpha or certification claim'이라 적는다. 실제 고객 기록·외부 DUT·하드웨어 실행 검증은 없다. evidence 의 'Synthetic Demo Preview'는 원문 문구가 아니므로 직접 인용하지 않는다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f13 에서 나온 제안. 기존 8절 항목의 '[추정] … 개인 프로젝트이며 VDA·VDMA 공식 시험이 아닌 것으로 보인다'와 어긋나지 않는다. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: How to Certify 재열람. 제조사에게 'compliance test tools'로 시험을 미리 해 보라고 권고하고(suggested), 'The tools are used by the lab'이라 적는다. 페이지에는 CTT 라는 약어가 없으므로 '적합성 시험 도구(compliance test tools)'로 쓴다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Overview & Benefits 재열람. 'Certified products have been tested in an OPC Foundation accredited Certification Lab', SDK 기반 응용은 'require their own certification testing'. ref-705 와 같은 기관이라 교차 확인은 아니다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 두 페이지 어디에도 self-certification 이 없다. 정정 대상인 분리 6·7절 문장은 입력에 없어(주제 페이지) 직접 대조하지 못했다. 입력 페이지 참고문헌의 ref-705 요약도 정정 대상이다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f15~f17 에서 나온 정정 제안. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-230.txt. 최상위 oneOf 가 '#/identityReport'·'#/statusReport'를 참조하고, definitions.location.required 가 [x, y, angle, planarDatum]이다. statusReport 필수 필드는 20번 분리 7절에 이미 있으므로 연결로 처리한다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 스키마에 명령·작업 배정 메시지가 없다(ref-230 원문). 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OPC-40010-1/full 재열람. 1.02판, 2025-09-08. §11.2.2 에 Robotics Base·MDS Operation·AM Extended·CM Extended Server Facet 이 있고, 각 표(124~127)에 Mandatory/Optional 열이 있다. evidence 의 '표 123~127'은 확인한 Facet 표 번호(124~127)와 다르다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f21 에서 나온 제안. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "ref-159 는 기존 참고문헌이지만 이번에도 원문을 열지 못했다. 주장 내용(단계 60.00·제외 범위)은 외부 메모의 전언일 뿐 출처가 아니다. 21번 본문에 단계·범위를 새로 쓰지 않는다. 같은 내용은 다른 페이지에 이미 [추정]으로 있으므로 연결만 한다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. KSSN 상세 페이지를 재열람했으나 표준 번호와 제목만 보였다. 제정일(2024-01-05), 부합화 칸 공란, 고시사유, 쪽수는 대조하지 못했다. 리서치 출처도 fetch_url 이 null 이다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. KSSN 상세 페이지를 재열람했으나 번호와 제목만 보였다. 제정일(2026-09-11), IDT, 고시 제2026-0279호, 쪽수는 대조하지 못했다. 웹 검색에서도 KS 제정 기록은 나오지 않았다. ISO 22166-202:2025 발행(2025-03)은 검색 결과로 확인된다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "열린 질문 이동",
+        "note": "근거인 f24·f25 가 미대조(추정)라서, 'KS B ISO 22166-202 가 있다는 사실을 더한다'를 본문 사실로 반영하지 않는다. 기존 oq-026 은 열림을 유지하고, 확인할 거리로만 남긴다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "ref-710 은 기존 참고문헌이지만 이번에도 봇 차단으로 원문을 열지 못했다. 제정일(2025-05-28)과 'TTA 표준의 기반' 관계는 외부 메모의 전언이다. 본문에 새로 쓰지 않는다."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": false,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "열린 질문 이동",
+        "note": "검증에서 ref-1425 URL(committee.tta.or.kr …?commit_code=TC4)이 HTTP 400 을 냈다. 웹 검색에서도 TTAK.KO-10.1295-Part8 이 나오지 않아 목록 행과 날짜(2026-06-26)를 확인하지 못했다. 리서치 출처도 fetch_url 이 null 이다. 본문 사실로 쓰지 않는다."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": false,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "열린 질문 이동",
+        "note": "근거 출처 둘이 모두 미확인이다(ref-710 원문 미열람, ref-1425 실재 미확인). 그런데 브리프는 source_unopened: false 로 적었다. oq-111 은 열림을 유지한다."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 2026-04-09(Kitchener), OTTO 100·600·1200·1500, Idealworks·NAiSE·SYNAOS(VDA 5050-compliant intralogistics software providers). 프로토콜 판·시험 항목·시험 기관은 없다. 벤더 주장이며 [추정]을 유지한다. 참고문헌 목록의 발행일 '2026-04'는 '2026-04-09'로 고칠 수 있다."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: VDMA Mesh-Up 페이지 재열람. 2025-06-24~27, 'a total of nine companies', MHP 가 마스터 관제를 맡는다. 전시 시연이다."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 관제 소프트웨어 공급자를 바꿔 고를 수 있는 VDA 5050 의 유연성은 'is not demonstrated live at automatica by the Mesh-Up'이라고 적혀 있다."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f31·f32 에서 나온 제안. 사례를 현장 유형 '제조 공장'으로 두려면 전시 시연임을 표 안에 밝혀야 한다. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: TUHH 저장소의 서지·초록(Wagner, Toenning, Lünsch, Jost, Wietfeld, Detzner, WFCS 2026, DOI 10.1109/WFCS67029.2026.11511549). 원격 조작 확장 제안과 트래픽 생성기가 초록에 있다. 쪽수(pp.1–8)는 대조하지 못했다."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 저자 공개본 PDF 를 내려받았지만 검증에서 텍스트를 추출하지 못했다. 단일 로봇·60초·20~40초 원격 조작 구간은 대조하지 못했고, 초록에는 이 수치가 없다."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. PDF 텍스트 추출에 실패해 virtual-radio / real-world 구분과 향후 과제 문구를 대조하지 못했다. 초록에는 Open RAN 무선 링크를 쓴 지연·오버헤드 평가만 있다."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 초록 범위(통신 지연·오버헤드 평가)에서 성립하는 분류 제안이다. 누구의 의견인지 밝혀야 한다."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f13·f30·f32·f15~f17 이 뒷받침한다. oq-055 는 부분 근거로만 쓴다. 누구의 의견인지 밝혀야 한다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "참고문헌 id 충돌: 직전 실행 2026-10-10-06 브리프(게시됨, 20. 로봇·제조사 관제 연동 버전 3)가 같은 예약 구간 ref-1423~ref-1452 를 썼다. 그때 신규 출처는 ref-1424 EasyTrafficLight.hpp, ref-1425 GoToZone PR #516, ref-1426 Interop SIG 구역 기능 공지, ref-1427 InOrbit Automate 2026, ref-1428 카카오모빌리티 보도자료였고, ref-1429 는 기존 출처 Franke 외(2023)였다. 이번 브리프는 같은 id 를 다른 문서에 붙였다(ref-1424 이슈 #660, ref-1425 TTA 목록, ref-1426 KSSN KS B ISO 22166-202, ref-1427 OPC Overview, ref-1428 VDMA Mesh-Up, ref-1429 Wagner 외). URL 이 달라 퍼블리셔의 같은 URL 병합으로도 해소되지 않는다.",
+        "ref-1423 도 직전 실행에서 VDA 카탈로그(https://www.vda.de/en/news/publications/publication/vda-5050)에 쓰인 id 다. 이번 브리프는 카탈로그를 ref-1412 로, ref-1423 을 PDF 로 바꿔 붙였다.",
+        "f3(선 유도 경로 계산 직역)은 2026-10-09-area41-s6 과 겹친다. f7 재전송 규칙은 2026-10-09-area41-s6·29. 명령·작업 실행의 신뢰성 페이지와, f4 경로 공유는 2026-10-10-area27-s7 과, f19 statusReport 는 2026-10-10-area20-s7 과, f21 판·범위는 2026-09-29-area04-s7 과, f23 ISO 21423 은 공간·지도 모델·안전 대분류 페이지와 겹친다. 모두 새로 쓰지 않고 연결해야 한다."
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "f34·f37 의 '원격조작'은 용어집 '원격 조작 (Teleoperation)'과 표기가 다르다. 용어집 표기로 맞춘다.",
+        "f15 의 'CTT' 약어는 출처 페이지에 없다. 첫 등장에서 '적합성 시험 도구(compliance test tools)'로 풀어 쓴다. 용어집 '적합성 시험 (Conformance Test)'과 같은 개념으로 등록하지 않는다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": [
+        "evidence_excerpt 의 직접 인용은 짧다. 다만 ref-1423(f3·f6), ref-1428(f31·f32), ref-032(f4)는 여러 finding 에 걸쳐 인용이 있다. 페이지에서는 출처당 직접 인용 1회 이하로 줄이고 나머지는 재서술해야 한다.",
+        "f13 evidence 의 'Synthetic Demo Preview'는 원문 문구가 아니다(원문은 'Developer Preview'). 직접 인용으로 쓰지 않는다."
+      ]
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "재조사 브리프에서 지킬 사항 — f2·f5·f8·f12·f14·f18·f20·f22·f33·f37·f38: [의견]마다 누구의 의견인지(구축자 의견 등) 밝힌다 — 공통 규칙 2절·검증 항목 5.",
+      "f9: 각주 ref-051 의 서지('json_schemas/state.schema', main URL)는 확인 대상(3.0.0 태그의 order·factsheet·visualization.schema)과 다르다. 본문에 확인한 파일 경로·태그·확인일을 밝히거나, 태그 파일을 가리키는 출처 항목을 따로 둔다.",
+      "f13: README 문구는 'Developer Preview'(합성 데모 포함, 인증 주장 아님)로 재서술하고 'Synthetic Demo Preview'를 인용하지 않는다 — 원문 문구가 아니다.",
+      "f21: Facet 표 번호를 124~127 로 적는다(검증에서 확인한 Server Facet 표 번호).",
+      "f30: ref-608 발행일을 참고문헌 목록의 '2026-04'에서 '2026-04-09'로 고친다 — 원문 확인.",
+      "f31~f33: Mesh-Up 사례를 5절 '제조 공장'에 둘 때는 표 머리와 각 칸에 'automatica 2025 전시 시연, 실제 공장 배치 아님'을 밝히고, site_matrix_updates 를 도입 사례로 세지 않는다.",
+      "트랙 반영 제안(2026-10-09-26, 건축 도면 자동 인식 단계 2, IDS 1.0 → 7절)은 이번 브리프에 근거 finding 이 없다. 7절에 반영하지 않고 다음 21. 상호운용 표준·적합성 실행으로 넘기거나, 재조사에서 근거 finding 을 낸다.",
+      "open_questions_new 둘째(TTAK.KO-10.1295-Part8 대 KOROS 1148-8)는 근거 f28 의 출처 실재를 확인하지 못했으므로 등록하지 않는다. 셋째(2.x·3.x 혼합 플릿 전환 기록)의 근거 f32 는 관제 공급자 교체 시연이 없었다는 내용이라 판 전환과 직접 관계가 약하다. 근거를 f9·f12 또는 oq-091 로 고친다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 반려. 확인 26건, 미확인 12건, 교차 확인 0건. 강등: f1·f10·f24·f25·f35·f36 사실 → 추정. 삭제: f11·f23·f27. 열린 질문 이동: f26·f28·f29. 원문 미열람 출처: ref-1424(검증에서도 403, 실재 미확인), ref-159, ref-710. 출처 문제: ref-1425(TTA 목록)는 검증 재열람이 HTTP 400 이었고, ref-1423(VDA 5050 3.0.0 PDF)과 Wagner 외 저자 공개본은 텍스트 추출에 실패해 표지·본문 수치를 대조하지 못했다. KSSN 두 상세 페이지는 번호·제목만 보였다. 조항 내용(§5.3·§5.4·§6.1.3.1·§6.1.4.2·§6.1.4.5·§7.1.1)은 공식 저장소 3.0.0 태그 마크다운으로 확인했다. 3.0.0 태그 스키마 세 파일의 끝 쉼표와 main 의 수정 상태는 raw 파일을 직접 열어 확인했다. OPC Foundation 인증 안내 두 페이지에 제조사 자체 인증 경로가 없음도 확인했다. 주의: 이 브리프의 신규 참고문헌 id(ref-1423~ref-1429)는 게시된 직전 실행 2026-10-10-06 의 id 와 겹치며 문서가 서로 다르다. 그대로 게시하면 각주가 다른 문서를 가리키게 되어 반려했다. VDA 5050 3.0.0 날짜는 VDA 계열 자료끼리도 표시가 다르므로 단일 발행일을 확정하지 않는 현재 방침이 맞다. 트랙 반영 제안(IDS 1.0)은 이번 브리프에서 다루지 않았다. 브리프는 외부 조사 메모를 변환한 것이라 검색 0회로 기록됐다. 정정 요청 없음.",
+    "retry_reason": "(a) 재조사 사유: ① 신규 참고문헌 id 가 이미 게시된 출처와 충돌한다. 직전 실행 2026-10-10-06 이 같은 예약 구간(ref-1423~ref-1452)을 써서 ref-1424 EasyTrafficLight.hpp, ref-1425 GoToZone PR #516, ref-1426 Interop SIG 구역 기능 공지, ref-1427 InOrbit Automate 2026, ref-1428 카카오모빌리티 보도자료를 등록했고, ref-1429 는 기존 출처 Franke 외(2023)다. 이번 브리프는 같은 id 를 다른 문서(PDF·이슈 #660·TTA 목록·KSSN·OPC Overview·Mesh-Up·Wagner 외)에 붙였고 URL 이 달라 퍼블리셔 병합으로 풀리지 않는다. 스토리텔러는 브리프 id 를 바꿀 수 없으므로 리서치 단계에서 고쳐야 한다. 실행 컨텍스트의 next_ref_id(없으면 pipeline/agent_runner.py 담당에게 기존 최대 id 이후의 예약 구간을 요청)로 신규 출처 id 를 다시 매긴다. ② 원문을 열었다고 적은 출처 가운데 검증에서 재현되지 않은 것이 있다. 근거(fetch_url 또는 data/source_texts 원문)를 대거나 fetched: false 와 태그 강등으로 고친다. ref-1423 PDF 표지(f1), ref-138·ref-1426 KSSN 세부 칸(f24·f25), ref-1425 TTA 목록(f28, HTTP 400), Wagner 외 저자 공개본 본문 수치(f35·f36)가 해당한다. ③ ref-1424(이슈 #660)는 실재를 확인하지 못했으므로 출처에서 빼고, f11·f23·f27 같은 '외부 메모가 전한다'식 전언 finding 은 넣지 않는다. f29 의 source_unopened 표시는 근거 출처 상태와 맞춘다. ④ 트랙 반영 제안 2026-10-09-26(IDS 1.0 을 7절 BIM 데이터 교환 요구·적합성 검사 수단으로)을 다루지 않았다. (b) 보강할 질문: VDA 5050 3.0.0 공식 PDF 표지의 판 표기는 무엇인가? PDF 텍스트를 data/source_texts 로 넣거나 쪽 이미지를 확인한 경로를 남긴다. KS B 7321-2 와 KS B ISO 22166-202 의 제정일·부합화 표시·고시번호를 KSSN 이나 국가기술표준원 고시로 확인할 수 있는가? TTAK.KO-10.1295-Part8 은 TTA 정보통신표준(standard.tta.or.kr)에 실재하며 제정일은 언제인가? Wagner 외(WFCS 2026)의 평가 시나리오(로봇 수·주문 시간·원격 조작 구간)와 virtual-radio / real-world 구분은 본문 어디에 있는가? IDS 1.0(buildingSMART)의 적용 대상·요구 구조·패싯은 발행 기관 자료로 무엇이며, 21. 상호운용 표준·적합성의 적합성 검사 수단으로 볼 수 있는가? 우선 출처는 VDA·KIT IFL 공식 PDF, KSSN·국가기술표준원 고시, TTA 표준 검색, IEEE Xplore 또는 저자 공개본, buildingSMART IDS 공식 문서다. (c) 살려도 되는 finding: f2(f1 처분에 맞춰 문구 수정), f3·f4·f5·f6·f7·f8·f9(출처 서지 보완)·f12·f13·f14·f15·f16·f17·f18·f19·f20·f21·f22·f30·f31·f32·f33·f34·f37·f38. 이 finding 들은 이번 검증에서 원문과 대조됐다."
+  },
+  "ttft_ms": 3569,
+  "type": "result",
+  "duration_ms": 299111,
+  "uuid": "a1fe27ea-39b7-439c-9030-7dbbdbd65ede",
+  "ttft_stream_ms": 1132,
+  "time_to_request_ms": 156,
+  "time_to_request_phases_ms": {
+    "other": 44,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 7,
+    "input_attachments": 12,
+    "input_hooks": 3,
+    "tool_pool_refresh": 3,
+    "init_message": 7,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 3,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 9,
+    "message_normalization": 4,
+    "client_creation": 9,
+    "request_build": 40
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 106,
+  "time_to_request_cpu_ms": 218,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 24,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1133,
+  "time_to_request_from_spawn_ms": 1746817,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791718643283.7114,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 301.0
+}
