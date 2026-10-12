@@ -19,7 +19,7 @@
 |PROGRESS.md|갱신 중|파일별 커밋 시 동시 갱신|
 |01_existing-wiki-gap-matrix.md|완료|24개 주제 대조, 기존 질문·트랙의 미완료 범위 확인|
 |02_event-claim-verification.md|완료|발표 주장 16행, 날짜/법령/SDK 구별, 전사 미확인 유지|
-|03_research-findings.md|대기|A~F 공개 근거 조사|
+|03_research-findings.md|완료|A~F, 조건부 능력·통신 계약·연속성·성과 정의|
 |04_field-failure-cases.md|대기|발표 관찰과 일반 연구 분리|
 |05_decision-matrices.md|대기|설정/경로/시설 변경 및 책임·비용 판단|
 |06_simulation-validation-boundaries.md|대기|코드 근거와 모델·실측 보정 경계|
@@ -38,3 +38,5 @@
 - 01 완료: 24개 주제 대조; 기존 온톨로지 환경 조건·통신·복구·성과 조사 재사용.
 
 - 02_event-claim-verification.md 완료: 발표 주장 16행, 날짜/법령/SDK 구별, 전사 미확인 유지。
+
+- 03_research-findings.md 완료: A~F, 조건부 능력·통신 계약·연속성·성과 정의。
