@@ -179,21 +179,21 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 84건이다(논문 59건 · 기사·보고서 6건 · 업체 발표 3건 · 표준·오픈소스·기관 자료 16건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 132건이다(논문 74건 · 기사·보고서 6건 · 업체 발표 15건 · 표준·오픈소스·기관 자료 37건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
+- [ref-1550](../../references/ref-1550.md) — Wang, Y. 외 (저자 대부분 AGIBOT(Finch) 소속, 일부 Shanghai Innovation Institute 겸직, 1명 Columbia University), Learning While Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies (발행 2026-09-16)
 - [ref-1071](../../references/ref-1071.md) — Groß, J., & Heidrich, J. (arXiv), AAS-RAIL: Improving Information Extraction for Asset Administration Shells through Retrieval-Augmented In-Context Learning (발행 2026-09-07)
 - [ref-1043](../../references/ref-1043.md) — Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv), Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots (발행 2026-09)
 - [ref-832](../../references/ref-832.md) — Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P., LLM Agents Perform Controlled Experiments Using Simulation Models (발행 2026-08-22)
+- [ref-1567](../../references/ref-1567.md) — Sanjay, V., & Li, J. (arXiv), Scalable Long-Horizon Planning with Staggered Updates for Lifelong MAPF (발행 2026-08-07)
+- [ref-1554](../../references/ref-1554.md) — Phung, H., & Averbuch-Elor, H. (Cornell University, arXiv; SIGGRAPH 2026), Raster2Seq: Polygon Sequence Generation for Floorplan Reconstruction (발행 2026-08-07)
+- [ref-1568](../../references/ref-1568.md) — Jiang, H., Yan, J., Zhang, Y., Tang, Y., Duhan, T., Veerapaneni, R., Sartoretti, G., & Li, J. (arXiv), Search-Aided Joint Agent-Environment Reinforcement Learning for Robust Lifelong Multi-Agent Path Finding with Rotations (발행 2026-08-06)
+- [ref-1555](../../references/ref-1555.md) — Aliyev, N., & Barsi, Á. (Periodica Polytechnica Civil Engineering), Evaluating Vision-language Models for Zero-shot Room Area Estimation in Floor Plan Images (발행 2026-08-05)
 - [ref-1062](../../references/ref-1062.md) — Garces, D., Castro, S., Haimovich, A., Crowe, B., & Gil, S. (arXiv), Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts (발행 2026-08)
-- [ref-1065](../../references/ref-1065.md) — Robinson, L., Ramtoula, B., Izaaryene, A., Newman, P., & De Martini, D. (arXiv), Multi-Robot Planning and Control from CCTV Camera Networks in a Real Warehouse (발행 2026-06-04)
-- [ref-822](../../references/ref-822.md) — Howard, T. L. (California Polytechnic State University, 석사논문), A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities (발행 2026-06)
-- [ref-239](../../references/ref-239.md) — Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF (발행 2026-06)
-- [ref-201](../../references/ref-201.md) — Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A., From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation (발행 2026-06)
-- [ref-1069](../../references/ref-1069.md) — Modi, G., Buoso, D., Averta, G., & De Martini, D. (arXiv), RGB-only Active 3D Scene Graph Generation for Indoor Mobile Robots (발행 2026-05-18)
-- [ref-417](../../references/ref-417.md) — Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems (발행 2026-04)
-- 그 밖에 49건
+- [ref-1557](../../references/ref-1557.md) — Zhang, Y., Lu, L., Pan, Y. 외 (arXiv; The International Journal of Robotics Research), BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization (발행 2026-06-12)
+- 그 밖에 64건
 
 **기사·보고서**
 
@@ -206,33 +206,41 @@ Q. 현장 유형별 적용은 현장마다 다른 요구를 모으고, 모든 �
 
 **업체 발표**
 
+- [ref-1545](../../references/ref-1545.md) — Figure AI, F.03 Arrives at BMW (발행 2026-06-30)
 - [ref-1051](../../references/ref-1051.md) — BMW Group, BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg (발행 2026-06-25)
+- [ref-1549](../../references/ref-1549.md) — LG CNS, LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개 (발행 2026-05-07)
+- [ref-1571](../../references/ref-1571.md) — 현대자동차그룹 (현대글로비스), 현대글로비스가 그리는 자동화를 넘어선 물류의 미래 (발행 2026-04-16)
+- [ref-1544](../../references/ref-1544.md) — Figure AI, F.02 Contributed to the Production of 30,000 Cars at BMW (발행 2025-11-19)
 - [ref-1054](../../references/ref-1054.md) — Amazon Science, Amazon builds first foundation model for multirobot coordination (발행 2025-08-11)
+- [ref-916](../../references/ref-916.md) — Amazon, Amazon launches a new AI foundation model to power its robotic fleet and deploys its 1 millionth robot (발행 2025-07)
 - [ref-1063](../../references/ref-1063.md) — CJ대한통운, 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명 (발행 2021-07-28)
+- [ref-1563](../../references/ref-1563.md) — Hilti Research · Trimble · Oxford DRS (Hilti-Research/hilti-trimble-slam-challenge-2026), Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — README (commit e0c9277) (발행 미확인)
+- [ref-1560](../../references/ref-1560.md) — ONTHEIT (ONTHEIT-AI/BizOnAI-OCR), KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README (commit cdfc6d0) (발행 미확인)
+- 그 밖에 5건
 
 **표준·오픈소스·기관 자료**
 
+- [ref-1552](../../references/ref-1552.md) — European Union (EUR-Lex), Regulation (EU) 2024/1689 (Artificial Intelligence Act) — consolidated text 02024R1689-20260727 (incl. M1 Regulation (EU) 2026/1744) (발행 2026-07-27)
+- [ref-1513](../../references/ref-1513.md) — Hugging Face LeRobot 기여자 (huggingface/lerobot), Backward compatibility (docs/source/backwardcomp.mdx, LeRobot v0.6.0) (발행 2026-07-06)
 - [ref-854](../../references/ref-854.md) — Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse, Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP) (발행 2026-06-25)
+- [ref-1542](../../references/ref-1542.md) — Model Context Protocol (Hungerford, O., Morrow, S., & Chang, L.), Tool Annotations as Risk Vocabulary: What Hints Can and Can't Do (발행 2026-03-16)
+- [ref-1546](../../references/ref-1546.md) — 산업통상부, 서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다. (발행 2025-11-24)
+- [ref-1553](../../references/ref-1553.md) — AI-Hub (한국지능정보사회진흥원), 대규모 물리환경 로봇조작 데이터 (발행 2025-06-30)
+- [ref-1512](../../references/ref-1512.md) — MLflow 프로젝트 (Linux Foundation 오픈소스 프로젝트), Model Registry Workflows (docs/docs/classic-ml/model-registry/workflow.mdx, MLflow v3.1.0) (발행 2025-06-10)
 - [ref-1060](../../references/ref-1060.md) — ISO (ISO/TC 108), ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements (발행 2025)
 - [ref-863](../../references/ref-863.md) — European Commission — AI Act Service Desk, Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act) (발행 2024-06-13)
 - [ref-1012](../../references/ref-1012.md) — AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주), 건축 도면 데이터 (발행 2023-07-26)
-- [ref-619](../../references/ref-619.md) — ISO/IEC, ISO/IEC 23894:2023 - AI — Guidance on risk management (발행 2023-02)
-- [ref-617](../../references/ref-617.md) — NIST, NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence (발행 2023-01-26)
-- [ref-618](../../references/ref-618.md) — ISO/IEC, ISO/IEC 42001:2023 - AI management systems (발행 2023)
-- [ref-626](../../references/ref-626.md) — MLflow (Linux Foundation 오픈소스 프로젝트), ML Model Registry \| MLflow AI Platform (발행 미확인)
-- [ref-621](../../references/ref-621.md) — European Commission, AI Act \| Shaping Europe's digital future (발행 미확인)
-- [ref-620](../../references/ref-620.md) — 국가법령정보센터(과학기술정보통신부), 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 (발행 미확인)
-- 그 밖에 6건
+- 그 밖에 27건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-09 · 갱신 · [L. AI·학습 기술](index.md) — '다른 대분류와의 연결' 절 신규 작성(A~K·M~Q 16개 대분류, 교차 규칙 네 갈래와 C 원칙 반영, 미연결 7개 영역 명시), 페이지 끝에 '참고 자료' 절 추가(각주 정의 70건). 2차: 번호만 쓴 항목 제목 2곳 수정, 52번 항목의 근거 없는 해석 문장을 태그 없는 연결 설명으로 교체, 38·12번 항목을 하위 항목으로 나눔, ROS 첫 등장 풀어쓰기 (실행 2026-10-09-08)
-- 2026-10-09 · 요약 · [L. AI·학습 기술](index.md) — L. AI·학습 기술: 다른 대분류와의 연결 절 신규 작성(A~K·M~Q 16개 대분류, 교차 규칙 네 갈래·C 원칙 반영, 미연결 7개 영역 명시)과 참고 자료 절 추가 (실행 2026-10-09-08)
-- 2026-09-30 · 갱신 · [46. 예측·학습 기반 최적화](prediction-and-learning-based-optimization.md) — 영역 심화: 섹션 3~11 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 프런트매터 related_areas·tags·sources·confidence 추가(2차 재실행: 이 페이지 본문 변경 없음) (실행 2026-09-30-09)
-- 2026-09-30 · 생성 · [46. 예측·학습 기반 최적화 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area46-s6.md) — 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(1,868자)을 옮겼다. 2차: DeepFleet·34. 시뮬레이션·예측용 디지털 트윈 구분 문장의 태그를 [의견]에서 [추정]으로 되돌렸다 (실행 2026-09-30-09)
-- 2026-09-30 · 생성 · [46. 예측·학습 기반 최적화 — 대표 연구와 자료](../../topics/2026/2026-09-30-area46-s8.md) — 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(1,712자)을 옮겼다 (실행 2026-09-30-09)
+- 2026-10-12 · 갱신 · [45. 문서·도면·장면 이해](document-drawing-and-scene-understanding.md) — 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area45-s6.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 대표 연구와 자료](../../topics/2026/2026-10-12-area45-s8.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 열린 질문](../../topics/2026/2026-10-12-area45-s11.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,701자)을 옮겼다 (실행 2026-10-12-07)
+- 2026-10-12 · 생성 · [45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area45-s7.md) — 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,522자)을 옮겼다 (실행 2026-10-12-07)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

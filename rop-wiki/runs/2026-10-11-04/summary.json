@@ -1,0 +1,165 @@
+{
+  "run_id": "2026-10-11-04",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 48,
+    "area_name": "48. 안전·위험 관리",
+    "category": "M. 안전"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "a65e415",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 11
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2875.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-11 | 48. 안전·위험 관리 | 3·5·6·7·8·9·11절 차등 갱신(국내 위험성평가 지침, Open-RMF 대상 비상 신호로 화재경보 사례 정정, STPA 산출물·근로자 참여·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호 정정과 KS B 7327, SafeGate 평가 분모, 제조사 매뉴얼 책임 구분·EU 실질적 변경 조건), 이전 판 주제 페이지 링크 유지, 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 | run 2026-10-11-04",
+  "notes": [
+    "참고문헌 생성: references/ref-1455.md",
+    "참고문헌 생성: references/ref-1456.md",
+    "참고문헌 생성: references/ref-1457.md",
+    "참고문헌 생성: references/ref-1458.md",
+    "참고문헌 생성: references/ref-1459.md",
+    "참고문헌 생성: references/ref-1460.md",
+    "참고문헌 생성: references/ref-1461.md",
+    "참고문헌 생성: references/ref-1462.md",
+    "참고문헌 생성: references/ref-1463.md",
+    "참고문헌 생성: references/ref-1464.md",
+    "참고문헌 생성: references/ref-1465.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 11,
+    "standards": 4,
+    "open_questions": 4,
+    "flow_cells": 3,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-11 23:34:24 KST",
+  "usage": {
+    "input_tokens": 40,
+    "cache_creation_input_tokens": 974968,
+    "cache_read_input_tokens": 3122254,
+    "output_tokens": 141119,
+    "cost_usd": 11.4868,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.9411,
+        "output_tokens": 30931,
+        "cache_read_input_tokens": 2864581,
+        "cache_creation_input_tokens": 190186
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.9212,
+        "output_tokens": 88519,
+        "cache_read_input_tokens": 72042,
+        "cache_creation_input_tokens": 517056
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.5271,
+        "output_tokens": 21198,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 258453
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/safety/safety-and-risk-management.md (8개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-11-area48-s11.md",
+        "chars": 1898
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-11-area48-s7.md",
+        "chars": 1778
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-11-area48-s8.md",
+        "chars": 1356
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-11-area48-s6.md",
+        "chars": 1151
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-11-area48-s3.md",
+        "chars": 1002
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-10-11-area48-s4.md",
+        "chars": 691
+      },
+      {
+        "from": "docs/categories/safety/safety-and-risk-management.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-11-area48-s10.md",
+        "chars": 462
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 0
+}

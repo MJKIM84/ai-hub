@@ -16,6 +16,280 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-12
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-12-07 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s6.md](topics/2026/2026-10-12-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s8.md](topics/2026/2026-10-12-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s11.md](topics/2026/2026-10-12-area45-s11.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,701자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s7.md](topics/2026/2026-10-12-area45-s7.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,522자)을 옮겼다 |
+| 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s10.md](topics/2026/2026-10-12-area45-s10.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,167자)을 옮겼다 |
+| 2026-10-12-07 | 요약 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 45. 문서·도면·장면 이해: 차등 갱신: 5절 물류창고 사례의 카메라 설치 주체 정정(연구팀 설치 카메라 30대, 45분·임무 76건·개입 4회)과 실외 사례 로봇 대수·재위치·임무 성공률 보강, 6~8절에 도면 인식 점수 조건·AAS-RAIL 산출 조건·근거 위치 자료형·BIM 정합 요약·새 연구 4건, 9절 카메라 주체 문장 정정, 10절 연결 추가(기존 분리 페이지 연결 유지), 11절 부분 근거와 새 질문 4건, 각주 신규 10건 |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1554.md](references/ref-1554.md) | 참고문헌 ref-1554 등록: Raster2Seq: Polygon Sequence Generation for Floorplan Recons… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1555.md](references/ref-1555.md) | 참고문헌 ref-1555 등록: Evaluating Vision-language Models for Zero-shot Room Area Es… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1556.md](references/ref-1556.md) | 참고문헌 ref-1556 등록: IFC 4.3 — IfcMapConversion (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1557.md](references/ref-1557.md) | 참고문헌 ref-1557 등록: BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1558.md](references/ref-1558.md) | 참고문헌 ref-1558 등록: LangExtract — langextract/core/data.py (Extraction 자료형, comm… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1559.md](references/ref-1559.md) | 참고문헌 ref-1559 등록: docling-core — docling_core/types/doc/common/reference.py (P… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1560.md](references/ref-1560.md) | 참고문헌 ref-1560 등록: KDoc-OCRBench-V2 (Korean Document OCR Benchmark v2) — README… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1561.md](references/ref-1561.md) | 참고문헌 ref-1561 등록: Hydra-Multi: Collaborative Online Construction of 3D Scene G… |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1562.md](references/ref-1562.md) | 참고문헌 ref-1562 등록: Spark-DSG — examples/python_api.py (commit 3c40997) |
+| 2026-10-12-07 | 생성 | [docs/references/ref-1563.md](references/ref-1563.md) | 참고문헌 ref-1563 등록: Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026 — RE… |
+| 2026-10-12-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-10-12-06 | 갱신 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 차등 갱신: 4절 예측 출력 종류 소절 추가(ISO 13381-1 서지, SOC 물리 모델 구분), 5절 물류창고 10% 표현 정정·DeepFleet 평가 조건·CDE, 병원 BIDMC 평가 조건·대기 시간 수치, 제조 공장 국내 시뮬레이션 연구 사례 추가, 기타 91% 표본 수, 6·7·8절 갱신 소절 추가(SILLM 지도별 우열·훈련 비용, RL-RH-PP, SJRL, LSMART 대체 정책, PUSH 대조, POGEMA·LoRR·SILLM 구현·ISO 행, Garces·SPO 정정), 9절 확정 요청 인계·SOC·오르카 경계, 10절 연결 4건, 11절 oq id 부여·부분 근거·새 질문 3건, 13절 각주 갱신(신규 8건). 2차: 4·6·7·8·10절 갱신 소절 앞에 2026-09-30 분리 페이지 링크 줄 추가, 6절 우열 문장을 두 연구로 한정, SOC·Lifelong MAPF 첫 등장 풀이, last_run 2026-10-12 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s8.md](topics/2026/2026-10-12-area46-s8.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(2,207자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s6.md](topics/2026/2026-10-12-area46-s6.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(2,118자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s7.md](topics/2026/2026-10-12-area46-s7.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,696자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s11.md](topics/2026/2026-10-12-area46-s11.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "11. 열린 질문" 절(1,664자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s10.md](topics/2026/2026-10-12-area46-s10.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(684자)을 옮겼다 |
+| 2026-10-12-06 | 생성 | [docs/topics/2026/2026-10-12-area46-s4.md](topics/2026/2026-10-12-area46-s4.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "4. 핵심 개념과 용어" 절(677자)을 옮겼다 |
+| 2026-10-12-06 | 요약 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 46. 예측·학습 기반 최적화: 차등 갱신: DeepFleet 10% 표현 정정(미래형·이동 시간·배치 효율, 벤더 주장), 병원 사례 BIDMC 평가 조건·대기 시간 수치, 국내 제조 물류 시뮬레이션 연구, SILLM 지도별 우열·훈련 비용, RL-RH-PP·SJRL·LSMART·PUSH 조건, LoRR 2026 요약, ISO 13381-1·SPO 서지 보정, 확정 요청·SOC·오르카 경계, oq-220~oq-224 부분 근거와 새 질문 3건 |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1564.md](references/ref-1564.md) | 참고문헌 ref-1564 등록: League of Robot Runners 2026 — Evaluation Process(evaluation… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1565.md](references/ref-1565.md) | 참고문헌 ref-1565 등록: Deploying Ten Thousand Robots: Scalable Imitaion Learning fo… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1566.md](references/ref-1566.md) | 참고문헌 ref-1566 등록: Learning-guided Prioritized Planning for Lifelong Multi-Agen… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1567.md](references/ref-1567.md) | 참고문헌 ref-1567 등록: Scalable Long-Horizon Planning with Staggered Updates for Li… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1568.md](references/ref-1568.md) | 참고문헌 ref-1568 등록: Search-Aided Joint Agent-Environment Reinforcement Learning… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1569.md](references/ref-1569.md) | 참고문헌 ref-1569 등록: rmf_battery — README |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1570.md](references/ref-1570.md) | 참고문헌 ref-1570 등록: 다중 로봇 제조 물류 작업을 위한 안전성과 효율성 학습 (Safety and Efficiency Learni… |
+| 2026-10-12-06 | 생성 | [docs/references/ref-1571.md](references/ref-1571.md) | 참고문헌 ref-1571 등록: 현대글로비스가 그리는 자동화를 넘어선 물류의 미래 |
+| 2026-10-12-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-12-05 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 5·9절 고침(Figure AI 자체 발표 문장 정정, 10/11개월 출처 위치·Figure 기간 축, 99%·개입 0회 목표치 구분, IMR-LLM 실물 연구 평가 사례, 산업부 M.AX 과제, 도구 호출 실행 경계와 이 위키의 경계 판단 표기), 6·7·8·11절에 2026-09-30 분리 페이지 링크를 단 2026-10-12 갱신 소절 추가, 13절에 새 각주 15건·기존 4건 접근일 갱신 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s7.md](topics/2026/2026-10-12-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,877자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s11.md](topics/2026/2026-10-12-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(2,055자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s6.md](topics/2026/2026-10-12-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,877자)을 옮겼다 |
+| 2026-10-12-05 | 생성 | [docs/topics/2026/2026-10-12-area44-s8.md](topics/2026/2026-10-12-area44-s8.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "8. 대표 연구와 자료" 절(1,341자)을 옮겼다 |
+| 2026-10-12-05 | 요약 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 44. 로봇 기반 모델·언어 모델 계획: 갱신: 5절 Figure AI 자체 발표 문장 정정·10/11개월 출처 위치·99% 목표치 구분·IMR-LLM 실물 연구 평가 사례·산업부 M.AX 과제, 6~8절 다중 로봇 계획 평가 조건·보장 전제·공개 VLA 입출력·라이선스 문서 충돌·π0.7·LIBERO-Plus(2026-09-30 분리 페이지 링크 유지), 9절 도구 호출 실행 경계, 새 열린 질문 4건 |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1532.md](references/ref-1532.md) | 참고문헌 ref-1532 등록: Probabilistically Correct Language-based Multi-Robot Plannin… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1533.md](references/ref-1533.md) | 참고문헌 ref-1533 등록: OpenVLA — README 및 LICENSE (커밋 c8f03f4) |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1534.md](references/ref-1534.md) | 참고문헌 ref-1534 등록: openvla/openvla-7b — Model Card |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1535.md](references/ref-1535.md) | 참고문헌 ref-1535 등록: openpi — README, docs/remote_inference.md, LICENSE (커밋 215ab… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1536.md](references/ref-1536.md) | 참고문헌 ref-1536 등록: Isaac GR00T N1.7 — README 및 LICENSE (n1.7-release 브랜치) |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1537.md](references/ref-1537.md) | 참고문헌 ref-1537 등록: GR00T-N1.7-3B — LICENSE 및 모델 카드 |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1538.md](references/ref-1538.md) | 참고문헌 ref-1538 등록: π0.7: a Steerable Generalist Robotic Foundation Model with E… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1539.md](references/ref-1539.md) | 참고문헌 ref-1539 등록: LIBERO-Plus: In-depth Robustness Analysis of Vision-Language… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1540.md](references/ref-1540.md) | 참고문헌 ref-1540 등록: LIBERO-Plus: A Progressive Robustness Benchmark for Visual-L… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1541.md](references/ref-1541.md) | 참고문헌 ref-1541 등록: FAQ · nasa-jpl/rosa Wiki |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1542.md](references/ref-1542.md) | 참고문헌 ref-1542 등록: Tool Annotations as Risk Vocabulary: What Hints Can and Can'… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1543.md](references/ref-1543.md) | 참고문헌 ref-1543 등록: Connect an AI Assistant with the MCP Server (MoveIt Pro 문서 V… |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1544.md](references/ref-1544.md) | 참고문헌 ref-1544 등록: F.02 Contributed to the Production of 30,000 Cars at BMW |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1545.md](references/ref-1545.md) | 참고문헌 ref-1545 등록: F.03 Arrives at BMW |
+| 2026-10-12-05 | 생성 | [docs/references/ref-1546.md](references/ref-1546.md) | 참고문헌 ref-1546 등록: 서울대와 M.AX 얼라이언스가 손잡고 휴머노이드, 자율주행차, AI팩토리에 탑재될 AI 모델 공동 개발한다. |
+| 2026-10-12-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-10-12-04 | 갱신 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 차등 갱신: 3절 법·규제 문단 정정(인공지능기본법 개정 법률 2026-07-21 시행·제34조, EU AI Act 2026/1744 개정의 기계류 Section B 이동·제2조 2항), 4·6·7·8절에 기존 분리 주제 페이지(2026-09-25-area27-s4·s6·s7·s8) 링크를 단 갱신 소절 추가(별칭 반영 시점, 배포 묶음 호환성, ML Test Score Infra4·6·7, 배포 중단·롤백 상태, KnowNo·ACI 보장 조건, LWD, AI-Hub 71825, NIST MANAGE 4.1, 제43·72조 조문 소개), 5절 출하 예외·성과 보강과 기타 현장 사례 추가, 9절 배포 후 감시 책임 경계, 10절 연결 3건, 11절 oq id 부여·부분 근거·새 질문 4건, 13절 각주 갱신(신규 12건). 2차: 기존 주제 페이지 링크 복구, oq-213 항목 삭제, 7절 법 문단 첫 문장 태그·각주 추가 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s6.md](topics/2026/2026-10-12-area47-s6.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(3,448자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s7.md](topics/2026/2026-10-12-area47-s7.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,884자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s11.md](topics/2026/2026-10-12-area47-s11.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "11. 열린 질문" 절(1,912자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s3.md](topics/2026/2026-10-12-area47-s3.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "3. 왜 중요한가" 절(1,551자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s4.md](topics/2026/2026-10-12-area47-s4.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "4. 핵심 개념과 용어" 절(1,219자)을 옮겼다 |
+| 2026-10-12-04 | 생성 | [docs/topics/2026/2026-10-12-area47-s8.md](topics/2026/2026-10-12-area47-s8.md) | 자동 분리: 47. AI·학습·적응과 모델 운영 의 "8. 대표 연구와 자료" 절(849자)을 옮겼다 |
+| 2026-10-12-04 | 요약 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 47. AI·학습·적응과 모델 운영: 갱신: 인공지능기본법 개정 법률(2026-07-21 시행)·제34조와 EU AI Act 2026/1744 개정(기계류 부속서 I Section B 이동·제2조 2항) 반영, 모델 별칭 반영 시점·배포 묶음 호환성·ML Test Score Infra4·6·7·배포 중단·롤백 상태(벤더 주장)·KnowNo와 적응형 등각 추론의 보장 조건·LWD·AI-Hub 71825 분할 표기 불일치 추가, 기타 현장 사례(LG CNS, 벤더 주장), 열린 질문 id 부여와 새 질문 4건. 2차: 기존 분리 주제 페이지 링크 복구, oq-213 항목 삭제. 후속 정리 대상(이번 범위 밖): L. AI·학습 기술·M. 안전 대분류 페이지의 EU AI Act·인공지능기본법 시행일 서술, ref-168 저자 표기, 43. 데이터·관측성·배포 주제 페이지의 Mender 태그, 분리 주제 페이지(2026-09-25-area27-s4·s6·s7·s8)의 기존 문장 |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1512.md](references/ref-1512.md) | 참고문헌 ref-1512 등록: Model Registry Workflows (docs/docs/classic-ml/model-registr… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1513.md](references/ref-1513.md) | 참고문헌 ref-1513 등록: Backward compatibility (docs/source/backwardcomp.mdx, LeRobo… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1514.md](references/ref-1514.md) | 참고문헌 ref-1514 등록: Create a custom Update Module |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1515.md](references/ref-1515.md) | 참고문헌 ref-1515 등록: Check deployment status |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1516.md](references/ref-1516.md) | 참고문헌 ref-1516 등록: How job configurations work |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1547.md](references/ref-1547.md) | 참고문헌 ref-1547 등록: Roll out a new model to a fleet |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1548.md](references/ref-1548.md) | 참고문헌 ref-1548 등록: Adaptive Conformal Inference Under Distribution Shift |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1549.md](references/ref-1549.md) | 참고문헌 ref-1549 등록: LG CNS, 로봇 학습·운영 플랫폼 '피지컬웍스' 공개 |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1550.md](references/ref-1550.md) | 참고문헌 ref-1550 등록: Learning While Deploying: Fleet-Scale Reinforcement Learning… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1551.md](references/ref-1551.md) | 참고문헌 ref-1551 등록: Artificial Intelligence Risk Management Framework (AI RMF 1.… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1552.md](references/ref-1552.md) | 참고문헌 ref-1552 등록: Regulation (EU) 2024/1689 (Artificial Intelligence Act) — co… |
+| 2026-10-12-04 | 생성 | [docs/references/ref-1553.md](references/ref-1553.md) | 참고문헌 ref-1553 등록: 대규모 물리환경 로봇조작 데이터 |
+| 2026-10-12-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-10-12-03 | 갱신 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 차등 갱신: 4절(근로자참여법 제20조 2022판·공개 작업자 설문 표본 조건), 5절(물류창고 이해당사자 부상 자료·병원 Delphi·실외 물품 인수 사례), 6절(FSQ-IC·노사 AI 윤리위원회), 7절(근거 판 갱신·디지털 접근성 기준), 8절(JPE 게재판·독일 비교), 9절(책임 경계 보강), 11절(부분 근거·새 질문 9건), 13절 각주 15건 추가. 2차 수정: 4·6·7·8·11절에 2026-09-30 분리 주제 페이지 링크 복원, 8절 범위값 출처 링크, 5절 실외 끝 문장 정정 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s7.md](topics/2026/2026-10-12-area60-s7.md) | 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,519자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s11.md](topics/2026/2026-10-12-area60-s11.md) | 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(2,273자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s6.md](topics/2026/2026-10-12-area60-s6.md) | 자동 분리: 60. 노동·수용성·접근성 의 "6. 대표 접근법과 기술" 절(1,757자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s8.md](topics/2026/2026-10-12-area60-s8.md) | 자동 분리: 60. 노동·수용성·접근성 의 "8. 대표 연구와 자료" 절(1,580자)을 옮겼다 |
+| 2026-10-12-03 | 생성 | [docs/topics/2026/2026-10-12-area60-s4.md](topics/2026/2026-10-12-area60-s4.md) | 자동 분리: 60. 노동·수용성·접근성 의 "4. 핵심 개념과 용어" 절(1,187자)을 옮겼다 |
+| 2026-10-12-03 | 요약 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 60. 노동·수용성·접근성: 갱신: 근로자참여법 제20조 근거를 2022-12-11 시행판으로 바꾸고 수용성 연구 표본 조건, 물류창고 이해당사자 부상 자료, 병원·실외 사례, 디지털 접근성 기준, 고용 효과 게재판·독일 비교, 새 열린 질문 9건 추가 |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1497.md](references/ref-1497.md) | 참고문헌 ref-1497 등록: Dataset of worker perceptions of workforce robotics regardin… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1498.md](references/ref-1498.md) | 참고문헌 ref-1498 등록: Translation, Adaptation, and Validation in Portuguese of an… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1499.md](references/ref-1499.md) | 참고문헌 ref-1499 등록: Amazon invests $2.5 billion in workplace safety, reduces wor… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1500.md](references/ref-1500.md) | 참고문헌 ref-1500 등록: Failure to Deliver: Amazon Falls Short on Safety |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1501.md](references/ref-1501.md) | 참고문헌 ref-1501 등록: 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) 시행 2022-12-11 법률 제18927호(202… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1502.md](references/ref-1502.md) | 참고문헌 ref-1502 등록: Global case studies of social dialogue on AI and algorithmic… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1503.md](references/ref-1503.md) | 참고문헌 ref-1503 등록: Web Content Accessibility Guidelines (WCAG) 2.2 (W3C Recomme… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1504.md](references/ref-1504.md) | 참고문헌 ref-1504 등록: Directive (EU) 2019/882 of 17 April 2019 on the accessibilit… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1505.md](references/ref-1505.md) | 참고문헌 ref-1505 등록: EN 301 549 V4.1.1 (2026-09) Accessibility requirements for I… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1506.md](references/ref-1506.md) | 참고문헌 ref-1506 등록: Guidance on Applying WCAG 2 to Non-Web Information and Commu… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1507.md](references/ref-1507.md) | 참고문헌 ref-1507 등록: axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGE… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1508.md](references/ref-1508.md) | 참고문헌 ref-1508 등록: Nurses' Perceptions and Utilization Plans for Applying Compa… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1509.md](references/ref-1509.md) | 참고문헌 ref-1509 등록: From Margin to Center: Designing Inclusive and Equitable Ser… |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1510.md](references/ref-1510.md) | 참고문헌 ref-1510 등록: Robots and Jobs: Evidence from US Labor Markets (JPE 게재판) |
+| 2026-10-12-03 | 생성 | [docs/references/ref-1511.md](references/ref-1511.md) | 참고문헌 ref-1511 등록: The Adjustment of Labor Markets to Robots |
+| 2026-10-12-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-10-12-02 | 갱신 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 차등 갱신(2차 수정 반영): 5절 교체(책임보험 법령 기준 금액, 16개→8개 근거 고시 정정·병기, 버지니아 합산 운행 보험 단위, 홍콩 비교), 3·4·6·7·8·10·11절을 요약 문장+이전(2026-09-30) 상세 페이지 링크+2026-10-12 보강 소절로 교체, 9절 보강 소절 추가, 13절 각주 갱신(ref-1238 접근일 2026-10-12), 프런트매터 sources·related_areas 갱신 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s7.md](topics/2026/2026-10-12-area59-s7.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "7. 관련 표준·프레임워크·오픈소스" 절(3,488자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s11.md](topics/2026/2026-10-12-area59-s11.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "11. 열린 질문" 절(1,910자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s4.md](topics/2026/2026-10-12-area59-s4.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "4. 핵심 개념과 용어" 절(1,699자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s6.md](topics/2026/2026-10-12-area59-s6.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "6. 대표 접근법과 기술" 절(1,591자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s8.md](topics/2026/2026-10-12-area59-s8.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "8. 대표 연구와 자료" 절(629자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s3.md](topics/2026/2026-10-12-area59-s3.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "3. 왜 중요한가" 절(622자)을 옮겼다 |
+| 2026-10-12-02 | 생성 | [docs/topics/2026/2026-10-12-area59-s10.md](topics/2026/2026-10-12-area59-s10.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(415자)을 옮겼다 |
+| 2026-10-12-02 | 요약 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 59. 법·규제·보험·라이선스: 차등 갱신: AI Act 디지털 옴니버스·기계규정 위임법령 경로, 제조물책임지침 정오표 기준 적용 시점, 인공지능 기본법 제33·35조, CRA 보고 기산점·스튜어드, 실외이동로봇 책임보험 법령 기준 금액(oq-288 해결), 16개→8개 근거 고시 정정, 라이선스 검사 근거 보강, 2026-09-30 상세 페이지 연결 복구. 트랙 반영 제안(2026-10-09-26 건축 도면 자동 인식 단계 2, 학습 데이터 라이선스 사례)은 이번 브리프에 근거 finding 이 없어 7절에 반영하지 않고 제안 상태 유지 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1517.md](references/ref-1517.md) | 참고문헌 ref-1517 등록: Regulation (EU) 2026/1744 of the European Parliament and of… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1518.md](references/ref-1518.md) | 참고문헌 ref-1518 등록: 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 [시행 2026. 7. 21.] [법률 제21311호, 2… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1519.md](references/ref-1519.md) | 참고문헌 ref-1519 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시 일부개정(안) 행정예고 (산업통상부 공고 제2025-… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1520.md](references/ref-1520.md) | 참고문헌 ref-1520 등록: 지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의10(책임… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1521.md](references/ref-1521.md) | 참고문헌 ref-1521 등록: LCQ20: Regulating operation of intelligent robots |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1522.md](references/ref-1522.md) | 참고문헌 ref-1522 등록: Regulation (EU) 2024/2847 of the European Parliament and of… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1523.md](references/ref-1523.md) | 참고문헌 ref-1523 등록: The CRA Single Reporting Platform is launched |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1524.md](references/ref-1524.md) | 참고문헌 ref-1524 등록: Apache License, Version 2.0 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1525.md](references/ref-1525.md) | 참고문헌 ref-1525 등록: REUSE Specification – Version 3.3 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1526.md](references/ref-1526.md) | 참고문헌 ref-1526 등록: reuse-tool CHANGELOG.md (v6.1.0 태그) |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1527.md](references/ref-1527.md) | 참고문헌 ref-1527 등록: Annex D: SPDX License Expressions - specification v2.2.2 |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1528.md](references/ref-1528.md) | 참고문헌 ref-1528 등록: GR00T-N1.6-3B / LICENSE (NVIDIA License) |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1529.md](references/ref-1529.md) | 참고문헌 ref-1529 등록: Directive (EU) 2024/2853 of the European Parliament and of t… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1530.md](references/ref-1530.md) | 참고문헌 ref-1530 등록: Corrigendum to Directive (EU) 2024/2853 of the European Parl… |
+| 2026-10-12-02 | 생성 | [docs/references/ref-1531.md](references/ref-1531.md) | 참고문헌 ref-1531 등록: 한·싱가포르 규제샌드박스 비교를 통한 AI 샌드박스 효율화 방안 제언 |
+| 2026-10-12-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-10-12-01 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s6.md](topics/2026/2026-10-12-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s11.md](topics/2026/2026-10-12-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s7.md](topics/2026/2026-10-12-area58-s7.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,029자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s8.md](topics/2026/2026-10-12-area58-s8.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "8. 대표 연구와 자료" 절(774자)을 옮겼다 |
+| 2026-10-12-01 | 생성 | [docs/topics/2026/2026-10-12-area58-s4.md](topics/2026/2026-10-12-area58-s4.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "4. 핵심 개념과 용어" 절(699자)을 옮겼다 |
+| 2026-10-12-01 | 요약 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 58. 다사업자 책임·계약·데이터: 데이터 보유자 정의를 데이터법 원문으로 바로잡고 RoMi-H 등재 주기 표현('연 2회')을 원어·두 해석으로 정정, 데이터법 적용 시점·제조물책임지침 조문·공개 약관 비교(벤더 주장)·RFC 9745 보강, 2026-09-30 분리 페이지 연결 유지, 새 열린 질문 3건 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1487.md](references/ref-1487.md) | 참고문헌 ref-1487 등록: EU DATA ACT Notice |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1488.md](references/ref-1488.md) | 참고문헌 ref-1488 등록: Data Secrets: The Data Act's New Trade Secrets Framework |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1489.md](references/ref-1489.md) | 참고문헌 ref-1489 등록: ANNEX to the Communication to the Commission — Approval of t… |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1490.md](references/ref-1490.md) | 참고문헌 ref-1490 등록: Directive (EU) 2024/2853 of the European Parliament and of t… |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1491.md](references/ref-1491.md) | 참고문헌 ref-1491 등록: Terms of Service (Exhibit A: Service Level Agreement) |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1492.md](references/ref-1492.md) | 참고문헌 ref-1492 등록: AWS IoT RoboRunner Service Level Agreement |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1493.md](references/ref-1493.md) | 참고문헌 ref-1493 등록: Pre-Order Terms |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1494.md](references/ref-1494.md) | 참고문헌 ref-1494 등록: 자율주행 인공지능(AI) 발전을 위한 개인영상정보 보호ㆍ활용 기준 나왔다 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1495.md](references/ref-1495.md) | 참고문헌 ref-1495 등록: RoMi-H Empanelment Programme 2026 |
+| 2026-10-12-01 | 생성 | [docs/references/ref-1496.md](references/ref-1496.md) | 참고문헌 ref-1496 등록: General Terms |
+
+### 2026-10-11
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-11-06 | 갱신 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | 4·5·6·7·8·9·11·13절 차등 갱신, 10절 덧붙임: 실외 인증 근거를 고시 제2025-21호로 정정하고 별표 3 의 16개→8개 항목 대응을 원문으로 정리, EN ISO 10218 EU 게재를 관보 원문으로 확인하고 IBF 해설을 추정으로 강등, 제조 공장 공식 재해사례, EBB 초안 형식 충돌·CAST, UL 3100·3300·ISO/DIS 3691-4·KS 부합판·EU 기록 의무·rosbag2·MCAP, 사고 자료 범위, oq-230·oq-384 해결. 2차: 10절 이전 판 연결 목록 링크 복원·59 영역 호칭 수정, 6절·5절 개수 단정 문장 수정, 프런트매터 sources 를 원 페이지 각주와 일치 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s7.md](topics/2026/2026-10-11-area50-s7.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "7. 관련 표준·프레임워크·오픈소스" 절(4,831자)을 옮겼다 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s11.md](topics/2026/2026-10-11-area50-s11.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "11. 열린 질문" 절(2,163자)을 옮겼다 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s6.md](topics/2026/2026-10-11-area50-s6.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "6. 대표 접근법과 기술" 절(1,504자)을 옮겼다 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s8.md](topics/2026/2026-10-11-area50-s8.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "8. 대표 연구와 자료" 절(1,484자)을 옮겼다 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s4.md](topics/2026/2026-10-11-area50-s4.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "4. 핵심 개념과 용어" 절(878자)을 옮겼다 |
+| 2026-10-11-06 | 생성 | [docs/topics/2026/2026-10-11-area50-s10.md](topics/2026/2026-10-11-area50-s10.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(606자)을 옮겼다 |
+| 2026-10-11-06 | 요약 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | 50. 안전 표준·인증·사고 조사: 4~11·13절 차등 갱신: 실외이동로봇 인증 근거를 고시 제2025-21호(2025-11-24 시행)로 정정하고 별표 3 의 16개→8개 항목 대응을 원문으로 정리(oq-230 해결), EN ISO 10218 EU 조화 게재를 관보 원문(지침 기반, 2027-01-20 폐지 목록)으로 확인하고 IBF 해설을 추정·벤더 주장으로 강등, ISO/DIS 3691-4 제3판 40.60(oq-384 해결)·KS 부합판·UL 3100·UL 3300(벤더 주장)·자율안전확인·EU 기계 규정 기록 의무·rosbag2·MCAP 추가, 제조 공장 공식 재해사례·EBB 초안 형식 충돌·CAST·사고 자료 범위 보강, 새 열린 질문 5건. 2차: 10절 이전 판 연결 목록 링크 복원, 개수 단정 문장 2건 수정, 프런트매터 sources 정리. 후속 정리 필요(이번 범위 밖): docs/categories/safety/index.md 177행(IBF 단독 사실 표기와 '산업통상자원부 고시(2023-11-17)' 서술), docs/topics/2026/2026-09-26-area25-s7.md 45행과 ref-814 제목(KS B ISO 10218-2 최종 확인일 2022-10-12 보강), docs/topics/2026/2026-09-30-area52-s3.md 43행(EU 기계 규정 5년 기록의 1차 근거 ref-555 연결), 이전 판 주제 페이지 docs/topics/2026/2026-09-30-area50-s4.md 41행·2026-09-30-area50-s7.md 42·45행(IBF 서술 강등과 고시 근거 정정은 이번 판 4·7절로 대체됨) |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1476.md](references/ref-1476.md) | 참고문헌 ref-1476 등록: Commission Implementing Decision (EU) 2026/2015 of 4 Septemb… |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1477.md](references/ref-1477.md) | 참고문헌 ref-1477 등록: KS B ISO 10218-1 로봇 및 로봇장치 ─ 산업용 로봇의 안전에 관한 요구사항 ─ 제1부: 로봇 |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1478.md](references/ref-1478.md) | 참고문헌 ref-1478 등록: UL 3100 Automated Mobile Platforms (AMPs) |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1479.md](references/ref-1479.md) | 참고문헌 ref-1479 등록: UL Solutions Grants Its First Global Certification for a Pub… |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1480.md](references/ref-1480.md) | 참고문헌 ref-1480 등록: 자율안전확인 대상품 (자율안전확인신고 대상 및 적용범위) |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1481.md](references/ref-1481.md) | 참고문헌 ref-1481 등록: Robot-Related Workers' Compensation Claims in Ohio, 2001–202… |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1482.md](references/ref-1482.md) | 참고문헌 ref-1482 등록: 산업용 로봇 팔과 지그 사이에 끼임 (재해사례) |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1483.md](references/ref-1483.md) | 참고문헌 ref-1483 등록: An Ethical Black Box for Social Robots: a draft Open Standar… |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1484.md](references/ref-1484.md) | 참고문헌 ref-1484 등록: 규제의 벽은 허물고 AI의 길은 넓힌다 — 신산업 규제합리화 1호 로드맵(AI 분야) 발표 |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1485.md](references/ref-1485.md) | 참고문헌 ref-1485 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시 (고시 제2025-021호, 일부개정) |
+| 2026-10-11-06 | 생성 | [docs/references/ref-1486.md](references/ref-1486.md) | 참고문헌 ref-1486 등록: System Safety: CAST Analysis (강의 자료) |
+| 2026-10-11-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
+| 2026-10-11-05 | 갱신 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | 4·5·6·7·8·9·11·13절 차등 갱신: NIST 논문 서지 정정(2017년 4월호, 온라인 2016-08-27), 병원 사례 '시뮬레이션 평가'를 모의 병원 공간의 실물 실험으로 정정, 창고 연구 실험 조건·Table IV 조건 보강, 아마존 글 발행일(메타데이터, 벤더 주장), 실외 사례를 현행 시행규칙·고시 제2025-21호 별표 3 근거로 보강(별표 세부 문구는 [추정]), supportedZones·외곽 기준 구역, Nav2·Open-RMF '0' 값 의미 차이, HATA·Jafari 평가 조건, NavWareSet, ISO 13482·ISO 10218-1·KS B 8252 행, 사람 위치 발행 공개 구현과 한계, 열린 질문 부분 근거와 새 질문 4건, 각주 26건. 2차 재작업: 9절 human_detection_fusion 문장을 위치 발행 범위로 한정([추정]), 태그 없던 범위 문장 2건을 구축자 의견([의견])으로, 4·6·7·8·11절에 이전 분리 페이지(2026-09-30) 명시 링크, 분리될 절의 절 번호 참조를 원 페이지 링크로, 5절 실외 제약 칸에 ref-992 각주 복원 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s6.md](topics/2026/2026-10-11-area49-s6.md) | 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(2,648자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s7.md](topics/2026/2026-10-11-area49-s7.md) | 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,225자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s11.md](topics/2026/2026-10-11-area49-s11.md) | 자동 분리: 49. 사람 근접 안전 의 "11. 열린 질문" 절(1,847자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s8.md](topics/2026/2026-10-11-area49-s8.md) | 자동 분리: 49. 사람 근접 안전 의 "8. 대표 연구와 자료" 절(1,791자)을 옮겼다 |
+| 2026-10-11-05 | 생성 | [docs/topics/2026/2026-10-11-area49-s4.md](topics/2026/2026-10-11-area49-s4.md) | 자동 분리: 49. 사람 근접 안전 의 "4. 핵심 개념과 용어" 절(680자)을 옮겼다 |
+| 2026-10-11-05 | 요약 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | 49. 사람 근접 안전: 4·5·6·7·8·9·11·13절 차등 갱신: NIST 논문 서지 정정, 병원 사례를 모의 병원 공간의 실물 실험으로 정정, 창고·HATA·편안함 연구 평가 조건 보강, 실외 사례를 현행 시행규칙·고시 제2025-21호 별표 3 근거로 보강(별표 세부 문구 4건 추정), supportedZones·외곽 기준 구역과 Nav2·Open-RMF 0 값 의미 차이, ISO 13482·ISO 10218-1·KS B 8252, 사람 위치 발행 공개 구현과 한계, 이전 분리 페이지(2026-09-30) 링크 유지, 열린 질문 부분 근거와 새 질문 4건. 후속 정리 필요: docs/categories/safety/index.md 125·187행의 병원 시뮬레이션 평가 표현, 분리 주제 페이지 2026-09-30-area49-s4·s6·s8 의 옛 서지·미확인 표기 |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1466.md](references/ref-1466.md) | 참고문헌 ref-1466 등록: The perfect size of the protective field on an industrial au… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1467.md](references/ref-1467.md) | 참고문헌 ref-1467 등록: Collision Monitor Node — Nav2 Docs (Jazzy) |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1468.md](references/ref-1468.md) | 참고문헌 ref-1468 등록: Speed Filter Parameters — Nav2 Docs (Jazzy) |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1469.md](references/ref-1469.md) | 참고문헌 ref-1469 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 및 별표 3 실외이… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1470.md](references/ref-1470.md) | 참고문헌 ref-1470 등록: 지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의4·제7조… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1471.md](references/ref-1471.md) | 참고문헌 ref-1471 등록: ISO 13482:2014 Robots and robotic devices — Safety requireme… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1472.md](references/ref-1472.md) | 참고문헌 ref-1472 등록: ISO 10218-1:2025 Robotics — Safety requirements — Part 1: In… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1473.md](references/ref-1473.md) | 참고문헌 ref-1473 등록: KS B 8252 실내 이동로봇의 보호정지 시험방법 |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1474.md](references/ref-1474.md) | 참고문헌 ref-1474 등록: human_detection_fusion — src/yolo_uwb_fusion_node.cpp 및 READ… |
+| 2026-10-11-05 | 생성 | [docs/references/ref-1475.md](references/ref-1475.md) | 참고문헌 ref-1475 등록: NavWareSet: A Dataset of Socially Compliant and Non-Complian… |
+| 2026-10-11-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-10-11-04 | 갱신 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 3·5·6·7·8·9·11·13절 차등 갱신: 국내 위험성평가 지침(실시 주체·근로자 참여·수시평가), Open-RMF 대상 비상 신호로 화재경보 사례 제약 칸 정정, STPA 산출물·참여 기록·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호·KS B 7327 정정·보강, Bensaci 2020·Belzile 사례 조건·SafeGate 분모, 책임 경계(벤더 주장·사업주 의무·EU 실질적 변경 조건), 열린 질문 부분 근거와 새 질문 4건. 2차: 3·6·7·8·11절에 이전 판 주제 페이지 링크 복원, 7절 정정 대상 페이지 명시. 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s11.md](topics/2026/2026-10-11-area48-s11.md) | 자동 분리: 48. 안전·위험 관리 의 "11. 열린 질문" 절(1,898자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s7.md](topics/2026/2026-10-11-area48-s7.md) | 자동 분리: 48. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,778자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s8.md](topics/2026/2026-10-11-area48-s8.md) | 자동 분리: 48. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(1,356자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s6.md](topics/2026/2026-10-11-area48-s6.md) | 자동 분리: 48. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절(1,151자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s3.md](topics/2026/2026-10-11-area48-s3.md) | 자동 분리: 48. 안전·위험 관리 의 "3. 왜 중요한가" 절(1,002자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s4.md](topics/2026/2026-10-11-area48-s4.md) | 자동 분리: 48. 안전·위험 관리 의 "4. 핵심 개념과 용어" 절(691자)을 옮겼다 |
+| 2026-10-11-04 | 생성 | [docs/topics/2026/2026-10-11-area48-s10.md](topics/2026/2026-10-11-area48-s10.md) | 자동 분리: 48. 안전·위험 관리 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(462자)을 옮겼다 |
+| 2026-10-11-04 | 요약 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 48. 안전·위험 관리: 3·5·6·7·8·9·11절 차등 갱신(국내 위험성평가 지침, Open-RMF 대상 비상 신호로 화재경보 사례 정정, STPA 산출물·근로자 참여·감시와 대응 구분, R15.08 Part 3·ISO 3691-4 판 번호 정정과 KS B 7327, SafeGate 평가 분모, 제조사 매뉴얼 책임 구분·EU 실질적 변경 조건), 이전 판 주제 페이지 링크 유지, 후속 갱신 필요: docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1455.md](references/ref-1455.md) | 참고문헌 ref-1455 등록: STPA Handbook |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1456.md](references/ref-1456.md) | 참고문헌 ref-1456 등록: STPA and Bowtie risk analysis study for centralized and hier… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1457.md](references/ref-1457.md) | 참고문헌 ref-1457 등록: ISO/DIS 12100.3 - Safety of machinery — General principles f… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1458.md](references/ref-1458.md) | 참고문헌 ref-1458 등록: KS B 7327 산업용 이동 머니퓰레이터의 응용을 위한 안전 요구사항 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1459.md](references/ref-1459.md) | 참고문헌 ref-1459 등록: KS B ISO 3691-4 산업용 트럭 — 안전 요구사항과 검증 — 제4부: 무인 산업용 트럭과 시스템 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1460.md](references/ref-1460.md) | 참고문헌 ref-1460 등록: 사업장 위험성평가에 관한 지침(고용노동부고시 제2024-76호) |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1461.md](references/ref-1461.md) | 참고문헌 ref-1461 등록: 사업장 위험성평가에 관한 지침 전부개정고시(안) 행정예고 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1462.md](references/ref-1462.md) | 참고문헌 ref-1462 등록: 위험성평가 근로자 참여 가이드 |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1463.md](references/ref-1463.md) | 참고문헌 ref-1463 등록: Mobile Robot LD Safety Guide (I616-E-06 / 18393-000 Rev H) |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1464.md](references/ref-1464.md) | 참고문헌 ref-1464 등록: rmf_fleet_adapter 2.14.0 소스 — FleetUpdateHandle.cpp(handle_t… |
+| 2026-10-11-04 | 생성 | [docs/references/ref-1465.md](references/ref-1465.md) | 참고문헌 ref-1465 등록: Monitoring ROS2: from Requirements to Autonomous Robots |
+| 2026-10-11-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-10-11-03 | 갱신 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s6.md](topics/2026/2026-10-11-area22-s6.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "6. 대표 접근법과 기술" 절(2,450자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s11.md](topics/2026/2026-10-11-area22-s11.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "11. 열린 질문" 절(2,065자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s7.md](topics/2026/2026-10-11-area22-s7.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,902자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s3.md](topics/2026/2026-10-11-area22-s3.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "3. 왜 중요한가" 절(1,323자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s8.md](topics/2026/2026-10-11-area22-s8.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "8. 대표 연구와 자료" 절(1,268자)을 옮겼다 |
+| 2026-10-11-03 | 생성 | [docs/topics/2026/2026-10-11-area22-s10.md](topics/2026/2026-10-11-area22-s10.md) | 자동 분리: 22. 설비·건물 시스템 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,080자)을 옮겼다 |
+| 2026-10-11-03 | 요약 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 22. 설비·건물 시스템 연동: 차등 갱신: KS B 7317 개정 이력·대한승강기협회 단체표준·Open-RMF 승강기 감독과 작업대 완료 판정·KONE·Dormakaba 어댑터·SEMI E84·BACnet 출입통제 백서 보강, 기타(도서관)·병원·상업 시설 적용 사례 추가, 대표 연구의 실험 조건 갱신, 새 열린 질문 6건, 2차 수정(구축자 의견 태그 분리·2026-09-25 주제 페이지 링크 복원); 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1432.md](references/ref-1432.md) | 참고문헌 ref-1432 등록: "사람과 로봇이 공존하는 스마트 빌딩 앞당긴다"...국토부 산학협력단과 기술개발 착수 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1431.md](references/ref-1431.md) | 참고문헌 ref-1431 등록: Development of Human-Centered, Robot-Adaptive Building Desig… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1433.md](references/ref-1433.md) | 참고문헌 ref-1433 등록: 대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1434.md](references/ref-1434.md) | 참고문헌 ref-1434 등록: 단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인 |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1435.md](references/ref-1435.md) | 참고문헌 ref-1435 등록: Lift session issues - Robot enter lift while lift is still i… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1436.md](references/ref-1436.md) | 참고문헌 ref-1436 등록: rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1437.md](references/ref-1437.md) | 참고문헌 ref-1437 등록: rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1438.md](references/ref-1438.md) | 참고문헌 ref-1438 등록: KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a8… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1439.md](references/ref-1439.md) | 참고문헌 ref-1439 등록: door_adapter_dormakaba — README (commit 2cf76a6) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1440.md](references/ref-1440.md) | 참고문헌 ref-1440 등록: Lift and Doors Integration |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1442.md](references/ref-1442.md) | 참고문헌 ref-1442 등록: SNARF for Doc 7442: Specification for Enhanced Handoff Inter… |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1443.md](references/ref-1443.md) | 참고문헌 ref-1443 등록: Physical Access Control with BACnet (BAC-09-08 White Paper) |
+| 2026-10-11-03 | 생성 | [docs/references/ref-1444.md](references/ref-1444.md) | 참고문헌 ref-1444 등록: NAVER’s ARC Goes to Japan |
+| 2026-10-11-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-10-11-02 | 갱신 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 차등 갱신: 3·8절 GreenAuto(Lopes 외) REST·MQTT·VDA 5050 연동을 계획(미가동)으로 정정·ref-136 서지 정정; 4절 OPC Job Control 2.00.0 갱신·취소·정지·Completed/Closed 조건(원문 확인, 트랙 반영 제안 3 일부); 5절 국내 문단 1차 출처 병기와 병원·제조 공장·물류창고 사례 추가; 6절 응답·취소 결과 분리, SAP 폐기 FMS API, WMS 우선순위 규칙(연계 대상), 업무 객체 해석, MCP 접점 범위; 7절 표 추가; 9절 경계 행 추가·MCP 첫 등장 풀어쓰기; 10절 연결 8건 추가; 11절 부분 근거·새 질문 3건; 3·4·6·7·8·11절에 2026-09-25 주제 페이지 링크 복원(2차 수정); 13절 각주 갱신 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s6.md](topics/2026/2026-10-11-area23-s6.md) | 자동 분리: 23. 업무 시스템 연동 의 "6. 대표 접근법과 기술" 절(3,712자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s11.md](topics/2026/2026-10-11-area23-s11.md) | 자동 분리: 23. 업무 시스템 연동 의 "11. 열린 질문" 절(2,250자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s7.md](topics/2026/2026-10-11-area23-s7.md) | 자동 분리: 23. 업무 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,793자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s8.md](topics/2026/2026-10-11-area23-s8.md) | 자동 분리: 23. 업무 시스템 연동 의 "8. 대표 연구와 자료" 절(1,623자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s10.md](topics/2026/2026-10-11-area23-s10.md) | 자동 분리: 23. 업무 시스템 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,310자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s4.md](topics/2026/2026-10-11-area23-s4.md) | 자동 분리: 23. 업무 시스템 연동 의 "4. 핵심 개념과 용어" 절(1,034자)을 옮겼다 |
+| 2026-10-11-02 | 생성 | [docs/topics/2026/2026-10-11-area23-s3.md](topics/2026/2026-10-11-area23-s3.md) | 자동 분리: 23. 업무 시스템 연동 의 "3. 왜 중요한가" 절(675자)을 옮겼다 |
+| 2026-10-11-02 | 요약 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 23. 업무 시스템 연동: 차등 갱신: 3·8절 GreenAuto REST·MQTT·VDA 5050 연동을 계획(미가동)으로 정정·ref-136 서지 정정, 4·6·7절 OPC Job Control 상태 조건·응답과 취소 결과 분리·WMS 우선순위 규칙(연계 대상, 벤더 주장)·MCP 접점 범위, 5절 병원·제조 공장·물류창고 사례, 9·10·11절 보강, 2026-09-25 주제 페이지 링크 복원 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1441.md](references/ref-1441.md) | 참고문헌 ref-1441 등록: rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_response.j… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1445.md](references/ref-1445.md) | 참고문헌 ref-1445 등록: rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_response.jso… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1446.md](references/ref-1446.md) | 참고문헌 ref-1446 등록: rmf_api_msgs — rmf_api_msgs/schemas/simple_response.json |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1447.md](references/ref-1447.md) | 참고문헌 ref-1447 등록: APIs for Integration via Fleet Management Systems (API for I… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1448.md](references/ref-1448.md) | 참고문헌 ref-1448 등록: WMS REST API Guide — Change Priority (Oracle Warehouse Manag… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1449.md](references/ref-1449.md) | 참고문헌 ref-1449 등록: End-User Information for Integration via Integration Service… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1450.md](references/ref-1450.md) | 참고문헌 ref-1450 등록: 아르고, 플로틱과 로봇 기반 물류 생산성 향상 실증 본격 실시 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1451.md](references/ref-1451.md) | 참고문헌 ref-1451 등록: 로봇 기반 물류 자동화와 통합 관제로 HD현대일렉트릭 신공장의 새로운 운영 체계를 구축하다 |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1452.md](references/ref-1452.md) | 참고문헌 ref-1452 등록: Warehouse Pick & Place with Embodied AI Robotics |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1453.md](references/ref-1453.md) | 참고문헌 ref-1453 등록: How SAP Brings Business AI into the Physical World: New Robo… |
+| 2026-10-11-02 | 생성 | [docs/references/ref-1454.md](references/ref-1454.md) | 참고문헌 ref-1454 등록: demos-ros-mcp-server — Example 1: Tugbot Warehouse Simulatio… |
+| 2026-10-11-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-11-01 | 갱신 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 차등 갱신: 5절 수행 자원 칸 경로 계산을 선 유도 로봇으로 정정·자유 주행 로봇 경로 공유 병기, 제조 공장 전시 시연 사례(Mesh-Up 2025, 실제 공장 배치 아님) 추가; 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준 표·VDA 5050 동작 시험표; 7절 VDA 5050 3.0.0 날짜(출처 충돌)·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영); 8절 vda5050-lab 자기 기술 반영·vda5050-sim 분리·Wagner 외 추가; 10절 14·42번 연결; 11절 부분 근거와 새 질문 2건; 6·7·11절 첫 단락에 2026-09-25 분리 페이지(area28-s6·s7·s11) 링크 유지; 프런트매터 sources 에 기존 ref-636·ref-637·ref-708·ref-710 유지; 13절 각주 갱신(ref-408·ref-705 원문 열람 반영, 신규 각주) |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s7.md](topics/2026/2026-10-11-area21-s7.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,916자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s6.md](topics/2026/2026-10-11-area21-s6.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "6. 대표 접근법과 기술" 절(2,060자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s8.md](topics/2026/2026-10-11-area21-s8.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "8. 대표 연구와 자료" 절(1,461자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s11.md](topics/2026/2026-10-11-area21-s11.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "11. 열린 질문" 절(1,079자)을 옮겼다 |
+| 2026-10-11-01 | 생성 | [docs/topics/2026/2026-10-11-area21-s10.md](topics/2026/2026-10-11-area21-s10.md) | 자동 분리: 21. 상호운용 표준·적합성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(630자)을 옮겼다 |
+| 2026-10-11-01 | 요약 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 21. 상호운용 표준·적합성: 5절 경로 계산 책임을 선 유도 로봇으로 정정하고 제조 공장 전시 시연 사례 추가, 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준·VDA 5050 동작 시험표, 7절 VDA 5050 날짜 출처 충돌·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영), 8절 vda5050-lab 자기 기술·Wagner 외, 10절 14·42번 연결, 11절 부분 근거와 새 질문 2건, 2026-09-25 분리 페이지 링크 유지 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1414.md](references/ref-1414.md) | 참고문헌 ref-1414 등록: VDA5050/VDA5050 — json_schemas/order.schema (tag 3.0.0) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1418.md](references/ref-1418.md) | 참고문헌 ref-1418 등록: VDA5050/VDA5050 — json_schemas/factsheet.schema (tag 3.0.0) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1420.md](references/ref-1420.md) | 참고문헌 ref-1420 등록: VDA5050/VDA5050 — json_schemas/visualization.schema (tag 3.0… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1423.md](references/ref-1423.md) | 참고문헌 ref-1423 등록: Overview & Benefits — OPC Foundation Certification |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1424.md](references/ref-1424.md) | 참고문헌 ref-1424 등록: KS B ISO 22166-202 로봇 — 서비스 로봇의 모듈화 — 제202부: 소프트웨어 모듈용 정보 모델 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1425.md](references/ref-1425.md) | 참고문헌 ref-1425 등록: Mobile Robots in Production: Mesh-Up 2025 |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1426.md](references/ref-1426.md) | 참고문헌 ref-1426 등록: Teleoperating Mobile Robots via VDA 5050 – A First Middlewar… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1427.md](references/ref-1427.md) | 참고문헌 ref-1427 등록: Interoperable Teleoperation of Mobile Robots in Intralogisti… |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1428.md](references/ref-1428.md) | 참고문헌 ref-1428 등록: Information Delivery Specification (IDS) |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1430.md](references/ref-1430.md) | 참고문헌 ref-1430 등록: IDS — Documentation/README.md |
+| 2026-10-11-01 | 생성 | [docs/references/ref-1429.md](references/ref-1429.md) | 참고문헌 ref-1429 등록: VDA 5050 3.0.0 release (March 2026) |
+| 2026-10-11-01 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+
 ### 2026-10-10
 
 | 실행 id | 동작 | 페이지 | 요약 |

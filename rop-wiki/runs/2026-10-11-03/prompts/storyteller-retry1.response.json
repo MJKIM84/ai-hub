@@ -1,0 +1,911 @@
+{
+  "duration_api_ms": 248756,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.8148844,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 259876,
+    "cache_read_input_tokens": 72042,
+    "output_tokens": 36073,
+    "output_tokens_details": {
+      "thinking_tokens": 3684
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 259876,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 36073,
+        "cache_read_input_tokens": 72042,
+        "cache_creation_input_tokens": 259876,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 259876
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 36073,
+      "cacheReadInputTokens": 72042,
+      "cacheCreationInputTokens": 259876,
+      "webSearchRequests": 0,
+      "costUSD": 2.8148844,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3684,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-11-03\",\"outline\":[{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":1400,\"summary\":\"VDA 5050 3.0.0 은 주변 설비 인터페이스를 범위에서 빼므로 설비 연동은 따로 설계해야 하고, 실제 건물에서 공유 승강기 지연이 두 연구에서 보고됐다. [사실][^ref-031][^ref-943][^ref-163] KS B 7317 은 2021-11-30 제정 뒤 두 차례 개정됐다. [사실][^ref-314]\",\"planned_findings\":[\"f30\",\"f4\",\"f5\",\"f2\",\"f3\",\"f38\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":350,\"summary\":\"Open-RMF 개발자는 AGV 모드 전환을 마칠 때까지 승강기 상태에 session_id 를 내보내지 말라고 권고했다. [사실][^ref-1487]\",\"planned_findings\":[\"f9\",\"f10\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"budget_chars\":2300,\"summary\":\"기타(도서관) 현장의 승강기 제어함 PLC·드라이 접점 연결과 화재 뒤 수동 복구, 병원 승강기 가동률 임계값의 재보정 필요, 상업 시설의 승강기·자동문 중앙 연결 발표를 사례로 더한다. [추정] 벤더 주장[^ref-1492]\",\"planned_findings\":[\"f21\",\"f22\",\"f23\",\"f28\",\"f29\",\"f30\",\"f37\",\"f48\",\"f50\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":2300,\"summary\":\"Open-RMF 승강기 감독자는 같은 세션 요청을 갱신·종료로 처리하고 잔류 세션에 종료 요청을 반복하며, 디스펜서 단계는 SUCCESS 또는 대기열 소거로 완료를 판정한다. [사실][^ref-1488][^ref-1489]\",\"planned_findings\":[\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f41\",\"f42\",\"f43\",\"f44\",\"f49\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":2000,\"summary\":\"KS B 7317 개정 이력, KOLA 단체표준의 대상 범위, SEMI E84 현행판과 Doc 7442 개발 제안, BACnet 출입통제 백서의 지위를 표로 정리하고 2026-09-25 주제 페이지로 연결한다. [사실][^ref-314][^ref-1485][^ref-202][^ref-1495]\",\"planned_findings\":[\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f26\",\"f27\",\"f35\",\"f36\",\"f39\",\"f40\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":1550,\"summary\":\"승강기를 포함한 다층 이동 연구는 실물 실증·수치 실험·시뮬레이션으로 조건이 다르다. [사실][^ref-943][^ref-103][^ref-321][^ref-163]\",\"planned_findings\":[\"f1\",\"f28\",\"f30\",\"f31\",\"f32\",\"f33\",\"f34\",\"f48\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"budget_chars\":1200,\"summary\":\"화재 뒤 설비 재시작은 연계 대상이고 ROP 는 복구 책임자 지정과 시험을 맡으며, 출입통제에서는 문 열기 요청과 통행 권한 승인을 나눈다는 것이 구축자 의견이다. [의견][^ref-1492][^ref-1491]\",\"planned_findings\":[\"f22\",\"f46\",\"f20\",\"f36\",\"f45\",\"f47\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":1300,\"summary\":\"63. 병원·의료, 64. 상업 시설, 67. 기타 현장, 51. 인증·권한·격리, 30. 로봇 간 협업·물리적 인계, 32. 예외 복구·재계획·업무 연속성, 50. 안전 표준·인증·사고 조사, 20. 로봇·제조사 관제 연동 연결을 더한다. [사실][^ref-943][^ref-314]\",\"planned_findings\":[\"f1\",\"f4\",\"f14\",\"f17\",\"f20\",\"f22\",\"f26\",\"f28\",\"f37\",\"f45\",\"f46\",\"f47\"]},{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":1900,\"summary\":\"oq-010·oq-041·oq-042·oq-043 등은 부분 근거만 보강돼 열림을 유지하고, KS B 7317 개정 조항·REEC 심사 기준·KONE 현행 API·SEMI Doc 7442 발행·상태 주기 불일치·Yaesu 운영 범위 질문 6건을 새로 올린다.\",\"planned_findings\":[\"f4\",\"f1\",\"f17\",\"f27\",\"f23\",\"f37\"]}],\"pages\":[{\"path\":\"docs/categories/integration/facility-and-building-system-integration.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치\",\"patches\":[{\"section\":\"3. 왜 중요한가\",\"action\":\"replace\",\"frontmatter\":{\"related_areas\":[15,20,21,27,28,29,30,32,35,48,50,51,63,64,67],\"tags\":[\"승강기 연동\",\"Open-RMF\",\"VDA 5050\",\"작업대 인계\",\"KS B 7317\",\"단체표준\"],\"sources\":[\"ref-023\",\"ref-031\",\"ref-047\",\"ref-049\",\"ref-060\",\"ref-103\",\"ref-163\",\"ref-202\",\"ref-283\",\"ref-284\",\"ref-286\",\"ref-312\",\"ref-313\",\"ref-314\",\"ref-315\",\"ref-316\",\"ref-317\",\"ref-318\",\"ref-319\",\"ref-320\",\"ref-321\",\"ref-322\",\"ref-943\",\"ref-1398\",\"ref-1483\",\"ref-1484\",\"ref-1485\",\"ref-1486\",\"ref-1487\",\"ref-1488\",\"ref-1489\",\"ref-1490\",\"ref-1491\",\"ref-1492\",\"ref-1494\",\"ref-1495\",\"ref-1496\"],\"last_run\":\"2026-10-11\"},\"content\":\"로봇–관제 인터페이스 표준인 VDA 5050 3.0.0 은 문·게이트·승강기 같은 주변 시스템과의 통신을 관제(fleet control) 시스템의 최소 기능 목록에 넣는다. [사실][^ref-031] 그러나 같은 명세는 관제–이동로봇 통신과 무관한 인터페이스, 곧 주변 설비·인프라 구성요소·외부 IT 시스템과의 인터페이스를 범위에서 제외한다. [사실][^ref-031] 위 두 사실에 비추어, 로봇 쪽 표준만으로는 설비 쪽 연결 방식이 정해지지 않으므로 이종 제조사 로봇을 연결하는 플랫폼은 설비 연동을 따로 설계해야 한다는 것이 이 위키 구축자의 의견이다. [의견]\\n\\n설비는 여러 로봇이 나눠 쓰는 자원이기도 하다. 로봇이 층간 운반에 승강기를 쓰면 한 로봇의 세션이 승강기를 점유하는 동안 다른 로봇이 기다려야 하므로, 승강기 대기가 처리량과 운반 시간에 영향을 줄 것으로 보인다. [추정][^ref-312][^ref-286][^ref-060][^ref-103] 실제로 사람과 승강기를 함께 쓰는 건물에서 로봇의 층간 이동이 늦어진 사례가 기관이 다른 두 연구에서 보고됐다(2026-03-31·2026-02-28 발표). 병원 연구는 승강기 가동률이 높을수록 배송 시간이 길어졌다고, 대학 건물 지도 구축 연구는 외부 이용자 때문에 승강기가 다른 층으로 가 지연이 생겼다고 적는다. [사실][^ref-943][^ref-163] 다만 물류센터 화물용 승강기에 대한 정량 자료는 아직 확인되지 않았다(열린 질문 oq-010).\\n\\n국내에서도 제도 정비가 진행 중이다. 국가기술표준원은 2021년 11월 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항과 평가 방법을 정한 국가표준 KS B 7317 을 제정했으며, 승강기 안전기준 소관 부처인 행정안전부와 협력해 추진했다. [사실][^ref-314][^ref-315] e-나라표준인증 이력에 따르면 이 표준은 2021-11-30 제정 뒤 2022-12-09 과 2025-05-09 두 차례 개정됐고, 병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터를 적용 대상으로 둔다. [사실][^ref-314] 개정된 조항은 미확인이다.\\n\\n국토교통부는 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'에 착수한다고 발표했다(발행일 미확인). [추정][^ref-322] 2차 보도에 따르면 이 연구개발은 2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐고, 2028년까지 완료될 예정이며, 세부 중점과제에 기술 실증을 통한 기술표준·인증제도 개선방안 마련이 들어 있다. [추정][^ref-1484][^ref-322] 국토부 보도자료 원문은 열지 못해 사업기간과 과제 내용은 2차 보도 기준이며, 이후 진행은 미확인이다.\\n\\n건축물 인증을 다룬 설계 논문과 국가 연구개발 계획 보도는 인증 운영기관의 현행 심사 규칙이 아니므로, ROP 의 설비 연동 수용 기준은 이들과 별도 목록으로 관리하고 발주 때 인증의 적용 판·심사 범위와 현장 설비 연결 계약을 서로 다른 증빙으로 확인하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1483][^ref-1484]\"},{\"section\":\"4. 핵심 개념과 용어\",\"action\":\"append\",\"content\":\"\\n### 2026-10-11 보강\\n\\n- **AGV 모드 전환과 세션 수락** — Open-RMF 개발자는 2024-08-21 토론 답변에서, 세션을 안전하게 수행하려면 승강기가 별도 AGV 모드여야 하는 경우 모드 전환을 마칠 때까지 승강기 상태에 세션 식별자(session_id)를 내보내지 말아야 한다고 권고했다. [사실][^ref-1487] 같은 답변은 별도 AGV 모드가 없는 승강기도 있을 수 있다고 설명한다. [사실][^ref-1487] 이 권고는 설계 의도의 설명이며 현장 안전 동작을 재현한 결과가 아니다.\"},{\"section\":\"5. 적용 사례 (현장 유형 명시)\",\"action\":\"append\",\"content\":\"\\n**현장 유형:** 기타\\n\\n**사례:** 도서관에서 기존 승강기를 로봇의 층간 이동에 연동 (도서관 현장 설계 문서)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | 연계 대상: 현장에 새로 설치한 승강기 제어함 안의 PLC(Beckhoff CX9020)가 서버의 ADS 명령을 받아 드라이 접점으로 승강기 신호를 조작하고, 승강기 업체가 기존 승강기를 AGV 모드로 개조했다. [추정] 벤더 주장[^ref-1492] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 연계 대상: 화재 경보가 울리면 승강기가 수동 모드로 돌아가고 PLC 는 재시작할 때까지 오류 상태에 머물러, 다시 시작하려면 사람의 개입이 필요하다. [추정] 벤더 주장[^ref-1492] |\\n\\n이 사례는 한 도서관 현장의 벤더 설계 문서(발행일 미확인, 확인일 2026-10-11)에 기대며, 승강기 자체 제어반이 아니라 새로 단 제어함을 거쳐 신호를 조작하는 방식이다. 같은 문서는 승강기 상태 전송 주기를 개요에서는 1 Hz 로, 서버 절에서는 2초마다로 서로 다르게 적고 승강기 요청은 1초마다 보낸다고 적는다. [추정] 벤더 주장[^ref-1492] 차이를 설명하는 근거가 없어 실제 주기는 결론을 내리지 않는다.\\n\\n이 사례에서 이 영역이 맡는 칸은 수행 자원(설비 쪽 연결 경로)과 예외·성과(비상 뒤 설비 복귀)다. 한 현장의 설계이므로 다른 건물의 화재 복구 조건으로 일반화하지 않는다.\\n\\n**현장 유형:** 병원\\n\\n**사례:** 혼잡한 병원에서 승강기를 함께 쓰며 약품 배송 (고려대 구로병원 연구)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 약품 [사실][^ref-943] |\\n| 수행 자원 | 미확인 |\\n| 제약 | 승강기 가동률이 높을수록 배송 시간이 길어졌다. [사실][^ref-943] 논문은 ROC 분석으로 찾은 [승강기 가동률](../../glossary/elevator-operating-rate.md)(EOR) 임계값 59.01% 를 현장 특정값으로 해석해야 하며 다른 병원에 적용하려면 재보정이 필요하다고 명시한다(2026-03-31 발표). [사실][^ref-943] |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 2026-10-11 재확인에서도 논문에는 전체 성공률 87.03% 의 분모를 설명하는 구절이 없고, 분석 대상 122건에서 실패 14건을 뺀 108건의 비율(약 88.52%)과 보고값이 다르다. [사실][^ref-943] |\\n\\n병원 쪽 요구와 다른 칸은 [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md)에서 다룬다. 이 사례에서 이 영역이 보는 것은 공유 승강기라는 설비 자원이 로봇 배송에 거는 제약이다. 병원·호텔·그래프·지도 연구의 승강기 결과를 국내 다층 물류센터 처리량으로 옮기는 것은 보류하고, 승강기 가동률·통신 상태·카 내부 점유를 나눠 수집해 현장별 임계값을 새로 검증해야 한다는 것이 이 위키 구축자의 의견이다(oq-010). [의견][^ref-943]\\n\\n**현장 유형:** 상업 시설\\n\\n**사례:** 상업 건물(Tokyo Midtown Yaesu)의 기존 화물 승강기·자동문을 로봇 배송에 연결 (NAVER LABS 발표)\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 미확인 |\\n| 작업 대상 | 미확인 |\\n| 수행 자원 | NAVER LABS 는 2026-07-23 블로그에서 다중 로봇 플랫폼 ARC 가 이 건물의 기존 화물 승강기·자동문과 출입 경로를 중앙에서 연결한다고 설명했다. [추정] 벤더 주장[^ref-1496] |\\n| 제약 | 미확인 |\\n| 완료·인계 | 미확인 |\\n| 예외·성과 | 미확인 |\\n\\n같은 블로그는 연말까지 전 층 로봇 배송으로 넓힐 계획이라고 밝혔으며, 이는 계획이지 운영 결과가 아니다. [추정] 벤더 주장[^ref-1496] 공급자 밖의 독립 운영 평가는 확인하지 못했다. 기존 건물 도입 사례는 연동 설비 목록과 실제 운영 중인 로봇 종류·층 범위를 고객 측 자료로 따로 확인하기 전에는 운영 실증으로 세지 않는 것이 맞다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1496]\"},{\"section\":\"6. 대표 접근법과 기술\",\"action\":\"append\",\"content\":\"\\n2026-10-11 재확인에서는 위 두 접근법(어댑터를 거친 요청·상태 감독, 요청–결과 방식의 작업대 인계)의 구현 세부와 제조사 어댑터·설비 쪽 연결 방식을 보강했다.\\n\\n### 승강기 세션 감독과 수락 조건\\n\\nOpen-RMF 의 승강기 감독자(lift_supervisor) 구현(rmf_ros2 커밋 4cea3fe, 확인일 2026-10-11)은 승강기마다 활성 세션을 두고, 같은 세션 식별자의 새 요청은 갱신으로 다시 내보내며 세션 종료 요청이 오면 종료를 내보낸 뒤 활성 세션을 비운다. [사실][^ref-1488] 감독자에게 활성 요청이 없는데 승강기 상태에 세션이 남아 있으면 승강기가 풀리도록 세션 종료 요청을 계속 내보내며, 여러 요청 사이의 승강기 배정 규칙은 두지 않고 개선 과제(TODO) 주석만 남겨 두었다. [사실][^ref-1488] 플릿 어댑터 변경기록의 2.13.0(2026-06-15)에는 승강기가 이미 해당 층에 있으면 legacy 완료 상태를 내보내는 변경(#510)이 실려 있고, 같은 변경기록에는 그 뒤 판인 2.14.0(2026-09-26)도 있다. [사실][^ref-1398]\\n\\n이 분석은 코드 동작과 설계 의도이며 현장 안전 동작의 재현이 아니다. 장치별 세션 수락 조건(AGV 모드 전환을 마친 뒤 session_id 를 보고하는지)을 어댑터 계약에 적고 수락 전 탑승을 막는지 확인하는 시험을 두며, 세션 유실·중복 종료·설비 상태의 세션 잔류 상황을 현장 인수 시험 항목에 넣는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1487][^ref-1488]\\n\\n### 작업대 결과와 완료 판정\\n\\nOpen-RMF 배송 작업의 디스펜서 단계(DispenseItem) 구현은 요청 식별자가 일치하는 결과 메시지가 SUCCESS 이면 완료, FAILED 이면 실패로 바꾸고, ACKNOWLEDGED 는 접수 표시만 한다. [사실][^ref-1489] 같은 구현은 디스펜서 상태의 요청 대기열에 요청 식별자가 들어 있으면 접수로 보고, 접수 뒤 대기열에서 그 식별자가 사라지면 결과 메시지 없이도 완료로 간주한다. [사실][^ref-1489] 대기열 소거만으로 완료 처리하면 현장 작업대 대기열에서 요청이 취소·오류로 빠진 경우에도 인계 완료로 잘못 판단할 수 있을 것으로 보인다. [추정][^ref-1489] 그래서 실물 인계 성공을 뜻하는 센서·PLC 조건을 작업대 결과 메시지와 따로 정하고, 대기열 소거가 취소·오류를 뜻하는 경우를 구별해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1489]\\n\\n### 제조사 어댑터와 설비 자격증명\\n\\nCHART 계열의 공개 KONE 승강기 어댑터 README(2023년 고정판을 KABAM-Robotics 저장소가 보존, 확인일 2026-10-11)는 Open-RMF 승강기 메시지와 KONE API v2.0 사이에서 WebSocket 으로 승강기 명령을 보내고 승강기 상태를 받는 구조를 설명한다. [사실][^ref-1490] 같은 README 는 실제 승강기를 제어하려면 접근 id 와 비밀값(access_id·access_secret)을 KONE 담당자에게서 받아야 한다고 안내한다. [사실][^ref-1490] 이 어댑터는 공개 구현이며 현행 KONE 계약을 보여 주지 않는다.\\n\\n연계 대상: Open-RMF 의 Dormakaba 문 어댑터 README 는 시험한 EL301·ED250 문 구동기에 Dormakaba IoT connector 를 장착해야 하고, 문 클라우드 API 접근 자격증명은 Dormakaba 가 제공한다고 안내한다. [사실][^ref-1491] 제조사 어댑터를 검토할 때는 공개 어댑터의 판과 별도로 현행 API 판·권한 범위·건물 등록·세션 유지 조건을 확인하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1490]\\n\\n### 설비 쪽 연결 방식의 구분\\n\\n제조사 API 대신 기존 승강기에 제어함과 PLC 를 새로 달아 드라이 접점으로 신호를 조작하는 방식도 한 도서관 현장 문서에 나온다(5절 기타 현장 사례). [추정] 벤더 주장[^ref-1492] 설비 API 연동과 로봇팔 버튼 조작을 서로 다른 승강기 연결 방식으로 기록하고, 공유 승강기 지연 시험을 따로 두는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-163][^ref-943]\"},{\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"action\":\"append\",\"content\":\"\\n2026-09-25 까지 정리한 표준 표는 [22. 설비·건물 시스템 연동 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area10-s7.md)에 있으며, 아래 대한승강기협회 행은 그 페이지의 '표준 번호·제정일·내용 미확인' 서술을 보강한다.\\n\\n### 2026-10-11 보강\\n\\n이번 재확인에서 국내 표준·단체표준의 판 정보와 인계 신호·출입통제 관련 문서의 지위를 보강했다. [사실][^ref-314][^ref-1485][^ref-202][^ref-1495]\\n\\n| 이름 | 유형 | 이 영역과의 관계 |\\n|---|---|---|\\n| KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | e-나라표준인증 이력상 2021-11-30 제정(고시 2021-0561), 2022-12-09 개정(고시 2022-0571), 2025-05-09 개정(고시 2025-0073)이다. 적용 대상은 엘리베이터 탑승 기능이 있는 서비스 로봇과 병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터이고, 표준개발협력기관은 한국AI·로봇산업협회다. [사실][^ref-314] 개정 조항은 미확인이며, 로봇 탑승 안전 요구이므로 이 영역에서는 제약 조건과 판 정보로만 다룬다. |\\n| 엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준) | 표준 | 대한승강기협회는 2026-03-27 게시한 보도자료에서 이 단체표준을 제정했다고 발표했고, 일반사항·시험 설비·시험 절차를 제시하며 e-나라표준인증에서 무료로 내려받을 수 있다고 설명했다. [사실][^ref-1485] 리서치 단계 열람에서는 e-나라표준인증 단체표준 목록에 표준번호 B-KOLA-0001-7700, 상태 제정, 등록일자 2026-03-24 로 올라 있었으나, 검증 단계에서는 이 목록 행을 재현하지 못했다. [추정][^ref-1486] 등록일자와 협회 게시일이 다르고, 정확한 제정일·메시지·상태 정의·Open-RMF 대응은 미확인이다. |\\n| SEMI E84 Enhanced Carrier Handoff Parallel I/O Interface | 표준 | SEMI 공식 판매 목록은 E84-0823 을 현행판으로 표시하고, 목적을 자동 반송 시스템(AMHS)과 생산 설비 로드포트 사이 캐리어 인계용 병렬 I/O 신호 개선으로 설명한다(확인일 2026-10-11). [사실][^ref-202] 반도체 업종 규격이므로 이 영역에서는 인계 신호 구조의 참고로만 쓴다. |\\n| SEMI Doc 7442 Specification for Enhanced Handoff Interface (개발 제안) | 표준 | SEMI 물리 인터페이스·캐리어 기술위원회(일본)의 Doc 7442 신규 예비 표준 개발 제안서(SNARF, 작성 2025-12-17)는 E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안하며, 대상은 반도체 조립·시험 범위다. 표준으로 발행됐는지는 미확인이다. [추정][^ref-1494] |\\n| Physical Access Control with BACnet (BAC-09-08 백서) | 프레임워크 | 2008-09-27 백서로, SSPC 135 LSS 작업반의 진행 중 작업이자 BACnet 표준 변경 제안의 기초 문서라고 스스로 밝히며 현행 ANSI/ASHRAE 135 규범 본문이 아니다. [사실][^ref-1495] 같은 백서가 인증과 권한 검사를 구분하고 특정 시간에 특정 문을 통과할 권리를 기본 권한 검사의 예로 든다는 내용은 검증에서 본문으로 재현하지 못했다. [추정][^ref-1495] |\\n\\n승강기 탑승 안전 표준을 검토할 때는 판(제정·개정 일자)·적용 범위·대상 승강기 유형을 함께 기록하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-314] 대한승강기협회 가이드라인과 Open-RMF 승강기 메시지의 대응표는 표준 원문의 메시지·시험 시나리오를 확보한 뒤에 작성하는 것이 맞다는 것도 구축자의 의견이다. [의견][^ref-1485]\"},{\"section\":\"8. 대표 연구와 자료\",\"action\":\"replace\",\"content\":\"승강기를 포함한 다층 이동은 경로계획·병원 배송·지도 구축 연구에서 다뤄지며, 연구마다 실물 실증·수치 실험·시뮬레이션으로 조건이 다르다. [사실][^ref-943][^ref-103][^ref-321][^ref-163] 2026-09-25 에는 원문을 열지 못해 결과 수치를 쓰지 않았고, 2026-10-11 재확인에서 아래 실험 조건과 일부 결과를 확인했다.\\n\\n2026-09-25 까지 정리한 연구 목록은 [22. 설비·건물 시스템 연동 — 대표 연구와 자료(2026-09-25)](../../topics/2026/2026-09-25-area10-s8.md)에 있다.\\n\\n- Lee, Y. 외(고려대학교 구로병원·도구공간), Digital Health(2026-03-31) — 혼잡한 병원에서 승강기 이용을 고려한 약품 배송 로봇 실증이다. 승강기 가동률 임계값 59.01% 는 현장 특정값이며 다른 병원에 적용할 때 재보정이 필요하다고 명시한다. [사실][^ref-943]\\n- Han, L. 외, Sensors 25(6):1783(2025-03-13) — 실제 호텔 평면·층고로 68×68 거리 행렬만 만들고 배송 수요는 무작위 표본으로 생성했으며 승강기 기본 대기 시간을 30초로 두었다. 실제 호텔 운용 성능이 아니라 수치 실험이다. [사실][^ref-103]\\n- Kim, S. 외, Electronics 14(5):982(2025-02-28) — 15층 건물 그래프 시뮬레이션에서 소포 수 1~7개로 승강기 선택을 최적화한 다층 경로계획을 평가했다. 실제 건물 운용이 아닌 시뮬레이션 평가다. [사실][^ref-321]\\n- 노주형 외, 로봇학회 논문지 21(1):48–57(2026-02-28) — KAIST N1 건물 5~9층에서 각 층의 절반 영역을 대상으로 다층 지도 구축을 평가했고, 승강기 상호작용 시험에서는 20회 중 19회 성공을 보고했다. [사실][^ref-163]\\n- 두 실물 연구의 공통 관찰 — 사람과 승강기를 함께 쓰는 건물에서 병원 논문은 승강기 가동률이 높을수록 배송 시간이 길어졌다고, KAIST 논문은 외부 이용자 때문에 승강기가 다른 층으로 가 지연이 생겼다고 보고했다. 기관이 다른 두 출처의 질적 관찰이다. [사실][^ref-943][^ref-163]\\n- Park, Y.·Park, S., Architectural Research 28(1), 논문번호 14(2026-07-21) — 초록 기준으로 [로봇 친화형 건축물 인증](../../glossary/robot-friendly-building-certification.md)(초록 표기 Robotics-Enabled Environment Certification, REEC)과 무장애(BF) 인증을 비교 분석해 사람 중심·로봇 적응형 건축 설계 기준을 도출했다. 본문은 열지 못해 연구 방법은 단정하지 않는다. [사실][^ref-1483]\\n\\n이 연구들의 승강기 결과를 국내 다층 물류센터 처리량으로 옮기는 것은 보류하고, 현장별 임계값을 새로 검증해야 한다는 것이 이 위키 구축자의 의견이다(oq-010). [의견][^ref-943][^ref-103][^ref-321][^ref-163]\"},{\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)\",\"action\":\"append\",\"content\":\"\\n건물 설비의 비상 복귀도 같은 경계로 나뉜다. 5절 기타 현장 사례처럼 화재 경보 뒤 승강기의 수동 모드 복귀와 PLC 재시작에는 사람의 개입이 필요할 수 있으며, 이는 연계 대상인 설비 쪽 조치다. [추정] 벤더 주장[^ref-1492] 그래서 ROP 장애 복구와 건물 설비의 비상 복귀를 따로 시험하고, 화재 뒤 설비 재시작 같은 수동 복귀의 책임자를 정해 두는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1492]\\n\\n출입통제에서는 문 열기 요청과 통행 권한 승인을 나눠 본다. Dormakaba 문 어댑터 README 는 문 클라우드 API 접근 자격증명을 Dormakaba 가 제공한다고 안내한다. [사실][^ref-1491] BACnet 출입통제 백서가 인증과 권한 검사를 구분한다는 내용은 검증에서 재현하지 못한 추정 근거다. [추정][^ref-1495] 이에 비추어 자동문 연동에서는 문 열기 API 자격증명과 별도로 로봇의 공간별 출입 권한과 비상 우선권을 누가 정하는지 확인해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]\\n\\n물리 인계에서는 ROP 가 준비·허가·이송·완료의 의미를 현장 PLC·작업대와 합의하고, 물리 인계 완료를 상위 작업 완료에 연결하는 것이 좋다는 것이 이 위키 구축자의 의견이다. SEMI E84 같은 업종 규격은 인계 신호 구조의 참고일 뿐 다른 현장에 대한 적합성을 검증한 근거가 아니다. [의견][^ref-202]\"},{\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"action\":\"append\",\"content\":\"\\n2026-09-25 까지 정리한 연결은 [22. 설비·건물 시스템 연동 — 다른 연구영역과의 연결(2026-09-25)](../../topics/2026/2026-09-25-area10-s10.md)에 있다.\\n\\n### 2026-10-11 보강\\n\\n- [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md) — 병원 약품 배송 논문은 승강기 가동률 임계값을 현장 특정값으로 보고 다른 병원에서는 재보정이 필요하다고 명시한다. [사실][^ref-943]\\n- [64. 상업 시설](../site-type-applications/commercial-facilities.md) — 상업 건물의 기존 화물 승강기·자동문을 다중 로봇 플랫폼에 중앙 연결했다는 공급자 발표가 있다. [추정] 벤더 주장[^ref-1496] 로봇 친화형 건축물 인증과 무장애 인증을 비교한 설계 기준 연구도 건물 쪽 요구의 배경이 된다. [사실][^ref-1483]\\n- [67. 기타 현장](../site-type-applications/other-sites.md) — 도서관 현장의 승강기 제어함 PLC·드라이 접점 연결과 화재 뒤 수동 복구 사례(5절)다. [추정] 벤더 주장[^ref-1492]\\n- [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md) — 자동문 어댑터의 클라우드 자격증명은 문 제조사가 제공한다. [사실][^ref-1491] 로봇의 공간별 통행 권한 승인은 그와 별개로 정해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]\\n- [30. 로봇 간 협업·물리적 인계](../execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) — Open-RMF 디스펜서 단계는 SUCCESS 결과 또는 대기열 소거로 완료를 판정한다. [사실][^ref-1489] SEMI E84 는 자동 반송 시스템과 생산 설비 로드포트 사이 캐리어 인계 신호를 다루는 반도체 업종 규격이다. [사실][^ref-202] 이 둘은 물리 인계 설계의 참고일 뿐 다른 현장에 대한 적합성 근거가 아니라는 것이 이 위키 구축자의 의견이다. [의견][^ref-202]\\n- [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) — 화재 경보 뒤 설비 재시작에 사람의 개입이 필요하다는 현장 문서가 있다. [추정] 벤더 주장[^ref-1492] 설비 비상 복귀를 ROP 복구 절차와 따로 다뤄야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1492]\\n- [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md) — KS B 7317 은 2021-11-30 제정 뒤 2022-12-09·2025-05-09 에 개정됐고 병원 환자 전용 엘리베이터를 적용 대상에서 뺀다. [사실][^ref-314]\\n- [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 승강기 제조사 API(KONE API v2.0)를 Open-RMF 승강기 메시지에 잇는 공개 어댑터가 있다. [사실][^ref-1490]\"},{\"section\":\"11. 열린 질문\",\"action\":\"append\",\"content\":\"\\n2026-09-25 까지 올린 열린 질문 목록은 [22. 설비·건물 시스템 연동 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area10-s11.md)에 있다.\\n\\n### 2026-10-11 재확인에서 얻은 부분 근거\\n\\n아래 질문은 이번 재확인에서 근거가 일부 보강됐으나 모두 열림 상태를 유지한다.\\n\\n- **oq-010** (상태: 열림) 병원 논문의 재보정 명시, 공유 승강기 지연의 교차 확인, 호텔·그래프 연구의 수치 실험 성격, 지도 구축 연구의 로봇 한 대 실물 실험이라는 조건을 확인했으나 물류센터 실측 자료는 여전히 없다(8절).\\n- **oq-041**·**oq-283** (상태: 열림) 대한승강기협회 가이드라인의 대상 범위(일반사항·시험 설비·시험 절차)와 무료 공개를 확인했고, 표준 번호는 리서치 단계 열람에만 기대며 검증에서 재현하지 못했다(7절). 메시지·상태 정의, Open-RMF 대응, 연동 장애 시 책임 분담은 미확인이다.\\n- **oq-042**·**oq-062** (상태: 열림) SEMI E84 현행판과 Doc 7442 개발 제안을 확인했으나 반도체 범위이며, 이동로봇–컨베이어·작업대 인계용 제조사 중립 규격은 확인하지 못했다.\\n- **oq-043** (상태: 열림) 문 클라우드 자격증명의 제공 주체와 BACnet 출입통제 백서의 지위를 확인했으나, 로봇 관제가 보안문을 여닫는 사례와 권한 확인 주체는 미확인이다.\\n- **oq-098**·**oq-173**·**oq-311** (상태: 열림) KS B 7317 의 개정 이력과 적용 범위를 확인했으나 조항과 기준값은 미확인이다.\\n- **oq-067**·**oq-094** (상태: 열림) Open-RMF 승강기 감독자에 여러 요청 사이의 배정 규칙이 구현돼 있지 않음을 확인했다(6절).\\n- **oq-215** (상태: 열림) 병원 논문의 전체 성공률 87.03% 분모 설명이 없음을 다시 확인했다(5절 병원 사례).\\n- **oq-258**·**oq-328** (상태: 열림) 병원 논문이 승강기 가동률 임계값의 재보정 필요를 명시함을 확인했다.\\n\\n### 새로 올린 질문\\n\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) KS B 7317 의 2022-12-09 개정과 2025-05-09 개정은 각각 어떤 조항(요구사항·평가 방법)을 바꿨으며, 그 변경이 승강기 연동 계층이 확인해야 할 항목에 영향을 주는가? (관련 기존 질문: oq-098, oq-173, oq-311)\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) 로봇 친화형 건축물 인증의 현행 심사 기준은 어느 판이며, 승강기·자동문·출입통제 연동 항목을 어떤 시험이나 서류로 심사하는가? (관련 기존 질문: oq-179)\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) KONE 의 현행 공식 승강기 API 계약(지원 승강기, 건물 등록, 권한 범위, 세션 유지 조건)은 2023년 고정판 공개 RMF 어댑터가 전제한 KONE API v2.0 연결 조건과 어떻게 다른가?\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) SEMI Doc 7442(E84 를 출발점으로 한 새 인계 인터페이스와 TCP/IP 하위 규격) 개발 제안은 승인 뒤 표준으로 발행됐는가, 반도체 밖 이동로봇–설비 인계에도 쓸 수 있는 범위인가? (관련 기존 질문: oq-042, oq-062)\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) HopeTechnik 승강기·문 연동 문서가 승강기 상태 전송 주기를 1 Hz 와 2초마다로 다르게 적은 것은 어느 쪽이 실제 구현·설정이며, 이런 주기 차이가 설비 상태를 믿을 수 있는 경과 시간 판단에 어떤 영향을 주는가? (관련 기존 질문: oq-034)\\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) NAVER ARC 의 Tokyo Midtown Yaesu 도입에서 기존 화물 승강기·자동문 연동이 실제로 운영 중인 층·로봇 종류·제조사 범위는 어디까지이며, 공급자 밖의 독립 운영 평가가 있는가?\"},{\"section\":\"13. 참고 자료 (각주)\",\"action\":\"replace\",\"content\":\"[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-060]: Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026, https://doi.org/10.1177/20552076261437181, 접근일 2026-09-25 (원문 미열람)\\n[^ref-103]: Han, L.; Ding, J.; Liu, S.; Meng, M. (Sensors 25(6):1783), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 2025-03-13, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-10-11\\n[^ref-163]: 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지 21(1):48–57), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템, 2026-02-28, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667, 접근일 2026-10-11\\n[^ref-202]: SEMI, E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface, 미확인, https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface, 접근일 2026-10-11\\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-09-25\\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25\\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-09-25\\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-09-25\\n[^ref-314]: 국가기술표준원(e-나라표준인증·KSSN), KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법, 2025-05-09, https://www.kssn.net/search/stddetail.do?itemNo=K001010135682, 접근일 2026-10-11\\n[^ref-315]: 산업통상자원부 국가기술표준원(대한민국 정책브리핑), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11, https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155, 접근일 2026-09-25 (원문 미열람)\\n[^ref-321]: Kim, S.; Jang, H.; Ha, J.; Lee, D.; Ha, Y.; Song, Y. E. (Electronics 14(5):982), Efficient Graph-Based Multi-Story Path Planning with Optimized Elevator Selection for Indoor Delivery Robots, 2025-02-28, https://doi.org/10.3390/electronics14050982, 접근일 2026-10-11\\n[^ref-322]: 국토교통부, 올해 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'부터 착수 (보도자료), 미확인, https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090964, 접근일 2026-10-11 (원문 미열람)\\n[^ref-943]: Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026-03-31, https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/, 접근일 2026-10-11\\n[^ref-1398]: Open-RMF (open-rmf/rmf_ros2 저장소), Changelog for package rmf_fleet_adapter, 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-11\\n[^ref-1483]: Park, Y.; Park, S. (Architectural Research), Development of Human-Centered, Robot-Adaptive Building Design Standards: Focusing on Korea’s Building Certification Systems, 2026-07-21, https://link.springer.com/article/10.1007/s44515-026-00016-y, 접근일 2026-10-11\\n[^ref-1484]: 스마트투데이(이재수), \\\"사람과 로봇이 공존하는 스마트 빌딩 앞당긴다\\\"...국토부 산학협력단과 기술개발 착수, 2025-05-28, https://www.smarttoday.co.kr/ko-kr/articles/81933, 접근일 2026-10-11\\n[^ref-1485]: 대한승강기협회(KOLA), 대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27), 2026-03-27, https://kola.or.kr/pages/61/68/bbs/5705, 접근일 2026-10-11\\n[^ref-1486]: 국가기술표준원(e-나라표준인증), 단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인, 미확인, https://www.standard.go.kr/KSCI/grpstd/getGrpStdCrtfcReqst.do?menuId=60372&topMenuId=502&upperMenuId=503, 접근일 2026-10-11\\n[^ref-1487]: cwrx777; mxgrey (Open Robotics Discourse 아카이브), Lift session issues - Robot enter lift while lift is still in human mode (#513), 2024-08-21, https://discourse.openrobotics.org/t/lift-session-issues-robot-enter-lift-while-lift-is-still-in-human-mode-513/44679, 접근일 2026-10-11\\n[^ref-1488]: Open-RMF (open-rmf/rmf_ros2 저장소), rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3fe), 미확인, https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/lift_supervisor/Node.cpp, 접근일 2026-10-11\\n[^ref-1489]: Open-RMF (open-rmf/rmf_ros2 저장소), rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp (commit 4cea3fe), 미확인, https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp, 접근일 2026-10-11\\n[^ref-1490]: CHART; KABAM-Robotics 보존 저장소, KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a87), 미확인, https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596, 접근일 2026-10-11\\n[^ref-1491]: Open-RMF (open-rmf/door_adapter_dormakaba 저장소), door_adapter_dormakaba — README (commit 2cf76a6), 미확인, https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668, 접근일 2026-10-11\\n[^ref-1492]: HopeTechnik (RMF Systems Engineering Handbook), Lift and Doors Integration, 미확인, https://trl-rmf.github.io/website/content/lift-door-integration.html, 접근일 2026-10-11\\n[^ref-1494]: SEMI Physical Interfaces & Carriers TC (Japan), SNARF for Doc 7442: Specification for Enhanced Handoff Interface, 미확인, https://downloads.semi.org/web/wstdsbal.nsf/18a679096dfd445188256d35007d447d/0db3fe2c9bb0eb2488258d9400027699!OpenDocument, 접근일 2026-10-11 (원문 미열람)\\n[^ref-1495]: SSPC 135 LSS-WG; Isler, B. 외 (BACnet International), Physical Access Control with BACnet (BAC-09-08 White Paper), 2008-09-27, https://bacnet.org/wp-content/uploads/sites/4/2022/08/BAC-09-08.pdf, 접근일 2026-10-11\\n[^ref-1496]: NAVER LABS, NAVER’s ARC Goes to Japan, 2026-07-23, https://naverlabs.com/en/blogDetail?seq=10034507, 접근일 2026-10-11\"}]}],\"changelog_entry\":\"2026-10-11 | 22. 설비·건물 시스템 연동 | 차등 갱신: KS B 7317 개정 이력·대한승강기협회 단체표준·Open-RMF 승강기 감독과 작업대 완료 판정·KONE·Dormakaba 어댑터·SEMI E84·BACnet 출입통제 백서 보강, 기타(도서관)·병원·상업 시설 적용 사례 추가, 대표 연구의 실험 조건 갱신, 새 열린 질문 6건, 2차 수정(구축자 의견 태그 분리·2026-09-25 주제 페이지 링크 복원); 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월 | run 2026-10-11-03\",\"index_updates\":{\"home_recent\":\"2026-10-11 — 22. 설비·건물 시스템 연동: KS B 7317 개정 이력, 승강기 단체표준, Open-RMF 승강기 세션 감독·작업대 완료 판정, 도서관·병원·상업 시설 승강기 연동 사례 보강\",\"category_recent\":\"2026-10-11 — 22. 설비·건물 시스템 연동: 승강기 세션 수락·잔류 세션 처리, 작업대 결과 완료 판정, 제조사 승강기·문 어댑터 자격증명, KS B 7317·대한승강기협회 단체표준·SEMI E84 판 정보, 기타(도서관)·병원·상업 시설 사례 추가\",\"area_recent\":\"2026-10-11 — 22. 설비·건물 시스템 연동: 3~11절 차등 갱신(승강기 감독·작업대 완료 판정·제조사 어댑터·표준 판 정보·연구 실험 조건·비상 복귀와 출입통제 경계·새 질문 6건), 5절에 기타(도서관)·병원·상업 시설 사례 추가, 2026-09-25 주제 페이지 링크 유지\"},\"glossary_updates\":[],\"reference_updates\":[{\"id\":\"ref-322\",\"org\":\"국토교통부\",\"title\":\"올해 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'부터 착수 (보도자료)\",\"published\":null,\"url\":\"https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090964\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"원문 미열람. 국토부 로봇 친화형 건축물 핵심기술 개발 착수 보도자료로, 이번에도 원문을 열지 못해 보도·배포일과 사업기간은 2차 보도(ref-1484) 기준이다.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1484\",\"org\":\"스마트투데이(이재수)\",\"title\":\"\\\"사람과 로봇이 공존하는 스마트 빌딩 앞당긴다\\\"...국토부 산학협력단과 기술개발 착수\",\"published\":\"2025-05-28\",\"url\":\"https://www.smarttoday.co.kr/ko-kr/articles/81933\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-10-11\",\"summary\":\"국토부 스마트+빌딩 연구개발 착수 보도. 2025-05-29 착수보고회 예정, 2028년까지 완료 예정, 기술 실증을 통한 기술표준·인증제도 개선방안 등 세부 과제를 전한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1483\",\"org\":\"Park, Y.; Park, S. (Architectural Research)\",\"title\":\"Development of Human-Centered, Robot-Adaptive Building Design Standards: Focusing on Korea’s Building Certification Systems\",\"published\":\"2026-07-21\",\"url\":\"https://link.springer.com/article/10.1007/s44515-026-00016-y\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"로봇 친화형 건축물 인증과 무장애 인증을 비교해 로봇 적응형 건축 설계 기준을 도출한 논문(28(1), 논문번호 14). 초록과 Crossref 서지만 확인했고 본문은 열지 못했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-314\",\"org\":\"국가기술표준원(e-나라표준인증·KSSN)\",\"title\":\"KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법\",\"published\":\"2025-05-09\",\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010135682\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"KS B 7317 표준 정보. e-나라표준인증 상세에서 제정(2021-11-30)·개정(2022-12-09, 2025-05-09) 이력과 적용 범위·표준개발협력기관을 확인했다. 표준 본문은 미열람.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1485\",\"org\":\"대한승강기협회(KOLA)\",\"title\":\"대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27)\",\"published\":\"2026-03-27\",\"url\":\"https://kola.or.kr/pages/61/68/bbs/5705\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"KOLA 의 「엘리베이터와 로봇의 상호 연동을 위한 가이드라인」 단체표준 제정 보도자료. 대상(일반사항·시험 설비·시험 절차)과 e-나라표준인증 무료 다운로드를 안내한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1486\",\"org\":\"국가기술표준원(e-나라표준인증)\",\"title\":\"단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인\",\"published\":null,\"url\":\"https://www.standard.go.kr/KSCI/grpstd/getGrpStdCrtfcReqst.do?menuId=60372&topMenuId=502&upperMenuId=503\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"e-나라표준인증 단체표준 목록 검색 결과. 리서치 단계 열람에서 KOLA 가이드라인의 표준번호 B-KOLA-0001-7700, 상태 제정, 등록일자 2026-03-24 를 보였으나 검증 단계에서는 해당 목록 행을 재현하지 못했고 URL 에 검색 조건이 없다. 표준 본문은 미열람.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1487\",\"org\":\"cwrx777; mxgrey (Open Robotics Discourse 아카이브)\",\"title\":\"Lift session issues - Robot enter lift while lift is still in human mode (#513)\",\"published\":\"2024-08-21\",\"url\":\"https://discourse.openrobotics.org/t/lift-session-issues-robot-enter-lift-while-lift-is-still-in-human-mode-513/44679\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"Open-RMF GitHub 토론 #513 의 Discourse 아카이브. 승강기가 AGV 모드로 바뀌기 전 로봇이 탑승한 문제와, 모드 전환 뒤에 session_id 를 보고하라는 개발자 답변을 담는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1488\",\"org\":\"Open-RMF (open-rmf/rmf_ros2 저장소)\",\"title\":\"rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3fe)\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/lift_supervisor/Node.cpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"Open-RMF 승강기 감독자 구현. 같은 세션 요청의 갱신·종료 처리와, 활성 요청 없이 남은 세션에 종료 요청을 반복 발행하는 분기를 담는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1398\",\"org\":\"Open-RMF (open-rmf/rmf_ros2 저장소)\",\"title\":\"Changelog for package rmf_fleet_adapter\",\"published\":\"2026-09-26\",\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"rmf_fleet_adapter 변경기록. 2.13.0(2026-06-15)의 승강기가 이미 해당 층에 있을 때 legacy 완료 상태를 내보내는 변경(#510)과 2.14.0(2026-09-26) 존재를 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1489\",\"org\":\"Open-RMF (open-rmf/rmf_ros2 저장소)\",\"title\":\"rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp (commit 4cea3fe)\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"Open-RMF 배송 작업의 디스펜서 단계 구현. 결과 메시지(ACKNOWLEDGED·SUCCESS·FAILED)와 상태 대기열 소거로 완료를 판정하는 조건을 담는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1490\",\"org\":\"CHART; KABAM-Robotics 보존 저장소\",\"title\":\"KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a87)\",\"published\":null,\"url\":\"https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터 README(원 저장소 안내는 sharp-rmf/kone-ros-api). 실제 승강기 제어 자격증명을 KONE 담당자에게 받도록 안내한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1491\",\"org\":\"Open-RMF (open-rmf/door_adapter_dormakaba 저장소)\",\"title\":\"door_adapter_dormakaba — README (commit 2cf76a6)\",\"published\":null,\"url\":\"https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"Dormakaba 스마트 문용 Open-RMF 문 어댑터 README. EL301·ED250 시험, IoT connector 장착 요구, 문 클라우드 API 자격증명 제공 주체를 적는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1492\",\"org\":\"HopeTechnik (RMF Systems Engineering Handbook)\",\"title\":\"Lift and Doors Integration\",\"published\":null,\"url\":\"https://trl-rmf.github.io/website/content/lift-door-integration.html\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"한 도서관 현장의 승강기·문 연동 설계와 복구 설명. 승강기 제어함 PLC(Beckhoff CX9020)·드라이 접점 연결, AGV 모드 개조, 화재 경보 시 복구 절차와 메시지 주기를 적는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-202\",\"org\":\"SEMI\",\"title\":\"E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface\",\"published\":null,\"url\":\"https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"SEMI E84 판매 목록. E84-0823 이 현행판(Current)으로 표시되고 AMHS–생산 설비 캐리어 인계 범위를 설명하는 초록을 확인했다. 표준 본문은 미열람.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1494\",\"org\":\"SEMI Physical Interfaces & Carriers TC (Japan)\",\"title\":\"SNARF for Doc 7442: Specification for Enhanced Handoff Interface\",\"published\":null,\"url\":\"https://downloads.semi.org/web/wstdsbal.nsf/18a679096dfd445188256d35007d447d/0db3fe2c9bb0eb2488258d9400027699!OpenDocument\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"원문 미열람. E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안하는 신규 예비 표준 개발 제안서(작성 2025-12-17, 반도체 조립·시험 범위)로, 검증에서 검색 결과 요약으로 내용을 대조했다. 표준 발행은 미확인.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-943\",\"org\":\"Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)\",\"title\":\"Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments\",\"published\":\"2026-03-31\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"혼잡한 병원에서 승강기 이용을 고려한 자율 약품 배송 로봇 실증. EOR 임계값의 재보정 필요 명시, 배송 지연 관찰, 전체 성공률 분모 설명 부재를 확인했다. ref-060 과 같은 논문이다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-103\",\"org\":\"Han, L.; Ding, J.; Liu, S.; Meng, M. (Sensors 25(6):1783)\",\"title\":\"The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments\",\"published\":\"2025-03-13\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"다층 호텔 로봇 배송 경로계획 수치 실험. 실제 호텔 평면으로 거리 행렬을 만들고 수요는 무작위 생성했으며 승강기 기본 대기 30초를 둔다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-321\",\"org\":\"Kim, S.; Jang, H.; Ha, J.; Lee, D.; Ha, Y.; Song, Y. E. (Electronics 14(5):982)\",\"title\":\"Efficient Graph-Based Multi-Story Path Planning with Optimized Elevator Selection for Indoor Delivery Robots\",\"published\":\"2025-02-28\",\"url\":\"https://doi.org/10.3390/electronics14050982\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"실내 배송 로봇의 승강기 선택을 최적화한 그래프 기반 다층 경로계획. 15층 건물 그래프 시뮬레이션에서 소포 수 1~7개로 평가했다(초록 기준).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-163\",\"org\":\"노주형, 강규리, 김연찬, 심현철(로봇학회 논문지 21(1):48–57)\",\"title\":\"탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템\",\"published\":\"2026-02-28\",\"url\":\"https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-10-11\",\"summary\":\"탐사와 승강기 연계로 다층 실내 지도를 자율 구축한 KAIST 연구. KAIST N1 5~9층 각 층 절반 영역 평가, 승강기 상호작용 19/20 성공, 외부 이용자로 인한 승강기 지연을 보고한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1495\",\"org\":\"SSPC 135 LSS-WG; Isler, B. 외 (BACnet International)\",\"title\":\"Physical Access Control with BACnet (BAC-09-08 White Paper)\",\"published\":\"2008-09-27\",\"url\":\"https://bacnet.org/wp-content/uploads/sites/4/2022/08/BAC-09-08.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-10-11\",\"summary\":\"BACnet 으로 출입통제를 구현하기 위한 확장을 설명한 백서. 표준 변경 제안의 기초 작업 문서이며 현행 ANSI/ASHRAE 135 규범 본문이 아니다. 인증·권한 검사 구분 내용은 검증에서 재현하지 못했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]},{\"id\":\"ref-1496\",\"org\":\"NAVER LABS\",\"title\":\"NAVER’s ARC Goes to Japan\",\"published\":\"2026-07-23\",\"url\":\"https://naverlabs.com/en/blogDetail?seq=10034507\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-10-11\",\"summary\":\"NAVER 다중 로봇 플랫폼 ARC 의 Tokyo Midtown Yaesu 도입 소개. 기존 화물 승강기·자동문 연동과 연말 전 층 확대 계획을 공급자 관점에서 설명한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/integration/facility-and-building-system-integration.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"KS B 7317 의 2022-12-09 개정과 2025-05-09 개정은 각각 어떤 조항(요구사항·평가 방법)을 바꿨으며, 그 변경이 승강기 연동 계층이 확인해야 할 항목에 영향을 주는가? (관련 기존 질문: oq-098, oq-173, oq-311)\",\"areas\":[22,50],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"로봇 친화형 건축물 인증의 현행 심사 기준은 어느 판이며, 승강기·자동문·출입통제 연동 항목을 어떤 시험이나 서류로 심사하는가? (관련 기존 질문: oq-179)\",\"areas\":[22,64],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"KONE 의 현행 공식 승강기 API 계약(지원 승강기, 건물 등록, 권한 범위, 세션 유지 조건)은 2023년 고정판 공개 RMF 어댑터가 전제한 KONE API v2.0 연결 조건과 어떻게 다른가?\",\"areas\":[22,20],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"SEMI Doc 7442(E84 를 출발점으로 한 새 인계 인터페이스와 TCP/IP 하위 규격) 개발 제안은 승인 뒤 표준으로 발행됐는가, 반도체 밖 이동로봇–설비 인계에도 쓸 수 있는 범위인가? (관련 기존 질문: oq-042, oq-062)\",\"areas\":[22,30],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"HopeTechnik 승강기·문 연동 문서가 승강기 상태 전송 주기를 1 Hz 와 2초마다로 다르게 적은 것은 어느 쪽이 실제 구현·설정이며, 이런 주기 차이가 설비 상태를 믿을 수 있는 경과 시간 판단에 어떤 영향을 주는가? (관련 기존 질문: oq-034)\",\"areas\":[22,18],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"NAVER ARC 의 Tokyo Midtown Yaesu 도입에서 기존 화물 승강기·자동문 연동이 실제로 운영 중인 층·로봇 종류·제조사 범위는 어디까지이며, 공급자 밖의 독립 운영 평가가 있는가?\",\"areas\":[22,64],\"status\":\"열림\",\"link\":null}],\"site_matrix_updates\":[{\"site_type\":\"기타\",\"item\":\"수행 자원\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"},{\"site_type\":\"기타\",\"item\":\"예외·성과\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"},{\"site_type\":\"병원\",\"item\":\"작업 대상\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"},{\"site_type\":\"병원\",\"item\":\"제약\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"},{\"site_type\":\"병원\",\"item\":\"예외·성과\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"},{\"site_type\":\"상업 시설\",\"item\":\"수행 자원\",\"link\":\"docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시\",\"title\":\"22. 설비·건물 시스템 연동\"}],\"standards_updates\":[{\"name\":\"엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준)\",\"kind\":\"표준\",\"org\":\"대한승강기협회(KOLA)\",\"url\":\"https://kola.or.kr/pages/61/68/bbs/5705\",\"related_areas\":[22,21],\"summary\":\"엘리베이터와 로봇 상호 연동의 일반사항·시험 설비·시험 절차를 제시하는 단체표준으로, 협회가 2026-03-27 제정을 발표했다. 표준 번호(B-KOLA-0001-7700)는 검증에서 재현하지 못했고 메시지 정의는 미확인이다.\",\"ref_id\":\"ref-1485\"},{\"name\":\"KONE RMF Lift Adapter (kone-ros-api)\",\"kind\":\"오픈소스\",\"org\":\"CHART (KABAM-Robotics 보존 저장소)\",\"url\":\"https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596\",\"related_areas\":[22,20],\"summary\":\"Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터(2023년 고정판). 실제 승강기 제어 자격증명은 KONE 담당자에게 받는다.\",\"ref_id\":\"ref-1490\"},{\"name\":\"door_adapter_dormakaba (Open-RMF Dormakaba 문 어댑터)\",\"kind\":\"오픈소스\",\"org\":\"Open Robotics (open-rmf)\",\"url\":\"https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668\",\"related_areas\":[22,51],\"summary\":\"Dormakaba EL301·ED250 문 구동기용 Open-RMF 문 어댑터. IoT connector 장착이 필요하고 문 클라우드 API 자격증명은 Dormakaba 가 제공한다.\",\"ref_id\":\"ref-1491\"}],\"additional_research_requests\":[\"이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월: 트랙 반영 제안 2026-09-25-65(문 설비 연동·IFC HasDrive·로봇 조작과 설비 연동의 선택 조건)와 2026-09-25-76(승강기 층 이름과 지도 층의 대응표). 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 e-나라표준인증 고시일 2021-11-30 과 달라 페이지에 쓰지 않았다.\",\"6절 물리 인계 예시: OMRON LD 시리즈 통합 안내서(I680-E-02)는 존재를 확인하지 못해 뺐다. 제조사 이동로봇–작업대 인계 절차의 1차 자료를 재확보해야 한다(30. 로봇 간 협업·물리적 인계, oq-042).\",\"7절·11절: KS B 7317 의 2022-12-09·2025-05-09 개정 조항(신구대비표)과 기준값 확인이 필요하다(oq-098·oq-173·oq-311).\",\"7절: 대한승강기협회 가이드라인 원문(메시지·상태·시험 시나리오)과 e-나라표준인증 단체표준 목록의 표준 번호·제정일을 재현 가능한 방식으로 확인해야 한다(oq-041·oq-283).\",\"3절: 국토교통부 로봇 친화형 건축물 핵심기술 개발 보도자료 원문(발행일·사업기간·세부 과제) 확인이 필요하다.\",\"5절: 새로 넣은 기타(도서관)·병원·상업 시설 사례의 시작 조건·작업 대상·완료·인계 칸을 채울 근거가 브리프에 없었다.\",\"참고문헌 정리: ref-060 과 ref-943 은 같은 논문(Lee, Y. 외, Digital Health 2026)이므로 id 통합이 필요하다.\",\"로봇 친화형 건축물 인증의 현행 심사 기준과 평가 부문 명칭(외부 메모 F02 와 기존 용어집 4개 부문 명칭 충돌) 원문 재확보가 필요하다(64. 상업 시설).\",\"pipeline 담당 확인 요청: 분량 초과 자동 분리 때 원 절의 '자세한 내용은 주제 페이지 …' 줄이 분리 페이지 본문에서 빠져 기존 주제 페이지(2026-09-25-area10-s7·s8·s10·s11) 링크가 사라졌다. 이번 재실행은 다른 문형('2026-09-25 까지 정리한 … 은 [...](...)에 있다')으로 링크를 넣어 우회했다.\"],\"fixes_applied\":[\"f24·f25 삭제 — 6절 물리 인계 예시, 10절 30. 로봇 간 협업·물리적 인계 연결 근거, 11절 oq-042 부분 근거, 13절 각주, reference_updates 어디에도 ref-1493 을 쓰지 않았다.\",\"f47 — 9절 물리 인계 의견 문장의 각주를 ref-202 하나로 달고 [의견]과 '이 위키 구축자의 의견' 표시를 유지했다.\",\"f7 강등 — 7절 대한승강기협회 행에서 표준번호 B-KOLA-0001-7700·등록일자 2026-03-24 를 [추정]으로 쓰고 리서치 단계 열람에만 기대며 검증에서 목록 행을 재현하지 못했다고 밝혔고, 11절 oq-041·oq-283 부분 근거에도 같은 수준으로 적었다.\",\"f36 강등 — 7절 BACnet 행과 9절 출입통제 문단에서 인증·권한 검사 구분을 [추정]으로 쓰고 재현 불가를 밝혔으며, f45 의견은 Dormakaba 자격증명(f20, ref-1491)을 주 근거로 각주를 달고 BACnet 은 추정 근거로만 언급했다.\",\"f35 — 7절 BACnet 행에 2008-09-27 작업 문서이고 현행 ANSI/ASHRAE 135 규범 본문이 아님을 밝혔고 부록 채택 여부 같은 브리프 밖 내용은 넣지 않았다.\",\"f2 — 3절에서 '2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐고'로 고쳤고 사업명은 ref-322 보도자료 제목을 쓰는 기존 문장을 유지했다.\",\"f2·f3·f27 — 13절 ref-322·ref-1494 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 두 출처에 source_unopened: true 를 넣었다.\",\"f27 — '외부 조사 메모가 전한다'를 쓰지 않고 7절 SEMI Doc 7442 행을 지시 문구대로(SEMI 물리 인터페이스·캐리어 기술위원회(일본), SNARF, 작성 2025-12-17, 반도체 조립·시험 범위, 표준 발행 미확인) [추정]으로 썼다.\",\"ref-163 — 각주·reference_updates 발행일을 2026-02-28(로봇학회 논문지 21(1):48–57)로 쓰고 3절 f30 문장 기준일과 8절 f33·f34 항목 기준일을 2026-02-28 로 맞췄다.\",\"f32 — 8절에서 '15층 건물 그래프 시뮬레이션에서 소포 수 1~7개'로 쓰고 시뮬레이션 평가임을 밝혔으며 reference_updates 의 ref-321 요약도 같게 고쳤다.\",\"트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76) — 6절에 반영하지 않고 changelog_entry 와 additional_research_requests 에 '이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월'을 적었으며 'KS B 7317 2021-11-11 제정'은 페이지에 쓰지 않았다.\",\"직접 인용 — 모든 출처(ref-1492, ref-1487, ref-1488, ref-1489, ref-943 포함)를 직접 인용 없이 재서술했다.\",\"f1 — 8절에서 '로봇 친화형 건축물 인증'을 용어집 robot-friendly-building-certification 으로 연결하고 Robotics-Enabled Environment Certification(REEC)은 병기만 했으며 glossary_updates 에 새 용어를 넣지 않았다.\",\"2차: 10절 '51. 인증·권한·격리' 항목 — 지시 문구대로 '자동문 어댑터의 클라우드 자격증명은 문 제조사가 제공한다. [사실][^ref-1491]'과 '로봇의 공간별 통행 권한 승인은 그와 별개로 정해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]' 두 문장으로 나눴다.\",\"2차: 10절 '30. 로봇 간 협업·물리적 인계' 항목 — 디스펜서 완료 판정 [사실][^ref-1489], SEMI E84 업종 규격 설명 [사실][^ref-202], '참고일 뿐 적합성 근거가 아니다'는 구축자 의견 [의견][^ref-202] 세 문장으로 나눴다.\",\"2차: 10절 '32. 예외 복구·재계획·업무 연속성' 항목 — 현장 문서 부분은 [추정] 벤더 주장[^ref-1492]로 두고, '설비 비상 복귀를 ROP 복구 절차와 따로 다뤄야 한다'는 구축자 의견 [의견][^ref-1492] 문장으로 분리했다.\",\"2차: 3절 마지막 단락 f38 — '건축물 인증과 국가 연구개발 계획은'을 '건축물 인증을 다룬 설계 논문과 국가 연구개발 계획 보도는'으로 고쳤다.\",\"2차: 7·8·10·11절 — '자세한 내용은 주제 페이지 …'와 다른 문형('2026-09-25 까지 정리한 … 은 [...](...)에 있다')으로 2026-09-25-area10-s7·s8·s10·s11 링크를 본문에 넣었고, 7절 문장에는 새 대한승강기협회 행이 옛 페이지의 '표준 번호·제정일·내용 미확인' 서술을 보강한다고 덧붙였다. 8절은 replace 패치 안의 링크 줄을 이 문형으로 바꿨다.\",\"2차: 11절 '새로 올린 질문' 6건 — 페이지 문구를 open_question_updates[].question 과 글자 단위로 같게 맞췄다(1·2·4·5번에 '(관련 기존 질문: …)' 괄호 복원, 4번 괄호 설명 복원, 5번은 'HopeTechnik' 표기로 통일).\",\"2차: reference_updates 의 ref-1486 reliability 를 high 에서 medium 으로 낮추고 요약에 검증 재현 불가와 URL 에 검색 조건이 없다는 점을 적었다.\"]}",
+  "structured_output": {
+    "run_id": "2026-10-11-03",
+    "outline": [
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 1400,
+        "summary": "VDA 5050 3.0.0 은 주변 설비 인터페이스를 범위에서 빼므로 설비 연동은 따로 설계해야 하고, 실제 건물에서 공유 승강기 지연이 두 연구에서 보고됐다. [사실][^ref-031][^ref-943][^ref-163] KS B 7317 은 2021-11-30 제정 뒤 두 차례 개정됐다. [사실][^ref-314]",
+        "planned_findings": [
+          "f30",
+          "f4",
+          "f5",
+          "f2",
+          "f3",
+          "f38"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 350,
+        "summary": "Open-RMF 개발자는 AGV 모드 전환을 마칠 때까지 승강기 상태에 session_id 를 내보내지 말라고 권고했다. [사실][^ref-1487]",
+        "planned_findings": [
+          "f9",
+          "f10"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "5. 적용 사례 (현장 유형 명시)",
+        "budget_chars": 2300,
+        "summary": "기타(도서관) 현장의 승강기 제어함 PLC·드라이 접점 연결과 화재 뒤 수동 복구, 병원 승강기 가동률 임계값의 재보정 필요, 상업 시설의 승강기·자동문 중앙 연결 발표를 사례로 더한다. [추정] 벤더 주장[^ref-1492]",
+        "planned_findings": [
+          "f21",
+          "f22",
+          "f23",
+          "f28",
+          "f29",
+          "f30",
+          "f37",
+          "f48",
+          "f50"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 2300,
+        "summary": "Open-RMF 승강기 감독자는 같은 세션 요청을 갱신·종료로 처리하고 잔류 세션에 종료 요청을 반복하며, 디스펜서 단계는 SUCCESS 또는 대기열 소거로 완료를 판정한다. [사실][^ref-1488][^ref-1489]",
+        "planned_findings": [
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f41",
+          "f42",
+          "f43",
+          "f44",
+          "f49"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 2000,
+        "summary": "KS B 7317 개정 이력, KOLA 단체표준의 대상 범위, SEMI E84 현행판과 Doc 7442 개발 제안, BACnet 출입통제 백서의 지위를 표로 정리하고 2026-09-25 주제 페이지로 연결한다. [사실][^ref-314][^ref-1485][^ref-202][^ref-1495]",
+        "planned_findings": [
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f26",
+          "f27",
+          "f35",
+          "f36",
+          "f39",
+          "f40"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 1550,
+        "summary": "승강기를 포함한 다층 이동 연구는 실물 실증·수치 실험·시뮬레이션으로 조건이 다르다. [사실][^ref-943][^ref-103][^ref-321][^ref-163]",
+        "planned_findings": [
+          "f1",
+          "f28",
+          "f30",
+          "f31",
+          "f32",
+          "f33",
+          "f34",
+          "f48"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+        "budget_chars": 1200,
+        "summary": "화재 뒤 설비 재시작은 연계 대상이고 ROP 는 복구 책임자 지정과 시험을 맡으며, 출입통제에서는 문 열기 요청과 통행 권한 승인을 나눈다는 것이 구축자 의견이다. [의견][^ref-1492][^ref-1491]",
+        "planned_findings": [
+          "f22",
+          "f46",
+          "f20",
+          "f36",
+          "f45",
+          "f47"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 1300,
+        "summary": "63. 병원·의료, 64. 상업 시설, 67. 기타 현장, 51. 인증·권한·격리, 30. 로봇 간 협업·물리적 인계, 32. 예외 복구·재계획·업무 연속성, 50. 안전 표준·인증·사고 조사, 20. 로봇·제조사 관제 연동 연결을 더한다. [사실][^ref-943][^ref-314]",
+        "planned_findings": [
+          "f1",
+          "f4",
+          "f14",
+          "f17",
+          "f20",
+          "f22",
+          "f26",
+          "f28",
+          "f37",
+          "f45",
+          "f46",
+          "f47"
+        ]
+      },
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 1900,
+        "summary": "oq-010·oq-041·oq-042·oq-043 등은 부분 근거만 보강돼 열림을 유지하고, KS B 7317 개정 조항·REEC 심사 기준·KONE 현행 API·SEMI Doc 7442 발행·상태 주기 불일치·Yaesu 운영 범위 질문 6건을 새로 올린다.",
+        "planned_findings": [
+          "f4",
+          "f1",
+          "f17",
+          "f27",
+          "f23",
+          "f37"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/integration/facility-and-building-system-integration.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치",
+        "patches": [
+          {
+            "section": "3. 왜 중요한가",
+            "action": "replace",
+            "frontmatter": {
+              "related_areas": [
+                15,
+                20,
+                21,
+                27,
+                28,
+                29,
+                30,
+                32,
+                35,
+                48,
+                50,
+                51,
+                63,
+                64,
+                67
+              ],
+              "tags": [
+                "승강기 연동",
+                "Open-RMF",
+                "VDA 5050",
+                "작업대 인계",
+                "KS B 7317",
+                "단체표준"
+              ],
+              "sources": [
+                "ref-023",
+                "ref-031",
+                "ref-047",
+                "ref-049",
+                "ref-060",
+                "ref-103",
+                "ref-163",
+                "ref-202",
+                "ref-283",
+                "ref-284",
+                "ref-286",
+                "ref-312",
+                "ref-313",
+                "ref-314",
+                "ref-315",
+                "ref-316",
+                "ref-317",
+                "ref-318",
+                "ref-319",
+                "ref-320",
+                "ref-321",
+                "ref-322",
+                "ref-943",
+                "ref-1398",
+                "ref-1483",
+                "ref-1484",
+                "ref-1485",
+                "ref-1486",
+                "ref-1487",
+                "ref-1488",
+                "ref-1489",
+                "ref-1490",
+                "ref-1491",
+                "ref-1492",
+                "ref-1494",
+                "ref-1495",
+                "ref-1496"
+              ],
+              "last_run": "2026-10-11"
+            },
+            "content": "로봇–관제 인터페이스 표준인 VDA 5050 3.0.0 은 문·게이트·승강기 같은 주변 시스템과의 통신을 관제(fleet control) 시스템의 최소 기능 목록에 넣는다. [사실][^ref-031] 그러나 같은 명세는 관제–이동로봇 통신과 무관한 인터페이스, 곧 주변 설비·인프라 구성요소·외부 IT 시스템과의 인터페이스를 범위에서 제외한다. [사실][^ref-031] 위 두 사실에 비추어, 로봇 쪽 표준만으로는 설비 쪽 연결 방식이 정해지지 않으므로 이종 제조사 로봇을 연결하는 플랫폼은 설비 연동을 따로 설계해야 한다는 것이 이 위키 구축자의 의견이다. [의견]\n\n설비는 여러 로봇이 나눠 쓰는 자원이기도 하다. 로봇이 층간 운반에 승강기를 쓰면 한 로봇의 세션이 승강기를 점유하는 동안 다른 로봇이 기다려야 하므로, 승강기 대기가 처리량과 운반 시간에 영향을 줄 것으로 보인다. [추정][^ref-312][^ref-286][^ref-060][^ref-103] 실제로 사람과 승강기를 함께 쓰는 건물에서 로봇의 층간 이동이 늦어진 사례가 기관이 다른 두 연구에서 보고됐다(2026-03-31·2026-02-28 발표). 병원 연구는 승강기 가동률이 높을수록 배송 시간이 길어졌다고, 대학 건물 지도 구축 연구는 외부 이용자 때문에 승강기가 다른 층으로 가 지연이 생겼다고 적는다. [사실][^ref-943][^ref-163] 다만 물류센터 화물용 승강기에 대한 정량 자료는 아직 확인되지 않았다(열린 질문 oq-010).\n\n국내에서도 제도 정비가 진행 중이다. 국가기술표준원은 2021년 11월 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항과 평가 방법을 정한 국가표준 KS B 7317 을 제정했으며, 승강기 안전기준 소관 부처인 행정안전부와 협력해 추진했다. [사실][^ref-314][^ref-315] e-나라표준인증 이력에 따르면 이 표준은 2021-11-30 제정 뒤 2022-12-09 과 2025-05-09 두 차례 개정됐고, 병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터를 적용 대상으로 둔다. [사실][^ref-314] 개정된 조항은 미확인이다.\n\n국토교통부는 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'에 착수한다고 발표했다(발행일 미확인). [추정][^ref-322] 2차 보도에 따르면 이 연구개발은 2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐고, 2028년까지 완료될 예정이며, 세부 중점과제에 기술 실증을 통한 기술표준·인증제도 개선방안 마련이 들어 있다. [추정][^ref-1484][^ref-322] 국토부 보도자료 원문은 열지 못해 사업기간과 과제 내용은 2차 보도 기준이며, 이후 진행은 미확인이다.\n\n건축물 인증을 다룬 설계 논문과 국가 연구개발 계획 보도는 인증 운영기관의 현행 심사 규칙이 아니므로, ROP 의 설비 연동 수용 기준은 이들과 별도 목록으로 관리하고 발주 때 인증의 적용 판·심사 범위와 현장 설비 연결 계약을 서로 다른 증빙으로 확인하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1483][^ref-1484]"
+          },
+          {
+            "section": "4. 핵심 개념과 용어",
+            "action": "append",
+            "content": "\n### 2026-10-11 보강\n\n- **AGV 모드 전환과 세션 수락** — Open-RMF 개발자는 2024-08-21 토론 답변에서, 세션을 안전하게 수행하려면 승강기가 별도 AGV 모드여야 하는 경우 모드 전환을 마칠 때까지 승강기 상태에 세션 식별자(session_id)를 내보내지 말아야 한다고 권고했다. [사실][^ref-1487] 같은 답변은 별도 AGV 모드가 없는 승강기도 있을 수 있다고 설명한다. [사실][^ref-1487] 이 권고는 설계 의도의 설명이며 현장 안전 동작을 재현한 결과가 아니다."
+          },
+          {
+            "section": "5. 적용 사례 (현장 유형 명시)",
+            "action": "append",
+            "content": "\n**현장 유형:** 기타\n\n**사례:** 도서관에서 기존 승강기를 로봇의 층간 이동에 연동 (도서관 현장 설계 문서)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | 연계 대상: 현장에 새로 설치한 승강기 제어함 안의 PLC(Beckhoff CX9020)가 서버의 ADS 명령을 받아 드라이 접점으로 승강기 신호를 조작하고, 승강기 업체가 기존 승강기를 AGV 모드로 개조했다. [추정] 벤더 주장[^ref-1492] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 연계 대상: 화재 경보가 울리면 승강기가 수동 모드로 돌아가고 PLC 는 재시작할 때까지 오류 상태에 머물러, 다시 시작하려면 사람의 개입이 필요하다. [추정] 벤더 주장[^ref-1492] |\n\n이 사례는 한 도서관 현장의 벤더 설계 문서(발행일 미확인, 확인일 2026-10-11)에 기대며, 승강기 자체 제어반이 아니라 새로 단 제어함을 거쳐 신호를 조작하는 방식이다. 같은 문서는 승강기 상태 전송 주기를 개요에서는 1 Hz 로, 서버 절에서는 2초마다로 서로 다르게 적고 승강기 요청은 1초마다 보낸다고 적는다. [추정] 벤더 주장[^ref-1492] 차이를 설명하는 근거가 없어 실제 주기는 결론을 내리지 않는다.\n\n이 사례에서 이 영역이 맡는 칸은 수행 자원(설비 쪽 연결 경로)과 예외·성과(비상 뒤 설비 복귀)다. 한 현장의 설계이므로 다른 건물의 화재 복구 조건으로 일반화하지 않는다.\n\n**현장 유형:** 병원\n\n**사례:** 혼잡한 병원에서 승강기를 함께 쓰며 약품 배송 (고려대 구로병원 연구)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 약품 [사실][^ref-943] |\n| 수행 자원 | 미확인 |\n| 제약 | 승강기 가동률이 높을수록 배송 시간이 길어졌다. [사실][^ref-943] 논문은 ROC 분석으로 찾은 [승강기 가동률](../../glossary/elevator-operating-rate.md)(EOR) 임계값 59.01% 를 현장 특정값으로 해석해야 하며 다른 병원에 적용하려면 재보정이 필요하다고 명시한다(2026-03-31 발표). [사실][^ref-943] |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 2026-10-11 재확인에서도 논문에는 전체 성공률 87.03% 의 분모를 설명하는 구절이 없고, 분석 대상 122건에서 실패 14건을 뺀 108건의 비율(약 88.52%)과 보고값이 다르다. [사실][^ref-943] |\n\n병원 쪽 요구와 다른 칸은 [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md)에서 다룬다. 이 사례에서 이 영역이 보는 것은 공유 승강기라는 설비 자원이 로봇 배송에 거는 제약이다. 병원·호텔·그래프·지도 연구의 승강기 결과를 국내 다층 물류센터 처리량으로 옮기는 것은 보류하고, 승강기 가동률·통신 상태·카 내부 점유를 나눠 수집해 현장별 임계값을 새로 검증해야 한다는 것이 이 위키 구축자의 의견이다(oq-010). [의견][^ref-943]\n\n**현장 유형:** 상업 시설\n\n**사례:** 상업 건물(Tokyo Midtown Yaesu)의 기존 화물 승강기·자동문을 로봇 배송에 연결 (NAVER LABS 발표)\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 미확인 |\n| 작업 대상 | 미확인 |\n| 수행 자원 | NAVER LABS 는 2026-07-23 블로그에서 다중 로봇 플랫폼 ARC 가 이 건물의 기존 화물 승강기·자동문과 출입 경로를 중앙에서 연결한다고 설명했다. [추정] 벤더 주장[^ref-1496] |\n| 제약 | 미확인 |\n| 완료·인계 | 미확인 |\n| 예외·성과 | 미확인 |\n\n같은 블로그는 연말까지 전 층 로봇 배송으로 넓힐 계획이라고 밝혔으며, 이는 계획이지 운영 결과가 아니다. [추정] 벤더 주장[^ref-1496] 공급자 밖의 독립 운영 평가는 확인하지 못했다. 기존 건물 도입 사례는 연동 설비 목록과 실제 운영 중인 로봇 종류·층 범위를 고객 측 자료로 따로 확인하기 전에는 운영 실증으로 세지 않는 것이 맞다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1496]"
+          },
+          {
+            "section": "6. 대표 접근법과 기술",
+            "action": "append",
+            "content": "\n2026-10-11 재확인에서는 위 두 접근법(어댑터를 거친 요청·상태 감독, 요청–결과 방식의 작업대 인계)의 구현 세부와 제조사 어댑터·설비 쪽 연결 방식을 보강했다.\n\n### 승강기 세션 감독과 수락 조건\n\nOpen-RMF 의 승강기 감독자(lift_supervisor) 구현(rmf_ros2 커밋 4cea3fe, 확인일 2026-10-11)은 승강기마다 활성 세션을 두고, 같은 세션 식별자의 새 요청은 갱신으로 다시 내보내며 세션 종료 요청이 오면 종료를 내보낸 뒤 활성 세션을 비운다. [사실][^ref-1488] 감독자에게 활성 요청이 없는데 승강기 상태에 세션이 남아 있으면 승강기가 풀리도록 세션 종료 요청을 계속 내보내며, 여러 요청 사이의 승강기 배정 규칙은 두지 않고 개선 과제(TODO) 주석만 남겨 두었다. [사실][^ref-1488] 플릿 어댑터 변경기록의 2.13.0(2026-06-15)에는 승강기가 이미 해당 층에 있으면 legacy 완료 상태를 내보내는 변경(#510)이 실려 있고, 같은 변경기록에는 그 뒤 판인 2.14.0(2026-09-26)도 있다. [사실][^ref-1398]\n\n이 분석은 코드 동작과 설계 의도이며 현장 안전 동작의 재현이 아니다. 장치별 세션 수락 조건(AGV 모드 전환을 마친 뒤 session_id 를 보고하는지)을 어댑터 계약에 적고 수락 전 탑승을 막는지 확인하는 시험을 두며, 세션 유실·중복 종료·설비 상태의 세션 잔류 상황을 현장 인수 시험 항목에 넣는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1487][^ref-1488]\n\n### 작업대 결과와 완료 판정\n\nOpen-RMF 배송 작업의 디스펜서 단계(DispenseItem) 구현은 요청 식별자가 일치하는 결과 메시지가 SUCCESS 이면 완료, FAILED 이면 실패로 바꾸고, ACKNOWLEDGED 는 접수 표시만 한다. [사실][^ref-1489] 같은 구현은 디스펜서 상태의 요청 대기열에 요청 식별자가 들어 있으면 접수로 보고, 접수 뒤 대기열에서 그 식별자가 사라지면 결과 메시지 없이도 완료로 간주한다. [사실][^ref-1489] 대기열 소거만으로 완료 처리하면 현장 작업대 대기열에서 요청이 취소·오류로 빠진 경우에도 인계 완료로 잘못 판단할 수 있을 것으로 보인다. [추정][^ref-1489] 그래서 실물 인계 성공을 뜻하는 센서·PLC 조건을 작업대 결과 메시지와 따로 정하고, 대기열 소거가 취소·오류를 뜻하는 경우를 구별해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1489]\n\n### 제조사 어댑터와 설비 자격증명\n\nCHART 계열의 공개 KONE 승강기 어댑터 README(2023년 고정판을 KABAM-Robotics 저장소가 보존, 확인일 2026-10-11)는 Open-RMF 승강기 메시지와 KONE API v2.0 사이에서 WebSocket 으로 승강기 명령을 보내고 승강기 상태를 받는 구조를 설명한다. [사실][^ref-1490] 같은 README 는 실제 승강기를 제어하려면 접근 id 와 비밀값(access_id·access_secret)을 KONE 담당자에게서 받아야 한다고 안내한다. [사실][^ref-1490] 이 어댑터는 공개 구현이며 현행 KONE 계약을 보여 주지 않는다.\n\n연계 대상: Open-RMF 의 Dormakaba 문 어댑터 README 는 시험한 EL301·ED250 문 구동기에 Dormakaba IoT connector 를 장착해야 하고, 문 클라우드 API 접근 자격증명은 Dormakaba 가 제공한다고 안내한다. [사실][^ref-1491] 제조사 어댑터를 검토할 때는 공개 어댑터의 판과 별도로 현행 API 판·권한 범위·건물 등록·세션 유지 조건을 확인하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1490]\n\n### 설비 쪽 연결 방식의 구분\n\n제조사 API 대신 기존 승강기에 제어함과 PLC 를 새로 달아 드라이 접점으로 신호를 조작하는 방식도 한 도서관 현장 문서에 나온다(5절 기타 현장 사례). [추정] 벤더 주장[^ref-1492] 설비 API 연동과 로봇팔 버튼 조작을 서로 다른 승강기 연결 방식으로 기록하고, 공유 승강기 지연 시험을 따로 두는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-163][^ref-943]"
+          },
+          {
+            "section": "7. 관련 표준·프레임워크·오픈소스",
+            "action": "append",
+            "content": "\n2026-09-25 까지 정리한 표준 표는 [22. 설비·건물 시스템 연동 — 관련 표준·프레임워크·오픈소스(2026-09-25)](../../topics/2026/2026-09-25-area10-s7.md)에 있으며, 아래 대한승강기협회 행은 그 페이지의 '표준 번호·제정일·내용 미확인' 서술을 보강한다.\n\n### 2026-10-11 보강\n\n이번 재확인에서 국내 표준·단체표준의 판 정보와 인계 신호·출입통제 관련 문서의 지위를 보강했다. [사실][^ref-314][^ref-1485][^ref-202][^ref-1495]\n\n| 이름 | 유형 | 이 영역과의 관계 |\n|---|---|---|\n| KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | e-나라표준인증 이력상 2021-11-30 제정(고시 2021-0561), 2022-12-09 개정(고시 2022-0571), 2025-05-09 개정(고시 2025-0073)이다. 적용 대상은 엘리베이터 탑승 기능이 있는 서비스 로봇과 병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터이고, 표준개발협력기관은 한국AI·로봇산업협회다. [사실][^ref-314] 개정 조항은 미확인이며, 로봇 탑승 안전 요구이므로 이 영역에서는 제약 조건과 판 정보로만 다룬다. |\n| 엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준) | 표준 | 대한승강기협회는 2026-03-27 게시한 보도자료에서 이 단체표준을 제정했다고 발표했고, 일반사항·시험 설비·시험 절차를 제시하며 e-나라표준인증에서 무료로 내려받을 수 있다고 설명했다. [사실][^ref-1485] 리서치 단계 열람에서는 e-나라표준인증 단체표준 목록에 표준번호 B-KOLA-0001-7700, 상태 제정, 등록일자 2026-03-24 로 올라 있었으나, 검증 단계에서는 이 목록 행을 재현하지 못했다. [추정][^ref-1486] 등록일자와 협회 게시일이 다르고, 정확한 제정일·메시지·상태 정의·Open-RMF 대응은 미확인이다. |\n| SEMI E84 Enhanced Carrier Handoff Parallel I/O Interface | 표준 | SEMI 공식 판매 목록은 E84-0823 을 현행판으로 표시하고, 목적을 자동 반송 시스템(AMHS)과 생산 설비 로드포트 사이 캐리어 인계용 병렬 I/O 신호 개선으로 설명한다(확인일 2026-10-11). [사실][^ref-202] 반도체 업종 규격이므로 이 영역에서는 인계 신호 구조의 참고로만 쓴다. |\n| SEMI Doc 7442 Specification for Enhanced Handoff Interface (개발 제안) | 표준 | SEMI 물리 인터페이스·캐리어 기술위원회(일본)의 Doc 7442 신규 예비 표준 개발 제안서(SNARF, 작성 2025-12-17)는 E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안하며, 대상은 반도체 조립·시험 범위다. 표준으로 발행됐는지는 미확인이다. [추정][^ref-1494] |\n| Physical Access Control with BACnet (BAC-09-08 백서) | 프레임워크 | 2008-09-27 백서로, SSPC 135 LSS 작업반의 진행 중 작업이자 BACnet 표준 변경 제안의 기초 문서라고 스스로 밝히며 현행 ANSI/ASHRAE 135 규범 본문이 아니다. [사실][^ref-1495] 같은 백서가 인증과 권한 검사를 구분하고 특정 시간에 특정 문을 통과할 권리를 기본 권한 검사의 예로 든다는 내용은 검증에서 본문으로 재현하지 못했다. [추정][^ref-1495] |\n\n승강기 탑승 안전 표준을 검토할 때는 판(제정·개정 일자)·적용 범위·대상 승강기 유형을 함께 기록하는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-314] 대한승강기협회 가이드라인과 Open-RMF 승강기 메시지의 대응표는 표준 원문의 메시지·시험 시나리오를 확보한 뒤에 작성하는 것이 맞다는 것도 구축자의 의견이다. [의견][^ref-1485]"
+          },
+          {
+            "section": "8. 대표 연구와 자료",
+            "action": "replace",
+            "content": "승강기를 포함한 다층 이동은 경로계획·병원 배송·지도 구축 연구에서 다뤄지며, 연구마다 실물 실증·수치 실험·시뮬레이션으로 조건이 다르다. [사실][^ref-943][^ref-103][^ref-321][^ref-163] 2026-09-25 에는 원문을 열지 못해 결과 수치를 쓰지 않았고, 2026-10-11 재확인에서 아래 실험 조건과 일부 결과를 확인했다.\n\n2026-09-25 까지 정리한 연구 목록은 [22. 설비·건물 시스템 연동 — 대표 연구와 자료(2026-09-25)](../../topics/2026/2026-09-25-area10-s8.md)에 있다.\n\n- Lee, Y. 외(고려대학교 구로병원·도구공간), Digital Health(2026-03-31) — 혼잡한 병원에서 승강기 이용을 고려한 약품 배송 로봇 실증이다. 승강기 가동률 임계값 59.01% 는 현장 특정값이며 다른 병원에 적용할 때 재보정이 필요하다고 명시한다. [사실][^ref-943]\n- Han, L. 외, Sensors 25(6):1783(2025-03-13) — 실제 호텔 평면·층고로 68×68 거리 행렬만 만들고 배송 수요는 무작위 표본으로 생성했으며 승강기 기본 대기 시간을 30초로 두었다. 실제 호텔 운용 성능이 아니라 수치 실험이다. [사실][^ref-103]\n- Kim, S. 외, Electronics 14(5):982(2025-02-28) — 15층 건물 그래프 시뮬레이션에서 소포 수 1~7개로 승강기 선택을 최적화한 다층 경로계획을 평가했다. 실제 건물 운용이 아닌 시뮬레이션 평가다. [사실][^ref-321]\n- 노주형 외, 로봇학회 논문지 21(1):48–57(2026-02-28) — KAIST N1 건물 5~9층에서 각 층의 절반 영역을 대상으로 다층 지도 구축을 평가했고, 승강기 상호작용 시험에서는 20회 중 19회 성공을 보고했다. [사실][^ref-163]\n- 두 실물 연구의 공통 관찰 — 사람과 승강기를 함께 쓰는 건물에서 병원 논문은 승강기 가동률이 높을수록 배송 시간이 길어졌다고, KAIST 논문은 외부 이용자 때문에 승강기가 다른 층으로 가 지연이 생겼다고 보고했다. 기관이 다른 두 출처의 질적 관찰이다. [사실][^ref-943][^ref-163]\n- Park, Y.·Park, S., Architectural Research 28(1), 논문번호 14(2026-07-21) — 초록 기준으로 [로봇 친화형 건축물 인증](../../glossary/robot-friendly-building-certification.md)(초록 표기 Robotics-Enabled Environment Certification, REEC)과 무장애(BF) 인증을 비교 분석해 사람 중심·로봇 적응형 건축 설계 기준을 도출했다. 본문은 열지 못해 연구 방법은 단정하지 않는다. [사실][^ref-1483]\n\n이 연구들의 승강기 결과를 국내 다층 물류센터 처리량으로 옮기는 것은 보류하고, 현장별 임계값을 새로 검증해야 한다는 것이 이 위키 구축자의 의견이다(oq-010). [의견][^ref-943][^ref-103][^ref-321][^ref-163]"
+          },
+          {
+            "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+            "action": "append",
+            "content": "\n건물 설비의 비상 복귀도 같은 경계로 나뉜다. 5절 기타 현장 사례처럼 화재 경보 뒤 승강기의 수동 모드 복귀와 PLC 재시작에는 사람의 개입이 필요할 수 있으며, 이는 연계 대상인 설비 쪽 조치다. [추정] 벤더 주장[^ref-1492] 그래서 ROP 장애 복구와 건물 설비의 비상 복귀를 따로 시험하고, 화재 뒤 설비 재시작 같은 수동 복귀의 책임자를 정해 두는 것이 좋다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1492]\n\n출입통제에서는 문 열기 요청과 통행 권한 승인을 나눠 본다. Dormakaba 문 어댑터 README 는 문 클라우드 API 접근 자격증명을 Dormakaba 가 제공한다고 안내한다. [사실][^ref-1491] BACnet 출입통제 백서가 인증과 권한 검사를 구분한다는 내용은 검증에서 재현하지 못한 추정 근거다. [추정][^ref-1495] 이에 비추어 자동문 연동에서는 문 열기 API 자격증명과 별도로 로봇의 공간별 출입 권한과 비상 우선권을 누가 정하는지 확인해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]\n\n물리 인계에서는 ROP 가 준비·허가·이송·완료의 의미를 현장 PLC·작업대와 합의하고, 물리 인계 완료를 상위 작업 완료에 연결하는 것이 좋다는 것이 이 위키 구축자의 의견이다. SEMI E84 같은 업종 규격은 인계 신호 구조의 참고일 뿐 다른 현장에 대한 적합성을 검증한 근거가 아니다. [의견][^ref-202]"
+          },
+          {
+            "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+            "action": "append",
+            "content": "\n2026-09-25 까지 정리한 연결은 [22. 설비·건물 시스템 연동 — 다른 연구영역과의 연결(2026-09-25)](../../topics/2026/2026-09-25-area10-s10.md)에 있다.\n\n### 2026-10-11 보강\n\n- [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md) — 병원 약품 배송 논문은 승강기 가동률 임계값을 현장 특정값으로 보고 다른 병원에서는 재보정이 필요하다고 명시한다. [사실][^ref-943]\n- [64. 상업 시설](../site-type-applications/commercial-facilities.md) — 상업 건물의 기존 화물 승강기·자동문을 다중 로봇 플랫폼에 중앙 연결했다는 공급자 발표가 있다. [추정] 벤더 주장[^ref-1496] 로봇 친화형 건축물 인증과 무장애 인증을 비교한 설계 기준 연구도 건물 쪽 요구의 배경이 된다. [사실][^ref-1483]\n- [67. 기타 현장](../site-type-applications/other-sites.md) — 도서관 현장의 승강기 제어함 PLC·드라이 접점 연결과 화재 뒤 수동 복구 사례(5절)다. [추정] 벤더 주장[^ref-1492]\n- [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md) — 자동문 어댑터의 클라우드 자격증명은 문 제조사가 제공한다. [사실][^ref-1491] 로봇의 공간별 통행 권한 승인은 그와 별개로 정해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]\n- [30. 로봇 간 협업·물리적 인계](../execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) — Open-RMF 디스펜서 단계는 SUCCESS 결과 또는 대기열 소거로 완료를 판정한다. [사실][^ref-1489] SEMI E84 는 자동 반송 시스템과 생산 설비 로드포트 사이 캐리어 인계 신호를 다루는 반도체 업종 규격이다. [사실][^ref-202] 이 둘은 물리 인계 설계의 참고일 뿐 다른 현장에 대한 적합성 근거가 아니라는 것이 이 위키 구축자의 의견이다. [의견][^ref-202]\n- [32. 예외 복구·재계획·업무 연속성](../execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) — 화재 경보 뒤 설비 재시작에 사람의 개입이 필요하다는 현장 문서가 있다. [추정] 벤더 주장[^ref-1492] 설비 비상 복귀를 ROP 복구 절차와 따로 다뤄야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1492]\n- [50. 안전 표준·인증·사고 조사](../safety/safety-standards-certification-and-incident-investigation.md) — KS B 7317 은 2021-11-30 제정 뒤 2022-12-09·2025-05-09 에 개정됐고 병원 환자 전용 엘리베이터를 적용 대상에서 뺀다. [사실][^ref-314]\n- [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 승강기 제조사 API(KONE API v2.0)를 Open-RMF 승강기 메시지에 잇는 공개 어댑터가 있다. [사실][^ref-1490]"
+          },
+          {
+            "section": "11. 열린 질문",
+            "action": "append",
+            "content": "\n2026-09-25 까지 올린 열린 질문 목록은 [22. 설비·건물 시스템 연동 — 열린 질문(2026-09-25)](../../topics/2026/2026-09-25-area10-s11.md)에 있다.\n\n### 2026-10-11 재확인에서 얻은 부분 근거\n\n아래 질문은 이번 재확인에서 근거가 일부 보강됐으나 모두 열림 상태를 유지한다.\n\n- **oq-010** (상태: 열림) 병원 논문의 재보정 명시, 공유 승강기 지연의 교차 확인, 호텔·그래프 연구의 수치 실험 성격, 지도 구축 연구의 로봇 한 대 실물 실험이라는 조건을 확인했으나 물류센터 실측 자료는 여전히 없다(8절).\n- **oq-041**·**oq-283** (상태: 열림) 대한승강기협회 가이드라인의 대상 범위(일반사항·시험 설비·시험 절차)와 무료 공개를 확인했고, 표준 번호는 리서치 단계 열람에만 기대며 검증에서 재현하지 못했다(7절). 메시지·상태 정의, Open-RMF 대응, 연동 장애 시 책임 분담은 미확인이다.\n- **oq-042**·**oq-062** (상태: 열림) SEMI E84 현행판과 Doc 7442 개발 제안을 확인했으나 반도체 범위이며, 이동로봇–컨베이어·작업대 인계용 제조사 중립 규격은 확인하지 못했다.\n- **oq-043** (상태: 열림) 문 클라우드 자격증명의 제공 주체와 BACnet 출입통제 백서의 지위를 확인했으나, 로봇 관제가 보안문을 여닫는 사례와 권한 확인 주체는 미확인이다.\n- **oq-098**·**oq-173**·**oq-311** (상태: 열림) KS B 7317 의 개정 이력과 적용 범위를 확인했으나 조항과 기준값은 미확인이다.\n- **oq-067**·**oq-094** (상태: 열림) Open-RMF 승강기 감독자에 여러 요청 사이의 배정 규칙이 구현돼 있지 않음을 확인했다(6절).\n- **oq-215** (상태: 열림) 병원 논문의 전체 성공률 87.03% 분모 설명이 없음을 다시 확인했다(5절 병원 사례).\n- **oq-258**·**oq-328** (상태: 열림) 병원 논문이 승강기 가동률 임계값의 재보정 필요를 명시함을 확인했다.\n\n### 새로 올린 질문\n\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) KS B 7317 의 2022-12-09 개정과 2025-05-09 개정은 각각 어떤 조항(요구사항·평가 방법)을 바꿨으며, 그 변경이 승강기 연동 계층이 확인해야 할 항목에 영향을 주는가? (관련 기존 질문: oq-098, oq-173, oq-311)\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) 로봇 친화형 건축물 인증의 현행 심사 기준은 어느 판이며, 승강기·자동문·출입통제 연동 항목을 어떤 시험이나 서류로 심사하는가? (관련 기존 질문: oq-179)\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) KONE 의 현행 공식 승강기 API 계약(지원 승강기, 건물 등록, 권한 범위, 세션 유지 조건)은 2023년 고정판 공개 RMF 어댑터가 전제한 KONE API v2.0 연결 조건과 어떻게 다른가?\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) SEMI Doc 7442(E84 를 출발점으로 한 새 인계 인터페이스와 TCP/IP 하위 규격) 개발 제안은 승인 뒤 표준으로 발행됐는가, 반도체 밖 이동로봇–설비 인계에도 쓸 수 있는 범위인가? (관련 기존 질문: oq-042, oq-062)\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) HopeTechnik 승강기·문 연동 문서가 승강기 상태 전송 주기를 1 Hz 와 2초마다로 다르게 적은 것은 어느 쪽이 실제 구현·설정이며, 이런 주기 차이가 설비 상태를 믿을 수 있는 경과 시간 판단에 어떤 영향을 주는가? (관련 기존 질문: oq-034)\n- (상태: 열림 · 제기 2026-10-11 · 실행 2026-10-11-03) NAVER ARC 의 Tokyo Midtown Yaesu 도입에서 기존 화물 승강기·자동문 연동이 실제로 운영 중인 층·로봇 종류·제조사 범위는 어디까지이며, 공급자 밖의 독립 운영 평가가 있는가?"
+          },
+          {
+            "section": "13. 참고 자료 (각주)",
+            "action": "replace",
+            "content": "[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-060]: Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026, https://doi.org/10.1177/20552076261437181, 접근일 2026-09-25 (원문 미열람)\n[^ref-103]: Han, L.; Ding, J.; Liu, S.; Meng, M. (Sensors 25(6):1783), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 2025-03-13, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-10-11\n[^ref-163]: 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지 21(1):48–57), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템, 2026-02-28, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667, 접근일 2026-10-11\n[^ref-202]: SEMI, E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface, 미확인, https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface, 접근일 2026-10-11\n[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-09-25\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25\n[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-09-25\n[^ref-313]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg, 접근일 2026-09-25\n[^ref-314]: 국가기술표준원(e-나라표준인증·KSSN), KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법, 2025-05-09, https://www.kssn.net/search/stddetail.do?itemNo=K001010135682, 접근일 2026-10-11\n[^ref-315]: 산업통상자원부 국가기술표준원(대한민국 정책브리핑), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11, https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155, 접근일 2026-09-25 (원문 미열람)\n[^ref-321]: Kim, S.; Jang, H.; Ha, J.; Lee, D.; Ha, Y.; Song, Y. E. (Electronics 14(5):982), Efficient Graph-Based Multi-Story Path Planning with Optimized Elevator Selection for Indoor Delivery Robots, 2025-02-28, https://doi.org/10.3390/electronics14050982, 접근일 2026-10-11\n[^ref-322]: 국토교통부, 올해 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'부터 착수 (보도자료), 미확인, https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090964, 접근일 2026-10-11 (원문 미열람)\n[^ref-943]: Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026-03-31, https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/, 접근일 2026-10-11\n[^ref-1398]: Open-RMF (open-rmf/rmf_ros2 저장소), Changelog for package rmf_fleet_adapter, 2026-09-26, https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst, 접근일 2026-10-11\n[^ref-1483]: Park, Y.; Park, S. (Architectural Research), Development of Human-Centered, Robot-Adaptive Building Design Standards: Focusing on Korea’s Building Certification Systems, 2026-07-21, https://link.springer.com/article/10.1007/s44515-026-00016-y, 접근일 2026-10-11\n[^ref-1484]: 스마트투데이(이재수), \"사람과 로봇이 공존하는 스마트 빌딩 앞당긴다\"...국토부 산학협력단과 기술개발 착수, 2025-05-28, https://www.smarttoday.co.kr/ko-kr/articles/81933, 접근일 2026-10-11\n[^ref-1485]: 대한승강기협회(KOLA), 대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27), 2026-03-27, https://kola.or.kr/pages/61/68/bbs/5705, 접근일 2026-10-11\n[^ref-1486]: 국가기술표준원(e-나라표준인증), 단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인, 미확인, https://www.standard.go.kr/KSCI/grpstd/getGrpStdCrtfcReqst.do?menuId=60372&topMenuId=502&upperMenuId=503, 접근일 2026-10-11\n[^ref-1487]: cwrx777; mxgrey (Open Robotics Discourse 아카이브), Lift session issues - Robot enter lift while lift is still in human mode (#513), 2024-08-21, https://discourse.openrobotics.org/t/lift-session-issues-robot-enter-lift-while-lift-is-still-in-human-mode-513/44679, 접근일 2026-10-11\n[^ref-1488]: Open-RMF (open-rmf/rmf_ros2 저장소), rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3fe), 미확인, https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/lift_supervisor/Node.cpp, 접근일 2026-10-11\n[^ref-1489]: Open-RMF (open-rmf/rmf_ros2 저장소), rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp (commit 4cea3fe), 미확인, https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp, 접근일 2026-10-11\n[^ref-1490]: CHART; KABAM-Robotics 보존 저장소, KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a87), 미확인, https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596, 접근일 2026-10-11\n[^ref-1491]: Open-RMF (open-rmf/door_adapter_dormakaba 저장소), door_adapter_dormakaba — README (commit 2cf76a6), 미확인, https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668, 접근일 2026-10-11\n[^ref-1492]: HopeTechnik (RMF Systems Engineering Handbook), Lift and Doors Integration, 미확인, https://trl-rmf.github.io/website/content/lift-door-integration.html, 접근일 2026-10-11\n[^ref-1494]: SEMI Physical Interfaces & Carriers TC (Japan), SNARF for Doc 7442: Specification for Enhanced Handoff Interface, 미확인, https://downloads.semi.org/web/wstdsbal.nsf/18a679096dfd445188256d35007d447d/0db3fe2c9bb0eb2488258d9400027699!OpenDocument, 접근일 2026-10-11 (원문 미열람)\n[^ref-1495]: SSPC 135 LSS-WG; Isler, B. 외 (BACnet International), Physical Access Control with BACnet (BAC-09-08 White Paper), 2008-09-27, https://bacnet.org/wp-content/uploads/sites/4/2022/08/BAC-09-08.pdf, 접근일 2026-10-11\n[^ref-1496]: NAVER LABS, NAVER’s ARC Goes to Japan, 2026-07-23, https://naverlabs.com/en/blogDetail?seq=10034507, 접근일 2026-10-11"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-10-11 | 22. 설비·건물 시스템 연동 | 차등 갱신: KS B 7317 개정 이력·대한승강기협회 단체표준·Open-RMF 승강기 감독과 작업대 완료 판정·KONE·Dormakaba 어댑터·SEMI E84·BACnet 출입통제 백서 보강, 기타(도서관)·병원·상업 시설 적용 사례 추가, 대표 연구의 실험 조건 갱신, 새 열린 질문 6건, 2차 수정(구축자 의견 태그 분리·2026-09-25 주제 페이지 링크 복원); 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월 | run 2026-10-11-03",
+    "index_updates": {
+      "home_recent": "2026-10-11 — 22. 설비·건물 시스템 연동: KS B 7317 개정 이력, 승강기 단체표준, Open-RMF 승강기 세션 감독·작업대 완료 판정, 도서관·병원·상업 시설 승강기 연동 사례 보강",
+      "category_recent": "2026-10-11 — 22. 설비·건물 시스템 연동: 승강기 세션 수락·잔류 세션 처리, 작업대 결과 완료 판정, 제조사 승강기·문 어댑터 자격증명, KS B 7317·대한승강기협회 단체표준·SEMI E84 판 정보, 기타(도서관)·병원·상업 시설 사례 추가",
+      "area_recent": "2026-10-11 — 22. 설비·건물 시스템 연동: 3~11절 차등 갱신(승강기 감독·작업대 완료 판정·제조사 어댑터·표준 판 정보·연구 실험 조건·비상 복귀와 출입통제 경계·새 질문 6건), 5절에 기타(도서관)·병원·상업 시설 사례 추가, 2026-09-25 주제 페이지 링크 유지"
+    },
+    "glossary_updates": [],
+    "reference_updates": [
+      {
+        "id": "ref-322",
+        "org": "국토교통부",
+        "title": "올해 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'부터 착수 (보도자료)",
+        "published": null,
+        "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090964",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "원문 미열람. 국토부 로봇 친화형 건축물 핵심기술 개발 착수 보도자료로, 이번에도 원문을 열지 못해 보도·배포일과 사업기간은 2차 보도(ref-1484) 기준이다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1484",
+        "org": "스마트투데이(이재수)",
+        "title": "\"사람과 로봇이 공존하는 스마트 빌딩 앞당긴다\"...국토부 산학협력단과 기술개발 착수",
+        "published": "2025-05-28",
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/81933",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-10-11",
+        "summary": "국토부 스마트+빌딩 연구개발 착수 보도. 2025-05-29 착수보고회 예정, 2028년까지 완료 예정, 기술 실증을 통한 기술표준·인증제도 개선방안 등 세부 과제를 전한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1483",
+        "org": "Park, Y.; Park, S. (Architectural Research)",
+        "title": "Development of Human-Centered, Robot-Adaptive Building Design Standards: Focusing on Korea’s Building Certification Systems",
+        "published": "2026-07-21",
+        "url": "https://link.springer.com/article/10.1007/s44515-026-00016-y",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "로봇 친화형 건축물 인증과 무장애 인증을 비교해 로봇 적응형 건축 설계 기준을 도출한 논문(28(1), 논문번호 14). 초록과 Crossref 서지만 확인했고 본문은 열지 못했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-314",
+        "org": "국가기술표준원(e-나라표준인증·KSSN)",
+        "title": "KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법",
+        "published": "2025-05-09",
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010135682",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "KS B 7317 표준 정보. e-나라표준인증 상세에서 제정(2021-11-30)·개정(2022-12-09, 2025-05-09) 이력과 적용 범위·표준개발협력기관을 확인했다. 표준 본문은 미열람.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1485",
+        "org": "대한승강기협회(KOLA)",
+        "title": "대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27)",
+        "published": "2026-03-27",
+        "url": "https://kola.or.kr/pages/61/68/bbs/5705",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "KOLA 의 「엘리베이터와 로봇의 상호 연동을 위한 가이드라인」 단체표준 제정 보도자료. 대상(일반사항·시험 설비·시험 절차)과 e-나라표준인증 무료 다운로드를 안내한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1486",
+        "org": "국가기술표준원(e-나라표준인증)",
+        "title": "단체표준 목록 — B-KOLA-0001-7700 엘리베이터와 로봇의 상호 연동을 위한 가이드라인",
+        "published": null,
+        "url": "https://www.standard.go.kr/KSCI/grpstd/getGrpStdCrtfcReqst.do?menuId=60372&topMenuId=502&upperMenuId=503",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "e-나라표준인증 단체표준 목록 검색 결과. 리서치 단계 열람에서 KOLA 가이드라인의 표준번호 B-KOLA-0001-7700, 상태 제정, 등록일자 2026-03-24 를 보였으나 검증 단계에서는 해당 목록 행을 재현하지 못했고 URL 에 검색 조건이 없다. 표준 본문은 미열람.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1487",
+        "org": "cwrx777; mxgrey (Open Robotics Discourse 아카이브)",
+        "title": "Lift session issues - Robot enter lift while lift is still in human mode (#513)",
+        "published": "2024-08-21",
+        "url": "https://discourse.openrobotics.org/t/lift-session-issues-robot-enter-lift-while-lift-is-still-in-human-mode-513/44679",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "Open-RMF GitHub 토론 #513 의 Discourse 아카이브. 승강기가 AGV 모드로 바뀌기 전 로봇이 탑승한 문제와, 모드 전환 뒤에 session_id 를 보고하라는 개발자 답변을 담는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1488",
+        "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+        "title": "rmf_fleet_adapter/src/lift_supervisor/Node.cpp (commit 4cea3fe)",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/lift_supervisor/Node.cpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "Open-RMF 승강기 감독자 구현. 같은 세션 요청의 갱신·종료 처리와, 활성 요청 없이 남은 세션에 종료 요청을 반복 발행하는 분기를 담는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1398",
+        "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+        "title": "Changelog for package rmf_fleet_adapter",
+        "published": "2026-09-26",
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/CHANGELOG.rst",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "rmf_fleet_adapter 변경기록. 2.13.0(2026-06-15)의 승강기가 이미 해당 층에 있을 때 legacy 완료 상태를 내보내는 변경(#510)과 2.14.0(2026-09-26) 존재를 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1489",
+        "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+        "title": "rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp (commit 4cea3fe)",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/4cea3fe97d4fcafdebd5590247c42b28664e2b55/rmf_fleet_adapter/src/rmf_fleet_adapter/phases/DispenseItem.cpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "Open-RMF 배송 작업의 디스펜서 단계 구현. 결과 메시지(ACKNOWLEDGED·SUCCESS·FAILED)와 상태 대기열 소거로 완료를 판정하는 조건을 담는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1490",
+        "org": "CHART; KABAM-Robotics 보존 저장소",
+        "title": "KONE RMF Lift Adapter / kone-ros-api — README (commit 9bc3a87)",
+        "published": null,
+        "url": "https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터 README(원 저장소 안내는 sharp-rmf/kone-ros-api). 실제 승강기 제어 자격증명을 KONE 담당자에게 받도록 안내한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1491",
+        "org": "Open-RMF (open-rmf/door_adapter_dormakaba 저장소)",
+        "title": "door_adapter_dormakaba — README (commit 2cf76a6)",
+        "published": null,
+        "url": "https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "Dormakaba 스마트 문용 Open-RMF 문 어댑터 README. EL301·ED250 시험, IoT connector 장착 요구, 문 클라우드 API 자격증명 제공 주체를 적는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1492",
+        "org": "HopeTechnik (RMF Systems Engineering Handbook)",
+        "title": "Lift and Doors Integration",
+        "published": null,
+        "url": "https://trl-rmf.github.io/website/content/lift-door-integration.html",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "한 도서관 현장의 승강기·문 연동 설계와 복구 설명. 승강기 제어함 PLC(Beckhoff CX9020)·드라이 접점 연결, AGV 모드 개조, 화재 경보 시 복구 절차와 메시지 주기를 적는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-202",
+        "org": "SEMI",
+        "title": "E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface",
+        "published": null,
+        "url": "https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "SEMI E84 판매 목록. E84-0823 이 현행판(Current)으로 표시되고 AMHS–생산 설비 캐리어 인계 범위를 설명하는 초록을 확인했다. 표준 본문은 미열람.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1494",
+        "org": "SEMI Physical Interfaces & Carriers TC (Japan)",
+        "title": "SNARF for Doc 7442: Specification for Enhanced Handoff Interface",
+        "published": null,
+        "url": "https://downloads.semi.org/web/wstdsbal.nsf/18a679096dfd445188256d35007d447d/0db3fe2c9bb0eb2488258d9400027699!OpenDocument",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "원문 미열람. E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안하는 신규 예비 표준 개발 제안서(작성 2025-12-17, 반도체 조립·시험 범위)로, 검증에서 검색 결과 요약으로 내용을 대조했다. 표준 발행은 미확인.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-943",
+        "org": "Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)",
+        "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+        "published": "2026-03-31",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "혼잡한 병원에서 승강기 이용을 고려한 자율 약품 배송 로봇 실증. EOR 임계값의 재보정 필요 명시, 배송 지연 관찰, 전체 성공률 분모 설명 부재를 확인했다. ref-060 과 같은 논문이다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-103",
+        "org": "Han, L.; Ding, J.; Liu, S.; Meng, M. (Sensors 25(6):1783)",
+        "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+        "published": "2025-03-13",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "다층 호텔 로봇 배송 경로계획 수치 실험. 실제 호텔 평면으로 거리 행렬을 만들고 수요는 무작위 생성했으며 승강기 기본 대기 30초를 둔다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-321",
+        "org": "Kim, S.; Jang, H.; Ha, J.; Lee, D.; Ha, Y.; Song, Y. E. (Electronics 14(5):982)",
+        "title": "Efficient Graph-Based Multi-Story Path Planning with Optimized Elevator Selection for Indoor Delivery Robots",
+        "published": "2025-02-28",
+        "url": "https://doi.org/10.3390/electronics14050982",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "실내 배송 로봇의 승강기 선택을 최적화한 그래프 기반 다층 경로계획. 15층 건물 그래프 시뮬레이션에서 소포 수 1~7개로 평가했다(초록 기준).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-163",
+        "org": "노주형, 강규리, 김연찬, 심현철(로봇학회 논문지 21(1):48–57)",
+        "title": "탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템",
+        "published": "2026-02-28",
+        "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-10-11",
+        "summary": "탐사와 승강기 연계로 다층 실내 지도를 자율 구축한 KAIST 연구. KAIST N1 5~9층 각 층 절반 영역 평가, 승강기 상호작용 19/20 성공, 외부 이용자로 인한 승강기 지연을 보고한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1495",
+        "org": "SSPC 135 LSS-WG; Isler, B. 외 (BACnet International)",
+        "title": "Physical Access Control with BACnet (BAC-09-08 White Paper)",
+        "published": "2008-09-27",
+        "url": "https://bacnet.org/wp-content/uploads/sites/4/2022/08/BAC-09-08.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-10-11",
+        "summary": "BACnet 으로 출입통제를 구현하기 위한 확장을 설명한 백서. 표준 변경 제안의 기초 작업 문서이며 현행 ANSI/ASHRAE 135 규범 본문이 아니다. 인증·권한 검사 구분 내용은 검증에서 재현하지 못했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      },
+      {
+        "id": "ref-1496",
+        "org": "NAVER LABS",
+        "title": "NAVER’s ARC Goes to Japan",
+        "published": "2026-07-23",
+        "url": "https://naverlabs.com/en/blogDetail?seq=10034507",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-10-11",
+        "summary": "NAVER 다중 로봇 플랫폼 ARC 의 Tokyo Midtown Yaesu 도입 소개. 기존 화물 승강기·자동문 연동과 연말 전 층 확대 계획을 공급자 관점에서 설명한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/integration/facility-and-building-system-integration.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "KS B 7317 의 2022-12-09 개정과 2025-05-09 개정은 각각 어떤 조항(요구사항·평가 방법)을 바꿨으며, 그 변경이 승강기 연동 계층이 확인해야 할 항목에 영향을 주는가? (관련 기존 질문: oq-098, oq-173, oq-311)",
+        "areas": [
+          22,
+          50
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "로봇 친화형 건축물 인증의 현행 심사 기준은 어느 판이며, 승강기·자동문·출입통제 연동 항목을 어떤 시험이나 서류로 심사하는가? (관련 기존 질문: oq-179)",
+        "areas": [
+          22,
+          64
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "KONE 의 현행 공식 승강기 API 계약(지원 승강기, 건물 등록, 권한 범위, 세션 유지 조건)은 2023년 고정판 공개 RMF 어댑터가 전제한 KONE API v2.0 연결 조건과 어떻게 다른가?",
+        "areas": [
+          22,
+          20
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "SEMI Doc 7442(E84 를 출발점으로 한 새 인계 인터페이스와 TCP/IP 하위 규격) 개발 제안은 승인 뒤 표준으로 발행됐는가, 반도체 밖 이동로봇–설비 인계에도 쓸 수 있는 범위인가? (관련 기존 질문: oq-042, oq-062)",
+        "areas": [
+          22,
+          30
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "HopeTechnik 승강기·문 연동 문서가 승강기 상태 전송 주기를 1 Hz 와 2초마다로 다르게 적은 것은 어느 쪽이 실제 구현·설정이며, 이런 주기 차이가 설비 상태를 믿을 수 있는 경과 시간 판단에 어떤 영향을 주는가? (관련 기존 질문: oq-034)",
+        "areas": [
+          22,
+          18
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "NAVER ARC 의 Tokyo Midtown Yaesu 도입에서 기존 화물 승강기·자동문 연동이 실제로 운영 중인 층·로봇 종류·제조사 범위는 어디까지이며, 공급자 밖의 독립 운영 평가가 있는가?",
+        "areas": [
+          22,
+          64
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "site_matrix_updates": [
+      {
+        "site_type": "기타",
+        "item": "수행 자원",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      },
+      {
+        "site_type": "기타",
+        "item": "예외·성과",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      },
+      {
+        "site_type": "병원",
+        "item": "작업 대상",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      },
+      {
+        "site_type": "병원",
+        "item": "제약",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      },
+      {
+        "site_type": "병원",
+        "item": "예외·성과",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      },
+      {
+        "site_type": "상업 시설",
+        "item": "수행 자원",
+        "link": "docs/categories/integration/facility-and-building-system-integration.md#5-적용-사례-현장-유형-명시",
+        "title": "22. 설비·건물 시스템 연동"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준)",
+        "kind": "표준",
+        "org": "대한승강기협회(KOLA)",
+        "url": "https://kola.or.kr/pages/61/68/bbs/5705",
+        "related_areas": [
+          22,
+          21
+        ],
+        "summary": "엘리베이터와 로봇 상호 연동의 일반사항·시험 설비·시험 절차를 제시하는 단체표준으로, 협회가 2026-03-27 제정을 발표했다. 표준 번호(B-KOLA-0001-7700)는 검증에서 재현하지 못했고 메시지 정의는 미확인이다.",
+        "ref_id": "ref-1485"
+      },
+      {
+        "name": "KONE RMF Lift Adapter (kone-ros-api)",
+        "kind": "오픈소스",
+        "org": "CHART (KABAM-Robotics 보존 저장소)",
+        "url": "https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596",
+        "related_areas": [
+          22,
+          20
+        ],
+        "summary": "Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터(2023년 고정판). 실제 승강기 제어 자격증명은 KONE 담당자에게 받는다.",
+        "ref_id": "ref-1490"
+      },
+      {
+        "name": "door_adapter_dormakaba (Open-RMF Dormakaba 문 어댑터)",
+        "kind": "오픈소스",
+        "org": "Open Robotics (open-rmf)",
+        "url": "https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668",
+        "related_areas": [
+          22,
+          51
+        ],
+        "summary": "Dormakaba EL301·ED250 문 구동기용 Open-RMF 문 어댑터. IoT connector 장착이 필요하고 문 클라우드 API 자격증명은 Dormakaba 가 제공한다.",
+        "ref_id": "ref-1491"
+      }
+    ],
+    "additional_research_requests": [
+      "이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월: 트랙 반영 제안 2026-09-25-65(문 설비 연동·IFC HasDrive·로봇 조작과 설비 연동의 선택 조건)와 2026-09-25-76(승강기 층 이름과 지도 층의 대응표). 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 e-나라표준인증 고시일 2021-11-30 과 달라 페이지에 쓰지 않았다.",
+      "6절 물리 인계 예시: OMRON LD 시리즈 통합 안내서(I680-E-02)는 존재를 확인하지 못해 뺐다. 제조사 이동로봇–작업대 인계 절차의 1차 자료를 재확보해야 한다(30. 로봇 간 협업·물리적 인계, oq-042).",
+      "7절·11절: KS B 7317 의 2022-12-09·2025-05-09 개정 조항(신구대비표)과 기준값 확인이 필요하다(oq-098·oq-173·oq-311).",
+      "7절: 대한승강기협회 가이드라인 원문(메시지·상태·시험 시나리오)과 e-나라표준인증 단체표준 목록의 표준 번호·제정일을 재현 가능한 방식으로 확인해야 한다(oq-041·oq-283).",
+      "3절: 국토교통부 로봇 친화형 건축물 핵심기술 개발 보도자료 원문(발행일·사업기간·세부 과제) 확인이 필요하다.",
+      "5절: 새로 넣은 기타(도서관)·병원·상업 시설 사례의 시작 조건·작업 대상·완료·인계 칸을 채울 근거가 브리프에 없었다.",
+      "참고문헌 정리: ref-060 과 ref-943 은 같은 논문(Lee, Y. 외, Digital Health 2026)이므로 id 통합이 필요하다.",
+      "로봇 친화형 건축물 인증의 현행 심사 기준과 평가 부문 명칭(외부 메모 F02 와 기존 용어집 4개 부문 명칭 충돌) 원문 재확보가 필요하다(64. 상업 시설).",
+      "pipeline 담당 확인 요청: 분량 초과 자동 분리 때 원 절의 '자세한 내용은 주제 페이지 …' 줄이 분리 페이지 본문에서 빠져 기존 주제 페이지(2026-09-25-area10-s7·s8·s10·s11) 링크가 사라졌다. 이번 재실행은 다른 문형('2026-09-25 까지 정리한 … 은 [...](...)에 있다')으로 링크를 넣어 우회했다."
+    ],
+    "fixes_applied": [
+      "f24·f25 삭제 — 6절 물리 인계 예시, 10절 30. 로봇 간 협업·물리적 인계 연결 근거, 11절 oq-042 부분 근거, 13절 각주, reference_updates 어디에도 ref-1493 을 쓰지 않았다.",
+      "f47 — 9절 물리 인계 의견 문장의 각주를 ref-202 하나로 달고 [의견]과 '이 위키 구축자의 의견' 표시를 유지했다.",
+      "f7 강등 — 7절 대한승강기협회 행에서 표준번호 B-KOLA-0001-7700·등록일자 2026-03-24 를 [추정]으로 쓰고 리서치 단계 열람에만 기대며 검증에서 목록 행을 재현하지 못했다고 밝혔고, 11절 oq-041·oq-283 부분 근거에도 같은 수준으로 적었다.",
+      "f36 강등 — 7절 BACnet 행과 9절 출입통제 문단에서 인증·권한 검사 구분을 [추정]으로 쓰고 재현 불가를 밝혔으며, f45 의견은 Dormakaba 자격증명(f20, ref-1491)을 주 근거로 각주를 달고 BACnet 은 추정 근거로만 언급했다.",
+      "f35 — 7절 BACnet 행에 2008-09-27 작업 문서이고 현행 ANSI/ASHRAE 135 규범 본문이 아님을 밝혔고 부록 채택 여부 같은 브리프 밖 내용은 넣지 않았다.",
+      "f2 — 3절에서 '2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐고'로 고쳤고 사업명은 ref-322 보도자료 제목을 쓰는 기존 문장을 유지했다.",
+      "f2·f3·f27 — 13절 ref-322·ref-1494 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 두 출처에 source_unopened: true 를 넣었다.",
+      "f27 — '외부 조사 메모가 전한다'를 쓰지 않고 7절 SEMI Doc 7442 행을 지시 문구대로(SEMI 물리 인터페이스·캐리어 기술위원회(일본), SNARF, 작성 2025-12-17, 반도체 조립·시험 범위, 표준 발행 미확인) [추정]으로 썼다.",
+      "ref-163 — 각주·reference_updates 발행일을 2026-02-28(로봇학회 논문지 21(1):48–57)로 쓰고 3절 f30 문장 기준일과 8절 f33·f34 항목 기준일을 2026-02-28 로 맞췄다.",
+      "f32 — 8절에서 '15층 건물 그래프 시뮬레이션에서 소포 수 1~7개'로 쓰고 시뮬레이션 평가임을 밝혔으며 reference_updates 의 ref-321 요약도 같게 고쳤다.",
+      "트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76) — 6절에 반영하지 않고 changelog_entry 와 additional_research_requests 에 '이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월'을 적었으며 'KS B 7317 2021-11-11 제정'은 페이지에 쓰지 않았다.",
+      "직접 인용 — 모든 출처(ref-1492, ref-1487, ref-1488, ref-1489, ref-943 포함)를 직접 인용 없이 재서술했다.",
+      "f1 — 8절에서 '로봇 친화형 건축물 인증'을 용어집 robot-friendly-building-certification 으로 연결하고 Robotics-Enabled Environment Certification(REEC)은 병기만 했으며 glossary_updates 에 새 용어를 넣지 않았다.",
+      "2차: 10절 '51. 인증·권한·격리' 항목 — 지시 문구대로 '자동문 어댑터의 클라우드 자격증명은 문 제조사가 제공한다. [사실][^ref-1491]'과 '로봇의 공간별 통행 권한 승인은 그와 별개로 정해야 한다는 것이 이 위키 구축자의 의견이다. [의견][^ref-1491]' 두 문장으로 나눴다.",
+      "2차: 10절 '30. 로봇 간 협업·물리적 인계' 항목 — 디스펜서 완료 판정 [사실][^ref-1489], SEMI E84 업종 규격 설명 [사실][^ref-202], '참고일 뿐 적합성 근거가 아니다'는 구축자 의견 [의견][^ref-202] 세 문장으로 나눴다.",
+      "2차: 10절 '32. 예외 복구·재계획·업무 연속성' 항목 — 현장 문서 부분은 [추정] 벤더 주장[^ref-1492]로 두고, '설비 비상 복귀를 ROP 복구 절차와 따로 다뤄야 한다'는 구축자 의견 [의견][^ref-1492] 문장으로 분리했다.",
+      "2차: 3절 마지막 단락 f38 — '건축물 인증과 국가 연구개발 계획은'을 '건축물 인증을 다룬 설계 논문과 국가 연구개발 계획 보도는'으로 고쳤다.",
+      "2차: 7·8·10·11절 — '자세한 내용은 주제 페이지 …'와 다른 문형('2026-09-25 까지 정리한 … 은 [...](...)에 있다')으로 2026-09-25-area10-s7·s8·s10·s11 링크를 본문에 넣었고, 7절 문장에는 새 대한승강기협회 행이 옛 페이지의 '표준 번호·제정일·내용 미확인' 서술을 보강한다고 덧붙였다. 8절은 replace 패치 안의 링크 줄을 이 문형으로 바꿨다.",
+      "2차: 11절 '새로 올린 질문' 6건 — 페이지 문구를 open_question_updates[].question 과 글자 단위로 같게 맞췄다(1·2·4·5번에 '(관련 기존 질문: …)' 괄호 복원, 4번 괄호 설명 복원, 5번은 'HopeTechnik' 표기로 통일).",
+      "2차: reference_updates 의 ref-1486 reliability 를 high 에서 medium 으로 낮추고 요약에 검증 재현 불가와 URL 에 검색 조건이 없다는 점을 적었다."
+    ]
+  },
+  "ttft_ms": 34021,
+  "type": "result",
+  "duration_ms": 249043,
+  "uuid": "438b36d2-f3d2-4c05-a756-42e8c4d076ea",
+  "ttft_stream_ms": 1292,
+  "time_to_request_ms": 121,
+  "time_to_request_phases_ms": {
+    "other": 32,
+    "system_prompt": 14,
+    "resume_other": 0,
+    "process_user_input": 11,
+    "input_attachments": 11,
+    "input_hooks": 5,
+    "tool_pool_refresh": 2,
+    "init_message": 8,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 4,
+    "message_normalization": 3,
+    "client_creation": 7,
+    "request_build": 18
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 71,
+  "time_to_request_cpu_ms": 157,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 12,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1293,
+  "time_to_request_from_spawn_ms": 6834536,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791723731307.6445,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 250.7
+}

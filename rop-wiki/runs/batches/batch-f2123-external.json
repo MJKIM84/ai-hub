@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch-f2123-external",
+  "date": "2026-10-11",
+  "updated": "2026-10-11 12:45:06",
+  "concurrency": 2,
+  "items": [
+    {
+      "index": 0,
+      "label": "외부 조사 반영 21. 상호운용 표준·적합성",
+      "item": {
+        "run_type": "update",
+        "area": 21,
+        "label": "외부 조사 반영 21. 상호운용 표준·적합성",
+        "continue": "2026-10-11-01"
+      },
+      "status": "게시",
+      "attempts": [
+        {
+          "run_id": "2026-10-11-01",
+          "started": "2026-10-11 11:37:20",
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": true,
+          "agents_done": "2026-10-11 12:19:25",
+          "published_at": "2026-10-11 12:45:05",
+          "cost_usd": 16.1972,
+          "duration_sec": 3338.4,
+          "end_state": "게시 완료"
+        }
+      ],
+      "run_id": "2026-10-11-01"
+    },
+    {
+      "index": 1,
+      "label": "외부 조사 반영 23. 업무 시스템 연동",
+      "item": {
+        "run_type": "update",
+        "area": 23,
+        "label": "외부 조사 반영 23. 업무 시스템 연동",
+        "continue": "2026-10-11-02"
+      },
+      "status": "보류(1회 연속 실패: 보류(runs/parked/))",
+      "attempts": [
+        {
+          "run_id": "2026-10-11-02",
+          "started": "2026-10-11 11:37:40",
+          "agents_exit": 2,
+          "publish_exit": null,
+          "continued": true,
+          "agents_done": "2026-10-11 12:11:48"
+        }
+      ],
+      "run_id": "2026-10-11-02"
+    }
+  ]
+}

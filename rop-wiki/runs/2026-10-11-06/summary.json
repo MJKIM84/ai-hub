@@ -1,0 +1,159 @@
+{
+  "run_id": "2026-10-11-06",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 50,
+    "area_name": "50. 안전 표준·인증·사고 조사",
+    "category": "M. 안전"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "f927933",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 11
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2447.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-11 | 50. 안전 표준·인증·사고 조사 | 4~11·13절 차등 갱신: 실외이동로봇 인증 근거를 고시 제2025-21호(2025-11-24 시행)로 정정하고 별표 3 의 16개→8개 항목 대응을 원문으로 정리(oq-230 해결), EN ISO 10218 EU 조화 게재를 관보 원문(지침 기반, 2027-01-20 폐지 목록)으로 확인하고 IBF 해설을 추정·벤더 주장으로 강등, ISO/DIS 3691-4 제3판 40.60(oq-384 해결)·KS 부합판·UL 3100·UL 3300(벤더 주장)·자율안전확인·EU 기계 규정 기록 의무·rosbag2·MCAP 추가, 제조 공장 공식 재해사례·EBB 초안 형식 충돌·CAST·사고 자료 범위 보강, 새 열린 질문 5건. 2차: 10절 이전 판 연결 목록 링크 복원, 개수 단정 문장 2건 수정, 프런트매터 sources 정리. 후속 정리 필요(이번 범위 밖): docs/categories/safety/index.md 177행(IBF 단독 사실 표기와 '산업통상자원부 고시(2023-11-17)' 서술), docs/topics/2026/2026-09-26-area25-s7.md 45행과 ref-814 제목(KS B ISO 10218-2 최종 확인일 2022-10-12 보강), docs/topics/2026/2026-09-30-area52-s3.md 43행(EU 기계 규정 5년 기록의 1차 근거 ref-555 연결), 이전 판 주제 페이지 docs/topics/2026/2026-09-30-area50-s4.md 41행·2026-09-30-area50-s7.md 42·45행(IBF 서술 강등과 고시 근거 정정은 이번 판 4·7절로 대체됨) | run 2026-10-11-06",
+  "notes": [
+    "참고문헌 생성: references/ref-1476.md",
+    "참고문헌 생성: references/ref-1477.md",
+    "참고문헌 생성: references/ref-1478.md",
+    "참고문헌 생성: references/ref-1479.md",
+    "참고문헌 생성: references/ref-1480.md",
+    "참고문헌 생성: references/ref-1481.md",
+    "참고문헌 생성: references/ref-1482.md",
+    "참고문헌 생성: references/ref-1483.md",
+    "참고문헌 생성: references/ref-1484.md",
+    "참고문헌 생성: references/ref-1485.md",
+    "참고문헌 생성: references/ref-1486.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 11,
+    "standards": 6,
+    "open_questions": 7,
+    "flow_cells": 9,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-12 01:05:54 KST",
+  "usage": {
+    "input_tokens": 32,
+    "cache_creation_input_tokens": 932719,
+    "cache_read_input_tokens": 2015962,
+    "output_tokens": 193436,
+    "cost_usd": 11.8386,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1726,
+        "output_tokens": 26337,
+        "cache_read_input_tokens": 1686247,
+        "cache_creation_input_tokens": 151990
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 6.6393,
+        "output_tokens": 139574,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 477372
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.9293,
+        "output_tokens": 27054,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 294084
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/safety/safety-standards-certification-and-incident-investigation.md (9개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-11-area50-s7.md",
+        "chars": 4831
+      },
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-11-area50-s11.md",
+        "chars": 2163
+      },
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-11-area50-s6.md",
+        "chars": 1504
+      },
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-11-area50-s8.md",
+        "chars": 1484
+      },
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-10-11-area50-s4.md",
+        "chars": 878
+      },
+      {
+        "from": "docs/categories/safety/safety-standards-certification-and-incident-investigation.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-11-area50-s10.md",
+        "chars": 606
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 20,
+  "cross_checked_findings": 0
+}

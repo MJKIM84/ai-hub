@@ -3,15 +3,15 @@ title: "21. 상호운용 표준·적합성"
 type: area
 category: "F. 연동"
 area_no: 21
-related_areas: [20, 22, 48, 51, 54, 57]
+related_areas: [14, 20, 22, 42, 48, 51, 54, 57]
 tags: [VDA 5050, 의미적 버전 관리, 적합성 시험, 감사 추적, 데이터 권리]
 status: published
 confidence: medium
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-004, ref-031, ref-051, ref-407, ref-408, ref-608, ref-634, ref-253, ref-635, ref-636, ref-637, ref-638, ref-639, ref-704, ref-705, ref-706, ref-560, ref-707, ref-708, ref-709, ref-710]
-last_run: 2026-09-25
-version: 2
+updated: 2026-10-11
+sources: [ref-004, ref-031, ref-032, ref-034, ref-051, ref-138, ref-230, ref-253, ref-407, ref-408, ref-560, ref-608, ref-634, ref-635, ref-636, ref-637, ref-638, ref-639, ref-704, ref-705, ref-706, ref-707, ref-708, ref-709, ref-710, ref-1412, ref-1414, ref-1418, ref-1420, ref-413, ref-1423, ref-1424, ref-1425, ref-1426, ref-1427, ref-1428, ref-1362, ref-1365, ref-1429, ref-1430]
+last_run: 2026-10-11
+version: 3
 ---
 
 [홈](../../index.md) › [F. 연동](index.md) › 21. 상호운용 표준·적합성
@@ -31,7 +31,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 3 · 마지막 갱신: 2026-10-11 · 마지막 실행: 2026-10-11
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -79,7 +79,7 @@ version: 2
 |---|---|
 | 시작 조건 | (입고) 입고 물량에 대응하려고 새 제조사 로봇을 현장 관제에 등록한다(설명용 가상 설정). (출하) 출하 마감 전에 한 제조사가 로봇 펌웨어를 올려 VDA 5050 프로토콜 판이 바뀐다(설명용 가상 설정). [추정][^ref-031][^ref-051] |
 | 작업 대상 | 해당 없음 |
-| 수행 자원 | (출하) VDA 5050 3.0.0 에서 주문 배정·경로 계산·교착 탐지와 해소·교통 제어는 관제 쪽, 위치 추정·경로와 동작 실행·상태의 지속 전송은 이동로봇 쪽 책임이다. [사실][^ref-031] (입고) MassRobotics 신원 보고의 제조사명·모델·일련번호나 VDA 5050 헤더의 manufacturer·serialNumber 를 감사 기록의 주체 식별자로 쓰면 이후 연동 오류와 변경 이력을 제조사별로 귀속할 수 있을 것으로 보인다. [추정][^ref-253][^ref-051] |
+| 수행 자원 | (출하) VDA 5050 3.0.0 은 관제 쪽 기능으로 주문 배정, 선 유도(line-guided) 이동로봇의 경로 계산·안내, 교착 탐지와 해소, 교통 제어를 들고, 이동로봇 쪽 기능으로 위치 추정, 선 유도형과 자유 주행형(freely navigating)으로 나눈 경로 실행, 동작 실행, 상태의 지속 전송을 든다. [사실][^ref-031] VDA 의 3.0 발표 보도자료(2026-04-20)는 자율도가 높은 이동로봇이 지정된 경유점 사이 경로를 스스로 계획해 상세 경로 계획이 로봇에서 이뤄지고, 그 경로를 경로 공유(path sharing)로 중앙 관제와 공유하는 구성을 설명한다. [사실][^ref-032] 그래서 모든 이동로봇의 상세 경로를 관제가 계산한다고 일반화하지 않고, 선 유도 로봇의 경로 계산·안내만 관제 쪽으로 적는 것이 맞다. [의견][^ref-031][^ref-032] (입고) MassRobotics 신원 보고의 제조사명·모델·일련번호나 VDA 5050 헤더의 manufacturer·serialNumber 를 감사 기록의 주체 식별자로 쓰면 이후 연동 오류와 변경 이력을 제조사별로 귀속할 수 있을 것으로 보인다. [추정][^ref-253][^ref-051] |
 | 제약 | (출하) 변경 승인 전에 판 호환 시험과 수정 책임을 계약으로 정해 두어야 할 것으로 보인다. [추정][^ref-031][^ref-051] |
 | 완료·인계 | 해당 없음 |
 | 예외·성과 | (출하) 관제가 헤더 version 으로 판 차이를 감지하고, 로봇이 지원하지 않는 선택 필드는 UNSUPPORTED_PARAMETER 오류로 드러나므로, 사전 시험이 없으면 출하 마감 전 작업 실패로 이어질 수 있을 것으로 보인다. [추정][^ref-031][^ref-051] |
@@ -88,28 +88,40 @@ version: 2
 
 며칠 뒤 한 제조사가 펌웨어를 올려 프로토콜 판이 바뀌면, 출하 마감 직전에 관제가 보낸 주문의 일부 필드가 거부될 수 있다. 이때 규격 불일치를 누가 고치고 판 변경을 누가 승인하는지가 미리 정해져 있어야 복구가 빨라지지만, 이를 정한 공식 기준은 확인되지 않았다. [추정][^ref-031][^ref-004][^ref-560][^ref-634]
 
+예정 경로 공유의 세부는 [27. 다중 로봇 경로·교통 관리 — MAPF 의 관련 표준 정리](../../topics/2026/2026-10-10-area27-s7.md)에 있다.
+
+**현장 유형:** 제조 공장
+
+**사례:** 여러 이동로봇이 작업대를 공급하는 양식화한 생산 라인 시연 — VDMA Mesh-Up 2025 (automatica 2025 전시 시연, 실제 공장 배치 아님)
+
+| 항목 | 내용 (automatica 2025 전시 시연, 실제 공장 배치 아님) |
+|---|---|
+| 시작 조건 | 미확인 (automatica 2025 전시 시연, 실제 공장 배치 아님) |
+| 작업 대상 | 양식화한 생산 라인의 작업대 공급 (automatica 2025 전시 시연, 실제 공장 배치 아님). [사실][^ref-1425] |
+| 수행 자원 | 9개 기업이 참여하고 MHP 가 상위 관제를 맡아 여러 이동로봇을 함께 운용한 혼합 플릿 구성 (automatica 2025 전시 시연, 실제 공장 배치 아님). [사실][^ref-1425] |
+| 제약 | 미확인 (automatica 2025 전시 시연, 실제 공장 배치 아님) |
+| 완료·인계 | 미확인 (automatica 2025 전시 시연, 실제 공장 배치 아님) |
+| 예외·성과 | 관제 소프트웨어 공급자를 바꿔 고를 수 있다는 점은 전시장에서 실시간으로 시연하지 않는다고 안내가 밝힌다. 처리량·시간·비용에 대한 영향은 미확인이다 (automatica 2025 전시 시연, 실제 공장 배치 아님). [사실][^ref-1425] |
+
+VDMA 의 Mesh-Up 2025 안내는 automatica 2025(뮌헨, 2025-06-24~27) 전시장에서 9개 기업이 참여하고 MHP 가 상위 관제를 맡아, 여러 이동로봇이 작업대를 공급하는 양식화한 생산 라인을 보여 주는 혼합 플릿 시연을 설명한다. [사실][^ref-1425] 이 시연은 실제 공장 배치가 아니므로 혼합 플릿 구성의 예로만 쓰고, 실제 도입 사례나 현장 관제 교체가 검증된 근거로 세지 않는 것이 맞다. [의견][^ref-1425] 같은 이유로 현장 유형 매트릭스에도 도입 사례로 넣지 않는다.
+
 ## 6. 대표 접근법과 기술
 
-여러 사업자를 한 현장에서 묶는 대표 접근은 판 번호 규칙으로 변경을 알리고, 적합성 시험으로 구현을 확인하고, 연동 수준을 나눠 통합하며, 서비스 수준과 감사 이력을 함께 기록하는 것이다. [의견]
+여러 사업자를 한 현장에서 묶는 대표 접근은 판 번호 규칙으로 변경을 알리고, 적합성 시험으로 구현을 확인하고, 연동 수준을 나눠 통합하며, 서비스 수준과 감사 이력을 함께 기록하는 것이다. [의견] 2026-09-25 에 쓴 이전 내용은 [21. 상호운용 표준·적합성 — 대표 접근법과 기술 (2026-09-25)](../../topics/2026/2026-09-25-area28-s6.md)에 있으며, 그 페이지의 정정은 다음 갱신 실행으로 넘겼다.
 
-자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area28-s6.md)에 있다.
+자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area21-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-이 영역의 표준은 로봇–관제 규격, 변경 알림 규칙, 적합성 시험, 감사·서비스 관리, 국내 표준으로 나뉜다. [의견] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
+이 영역의 표준은 로봇–관제 규격, 변경 알림 규칙, 적합성 시험, 감사·서비스 관리, 국내 표준으로 나뉜다. [의견] 2026-09-25 에 쓴 표준 비교표와 이전 내용은 [21. 상호운용 표준·적합성 — 관련 표준·프레임워크·오픈소스 (2026-09-25)](../../topics/2026/2026-09-25-area28-s7.md)에 있고 그 페이지의 정정은 다음 갱신 실행으로 넘겼으며, 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
 
-자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area28-s7.md)에 있다.
+자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area21-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
 이 영역의 자료는 학술 논문보다 규격 저장소와 공공기관 자료가 중심이다. [의견]
 
-- VDA / VDMA / KIT IFL, VDA 5050 공식 저장소 README(발행일 미확인) — 변경 제안 절차, 계획 판, 지원 의무 부인 문구를 담아 규격 거버넌스를 읽는 기본 자료다. [사실][^ref-634]
-- MassRobotics, AMR_Interop_Standard 저장소(발행일 미확인) — 신원·상태 보고 스키마만 두는 보고 중심 규격이다. [사실][^ref-253]
-- gpue, vda5050-sim / ekusiadadus, vda5050-lab(발행일 미확인) — VDA 5050 시뮬레이션·적합성 시험 묶음과 MQTT 기록 진단 도구로, 개인 프로젝트이며 VDA·VDMA 공식 시험이 아닌 것으로 보인다. [추정][^ref-407][^ref-408]
-- OSRA, Open-RMF 프로젝트 헌장(2024-03)과 정책·절차 저장소 — 오픈소스 관제 프레임워크의 운영·개정 권한 구조를 보여 준다. [추정][^ref-704][^ref-639]
-- 소프트웨어정책연구소(SPRi), 산업 디지털 전환 촉진법의 의미와 시사점(발행일 미확인) — 산업데이터 권리 규정을 해설한 국내 자료다. [사실][^ref-638]
-- 국가기술표준원, 로봇 엘리베이터 탑승 KS 제정 보도자료(2021-11-11) — 속도 제어, 위험 상황 보호 정지, 높낮이차·틈새 극복, 추락·넘어짐 방지 기준을 다룬다. KS 번호는 미확인이다. [사실][^ref-709]
+자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 대표 연구와 자료](../../topics/2026/2026-10-11-area21-s8.md)에 있다.
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)
 
@@ -125,46 +137,38 @@ VDA 5050 3.0.0 에서 교착 탐지·해소는 관제 쪽 기능이다. [사실]
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
-21. 상호운용 표준·적합성는 규격 판·책임 분리, 적합성 시험, 판 이행, 감사 추적, 통합자 위험성평가, 승강기 연동 표준을 통해 다른 영역과 맞물리는 것으로 보인다. [추정][^ref-031][^ref-004][^ref-705][^ref-707][^ref-560][^ref-709]
+상호운용 표준·적합성는 규격 판·책임 분리, 적합성 시험, 판 이행, 감사 추적, 통합자 위험성평가, 승강기 연동 표준을 통해 다른 영역과 맞물리는 것으로 보인다. [추정][^ref-031][^ref-004][^ref-705][^ref-707][^ref-560][^ref-709]
 
-- [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 규격 판과 관제–로봇 책임 분리가 연동 구현의 전제다.
-- [22. 설비·건물 시스템 연동](facility-and-building-system-integration.md) — 로봇 승강기 탑승 KS 같은 설비 연동 표준을 공유한다.
-- [54. 시험·형식 검증·벤치마크](../verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) — 적합성 시험·인증을 새 로봇 연동 승인에 쓰는 방법을 다룬다.
-- [57. 자산·소프트웨어 수명주기 관리](../verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 펌웨어·프로토콜 판 이행과 폐기 예고가 수명주기 관리와 겹친다.
-- [48. 안전·위험 관리](../safety/safety-and-risk-management.md) — 통합자의 시스템 수준 위험성평가를 누가 맡는지가 책임 경계의 핵심이다.
-- [51. 인증·권한·격리](../security-and-privacy/authentication-authorization-and-isolation.md) — 감사 추적 요구가 보안 표준에서 온다.
+자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 다른 연구영역과의 연결](../../topics/2026/2026-10-11-area21-s10.md)에 있다.
 
 ## 11. 열린 질문
 
-규격의 판·발행일, 공식 적합성 시험 유무, 운영 주체 간 책임은 아직 확인되지 않은 부분이 많다. [의견] 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
+규격의 판·발행일, 공식 적합성 시험 유무, 운영 주체 간 책임은 아직 확인되지 않은 부분이 많다. [의견] 2026-09-25 에 정리한 이전 질문 목록은 [21. 상호운용 표준·적합성 — 열린 질문 (2026-09-25)](../../topics/2026/2026-09-25-area28-s11.md)에, 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
 
-자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 열린 질문](../../topics/2026/2026-09-25-area28-s11.md)에 있다.
+자세한 내용은 주제 페이지 [21. 상호운용 표준·적합성 — 열린 질문](../../topics/2026/2026-10-11-area21-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-25 · 갱신 · [21. 상호운용 표준·적합성](interoperability-standards-and-conformance.md) — seed → draft: 3~11절 첫 작성, 페이지 상태 자동 영역 추가, 13절 각주. 2차: 9절 승강기 연계 칸 [추정]으로 정정, ISO 10218-2 적용 범위 미확인 단서 추가, 5절 시작 조건 칸에 가상 설정 표시와 [추정] 태그 추가 (실행 2026-09-25-69)
-- 2026-09-25 · 생성 · [21. 상호운용 표준·적합성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area28-s7.md) — 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,840자)을 옮겼다 (실행 2026-09-25-69)
-- 2026-09-25 · 생성 · [21. 상호운용 표준·적합성 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area28-s6.md) — 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "6. 대표 접근법과 기술" 절(1,549자)을 옮겼다 (실행 2026-09-25-69)
-- 2026-09-25 · 생성 · [21. 상호운용 표준·적합성 — 열린 질문](../../topics/2026/2026-09-25-area28-s11.md) — 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "11. 열린 질문" 절(1,233자)을 옮겼다 (실행 2026-09-25-69)
-- 2026-09-25 · 생성 · [21. 상호운용 표준·적합성 — 핵심 개념과 용어](../../topics/2026/2026-09-25-area28-s4.md) — 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "4. 핵심 개념과 용어" 절(1,053자)을 옮겼다 (실행 2026-09-25-69)
+- 2026-10-11 · 갱신 · [21. 상호운용 표준·적합성](interoperability-standards-and-conformance.md) — 차등 갱신: 5절 수행 자원 칸 경로 계산을 선 유도 로봇으로 정정·자유 주행 로봇 경로 공유 병기, 제조 공장 전시 시연 사례(Mesh-Up 2025, 실제 공장 배치 아님) 추가; 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준 표·VDA 5050 동작 시험표; 7절 VDA 5050 3.0.0 날짜(출처 충돌)·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영); 8절 vda5050-lab 자기 기술 반영·vda5050-sim 분리·Wagner 외 추가; 10절 14·42번 연결; 11절 부분 근거와 새 질문 2건; 6·7·11절 첫 단락에 2026-09-25 분리 페이지(area28-s6·s7·s11) 링크 유지; 프런트매터 sources 에 기존 ref-636·ref-637·ref-708·ref-710 유지; 13절 각주 갱신(ref-408·ref-705 원문 열람 반영, 신규 각주) (실행 2026-10-11-01)
+- 2026-10-11 · 생성 · [21. 상호운용 표준·적합성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area21-s7.md) — 자동 분리: 21. 상호운용 표준·적합성 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,916자)을 옮겼다 (실행 2026-10-11-01)
+- 2026-10-11 · 생성 · [21. 상호운용 표준·적합성 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area21-s6.md) — 자동 분리: 21. 상호운용 표준·적합성 의 "6. 대표 접근법과 기술" 절(2,060자)을 옮겼다 (실행 2026-10-11-01)
+- 2026-10-11 · 생성 · [21. 상호운용 표준·적합성 — 대표 연구와 자료](../../topics/2026/2026-10-11-area21-s8.md) — 자동 분리: 21. 상호운용 표준·적합성 의 "8. 대표 연구와 자료" 절(1,461자)을 옮겼다 (실행 2026-10-11-01)
+- 2026-10-11 · 생성 · [21. 상호운용 표준·적합성 — 열린 질문](../../topics/2026/2026-10-11-area21-s11.md) — 자동 분리: 21. 상호운용 표준·적합성 의 "11. 열린 질문" 절(1,079자)을 옮겼다 (실행 2026-10-11-01)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
 [^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25
-[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
+[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-10-11
+[^ref-032]: VDA(Verband der Automobilindustrie), Version 3.0 of VDA 5050 released, 2026-04-20, https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN, 접근일 2026-10-11
 [^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25
-[^ref-407]: gpue (GitHub), vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS), 미확인, https://github.com/gpue/vda5050-sim, 접근일 2026-09-25 (원문 미열람)
-[^ref-408]: ekusiadadus (GitHub), vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces), 미확인, https://github.com/ekusiadadus/vda5050-lab, 접근일 2026-09-25 (원문 미열람)
-[^ref-634]: VDA / VDMA / KIT IFL (VDA5050 GitHub), VDA5050/VDA5050 — README, 미확인, https://github.com/VDA5050/VDA5050, 접근일 2026-09-25
 [^ref-253]: MassRobotics, AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema), 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-09-25 (원문 미열람)
-[^ref-635]: Semantic Versioning (Tom Preston-Werner, semver.org), Semantic Versioning 2.0.0, 미확인, https://semver.org/spec/v2.0.0.html, 접근일 2026-09-25
-[^ref-638]: 소프트웨어정책연구소(SPRi), 산업 디지털 전환 촉진법의 의미와 시사점, 미확인, https://spri.kr/posts/view/23480?code=industry_trend, 접근일 2026-09-25 (원문 미열람)
-[^ref-639]: Open Source Robotics Alliance (Open Robotics), osra-policies-and-procedures — README, 미확인, https://github.com/openrobotics/osra-policies-and-procedures, 접근일 2026-09-25
-[^ref-704]: Open Source Robotics Alliance, Charter of the Open Source Robotics Alliance Project 'Open-RMF', 2024-03, https://osralliance.org/wp-content/uploads/2024/03/open-rmf-project-charter.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-705]: OPC Foundation, How to Certify - OPC Foundation, 미확인, https://opcfoundation.org/certification/how-to-certify/, 접근일 2026-09-25 (원문 미열람)
-[^ref-706]: IETF (RFC Editor), RFC 9745: The Deprecation HTTP Response Header Field, 미확인, https://www.rfc-editor.org/info/rfc9745/, 접근일 2026-09-25 (원문 미열람)
 [^ref-560]: ISO, ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells, 2025-02, https://www.iso.org/standard/73934.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-634]: VDA / VDMA / KIT IFL (VDA5050 GitHub), VDA5050/VDA5050 — README, 미확인, https://github.com/VDA5050/VDA5050, 접근일 2026-09-25
+[^ref-635]: Semantic Versioning (Tom Preston-Werner, semver.org), Semantic Versioning 2.0.0, 미확인, https://semver.org/spec/v2.0.0.html, 접근일 2026-09-25
+[^ref-705]: OPC Foundation, How to Certify - OPC Foundation, 미확인, https://opcfoundation.org/certification/how-to-certify/, 접근일 2026-10-11
+[^ref-706]: IETF (RFC Editor), RFC 9745: The Deprecation HTTP Response Header Field, 미확인, https://www.rfc-editor.org/info/rfc9745/, 접근일 2026-09-25 (원문 미열람)
 [^ref-707]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample), 2013-08, https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf, 접근일 2026-09-25 (원문 미열람)
 [^ref-709]: 대한민국 정책브리핑(산업통상자원부 국가기술표준원), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://korea.kr/news/pressReleaseView.do?newsId=156480155, 접근일 2026-09-25 (원문 미열람)
+[^ref-1425]: VDMA, Mobile Robots in Production: Mesh-Up 2025, 미확인, https://www.vdma.eu/en/mesh-up, 접근일 2026-10-11

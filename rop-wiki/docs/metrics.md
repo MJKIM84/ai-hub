@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-10-10
+기준일: 2026-10-12
 
 ### 영역별 페이지 상태 분포
 
@@ -27,17 +27,17 @@ version: 1
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 31 | 0 | 0 | 31 |
-| [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 32 | 0 | 0 | 32 |
+| [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 50 | 0 | 0 | 50 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 59 | 0 | 0 | 59 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 33 | 0 | 0 | 33 |
-| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
-| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 51 | 0 | 0 | 51 |
+| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 41 | 0 | 0 | 41 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 40 | 0 | 0 | 40 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -91,9 +91,9 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | published | medium | 2026-10-10 | 3 |
-| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | published | medium | 2026-09-25 | 2 |
-| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | published | medium | 2026-09-25 | 2 |
-| [23. 업무 시스템 연동](categories/integration/business-system-integration.md) | published | medium | 2026-09-25 | 2 |
+| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | published | medium | 2026-10-11 | 3 |
+| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | published | medium | 2026-10-11 | 3 |
+| [23. 업무 시스템 연동](categories/integration/business-system-integration.md) | published | medium | 2026-10-11 | 3 |
 
 **G. 계획·최적화**
 
@@ -144,18 +144,18 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | 2026-09-30 | 2 |
-| [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | 2026-09-30 | 2 |
-| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | 2026-09-30 | 2 |
-| [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-09-25 | 2 |
+| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | 2026-10-12 | 3 |
+| [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | 2026-10-12 | 3 |
+| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | 2026-10-12 | 3 |
+| [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-10-12 | 3 |
 
 **M. 안전**
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
-| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-09-30 | 2 |
-| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | 2026-09-30 | 2 |
+| [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-10-11 | 4 |
+| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-10-11 | 3 |
+| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | 2026-10-11 | 3 |
 
 **N. 보안·개인정보**
 
@@ -178,9 +178,9 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-09-30 | 2 |
-| [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | 2026-09-30 | 2 |
-| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-09-30 | 2 |
+| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-10-12 | 3 |
+| [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | 2026-10-12 | 3 |
+| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-10-12 | 3 |
 
 **Q. 현장 유형별 적용**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 159회 중 최종 통과 157회 (통과율 99%)
-- 1차 검증 판정: 조건부 승인 157, None 2
-- 2차 검증 판정: 통과 157, None 2
+- 실행 172회 중 최종 통과 170회 (통과율 99%)
+- 1차 검증 판정: 조건부 승인 170, None 2
+- 2차 검증 판정: 통과 170, None 2
 
 ### 반려·보류 건수
 
@@ -209,27 +209,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 593 |
-| 오픈소스 문서 | 244 |
-| 표준 | 208 |
-| 기사 | 129 |
-| 정부·연구기관 | 120 |
-| 벤더 문서 | 97 |
-| 업계 보고서 | 28 |
+| 논문 | 622 |
+| 오픈소스 문서 | 276 |
+| 표준 | 230 |
+| 정부·연구기관 | 155 |
+| 기사 | 130 |
+| 벤더 문서 | 128 |
+| 업계 보고서 | 30 |
 
-신뢰도: medium 999건, high 286건, low 134건
+신뢰도: medium 1082건, high 351건, low 138건
 
 ### 현장 유형 매트릭스 채움률
 
-- 88/119 칸 (74%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 90/119 칸 (76%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 15 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 15 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 15 | published |
-| [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-25 | 15 | published |
-| [22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-25 | 15 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 17 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 17 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 17 | published |
+| [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-25 | 17 | published |
+| [30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-25 | 17 | published |
 <!-- auto:metrics:end -->

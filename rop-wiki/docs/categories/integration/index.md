@@ -130,10 +130,13 @@ flowchart LR
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 101건이다(논문 13건 · 기사·보고서 10건 · 업체 발표 6건 · 표준·오픈소스·기관 자료 72건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 145건이다(논문 17건 · 기사·보고서 12건 · 업체 발표 16건 · 표준·오픈소스·기관 자료 100건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
+- [ref-1431](../../references/ref-1431.md) — Park, Y.; Park, S. (Architectural Research), Development of Human-Centered, Robot-Adaptive Building Design Standards: Focusing on Korea’s Building Certification Systems (발행 2026-07-21)
+- [ref-1426](../../references/ref-1426.md) — Wagner, N. A., Toenning, L., Lünsch, D., Jost, J., Wietfeld, C., Detzner, P., Teleoperating Mobile Robots via VDA 5050 – A First Middleware Evaluation within Open Industrial Networks (발행 2026-04)
+- [ref-943](../../references/ref-943.md) — Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026-03-31)
 - [ref-260](../../references/ref-260.md) — ScienceDirect 게재 논문(저자 미확인), Heterogeneous multi-agent fleet control system for material handling in a Software-Defined Factory (발행 2026)
 - [ref-163](../../references/ref-163.md) — 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 (발행 2026)
 - [ref-060](../../references/ref-060.md) — Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026)
@@ -141,15 +144,13 @@ flowchart LR
 - [ref-136](../../references/ref-136.md) — Applied Sciences(MDPI) 게재 논문 저자(미확인), Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector (발행 2025)
 - [ref-133](../../references/ref-133.md) — Lorenz, Otto, & Gendreau (Networks, Wiley), Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization? (발행 2025)
 - [ref-132](../../references/ref-132.md) — Yu, S., & Srinivas, S., Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations (발행 2025)
-- [ref-1419](../../references/ref-1419.md) — Franke, S., Lünsch, D., Jost, J., & Roidl, M., Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept (발행 2023-10-11)
-- [ref-409](../../references/ref-409.md) — 한국 학술지 게재 논문(지적과 국토정보 53(1), 83-105, 저자 미확인), 아파트 단지의 로봇 친화형 환경 인증 모델 개발 (지적과 국토정보 53(1), 83-105) (발행 2023)
-- [ref-259](../../references/ref-259.md) — Franke, S., Lünsch, D., Jost, J., & Roidl, M., Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept (발행 2023)
-- 그 밖에 3건
+- 그 밖에 7건
 
 **기사·보고서**
 
 - [ref-264](../../references/ref-264.md) — 머니투데이, "로봇 통합 관제 기술, 인정받았다"..노바테크, 70억원 투자 유치 (발행 2026-07-14)
 - [ref-263](../../references/ref-263.md) — 디지털투데이, 카카오모빌리티, 로봇 플랫폼 사업 본격화..."이기종 로봇 통합 운영" (발행 2026-05)
+- [ref-1432](../../references/ref-1432.md) — 스마트투데이(이재수), "사람과 로봇이 공존하는 스마트 빌딩 앞당긴다"...국토부 산학협력단과 기술개발 착수 (발행 2025-05-28)
 - [ref-137](../../references/ref-137.md) — 머니투데이, 물류센터 관리시스템에 로봇 연동…"물류 자동화 새 표준 만든다" (발행 2025-01)
 - [ref-002](../../references/ref-002.md) — ISA, Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems (발행 2025)
 - [ref-320](../../references/ref-320.md) — 파이낸셜뉴스, 현대엘리베이터 '오픈 API' 참여 다각화..."엘리베이터와 로봇 연동" (발행 2023-02)
@@ -157,16 +158,21 @@ flowchart LR
 - [ref-317](../../references/ref-317.md) — 전기신문, 승강기협회 '로봇-승강기 연동 표준개발'로 승강기 4차산업 견인 (발행 미확인)
 - [ref-316](../../references/ref-316.md) — 건설기술신문, 승강기협, 엘리베이터-로봇 연동 단체표준 제정 (발행 미확인)
 - [ref-261](../../references/ref-261.md) — 헬로티(HelloT), 미르, 다기종 모바일 로봇 연동 SW 어댑터 ‘MiR VDA 5050’ 론칭 (발행 미확인)
-- [ref-257](../../references/ref-257.md) — Interact Analysis, AMR Multi-Fleet Orchestration Software Explained (발행 미확인)
+- 그 밖에 2건
 
 **업체 발표**
 
+- [ref-1448](../../references/ref-1448.md) — Oracle, WMS REST API Guide — Change Priority (Oracle Warehouse Management Cloud 26c) (발행 2026-08-14)
+- [ref-1444](../../references/ref-1444.md) — NAVER LABS, NAVER’s ARC Goes to Japan (발행 2026-07-23)
+- [ref-1451](../../references/ref-1451.md) — LG CNS, 로봇 기반 물류 자동화와 통합 관제로 HD현대일렉트릭 신공장의 새로운 운영 체계를 구축하다 (발행 2026-07-16)
 - [ref-608](../../references/ref-608.md) — OTTO by Rockwell Automation, OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments (발행 2026-04)
 - [ref-1417](../../references/ref-1417.md) — 카카오모빌리티, 카카오모빌리티, 국내 로봇 기업 협력해 ’플랫폼 기반 로봇 생태계 확장’ 지속 (발행 2026-03-16)
-- [ref-318](../../references/ref-318.md) — KONE, KONE Service Robot API (발행 미확인)
-- [ref-262](../../references/ref-262.md) — 클로봇(Clobot), 통합 로봇 관제 플랫폼 크롬스[CROMS] (발행 미확인)
-- [ref-1416](../../references/ref-1416.md) — InOrbit.AI, 10 Companies around the World Collaborate to Showcase Robot Orchestration at Automate 2026 (발행 미확인)
-- [ref-1029](../../references/ref-1029.md) — InOrbit, Contents — InOrbit Developer Portal (발행 미확인)
+- [ref-1429](../../references/ref-1429.md) — idealworks, VDA 5050 3.0.0 release (March 2026) (발행 2026-03)
+- [ref-1453](../../references/ref-1453.md) — SAP (Lukasz Ostrowski, SAP News Center), How SAP Brings Business AI into the Physical World: New Robotics Pilots Across Warehouse, Manufacturing, and Inspection Use Cases (발행 2025-11-05)
+- [ref-1450](../../references/ref-1450.md) — 아르고 풀필먼트(테크타카), 아르고, 플로틱과 로봇 기반 물류 생산성 향상 실증 본격 실시 (발행 2025-01-21)
+- [ref-1447](../../references/ref-1447.md) — SAP, APIs for Integration via Fleet Management Systems (API for Integration with Fleet Management Systems (Deprecated)) (발행 2024-07-10)
+- [ref-1449](../../references/ref-1449.md) — SAP, End-User Information for Integration via Integration Services (SAP Warehouse Robotics, Document Version 2308) (발행 2023-08-19)
+- 그 밖에 6건
 
 **표준·오픈소스·기관 자료**
 
@@ -174,23 +180,23 @@ flowchart LR
 - [ref-1398](../../references/ref-1398.md) — Open-RMF (open-rmf/rmf_ros2 저장소), Changelog for package rmf_fleet_adapter (발행 2026-09-26)
 - [ref-854](../../references/ref-854.md) — Open Source Robotics Alliance (OSRA) Interop SIG, Open Robotics Discourse, Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP) (발행 2026-06-25)
 - [ref-1415](../../references/ref-1415.md) — Open Robotics Discourse (OSRA Interop SIG), Interop SIG, 7 May 2026: Open-RMF Upcoming Zone Feature (발행 2026-05-04)
+- [ref-1427](../../references/ref-1427.md) — TU Dortmund, Communication Networks Institute (ComNets), Interoperable Teleoperation of Mobile Robots in Intralogistics: Joint Paper Demonstrates End-to-End Network Co-Design for Smart Industries (발행 2026-04-24)
 - [ref-032](../../references/ref-032.md) — VDA(Verband der Automobilindustrie), Version 3.0 of VDA 5050 released (발행 2026-04)
+- [ref-1433](../../references/ref-1433.md) — 대한승강기협회(KOLA), 대한승강기협회, 엘리베이터-로봇 연동 단체표준 제정(26.3.27) (발행 2026-03-27)
 - [ref-1412](../../references/ref-1412.md) — VDA(Verband der Automobilindustrie), VDA 5050 (발행 2026-03-17)
 - [ref-710](../../references/ref-710.md) — 한국지능형로봇표준포럼(KOROS), KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차 (발행 2025-06-04)
 - [ref-560](../../references/ref-560.md) — ISO, ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells (발행 2025-02)
-- [ref-135](../../references/ref-135.md) — ASCM, SCOR Digital Standard — Introduction and Front Matter (SCOR Version 14.0, 2025) (발행 2025)
-- [ref-704](../../references/ref-704.md) — Open Source Robotics Alliance, Charter of the Open Source Robotics Alliance Project 'Open-RMF' (발행 2024-03)
-- 그 밖에 62건
+- 그 밖에 90건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-10-10 · 갱신 · [20. 로봇·제조사 관제 연동](robot-and-vendor-fleet-manager-integration.md) — 차등 갱신: 3절 IO-AMRs 범위 한정 추가, 5절 연동 위치·제어 수준 기록 기준과 상업 시설·기타 사례 추가, 6절 단절 시 상태 분리·신호등 연동 전제·상태 변환 사례, 7절 VDA 5050 3.0.0 날짜 병기·공개 구현 판 정보, 8절 Lopes·Franke 서지·범위 보강, 10절 21·47·12·2·64·67번 연결, 11절 부분 근거와 새 질문 5건, 6·7·8·10·11절에 2026-09-25 분리 페이지 링크 유지, 13절 각주 갱신(Franke 외 기존 id ref-1419 의 URL·발행일·열람 반영, ref-258 열람 반영, ref-031·ref-251·ref-256 접근일, 신규 각주) (실행 2026-10-10-06)
-- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-10-area20-s7.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,938자)을 옮겼다 (실행 2026-10-10-06)
-- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 접근법과 기술](../../topics/2026/2026-10-10-area20-s6.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,684자)을 옮겼다 (실행 2026-10-10-06)
-- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 열린 질문](../../topics/2026/2026-10-10-area20-s11.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,604자)을 옮겼다 (실행 2026-10-10-06)
-- 2026-10-10 · 생성 · [20. 로봇·제조사 관제 연동 — 대표 연구와 자료](../../topics/2026/2026-10-10-area20-s8.md) — 자동 분리: 20. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,251자)을 옮겼다 (실행 2026-10-10-06)
+- 2026-10-11 · 갱신 · [22. 설비·건물 시스템 연동](facility-and-building-system-integration.md) — 차등 갱신: 3절 공유 승강기 지연 교차 확인·KS B 7317 개정 이력·국토부 연구개발 2차 보도; 4절 AGV 모드와 세션 수락; 5절 기타(도서관)·병원·상업 시설 사례 추가; 6절 승강기 감독·작업대 완료 판정·제조사 어댑터; 7절 표준 보강 표; 8절 연구 실험 조건 갱신; 9절 비상 복귀·출입통제 경계; 10절 연결 8건; 11절 부분 근거·새 질문 6건; 13절 각주 갱신. 2차 수정: 10절 구축자 의견 3건 태그 분리, 3절 f38 근거 문구 정정, 7·8·10·11절에 2026-09-25 주제 페이지 링크 복원, 11절 새 질문 문구를 열린 질문 갱신과 일치 (실행 2026-10-11-03)
+- 2026-10-11 · 생성 · [22. 설비·건물 시스템 연동 — 대표 접근법과 기술](../../topics/2026/2026-10-11-area22-s6.md) — 자동 분리: 22. 설비·건물 시스템 연동 의 "6. 대표 접근법과 기술" 절(2,450자)을 옮겼다 (실행 2026-10-11-03)
+- 2026-10-11 · 생성 · [22. 설비·건물 시스템 연동 — 열린 질문](../../topics/2026/2026-10-11-area22-s11.md) — 자동 분리: 22. 설비·건물 시스템 연동 의 "11. 열린 질문" 절(2,065자)을 옮겼다 (실행 2026-10-11-03)
+- 2026-10-11 · 생성 · [22. 설비·건물 시스템 연동 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-11-area22-s7.md) — 자동 분리: 22. 설비·건물 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,902자)을 옮겼다 (실행 2026-10-11-03)
+- 2026-10-11 · 생성 · [22. 설비·건물 시스템 연동 — 왜 중요한가](../../topics/2026/2026-10-11-area22-s3.md) — 자동 분리: 22. 설비·건물 시스템 연동 의 "3. 왜 중요한가" 절(1,323자)을 옮겼다 (실행 2026-10-11-03)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

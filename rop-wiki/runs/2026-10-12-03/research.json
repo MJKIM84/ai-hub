@@ -1,0 +1,1090 @@
+{
+  "run_id": "2026-10-12-03",
+  "date": "2026-10-12",
+  "run_type": "update",
+  "target": {
+    "area_no": 60,
+    "area_name": "60. 노동·수용성·접근성",
+    "category": "P. 거버넌스·법규·사회"
+  },
+  "gaps": [
+    "섹션 4. 핵심 개념과 용어(분리 2026-09-30-area60-s4) — '노사협의회 협의 사항'(39행)이 법률 제16320호(2019) 기준이고 작업·휴게 시간(제7호)과 고용조정 일반원칙(제6호)이 없음. 작업자 수용성 설문 자료의 표본 조건 설명 없음",
+    "섹션 5. 적용 사례 — 물류창고 사례(74행 Malik 면담)의 참여자 구성 미확인, 부상 지표가 GMU 발표 단일 근거이고 회사 발표·노조 보고서의 분모·정의 차이가 없음. 병원 사례가 한림대성심병원 자체 설문뿐이라 국내 독립 연구 없음. 실외 사례에 물품 인수 접근 요구 없음",
+    "섹션 6. 대표 접근법과 기술(분리 2026-09-30-area60-s6) — 수용성 측정이 고령자·돌봄 모델(알메러·Q방법론)뿐이고 산업 작업자 척도·표본 한계 없음, 노동자 참여 절차에 노사 공동 검토기구 사례 없음",
+    "섹션 7. 관련 표준·프레임워크·오픈소스(분리 2026-09-30-area60-s7) — 디지털 접근성 표준(WCAG 2.2, WCAG2ICT, EN 301 549, 유럽 접근성법)과 자동 검사 도구가 없음. 근로자참여법 행이 '현행 조문 여부 미확인'",
+    "섹션 8. 대표 연구와 자료(분리 2026-09-30-area60-s8) — Acemoglu·Restrepo 항목(40행)에 JPE 2020 게재판의 총량·지역 효과 구분이 없고, 독일 등 비교 연구 없음. 수용성 연구들의 표본 조건(국가·언어·모집·인원) 미기재",
+    "섹션 9. 책임 경계 — 화면 접근성의 범위(웹 관제·비웹 HMI·로봇 단말 닫힌 기능·물리 접근)와 휴게·작업 순환 정책의 노사 검토 연계가 없음",
+    "섹션 11. 열린 질문(분리 2026-09-30-area60-s11) — oq-146·oq-188·oq-266·oq-278·oq-284~oq-287 이 모두 열림 상태",
+    "정정 요청 없음(target.json corrections 비어 있음). 메모·검증에서 나온 위키 내부 정정: 근로자참여법 제20조 판(2022-12-11 시행 법률 제18927호), 메모의 SOC '비교창고 456시설' 오기, Acemoglu 범위값은 오류 아님(유지)"
+  ],
+  "research_questions": [
+    "로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가? [분류원문]",
+    "공개된 작업자·산업 수용성 설문과 척도는 어떤 국가·언어·모집 방법·표본으로 만들어졌고, 한국 현장 작업자에게 일반화할 수 있는가? (섹션 4·6·8 겨냥)",
+    "창고 로봇 도입의 안전 효과를 말하는 회사 발표와 노조 보고서는 지표 정의·분모·기간·범위가 어떻게 다른가(oq-286)? (섹션 5·9 겨냥)",
+    "근로자참여법 제20조의 현행 판은 작업 배정·휴게·직무 전환을 협의 사항으로 두는가, 노사 공동 검토기구 사례는 무엇이 있는가(oq-285·oq-266)? (섹션 4·6·7 겨냥)",
+    "웹 관제 화면, 비웹 HMI, 로봇 단말의 닫힌 기능에 각각 어떤 접근성 기준(WCAG 2.2, WCAG2ICT, EN 301 549, 유럽 접근성법)이 어떤 범위로 적용되고 자동 검사는 무엇을 놓치는가(oq-284)? (섹션 7·9 겨냥)",
+    "장애인 이용자의 보행 접근과 물품 인수 접근, 국내 간호사 요구 연구는 어떤 조건에서 나온 결과인가(oq-188·oq-287)? (섹션 5·8 겨냥)",
+    "로봇의 고용 효과 연구의 게재판 수치와 국가 간 차이는 무엇인가? (섹션 8 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Liu 외(Data in Brief 61, 2025)의 공개 작업자 설문 데이터셋은 미국·캐나다·영국·호주의 블루칼라 노동자 설문 참여자 530명 가운데 데이터 공개에 동의한 337명의 응답(40문항)만 담고 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1497"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.5~4.6 Recruitment/Survey Method: \"A total of 530 participants took part in the survey, of which 337 provided consent to release their data publicly.\" 초록: 337 complete responses to a 40-question survey. 공개 표본(337)은 전체 참여(530)와 다른 분모",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "이 설문의 모집 기간은 2022-04-05~2022-07-04 이며, 데이터셋 논문 발행(2025-06)과 3년 가까이 떨어져 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1497"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.5 Recruitment: \"Participants in this study were recruited between April 5, 2022 and July 4, 2022.\" 발행: Data in Brief 61, 111750(온라인 2025-06-03). 발행일과 조사일을 구분해 적을 것",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f3",
+      "claim": "이 표본은 4개 선진국(미국·캐나다·영국·호주)의 6개 업종(제조·소매·운송·배송·우편, 창고, 건설, 계약직) 회사 연락처로 이메일 모집한 군집 표본(무작위 아님)이고, 영어로만 설문했으며, 남성 응답이 여성의 약 2배, 18~40세가 약 3분의 2, 창고 종사자는 123명(36.5%)이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1497"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.5: \"Our study uses a cluster sampling strategy\" / 회사 연락처에 이메일 모집. \"The survey was administered in English\", \"nearly twice as many responses from male workers\". Table: Warehousing 123 (36.50 %). 아시아·아프리카·남미 응답자 없음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f4",
+      "claim": "Liu 외 데이터는 4개 영어권 선진국의 회사 연락망 표본이고 한국어 문항 타당화나 한국 작업자 응답이 없으므로, 한국 산업 현장 작업자 수용성의 대리값으로 일반화할 근거가 없다. 40문항도 안전·동료·로봇 협업·데이터 프라이버시를 나눠 묻는 문항 묶음이지 단일 수용성 점수로 타당화된 척도가 아니다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1497"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1~f3 의 표본 조건(4개국·영어·군집 모집·남성 편중)에서 도출. 초록 문항 구성: demographics 7, physical safety 8, human coworkers 6, working with robots 16, data privacy 3",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "Malik 외(2026) 창고 작업자 연구에서 이번에 확인된 것은 초록의 'N = 12 semi-structured interviews' 뿐이다. 외부 메모가 적은 참여자 국가(영국 창고 근무 경험)·역할 구성(비관리 5명/관리·리더 7명)·로봇 사용 경험(7명)은 원문(Springer·KCL 저장소)이 접속 차단돼 확인하지 못했으므로, 5절 74행 문장은 그대로 두고 참여자 구성을 덧붙이지 않는다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1226"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "독립 검증: 초록 \"N = 12 semi-structured interviews\" 만 확인. Springer 본문·KCL accepted manuscript 모두 Cloudflare 차단(원문 미열람). 메모 F04 의 '영국', F05, F06 은 확인 불가라 사실로 쓰지 않음. 12명이 모두 비관리 현장 작업자인지도 미확인",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f6",
+      "claim": "포르투갈어판 산업 맥락 수용성 척도(FSQ-IC) 검증 연구(Pinto 외 6인, Human Behavior and Emerging Technologies 2025)는 연구진 네트워크 연락처로 배포한 온라인(LimeSurvey) 횡단 조사이며, 비확률 편의·눈덩이 표본 346명을 썼다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1498"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§3.1 Study Design and Sample: \"This study followed a cross-sectional design, involving a sample of 346 participants. The questionnaire was distributed through our network contacts … online LimeSurvey platform.\" §6 한계: convenience sampling. Article ID 8816379, 2025-01-17",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "같은 논문의 표 1·2 는 탐색적 요인분석(EFA) 표본을 140명, 확인적 요인분석(CFA) 표본을 210명으로 적고, 이 가운데 로봇을 다뤄 본 적 없는 응답자가 각각 102명, 147명이다. 원문은 40%/60% 분할이라고 적지만 140+210=350 으로 §3.1 의 346명과 맞지 않아 원문 자체가 불일치한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1498"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Table 1 Total 140 / 102, Table 2 Total 210 / 147. 본문 '40%/60%' 분할. 346 vs 350 차이는 원문 내 불일치이며 어느 쪽이 맞는지 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "FSQ-IC 검증 표본은 포르투갈어를 읽는 일반 성인 중심이고 로봇 무경험자가 다수(분석 표본의 약 70~73%)라서, 제목의 '산업 맥락'만으로 산업 현장 작업자에게서 검증된 척도로 볼 수 없고 한국 현장 작업자에게 그대로 옮길 근거도 없다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1498"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f6·f7 에서 도출(102/140, 147/210). 저자 §6 도 척도가 개발 중이며 안전 우려를 충분히 포괄하지 못할 수 있다고 적음. 한국어 인지면담·직군별 타당화 연구는 확인하지 못함",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "Amazon 은 2026-03-12 자사 발표(2026-03-27 수정)에서 전 세계 운영의 기록대상 사고율(Global RIR)이 지난 6년간(2019 대비) 43%, 휴업 사고율(Global LTIR)이 70% 개선됐다고 밝혔다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1499"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: \"Global Recordable Incident Rate (RIR) has improved 43% and Global Lost Time Incident Rate (LTIR) has improved 70% over the past six years.\" 전년 대비 각 14%. 회사 자체 발표이며 로봇 도입 효과를 분리한 수치가 아님. datePublished 2026-03-12, dateModified 2026-03-27",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "vendor_claim": true
+    },
+    {
+      "id": "f10",
+      "claim": "Strategic Organizing Center(SOC)의 2025-05 보고서는 Amazon 과 다른 사업주가 2020~2024년 매년 OSHA 에 제출한 부상·질병 자료를 분석했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Overview(인쇄 p.2): \"SOC's analysis is based on data that Amazon and other employers provided to OSHA annually from 2020 to 2024.\" 2024년 Amazon 1,172개 창고·물류·배송 시설 보고",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f11",
+      "claim": "SOC 보고서는 '중대 부상'을 경작업 전환(light duty) 또는 휴업(lost time)을 초래한 부상으로 분류한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Overview(인쇄 p.2): \"… categorized as either light duty or lost time injuries—that is, injuries where workers were hurt so badly that they were either unable to perform …\". GMU 발표(ref-1213)의 중대/비중대 구분과 같은 정의인지는 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f12",
+      "claim": "SOC 의 창고 비교는 Amazon 이 2024년 OSHA 보고에서 일반 창고·보관업(NAICS 493110)으로 분류한 Amazon 자체 시설 456곳의 부상률을 비(非)Amazon 창고 전체와 비교한 것이며, 2024년 중대 부상률은 100명당 5.9 대 3.0 이었다. 외부 메모의 '비교 창고 456시설'은 틀린 표현이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"SOC also analyzed injury rates at the subset of 456 facilities categorized by Amazon under the General Warehouse and Storage industry (NAICS 493110) … compared … with all non-Amazon warehouse facilities\"; \"5.9 per 100 workers compared to 3.0 per 100 workers\"",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f13",
+      "claim": "SOC 는 보고서에서 스스로 SEIU(서비스노조)·CWA(미국통신노조)·UFW(농장노동자연합)와 협력하는 노동 조직이라고 밝히므로, 이 보고서는 노동조합 쪽 이해당사자 자료다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "About: \"We partner with workers and our affiliates—the Service Employees International Union (SEIU), Communication Workers of America (CWA), and the United Farmworkers of America (UFW)\"",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f14",
+      "claim": "Amazon 발표(전 세계·2025 기준·2019 대비 개선율)와 SOC 보고서(미국·2024·비Amazon 창고 대비 수준)는 범위·기간·지표·분모가 다르고 같은 OSHA 신고 자료에 일부 기초하며 양쪽 모두 이해당사자 자료이므로, 서로 독립된 교차 확인이나 단순 모순으로 셀 수 없다. 로봇 센터만의 부상 효과도 어느 쪽에서도 분리되지 않는다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1499",
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f9~f13 에서 도출. 위키의 Burtch 외 40%/77%(ref-1213)는 이번에도 원논문 방법을 열지 못해 재검증하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f15",
+      "claim": "2026-10-12 국가법령정보센터에서 연 근로자참여 및 협력증진에 관한 법률 제20조 [시행 2022. 12. 11.] [법률 제18927호, 2022. 6. 10., 일부개정]의 제1항 제7호는 '작업과 휴게 시간의 운용'을 노사협의회가 협의하여야 할 사항으로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1501"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제20조(협의 사항) ① \"협의회가 협의하여야 할 사항은 다음 각 호와 같다. <개정 2019. 4. 16.>\" … \"7. 작업과 휴게 시간의 운용\". 협의 사항이며 의결·동의 사항이 아님",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f16",
+      "claim": "같은 판 제20조 제1항 제6호는 '경영상 또는 기술상의 사정으로 인한 인력의 배치전환ㆍ재훈련ㆍ해고 등 고용조정의 일반원칙'을 협의 사항으로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1501"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제20조① \"6. 경영상 또는 기술상의 사정으로 인한 인력의 배치전환ㆍ재훈련ㆍ해고 등 고용조정의 일반원칙\"",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f17",
+      "claim": "2022년판(법률 제18927호) 제20조 제1항에도 위키가 인용한 제2호(근로자의 채용ㆍ배치 및 교육훈련), 제9호(신기계ㆍ기술의 도입 또는 작업 공정의 개선), 제14호(사업장 내 근로자 감시 설비의 설치)가 같은 문구로 있으며, 제1항의 마지막 개정 표시는 '<개정 2019. 4. 16.>'이다. 따라서 4·7절의 '법률 제16320호 기준, 현행 여부 미확인'은 2022-12-11 시행판 기준으로 갱신할 수 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1501"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "ref-1501 원문: 2. 근로자의 채용ㆍ배치 및 교육훈련 / 9. 신기계ㆍ기술의 도입 또는 작업 공정의 개선 / 14. 사업장 내 근로자 감시 설비의 설치. 위키의 기존 근거 ref-1220(케이스노트 2019판)과 문구 비교만 했고 재열람하지 않음. 열람일 이후 개정 여부는 확인하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f18",
+      "claim": "근로자참여법 제20조는 협의 사항을 열거할 뿐이므로, ROP 의 작업 배정·휴게 반영 정책이나 개별 작업자 처리량·위치 로그가 제6·7·14호 협의 대상에 해당하는지는 조문만으로 정해지지 않으며 판례·행정해석은 이번에도 찾지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1501"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "조문이 말하는 범위(협의 사항 열거)만 사실. 적용·해석(감시 설비 해당성, 도입 전 협의 시점)은 확인 못 함(oq-285 부분 답)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f19",
+      "claim": "ILO Working Paper 144(2025-07, Cornell University ILR School 소속 저자 5인)는 IBM 독일의 AI 기본협약이 AI 전문가와 사용자·근로자 대표로 구성된 AI 윤리위원회를 두고, 이 위원회가 AI 적용을 평가하고 협약 이행을 감독하며 AI 도구에 대한 직원 이의·불만을 논의하고 AI 권고를 검토·수정한다고 보고한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1502"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "IBM Germany 사례(인쇄 p.48): \"The agreement also establishes an AI Ethics Council made up of AI experts and employer and employee representatives, which evaluates AI applications and oversees implementation …\" 저자: Doellgast, Appalla, Ginzburg, Kim, Thian(모두 Cornell ILR)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f20",
+      "claim": "ILO Working Paper 144 는 ILO 공식 입장이 아니라 저자 견해를 담은 작업논문이며(면책 문구), 면담과 문헌에 기초한 질적 사례 연구다. 협약 원문을 싣지 않았고 IBM 면담 날짜가 각주 206(2021-11-08)과 부록 1(2024-07-26)에서 다르다. 사업장협의회 위원들이 협약이 안전보건과 AI 수용을 개선했다고 '느꼈다'는 서술도 측정된 효과가 아니다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1502"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "p.ii \"The opinions and views expressed in this publication are those of the author(s) and do not necessarily …\". p.48 \"Works councilors … felt that these agreements had improved workplace health and safety\". 2025-07-10 발행일은 확인 불가(PDF 표지 July/2025)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f21",
+      "claim": "WCAG 2.2(W3C 권고, 2024-12-12판) AA 성공기준 2.5.7(Dragging Movements)은 드래그가 필수이거나 기능이 사용자 에이전트가 정하고 저자가 수정하지 않은 경우가 아니면, 드래그로 하는 모든 기능을 드래그 없이 단일 포인터로 수행할 수 있어야 한다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1503"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "SC 2.5.7 Dragging Movements (Level AA): \"single pointer without dragging\" 예외 2개(Essential, 사용자 에이전트 결정). 웹 콘텐츠 적합성 기준이며 개별 ROP 의 법적 의무를 정하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f22",
+      "claim": "WCAG 2.2 AA 성공기준 2.5.8(Target Size (Minimum))은 간격(Spacing)·동등한 대체(Equivalent)·인라인(Inline)·사용자 에이전트(User Agent Control)·필수(Essential) 다섯 예외를 빼면 포인터 입력 대상의 크기를 최소 24×24 CSS 픽셀로 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1503"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "SC 2.5.8: \"The size of the target for pointer inputs is at least 24 by 24 CSS pixels, except when:\" Spacing / Equivalent / Inline / User Agent Control / Essential. CSS 픽셀은 로봇 본체 물리 버튼 치수가 아님",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f23",
+      "claim": "WCAG2ICT(W3C Group Note, 2025-12-11)는 WCAG 2 를 비웹 문서·소프트웨어에 적용하는 방법에 대한 정보성 안내이며, 규범이 아니고 요구사항을 정하지 않는다고 스스로 밝힌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1506"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Abstract/Introduction: \"It provides informative guidance (guidance that is not normative and does not set requirements).\" 표지 'W3C Group Note'. 어떤 성공기준을 법적으로 적용할지 정하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f24",
+      "claim": "WCAG2ICT 는 제품의 하드웨어 측면은 다루지 않는다고 적용 범위에서 제외한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1506"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Excluded from Scope: \"This document does not comment on hardware aspects of products, because the basic constructs on which WCAG 2 is built do not apply to these.\" 로봇 본체·물리 접근은 이 문서 범위 밖",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f25",
+      "claim": "EN 301 549 의 최종판은 V4.1.1(2026-09, ETSI 배포본 04.01.01_60)이며, 2025-11 의 V4.1.0(04.01.00_20·_30)은 초안 단계 문서다. V4.1.1 머리말은 이 문서가 지침 (EU) 2019/882 를 위한 표준화 요청 C(2022) 6456 에 따라 준비됐고, EU 관보에 인용되면 적합성 추정을 준다고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1505"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "표지 \"EN 301 549 V4.1.1 (2026-09)\". Foreword: \"Once the present document is cited in the Official Journal of the European Union under that Directive, compliance … confers … a presumption of conformity\". V4.1.1 의 관보 인용 여부는 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f26",
+      "claim": "EN 301 549 V4.1.1 제5.1.5절은 닫힌 기능(closed functionality)을 쓰는 데 청각 출력이 필요하면 그 청각 정보와 동등한 시각 정보를 제공하도록 요구한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1505"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "5.1.5 Visual output for auditory information(p.34): \"Where ICT includes closed functionality, and auditory output is needed … the ICT shall provide visual information that is equivalent to the auditory information.\"",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f27",
+      "claim": "EN 301 549 V4.1.1 제5.1.7절은 닫힌 기능을 조작하는 데 음성이 필요하면 음성을 요구하지 않는 대체 입력 방식의 조작 모드를 적어도 하나 제공하도록 요구한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1505"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "5.1.7 Access without speech(p.35): \"… the ICT shall provide at least one mode of operation using an alternative input mechanism that does not require speech.\" 닫힌 기능 조건이 없는 로봇에 일률 적용하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f28",
+      "claim": "유럽 접근성법(지침 (EU) 2019/882) 제2조 제1항 (b)는 2025-06-28 이후 출시되는 무인 단말기 가운데 (i) 결제 단말기는 한정 없이 열거하고, (ii) 현금자동인출기·발권기·체크인기·정보 제공 대화형 무인 단말기는 '이 지침이 다루는 서비스 제공 전용'인 것으로 한정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1504"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Art. 2(1): \"This Directive applies to the following products placed on the market after 28 June 2025\" (b)(i) \"payment terminals\"; (ii) \"the following self-service terminals dedicated to the provision of services covered by this Directive\"(차량·항공기 등 일체형 단말 제외)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f29",
+      "claim": "같은 지침 제15조 제1항은 EU 관보에 참조가 게재된 조화 표준(또는 그 일부)에 부합하는 제품·서비스가 그 표준이 다루는 범위에서 이 지침의 접근성 요구에 부합하는 것으로 추정된다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1504"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Art. 15(1): \"… harmonised standards … the references of which have been published in the Official Journal of the European Union, shall be presumed to be in conformity … in so far as those standards or parts thereof cover those requirements.\"",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f30",
+      "claim": "로봇 본체 터치스크린, 기업용(B2B) 관제 화면, 작업자 HMI 가 지침 2019/882 제2조의 열거 제품·서비스에 드는지는 조문만으로 정해지지 않는다. 결제 기능이 있는 로봇 단말은 (i) 결제 단말기 해당 여부를, 정보 안내 화면은 (ii) 의 '서비스 제공 전용' 요건을 따로 검토해야 하는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1504"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f28 에서 도출. 해당성 판단 사례·가이드는 확인 못 함. 국내 무인정보단말기 해당성(oq-284)과는 별개 법역",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f31",
+      "claim": "axe-core v4.14.0 태그(CHANGELOG 2026-10-05)의 target-size 규칙 정의에는 'wcag22aa'·'wcag258'·'EN-301-549v4'·'EN-9.2.5.8' 태그가 붙어 있고 \"enabled\": false 로 설정돼 있다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1507"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Deque 저장소 lib/rules/target-size.json(v4.14.0): \"enabled\": false, tags [\"cat.sensory-and-visual-cues\",\"wcag22aa\",\"wcag258\",\"EN-301-549v4\",\"EN-9.2.5.8\"]. Deque 저장소 단독 근거라 [추정]",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f32",
+      "claim": "enabled:false 이므로 target-size 규칙은 axe-core 기본 실행에서 빠지는 것으로 보이며, EN 301 549 태그를 지정해 실행할 때 이 규칙이 켜지는지는 설정에 달려 있어 실행 시험으로 확인하지 않았다. README 는 자동 판단이 불확실한 항목을 incomplete 로 돌려 수동 검토가 필요하다고 안내한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1507"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: README \"incomplete\" … \"manual review is needed\". 규칙의 존재와 기본 실행은 다름. 실제 프로젝트에서 runOnly/rules 설정으로 실행해 보지 않음. README 의 57% 자동 검출 주장은 독립 재현이 없어 쓰지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f33",
+      "claim": "Choo·Lee 의 Delphi 연구(Healthcare Informatics Research 32(1), 2026-01)는 서울의 한 상급종합병원 신경과 병동 6명과 뇌졸중 집중치료실 8명, 경력 7년 초과 간호사 14명을 전문가 패널로 3라운드 합의를 구했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1508"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: \"this study surveyed 14 nurses working in the neurology ward and stroke intensive care unit of a tertiary …\"; II.2 Delphi Panel(p.61): \"14 nurses with more than seven years of ex[perience]\"; 3 rounds. 단일 기관·편의 모집 한계(IV)",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f34",
+      "claim": "이 Delphi 설문은 2022-11-07 부터 2023-04-12 까지 실시됐다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1508"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "II.4 Data Collection(p.61): \"The Delphi survey was conducted from November 7, 2022, to April 12, 2023.\" 발행(2026-01)과 조사 시점 구분",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f35",
+      "claim": "Choo·Lee 연구는 급성 뇌졸중 환자 돌봄에 동반 로봇을 쓰는 미래 시나리오에 대한 단일 기관 간호사 14명의 전문가 합의이며, 로봇 도입 뒤 수용률이나 간호 업무 변화를 측정한 연구가 아니다. 따라서 한국 병원 간호사 일반이나 한림대성심병원 자체 설문(ref-1222)의 독립 재현으로 볼 수 없다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1508"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f33·f34 에서 도출. 저자 한계: convenience sampling, 단일 기관. 국내 병원·물류창고 종사자의 도입 후 독립 측정 연구(oq-287)는 여전히 찾지 못함",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f36",
+      "claim": "Han 외(CHI 2024)의 이동장애인 15명·로봇 실무자 8명 면담과 짝 공동설계 워크숍은 모두 화상회의로 진행됐다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§3 Methods: \"All the activities were held over video conference. Interviews lasted 60–80 minutes and co-design workshops lasted 90 minutes.\" 15/8/4 숫자는 위키 기존 내용(5절 실외)",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f37",
+      "claim": "Han 외 저자들은 자신들의 질적 결과와 제안한 상호작용을 실제 환경에서 평가할 필요가 남아 있다고 명시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§7.1: \"Nonetheless, there remains a pressing need to test these interactions and qualitative findings in real-world evaluations.\"",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f38",
+      "claim": "Boadi-Agyemang 의 CMU 박사논문(CMU-RI-TR-26-106, 2026-06) 4장의 배송 로봇 공동설계는 2025년 미국 Pittsburgh 에서 2개월간 지역 모집한 장애 성인 14명(여성 9·남성 5, 31~75세, 시각·청각·이동 장애 중심)과 진행했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1509"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.3.1: \"We recruited 14 local participants (9 women, 5 men) who were between 31 and 75 years old\" 커뮤니티 센터·지역 장애 단체 등으로 모집. \"This work was conducted in Pittsburgh, a medium-sized U.S. city, over a two-month period in 2025.\"",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f39",
+      "claim": "Boadi-Agyemang 연구 참여자들은 보행 중 로봇과의 통행 우선권과 별개로, 손을 뻗기 어려운 이동장애인이 물품을 인수할 때는 로봇과 가까이 상호작용하는 것이 중요하다고 보았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1509"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.4.3(인쇄 p.70): \"Close interactions were seen as critical for facilitating handovers with PwMDs for whom reaching can be difficult.\" 참여자 인용: 휠체어 이용자는 휴대폰 스캔·물건 꺼내기를 위해 로봇에 더 가까이 가야 함",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f40",
+      "claim": "통행 중 충분한 간격(연석 경사로 비우기)과 물품 인수 때의 근접은 같은 이용자 집단 안에서도 상황별로 다른 요구다. 두 연구 모두 미국 소수 참여자의 요구·설계 연구이고 실제 배송의 접근 성공률을 측정하지 않았으며, 같은 CMU 계열이라 독립 교차 확인으로 세지 않는다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1214",
+        "ref-1509"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f36~f39 에서 도출. 국내 점자블록·연석 대기 위치 인증 항목(oq-188)은 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f41",
+      "claim": "위키 8절의 Acemoglu·Restrepo 범위값(노동자 1천 명당 로봇 1대 증가 시 고용인구비율 약 0.18~0.34%p, 임금 0.25~0.5% 감소)은 NBER 작업논문 w23285(2017-03) 초록과 일치하므로 틀린 값이 아니며 유지한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1223"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "NBER 초록: \"one more robot per thousand workers reduces the employment to population ratio by about 0.18-0.34 percentage points and wages by 0.25-0.5 percent.\" Issue Date March 2017. 수정이 아니라 JPE 게재판 수치 추가 대상",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f42",
+      "claim": "Journal of Political Economy 128(6):2188–2244(2020-06) 게재판은 공간 파급을 반영한 미국 총량 효과로, 노동자 1천 명당 로봇 1대 증가가 고용인구비율을 약 0.2%p, 임금을 약 0.42% 낮춘다고 추정했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1510"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Introduction: \"… reduces the aggregate employment-to-population ratio by about 0.2 percentage points and wages by about 0.42%\". MIT 저자 보관 게재본으로 열람. 온라인 게재일(2020-04-22)은 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f43",
+      "claim": "같은 JPE 게재판은 1990~2007년 미국 722개 통근권역 자료에서, 로봇 스톡 증가(1993~2007년 노동자 1천 명당 약 1대)가 로봇 노출이 없는 통근권역 대비 평균 고용인구비율을 0.39%p, 평균 임금을 0.77% 낮췄다고 추정했다(지역 효과).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1510"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Introduction: \"reduced the average employment-to-population ratio in a commuting zone by 0.39 percentage points and average wages by 0.77% (relative to a commuting zone with no exposure to robots)\"; §III \"the 722 commuting zones\". 지역 효과와 총량 효과(f42)를 구분",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f44",
+      "claim": "Dauth 외(Journal of the European Economic Association 19(6), 2021)는 1994~2014년 독일 행정자료로 같은 추정 전략을 재현했을 때 로봇 노출이 총고용을 줄이는 음(-)의 효과를 찾지 못했고, 제조업 일자리 감소를 서비스업(특히 기업 대상 지역 서비스)의 새 노동 수요가 상쇄했다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1511"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§1(저자 2021-01-21판): \"We find no such negative effects of predicted robot exposure on total employment in Germany … new labor demand in the service sector … leads to an offsetting force.\" 출판 최종판과의 완전 동일성은 확인 못 함",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f45",
+      "claim": "미국(1990~2007, 통근권역)과 독일(1994~2014, 402개 지역·행정자료) 결과는 국가·시기·자료·노동 이동 조건이 달라 같은 주장의 재현이나 반박으로 볼 수 없고, 어느 쪽도 한국이나 개별 로봇 플릿 현장의 고용 효과를 측정한 것이 아니다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1510",
+        "ref-1511"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f42~f44 에서 도출. 두 연구는 IFR 기초자료와 shift-share 계열 추정 전략을 일부 공유해 독립 교차 확인으로 세지 않음. 한국노동연구원 수치(ref-1215 보도)는 원표 미열람으로 [추정] 유지",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f46",
+      "claim": "ROP 도입 전후 작업자 조사는 수용 의향, 실제 사용, 거부·우회, 도움 요청, 감시 우려를 별도 지표로 나누고, 응답 집단(관리자/비관리 작업자, 로봇 경험 유무)과 표본 조건(국가·언어·모집 방법·조사 시점·공개 동의 분모)을 결과와 함께 기록해야 한다. 해외 척도는 한국어 인지면담과 직군별 타당화를 거친 뒤 문항원으로만 쓴다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1497",
+        "ref-1498",
+        "ref-1508"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1~f8·f33~f35 에서 도출. 이 위키 구축자의 의견",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f47",
+      "claim": "플릿 도입 효과를 평가할 때는 사고 분류 정의(경작업 전환·휴업 포함 여부), 노출 시간 분모, 직군, 로봇 공정 여부, 전환 작업을 함께 기록하고, 회사 발표와 노조 보고서 같은 이해당사자 자료의 출처를 표시해야 한다. 처리량 증가나 안전감 설문을 실제 부상 감소의 대리값으로 쓰지 않는다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1499",
+        "ref-1500"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f9~f14 에서 도출",
+      "as_of": "2026-10-12",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f48",
+      "claim": "ROP 스케줄러의 휴게 반영·작업 순환·직무 전환 정책 변경은 노사협의 기록(근로자참여법 제20조 제6·7호 협의 여부)과 연결해 이력으로 남기고, 작업자 데이터·자동 배정에 대한 이의 제기와 처리 결과를 변경 관리에 묶어야 한다. 법적 해당성 판단은 ROP 가 하지 않고 외부 결정을 제약으로 받는다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1501",
+        "ref-1502"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f15~f20 에서 도출",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f49",
+      "claim": "접근성 시험은 브라우저 관제 화면(WCAG 2.2: 드래그 대체 조작, 24×24 CSS px 대상), 비웹 작업자 프로그램(WCAG2ICT 는 안내일 뿐), 로봇 단말의 닫힌 기능(EN 301 549 5.1.5·5.1.7: 시각 경보 동등성, 음성 외 입력), 로봇 본체 물리 접근으로 범위를 나누고, 자동 검사 보고서에는 도구 버전·규칙 ID·활성화 설정을 남긴 뒤 키보드·스크린리더·실사용자 수동 검사를 더한다. 기술 시험 통과와 법적 적용 판단은 별도 기록으로 둔다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1503",
+        "ref-1506",
+        "ref-1505",
+        "ref-1504",
+        "ref-1507"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f21~f32 에서 도출. 다중 로봇 지도에서 드래그로 작업을 배정하는 기능에는 버튼·목록형 대체 조작이 필요",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f50",
+      "claim": "플릿 경로·작업 모델은 보도 통행, 대기, 물품 인수 모드를 나누어, 통행·대기 중에는 연석 경사로를 비우고 간격을 두되 인수 때는 접근 가능한 위치·높이·입력 수단과 근접 허용을 작업 배정 조건으로 다뤄야 한다. 근접 허용은 이용자 요청과 현장 안전 평가를 전제로 시험한다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1214",
+        "ref-1509"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f36~f40 에서 도출",
+      "as_of": "2026-10-12",
+      "site_type": "실외",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f51",
+      "claim": "국가 단위 로봇 노출 계수로 개별 플릿의 감원 인원을 계산하지 말고, 현장 도입 평가에서는 기존 작업자의 직무 전환, 신규 채용, 외주 전환을 구분해 수용성 조사와 함께 기록하는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1510",
+        "ref-1511"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f41~f45 에서 도출",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-1497",
+      "org": "Liu, Y. (A.), Kaur, G., Banerjee, N. K., Banerjee, S. (Clarkson University·Wright State University) — Data in Brief 61",
+      "title": "Dataset of worker perceptions of workforce robotics regarding safety, independence, job security, and privacy",
+      "published": "2025-06-03",
+      "url": "https://doi.org/10.1016/j.dib.2025.111750",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "미국·캐나다·영국·호주 6개 업종 블루칼라 노동자 대상 영어 온라인 설문(2022-04-05~07-04, 군집 모집) 530명 중 공개 동의 337명의 40문항 응답 데이터셋. PMC 전문으로 열람.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12210288/",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1498",
+      "org": "Pinto, A., Lemos, L., Carvalho, C., Santos, J., Menezes, P., Nomura, T. — Human Behavior and Emerging Technologies",
+      "title": "Translation, Adaptation, and Validation in Portuguese of an Acceptance Scale for Human–Robot Interaction in an Industrial Context",
+      "published": "2025-01-17",
+      "url": "https://doi.org/10.1155/hbe2/8816379",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "FSQ-IC 포르투갈어판 검증 연구(Article ID 8816379). 네트워크 연락처 편의·눈덩이 온라인 표본 346명(EFA 140/CFA 210, 로봇 무경험 다수)이며 표본 수가 원문 안에서 불일치한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1499",
+      "org": "Amazon (Sarah Rhoads, VP Global Workplace Health & Safety)",
+      "title": "Amazon delivers another strong year of safety progress, making our workplaces even safer for our employees",
+      "published": "2026-03-12",
+      "url": "https://www.aboutamazon.com/news/workplace/amazon-workplace-safety-2025-injury-reduction",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "Amazon 자사 발표(2026-03-27 수정). 전 세계 운영의 기록대상 사고율 43%, 휴업 사고율 70% 개선(6년, 2019 대비)을 주장한다. 로봇 효과를 분리한 수치가 아니다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1500",
+      "org": "Strategic Organizing Center (SOC; SEIU·CWA·UFW 연계 노동 조직)",
+      "title": "Failure to Deliver: Amazon Falls Short on Safety",
+      "published": "2025-05",
+      "url": "https://thesoc.org/wp-content/uploads/2025/05/May-2025_Strategic-Organizing-Center_Report-x-Failure-To-Deliver.pdf",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "2020~2024년 OSHA 제출 자료로 Amazon 창고 부상률을 분석한 노동조합 측 이해당사자 보고서. 중대 부상=경작업 전환·휴업, Amazon NAICS 493110 시설 456곳과 비Amazon 창고 전체를 비교한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1501",
+      "org": "법제처 국가법령정보센터 (대한민국, 법률 제18927호)",
+      "title": "근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) [시행 2022. 12. 11.] [법률 제18927호, 2022. 6. 10., 일부개정]",
+      "published": "2022-06-10",
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017145541",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "노사협의회 협의 사항 17개 호를 정한 조문. 2026-10-12 열람판은 2022-12-11 시행 법률 제18927호이며 제1항은 2019-04-16 개정 표시. 기존 ref-1220(케이스노트 2019판)의 후속 판.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1502",
+      "org": "Doellgast, V., Appalla, S., Ginzburg, D., Kim, J., Thian, W. L. (Cornell University ILR School) — ILO Working Paper 144",
+      "title": "Global case studies of social dialogue on AI and algorithmic management",
+      "published": "2025-07",
+      "url": "https://doi.org/10.54394/VOQE4924",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "ILO 작업논문 형식으로 낸 저자 견해(ILO 공식 입장 아님)의 질적 사례 연구. IBM 독일 AI 기본협약의 노사 AI 윤리위원회 사례를 포함한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.ilo.org/sites/default/files/2025-07/wp144_web.pdf",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1503",
+      "org": "W3C Accessibility Guidelines Working Group",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2 (W3C Recommendation 12 December 2024)",
+      "published": "2024-12-12",
+      "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "웹 콘텐츠 접근성 W3C 권고. 이번에는 AA 성공기준 2.5.7(드래그 대체)과 2.5.8(최소 24×24 CSS px 대상과 예외 5개)만 사용.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1504",
+      "org": "European Parliament and Council of the European Union (Official Journal L 151)",
+      "title": "Directive (EU) 2019/882 of 17 April 2019 on the accessibility requirements for products and services",
+      "published": "2019-06-07",
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "유럽 접근성법. 제2조(2025-06-28 이후 출시 제품의 적용 목록, 결제 단말기와 '서비스 제공 전용' 무인 단말기 구분)와 제15조(관보 게재 조화 표준의 적합성 추정)를 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng/pdf",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1505",
+      "org": "ETSI / CEN / CENELEC",
+      "title": "EN 301 549 V4.1.1 (2026-09) Accessibility requirements for ICT products and services",
+      "published": "2026-09",
+      "url": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "ICT 제품·서비스 접근성 유럽 표준 최종판(04.01.01_60). 5.1.5(청각 정보의 동등한 시각 정보)·5.1.7(음성 없는 조작 모드) 닫힌 기능 요구와 관보 인용 시 적합성 추정 머리말을 확인. 관보 인용 여부는 미확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1506",
+      "org": "W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force)",
+      "title": "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), W3C Group Note 11 December 2025",
+      "published": "2025-12-11",
+      "url": "https://www.w3.org/TR/2025/NOTE-wcag2ict-22-20251211/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "WCAG 2 를 비웹 문서·소프트웨어에 적용하는 정보성 안내(규범 아님). 제품 하드웨어 측면은 범위에서 제외한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1507",
+      "org": "Deque Systems / axe-core contributors",
+      "title": "axe-core v4.14.0 (lib/rules/target-size.json, README, CHANGELOG)",
+      "published": "2026-10-05",
+      "url": "https://github.com/dequelabs/axe-core/tree/v4.14.0",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "웹 접근성 자동 검사 엔진의 v4.14.0 태그 고정 원문. target-size 규칙의 태그(EN-301-549v4 등)와 enabled:false, README 의 incomplete 수동 검토 안내를 확인. 벤더(Deque) 저장소 단독.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/dequelabs/axe-core/v4.14.0/lib/rules/target-size.json",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1508",
+      "org": "Choo, H.-J., Lee, S.-M. (Healthcare Informatics Research 32(1):59–68)",
+      "title": "Nurses' Perceptions and Utilization Plans for Applying Companion Robots to Acute Stroke Patient Care: A Delphi Study",
+      "published": "2026-01",
+      "url": "https://doi.org/10.4258/hir.2026.32.1.59",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "서울 단일 상급종합병원 신경과·뇌졸중 집중치료실 간호사 14명의 3라운드 Delphi(2022-11-07~2023-04-12). 도입 후 효과 측정이 아니라 미래 시나리오 합의.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://synapse.koreamed.org/upload/synapsexml/1088hir/pdf/hir-2026-32-1-59.pdf",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1509",
+      "org": "Boadi-Agyemang, A. (Carnegie Mellon University Robotics Institute, CMU-RI-TR-26-106)",
+      "title": "From Margin to Center: Designing Inclusive and Equitable Service Robots with Disabled Adults (PhD thesis)",
+      "published": "2026-06",
+      "url": "https://publications.ri.cmu.edu/storage/publications/2026/09/aboadiag-dissertation2026-manual-tagged-v2_20260902085808.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "CMU 박사논문. 4장은 2025년 Pittsburgh 장애 성인 14명과 한 배송 로봇 공동설계로, 물품 인수 시 근접 상호작용 요구를 보고한다. 저장소 게시 2026-09.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1510",
+      "org": "Acemoglu, D., Restrepo, P. (Journal of Political Economy 128(6):2188–2244)",
+      "title": "Robots and Jobs: Evidence from US Labor Markets (JPE 게재판)",
+      "published": "2020-06",
+      "url": "https://doi.org/10.1086/705716",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "NBER 작업논문(ref-1223)의 학술지 게재판. 1990~2007년 미국 722개 통근권역 지역 효과(-0.39%p, -0.77%)와 공간 파급을 반영한 총량 효과(-0.2%p, -0.42%)를 구분해 제시. MIT 저자 보관본으로 열람.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://economics.mit.edu/sites/default/files/publications/Robots%20and%20Jobs%20-%20Evidence%20from%20US%20Labor%20Markets.p.pdf",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1511",
+      "org": "Dauth, W., Findeisen, S., Suedekum, J., Woessner, N. (Journal of the European Economic Association 19(6):3104–3153)",
+      "title": "The Adjustment of Labor Markets to Robots",
+      "published": "2021-12",
+      "url": "https://doi.org/10.1093/jeea/jvab012",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "1994~2014년 독일 행정자료 연구. 총고용 감소 효과는 없고 제조업 감소를 서비스업 노동 수요가 상쇄했다고 보고. 저자 2021-01-21판 PDF 로 열람(온라인 2021-05-12, 권호 2021-12).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://sebastian-findeisen.com/downloads/labor_robots/AdjustmentLaborRobots_Final.pdf",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1226",
+      "org": "Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics)",
+      "title": "Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety",
+      "published": "2026-02-13",
+      "url": "https://doi.org/10.1007/s12369-026-01359-1",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "창고 관련 참여자 12명 반구조화 면담 연구(IJSR 18, 26). 이번에는 Springer·KCL 원문이 접속 차단돼 초록의 N=12 만 확인했고 참여자 구성은 미확인.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1214",
+      "org": "Han, H. Z. 외 (Carnegie Mellon University) — CHI '24",
+      "title": "Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations",
+      "published": "2024-04-07",
+      "url": "https://arxiv.org/abs/2404.05050",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "이동장애인 15명·로봇 실무자 8명 면담과 공동설계 4회(모두 화상회의). arXiv v1 HTML 로 재열람. CHI 판 DOI 10.1145/3613904.3642875(2024-05-11).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/html/2404.05050v1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1223",
+      "org": "Acemoglu, D., Restrepo, P. (NBER)",
+      "title": "Robots and Jobs: Evidence from US Labor Markets",
+      "published": "2017-03",
+      "url": "https://www.nber.org/papers/w23285",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "NBER 작업논문 w23285 초록. 0.18~0.34%p·0.25~0.5% 범위값을 재열람으로 확인(위키 8절 값 유지 근거).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md",
+      "sections": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11"
+      ],
+      "rationale": "갱신(차등): 섹션 4(분리 2026-09-30-area60-s4) — '노사협의회 협의 사항'(39행)을 2022-12-11 시행 법률 제18927호 판(ref-1501)으로 근거 갱신하고(f17: 제2·9·14호 문구 동일, 제1항 개정 표시 2019-04-16), 제6호 고용조정 일반원칙(f16)·제7호 작업과 휴게 시간의 운용(f15)을 추가. '공개 작업자 설문 데이터' 항목으로 Liu 외 표본 조건(f1~f3)과 일반화 한계(f4) 추가 / 섹션 5 — 물류창고: 74행 Malik 면담 문장은 유지하고 참여자 국가·역할·로봇 경험은 덧붙이지 않음(f5 [추정], 메모 F04 '영국'·F05·F06 확인 불가). 예외·성과 칸 아래 본문에 SOC 보고서의 자료 기간(f10)·중대 부상 정의(f11)·Amazon NAICS 493110 자체 시설 456곳 대 비Amazon 창고 비교(f12, 메모 '비교창고 456시설' 정정)와 SOC 의 노조 연계 이해당사자 성격(f13), Amazon 자사 발표 43%·70%(f9 벤더 주장 [추정])를 넣고 둘을 교차 확인으로 세지 않음(f14). 병원: Choo·Lee Delphi(서울 단일 상급종합병원 간호사 14명, 2022-11~2023-04, f33·f34)를 사례 보충으로 넣되 도입 후 효과가 아니며 한림대 설문의 재현이 아님(f35). 실외: Han 외 활동이 모두 화상회의(f36)·실환경 평가 필요(f37), Boadi-Agyemang Pittsburgh 14명(f38)·물품 인수 근접 요구(f39)와 통행 간격과의 상황 차이(f40) / 섹션 6(분리 2026-09-30-area60-s6) — '수용성 측정 모델'에 FSQ-IC(f6~f8: 포르투갈 일반 성인 편의·눈덩이 표본, 무경험자 다수, 원문 표본 수 불일치)를 표본 조건과 함께 추가, 한국 일반화 금지. '노동자 참여 절차'의 '법률 제16320호, 2019-07-17 시행 기준'을 제18927호 판으로 갱신(f17)하고 ILO WP144 IBM 독일 AI 윤리위원회(f19, Cornell ILR 저자 견해이며 ILO 공식 아님 f20), 조문 적용 해석 미확인(f18); 의견 f46·f48 / 섹션 7(분리 2026-09-30-area60-s7) — 근로자참여법 행(43행) '법률 제16320호, 현행 조문 여부 미확인'을 2022-12-11 시행 법률 제18927호 열람판으로 갱신하고 제6·7호 추가(f15~f17). 새 행: WCAG 2.2 SC 2.5.7·2.5.8(f21·f22), WCAG2ICT 정보성 안내·하드웨어 제외(f23·f24), EN 301 549 V4.1.1 최종판·관보 인용 시 적합성 추정·5.1.5·5.1.7(f25~f27, 관보 인용 여부 미확인), 지침 (EU) 2019/882 제2조(1)(b) — (i) 결제 단말기는 '서비스 제공 전용' 한정이 없고 (ii) 단말기만 한정(f28), 제15조(1)(f29), 해당성 판단 유보(f30), axe-core v4.14.0 target-size 태그·enabled:false(f31)와 수동 검토(f32) — 벤더(Deque) 저장소 단독이라 [추정]·벤더 주장; 의견 f49. 무인정보단말기 소규모 시설 대체 이행(메모 F38)은 기존 내용 확인(2026-09-30-area60-s7.md 표 2행, ref-1217; chat-based-configuration-and-operation/index.md 124행)이라 새로 넣지 않음 / 섹션 8(분리 2026-09-30-area60-s8) — Acemoglu·Restrepo 항목(40행)의 0.18~0.34%p·0.25~0.5% 는 NBER 초록과 일치해 유지(f41)하고, JPE 2020 게재판 총량 효과 -0.2%p·-0.42%(f42)와 722개 통근권역 지역 효과 -0.39%p·-0.77%(f43)를 새 출처 ref-1510 으로 덧붙임. Dauth 외 독일 비교(f44)와 재현 아님(f45) 추가; 의견 f51. 새 수용성 연구 항목(Liu 외, FSQ-IC, Choo·Lee, Boadi-Agyemang)은 표본 조건을 문장에 넣고 어느 것도 한국 산업 현장 측정이 아님을 명시. 3절(분리 s3) 42행 '2017-03 작업논문' 문장은 유지(후속 정리 시 JPE 총량값 병기 검토) / 섹션 9 — 상위 업무 시스템 행: 휴게·작업 순환·직무 전환 정책을 노사협의 기록과 연결(f15·f16·f48). 업종별 조건 행: 화면 접근성을 웹 관제·비웹 HMI·로봇 단말 닫힌 기능·물리 접근으로 나누고 법적 적용 판단은 외부 연계(f21~f32·f49), 통행/대기/인수 모드 구분(f39·f50) / 섹션 11(분리 2026-09-30-area60-s11) — 해결 제안 없음. 부분 근거: oq-285(f15~f20), oq-286(f10~f14), oq-287(f33~f35), oq-284(f28~f30, 국내 장애인차별금지법 해당성은 미확인), oq-188(f36~f40, 국내 기준 미확인), oq-266(f19, 운영 소유권 비교 연구 아님). 답하지 못함: oq-146(EN 301 549 5.1.7 은 음성 대체 입력 요구일 뿐 한국어 인식률 자료 아님), oq-278(NCS 미확인). 다른 영역 페이지의 같은 근거(근로자참여법 제20조 ref-1220 '법률 제16320호' 표기: field-operations-and-monitoring/index.md 210·268행, 2026-09-30-area60-s10.md)는 후속 정리 필요(이번에 고치지 않음). 감시 관련 CNIL Amazon France 과징금(ref-1267, security-and-privacy/index.md)·oq-321 과 oq-285 연결은 참고만."
+    }
+  ],
+  "glossary_candidates": [],
+  "open_questions_new": [
+    "출처 충돌: FSQ-IC 포르투갈어판 검증 연구의 총 표본 346명과 두 분석 표본(EFA 140명 + CFA 210명 = 350명)이 맞지 않는 이유는 무엇이며, 어느 수가 실제 분석에 쓰였는가? | 관련 영역: 60. 노동·수용성·접근성 | 근거: f7 | 종류: 출처 충돌",
+    "Burtch·Greenwood·Ravindran(ILR Review 2025) 원논문의 표본 시설·기간·추정식·강건성 검정은 무엇이며, 로봇 센터의 중대 부상 40% 감소·비중대 부상 77% 증가는 원논문에서 어떤 조건의 추정치인가? | 관련 영역: 60. 노동·수용성·접근성, 61. 물류창고, 49. 사람 근접 안전 | 근거: f14 | 종류: 일반",
+    "알메러 모델·FSQ-IC 같은 수용성 척도를 한국어로 옮겨 국내 산업 현장 작업자(물류창고·제조·병원 직군)에게 타당화한 연구가 있는가? | 관련 영역: 60. 노동·수용성·접근성, 56. 운영 이관·확대·교육 | 근거: f8 | 종류: 일반",
+    "EN 301 549 V4.1.1(2026-09)은 지침 (EU) 2019/882 의 조화 표준으로 EU 관보에 인용됐는가, 인용됐다면 언제부터 어떤 범위에서 적합성 추정을 주는가? | 관련 영역: 60. 노동·수용성·접근성, 59. 법·규제·보험·라이선스 | 근거: f25 | 종류: 일반",
+    "한림대성심병원 의료서비스로봇 만족도 조사의 원 분모(간호사 109명 대 99명)·문항·조사 시점을 밝힌 병원 원보고서가 공개돼 있는가? | 관련 영역: 60. 노동·수용성·접근성, 63. 병원·의료 | 근거: f35 | 종류: 출처 충돌",
+    "한국노동연구원 『기술 혁신과 노동시장 변화』(2024-12)의 로봇 노출도별 임금·고용 수치(고숙련 +2.5%·+0.55%p, 저숙련 -4.5~4.9%)의 원표와 식별 조건은 무엇인가? | 관련 영역: 60. 노동·수용성·접근성, 3. 경제성·조달·사업 모델 | 근거: f45 | 종류: 일반",
+    "Han 외(CHI 2024) 공동설계 연구 참여자의 거주 국가와 지역은 본문 어디에 명시돼 있는가? | 관련 영역: 60. 노동·수용성·접근성, 66. 실외 | 근거: f36 | 종류: 일반",
+    "접근성 요구가 서로 다른 이기종 로봇(배송·안내·병원 물류)의 작업 배정과 물품 인수 완료를 실제 이용자와 현장에서 검증하는 공개 시험 세트나 시나리오가 있는가? | 관련 영역: 60. 노동·수용성·접근성, 25. 작업 배정 — MRTA, 54. 시험·형식 검증·벤치마크 | 근거: f40 | 종류: 일반",
+    "이용자의 장애 관련 접근 요구(인수 높이·근접 허용·입력 수단)를 플릿에 전달할 때 필요한 최소 정보 항목과 동의·보존·삭제 절차를 정한 운영 규약이나 검증 사례가 있는가? | 관련 영역: 60. 노동·수용성·접근성, 53. 개인정보·영상 데이터 | 근거: f39 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 18,
+    "cross_checked_count": 0,
+    "unverified": [
+      "리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-12-03/external_research.md)를 변환했다. 2026-10-12 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.",
+      "f5: Malik 외(ref-1226) 원문은 Springer·KCL 저장소 모두 Cloudflare 차단으로 열지 못함. 초록의 N=12 반구조화 면담만 확인. 메모 F04 의 '영국 창고 경험', F05(비관리 5/관리·리더 7), F06(로봇 경험 7명)은 확인 불가라 사실로 쓰지 않음",
+      "f7: FSQ-IC 원문의 346 vs 140+210=350 불일치 원인 미확인",
+      "f15~f17: 근로자참여법 제20조는 2026-10-12 국가법령정보센터 조문 링크로 열람한 판(시행 2022-12-11, 법률 제18927호) 기준. 열람 이후 개정 여부와 ROP 로그·배정 정책의 협의 대상 해당성(판례·행정해석)은 확인 못 함",
+      "f19·f20: ILO WP144 발행일 2025-07-10 은 확인 불가(PDF 표지 July/2025). IBM 면담 날짜가 각주 206(2021-11-08)과 부록 1(2024-07-26)에서 다름. IBM 협약 원문 미확보",
+      "f25: EN 301 549 V4.1.1 의 EU 관보 인용 여부 미확인",
+      "f31·f32: axe-core target-size 규칙을 실제로 실행해 enabled:false 와 태그 지정 실행의 동작을 시험하지 않음. README 의 57% 자동 검출 주장은 독립 재현 없음이라 쓰지 않음",
+      "f42: JPE 게재판 온라인 게재일 2020-04-22 확인 불가(권호 2020-06 만 사용). f44: Dauth 외는 저자 2021-01-21판으로 읽었고 출판 최종판과의 완전 동일성 미확인",
+      "f9: Amazon 발표의 지표 정의·노출 분모·로봇 센터 분리 수치 미확인(벤더 주장). 위키 Burtch 외 40%/77%(ref-1213)는 원논문 미열람 상태 그대로",
+      "예산(신규 출처 15)에 맞추려고 메모 n4(Bartneck, Godspeed Questionnaire Series — 지각된 안전성 문항이 응답자 정서 상태를 묻고 Elena Knox 한국어 번역 제공, 메모 F10·F11)와 n14(W3C WAI, Selecting Web Accessibility Evaluation Tools — 'Human judgement is required', 메모 F28)는 검증에서 확인됐으나 출처에서 뺐다(후속 실행에서 추가 가능)",
+      "oq-146(한국어 음성 인식률), oq-278(로봇 관제 NCS)은 이번 메모가 답하지 못함. oq-188 국내 점자블록·연석 대기 위치 기준, oq-284 로봇 단말의 장애인차별금지법상 무인정보단말기 해당성은 미확인"
+    ],
+    "scope_violations": [
+      "f15~f20·f28~f30: 근로자참여법·유럽 접근성법의 법적 해당성 해석은 59. 법·규제·보험·라이선스 쪽 판단이므로 조문이 말하는 범위까지만 쓰고 개별 ROP 기능의 적용 여부는 판단하지 않음",
+      "f21~f32: 웹·비웹 화면 접근성 기준은 37. 관제 화면·실행 기록, 13. 대화형 기능의 신뢰·기반과 겹치며, 이 영역에는 이용자·작업자 접근성 관점으로만 씀",
+      "f9~f14: 창고 부상 지표는 49. 사람 근접 안전, 39. 운영 성과 측정·개선과 겹치며, 이 영역에는 노동 영향·이해당사자 자료 해석 관점으로만 씀"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 15
+    },
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 15건/15(ref-1497~ref-1511, 예약 구간 ref-1497~ref-1576 안), 재사용 3건(ref-1226·ref-1214·ref-1223). 출처 매핑(검증 결과 기준): 메모 n1→ref-1497, n2→ref-1226(미열람), n3→ref-1498, n4→예산 때문에 제외, n5→ref-1499(벤더 문서), n6→ref-1500, n7→ref-1501(2022판 새 출처; ref-1220 은 케이스노트 2019판이라 그대로 두고 비교에만 씀), n8→ref-1502, n9→ref-1503, n10→ref-1504, n11→ref-1505, n12→ref-1506, n13→ref-1507(github raw, v4.14.0 태그), n14→예산 때문에 제외, n15→ref-1508, n16→ref-1214(arXiv v1 HTML 재열람), n17→ref-1509, n18→ref-1510(JPE 게재판, NBER ref-1223 과 별도), n19→ref-1511, n20→ref-1217(메모 F38 중복이라 finding 없음, 출처에서 뺌). 추가 재사용: ref-1223(NBER 초록 재열람, 범위값 유지 근거). fetched: false 는 ref-1226. 교차 확인 0건(모든 사실 finding 이 단일 출처이거나 같은 계열: W3C 문서끼리, Han·Boadi 는 CMU 계열, Amazon·SOC 는 같은 OSHA 신고 자료 기초, Acemoglu·Dauth 는 IFR 자료·추정 전략 공유) — 단일 출처라 법령·표준 원문도 신뢰도 medium(validate 상한 규칙과 같음), 해석·벤더 finding 은 low. 중복 제거: 메모 F38(무인정보단말기 소규모 시설 대체 이행)은 2026-09-30-area60-s7.md 표·ref-1217·chat-based-configuration-and-operation/index.md 124행에 이미 있어 넣지 않음. 제20조 제2·9·14호, Han 15/8/4 숫자, 연석 경사로 사례도 기존 내용이라 재추가하지 않음. 검증 반영: F04 '영국'·F05·F06 확인 불가 → 사실 금지(f5 [추정]); A05 '비교창고 456시설' → Amazon NAICS 493110 자체 시설 456곳(f12), SOC 이해당사자 명시(f13); A06 근거 판을 2022-12-11 시행 법률 제18927호로(f15~f17); A07 ILO WP144 는 Cornell ILR 저자 견해이며 ILO 공식 아님(f19·f20); A11 (i) 결제 단말기에는 '서비스 제공 전용' 한정 없음 명시(f28); A12 axe-core 설정은 [추정]·벤더 주장(f31·f32); A15 는 Acemoglu 2017 범위값 유지(f41)와 JPE 2020 총량·지역 값 추가(f42·f43, 새 ref-1510); FSQ-IC 저자 6인으로 정정; 모든 수용성 연구는 표본 조건을 문장에 넣고 한국 일반화를 하지 않음(f4·f8·f35·f40·f45). 열린 질문: 해결 제안 없음(기존 질문 8개 모두 부분 답 또는 미답). 메모 new-1~4 는 기존 oq-284~oq-287 과 같은 질문이라 새로 만들지 않음(open-questions.md 306~309행 문구 대조). oq-146 은 페이지와 open-questions.md(168행)의 꼬리 문구만 다르고 같은 질문. 새 질문 9건(메모 U09~U17, 기존 질문과 겹침 없음 확인). 메모의 '.research-work' 로컬 경로·행 번호는 쓰지 않고 원문 절·쪽·조와 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
+  }
+}

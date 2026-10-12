@@ -1,0 +1,839 @@
+{
+  "run_id": "2026-10-12-01",
+  "date": "2026-10-12",
+  "run_type": "update",
+  "target": {
+    "area_no": 58,
+    "area_name": "58. 다사업자 책임·계약·데이터",
+    "category": "P. 거버넌스·법규·사회"
+  },
+  "gaps": [
+    "섹션 4. 핵심 개념과 용어(분리 2026-09-30-area58-s4) — '데이터 보유자' 항목(40행)이 '사용자 동의 없이 비개인 데이터를 이용할 수 없다'로 데이터법 제4조(13)의 '사용자와의 계약을 근거로만'과 다르고, 근거가 해설 페이지(ref-1191)뿐",
+    "섹션 5. 적용 사례 — 병원 사례가 2025 공고 하나(ref-872, 각주에 '원문 미열람')에 기대며 '연 2회 평가·인증'(71행 표 '수행 자원', 76행 본문)을 원어 'bi-annual' 의 한 해석으로 단정, 2026 공고(연례·AutoveX 2026-09-01부터 2년) 미반영. 상업·물류 현장의 실제 공개 계약 문안(지원 응답·시설 장애·책임 상한) 사례 없음",
+    "섹션 6. 대표 접근법과 기술(분리 2026-09-30-area58-s6) — 데이터 계약 소절(51·53행)에 '쉽게 이용 가능한 데이터' 범위·제3조(1) 설계 의무의 별도 적용일·MCT/SCC 의 제3자 면책 공백 없음. 변경 주체 책임 소절에 EU 제조물책임지침(소프트웨어 포함·실질적 변경자·업무용 재산 제외·증거 공개 비례성) 없음. 서비스 수준 소절(65행)이 ISO/IEC 19086-1(원문 미열람) 일반론뿐이라 응답·복구 시계, 시설 장애 예외, API 가용성 측정식 같은 실제 조항 없음",
+    "섹션 7. 관련 표준·프레임워크·오픈소스(분리 2026-09-30-area58-s7) — 표에 EU 제조물책임지침과 RFC 9745(폐기 예고·종료 시각) 행이 없고, 데이터법 행(41행)이 일반 적용일만 적음",
+    "섹션 8. 대표 연구와 자료 — 세 건뿐이며 데이터 접근 거절(영업비밀) 관할별 관행을 다룬 동료심사 연구 없음",
+    "섹션 11. 열린 질문(분리 2026-09-30-area58-s11) — oq-241·oq-268·oq-279·oq-280·oq-259·oq-185 에 붙일 공개 원문 근거 없음",
+    "정정 요청 없음(target.json corrections 비어 있음). 메모·검증에서 나온 위키 내부 정정: s4.md 40행 데이터 보유자 정의, 본 페이지 71·76행 '연 2회', ref-872·ref-706 의 '원문 미열람' 표시"
+  ],
+  "research_questions": [
+    "제조사·플랫폼·설비업체 중 누가 연동 오류를 고치고 변경을 승인할까? [분류원문]",
+    "EU 데이터법에서 데이터 보유자의 비개인 데이터 이용 근거와 사용자에게 제공할 데이터 범위, 설계 의무의 적용 시점은 원문상 무엇인가(oq-279·oq-320)? (섹션 4·6·7 겨냥)",
+    "공개된 모델 계약 조항·표준 계약 조항과 EU 개정 제조물책임지침은 제3자 청구·소프트웨어 결함·실질적 변경·증거 공개를 다사업자 사이에서 어떻게 다루는가(oq-241·oq-289)? (섹션 6·7 겨냥)",
+    "로봇 서비스·관제 플랫폼의 공개 약관은 지원 응답 시간·시설 장애 예외·책임 상한·과금 단위·가용성 측정을 어떻게 정하는가(oq-112·oq-268)? (섹션 5·6 겨냥)",
+    "API 폐기 예고와 종료 시각의 관계를 정한 표준은 무엇을 정하고 무엇을 계약에 남기는가(oq-280)? (섹션 7 겨냥)",
+    "통합자 사전 자격(RoMi-H 등재)의 주기·유효기간과, 영상 처리 위탁·데이터 접근 거절의 관리 기준은 공개 원문상 무엇인가(oq-149·oq-259)? (섹션 5·6·8 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "EU 데이터법(Regulation (EU) 2023/2854) 제4조(13)은 데이터 보유자가 쉽게 이용 가능한 데이터 가운데 비개인 데이터를 사용자와의 계약을 근거로만 이용할 수 있다고 정하고, 그 데이터로 사용자의 경제 상황·자산·생산 방식을 추론해 사용자의 시장 지위를 해치는 이용을 금지한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-636"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제4조(13): \"A data holder shall only use any readily available data that is non-personal data on the basis of a contract with the user. A data holder shall not use such data to derive insights about the economic situation, assets and production methods of, or the use by, the user …\". 정정 근거: docs/topics/2026/2026-09-30-area58-s4.md 40행 '데이터 보유자' 항목의 '사용자 동의 없이 비개인 데이터를 이용할 수 없다'[사실][^ref-1191] 는 조문의 '계약을 근거로만'과 다르다(동의가 아니라 계약). 근거도 해설 페이지(ref-1191) 대신 원문(ref-636)으로. 개인정보 처리의 법적 근거(GDPR 제6조)는 별개",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "데이터법 제4조(1)은 사용자가 연결 제품·관련 서비스에서 데이터에 직접 접근할 수 없을 때 데이터 보유자가 '쉽게 이용 가능한 데이터'와 그 해석·이용에 필요한 관련 메타데이터를 지체 없이 무료로 제공하도록 하며, 제2조(17)은 '쉽게 이용 가능한 데이터'를 데이터 보유자가 과도한 노력 없이 연결 제품·관련 서비스에서 적법하게 얻거나 얻을 수 있는 제품 데이터·관련 서비스 데이터로 정의한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-636"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제4조(1): \"Where data cannot be directly accessed by the user … data holders shall make readily available data, as well as the relevant metadata necessary to interpret and use those data, accessible to the user without undue delay … free of charge\". 제2조(17): \"'readily available data' means product data and related service data that a data holder lawfully obtains or can lawfully obtain … without disproportionate effort going beyond a simple operation\". 모든 데이터·추론 결과의 포괄적 소유권을 정한 조문으로 읽지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f3",
+      "claim": "데이터법 제50조는 이 규정을 2025-09-12부터 적용한다고 하면서, 제3조(1)의 설계 의무(연결 제품·관련 서비스를 데이터에 직접 접근 가능하게 설계·제조할 의무)는 2026-09-12 후에 시장에 출시되는 연결 제품과 관련 서비스에 적용한다고 따로 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-636"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제50조: \"It shall apply from 12 September 2025.\" / \"The obligation resulting from Article 3(1) shall apply to connected products and the services related to them placed on the market after 12 September 2026.\" 일반 적용일(2025-09-12, 기존 s6.md 51행·s7.md 41행에 있음)과 제3조(1) 적용 대상(2026-09-12 후 출시 제품)을 구분. 개별 로봇의 출시 시점 판정은 하지 않음. 관련 위키: docs/topics/2026/2026-09-25-area28-s3.md 41행 '주요 조항의 적용 개시일은 미확인'(후속 정리)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f4",
+      "claim": "집행위원회 권고 초안 부속서(C(2025) 7750 final ANNEX, 2025-11-19)의 클라우드 표준 계약 조항(SCC) 중 책임 조항 설명(Annex X)은 '이 SCC 는 면책(indemnification) 조항을 포함하지 않는다'고 적고, 한 당사자의 중대한 의무 위반으로 생긴 제3자 청구에 대해 면책·보호 조항이 필요한지와 그 범위를 당사자가 검토하도록 권한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1489",
+        "ref-1192"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Annex X(SCC Liability), 인쇄 p.155(PDF p.156): \"Indemnification: These SCCs do not include provisions on indemnification. The Parties are encouraged to consider whether and, if so, to what extent a Party may need to indemnify … from any claims of third parties …\". 표지 \"Brussels, 19.11.2025 / C(2025) 7750 final / ANNEX\", 내부는 DRAFT. 공식 EC URL 로 열람(미러 대신). 클라우드용 비구속 초안이며 로봇 사고 책임 분담표가 아님. '자발적 사용'은 기존 내용(s6.md 53행·s7.md 42행)이라 제외",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "EU 개정 제조물책임지침(Directive (EU) 2024/2853) 제4조(1)은 '제품'에 소프트웨어를 포함하고, 제2조(2)는 상업 활동 밖에서 개발·공급된 자유·오픈소스 소프트웨어에는 지침을 적용하지 않는다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제4조(1): \"'product' means all movables … it includes electricity, digital manufacturing files, raw materials and software\". 제2조(2): \"This Directive does not apply to free and open-source software that is developed or supplied outside the course of a commercial activity.\" 기존 59영역(2026-09-30-area59-s3.md 39행·s7.md 44행)은 Gibson Dunn 해설(ref-1227) 근거라, 58영역에는 다사업자 책임 관점 핵심만 원문으로 둠. 개별 ROP 소프트웨어 적용 판정 아님",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f6",
+      "claim": "같은 지침 제8조(2)는 제조자의 통제 밖에서 제품을 실질적으로 변경한 뒤 시장에 내놓거나 사용에 투입한 자연인·법인을 그 제품의 제조자로 본다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제8조(2): \"Any natural or legal person that substantially modifies a product outside the manufacturer's control and thereafter makes it available on the market or puts it into service shall be considered to be a manufacturer of that product for the purposes of paragraph 1.\" 기존 59영역 s4.md 43행(해설 근거)과 같은 내용을 원문으로 확인. 오케스트레이션 설정 변경이 실질적 변경인지(oq-289, oq-282)는 판단하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "지침 제2조(1)의 적용 대상은 2026-05-07 정오표(OJ L 2026/90364)로 '2026-12-09 후'에서 '2026-12-08 후(after 8 December 2026)' 시장에 출시되거나 사용에 투입된 제품으로 고쳐졌으며, 따라서 2026-12-09 당일부터 출시·투입되는 제품에 적용된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "정오표(ELI http://data.europa.eu/eli/dir/2024/2853/corrigendum/2026-05-07/oj) \"On page 11, Article 2(1): for: '… after 9 December 2026.' read: '… after 8 December 2026.'\"; C1 반영 통합본 02024L2853-20241118 제2조(1) 같은 문구. 표기 주의: '2026-12-08부터'가 아니라 '2026-12-08 후' = 2026-12-09부터. 기존 59영역 '2026-12-09 이후'(s3.md 39행·s7.md 44행)는 정정 후 의미와 맞으나 근거가 해설(ref-1227)이라 원문 연결은 후속 정리",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "지침 제22조(1)은 회원국이 지침 이행 법령을 2026-12-09까지 시행하도록 정하고, 제21조는 구 제조물책임지침 85/374/EEC 를 2026-12-09 부로 폐지하되 그 전에 출시·사용 투입된 제품에는 계속 적용한다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제22조(1): \"Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive by 9 December 2026.\" 통합본: \"Directive 85/374/EEC is repealed with effect from 9 December 2026. However, it shall continue to apply with regard to products placed on the market or put into service before that date.\" 공포(OJ 2024-11-18)·적용(제2조(1))·이행 기한(제22조(1))을 구분. 조사일(2026-10-12)은 이행 기한 전이며 회원국별 이행 법령은 확인하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "지침 제6조(1)(b)(iii)은 전적으로 업무 목적으로만 쓰는 재산의 손해를 이 지침의 보상 대상 손해에서 제외한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제6조(1)(b): 재산 손해 가운데 \"(iii) property used exclusively for professional purposes\" 제외. 전문 (22) 같은 취지. 계약상·국내법상 다른 구제를 배제한다는 뜻으로 해석하지 않음. 사업장 로봇·설비 손해는 이 지침보다 사업자 간 계약 조항이 다룰 몫이 크다는 추론은 의견 finding 으로 분리",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f10",
+      "claim": "지침 제9조(3)은 같은 조 제1·2항에 따른 증거 공개를 필요하고 비례적인 범위로 제한하도록 회원국에 요구하고, 제9조(4)는 그 판단에서 제3자를 포함한 모든 당사자의 정당한 이익, 특히 기밀·영업비밀 보호를 고려하게 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제9조(3): \"Member States shall ensure that the disclosure of evidence pursuant to paragraphs 1 and 2 … is limited to what is necessary and proportionate.\" (4): \"… national courts consider the legitimate interests of all parties concerned, including third parties, in particular in relation to the protection of confidential information and trade secrets …\". (5) 영업비밀 보호 조치. 법원 절차의 공개 범위이며 사업자에게 모든 로그를 상시 청구하는 권리가 아님. 증거 공개 자체는 기존 59영역 s6.md 45행에 있어 비례성·이해관계 고려만 보강",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f11",
+      "claim": "창이종합병원 CHART 의 2025년 RoMi-H 등재 공고는 프로그램을 'a bi-annual RoMi-H Empanelment Program'으로 적고, 같은 공고에서 등재 통합자 5개사(HOPE Technik, Medisys Innovation, Panasonic Asia Pacific, QuikBot Technologies, Techfox)의 등재가 2025-05-01부터 2년간 유효하다고 게시한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-872"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "CGH 공고(2025-05-01, 'Updated as of 24 August 2026'): \"CHART organizes a bi-annual RoMi-H Empanelment Program, for which the objective is to assess / re-assess the System Integrator's ability to deploy RoMi-H\" / \"certified as Empanelled System Integrator (SI) … with effect from 1 May 2025 with a two-year validity\". 같은 공고: \"The integration via RoMi-H is to be undertaken by an empanelled System Integrator\". ref-872 는 기존 위키에 '원문 미열람'으로 표시돼 있었으나 이번에 원문 열람",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f12",
+      "claim": "2025년 공고의 'bi-annual'은 '연 2회'로도 '2년마다'로도 읽힐 수 있고 같은 공고가 등재 유효기간을 2년으로 적고 있어, 위키 5절의 '연 2회 평가·인증'(본문 76행, 표 '수행 자원' 행)은 원어 인용과 두 해석을 함께 적거나 [추정]으로 낮춰야 한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-872",
+        "ref-1495"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "독립 검증 수정(F13): 메모는 '연 2회'로 [사실] 처리했으나 원어 \"bi-annual\"은 두 뜻이 가능. 2026 공고는 \"an annual RoMi-H Empanelment Program\"이라 적어, 실제 주기는 공고마다 표현이 다르다. 다른 페이지의 같은 표현(docs/topics/2026/2026-09-30-area03-s7.md 44행, 2026-09-30-area56-s7.md 46행)은 후속 정리. 63영역 s4·s7 의 '2025-05-01부터 2년 유효'는 원문과 맞음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f13",
+      "claim": "SingHealth/CHART 의 2026년 RoMi-H 등재 공고(2026-05-06 게시, 2026-08-24 갱신)는 CHART 가 연례(annual) 등재 프로그램을 운영해 통합자의 RoMi-H 배치 역량을 평가·재평가한다고 적고, 등재 통합자는 CHART 웹사이트에 공개되어 공공 의료기관이 제안요청(RFP/RFI) 참여를 위해 연락할 수 있다고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1495"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "SingHealth 공고 \"06 May 2026\", \"Updated as of 24 August 2026\": \"CHART organizes an annual RoMi-H Empanelment Program, for which the objective is to assess / re-assess …\" / \"Successfully empanelled SIs will be published on the CHART website and this will allow PHIs and potential collaborators to contact empanelled SIs for participation in Request For Proposal or Information (RFP/RFI).\" 2025 공고(ref-872)와 같은 기관 계열이라 독립 교차 확인 아님",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f14",
+      "claim": "2026년 공고의 등재 명단은 AutoveX Pte Ltd 1개사이며 등재는 2026-09-01부터 2년간 유효하다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1495"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"The following companies are certified as Empanelled System Integrator (SI) … with effect from 1 September 2026 with a two-year validity: AutoveX Pte Ltd\". 2025년 등재자(2025-05-01부터 2년)의 효력 변화는 공고에 없으며 자동 취소로 읽지 않음. 등재가 인수·장애 복구 책임까지 정한다는 근거는 없음",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f15",
+      "claim": "개인정보보호위원회는 「이동형 영상정보처리기기를 위한 개인영상정보 보호ㆍ활용 안내서」 발표 보도자료(2024-10-14 게시)에서 외부업체 위수탁으로 개인영상정보를 처리하는 경우 보호책임자 지정과 주기적인 점검ㆍ교육 등으로 안전하게 관리할 것을 당부했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1494"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보도자료 본문 ④: \"외부업체 위수탁을 통해 개인영상정보를 처리하는 경우에는 보호책임자 지정 및 주기적인 점검ㆍ교육 등을 통해 …\". 감독기관의 당부이며 새 법률 의무나 ROP 의 운영자·수탁자 지위 판정이 아님. 53영역 privacy-and-video-data.md 108행이 기사(ref-1136)로 같은 내용을 이미 서술 — 58영역에는 위탁 관리 점검을 계약 부속서와 잇는 짧은 연결로만 쓰고, 53영역 근거를 1차 보도자료로 바꾸는 것은 후속 정리",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f16",
+      "claim": "RFC 9745(2025-03, Standards Track) §5 는 자원을 폐기 예정(deprecated)으로 표시하는 행위가 자원의 동작을 바꾸지 않으며, 클라이언트는 폐기 표시 전과 같은 방식으로 자원을 계속 쓸 수 있다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-706"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§5 Resource Behavior: \"The act of deprecation does not change any behavior of the resource. … consumers can still use the resource in the same way as they did before the resource was declared deprecated.\" ref-706 은 기존 위키에서 '원문 미열람'(fetched false)이었으나 이번에 rfc-editor.org 원문 열람",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f17",
+      "claim": "RFC 9745 §4 는 Sunset 헤더(RFC 8594)로 자원이 응답하지 않게 될 시각을 함께 알릴 수 있게 하고, Sunset 시각이 Deprecation 시각보다 빨라서는 안 된다(MUST NOT)고 정하며, 두 시각 사이의 최소 간격은 정하지 않는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-706"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4 Sunset: \"The timestamp given in the Sunset HTTP header field MUST NOT be earlier than the one given in the Deprecation header field.\" 예시는 폐기 2023-06-30, 종료 2024-06-30. RFC 전문(§1~8)에 최소 유예 일수 규정 없음. 선후 관계 규정은 21영역 쪽 docs/topics/2026/2026-09-25-area28-s4.md 40행에 이미 있음(원문 미열람 근거) — 58영역에는 계약상 통지 기간과 구분하는 맥락으로만 씀",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f18",
+      "claim": "De Noyette·Stähler·Margoni(IIC 56(5):984–1014, 2025)는 데이터법의 영업비밀 체계를 분석하며, 회원국 관할 당국마다 영업비밀 관련 행정 관행이 달라져 더 파편화될 위험이 있다고 지적한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1488"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§4.1.4: 영업비밀 처리의 국가별 행정 관행에 대해 \"risk for further fragmentation\". 온라인 게재 2025-04-24, CC BY 4.0, DOI 10.1007/s40319-025-01601-9(Crossref 서지 확인). 동료심사 법학 논증이며 로봇 다사업자 계약의 실증·통계가 아님. 저자가 지적했다는 범위만 [사실]",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f19",
+      "claim": "Relay Robotics 공개 약관의 서비스 수준 부속서(Exhibit A)에 따르면 Tier 1(24시간 콜센터)은 서비스 개시일 이후 이메일 지원 요청을 받은 뒤 60분 안에 응답하도록 '상업적으로 합리적인 노력'을 기울이는 조건이며, 복구 완료 시각을 보장하는 문구는 아니다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1491"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Exhibit A Tier 1: \"After the In-Service Date … Relay Robotics will use commercially reasonable efforts to respond within 60 minutes of receiving the email request.\" 단일 업체의 공개 약관 문안이며 개별 체결본·이행 실적은 미확인",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f20",
+      "claim": "Relay 약관의 같은 부속서 예외 조항에 따르면 고객의 네트워크나 시설(예: 승강기 고장)에서 생긴 문제는 고객이 고칠 때까지 지원 기한이 연장되고, Relay 는 고객 네트워크·시설 문제의 수리 책임을 지지 않는다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1491"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Exhibit A Exclusions: \"For problems that result from an issue caused by or resulting from the Customer's network or premises (e.g., an elevator out of service), the time periods above will be extended until Customer has repaired the issue. Relay Robotics takes no responsibility for repairing or resolving Customer's issues …\". 단일 업체 사례. 시설 장애의 시작·종료를 누가 확인하는지는 약관에 없음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f21",
+      "claim": "Relay 약관 §12 에 따르면 면책 의무, 고객의 라이선스 위반, 양측의 비밀유지 위반을 제외한 각 당사자의 책임은 청구 발생 전 18개월 동안 고객이 지급했거나 지급할 요금 총액을 넘지 않으며, 약관 준거법은 미국 캘리포니아주법이다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1491"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: §12: \"EXCEPT WITH RESPECT TO LIABILITIES ARISING OUT OF CUSTOMER'S BREACH OF THE LICENSES …, EITHER PARTY'S BREACH OF ITS CONFIDENTIALITY OBLIGATIONS HEREIN OR A PARTY'S INDEMNIFICATION OBLIGATIONS, NEITHER PARTY'S LIABILITY … WILL EXCEED THE TOTAL FEES PAID OR OWED … DURING THE 18 MONTHS BEFORE THE DATE THE CLAIM FIRST AROSE.\" §14.4 \"governed by the laws of the State of California\". 약관 표기일 'March 1st 2023'. 국내 집행 가능성은 판단하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f22",
+      "claim": "Relay 약관 §5.2 에 따르면 당사자 사이에서 고객이 Relay 와 공유하기로 한 개인정보는 고객 소유이며, Relay 는 서비스 제공 목적에만 쓴다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1491"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: §5.2 \"As between the parties, Customer shall own all Personal Data that Customer elects to share with Relay. … Relay will use the Personal Data to provide the Services, and not for any other purpose except with Customer's prior written permission.\" 로봇이 만든 운영 데이터 전반의 법적 소유권을 정한 문구로 확대하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f23",
+      "claim": "Formant 일반 약관(2026-04-16 갱신)에 따르면 고객이 지정한 통합자('Development Consultant')는 고객의 지시로만 일하며 고객이 그 통합자의 작위·부작위에 책임을 진다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1496"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 정의 'Development Consultant': \"a third-party systems integrator that Customer has authorized to access, test, and customize the Products or Services. Any Development Consultant(s) … works expressly and exclusively at Customer's direction, and Customer is responsible for any acts or omissions of such Development Consultant(s).\" 정의 번호 대신 용어 이름으로 인용. 실제 체결·이행 결과는 미확인",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f24",
+      "claim": "Formant 약관의 'Device' 정의에 따르면 하나의 장치에 가상 환경(PLC, Jetson, 가상 머신 등)이 둘 이상 있으면 가상 환경마다 별도 Device 로 센다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1496"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 정의 'Device': \"Where a Device contains more than one virtual environment (including PLCs, jetsons, virtual machines and virtual processors), each virtual environment will be counted as a separate …\". 주문서의 단가·최소 요금은 미공개라 과금 영향은 확인하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f25",
+      "claim": "Formant 약관의 Formant AI 추가 조건에 따르면 고객은 AI 출력에 의존하거나 그 출력으로 명령을 실행하기 전에 출력을 검증하는 사람의 검토 절차를 사용 과정에 두어야 한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1496"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Additional License Terms for Formant AI: \"Any decisions, actions, or omissions taken in reliance on or enabled by AI User Output, including where the Output is used to initiate or execute a command … Customer shall ensure that a human review process is incorporated into its use of the Products and Services to validate AI User Output prior to reliance or execution.\" 업체 약관상 조건이며 로봇 AI 일반의 법적 의무가 아님",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f26",
+      "claim": "AIRROBO(Best Epoch Technology)의 EU 데이터법 고지 §4(b)에 따르면 사용자는 앱에서 데이터를 내보내 한 번에 공유하거나, 승인된 QR 코드로 제3자와 지속 공유할 수 있으며 지속 공유를 받으려는 제3자는 Tuya 클라우드 플랫폼에 등록해야 한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1487"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 고지 §4(b) p.3 \"You can export data via the App and manually share it with third parties in one go, or continuously share data with third parties through an authorized QR code. For continuous data sharing, the third party is required to access and register on https://platform.tuya.com/cloud …\". 대상은 고지에 열거된 로봇청소기(T20/T25/T30/E10)·수영장 청소 로봇(PC200/PS100). UBTech CDN 게시 PDF(작성 2025-12-23, 발행일 미확인). 실제 필드·지연·철회 동작은 시험하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": "가정",
+      "flow_item": "작업 대상",
+      "vendor_claim": true
+    },
+    {
+      "id": "f27",
+      "claim": "AWS IoT RoboRunner 서비스 수준 협약(2022-11-28 갱신)에 따르면 'Error'는 500 또는 503 오류 코드를 돌려준 요청이고, 가용성은 5분 구간마다 오류 없이 처리된 요청 비율로 계산한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1492"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Definitions: \"An 'Error' is any Request that returns a 500 or 503 error code.\" / \"'Availability' is calculated for each 5-minute interval as the percentage of Requests processed by AWS IoT RoboRunner that do not fail with Errors.\" API 측정식이며 로봇 작업 성공·물리 가동을 재지 않음. 조사일 현재 RoboRunner 의 제공·지원 상태는 미확인(지원 종료 공지는 찾지 못함)",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f28",
+      "claim": "같은 SLA 는 요청이 하나도 없던 5분 구간을 가용성 100%로 간주한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1492"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: Definitions: \"If you did not make any Requests in a given 5-minute interval, that interval is assumed to be 100% available.\" 단일 업체 사례",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f29",
+      "claim": "1X Technologies 의 사전예약 약관(2025-10-28 갱신) §2.4 에 따르면 주문 초대를 받아 로봇을 받으려는 사람은 구매 시점에 제시되는 별도 판매약관(Terms of Sale)에 동의해야 하며, 취소·배송·보증 세부는 주문 초대나 판매약관에 둔다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1493"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: §2.4 Orders: \"you will be required to agree to the Terms of Sale (to be presented at the time of purchase …)\", \"Additional details regarding order cancellations, shipping, delivery and warranty will be set forth in the Order Invitation and/or the Terms of Sale.\" 사전예약 계약이며 원격 조작자의 영상 접근·사고 책임 조항은 이 문서에서 확인하지 못함(oq-185 미해결)",
+      "as_of": "2026-10-12",
+      "site_type": "가정",
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f30",
+      "claim": "ROP 의 데이터 자산 대장은 데이터 항목마다 데이터법상 역할(사용자·데이터 보유자·제3자), 이용 근거(사용자와의 계약), 요청 가능 범위(쉽게 이용 가능한 데이터·메타데이터), 연결 제품의 출시일(2026-09-12 후 출시 여부)을 따로 기록하고, 개인정보 처리 근거는 별도로 심사하는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-636"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1~f3 에서 도출. 특정 ROP 의 보유자·수령자 지위(oq-279·oq-320)는 판단하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f31",
+      "claim": "다사업자 계약은 클라우드 SCC 의 책임 조항을 그대로 옮기지 말고, 로봇 제조사·통합자·시설 관리주체·플랫폼 사이의 제3자 청구 면책을 따로 정해야 하며, 제조물책임지침이 업무 전용 재산 손해를 보상 대상에서 빼므로 사업장 설비·재고 손해는 계약 조항으로 다룰 필요가 커 보인다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1489",
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f4·f9 에서 도출. 개별 계약의 법적 효과는 59. 법·규제·보험·라이선스 쪽 판단",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f32",
+      "claim": "ROP 는 사고 뒤 증거 공개가 법원 판단으로 필요·비례 범위에 한정된다는 점을 전제로, 로그 보관 기간·사고 후 동결·내보내기 형식·영업비밀 분리 절차를 계약 부속서에 미리 정해 두는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1490"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f10 에서 도출. oq-249(기계 규정 로그 의무의 플랫폼 적용)는 판단하지 않음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f33",
+      "claim": "서비스 수준 부속서는 응답 시각·원인 분석·복구 완료 시각을 나누고, 시설 장애로 지원 기한이 멈추는 구간의 시작·종료와 확인 주체를 기록하며, API 오류율과 별도로 작업 성공률·지연·시설 대기 시간을 지표로 합의하는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1491",
+        "ref-1492"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f19·f20·f27·f28 에서 도출. 두 업체 약관은 서로 다른 조건이라 교차 확인이 아님. oq-112·oq-268 부분 근거",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f34",
+      "claim": "플랫폼 약관과 고객–통합자 계약을 함께 대조해 통합자 행위의 책임 귀속, 과금 수량 단위(로봇 대수·가상 환경·설치 인스턴스)의 대응표와 계량 이의 절차, AI 출력으로 명령을 실행할 때의 검토자·승인 기록을 정하는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1496",
+        "ref-1491"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f21~f25 에서 도출. 실제 주문서·단가는 미공개",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f35",
+      "claim": "제조사의 데이터법 고지가 안내하는 내보내기·제3자 지속 공유 경로는 ROP 온보딩 때 제3자 등록·필드 목록·지연·승인 철회를 직접 시험해 확인하는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1487"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f26 에서 도출. 시험 결과는 없음",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f36",
+      "claim": "통합자 등재(사전 자격)는 연동 역량 평가일 뿐이므로, 등재 사실과 별도로 인수 기준·장애 복구 책임·등재 유효기간 만료 시 처리를 계약에 적는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-872",
+        "ref-1495"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f11~f14 에서 도출. oq-149 는 국내 사례가 없어 열린 채 둠",
+      "as_of": "2026-10-12",
+      "site_type": "병원",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f37",
+      "claim": "ROP 어댑터는 제조사 API 의 폐기 예고 시각·종료(Sunset) 시각·전환 문서 링크를 따로 저장하고, 두 시각 사이의 최소 통지 기간은 RFC 가 정하지 않으므로 계약에서 따로 확인하는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-706"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f16·f17 에서 도출. oq-280·oq-207 부분 근거",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f38",
+      "claim": "영상 처리를 다른 사업자에게 맡길 때는 위탁 범위·보호책임자·교육·주기 점검 증빙을 계약 부속서로 관리하고, 데이터 접근 거절(영업비밀) 사유와 이의 경로는 관할별로 기록하되 법학 논문의 제안을 검증된 운영 성과로 표시하지 않는 편이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1494",
+        "ref-1488"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f15·f18 에서 도출. 개인정보 상세 설계는 53. 개인정보·영상 데이터 몫",
+      "as_of": "2026-10-12",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-636",
+      "org": "European Union (EUR-Lex)",
+      "title": "Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data (Data Act)",
+      "published": "2023-12-13",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "EU 데이터법 원문(기존 출처). 이번에 제2조(17), 제4조(1)·(13), 제50조(일반 적용 2025-09-12, 제3조(1)은 2026-09-12 후 출시 제품)를 원문으로 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1192",
+      "org": "European Commission (Shaping Europe's digital future)",
+      "title": "Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts",
+      "published": "2025-11-19",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/draft-recommendation-non-binding-model-contractual-terms-data-access-and-use-and-non-binding",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "MCT·SCC 권고 초안 발표 페이지(기존 출처). 2025-11-19 발표, 2026-03-03 갱신이며 여전히 초안(Draft) 표기다. 부속서 내려받기 링크가 이 페이지에 있다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": "2025-05-01",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "2025년 RoMi-H 통합자 등재 공고(기존 출처, 이번에 원문 열람). 프로그램을 'bi-annual'로 적고 5개사 등재가 2025-05-01부터 2년 유효하다고 게시한다(2026-08-24 갱신).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-706",
+      "org": "IETF (RFC Editor)",
+      "title": "RFC 9745: The Deprecation HTTP Response Header Field",
+      "published": "2025-03",
+      "url": "https://www.rfc-editor.org/info/rfc9745/",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "Deprecation HTTP 응답 헤더 규격(Standards Track, 기존 출처). 이번에 원문을 열어 §4(Sunset 시각은 Deprecation 시각보다 이르면 안 됨)와 §5(폐기 표시는 자원 동작을 바꾸지 않음)를 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.rfc-editor.org/rfc/rfc9745.html",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1487",
+      "org": "Best Epoch Technology Co., Ltd. (AIRROBO)",
+      "title": "EU DATA ACT Notice",
+      "published": null,
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2025/12/25/755762357268549.pdf",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "로봇청소기·수영장 청소 로봇 제조사의 EU 데이터법 사전 고지 PDF. 제품 데이터 목록과 앱 내보내기·승인 QR 코드(Tuya 플랫폼 등록)를 통한 제3자 공유 경로를 안내한다. 발행일은 확인하지 못했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1488",
+      "org": "De Noyette, E., Stähler, L., Margoni, T. (IIC 56(5))",
+      "title": "Data Secrets: The Data Act's New Trade Secrets Framework",
+      "published": "2025-04-24",
+      "url": "https://link.springer.com/article/10.1007/s40319-025-01601-9",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "데이터법의 영업비밀 체계를 분석한 동료심사 법학 논문(IIC 56(5):984–1014, CC BY 4.0). 회원국 행정 관행의 파편화 위험을 지적한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1489",
+      "org": "European Commission",
+      "title": "ANNEX to the Communication to the Commission — Approval of the draft Commission Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts (with Annexes), C(2025) 7750 final",
+      "published": "2025-11-19",
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/121719",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "MCT·SCC 권고 초안 본문과 부속서(166쪽). 부속서 X(클라우드 SCC 책임)는 면책 조항을 두지 않고 제3자 청구 면책을 당사자가 검토하도록 권한다. 공식 EC 다운로드 URL 로 열람했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1490",
+      "org": "European Union (EUR-Lex)",
+      "title": "Directive (EU) 2024/2853 of the European Parliament and of the Council of 23 October 2024 on liability for defective products and repealing Council Directive 85/374/EEC",
+      "published": "2024-11-18",
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "EU 개정 제조물책임지침 원문(2024-10-23 채택, 2024-11-18 관보). 2026-05-07 정오표(OJ L 2026/90364)로 제2조(1) 적용 대상이 '2026-12-08 후' 출시·투입 제품으로 고쳐졌다. 제2·4·6·8·9·22조를 C1 반영 통합본으로 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024L2853-20241118",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1491",
+      "org": "Relay Robotics",
+      "title": "Terms of Service (Exhibit A: Service Level Agreement)",
+      "published": "2023-03-01",
+      "url": "https://relayrobotics.com/tos",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "병원·호텔 배송 로봇 업체의 공개 서비스 약관. 지원 응답 시간, 시설 장애 시 지원 기한 연장, 18개월 요금 기준 책임 상한, 개인정보 귀속, 캘리포니아 준거법을 정한다. 단일 업체 문안이다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1492",
+      "org": "Amazon Web Services",
+      "title": "AWS IoT RoboRunner Service Level Agreement",
+      "published": "2022-11-28",
+      "url": "https://aws.amazon.com/roborunner/sla/",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "AWS IoT RoboRunner 의 공개 SLA. 500·503 응답을 오류로, 5분 구간 요청 성공률을 가용성으로 정의하고 요청 없는 구간은 100% 가용으로 본다. 조사일 현재 서비스 제공 상태는 확인하지 못했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1493",
+      "org": "1X Technologies, Inc.",
+      "title": "Pre-Order Terms",
+      "published": "2025-10-28",
+      "url": "https://www.1x.tech/legal",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "가정용 휴머노이드 사전예약 약관. 구매 때 별도 판매약관 동의를 요구한다. 원격 조작자 운영 책임 조항은 이 문서에 없다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1494",
+      "org": "개인정보보호위원회",
+      "title": "자율주행 인공지능(AI) 발전을 위한 개인영상정보 보호ㆍ활용 기준 나왔다",
+      "published": "2024-10-14",
+      "url": "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10678",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-12",
+      "summary": "이동형 영상정보처리기기 개인영상정보 보호·활용 안내서 발표 보도자료. 외부업체 위수탁 처리 시 보호책임자 지정과 주기적 점검·교육을 당부한다. 안내서 본문(ref-1135)은 이번에 열지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1495",
+      "org": "SingHealth / Changi General Hospital CHART",
+      "title": "RoMi-H Empanelment Programme 2026",
+      "published": "2026-05-06",
+      "url": "https://www.singhealth.com.sg/news/robotics/romi-h-empanelment-programme-2026",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "2026년 RoMi-H 통합자 등재 공고(2026-08-24 갱신). 연례 프로그램이라 적고 AutoveX Pte Ltd 의 등재를 2026-09-01부터 2년 유효로 게시한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1496",
+      "org": "Formant",
+      "title": "General Terms",
+      "published": "2026-04-16",
+      "url": "https://www.formant.ai/terms_of_use",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-12",
+      "summary": "로봇 관제 플랫폼 업체의 일반 약관. 고객 지정 통합자 책임의 고객 귀속, 가상 환경별 Device 계수, Formant AI 출력의 사람 검토 요구를 정한다. 단일 업체 문안이다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md",
+      "sections": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "11"
+      ],
+      "rationale": "갱신(차등): 섹션 4(분리 2026-09-30-area58-s4) — 40행 '데이터 보유자' 항목 정정: '사용자와 계약을 맺어야 하고 사용자 동의 없이 비개인 데이터를 이용할 수 없다'[사실][^ref-1191] → '쉽게 이용 가능한 비개인 데이터를 사용자와의 계약을 근거로만 이용할 수 있고, 사용자의 시장 지위를 해치는 추론에 쓸 수 없다'(f1, 근거 ref-636 원문). '쉽게 이용 가능한 데이터' 범위(f2)를 같은 항목이나 새 줄로 / 섹션 5 — 병원 사례: 71행 표 '수행 자원'과 76행 본문의 '연 2회'를 원어 'bi-annual'(2025 공고) 인용과 두 해석(연 2회/2년마다) 병기 또는 [추정]으로 정정(f11·f12), 2025 등재 5개사·2년 유효(f11), 2026 공고의 연례 표현·RFP/RFI 연락 경로(f13)와 AutoveX 2026-09-01부터 2년(f14)을 추가하고 '(2025-05 기준)'을 연차별로 나눔. ref-872 각주의 '(원문 미열람)' 해소. 의견 f36. 새 사례 블록(배송 로봇 서비스 계약; 약관이 현장 유형을 특정하지 않아 '병원·호텔 배송 로봇 업체의 공개 약관'으로만 표기): Relay 약관의 Tier 1 60분 응답 노력(f19), 시설 장애(승강기 고장) 시 지원 기한 연장(f20)을 '단일 업체 약관에 따르면' [추정]·벤더 주장으로, 완료·인계/예외·성과는 미확인. 가정 사례에 AIRROBO 고지의 QR 지속 공유 경로(f26)와 1X 사전예약 약관의 판매약관 위임(f29)을 [추정]·벤더 주장으로 짧게; 의견 f35 / 섹션 6(분리 2026-09-30-area58-s6) — 데이터 접근·공유 계약 소절: 일반 적용일(기존 51행) 뒤에 제3조(1) 설계 의무는 2026-09-12 후 출시 제품에만 적용(f3), 제4조(1)·(13) 범위와 계약 근거(f1·f2); MCT/SCC 문단(53행) 뒤에 부속서 X 의 면책 조항 부재와 제3자 청구 검토 권고(f4); 의견 f30·f31. 변경 주체 책임 소절: EU 개정 제조물책임지침의 다사업자 책임 관점 핵심만 — 소프트웨어 포함·비상업 FOSS 제외(f5), 실질적 변경자=제조자(f6), 적용 대상 '2026-12-08 후' 출시·투입 = 2026-12-09부터(f7, 정오표 2026-05-07; '2026-12-08부터'로 쓰지 말 것), 이행 기한 2026-12-09·구 지침 폐지(f8), 업무 전용 재산 손해 제외(f9), 증거 공개 필요·비례성과 영업비밀 고려(f10); 의견 f31·f32. 서비스 수준 약속과 감사 이력 소절: 공개 약관 비교 — Relay 책임 상한 18개월 요금·예외 3가지·캘리포니아 준거법(f21), 개인정보 고객 귀속(f22), Formant 통합자 책임 고객 귀속(f23)·가상 환경별 Device 계수(f24)·AI 출력 사람 검토(f25), AWS RoboRunner Error=500/503·5분 가용성·요청 없는 구간 100%(f27·f28) — 모두 [추정]·벤더 주장, 문장에 'OO사 약관에 따르면', 단일 업체 사례로 한정하고 업체 간 교차 확인으로 세지 않음; 의견 f33·f34. 영상 위탁 관리: 개인정보위 보도자료의 위수탁 시 보호책임자·주기 점검·교육 당부(f15)를 한두 문장으로만 넣고 53영역으로 연결; 의견 f38 / 섹션 7(분리 2026-09-30-area58-s7) — 데이터법 행(41행)에 '제3조(1)은 2026-09-12 후 출시 제품' 추가(f3). 행 추가: EU 개정 제조물책임지침(Directive (EU) 2024/2853, 소프트웨어 포함·실질적 변경자·적용 2026-12-09부터·이행 기한 2026-12-09, f5~f8), RFC 9745(폐기 표시는 동작 불변, Sunset≥Deprecation, 최소 간격 미규정, f16·f17); 의견 f37 / 섹션 8 — 연구 항목 추가: De Noyette·Stähler·Margoni(IIC 2025) 데이터법 영업비밀 체계와 관할별 행정 관행 파편화 위험(f18); 기존 MCT 항목(109행)은 기존 내용 확인(부속서 X 면책 공백은 6절로) / 섹션 11(분리 2026-09-30-area58-s11) — 해결 없음. 부분 근거: oq-241(f19~f25, 네 당사자 공통 분담표는 여전히 없음), oq-268(f24·f27·f28·f20; 메모의 'Formant 가상 환경 수량 공동 검증 주문서' 질문은 oq-268 의 하위 질문이라 새로 만들지 않음), oq-279·oq-320(f1·f2, 특정 ROP 지위 미판정), oq-280·oq-207(f16·f17, 로봇 계약상 최소 통지 일수 미확인), oq-259(f15), oq-185(f29, 원격 조작자 책임 미확인), oq-249(f10 은 법원 증거 공개 범위일 뿐 기계 규정 로그 의무의 플랫폼 적용은 미판정), oq-289(f5·f6 원문 조문만, 오케스트레이션 SW 해당 여부 미판정), oq-149(f13·f14, 국내 사례 없음), oq-110(f1~f3·f26). 답하지 못함: oq-145, oq-265, oq-281(가이드 본문 미열람), oq-282, oq-283, oq-290. 새 질문 3건 / 기존 내용 확인(새로 넣지 않음): MCT·SCC 사용이 자발적이라는 점(메모 F04) — s6.md 53행·s7.md 42행·본 페이지 109행·용어집 model-contractual-terms; 데이터법 일반 적용일 2025-09-12 — s6.md 51행·s7.md 41행; RFC 9745 Sunset≥Deprecation — 2026-09-25-area28-s4.md 40행(원문 미열람 근거였음); 증거 공개 제도 자체 — 2026-09-30-area59-s6.md 45행; 영상 위탁 점검 — privacy-and-video-data.md 108행(기사 ref-1136 근거) / 후속 정리(이번 갱신 범위 밖, 다른 페이지): docs/glossary/data-holder.md 정의가 '연결 제품' 정의처럼 잘못 쓰임, docs/categories/security-and-privacy/index.md 169행의 비슷한 서술(ref-1274, ref-1191 과 같은 EC 해설 페이지), docs/topics/2026/2026-09-25-area28-s3.md 41행 '주요 조항의 적용 개시일은 미확인'(f3 로 해소 가능), docs/topics/2026/2026-09-30-area03-s7.md 44행·2026-09-30-area56-s7.md 46행 '연 2회'(f12), 59영역(2026-09-30-area59-s3·s4·s6·s7·s8, glossary/product-liability.md, standards/index.md 342행)의 제조물책임지침 서술 근거를 Gibson Dunn 해설(ref-1227)에서 원문(ref-1490)으로, 53영역 108행 근거를 1차 보도자료(ref-1494)로, ref-706 서지(발행 2025-03, 원문 열람). EU AI법 제25·26조 서술(s6.md 43·65행)은 개정 여부 점검 필요(미확인). 다음 실행 후보: 59. 법·규제·보험·라이선스(f5~f10), 63. 병원·의료(f11~f14), 3. 경제성·조달·사업 모델(f24·f27·f28)"
+    }
+  ],
+  "glossary_candidates": [],
+  "open_questions_new": [
+    "여러 사업자가 얽힌 장애·사고에서 서비스 수준 협약의 지원 기한을 멈추는 사유(시설 장애 등)와 재개 시점을 누가 확인·승인하며, 각 계약의 로그를 어떤 공통 식별자로 연결하는가? (관련: oq-112) | 관련 영역: 58. 다사업자 책임·계약·데이터, 32. 예외 복구·재계획·업무 연속성 | 근거: f20 | 종류: 일반",
+    "제조사의 데이터법 고지가 안내하는 제3자 지속 공유 경로(승인 QR 코드·외부 플랫폼 등록 등)는 실제로 어떤 필드를 어떤 지연으로 제공하며, 사용자가 승인을 철회하면 언제 공유가 끊기는가? (관련: oq-110, oq-279) | 관련 영역: 58. 다사업자 책임·계약·데이터, 20. 로봇·제조사 관제 연동 | 근거: f26 | 종류: 일반",
+    "RoMi-H 통합자 등재 프로그램의 실제 운영 주기는 무엇인가(2025 공고 'bi-annual', 2026 공고 'annual', 등재 유효 2년), 그리고 유효기간이 끝난 등재 통합자가 맡은 연동의 유지·장애 복구 책임은 어떻게 이어지는가? (관련: oq-149) | 관련 영역: 58. 다사업자 책임·계약·데이터, 63. 병원·의료 | 근거: f12 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 14,
+    "cross_checked_count": 0,
+    "unverified": [
+      "리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-12-01/external_research.md)를 변환했다. 2026-10-12 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.",
+      "f4: C(2025) 7750 final 의 권고가 최종 채택(관보 게재)되었는지와 다국어본 공개 상태는 확인하지 못함(EC 페이지는 2026-03-03 갱신에도 Draft 표기). 합리적 보상 지침의 후속 발표 여부도 미확인",
+      "f5~f10: 회원국별 제조물책임지침 이행 법령과 국내 제조물책임법의 소프트웨어 포함 개정 여부(oq-290)는 확인하지 못함. 오케스트레이션 소프트웨어가 제품·관련 서비스에 해당하는지(oq-289)는 판단하지 않음",
+      "f11·f12: 2025 공고 'bi-annual'의 의도(연 2회/2년마다)는 공고 원문만으로 확정할 수 없음",
+      "f15: 개인정보위 보도자료는 독립 검증 보고의 원문 대조 기준이며, 안내서 본문(ref-1135)과 개인정보 보호법 조문은 이번에 다시 열지 않음",
+      "f18: 논문 §4.1.4 구절은 독립 검증 보고의 원문 대조 기준(로컬 저장본은 접근 차단 페이지), 서지는 Crossref 로 확인",
+      "f19~f29: 벤더 약관은 공개 웹 문안이며 개별 체결본·주문서·단가·이행 실적은 미확인. AWS IoT RoboRunner 의 조사일 현재 신규 제공·지원 상태 미확인(지원 종료 공지는 찾지 못함). AIRROBO 고지의 발행일 미확인(PDF 작성 2025-12-23)",
+      "검증 보고의 2차 자료 언급: 데이터법 개정안(Digital Omnibus, COM(2025) 837)이 협상 중으로 보이고 EU AI법이 개정되었다는 점은 원문으로 확인하지 않아 finding 으로 넣지 않음 — s6.md 의 AI법 제25·26조 서술 영향은 후속 점검",
+      "oq-145(모델 대체·라우팅 희석 계약), oq-265(R15.08-3 사용자 의무), oq-281(산업데이터 계약 가이드 432쪽 본문), oq-282(기계 규정 실질적 변경과 플랫폼 설정 변경), oq-283(로봇-승강기 연동 표준 결과물)은 이번 메모가 답하지 못함"
+    ],
+    "scope_violations": [
+      "f5~f10: EU 제조물책임지침의 법적 효력·적용 판단은 59. 법·규제·보험·라이선스 쪽 내용이므로 조문 확인까지만 하고 다사업자 책임 관점 핵심만 씀",
+      "f15: 영상 위탁 관리는 53. 개인정보·영상 데이터와 겹치며, 이 영역에는 계약 부속서 관리 관점의 짧은 연결로만 씀",
+      "f11~f14: RoMi-H 등재는 63. 병원·의료와 겹치며, 이 영역에는 통합자 사전 자격과 책임 주체 관점으로만 씀",
+      "f16·f17: RFC 9745 는 41. 플랫폼 아키텍처·외부 API, 21. 상호운용 표준·적합성과 겹치며, 이 영역에는 제조사 API 폐기 통지의 계약 관점으로만 씀"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 10
+    },
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 10건/15(ref-1487~ref-1496, 예약 구간 ref-1487~ref-1516 안), 재사용 4건(ref-636·ref-1192·ref-872·ref-706). 출처 매핑(검증 결과 기준): 메모 n1→ref-636, n2→ref-1487(UBTech CDN), n3→ref-1488, n4→ref-1192, n5→ref-1489(미러 dirittobancario.it 대신 공식 EC URL), n6→ref-1490(EUR-Lex 원문; ref-1227 은 해설이라 쓰지 않음), n7→ref-1491(약관 표기 2023-03-01), n8→ref-1492, n9→ref-1493, n10→ref-1494(안내서 ref-1135·기사 ref-1136 과 별개 1차 보도자료), n11→ref-1495, n12→ref-872, n13→ref-706(원문 열람), n14→ref-1496. 교차 확인 0건(모든 사실 finding 이 단일 출처이거나 같은 기관 계열: EC 발표·부속서, CHART 2025·2026 공고) — 신뢰도 medium 이하. 벤더 약관 11건(Relay·Formant·AIRROBO·AWS·1X)은 모두 [추정]·vendor_claim, 서로 다른 업체의 다른 조건이라 교차 확인으로 세지 않음. 검증 반영: A01 정정 위치를 6절이 아니라 s4.md 40행(4절)으로, 근거 ref-1191→ref-636(f1); F03 제3조(1) 적용 대상(2026-09-12 후 출시)과 일반 적용일(2025-09-12) 구분(f3); F04 는 기존 내용이라 제외; F05 출처를 공식 EC URL 로(f4, 면책 조항 없음); 제조물책임지침은 다사업자 책임 관점 핵심만(f5~f10) 넣고 정오표 표기 '2026-12-08 후'=2026-12-09부터로 명시(f7), 제8조(2) 실질적 변경자 추가(f6); F13 'bi-annual' 원어 인용과 두 해석으로 정정(f11 사실·f12 추정); F14 는 53영역 중복이라 짧게(f15); RFC 9745 는 원문 열람으로 보강(f16·f17); 벤더 약관 X01~X11 은 '○○사 약관에 따르면'·단일 업체 사례로 한정(f19~f29), Formant 는 정의 번호 대신 용어 이름으로 인용. 열린 질문: 해결 없음. 부분 근거 oq-241·oq-268·oq-279·oq-320·oq-280·oq-207·oq-259·oq-185·oq-249·oq-289·oq-149·oq-110. 메모의 '답한 열린 질문' 가운데 '새 질문' 5건은 문구 대조로 기존 oq-279~oq-283 과 같아 새로 만들지 않음. 메모의 '새로 생긴 열린 질문' 3건 중 지원 기한 정지·제3자 공유 실동작 2건을 새로 올리고 Formant 수량 검증 건은 oq-268 에 묶음; RoMi-H 주기 질문 1건 추가. 메모의 '.research-work' 로컬 경로·행 번호(L…)는 쓰지 않고 원문 조·절·쪽과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
+  }
+}

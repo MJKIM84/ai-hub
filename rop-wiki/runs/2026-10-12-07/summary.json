@@ -1,0 +1,153 @@
+{
+  "run_id": "2026-10-12-07",
+  "date": "2026-10-12",
+  "run_type": "update",
+  "target": {
+    "area_no": 45,
+    "area_name": "45. 문서·도면·장면 이해",
+    "category": "L. AI·학습 기술"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "424057e",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 10
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3679.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-12 | 45. 문서·도면·장면 이해 | 차등 갱신: 5절 물류창고 사례의 카메라 설치 주체 정정(연구팀 설치 카메라 30대, 45분·임무 76건·개입 4회)과 실외 사례 로봇 대수·재위치·임무 성공률 보강, 6~8절에 도면 인식 점수 조건·AAS-RAIL 산출 조건·근거 위치 자료형·BIM 정합 요약·새 연구 4건, 9절 카메라 주체 문장 정정, 10절 연결 추가(기존 분리 페이지 연결 유지), 11절 부분 근거와 새 질문 4건, 각주 신규 10건 | run 2026-10-12-07",
+  "notes": [
+    "참고문헌 생성: references/ref-1554.md",
+    "참고문헌 생성: references/ref-1555.md",
+    "참고문헌 생성: references/ref-1556.md",
+    "참고문헌 생성: references/ref-1557.md",
+    "참고문헌 생성: references/ref-1558.md",
+    "참고문헌 생성: references/ref-1559.md",
+    "참고문헌 생성: references/ref-1560.md",
+    "참고문헌 생성: references/ref-1561.md",
+    "참고문헌 생성: references/ref-1562.md",
+    "참고문헌 생성: references/ref-1563.md",
+    "세부영역 반영 제안 3건을 반영으로 표시했다(45. 문서·도면·장면 이해, 실행 2026-10-12-07)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 10,
+    "standards": 2,
+    "open_questions": 4,
+    "flow_cells": 10,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-12 06:50:48 KST",
+  "usage": {
+    "input_tokens": 38,
+    "cache_creation_input_tokens": 865550,
+    "cache_read_input_tokens": 2698361,
+    "output_tokens": 135959,
+    "cost_usd": 10.2754,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.2325,
+        "output_tokens": 24933,
+        "cache_read_input_tokens": 2368646,
+        "cache_creation_input_tokens": 147527
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.5994,
+        "output_tokens": 94773,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 459388
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.3461,
+        "output_tokens": 15782,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 249362
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md (8개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-12-area45-s6.md",
+        "chars": 2996
+      },
+      {
+        "from": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-12-area45-s8.md",
+        "chars": 2545
+      },
+      {
+        "from": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-12-area45-s11.md",
+        "chars": 1701
+      },
+      {
+        "from": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-12-area45-s7.md",
+        "chars": 1522
+      },
+      {
+        "from": "docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-12-area45-s10.md",
+        "chars": 1167
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 18,
+  "cross_checked_findings": 0
+}

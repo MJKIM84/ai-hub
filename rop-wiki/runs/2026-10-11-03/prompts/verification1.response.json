@@ -1,0 +1,601 @@
+{
+  "duration_api_ms": 445453,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.7392812999999996,
+  "usage": {
+    "input_tokens": 28,
+    "cache_creation_input_tokens": 168611,
+    "cache_read_input_tokens": 3153946,
+    "output_tokens": 30061,
+    "output_tokens_details": {
+      "thinking_tokens": 12299
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 168611,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 13732,
+        "cache_read_input_tokens": 250893,
+        "cache_creation_input_tokens": 6598,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6598
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 610991,
+      "outputTokens": 34346,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 8,
+      "costUSD": 0.15827210000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 19542,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 28,
+      "outputTokens": 30061,
+      "cacheReadInputTokens": 3153946,
+      "cacheCreationInputTokens": 168611,
+      "webSearchRequests": 0,
+      "costUSD": 2.5810092,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12299,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 42,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-11-03\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Crossref 서지(Park, Youngsup·Park, Sungho, Architectural Research 28(1), 논문번호 14, 온라인 2026-07-21)와 Springer 초록 일치. 초록은 REEC 를 'Robotics-Enabled Environment Certification'으로 표기하고 BF 인증과 비교해 설계 기준을 도출했다고 적는다. 본문 미열람이라 연구 방법은 단정하지 않는다.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. ref-1484(스마트투데이 2025-05-28, 이재수) 열람: '29일 … 착수보고회를 열고 … 28일 밝혔다', '2028년까지 완료될 예정'. 보도 시점에 착수보고회는 예정이었으므로 '열었다'고 쓰지 않는다(수정 지시). 기사의 사업명 문장은 오기가 있어 사업명을 확정하는 근거가 아님. ref-322 원문 미열람.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 기사가 세 세부 중점과제 가운데 하나로 '기술 실증을 통한 기술표준 및 인증제도 개선방안 마련'을 든다. ref-322 원문 미열람, 이후 진행 미확인.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: e-나라표준인증 KS B 7317 상세(standard.go.kr)에서 2021-11-30 제정(2021-0561), 2022-12-09 개정(2022-0571), 2025-05-09 개정(2025-0073) 이력 일치. 개정 조항 미확인. 트랙 반영 제안(2026-09-25-65)의 '2021-11-11 제정'은 이 고시일과 다르다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 적용 대상 엘리베이터는 '병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터', 표준개발협력기관은 한국AI·로봇산업협회, 담당은 국가기술표준원 기계융합산업표준과로 일치.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"KOLA 게시물(kola.or.kr)은 검증 단계에서 두 번 모두 TLS 인증서 오류로 열리지 않음. 같은 날(2026-03-27) 이뉴스투데이 기사가 같은 제정 문구를 실어 대조했다. 그 기사는 보도자료를 옮긴 것이어서 독립 출처로 세지 않는다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. ref-1486 URL 은 단체표준 목록 첫 쪽(4,019건 중 10건)만 보여 주며, B-KOLA-0001-7700 행은 검증에서 재현되지 않았다. 표준 번호를 정확 일치로 검색해도 결과가 없다. 표준 번호·등록일자 2026-03-24 는 리서치 단계의 열람에만 기댄다. 목록 검색 조건이 URL 에 없어 fetched 표시의 근거가 약하다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"KOLA 원문 열람 실패(TLS). 이뉴스투데이 2026-03-27 기사에서 '일반사항, 시험 설비 및 시험 절차', 'e-나라표준인증에 등록게재 … 무료로 다운로드' 문구를 확인했다(보도자료 기반이라 독립 출처 아님). 메시지·상태 정의는 미확인.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Discourse 아카이브의 제목(#513)과 날짜 2024-08-21 일치. mxgrey 답변 'should not broadcast the session_id value until it has finished switching into that mode' 확인. 설계 의도 설명이다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 'Some lifts might not have a special AGV mode'.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 커밋 4cea3fe 의 Node.cpp. _adapter_lift_request_update 에 session_id 비교가 있고, REQUEST_END_SESSION 이 아니면 갱신, 맞으면 종료 발행 뒤 curr_request = nullptr 로 비운다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: _lift_state_update 주석 'we keep publishing session end requests to ensure that the lift gets released'. TODO(MXG) 주석은 _adapter_lift_request_update 안에 있다(주장은 위치를 특정하지 않으므로 문제없음).\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: CHANGELOG 2.13.0(2026-06-15)의 'emit completion legacy state if lift is already on the level (#510)'. 최신 2.14.0(2026-09-26) 존재도 확인했다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: DispenseItem.cpp _get_status. request_guid 일치 시 ACKNOWLEDGED → _request_acknowledged=true, SUCCESS → STATE_COMPLETED, FAILED → STATE_FAILED.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: request_guid_queue 에 들어 있으면 접수로 표시하고, 접수 뒤 큐에서 사라지면 완료로 처리한다. 주석 'if it's no longer in the queue, then we'll assume it's finished'.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정(구현에서 도출한 위험 해석) 유지. 코드에 큐 소거 원인을 구분하는 분기가 없다는 점까지만 근거가 된다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: README 의 KONE API v2.0 WebSocket 명령 전송과 상태 수신, CHART 개발, sharp-rmf/kone-ros-api 원 저장소. 공개 어댑터 기준이며 현행 KONE 계약이 아니다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 'To control a live elevator, you will need to get these id & secret from KONE Personnel.' The Galen 시험 문구는 기존 위키(ref-884)에 있다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EL301·ED250 시험과 IoT connector 장착 요구('fitter' 오기 원문). '연계 대상' 표시가 적절하다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 'Credentials to access the door's cloud API will be provided by Dormakaba.'\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정·벤더 주장 유지. 도서관 현장, PLC 를 넣은 승강기 제어함, Beckhoff CX9020, ADS, 드라이 접점, AGV 모드 개조 모두 확인했다. 제어함 위치는 개요('level 6 cargo lift lobby')와 본문('service lift 4 lobby')이 달라 위치를 특정하지 않는다. 발행일·작성 주체 명시 없음(HopeTechnik 은 제목 표기).\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Table 1 #2 Fire Alarm 행의 조치는 승강기 수동 모드 전환·PLC 오류 상태·경고음이고, 복구는 'Manual intervention is needed. PLC will stay in error state until it is restarted.' 벤더 주장 유지.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 개요의 LiftState 1 Hz 와 서버 절의 '2초마다'(0.5 Hz)가 충돌한다. LiftRequest 는 1초마다. 결론 보류가 맞다.\"},{\"finding_id\":\"f24\",\"source_exists\":false,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"ref-1493(OMRON I680-E-02) URL 은 검증에서도 403. 문서 번호·제목으로 검색해도 이 안내서가 나오지 않아 존재를 확인하지 못했다. 근거는 외부 AI 조사 메모의 전언뿐이므로 출처 없는 내용으로 본다. oq-042 는 열림을 유지한다.\"},{\"finding_id\":\"f25\",\"source_exists\":false,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"f24 와 같은 이유(ref-1493 존재 미확인, 메모 전언뿐).\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: SEMI 판매 목록에서 E84-0823 이 Current, E84-1109 등이 Superseded로 표시된다. 초록 'more reliable and efficient carrier handoffs (load/unload) at production equipment load ports' 확인. 표준 본문 미열람.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(원문 미열람). 검색 결과 요약에서 SEMI downloads 페이지(같은 문서 id)를 확인했다. 확인한 내용: Doc 7442 SNARF, E84 물리 I/O 대신 TCP/IP 인계를 제안하고 하위 규격 Doc 7443 을 둠, 반도체 조립·시험 범위, 작성일 2025-12-17. 같은 요약에 2026-07-29 SEMI 투표 요약에서 7442·7443 이 Passed로 나온다는 내용이 있으나 브리프 밖 정보라 넣지 않는다. 표준 발행은 미확인. '외부 조사 메모가 전한다' 표현은 지운다(수정 지시).\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PMC13039597 §4.5 'should be interpreted as site-specific and is expected to require recalibration…'. 이유로 카 크기·운반 카트·탑승자 구성을 든다. Digital Health 12, 2026-03-31.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 대상 122건, 실패 14건(§3.2), §3.4 의 완료 108건. 'all trials' 정의가 없고 108/122≈88.52% 로 87.03% 와 맞지 않는다. 보고값을 고치지 않고 불일치만 적는다.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인: ref-943 초록 'An increased EOR also prolonged the delivery time'과 ref-163 §3.3(jkros 전문)의 외부 이용자로 인한 6층→7층 구간 지연(Table 4 의 3:00)을 확인했다. 발행 기관이 다른 독립 출처다(질적 관찰). 단 ref-163 발행일은 2026-02-28 이다.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Han·Ding·Liu·Meng, Sensors 25(6):1783, 2025-03-13. 실제 평면·층고로 만든 68×68 거리 행렬, 시나리오별 방 무작위 선택(10·20·30·60), 승강기 기본 대기 30 s. 수치 실험이다.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"초록(PDF 메타)에서 '15-story simulation with varying parcel counts', n=1~7 을 확인했다. MDPI 본문(403)과 §5 는 판독하지 못해 1·3·5·7 이라는 이산값은 검증에서 재현하지 못했다. 저자 6명·2025-02-28 확인.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: jkros 전문 §3.3 '각 층의 절반 영역', KCI 초록 KAIST N1 5F–9F. 발행일은 jkros 기준 2026-02-28(브리프의 2026-03 아님).\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Table 5 Elevator Interaction 19/20(95%).\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"PDF 본문은 판독 실패(압축 스트림). 검색 결과 요약에서 BAC-09-08 의 2008-09-27 날짜와 'ongoing work of the SSPC135 LSS-Working Group and the basis for proposed changes to the BACnet standard … subject to change'를 확인했다. 이후 Access Door 등은 ASHRAE 135 부록(addenda)으로 채택됐다는 기사도 있어 현행 규범 본문이 아님을 밝히는 것이 맞다.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. PDF 본문 판독 실패(두 URL 모두)로 '특정 시간에 특정 문을 통과할 권리' 문장과 인증·권한 검사 구분을 검증에서 재현하지 못했고, 검색 요약에도 이 내용이 없다.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정·벤더 주장 유지. NAVER LABS 2026-07-23 블로그에서 화물 승강기·자동문·출입 경로의 중앙 통합과 연말 전 층 확대 계획을 확인했다. 블로그는 건물을 'a commercial building'으로 적으므로 현장 유형 '상업 시설'이 맞다. 이름이 나온 로봇은 Rookie 뿐이다.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견 표시 확인. 근거 출처 실재(ref-322 는 원문 미열람).\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f4·f5 근거 확인.\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. 근거 가운데 ref-1486 목록 행은 검증에서 재현하지 못했으나(f7) 의견의 취지(본문 확보 후 대응표 작성)에는 영향 없음.\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f9·f10 근거 확인.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f11·f12 근거 확인.\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f14·f15 근거 확인.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f17·f18 근거 확인.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. ref-1491 확인, ref-1495 의 인증·권한 구분은 검증에서 재현하지 못했으므로(f36 강등) 그 부분은 추정 근거로만 언급한다.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f22 근거 확인.\"},{\"finding_id\":\"f47\",\"source_exists\":false,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견 유지. 근거 가운데 ref-1493 은 존재 미확인이라 빼고 ref-202(E84 인계 신호)만 근거로 둔다(수정 지시).\"},{\"finding_id\":\"f48\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. 병원 논문의 재보정 명시, 호텔·그래프 연구의 수치 실험 성격, 로봇 한 대의 실물 지도 구축이라는 근거를 모두 확인했다.\"},{\"finding_id\":\"f49\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. KCI 초록으로 KAIST 사례의 버튼 조작(4자유도 매니퓰레이터)을 확인했다. 병원 사례의 제어반 통신 모듈은 기존 위키 서술에 기댄다.\"},{\"finding_id\":\"f50\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"구축자 의견. f37 근거 확인(전 층 확대는 계획).\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"ref-943(PMC13039597)과 기존 각주 ref-060(doi 10.1177/20552076261437181)은 같은 논문(Lee, Y. 외, Digital Health 2026)이다. 이 페이지의 기존 문장은 ref-060 을 유지하고 새 문장은 ref-943 을 써도 되지만, 두 id 통합은 참고문헌 정리 대상이다\",\"f6·f8 의 KOLA 단체표준 제정은 기존 각주 ref-316(건설기술신문)·ref-317 과 겹친다. 협회 1차 자료(ref-1485)로 보강하는 것이며 새 사실은 대상 범위·무료 공개뿐이다\",\"트랙 반영 제안 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 f4 의 e-나라표준인증 고시일 2021-11-30 과 다르다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true,\"issues\":[]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f24·f25: 삭제한다. ref-1493(OMRON I680-E-02)은 검증에서 403 이었고 검색으로도 존재를 확인하지 못했으며, 근거가 외부 조사 메모의 전언뿐이다. 6절 '물리 인계 예시' 문단, 10절 30. 로봇 간 협업·물리적 인계 연결 근거, 11절 oq-042 부분 근거, 각주, reference_updates 에서 ref-1493 을 모두 뺀다.\",\"f47: 근거 출처에서 ref-1493 을 빼고 ref-202 만 각주로 단다. [의견]과 '구축자 의견' 표시는 유지한다 — ref-1493 은 존재 미확인 출처다.\",\"f7: [사실]을 [추정]으로 강등한다. 'e-나라표준인증 단체표준 목록에 표준번호 B-KOLA-0001-7700·등록일자 2026-03-24 로 올라 있다'는 내용은 리서치 단계 열람에만 기대고 검증에서 재현하지 못했음을 문장에 밝힌다. 7절 KOLA 행과 oq-283 부분 근거의 표준 번호도 같은 수준으로 쓴다. 이유: ref-1486 URL 은 목록 첫 쪽만 보이고 해당 행이 없으며, 정확 일치 검색에서도 나오지 않는다.\",\"f36: [사실]을 [추정]으로 강등한다. BAC-09-08 의 인증·권한 검사 구분과 '특정 시간에 특정 문 통과 권리' 예시는 PDF 판독 실패로 검증에서 재현하지 못했다. f45 의견은 Dormakaba 자격증명(f20)을 주 근거로 쓰고 BACnet 쪽은 추정 근거로만 언급한다.\",\"f35: BAC-09-08 은 2008-09-27 작업 문서이고 현행 ANSI/ASHRAE 135 규범 본문이 아님을 7절 문장에 그대로 밝힌다(브리프 표현 유지). 이후 부록(addenda) 채택 여부처럼 브리프에 없는 내용은 덧붙이지 않는다.\",\"f2: '2025년 5월 착수보고회를 열고'를 '2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐다'로 고친다 — 출처 기사는 보도 시점에 착수보고회를 예정으로 적었다. 사업명은 기존 ref-322 보도자료 제목을 쓰고, 기사 문장을 사업명의 근거로 삼지 않는다.\",\"f2·f3·f27: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-322·ref-1494 에 source_unopened: true 를 넣는다 — 두 출처는 원문을 열지 못했다.\",\"f27: '외부 조사 메모가 전한다'는 표현을 지운다. 'SEMI 물리 인터페이스·캐리어 기술위원회(일본)의 Doc 7442 신규 예비 표준 개발 제안서(SNARF, 작성 2025-12-17)는 E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안한다'로, 반도체 조립·시험 범위와 표준 발행 미확인을 함께 [추정]으로 쓴다 — 검증에서 검색 결과 요약으로 내용은 맞음을 확인했으나 원문은 미열람이다.\",\"ref-163: 발행일을 2026-03 이 아니라 2026-02-28(로봇학회 논문지 21(1):48–57)로 쓰고, f30·f33·f34 문장의 기준일도 2026-02-28 로 맞춘다 — jkros 게재 정보 기준.\",\"f32: '소포 1·3·5·7개'는 검증에서 본문으로 재현하지 못했다. 초록이 확인한 범위인 '15층 건물 그래프 시뮬레이션에서 소포 수 1~7개'로 쓰고 시뮬레이션 평가임을 밝힌다.\",\"트랙 반영 제안 2건(2026-09-25-65 문 설비 연동·IFC HasDrive·로봇 조작과 설비 연동의 선택 조건, 2026-09-25-76 승강기 층 이름과 지도 층의 대응표)은 브리프에 근거 finding 이 없다. 6절에 반영하지 말고, changelog_entry 와 additional_research_requests 에 '이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월'을 적는다. 특히 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 f4 의 고시일 2021-11-30 과 다르므로 페이지에 쓰지 않는다.\",\"직접 인용: 출처당 한 번, 짧은 구절만 쓴다. ref-1492(f21~f23), ref-1487(f9·f10), ref-1488(f11·f12), ref-1489(f14·f15), ref-943(f28~f30)처럼 한 출처에서 여러 발췌가 있으면 하나만 인용하고 나머지는 재서술한다.\",\"f1: '로봇 친화형 건축물 인증'은 용어집 robot-friendly-building-certification 으로 연결한다. 초록의 영문 표기(Robotics-Enabled Environment Certification, REEC)는 병기만 하고 새 용어로 등록하지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 45건, 미확인 5건, 교차 확인 1건(f30: 고려대 구로병원·도구공간 논문과 KAIST 논문, 공유 승강기 지연의 질적 관찰). 강등: f7 사실 → 추정(단체표준 목록 행 재현 불가), f36 사실 → 추정(BACnet 백서 본문 판독 실패). 삭제: f24·f25(ref-1493 OMRON 안내서 존재 미확인 — 403, 검색 불일치). 원문 미열람 출처: ref-322, ref-1494(검색 결과 요약으로 내용 대조), ref-1493(제외). 검증 단계 열람 실패: ref-1485(KOLA, TLS 오류, 같은 날 보도로 대조), ref-1486(목록 행 재현 불가), ref-1495(PDF 판독 실패, 검색 요약으로 f35만 대조), ref-321(본문 403, 초록으로 대조). 주의: 대부분의 주장은 단일 출처이며 Open-RMF 코드·README 와 한 도서관 현장의 벤더 문서(f21~f23)에 기댄다. Open-RMF 구현 분석은 설계 의도와 코드 동작이지 현장 안전 동작의 재현이 아니다. KS B 7317 개정 조항, KOLA 가이드라인의 메시지 정의와 Open-RMF 대응, 물류창고 승강기 병목(oq-010)은 여전히 미확인이다. ref-060 과 ref-943 은 같은 논문이므로 참고문헌 정리가 필요하다. 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 브리프가 다루지 않아 다음 22. 설비·건물 시스템 연동 실행으로 이월한다. 브리프의 검색 횟수는 외부 조사 변환이라 집계되지 않았다(검증 검색 8회). 정정 요청 없음. 열린 질문 해결 인정 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-11-03",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Crossref 서지(Park, Youngsup·Park, Sungho, Architectural Research 28(1), 논문번호 14, 온라인 2026-07-21)와 Springer 초록 일치. 초록은 REEC 를 'Robotics-Enabled Environment Certification'으로 표기하고 BF 인증과 비교해 설계 기준을 도출했다고 적는다. 본문 미열람이라 연구 방법은 단정하지 않는다."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. ref-1484(스마트투데이 2025-05-28, 이재수) 열람: '29일 … 착수보고회를 열고 … 28일 밝혔다', '2028년까지 완료될 예정'. 보도 시점에 착수보고회는 예정이었으므로 '열었다'고 쓰지 않는다(수정 지시). 기사의 사업명 문장은 오기가 있어 사업명을 확정하는 근거가 아님. ref-322 원문 미열람."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 기사가 세 세부 중점과제 가운데 하나로 '기술 실증을 통한 기술표준 및 인증제도 개선방안 마련'을 든다. ref-322 원문 미열람, 이후 진행 미확인."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: e-나라표준인증 KS B 7317 상세(standard.go.kr)에서 2021-11-30 제정(2021-0561), 2022-12-09 개정(2022-0571), 2025-05-09 개정(2025-0073) 이력 일치. 개정 조항 미확인. 트랙 반영 제안(2026-09-25-65)의 '2021-11-11 제정'은 이 고시일과 다르다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 적용 대상 엘리베이터는 '병원의 환자 전용 엘리베이터를 제외한 모든 엘리베이터', 표준개발협력기관은 한국AI·로봇산업협회, 담당은 국가기술표준원 기계융합산업표준과로 일치."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "KOLA 게시물(kola.or.kr)은 검증 단계에서 두 번 모두 TLS 인증서 오류로 열리지 않음. 같은 날(2026-03-27) 이뉴스투데이 기사가 같은 제정 문구를 실어 대조했다. 그 기사는 보도자료를 옮긴 것이어서 독립 출처로 세지 않는다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. ref-1486 URL 은 단체표준 목록 첫 쪽(4,019건 중 10건)만 보여 주며, B-KOLA-0001-7700 행은 검증에서 재현되지 않았다. 표준 번호를 정확 일치로 검색해도 결과가 없다. 표준 번호·등록일자 2026-03-24 는 리서치 단계의 열람에만 기댄다. 목록 검색 조건이 URL 에 없어 fetched 표시의 근거가 약하다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "KOLA 원문 열람 실패(TLS). 이뉴스투데이 2026-03-27 기사에서 '일반사항, 시험 설비 및 시험 절차', 'e-나라표준인증에 등록게재 … 무료로 다운로드' 문구를 확인했다(보도자료 기반이라 독립 출처 아님). 메시지·상태 정의는 미확인."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Discourse 아카이브의 제목(#513)과 날짜 2024-08-21 일치. mxgrey 답변 'should not broadcast the session_id value until it has finished switching into that mode' 확인. 설계 의도 설명이다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 'Some lifts might not have a special AGV mode'."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 커밋 4cea3fe 의 Node.cpp. _adapter_lift_request_update 에 session_id 비교가 있고, REQUEST_END_SESSION 이 아니면 갱신, 맞으면 종료 발행 뒤 curr_request = nullptr 로 비운다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: _lift_state_update 주석 'we keep publishing session end requests to ensure that the lift gets released'. TODO(MXG) 주석은 _adapter_lift_request_update 안에 있다(주장은 위치를 특정하지 않으므로 문제없음)."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: CHANGELOG 2.13.0(2026-06-15)의 'emit completion legacy state if lift is already on the level (#510)'. 최신 2.14.0(2026-09-26) 존재도 확인했다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: DispenseItem.cpp _get_status. request_guid 일치 시 ACKNOWLEDGED → _request_acknowledged=true, SUCCESS → STATE_COMPLETED, FAILED → STATE_FAILED."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: request_guid_queue 에 들어 있으면 접수로 표시하고, 접수 뒤 큐에서 사라지면 완료로 처리한다. 주석 'if it's no longer in the queue, then we'll assume it's finished'."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정(구현에서 도출한 위험 해석) 유지. 코드에 큐 소거 원인을 구분하는 분기가 없다는 점까지만 근거가 된다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: README 의 KONE API v2.0 WebSocket 명령 전송과 상태 수신, CHART 개발, sharp-rmf/kone-ros-api 원 저장소. 공개 어댑터 기준이며 현행 KONE 계약이 아니다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 'To control a live elevator, you will need to get these id & secret from KONE Personnel.' The Galen 시험 문구는 기존 위키(ref-884)에 있다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EL301·ED250 시험과 IoT connector 장착 요구('fitter' 오기 원문). '연계 대상' 표시가 적절하다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 'Credentials to access the door's cloud API will be provided by Dormakaba.'"
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정·벤더 주장 유지. 도서관 현장, PLC 를 넣은 승강기 제어함, Beckhoff CX9020, ADS, 드라이 접점, AGV 모드 개조 모두 확인했다. 제어함 위치는 개요('level 6 cargo lift lobby')와 본문('service lift 4 lobby')이 달라 위치를 특정하지 않는다. 발행일·작성 주체 명시 없음(HopeTechnik 은 제목 표기)."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Table 1 #2 Fire Alarm 행의 조치는 승강기 수동 모드 전환·PLC 오류 상태·경고음이고, 복구는 'Manual intervention is needed. PLC will stay in error state until it is restarted.' 벤더 주장 유지."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 개요의 LiftState 1 Hz 와 서버 절의 '2초마다'(0.5 Hz)가 충돌한다. LiftRequest 는 1초마다. 결론 보류가 맞다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": false,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "ref-1493(OMRON I680-E-02) URL 은 검증에서도 403. 문서 번호·제목으로 검색해도 이 안내서가 나오지 않아 존재를 확인하지 못했다. 근거는 외부 AI 조사 메모의 전언뿐이므로 출처 없는 내용으로 본다. oq-042 는 열림을 유지한다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": false,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "f24 와 같은 이유(ref-1493 존재 미확인, 메모 전언뿐)."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: SEMI 판매 목록에서 E84-0823 이 Current, E84-1109 등이 Superseded로 표시된다. 초록 'more reliable and efficient carrier handoffs (load/unload) at production equipment load ports' 확인. 표준 본문 미열람."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(원문 미열람). 검색 결과 요약에서 SEMI downloads 페이지(같은 문서 id)를 확인했다. 확인한 내용: Doc 7442 SNARF, E84 물리 I/O 대신 TCP/IP 인계를 제안하고 하위 규격 Doc 7443 을 둠, 반도체 조립·시험 범위, 작성일 2025-12-17. 같은 요약에 2026-07-29 SEMI 투표 요약에서 7442·7443 이 Passed로 나온다는 내용이 있으나 브리프 밖 정보라 넣지 않는다. 표준 발행은 미확인. '외부 조사 메모가 전한다' 표현은 지운다(수정 지시)."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PMC13039597 §4.5 'should be interpreted as site-specific and is expected to require recalibration…'. 이유로 카 크기·운반 카트·탑승자 구성을 든다. Digital Health 12, 2026-03-31."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 대상 122건, 실패 14건(§3.2), §3.4 의 완료 108건. 'all trials' 정의가 없고 108/122≈88.52% 로 87.03% 와 맞지 않는다. 보고값을 고치지 않고 불일치만 적는다."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인: ref-943 초록 'An increased EOR also prolonged the delivery time'과 ref-163 §3.3(jkros 전문)의 외부 이용자로 인한 6층→7층 구간 지연(Table 4 의 3:00)을 확인했다. 발행 기관이 다른 독립 출처다(질적 관찰). 단 ref-163 발행일은 2026-02-28 이다."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Han·Ding·Liu·Meng, Sensors 25(6):1783, 2025-03-13. 실제 평면·층고로 만든 68×68 거리 행렬, 시나리오별 방 무작위 선택(10·20·30·60), 승강기 기본 대기 30 s. 수치 실험이다."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "초록(PDF 메타)에서 '15-story simulation with varying parcel counts', n=1~7 을 확인했다. MDPI 본문(403)과 §5 는 판독하지 못해 1·3·5·7 이라는 이산값은 검증에서 재현하지 못했다. 저자 6명·2025-02-28 확인."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: jkros 전문 §3.3 '각 층의 절반 영역', KCI 초록 KAIST N1 5F–9F. 발행일은 jkros 기준 2026-02-28(브리프의 2026-03 아님)."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Table 5 Elevator Interaction 19/20(95%)."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "PDF 본문은 판독 실패(압축 스트림). 검색 결과 요약에서 BAC-09-08 의 2008-09-27 날짜와 'ongoing work of the SSPC135 LSS-Working Group and the basis for proposed changes to the BACnet standard … subject to change'를 확인했다. 이후 Access Door 등은 ASHRAE 135 부록(addenda)으로 채택됐다는 기사도 있어 현행 규범 본문이 아님을 밝히는 것이 맞다."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. PDF 본문 판독 실패(두 URL 모두)로 '특정 시간에 특정 문을 통과할 권리' 문장과 인증·권한 검사 구분을 검증에서 재현하지 못했고, 검색 요약에도 이 내용이 없다."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정·벤더 주장 유지. NAVER LABS 2026-07-23 블로그에서 화물 승강기·자동문·출입 경로의 중앙 통합과 연말 전 층 확대 계획을 확인했다. 블로그는 건물을 'a commercial building'으로 적으므로 현장 유형 '상업 시설'이 맞다. 이름이 나온 로봇은 Rookie 뿐이다."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견 표시 확인. 근거 출처 실재(ref-322 는 원문 미열람)."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f4·f5 근거 확인."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. 근거 가운데 ref-1486 목록 행은 검증에서 재현하지 못했으나(f7) 의견의 취지(본문 확보 후 대응표 작성)에는 영향 없음."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f9·f10 근거 확인."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f11·f12 근거 확인."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f14·f15 근거 확인."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f17·f18 근거 확인."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. ref-1491 확인, ref-1495 의 인증·권한 구분은 검증에서 재현하지 못했으므로(f36 강등) 그 부분은 추정 근거로만 언급한다."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f22 근거 확인."
+      },
+      {
+        "finding_id": "f47",
+        "source_exists": false,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견 유지. 근거 가운데 ref-1493 은 존재 미확인이라 빼고 ref-202(E84 인계 신호)만 근거로 둔다(수정 지시)."
+      },
+      {
+        "finding_id": "f48",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. 병원 논문의 재보정 명시, 호텔·그래프 연구의 수치 실험 성격, 로봇 한 대의 실물 지도 구축이라는 근거를 모두 확인했다."
+      },
+      {
+        "finding_id": "f49",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. KCI 초록으로 KAIST 사례의 버튼 조작(4자유도 매니퓰레이터)을 확인했다. 병원 사례의 제어반 통신 모듈은 기존 위키 서술에 기댄다."
+      },
+      {
+        "finding_id": "f50",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "구축자 의견. f37 근거 확인(전 층 확대는 계획)."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "ref-943(PMC13039597)과 기존 각주 ref-060(doi 10.1177/20552076261437181)은 같은 논문(Lee, Y. 외, Digital Health 2026)이다. 이 페이지의 기존 문장은 ref-060 을 유지하고 새 문장은 ref-943 을 써도 되지만, 두 id 통합은 참고문헌 정리 대상이다",
+        "f6·f8 의 KOLA 단체표준 제정은 기존 각주 ref-316(건설기술신문)·ref-317 과 겹친다. 협회 1차 자료(ref-1485)로 보강하는 것이며 새 사실은 대상 범위·무료 공개뿐이다",
+        "트랙 반영 제안 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 f4 의 e-나라표준인증 고시일 2021-11-30 과 다르다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": []
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f24·f25: 삭제한다. ref-1493(OMRON I680-E-02)은 검증에서 403 이었고 검색으로도 존재를 확인하지 못했으며, 근거가 외부 조사 메모의 전언뿐이다. 6절 '물리 인계 예시' 문단, 10절 30. 로봇 간 협업·물리적 인계 연결 근거, 11절 oq-042 부분 근거, 각주, reference_updates 에서 ref-1493 을 모두 뺀다.",
+      "f47: 근거 출처에서 ref-1493 을 빼고 ref-202 만 각주로 단다. [의견]과 '구축자 의견' 표시는 유지한다 — ref-1493 은 존재 미확인 출처다.",
+      "f7: [사실]을 [추정]으로 강등한다. 'e-나라표준인증 단체표준 목록에 표준번호 B-KOLA-0001-7700·등록일자 2026-03-24 로 올라 있다'는 내용은 리서치 단계 열람에만 기대고 검증에서 재현하지 못했음을 문장에 밝힌다. 7절 KOLA 행과 oq-283 부분 근거의 표준 번호도 같은 수준으로 쓴다. 이유: ref-1486 URL 은 목록 첫 쪽만 보이고 해당 행이 없으며, 정확 일치 검색에서도 나오지 않는다.",
+      "f36: [사실]을 [추정]으로 강등한다. BAC-09-08 의 인증·권한 검사 구분과 '특정 시간에 특정 문 통과 권리' 예시는 PDF 판독 실패로 검증에서 재현하지 못했다. f45 의견은 Dormakaba 자격증명(f20)을 주 근거로 쓰고 BACnet 쪽은 추정 근거로만 언급한다.",
+      "f35: BAC-09-08 은 2008-09-27 작업 문서이고 현행 ANSI/ASHRAE 135 규범 본문이 아님을 7절 문장에 그대로 밝힌다(브리프 표현 유지). 이후 부록(addenda) 채택 여부처럼 브리프에 없는 내용은 덧붙이지 않는다.",
+      "f2: '2025년 5월 착수보고회를 열고'를 '2025-05-29 착수보고회를 열 예정이라고 2025-05-28 보도됐다'로 고친다 — 출처 기사는 보도 시점에 착수보고회를 예정으로 적었다. 사업명은 기존 ref-322 보도자료 제목을 쓰고, 기사 문장을 사업명의 근거로 삼지 않는다.",
+      "f2·f3·f27: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-322·ref-1494 에 source_unopened: true 를 넣는다 — 두 출처는 원문을 열지 못했다.",
+      "f27: '외부 조사 메모가 전한다'는 표현을 지운다. 'SEMI 물리 인터페이스·캐리어 기술위원회(일본)의 Doc 7442 신규 예비 표준 개발 제안서(SNARF, 작성 2025-12-17)는 E84 를 출발점으로 인계 인터페이스 규격과 TCP/IP 하위 규격을 제안한다'로, 반도체 조립·시험 범위와 표준 발행 미확인을 함께 [추정]으로 쓴다 — 검증에서 검색 결과 요약으로 내용은 맞음을 확인했으나 원문은 미열람이다.",
+      "ref-163: 발행일을 2026-03 이 아니라 2026-02-28(로봇학회 논문지 21(1):48–57)로 쓰고, f30·f33·f34 문장의 기준일도 2026-02-28 로 맞춘다 — jkros 게재 정보 기준.",
+      "f32: '소포 1·3·5·7개'는 검증에서 본문으로 재현하지 못했다. 초록이 확인한 범위인 '15층 건물 그래프 시뮬레이션에서 소포 수 1~7개'로 쓰고 시뮬레이션 평가임을 밝힌다.",
+      "트랙 반영 제안 2건(2026-09-25-65 문 설비 연동·IFC HasDrive·로봇 조작과 설비 연동의 선택 조건, 2026-09-25-76 승강기 층 이름과 지도 층의 대응표)은 브리프에 근거 finding 이 없다. 6절에 반영하지 말고, changelog_entry 와 additional_research_requests 에 '이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월'을 적는다. 특히 2026-09-25-65 요약의 'KS B 7317 2021-11-11 제정'은 f4 의 고시일 2021-11-30 과 다르므로 페이지에 쓰지 않는다.",
+      "직접 인용: 출처당 한 번, 짧은 구절만 쓴다. ref-1492(f21~f23), ref-1487(f9·f10), ref-1488(f11·f12), ref-1489(f14·f15), ref-943(f28~f30)처럼 한 출처에서 여러 발췌가 있으면 하나만 인용하고 나머지는 재서술한다.",
+      "f1: '로봇 친화형 건축물 인증'은 용어집 robot-friendly-building-certification 으로 연결한다. 초록의 영문 표기(Robotics-Enabled Environment Certification, REEC)는 병기만 하고 새 용어로 등록하지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 45건, 미확인 5건, 교차 확인 1건(f30: 고려대 구로병원·도구공간 논문과 KAIST 논문, 공유 승강기 지연의 질적 관찰). 강등: f7 사실 → 추정(단체표준 목록 행 재현 불가), f36 사실 → 추정(BACnet 백서 본문 판독 실패). 삭제: f24·f25(ref-1493 OMRON 안내서 존재 미확인 — 403, 검색 불일치). 원문 미열람 출처: ref-322, ref-1494(검색 결과 요약으로 내용 대조), ref-1493(제외). 검증 단계 열람 실패: ref-1485(KOLA, TLS 오류, 같은 날 보도로 대조), ref-1486(목록 행 재현 불가), ref-1495(PDF 판독 실패, 검색 요약으로 f35만 대조), ref-321(본문 403, 초록으로 대조). 주의: 대부분의 주장은 단일 출처이며 Open-RMF 코드·README 와 한 도서관 현장의 벤더 문서(f21~f23)에 기댄다. Open-RMF 구현 분석은 설계 의도와 코드 동작이지 현장 안전 동작의 재현이 아니다. KS B 7317 개정 조항, KOLA 가이드라인의 메시지 정의와 Open-RMF 대응, 물류창고 승강기 병목(oq-010)은 여전히 미확인이다. ref-060 과 ref-943 은 같은 논문이므로 참고문헌 정리가 필요하다. 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 브리프가 다루지 않아 다음 22. 설비·건물 시스템 연동 실행으로 이월한다. 브리프의 검색 횟수는 외부 조사 변환이라 집계되지 않았다(검증 검색 8회). 정정 요청 없음. 열린 질문 해결 인정 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 4301,
+  "type": "result",
+  "duration_ms": 360797,
+  "uuid": "b7a20607-7dd7-428d-8304-f9feab8d268a",
+  "ttft_stream_ms": 1656,
+  "time_to_request_ms": 147,
+  "time_to_request_phases_ms": {
+    "other": 47,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 12,
+    "input_attachments": 12,
+    "input_hooks": 5,
+    "tool_pool_refresh": 4,
+    "init_message": 7,
+    "engine_pickup": 2,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 9,
+    "message_normalization": 3,
+    "client_creation": 7,
+    "request_build": 23
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 96,
+  "time_to_request_cpu_ms": 201,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "model",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 24,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1657,
+  "time_to_request_from_spawn_ms": 5854777,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791722751319.7793,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 362.6
+}

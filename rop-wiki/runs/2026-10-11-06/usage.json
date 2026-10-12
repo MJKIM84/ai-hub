@@ -1,0 +1,88 @@
+{
+  "calls": [
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 151990,
+      "cache_read_input_tokens": 1686247,
+      "output_tokens": 26337,
+      "cost_usd": 2.1726,
+      "seconds": 289.4,
+      "num_turns": 31,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 192019,
+      "cache_read_input_tokens": 72042,
+      "output_tokens": 93532,
+      "cost_usd": 3.4212,
+      "seconds": 727.0,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 145248,
+      "cache_read_input_tokens": 88880,
+      "output_tokens": 21447,
+      "cost_usd": 1.6087,
+      "seconds": 193.8,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 285353,
+      "cache_read_input_tokens": 72042,
+      "output_tokens": 46042,
+      "cost_usd": 3.2181,
+      "seconds": 313.4,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2-retry1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 148836,
+      "cache_read_input_tokens": 88880,
+      "output_tokens": 5607,
+      "cost_usd": 1.3206,
+      "seconds": 49.9,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 24,
+    "cache_creation_input_tokens": 923446,
+    "cache_read_input_tokens": 2008091,
+    "output_tokens": 192965,
+    "cost_usd": 11.7412,
+    "calls": 5
+  }
+}

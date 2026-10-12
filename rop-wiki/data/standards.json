@@ -4743,6 +4743,503 @@
       "ref_id": "ref-1402",
       "run_id": "2026-10-10-02",
       "date": "2026-10-10"
+    },
+    {
+      "name": "KS B ISO 22166-202 로봇 — 서비스 로봇의 모듈화 — 제202부: 소프트웨어 모듈용 정보 모델",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        21,
+        5
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010158171",
+      "summary": "KSSN 국가표준 목록에 KS B 7321-2 와 별도로 실린 국가표준(2026-10-11 번호·제목 확인). 제정일·부합화 수준(IDT 여부)·고시 정보는 미확인이다.",
+      "ref_id": "ref-1424",
+      "run_id": "2026-10-11-01",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "엘리베이터와 로봇의 상호 연동을 위한 가이드라인 (대한승강기협회 단체표준)",
+      "org": "대한승강기협회(KOLA)",
+      "kind": "표준",
+      "related_areas": [
+        22,
+        21
+      ],
+      "url": "https://kola.or.kr/pages/61/68/bbs/5705",
+      "summary": "엘리베이터와 로봇 상호 연동의 일반사항·시험 설비·시험 절차를 제시하는 단체표준으로, 협회가 2026-03-27 제정을 발표했다. 표준 번호(B-KOLA-0001-7700)는 검증에서 재현하지 못했고 메시지 정의는 미확인이다.",
+      "ref_id": "ref-1433",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KONE RMF Lift Adapter (kone-ros-api)",
+      "org": "CHART (KABAM-Robotics 보존 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        20
+      ],
+      "url": "https://github.com/KABAM-Robotics/lift_kone_adapter/tree/9bc3a87a01eea66c606e0a256e1cd8a8c60bc596",
+      "summary": "Open-RMF 승강기 메시지와 KONE API v2.0 을 WebSocket 으로 잇는 공개 어댑터(2023년 고정판). 실제 승강기 제어 자격증명은 KONE 담당자에게 받는다.",
+      "ref_id": "ref-1438",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "door_adapter_dormakaba (Open-RMF Dormakaba 문 어댑터)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        51
+      ],
+      "url": "https://github.com/open-rmf/door_adapter_dormakaba/tree/2cf76a6b83ceee31540aeb7e0d7feb2a10042668",
+      "summary": "Dormakaba EL301·ED250 문 구동기용 Open-RMF 문 어댑터. IoT connector 장착이 필요하고 문 클라우드 API 자격증명은 Dormakaba 가 제공한다.",
+      "ref_id": "ref-1439",
+      "run_id": "2026-10-11-03",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "Open-RMF 작업 배정·취소 응답 스키마(rmf_api_msgs dispatch_task_response·cancel_task_response·simple_response)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        29
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/e9b7630c73a6fb41448ac143c0d7061f2b4389a2/rmf_api_msgs/schemas/dispatch_task_response.json",
+      "summary": "배정 응답은 성공 시 success·state(task_state) 필수, 실패 시 errors 배열을 두고, 취소 응답은 simple_response 를 참조해 성패와 오류만 알린다(커밋 e9b7630 고정본, 2026-10-11 확인).",
+      "ref_id": "ref-1441",
+      "run_id": "2026-10-11-02",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KS B 7327 산업용 이동 머니퓰레이터의 응용을 위한 안전 요구사항",
+      "org": "국가기술표준원(한국표준협회 KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        48,
+        50,
+        31
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010149365",
+      "summary": "2024-11-01 제정(고시 제2024-0480호) 국가표준. 모바일 로봇과 협동로봇 결합형의 안전 요구를 다루며, 관제·군집 관리 시스템은 범위에서 뺀다. 중소벤처기업부 발표 '이동식 협동로봇 안전기준 KS'와 같은 표준으로 보인다(추정).",
+      "ref_id": "ref-1458",
+      "run_id": "2026-10-11-04",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KS B ISO 3691-4 산업용 트럭 — 안전 요구사항과 검증 — 제4부: 무인 산업용 트럭과 시스템",
+      "org": "국가기술표준원(한국표준협회 KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        48,
+        50
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010158178",
+      "summary": "국가표준 목록은 2026-09-14 개정(고시 제2026-0288호), ISO 3691-4:2023(IDT) 부합으로 표시한다. 검증에서 개정 정보를 다시 확인하지 못했다.",
+      "ref_id": "ref-1459",
+      "run_id": "2026-10-11-04",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "사업장 위험성평가에 관한 지침(고용노동부고시 제2024-76호)",
+      "org": "고용노동부",
+      "kind": "프레임워크",
+      "related_areas": [
+        48,
+        58,
+        59
+      ],
+      "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000251014&joTpYn=Y&languageType=KO&chrClsCd=010202",
+      "summary": "2025-01-02 시행 현행 지침. 도급·수급사업주의 각각 실시, 근로자 참여, 수시·정기평가와 상시평가 간주 규정을 정한다. 2026-09-23 전부개정안이 행정예고됐다.",
+      "ref_id": "ref-1460",
+      "run_id": "2026-10-11-04",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "STPA Handbook",
+      "org": "MIT Partnership for Systems Approaches to Safety and Security",
+      "kind": "프레임워크",
+      "related_areas": [
+        48
+      ],
+      "url": "https://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf",
+      "summary": "STPA 분석의 네 단계(목적 정의·제어 구조·위험한 제어 행동·손실 시나리오)와 위험한 제어 행동 네 유형을 설명하는 방법 안내서(2018-03).",
+      "ref_id": "ref-1455",
+      "run_id": "2026-10-11-04",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KS B 8252 실내 이동로봇의 보호정지 시험방법",
+      "org": "국가기술표준원 (e-나라표준인증)",
+      "kind": "표준",
+      "related_areas": [
+        49,
+        50,
+        54
+      ],
+      "url": "https://www.standard.go.kr/KSCI/standardIntro/getStandardSearchView.do?ksNo=KSB8252&menuId=919&reformNo=&tmprKsNo=KSB8252&topMenuId=502&upperMenuId=503",
+      "summary": "안전한 실내 공간에서 자율 주행 중 정적 장애물에 대한 보호정지를 평가하는 시험방법 국가표준(ISO 13482 기반). 2020-02-26 제정, 2025-09-05 확인.",
+      "ref_id": "ref-1473",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 별표 3",
+      "org": "산업통상부",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        49,
+        50,
+        59,
+        66
+      ],
+      "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000269426",
+      "summary": "2025-11-24 일부개정·시행된 현행 고시. 별표 3 은 규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치 8개 항목의 운행안전인증 기준과 질량별 최대 운행 속도를 정한다.",
+      "ref_id": "ref-1469",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "human_detection_fusion (YOLO·UWB 사람 위치 융합 ROS 2 패키지)",
+      "org": "ATHENA RC (EU ARISE 'KIRO' 실험)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        49
+      ],
+      "url": "https://github.com/nikolaslps/human_detection_fusion/blob/934ca8387a205aaac894da22451970a203777e18/src/yolo_uwb_fusion_node.cpp",
+      "summary": "YOLO 검출과 UWB 위치를 합쳐 사람 식별자별 위치를 ROS4HRI 의 hri_msgs 형식으로 발행하는 ROS 2 패키지(AGPL-3.0). 위치 발행까지만 다루며, 좌표 변환 실패 시 입력 좌표를 그대로 돌려주는 코드 경로가 있다.",
+      "ref_id": "ref-1474",
+      "run_id": "2026-10-11-05",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "UL 3100 Automated Mobile Platforms (AMPs)",
+      "org": "UL Standards & Engagement",
+      "kind": "표준",
+      "related_areas": [
+        50
+      ],
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=39063",
+      "summary": "자동 이동 플랫폼 안전 표준. 제1판 2021-05-26 발행, 최근 개정·ANSI 승인 2026-06-10. 적용 범위에서 산업용 로봇 자체(UL 1740·CSA Z434)는 제외하고 해당 표준에 맞는 매니퓰레이터의 탑재를 허용한다.",
+      "ref_id": "ref-1478",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "UL 3300 (SCIEE 로봇 표준, Simbe Tally 인증 발표)",
+      "org": "UL Solutions",
+      "kind": "표준",
+      "related_areas": [
+        50,
+        64
+      ],
+      "url": "https://www.ul.com/news/ul-solutions-grants-its-first-global-certification-public-facing-robot-simbes-tally-autonomous",
+      "summary": "UL Solutions 가 2026-03-11 매장용 자율이동로봇 Tally 의 UL 3300 인증을 발표했다(벤더 주장, 인증기관 상업 보도자료 기준, 인증서 미공개).",
+      "ref_id": "ref-1479",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "ISO/DIS 3691-4 (제3판) 무인 산업용 트럭과 그 시스템 안전 요구·검증 개정안",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        50,
+        48
+      ],
+      "url": "https://www.iso.org/standard/88615.html",
+      "summary": "ISO 3691-4:2023 을 대체할 개정 프로젝트. 2026-10-11 기준 단계 40.60(투표 종료 2026-09-10)이며 아직 발행되지 않았다.",
+      "ref_id": "ref-789",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "KS B ISO 10218-1 산업용 로봇의 안전에 관한 요구사항 — 제1부: 로봇",
+      "org": "국가기술표준원",
+      "kind": "표준",
+      "related_areas": [
+        50,
+        62
+      ],
+      "url": "https://standard.go.kr/KSCI/standardIntro/getStandardSearchView.do?ksNo=KSBISO10218-1&menuId=919&reformNo=05&tmprKsNo=KSBISO10218-1&topMenuId=502&upperMenuId=503",
+      "summary": "ISO 10218-1:2011 과 일치(IDT)하는 국가표준. 최종개정확인일 2021-11-26. ISO 10218-1:2025 부합판은 2026-10-11 목록에서 확인되지 않았다.",
+      "ref_id": "ref-1477",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "산업용 로봇 자율안전확인",
+      "org": "안전보건공단 산업안전보건인증원",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        50,
+        62
+      ],
+      "url": "https://miis.kosha.or.kr/oshci/busi/viewMiisJayulMerchandiseInfo.do",
+      "summary": "자율안전확인 대상 산업용 로봇을 3축 이상 매니퓰레이터와 전용 제어기를 갖추고 프로그램·자동제어가 가능한 고정식 로봇으로 정의한다.",
+      "ref_id": "ref-1480",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "위원회 시행결정 (EU) 2026/2015 (기계류 지침 조화 표준 목록 개정·폐지)",
+      "org": "European Commission",
+      "kind": "프레임워크",
+      "related_areas": [
+        50,
+        59
+      ],
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026D2015",
+      "summary": "EN ISO 10218-1/-2:2025 참조를 기계류 지침 2006/42/EC 조화 표준 목록(2023/1586 부속서 I)에 추가했다(2026-09-07 관보 게재). 이 목록은 2027-01-20 부로 폐지된다.",
+      "ref_id": "ref-1476",
+      "run_id": "2026-10-11-06",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "WCAG 2.2 (Web Content Accessibility Guidelines 2.2, W3C 권고 2024-12-12)",
+      "org": "W3C Accessibility Guidelines Working Group",
+      "kind": "표준",
+      "related_areas": [
+        60,
+        37,
+        13
+      ],
+      "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+      "summary": "웹 콘텐츠 접근성 W3C 권고. AA 성공기준 2.5.7은 드래그 기능의 단일 포인터 대체를, 2.5.8은 예외 다섯 가지를 빼고 포인터 대상 최소 24×24 CSS 픽셀을 정한다.",
+      "ref_id": "ref-1503",
+      "run_id": "2026-10-12-03",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "WCAG2ICT (Guidance on Applying WCAG 2 to Non-Web ICT, W3C Group Note 2025-12-11)",
+      "org": "W3C Accessibility Guidelines Working Group (WCAG2ICT Task Force)",
+      "kind": "프레임워크",
+      "related_areas": [
+        60,
+        37
+      ],
+      "url": "https://www.w3.org/TR/2025/NOTE-wcag2ict-22-20251211/",
+      "summary": "WCAG 2를 비웹 문서·소프트웨어에 적용하는 정보성 안내로 규범이 아니며, 제품의 하드웨어 측면은 범위에서 제외한다.",
+      "ref_id": "ref-1506",
+      "run_id": "2026-10-12-03",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "EN 301 549 V4.1.1 (2026-09) ICT 제품·서비스 접근성 요구사항",
+      "org": "ETSI / CEN / CENELEC",
+      "kind": "표준",
+      "related_areas": [
+        60,
+        59,
+        37
+      ],
+      "url": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf",
+      "summary": "ICT 접근성 유럽 표준 최종판. 닫힌 기능의 청각 정보 시각 대체(5.1.5)와 음성 없는 조작 모드(5.1.7)를 요구하며, EU 관보 인용 시 적합성 추정을 준다고 적는다(관보 인용 여부 미확인).",
+      "ref_id": "ref-1505",
+      "run_id": "2026-10-12-03",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "유럽 접근성법 (Directive (EU) 2019/882)",
+      "org": "European Parliament and Council of the European Union",
+      "kind": "프레임워크",
+      "related_areas": [
+        60,
+        59
+      ],
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+      "summary": "2025-06-28 이후 출시되는 결제 단말기와 서비스 제공 전용 무인 단말기 등에 접근성 요구를 적용하고, 관보 게재 조화 표준 부합 시 적합성을 추정한다.",
+      "ref_id": "ref-1504",
+      "run_id": "2026-10-12-03",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "axe-core (v4.14.0, 웹 접근성 자동 검사 엔진)",
+      "org": "Deque Systems",
+      "kind": "오픈소스",
+      "related_areas": [
+        60,
+        37,
+        54
+      ],
+      "url": "https://github.com/dequelabs/axe-core/tree/v4.14.0",
+      "summary": "웹 접근성 자동 검사 엔진. v4.14.0의 target-size 규칙은 WCAG 2.2·EN 301 549 태그를 달고 기본 비활성으로 설정돼 있으며, 불확실한 항목은 수동 검토로 돌린다(벤더 저장소 기준).",
+      "ref_id": "ref-1507",
+      "run_id": "2026-10-12-03",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "LeRobot v0.6.0 (하위 호환성 문서·LeRobotDataset v3.0 형식)",
+      "org": "Hugging Face LeRobot 기여자 (huggingface/lerobot)",
+      "kind": "오픈소스",
+      "related_areas": [
+        47,
+        57
+      ],
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.0/docs/source/backwardcomp.mdx",
+      "summary": "로봇 학습 정책·데이터셋 라이브러리. v0.6.0 은 정규화를 외부 전·후처리 파이프라인으로 옮긴 변경을 호환성 깨짐으로 표시하고, LeRobotDataset v3.0 은 에피소드 구간을 메타데이터로 복원한다.",
+      "ref_id": "ref-1513",
+      "run_id": "2026-10-12-04",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "EU AI Act 2026-07-27 통합판 (Regulation (EU) 2026/1744 개정 반영: 부속서 I Section B·제2조 2항·제43조 4항·제72조 2항)",
+      "org": "European Union (EUR-Lex)",
+      "kind": "프레임워크",
+      "related_areas": [
+        47,
+        59
+      ],
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+      "summary": "기계류 규정 (EU) 2023/1230 이 부속서 I Section B 로 옮겨졌고, 제2조 2항이 Section B 관련 고위험 AI 의 적용 조문을 한정한다. 제43조 4항은 실질적 변경 시 재평가, 제72조 2항은 시판 후 감시를 정한다(조문 내용 소개이며, 제2조 2항에 따라 기계류 연계 로봇 AI 에 AI Act 조문으로 바로 적용되는 의무로 읽지 않는다 — 기계류 규정 쪽 통합 방식은 미확인).",
+      "ref_id": "ref-1552",
+      "run_id": "2026-10-12-04",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "EU AI Act 디지털 옴니버스 (Regulation (EU) 2026/1744)",
+      "org": "European Parliament and Council of the European Union",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        47,
+        48
+      ],
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1744",
+      "summary": "AI Act 고위험 적용일(부속서 III 2027-12-02, 부속서 I 2028-08-02)을 정하고 기계규정을 부속서 I Section B 로 옮기며, 기계규정 제8조 위임법령으로 고위험 AI 요구를 부속서 III 에 더하는 경로를 둔다. 2026-07-27 발효.",
+      "ref_id": "ref-1517",
+      "run_id": "2026-10-12-02",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "지능형 로봇 개발 및 보급 촉진법 시행규칙 제7조의10 (실외이동로봇 책임보험 등의 가입금액)",
+      "org": "산업통상부",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        66
+      ],
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=278777",
+      "summary": "실외이동로봇 사고배상 책임보험·공제의 법령 기준 금액(사망·후유장애 1인당 1억5천만원, 부상 1인당 3천만원, 재물 사고당 10억원)을 정한다. 2023-11-17 신설.",
+      "ref_id": "ref-1520",
+      "run_id": "2026-10-12-02",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "Apache License 2.0",
+      "org": "Apache Software Foundation",
+      "kind": "오픈소스",
+      "related_areas": [
+        59,
+        57
+      ],
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+      "summary": "재배포 때 라이선스 사본 제공, 수정 파일 변경 고지, NOTICE 귀속 고지 포함을 요구하는 오픈소스 라이선스.",
+      "ref_id": "ref-1524",
+      "run_id": "2026-10-12-02",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "REUSE Specification 3.3",
+      "org": "Free Software Foundation Europe (REUSE)",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        36,
+        57
+      ],
+      "url": "https://reuse.software/spec-3.3/",
+      "summary": "파일별 저작권·라이선스 정보 표기 명세. 주석을 넣을 수 없는 파일은 .license 인접 파일이나 REUSE.toml 로 권리 정보를 둔다.",
+      "ref_id": "ref-1525",
+      "run_id": "2026-10-12-02",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "reuse-tool (reuse lint)",
+      "org": "FSFE reuse-tool 기여자",
+      "kind": "오픈소스",
+      "related_areas": [
+        59,
+        57
+      ],
+      "url": "https://github.com/fsfe/reuse-tool/blob/v6.1.0/CHANGELOG.md",
+      "summary": "REUSE 명세 준수를 검사하는 도구. 프로젝트 자체 변경기록 기준 v6.0.0(2025-10-06)에서 유효하지 않은 SPDX 라이선스 표현식 검사 항목을 추가했다.",
+      "ref_id": "ref-1526",
+      "run_id": "2026-10-12-02",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "openpi (π0 계열 공개 구현)",
+      "org": "Physical Intelligence",
+      "kind": "오픈소스",
+      "related_areas": [
+        44
+      ],
+      "url": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/docs/remote_inference.md",
+      "summary": "π0 계열 로봇 기반 모델의 공개 구현. 원격 추론 예시는 (action_horizon, action_dim) 형태의 행동 청크를 돌려주고 남은 행동을 개방 루프로 실행하도록 안내하며, 기반 체크포인트는 π0·π0-FAST·π0.5다(커밋 215abfb 기준, π0.7 없음).",
+      "ref_id": "ref-1535",
+      "run_id": "2026-10-12-05",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "GR00T N1.7 (Isaac GR00T, Early Access)",
+      "org": "NVIDIA",
+      "kind": "오픈소스",
+      "related_areas": [
+        44,
+        59
+      ],
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/blob/n1.7-release/README.md",
+      "summary": "NVIDIA 휴머노이드 로봇 기반 모델 GR00T N1.7 의 저장소(n1.7-release 브랜치, 접근일 2026-10-12 기준 EA 릴리스). 코드는 Apache 2.0 이고 가중치 사용 조건은 README 소개·License 절·3B 모델 카드·3B LICENSE 3.3절이 서로 다르게 적는다(GR00T N1 과 다른 판).",
+      "ref_id": "ref-1536",
+      "run_id": "2026-10-12-05",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "Spark-DSG (동적 장면 그래프 라이브러리, Python API)",
+      "org": "MIT-SPARK",
+      "kind": "오픈소스",
+      "related_areas": [
+        45,
+        16,
+        18
+      ],
+      "url": "https://github.com/MIT-SPARK/Spark-DSG/blob/3c40997e4ae739c56ed3cdd6ef5e882d403d8b64/examples/python_api.py",
+      "summary": "JSON 장면 그래프 파일을 DynamicSceneGraph.load 로 불러와 객체·장소·방 층과 노드에 접근하는 API 를 제공한다. 같은 연구실 구현의 API 이며 다중 제조사 교환 표준은 아니다.",
+      "ref_id": "ref-1562",
+      "run_id": "2026-10-12-07",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "KDoc-OCRBench-V2 (한국어 문서 OCR 벤치마크 v2)",
+      "org": "ONTHEIT",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        45
+      ],
+      "url": "https://github.com/ONTHEIT-AI/BizOnAI-OCR/blob/cdfc6d0c4e415121ae476456ee13f1dea9e7f583/kdoc_benchmark_v2/README.md",
+      "summary": "제공자 설명에 따르면 한국 공공부문 단일 쪽 PDF 849개와 검증 시험 56,197건으로 구성한 OCR 벤치마크다(벤더 주장, 외부 재현 없음). 로봇 매뉴얼은 따로 포함하지 않는다.",
+      "ref_id": "ref-1560",
+      "run_id": "2026-10-12-07",
+      "date": "2026-10-12"
+    },
+    {
+      "name": "Scalable-Imitation-Learning-for-LMAPF (SILLM 저자 공식 구현)",
+      "org": "He Jiang (DiligentPanda, GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        46,
+        27
+      ],
+      "url": "https://github.com/DiligentPanda/Scalable-Imitation-Learning-for-LMAPF",
+      "summary": "확장형 모방 학습 기반 지속형 다중 에이전트 경로 찾기(SILLM)의 저자 공식 저장소. Backward Dijkstra·정적·동적 안내 버전을 별도 브랜치로 관리하며, 1-GPU 예시 설정은 논문 실험 설정(모방 학습 12회)과 다르다.",
+      "ref_id": "ref-1565",
+      "run_id": "2026-10-12-06",
+      "date": "2026-10-12"
     }
   ]
 }

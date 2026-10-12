@@ -1,0 +1,584 @@
+{
+  "duration_api_ms": 447695,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.941092500000001,
+  "usage": {
+    "input_tokens": 24,
+    "cache_creation_input_tokens": 190186,
+    "cache_read_input_tokens": 2864581,
+    "output_tokens": 30931,
+    "output_tokens_details": {
+      "thinking_tokens": 12066
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 190186,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 14804,
+        "cache_read_input_tokens": 277459,
+        "cache_creation_input_tokens": 1607,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1607
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 721688,
+      "outputTokens": 31607,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 14,
+      "costUSD": 0.22797230000000007,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 16084,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 24,
+      "outputTokens": 30931,
+      "cacheReadInputTokens": 2864581,
+      "cacheCreationInputTokens": 190186,
+      "webSearchRequests": 0,
+      "costUSD": 2.7131202,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12066,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 43,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-11-04\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 핸드북 PDF 는 검증 측에서 압축 스트림이라 읽히지 않았으나, STPA 4단계(목적 정의·제어 구조·UCA·손실 시나리오)는 핸드북을 인용한 2차 자료(York AAIP 지침, arXiv 2506.01782 등) 검색 결과와 일치. 방법론 안내서이며 로봇 플릿 실증 아님.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. UCA 네 유형(미제공·위험 제공·너무 이르거나 늦게/순서 틀림·너무 일찍 멈춤/너무 오래)이 핸드북 인용 2차 자료와 일치. 핸드북 원문 쪽수(36쪽)는 검증 측 미대조.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 검색 결과에서 AEJ 59(5) pp.3799–3816, DOI 10.1016/j.aej.2020.06.036, 초록의 'STPA 로 계층형 조정 구조별 위험 시나리오 도출 → Bowtie 평가' 일치(HAL hal-03508510 도 같은 제목). ScienceDirect 는 403. 공저자 6명 전원은 검증 측 미대조. 초록 범위로 축소한 서술 유지.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. 본문 미열람으로 11대·화학 분석실 조건을 확인하지 못했다는 점을 주장 안에 밝힘. 단정 금지.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv HTML v1). 'a building construction site managed by the company Pomerleau in Montreal', 'the intended deployment of a Clearpath Jackal' 확인. 현장 유형 기타(건설) 적정.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. §4.3 'a new risk index was estimated', 측정 근거 서술 없음. 저자는 초록·결론에서 현장 전문가 검증을 언급하므로 기존 '[추정] 전문가 검증 보고' 문장과 병존 가능.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. ref-1255 는 이번 재열람 403(원문 미열람). 발행일 2026-04-23 은 위키 기존 기록(2026-10-09 열람) 기준. 새 사실 추가가 아니라 '예정' 표현 정정.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 유지. ref-789 원문 미열람. 검증 검색에서 DIN 이 ISO/DIS 3691-4:2026 초안 의견수렴(2026-06-26~08-26)을 게시해 차기판이 DIS 단계라는 메모 쪽과 부합하는 정황이 있으나, 이는 브리프 밖 출처라 페이지에 넣지 않는다. ref-789 의 'ISO/CD' 기록과 충돌하므로 둘 다 제시·열린 질문 처리 필요.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 유지. ref-1522 원문 미열람(iso.org). 검색 결과에서 iso.org/standard/88578 은 ISO/DIS 12100 개정 프로젝트로 실재 확인, Certifico 가 ISO/DIS 12100.3 투표(2026-07-20 시작)를 보도해 메모와 부합하나 40.60·2026-09-15 는 미확인. 기존 위키 '2026 FDIS 도달 전망' 문장은 재확인 대상.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 유지. 2020 판 제1판·2023 판 제2판 구조와 'Edition 3' 표기 정합. ISO 목록 원문 미열람(ref-470·ref-789). 단계 표현은 f8 충돌과 함께 재확인.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. KSSN 상세 페이지는 검증 측에서 제목만 렌더링됐으나, 검색 결과 요약에 표제·발행일 2024-11-01·고시 제2024-0480호·고시 사유(모바일 로봇+협동로봇 결합형 표준·인증 부재) 일치. 61쪽은 검증 측 미확인.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 검색 결과 요약에 적용범위 제외 문장('통합 제조 시스템(IMS), 관제 시스템, 군집 관리 시스템, 기타 기계 설비류는 이 표준에서 다루지 않는다') 일치. 목록 기준·본문 미열람.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"출처 실재 확인. 부합화 칸 공란·인용표준 목록은 검증 측 재렌더링 실패로 직접 대조하지 못함(원문 열람은 리서치 기록 기준). 반대 근거 없음. 목록 기준 서술로 한정.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. 발표문(ref-561, 이번 원문 미열람)과 KS B 7327 의 날짜·고시 사유 일치에 근거한 동일성 추정. 조항 대응 미확인 명시 유지.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. R15.08-2 원문·KS B 7327 본문 모두 미열람이라 대응·동등성 미확인을 명시함.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. KSSN 상세는 검증 측에서 제목만 렌더링됐고, 검색에서 2026-09-14 개정·고시 제2026-0288호·ISO 3691-4:2023(IDT)·81쪽을 확인하지 못했다. 반대로 중국 표준 목록(ndls.org.cn)은 2021-11-30 판을 현행으로 표시한다(갱신 지연 가능). 리서치 원문 열람 기록은 있으나 검증 측 재확인 실패라 단일 미재확인 출처로 본다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 국가법령정보센터 페이지에서 고용노동부고시 제2024-76호·2024-12-18 일부개정·2025-01-02 시행 확인. 조문 본문 탭은 연결 재설정으로 재열람 실패했으나 제5조② '도급인·수급인 각각 실시'는 검색 결과의 지침 해설과 일치.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 제6조 다섯 경우(판단 기준 마련·요인 파악·허용 여부 결정·감소대책 수립·실행 여부 확인)에 해당 작업 근로자 참여가 검색 결과 지침 해설과 일치. 조문 원문은 검증 측 재열람 실패.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(부분). 고시 번호·시행일은 법령정보센터에서 확인, 제15조② 1~6호는 검증 측 조문 재열람 실패(연결 재설정)로 브리프 인용과 지침 해설 자료 범위에서 판단. 반대 근거 없음. '소프트웨어 변경이 자동으로 수시평가 대상이라는 문구 없음' 단서 유지.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(부분). 상시평가 간주 규정의 존재는 2023 개정 보도·해설로 확인(당시 보도는 건설업 중심으로 소개). 현행 제15조④ 문구는 검증 측 조문 재열람 실패. 현행 조문 문언대로만 쓰고 적용 업종 해석을 덧붙이지 않는다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(부분). 고용노동부 게시 페이지에서 제목·게시일 2024-12-31·외국인·수급업체·일용근로자 참여 사례 수록을 확인. 청취조사 세부는 첨부 PDF 라 검증 측 미대조. 고시(ref-1525)와 같은 기관이라 독립 교차 확인 아님. 효과 검증 자료 아님 단서 유지.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(부분). 일용근로자 사례 수록은 게시 페이지로 확인, 문자·QR 익명 제안 세부는 첨부 PDF 라 검증 측 미대조. 반대 근거 없음.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 고용노동부 입법·행정예고 게시: 제목·등록일 2026-09-23·산재예방지원과 일치. 예고안이며 시행 규정 아님 단서 유지.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 검증에서 게시 페이지가 '고용노동부 공고 제2026-461호'를 표시함을 확인했다(공고 번호는 확인됨). 의견 제출 마감일 2026-10-13 은 페이지에 표시되지 않아 미확인.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 초록 페이지에서 저자 5명·EPTCS 371 pp.208–216·DOI 10.4204/EPTCS.371.15·2022-09-28 확인. ar5iv 본문 §3 Related work 에 'DeRoS also allows users to specify how property violations must be handled, while our approach is limited …' 문장 확인.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·벤더 주장 유지. OMRON PDF 는 검증 측에서 압축 스트림이라 읽히지 않았고 검색으로도 해당 문구를 찾지 못했다(문서 실재는 OMRON 사이트의 LD Safety Guide 목록으로 확인). 리서치 원문 대조 기록 기준. 특정 제품·2019 판으로 한정.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·벤더 주장 유지. f26 과 같은 이유로 검증 측 문구 미대조. 법적 의무 판단이 아닌 제품 매뉴얼의 책임 구분 진술로 한정.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 유지. ref-567 은 이번 재열람 403(검증 측 GitHub API 도 403). 이슈 핵심은 기존 위키 내용과 일치, '두 건물' 세부 미확인 명시.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(raw.githubusercontent). 2.10.0 (2025-05-09) 절에 'Giving options to separate fire alarm by fleet names (#413)', 2.14.0 절 2026-09-26 확인. 최초 도입판 여부는 변경 이력 기준.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. FleetUpdateHandle.cpp handle_target_emergency: fleet_names.empty() 이면 execute=true, 이름 일치 시 execute=true, execute 이면 handle_emergency(is_emergency). 코드 열람이며 배치 시험 아님.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. Node.cpp 에 EmergencyNotice(EmergencyTopicName)와 TargetEmergencyNotice(EmergencySignalTopicName) 구독이 공존.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. f29~f31 로 기존 5절 제약 칸 '이후 구현 여부 미확인'이 낡았음 확인. 세 출처 모두 Open-RMF 계열이라 독립 교차 확인 아님. safety/index.md 95행·governance-law-and-society/index.md 84행에도 같은 낡은 주장 있음(후속 정리).\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(EUR-Lex 2026-07-27 통합본). 제3조(16)의 물리적·디지털 수단, 제조자 미예견, 새 위험·기존 위험 증가, (a) 기존 안전 제어 시스템 변경이 필요한 방호장치 추가 또는 (b) 안정성·기계적 강도 보호조치 조건 일치.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 제54조: 일반 2027-01-20, 제26~42조 2024-01-20, 제50조(1) 2026-10-20, 제6조(7)·제48조·제52조 2023-07-19, 제6조(2)~(6)·(8)·(11)·제47조·제53조(3) 2024-07-20 일치.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. f33 조문에서 도출한 해석이며 개별 업데이트 법적 분류·제18조 의무 주체는 판단하지 않았다고 밝힘. 집행 지침 미확인.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv HTML v1). 230개 벤치마크는 'Stage 1-3', 실물 실험은 §V-C 에서 단계 4~6 시험과 함께 전체 SafeGate 구조 실행도 적고 §VI-C 는 정량 지표 없이 정성 결과만 보고. 30개 AI2-THOR 가 어느 단계를 평가하는지는 논문이 명시하지 않음 — '시뮬레이션 실행 평가' 이상으로 단계를 특정하지 않는다.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 식(9) 분모 T_exec(승인되어 시뮬레이터에서 실행된 작업), 거부·보류 작업은 지표에 들어가지 않는다고 명시. 30개 모두 차단 시 0/0 이지만 CR 0% 로 보고, 산정 규칙 설명 없음.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 표 II SafeGate TP100·FN0·FP6·TN77=183, 다른 방법 행도 모두 183. 230 과의 차이 설명 문장 없음.\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. 결정 게이트 출력이 {authorize, defer, reject} 이고 §V-A 에 'ambiguous' 정답 범주 언급이 있어 추론 근거는 있으나 47건 제외는 논문이 명시하지 않음.\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[의견] 유지. STPA 절차를 ROP 제어 구조에 대입한 구축자 의견임을 밝혀야 함(수정 지시). 실증 아님.\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. f17·f18·f27 에서 도출, ROP 사업자를 지칭하는 규정 없음·책임 배분 미확정 명시. 법적 의무 판단은 59. 법·규제·보험·라이선스 연계로만.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정]·low 적정. VDA 5050 3.0.0 범위 문장('shall not be regarded or applied as a safety standard')은 입력 원문 텍스트로 확인, f26 은 벤더 주장. 특정 경로 PL 미결정 명시.\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[의견] 유지하되 구축자 의견 병기 필요. VDA 5050 표 4 는 stopPause 가 (설정된 경우) 하드웨어 버튼으로 startPause 된 로봇도 재시작할 수 있다고 적으므로, 'stopPause 는 안전 기능 해제 절차가 아니다'를 명세의 사실처럼 단정하지 않도록 수정 지시.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[의견] 유지, 구축자 의견 병기 필요. Nav2 README 의 하드 실시간 인증 미제공은 기존 위키 내용, Ogma 는 f25 로 확인. 별개 구현이라 교차 입증 아님.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[의견] 유지, 구축자 의견 병기 필요. f30·f31 에서 도출한 시험 항목 제안.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[의견] 유지, 구축자 의견 병기 필요. f37·f38 분모 문제에서 도출.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[\"f17~f24·f41: 국내 위험성평가 고시는 현장 사업주의 법적 의무다. 브리프 rationale 은 9절 '업종별 조건' 행에 넣자고 하나, ROP 직접 열이 아니라 외부 연계 열(현장 사업주 의무)과 59. 법·규제·보험·라이선스 연결로만 다뤄야 한다(편집으로 해결 가능).\",\"f26·f27: 비상정지 회로·PL·PFH 계산·인터록은 원문 19장 '로봇 자체 지능·제어' 경계의 연계 대상(제조사·통합자)이다. ROP 몫은 인터페이스 구분과 검증 자료 요구로 한정한다.\",\"f33~f35: EU 기계 규정 조문은 조건 소개와 59. 법·규제·보험·라이선스 연결로 한정하고, 개별 ROP 업데이트의 법적 분류를 판단하지 않는다.\",\"f45: 화재 시 로봇 이동·정지 정책은 현장 대피 계획(시설·설비 경계의 연계 대상)과 함께 정해야 한다는 범위로 유지한다.\"]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f32 가 정정하는 '비상 신호는 대상 플릿을 구분하지 않는 불리언, 이후 구현 여부 미확인' 주장은 대상 페이지 5절 외에 docs/categories/safety/index.md 95행·docs/categories/governance-law-and-society/index.md 84행에도 있다 — 이번 실행 범위 밖이므로 후속 갱신 대상으로 기록한다.\",\"f7·f10·f11~f15 의 정정 대상 문장은 분리 주제 페이지(docs/topics/2026/2026-09-25-area25-s7.md 43·46행, docs/topics/2026/2026-09-26-area25-s7.md 46행)에 있으나 page_proposals 는 세부영역 페이지 하나뿐이다.\",\"f8: ISO 3691-4 차기판 단계에 대해 기존 ref-789 기록(2026-09-26 'ISO/CD')과 메모('ISO/DIS, Edition 3, 40.60')가 충돌한다 — 한쪽을 고르지 않는다.\",\"f9: 기존 2026-09-26-area25-s7.md 47·48행의 'ISO/DIS 12100:2024 기반 DIN 초안'·'2026 FDIS 도달 전망'은 f9 의 DIS 12100.3 재투표 정황과 어긋날 수 있다(재확인 대상).\",\"f36 의 230개·30개 수치, f42 의 VDA 5050 안전 표준 아님·activeEmergencyStop, f44 의 Nav2 인증 미제공, f33 의 일반 정의·f34 의 일반 적용일은 기존 위키에 있다 — 기존 각주(ref-417·ref-031·ref-1077·ref-555)를 재사용하고 같은 문장을 새로 쓰지 않는다.\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"f11~f15: KS B 7327 표제의 '이동 머니퓰레이터'는 표준 이름이므로 그대로 두되, 본문 일반 용어는 용어집 '모바일 매니퓰레이터 (Mobile Manipulator)'로 통일하고 링크한다.\",\"f1·f2·f40: '위험한 제어 행동(Unsafe Control Action)'은 용어집에 없으므로 첫 등장 때 영문을 함께 쓰고 용어집 STPA 항목에 링크한다(신규 등록은 하지 않음).\",\"f33~f35: '실질적 변경'은 용어집 substantial-modification(실질적 변경, Substantial Modification)에 링크한다.\"]},\"quotation_check\":{\"ok\":true,\"issues\":[\"ref-1525·ref-555·ref-417·ref-1529 는 evidence_excerpt 에 여러 구절이 있다. 페이지에서는 출처당 직접 인용 1회까지만 쓰고 나머지는 요약·재서술한다(수정 지시).\"]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f16: [사실] → [추정]으로 강등한다 — 검증에서 KS B ISO 3691-4 의 2026-09-14 개정·고시 제2026-0288호·ISO 3691-4:2023(IDT)를 다시 확인하지 못했고, 다른 표준 목록은 2021-11-30 판을 현행으로 표시한다. 7절에 새 행을 넣을 때도 '국가표준 목록 기준, 검증 미재확인'을 밝힌다.\",\"f24: [추정] 태그는 유지한다. 검증에서 ref-1526 게시 페이지가 '고용노동부 공고 제2026-461호'를 표시함을 확인했으므로 '공고 번호를 확인하지 못했다'는 문구는 쓰지 않는다. 의견 제출 마감일(2026-10-13)만 미확인으로 남긴다.\",\"f40·f43·f44·f45·f46: [의견] 문장마다 '구축자 의견:'을 앞에 붙여 누구의 의견인지 밝힌다 — 공통 규칙 2절, 검증 항목 5.\",\"f43: VDA 5050 표 4 는 stopPause 가 (설정된 경우) 하드웨어 버튼으로 startPause 된 로봇도 재시작할 수 있다고 적는다. 그러므로 'stopPause 는 안전 기능 해제 절차가 아니다'를 명세가 말한 사실처럼 쓰지 않는다. '비상정지 회로 리셋과 같다는 근거가 없다'는 범위의 구축자 의견으로 쓴다.\",\"f26·f27: 9절 외부 연계 열(로봇 제조사·통합자)에만 [추정]으로 넣고 'OMRON LD Safety Guide Rev H(2019-10) 기준 벤더 주장'을 병기한다. 타사 플릿과 현행 모델로 일반화하지 않는다.\",\"f17~f22·f41: 국내 위험성평가 지침 내용을 9절 '업종별 조건' 행의 ROP 직접 열에 넣지 않는다. 외부 연계 열(현장 사업주의 법적 의무)과 3절·6절 근거로만 쓰고 59. 법·규제·보험·라이선스·58. 다사업자 책임·계약·데이터에 연결한다 — 범위 경계(원문 19장).\",\"f33~f35: 9절에서는 제3조(16)의 (a)·(b) 조건과 제54조 적용일 소개로 한정한다. f35 는 [추정]으로 두고, 개별 ROP 정책·어댑터 업데이트가 실질적 변경인지 단정하지 않는다. 59. 법·규제·보험·라이선스와 oq-093·oq-282 에 연결한다.\",\"f8·f9·f10: ref-789 의 'ISO/CD 3691-4'(2026-09-26 기록)와 메모의 'ISO/DIS 3691-4, Edition 3, 40.60'이 충돌한다. 본문에 둘 다 [추정]으로 제시하고, 11절에 '출처 충돌'로 적어 oq-170 에 연결한다. ref-789 제목은 바꾸지 않는다. ISO/DIS 12100.3 단계(f9)도 [추정]으로만 쓴다.\",\"정정 반영 위치: page_proposals 는 docs/categories/safety/safety-and-risk-management.md 하나뿐이다. 그러므로 f7(R15.08 Part 3 '예정' 표현)·f10(차기판 판 번호)·f11~f15(KS 번호)의 정정은 이 페이지 해당 절(7·11절) 패치 안에 쓰고, 분리 주제 페이지는 이번에 직접 고치지 않는다. 손대지 않은 정정 대상 위치(docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행)는 diff_summary·changelog_entry 에 '후속 갱신 필요'로 적는다.\",\"f32: 5절 '출하 마감 전 화재경보' 표 제약 칸의 기존 '[사실][^ref-567] … 이후 구현 여부는 미확인' 문장을 바꾼다. 2.10.0(2025-05-09) #413(f29)·2.14.0 대상 비상 신호의 빈 fleet_names=전체 플릿(f30)·기존 불리언 경로 병존(f31)을 각각 [사실]로 적고, 정정 판단(f32)과 이슈 세부(f28)는 [추정]으로 둔다. 세 출처가 모두 Open-RMF 계열이라는 점을 밝힌다.\",\"f36: 실물 로봇 실험을 '단계 4~6만 시험'으로 한정하지 않는다. 논문 §V-C 는 단계 4~6 시험과 함께 전체 SafeGate 구조 실행도 적는다. 30개 AI2-THOR 시나리오가 평가하는 단계는 논문이 명시하지 않으므로 특정하지 않는다.\",\"인용 길이: ref-1525·ref-555·ref-417·ref-1529 등 evidence_excerpt 에 여러 구절이 있는 출처는 페이지에서 출처당 직접 인용 1회까지만 쓰고 나머지는 재서술한다 — 공통 규칙 2절.\",\"원문 미열람 표시: 이번 실행에서 원문을 열지 못한 ref-1522·ref-1255·ref-789·ref-470·ref-561·ref-567 은 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다.\",\"용어: 본문의 일반 용어 '이동 머니퓰레이터'는 용어집 '모바일 매니퓰레이터'로 통일하고 링크한다(KS B 7327 표제는 그대로 둔다). '위험한 제어 행동(Unsafe Control Action)'은 첫 등장 때 영문을 함께 쓴다. '실질적 변경'은 용어집 substantial-modification 에 링크한다.\",\"중복: 230개·30개 수치, VDA 5050 안전 표준 아님·activeEmergencyStop, Nav2 인증 미제공, 제3조(16) 일반 정의, 일반 적용일 2027-01-20 은 기존 각주(ref-417·ref-031·ref-1077·ref-555)를 재사용해 연결만 하고 같은 문장을 새로 추가하지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 45건, 미확인 1건, 교차 확인 0건. 강등: f16 사실 → 추정(KS B ISO 3691-4 의 2026-09-14 개정을 검증에서 다시 확인하지 못했고, 다른 목록은 2021-11-30 판을 현행으로 표시함). 원문 미열람 출처: ref-1522, ref-1255, ref-789, ref-470, ref-561, ref-567. 이번 검증에서 다시 확인하지 못한 출처: ref-1520·ref-1528(PDF 판독 불가), ref-1525 조문 본문(연결 재설정), ref-1527 첨부 PDF, ref-1523·ref-1524 상세(KSSN 렌더링). ref-1520 은 2차 자료, ref-1523 은 검색 결과 요약, ref-1525 는 고시 번호·시행일과 해설 자료 범위로 확인했다. ref-1520·ref-1521·ref-1523~ref-1528·ref-1530 은 fetched: true 인데 fetch_url 이 비어 있다(리서치 기록 보완 요청). 검증에서 확인한 사항: 행정예고 공고 번호 제2026-461호(f24, 의견 제출 마감일은 미확인). 주의: 모든 [사실] 주장이 단일 출처이거나 같은 기관 계열 출처(고용노동부 고시·가이드, Open-RMF 변경 이력·코드·이슈)에 기대며, 교차 확인된 주장은 없다. ISO 3691-4 차기판 단계는 기존 ref-789 기록(CD)과 메모(DIS)가 충돌해 둘 다 [추정]으로만 싣는다. Open-RMF 대상 비상 신호는 코드를 읽어 확인한 것이며 대피 안전성을 검증한 것이 아니다. SafeGate 의 충돌률 0%는 실행 0건(0/0)에서 나온 값이라 무사고율로 읽지 않는다. 정정 요청 없음. 새 열린 질문 3건은 형식에 맞고 기존 질문과 중복되지 않는다. 분리 주제 페이지와 다른 대분류 페이지에 남은 낡은 문장(R15.08 Part 3 '예정', ISO 3691-4 '제2판 초안', RMF 비상 신호 '구현 여부 미확인')은 후속 갱신 대상이다. 브리프의 검색 횟수는 집계되지 않았다(외부 조사 변환). 검증 검색은 16회다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-11-04",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 핸드북 PDF 는 검증 측에서 압축 스트림이라 읽히지 않았으나, STPA 4단계(목적 정의·제어 구조·UCA·손실 시나리오)는 핸드북을 인용한 2차 자료(York AAIP 지침, arXiv 2506.01782 등) 검색 결과와 일치. 방법론 안내서이며 로봇 플릿 실증 아님."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. UCA 네 유형(미제공·위험 제공·너무 이르거나 늦게/순서 틀림·너무 일찍 멈춤/너무 오래)이 핸드북 인용 2차 자료와 일치. 핸드북 원문 쪽수(36쪽)는 검증 측 미대조."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 검색 결과에서 AEJ 59(5) pp.3799–3816, DOI 10.1016/j.aej.2020.06.036, 초록의 'STPA 로 계층형 조정 구조별 위험 시나리오 도출 → Bowtie 평가' 일치(HAL hal-03508510 도 같은 제목). ScienceDirect 는 403. 공저자 6명 전원은 검증 측 미대조. 초록 범위로 축소한 서술 유지."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. 본문 미열람으로 11대·화학 분석실 조건을 확인하지 못했다는 점을 주장 안에 밝힘. 단정 금지."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv HTML v1). 'a building construction site managed by the company Pomerleau in Montreal', 'the intended deployment of a Clearpath Jackal' 확인. 현장 유형 기타(건설) 적정."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. §4.3 'a new risk index was estimated', 측정 근거 서술 없음. 저자는 초록·결론에서 현장 전문가 검증을 언급하므로 기존 '[추정] 전문가 검증 보고' 문장과 병존 가능."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. ref-1255 는 이번 재열람 403(원문 미열람). 발행일 2026-04-23 은 위키 기존 기록(2026-10-09 열람) 기준. 새 사실 추가가 아니라 '예정' 표현 정정."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 유지. ref-789 원문 미열람. 검증 검색에서 DIN 이 ISO/DIS 3691-4:2026 초안 의견수렴(2026-06-26~08-26)을 게시해 차기판이 DIS 단계라는 메모 쪽과 부합하는 정황이 있으나, 이는 브리프 밖 출처라 페이지에 넣지 않는다. ref-789 의 'ISO/CD' 기록과 충돌하므로 둘 다 제시·열린 질문 처리 필요."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 유지. ref-1522 원문 미열람(iso.org). 검색 결과에서 iso.org/standard/88578 은 ISO/DIS 12100 개정 프로젝트로 실재 확인, Certifico 가 ISO/DIS 12100.3 투표(2026-07-20 시작)를 보도해 메모와 부합하나 40.60·2026-09-15 는 미확인. 기존 위키 '2026 FDIS 도달 전망' 문장은 재확인 대상."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 유지. 2020 판 제1판·2023 판 제2판 구조와 'Edition 3' 표기 정합. ISO 목록 원문 미열람(ref-470·ref-789). 단계 표현은 f8 충돌과 함께 재확인."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. KSSN 상세 페이지는 검증 측에서 제목만 렌더링됐으나, 검색 결과 요약에 표제·발행일 2024-11-01·고시 제2024-0480호·고시 사유(모바일 로봇+협동로봇 결합형 표준·인증 부재) 일치. 61쪽은 검증 측 미확인."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 검색 결과 요약에 적용범위 제외 문장('통합 제조 시스템(IMS), 관제 시스템, 군집 관리 시스템, 기타 기계 설비류는 이 표준에서 다루지 않는다') 일치. 목록 기준·본문 미열람."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "출처 실재 확인. 부합화 칸 공란·인용표준 목록은 검증 측 재렌더링 실패로 직접 대조하지 못함(원문 열람은 리서치 기록 기준). 반대 근거 없음. 목록 기준 서술로 한정."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. 발표문(ref-561, 이번 원문 미열람)과 KS B 7327 의 날짜·고시 사유 일치에 근거한 동일성 추정. 조항 대응 미확인 명시 유지."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. R15.08-2 원문·KS B 7327 본문 모두 미열람이라 대응·동등성 미확인을 명시함."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. KSSN 상세는 검증 측에서 제목만 렌더링됐고, 검색에서 2026-09-14 개정·고시 제2026-0288호·ISO 3691-4:2023(IDT)·81쪽을 확인하지 못했다. 반대로 중국 표준 목록(ndls.org.cn)은 2021-11-30 판을 현행으로 표시한다(갱신 지연 가능). 리서치 원문 열람 기록은 있으나 검증 측 재확인 실패라 단일 미재확인 출처로 본다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 국가법령정보센터 페이지에서 고용노동부고시 제2024-76호·2024-12-18 일부개정·2025-01-02 시행 확인. 조문 본문 탭은 연결 재설정으로 재열람 실패했으나 제5조② '도급인·수급인 각각 실시'는 검색 결과의 지침 해설과 일치."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 제6조 다섯 경우(판단 기준 마련·요인 파악·허용 여부 결정·감소대책 수립·실행 여부 확인)에 해당 작업 근로자 참여가 검색 결과 지침 해설과 일치. 조문 원문은 검증 측 재열람 실패."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(부분). 고시 번호·시행일은 법령정보센터에서 확인, 제15조② 1~6호는 검증 측 조문 재열람 실패(연결 재설정)로 브리프 인용과 지침 해설 자료 범위에서 판단. 반대 근거 없음. '소프트웨어 변경이 자동으로 수시평가 대상이라는 문구 없음' 단서 유지."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(부분). 상시평가 간주 규정의 존재는 2023 개정 보도·해설로 확인(당시 보도는 건설업 중심으로 소개). 현행 제15조④ 문구는 검증 측 조문 재열람 실패. 현행 조문 문언대로만 쓰고 적용 업종 해석을 덧붙이지 않는다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(부분). 고용노동부 게시 페이지에서 제목·게시일 2024-12-31·외국인·수급업체·일용근로자 참여 사례 수록을 확인. 청취조사 세부는 첨부 PDF 라 검증 측 미대조. 고시(ref-1525)와 같은 기관이라 독립 교차 확인 아님. 효과 검증 자료 아님 단서 유지."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(부분). 일용근로자 사례 수록은 게시 페이지로 확인, 문자·QR 익명 제안 세부는 첨부 PDF 라 검증 측 미대조. 반대 근거 없음."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 고용노동부 입법·행정예고 게시: 제목·등록일 2026-09-23·산재예방지원과 일치. 예고안이며 시행 규정 아님 단서 유지."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 검증에서 게시 페이지가 '고용노동부 공고 제2026-461호'를 표시함을 확인했다(공고 번호는 확인됨). 의견 제출 마감일 2026-10-13 은 페이지에 표시되지 않아 미확인."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 초록 페이지에서 저자 5명·EPTCS 371 pp.208–216·DOI 10.4204/EPTCS.371.15·2022-09-28 확인. ar5iv 본문 §3 Related work 에 'DeRoS also allows users to specify how property violations must be handled, while our approach is limited …' 문장 확인."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·벤더 주장 유지. OMRON PDF 는 검증 측에서 압축 스트림이라 읽히지 않았고 검색으로도 해당 문구를 찾지 못했다(문서 실재는 OMRON 사이트의 LD Safety Guide 목록으로 확인). 리서치 원문 대조 기록 기준. 특정 제품·2019 판으로 한정."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·벤더 주장 유지. f26 과 같은 이유로 검증 측 문구 미대조. 법적 의무 판단이 아닌 제품 매뉴얼의 책임 구분 진술로 한정."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 유지. ref-567 은 이번 재열람 403(검증 측 GitHub API 도 403). 이슈 핵심은 기존 위키 내용과 일치, '두 건물' 세부 미확인 명시."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(raw.githubusercontent). 2.10.0 (2025-05-09) 절에 'Giving options to separate fire alarm by fleet names (#413)', 2.14.0 절 2026-09-26 확인. 최초 도입판 여부는 변경 이력 기준."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. FleetUpdateHandle.cpp handle_target_emergency: fleet_names.empty() 이면 execute=true, 이름 일치 시 execute=true, execute 이면 handle_emergency(is_emergency). 코드 열람이며 배치 시험 아님."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. Node.cpp 에 EmergencyNotice(EmergencyTopicName)와 TargetEmergencyNotice(EmergencySignalTopicName) 구독이 공존."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. f29~f31 로 기존 5절 제약 칸 '이후 구현 여부 미확인'이 낡았음 확인. 세 출처 모두 Open-RMF 계열이라 독립 교차 확인 아님. safety/index.md 95행·governance-law-and-society/index.md 84행에도 같은 낡은 주장 있음(후속 정리)."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(EUR-Lex 2026-07-27 통합본). 제3조(16)의 물리적·디지털 수단, 제조자 미예견, 새 위험·기존 위험 증가, (a) 기존 안전 제어 시스템 변경이 필요한 방호장치 추가 또는 (b) 안정성·기계적 강도 보호조치 조건 일치."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 제54조: 일반 2027-01-20, 제26~42조 2024-01-20, 제50조(1) 2026-10-20, 제6조(7)·제48조·제52조 2023-07-19, 제6조(2)~(6)·(8)·(11)·제47조·제53조(3) 2024-07-20 일치."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. f33 조문에서 도출한 해석이며 개별 업데이트 법적 분류·제18조 의무 주체는 판단하지 않았다고 밝힘. 집행 지침 미확인."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv HTML v1). 230개 벤치마크는 'Stage 1-3', 실물 실험은 §V-C 에서 단계 4~6 시험과 함께 전체 SafeGate 구조 실행도 적고 §VI-C 는 정량 지표 없이 정성 결과만 보고. 30개 AI2-THOR 가 어느 단계를 평가하는지는 논문이 명시하지 않음 — '시뮬레이션 실행 평가' 이상으로 단계를 특정하지 않는다."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 식(9) 분모 T_exec(승인되어 시뮬레이터에서 실행된 작업), 거부·보류 작업은 지표에 들어가지 않는다고 명시. 30개 모두 차단 시 0/0 이지만 CR 0% 로 보고, 산정 규칙 설명 없음."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 표 II SafeGate TP100·FN0·FP6·TN77=183, 다른 방법 행도 모두 183. 230 과의 차이 설명 문장 없음."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. 결정 게이트 출력이 {authorize, defer, reject} 이고 §V-A 에 'ambiguous' 정답 범주 언급이 있어 추론 근거는 있으나 47건 제외는 논문이 명시하지 않음."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[의견] 유지. STPA 절차를 ROP 제어 구조에 대입한 구축자 의견임을 밝혀야 함(수정 지시). 실증 아님."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. f17·f18·f27 에서 도출, ROP 사업자를 지칭하는 규정 없음·책임 배분 미확정 명시. 법적 의무 판단은 59. 법·규제·보험·라이선스 연계로만."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정]·low 적정. VDA 5050 3.0.0 범위 문장('shall not be regarded or applied as a safety standard')은 입력 원문 텍스트로 확인, f26 은 벤더 주장. 특정 경로 PL 미결정 명시."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[의견] 유지하되 구축자 의견 병기 필요. VDA 5050 표 4 는 stopPause 가 (설정된 경우) 하드웨어 버튼으로 startPause 된 로봇도 재시작할 수 있다고 적으므로, 'stopPause 는 안전 기능 해제 절차가 아니다'를 명세의 사실처럼 단정하지 않도록 수정 지시."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[의견] 유지, 구축자 의견 병기 필요. Nav2 README 의 하드 실시간 인증 미제공은 기존 위키 내용, Ogma 는 f25 로 확인. 별개 구현이라 교차 입증 아님."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[의견] 유지, 구축자 의견 병기 필요. f30·f31 에서 도출한 시험 항목 제안."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[의견] 유지, 구축자 의견 병기 필요. f37·f38 분모 문제에서 도출."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": [
+        "f17~f24·f41: 국내 위험성평가 고시는 현장 사업주의 법적 의무다. 브리프 rationale 은 9절 '업종별 조건' 행에 넣자고 하나, ROP 직접 열이 아니라 외부 연계 열(현장 사업주 의무)과 59. 법·규제·보험·라이선스 연결로만 다뤄야 한다(편집으로 해결 가능).",
+        "f26·f27: 비상정지 회로·PL·PFH 계산·인터록은 원문 19장 '로봇 자체 지능·제어' 경계의 연계 대상(제조사·통합자)이다. ROP 몫은 인터페이스 구분과 검증 자료 요구로 한정한다.",
+        "f33~f35: EU 기계 규정 조문은 조건 소개와 59. 법·규제·보험·라이선스 연결로 한정하고, 개별 ROP 업데이트의 법적 분류를 판단하지 않는다.",
+        "f45: 화재 시 로봇 이동·정지 정책은 현장 대피 계획(시설·설비 경계의 연계 대상)과 함께 정해야 한다는 범위로 유지한다."
+      ]
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f32 가 정정하는 '비상 신호는 대상 플릿을 구분하지 않는 불리언, 이후 구현 여부 미확인' 주장은 대상 페이지 5절 외에 docs/categories/safety/index.md 95행·docs/categories/governance-law-and-society/index.md 84행에도 있다 — 이번 실행 범위 밖이므로 후속 갱신 대상으로 기록한다.",
+        "f7·f10·f11~f15 의 정정 대상 문장은 분리 주제 페이지(docs/topics/2026/2026-09-25-area25-s7.md 43·46행, docs/topics/2026/2026-09-26-area25-s7.md 46행)에 있으나 page_proposals 는 세부영역 페이지 하나뿐이다.",
+        "f8: ISO 3691-4 차기판 단계에 대해 기존 ref-789 기록(2026-09-26 'ISO/CD')과 메모('ISO/DIS, Edition 3, 40.60')가 충돌한다 — 한쪽을 고르지 않는다.",
+        "f9: 기존 2026-09-26-area25-s7.md 47·48행의 'ISO/DIS 12100:2024 기반 DIN 초안'·'2026 FDIS 도달 전망'은 f9 의 DIS 12100.3 재투표 정황과 어긋날 수 있다(재확인 대상).",
+        "f36 의 230개·30개 수치, f42 의 VDA 5050 안전 표준 아님·activeEmergencyStop, f44 의 Nav2 인증 미제공, f33 의 일반 정의·f34 의 일반 적용일은 기존 위키에 있다 — 기존 각주(ref-417·ref-031·ref-1077·ref-555)를 재사용하고 같은 문장을 새로 쓰지 않는다."
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "f11~f15: KS B 7327 표제의 '이동 머니퓰레이터'는 표준 이름이므로 그대로 두되, 본문 일반 용어는 용어집 '모바일 매니퓰레이터 (Mobile Manipulator)'로 통일하고 링크한다.",
+        "f1·f2·f40: '위험한 제어 행동(Unsafe Control Action)'은 용어집에 없으므로 첫 등장 때 영문을 함께 쓰고 용어집 STPA 항목에 링크한다(신규 등록은 하지 않음).",
+        "f33~f35: '실질적 변경'은 용어집 substantial-modification(실질적 변경, Substantial Modification)에 링크한다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": [
+        "ref-1525·ref-555·ref-417·ref-1529 는 evidence_excerpt 에 여러 구절이 있다. 페이지에서는 출처당 직접 인용 1회까지만 쓰고 나머지는 요약·재서술한다(수정 지시)."
+      ]
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f16: [사실] → [추정]으로 강등한다 — 검증에서 KS B ISO 3691-4 의 2026-09-14 개정·고시 제2026-0288호·ISO 3691-4:2023(IDT)를 다시 확인하지 못했고, 다른 표준 목록은 2021-11-30 판을 현행으로 표시한다. 7절에 새 행을 넣을 때도 '국가표준 목록 기준, 검증 미재확인'을 밝힌다.",
+      "f24: [추정] 태그는 유지한다. 검증에서 ref-1526 게시 페이지가 '고용노동부 공고 제2026-461호'를 표시함을 확인했으므로 '공고 번호를 확인하지 못했다'는 문구는 쓰지 않는다. 의견 제출 마감일(2026-10-13)만 미확인으로 남긴다.",
+      "f40·f43·f44·f45·f46: [의견] 문장마다 '구축자 의견:'을 앞에 붙여 누구의 의견인지 밝힌다 — 공통 규칙 2절, 검증 항목 5.",
+      "f43: VDA 5050 표 4 는 stopPause 가 (설정된 경우) 하드웨어 버튼으로 startPause 된 로봇도 재시작할 수 있다고 적는다. 그러므로 'stopPause 는 안전 기능 해제 절차가 아니다'를 명세가 말한 사실처럼 쓰지 않는다. '비상정지 회로 리셋과 같다는 근거가 없다'는 범위의 구축자 의견으로 쓴다.",
+      "f26·f27: 9절 외부 연계 열(로봇 제조사·통합자)에만 [추정]으로 넣고 'OMRON LD Safety Guide Rev H(2019-10) 기준 벤더 주장'을 병기한다. 타사 플릿과 현행 모델로 일반화하지 않는다.",
+      "f17~f22·f41: 국내 위험성평가 지침 내용을 9절 '업종별 조건' 행의 ROP 직접 열에 넣지 않는다. 외부 연계 열(현장 사업주의 법적 의무)과 3절·6절 근거로만 쓰고 59. 법·규제·보험·라이선스·58. 다사업자 책임·계약·데이터에 연결한다 — 범위 경계(원문 19장).",
+      "f33~f35: 9절에서는 제3조(16)의 (a)·(b) 조건과 제54조 적용일 소개로 한정한다. f35 는 [추정]으로 두고, 개별 ROP 정책·어댑터 업데이트가 실질적 변경인지 단정하지 않는다. 59. 법·규제·보험·라이선스와 oq-093·oq-282 에 연결한다.",
+      "f8·f9·f10: ref-789 의 'ISO/CD 3691-4'(2026-09-26 기록)와 메모의 'ISO/DIS 3691-4, Edition 3, 40.60'이 충돌한다. 본문에 둘 다 [추정]으로 제시하고, 11절에 '출처 충돌'로 적어 oq-170 에 연결한다. ref-789 제목은 바꾸지 않는다. ISO/DIS 12100.3 단계(f9)도 [추정]으로만 쓴다.",
+      "정정 반영 위치: page_proposals 는 docs/categories/safety/safety-and-risk-management.md 하나뿐이다. 그러므로 f7(R15.08 Part 3 '예정' 표현)·f10(차기판 판 번호)·f11~f15(KS 번호)의 정정은 이 페이지 해당 절(7·11절) 패치 안에 쓰고, 분리 주제 페이지는 이번에 직접 고치지 않는다. 손대지 않은 정정 대상 위치(docs/topics/2026/2026-09-25-area25-s7.md 43행, docs/topics/2026/2026-09-26-area25-s7.md 46행, docs/categories/safety/index.md 95행, docs/categories/governance-law-and-society/index.md 84행)는 diff_summary·changelog_entry 에 '후속 갱신 필요'로 적는다.",
+      "f32: 5절 '출하 마감 전 화재경보' 표 제약 칸의 기존 '[사실][^ref-567] … 이후 구현 여부는 미확인' 문장을 바꾼다. 2.10.0(2025-05-09) #413(f29)·2.14.0 대상 비상 신호의 빈 fleet_names=전체 플릿(f30)·기존 불리언 경로 병존(f31)을 각각 [사실]로 적고, 정정 판단(f32)과 이슈 세부(f28)는 [추정]으로 둔다. 세 출처가 모두 Open-RMF 계열이라는 점을 밝힌다.",
+      "f36: 실물 로봇 실험을 '단계 4~6만 시험'으로 한정하지 않는다. 논문 §V-C 는 단계 4~6 시험과 함께 전체 SafeGate 구조 실행도 적는다. 30개 AI2-THOR 시나리오가 평가하는 단계는 논문이 명시하지 않으므로 특정하지 않는다.",
+      "인용 길이: ref-1525·ref-555·ref-417·ref-1529 등 evidence_excerpt 에 여러 구절이 있는 출처는 페이지에서 출처당 직접 인용 1회까지만 쓰고 나머지는 재서술한다 — 공통 규칙 2절.",
+      "원문 미열람 표시: 이번 실행에서 원문을 열지 못한 ref-1522·ref-1255·ref-789·ref-470·ref-561·ref-567 은 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다.",
+      "용어: 본문의 일반 용어 '이동 머니퓰레이터'는 용어집 '모바일 매니퓰레이터'로 통일하고 링크한다(KS B 7327 표제는 그대로 둔다). '위험한 제어 행동(Unsafe Control Action)'은 첫 등장 때 영문을 함께 쓴다. '실질적 변경'은 용어집 substantial-modification 에 링크한다.",
+      "중복: 230개·30개 수치, VDA 5050 안전 표준 아님·activeEmergencyStop, Nav2 인증 미제공, 제3조(16) 일반 정의, 일반 적용일 2027-01-20 은 기존 각주(ref-417·ref-031·ref-1077·ref-555)를 재사용해 연결만 하고 같은 문장을 새로 추가하지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 45건, 미확인 1건, 교차 확인 0건. 강등: f16 사실 → 추정(KS B ISO 3691-4 의 2026-09-14 개정을 검증에서 다시 확인하지 못했고, 다른 목록은 2021-11-30 판을 현행으로 표시함). 원문 미열람 출처: ref-1522, ref-1255, ref-789, ref-470, ref-561, ref-567. 이번 검증에서 다시 확인하지 못한 출처: ref-1520·ref-1528(PDF 판독 불가), ref-1525 조문 본문(연결 재설정), ref-1527 첨부 PDF, ref-1523·ref-1524 상세(KSSN 렌더링). ref-1520 은 2차 자료, ref-1523 은 검색 결과 요약, ref-1525 는 고시 번호·시행일과 해설 자료 범위로 확인했다. ref-1520·ref-1521·ref-1523~ref-1528·ref-1530 은 fetched: true 인데 fetch_url 이 비어 있다(리서치 기록 보완 요청). 검증에서 확인한 사항: 행정예고 공고 번호 제2026-461호(f24, 의견 제출 마감일은 미확인). 주의: 모든 [사실] 주장이 단일 출처이거나 같은 기관 계열 출처(고용노동부 고시·가이드, Open-RMF 변경 이력·코드·이슈)에 기대며, 교차 확인된 주장은 없다. ISO 3691-4 차기판 단계는 기존 ref-789 기록(CD)과 메모(DIS)가 충돌해 둘 다 [추정]으로만 싣는다. Open-RMF 대상 비상 신호는 코드를 읽어 확인한 것이며 대피 안전성을 검증한 것이 아니다. SafeGate 의 충돌률 0%는 실행 0건(0/0)에서 나온 값이라 무사고율로 읽지 않는다. 정정 요청 없음. 새 열린 질문 3건은 형식에 맞고 기존 질문과 중복되지 않는다. 분리 주제 페이지와 다른 대분류 페이지에 남은 낡은 문장(R15.08 Part 3 '예정', ISO 3691-4 '제2판 초안', RMF 비상 신호 '구현 여부 미확인')은 후속 갱신 대상이다. 브리프의 검색 횟수는 집계되지 않았다(외부 조사 변환). 검증 검색은 16회다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 3455,
+  "type": "result",
+  "duration_ms": 359988,
+  "uuid": "3aa0f184-9726-46da-97df-b05c20c3b5d5",
+  "ttft_stream_ms": 993,
+  "time_to_request_ms": 116,
+  "time_to_request_phases_ms": {
+    "other": 30,
+    "system_prompt": 12,
+    "resume_other": 0,
+    "process_user_input": 9,
+    "input_attachments": 12,
+    "input_hooks": 4,
+    "tool_pool_refresh": 3,
+    "init_message": 7,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 7,
+    "message_normalization": 3,
+    "client_creation": 6,
+    "request_build": 17
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 65,
+  "time_to_request_cpu_ms": 158,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 6,
+    "cpu_ms": 15,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 994,
+  "time_to_request_from_spawn_ms": 10309547,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791727206240.7175,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 361.7
+}

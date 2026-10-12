@@ -1,0 +1,161 @@
+{
+  "run_id": "2026-10-11-01",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 21,
+    "area_name": "21. 상호운용 표준·적합성",
+    "category": "F. 연동"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "1e4d0ce",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 5,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3338.4,
+  "first_retries": 1,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-11 | 21. 상호운용 표준·적합성 | 5절 경로 계산 책임을 선 유도 로봇으로 정정하고 제조 공장 전시 시연 사례 추가, 6절 OPC 시험 도구 사전 점검과 인정 시험소 인증 구분·승인 근거 수준·VDA 5050 동작 시험표, 7절 VDA 5050 날짜 출처 충돌·태그 스키마 끝 쉼표·OPC UA Robotics Facet·MassRobotics 스키마·KS 두 건·IDS 1.0(트랙 반영 제안 2026-10-09-26 일부 반영), 8절 vda5050-lab 자기 기술·Wagner 외, 10절 14·42번 연결, 11절 부분 근거와 새 질문 2건, 2026-09-25 분리 페이지 링크 유지 | run 2026-10-11-01",
+  "notes": [
+    "참고문헌 생성: references/ref-1414.md",
+    "참고문헌 생성: references/ref-1418.md",
+    "참고문헌 생성: references/ref-1420.md",
+    "참고문헌 생성: references/ref-1423.md",
+    "참고문헌 생성: references/ref-1424.md",
+    "참고문헌 생성: references/ref-1425.md",
+    "참고문헌 생성: references/ref-1426.md",
+    "참고문헌 생성: references/ref-1427.md",
+    "참고문헌 생성: references/ref-1428.md",
+    "참고문헌 생성: references/ref-1430.md",
+    "참고문헌 생성: references/ref-1429.md",
+    "세부영역 반영 제안 1건을 반영으로 표시했다(21. 상호운용 표준·적합성, 실행 2026-10-11-01)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 11,
+    "standards": 1,
+    "open_questions": 3,
+    "flow_cells": 1,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-11 21:32:45 KST",
+  "usage": {
+    "input_tokens": 72,
+    "cache_creation_input_tokens": 1312249,
+    "cache_read_input_tokens": 6240947,
+    "output_tokens": 210864,
+    "cost_usd": 16.1972,
+    "calls": 9,
+    "by_step": {
+      "verification1": {
+        "calls": 2,
+        "cost_usd": 4.8609,
+        "output_tokens": 55283,
+        "cache_read_input_tokens": 2379985,
+        "cache_creation_input_tokens": 396280
+      },
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.6721,
+        "output_tokens": 43359,
+        "cache_read_input_tokens": 3531247,
+        "cache_creation_input_tokens": 248261
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.181,
+        "output_tokens": 90736,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 417182
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.3858,
+        "output_tokens": 21015,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 241253
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/integration/interoperability-standards-and-conformance.md (7개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-11-area21-s7.md",
+        "chars": 2916
+      },
+      {
+        "from": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-11-area21-s6.md",
+        "chars": 2060
+      },
+      {
+        "from": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-11-area21-s8.md",
+        "chars": 1461
+      },
+      {
+        "from": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-11-area21-s11.md",
+        "chars": 1079
+      },
+      {
+        "from": "docs/categories/integration/interoperability-standards-and-conformance.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-11-area21-s10.md",
+        "chars": 630
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 23,
+  "cross_checked_findings": 0
+}

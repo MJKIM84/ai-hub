@@ -1,0 +1,162 @@
+{
+  "run_id": "2026-10-11-03",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 22,
+    "area_name": "22. 설비·건물 시스템 연동",
+    "category": "F. 연동"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "4ff0ef3",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2118.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-11 | 22. 설비·건물 시스템 연동 | 차등 갱신: KS B 7317 개정 이력·대한승강기협회 단체표준·Open-RMF 승강기 감독과 작업대 완료 판정·KONE·Dormakaba 어댑터·SEMI E84·BACnet 출입통제 백서 보강, 기타(도서관)·병원·상업 시설 적용 사례 추가, 대표 연구의 실험 조건 갱신, 새 열린 질문 6건, 2차 수정(구축자 의견 태그 분리·2026-09-25 주제 페이지 링크 복원); 트랙 반영 제안 2건(2026-09-25-65, 2026-09-25-76)은 이번 실행 미처리 — 근거 finding 없음, 다음 22. 설비·건물 시스템 연동 실행으로 이월 | run 2026-10-11-03",
+  "notes": [
+    "참고문헌 생성: references/ref-1432.md",
+    "참고문헌 생성: references/ref-1431.md",
+    "참고문헌 생성: references/ref-1433.md",
+    "참고문헌 생성: references/ref-1434.md",
+    "참고문헌 생성: references/ref-1435.md",
+    "참고문헌 생성: references/ref-1436.md",
+    "참고문헌 생성: references/ref-1437.md",
+    "참고문헌 생성: references/ref-1438.md",
+    "참고문헌 생성: references/ref-1439.md",
+    "참고문헌 생성: references/ref-1440.md",
+    "참고문헌 생성: references/ref-1442.md",
+    "참고문헌 생성: references/ref-1443.md",
+    "참고문헌 생성: references/ref-1444.md",
+    "세부영역 반영 제안 2건을 반영으로 표시했다(22. 설비·건물 시스템 연동, 실행 2026-10-11-03)"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 13,
+    "standards": 3,
+    "open_questions": 6,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-11 22:21:06 KST",
+  "usage": {
+    "input_tokens": 44,
+    "cache_creation_input_tokens": 888212,
+    "cache_read_input_tokens": 3483661,
+    "output_tokens": 146220,
+    "cost_usd": 10.8975,
+    "calls": 7,
+    "by_step": {
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.7393,
+        "output_tokens": 30061,
+        "cache_read_input_tokens": 3153946,
+        "cache_creation_input_tokens": 168611
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.3856,
+        "output_tokens": 92066,
+        "cache_read_input_tokens": 144084,
+        "cache_creation_input_tokens": 439423
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.6752,
+        "output_tokens": 23622,
+        "cache_read_input_tokens": 177760,
+        "cache_creation_input_tokens": 270905
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/integration/facility-and-building-system-integration.md (10개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-10-11-area22-s6.md",
+        "chars": 2450
+      },
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-10-11-area22-s11.md",
+        "chars": 2065
+      },
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-10-11-area22-s7.md",
+        "chars": 1902
+      },
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-10-11-area22-s3.md",
+        "chars": 1323
+      },
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-10-11-area22-s8.md",
+        "chars": 1268
+      },
+      {
+        "from": "docs/categories/integration/facility-and-building-system-integration.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-10-11-area22-s10.md",
+        "chars": 1080
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 19,
+  "cross_checked_findings": 1
+}

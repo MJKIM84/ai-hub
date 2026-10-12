@@ -1,0 +1,1116 @@
+{
+  "run_id": "2026-10-11-05",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 49,
+    "area_name": "49. 사람 근접 안전",
+    "category": "M. 안전"
+  },
+  "gaps": [
+    "섹션 4. 핵심 개념과 용어(분리 2026-09-30-area49-s4) — NIST SSM 논문 연도를 '2016' 으로 적어 학술지 게재 연도(2017)와 다름",
+    "섹션 5. 적용 사례 — 병원 사례를 '시뮬레이션 평가' 로 잘못 분류(89행), 창고 연구(74행)는 '정량 결과 미확인', 아마존 글 '발행일 미확인'(72행), 실외 사례 제약 칸(100행)이 2023 기사의 '당시 개정안' 수치에만 기대고 현행 고시 원문 근거가 없음",
+    "섹션 6. 대표 접근법과 기술(분리 2026-09-30-area49-s6) — 구역 지원 신고·적재 외곽 기준 진입, Nav2·RMF 의 0 값 의미 차이, 감지 응답시간 보정 요인이 없고, Farrell(55행)·Jafari(61행) 문장이 실험 조건을 '미확인' 으로 둠",
+    "섹션 7. 관련 표준·프레임워크·오픈소스(분리 2026-09-30-area49-s7) — 실외 인증 행이 인증기관 페이지·기사 근거뿐이고 시행규칙·고시 원조문이 없음. ISO 13482:2014·ISO 10218-1:2025 범위·국내 실내 KS(KS B 8252) 행 없음",
+    "섹션 8. 대표 연구와 자료(분리 2026-09-30-area49-s8) — Farrell·HATA·Jafari 서지가 프리프린트 기준이고 Rondoni 제목·환경 표현 부정확, HATA 평가가 시뮬레이션이라는 점과 실패율 정의 없음",
+    "섹션 9. 책임 경계 — 사람 위치를 플릿에 전달하는 공개 구현과 그 한계(좌표계·변환 실패), 실외 인증의 운행계획서·보행자 밀집 알림 요구 미반영",
+    "섹션 11. 열린 질문 — oq-229·oq-230·oq-231·oq-232 부분 근거 미반영",
+    "정정 요청 없음(target.json corrections 비어 있음). 메모·검증에서 나온 위키 내부 정정 5건(f1·f14·f20·f24·f49)"
+  ],
+  "research_questions": [
+    "사람 가까이에서 로봇은 얼마나 떨어지고, 언제 느려지고 멈춰야 하는가? [분류원문]",
+    "oq-229 플릿 관제가 내리는 구역별 속도 제한·진입 금지는 안전 등급이 아닌 소프트웨어 기능인데, 이것을 위험성 평가에서 위험 감소 조치로 인정받으려면 로봇의 안전 등급 보호 필드 설정과 어떻게 맞추고 누가 검증하는가? (섹션 6·9·11 겨냥)",
+    "oq-230 출처 충돌: 실외이동로봇 운행안전인증의 심사 항목 수를 인증기관 페이지는 8개 항목으로, 기사는 16가지로 전하는데 어느 쪽이 항목 단위이며 세부 항목 목록은 무엇인가? (섹션 5·7·11 겨냥)",
+    "oq-231 국내 병원·상업 시설·공동주택 실내에서 운행하는 서비스 로봇의 사람 근접 속도·거리 기준을 정한 법령·표준·인증이 있는가? (섹션 7·11 겨냥)",
+    "oq-232 착용형 장치나 출입 통제 신호로 얻은 사람 위치를 제조사가 다른 여러 로봇 플릿에 동시에 전달해 감속·정지시키는 표준 인터페이스나 사례가 있는가? (섹션 9·11 겨냥)",
+    "바뀐 출처: 병원·창고·편안함 연구의 실험 조건과 출판 서지, 현행 실외 인증 고시 별표의 실제 기준은 무엇인가? (섹션 5·8 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Marvel·Norcross(NIST)의 SSM 논문 학술지판은 Robotics and Computer-Integrated Manufacturing 44권(2017) 144–155쪽에 실렸고, 2015-03-04 접수·2016-08-01 승인됐다. 위키 4절·8절과 분리 페이지의 '2016년 논문' 표기는 승인 연도 기준이라 게재 연도(2017)와 다르다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1075"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "NIST 공개 PDF 1쪽 머리글 \"Robotics and Computer-Integrated Manufacturing 44 (2017) 144–155\", Article history \"Received 4 March 2015 … Accepted 1 August 2016\". 기존 ref-1075 published '2016'. 반응시간 0.113 s(§5)·ZR·ZS 위치 불확실성(§6)은 기존 내용(2026-09-30-area49-s6.md 41행, 2026-09-30-area49-s4.md 38행)이라 새로 넣지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "SICK 의 기술 블로그는 안전 레이저 스캐너에서 감시 케이스(보호 필드 집합) 사이를 전환하면 시스템 응답시간이 늘어나고, 다중 샘플링 값을 올리면 물체가 연속으로 더 여러 번 감지돼야 출력이 꺼지므로 응답시간 보정분이 더해진다고 설명한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1466"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: SICK 블로그(Martin Kidman, 2021-02-09) \"switching between cases adds to the response time of a system\", Multiple sampling 절 \"must see an object twice in a row … multiple sampling of 3 … three times in succession before the OSSD's switch OFF\", \"additional response time supplements due to multiple sampling settings, transmission times and case switching\". 제조사 일반 설명이며 특정 센서·제어기·하중·바닥 조건의 시험값이 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약",
+      "vendor_claim": true
+    },
+    {
+      "id": "f3",
+      "claim": "VDA 5050 3.0.0 은 로봇마다 처리할 수 있는 구역 유형이 다르므로, 모든 이동 로봇이 이해할 수 있는 구역 이름을 factsheet 의 typeSpecifications.supportedZones 배열로 플릿 관제에 보고하도록 요구한다(shall).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "3.0.0 태그 명세 §6.4 Zones: \"Some mobile robots cannot process zones at all, while other mobile robots might only be able to work with a certain subset of zone types … All mobile robots shall therefore report to fleet control which zones they are able to understand by adding the according zone names to the `supportedZones` array\". 모든 기종이 모든 구역 유형을 지원한다는 뜻이 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f4",
+      "claim": "같은 명세의 외곽 기준 구역(contour-based zones)에서는 적재물을 포함한 로봇 외곽이 구역 진입·이탈을 정하며, 외곽의 어느 부분이라도 구역에 들어가면 진입이고 외곽이 모두 빠져나가야 이탈이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§6.4.1.1 Contour-based zones: \"the contour of the mobile robot (including its load) determines zone entry and exit. Any part of the contour entering the zone is a zone entry.\" SPEED_LIMIT 의 maximumSpeed(m/s)와 '진입 시 이미 제한 속도 도달'(Table 6)은 기존 내용(docs/categories/safety/index.md 77행)이라 새로 넣지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "ROP 가 구역 속도 제한을 등록할 때는 로봇별 supportedZones 신고를 먼저 확인하고, 적재물로 커진 외곽이 진입 경계에 닿기 전에 감속을 마치도록 감속 시작 지점을 경계 앞에 두며, 실제 감속을 통합 시험으로 확인하는 절차가 필요하다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f3·f4 에서 도출한 ROP 운영 시사점. 감속 거리·시간 실측값은 로봇 제조사 자료로 확인해야 함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f6",
+      "claim": "Nav2(Jazzy) Collision Monitor 문서는 source_timeout(기본 2.0초) 안에 새 센서 데이터가 오지 않으면 로봇을 정지시키며, source_timeout 을 0.0 으로 두면 이 차단 동작이 꺼진다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1467"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Collision Monitor Node 문서(Jazzy) source_timeout 항목: \"Type: double Default: 2.0 … If no new data is received within this interval, the robot will be stopped. Setting source_timeout: 0.0 disables this blocking mechanism.\" 하드 실시간 안전 인증 미제공 문장은 기존 내용(2026-09-30-area49-s6.md 47행, ref-1077)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "Nav2(Jazzy) Speed Filter 에서 speed_limit 메시지 값 0 은 정지가 아니라 '속도 제한 없음'을 뜻하며, 이는 백분율·절댓값 설정과 관계없다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1468"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Speed Filter Parameters 문서(Jazzy) speed_limit_topic 설명: \"speed_limit : non-zero values show maximum allowed speed … Zero value means no speed restriction (independently on percentage).\"",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "Open-RMF rmf_fleet_adapter 2.14.0 의 차선 속도 제한(limit_lane_speeds) 처리는 요청 속도가 0 이하이거나 차선 번호가 그래프 범위를 벗어나면 경고만 남기고 그 요청을 무시하며, 경고문은 차선을 닫으려면 close_lanes API 를 쓰라고 안내한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1464"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "FleetUpdateHandle.cpp(2.14.0 태그) limit_lane_speeds 람다: \"request.lane_index() >= new_graph.num_lanes() || request.speed_limit() <= 0.0\" → RCLCPP_WARN \"Ignoring speed limit request … not greater than zero. If you would like to close the lane, use the FleetUpdateHandle::close_lanes(~) API instead.\" → continue",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "같은 코드에서 유효한 속도 제한은 계획 그래프의 차선 속성(speed_limit)에 기록된 뒤 새 Planner 를 만들어 작업 파라미터에 넘기고 차선 상태를 발행하는 데서 끝나며, 차량이 실제로 감속을 마쳤는지 확인하는 경로는 이 함수에 없다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1464"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "같은 람다 이어지는 부분: \"properties.speed_limit(request.speed_limit());\" → \"std::make_shared<const rmf_traffic::agv::Planner>(new_config, …)\" → task_parameters->planner(…) → publish_lane_states(). 계획 계층의 코드 경로이며 물리적 감속 완료 확인(ACK)은 이 함수 범위 밖",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f10",
+      "claim": "Nav2 의 speed_limit 0(제한 없음)·source_timeout 0.0(차단 해제)과 Open-RMF 의 0 이하 속도 제한(무시) 모두 '정지'를 뜻하지 않으므로, 이종 플릿 어댑터가 '0' 을 정지 명령으로 그대로 옮기면 의도와 반대로 제한이 풀리거나 무시될 수 있는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1467",
+        "ref-1468",
+        "ref-1464"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f6~f8 의 문서·코드 의미를 나란히 놓은 추론. 실제 어댑터에서 이 오류가 생긴 사례나 실행 시험 자료는 확인하지 못함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f11",
+      "claim": "ROP 어댑터 계약은 '제한 없음', '양수 속도 제한', '통로 폐쇄', '보호 정지'를 서로 다른 명령으로 표현하고, 구역 전송·활성화·계획 반영·차량 감속 관측을 별개 상태로 기록해 계획 상태 갱신만으로 감속 완료를 보고하지 않도록 해야 한다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1464",
+        "ref-1468",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f8~f10 에서 도출. VDA 5050 의 zoneSet 변경 시 새 zoneSetId·DISABLED 후 enableZoneSet 활성화 규칙은 기존 내용(2026-09-30-area16-s6.md 49행, 2026-09-30-area16-s4.md 40행)이라 새로 넣지 않고 이 의견의 배경으로만 씀",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f12",
+      "claim": "Farrell 외의 창고 연구는 Freight·Jackal·Megarover 실물 로봇으로 실험했고, 로봇과 보행자 위치는 OptiTrack 모션 캡처로 측정했다. 정적·동적 장애물 회피 단위 실험은 설정마다 10회 수행했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1082"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2503.21141v1 §VI \"we present real-world experiments carried out to evaluate the system\", Fig. 2(c) \"Real-world robots, from left to right: Freight, Jackal, and two Megarovers\", \"The project employs the Optitrack system for precise localization\", Table III(1~3대 설정·속도별). 출판판: 2025 IEEE CASE pp.548–555, UC eScholarship 2025-08-17",
+      "as_of": "2026-10-11",
+      "site_type": "물류창고",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f13",
+      "claim": "같은 연구의 Open-RMF 플릿 실험(Table IV)은 로봇 4대·최고 1.0 m/s 또는 2대·1.5 m/s 설정에서 보행자 0·1·2명 조건을 비교했고, 표의 값은 Open-RMF 상위 계획기가 로봇을 일부러 세워 둔 시간을 뺀 것이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1082"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Table IV 제목 \"OpenRMF Experiment Results Table. These values exclude periods when the robot is stationary.\" 본문 \"we exclude periods when the robots are deliberately held stationary by OpenRMF's high-level planner\". 전체 임무 처리량 지표로 옮겨 쓰지 않음. 단위 실험(f12)과 분모가 다름",
+      "as_of": "2026-10-11",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f14",
+      "claim": "정정 제안: 49영역 본문 74행('정량 결과는 미확인')·2026-09-30-area49-s6.md 55행('정량 결과 미확인')·2026-09-30-area49-s8.md 42행('2025-03, 프리프린트 … 정량 결과 미확인')은 실물 실험 조건(f12)과 Table IV 조건·분모(f13)를 적고, 서지를 2025 IEEE CASE(pp.548–555, 2025-08-17) 게재로 고치는 것이 맞아 보인다. 현장 배치 사례가 아니라 연구 평가라는 기존 구분은 유지한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1082"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f12·f13 에서 도출. CASE 게재 서지(DOI 10.1109/CASE58245.2025.11164151, pp.548–555, 2025-08-17)는 UC eScholarship 공식 저장소 기준(검증 결과). Table IV 의 개별 수치는 이번 변환에서 옮기지 않음",
+      "as_of": "2026-10-11",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f15",
+      "claim": "HATA(Kazemi Eskeri 외) 논문의 5·10·15대 플릿 평가는 실제 기록된 사람 궤적을 재생하는 시뮬레이션 환경에서 수행됐다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1083"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2508.19731v1 §IV-B \"we conducted experiments within a simulated environment using the multi-agent loosely-coupled coordination framework … we replayed human trajectories\", \"fleets of size 5, 10, and 15 robots\". 실측 궤적 재생이 현장 운용 시험을 뜻하지 않음. 출판판 IROS 2025(pp.12697–12703, 2025-10), Aalto 목록 게시 2025-11-27",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f16",
+      "claim": "같은 논문의 실패율은 교착 또는 10분 제한시간 초과로 완료하지 못한 과제의 비율로, 사고율이나 사람과의 충돌률이 아니다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1083"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§V \"Failure rate refers to the percentage of tasks that were not successfully completed due to deadlock or timeout … The 10-minute timeout exceeds the longest observed task time (under 4 minutes)\". 기존 위키의 '최대 26%·19% 단축'(2026-09-30-area49-s6.md 57행)은 유지하되 안전 지표로 읽지 않도록 구분 필요",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f17",
+      "claim": "Tartu 병원 현장 시험 논문은 TIAGo·Clearpath Jackal 이종 로봇을 RMF 로 관리하는 능력을 '시험 환경'에서 검증했고, 병원 안에서 여러 배송 로봇을 운용하는 것은 아직 하지 않은 향후 과제로 적었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-869"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Frontiers in Robotics and AI 9(2022) §4 'Increasing the number and diversity of robots': \"we have validated RMF's capability to manage multiple heterogeneous robots (TIAGo and Clearpath Jackal mobile platforms) in a testing environment, we are yet to apply multiple delivery robots inside the Hospital\". TIAGo 의 ICU→검사실 혈액 운반 시연은 기존 내용(ref-869, 다른 영역)이라 새로 넣지 않음",
+      "as_of": "2026-10-11",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f18",
+      "claim": "Rondoni 외(Scientific Reports, 2024-08-07)의 병원 주행 벤치마크는 컴퓨터 시뮬레이션이 아니라, 병상·복도·대기 공간·가구 등 실제 병원의 물리적 배치를 재현한 모의 병원 공간에서 HOSBOT·TIAGo 실물 로봇으로 수행됐고 Vicon 카메라 8대로 위치를 측정했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1081"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Experimental testing: \"The experimental testing has been performed in a simulated hospital environment … that replicates the physical layout and characteristics of a real hospital, including patient's beds, corridors, waiting areas, and furnishings.\" Vicon 8대(검증 결과). 실제 환자와 함께 운영한 결과가 아님",
+      "as_of": "2026-10-11",
+      "site_type": "병원",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f19",
+      "claim": "같은 연구의 이동 장애물은 사람이 아니라 정해진 경로를 고정 선속도·각속도로 원격조종해 움직인 두 번째 시험용 이동 로봇 베이스였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1081"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Mobile Obstacle: \"a moving obstacle, that is represented by a (second) testing mobile base teleoperated along the set path at fixed linear and angular speeds\". 사람을 대상으로 안전거리를 검증한 시험과 구별",
+      "as_of": "2026-10-11",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f20",
+      "claim": "정정 제안: 49영역 본문 89행 '이 사례는 실제 병원이 아닌 모의 병원 환경에서 수행한 시뮬레이션 평가다' 는 '실제 병원 구조를 재현한 모의 병원 공간에서 실물 로봇으로 수행한 실험 평가(이동 장애물은 원격조종 로봇)' 로 고치는 것이 맞아 보인다. 2026-09-30-area49-s8.md 41행의 논문 제목도 원문대로 단수 'hospital environment' 로 맞춘다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1081"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f18·f19 에서 도출. 같은 '시뮬레이션 평가' 표현이 docs/categories/safety/index.md 125행·187행에도 있으나 이번 실행 범위 밖이라 후속 정리 대상. 시험 속도 0.2·0.6·1.0 m/s 는 법정 사람 근접 속도가 아님",
+      "as_of": "2026-10-11",
+      "site_type": "병원",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f21",
+      "claim": "Jafari·Nguyen·Liu 의 보행자 편안함 실험 참가자는 23~41세 자원자 32명(남 22·여 10)이었고, 폭 3.2 m 복도에서 원격조종 로봇이 1.4·2.8 m/s 로 움직였으며, 160회 시행 중 데이터 수집이 완전히 실패한 2회를 뺐다(측면 거리 관련 분석은 13회를 더 뺐다).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1085"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2604.13677v1 §IV \"Twenty-two males and ten females volunteered\", \"The robot speed is constant at 1.4 m/s and 2.8 m/s\", \"We discard 2 of 160 trials because of complete data collection failures.\" 연령·복도 폭·원격조종·추가 13회 제외는 같은 절(검증 결과). 국립성공대 IRB 승인. arXiv 표지 \"Accepted to IEEE ICRA 2026\"",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f22",
+      "claim": "같은 연구의 복합 예측기는 분석에 쓴 데이터와 같은 데이터로 평가돼, 독립 시험 집합에서의 성능은 아니다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1085"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§V-C \"the same dataset used in analysis evaluates the predictors\"",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f23",
+      "claim": "논문의 오즈비 3.67 은 복합 예측기가 '편안함'으로 예측했을 때 실제로 편안했을 오즈가 그렇지 않게 예측했을 때보다 3.67배라는 뜻으로, 사고 감소 확률이나 안전 거리 기준이 아니다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1085"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§V-B Table VI 설명 \"The odds ratios …\", 결론 \"The composite estimator achieves … an odds ratio of 3.67\". 인과 효과·안전 인증과 구분",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f24",
+      "claim": "정정 제안: 2026-09-30-area49-s6.md 61행의 '(실험 장소·참가자 수 미확인)' 은 참가자 32명·3.2 m 복도·원격조종 로봇·1.4/2.8 m/s 조건(f21)과 같은 데이터 평가 한계(f22)로 바꾸고, 2026-09-30-area49-s8.md 40행의 '(2026-04, 프리프린트)' 는 'ICRA 2026 채택(arXiv 저자판)' 으로 고치는 것이 맞아 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1085"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f21·f22 에서 도출. 학회 발표 쪽수·DOI 는 확인하지 못함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f25",
+      "claim": "지능형 로봇 개발 및 보급 촉진법 시행규칙 제7조의4제1항은 운행안전인증 기준으로 로봇의 최대 질량(적재물 포함) 500 kg 이하(1호)와 최대 속도 시속 15 km 이하(2호)를 정하고, 제2항은 그 밖의 세부사항을 산업통상부장관 고시로 위임한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1470"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "시행규칙[시행 2025-10-01, 산업통상부령 제1호] 제7조의4①: \"1. 로봇의 최대 질량(적재물의 질량을 포함한다): 500킬로그램 이하일 것 2. 로봇의 최대 속도: 시속 15킬로미터 이하일 것\", ② 고시 위임, [본조신설 2023. 11. 17.]. 수치 자체는 기존 내용(본문 100행, 인증기관 페이지 근거)이고 원조문 근거가 새 내용",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f26",
+      "claim": "같은 시행규칙 제7조의5제1항은 운행안전인증 신청서에 횡단보도 통행방식, 통신장애 대응 시나리오, 사고발생 대응 시나리오, 혼잡상황 대응 시나리오 등을 담은 운행계획서를 첨부해 제출하도록 한다(4호).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1470"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제7조의5①4호: \"실외이동로봇의 운행계획서(실외이동로봇의 횡단보도 통행방식, 통신장애 대응 시나리오, 사고발생 대응 시나리오 및 혼잡상황 대응 시나리오 등을 포함한다)\", 본문 \"… 서류를 첨부하여 … 제출해야 한다. <개정 2025. 10. 1.>\"",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f27",
+      "claim": "현행 「실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시」는 산업통상부고시 제2025-21호(2025-11-24 일부개정)이며 부칙에 따라 발령한 날부터 시행하고, 제4조는 운행안전인증 기준을 별표 3 으로 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "국가법령정보센터 행정규칙: \"[시행 2025. 11. 24.] [산업통상부고시 제2025-21호, 2025. 11. 24., 일부개정]\", 부칙 <제2025-21호> \"제1조(시행일) 이 고시는 발령한 날부터 시행한다.\" 제4조 \"운행안전인증 기준은 별표 3과 같다.\"",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f28",
+      "claim": "고시 제2025-21호 별표 3(실외이동로봇 운행안전인증 기준)의 상위 항목은 규격 및 운행속도, 겉모양, 동적 특성, 주변 인식, 비상정지, 방수 성능, 횡단보도 통행, 관제장치의 8개이며, 한국로봇산업진흥원 인증 안내 페이지의 '총 8개 심사항목' 이름과 같다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469",
+        "ref-980"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 PDF(law.go.kr flSeq=158938063) 항목 칸 1~8. 한국로봇산업진흥원 페이지 \"규격 및 운행속도, 겉모양, 동적 특성 등 총 8개 심사항목\"과 항목 표. 인증기관은 고시 체계 안의 기관이라 독립 교차 확인으로 세지 않음. 2023-07-28 기사(ref-992)의 '16가지'와의 대응(oq-230·oq-186)은 이번에 확인하지 못함",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f29",
+      "claim": "별표 3 의 1.규격 및 운행속도는 로봇과 적재물 질량 합계 500 kg 초과를 금지하고, 최대 운행 속도를 질량 230 kg 초과 500 kg 이하 5 km/h, 100 kg 초과 230 kg 이하 10 km/h, 100 kg 이하 15 km/h 로 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 1.가 \"로봇의 자체 질량과 적재물의 질량을 합하여 500 kg을 초과하지 않아야 한다\", 1.다 표 \"230 초과 500 이하 5 / 100 초과 230 이하 10 / 100 이하 15\" (km/h). 1.나 폭 800 mm(보도 최소 폭 2,500 mm 이상이면 1,200 mm)",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f30",
+      "claim": "별표 3 1.라는 도로교통법상 어린이 보호구역·노인 보호구역·장애인 보호구역에서 로봇이 최대 운행 속도 5 km/h 를 지키는지 확인하도록 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 1.라 \"다항에도 불구하고, 도로교통법 제12조에 따른 어린이 보호구역, 제12조의2에 따른 노인 보호구역 또는 장애인 보호구역에서 로봇이 최대 운행 속도 5 km/h를 준수하는지 확인한다.\"",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f31",
+      "claim": "별표 3 4.주변 인식은 로봇이 지정된 운행구역을 지키고 제한된 금지구역에 들어가지 않을 것(가), 사람이나 장애물을 감지해 안전하게 감속·정지 또는 회피할 것(다)을 요구하며, 다목의 평가 방법은 KS B 7320 의 5.6절(장애물 감지와 회피)을 따른다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 4.가 \"로봇은 지정된 운행구역을 준수해야 하며 제한된 금지구역에 진입하지 않아야 한다.\" 4.다 \"로봇은 사람이나 장애물을 감지하여 안전하게 감속, 정지 또는 회피해야 하며, 평가 방법은 한국산업표준 KS B 7320의 5.6절(장애물 감지와 회피)에 따른다.\" 감속 거리·속도 수치는 별표에 없음",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f32",
+      "claim": "별표 3 7.횡단보도 통행은 대기 장소에 도착했을 때 보행 신호가 이미 켜져 있으면 정지 상태로 기다렸다가 다음 보행 신호에 횡단하도록 하고(가.3), 횡단 중 통신이 끊기면 횡단을 마친 뒤 안전한 곳에 정차하도록 한다(나).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 7.가 3) \"로봇이 횡단보도 통행을 위해 대기장소에 도착한 시점에 보행 신호가 작동 중인 경우에는, 정지 상태로 대기 후 다음 보행 신호에 횡단할 것\", 7.나 \"횡단보도 통행 중 통신 단절이 발생한 경우, 로봇은 횡단보도 통행을 완료한 후 안전한 곳에 정차하여야 한다.\"",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f33",
+      "claim": "별표 3 8.관제장치 다목은 주행 경로가 보행자 밀집 등으로 통행할 수 없으면 로봇이 관제장치에 알리고 관리자가 조치할 수 있어야 한다고 정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1469"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "별표 3 8.다 \"로봇은 주행하는 경로에 보행자 밀집 등으로 인해 통행이 불가능한 경우 관제장치에 알리고 관리자에 의한 조치가 이루어질 수 있어야 한다.\" 같은 항 가·나(모든 로봇 식별, 위치·속력·배터리·통신 감도·상태 실시간 확인)·라(원격 정지 수단)",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f34",
+      "claim": "49영역 본문 5절 실외 사례 제약 칸(100행)이 2023-07-28 기사의 '당시 개정안'으로 전한 질량별 속도 구간(230·100 kg 경계, 5·10·15 km/h)과 횡단보도 대기 규칙은 현행 고시 제2025-21호 별표 3 의 값과 같으므로, 현행 고시 원문을 근거로 바꿔 쓰고 보호구역 5 km/h 를 덧붙일 수 있어 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1469",
+        "ref-992"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f29·f32 와 ref-992(2023-07-28 기사, 이번에 다시 열지 않음) 비교. 2023 개정안과 현행 고시 사이의 중간 개정 이력은 확인하지 않음",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f35",
+      "claim": "ROP 가 실외 로봇의 관제 역할을 맡으면, 운행계획서의 통신장애·혼잡 대응 시나리오와 별표 3 8.다의 보행자 밀집 알림·관리자 조치, 보호구역 5 km/h 를 구역별 속도 제한 정책과 알림 흐름으로 연결해 두는 것이 필요하다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1469",
+        "ref-1470"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f26·f30·f33 에서 도출. ROP 사업자가 인증 신청 주체인지는 확인한 조문에 없음(9절 기존 [추정] 유지)",
+      "as_of": "2026-10-11",
+      "site_type": "실외",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f36",
+      "claim": "ISS(세르비아 표준원)가 제공하는 ISO 프로젝트 정보에서 ISO 13482:2014 는 2014-02-03 발행, 현재 단계 90.92(개정 예정)의 발행 표준(Published)으로 표시된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1471"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "ISS ISO 13482:2014 페이지: \"Publication date: Feb 3, 2014\", \"Current stage: 90.92\", \"Published\". iso.org 직접 열람은 403 이라 ISS 목록 기준. 개정판 ISO/FDIS 13482 의 50.20(2026-09-15) 단계는 기존 내용(ref-1117)이라 새로 넣지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f37",
+      "claim": "ISS 가 제공하는 ISO 10218-1:2025(2025-02-05 발행) 적용 범위는 로봇·매니퓰레이터가 무인 산업용 트럭이나 이동 플랫폼에 고정되거나 그 일부일 때의 이동성(mobility) 관련 위험을 이 문서가 다루지 않는다고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1472"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "ISS ISO 10218-1:2025 페이지 \"Publication date: Feb 5, 2025\", 범위 \"This document does not cover the hazards related to: … mobility when robots or manipulators are fixed to or part of driverless industrial trucks; — mobility when robots or manipulators are fixed to or part of mobile platforms\". Part 1 의 제외 위험만 확인. 이동 매니퓰레이터 전체가 표준 밖이라는 뜻은 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f38",
+      "claim": "국가표준 KS B 8252 '실내 이동로봇의 보호정지 시험방법'은 안전한 실내 공간에서 이동 로봇이 자율 주행할 때 정적 장애물에 대한 보호정지를 평가하는 시험방법 표준으로 ISO 13482 를 기반으로 하며, 2020-02-26 제정(고시 2020-0026)·2025-09-05 확인(고시 2025-0241, 5년 도래 확인)됐다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1473"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "e-나라표준인증 KS B 8252 상세: 적용범위 \"본 표준은 안전 실내 공간에서 이동 로봇의 자율 주행 중 정적 장애물의 보호정지를 평가하기 위한 것으로 ISO 13482를 기반으로 한다.\", 제정일 2020-02-26, 최종개정확인일 2025-09-05, 이력표. 표준 본문은 열지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f39",
+      "claim": "확인한 국내 실내 이동로봇 KS(KS B 8252)는 정적 장애물에 대한 보호정지 시험방법이어서, 움직이는 사람과의 속도·거리 기준값이나 병원·상업 시설·공동주택 실내 운행을 강제하는 기준은 이번에도 확인되지 않았다(oq-231 부분 근거).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1473",
+        "ref-1471"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f36·f38 에서 도출. KS B 8252 본문·ISO 13482 본문 미열람이라 동적 사람 근접 요구가 본문에 없는지는 확정하지 못함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f40",
+      "claim": "공개 ROS 2 패키지 human_detection_fusion 은 YOLO 검출과 UWB 위치를 합쳐 사람 식별자별 위치를 '/humans/persons/<id>/position' 토픽에 ROS4HRI 의 hri_msgs/PointOfInterest3DStamped 형식으로 발행한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1474"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "src/yolo_uwb_fusion_node.cpp(커밋 934ca83) get_or_create_position_pub: create_publisher<hri_msgs::msg::PointOfInterest3DStamped>(\"/humans/persons/\" + person_id + \"/position\", 10). README 의 'Standard ROS4HRI output' 은 프로젝트 자기 서술",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f41",
+      "claim": "같은 코드의 transformUWBPosition 함수는 UWB 좌표를 계획 좌표계로 바꾸다 TF 변환 예외가 나면 경고 로그를 남기고 입력 좌표를 그대로 돌려준다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1474"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "transformUWBPosition: try { tf_buffer_->transform(…, TARGET_FRAME, …); return stamped_out.point; } catch (const tf2::TransformException& ex) { RCLCPP_WARN(… \"UWB TF transform %s→%s failed\" …); return pt; }",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f42",
+      "claim": "호출부는 반환된 좌표에 header.frame_id 를 TARGET_FRAME(계획 좌표계)으로 붙여 발행하므로, 변환이 실패하면 UWB 좌표계 값이 계획 좌표계 값으로 표시돼 나갈 수 있어 보인다. 실제 운용에서 오류가 났는지, 상위 계층이 이를 보정하는지는 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1474"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "topic_callback 의 UWB 작업자 처리: auto uwb_in_target = transformUWBPosition(worker.position); poi.header.frame_id = TARGET_FRAME; … publish(poi). 조건부 코드 경로에 대한 해석이며 사고·운용 실패의 실증이 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f43",
+      "claim": "이 저장소의 'KIRO' 는 EU ARISE 1차 공개 모집의 실험 이름으로, 한국로봇융합연구원(KIRO)과는 다른 것이며, 저작권자는 그리스 연구기관 ATHENA RC 이고 라이선스는 AGPL-3.0 이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1474"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README \"the Human Detection and Tracking reusable module of the KIRO experiment (ARISE 1st Open Call)\", \"Copyright owner: ATHENA RC (KIRO partner), on behalf of the KIRO experiment within the ARISE …\", License AGPL-3.0. 기본 파라미터 planning_frame 'kiro_base_link'",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f44",
+      "claim": "사람 위치를 받아 플릿 감속·정지에 쓰는 ROP 연계에는 측정 시각, 좌표계, 변환 성공 여부, 만료 시각을 메시지에 명시하게 하고, 위치 수신과 차량의 실제 감속 확인을 별도 단계로 시험해야 한다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1474",
+        "ref-1080"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f40~f42 와 아마존 조끼 사례(벤더 주장, 기존 5절)에서 도출. 여러 제조사 플릿에 공통으로 쓰이는 감속·정지 인터페이스는 이번에도 확인하지 못함(oq-232)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f45",
+      "claim": "확인한 자료 범위에서 사람 위치를 여러 제조사 플릿에 동시에 전달해 감속·정지시키는 공통 안전 인터페이스는 없고, 기업 단독 사례(아마존 조끼, 벤더 주장)와 사람 위치 발행 형식만 정한 공개 구현(ROS4HRI 기반 human_detection_fusion)이 따로 있는 것으로 보인다(oq-232 부분 근거).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1080",
+        "ref-1474"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f40 과 기존 5절 아마존 사례(ref-1080)에서 도출. 공개 구현은 위치 발행까지이며 차량 감속 확인(ACK)·안전 등급은 다루지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f46",
+      "claim": "NavWareSet 프로젝트는 통제된 실내 수집 실험에 참가자 총 17명이 참여했고 5명씩 2개 그룹과 5개 쌍으로 나뉘었다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1475"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "프로젝트 사이트 Experiment description \"In total 17 participants were assigned numbers and divided in 2 groups of 5 and 5 pairs.\" 그룹과 쌍에 같은 참가자가 겹칠 수 있어 합산하지 않음. 연결 논문 IJRR 2026(온라인 2026-05-24, DOI 10.1177/02783649261447305)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f47",
+      "claim": "NavWareSet 의 시나리오에는 시야가 가려진 모퉁이에서 로봇과 사람이 마주치는 'BLIND CORNER' 가 포함된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1475"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Scenarios 표 \"BLIND CORNER — A robot and human meet at a blind corner.\" 데이터 시나리오의 존재만 확인. 검출 실패율·충돌 위험의 실증 결과가 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f48",
+      "claim": "사람 근접 감속·정지 정책의 재생 시험에는 가려진 모퉁이·통로 점유·혼잡 장면을 넣고, 아동·보행 보조기·휠체어 사용자처럼 감지 특성이 다른 보행자를 따로 평가해야 하며, 기존 데이터셋만으로 취약 보행자 범위가 충족됐다고 보면 안 된다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1475",
+        "ref-1085"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f46·f47 과 f21(성인 자원자 32명) 에서 도출. 취약 보행자 대상 독립 측정 자료는 확인하지 못함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f49",
+      "claim": "아마존의 로보틱스 테크 조끼 설명 글은 페이지 메타데이터 기준 2019-04-06 에 발행됐다. 49영역 본문 72행과 2026-09-30-area49-s6.md 55행의 '발행일 미확인' 을 이 날짜로 고칠 수 있다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1080"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: aboutamazon.com 기사 HTML 메타 \"article:published_time\" 2019-04-06T20:46:20Z(\"datePublished\" 같은 값). 조끼 동작(감속·우회·근접 정지)은 기존 내용(본문 65~72행)이라 새로 넣지 않음. 벤더 문서만 근거라 [추정]",
+      "as_of": "2026-10-11",
+      "site_type": "물류창고",
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f50",
+      "claim": "확인한 명세·코드는 구역 제한의 지원 신고(supportedZones)·적재 외곽 기준 진입 판정·계획 계층 속도 반영까지만 다루고, 플릿 구역 제한을 위험성 평가의 위험 감소 조치로 인정하는 조건이나 로봇 보호 필드 설정과의 정합을 누가 검증하는지는 다루지 않는다(oq-229 부분 근거).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031",
+        "ref-1464",
+        "ref-1467"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f3·f4·f6·f8·f9 에서 도출. VDA 5050 이 안전 표준이 아니라는 범위 문장은 기존 내용(docs/categories/safety/index.md 77행)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-1466",
+      "org": "SICK (Martin Kidman)",
+      "title": "The perfect size of the protective field on an industrial autonomous vehicle",
+      "published": "2021-02-09",
+      "url": "https://www.sick.com/ag/en/the-perfect-size-of-the-protective-field-on-an-industrial-autonomous-vehicle/w/blog-size-protective-field-industrial-autonomous-vehicle",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "안전 레이저 스캐너 제조사의 기술 블로그. 보호 필드 크기 산정, 감시 케이스 전환·다중 샘플링이 응답시간에 더해진다는 설명을 담았다. 제조사 일반 설명이라 벤더 주장으로만 쓴다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1467",
+      "org": "Open Navigation (Nav2 documentation, Jazzy)",
+      "title": "Collision Monitor Node — Nav2 Docs (Jazzy)",
+      "published": null,
+      "url": "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/core_servers/collision_monitor/configuring_collision_monitor_node/",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "Nav2 Jazzy 의 Collision Monitor 노드 설정 문서. source_timeout(기본 2.0초, 0.0 이면 차단 해제) 등 파라미터 의미와 하드 실시간 안전 인증 미제공 문장을 담았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1468",
+      "org": "Open Navigation (Nav2 documentation, Jazzy)",
+      "title": "Speed Filter Parameters — Nav2 Docs (Jazzy)",
+      "published": null,
+      "url": "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/core_servers/costmap_2d/costmap_filters/speed_filter/",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "Nav2 Jazzy 코스트맵 Speed Filter 파라미터 문서. speed_limit 메시지 값 0 이 '제한 없음'을 뜻한다는 정의와 백분율·절댓값 설정을 설명한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1469",
+      "org": "산업통상부 (국가법령정보센터 행정규칙)",
+      "title": "실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시(산업통상부고시 제2025-21호) 및 별표 3 실외이동로봇 운행안전인증 기준",
+      "published": "2025-11-24",
+      "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000269426",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "2025-11-24 일부개정·시행된 현행 고시 본문과 별표 3(PDF, flSeq=158938063). 별표 3 은 규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치 8개 항목의 심사 기준(질량별 속도, 보호구역 5 km/h, 감속·정지·회피, 보행자 밀집 알림 등)을 정한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1470",
+      "org": "법제처 국가법령정보센터",
+      "title": "지능형 로봇 개발 및 보급 촉진법 시행규칙(산업통상부령 제1호, 2025-10-01 시행) 제7조의4·제7조의5",
+      "published": "2025-10-01",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=183075",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "시행규칙 현행판. 제7조의4 운행안전인증 기준(질량 500 kg·시속 15 km 이하, 세부 고시 위임)과 제7조의5 신청 서류(횡단보도 통행방식·통신장애·사고·혼잡 대응 시나리오를 담은 운행계획서)를 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1471",
+      "org": "Institute for Standardization of Serbia (ISS) — ISO 프로젝트 정보",
+      "title": "ISO 13482:2014 Robots and robotic devices — Safety requirements for personal care robots",
+      "published": "2014-02-03",
+      "url": "https://iss.rs/en/project/show/iso:proj:53820",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "ISO 13482:2014 의 목록 정보(발행 2014-02-03, 단계 90.92, Published)와 적용 범위 요약. iso.org 가 403 이라 ISS 가 제공하는 ISO 목록으로 확인했다. 표준 본문은 열지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1472",
+      "org": "Institute for Standardization of Serbia (ISS) — ISO 프로젝트 정보",
+      "title": "ISO 10218-1:2025 Robotics — Safety requirements — Part 1: Industrial robots",
+      "published": "2025-02-05",
+      "url": "https://iss.rs/en/project/show/iso:proj:73933",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "ISO 10218-1:2025 목록 정보(발행 2025-02-05, 단계 60.60)와 적용 범위. 범위는 무인 산업용 트럭·이동 플랫폼에 고정되거나 그 일부인 로봇의 이동성 위험을 제외한다. 표준 본문은 열지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1473",
+      "org": "국가기술표준원 (e-나라표준인증)",
+      "title": "KS B 8252 실내 이동로봇의 보호정지 시험방법",
+      "published": "2020-02-26",
+      "url": "https://www.standard.go.kr/KSCI/standardIntro/getStandardSearchView.do?ksNo=KSB8252&menuId=919&reformNo=&tmprKsNo=KSB8252&topMenuId=502&upperMenuId=503",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "국가표준 목록 상세. 안전한 실내 공간에서 자율 주행 중 정적 장애물 보호정지를 평가하는 시험방법(ISO 13482 기반), 2020-02-26 제정·2025-09-05 확인. 표준 본문은 열지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1474",
+      "org": "ATHENA RC (유지관리 Andreas Vatistas, Nikolaos Lappas) — EU ARISE 'KIRO' 실험",
+      "title": "human_detection_fusion — src/yolo_uwb_fusion_node.cpp 및 README (커밋 934ca8387a205aaac894da22451970a203777e18)",
+      "published": "2026-06-29",
+      "url": "https://github.com/nikolaslps/human_detection_fusion/blob/934ca8387a205aaac894da22451970a203777e18/src/yolo_uwb_fusion_node.cpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "YOLO 검출과 UWB 위치를 합쳐 ROS4HRI 형식(/humans/persons/<id>/position, PointOfInterest3DStamped)으로 사람 위치를 내보내는 ROS 2 패키지. 'KIRO' 는 EU ARISE 실험 이름이며 한국로봇융합연구원과 무관하다. 날짜는 고정 커밋 시각.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/nikolaslps/human_detection_fusion/934ca8387a205aaac894da22451970a203777e18/src/yolo_uwb_fusion_node.cpp",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1475",
+      "org": "Brayan, J., Deng, S., Alves Neto, A., Okunevich, I., Krajnik, T., Bremond, F., & Yan, Z. (NavWare 프로젝트)",
+      "title": "NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation (프로젝트 사이트)",
+      "published": "2026-05-24",
+      "url": "https://anr-navware.github.io/navwareset/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "실내 사회적 로봇 주행 데이터셋 프로젝트 사이트. 로봇 2대·7개 설정, 참가자 17명, BLIND CORNER 등 시나리오를 설명한다. 연결 논문은 IJRR 2026(온라인 2026-05-24, DOI 10.1177/02783649261447305), 권호는 아직 임시.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1075",
+      "org": "Marvel, J. A., & Norcross, R. (NIST, Robotics and Computer-Integrated Manufacturing)",
+      "title": "Implementing Speed and Separation Monitoring in Collaborative Robot Workcells",
+      "published": "2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5117641/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "NIST 의 SSM 구현 논문. 이번에 NIST 공개 PDF 로 학술지 서지(RCIM 44권, 2017, 144–155쪽, 2016-08-01 승인)를 확인했다. 기존 위키의 '2016' 표기는 승인 연도 기준.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=914783",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "VDA 5050 3.0.0 명세. 이번에 3.0.0 태그 본문에서 §6.4 supportedZones 보고 의무와 §6.4.1.1 외곽(적재물 포함) 기준 구역 진입 규칙을 새로 확인했다. 발표일은 명세 안에 근거가 없어 적지 않는다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/3.0.0/VDA5050_EN.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1464",
+      "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+      "title": "rmf_fleet_adapter 2.14.0 소스 — FleetUpdateHandle.cpp(handle_target_emergency)·Node.cpp(비상 신호 구독)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/FleetUpdateHandle.cpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "rmf_ros2 2.14.0 태그의 플릿 어댑터 소스. 이번에는 같은 파일의 limit_lane_speeds 처리(0 이하·범위 밖 요청 무시와 close_lanes 안내, 유효 요청의 차선 속성 반영과 Planner 재생성)를 확인했다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_ros2/2.14.0/rmf_fleet_adapter/src/rmf_fleet_adapter/agv/FleetUpdateHandle.cpp",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1082",
+      "org": "Farrell, S., Li, C., Yu, H., Yoshimitsu, R., Gao, S., & Christensen, H. I. (arXiv; 2025 IEEE CASE)",
+      "title": "Safe Human Robot Navigation in Warehouse Scenario",
+      "published": "2025-03-27",
+      "url": "https://arxiv.org/abs/2503.21141",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "학습 기반 CBF 를 Open-RMF 에 통합한 창고 연구(arXiv v1). 실물 로봇(Freight·Jackal·Megarover)·OptiTrack 실험과 Table IV 조건을 확인했다. 출판판은 2025 IEEE CASE pp.548–555(UC eScholarship 2025-08-17, DOI 10.1109/CASE58245.2025.11164151).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/html/2503.21141v1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1083",
+      "org": "Kazemi Eskeri, M., Kyrki, V., Baumann, D., & Kucner, T. P. (IROS 2025, arXiv)",
+      "title": "Efficient Human-Aware Task Allocation for Multi-Robot Systems in Shared Environments",
+      "published": "2025-08-27",
+      "url": "https://arxiv.org/abs/2508.19731",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "움직임 지도 기반 사람 인지형 작업 배정(HATA). 평가가 사람 궤적 재생 시뮬레이션이고 실패율이 교착·10분 타임아웃 기준임을 확인했다. 출판판 IROS 2025 pp.12697–12703(2025-10, DOI 10.1109/IROS60139.2025.11246701).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/html/2508.19731v1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-869",
+      "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI",
+      "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+      "published": "2022-08-23",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "Tartu 대학병원 현장 시험 논문. 이번에는 이종 다로봇(TIAGo·Jackal) 검증이 시험 환경에서 이뤄졌고 병원 내 복수 배송 로봇 적용은 향후 과제라는 문장을 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1081",
+      "org": "Rondoni 외 (Scientific Reports)",
+      "title": "Navigation benchmarking for autonomous mobile robots in hospital environment",
+      "published": "2024-08-07",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11306802/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "병원 물류 로봇 HOSBOT·TIAGo 의 주행 벤치마크. 실제 병원 배치를 재현한 모의 병원 공간에서의 실물 실험(Vicon 8대), 원격조종 이동 장애물을 확인했다. 원문 제목은 단수 'hospital environment'.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.nature.com/articles/s41598-024-69040-z",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1085",
+      "org": "Jafari, A., Nguyen, H.-S., & Liu, Y.-C. (arXiv; IEEE ICRA 2026 채택)",
+      "title": "Empirical Prediction of Pedestrian Comfort in Mobile Robot Pedestrian Encounters",
+      "published": "2026-04-15",
+      "url": "https://arxiv.org/abs/2604.13677",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "보행자 편안함 예측 실험(arXiv v1, ICRA 2026 채택 저자판). 참가자 32명, 3.2 m 복도, 1.4·2.8 m/s 원격조종 로봇, 같은 데이터 평가, 오즈비 3.67 의 의미를 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/html/2604.13677v1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1080",
+      "org": "Amazon",
+      "title": "Ever wonder how people and robots team up on your Amazon order?",
+      "published": "2019-04-06",
+      "url": "https://www.aboutamazon.com/news/operations/ever-wonder-how-people-and-robots-team-up-on-your-amazon-order",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-11",
+      "summary": "아마존 풀필먼트 센터의 로보틱스 테크 조끼 설명 글(회사 서술과 직원 인용). 페이지 메타데이터로 발행일 2019-04-06 을 확인했다. 벤더 주장으로만 쓴다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-980",
+      "org": "한국로봇산업진흥원",
+      "title": "실외이동로봇 운행안전인증",
+      "published": null,
+      "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "인증기관의 실외이동로봇 운행안전인증 안내. '총 8개 심사항목'과 항목 이름이 현행 고시 별표 3 상위 항목과 같음을 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-992",
+      "org": "지디넷코리아",
+      "title": "실외 배달로봇 '시속 15km 이하로'...16가지 안전기준",
+      "published": "2023-07-28",
+      "url": "https://zdnet.co.kr/view/?no=20230728173101",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-10-11",
+      "summary": "2023-07-28 기사. 당시 개정안의 질량별 속도·횡단보도 대기 규칙과 '16가지' 안전기준을 전했다. 이번에는 다시 열지 않고 기존 위키 기록과 비교만 했다.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/safety/human-proximity-safety.md",
+      "sections": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11"
+      ],
+      "rationale": "갱신(차등): 섹션 4(분리 2026-09-30-area49-s4) — NIST 논문 서지 정정: 학술지판 RCIM 44(2017), 2016-08-01 승인(f1). 본문 53행·s4 28·37행·s8 37행의 '2016' 표기를 '2017(2016 승인)'으로. ZR·ZS 위치 불확실성(메모 H02)은 기존 내용 확인(2026-09-30-area49-s4.md 38행) / 섹션 5 — 물류창고: 아마존 글 발행일 2019-04-06(f49, 벤더 주장 [추정]; 본문 72행·s6 55행 '발행일 미확인' 정정), Farrell 연구 문단(본문 74행)의 '정량 결과는 미확인' 정정 — 실물 로봇·OptiTrack·설정별 10회(f12), Table IV 4대·1.0 m/s/2대·1.5 m/s·보행자 0~2명·정지 구간 제외(f13), CASE 2025 서지(f14). 병원: 89행 '시뮬레이션 평가' 정정 — 실제 병원 배치를 재현한 모의 병원의 실물 실험·Vicon 8대(f18), 이동 장애물은 원격조종 로봇(f19), 정정 제안 f20. 같은 오류가 docs/categories/safety/index.md 125행·187행에도 있으나 이번 실행 범위 밖이라 후속 정리 필요. Tartu: 이종 다로봇은 시험 환경·병원 내 복수 배송 로봇은 향후 과제(f17), 혈액 운반 시연(메모 H19)은 기존 내용 확인(ref-869). 실외: 제약 칸(100행)의 질량별 속도·횡단 대기를 2023 기사 '당시 개정안'에서 현행 고시 제2025-21호 별표 3 근거로 바꾸고(f27·f29·f32·f34), 보호구역 5 km/h(f30), 감속·정지·회피(f31), 보행자 밀집 알림(f33)을 더함; 시행규칙 원조문(f25, 수치는 기존·근거만 새), 운행계획서 시나리오(f26), 의견 f35 / 섹션 6(분리 2026-09-30-area49-s6) — 보호 분리 거리: SICK 케이스 전환·다중 샘플링 응답시간(f2, 벤더 주장 [추정]); NIST 0.113 s(메모 H01)는 기존 내용 확인(s6 41행). 플릿 구역: supportedZones 보고 의무(f3), 적재 외곽 기준 진입(f4), 의견 f5; maximumSpeed m/s·진입 시 이미 제한 속도 도달(메모 H06·H07)은 기존 내용 확인(docs/categories/safety/index.md 77행), zoneSetId 변경·DISABLED 후 enableZoneSet(메모 H08·H09)은 기존 내용 확인(2026-09-30-area16-s6.md 49행, 2026-09-30-area16-s4.md 40행). 로봇 측: source_timeout 0.0 차단 해제(f6), speed_limit 0 = 제한 없음(f7), RMF 0 이하 무시·close_lanes(f8)·계획 반영까지만(f9), 0 값 의미 차이 [추정](f10), 의견 f11; Nav2 하드 실시간 인증 미제공(메모 H10)은 기존 내용 확인(s6 47행, ref-1077). s6 55행 Farrell 문장 정정(f12·f13), s6 57행 HATA 는 시뮬레이션·실패율 정의(f15·f16) 보강. s6 61행 Jafari '(실험 장소·참가자 수 미확인)' 정정 — 32명·3.2 m 복도·1.4/2.8 m/s·원격조종(f21), 같은 데이터 평가(f22), 오즈비 의미(f23), 정정 제안 f24. 데이터셋: NavWareSet 17명(f46)·BLIND CORNER(f47), 의견 f48 / 섹션 7(분리 2026-09-30-area49-s7) — 실외이동로봇 운행안전인증 행(44행): 시행규칙 제7조의4·제7조의5 원조문(f25·f26), 현행 고시 제2025-21호(f27)·별표 3 상위 8개 항목과 인증기관 8개 항목 일치(f28), 질량별 속도(f29). 새 행: ISO 13482:2014 발행·90.92(f36; ISO/FDIS 13482 50.20·2026-09-15(메모 H30)은 기존 내용 확인 — ref-1117), ISO 10218-1:2025 범위의 이동성 위험 제외(f37, 판 번호는 쓰지 않음), KS B 8252 정적 장애물 보호정지 시험방법(f38)과 한계(f39). Nav2 Collision Monitor 행에 source_timeout(f6), Speed Filter 0 값(f7) 추가 / 섹션 8(분리 2026-09-30-area49-s8) — Farrell 항목(42행) 서지를 CASE 2025(pp.548–555, 2025-08-17)로·'정량 결과 미확인' 삭제(f14), Rondoni 항목(41행) 제목 단수 'environment'·'모의 병원 환경' → 실물 모의 병원 실험(f20), Jafari 항목(40행) ICRA 2026 채택·32명(f24), HATA 항목(43행) IROS 2025 pp.12697–12703·시뮬레이션 평가·실패율 정의(f15·f16), NIST 항목 연도(f1), NavWareSet 새 항목(f46·f47) / 섹션 9 — 로봇 자체 지능·제어 행: 0 값 계약 차이와 어댑터 명령 구분(f10·f11), 사람 위치 연계 공개 구현 human_detection_fusion 의 ROS4HRI 발행(f40)·변환 실패 시 원좌표 반환(f41)·좌표계 표기 문제 [추정](f42)·'KIRO' 는 EU ARISE 실험 이름(f43, 한국로봇융합연구원 아님), 의견 f44; 업종별 조건 행: 운행계획서·보행자 밀집 알림(f26·f33·f35). 아마존 조끼(메모 H34)는 기존 내용 확인(본문 65~72행), 발행일만 f49 / 섹션 11 — 해결 제안 없음, 부분 근거만: oq-229(f50, 바탕 f3·f4·f8·f9), oq-230(f28 — 현행 별표 3 상위 8개 항목과 인증기관 8개 항목은 일치하나 기사 16가지와의 대응은 미확인; 오늘 50번 영역에서도 다루므로 부분 답변으로 둠), oq-231(f38·f39), oq-232(f40·f45). 관련 기존 질문: oq-186(16→8 개정 시점, 이번 미확인), oq-333(관제장치 항목 — 별표 3 8.가~라 f33 근거가 부분 관련). 메모의 새 질문 대조: U01→oq-229 하위, U08→f29·f32 로 답해 질문으로 올리지 않음, U09→oq-230·oq-186, U10→oq-064, U11→oq-254, U12→oq-231 하위, U13→oq-232, U14→oq-272 와 같아 새로 만들지 않음. U04(Farrell 독립 재현)·U06(Jafari 표 VI·VII 정밀도·재현율 산술)·U07(Tartu 장기 운영)은 이번 검증 범위 밖이라 올리지 않음. 새 질문 4건(U02·U03·U05·U15) / 다음 실행 후보: 50. 안전 표준·인증·사고 조사(f25~f29·f36~f38), 66. 실외(f29~f35), 63. 병원·의료(f17~f20), 20. 로봇·제조사 관제 연동(f8~f11), 19. 사람·보행자 모델(f40~f47)."
+    }
+  ],
+  "glossary_candidates": [],
+  "open_questions_new": [
+    "로봇별 반응 시간·제동 거리·적재 하중·센서 오차가 펌웨어 변경이나 운용 조건 변화로 바뀌었을 때, 로봇 측 보호 필드와 ROP 의 구역 속도 제한·감속 시작 지점을 함께 다시 검증하는 절차나 공개 사례가 있는가? | 관련 영역: 49. 사람 근접 안전, 57. 자산·소프트웨어 수명주기 관리 | 근거: f2 | 종류: 일반",
+    "Nav2 의 speed_limit 0(제한 없음)·source_timeout 0.0(차단 해제)과 Open-RMF 의 0 이하 속도 제한(무시) 같은 서로 다른 '0' 의미를 이종 플릿 어댑터가 올바르게 변환하는지 실행 시험으로 확인한 공개 자료나 적합성 시험 항목이 있는가? | 관련 영역: 49. 사람 근접 안전, 20. 로봇·제조사 관제 연동 | 근거: f10 | 종류: 일반",
+    "HATA 의 임무 완료 시간 최대 26%·19% 단축을 다시 계산할 수 있도록 실험별 분모, 교착·타임아웃 실패 시행의 처리 방식, 고정된 실행 코드가 공개돼 있는가? | 관련 영역: 49. 사람 근접 안전, 25. 작업 배정 — MRTA | 근거: f16 | 종류: 일반",
+    "아동·휠체어 사용자·보행 보조기 사용자·시각장애인이 가려진 모퉁이나 통로 점유 상황에서 로봇을 만날 때의 감지 누락·양보 결과를 독립적으로 측정한 데이터셋이나 시험 결과가 있는가? | 관련 영역: 49. 사람 근접 안전, 60. 노동·수용성·접근성 | 근거: f47 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 21,
+    "cross_checked_count": 0,
+    "unverified": [
+      "리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-11-05/external_research.md)를 변환했다. 2026-10-11 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.",
+      "f2: SICK 블로그는 원문 대조로 문장을 확인했으나 저장소 규칙(6.2 항목 13)에 따라 벤더 문서만 근거라 vendor_claim: true·[추정]으로 둔다. 특정 센서·하중 조건의 응답시간 실측값은 없음",
+      "f49: 아마존 글 발행일(2019-04-06)은 페이지 메타데이터 기준이며 벤더 문서만 근거라 [추정]. 조끼 신호의 거리·지연·안전 등급은 여전히 미확인",
+      "f14: Farrell 의 CASE 2025 쪽수(pp.548–555)·날짜(2025-08-17)는 UC eScholarship 기준이며 IEEE Xplore 원문은 열지 않음. Table IV 개별 수치는 옮기지 않음",
+      "f15: HATA 출판판 쪽수(pp.12697–12703)는 검증 결과 기준이며 IEEE Xplore 원문은 열지 않음",
+      "f24: Jafari 의 ICRA 2026 발표 쪽수·DOI 미확인(arXiv 저자판 표지의 채택 표기만 확인). 메모가 부록에서 제기한 Table VI·VII 정밀도·재현율 산술 불일치(U06)는 이번 검증 범위 밖이라 확인 못 함",
+      "f28·f34(oq-230·oq-186): 현행 별표 3 상위 8개 항목과 인증기관 8개 항목의 일치는 확인했으나, 2023-07-28 기사의 '16가지' 가 어느 판·계층(세부 항목)에 대응하는지와 16→8 개정 시점은 이번에 확인하지 못함. ref-992 는 다시 열지 않음",
+      "f36·f37: ISO 목록은 iso.org 403 이라 ISS(세르비아 표준원) 미러로 확인. ISO 10218-1:2025 의 판 번호는 쓰지 않음. 표준 본문 미열람",
+      "f38·f39: KS B 8252 본문 미열람(목록·적용범위만). kssn.net 은 502 로 열리지 않아 e-나라표준인증 상세로 확인. 국내 병원·상업·공동주택 실내의 사람 근접 속도·거리 강제 기준은 여전히 미확인(oq-231)",
+      "f42: human_detection_fusion 의 변환 실패 시 좌표계 표기 문제는 코드 경로 해석이며 실제 운용 오류·상위 보정 여부는 미확인. README 의 'Standard ROS4HRI output' 은 프로젝트 자기 서술",
+      "f46: NavWareSet 연결 논문(IJRR 2026)의 권호는 임시(0(0))라 확정 서지로 쓰지 않음",
+      "메모의 VDA 5050 '2026-03' 날짜는 명세 안에 근거가 없어 쓰지 않음(ref-031 published null 유지)",
+      "oq-229(위험 감소 조치 인정 조건·검증 주체)·oq-232(이종 플릿 공통 감속·정지 인터페이스)는 부분 근거만 있고 답을 찾지 못함"
+    ],
+    "scope_violations": [
+      "f2·f6·f7: 안전 레이저 스캐너 응답시간과 Nav2 Collision Monitor·Speed Filter 는 로봇 측 안전·로컬 회피 기능(연계 대상)이며, ROP 몫은 그 의미를 어댑터 계약에 반영하는 데로 한정",
+      "f25~f35: 실외이동로봇 운행안전인증 법령·고시는 59. 법·규제·보험·라이선스, 50. 안전 표준·인증·사고 조사, 66. 실외와 겹치므로 이 영역에는 사람 근접 감속·정지·속도 기준 근거로만 씀",
+      "f36~f39: 표준 목록 정보는 50. 안전 표준·인증·사고 조사 쪽 내용이며, 이 영역에는 사람 근접 요구의 적용 범위 확인용으로만 씀",
+      "f40~f43: 사람 검출·추적 모듈은 19. 사람·보행자 모델 쪽 기술이며, 이 영역에는 사람 위치를 감속·정지로 연결하는 인터페이스 근거로만 씀"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 10
+    },
+    "limits": "외부 조사 변환이라 검색·열람 횟수 집계 없음(budget_used.queries 0 은 집계 없음을 뜻함). 신규 출처 10건/15(ref-1466~ref-1475, 예약 구간 ref-1466~ref-1495 안), 재사용 11건(ref-1075·ref-031·ref-1464·ref-1082·ref-1083·ref-869·ref-1081·ref-1085·ref-1080·ref-980·ref-992). 출처 매핑(검증 결과 기준): 메모 n1→ref-1075(NIST 공개 PDF 로 열람), n2→ref-1466(벤더), n3→ref-031(3.0.0 태그), n4→ref-1467(Collision Monitor 문서 페이지; H10 은 기존 ref-1077 내용이라 이번 출처에서 뺌), n5→ref-1468, n6→ref-1464(오늘 48번 영역에서 등록), n7→ref-1082, n8→ref-1083, n9→ref-869, n10→ref-1081, n11→ref-1085, n12→ref-1469(산업통상부 게시글 대신 국가법령정보센터 고시 본문·별표 3), n13→ref-1470, n14→ref-1117(H30 기존 내용 확인만, finding 없어 sources 에서 뺌), n15→ref-1471, n16→ref-1473(standard.go.kr), n17→ref-1080, n18→ref-1474, n19→ref-1475, n20→ref-1472. 추가 재사용: ref-980(8개 항목 대조), ref-992(2023 기사 수치 비교, 이번 미열람). 교차 확인 0건 — 모든 [사실] finding 이 단일 출처이거나 같은 제도·프로젝트 계열(고시·시행규칙·인증기관은 같은 운행안전인증 체계, 코드·README 는 같은 저장소). 중복 제거: 메모 H01(NIST 0.113 s)·H02(ZR·ZS)·H06·H07(maximumSpeed m/s·진입 시 도달)·H08·H09(zoneSetId·enableZoneSet)·H10(Nav2 인증 미제공)·H19(Tartu 혈액 운반)·H30(ISO/FDIS 13482 50.20)·H34(아마존 조끼 동작)는 기존 위키에 있어 새 finding 으로 넣지 않고 위치만 rationale 에 적었다. 검증 반영: H03·H34 벤더 주장 [추정] 유지, H21·H22 로 본문 89행 정정(f20), Farrell 정량 미확인 문장 정정(f14), Jafari 참가자 정정(f24), 아마존 발행일(f49), NIST 연도(f1), 고시 표기 '제2025-21호' 통일, 메모가 '별표 미열람'으로 남긴 질량별 속도·횡단 조건은 별표 3 원문으로 확인(f29~f33), H36 의 좌표계 문제는 [추정] 시사점(f42), n18 'KIRO' 는 EU ARISE 실험명(f43), ISO 목록은 ISS 근거로 판 번호 없이(f36·f37). 현장 유형: 물류창고(f12~f14·f49), 병원(f17~f20), 실외(f25~f35). 국내 자료: 시행규칙(ref-1470)·고시(ref-1469)·KS(ref-1473)·인증기관(ref-980). 열린 질문 해결 제안 없음 — 부분 근거만: oq-229(f50), oq-230(f28, 오늘 50번 영역에서도 다룸), oq-231(f38·f39), oq-232(f40·f45). 메모의 새 질문 중 U01·U08~U14 는 기존 oq 와 같거나 이번 finding 으로 답해 새로 만들지 않았고, U02·U03·U05·U15 는 docs/open-questions.md 에 같은 질문이 없어 새로 올린다(U04·U06·U07 은 검증 범위 밖이라 보류). 메모의 '.research-work' 로컬 보존본 경로·행 번호는 저장소에 없어 쓰지 않고 원문 절·조항과 위키 실제 위치를 적었다. 정정 요청 없음. 용어 후보 없음."
+  }
+}

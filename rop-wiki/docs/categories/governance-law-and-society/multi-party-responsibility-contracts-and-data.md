@@ -8,10 +8,10 @@ tags: [데이터 접근 계약, 실질적 변경, API 폐기 정책, 서비스 �
 status: published
 confidence: medium
 created: 2026-09-28
-updated: 2026-09-30
-sources: [ref-031, ref-872, ref-1191, ref-1192, ref-1193, ref-1194, ref-1204, ref-555, ref-1205, ref-1206, ref-1207, ref-317, ref-1208, ref-1209, ref-1210, ref-1211, ref-1212]
-last_run: 2026-09-30
-version: 2
+updated: 2026-10-12
+sources: [ref-031, ref-872, ref-1191, ref-1192, ref-1193, ref-1194, ref-1204, ref-555, ref-1205, ref-1206, ref-1207, ref-317, ref-1208, ref-1209, ref-1210, ref-1211, ref-1212, ref-636, ref-706, ref-1487, ref-1488, ref-1489, ref-1490, ref-1491, ref-1492, ref-1493, ref-1494, ref-1495, ref-1496]
+last_run: 2026-10-12
+version: 3
 ---
 
 [홈](../../index.md) › [P. 거버넌스·법규·사회](index.md) › 58. 다사업자 책임·계약·데이터
@@ -26,7 +26,7 @@ version: 2
 <!-- auto:area-tracks:end -->
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-09-30 · 마지막 실행: 2026-09-30
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 3 · 마지막 갱신: 2026-10-12 · 마지막 실행: 2026-10-12
 <!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
@@ -54,9 +54,9 @@ version: 2
 
 ## 4. 핵심 개념과 용어
 
-이 영역의 용어는 책임이 넘어가는 조건, 데이터 권리, 인터페이스 변경 예고, 서비스 약속과 기록의 네 묶음으로 나뉜다.
+이 영역의 용어는 책임이 넘어가는 조건, 데이터 권리, 인터페이스 변경 예고, 서비스 약속과 기록의 네 묶음으로 나뉜다. 2026-09-30 실행까지의 이 절 본문은 [2026-09-30 핵심 개념과 용어 페이지](../../topics/2026/2026-09-30-area58-s4.md)에 있다.
 
-자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area58-s4.md)에 있다.
+자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](../../topics/2026/2026-10-12-area58-s4.md)에 있다.
 
 ## 5. 적용 사례 (현장 유형 명시)
 
@@ -68,12 +68,16 @@ version: 2
 |---|---|
 | 시작 조건 | 공공 의료기관이 로봇·소프트웨어·IoT를 연동하려 할 때 [사실][^ref-872] |
 | 작업 대상 | 로봇·소프트웨어·IoT와 의료 로봇 미들웨어 RoMi-H 사이의 통합 [사실][^ref-872] |
-| 수행 자원 | 창이종합병원 CHART가 연 2회 평가·인증해 등재한 시스템 통합자 [사실][^ref-872] |
-| 제약 | 공공 의료기관은 등재된 통합자를 써야 한다 [사실][^ref-872] |
+| 수행 자원 | 창이종합병원 CHART의 등재 프로그램으로 평가·인증받은 시스템 통합자. 2025년 공고 기준 5개사가 2025-05-01부터 2년간 유효하게 등재되었다 [사실][^ref-872] 2026년 공고 기준 AutoveX Pte Ltd 1개사가 2026-09-01부터 2년간 유효하게 등재되었다 [사실][^ref-1495] |
+| 제약 | 공공 의료기관의 RoMi-H 연동은 등재된 통합자가 맡아야 한다 [사실][^ref-872] |
 | 완료·인계 | 미확인 |
 | 예외·성과 | 미확인 |
 
-창이종합병원 CHART는 의료 로봇 미들웨어 [RoMi-H](../../glossary/robotic-middleware-for-healthcare.md) 통합을 맡을 시스템 통합자를 연 2회 [등재 프로그램](../../glossary/empanelment-programme.md)으로 평가·인증하고, 공공 의료기관이 로봇·소프트웨어·IoT 연동에 등재된 통합자를 쓰게 해 다사업자 연동의 책임 주체를 사전 자격으로 정한다(2025-05 기준). [사실][^ref-872] 연동 완료를 인정하는 기준과 장애 때 누가 복구하는지는 확인하지 못했다. 국내에서 비슷한 관문을 운용한 사례는 [oq-149](../../open-questions.md)에서 열려 있다.
+창이종합병원 CHART는 의료 로봇 미들웨어 [RoMi-H](../../glossary/robotic-middleware-for-healthcare.md) 통합을 맡을 시스템 통합자를 [등재 프로그램](../../glossary/empanelment-programme.md)으로 평가·재평가하고, 공공 의료기관이 RoMi-H 연동에 등재된 통합자를 쓰게 해 연동을 맡을 주체를 사전 자격으로 정한다. [사실][^ref-872][^ref-1495] 2025년 공고(2025-05-01 게시, 2026-08-24 갱신본 확인)의 등재 통합자는 HOPE Technik, Medisys Innovation, Panasonic Asia Pacific, QuikBot Technologies, Techfox 5개사다. [사실][^ref-872] 2026년 공고(2026-05-06 게시, 2026-08-24 갱신)는 등재 통합자를 CHART 웹사이트에 공개해 공공 의료기관 등이 제안요청(RFP/RFI) 참여를 위해 연락할 수 있게 한다고 적는다. [사실][^ref-1495] 2025년 등재 통합자의 효력이 2026년 공고로 어떻게 되는지는 공고에서 확인되지 않는다.
+
+프로그램 주기는 공고마다 표현이 다르다. 2025년 공고는 프로그램을 'bi-annual'로, 2026년 공고는 'annual'로 적는다. [사실][^ref-872][^ref-1495] 앞의 표현은 '연 2회'로도 '2년마다'로도 읽힐 수 있고 같은 공고가 등재 유효기간을 2년으로 적고 있어, 실제 평가 주기는 확정할 수 없다. [추정][^ref-872][^ref-1495]
+
+구축자 의견으로는, 통합자 등재는 연동 역량을 평가한 사전 자격일 뿐이므로 등재 사실과 별도로 인수 기준·장애 복구 책임·등재 유효기간 만료 시 처리를 계약 당사자가 계약에 적어 두는 편이 좋다. [의견][^ref-872][^ref-1495] 연동 완료를 인정하는 기준과 장애 때 누가 복구하는지는 확인하지 못했다. 국내에서 비슷한 관문을 운용한 사례는 [oq-149](../../open-questions.md)에서 열려 있고, 등재 주기와 유효기간 만료 뒤 책임 승계는 이번 갱신에서 [열린 질문](../../open-questions.md)으로 새로 올렸다. 병원 현장 쪽 내용은 [63. 병원·의료](../site-type-applications/hospital-and-healthcare.md)에 있다.
 
 **현장 유형:** 가정
 
@@ -90,25 +94,42 @@ version: 2
 
 같은 사설(한국아파트신문, 2026-09-14)의 의견으로는 이런 로봇이 들어오면 관리주체의 관리 영역과 책임이 넓어질 수 있어, 도입 전에 책임 범위를 명확히 해야 한다. [의견][^ref-1211] 사례마다 제조사·관제 사업자·관리주체가 장애를 어떻게 나눠 맡는지는 확인하지 못했다. 가정 로봇의 원격 조작자 책임은 [oq-185](../../open-questions.md)에서 열려 있다.
 
-물류창고·제조 공장·상업 시설·실외 현장의 다사업자 책임·계약 사례는 이번 조사에서 찾지 못했다.
+**현장 유형:** 가정
+
+**사례:** 가정용 청소 로봇의 데이터를 제3자와 공유하기(EU 데이터법 고지)
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 고지에 따르면 사용자가 앱에서 데이터를 내보내거나 승인 QR 코드로 제3자 공유를 승인할 때 [추정] 벤더 주장[^ref-1487] |
+| 작업 대상 | 고지에 따르면 로봇청소기·수영장 청소 로봇의 데이터 [추정] 벤더 주장[^ref-1487] |
+| 수행 자원 | 고지에 따르면 사용자, 제조사 앱, Tuya 클라우드 플랫폼에 등록한 제3자 [추정] 벤더 주장[^ref-1487] |
+| 제약 | 고지에 따르면 지속 공유를 받으려는 제3자는 Tuya 클라우드 플랫폼에 등록해야 한다 [추정] 벤더 주장[^ref-1487] |
+| 완료·인계 | 미확인 |
+| 예외·성과 | 미확인 |
+
+AIRROBO 브랜드 로봇청소기·수영장 청소 로봇의 EU 데이터법 고지(발행일 미확인)에 따르면 사용자는 앱에서 데이터를 내보내 한 번에 제3자와 공유하거나, 승인된 QR 코드로 제3자와 지속 공유할 수 있고, 지속 공유를 받으려는 제3자는 Tuya 클라우드 플랫폼에 등록해야 한다. [추정] 벤더 주장[^ref-1487] 실제 제공 필드·지연·승인 철회 동작은 시험하지 않았다. 구축자 의견으로는, 제조사 고지가 안내하는 내보내기·제3자 지속 공유 경로를 ROP 온보딩 때 제3자 등록·필드 목록·지연·승인 철회까지 직접 시험해 확인하는 편이 좋다. [의견][^ref-1487]
+
+1X Technologies 사전예약 약관(2025-10-28 갱신)에 따르면 가정용 휴머노이드의 주문 초대를 받아 로봇을 받으려는 사람은 구매 시점에 제시되는 별도 판매약관에 동의해야 하며, 취소·배송·보증 세부는 주문 초대나 판매약관에 둔다. [추정] 벤더 주장[^ref-1493] 이 문서에서는 원격 조작자의 영상 접근·사고 책임 조항을 확인하지 못해 [oq-185](../../open-questions.md)는 열려 있다.
+
+물류창고·제조 공장·상업 시설·실외 현장의 다사업자 책임·계약 사례는 2026-10-12 갱신까지 찾지 못했다. 병원·호텔 배송 로봇 업체(Relay Robotics)의 공개 약관은 현장 유형을 특정하지 않아 사례 대신 6절에 두었다.
 
 ## 6. 대표 접근법과 기술
 
-다사업자 책임·계약·데이터를 다루는 접근은 변경한 주체에게 책임을 지우는 규정과 사전 자격, 데이터 접근·공유 계약, 인터페이스 버전·폐기 규칙, 서비스 수준 약속과 감사 이력의 네 갈래로 모이는 것으로 보인다. [추정][^ref-555][^ref-1192][^ref-031][^ref-1205]
+다사업자 책임·계약·데이터를 다루는 접근은 변경한 주체에게 책임을 지우는 규정과 사전 자격, 데이터 접근·공유 계약, 인터페이스 버전·폐기 규칙, 서비스 수준 약속과 감사 이력의 네 갈래로 모이는 것으로 보인다. [추정][^ref-555][^ref-1192][^ref-031][^ref-1205] 2026-09-30 실행까지의 이 절 본문은 [2026-09-30 대표 접근법과 기술 페이지](../../topics/2026/2026-09-30-area58-s6.md)에 있다.
 
-자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area58-s6.md)에 있다.
+자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area58-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-이 영역에 걸리는 규칙은 데이터 권리(EU 데이터법·국내 산업 디지털 전환 촉진법), 인터페이스 변경(VDA 5050·Kubernetes 폐기 정책), 서비스 수준·보안·기록(ISO/IEC 19086-1·IEC 62443-2-4·21 CFR Part 11), 변경 주체 책임(EU 기계류 규정·EU AI법)으로 나뉜다.
+이 영역에 걸리는 규칙은 데이터 권리(EU 데이터법·국내 산업 디지털 전환 촉진법), 인터페이스 변경(VDA 5050·Kubernetes 폐기 정책·RFC 9745), 서비스 수준·보안·기록(ISO/IEC 19086-1·IEC 62443-2-4·21 CFR Part 11), 변경 주체 책임(EU 기계류 규정·EU AI법·EU 개정 제조물책임지침)으로 나뉜다.
 
-자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area58-s7.md)에 있다.
+자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area58-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-- 유럽연합 집행위원회, 데이터 접근·이용 모델 계약 조항과 클라우드 표준 계약 조항 권고 초안(2025) — 데이터법 이행용 계약 문안 네 벌과 클라우드 계약 조항 여섯 개를 담은 구속력 없는 초안이며, 의무적 기업 간 데이터 공유의 합리적 보상 지침은 추후 발표 예정으로 되어 있다. [사실][^ref-1192]
-- 산업통상부, 산업데이터 계약 가이드라인(2023) — 국내 산업데이터 거래 당사자를 위한 유의사항·표준계약서·업종별 사례를 담은 432쪽 자료다. [사실][^ref-1194]
-- Shaik, A. S., Liability Allocation in Autonomous Industrial Systems: Who Pays when the AI is Wrong?(SSRN, 2026, 동료심사 전 원고) — Shaik의 제안은 로봇 제조사(OEM)·시스템 통합자·AI 공급자·운영자 사이의 책임을 통제력(피해를 막을 수 있었는가)·예견 가능성·정보 비대칭의 세 원칙으로 배분하는 위험 비례 책임 프레임워크(RPLF)이며, 저자는 이를 상업 계약과 기존 보험으로 구현할 수 있다고 주장한다. [의견][^ref-1208]
+유럽연합 집행위원회, 데이터 접근·이용 모델 계약 조항과 클라우드 표준 계약 조항 권고 초안(2025) — 데이터법 이행용 계약 문안 네 벌과 클라우드 계약 조항 여섯 개를 담은 구속력 없는 초안이며, 의무적 기업 간 데이터 공유의 합리적 보상 지침은 추후 발표 예정으로 되어 있다. [사실][^ref-1192]
+
+자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 대표 연구와 자료](../../topics/2026/2026-10-12-area58-s8.md)에 있다.
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)
 
@@ -134,27 +155,26 @@ version: 2
 
 ## 11. 열린 질문
 
-이 영역에 걸린 기존 열린 질문 8건은 모두 열려 있고, 이번 실행에서 새 질문 5건을 올렸다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.
+2026-09-30 실행에서 기존 8건에 새 질문 5건을 더했고, 2026-10-12 실행에서는 해결된 질문 없이 새 질문 3건을 올렸다. 2026-09-30 실행까지의 이 절 본문은 [2026-09-30 열린 질문 페이지](../../topics/2026/2026-09-30-area58-s11.md)에 있다.
 
-자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 열린 질문](../../topics/2026/2026-09-30-area58-s11.md)에 있다.
+자세한 내용은 주제 페이지 [58. 다사업자 책임·계약·데이터 — 열린 질문](../../topics/2026/2026-10-12-area58-s11.md)에 있다.
 
 ## 12. 최근 업데이트 (자동)
 
 <!-- auto:area-recent:start -->
-- 2026-09-30 · 갱신 · [58. 다사업자 책임·계약·데이터](multi-party-responsibility-contracts-and-data.md) — 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 계약·버전·폐기 규칙·SLA·감사 이력, 책임 경계, 연결 14건, 열린 질문 8건+새 질문 5건), 13절 각주, 1차 조건부 승인 수정 17건 반영, 2차 수정: 9절 표 셋째 행 경계 칸을 '원문 19장 다섯 경계 밖'으로 고침 (실행 2026-09-30-22)
-- 2026-09-30 · 생성 · [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area58-s6.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(2,613자)을 옮겼다 (실행 2026-09-30-22)
-- 2026-09-30 · 생성 · [58. 다사업자 책임·계약·데이터 — 열린 질문](../../topics/2026/2026-09-30-area58-s11.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,824자)을 옮겼다 (실행 2026-09-30-22)
-- 2026-09-30 · 생성 · [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area58-s7.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,269자)을 옮겼다 (실행 2026-09-30-22)
-- 2026-09-30 · 생성 · [58. 다사업자 책임·계약·데이터 — 다른 연구영역과의 연결](../../topics/2026/2026-09-30-area58-s10.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,155자)을 옮겼다 (실행 2026-09-30-22)
+- 2026-10-12 · 갱신 · [58. 다사업자 책임·계약·데이터](multi-party-responsibility-contracts-and-data.md) — 차등 갱신: 4절 데이터 보유자 정의를 데이터법 원문(제4조(13)·제2조(17))으로 바로잡고 2026-09-30 분리 페이지 연결 복구, 5절 병원 사례의 '연 2회'를 원어와 두 해석으로 고치고 2025·2026 등재를 연차별로 나눔, 가정 청소 로봇 데이터 공유 사례 추가, 6절 데이터법 적용 시점·SCC 면책(추정)·제조물책임지침 조문·공개 약관 비교(벤더 주장)·영상 위탁 관리 보강과 2026-09-30 분리 페이지 연결, 7절 요약 문장에 제조물책임지침·RFC 9745 추가와 표 3행, 8절 논문 1건, 11절 실행별 질문 건수 정정·부분 근거·새 질문 3건, 13절 각주 갱신(ref-872 원문 열람, ref-1488 원문 미열람) (실행 2026-10-12-01)
+- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](../../topics/2026/2026-10-12-area58-s6.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(4,483자)을 옮겼다 (실행 2026-10-12-01)
+- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 열린 질문](../../topics/2026/2026-10-12-area58-s11.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,186자)을 옮겼다 (실행 2026-10-12-01)
+- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-10-12-area58-s7.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,029자)을 옮겼다 (실행 2026-10-12-01)
+- 2026-10-12 · 생성 · [58. 다사업자 책임·계약·데이터 — 대표 연구와 자료](../../topics/2026/2026-10-12-area58-s8.md) — 자동 분리: 58. 다사업자 책임·계약·데이터 의 "8. 대표 연구와 자료" 절(774자)을 옮겼다 (실행 2026-10-12-01)
 <!-- auto:area-recent:end -->
 
 ## 13. 참고 자료 (각주)
 
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-30
-[^ref-872]: Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025, 2025-05-01, https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste, 접근일 2026-09-30 (원문 미열람)
+[^ref-872]: Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025, 2025-05-01, https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste, 접근일 2026-10-12
 [^ref-1191]: European Commission (Shaping Europe's digital future), Data Act explained, 2025-12-15, https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained, 접근일 2026-09-30
-[^ref-1192]: European Commission (Shaping Europe's digital future), Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts, 2025-11-19, https://digital-strategy.ec.europa.eu/en/library/draft-recommendation-non-binding-model-contractual-terms-data-access-and-use-and-non-binding, 접근일 2026-09-30
-[^ref-1194]: 산업통상부 (공공데이터포털), 산업통상부_산업데이터 계약 가이드라인_20230109, 2023-04-05, https://www.data.go.kr/data/15113186/fileData.do, 접근일 2026-09-30
+[^ref-1192]: European Commission (Shaping Europe's digital future), Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts, 2025-11-19, https://digital-strategy.ec.europa.eu/en/library/draft-recommendation-non-binding-model-contractual-terms-data-access-and-use-and-non-binding, 접근일 2026-10-12
 [^ref-1204]: The Kubernetes Authors, Kubernetes Deprecation Policy, 미확인, https://kubernetes.io/docs/reference/using-api/deprecation-policy/, 접근일 2026-09-30
 [^ref-555]: European Parliament and Council of the European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council of 14 June 2023 on machinery, 2023-06-14, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-30 (원문 미열람)
 [^ref-1205]: IEC / ISO (ISO/IEC JTC 1), ISO/IEC 19086-1:2016 Information technology - Cloud computing - Service level agreement (SLA) framework - Part 1: Overview and concepts, 2016-09-21, https://webstore.iec.ch/en/publication/25920, 접근일 2026-09-30 (원문 미열람)
@@ -165,3 +185,6 @@ version: 2
 [^ref-1209]: Future of Life Institute (EU AI법 조문 비공식 게재본), Article 25: Responsibilities Along the AI Value Chain | EU Artificial Intelligence Act, 미확인, https://artificialintelligenceact.eu/article/25/, 접근일 2026-09-30
 [^ref-1210]: Future of Life Institute (EU AI법 조문 비공식 게재본), Article 26: Obligations of Deployers of High-Risk AI Systems | EU Artificial Intelligence Act, 미확인, https://artificialintelligenceact.eu/article/26/, 접근일 2026-09-30
 [^ref-1211]: 한국아파트신문 (사설), 공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까, 2026-09-14, https://www.hapt.co.kr/news/articleView.html?idxno=169488, 접근일 2026-09-30
+[^ref-1487]: Best Epoch Technology Co., Ltd. (AIRROBO), EU DATA ACT Notice, 미확인, https://owebsite-cdn.ubtrobot.com/resources/file/2025/12/25/755762357268549.pdf, 접근일 2026-10-12
+[^ref-1493]: 1X Technologies, Inc., Pre-Order Terms, 2025-10-28, https://www.1x.tech/legal, 접근일 2026-10-12
+[^ref-1495]: SingHealth / Changi General Hospital CHART, RoMi-H Empanelment Programme 2026, 2026-05-06, https://www.singhealth.com.sg/news/robotics/romi-h-empanelment-programme-2026, 접근일 2026-10-12

@@ -1,0 +1,897 @@
+{
+  "run_id": "2026-10-11-01",
+  "date": "2026-10-11",
+  "run_type": "update",
+  "target": {
+    "area_no": 21,
+    "area_name": "21. 상호운용 표준·적합성",
+    "category": "F. 연동"
+  },
+  "gaps": [
+    "섹션 5. 적용 사례 (현장 유형 명시) — 수행 자원 칸이 'VDA 5050 3.0.0 에서 주문 배정·경로 계산…은 관제 쪽'으로 경로 계산을 모든 로봇에 일반화함(원문은 선 유도 로봇). 물류창고 외 현장 유형 사례 없음",
+    "섹션 6. 대표 접근법과 기술(주제 페이지로 분리) — 'OPC 는 제조사가 자체 인증하거나' 문장의 근거 없음(정정 필요). 선택 필드·재전송을 확인하는 동작 시험 방법 없음. OTTO 인증 발표 각주가 원문 미열람",
+    "섹션 7. 관련 표준·프레임워크·오픈소스(주제 페이지로 분리) — VDA 5050 행 '발행일은 명세 머리에 없어 미확인', MassRobotics 행 '원문 미열람', OPC 행 '자체·독립 시험소 인증' 표현. 3.0.0 태그 스키마 구문 오류, OPC UA Robotics Facet, KS B ISO 22166-202·TTA 표준 미반영",
+    "섹션 8. 대표 연구와 자료 — vda5050-lab 원문 미열람 표시, VDA 5050 통신 평가 논문 없음",
+    "섹션 11. 열린 질문 — oq-005·oq-055·oq-091·oq-026·oq-111 부분 근거 미반영",
+    "정정 요청 없음"
+  ],
+  "research_questions": [
+    "어떤 상호운용 표준을 따르고, 제조사가 그 표준을 지키는지 어떻게 확인할 것인가? [분류원문]",
+    "oq-005 VDA 5050 3.0.0 의 정확한 발행일은 언제인가? 배포 PDF 표지·카탈로그·보도자료의 날짜 표시는 각각 무엇인가? (섹션 7·11 겨냥)",
+    "oq-055 VDA 5050 에 공식 적합성 시험·인증 절차가 있는가, 없다면 제3자 오픈소스 적합성 시험 도구의 결과를 새 로봇 연동 승인 기준으로 쓸 수 있는가? (섹션 6·8·11 겨냥)",
+    "oq-091 VDA 5050 2.x 판과 3.0.0 판 로봇이 섞인 플릿에서 주 버전 차이를 어떻게 운영·이행하는가? — 3.0.0 시험 입력(스키마)의 신뢰성 (섹션 7·11 겨냥)",
+    "oq-026 KS B 7321-2 가 ISO 22166-202 와 부합화된 표준인지, 국내 물류 로봇·관제 사업에 적용한 사례가 있는가? (섹션 7·11 겨냥, 한국 자료 우선)",
+    "oq-111 KOROS 1148-8:2025 의 상호운용성 시험 절차는 어떤 시험 항목을 두며, 물류 로봇 관제 연동의 적합성 시험 기준으로 쓸 수 있는가? (섹션 7·11 겨냥)",
+    "기존 문장 점검: VDA 5050 3.0.0 은 경로 계산을 어느 로봇에 대해 관제 책임으로 두는가, OPC Foundation 은 제조사 자체 인증을 허용하는가? (섹션 5·6·7 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "VDA 5050 3.0.0 공식 배포 PDF(103쪽)의 표지는 판을 'VDA 5050 Version 3.0.0, March 2026'으로 표기한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "PDF 표지 \"VDA 5050 Version 3.0.0, March 2026\", 전체 103쪽. PDF 메타데이터 생성일은 2026-04-17. 파일명의 '2025-03'은 발행일 근거로 쓰지 않음. 20번 주제 페이지(2026-10-10-area20-s7)에서 [추정]으로 남았던 표지 문구를 원문으로 확인한 것",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "21번 7절 표 VDA 5050 행의 '발행일은 명세 머리에 없어 미확인'은 PDF 표지 판 표기(2026년 3월)로 고치고, 카탈로그 표시일(2026-03-17)·보도자료 날짜(2026-04-20)와의 비교는 20번 주제 페이지의 날짜 절로 연결하며 단일 공식 채택일은 확인 못 함으로 남기는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1423",
+        "ref-1412",
+        "ref-032"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "카탈로그 표시 2026-03-17(ref-1412), 보도자료 머리 'Berlin, April 20, 2026'(ref-032)은 2026-10-10-area20-s7「VDA 5050 3.0.0의 날짜 표시」에 이미 있음. 세 자료 모두 VDA 계열이라 독립 교차 확인 아님. GitHub 릴리스 설명의 날짜는 원문 확인 불가(403)라 넣지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f3",
+      "claim": "VDA 5050 3.0.0 §5.3 의 관제 기능 목록은 경로 계산을 일반 기능이 아니라 '선 유도(line-guided) 이동로봇의 경로 계산·안내'로 적고, §5.4 는 이동로봇을 선 유도형과 자유 주행형(freely navigating)으로 나눠 서술한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "PDF §5.3 p.11 \"Route calculation and guidance of line-guided mobile robots\"; §5.4 'line-guided or freely navigating'. 원문에 '한정'이라는 표현은 없어 직역함. 같은 직역은 2026-10-09-area41-s6 46행에 이미 있음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f4",
+      "claim": "VDA 의 3.0 발표 보도자료는 자율도가 높은 이동로봇이 경로를 스스로 계획해 상세 경로 계획이 로봇에서 이뤄지고, 그 경로를 관제와 공유(path sharing)하는 구성을 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-032"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보도자료 New features 문단: robots independently plan their own routes, \"detailed route planning takes place on the vehicle itself\", 'path sharing'. 대상은 high degree of autonomy 로봇. 명세 §6.8 예정 경로 공유 세부는 2026-10-10-area27-s7 41~45행에 있음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "21번 본문 5절 수행 자원 칸과 분리 7절 본문의 '주문 배정·경로 계산·…은 관제 쪽' 문장은 '선 유도 로봇의 경로 계산·안내'로 고치고, 자유 주행 로봇은 상세 경로를 스스로 계획해 공유할 수 있음을 병기해 모든 이동로봇의 상세 경로를 관제가 계산한다고 일반화하지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1423",
+        "ref-032"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "정정 대상: 본문 5절 수행 자원 칸 '(출하) … 주문 배정·경로 계산·교착 탐지와 해소·교통 제어는 관제 쪽', 2026-09-25-area28-s7 본문 첫 문단. 같은 일반화가 categories/governance-law-and-society/index.md 70행에도 있으나 다른 영역 페이지라 후속 정리 대상",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f6",
+      "claim": "VDA 5050 3.0.0 §7.1.1 은 선택(optional) 필드에 대해 로봇이 필드를 무시해서는 안 된다고 정하고, 관제(fleet control)에는 로봇이 지원하는 선택 필드만 보내도록 의무를 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "PDF §7.1.1 p.67 로봇 쪽 'shall not ignore the field'; 같은 절 관제 쪽 \"Fleet control shall only send optional fields that the mobile robot supports\". 관제 쪽 의무는 외부 조사 메모가 빠뜨린 것을 검증에서 보탰다",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "VDA 5050 3.0.0 은 연동 시험의 기대값으로 쓸 응답을 조항으로 정한다: 지원하지 않는 선택 파라미터가 든 주문은 UNSUPPORTED_PARAMETER(CRITICAL)로 거절, 같은 orderUpdateId 재전송은 내용이 같으면 무시하고 다르면 SAME_ORDER_UPDATE_ID(WARNING)를 보고하며 이전 주문을 계속, 취소된 주문의 후속 갱신은 ORDER_UPDATE_FOLLOWING_CANCEL(WARNING).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "PDF §6.1.4.2 p.20·§6.1.3.1 p.20(UNSUPPORTED_PARAMETER·CRITICAL, ORDER_UPDATE_FOLLOWING_CANCEL·WARNING), §6.1.4.5 p.21(같으면 무시, 다르면 'SAME_ORDER_UPDATE_ID' WARNING), §7.10 p.92~(p.96 optionalParameters). 재전송 규칙 자체는 2026-10-09-area41-s6 56행, command-and-task-execution-reliability.md 90행에 이미 있음 — 새로운 것은 시험 기대값과 쪽 위치",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "로봇 연동 승인에는 버전 문자열 확인에 더해 (1) 미지원 선택 필드 주문 거절, (2) 같은 번호·같은 내용 재전송 무시, (3) 같은 번호·다른 내용 재전송 경고, (4) 취소 후 갱신 경고, (5) 관제가 로봇 factsheet 가 지원한다고 밝힌 선택 필드만 보내는지를 확인하는 동작 시험표를 두고, 수신 직전 주문 상태와 관측 로그 누락 여부를 함께 보존하는 것이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f6·f7 조항을 시험 행으로 옮긴 제안이며 공식 인증 항목 목록이 아님. (5)행은 §7.1.1 관제 의무에서 나옴",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "VDA5050 공식 저장소 3.0.0 태그의 order.schema·factsheet.schema·visualization.schema 세 파일은 끝 쉼표(trailing comma) 때문에 JSON 으로 파싱되지 않고, 같은 태그의 state·instantActions·connection 스키마와 main 브랜치의 세 파일은 파싱된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검증 단계에서 태그 파일을 내려받아 재현. SHA-256 order f7e2d3b5…986d12, factsheet d2fd651d…7991ec, visualization 858eeab4…fafc92 가 조사 메모 값과 일치. JSON 구문 검사이며 JSON Schema 의미 검증이나 로봇 적합성 시험이 아님(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f10",
+      "claim": "세 스키마의 구문 오류 위치는 파서에 따라 다르게 진단된다: Python 3.11 json 은 315행 8열·174행 17열·55행 5열을, Python 3.13 이후는 'Illegal trailing comma' 로 314행 130열·173행 32열·54행 10열을 가리킨다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-051"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검증 단계 직접 재현(order/factsheet/visualization 순). 이슈 제보의 315·174·55행과 메모 재현의 314·173·54행 차이는 파서 진단 방식 차이로 설명됨",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f11",
+      "claim": "VDA5050 공식 저장소 이슈 #660 은 3.0.0 태그의 order·factsheet·visualization 스키마가 유효한 JSON 이 아니며 main 에서는 고쳐졌으나 새 릴리스는 없다고 보고한 것으로 외부 조사 메모가 전한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1424"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "메모 인용 제목 '3.0.0 tag ships invalid JSON … (fixed on main, not released)'. 검증에서 이슈 페이지·API 가 403 이라 원문 미열람 — 메모가 적은 날짜(2026-09-13)와 제보자 계정은 미확인. 제보이며 표준기관 정오표가 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f12",
+      "claim": "VDA 5050 3.0.0 을 시험 입력으로 쓸 때는 '공식 태그'와 '파싱 가능한 시험 입력'을 따로 확인하고, 수정한 스키마를 쓰면 원본과의 차이·수정 근거·해시를 보존하며 main 브랜치 내용을 설명 없이 섞지 않는 것이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-051",
+        "ref-1423"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f9·f10 재현 결과에서 나온 운영 제안. 공식 PDF·태그 스키마·검사 도구 판을 각각 고정",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f13",
+      "claim": "vda5050-lab README(커밋 4a1a812)는 v0.2.0 을 합성 데모 개발자 프리뷰로 설명하고, 공개 알파나 인증 주장이 아니며 실제 고객 로그·외부 시험 대상(DUT)·실물 하드웨어 실행 검증이 없다고 밝힌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-408"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README Status: \"Synthetic Demo Preview\", 'not a public-alpha or certification claim', no real customer trace, external DUT·hardware execution 없음. 문서의 자기 기술만 확인했고 프로그램은 실행하지 않음(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f14",
+      "claim": "vda5050-lab 은 MQTT 기록 진단의 보조 도구 후보로만 두고, 그 합격 판정을 구매·연동 승인 전체의 대체물로 쓰지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-408"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "21번 8절의 vda5050-lab 항목과 각주 '(원문 미열람)' 표시를 f13 으로 보강하는 제안. 개인 프로젝트의 한계 선언과 공식 시험기관 인증은 별개",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f15",
+      "claim": "OPC Foundation 'How to Certify' 는 제조사가 인증 시험소(Certification Lab)에 가기 전에 적합성 시험 도구(CTT)로 준비하도록 권고하며, CTT 는 시험소가 쓰는 도구라고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-705"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Preparing for Testing: \"It is suggested that vendors prepare … before attending the … Certification Lab\"(권고 표현), CTT 'used by the lab'(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f16",
+      "claim": "OPC Foundation 'Overview & Benefits' 는 인증 제품이 OPC Foundation 이 인정한 인증 시험소에서 시험을 거쳤다고 설명하고, 인증된 SDK 를 쓴 응용도 각자 인증 시험을 받아야 한다고 밝힌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1427"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"Certified products have been tested in an OPC Foundation accredited Certification Lab\"; SDK 기반 응용은 'require their own certification testing'. ref-705 와 같은 기관이라 독립 교차 확인 아님(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f17",
+      "claim": "확인한 OPC Foundation 인증 안내 두 페이지에는 제조사가 스스로 인증하는(self-certification) 경로가 없으므로, 21번 분리 6절의 '제조사가 자체 인증하거나'와 분리 7절 표 OPC 행의 '자체·독립 시험소 인증'은 근거가 없는 표현이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-705",
+        "ref-1427"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "두 페이지 어디에도 self-certification 표현 없음(검증 확인). 정정 대상: 2026-09-25-area28-s6「적합성 시험과 인증」첫 문단, 2026-09-25-area28-s7 표 OPC Foundation 인증 프로그램 행. 같은 표현이 ref-705 요약에도 있음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f18",
+      "claim": "OPC 적합성 체계는 '제조사의 CTT 사전 점검(권고)'과 '인정 시험소 인증'을 구분하는 문장으로 고치고, 이 구조를 VDA 5050 의 인증 체계로 그대로 옮겨 쓰지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-705",
+        "ref-1427"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f15~f17 정정 제안. 시험 항목은 지원 프로파일에 따라 달라짐",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f19",
+      "claim": "MassRobotics AMR_Interop_Standard.json(커밋 f9357a4)의 최상위 oneOf 는 identityReport 와 statusReport 두 정의를 참조하고, 위치(location) 정의는 x·y·angle·planarDatum 네 필드를 모두 필수로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-230"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "JSON 최상위 oneOf: identityReport·statusReport; definitions.location.required = [x, y, angle, planarDatum]. planarDatum 만 필수인 것처럼 쓰지 않음. statusReport 필수 필드는 2026-10-10-area20-s7 52행에 이미 있음. 별도 표준 PDF 판·발행일은 미확인(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f20",
+      "claim": "MassRobotics 보고 메시지(신원·상태) 교환만으로 작업 명령 호환성이나 좌표계 정합을 확보했다고 주장하지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-230"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f19 스키마에 명령·작업 배정 메시지가 없음. 21번 분리 7절 표 MassRobotics 행의 '(원문 미열람)'은 스키마 원문 확인으로 해소",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f21",
+      "claim": "OPC 40010-1(OPC UA for Robotics Part 1) 1.02판 §11 은 서버 기능 묶음(Facet)을 기본·운전·자산관리 확장·상태감시 확장 등으로 나누고 각 기능 단위를 필수(Mandatory)·선택(Optional)으로 구분한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-034"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§11 Facet 표 123~127 'Mandatory / Optional'. 1.02판·2025-09-08·§1 범위('higher-level control and evaluation systems')는 2026-09-29-area04-s7 43행(ref-874)에 이미 있음 — 새로운 것은 Facet 구조",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f22",
+      "claim": "연동 요구에는 'OPC UA 지원' 대신 OPC UA Robotics 판·서버 Facet·선택 단위·인증 범위를 적게 하고, 이 정보모델을 VDA 5050 주문 스키마와 일대일로 자동 변환할 수 있다고 보지 않는 것이 좋다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-034"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f21 에서 나온 제안. 발행일이 최근 1년 창보다 앞서 2026년 신규 표준으로 세지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f23",
+      "claim": "외부 조사 메모는 2026-10-11 ISO 공식 목록이 ISO 21423 을 단계 60.00(발행 준비 중)으로 표시하고 범위에서 안전 관련 요구와 공도 운행 이동기계를 제외한다고 전하지만, 이번 검증에서는 iso.org 가 403 이라 원문을 대조하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-159"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "메모 인용 'International Standard under publication', 'Safety-related requirements', 'public roads'. 같은 내용이 categories/space-and-map-model/index.md 106행, categories/safety/index.md 93행, 2026-10-10-area20-s10 44행에 있음 — 21번엔 ref-159 와 확인일만",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "KSSN 목록에서 KS B 7321-2 는 2024-01-05 제정으로 표시되고 국제표준 부합화 칸은 비어 있으며, 고시사유는 '수요조사 반영에 의한 제정'(제2024-1003호), 47쪽이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-138"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "KSSN 상세: 제정 2024-01-05, 부합화 칸 공란, 고시사유 '수요조사 반영에 의한 제정', 47쪽. 표준 본문은 유료라 미열람. 공란을 비부합·폐지의 증거로 쓰지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f25",
+      "claim": "KS B ISO 22166-202(로봇 — 서비스 로봇의 모듈화 — 제202부: 소프트웨어 모듈용 정보 모델)는 2026-09-11 제정된 별도 KS 로, ISO 22166-202:2025 와 IDT(일치) 부합화이며 국가기술표준원 고시 제2026-0279호, '국제표준 부합화에 의한 제정', 70쪽이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1426"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "KSSN 상세: 2026-09-11, 'ISO 22166-202:2025(IDT)', 고시 제2026-0279호, 고시사유 '국제표준 부합화에 의한 제정', 70쪽. ISO 원표준 발행은 2025(월은 ISO 원문 확인 불가). 표준 본문 미열람",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f26",
+      "claim": "oq-026 에는 KS B 7321-2 와 별도로 ISO 22166-202 와 IDT 인 KS B ISO 22166-202(2026-09-11)가 있다는 사실을 더하고, 두 KS 의 대체 관계와 국내 적용 사례는 미확인으로 남기는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-138",
+        "ref-1426"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f24·f25 기반 부분 답변. KS B 7321-2 의 부합화 칸 공란만으로 부합 여부를 판정하지 않음",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f27",
+      "claim": "외부 조사 메모는 KOROS 1148-8:2025 게시물이 표준 제정일을 2025-05-28 로, 게시일을 2025-06-04 로 구분하고 이 단체표준을 바탕으로 TTA 표준이 만들어졌다고 안내한다고 전하지만, 검증에서 KOROS 사이트가 봇 접근을 막아 원문을 대조하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-710"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "메모 인용 '표준 제정일 2025.05.28.', 게시 정보 2025-06-04. 첨부 본문은 성명·소속·이메일 입력과 동의를 요구해 미확보. 제정일과 'TTA 표준의 기반' 관계는 미확인",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f28",
+      "claim": "TTA TC4 공식 표준 목록에는 TTAK.KO-10.1295-Part8 '서비스 로봇 정보 모듈 — 제8부: 소프트웨어 모듈용 정보모델 상호운용성 시험 절차'가 제·개정일 2026-06-26 으로 실려 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1425"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "TC4 목록 해당 행 'TTAK.KO-10.1295-Part8', '2026-06-26'(목록 1597행 부근). 상세 페이지는 열람 실패, 표준 본문 미열람(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f29",
+      "claim": "KOROS 1148-8·TTAK.KO-10.1295-Part8 은 국내 후보 표준으로 번호와 날짜만 보강하고, 본문의 시험 항목을 확인하기 전에는 플릿 메시지 적합성 시험 절차로 채택하지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-710",
+        "ref-1425"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "oq-111 부분 근거. 두 표준의 시험 항목 동등성과 VDA 5050 적합성 검사 대체 가능성은 확인 못 함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f30",
+      "claim": "벤더 주장: OTTO by Rockwell Automation 은 2026-04-09 발표에서 OTTO 100·600·1200·1500 이 Idealworks·NAiSE·SYNAOS 등 VDA 5050 관제 소프트웨어 업체와 인증을 마쳤다고 밝혔으나, 시험한 프로토콜 판·시험 항목·시험 기관은 원문에 없다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-608"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 첫 문단 'certified with leading VDA 5050-compliant intralogistics software providers', 업체 열거는 'including Idealworks, NAiSE and SYNAOS'. 인증 발표 자체는 2026-09-25-area28-s6 에 이미 있음 — 새로운 것은 날짜·기종과 각주 '(원문 미열람)' 해소",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null,
+      "vendor_claim": true
+    },
+    {
+      "id": "f31",
+      "claim": "VDMA 의 Mesh-Up 2025 안내는 automatica 2025(2025-06-24~27) 전시에서 총 9개 기업이 참여하고 MHP 가 관제를 맡은 생산 공급용 이동로봇 혼합 플릿 시연 구성을 설명한다(전시장 시연이며 실제 공장 배치가 아님).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1428"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "행사 안내 본문 'a total of nine companies', Software 절 MHP 관제. 기업 수를 로봇 대수로 바꾸지 않음. 최근 1년 창 밖의 보완 사례(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": "제조 공장",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f32",
+      "claim": "같은 Mesh-Up 2025 안내는 관제 소프트웨어 공급자를 바꿔 고를 수 있는 유연성을 automatica 현장에서 실시간으로 시연하지는 않는다고 밝힌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1428"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Software 절 'not demonstrated live at automatica'(발행일 미확인, 확인일 기준)",
+      "as_of": "2026-10-11",
+      "site_type": "제조 공장",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f33",
+      "claim": "Mesh-Up 같은 전시 시연은 제조 현장 유형의 혼합 플릿 구성 사례로만 쓰고, 실제 배치나 현장 무중단 관제 교체가 검증된 근거로 세지 않는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1428"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f31·f32 기반. 21번 5절에 물류창고 외 현장 유형(제조 공장, 전시 시연) 보완 사례로 제안",
+      "as_of": "2026-10-11",
+      "site_type": "제조 공장",
+      "flow_item": null
+    },
+    {
+      "id": "f34",
+      "claim": "Wagner 외(IEEE WFCS 2026)는 VDA 5050 에 원격조작(teleoperation) 확장과 VDA 5050 트래픽 생성기를 제안하고 개방형 산업 네트워크에서 미들웨어를 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1429"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "저자 공개본 초록·§III: 'proposing' 원격조작 확장, 'traffic generator'. 제22회 WFCS(오펜부르크), pp.1–8. 논문 제안 확장이며 표준 채택 기능 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f35",
+      "claim": "이 논문의 평가 시나리오는 단일 모의 이동로봇의 60초 주문 실행이고, 원격조작 시나리오는 그중 20~40초 구간에 원격조작을 수행한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1429"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§IV p.4 'a single mobile robot', '60 s', '20 s to 40 s'; 표 III·IV p.6. 여러 실물 제조사 로봇의 적합성 시험이 아님",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f36",
+      "claim": "이 논문은 가상 무선(virtual-radio) Open RAN 시험과 실제 무선 링크(real-world) 검증을 구분해 보고하고, 대규모 다중 로봇 시나리오 검증은 향후 과제로 남긴다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1429"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "그림 7 p.6, 그림 10 p.7 'virtual-radio' / 'real-world', §V 'larger-scale multi-robot scenarios'",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f37",
+      "claim": "21번에서는 Wagner 외 연구를 VDA 5050 통신 부하·지연 평가로 소개하되 적합성 시험과 구별하고, 상세 네트워크 설계는 42. 분산 시스템·통신·컴퓨팅 구조 연결로만 두는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1429"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f34~f36 기반 8절·10절 제안",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f38",
+      "claim": "VDA 5050 연동 승인의 근거는 제3자 도구의 자체 진단, 벤더 간 인증 발표, 전시 시연, 인정 시험소 인증을 서로 다른 근거 수준으로 나눠 기록하는 것이 맞다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-408",
+        "ref-608",
+        "ref-1428",
+        "ref-705",
+        "ref-1427"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "f13·f30·f32·f15~f17 종합. oq-055 부분 근거: VDA·VDMA 공인 인증 제도의 존재·부재는 확정 못 함",
+      "as_of": "2026-10-11",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-1423",
+      "org": "VDA / VDMA",
+      "title": "VDA 5050 — Interface for the Communication between Mobile Robots and a Fleet Control, Version 3.0.0 (PDF)",
+      "published": "2026-03",
+      "url": "https://www.vda.de/dam/jcr%3A09f03b91-13e2-4db3-bf30-4f221710071b/VDA5050-V3.0.0-2025-03.pdf",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "VDA 가 배포하는 VDA 5050 3.0.0 공식 PDF(103쪽). 표지 판 표기 'March 2026'과 §5.3·§6.1·§7.1.1·§7.10 등 관제–로봇 기능 분담·오류 응답 조항을 쪽 번호로 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1412",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "VDA 5050",
+      "published": "2026-03-17",
+      "url": "https://www.vda.de/en/news/publications/publication/vda-5050",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "VDA 발행물 카탈로그의 VDA 5050 Version 3.0.0 항목. 표시 날짜 2026-03-17 을 다시 확인했고, 내려받는 PDF 표지의 판 표기(2026년 3월)는 이번에 ref-1423 으로 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-032",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "Version 3.0 of VDA 5050 released",
+      "published": "2026-04",
+      "url": "https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "VDA 5050 3.0 발행 보도자료. 본문 머리 'Berlin, April 20, 2026'과 자율도 높은 로봇의 경로 자체 계획·경로 공유 설명을 원문으로 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-051",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "VDA 5050 공식 JSON 스키마 묶음. 이번에는 3.0.0 태그의 order·factsheet·visualization 스키마를 내려받아 끝 쉼표 구문 오류와 해시를 재현했고 main 의 같은 파일은 파싱됨을 확인했다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/3.0.0/json_schemas/order.schema",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1424",
+      "org": "VDA5050 GitHub 이슈 제보자(미확인)",
+      "title": "3.0.0 tag ships invalid JSON in order/factsheet/visualization schemas (fixed on main, not released) — VDA5050 issue #660",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/issues/660",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "원문 미열람. 3.0.0 태그의 세 스키마가 유효한 JSON 이 아니라는 공식 저장소 이슈 제보로 외부 조사 메모가 전한다. 검증에서 403 으로 날짜·제보자를 확인하지 못했다.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-408",
+      "org": "ekusiadadus (GitHub)",
+      "title": "vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces)",
+      "published": null,
+      "url": "https://github.com/ekusiadadus/vda5050-lab",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "MQTT 기록에서 VDA 5050 주문·재연결·취소 실패를 진단하는 개인 프로젝트 README. 커밋 4a1a812 고정본에서 v0.2.0 이 합성 데모 프리뷰이며 인증 주장이 아니라는 한계 선언을 확인했다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ekusiadadus/vda5050-lab/4a1a812f9418084f658b65856cf3e1a5bbc2cf51/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-705",
+      "org": "OPC Foundation",
+      "title": "How to Certify - OPC Foundation",
+      "published": null,
+      "url": "https://opcfoundation.org/certification/how-to-certify/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "OPC 제품 인증 절차 안내. 제조사가 인증 시험소에 가기 전에 CTT 로 준비하도록 권고하고 CTT 는 시험소가 쓰는 도구라고 설명한다. 제조사 자체 인증 경로는 없다(기존 요약의 '자체 인증' 표현은 정정 필요).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1427",
+      "org": "OPC Foundation",
+      "title": "Overview & Benefits — OPC Foundation Certification",
+      "published": null,
+      "url": "https://opcfoundation.org/certification/overview-benefits/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "OPC Foundation 인증 프로그램 개요. 인증 제품은 재단이 인정한 인증 시험소에서 시험을 거치며, 인증 SDK 를 쓴 응용도 각자 인증 시험이 필요하다고 설명한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-230",
+      "org": "MassRobotics",
+      "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+      "published": null,
+      "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. 커밋 f9357a4 고정본에서 최상위 oneOf(identityReport·statusReport)와 location 필수 필드 [x, y, angle, planarDatum]을 확인했다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/f9357a423ecabc3f7112e6d10025a5231943ec50/AMR_Interop_Standard.json",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-034",
+      "org": "OPC Foundation / VDMA",
+      "title": "OPC-40010-1 – OPC UA for Robotics - Part 1: Vertical Integration",
+      "published": "2025-09-08",
+      "url": "https://reference.opcfoundation.org/specs/OPC-40010-1",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "OPC UA for Robotics 1부 공식 온라인 참조(1.02판, 2025-09-08). 이번에 §1 범위와 §11 서버 Facet 표(표 123~127)의 필수·선택 구분을 확인했다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://reference.opcfoundation.org/specs/OPC-40010-1/full",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-159",
+      "org": "ISO",
+      "title": "ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability",
+      "published": null,
+      "url": "https://www.iso.org/standard/86749.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "원문 미열람. 서로 다른 공급사의 산업용 이동로봇·플릿 관리자 사이 통신·상호운용을 다루는 ISO 규격 페이지. 2026-10-11 검증에서도 403 으로 단계·범위를 대조하지 못했다.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-138",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "title": "KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+      "published": "2024-01-05",
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "KS B 7321-2 의 KSSN 상세 목록. 2024-01-05 제정, 국제표준 부합화 칸 공란, 고시사유 '수요조사 반영에 의한 제정'을 확인했다(본문 미열람).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1426",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "title": "KS B ISO 22166-202 로봇 — 서비스 로봇의 모듈화 — 제202부: 소프트웨어 모듈용 정보 모델",
+      "published": "2026-09-11",
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010158171",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "ISO 22166-202:2025 와 IDT 인 KS 의 KSSN 상세 목록. 2026-09-11 제정, 국가기술표준원 고시 제2026-0279호, 국제표준 부합화에 의한 제정을 확인했다(본문 미열람).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-710",
+      "org": "한국지능형로봇표준포럼(KOROS)",
+      "title": "KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차",
+      "published": "2025-06-04",
+      "url": "http://www.koros.or.kr/bbs/board.php?bo_table=notice27&wr_id=223",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "원문 미열람. 서비스 로봇 소프트웨어 모듈 정보모델의 상호운용성 시험 절차 단체표준 제·개정 게시물(게시일 2025-06-04). 2026-10-11 검증에서도 봇 차단으로 제정일을 대조하지 못했다.",
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1425",
+      "org": "한국정보통신기술협회(TTA)",
+      "title": "TTA 표준화위원회 TC4 표준 목록 — TTAK.KO-10.1295-Part8 서비스 로봇 정보 모듈 — 제8부: 소프트웨어 모듈용 정보모델 상호운용성 시험 절차",
+      "published": null,
+      "url": "https://committee.tta.or.kr/standard/standard.jsp?commit_code=TC4",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "TTA TC4 공식 표준 목록. TTAK.KO-10.1295-Part8 의 제·개정일 2026-06-26 을 목록에서 확인했다(상세 페이지·본문 미열람).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-608",
+      "org": "OTTO by Rockwell Automation",
+      "title": "OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments",
+      "published": "2026-04-09",
+      "url": "https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-10-11",
+      "summary": "OTTO AMR(OTTO 100·600·1200·1500)이 Idealworks·NAiSE·SYNAOS 등과 VDA 5050 인증을 마쳤다는 2026-04-09 보도자료(벤더 주장). 시험 판·항목·기관은 밝히지 않는다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1428",
+      "org": "VDMA",
+      "title": "Mobile Robots in Production: Mesh-Up 2025",
+      "published": null,
+      "url": "https://www.vdma.eu/en/mesh-up",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-10-11",
+      "summary": "VDMA 의 automatica 2025(2025-06-24~27) 이동로봇 혼합 플릿 공동 시연 안내. 9개 기업 참여, MHP 관제 구성과 관제 공급자 교체 유연성은 현장 실시간 시연이 아니라는 점을 밝힌다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1429",
+      "org": "Wagner, N. A., Toenning, L., Lünsch, D., Jost, J., Wietfeld, C., Detzner, P.",
+      "title": "Teleoperating Mobile Robots via VDA 5050 – A First Middleware Evaluation within Open Industrial Networks",
+      "published": "2026-04-21",
+      "url": "https://doi.org/10.1109/WFCS67029.2026.11511549",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-10-11",
+      "summary": "제22회 IEEE WFCS(2026, 오펜부르크) 논문. VDA 5050 원격조작 확장과 트래픽 생성기를 제안하고 단일 모의 로봇·가상 무선 Open RAN·실제 무선 링크 조건에서 통신을 평가했다(저자 공개본 열람).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://comnets.etit.tu-dortmund.de/storages/cni-etit/r/Research/Publications/2026/Wagner_2026_WFCS/Wagner_WFCS_AuthorsVersion.pdf",
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/integration/interoperability-standards-and-conformance.md",
+      "sections": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "10",
+        "11"
+      ],
+      "rationale": "갱신(차등): 섹션 5 — 본문 5절 수행 자원 칸의 '경로 계산'을 '선 유도 로봇의 경로 계산·안내'로 정정(f3·f5, §5.4 선 유도/자유 주행 구분 함께), 자유 주행 로봇의 경로 자체 계획·공유 병기(f4; 예정 경로 공유 세부는 2026-10-10-area27-s7 41~45행 연결). 물류창고 외 현장 유형 보완: 제조 공장 전시 시연 Mesh-Up 2025(f31·f32, 전시 시연이며 실제 배치 아님, f33) / 섹션 6(분리 2026-09-25-area28-s6) — 「적합성 시험과 인증」첫 문단 '제조사가 자체 인증하거나'를 정정(f15·f16·f17·f18: CTT 사전 준비는 권고, 인증은 인정 시험소, SDK 응용도 개별 시험). OTTO 문단에 날짜 2026-04-09·기종 4개·'등' 표기 보강, 각주 원문 미열람 해소(f30, 벤더 주장 유지). 선택 필드·재전송·취소 후 갱신 동작 시험표 추가(f6·f7·f8, §7.1.1 관제 의무 행 포함; 재전송 규칙 자체는 2026-10-09-area41-s6 56행·command-and-task-execution-reliability.md 90행 연결). 근거 수준 구분(f38) / 섹션 7(분리 2026-09-25-area28-s7) — 표 VDA 5050 행 '발행일은 명세 머리에 없어 미확인'을 PDF 표지 판 표기 'March 2026'(f1)로 고치고 날짜 비교는 2026-10-10-area20-s7「VDA 5050 3.0.0의 날짜 표시」로 연결(f2, 그 페이지의 표지 [추정]은 f1 로 확인됨). 본문 첫 문단 '주문 배정·경로 계산…' 정정(f3·f5). 표 OPC 행 '자체·독립 시험소 인증'을 '인정 시험소 인증(CTT 는 사전 점검 도구)'으로 정정(f17). 표 MassRobotics 행 '(원문 미열람)' 해소와 location 필수 필드(f19·f20; statusReport 필수 필드는 2026-10-10-area20-s7 52행 연결). 3.0.0 태그 스키마 구문 오류 주의사항 추가(f9·f10 사실, f11 이슈 제보는 추정, f12). OPC UA Robotics Facet 구조(f21·f22; 판·발행일·범위는 2026-09-29-area04-s7 43행 연결). ISO 21423 은 ref-159 와 확인일만(f23 추정; 같은 내용은 categories/space-and-map-model/index.md 106행 등). KS B 7321-2 제정일·부합화 칸 공란(f24), KS B ISO 22166-202 IDT 신규(f25·f26), KOROS 1148-8 제정일(f27 추정)과 TTAK.KO-10.1295-Part8(f28·f29) / 섹션 8 — vda5050-lab 항목에 v0.2.0 합성 데모 프리뷰·인증 주장 아님 반영, 각주 '(원문 미열람)' 해소(f13·f14). Wagner 외 WFCS 2026 통신 평가 논문 추가(f34~f36, 적합성 시험과 구별 f37) / 섹션 10 — 42. 분산 시스템·통신·컴퓨팅 구조 연결 추가(f37) / 섹션 11 — oq-005(f1·f2), oq-055(f13~f18·f30·f38), oq-091(f9~f12), oq-026(f24~f26), oq-111(f27~f29) 부분 근거. 해결 제안 없음. 새 질문 3건. 기존 내용 확인(새 finding 없음): VDA 5050 날짜 비교(2026-10-10-area20-s7), vda-5050-lib.js v1.7.0 의 3.0 지원(2026-10-10-area20-s7 56행, ref-742) — 21번에는 요약과 연결만. 후속 정리 필요(이번 대상 아님): categories/governance-law-and-society/index.md 70행의 '경로 계산' 일반화, ref-705 참고문헌 요약의 '자체 인증' 표현."
+    }
+  ],
+  "glossary_candidates": [],
+  "open_questions_new": [
+    "VDA 5050 3.0.0 태그 스키마 수정본과 공식 PDF·태그가 서로 다를 때, 연동 시험에 쓸 수정 단위·승인 책임자·회귀 시험을 어떻게 정하는가? | 관련 영역: 21. 상호운용 표준·적합성, 57. 자산·소프트웨어 수명주기 관리 | 근거: f9 | 종류: 일반",
+    "TTAK.KO-10.1295-Part8 과 KOROS 1148-8:2025 의 시험 항목·판정 기준은 얼마나 같은가? (관련 기존 질문: oq-111) | 관련 영역: 21. 상호운용 표준·적합성, 54. 시험·형식 검증·벤치마크 | 근거: f28 | 종류: 일반",
+    "VDA 5050 2.x·3.x 혼합 플릿을 실제 현장에서 전환할 때 관제 교체와 로봇 교체를 각각 검증한 공개 기록이 있는가? (관련 기존 질문: oq-091) | 관련 영역: 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성 | 근거: f32 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 18,
+    "cross_checked_count": 0,
+    "unverified": [
+      "리서치 단계 산출물 출처: 외부 AI 조사 메모(runs/2026-10-11-01/external_research.md)를 변환했다. 2026-10-11 Claude 서브에이전트가 메모의 [사실] 주장을 원문과 대조 검증했고, 검증에서 나온 수정(태그 강등·표현 정정·메타데이터 정정·중복 제거)을 반영했다.",
+      "f11: 이슈 #660 원문(GitHub 403) 미확인 — 날짜 2026-09-13·제보자 계정 미확인이라 추정",
+      "GitHub 릴리스 3.0.0 설명의 발행일(2026-03-19)과 published_at: 403 으로 확인 불가 — 출처·finding 에 넣지 않음",
+      "f23: ISO 21423 단계 60.00·제외 범위는 iso.org 403 으로 대조 못 함(추정)",
+      "f27: KOROS 1148-8 제정일 2025-05-28 과 'KOROS 표준을 바탕으로 TTA 표준' 안내는 봇 차단으로 대조 못 함(추정)",
+      "ISO 22166-202 원표준의 발행 월(메모 2025-03): ISO 원문 확인 불가 — 연도 2025 만 KS B ISO 22166-202 목록(f25)의 'ISO 22166-202:2025(IDT)'로 확인",
+      "f28·f29: TTA 상세 페이지와 KOROS·TTA·KS 표준 본문(유료·동의 절차) 미열람 — 시험 항목·대체 관계 미확인",
+      "f30: OTTO 인증의 시험 판·항목·기관, f31·f32: Mesh-Up 2025 사후 성과 자료는 이번 변환에서 따로 확인하지 않음",
+      "VDA·VDMA 공인 적합성 인증 제도의 존재·부재(oq-055)는 확정 못 함"
+    ],
+    "scope_violations": [
+      "f31~f33: Mesh-Up 2025 는 제조 생산 공급 전시 시연으로, 실제 공장 배치가 아니며 site_type '제조 공장'은 시연이 겨냥한 현장 유형을 뜻함",
+      "f34~f37: 무선망·Open RAN 통신 평가는 42. 분산 시스템·통신·컴퓨팅 구조 쪽 내용이므로 21번에는 적합성 시험과 구별되는 통신 평가 연구로만 씀",
+      "f21·f22: OPC UA Robotics 정보모델은 4. 이기종 로봇 등록에서 이미 다루므로 21번에는 Facet·인증 범위 요구만 씀"
+    ],
+    "budget_used": {
+      "queries": 0,
+      "sources": 7
+    },
+    "limits": "외부 조사 변환이라 검색 횟수 집계 없음(queries 0 으로 기록). 신규 출처 7건/15(ref-1423~ref-1429, 예약 구간 ref-1423~ref-1452 안), 재사용 11건(ref-1412·ref-032·ref-051·ref-408·ref-705·ref-230·ref-034·ref-138·ref-608 는 검증 단계 원문 대조, ref-159·ref-710 은 미열람). 미열람 신규 출처는 ref-1424(이슈 #660) 1건. 메모 출처와의 대응: n1→ref-1423(공식 PDF; 태그 스키마는 ref-051), n2→ref-1412, n4→ref-032, n6→ref-1424, n7→ref-408, n8→ref-705, n9→ref-230, n10→ref-034, n11→ref-159, n12→ref-138, n14→ref-710, n15→ref-1425(URL 을 ?commit_code=TC4 로 교체), n16→ref-1426, n17→ref-608, n18→ref-1428, n19→ref-1429, n20→ref-1427. 넣지 않은 출처: n3(GitHub 릴리스, 403 확인 불가이고 날짜 비교는 20번 페이지에 있음), n5(ref-742, vda-5050-lib.js 3.0 지원은 2026-10-10-area20-s7 에 이미 있어 새 finding 없음), n13(ref-248, 발행 연도는 f25 로 충분). 검증에서 나온 수정: B02 '한정' 표현을 §5.3 직역으로, B04 시험표에 §7.1.1 관제 의무 추가, B05 파서별 진단 행 차이를 [사실]로 상향하고 이슈 날짜·제보자는 추정으로 강등, B07 자체 인증 근거 없음 정정, B08 location 필수 4필드, B09 Facet 만 새로, B11 ISO 발행을 2025 로, B12 KOROS 제정일·TTA 기반 관계를 추정으로 강등, B13 '등' 표기, B14 '사후 자료 미확보' 서술 제외. 중복 제거: B01 날짜 비교·B03·B04 재전송 규칙·B08 statusReport·B09 판·범위·B10 은 다른 영역 페이지에 이미 있어 새 finding 으로 늘리지 않고 rationale 에 연결 위치를 적음. 열린 질문: 해결 제안 없음(모두 부분 답변). oq-005 근거 f1·f2, oq-055 근거 f13~f18·f30·f38, oq-091 근거 f9~f12, oq-026 근거 f24~f26, oq-111 근거 f27~f29. 메모의 새 질문 1(발행일 차이 설명)·2(시험기관 인증의 판·기능)·4(KS 대체 관계)는 기존 열린 질문과 겹쳐 새로 만들지 않음. 교차 확인 0건(VDA·VDMA 계열, OPC 두 페이지는 같은 기관). 정정 요청 없음. 용어 후보 없음."
+  }
+}
