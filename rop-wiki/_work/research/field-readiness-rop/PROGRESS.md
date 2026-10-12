@@ -24,7 +24,7 @@
 |05_decision-matrices.md|완료|10개 조건 측정표·3대안 판단·업종/책임/비용·인수 관문|
 |06_simulation-validation-boundaries.md|완료|코드 4파일·6근거, 실패 5유형의 모델/관측/보정 경계|
 |07_research-backlog.md|완료|15개 후속 질문, 기존 oq/트랙·담당·닫는 조건 연결|
-|08_wiki-publication-map.md|대기|기존 파일·절 연결 제안|
+|08_wiki-publication-map.md|완료|25개 기존 페이지·트랙·질문 연결 후보, 게시 없음|
 |sources.md|진행 중|원문 위치·짧은 인용·버전·발행/접근일·실패 기록 수집|
 
 ## 재개 규칙
@@ -48,3 +48,5 @@
 - 06_simulation-validation-boundaries.md 완료: 코드 4파일·6근거, 실패 5유형의 모델/관측/보정 경계。
 
 - 07_research-backlog.md 완료: 15개 후속 질문, 기존 oq/트랙·담당·닫는 조건 연결。
+
+- 08_wiki-publication-map.md 완료: 25개 기존 페이지·트랙·질문 연결 후보, 게시 없음。
