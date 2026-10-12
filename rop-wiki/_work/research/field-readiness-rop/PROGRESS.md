@@ -20,7 +20,7 @@
 |01_existing-wiki-gap-matrix.md|완료|24개 주제 대조, 기존 질문·트랙의 미완료 범위 확인|
 |02_event-claim-verification.md|완료|발표 주장 16행, 날짜/법령/SDK 구별, 전사 미확인 유지|
 |03_research-findings.md|완료|A~F, 조건부 능력·통신 계약·연속성·성과 정의|
-|04_field-failure-cases.md|대기|발표 관찰과 일반 연구 분리|
+|04_field-failure-cases.md|완료|일반화한 10사례·반증 시험·재현 패키지|
 |05_decision-matrices.md|대기|설정/경로/시설 변경 및 책임·비용 판단|
 |06_simulation-validation-boundaries.md|대기|코드 근거와 모델·실측 보정 경계|
 |07_research-backlog.md|대기|미확인 질문·수용 기준·우선순위|
@@ -40,3 +40,5 @@
 - 02_event-claim-verification.md 완료: 발표 주장 16행, 날짜/법령/SDK 구별, 전사 미확인 유지。
 
 - 03_research-findings.md 완료: A~F, 조건부 능력·통신 계약·연속성·성과 정의。
+
+- 04_field-failure-cases.md 완료: 일반화한 10사례·반증 시험·재현 패키지。
