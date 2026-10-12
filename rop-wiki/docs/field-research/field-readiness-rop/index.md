@@ -11,7 +11,7 @@ updated: 2026-10-12
 version: 1
 ---
 
-[홈](../../index.md) › 현장 적용·운영 검증
+[홈](../../index.md) › [스터디](../index.md) › 현장 적용·운영 검증
 
 # 현장 적용·운영 검증
 
@@ -19,19 +19,19 @@ version: 1
 > 페이지 상태: published · 신뢰도: medium · 페이지 버전: 1 · 마지막 갱신: 2026-10-12 · 마지막 실행: 없음
 <!-- auto:page-status:end -->
 
-이 분류는 로봇을 실제 현장에 넣고 운영할 때 생기는 문제를 모은다. 다루는 문제는 바닥·조명·통신 같은 환경 조건, 실패 사례, 사람 개입, 업무 연속성, 시뮬레이션 검증의 한계, 제조사와 주고받을 증거다. 67개 세부 연구영역이 "무엇을 연구하는가"를 정리한다면, 이 분류는 "현장에서 실제로 되는가, 무엇을 보고 그렇게 판단하는가"를 묻는다.
+이 스터디는 로봇을 실제 현장에 넣고 운영할 때 생기는 문제를 모은다. 다루는 문제는 바닥·조명·통신 같은 환경 조건, 실패 사례, 사람 개입, 업무 연속성, 시뮬레이션 검증의 한계, 제조사와 주고받을 증거다. 67개 세부 연구영역이 "무엇을 연구하는가"를 정리한다면, 이 스터디는 "현장에서 실제로 되는가, 무엇을 보고 그렇게 판단하는가"를 묻는다.
 
-A~Q 17개 대분류와 67개 세부 연구영역의 이름·번호·주소는 바뀌지 않는다. 이 분류의 페이지는 기존 영역 페이지에 이미 있는 내용을 다시 쓰지 않고, 그 페이지로 연결한 뒤 현장 판단에 필요한 조건·증거·남은 질문만 덧붙인다.
+A~Q 17개 대분류와 67개 세부 연구영역의 이름·번호·주소는 바뀌지 않는다. 이 스터디의 페이지는 기존 영역 페이지에 이미 있는 내용을 다시 쓰지 않고, 그 페이지로 연결한 뒤 현장 판단에 필요한 조건·증거·남은 질문만 덧붙인다.
 
-## 이 분류가 생긴 배경
+## 이 스터디가 생긴 배경
 
 최근 ROP 관련 공개 발표에서 실제 현장 적용 중 겪은 문제가 소개됐다. 기름 묻은 바닥, 투명·반사 재질, 어두운 구간, 특징이 적은 공간, 계단 주변 물체, 파지 공간 부족, 승강기 안 통신 음영 같은 것들이다. 이 발표 내용을 출발점으로 기존 위키와의 차이를 대조하고, 공개 원문으로 확인할 수 있는 부분과 확인할 수 없는 부분을 나눠 조사했다.
 
-조사는 두 단계로 했다. 먼저 외부 조사가 기존 위키와의 차이표, 발표 주장 검증표, 판단표, 후속 질문을 만들었다. 이어서 그 결과가 인용한 공개 출처 23개를 원문과 다시 대조했고, 위키 내부 연결과 시뮬레이터 코드 인용도 저장소와 대조했다. 이 분류에는 두 번째 단계에서 확인된 내용만 실었다. 원문 대조에서 고친 날짜·조문·절 이름은 [근거와 남은 질문](evidence-and-open-questions.md)에 정리했다.
+조사는 두 단계로 했다. 먼저 외부 조사가 기존 위키와의 차이표, 발표 주장 검증표, 판단표, 후속 질문을 만들었다. 이어서 그 결과가 인용한 공개 출처 23개를 원문과 다시 대조했고, 위키 내부 연결과 시뮬레이터 코드 인용도 저장소와 대조했다. 이 스터디에는 두 번째 단계에서 확인된 내용만 실었다. 원문 대조에서 고친 날짜·조문·절 이름은 [근거와 남은 질문](evidence-and-open-questions.md)에 정리했다.
 
 ## 근거 표기
 
-이 분류의 모든 문장은 아래 다섯 가지 중 하나로 읽는다. 같은 문단에 여러 종류가 섞이면 문장마다 따로 표시한다.
+이 스터디의 모든 문장은 아래 다섯 가지 중 하나로 읽는다. 같은 문단에 여러 종류가 섞이면 문장마다 따로 표시한다.
 
 | 표기 | 뜻 | 쓰는 범위 |
 |---|---|---|
@@ -62,7 +62,7 @@ A~Q 17개 대분류와 67개 세부 연구영역의 이름·번호·주소는 �
 
 ## 기존 분류와의 관계
 
-이 분류는 아래 세부 연구영역과 가장 많이 겹친다. 각 페이지의 "7. 연결 영역"이 구체적인 절을 가리킨다.
+이 스터디는 [스터디](../index.md) 섹션 안의 한 묶음이며, 아래 세부 연구영역과 가장 많이 겹친다. 각 페이지의 "7. 연결 영역"이 구체적인 절을 가리킨다.
 
 - B. 로봇 온톨로지: [4. 이기종 로봇 등록](../../categories/robot-ontology/heterogeneous-robot-registration.md), [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md), [6. 온톨로지 기반 시스템·로봇 연동](../../categories/robot-ontology/ontology-based-system-and-robot-integration.md), [7. 온톨로지 검증·변경 관리](../../categories/robot-ontology/ontology-verification-and-change-management.md)
 - 연동: [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md), [21. 상호운용 표준·적합성](../../categories/integration/interoperability-standards-and-conformance.md), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md)
@@ -73,7 +73,7 @@ A~Q 17개 대분류와 67개 세부 연구영역의 이름·번호·주소는 �
 - 검증·배포: [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md), [56. 운영 이관·확대·교육](../../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md)
 - 현장 유형: [62. 제조 공장](../../categories/site-type-applications/manufacturing-plant.md), [63. 병원·의료](../../categories/site-type-applications/hospital-and-healthcare.md), [64. 상업 시설](../../categories/site-type-applications/commercial-facilities.md), [65. 가정·공동주택](../../categories/site-type-applications/home-and-apartment.md), [66. 실외](../../categories/site-type-applications/outdoor.md)
 
-능력 표현은 중점 연구 트랙 [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md)의 [능력 온톨로지 초안](../../tracks/manual-capability-ontology/ontology-draft.md)이 6절에서 "운용 구역·환경 조건"을 아직 반영하지 않은 질문으로 남겨 두었다. 이 분류의 [환경 조건을 반영한 로봇 능력](context-aware-capabilities.md)은 그 질문에 대한 제안이며 초안을 바꾸지 않는다.
+능력 표현은 중점 연구 트랙 [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md)의 [능력 온톨로지 초안](../../tracks/manual-capability-ontology/ontology-draft.md)이 6절에서 "운용 구역·환경 조건"을 아직 반영하지 않은 질문으로 남겨 두었다. 이 스터디의 [환경 조건을 반영한 로봇 능력](context-aware-capabilities.md)은 그 질문에 대한 제안이며 초안을 바꾸지 않는다.
 
 ## 공개 범위와 싣지 않은 것
 

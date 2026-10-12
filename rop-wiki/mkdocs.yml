@@ -2,7 +2,7 @@
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
-# 4.8 에 없는 "현장 적용·운영 검증"(docs/field-research/)은 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
+# 4.8 에 없는 "스터디"(docs/field-research/)는 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
 # notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
@@ -276,18 +276,20 @@ nav:
     - 아이디어 1. 로봇 기능 온톨로지: ideas/robot-capability-ontology.md
     - 아이디어 2. 채팅 기반 구성·운영: ideas/chat-based-configuration-and-operation.md
     - 아이디어 3. 건축 도면 자동 인식: ideas/floorplan-recognition.md
-  - 현장 적용·운영 검증:
-    - field-research/field-readiness-rop/index.md
-    - 로봇 친화 현장 조건: field-research/field-readiness-rop/robot-friendly-sites.md
-    - 환경 조건을 반영한 로봇 능력: field-research/field-readiness-rop/context-aware-capabilities.md
-    - 현장 실패 사례: field-research/field-readiness-rop/field-failure-cases.md
-    - 엣지·클라우드와 연동 계약: field-research/field-readiness-rop/edge-cloud-and-integration.md
-    - 업무 연속성과 사람 개입: field-research/field-readiness-rop/continuity-and-human-intervention.md
-    - 이동 점검과 설비 상태 관리: field-research/field-readiness-rop/mobile-inspection-and-phm.md
-    - 리드타임·성숙도와 비용: field-research/field-readiness-rop/lead-time-and-maturity.md
-    - 시뮬레이션 검증 범위: field-research/field-readiness-rop/simulation-validation.md
-    - 제조사 피드백 패키지: field-research/field-readiness-rop/manufacturer-feedback.md
-    - 근거와 남은 질문: field-research/field-readiness-rop/evidence-and-open-questions.md
+  - 스터디:
+    - field-research/index.md
+    - 현장 적용·운영 검증:
+      - field-research/field-readiness-rop/index.md
+      - 로봇 친화 현장 조건: field-research/field-readiness-rop/robot-friendly-sites.md
+      - 환경 조건을 반영한 로봇 능력: field-research/field-readiness-rop/context-aware-capabilities.md
+      - 현장 실패 사례: field-research/field-readiness-rop/field-failure-cases.md
+      - 엣지·클라우드와 연동 계약: field-research/field-readiness-rop/edge-cloud-and-integration.md
+      - 업무 연속성과 사람 개입: field-research/field-readiness-rop/continuity-and-human-intervention.md
+      - 이동 점검과 설비 상태 관리: field-research/field-readiness-rop/mobile-inspection-and-phm.md
+      - 리드타임·성숙도와 비용: field-research/field-readiness-rop/lead-time-and-maturity.md
+      - 시뮬레이션 검증 범위: field-research/field-readiness-rop/simulation-validation.md
+      - 제조사 피드백 패키지: field-research/field-readiness-rop/manufacturer-feedback.md
+      - 근거와 남은 질문: field-research/field-readiness-rop/evidence-and-open-questions.md
   - 주제:
     - topics/index.md
     - '2026':

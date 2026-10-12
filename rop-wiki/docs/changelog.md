@@ -50,6 +50,7 @@ version: 1
 | field-readiness-rop | 생성 | [docs/references/ref-1588.md](references/ref-1588.md) | 참고문헌 ref-1588 등록: ClearGrasp: 3D Shape Estimation of Transparent Objects for M… |
 | field-readiness-rop | 생성 | [docs/references/ref-1589.md](references/ref-1589.md) | 참고문헌 ref-1589 등록: Measuring temperatures (FLIR 사용 설명서 T810605, latest) |
 | field-readiness-rop | 생성 | [docs/references/ref-1590.md](references/ref-1590.md) | 참고문헌 ref-1590 등록: spot-sdk — protos/bosdyn/api/graph_nav/map.proto (master, bl… |
+| field-readiness-rop | 생성 | [docs/field-research/index.md](field-research/index.md) | 스터디 섹션 색인 생성: 현장 적용·운영 검증 스터디를 확장 아이디어 다음의 '스터디' 카테고리 한 묶음으로 둔다 |
 | 2026-10-12-07 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 |
 | 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s6.md](topics/2026/2026-10-12-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 |
 | 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s8.md](topics/2026/2026-10-12-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 |
