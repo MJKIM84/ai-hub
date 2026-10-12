@@ -217,14 +217,15 @@ class TestNav(unittest.TestCase):
         if "주제" in top:
             self.assertLess(f, top.index("주제"))
         got = [p for _, p in flatten_nav([nav[f]])]
-        exp = ["field-research/index.md"] + [f"field-research/field-readiness-rop/{n}"
-                                             for n in paths.FIELD_RESEARCH_PAGE_ORDER["field-readiness-rop"]]
+        exp = ["field-research/index.md"] + [f"field-research/{slug}/{n}"
+                                             for slug in ("field-readiness-rop", "pm-interview-prep")
+                                             for n in paths.FIELD_RESEARCH_PAGE_ORDER[slug]]
         self.assertEqual(got, exp)
         studies = nav[f]["스터디"][1:]
-        self.assertEqual([next(iter(s)) for s in studies], ["현장 적용·운영 검증"], "스터디마다 하나의 하위 섹션")
+        self.assertEqual([next(iter(s)) for s in studies], ["현장 적용·운영 검증", "면접 준비"], "스터디마다 하나의 하위 섹션, 순서 표 순")
         for rel in got[1:]:
             meta, body = fm.read(paths.DOCS / rel)
-            self.assertEqual((meta["type"], meta["research"]), ("field-research", "field-readiness-rop"), rel)
+            self.assertEqual((meta["type"], meta["research"]), ("field-research", rel.split("/")[1]), rel)
         meta, _ = fm.read(paths.DOCS / "field-research" / "index.md")
         self.assertEqual((meta["type"], meta.get("subtype")), ("field-research", "index"))
         ps = _load_script("protect_source")

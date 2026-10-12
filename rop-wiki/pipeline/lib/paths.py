@@ -170,6 +170,11 @@ FIELD_RESEARCH_PAGE_ORDER: dict[str, list[str]] = {
         "lead-time-and-maturity.md", "simulation-validation.md", "manufacturer-feedback.md",
         "evidence-and-open-questions.md",
     ],
+    "pm-interview-prep": [
+        "index.md", "core-materials.md", "robots-and-services.md", "business-model-and-roi.md",
+        "architecture-and-contracts.md", "deployment-and-acceptance.md", "learning-plan.md",
+        "presentation-and-questions.md",
+    ],
 }
 
 # 현장 유형 × 대분류 적용 사례 매트릭스의 축 (원문 21장 연구 방법)
