@@ -20,6 +20,36 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/index.md](field-research/field-readiness-rop/index.md) | 현장 적용·운영 검증: 현장 적용·운영 검증 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/robot-friendly-sites.md](field-research/field-readiness-rop/robot-friendly-sites.md) | 현장 적용·운영 검증: 로봇 친화 현장 조건 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/context-aware-capabilities.md](field-research/field-readiness-rop/context-aware-capabilities.md) | 현장 적용·운영 검증: 환경 조건을 반영한 로봇 능력 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/field-failure-cases.md](field-research/field-readiness-rop/field-failure-cases.md) | 현장 적용·운영 검증: 현장 실패 사례 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/edge-cloud-and-integration.md](field-research/field-readiness-rop/edge-cloud-and-integration.md) | 현장 적용·운영 검증: 엣지·클라우드와 연동 계약 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/continuity-and-human-intervention.md](field-research/field-readiness-rop/continuity-and-human-intervention.md) | 현장 적용·운영 검증: 업무 연속성과 사람 개입 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/mobile-inspection-and-phm.md](field-research/field-readiness-rop/mobile-inspection-and-phm.md) | 현장 적용·운영 검증: 이동 점검과 설비 상태 관리 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/lead-time-and-maturity.md](field-research/field-readiness-rop/lead-time-and-maturity.md) | 현장 적용·운영 검증: 리드타임·성숙도와 비용 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/simulation-validation.md](field-research/field-readiness-rop/simulation-validation.md) | 현장 적용·운영 검증: 시뮬레이션 검증 범위 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/manufacturer-feedback.md](field-research/field-readiness-rop/manufacturer-feedback.md) | 현장 적용·운영 검증: 제조사 피드백 패키지 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/evidence-and-open-questions.md](field-research/field-readiness-rop/evidence-and-open-questions.md) | 현장 적용·운영 검증: 근거와 남은 질문 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/references/ref-1572.md](references/ref-1572.md) | 참고문헌 ref-1572 등록: Hyundai Motor Group to Acquire Controlling Interest in Bosto… |
+| field-readiness-rop | 생성 | [docs/references/ref-1573.md](references/ref-1573.md) | 참고문헌 ref-1573 등록: Hyundai Motor Group Completes Acquisition of Boston Dynamics… |
+| field-readiness-rop | 생성 | [docs/references/ref-1574.md](references/ref-1574.md) | 참고문헌 ref-1574 등록: An Electric New Era for Atlas |
+| field-readiness-rop | 생성 | [docs/references/ref-1575.md](references/ref-1575.md) | 참고문헌 ref-1575 등록: Boston Dynamics Unveils New Atlas Robot to Revolutionize Ind… |
+| field-readiness-rop | 생성 | [docs/references/ref-1576.md](references/ref-1576.md) | 참고문헌 ref-1576 등록: Hyundai Motor Group Announces AI Robotics Strategy to Lead H… |
+| field-readiness-rop | 생성 | [docs/references/ref-1577.md](references/ref-1577.md) | 참고문헌 ref-1577 등록: spot-sdk — protos/bosdyn/api/spot/robot_command.proto (maste… |
+| field-readiness-rop | 생성 | [docs/references/ref-1578.md](references/ref-1578.md) | 참고문헌 ref-1578 등록: spot-sdk — docs/concepts/autonomy/graphnav_tech_summary.md (… |
+| field-readiness-rop | 생성 | [docs/references/ref-1579.md](references/ref-1579.md) | 참고문헌 ref-1579 등록: spot-sdk — docs/concepts/autonomy/graphnav_and_robot_locomot… |
+| field-readiness-rop | 생성 | [docs/references/ref-1580.md](references/ref-1580.md) | 참고문헌 ref-1580 등록: Performance of Emergency Response Robots |
+| field-readiness-rop | 생성 | [docs/references/ref-1581.md](references/ref-1581.md) | 참고문헌 ref-1581 등록: Deadlines \| gRPC |
+| field-readiness-rop | 생성 | [docs/references/ref-1582.md](references/ref-1582.md) | 참고문헌 ref-1582 등록: Apache Kafka 4.1 Documentation — Design (Message Delivery Se… |
+| field-readiness-rop | 생성 | [docs/references/ref-1583.md](references/ref-1583.md) | 참고문헌 ref-1583 등록: Specification — Model Context Protocol (2025-11-25) |
+| field-readiness-rop | 생성 | [docs/references/ref-1584.md](references/ref-1584.md) | 참고문헌 ref-1584 등록: Agent2Agent (A2A) Protocol Specification v0.3.0 |
+| field-readiness-rop | 생성 | [docs/references/ref-1585.md](references/ref-1585.md) | 참고문헌 ref-1585 등록: 산업안전보건기준에 관한 규칙 제8조(조도) |
+| field-readiness-rop | 생성 | [docs/references/ref-1586.md](references/ref-1586.md) | 참고문헌 ref-1586 등록: 건축법 시행령 제51조(거실의 채광 등) |
+| field-readiness-rop | 생성 | [docs/references/ref-1587.md](references/ref-1587.md) | 참고문헌 ref-1587 등록: 건축물의 피난·방화구조 등의 기준에 관한 규칙 제18조의2(소방관 진입창의 기준) |
+| field-readiness-rop | 생성 | [docs/references/ref-1588.md](references/ref-1588.md) | 참고문헌 ref-1588 등록: ClearGrasp: 3D Shape Estimation of Transparent Objects for M… |
+| field-readiness-rop | 생성 | [docs/references/ref-1589.md](references/ref-1589.md) | 참고문헌 ref-1589 등록: Measuring temperatures (FLIR 사용 설명서 T810605, latest) |
+| field-readiness-rop | 생성 | [docs/references/ref-1590.md](references/ref-1590.md) | 참고문헌 ref-1590 등록: spot-sdk — protos/bosdyn/api/graph_nav/map.proto (master, bl… |
 | 2026-10-12-07 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 차등 갱신: 5절 물류창고 사례(연구팀 설치 카메라 30대·임무 76건·개입 4회)·실외 사례(실물 2대·데이터셋 3대·재위치 64%·65%·임무 시험) 보강, 6~8·10·11절에 2026-10-12 갱신 소절(평가 조건·근거 위치·BIM 정합 요약·새 연구 4건·연결·부분 근거·새 질문 4건), 9절 카메라 주체 문장 정정, 13절 각주 신규 10건·접근일 갱신. 2차: 10절 갱신 소절 첫머리에 기존 분리 페이지(2026-09-30-area45-s10) 연결 문장 추가 |
 | 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s6.md](topics/2026/2026-10-12-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,996자)을 옮겼다 |
 | 2026-10-12-07 | 생성 | [docs/topics/2026/2026-10-12-area45-s8.md](topics/2026/2026-10-12-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(2,545자)을 옮겼다 |
