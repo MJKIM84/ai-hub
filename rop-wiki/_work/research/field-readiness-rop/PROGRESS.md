@@ -21,7 +21,7 @@
 |02_event-claim-verification.md|완료|발표 주장 16행, 날짜/법령/SDK 구별, 전사 미확인 유지|
 |03_research-findings.md|완료|A~F, 조건부 능력·통신 계약·연속성·성과 정의|
 |04_field-failure-cases.md|완료|일반화한 10사례·반증 시험·재현 패키지|
-|05_decision-matrices.md|대기|설정/경로/시설 변경 및 책임·비용 판단|
+|05_decision-matrices.md|완료|10개 조건 측정표·3대안 판단·업종/책임/비용·인수 관문|
 |06_simulation-validation-boundaries.md|대기|코드 근거와 모델·실측 보정 경계|
 |07_research-backlog.md|대기|미확인 질문·수용 기준·우선순위|
 |08_wiki-publication-map.md|대기|기존 파일·절 연결 제안|
@@ -42,3 +42,5 @@
 - 03_research-findings.md 완료: A~F, 조건부 능력·통신 계약·연속성·성과 정의。
 
 - 04_field-failure-cases.md 완료: 일반화한 10사례·반증 시험·재현 패키지。
+
+- 05_decision-matrices.md 완료: 10개 조건 측정표·3대안 판단·업종/책임/비용·인수 관문。
