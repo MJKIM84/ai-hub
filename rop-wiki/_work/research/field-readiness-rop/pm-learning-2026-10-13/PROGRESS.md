@@ -8,7 +8,7 @@
 |파일|상태|완료 내용|
 |---|---|---|
 |01_core-materials.md|완료|학습 단위 18개, 원문·판·일자·절·한계, 실패 기록|
-|02_robots-services-business.md|작성 예정|제품·서비스·권한·사업·ROI|
+|02_robots-services-business.md|완료|제품 비교·기종 선택 조건·역할 권한·서비스 3종의 6단계 흐름·비용과 ROI 가정 계산|
 |03_architecture-contracts.md|작성 예정|책임·구성도·시퀀스·API와 상태 계약|
 |04_deployment-tests-operations.md|작성 예정|현장 조사·RACI·시험·장애·법 적용|
 |README.md|작성 예정|PM 결정·학습 순서·발표 적용·질문 10개|
