@@ -207,6 +207,33 @@ class TestNav(unittest.TestCase):
         self.assertEqual(ideas[:4], ["ideas/index.md", "ideas/robot-capability-ontology.md", "ideas/chat-based-configuration-and-operation.md",
                                      "ideas/floorplan-recognition.md"])
 
+    def test_field_research_section(self):
+        """현장 적용·운영 검증: 확장 아이디어 바로 다음, 개요 → 순서 표의 10개 페이지. 67개 영역 분류는 그대로."""
+        nav = build_nav()
+        top = [next(iter(i)) if isinstance(i, dict) else i for i in nav]
+        self.assertIn("현장 적용·운영 검증", top)
+        f = top.index("현장 적용·운영 검증")
+        self.assertEqual(top[f - 1], "확장 아이디어")
+        if "주제" in top:
+            self.assertLess(f, top.index("주제"))
+        got = [p for _, p in flatten_nav([nav[f]])]
+        exp = [f"field-research/field-readiness-rop/{n}" for n in paths.FIELD_RESEARCH_PAGE_ORDER["field-readiness-rop"]]
+        self.assertEqual(got, exp)
+        for rel in got:
+            meta, body = fm.read(paths.DOCS / rel)
+            self.assertEqual((meta["type"], meta["research"]), ("field-research", "field-readiness-rop"), rel)
+        ps = _load_script("protect_source")
+        kinds = [ps._nav_kind(i) for i in nav]
+        bad = list(nav)
+        bad.insert(kinds.index("tracks"), bad.pop(kinds.index("field-research")))   # 트랙 앞으로
+        self.assertTrue(any("field-research" in e for e in ps.check_nav_structure(bad)))
+        bad2 = list(nav)
+        sec = dict(bad2[f])
+        k = next(iter(sec))
+        sec[k] = [sec[k][0], *reversed(sec[k][1:])]                                # 하위 순서 뒤집기
+        bad2[f] = sec
+        self.assertTrue(any("현장 적용·운영 검증 하위 순서" in e for e in ps.check_nav_structure(bad2)))
+
     def test_track_children_use_draft_page(self):
         nav = build_nav()
         tracks = next(v for i in nav if isinstance(i, dict) for k, v in i.items() if k == "중점 연구 트랙")

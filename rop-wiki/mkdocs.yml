@@ -2,6 +2,7 @@
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
+# 4.8 에 없는 "현장 적용·운영 검증"(docs/field-research/)은 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
 # notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
@@ -275,6 +276,18 @@ nav:
     - 아이디어 1. 로봇 기능 온톨로지: ideas/robot-capability-ontology.md
     - 아이디어 2. 채팅 기반 구성·운영: ideas/chat-based-configuration-and-operation.md
     - 아이디어 3. 건축 도면 자동 인식: ideas/floorplan-recognition.md
+  - 현장 적용·운영 검증:
+    - field-research/field-readiness-rop/index.md
+    - 로봇 친화 현장 조건: field-research/field-readiness-rop/robot-friendly-sites.md
+    - 환경 조건을 반영한 로봇 능력: field-research/field-readiness-rop/context-aware-capabilities.md
+    - 현장 실패 사례: field-research/field-readiness-rop/field-failure-cases.md
+    - 엣지·클라우드와 연동 계약: field-research/field-readiness-rop/edge-cloud-and-integration.md
+    - 업무 연속성과 사람 개입: field-research/field-readiness-rop/continuity-and-human-intervention.md
+    - 이동 점검과 설비 상태 관리: field-research/field-readiness-rop/mobile-inspection-and-phm.md
+    - 리드타임·성숙도와 비용: field-research/field-readiness-rop/lead-time-and-maturity.md
+    - 시뮬레이션 검증 범위: field-research/field-readiness-rop/simulation-validation.md
+    - 제조사 피드백 패키지: field-research/field-readiness-rop/manufacturer-feedback.md
+    - 근거와 남은 질문: field-research/field-readiness-rop/evidence-and-open-questions.md
   - 주제:
     - topics/index.md
     - '2026':
@@ -2042,8 +2055,28 @@ nav:
     - ref-157 — IndoorGML-SWG — README and OGC IndoorGML 2.0 Part 2a – XML Encoding (26-042, Candidate SWG Draft): references/ref-157.md
     - ref-1570 — 다중 로봇 제조 물류 작업을 위한 안전성과 효율성 학습 (Safety and Efficiency Learning for Multi-Robot Manufacturing Logistics Tasks): references/ref-1570.md
     - ref-1571 — 현대글로비스가 그리는 자동화를 넘어선 물류의 미래: references/ref-1571.md
+    - ? ref-1572 — Hyundai Motor Group to Acquire Controlling Interest in Boston Dynamics from SoftBank Group, Opening a New Chapter in the Robotics and Mobility Industry
+      : references/ref-1572.md
+    - ref-1573 — Hyundai Motor Group Completes Acquisition of Boston Dynamics from SoftBank: references/ref-1573.md
+    - ref-1574 — An Electric New Era for Atlas: references/ref-1574.md
+    - ref-1575 — Boston Dynamics Unveils New Atlas Robot to Revolutionize Industry: references/ref-1575.md
+    - ref-1576 — Hyundai Motor Group Announces AI Robotics Strategy to Lead Human-Centered Robotics Era at CES 2026: references/ref-1576.md
+    - ref-1577 — spot-sdk — protos/bosdyn/api/spot/robot_command.proto (master, blob 183f8fa): references/ref-1577.md
+    - ref-1578 — spot-sdk — docs/concepts/autonomy/graphnav_tech_summary.md (master, blob b92aad6): references/ref-1578.md
+    - ref-1579 — spot-sdk — docs/concepts/autonomy/graphnav_and_robot_locomotion.md (master, blob 1362051): references/ref-1579.md
     - ref-158 — ISO 19164:2024 - Geographic information — Indoor feature model: references/ref-158.md
+    - ref-1580 — Performance of Emergency Response Robots: references/ref-1580.md
+    - ref-1581 — Deadlines | gRPC: references/ref-1581.md
+    - ref-1582 — Apache Kafka 4.1 Documentation — Design (Message Delivery Semantics): references/ref-1582.md
+    - ref-1583 — Specification — Model Context Protocol (2025-11-25): references/ref-1583.md
+    - ref-1584 — Agent2Agent (A2A) Protocol Specification v0.3.0: references/ref-1584.md
+    - ref-1585 — 산업안전보건기준에 관한 규칙 제8조(조도): references/ref-1585.md
+    - ref-1586 — 건축법 시행령 제51조(거실의 채광 등): references/ref-1586.md
+    - ref-1587 — 건축물의 피난·방화구조 등의 기준에 관한 규칙 제18조의2(소방관 진입창의 기준): references/ref-1587.md
+    - 'ref-1588 — ClearGrasp: 3D Shape Estimation of Transparent Objects for Manipulation': references/ref-1588.md
+    - ref-1589 — Measuring temperatures (FLIR 사용 설명서 T810605, latest): references/ref-1589.md
     - ref-159 — ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability: references/ref-159.md
+    - ref-1590 — spot-sdk — protos/bosdyn/api/graph_nav/map.proto (master, blob f37e496): references/ref-1590.md
     - ref-160 — Lifelong 3D Mapping Framework for Hand-held & Robot-mounted LiDAR Mapping Systems: references/ref-160.md
     - 'ref-161 — Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach': references/ref-161.md
     - ref-162 — Identifying a physical location - GLN: references/ref-162.md
