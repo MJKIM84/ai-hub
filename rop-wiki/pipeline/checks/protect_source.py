@@ -315,7 +315,7 @@ def all_doc_rels() -> list[str]:
 SPEC_48_ORDER = ["home", "about", *[f"cat:{l}" for l in paths.CATEGORY_LETTERS], "tracks", "topics", "glossary",
                  "references", "standards", "open-questions", "site-matrix", "changelog", "metrics", "logs"]
 # 4.8 목록 밖 섹션 → 바로 앞에 와야 하는 섹션 [가정]
-NAV_EXTRA_AFTER = {"ideas": "tracks"}
+NAV_EXTRA_AFTER = {"ideas": "tracks", "field-research": "ideas"}
 NAV_TRAILING = ["corrections"]            # 4.8 목록 밖, 맨 뒤(로그 다음)에만 [가정]
 FIRST_TRACK = "manual-capability-ontology"  # 첫 트랙(사양서 8.1). 트랙이 늘어도 맨 앞
 
@@ -335,7 +335,7 @@ def _nav_kind(item) -> str | None:
         return f"cat:{letter}" if letter else None
     if path.endswith(".md") and "/" not in path:
         return path[:-3]
-    return {"about": "about", "tracks": "tracks", "ideas": "ideas", "topics": "topics", "glossary": "glossary",
+    return {"about": "about", "tracks": "tracks", "ideas": "ideas", "field-research": "field-research", "topics": "topics", "glossary": "glossary",
             "references": "references", "standards": "standards", "logs": "logs"}.get(top)
 
 
@@ -393,6 +393,12 @@ def check_nav_structure(nav: list) -> list[str]:
         exp = [paths.IDEAS_INDEX] + [r for r in paths.idea_page_rels() if (paths.DOCS / r).is_file()]
         if got[:len(exp)] != exp:
             errs.append(f"mkdocs.yml: 확장 아이디어 하위 순서가 다름: 기대 {exp}, 실제 {got}")
+    # 현장 적용·운영 검증: 조사마다 개요 → 순서 표의 페이지
+    if "field-research" in kinds:
+        got = [p for _, p in flatten_nav([nav[kinds.index("field-research")]])]
+        exp = [r for slug in paths.field_research_slugs() for r in paths.field_research_page_rels(slug)]
+        if got != exp:
+            errs.append(f"mkdocs.yml: 현장 적용·운영 검증 하위 순서가 다름: 기대 {exp}, 실제 {got}")
     return errs
 
 

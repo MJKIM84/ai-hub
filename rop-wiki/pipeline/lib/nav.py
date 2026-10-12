@@ -22,6 +22,7 @@ SITE_NAME = "ROP 연구 위키"
 SITE_DESCRIPTION = "로봇 오케스트레이션 플랫폼을 구현하고 운영하는 일의 기술 지형도"
 TRACKS_LABEL = "중점 연구 트랙"
 IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
+FIELD_LABEL = "현장 적용·운영 검증"  # 사양서 4.8 목록 밖의 구축자 추가 섹션(docs/field-research/) [가정]
 
 # 공개 배포 설정(config/ops.yaml 의 publish 절, notify.site_url) — 이 값들은 write_mkdocs_yml() 이 매 실행마다
 # 다시 반영하므로, 켜고 끄려면 mkdocs.yml 을 손으로 고치지 말고 config/ops.yaml 을 고친 뒤 퍼블리셔(또는
@@ -49,6 +50,7 @@ MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
+# 4.8 에 없는 "현장 적용·운영 검증"(docs/field-research/)은 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
 # notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
@@ -216,6 +218,22 @@ def build_nav(logs_public: bool | None = None) -> list:
         nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, [_page(r) for r in ideas]))
     elif ideas:
         nav.append({IDEAS_LABEL: [_page(r) for r in ideas]})
+
+    # 4-2. 현장 적용·운영 검증 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 조사 폴더마다 개요(index.md) → 순서 표의 페이지.
+    #      조사가 하나면 그 개요를 섹션 인덱스로 쓰고, 여럿이면 조사마다 하위 섹션을 만든다
+    field = []
+    for slug in paths.field_research_slugs():
+        rels = paths.field_research_page_rels(slug)
+        idx = f"{paths.FIELD_RESEARCH_DIR}/{slug}/index.md"
+        children = [_page(r) for r in rels if r != idx]
+        if _exists(idx):
+            field.append((idx, children))
+        elif children:
+            field.append((None, children))
+    if len(field) == 1 and field[0][0]:
+        nav.append(_section_with_index(FIELD_LABEL, field[0][0], field[0][1]))
+    elif field:
+        nav.append({FIELD_LABEL: [_section_with_index(_title(i), i, c) if i else {FIELD_LABEL: c} for i, c in field]})
 
     # 5. 주제 (연도별 하위, 최신 우선)
     topics_dir = DOCS / "topics"

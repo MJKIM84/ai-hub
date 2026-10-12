@@ -158,6 +158,19 @@ DEFAULT_DRAFT_VERSIONS: str = "ontology_versions.json"
 IDEAS_DIR: str = "ideas"
 IDEAS_INDEX: str = "ideas/index.md"
 
+# 현장 적용·운영 검증 섹션(docs/field-research/<조사 slug>/). 4.8 목록 밖의 구축자 추가 섹션으로, 67개 영역 분류와
+# 별개인 현장 검증 조사 결과를 둔다 [가정]. 조사마다 폴더 하나, 폴더 안 페이지 순서는 아래 표가 정한다
+# (표에 없는 페이지는 뒤에 파일명순).
+FIELD_RESEARCH_DIR: str = "field-research"
+FIELD_RESEARCH_PAGE_ORDER: dict[str, list[str]] = {
+    "field-readiness-rop": [
+        "index.md", "robot-friendly-sites.md", "context-aware-capabilities.md", "field-failure-cases.md",
+        "edge-cloud-and-integration.md", "continuity-and-human-intervention.md", "mobile-inspection-and-phm.md",
+        "lead-time-and-maturity.md", "simulation-validation.md", "manufacturer-feedback.md",
+        "evidence-and-open-questions.md",
+    ],
+}
+
 # 현장 유형 × 대분류 적용 사례 매트릭스의 축 (원문 21장 연구 방법)
 SITE_TYPES: list[str] = ["물류창고", "제조 공장", "병원", "상업 시설", "가정", "실외", "기타"]
 # 적용 사례마다 채우는 여섯 항목 (원문 21장)
@@ -301,6 +314,25 @@ def idea_page_rels() -> list[str]:
         if rel and rel not in out:
             out.append(rel)
     return out
+
+
+def field_research_slugs() -> list[str]:
+    """현장 검증 조사 폴더 slug — 순서 표에 있는 조사가 먼저(표 순서), 나머지는 이름순."""
+    d = DOCS / FIELD_RESEARCH_DIR
+    present = sorted(p.name for p in d.iterdir() if p.is_dir()) if d.is_dir() else []
+    known = [s for s in FIELD_RESEARCH_PAGE_ORDER if s in present]
+    return known + [s for s in present if s not in known]
+
+
+def field_research_page_rels(slug: str) -> list[str]:
+    """한 조사 폴더의 페이지(docs 기준 경로)를 내비 순서로: 순서 표의 페이지(있는 것만) → 나머지 파일명순."""
+    d = DOCS / FIELD_RESEARCH_DIR / slug
+    if not d.is_dir():
+        return []
+    order = FIELD_RESEARCH_PAGE_ORDER.get(slug, ["index.md"])
+    names = [n for n in order if (d / n).is_file()]
+    names += sorted(p.name for p in d.glob("*.md") if p.name not in names)
+    return [f"{FIELD_RESEARCH_DIR}/{slug}/{n}" for n in names]
 
 
 def idea_page_rel(cfg: dict) -> str | None:

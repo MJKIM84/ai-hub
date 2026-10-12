@@ -20,6 +20,8 @@ TYPE_VALUES: list[str] = [
     "ontology-draft", "track-log",
     # 구축자 추가 유형 [가정]: 확장 아이디어 페이지(docs/ideas/). 색인(ideas/index.md)은 subtype: index
     "idea",
+    # 구축자 추가 유형 [가정]: 현장 적용·운영 검증 조사 페이지(docs/field-research/<조사 slug>/). research 는 조사 slug
+    "field-research",
 ]
 
 STATUS_VALUES: list[str] = ["seed", "draft", "verified", "published", "needs_update", "deprecated"]
@@ -49,6 +51,7 @@ TYPE_REQUIRED: dict[str, list[str]] = {
     "ontology-draft": ["track"],
     "track-log": ["track"],
     "idea": ["track"],          # 아이디어 페이지는 그 아이디어를 연구하는 트랙 slug 를 가진다(색인은 면제) [가정]
+    "field-research": ["research"],  # 현장 검증 조사 페이지는 자기 조사 폴더 slug 를 가진다(개요 포함) [가정]
 }
 
 _ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
