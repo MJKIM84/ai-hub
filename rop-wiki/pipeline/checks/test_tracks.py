@@ -208,20 +208,25 @@ class TestNav(unittest.TestCase):
                                      "ideas/floorplan-recognition.md"])
 
     def test_field_research_section(self):
-        """현장 적용·운영 검증: 확장 아이디어 바로 다음, 개요 → 순서 표의 10개 페이지. 67개 영역 분류는 그대로."""
+        """스터디: 확장 아이디어 바로 다음, 색인 → 스터디(현장 적용·운영 검증) 개요 → 순서 표의 10개 페이지. 67개 영역 분류는 그대로."""
         nav = build_nav()
         top = [next(iter(i)) if isinstance(i, dict) else i for i in nav]
-        self.assertIn("현장 적용·운영 검증", top)
-        f = top.index("현장 적용·운영 검증")
+        self.assertIn("스터디", top)
+        f = top.index("스터디")
         self.assertEqual(top[f - 1], "확장 아이디어")
         if "주제" in top:
             self.assertLess(f, top.index("주제"))
         got = [p for _, p in flatten_nav([nav[f]])]
-        exp = [f"field-research/field-readiness-rop/{n}" for n in paths.FIELD_RESEARCH_PAGE_ORDER["field-readiness-rop"]]
+        exp = ["field-research/index.md"] + [f"field-research/field-readiness-rop/{n}"
+                                             for n in paths.FIELD_RESEARCH_PAGE_ORDER["field-readiness-rop"]]
         self.assertEqual(got, exp)
-        for rel in got:
+        studies = nav[f]["스터디"][1:]
+        self.assertEqual([next(iter(s)) for s in studies], ["현장 적용·운영 검증"], "스터디마다 하나의 하위 섹션")
+        for rel in got[1:]:
             meta, body = fm.read(paths.DOCS / rel)
             self.assertEqual((meta["type"], meta["research"]), ("field-research", "field-readiness-rop"), rel)
+        meta, _ = fm.read(paths.DOCS / "field-research" / "index.md")
+        self.assertEqual((meta["type"], meta.get("subtype")), ("field-research", "index"))
         ps = _load_script("protect_source")
         kinds = [ps._nav_kind(i) for i in nav]
         bad = list(nav)
@@ -230,9 +235,9 @@ class TestNav(unittest.TestCase):
         bad2 = list(nav)
         sec = dict(bad2[f])
         k = next(iter(sec))
-        sec[k] = [sec[k][0], *reversed(sec[k][1:])]                                # 하위 순서 뒤집기
-        bad2[f] = sec
-        self.assertTrue(any("현장 적용·운영 검증 하위 순서" in e for e in ps.check_nav_structure(bad2)))
+        sec[k] = [sec[k][0], *reversed(sec[k][1:])] if len(sec[k]) > 2 else [sec[k][0], {"현장 적용·운영 검증": list(reversed(next(iter(sec[k][1].values()))))}]
+        bad2[f] = sec                                                                # 하위 순서 뒤집기
+        self.assertTrue(any("스터디 하위 순서" in e for e in ps.check_nav_structure(bad2)))
 
     def test_track_children_use_draft_page(self):
         nav = build_nav()

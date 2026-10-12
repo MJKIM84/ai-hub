@@ -393,12 +393,13 @@ def check_nav_structure(nav: list) -> list[str]:
         exp = [paths.IDEAS_INDEX] + [r for r in paths.idea_page_rels() if (paths.DOCS / r).is_file()]
         if got[:len(exp)] != exp:
             errs.append(f"mkdocs.yml: 확장 아이디어 하위 순서가 다름: 기대 {exp}, 실제 {got}")
-    # 현장 적용·운영 검증: 조사마다 개요 → 순서 표의 페이지
+    # 스터디: 색인 → 스터디마다 개요 → 순서 표의 페이지
     if "field-research" in kinds:
         got = [p for _, p in flatten_nav([nav[kinds.index("field-research")]])]
-        exp = [r for slug in paths.field_research_slugs() for r in paths.field_research_page_rels(slug)]
+        exp = ([paths.FIELD_RESEARCH_INDEX] if (paths.DOCS / paths.FIELD_RESEARCH_INDEX).is_file() else []) + \
+              [r for slug in paths.field_research_slugs() for r in paths.field_research_page_rels(slug)]
         if got != exp:
-            errs.append(f"mkdocs.yml: 현장 적용·운영 검증 하위 순서가 다름: 기대 {exp}, 실제 {got}")
+            errs.append(f"mkdocs.yml: 스터디 하위 순서가 다름: 기대 {exp}, 실제 {got}")
     return errs
 
 

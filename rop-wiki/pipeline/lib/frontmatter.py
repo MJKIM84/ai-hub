@@ -20,7 +20,7 @@ TYPE_VALUES: list[str] = [
     "ontology-draft", "track-log",
     # 구축자 추가 유형 [가정]: 확장 아이디어 페이지(docs/ideas/). 색인(ideas/index.md)은 subtype: index
     "idea",
-    # 구축자 추가 유형 [가정]: 현장 적용·운영 검증 조사 페이지(docs/field-research/<조사 slug>/). research 는 조사 slug
+    # 구축자 추가 유형 [가정]: 스터디 페이지(docs/field-research/<스터디 slug>/). research 는 스터디 slug, 색인(field-research/index.md)은 subtype: index
     "field-research",
 ]
 
@@ -32,7 +32,7 @@ TRACK_SUBTYPES: list[str] = ["comparison", "matrix", "evaluation", "experiments"
 
 # subtype: index(색인 페이지)를 둘 수 있는 type. 이 type 의 색인 페이지(glossary/index.md, references/index.md, standards/index.md,
 # topics/index.md, logs/index.md)만 아래 유형별 추가 필수 필드를 면제한다 [가정]
-INDEX_SUBTYPE_TYPES: list[str] = ["glossary", "reference", "standard", "topic", "log", "idea"]
+INDEX_SUBTYPE_TYPES: list[str] = ["glossary", "reference", "standard", "topic", "log", "idea", "field-research"]
 
 # 프런트매터 날짜 필드. dumps() 는 이 키의 ISO 날짜 문자열만 따옴표 없는 날짜로 쓴다
 DATE_KEYS: tuple[str, ...] = ("created", "updated", "accessed", "last_run", "published")
@@ -51,7 +51,7 @@ TYPE_REQUIRED: dict[str, list[str]] = {
     "ontology-draft": ["track"],
     "track-log": ["track"],
     "idea": ["track"],          # 아이디어 페이지는 그 아이디어를 연구하는 트랙 slug 를 가진다(색인은 면제) [가정]
-    "field-research": ["research"],  # 현장 검증 조사 페이지는 자기 조사 폴더 slug 를 가진다(개요 포함) [가정]
+    "field-research": ["research"],  # 스터디 페이지는 자기 스터디 폴더 slug 를 가진다(개요 포함, 섹션 색인은 면제) [가정]
 }
 
 _ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
