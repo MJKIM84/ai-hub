@@ -10,7 +10,7 @@
 |01_core-materials.md|완료|학습 단위 18개, 원문·판·일자·절·한계, 실패 기록|
 |02_robots-services-business.md|완료|제품 비교·기종 선택 조건·역할 권한·서비스 3종의 6단계 흐름·비용과 ROI 가정 계산|
 |03_architecture-contracts.md|완료|시스템 구성도·배송 시퀀스·책임 경계·ID/상태·API/이벤트 예시·단절/시설/보안/LLM 정책|
-|04_deployment-tests-operations.md|작성 예정|현장 조사·RACI·시험·장애·법 적용|
+|04_deployment-tests-operations.md|완료|8단계 구축·현장 조사·RACI·14개 시험·복구·국내 법령/전문 검토 범위|
 |README.md|작성 예정|PM 결정·학습 순서·발표 적용·질문 10개|
 
 재개 시 이 파일을 먼저 읽고 미완료 파일을 이어서 작성한다. 각 파일 완성 시 이 표와 함께 연구 브랜치에 커밋한다.
