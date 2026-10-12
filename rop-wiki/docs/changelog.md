@@ -20,7 +20,7 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
-| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/index.md](field-research/field-readiness-rop/index.md) | 현장 적용·운영 검증: 현장 적용·운영 검증 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/index.md](field-research/field-readiness-rop/index.md) | 현장 적용·운영 검증 분류 개요 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시, 근거 표기·페이지 구성·공개 범위 안내) |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/robot-friendly-sites.md](field-research/field-readiness-rop/robot-friendly-sites.md) | 현장 적용·운영 검증: 로봇 친화 현장 조건 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/context-aware-capabilities.md](field-research/field-readiness-rop/context-aware-capabilities.md) | 현장 적용·운영 검증: 환경 조건을 반영한 로봇 능력 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/field-failure-cases.md](field-research/field-readiness-rop/field-failure-cases.md) | 현장 적용·운영 검증: 현장 실패 사례 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
