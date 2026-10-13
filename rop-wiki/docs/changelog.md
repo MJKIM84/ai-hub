@@ -20,6 +20,36 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/index.md](field-research/pm-interview-prep/index.md) | 스터디 면접 준비: 면접 준비 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/core-materials.md](field-research/pm-interview-prep/core-materials.md) | 스터디 면접 준비: 핵심 학습 자료 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/robots-and-services.md](field-research/pm-interview-prep/robots-and-services.md) | 스터디 면접 준비: 로봇 선택과 서비스 설계 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/business-model-and-roi.md](field-research/pm-interview-prep/business-model-and-roi.md) | 스터디 면접 준비: 사업 모델과 경제성 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/architecture-and-contracts.md](field-research/pm-interview-prep/architecture-and-contracts.md) | 스터디 면접 준비: ROP 책임 경계와 연동 계약 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/deployment-and-acceptance.md](field-research/pm-interview-prep/deployment-and-acceptance.md) | 스터디 면접 준비: 현장 구축과 인수시험 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/learning-plan.md](field-research/pm-interview-prep/learning-plan.md) | 스터디 면접 준비: 학습 순서 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/field-research/pm-interview-prep/presentation-and-questions.md](field-research/pm-interview-prep/presentation-and-questions.md) | 스터디 면접 준비: 발표 구성과 예상 질문 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
+| pm-interview-prep | 생성 | [docs/references/ref-1591.md](references/ref-1591.md) | 참고문헌 ref-1591 등록: RB-SUMMIT — Mobile Robot ideal for R&D applications (제품 페이지) |
+| pm-interview-prep | 생성 | [docs/references/ref-1592.md](references/ref-1592.md) | 참고문헌 ref-1592 등록: Robotnik Datasheet RB-SUMMIT 2024 EN (CF 06.24, Standard ver… |
+| pm-interview-prep | 생성 | [docs/references/ref-1593.md](references/ref-1593.md) | 참고문헌 ref-1593 등록: Software solutions — Open Architecture, RLC and Command Mana… |
+| pm-interview-prep | 생성 | [docs/references/ref-1594.md](references/ref-1594.md) | 참고문헌 ref-1594 등록: robotnik_simulation — README (jazzy-devel) |
+| pm-interview-prep | 생성 | [docs/references/ref-1595.md](references/ref-1595.md) | 참고문헌 ref-1595 등록: Spot — The Agile Mobile Robot (제품 페이지) |
+| pm-interview-prep | 생성 | [docs/references/ref-1596.md](references/ref-1596.md) | 참고문헌 ref-1596 등록: About Spot — Robot specifications (Spot SDK 5.2.0) |
+| pm-interview-prep | 생성 | [docs/references/ref-1597.md](references/ref-1597.md) | 참고문헌 ref-1597 등록: Payload Configuration Requirements (Spot SDK 5.2.0) |
+| pm-interview-prep | 생성 | [docs/references/ref-1598.md](references/ref-1598.md) | 참고문헌 ref-1598 등록: Robot Services (Spot SDK 5.2.0) |
+| pm-interview-prep | 생성 | [docs/references/ref-1599.md](references/ref-1599.md) | 참고문헌 ref-1599 등록: 1784 — Service (Rookie, ROBOPORT, ARC System, Works assistan… |
+| pm-interview-prep | 생성 | [docs/references/ref-1600.md](references/ref-1600.md) | 참고문헌 ref-1600 등록: "Good boy SpOTTO": robot dog scans and monitors manufacturin… |
+| pm-interview-prep | 생성 | [docs/references/ref-1601.md](references/ref-1601.md) | 참고문헌 ref-1601 등록: VDA5050/VDA5050 — Releases (3.0.0) |
+| pm-interview-prep | 생성 | [docs/references/ref-1602.md](references/ref-1602.md) | 참고문헌 ref-1602 등록: ISO 13482:2014 Robots and robotic devices — Safety requireme… |
+| pm-interview-prep | 생성 | [docs/references/ref-1603.md](references/ref-1603.md) | 참고문헌 ref-1603 등록: 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한) |
+| pm-interview-prep | 생성 | [docs/references/ref-1604.md](references/ref-1604.md) | 참고문헌 ref-1604 등록: 소방시설 설치 및 관리에 관한 법률 제16조(피난시설, 방화구획 및 방화시설의 관리) |
+| pm-interview-prep | 생성 | [docs/references/ref-1605.md](references/ref-1605.md) | 참고문헌 ref-1605 등록: 승강기 안전관리법 제32조(승강기의 안전검사) |
+| pm-interview-prep | 생성 | [docs/references/ref-1606.md](references/ref-1606.md) | 참고문헌 ref-1606 등록: Core Challenges of Social Robot Navigation: A Survey |
+| pm-interview-prep | 생성 | [docs/references/ref-1607.md](references/ref-1607.md) | 참고문헌 ref-1607 등록: 산업안전보건법 제36조(위험성평가의 실시) |
+| pm-interview-prep | 생성 | [docs/references/ref-1608.md](references/ref-1608.md) | 참고문헌 ref-1608 등록: 개인정보 보호법 제26조(업무위탁에 따른 개인정보의 처리 제한) |
+| pm-interview-prep | 생성 | [docs/references/ref-1609.md](references/ref-1609.md) | 참고문헌 ref-1609 등록: 개인정보 보호법 제29조(안전조치의무) |
+| pm-interview-prep | 생성 | [docs/references/ref-1610.md](references/ref-1610.md) | 참고문헌 ref-1610 등록: ROS 2 — Getting Started (Clearpath Robotics Documentation, R… |
+| pm-interview-prep | 생성 | [docs/references/ref-1611.md](references/ref-1611.md) | 참고문헌 ref-1611 등록: Jackal User Manual |
+| pm-interview-prep | 생성 | [docs/references/ref-1612.md](references/ref-1612.md) | 참고문헌 ref-1612 등록: ROS 2 Robot API — Overview (Clearpath Robotics Documentation… |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/index.md](field-research/field-readiness-rop/index.md) | 현장 적용·운영 검증 분류 개요 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시, 근거 표기·페이지 구성·공개 범위 안내) |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/robot-friendly-sites.md](field-research/field-readiness-rop/robot-friendly-sites.md) | 현장 적용·운영 검증: 로봇 친화 현장 조건 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
 | field-readiness-rop | 생성 | [docs/field-research/field-readiness-rop/context-aware-capabilities.md](field-research/field-readiness-rop/context-aware-capabilities.md) | 현장 적용·운영 검증: 환경 조건을 반영한 로봇 능력 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) |
