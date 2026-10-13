@@ -2,6 +2,9 @@
 title: "핵심 학습 자료"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [1, 4, 20, 21, 22, 42, 48, 50, 51, 55]
 tags: [면접 준비, 학습 자료, 제품 문서, 표준, 법령, 열람 기록]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-251, ref-282, ref-283, ref-284, ref-306, ref-470, ref-1135, ref-1383, ref-1494, ref-1579, ref-1580, ref-1589, ref-1591, ref-1592, ref-1593, ref-1594, ref-1595, ref-1596, ref-1597, ref-1598, ref-1599, ref-1600, ref-1601, ref-1602, ref-1603, ref-1604, ref-1605, ref-1606, ref-1610, ref-1611, ref-1612]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 핵심 학습 자료
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 핵심 학습 자료
 
 # 핵심 학습 자료
 

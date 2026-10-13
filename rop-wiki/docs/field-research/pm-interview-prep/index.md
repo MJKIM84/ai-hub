@@ -2,6 +2,9 @@
 title: "면접 준비"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [1, 2, 3, 20, 22, 25, 29, 32, 38, 39, 41, 48, 51, 55, 56, 64]
 tags: [면접 준비, PM, 로봇 서비스, 순찰, 배송, 안내, 사업 모델, 현장 구축]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-251, ref-1580, ref-1589, ref-1591, ref-1592, ref-1595, ref-1596, ref-1597, ref-1599, ref-1600]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › 면접 준비
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › 면접 준비
 
 # 면접 준비
 

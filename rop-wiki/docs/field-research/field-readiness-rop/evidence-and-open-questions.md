@@ -2,6 +2,9 @@
 title: "근거와 남은 질문"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [1, 5, 20, 21, 22, 28, 29, 31, 32, 34, 36, 38, 39, 41, 42, 43, 55, 56]
 tags: [발표 주장 검증, 증거 수준, 후속 조사, 열린 질문, 출처 대조]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-030, ref-031, ref-406, ref-1572, ref-1573, ref-1574, ref-1575, ref-1576, ref-1577, ref-1580, ref-1582, ref-1585, ref-1586, ref-1587, ref-1589, ref-1590]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 근거와 남은 질문
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 근거와 남은 질문
 
 # 근거와 남은 질문
 

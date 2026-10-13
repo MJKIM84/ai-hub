@@ -2,6 +2,9 @@
 title: "사업 모델과 경제성"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [2, 3, 39, 56]
 tags: [면접 준비, 사업 모델, RaaS, TCO, KPI, ROI, 회수 기간, 민감도]
 status: published
@@ -11,7 +14,7 @@ updated: 2026-10-12
 version: 1
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 사업 모델과 경제성
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 사업 모델과 경제성
 
 # 사업 모델과 경제성
 

@@ -2,6 +2,9 @@
 title: "환경 조건을 반영한 로봇 능력"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [4, 5, 6, 7, 18, 25]
 tags: [능력 모델, 환경 조건, 조건부 능력, 검증 증거, 임시 제한, 온톨로지]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-030, ref-1577, ref-1578, ref-1579, ref-1590]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 환경 조건을 반영한 로봇 능력
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 환경 조건을 반영한 로봇 능력
 
 # 환경 조건을 반영한 로봇 능력
 

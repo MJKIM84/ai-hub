@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-10-12
+기준일: 2026-10-13
 
 ### 영역별 페이지 상태 분포
 
@@ -227,9 +227,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 17 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 17 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 17 | published |
-| [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-25 | 17 | published |
-| [30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-25 | 17 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 18 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 18 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 18 | published |
+| [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-25 | 18 | published |
+| [30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-25 | 18 | published |
 <!-- auto:metrics:end -->

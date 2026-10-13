@@ -2,6 +2,9 @@
 title: "학습 순서"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [1, 20, 21, 29, 48, 55]
 tags: [면접 준비, 학습 계획, 2시간, 1일, 1주, 근거 카드]
 status: published
@@ -11,7 +14,7 @@ updated: 2026-10-12
 version: 1
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 학습 순서
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 학습 순서
 
 # 학습 순서
 

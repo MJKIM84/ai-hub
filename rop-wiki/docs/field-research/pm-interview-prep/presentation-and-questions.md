@@ -2,6 +2,9 @@
 title: "발표 구성과 예상 질문"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [1, 20, 21, 22, 29, 39, 48, 51, 55, 56]
 tags: [면접 준비, 발표 구성, 예상 질문, 반론, 추가 확인]
 status: published
@@ -11,7 +14,7 @@ updated: 2026-10-12
 version: 1
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 발표 구성과 예상 질문
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 발표 구성과 예상 질문
 
 # 발표 구성과 예상 질문
 

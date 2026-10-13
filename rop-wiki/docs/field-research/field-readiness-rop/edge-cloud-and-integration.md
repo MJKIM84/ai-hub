@@ -2,6 +2,9 @@
 title: "엣지·클라우드와 연동 계약"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [18, 20, 21, 22, 23, 29, 41, 42]
 tags: [엣지, 클라우드, 연동 계약, 통신 단절, 상태 신선도, VDA 5050, MQTT, Kafka, gRPC, MCP, A2A]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-306, ref-1581, ref-1582, ref-1583, ref-1584]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 엣지·클라우드와 연동 계약
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 엣지·클라우드와 연동 계약
 
 # 엣지·클라우드와 연동 계약
 

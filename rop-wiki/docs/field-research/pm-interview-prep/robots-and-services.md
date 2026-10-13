@@ -2,6 +2,9 @@
 title: "로봇 선택과 서비스 설계"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [2, 4, 5, 25, 30, 31, 38, 51, 63, 64]
 tags: [면접 준비, 4휠, 4족, 제품 비교, 순찰, 배송, 안내, 권한, 서비스 흐름]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-1383, ref-1579, ref-1591, ref-1592, ref-1593, ref-1594, ref-1595, ref-1596, ref-1597, ref-1598, ref-1599, ref-1600, ref-1606]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 로봇 선택과 서비스 설계
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 로봇 선택과 서비스 설계
 
 # 로봇 선택과 서비스 설계
 

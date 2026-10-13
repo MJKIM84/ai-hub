@@ -2,6 +2,9 @@
 title: "ROP 책임 경계와 연동 계약"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [10, 12, 18, 20, 21, 22, 23, 29, 41, 42, 51]
 tags: [면접 준비, ROP, 책임 경계, 연동 계약, API, 이벤트, 시퀀스, 승강기 세션, LLM]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-251, ref-282, ref-283, ref-284, ref-306, ref-1579, ref-1593, ref-1598]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › ROP 책임 경계와 연동 계약
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › ROP 책임 경계와 연동 계약
 
 # ROP 책임 경계와 연동 계약
 

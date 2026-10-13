@@ -2,6 +2,9 @@
 title: "현장 적용·운영 검증"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [4, 5, 6, 7, 18, 20, 21, 22, 28, 29, 31, 32, 34, 36, 38, 39, 41, 42, 43, 55, 56, 62, 63, 64, 65, 66]
 tags: [현장 적용, 운영 검증, 현장 준비도, 실패 사례, 증거 수준]
 status: published
@@ -11,7 +14,7 @@ updated: 2026-10-12
 version: 1
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › 현장 적용·운영 검증
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › 현장 적용·운영 검증
 
 # 현장 적용·운영 검증
 

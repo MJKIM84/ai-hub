@@ -2,6 +2,9 @@
 title: "로봇 친화 현장 조건"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [22, 28, 42, 55, 62, 63, 64, 65, 66]
 tags: [현장 준비도, 바닥 마찰, 조명, 반사, 통로, 무선 음영, 파지 공간, 소방관 진입창]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-1580, ref-1585, ref-1586, ref-1587]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 로봇 친화 현장 조건
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 로봇 친화 현장 조건
 
 # 로봇 친화 현장 조건
 

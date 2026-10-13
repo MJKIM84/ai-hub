@@ -2,6 +2,9 @@
 title: "시뮬레이션 검증 범위"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [34, 36, 22, 42]
 tags: [시뮬레이션, 사건 주입, 원인 재현, 실측 보정, 홀드아웃, 증거 수준, 로봇 시뮬레이터]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-406]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 시뮬레이션 검증 범위
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 시뮬레이션 검증 범위
 
 # 시뮬레이션 검증 범위
 

@@ -2,6 +2,9 @@
 title: "현장 구축과 인수시험"
 type: field-research
 research: pm-interview-prep
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [22, 31, 32, 43, 48, 50, 51, 55, 56, 58]
 tags: [면접 준비, 현장 구축, 현장 조사, RACI, 인수시험, 장애 시험, 업무 연속성, 법령]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-284, ref-470, ref-1383, ref-1579, ref-1580, ref-1589, ref-1597, ref-1600, ref-1602, ref-1603, ref-1604, ref-1605, ref-1606, ref-1607, ref-1608, ref-1609]
 ---
 
-[홈](../../index.md) › [스터디](../index.md) › [면접 준비](index.md) › 현장 구축과 인수시험
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [면접 준비](index.md) › 현장 구축과 인수시험
 
 # 현장 구축과 인수시험
 
