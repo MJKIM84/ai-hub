@@ -270,12 +270,12 @@ sed -i 's/^git_push: false/git_push: true/' config/settings.yaml                
 - 구현: [mkdocs-encryptcontent-plugin](https://github.com/unverbuggt/mkdocs-encryptcontent-plugin) 3.1.0 이 빌드 때 잠금 페이지의 본문 HTML 을 AES 로 암호화하고, 브라우저에서 비밀번호(WebCrypto)로 푼다. 한 번 풀면 같은 브라우저 세션에서는 다른 스터디 페이지도 열린다(세션 저장소). 목차·검색 색인·meta description 은 `pipeline/hooks/private_pages.py` 와 페이지 프런트매터(`hide: [toc]`, `search: exclude: true`)로 막는다. 페이지 제목과 주소는 메뉴에 보인다.
 - 비밀번호: 환경 변수 `ROP_STUDY_PASSWORD` 하나다. GitHub Actions 는 저장소 Settings → Secrets and variables → Actions 의 `ROP_STUDY_PASSWORD` 를 읽는다. **배포 빌드(main push·수동 실행)는 이 값이 없으면 멈춘다**(잠금 없이 공개되는 일을 막는다). PR 빌드는 빌드 확인용 임시 값으로 돈다. 로컬 미리보기: `ROP_STUDY_PASSWORD=… mkdocs serve`.
 - 비밀번호를 바꾸면 다음 배포부터 새 값으로 잠긴다. 아래의 암호화 원문이 있으면 그 파일도 새 값으로 다시 암호화해야 한다.
-- 원문 그대로 싣는 페이지(ROP 발표회): 저장소가 공개이므로 마크다운 원문을 docs 에 두지 않고 `_private/<slug>.md.enc` 로 암호화해 둔다. docs 에는 프런트매터·이동 경로·제목만 있는 틀 페이지가 있고(`private_source: _private/<slug>.md.enc`), 빌드 훅이 같은 비밀번호로 풀어 끼워 넣는다. 비밀번호가 없는 빌드에서는 안내문만 들어간다.
+- 원문 그대로 싣는 페이지가 필요할 때(현재는 없음): 저장소가 공개이므로 마크다운 원문을 docs 에 두지 않고 `_private/<slug>.md.enc` 로 암호화해 둔다. docs 에는 프런트매터·이동 경로·제목만 있는 틀 페이지가 있고(`private_source: _private/<slug>.md.enc`), 빌드 훅이 같은 비밀번호로 풀어 끼워 넣는다. 비밀번호가 없는 빌드에서는 안내문만 들어간다.
 
 ```bash
 # 원문 등록·교체(비밀번호는 환경 변수로만)
-ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py encrypt <원문.md> _private/rop-presentation.md.enc
-ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py check _private/rop-presentation.md.enc
+ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py encrypt <원문.md> _private/<slug>.md.enc
+ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py check _private/<slug>.md.enc
 ```
 
 잠금은 공개 사이트에서 본문을 가리는 수단이지 접근 통제 시스템이 아니다. 암호문은 사이트에 그대로 실리므로 짧은 비밀번호는 추측 공격에 약하다(플러그인이 빌드 때 엔트로피 60비트 미만이면 경고로 빌드를 멈춘다). 원문을 꼭 비공개로 유지해야 하면 저장소 자체를 비공개로 두는 것이 맞다.
