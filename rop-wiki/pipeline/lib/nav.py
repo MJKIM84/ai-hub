@@ -22,7 +22,7 @@ SITE_NAME = "ROP 연구 위키"
 SITE_DESCRIPTION = "로봇 오케스트레이션 플랫폼을 구현하고 운영하는 일의 기술 지형도"
 TRACKS_LABEL = "중점 연구 트랙"
 IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
-FIELD_LABEL = "현장 적용·운영 검증"  # 사양서 4.8 목록 밖의 구축자 추가 섹션(docs/field-research/) [가정]
+FIELD_LABEL = "스터디"              # 확장 아이디어 섹션 안의 하위 섹션(docs/field-research/) [가정]
 
 # 공개 배포 설정(config/ops.yaml 의 publish 절, notify.site_url) — 이 값들은 write_mkdocs_yml() 이 매 실행마다
 # 다시 반영하므로, 켜고 끄려면 mkdocs.yml 을 손으로 고치지 말고 config/ops.yaml 을 고친 뒤 퍼블리셔(또는
@@ -50,7 +50,7 @@ MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
-# 4.8 에 없는 "현장 적용·운영 검증"(docs/field-research/)은 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
+# "스터디"(docs/field-research/)는 확장 아이디어 섹션 안의 마지막 하위 항목이다(상위 항목을 늘리지 않는다). 스터디 페이지는 비밀번호로 잠근다(README 5C). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
 # notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
@@ -93,7 +93,30 @@ markdown_extensions:
 
 plugins:
   - search
-{redirects_block}
+{redirects_block}  # 스터디 잠금(README 5C): docs/field-research/ 아래 페이지(level: study)의 본문 HTML 을 빌드 때 암호화하고 브라우저에서
+  # 비밀번호로 푼다. 비밀번호는 환경 변수 ROP_STUDY_PASSWORD(배포는 GitHub Actions secret). 없으면 빌드 확인용 임시 값
+  - encryptcontent:
+      password_inventory:
+        study: !ENV [ROP_STUDY_PASSWORD, 'build-without-secret-Qm7v2Xk9Lp4Rt8Yw-placeholder']
+      search_index: clear
+      threshold_warning_min_entropy: 60
+      title_prefix: ''
+      summary: '스터디는 비밀번호가 있어야 볼 수 있습니다'
+      encryption_info_message: '이 영역의 본문은 잠겨 있습니다. 비밀번호를 넣으면 같은 브라우저에서 다른 스터디 페이지도 함께 열립니다.'
+      placeholder: '비밀번호'
+      password_button: true
+      password_button_text: '열기'
+      decryption_failure_message: '비밀번호가 다릅니다.'
+      remember_keys: true
+      session_storage: true
+
+# 스터디 잠금 페이지의 목차·description 제거와 암호화 원문 끼워 넣기(pipeline/hooks/private_pages.py, README 5C)
+hooks:
+  - pipeline/hooks/private_pages.py
+
+extra_javascript:
+  - javascripts/study-unlock.js
+
 validation:
   nav:
     omitted_files: warn
@@ -211,29 +234,29 @@ def build_nav(logs_public: bool | None = None) -> list:
         nav.append({TRACKS_LABEL: track_items})
 
     # 4-1. 확장 아이디어 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 색인 → 트랙 순서대로 아이디어 페이지 → 나머지 파일명순
+    #      → 맨 끝에 "스터디" 하위 섹션(docs/field-research/: 색인 → 스터디마다 개요 → 순서 표의 페이지). 한 주제를
+    #      집중 검증해 한 묶음으로 게시한 조사는 모두 이 하위 섹션 안에 둔다
     ideas = [r for r in paths.idea_page_rels() if _exists(r)]
     known = set(ideas) | {paths.IDEAS_INDEX}
     ideas += [r for r in _md_files(paths.IDEAS_DIR) if r not in known]
-    if _exists(paths.IDEAS_INDEX):
-        nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, [_page(r) for r in ideas]))
-    elif ideas:
-        nav.append({IDEAS_LABEL: [_page(r) for r in ideas]})
-
-    # 4-2. 현장 적용·운영 검증 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 조사 폴더마다 개요(index.md) → 순서 표의 페이지.
-    #      조사가 하나면 그 개요를 섹션 인덱스로 쓰고, 여럿이면 조사마다 하위 섹션을 만든다
-    field = []
+    idea_children: list = [_page(r) for r in ideas]
+    studies = []
     for slug in paths.field_research_slugs():
         rels = paths.field_research_page_rels(slug)
         idx = f"{paths.FIELD_RESEARCH_DIR}/{slug}/index.md"
         children = [_page(r) for r in rels if r != idx]
         if _exists(idx):
-            field.append((idx, children))
+            studies.append(_section_with_index(_title(idx), idx, children))
         elif children:
-            field.append((None, children))
-    if len(field) == 1 and field[0][0]:
-        nav.append(_section_with_index(FIELD_LABEL, field[0][0], field[0][1]))
-    elif field:
-        nav.append({FIELD_LABEL: [_section_with_index(_title(i), i, c) if i else {FIELD_LABEL: c} for i, c in field]})
+            studies.append({slug: children})
+    if _exists(paths.FIELD_RESEARCH_INDEX):
+        idea_children.append(_section_with_index(FIELD_LABEL, paths.FIELD_RESEARCH_INDEX, studies))
+    elif studies:
+        idea_children.append({FIELD_LABEL: studies})
+    if _exists(paths.IDEAS_INDEX):
+        nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, idea_children))
+    elif idea_children:
+        nav.append({IDEAS_LABEL: idea_children})
 
     # 5. 주제 (연도별 하위, 최신 우선)
     topics_dir = DOCS / "topics"

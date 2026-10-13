@@ -158,16 +158,23 @@ DEFAULT_DRAFT_VERSIONS: str = "ontology_versions.json"
 IDEAS_DIR: str = "ideas"
 IDEAS_INDEX: str = "ideas/index.md"
 
-# 현장 적용·운영 검증 섹션(docs/field-research/<조사 slug>/). 4.8 목록 밖의 구축자 추가 섹션으로, 67개 영역 분류와
-# 별개인 현장 검증 조사 결과를 둔다 [가정]. 조사마다 폴더 하나, 폴더 안 페이지 순서는 아래 표가 정한다
-# (표에 없는 페이지는 뒤에 파일명순).
+# 스터디 섹션(docs/field-research/). 4.8 목록 밖의 구축자 추가 섹션으로, 67개 영역 분류와 별개로 한 주제를 집중 검증해
+# 한 묶음으로 게시한 조사(스터디)를 모은다 [가정]. 색인(field-research/index.md) 아래 스터디마다 폴더 하나이며,
+# 폴더 안 페이지 순서는 아래 표가 정한다(표에 없는 페이지는 뒤에 파일명순).
 FIELD_RESEARCH_DIR: str = "field-research"
+FIELD_RESEARCH_INDEX: str = "field-research/index.md"   # 스터디 색인(섹션 인덱스)
 FIELD_RESEARCH_PAGE_ORDER: dict[str, list[str]] = {
+    "rop-presentation": ["index.md"],      # ROP 발표회 — 원문은 _private/ 에 암호화 보관, 틀 페이지만 docs 에
     "field-readiness-rop": [
         "index.md", "robot-friendly-sites.md", "context-aware-capabilities.md", "field-failure-cases.md",
         "edge-cloud-and-integration.md", "continuity-and-human-intervention.md", "mobile-inspection-and-phm.md",
         "lead-time-and-maturity.md", "simulation-validation.md", "manufacturer-feedback.md",
         "evidence-and-open-questions.md",
+    ],
+    "pm-interview-prep": [
+        "index.md", "core-materials.md", "robots-and-services.md", "business-model-and-roi.md",
+        "architecture-and-contracts.md", "deployment-and-acceptance.md", "learning-plan.md",
+        "presentation-and-questions.md",
     ],
 }
 

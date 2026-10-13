@@ -2,6 +2,9 @@
 title: "이동 점검과 설비 상태 관리"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [23, 38, 39, 62]
 tags: [이동 점검, 설비 상태 관리, PHM, 열화상, 유효 측정, CMMS, 점검 커버리지]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-1589]
 ---
 
-[홈](../../index.md) › [현장 적용·운영 검증](index.md) › 이동 점검과 설비 상태 관리
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 이동 점검과 설비 상태 관리
 
 # 이동 점검과 설비 상태 관리
 

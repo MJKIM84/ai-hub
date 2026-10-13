@@ -181,8 +181,6 @@ class TestNavAndRender(unittest.TestCase):
             expected.append("중점 연구 트랙")
         if (docs / paths.IDEAS_INDEX).is_file():
             expected.append("확장 아이디어")   # 4.8 목록 밖의 구축자 추가 섹션: 트랙 바로 다음, 주제 앞 [가정]
-        if paths.field_research_slugs():
-            expected.append("현장 적용·운영 검증")   # 4.8 목록 밖의 구축자 추가 섹션: 확장 아이디어 바로 다음, 주제 앞 [가정]
         if (docs / "topics").is_dir():
             expected.append("주제")
         for rel in ("glossary/index.md", "references/index.md", "standards/index.md", "open-questions.md",

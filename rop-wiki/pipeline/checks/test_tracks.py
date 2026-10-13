@@ -208,31 +208,43 @@ class TestNav(unittest.TestCase):
                                      "ideas/floorplan-recognition.md"])
 
     def test_field_research_section(self):
-        """현장 적용·운영 검증: 확장 아이디어 바로 다음, 개요 → 순서 표의 10개 페이지. 67개 영역 분류는 그대로."""
+        """스터디: 확장 아이디어 섹션의 마지막 하위 항목. 색인 → 스터디마다 개요 → 순서 표의 페이지. 상위 항목·67개 영역 분류는 그대로."""
         nav = build_nav()
         top = [next(iter(i)) if isinstance(i, dict) else i for i in nav]
-        self.assertIn("현장 적용·운영 검증", top)
-        f = top.index("현장 적용·운영 검증")
-        self.assertEqual(top[f - 1], "확장 아이디어")
-        if "주제" in top:
-            self.assertLess(f, top.index("주제"))
-        got = [p for _, p in flatten_nav([nav[f]])]
-        exp = [f"field-research/field-readiness-rop/{n}" for n in paths.FIELD_RESEARCH_PAGE_ORDER["field-readiness-rop"]]
+        self.assertNotIn("스터디", top, "스터디는 상위 항목이 아니라 확장 아이디어 안의 하위 섹션")
+        i = top.index("확장 아이디어")
+        section = nav[i]["확장 아이디어"]
+        self.assertEqual([p for _, p in flatten_nav(section[:4])], ["ideas/index.md", *paths.idea_page_rels()])
+        self.assertEqual(next(iter(section[-1])), "스터디", "스터디가 확장 아이디어의 마지막 하위 항목")
+        got = [p for _, p in flatten_nav([section[-1]])]
+        exp = ["field-research/index.md"] + [f"field-research/{slug}/{n}"
+                                             for slug in ("rop-presentation", "field-readiness-rop", "pm-interview-prep")
+                                             for n in paths.FIELD_RESEARCH_PAGE_ORDER[slug]]
         self.assertEqual(got, exp)
-        for rel in got:
+        studies = section[-1]["스터디"][1:]
+        self.assertEqual([next(iter(s)) for s in studies], ["ROP 발표회", "현장 적용·운영 검증", "면접 준비"], "스터디마다 하나의 하위 섹션, 순서 표 순")
+        for rel in got:   # 잠금: 모든 스터디 페이지는 잠금 등급·목차 숨김·검색 제외를 선언한다
+            meta, _ = fm.read(paths.DOCS / rel)
+            self.assertEqual(meta.get("level"), "study", rel)
+            self.assertIn("toc", meta.get("hide") or [], rel)
+            self.assertEqual((meta.get("search") or {}).get("exclude"), True, rel)
+        for rel in got[1:]:
             meta, body = fm.read(paths.DOCS / rel)
-            self.assertEqual((meta["type"], meta["research"]), ("field-research", "field-readiness-rop"), rel)
+            self.assertEqual((meta["type"], meta["research"]), ("field-research", rel.split("/")[1]), rel)
+        meta, _ = fm.read(paths.DOCS / "field-research" / "index.md")
+        self.assertEqual((meta["type"], meta.get("subtype")), ("field-research", "index"))
         ps = _load_script("protect_source")
-        kinds = [ps._nav_kind(i) for i in nav]
-        bad = list(nav)
-        bad.insert(kinds.index("tracks"), bad.pop(kinds.index("field-research")))   # 트랙 앞으로
-        self.assertTrue(any("field-research" in e for e in ps.check_nav_structure(bad)))
-        bad2 = list(nav)
-        sec = dict(bad2[f])
-        k = next(iter(sec))
-        sec[k] = [sec[k][0], *reversed(sec[k][1:])]                                # 하위 순서 뒤집기
-        bad2[f] = sec
-        self.assertTrue(any("현장 적용·운영 검증 하위 순서" in e for e in ps.check_nav_structure(bad2)))
+        self.assertEqual(ps.check_nav_structure(nav), [])
+        bad = list(nav)                                                    # 스터디를 상위 항목으로 꺼내면 오류
+        sec = {"확장 아이디어": section[:-1]}
+        bad[i] = sec
+        bad.insert(i + 1, section[-1])
+        self.assertTrue(any("스터디" in e or "4.8 순서에 없는" in e for e in ps.check_nav_structure(bad)))
+        bad2 = list(nav)                                                   # 하위 순서 뒤집기
+        inner = dict(section[-1])
+        inner["스터디"] = [inner["스터디"][0], *reversed(inner["스터디"][1:])]
+        bad2[i] = {"확장 아이디어": [*section[:-1], inner]}
+        self.assertTrue(any("스터디 하위 순서" in e for e in ps.check_nav_structure(bad2)))
 
     def test_track_children_use_draft_page(self):
         nav = build_nav()

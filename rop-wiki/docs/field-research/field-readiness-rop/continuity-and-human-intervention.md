@@ -2,6 +2,9 @@
 title: "업무 연속성과 사람 개입"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [29, 30, 31, 32, 43, 56]
 tags: [업무 연속성, 사람 개입, 원격 조작, 원격 리셋, 인계, 품질 확인, 재개, 순차 배포]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-1575]
 ---
 
-[홈](../../index.md) › [현장 적용·운영 검증](index.md) › 업무 연속성과 사람 개입
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 업무 연속성과 사람 개입
 
 # 업무 연속성과 사람 개입
 

@@ -2,6 +2,9 @@
 title: "현장 실패 사례"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [18, 22, 30, 36, 38, 55, 62]
 tags: [실패 사례, 미끄럼, 투명 재질, 반사, 위치 상실, 계단, 파지, 승강기, 재현 패키지]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-031, ref-1577, ref-1578, ref-1579, ref-1580, ref-1585, ref-1588, ref-1589, ref-1590]
 ---
 
-[홈](../../index.md) › [현장 적용·운영 검증](index.md) › 현장 실패 사례
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 현장 실패 사례
 
 # 현장 실패 사례
 

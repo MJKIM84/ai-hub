@@ -5,3 +5,7 @@ mkdocs-material==9.7.7
 mkdocs-redirects==1.2.2
 pyyaml==6.0.1
 jsonschema==4.26.0
+# 스터디(docs/field-research/) 비밀번호 잠금: 페이지 HTML 을 빌드 때 AES 로 암호화하고 브라우저에서 비밀번호로 푼다(README 5C)
+mkdocs-encryptcontent-plugin==3.1.0
+pycryptodome==3.24.1
+beautifulsoup4==4.15.0

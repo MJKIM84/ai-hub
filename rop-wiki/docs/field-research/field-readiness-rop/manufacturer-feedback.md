@@ -2,6 +2,9 @@
 title: "제조사 피드백 패키지"
 type: field-research
 research: field-readiness-rop
+level: study
+hide: [toc]
+search: {exclude: true}
 related_areas: [4, 7, 20, 38, 55, 56]
 tags: [제조사 피드백, 재현 패키지, 회귀 시험, 롤백, 인수 관문, 개인정보 제거]
 status: published
@@ -12,7 +15,7 @@ version: 1
 sources: [ref-1577, ref-1590]
 ---
 
-[홈](../../index.md) › [현장 적용·운영 검증](index.md) › 제조사 피드백 패키지
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 제조사 피드백 패키지
 
 # 제조사 피드백 패키지
 
