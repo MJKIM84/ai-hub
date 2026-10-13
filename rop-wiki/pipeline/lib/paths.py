@@ -164,6 +164,7 @@ IDEAS_INDEX: str = "ideas/index.md"
 FIELD_RESEARCH_DIR: str = "field-research"
 FIELD_RESEARCH_INDEX: str = "field-research/index.md"   # 스터디 색인(섹션 인덱스)
 FIELD_RESEARCH_PAGE_ORDER: dict[str, list[str]] = {
+    "rop-presentation": ["index.md"],      # ROP 발표회 — 원문은 _private/ 에 암호화 보관, 틀 페이지만 docs 에
     "field-readiness-rop": [
         "index.md", "robot-friendly-sites.md", "context-aware-capabilities.md", "field-failure-cases.md",
         "edge-cloud-and-integration.md", "continuity-and-human-intervention.md", "mobile-inspection-and-phm.md",

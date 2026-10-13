@@ -218,11 +218,16 @@ class TestNav(unittest.TestCase):
         self.assertEqual(next(iter(section[-1])), "스터디", "스터디가 확장 아이디어의 마지막 하위 항목")
         got = [p for _, p in flatten_nav([section[-1]])]
         exp = ["field-research/index.md"] + [f"field-research/{slug}/{n}"
-                                             for slug in ("field-readiness-rop", "pm-interview-prep")
+                                             for slug in ("rop-presentation", "field-readiness-rop", "pm-interview-prep")
                                              for n in paths.FIELD_RESEARCH_PAGE_ORDER[slug]]
         self.assertEqual(got, exp)
         studies = section[-1]["스터디"][1:]
-        self.assertEqual([next(iter(s)) for s in studies], ["현장 적용·운영 검증", "면접 준비"], "스터디마다 하나의 하위 섹션, 순서 표 순")
+        self.assertEqual([next(iter(s)) for s in studies], ["ROP 발표회", "현장 적용·운영 검증", "면접 준비"], "스터디마다 하나의 하위 섹션, 순서 표 순")
+        for rel in got:   # 잠금: 모든 스터디 페이지는 잠금 등급·목차 숨김·검색 제외를 선언한다
+            meta, _ = fm.read(paths.DOCS / rel)
+            self.assertEqual(meta.get("level"), "study", rel)
+            self.assertIn("toc", meta.get("hide") or [], rel)
+            self.assertEqual((meta.get("search") or {}).get("exclude"), True, rel)
         for rel in got[1:]:
             meta, body = fm.read(paths.DOCS / rel)
             self.assertEqual((meta["type"], meta["research"]), ("field-research", rel.split("/")[1]), rel)
