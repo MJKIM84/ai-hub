@@ -39,17 +39,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r rop-wiki/requirements.txt
 
-      # 스터디(docs/field-research/) 잠금 비밀번호. 저장소 Settings → Secrets and variables → Actions 의 ROP_STUDY_PASSWORD.
-      # 배포 빌드(main push·수동 실행)는 비밀번호가 없으면 멈춘다(잠금 없이 공개되는 일을 막는다). PR 빌드는 빌드 확인용 임시 값을 쓴다.
-      - name: Require study password (deploy builds)
-        if: github.event_name != 'pull_request'
-        env:
-          ROP_STUDY_PASSWORD: ${{ secrets.ROP_STUDY_PASSWORD }}
-        run: test -n "$ROP_STUDY_PASSWORD" || { echo "::error::ROP_STUDY_PASSWORD secret is not set"; exit 1; }
-
+      # 스터디(docs/field-research/) 잠금 비밀번호(rop-wiki/README.md 5C). 기본값은 rop-wiki/config/ops.yaml 의
+      # publish.study_password 이며 mkdocs.yml 에 들어 있다. 저장소 Settings → Secrets and variables → Actions 에
+      # ROP_STUDY_PASSWORD 가 있으면(비어 있지 않으면) 그 값이 기본값보다 우선한다. 빌드 훅이 어느 쪽을 썼는지 로그에 남기고,
+      # 둘 다 없으면 빌드를 멈춘다(잠금 없이 공개되는 일을 막는다).
       - name: Build (mkdocs build --strict)
         env:
-          ROP_STUDY_PASSWORD: ${{ secrets.ROP_STUDY_PASSWORD || 'build-without-secret-Qm7v2Xk9Lp4Rt8Yw-placeholder' }}
+          ROP_STUDY_PASSWORD: ${{ secrets.ROP_STUDY_PASSWORD }}
         run: cd rop-wiki && mkdocs build --strict
 
       - name: Configure Pages

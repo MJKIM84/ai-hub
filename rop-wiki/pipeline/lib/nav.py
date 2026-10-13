@@ -41,6 +41,21 @@ def verification_banner_on() -> bool:
     return bool(_publish_cfg().get("show_verification_banner", False))
 
 
+def study_password_default() -> str:
+    """스터디 잠금의 기본 비밀번호(config/ops.yaml publish.study_password). 환경 변수 ROP_STUDY_PASSWORD 가 없을 때 쓰인다.
+    바꾸는 명령은 pipeline/study_password.py(README 5C). 빈 문자열이면 빌드 훅(pipeline/hooks/private_pages.py)이
+    환경 변수까지 없을 때 빌드를 멈춘다."""
+    v = _publish_cfg().get("study_password", "")
+    return "" if v is None else str(v)
+
+
+def yaml_quote(s: str) -> str:
+    """YAML 작은따옴표 스칼라(안의 ' 는 '' 로). 줄바꿈이 없는 문자열에 쓴다."""
+    if "\n" in s or "\r" in s:
+        raise ValueError("줄바꿈이 있는 값은 쓸 수 없다")
+    return "'" + s.replace("'", "''") + "'"
+
+
 def site_url() -> str:
     ops = notify.load_ops()
     return str((ops.get("notify") or {}).get("site_url", "") or "")
@@ -94,12 +109,14 @@ markdown_extensions:
 plugins:
   - search
 {redirects_block}  # 스터디 잠금(README 5C): docs/field-research/ 아래 페이지(level: study)의 본문 HTML 을 빌드 때 암호화하고 브라우저에서
-  # 비밀번호로 푼다. 비밀번호는 환경 변수 ROP_STUDY_PASSWORD(배포는 GitHub Actions secret). 없으면 빌드 확인용 임시 값
+  # 비밀번호로 푼다. 비밀번호는 환경 변수 ROP_STUDY_PASSWORD(배포는 GitHub Actions secret)가 있으면 그 값, 없으면 아래의
+  # 기본값(config/ops.yaml publish.study_password — 바꾸기: python3 pipeline/study_password.py set <새 비밀번호>).
+  # 이 파일은 생성 파일이므로 여기를 직접 고치지 않는다.
   - encryptcontent:
       password_inventory:
-        study: !ENV [ROP_STUDY_PASSWORD, 'build-without-secret-Qm7v2Xk9Lp4Rt8Yw-placeholder']
+        study: !ENV [ROP_STUDY_PASSWORD, {study_password_default}]
       search_index: clear
-      threshold_warning_min_entropy: 60
+      threshold_warning_min_entropy: 0
       title_prefix: ''
       summary: '스터디는 비밀번호가 있어야 볼 수 있습니다'
       encryption_info_message: '이 영역의 본문은 잠겨 있습니다. 비밀번호를 넣으면 같은 브라우저에서 다른 스터디 페이지도 함께 열립니다.'
@@ -360,6 +377,7 @@ def render_mkdocs_yml(nav: list | None = None) -> str:
         site_name=SITE_NAME, site_description=SITE_DESCRIPTION, nav=indented,
         site_url_line=site_url_line, exclude_docs_block=exclude_docs_block,
         custom_dir_line=custom_dir_line, extra_block=extra_block,
+        study_password_default=yaml_quote(study_password_default()),
     )
 
 

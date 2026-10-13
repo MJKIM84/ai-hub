@@ -15,7 +15,7 @@ version: 1
 sources: [ref-406]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 시뮬레이션 검증 범위
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 시뮬레이션 검증 범위
 
 # 시뮬레이션 검증 범위
 

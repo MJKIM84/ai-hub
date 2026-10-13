@@ -15,7 +15,7 @@ version: 1
 sources: [ref-031, ref-306, ref-1581, ref-1582, ref-1583, ref-1584]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 엣지·클라우드와 연동 계약
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 엣지·클라우드와 연동 계약
 
 # 엣지·클라우드와 연동 계약
 

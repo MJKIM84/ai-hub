@@ -158,4 +158,4 @@ flowchart LR
 
 ## 스터디
 
-세 아이디어와 별도로, 한 주제를 집중해서 조사하고 검증한 결과를 한 묶음으로 게시한 것이 [스터디](../field-research/index.md)다. 스터디는 확장 아이디어 안의 하위 섹션이며 세 아이디어의 정의나 트랙을 바꾸지 않는다. 현재 [ROP 발표회](../field-research/rop-presentation/index.md), [현장 적용·운영 검증](../field-research/field-readiness-rop/index.md), [면접 준비](../field-research/pm-interview-prep/index.md)가 있다. 스터디 영역은 비밀번호로 잠겨 있다.
+세 아이디어와 별도로, 한 주제를 집중해서 조사하고 검증한 결과를 한 묶음으로 게시한 것이 [스터디](../field-research/index.md)다. 스터디는 확장 아이디어 안의 하위 섹션이며 세 아이디어의 정의나 트랙을 바꾸지 않는다. 현재 [ROP 발표회 — 현장 적용·운영 검증](../field-research/field-readiness-rop/index.md)과 [면접 준비](../field-research/pm-interview-prep/index.md)가 있다. 스터디 영역은 비밀번호로 잠겨 있다.

@@ -69,3 +69,6 @@ cron:
 publish:
   logs_public: false             # false 면 docs/logs/ 와 docs/metrics.md 를 mkdocs exclude_docs·내비게이션에서 뺀다(로그 비공개). true 로 되돌리면 다시 공개된다
   show_verification_banner: true    # true 면 mkdocs.yml 에 extra.verification_banner: true 와 theme.custom_dir: overrides 를 켠다(안내 배너 표시). false 로 끌 수 있다
+  study_password: "2153"         # 스터디(docs/field-research/) 잠금의 기본 비밀번호(README 5C). 바꾸기: python3 pipeline/study_password.py set <새 비밀번호>
+                                 # (이 줄과 mkdocs.yml 을 함께 고친다) → 커밋·푸시하면 다음 배포부터 새 값. 환경 변수·GitHub secret
+                                 # ROP_STUDY_PASSWORD 가 있으면 그 값이 이 줄보다 우선한다. 저장소가 공개이므로 이 줄의 값은 누구나 볼 수 있다

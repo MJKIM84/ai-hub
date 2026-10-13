@@ -16,6 +16,12 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-13
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| field-readiness-rop | 갱신 | [docs/field-research/field-readiness-rop/index.md](field-research/field-readiness-rop/index.md) | 스터디 제목을 'ROP 발표회 — 현장 적용·운영 검증'로 바꿈(발표회 기반 조사임을 메뉴에서 보이게). 확장 아이디어 › 스터디 아래, 비밀번호 잠금 |
+
 ### 2026-10-12
 
 | 실행 id | 동작 | 페이지 | 요약 |
