@@ -22,7 +22,7 @@ SITE_NAME = "ROP 연구 위키"
 SITE_DESCRIPTION = "로봇 오케스트레이션 플랫폼을 구현하고 운영하는 일의 기술 지형도"
 TRACKS_LABEL = "중점 연구 트랙"
 IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
-FIELD_LABEL = "스터디"              # 사양서 4.8 목록 밖의 구축자 추가 섹션(docs/field-research/) [가정]
+FIELD_LABEL = "스터디"              # 확장 아이디어 섹션 안의 하위 섹션(docs/field-research/) [가정]
 
 # 공개 배포 설정(config/ops.yaml 의 publish 절, notify.site_url) — 이 값들은 write_mkdocs_yml() 이 매 실행마다
 # 다시 반영하므로, 켜고 끄려면 mkdocs.yml 을 손으로 고치지 말고 config/ops.yaml 을 고친 뒤 퍼블리셔(또는
@@ -50,7 +50,7 @@ MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
-# 4.8 에 없는 "스터디"(docs/field-research/)는 확장 아이디어 바로 다음, 주제 앞에 둔다. [가정]
+# "스터디"(docs/field-research/)는 확장 아이디어 섹션 안의 마지막 하위 항목이다(상위 항목을 늘리지 않는다). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
 # notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
@@ -211,16 +211,12 @@ def build_nav(logs_public: bool | None = None) -> list:
         nav.append({TRACKS_LABEL: track_items})
 
     # 4-1. 확장 아이디어 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 색인 → 트랙 순서대로 아이디어 페이지 → 나머지 파일명순
+    #      → 맨 끝에 "스터디" 하위 섹션(docs/field-research/: 색인 → 스터디마다 개요 → 순서 표의 페이지). 한 주제를
+    #      집중 검증해 한 묶음으로 게시한 조사는 모두 이 하위 섹션 안에 둔다
     ideas = [r for r in paths.idea_page_rels() if _exists(r)]
     known = set(ideas) | {paths.IDEAS_INDEX}
     ideas += [r for r in _md_files(paths.IDEAS_DIR) if r not in known]
-    if _exists(paths.IDEAS_INDEX):
-        nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, [_page(r) for r in ideas]))
-    elif ideas:
-        nav.append({IDEAS_LABEL: [_page(r) for r in ideas]})
-
-    # 4-2. 스터디 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 색인 → 스터디마다 하위 섹션(개요 index.md → 순서 표의 페이지).
-    #      한 주제를 집중 검증해 한 묶음으로 게시한 조사를 모두 이 한 섹션 안에 둔다
+    idea_children: list = [_page(r) for r in ideas]
     studies = []
     for slug in paths.field_research_slugs():
         rels = paths.field_research_page_rels(slug)
@@ -231,9 +227,13 @@ def build_nav(logs_public: bool | None = None) -> list:
         elif children:
             studies.append({slug: children})
     if _exists(paths.FIELD_RESEARCH_INDEX):
-        nav.append(_section_with_index(FIELD_LABEL, paths.FIELD_RESEARCH_INDEX, studies))
+        idea_children.append(_section_with_index(FIELD_LABEL, paths.FIELD_RESEARCH_INDEX, studies))
     elif studies:
-        nav.append({FIELD_LABEL: studies})
+        idea_children.append({FIELD_LABEL: studies})
+    if _exists(paths.IDEAS_INDEX):
+        nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, idea_children))
+    elif idea_children:
+        nav.append({IDEAS_LABEL: idea_children})
 
     # 5. 주제 (연도별 하위, 최신 우선)
     topics_dir = DOCS / "topics"
