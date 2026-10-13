@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
+- 2026-10-13 · 갱신 · [ROP 발표회 — 현장 적용·운영 검증](field-research/field-readiness-rop/index.md) — 스터디 제목을 'ROP 발표회 — 현장 적용·운영 검증'로 바꿈(발표회 기반 조사임을 메뉴에서 보이게). 확장 아이디어 › 스터디 아래, 비밀번호 잠금 (실행 field-readiness-rop)
 - 2026-10-12 · 생성 · [면접 준비](field-research/pm-interview-prep/index.md) — 스터디 면접 준비: 면접 준비 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) (실행 pm-interview-prep)
 - 2026-10-12 · 생성 · [핵심 학습 자료](field-research/pm-interview-prep/core-materials.md) — 스터디 면접 준비: 핵심 학습 자료 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) (실행 pm-interview-prep)
 - 2026-10-12 · 생성 · [로봇 선택과 서비스 설계](field-research/pm-interview-prep/robots-and-services.md) — 스터디 면접 준비: 로봇 선택과 서비스 설계 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) (실행 pm-interview-prep)
 - 2026-10-12 · 생성 · [사업 모델과 경제성](field-research/pm-interview-prep/business-model-and-roi.md) — 스터디 면접 준비: 사업 모델과 경제성 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) (실행 pm-interview-prep)
-- 2026-10-12 · 생성 · [ROP 책임 경계와 연동 계약](field-research/pm-interview-prep/architecture-and-contracts.md) — 스터디 면접 준비: ROP 책임 경계와 연동 계약 페이지 생성(외부 조사 결과를 공개 출처 원문과 대조한 뒤 게시) (실행 pm-interview-prep)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

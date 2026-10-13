@@ -15,7 +15,7 @@ version: 1
 sources: [ref-030, ref-031, ref-406, ref-1572, ref-1573, ref-1574, ref-1575, ref-1576, ref-1577, ref-1580, ref-1582, ref-1585, ref-1586, ref-1587, ref-1589, ref-1590]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 근거와 남은 질문
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 근거와 남은 질문
 
 # 근거와 남은 질문
 

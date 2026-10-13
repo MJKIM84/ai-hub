@@ -15,7 +15,7 @@ version: 1
 sources: [ref-1589]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 이동 점검과 설비 상태 관리
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 이동 점검과 설비 상태 관리
 
 # 이동 점검과 설비 상태 관리
 

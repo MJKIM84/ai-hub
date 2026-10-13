@@ -1,5 +1,5 @@
 ---
-title: "현장 적용·운영 검증"
+title: "ROP 발표회 — 현장 적용·운영 검증"
 type: field-research
 research: field-readiness-rop
 level: study
@@ -10,16 +10,16 @@ tags: [현장 적용, 운영 검증, 현장 준비도, 실패 사례, 증거 수
 status: published
 confidence: medium
 created: 2026-10-12
-updated: 2026-10-12
-version: 1
+updated: 2026-10-13
+version: 2
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › 현장 적용·운영 검증
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › ROP 발표회 — 현장 적용·운영 검증
 
-# 현장 적용·운영 검증
+# ROP 발표회 — 현장 적용·운영 검증
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 1 · 마지막 갱신: 2026-10-12 · 마지막 실행: 없음
+> 페이지 상태: published · 신뢰도: medium · 페이지 버전: 2 · 마지막 갱신: 2026-10-13 · 마지막 실행: 없음
 <!-- auto:page-status:end -->
 
 이 스터디는 로봇을 실제 현장에 넣고 운영할 때 생기는 문제를 모은다. 다루는 문제는 바닥·조명·통신 같은 환경 조건, 실패 사례, 사람 개입, 업무 연속성, 시뮬레이션 검증의 한계, 제조사와 주고받을 증거다. 67개 세부 연구영역이 "무엇을 연구하는가"를 정리한다면, 이 스터디는 "현장에서 실제로 되는가, 무엇을 보고 그렇게 판단하는가"를 묻는다.

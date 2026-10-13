@@ -15,7 +15,7 @@ version: 1
 sources: [ref-031, ref-1577, ref-1578, ref-1579, ref-1580, ref-1585, ref-1588, ref-1589, ref-1590]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 현장 실패 사례
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 현장 실패 사례
 
 # 현장 실패 사례
 

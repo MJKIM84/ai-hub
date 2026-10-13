@@ -15,7 +15,7 @@ version: 1
 sources: [ref-031, ref-1575]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 업무 연속성과 사람 개입
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 업무 연속성과 사람 개입
 
 # 업무 연속성과 사람 개입
 

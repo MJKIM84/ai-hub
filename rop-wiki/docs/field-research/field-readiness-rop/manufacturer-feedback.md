@@ -15,7 +15,7 @@ version: 1
 sources: [ref-1577, ref-1590]
 ---
 
-[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [현장 적용·운영 검증](index.md) › 제조사 피드백 패키지
+[홈](../../index.md) › [확장 아이디어](../../ideas/index.md) › [스터디](../index.md) › [ROP 발표회 — 현장 적용·운영 검증](index.md) › 제조사 피드백 패키지
 
 # 제조사 피드백 패키지
 
