@@ -40,12 +40,19 @@ jobs:
         run: pip install -r rop-wiki/requirements.txt
 
       # 스터디(docs/field-research/) 잠금 비밀번호(rop-wiki/README.md 5C). 저장소 Settings → Secrets and variables → Actions 의
-      # ROP_STUDY_PASSWORD 가 유일한 출처다(저장소가 공개이므로 rop-wiki/config/ops.yaml 의 기본값은 비워 둔다). secret 이 없으면
-      # 빌드 훅이 빌드를 멈추고(잠금 없이 공개되는 일을 막는다), 배포는 일어나지 않는다. 훅은 값은 남기지 않고 출처만 로그에 남긴다.
+      # ROP_STUDY_PASSWORD 가 유일한 출처다(저장소가 공개이므로 rop-wiki/config/ops.yaml 의 기본값은 비워 둔다).
+      # 배포 빌드(main push·수동 실행)는 secret 이 없으면 빌드 훅이 멈추고(잠금 없이 공개되는 일을 막는다) 배포는 일어나지 않는다.
+      # PR 빌드(배포 없음)는 secret 이 없으면(포크 PR 포함) 검사용 임시 값으로 빌드해 검사만 한다. 훅은 값은 남기지 않고 출처만 로그에 남긴다.
       - name: Build (mkdocs build --strict)
         env:
           ROP_STUDY_PASSWORD: ${{ secrets.ROP_STUDY_PASSWORD }}
-        run: cd rop-wiki && mkdocs build --strict
+          ROP_PR_BUILD: ${{ github.event_name == 'pull_request' && '1' || '' }}
+        run: |
+          if [ -z "$ROP_STUDY_PASSWORD" ] && [ "$ROP_PR_BUILD" = "1" ]; then
+            export ROP_STUDY_PASSWORD="pr-check-only-not-deployed"
+            echo "PR 빌드: ROP_STUDY_PASSWORD secret 이 없어 검사용 임시 값으로 빌드한다(배포 아님)"
+          fi
+          cd rop-wiki && mkdocs build --strict
 
       - name: Configure Pages
         if: github.event_name != 'pull_request'
