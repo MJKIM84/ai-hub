@@ -1445,7 +1445,13 @@ class Publisher:
             return
         cmd = self._build_cmd()
         t = time.time()
-        p = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT))
+        env = dict(os.environ)
+        if not env.get("ROP_STUDY_PASSWORD"):
+            # 스터디 잠금 비밀번호(README 5C)가 없으면 검증용 임시 값으로 빌드한다. 이 빌드 결과는 배포되지 않는다
+            # (actions 방식은 GitHub Actions 가 secret 으로 따로 빌드하고, gh-deploy 방식은 deploy_site.sh 가 실제 환경 변수로 다시 빌드한다)
+            env["ROP_STUDY_PASSWORD"] = "local-check-only-not-deployed"
+            self.info("6단계: ROP_STUDY_PASSWORD 가 없어 검증용 임시 값으로 빌드한다(배포 아님)")
+        p = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT), env=env)
         out = (p.stdout or "") + (p.stderr or "")
         (self.rd / "build.log").write_text(out, encoding="utf-8")
         if p.returncode != 0:

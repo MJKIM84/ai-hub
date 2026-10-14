@@ -106,7 +106,7 @@ plugins:
   # 이 파일은 생성 파일이므로 여기를 직접 고치지 않는다.
   - encryptcontent:
       password_inventory:
-        study: !ENV [ROP_STUDY_PASSWORD, '2153']
+        study: !ENV [ROP_STUDY_PASSWORD, '']
       search_index: clear
       threshold_warning_min_entropy: 0
       title_prefix: ''

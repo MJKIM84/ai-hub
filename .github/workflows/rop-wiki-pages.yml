@@ -39,10 +39,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r rop-wiki/requirements.txt
 
-      # 스터디(docs/field-research/) 잠금 비밀번호(rop-wiki/README.md 5C). 기본값은 rop-wiki/config/ops.yaml 의
-      # publish.study_password 이며 mkdocs.yml 에 들어 있다. 저장소 Settings → Secrets and variables → Actions 에
-      # ROP_STUDY_PASSWORD 가 있으면(비어 있지 않으면) 그 값이 기본값보다 우선한다. 빌드 훅이 어느 쪽을 썼는지 로그에 남기고,
-      # 둘 다 없으면 빌드를 멈춘다(잠금 없이 공개되는 일을 막는다).
+      # 스터디(docs/field-research/) 잠금 비밀번호(rop-wiki/README.md 5C). 저장소 Settings → Secrets and variables → Actions 의
+      # ROP_STUDY_PASSWORD 가 유일한 출처다(저장소가 공개이므로 rop-wiki/config/ops.yaml 의 기본값은 비워 둔다). secret 이 없으면
+      # 빌드 훅이 빌드를 멈추고(잠금 없이 공개되는 일을 막는다), 배포는 일어나지 않는다. 훅은 값은 남기지 않고 출처만 로그에 남긴다.
       - name: Build (mkdocs build --strict)
         env:
           ROP_STUDY_PASSWORD: ${{ secrets.ROP_STUDY_PASSWORD }}
