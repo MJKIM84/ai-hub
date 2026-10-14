@@ -263,31 +263,35 @@ sed -i 's/^git_push: false/git_push: true/' config/settings.yaml                
 - **Pages 끄는 법(비공개로 되돌리기)**: 저장소 Settings → Pages → "Unpublish site"(또는 Build and deployment 의 Source 를 다른 값으로 바꾸기). 워크플로 자체를 끄려면 `.github/workflows/rop-wiki-pages.yml` 을 지우거나 `config/ops.yaml` 의 `deploy.enabled` 를 `false` 로 되돌린다.
 - **일일 파이프라인 결과가 사이트에 반영되려면**: 퍼블리셔가 로컬에 커밋하는 것과 별개로, `config/settings.yaml` 의 `git_push` 가 `true` 여야 원격에 푸시되고(현재 **`false`로 꺼져 있다** — 5A절 "켜는 방법" 참고), 그 푸시가 `main` 의 `rop-wiki/**` 를 건드려야 워크플로가 다시 돈다. 지금은 이 저장소 소유자가 직접 병합·푸시해야 배포에 반영된다.
 
-## 5C. 스터디 잠금 (비밀번호, 2026-10-13)
+## 5C. 스터디 잠금 (비밀번호, 2026-10-13 · secret 전용 2026-10-14)
 
 확장 아이디어 › 스터디(`docs/field-research/`) 아래 페이지는 사이트에서 비밀번호를 넣어야 본문이 보인다. 로봇 시뮬레이터의 입장 비밀번호와 같은 "공유 비밀번호" 방식이며, 사용자별 권한 체계가 아니다.
 
 - 구현: [mkdocs-encryptcontent-plugin](https://github.com/unverbuggt/mkdocs-encryptcontent-plugin) 3.1.0 이 빌드 때 잠금 페이지의 본문 HTML 을 AES 로 암호화하고, 브라우저에서 비밀번호(WebCrypto)로 푼다. 한 번 풀면 같은 브라우저 세션에서는 다른 스터디 페이지도 열린다(세션 저장소). 목차·검색 색인·meta description 은 `pipeline/hooks/private_pages.py` 와 페이지 프런트매터(`hide: [toc]`, `search: exclude: true`)로 막는다. 페이지 제목과 주소는 메뉴에 보인다.
-- 비밀번호(기본값): `config/ops.yaml` 의 `publish.study_password` 다(2026-10-13 기준 `2153`). `pipeline/lib/nav.py` 가 이 값을 `mkdocs.yml` 의 `password_inventory.study: !ENV [ROP_STUDY_PASSWORD, '<기본값>']` 로 옮겨 적으므로 mkdocs.yml 을 직접 고치지 않는다. 빌드 훅 `pipeline/hooks/private_pages.py` 가 플러그인보다 먼저 실행되어 환경 변수가 비어 있거나 숫자만인 경우를 정리하고, 어느 출처를 썼는지 빌드 로그에 남긴다(값은 남기지 않는다).
-- 비밀번호(우선값): 환경 변수 `ROP_STUDY_PASSWORD` 가 비어 있지 않으면 기본값 대신 그 값을 쓴다. GitHub Actions 는 저장소 Settings → Secrets and variables → Actions 의 같은 이름 secret 을 이 변수로 넘긴다. 저장소가 공개이므로 `config/ops.yaml` 의 기본값은 누구나 읽을 수 있다. 값을 정말 숨기려면 secret 만 쓰고 기본값은 빈 문자열로 둔다(그러면 secret 이 없는 빌드는 멈춘다). 로컬 미리보기: `mkdocs serve`(기본값) 또는 `ROP_STUDY_PASSWORD=… mkdocs serve`.
+- **비밀번호는 GitHub secret 하나다.** 저장소 Settings → Secrets and variables → Actions → New repository secret 에 이름 `ROP_STUDY_PASSWORD`, 값 = 비밀번호. 워크플로가 이 secret 을 같은 이름의 환경 변수로 빌드에 넘기고, 빌드 훅이 플러그인보다 먼저 실행되어 그 값을 쓴다(비어 있거나 숫자만인 값도 문자열로 정리). secret 이 없으면 배포 빌드(main push·수동 실행)는 **빌드가 멈추고 배포되지 않는다**(잠금 없이 공개되는 일을 막는다). PR 빌드(배포 없음)는 secret 이 없으면 검사용 임시 값으로 검사만 한다. 훅은 어느 출처를 썼는지만 로그에 남기고 값은 남기지 않는다.
+- 저장소 안 기본값(`config/ops.yaml` `publish.study_password`)은 **비워 둔다.** 이 저장소는 공개이므로 여기에 값을 두면 파일·커밋을 보는 누구나 비밀번호를 읽을 수 있다. `pipeline/lib/nav.py` 가 이 값을 `mkdocs.yml` 의 `password_inventory.study: !ENV [ROP_STUDY_PASSWORD, '']` 로 옮겨 적으므로 mkdocs.yml 을 직접 고치지 않는다. 비공개 저장소에서만 `python3 pipeline/study_password.py set <비밀번호>` 로 기본값을 둘 수 있다.
+- 비밀번호 바꾸기: GitHub 의 secret 값을 바꾼 뒤 배포를 한 번 돌린다(Actions → rop-wiki pages → Run workflow, 또는 rop-wiki 를 건드리는 다음 커밋). 저장소에는 아무것도 커밋하지 않는다. 방문자는 다음 배포부터 새 비밀번호를 넣어야 한다. 아래의 암호화 원문이 있으면 그 파일도 새 값으로 다시 암호화한다.
+- 비밀번호는 커밋 메시지·PR 제목/본문·이슈·로그·README 에 적지 않는다. git 이력은 지울 수 없으므로 한 번 적힌 값은 바꿔야 한다.
 
 ```bash
-# 비밀번호 바꾸기 — config/ops.yaml 과 mkdocs.yml 을 함께 고친다. 커밋·푸시해 main 에 들어가면 다음 배포부터 새 값
-python3 pipeline/study_password.py set <새 비밀번호>     # 인수 없이 실행하면 화면에 보이지 않게 입력받는다
-python3 pipeline/study_password.py show                  # 현재 기본값, 환경 변수 유무, mkdocs.yml 일치 여부
-git add config/ops.yaml mkdocs.yml && git commit -m "rop-wiki: 스터디 비밀번호 변경" && git push
+python3 pipeline/study_password.py show     # 저장소 기본값 유무(비어 있어야 정상), 환경 변수 유무, mkdocs.yml 일치 여부
+python3 pipeline/study_password.py clear    # 기본값이 들어 있으면 비운다(ops.yaml + mkdocs.yml) → 커밋·푸시
+
+# 로컬 미리보기·빌드(비밀번호가 없으면 훅이 멈춘다)
+ROP_STUDY_PASSWORD=… mkdocs serve
+# 검사 스크립트(run_all.sh)와 퍼블리셔 6단계 검증 빌드는 환경 변수가 없으면 검사용 임시 값을 넣는다(배포 아님).
+# 운영 서버에서 gh-deploy 방식으로 배포한다면 cron.env_file(~/.config/rop-wiki/env)에 ROP_STUDY_PASSWORD 를 둔다
 ```
 
-- 바꾼 뒤: secret `ROP_STUDY_PASSWORD` 가 설정돼 있으면 그 값이 계속 우선하므로 secret 도 같이 바꾸거나 지운다. 방문자는 다음 배포부터 새 비밀번호를 넣어야 한다(브라우저 세션에 남은 옛 키는 더 이상 맞지 않는다). 아래의 암호화 원문이 있으면 그 파일도 새 값으로 다시 암호화한다.
 - 원문 그대로 싣는 페이지가 필요할 때(현재는 없음): 저장소가 공개이므로 마크다운 원문을 docs 에 두지 않고 `_private/<slug>.md.enc` 로 암호화해 둔다. docs 에는 프런트매터·이동 경로·제목만 있는 틀 페이지가 있고(`private_source: _private/<slug>.md.enc`), 빌드 훅이 같은 비밀번호로 풀어 끼워 넣는다. 비밀번호가 없는 빌드에서는 안내문만 들어간다.
 
 ```bash
-# 원문 등록·교체(사이트 잠금과 같은 비밀번호를 쓴다. 다른 값이면 ROP_STUDY_PASSWORD=… 를 앞에 붙인다)
-python3 pipeline/private_pages.py encrypt <원문.md> _private/<slug>.md.enc
-python3 pipeline/private_pages.py check _private/<slug>.md.enc
+# 원문 등록·교체(사이트 잠금과 같은 비밀번호를 환경 변수로)
+ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py encrypt <원문.md> _private/<slug>.md.enc
+ROP_STUDY_PASSWORD=… python3 pipeline/private_pages.py check _private/<slug>.md.enc
 ```
 
-잠금은 공개 사이트에서 본문을 가리는 수단이지 접근 통제 시스템이 아니다. 암호문은 사이트에 그대로 실리므로 짧은 비밀번호(네 자리 숫자는 1만 가지)는 내려받아 추측하면 금방 열린다. 기본값은 공개 저장소에 있으므로 "아는 사람끼리 쓰는 공유 비밀번호" 이상의 보호가 아니다. 플러그인의 엔트로피 경고(`threshold_warning_min_entropy`)는 짧은 기본값으로도 빌드가 되도록 꺼 두었다. 원문을 꼭 비공개로 유지해야 하면 저장소 자체를 비공개로 두는 것이 맞다.
+잠금은 공개 사이트에서 본문을 가리는 수단이지 접근 통제 시스템이 아니다. 암호문은 사이트에 그대로 실리므로 짧은 비밀번호(네 자리 숫자는 1만 가지)는 내려받아 추측하면 금방 열린다. 플러그인의 엔트로피 경고(`threshold_warning_min_entropy`)는 꺼 두었으므로 길이는 secret 을 정하는 사람이 챙긴다(8자 이상, 문자·숫자 섞기 권장). 원문을 꼭 비공개로 유지해야 하면 저장소 자체를 비공개로 두는 것이 맞다.
 
 ## 6. 검사 스크립트
 
