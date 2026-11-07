@@ -30,6 +30,12 @@ if [ "${ROP_CHECK_URLS:-0}" = "1" ]; then
   run "참고문헌 URL 열림 확인(선택)" python3 pipeline/checks/check_urls.py --strict --json data/url_check.json
 fi
 if [ "${1:-}" != "--no-build" ]; then
+  # 스터디 잠금 비밀번호(README 5C)가 없으면 검사용 임시 값으로 빌드한다. 이 빌드는 배포되지 않는다(배포는 GitHub Actions 가
+  # secret ROP_STUDY_PASSWORD 로 따로 빌드하고, secret 이 없으면 멈춘다)
+  if [ -z "${ROP_STUDY_PASSWORD:-}" ]; then
+    export ROP_STUDY_PASSWORD="local-check-only-not-deployed"
+    echo "[run_all] ROP_STUDY_PASSWORD 가 없어 검사용 임시 값으로 빌드한다(배포 아님)"
+  fi
   run "mkdocs build --strict" mkdocs build --strict
 fi
 if [ "$fail" -ne 0 ]; then echo "[run_all] 실패한 검사가 있다"; exit 1; fi
